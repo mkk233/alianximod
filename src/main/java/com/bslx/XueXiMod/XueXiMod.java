@@ -1,6 +1,8 @@
 package com.bslx.XueXiMod;
 
+import com.bslx.XueXiMod.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,7 +26,7 @@ public class XueXiMod {
 
     public XueXiMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
-
+        ModItems.ITEMS.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -37,9 +39,12 @@ public class XueXiMod {
     private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
-
+    //添加内容给创造模式
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        //将物品添加到创造选项栏中
+        if (event.getTabKey()== CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.shu_embryo);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
