@@ -1,3 +1,7 @@
 {
-  "item.xueximod.shu_embryo" : "术原胚"
+  "item.xueximod.shu_embryo" : "术原胚",
+  "item.xueximod.shu_raw" : "术粗胚",
+  "creativetab.shu_tab": "术基础",
+  "block.xueximod.ars_ore": "术蚀矿",
+  "block.xueximod.shu_block": "术髓块"
 }

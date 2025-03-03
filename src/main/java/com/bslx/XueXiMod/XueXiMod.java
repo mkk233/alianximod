@@ -1,5 +1,7 @@
 package com.bslx.XueXiMod;
 
+import com.bslx.XueXiMod.block.ModBlocks;
+import com.bslx.XueXiMod.item.ModCreativeModTabs;
 import com.bslx.XueXiMod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -26,7 +28,12 @@ public class XueXiMod {
 
     public XueXiMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
-        ModItems.ITEMS.register(modEventBus);
+        //通过EventBus添加物品
+        ModItems.register(modEventBus);
+        //通过EventBus添加方块
+        ModBlocks.register(modEventBus);
+        //通过EventBus添加创造物品选项卡
+        ModCreativeModTabs.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -43,7 +50,8 @@ public class XueXiMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         //将物品添加到创造选项栏中
         if (event.getTabKey()== CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.shu_embryo);
+//            event.accept(ModItems.shu_embryo);
+//            event.accept(ModItems.shu_raw);
         }
     }
 

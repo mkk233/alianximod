@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "shu",
+  "ingredient": {
+    "item": "xueximod:shu_raw"
+  },
+  "result": "xueximod:shu_embryo"
+}

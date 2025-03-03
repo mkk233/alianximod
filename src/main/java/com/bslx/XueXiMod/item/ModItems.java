@@ -12,6 +12,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, XueXiMod.MOD_ID);
     //注册物品，示例术原胚
     public static final RegistryObject<Item> shu_embryo =ITEMS.register("shu_embryo", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> shu_raw =ITEMS.register("shu_raw", () -> new Item(new Item.Properties()));
 
     //物品注册表，用于加载注册物品
     public static void register(IEventBus eventBus) {
