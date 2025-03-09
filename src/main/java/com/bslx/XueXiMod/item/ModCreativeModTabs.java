@@ -31,6 +31,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.deeplate_ars_ore.get());
                 pOutput.accept(ModBlocks.end_ars_ore.get());
                 pOutput.accept(ModBlocks.nether_ars_ore.get());
+                pOutput.accept(ModItems.ore_sousuo.get());
             })
             .build());
     //存入bus
