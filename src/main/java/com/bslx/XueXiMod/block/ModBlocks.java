@@ -1,6 +1,7 @@
 package com.bslx.XueXiMod.block;
 
 import com.bslx.XueXiMod.XueXiMod;
+import com.bslx.XueXiMod.block.custom.teShuBlocks;
 import com.bslx.XueXiMod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -22,6 +23,7 @@ public class ModBlocks {
     //创建方块，设定方块性质,可以从已有方块复制或者自己创建,json文件名需与name一致
 //    public static final RegistryObject<Block> ars_ore=registerBlock("ars_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> shu_block=registerBlock("shu_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> zhu_block=registerBlock("zhu_block", () -> new teShuBlocks(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 //    public static final RegistryObject<Block> ars_ore=registerBlock("ars_ore",
 //    上半为固定写法下半为复制写法
 //    () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
