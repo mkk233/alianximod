@@ -33,6 +33,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.nether_ars_ore.get());
                 pOutput.accept(ModItems.ore_sousuo.get());
                 pOutput.accept(ModBlocks.zhu_block.get());
+                pOutput.accept(ModItems.shu_food.get());
             })
             .build());
     //存入bus
