@@ -1,6 +1,7 @@
 package com.bslx.XueXiMod.item;
 
 import com.bslx.XueXiMod.XueXiMod;
+import com.bslx.XueXiMod.item.custom.fuelItem;
 import com.bslx.XueXiMod.item.custom.teShuItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,7 @@ public class ModItems {
     public static final RegistryObject<Item> ore_sousuo =ITEMS.register("ore_sousuo", () -> new teShuItem(new Item.Properties()));
 
     public static final RegistryObject<Item> shu_food=ITEMS.register("shu_food", () -> new Item(new Item.Properties().food(foodItem.food)));
+    public static final RegistryObject<Item> shu_canzha=ITEMS.register("shu_canzha", () -> new fuelItem(new Item.Properties(),4000));
 //    durability(9999)用于定义耐久
 //    public static final RegistryObject<Item> ore_sousuo =ITEMS.register("ore_sousuo", () -> new teShuItem(new Item.Properties().durability(9999)));
 

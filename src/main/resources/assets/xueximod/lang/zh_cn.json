@@ -9,5 +9,8 @@
   "block.xueximod.shu_block": "术髓块",
   "item.xueximod.ore_sousuo": "钻石搜索",
   "block.xueximod.zhu_block": "烛台",
-  "item.xueximod.shu_food": "饱腹术"
+  "item.xueximod.shu_food": "饱腹术",
+  "tip.xueximod.kaungtou": "太好了是矿透，服务器没救了",
+  "tooltip.block.custom.teShuBlocks": "man!",
+  "item.xueximod.shu_canzha": "术残渣"
 }
