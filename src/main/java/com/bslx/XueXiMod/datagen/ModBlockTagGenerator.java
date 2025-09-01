@@ -38,5 +38,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.nether_ars_ore.get());
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.shu_block.get());
 
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).add(ModBlocks.end_ars_ore.get());
     }
 }

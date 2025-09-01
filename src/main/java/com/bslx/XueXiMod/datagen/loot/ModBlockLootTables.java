@@ -21,10 +21,12 @@ import java.util.Set;
 
 // 模组方块战利品表生成器
 public class ModBlockLootTables extends BlockLootSubProvider {
-    protected ModBlockLootTables() {
+
+    public ModBlockLootTables() {
         // 参数1: 空的特征标志集合
         // 参数2: 所有注册的特征标志
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+
     }
     @Override
     protected void generate() {

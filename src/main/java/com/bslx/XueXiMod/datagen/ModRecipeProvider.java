@@ -4,10 +4,7 @@ import com.bslx.XueXiMod.XueXiMod;
 import com.bslx.XueXiMod.block.ModBlocks;
 import com.bslx.XueXiMod.item.ModItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -29,6 +26,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         oreBlasting(consumer,shu_SMEllTABLES,RecipeCategory.MISC,ModItems.shu_embryo.get(),1f,100,"shu");
         oreSmelting(consumer,shu_SMEllTABLES,RecipeCategory.MISC,ModItems.shu_embryo.get(),1f,200,"shu");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModBlocks.shu_block.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S',ModItems.shu_embryo.get())
+                .unlockedBy(getHasName(ModItems.shu_embryo.get()),has(ModItems.shu_embryo.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.shu_embryo.get(),9)
+                .requires(ModItems.shu_embryo.get())
+                .unlockedBy(getHasName(ModBlocks.shu_block.get()),has(ModBlocks.shu_block.get()))
+                .save(consumer);
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");

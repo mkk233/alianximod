@@ -24,6 +24,7 @@ public class ModBlocks {
 //    public static final RegistryObject<Block> ars_ore=registerBlock("ars_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> shu_block=registerBlock("shu_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> zhu_block=registerBlock("zhu_block", () -> new teShuBlocks(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    //.noLootTable()这个属性声明了无需配置战利品列表
 //    public static final RegistryObject<Block> ars_ore=registerBlock("ars_ore",
 //    上半为固定写法下半为复制写法
 //    () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
