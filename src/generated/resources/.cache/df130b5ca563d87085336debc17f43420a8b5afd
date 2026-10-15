@@ -1,0 +1,7 @@
+// 1.20.1	2025-09-02T02:01:10.9842091	Tags for minecraft:block mod id xueximod
+37b48fc7e641a2c0769f23eb115619a53f4201f1 data/forge/tags/blocks/needs_netherite_tool.json
+e84a7e62659d59d49bd1b80cb6b021b3b376f5ec data/minecraft/tags/blocks/mineable/pickaxe.json
+2f1631776fafe621caffd14f5d43c8dbe64e5d2a data/minecraft/tags/blocks/needs_diamond_tool.json
+a51bf576c9bbefb386ac4ee93c6fc1f5010fc388 data/minecraft/tags/blocks/needs_iron_tool.json
+59042139dfb4384c34915a45ac88ea96e13edde1 data/minecraft/tags/blocks/needs_stone_tool.json
+2861cbf673df8b1308e3bcd0dd4405be5f5dbb09 data/xueximod/tags/blocks/metal.json

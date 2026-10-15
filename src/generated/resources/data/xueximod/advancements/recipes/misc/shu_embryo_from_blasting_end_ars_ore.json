@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_end_ars_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xueximod:end_ars_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "xueximod:shu_embryo_from_blasting_end_ars_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_end_ars_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xueximod:shu_embryo_from_blasting_end_ars_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

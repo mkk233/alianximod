@@ -1,0 +1,19 @@
+// 1.20.1	2025-09-02T02:01:10.9818386	Block States: xueximod
+e925e442ec4cea1635ea34bf6ea643539ad7902b assets/xueximod/blockstates/ars_ore.json
+7317902c97d27385d84578cc8cd0953e7f5f46a1 assets/xueximod/blockstates/deeplate_ars_ore.json
+48f2f02856fc6473b6bbd5f756a95915eeedc904 assets/xueximod/blockstates/end_ars_ore.json
+8630a2ad68827b058a99f4e7971a7d0add9b4dc1 assets/xueximod/blockstates/nether_ars_ore.json
+d5fb45c299403e849a254e9ec8b0f5bacf9a05fa assets/xueximod/blockstates/shu_block.json
+566161bd6f620d401035295c30db8b2a6935a07a assets/xueximod/blockstates/zhu_block.json
+c48a5f540f53e0db93b4493d56b9e2fe83fb2b39 assets/xueximod/models/block/ars_ore.json
+90b5c80b100dd6c86ee04dd12e186e6c77949c08 assets/xueximod/models/block/deeplate_ars_ore.json
+e2f672ab6453cddca1c1d6e351ab45b9deea796a assets/xueximod/models/block/end_ars_ore.json
+7b3b483b6ea9a3d4a83a89f16a58f08d5d0928f4 assets/xueximod/models/block/nether_ars_ore.json
+060e445717209347f928ee3fe81f72e712ddc68a assets/xueximod/models/block/shu_block.json
+1b72eb442cf4ca27807d44e6b7300f0c8dee9a25 assets/xueximod/models/block/zhu_block.json
+8d8d961e80ec0e5ab4dedce36d3852e1f5e8ce9d assets/xueximod/models/item/ars_ore.json
+d70a807cc9a0e0d2b439985f865db6d41dd20c6e assets/xueximod/models/item/deeplate_ars_ore.json
+076620b7ccd8461e8c41f2790248cb557d4a657b assets/xueximod/models/item/end_ars_ore.json
+d89b8205a388f5835da08d76a5e9194aa1b64d9e assets/xueximod/models/item/nether_ars_ore.json
+b53555e3b488fb05a482b4e0ad628f50b58c5e6b assets/xueximod/models/item/shu_block.json
+6bc27f3c48b5f59f3ed35566a9c70451f25aa38b assets/xueximod/models/item/zhu_block.json

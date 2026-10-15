@@ -1,0 +1,28 @@
+﻿{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "xueximod:item/embryo_none"
+  },
+  "overrides": [
+    {
+      "predicate": { "xueximod:shu_attribute": 0.1 },
+      "model": "xueximod:item/shu_embryo_wood"
+    },
+    {
+      "predicate": { "xueximod:shu_attribute": 0.2 },
+      "model": "xueximod:item/shu_embryo_fire"
+    },
+    {
+      "predicate": { "xueximod:shu_attribute": 0.3 },
+      "model": "xueximod:item/shu_embryo_water"
+    },
+    {
+      "predicate": { "xueximod:shu_attribute": 0.4 },
+      "model": "xueximod:item/shu_embryo_earth"
+    },
+    {
+      "predicate": { "xueximod:shu_attribute": 0.5 },
+      "model": "xueximod:item/shu_embryo_metal"
+    }
+  ]
+}

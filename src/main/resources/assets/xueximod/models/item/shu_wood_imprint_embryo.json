@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "xueximod:item/shu_wood_imprint_embryo"
+  }
+}

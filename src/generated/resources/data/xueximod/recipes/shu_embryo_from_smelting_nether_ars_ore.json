@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "shu",
+  "ingredient": {
+    "item": "xueximod:nether_ars_ore"
+  },
+  "result": "xueximod:shu_embryo"
+}

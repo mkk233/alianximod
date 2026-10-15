@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew build *)",
+      "Skill(deep-research)",
+      "Bash(./gradlew *)"
+    ]
+  }
+}

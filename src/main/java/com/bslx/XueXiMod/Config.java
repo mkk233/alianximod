@@ -12,6 +12,16 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * 模组配置类 - Forge Config 规范定义
+ *
+ * 核心职责：
+ * - 定义 ForgeConfigSpec 配置规范（COMMON 类型）
+ * - 提供配置值的静态缓存（logDirtBlock、magicNumber 等）
+ * - 在 ModConfigEvent 加载时刷新缓存值
+ *
+ * 当前为示例配置，后续可扩展为术系统相关配置（如伤害倍率、冷却倍率等）
+ */
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Forge's config APIs
 @Mod.EventBusSubscriber(modid = XueXiMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -45,7 +55,7 @@ public class Config
 
     private static boolean validateItemName(final Object obj)
     {
-        return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(new ResourceLocation(itemName));
+        return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(ResourceLocation.parse(itemName));
     }
 
     @SubscribeEvent
@@ -57,7 +67,7 @@ public class Config
 
         // convert the list of strings into a set of items
         items = ITEM_STRINGS.get().stream()
-                .map(itemName -> ForgeRegistries.ITEMS.getValue(new ResourceLocation(itemName)))
+                .map(itemName -> ForgeRegistries.ITEMS.getValue(ResourceLocation.parse(itemName)))
                 .collect(Collectors.toSet());
     }
 }

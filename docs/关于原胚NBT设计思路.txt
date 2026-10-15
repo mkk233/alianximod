@@ -1,0 +1,196 @@
+可以。按照你现在这个设计，如果把成品技能石的 NBT 完整展开成类似 JSON 的形式，我建议大致可以是这样：
+
+{
+  "embryo_attribute": "wood",
+  "spell_attribute": "fire",
+  "spell_damage": 12.0,
+  "spell_cooldown": 20,
+  "spell_type": "magic",
+  "spell_complexity": 0,
+  "spell_projectile_speed": 1.5,
+  "spell_reaction": "none"
+}
+
+假设这是：
+
+木属性原胚 → 刻印 → 火球术 → 成品技能石
+
+那么每个字段的含义可以是：
+
+NBT	示例值	含义
+embryo_attribute	"wood"	制作这个技能石所使用的原胚属性
+spell_attribute	"fire"	被刻印术式自身的属性
+spell_damage	12.0	术式基础伤害
+spell_cooldown	20	CD，例如 20 tick = 1 秒
+spell_type	"magic"	术式类型
+spell_complexity	0	术式复杂度
+spell_projectile_speed	1.5	飞行速度
+spell_reaction	"none"	术式反应类型
+如果是木属性原胚刻火属性法术
+
+那么：
+
+{
+  "embryo_attribute": "wood",
+  "spell_attribute": "fire",
+  "spell_damage": 12.0,
+  "spell_cooldown": 20,
+  "spell_type": "magic",
+  "spell_complexity": 0,
+  "spell_projectile_speed": 1.5,
+  "spell_reaction": "none"
+}
+
+这里不需要额外保存 attribute_bonus: false。
+
+因为它可以直接由：
+
+embryo_attribute != spell_attribute
+
+计算出来。
+
+如果是火属性原胚刻火属性法术
+{
+  "embryo_attribute": "fire",
+  "spell_attribute": "fire",
+  "spell_damage": 12.0,
+  "spell_cooldown": 20,
+  "spell_type": "magic",
+  "spell_complexity": 0,
+  "spell_projectile_speed": 1.5,
+  "spell_reaction": "none"
+}
+
+代码计算：
+
+embryoAttribute == spellAttribute
+
+于是得到：
+
+属性匹配 = true
+伤害加成 = +10%
+CD减少 = 10%
+
+这样 NBT 本身仍然保持干净。
+
+不过这里有一个很重要的设计问题
+
+你现在列出的这 8 项：
+
+术原胚属性
+术式属性
+术式伤害
+术式CD
+术式类型
+术式复杂度
+术式飞行速度
+术式反应
+
+从“数据量”来说完全没问题。
+
+一个这样的技能石实际上非常小。
+
+但从架构设计来说，我反而建议你考虑一下：
+
+是不是每一个数据都真的需要复制进技能石？
+
+例如：
+
+{
+  "spell_id": "fireball",
+  "embryo_attribute": "wood"
+}
+
+理论上就已经能够知道：
+
+fireball
+↓
+属性：fire
+伤害：12
+CD：20
+类型：magic
+复杂度：0
+速度：1.5
+反应：none
+
+因为这些本来就是 fireball 这个术式的固定定义。
+
+两种方案的区别
+
+你现在设想的方案：
+
+{
+  "embryo_attribute": "wood",
+  "spell_attribute": "fire",
+  "spell_damage": 12.0,
+  "spell_cooldown": 20,
+  "spell_type": "magic",
+  "spell_complexity": 0,
+  "spell_projectile_speed": 1.5,
+  "spell_reaction": "none"
+}
+
+优点是技能石完全自包含。
+
+以后即使你修改了 fireball 的基础数据，已经制作出来的技能石仍然可以保持原来的 12 伤害。
+
+另一种方案：
+
+{
+  "spell_id": "fireball",
+  "embryo_attribute": "wood"
+}
+
+优点是非常干净，而且以后调整术式数值特别方便。
+
+而我其实更推荐第三种
+
+如果你的目标是以后做 Noita 式技能石组合，我会考虑：
+
+{
+  "spell_id": "fireball",
+  "embryo_attribute": "wood",
+  "snapshot": {
+    "damage": 12.0,
+    "cooldown": 20,
+    "projectile_speed": 1.5
+  }
+}
+
+也就是：
+
+技能石身份
+├── spell_id
+└── embryo_attribute
+
+刻印时固化的数值
+└── snapshot
+    ├── damage
+    ├── cooldown
+    └── projectile_speed
+
+这样你以后可以做到：
+
+术式定义是“蓝图”，技能石是“已经制造出来的成品”。
+
+这和你现在“刻印”这个概念其实非常契合。
+
+例如你后来把火球术从：
+
+伤害 12
+
+改成：
+
+伤害 15
+
+旧技能石仍然可以是：
+
+伤害 12
+
+新制作的技能石才是：
+
+伤害 15
+
+这会让“制作技能石”真正具有制造实体物品的感觉，而不是单纯生成一个指向数据库的 ID。
+
+所以，如果你目前确实希望技能石一旦制作出来，就完整保存当时术式的数据，你列出的 8 项是完全可以的；如果考虑长期扩展，我会推荐上面的 spell_id + embryo_attribute + snapshot 结构。

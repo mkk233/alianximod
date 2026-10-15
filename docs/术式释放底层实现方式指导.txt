@@ -1,0 +1,1180 @@
+### USER
+，我正在设计一个MC模组，遇到了一些问题，我希望玩家可以释放技能，并统一所有技能都是生成一个碰撞盒加模型，这样方便后续扩展其他技能，举例，剑技能横劈会生成一个随横向挥砍动画而移动的碰撞盒并带有月牙形状的模型，，我希望生成的碰撞大小可以自由调整，模型大小也一样，因为模组中有加成道具可以增加技能的判定范围。同时无聊远程还是近战的技能都同样用这套产生一个碰撞加模型的底层逻辑，帮我整理这个给功能给出一个可行的代码实现方向，不用完整的写代码，给出指导方向就好
+
+### ASSISTANT
+可以把它设计成一套“技能实体系统”：**所有技能释放后，本质上都生成一个 SkillHitboxEntity/SkillAreaEntity，这个实体负责判定、移动、生命周期和同步；客户端再根据同一个实体渲染模型/特效。**  
+近战、远程、范围、持续伤害都只是这个实体的不同行为配置。
+
+下面给你一个比较可扩展的实现方向，不写完整代码，但给出架构和关键点。
+
+---
+
+# 一、核心思路
+
+你可以把每个技能拆成几部分：
+
+```text
+技能 Skill
+ ├─ 基础配置 SkillDefinition
+ │   ├─ 持续时间
+ │   ├─ 基础碰撞盒大小
+ │   ├─ 基础模型大小
+ │   ├─ 伤害/效果
+ │   ├─ 移动方式
+ │   ├─ 模型资源
+ │   └─ 动画/渲染参数
+ │
+ ├─ 技能实例 SkillInstance
+ │   ├─ 释放者
+ │   ├─ 实际碰撞大小 = 基础大小 × 加成
+ │   ├─ 实际模型大小 = 基础模型大小 × 加成
+ │   ├─ 当前tick
+ │   └─ 已命中过的目标
+ │
+ └─ 技能实体 SkillHitboxEntity
+     ├─ 服务端：碰撞检测、伤害结算、生命周期
+     └─ 客户端：模型渲染、动画播放、粒子等
+```
+
+也就是说，不管是：
+
+- 剑气横劈
+- 火球
+- 冲击波
+- 地面AOE
+- 环形斩击
+- 持续激光
+
+都统一为：
+
+> 生成一个技能实体，这个实体每 tick 更新自己的位置、旋转、大小，并检测附近目标。
+
+---
+
+# 二、最重要的类设计
+
+## 1. SkillDefinition：技能静态配置
+
+可以用 Java 类，也可以后期改成 JSON 数据驱动。
+
+示例结构：
+
+```java
+public class SkillDefinition {
+    public String id;
+
+    // 基础参数
+    public int durationTicks;
+    public float damage;
+
+    // 基础碰撞盒大小
+    public Vec3 baseHitboxSize; 
+    // x = 宽, y = 高, z = 深/长度
+
+    // 模型大小
+    public Vec3 baseModelScale;
+
+    // 技能行为
+    public SkillMotionType motionType;
+    public SkillHitboxType hitboxType;
+
+    // 模型资源
+    public ResourceLocation model;
+    public ResourceLocation texture;
+    public ResourceLocation animation;
+
+    // 命中规则
+    public boolean hitOncePerTarget;
+    public int hitInterval;
+}
+```
+
+例如剑横劈：
+
+```java
+SkillDefinition horizontalSlash = new SkillDefinition();
+horizontalSlash.id = "horizontal_slash";
+horizontalSlash.durationTicks = 12;
+horizontalSlash.damage = 8.0F;
+horizontalSlash.baseHitboxSize = new Vec3(3.0, 1.5, 1.0);
+horizontalSlash.baseModelScale = new Vec3(1.0, 1.0, 1.0);
+horizontalSlash.motionType = SkillMotionType.ATTACHED_SWING;
+horizontalSlash.hitboxType = SkillHitboxType.ARC;
+```
+
+例如远程剑气：
+
+```java
+SkillDefinition swordWave = new SkillDefinition();
+swordWave.id = "sword_wave";
+swordWave.durationTicks = 60;
+swordWave.damage = 6.0F;
+swordWave.baseHitboxSize = new Vec3(2.5, 1.5, 0.8);
+swordWave.baseModelScale = new Vec3(1.0, 1.0, 1.0);
+swordWave.motionType = SkillMotionType.PROJECTILE;
+swordWave.hitboxType = SkillHitboxType.BOX;
+```
+
+---
+
+## 2. SkillCastContext：释放时上下文
+
+释放技能时，要根据玩家属性、装备、buff 计算最终数值。
+
+```java
+public class SkillCastContext {
+    public LivingEntity caster;
+    public Level level;
+
+    public Vec3 origin;
+    public Vec3 direction;
+
+    public float damageMultiplier;
+    public float hitboxScale;
+    public float modelScale;
+    public float speedMultiplier;
+}
+```
+
+比如装备有“技能范围 +30%”：
+
+```java
+context.hitboxScale = 1.3F;
+context.modelScale = 1.3F;
+```
+
+这样所有技能都统一吃这个加成。
+
+---
+
+## 3. SkillHitboxEntity：所有技能统一生成的实体
+
+这个实体是核心。
+
+它可以继承：
+
+```java
+public class SkillHitboxEntity extends Entity {
+    private SkillDefinition definition;
+    private UUID casterUUID;
+
+    private int age;
+    private Vec3 hitboxSize;
+    private Vec3 modelScale;
+
+    private Set<UUID> alreadyHit = new HashSet<>();
+
+    private SkillMotion motion;
+}
+```
+
+大概逻辑：
+
+```java
+@Override
+public void tick() {
+    super.tick();
+
+    age++;
+
+    if (!level().isClientSide) {
+        updateSkillTransform();
+        checkHitEntities();
+        if (age >= definition.durationTicks) {
+            discard();
+        }
+    } else {
+        updateClientAnimation();
+    }
+}
+```
+
+核心原则：
+
+```text
+服务端负责：
+- 技能位置更新
+- 碰撞检测
+- 伤害计算
+- 命中效果
+- 实体销毁
+
+客户端负责：
+- 模型渲染
+- 动画
+- 粒子
+- 音效
+```
+
+不要让客户端决定有没有打中，否则会有同步和作弊问题。
+
+---
+
+# 三、统一近战和远程技能
+
+重点是抽象一个“运动方式”。
+
+## 1. SkillMotion 接口
+
+```java
+public interface SkillMotion {
+    void tick(SkillHitboxEntity entity);
+}
+```
+
+然后不同技能使用不同运动模式。
+
+---
+
+## 2. 固定在玩家身前的近战技能
+
+适合：
+
+- 横劈
+- 竖劈
+- 旋风斩
+- 拳击冲击
+
+```java
+public class AttachedSwingMotion implements SkillMotion {
+    @Override
+    public void tick(SkillHitboxEntity entity) {
+        LivingEntity caster = entity.getCaster();
+        if (caster == null) {
+            entity.discard();
+            return;
+        }
+
+        int age = entity.getSkillAge();
+        float progress = age / (float) entity.getDuration();
+
+        // 根据玩家朝向计算前方位置
+        Vec3 look = caster.getLookAngle();
+
+        // 横劈可以随 progress 改变角度
+        float angle = -60F + 120F * progress;
+
+        Vec3 offset = rotateAroundY(look.scale(2.0), angle);
+
+        entity.setPos(
+            caster.getX() + offset.x,
+            caster.getY() + caster.getBbHeight() * 0.5,
+            caster.getZ() + offset.z
+        );
+
+        entity.setYRot(caster.getYRot() + angle);
+    }
+}
+```
+
+效果就是：碰撞盒跟随玩家身前做一个横向扫动。
+
+---
+
+## 3. 远程投射物技能
+
+适合：
+
+- 剑气
+- 火球
+- 冰锥
+- 激光段
+- 飞行斩击
+
+```java
+public class ProjectileMotion implements SkillMotion {
+    private Vec3 velocity;
+
+    public ProjectileMotion(Vec3 direction, double speed) {
+        this.velocity = direction.normalize().scale(speed);
+    }
+
+    @Override
+    public void tick(SkillHitboxEntity entity) {
+        entity.setPos(entity.position().add(velocity));
+    }
+}
+```
+
+远程技能只不过是同一个 `SkillHitboxEntity` 使用了不同的 motion。
+
+---
+
+## 4. 原地持续范围技能
+
+适合：
+
+- 地火
+- 冰霜领域
+- 毒雾
+- 雷电场
+
+```java
+public class StaticAreaMotion implements SkillMotion {
+    @Override
+    public void tick(SkillHitboxEntity entity) {
+        // 不动，或者只做动画
+    }
+}
+```
+
+---
+
+# 四、碰撞判定设计
+
+Minecraft 实体的原生碰撞盒是 **AABB，轴对齐包围盒**。  
+但技能经常需要：
+
+- 旋转盒子
+- 扇形
+- 圆形
+- 月牙形
+- 长条剑气
+- 多段轨迹
+
+所以建议你不要完全依赖实体自带的 `getBoundingBox()`，而是自己做技能命中检测。
+
+推荐结构：
+
+```java
+public interface SkillHitbox {
+    AABB getBroadPhaseBox(SkillHitboxEntity entity);
+
+    boolean contains(SkillHitboxEntity entity, Entity target);
+}
+```
+
+---
+
+## 1. 宽松检测：Broad Phase
+
+先用一个大的 AABB 找附近实体。
+
+```java
+AABB searchBox = hitbox.getBroadPhaseBox(this);
+
+List<LivingEntity> targets = level().getEntitiesOfClass(
+    LivingEntity.class,
+    searchBox,
+    target -> canHit(target)
+);
+```
+
+---
+
+## 2. 精确检测：Narrow Phase
+
+再根据技能形状做精确判断。
+
+```java
+for (LivingEntity target : targets) {
+    if (hitbox.contains(this, target)) {
+        applyHit(target);
+    }
+}
+```
+
+---
+
+# 五、几种常见碰撞形状
+
+## 1. 普通盒子 BoxHitbox
+
+适合：
+
+- 剑气
+- 冲撞
+- 矩形斩击
+- 长条攻击
+
+```java
+public class BoxSkillHitbox implements SkillHitbox {
+    @Override
+    public AABB getBroadPhaseBox(SkillHitboxEntity entity) {
+        Vec3 size = entity.getHitboxSize();
+        Vec3 pos = entity.position();
+
+        return new AABB(
+            pos.x - size.x / 2,
+            pos.y - size.y / 2,
+            pos.z - size.z / 2,
+            pos.x + size.x / 2,
+            pos.y + size.y / 2,
+            pos.z + size.z / 2
+        );
+    }
+
+    @Override
+    public boolean contains(SkillHitboxEntity entity, Entity target) {
+        return getBroadPhaseBox(entity).intersects(target.getBoundingBox());
+    }
+}
+```
+
+缺点是不能旋转。  
+如果你想要旋转长条，需要做 OBB。
+
+---
+
+## 2. 旋转盒 OBBHitbox
+
+适合：
+
+- 横向剑气
+- 斜劈
+- 长枪突刺
+- 倾斜攻击范围
+
+思路：
+
+1. 先用大 AABB 找附近实体；
+2. 把目标位置转换到技能实体的局部坐标；
+3. 在局部坐标里判断是否落在盒子范围内。
+
+伪代码：
+
+```java
+public boolean contains(SkillHitboxEntity entity, Entity target) {
+    Vec3 local = worldToLocal(
+        target.position(),
+        entity.position(),
+        entity.getYRot()
+    );
+
+    Vec3 half = entity.getHitboxSize().scale(0.5);
+
+    return Math.abs(local.x) <= half.x
+        && Math.abs(local.y) <= half.y
+        && Math.abs(local.z) <= half.z;
+}
+```
+
+如果要更准确，可以检测目标 AABB 的 8 个角点，而不是只检测目标中心点。
+
+---
+
+## 3. 扇形 ArcHitbox
+
+适合：
+
+- 横劈
+- 半月斩
+- 扇形火焰
+- 圆弧冲击
+
+判断逻辑：
+
+```text
+1. 目标距离是否在半径内
+2. 目标和玩家朝向的夹角是否在扇形角度内
+3. 高度是否在范围内
+```
+
+伪代码：
+
+```java
+public boolean contains(SkillHitboxEntity entity, Entity target) {
+    Vec3 center = entity.position();
+    Vec3 toTarget = target.position().subtract(center);
+
+    double horizontalDistance = Math.sqrt(
+        toTarget.x * toTarget.x + toTarget.z * toTarget.z
+    );
+
+    if (horizontalDistance > entity.getRadius()) {
+        return false;
+    }
+
+    if (Math.abs(toTarget.y) > entity.getHitboxHeight() / 2) {
+        return false;
+    }
+
+    Vec3 forward = entity.getForwardVector();
+    double angle = angleBetweenHorizontal(forward, toTarget);
+
+    return angle <= entity.getArcAngle() / 2;
+}
+```
+
+横劈月牙形模型可以用扇形碰撞，视觉上用月牙模型。
+
+---
+
+## 4. 圆形/球形 SphereHitbox
+
+适合：
+
+- 爆炸
+- 冲击波
+- 雷暴区域
+- 以自身为中心的圆形伤害
+
+```java
+public boolean contains(SkillHitboxEntity entity, Entity target) {
+    double radius = entity.getRadius();
+    return target.distanceToSqr(entity) <= radius * radius;
+}
+```
+
+---
+
+# 六、模型大小和碰撞大小分开控制
+
+你说希望：
+
+> 碰撞大小可以自由调整，模型大小也一样，因为有加成道具增加技能判定范围。
+
+建议不要把模型缩放和碰撞缩放强绑定。  
+可以分为两个参数：
+
+```java
+private Vec3 hitboxScale;
+private Vec3 modelScale;
+```
+
+释放技能时：
+
+```java
+Vec3 finalHitboxSize = definition.baseHitboxSize.multiply(
+    context.hitboxScale,
+    context.hitboxScale,
+    context.hitboxScale
+);
+
+Vec3 finalModelScale = definition.baseModelScale.multiply(
+    context.modelScale,
+    context.modelScale,
+    context.modelScale
+);
+```
+
+如果某些装备只增加判定，不增加视觉，就只改 `hitboxScale`。
+
+如果希望视觉和判定一起变大，就两个都改。
+
+例如：
+
+```java
+float rangeBonus = getSkillRangeBonus(player); // 1.3
+
+skillEntity.setHitboxSize(baseSize.scale(rangeBonus));
+skillEntity.setModelScale(baseModelScale.scale(rangeBonus));
+```
+
+---
+
+# 七、横劈技能的推荐实现方式
+
+你的例子：
+
+> 剑技能横劈会生成一个随横向挥砍动画而移动的碰撞盒，并带有月牙形状的模型。
+
+推荐这样做：
+
+```text
+技能释放
+ ↓
+服务端生成 SkillHitboxEntity
+ ↓
+SkillHitboxEntity 的 motion = AttachedSwingMotion
+ ↓
+每 tick 根据进度计算：
+   - 当前角度
+   - 当前相对玩家的位置
+   - 当前旋转
+ ↓
+碰撞盒随着角度移动
+ ↓
+客户端根据实体位置/旋转渲染月牙模型
+```
+
+横劈轨迹示意：
+
+```text
+tick 0:   玩家左前方
+tick 4:   玩家正前方
+tick 8:   玩家右前方
+tick 12:  消失
+```
+
+运动公式大概：
+
+```java
+float progress = age / (float) duration;
+
+float startAngle = -70F;
+float endAngle = 70F;
+
+float currentAngle = Mth.lerp(progress, startAngle, endAngle);
+
+Vec3 forward = caster.getLookAngle();
+Vec3 offset = rotateY(forward.scale(distanceFromCaster), currentAngle);
+
+entity.setPos(
+    caster.getX() + offset.x,
+    caster.getY() + caster.getBbHeight() * 0.6,
+    caster.getZ() + offset.z
+);
+
+entity.setYRot(caster.getYRot() + currentAngle);
+```
+
+如果想更像“月牙斩”，可以让碰撞是扇形，而不是单个盒子。
+
+比如：
+
+```java
+hitboxType = ARC;
+radius = 3.0F * rangeBonus;
+arcAngle = 120F;
+height = 1.5F;
+```
+
+这样视觉是月牙模型，判定是扇形，更合理。
+
+---
+
+# 八、技能实体生成流程
+
+玩家按键释放技能：
+
+```java
+public void castSkill(Player player, SkillDefinition skill) {
+    Level level = player.level();
+
+    if (level.isClientSide) {
+        return;
+    }
+
+    SkillCastContext context = SkillContextBuilder.fromPlayer(player, skill);
+
+    SkillHitboxEntity entity = new SkillHitboxEntity(level);
+
+    entity.setCaster(player);
+    entity.setSkillDefinition(skill);
+    entity.setPosition(player.position());
+    entity.setDirection(player.getLookAngle());
+
+    entity.setHitboxSize(
+        skill.baseHitboxSize.scale(context.hitboxScale)
+    );
+
+    entity.setModelScale(
+        skill.baseModelScale.scale(context.modelScale)
+    );
+
+    entity.setDamage(
+        skill.damage * context.damageMultiplier
+    );
+
+    entity.setMotion(createMotion(skill, context));
+    entity.setHitbox(createHitbox(skill, context));
+
+    level.addFreshEntity(entity);
+}
+```
+
+`createMotion`：
+
+```java
+private SkillMotion createMotion(SkillDefinition skill, SkillCastContext context) {
+    return switch (skill.motionType) {
+        case ATTACHED_SWING -> new AttachedSwingMotion(context.caster);
+        case PROJECTILE -> new ProjectileMotion(context.direction, 1.2 * context.speedMultiplier);
+        case STATIC_AREA -> new StaticAreaMotion();
+        case FOLLOW_CASTER -> new FollowCasterMotion(context.caster);
+    };
+}
+```
+
+`createHitbox`：
+
+```java
+private SkillHitbox createHitbox(SkillDefinition skill, SkillCastContext context) {
+    return switch (skill.hitboxType) {
+        case BOX -> new BoxSkillHitbox();
+        case OBB -> new OrientedBoxSkillHitbox();
+        case ARC -> new ArcSkillHitbox();
+        case SPHERE -> new SphereSkillHitbox();
+    };
+}
+```
+
+---
+
+# 九、命中处理
+
+建议给技能实体维护一个已命中目标集合。
+
+```java
+private Set<UUID> hitEntities = new HashSet<>();
+```
+
+每 tick 检测命中：
+
+```java
+private void checkHitEntities() {
+    AABB searchBox = hitbox.getBroadPhaseBox(this);
+
+    List<LivingEntity> targets = level().getEntitiesOfClass(
+        LivingEntity.class,
+        searchBox,
+        target -> canHit(target)
+    );
+
+    for (LivingEntity target : targets) {
+        if (!hitbox.contains(this, target)) {
+            continue;
+        }
+
+        if (definition.hitOncePerTarget && hitEntities.contains(target.getUUID())) {
+            continue;
+        }
+
+        applyHit(target);
+        hitEntities.add(target.getUUID());
+    }
+}
+```
+
+`canHit` 里排除：
+
+```java
+private boolean canHit(LivingEntity target) {
+    if (target == getCaster()) return false;
+    if (!target.isAlive()) return false;
+    if (target.isSpectator()) return false;
+
+    // 如果有队伍/阵营系统，在这里判断
+    if (isAlly(getCaster(), target)) return false;
+
+    return true;
+}
+```
+
+伤害：
+
+```java
+private void applyHit(LivingEntity target) {
+    LivingEntity caster = getCaster();
+
+    DamageSource source = level()
+        .damageSources()
+        .mobAttack(caster);
+
+    target.hurt(source, this.damage);
+
+    // 击退、点燃、冰冻、流血等都可以在这里扩展
+    applyExtraEffects(target);
+}
+```
+
+如果是 1.20+ Forge/Fabric，`DamageSource` 的写法会根据版本略有不同。
+
+---
+
+# 十、客户端模型渲染
+
+技能实体在客户端只负责渲染。
+
+如果你用原版 EntityRenderer，大概这样：
+
+```java
+public class SkillHitboxRenderer extends EntityRenderer<SkillHitboxEntity> {
+    @Override
+    public void render(
+        SkillHitboxEntity entity,
+        float entityYaw,
+        float partialTicks,
+        PoseStack poseStack,
+        MultiBufferSource buffer,
+        int packedLight
+    ) {
+        poseStack.pushPose();
+
+        Vec3 scale = entity.getModelScale();
+
+        poseStack.scale(
+            (float) scale.x,
+            (float) scale.y,
+            (float) scale.z
+        );
+
+        // 根据 entity 的旋转渲染模型
+        // render model...
+
+        poseStack.popPose();
+    }
+}
+```
+
+如果你想做复杂模型和动画，推荐：
+
+- GeckoLib
+- 自定义 baked model
+- OBJ/GLTF 模型加载器
+- 原版 BlockModel/EntityModel
+
+对于“月牙斩”这类技能，用 GeckoLib 会比较舒服：
+
+```text
+SkillHitboxEntity
+ ├─ 服务端存在，用于判定
+ └─ 客户端 GeckoLib Renderer 播放月牙出现、拉伸、消散动画
+```
+
+---
+
+# 十一、同步数据
+
+碰撞大小、模型大小、技能ID、年龄等数据要同步到客户端。
+
+可以用：
+
+- Forge 的 `SynchedEntityData`
+- Fabric 的 `DataTracker`
+
+例如：
+
+```java
+private static final EntityDataAccessor<Float> HITBOX_SCALE =
+    SynchedEntityData.defineId(SkillHitboxEntity.class, EntityDataSerializers.FLOAT);
+
+private static final EntityDataAccessor<Float> MODEL_SCALE =
+    SynchedEntityData.defineId(SkillHitboxEntity.class, EntityDataSerializers.FLOAT);
+
+private static final EntityDataAccessor<String> SKILL_ID =
+    SynchedEntityData.defineId(SkillHitboxEntity.class, EntityDataSerializers.STRING);
+```
+
+定义：
+
+```java
+@Override
+protected void defineSynchedData() {
+    this.entityData.define(HITBOX_SCALE, 1.0F);
+    this.entityData.define(MODEL_SCALE, 1.0F);
+    this.entityData.define(SKILL_ID, "");
+}
+```
+
+设置：
+
+```java
+public void setModelScale(float scale) {
+    this.entityData.set(MODEL_SCALE, scale);
+}
+```
+
+客户端渲染时读取：
+
+```java
+float scale = entity.getModelScale();
+```
+
+---
+
+# 十二、是否需要真的修改 Entity 的 BoundingBox？
+
+不建议完全依赖实体自身的 `BoundingBox`。原因：
+
+1. Minecraft 的实体碰撞盒是 AABB，不能旋转；
+2. 很多技能不是矩形；
+3. 横劈这类技能的判定更适合自定义计算；
+4. 动态修改实体尺寸可能会带来同步和碰撞问题；
+5. 技能实体通常不需要和方块产生真实物理碰撞。
+
+推荐做法：
+
+```text
+实体本身可以是一个小的、无碰撞、不可推动的实体。
+真正的技能判定使用自定义 SkillHitbox 系统。
+```
+
+例如：
+
+```java
+@Override
+public boolean isPickable() {
+    return false;
+}
+
+@Override
+public boolean isPushable() {
+    return false;
+}
+
+@Override
+public boolean canCollideWith(Entity entity) {
+    return false;
+}
+```
+
+然后服务端每 tick 主动查找附近实体。
+
+---
+
+# 十三、碰撞和方块的关系
+
+远程技能可能需要撞墙消失。
+
+可以在运动后做 raycast：
+
+```java
+ClipContext context = new ClipContext(
+    oldPos,
+    newPos,
+    ClipContext.Block.COLLIDER,
+    ClipContext.Fluid.NONE,
+    this
+);
+
+BlockHitResult result = level().clip(context);
+
+if (result.getType() != HitResult.Type.MISS) {
+    onHitBlock(result);
+}
+```
+
+远程剑气：
+
+```java
+if (hitBlock) {
+    discard();
+}
+```
+
+火球：
+
+```java
+if (hitBlock) {
+    explode();
+    discard();
+}
+```
+
+穿墙技能：
+
+```java
+// 不做方块检测即可
+```
+
+---
+
+# 十四、推荐的包结构
+
+可以这样组织：
+
+```text
+com.yourmod.skill
+ ├─ SkillDefinition.java
+ ├─ SkillRegistry.java
+ ├─ SkillCastContext.java
+ ├─ SkillCaster.java
+ │
+ ├─ entity
+ │   ├─ SkillHitboxEntity.java
+ │   └─ SkillEntityTypes.java
+ │
+ ├─ motion
+ │   ├─ SkillMotion.java
+ │   ├─ AttachedSwingMotion.java
+ │   ├─ ProjectileMotion.java
+ │   ├─ StaticAreaMotion.java
+ │   └─ FollowCasterMotion.java
+ │
+ ├─ hitbox
+ │   ├─ SkillHitbox.java
+ │   ├─ BoxSkillHitbox.java
+ │   ├─ OrientedBoxSkillHitbox.java
+ │   ├─ ArcSkillHitbox.java
+ │   └─ SphereSkillHitbox.java
+ │
+ ├─ effect
+ │   ├─ SkillEffect.java
+ │   ├─ DamageEffect.java
+ │   ├─ KnockbackEffect.java
+ │   ├─ IgniteEffect.java
+ │   └─ PotionEffect.java
+ │
+ └─ client
+     ├─ SkillHitboxRenderer.java
+     └─ SkillModelManager.java
+```
+
+---
+
+# 十五、后期数据驱动方向
+
+如果你想未来方便加技能，可以把技能配置做成 JSON：
+
+```json
+{
+  "id": "horizontal_slash",
+  "duration": 12,
+  "damage": 8.0,
+  "hitbox": {
+    "type": "arc",
+    "radius": 3.0,
+    "angle": 120,
+    "height": 1.5
+  },
+  "model": {
+    "resource": "yourmod:models/skill/moon_slash.geo.json",
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "motion": {
+    "type": "attached_swing",
+    "start_angle": -70,
+    "end_angle": 70,
+    "distance": 2.0
+  },
+  "hit": {
+    "once_per_target": true
+  }
+}
+```
+
+这样你以后新增技能可以不写新类，只写配置。
+
+---
+
+# 十六、整体推荐实现优先级
+
+建议你按这个顺序做：
+
+## 第一步：做最简单的 SkillHitboxEntity
+
+先实现：
+
+- 生成实体
+- 有生命周期
+- 有基础 AABB 判定
+- 能造成伤害
+- 能渲染一个简单模型或粒子
+
+目标：先做一个“透明伤害盒”。
+
+---
+
+## 第二步：加入模型缩放和碰撞缩放
+
+实现：
+
+```java
+hitboxScale
+modelScale
+```
+
+并且从装备/属性里读取加成。
+
+---
+
+## 第三步：加入 Motion 系统
+
+先做三种：
+
+```text
+STATIC_AREA
+PROJECTILE
+ATTACHED_SWING
+```
+
+这样近战、远程、范围技能都能用了。
+
+---
+
+## 第四步：加入多种 Hitbox
+
+先做：
+
+```text
+BOX
+SPHERE
+ARC
+```
+
+之后再考虑 OBB。
+
+---
+
+## 第五步：做数据驱动
+
+等逻辑稳定后再把配置移到 JSON。
+
+---
+
+# 十七、你的横劈技能可以这样落地
+
+最终横劈技能大概是：
+
+```text
+SkillDefinition:
+  id = horizontal_slash
+  duration = 10 ticks
+  motion = AttachedSwingMotion
+  hitbox = ArcHitbox 或 OBBHitbox
+  model = moon_slash_model
+  baseHitboxSize/radius = 3
+  baseModelScale = 1
+```
+
+释放时：
+
+```text
+玩家按键
+ ↓
+服务端收到释放技能包
+ ↓
+计算装备加成
+ ↓
+生成 SkillHitboxEntity
+ ↓
+设置：
+   caster = 玩家
+   damage = 基础伤害 × 伤害加成
+   hitboxScale = 1 + 范围加成
+   modelScale = 1 + 视觉加成
+   motion = AttachedSwingMotion
+   hitbox = ArcHitbox
+ ↓
+实体存在 10 tick
+ ↓
+每 tick 移动到玩家前方对应角度
+ ↓
+检测扇形范围内敌人
+ ↓
+命中后造成伤害
+ ↓
+客户端渲染月牙模型并播放动画
+ ↓
+时间到后删除实体
+```
+
+---
+
+# 十八、关键建议总结
+
+最推荐的底层设计是：
+
+```text
+所有技能统一生成 SkillHitboxEntity。
+SkillHitboxEntity = 碰撞判定 + 生命周期 + 同步数据。
+Motion 决定它怎么动。
+Hitbox 决定它怎么判定。
+Renderer 决定它长什么样。
+Effect 决定它命中后发生什么。
+```
+
+这样你以后扩展技能会很方便：
+
+```text
+横劈 = AttachedSwingMotion + ArcHitbox + 月牙模型
+剑气 = ProjectileMotion + BoxHitbox + 剑气模型
+爆炸 = StaticAreaMotion + SphereHitbox + 爆炸特效
+毒雾 = StaticAreaMotion + SphereHitbox + 持续伤害效果
+激光 = FollowCasterMotion + OBBHitbox + 光束模型
+旋风斩 = FollowCasterMotion + SphereHitbox + 旋转模型
+```
+
+你真正需要写的新内容会越来越少，只是组合不同模块。

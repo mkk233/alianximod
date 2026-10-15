@@ -18,16 +18,28 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class teShuBlocks extends Block {
+/**
+ * 特殊交互方块 - 右键播放音效的演示方块
+ *
+ * 核心职责：
+ * - 右键交互时播放 Didgeridoo 音效（SoundEvents.NOTE_BLOCK_DIDGERIDOO）
+ * - 物品形态显示自定义 tooltip（tooltip.block.custom.teShuBlocks）
+ *
+ * 用途：用于 zhu_block 注册，作为自定义方块交互的示例
+ */
+public class TeShuBlocks extends Block {
 
-    public teShuBlocks(Properties pProperties) {
+    public TeShuBlocks(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        pLevel.playSound(pPlayer,pPos, SoundEvents.NOTE_BLOCK_DIDGERIDOO.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
-        return InteractionResult.SUCCESS;
+        if (pLevel.isClientSide) {
+            return InteractionResult.SUCCESS;
+        }
+        pLevel.playSound(null, pPos, SoundEvents.NOTE_BLOCK_DIDGERIDOO.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+        return InteractionResult.CONSUME;
     }
 
     @Override

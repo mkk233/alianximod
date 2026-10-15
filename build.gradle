@@ -17,6 +17,26 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
+
+// IntelliJ Gradle sync clones compileJava into `_compileJava_1` and resolves
+// net.minecraft:client:<ver>:extra as a normal Maven artifact. ForgeGradle
+// stores that jar as minecraft_repo/.../client-extra.jar, not in Maven layout.
+// Populate bundeled_repo so IDEA can find client-<ver>-extra.jar.
+def fgCache = new File(gradle.gradleUserHomeDir, 'caches/forge_gradle')
+def extraSrc = new File(fgCache, "minecraft_repo/versions/${minecraft_version}/client-extra.jar")
+def bundledDir = new File(fgCache, "bundeled_repo/net/minecraft/client/${minecraft_version}")
+def extraDst = new File(bundledDir, "client-${minecraft_version}-extra.jar")
+if (extraSrc.exists() && !extraDst.exists()) {
+    bundledDir.mkdirs()
+    java.nio.file.Files.copy(extraSrc.toPath(), extraDst.toPath())
+    def pomSrc = new File(fgCache, "mcp_repo/net/minecraft/client/${minecraft_version}/client-${minecraft_version}.pom")
+    def pomDst = new File(bundledDir, "client-${minecraft_version}.pom")
+    if (pomSrc.exists() && !pomDst.exists()) {
+        java.nio.file.Files.copy(pomSrc.toPath(), pomDst.toPath())
+    }
+    println "Populated ForgeGradle bundeled_repo for net.minecraft:client:${minecraft_version}:extra"
+}
+
 minecraft {
     // The mappings can be changed at any time and must be in the following format.
     // Channel:   Version:
@@ -115,6 +135,17 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     // Put repositories for dependencies here
     // ForgeGradle automatically adds the Forge maven and Maven Central for you
+
+    // Fallback for IntelliJ `_compileJava_1`: resolve client extra jar from FG cache
+    ivy {
+        name = 'ForgeGradleMinecraftExtra'
+        url = uri("${gradle.gradleUserHomeDir}/caches/forge_gradle/minecraft_repo/versions")
+        patternLayout {
+            artifact '[revision]/[artifact]-[classifier].[ext]'
+        }
+        metadataSources { artifact() }
+        content { includeModule 'net.minecraft', 'client' }
+    }
 
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver

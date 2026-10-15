@@ -1,7 +1,6 @@
 package com.bslx.XueXiMod.item.custom;
 
 import com.bslx.XueXiMod.tag.ModTags;
-import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
@@ -17,8 +16,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class teShuItem extends Item {
-    public teShuItem(Properties pProperties) {
+/**
+ * 矿物探测物品 - 右键方块扫描下方矿脉的特殊物品
+ *
+ * 核心职责：
+ * - 右键点击方块时，沿 Y 轴向下扫描最多 64 格
+ * - 检测 ModTags.Blocks.METAL 标签的方块（矿石）
+ * - 找到后向玩家发送坐标消息，未找到则提示"未找到术蚀矿"
+ * - 物品 tooltip 显示提示信息（tip.xueximod.kaungtou）
+ *
+ * 用于 ore_sousuo（矿物探测器）注册
+ */
+public class TeShuItem extends Item {
+    public TeShuItem(Properties pProperties) {
         super(pProperties);
     }
 
@@ -29,7 +39,7 @@ public class teShuItem extends Item {
             Player player = pContext.getPlayer();
             boolean foundBlock  = false;
             //扫描Y轴
-            for (int i = 0; i <=pos.getY()+64 ; i++) {
+            for (int i = 0; i <= 64; i++) {
                 BlockState state = pContext.getLevel().getBlockState(pos.below(i));
                 if (isValueBlock(state)) {
                     outZuoBiao(pos.below(i),player,state.getBlock());   
@@ -38,7 +48,7 @@ public class teShuItem extends Item {
                 }
             }
             if (!foundBlock) {
-                player.sendSystemMessage(Component.literal("未找到钻石矿"));
+                player.sendSystemMessage(Component.literal("未找到术蚀矿"));
             }
         }
 //      右键点击动画
@@ -52,8 +62,8 @@ public class teShuItem extends Item {
     }
 
     private void outZuoBiao(BlockPos blockPos, Player player, Block block) {
-        player.sendSystemMessage(Component.literal("在"+"("+blockPos.getX()+","+blockPos.getY()+","+blockPos.getZ()+
-                ")找到了"+ I18n.get(block.getDescriptionId())));
+        player.sendSystemMessage(Component.translatable("在 (%s,%s,%s) 找到了 %s",
+                blockPos.getX(), blockPos.getY(), blockPos.getZ(), Component.translatable(block.getDescriptionId())));
     }
 
     private boolean isValueBlock(BlockState state) {

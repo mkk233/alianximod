@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shu_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xueximod:shu_raw"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "xueximod:shu_embryo_from_blasting_shu_raw"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_shu_raw",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xueximod:shu_embryo_from_blasting_shu_raw"
+    ]
+  },
+  "sends_telemetry_event": false
+}
