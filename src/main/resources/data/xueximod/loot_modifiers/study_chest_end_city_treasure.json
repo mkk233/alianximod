@@ -1,0 +1,24 @@
+{
+  "type": "xueximod:study_chest",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "entries": [
+    {
+      "weight": 50,
+      "items": ["xueximod:study_slip_transcendent"]
+    },
+    {
+      "weight": 30,
+      "items": ["xueximod:study_slip_mystic"]
+    },
+    {
+      "weight": 10,
+      "items": ["xueximod:shu_embryo"],
+      "attribute": "none"
+    }
+  ]
+}

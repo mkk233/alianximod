@@ -1,0 +1,72 @@
+{
+  "capturedAtUtc": "2026-10-29T16:55:08.415Z",
+  "threads": [
+    {
+      "id": "01a15fdc-4130-7c92-bece-27530e8c54be",
+      "title": "查看项目当前状态",
+      "status": "idle",
+      "updatedAt": 1793288856000
+    },
+    {
+      "id": "01a16acd-7efa-76d2-b978-e9b5cab43525",
+      "title": "用 PS 绘制像素图标",
+      "status": "notLoaded",
+      "updatedAt": 1793236293000
+    },
+    {
+      "id": "01a182d0-9a22-70d2-a7e2-0184ef599fee",
+      "title": "按流程执行待制作术式",
+      "status": "active",
+      "updatedAt": 1793292907
+    },
+    {
+      "id": "01a18210-e9bf-7912-bcb9-10910a911261",
+      "title": "审阅火属性二级玩法设计",
+      "status": "idle",
+      "updatedAt": 1793288817
+    },
+    {
+      "id": "01a18533-3c25-72a3-b1d5-4c197a483f69",
+      "title": "评估永续术式开关设计",
+      "status": "idle",
+      "updatedAt": 1793288173
+    },
+    {
+      "id": "01a17b3e-040c-79b0-a0eb-0c62559eccf6",
+      "title": "整理两个置顶会话的工作流程",
+      "status": "notLoaded",
+      "updatedAt": 1793245688321
+    },
+    {
+      "id": "01a18863-1c80-7332-8510-ef5f0ba43add",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029/implement-task.md and foll...",
+      "status": "notLoaded",
+      "updatedAt": 1793289554
+    },
+    {
+      "id": "01a18863-1c7d-7c63-9528-47b11022b15a",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029/table-task.md and follow t...",
+      "status": "notLoaded",
+      "updatedAt": 1793288788
+    },
+    {
+      "id": "01a18863-1c73-7963-9b73-25636cc6e7b0",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔底座实施-20261029/compile-run-task.md and follo...",
+      "status": "notLoaded",
+      "updatedAt": 1793287996
+    },
+    {
+      "id": "01a18863-1c70-7c01-bea4-755896b89f75",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔底座实施-20261029/compile-task.md and follow th...",
+      "status": "notLoaded",
+      "updatedAt": 1793287416
+    },
+    {
+      "id": "01a18863-1c78-7743-9f83-7e91ddc7e6f3",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029/compile-task.md and follow...",
+      "status": "notLoaded",
+      "updatedAt": 1793287148
+    }
+  ],
+  "note": "状态只作为调度信息；作者停写证据见最终报告和记录，不代表独立源码审查。"
+}

@@ -1,0 +1,6 @@
+{
+  "runtimePartSize": "4x2048",
+  "frames": 16,
+  "edgeSeamMismatch": 0,
+  "downwardShiftMismatch": 0
+}

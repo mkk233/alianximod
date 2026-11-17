@@ -1,0 +1,32 @@
+{
+  "recordedAt": "2026-10-28T09:57:06.858Z",
+  "files": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/PrisonShellRenderer.java",
+      "sha256": "4304e7a4bf892d3b3a23413dd017a17e982e741f18a26c26dc1884283806d9fb",
+      "bytes": 14086,
+      "lastWrite": "2026-10-28T09:52:54.545Z",
+      "owner": "Cursor 68365516-d05c-4da1-9493-0d9b398dd0de; released after repair"
+    },
+    {
+      "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/entity/xueximod/water_prison_billboard.png",
+      "sha256": "8ba44798140ec92fc45b826549cec03cf629bcb7bcd1d34dab750462101e5096",
+      "bytes": 47640,
+      "lastWrite": "2026-10-27T03:19:09.579Z",
+      "owner": "Cursor 68365516-d05c-4da1-9493-0d9b398dd0de; released after repair"
+    }
+  ],
+  "otherSessions": [
+    {
+      "title": "查看项目当前状态",
+      "status": "idle",
+      "latestTurn": "completed; only updated water-prison gameplay design notes; explicitly no code changes"
+    },
+    {
+      "title": "整理两个置顶会话的工作流程",
+      "status": "idle"
+    }
+  ],
+  "processEvidence": "CIM query: no other Cursor CLI / Gradle matching processes",
+  "reviews": "Independent Cursor passed; Codex implementation round2/2 passed"
+}

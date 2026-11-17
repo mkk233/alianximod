@@ -1,0 +1,73 @@
+{
+  "liveSha256": "D6865FF326C5D6B0A024D9E727FEA375E6F61AD9E19138452F66D0A4C0F1F8A3",
+  "matchesCandidate": true,
+  "backupSha256": "5F702287B96EDEB0A87AA132C6585397DFE728B05FC6F3347C7CBF3C5B4443C0",
+  "differentParts": [
+    "xl/worksheets/sheet3.xml"
+  ],
+  "onlyMakingSheet": true,
+  "archiveSame": true,
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "countsUnchanged": true,
+  "unique": true,
+  "locations": {
+    "fire_heat_up": [
+      {
+        "sheet": "制作中",
+        "row": 3
+      }
+    ],
+    "fire_burn": [
+      {
+        "sheet": "制作中",
+        "row": 4
+      }
+    ],
+    "fire_cool": [
+      {
+        "sheet": "制作中",
+        "row": 5
+      }
+    ]
+  },
+  "outsideSheetDataSame": true,
+  "readmeSha256": "E5D6CB0CF9723B20BB4D4BBFDFE03E5CE9F37B989D7CC34290F82D579062C169",
+  "mtime": "2026-10-31T04:16:43.530+08:00",
+  "fireCoolUnchanged": true,
+  "items": {
+    "fire_heat_up": {
+      "row": 3,
+      "nKept": true,
+      "oChanged": true,
+      "dvKeptPrefix": true,
+      "dvEndsWithProgress": true,
+      "rowOpenKept": true,
+      "changedSample": [
+        "O",
+        "DV"
+      ]
+    },
+    "fire_burn": {
+      "row": 4,
+      "nKept": true,
+      "oChanged": true,
+      "dvKeptPrefix": true,
+      "dvEndsWithProgress": true,
+      "rowOpenKept": true,
+      "changedSample": [
+        "O",
+        "DV"
+      ]
+    }
+  },
+  "indexHeat": true,
+  "indexBurn": true,
+  "indexV1Kept": true,
+  "oldPhraseGone": true,
+  "ok": true
+}

@@ -1,0 +1,24 @@
+{
+  "before": {
+    "projectUuid": "51b4a6ea-aa9f-f514-18cb-a1b63cc6d1bb",
+    "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/seed_sow_v3_preview.bbmodel",
+    "hash": "FE1BA079083FA75EE0A9722FC8AF808AAB9F5E1682B9E71E97206A4D440D746C",
+    "reopenExists": false
+  },
+  "reopen": {
+    "atUtc": "2026-11-15T14:06:38.950Z",
+    "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/seed_sow_v3_preview.bbmodel",
+    "name": "seed_sow_v3_preview",
+    "originalUuid": "51b4a6ea-aa9f-f514-18cb-a1b63cc6d1bb",
+    "reopenedUuid": "36ce2ac4-996f-33ad-0ae2-824f11da1f5c",
+    "differentNativeProjectObject": true,
+    "elements": 634,
+    "groups": 17,
+    "textures": 43,
+    "embeddedTextures": 43,
+    "diskBytes": 804998,
+    "diskSha256": "CE7AC65C0406AE3A338FBB5CD7AE98E70D005A245520C7B4603245715DB9852C",
+    "pendingDemoInvalidated": true,
+    "timingDemoNotDelivered": true
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "batch": "待制作-20261031",
+  "stage": "客户端退出后的首次实际编译",
+  "formalReview": "设计 2/2，实现 3/3。本次 compileJava 是首次实际执行，不是第 4 轮正确性复审。",
+  "result": "compile_failed",
+  "previousReport": "final-compile-report.md 与 final-compile-report.json 保留，结论仍是客户端挡住、编译未执行。",
+  "sheetMigrated": false,
+  "sourceModifiedByThisTask": false,
+  "stopped": true,
+  "processCheck": {
+    "checkedAt": "2026-10-31T12:44:08.413+08:00",
+    "client45212": "gone",
+    "daemon12896": "alive, children=0, left idle",
+    "ideaClosed": false,
+    "blockingGradleTasksOrClient": 0
+  },
+  "command": {
+    "text": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "workingDirectory": "D:\\alianximod",
+    "start": "2026-10-31T12:44:11.499+08:00",
+    "end": "2026-10-31T12:44:33.214+08:00",
+    "exitCode": 1,
+    "log": "compile-after-client-close-gradle.log"
+  },
+  "environment": {
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "javaVersion": "17.0.6+9-LTS-190",
+    "gradleReportedJava": "17.0.6",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "wrapper88Present": true,
+    "caches88Present": true,
+    "injectedGradleUserHomeNotUsed": "C:\\Users\\baishang\\AppData\\Local\\Temp\\cursor-sandbox-cache\\a1e1cd1e9998e5817d68469a049d90f3\\gradle",
+    "cacheCopied": false,
+    "networkDownload": false,
+    "gradleProperties": {
+      "org.gradle.jvmargs": "-Xmx3G",
+      "org.gradle.daemon": "false",
+      "modified": false
+    }
+  },
+  "sourceInventory": {
+    "sourceSets": ["src/main/java", "src/main/resources", "src/generated/resources"],
+    "srcMain": {
+      "fileCount": 955,
+      "totalBytes": 10696906,
+      "fileDiffsAgainstFrozenInventory": 0,
+      "frozenTreeSha256": "5e3feb75da9a5de7b47551eebe6a77f99e6012cd0da3f9f6e703241eedba978a",
+      "frozenTreeReproduced": true,
+      "scanTreeSha256": "5f8684f3309caaf9d9ba04af46affee25f8bdaf55af9855e139adfc4aab33192",
+      "scanTreeNote": "Windows PowerShell FullName sort differs from the frozen inventory order. File path, size, and SHA256 diffs are 0.",
+      "contentDiffsDuringCompile": 0,
+      "sameDuringCompile": true
+    },
+    "generatedResources": {
+      "fileCount": 65,
+      "totalBytes": 26708,
+      "treeSha256": "90d855d169745e6f066ce37297834814d6080c739426e27b6844172e86badc9b",
+      "contentDiffsDuringCompile": 0,
+      "sameDuringCompile": true
+    },
+    "before": "compile-after-client-close-src-before.json",
+    "beforeTakenAt": "2026-10-31T12:44:11.127+08:00",
+    "after": "compile-after-client-close-src-after.json",
+    "afterTakenAt": "2026-10-31T12:44:34.803+08:00"
+  },
+  "mechanicalChecksRerun": false,
+  "mechanicalChecksCited": "final-compile-report.md. src/main content matches the frozen inventory. The three previously recorded generated JSON hashes are unchanged.",
+  "compilerSummary": {
+    "errors": 11,
+    "warnings": 38,
+    "failureTask": ":compileJava"
+  },
+  "errors": [
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+      "line": 80,
+      "diagnostic": "错误: 已在类 ResourceEnchantSlice中定义了方法 kindle()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+      "line": 84,
+      "diagnostic": "错误: 已在类 ResourceEnchantSlice中定义了方法 detonate()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+      "line": 88,
+      "diagnostic": "错误: 已在类 ResourceEnchantSlice中定义了方法 trail()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+      "line": 92,
+      "diagnostic": "错误: 已在类 ResourceEnchantSlice中定义了方法 gloom()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+      "line": 96,
+      "diagnostic": "错误: 已在类 ResourceEnchantSlice中定义了方法 breakGround()"
+    },
+    {
+      "author": "A",
+      "ownership": "author-a-ownership.json files",
+      "path": "src/main/java/com/bslx/XueXiMod/item/StaffSkills.java",
+      "line": 126,
+      "diagnostic": "错误: 不兼容的类型: ItemStack无法转换为CompoundTag",
+      "compilerPointsAt": "flattenOldSlots(stack, skills) 的 stack"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+      "line": 70,
+      "diagnostic": "错误: 二元运算符 '||' 的操作数类型错误",
+      "firstType": "boolean",
+      "secondType": "ResourceEnchantSlice",
+      "expression": "kindle || slice.kindle()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+      "line": 71,
+      "diagnostic": "错误: 二元运算符 '||' 的操作数类型错误",
+      "firstType": "boolean",
+      "secondType": "ResourceEnchantSlice",
+      "expression": "detonate || slice.detonate()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+      "line": 72,
+      "diagnostic": "错误: 二元运算符 '||' 的操作数类型错误",
+      "firstType": "boolean",
+      "secondType": "ResourceEnchantSlice",
+      "expression": "trail || slice.trail()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+      "line": 73,
+      "diagnostic": "错误: 二元运算符 '||' 的操作数类型错误",
+      "firstType": "boolean",
+      "secondType": "ResourceEnchantSlice",
+      "expression": "gloom || slice.gloom()"
+    },
+    {
+      "author": "B",
+      "ownership": "author-b-ownership.json exclusive_new",
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+      "line": 74,
+      "diagnostic": "错误: 二元运算符 '||' 的操作数类型错误",
+      "firstType": "boolean",
+      "secondType": "ResourceEnchantSlice",
+      "expression": "breakGround || slice.breakGround()"
+    }
+  ],
+  "authorsWithoutCompilerErrors": ["C", "D"],
+  "notRun": ["build", "jar", "reobf", "datagen", "runClient", "game", "package", "publish", "git commit", "sheet migration", "formal review"],
+  "gameVerified": false
+}

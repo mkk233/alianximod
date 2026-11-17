@@ -1,0 +1,89 @@
+{
+  "task": "liaoli-tip-ring-burst-implement",
+  "author": "23ef4660-da4b-47a8-9341-8ec236ec5cc3",
+  "sourceStopped": true,
+  "textureUnchanged": {
+    "path": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/rear_ring.png",
+    "bytes": 30035,
+    "mtime": "2026-10-29 03:00:23.626",
+    "sha256": "857C37C052D082548A93B0E00868375C973D33B2CDB2C0B477C46C384A1A0CDE"
+  },
+  "nameGate": {
+    "exitCode": 1,
+    "path": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-tip-ring-burst-implement-name-gate.txt",
+    "bytes": 310,
+    "mtime": "2026-10-30 03:09:38.704",
+    "sha256": "DB83036BADBCE8D87DDD44A8974C7A2BE71BE75A7D757E1BD04C3072755F103F",
+    "note": "Only OriginalHumanoid.java historical i and to. Touched files added no new violations."
+  },
+  "report": {
+    "path": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-tip-ring-burst-implement-report.md",
+    "bytes": 12506,
+    "mtime": "2026-10-30 03:10:53.105",
+    "sha256": "BB87AB53EC9E93508732A24077F1D4C142FB9A3FC3C22BA9010B387D7F736681"
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java",
+      "bytes": 16195,
+      "mtime": "2026-10-30 03:06:46.526",
+      "sha256": "23954CA7C4F52400027A6B717587BA211E690961AD0F193BE6E4C2657E58B819"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java",
+      "bytes": 19282,
+      "mtime": "2026-10-30 03:07:00.474",
+      "sha256": "F84350C2D44F8B5A72A9DEEDC24C5895D32B2052D91A8C53F4346620196E0E0A"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliRingTrail.java",
+      "bytes": 5836,
+      "mtime": "2026-10-30 03:08:33.617",
+      "sha256": "54C000A69C5A3BF923DF59B3D2B31C7DC166D211760CE32B8DC5D273F1BC5DEF"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+      "bytes": 28706,
+      "mtime": "2026-10-30 03:06:49.319",
+      "sha256": "A15496FAEBCEA351C10144E63F6A7B71D6FB2619E2E7CDA3E11C914144418C87"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java",
+      "bytes": 8676,
+      "mtime": "2026-10-30 03:07:24.192",
+      "sha256": "729DF1E027F9058828FEF11C4C201DDEC72F305BC2C74F156107B75BAA3ECB01"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+      "bytes": 36773,
+      "mtime": "2026-10-30 03:09:26.837",
+      "sha256": "D04258755B7F2137EFD18FC314C6C5DDC1354872B6A00B481172A0F7DB68CA23"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/FireConsumerPlans.java",
+      "bytes": 4855,
+      "mtime": "2026-10-30 03:06:47.711",
+      "sha256": "6A72DA11B8590F8F518EB4DC33D6D8B7967517FE0D43E1A14F0AA589A1D8586B"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/network/ModNetwork.java",
+      "bytes": 1890,
+      "mtime": "2026-10-30 03:06:49.163",
+      "sha256": "92CC36F72ADC8B3EBDEB9445AF9D6EFF7634585A678DAD701B1F1C44C1A140B1"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/network/LiaoliRingPacket.java",
+      "bytes": 2204,
+      "mtime": "2026-10-30 03:07:42.331",
+      "sha256": "5CE9629BA023644BA9D9C6378055440207C3A691E608C5E10BA3A92AAE1880C7"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/network/LiaoliRingBridge.java",
+      "bytes": 547,
+      "mtime": "2026-10-30 03:07:39.351",
+      "sha256": "4B46E283002CA52C787A2010CEAEF7616AE0FC5A2BBC16F8A9A3EB9F71887301"
+    }
+  ],
+  "notRun": ["compileJava", "tests", "game"],
+  "quota": "设计2/2、实现3/3已用完。本阶段额度已用完，返修结果未追加复审。"
+}

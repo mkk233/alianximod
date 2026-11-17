@@ -1,0 +1,30 @@
+{
+  "frameSize": "96x48",
+  "frameCount": 16,
+  "durationSeconds": 0.8,
+  "alphaValues": [
+    0,
+    255
+  ],
+  "pixelCounts": [
+    10,
+    27,
+    59,
+    241,
+    474,
+    594,
+    550,
+    418,
+    284,
+    169,
+    94,
+    51,
+    22,
+    14,
+    8,
+    0
+  ],
+  "lastFrameTransparent": true,
+  "sheetMismatch": 0,
+  "source": "Photoshop MCP"
+}

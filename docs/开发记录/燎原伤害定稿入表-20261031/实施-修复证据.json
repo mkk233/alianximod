@@ -1,0 +1,32 @@
+{
+  "session_id": "56a5db68-36cf-4f89-b30d-b07c214a5d68",
+  "model": "grok-4.7-high-fast",
+  "review_note": "本阶段额度已用完，返修结果未追加复审",
+  "compile": "未运行",
+  "game": "未运行",
+  "sheet": "未改",
+  "textures_copied": false,
+  "name_gate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exit_code": 1,
+    "touched_files": "无新增违规",
+    "preexisting_untouched": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ]
+  },
+  "sources": [
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/GroundFireFields.java", "sha256": "23CD05185A798C08FB0F57A0637FF8B5C673C3347EE2FF064346597392C4236A", "last_write": "2026-10-31 02:16:55"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/LiaoyuanGroundContact.java", "sha256": "23FE09307330F167EDC27C0A8FC463000383B86A728C11725A3142330EC8F22D", "last_write": "2026-10-31 02:16:44"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/FireConsumerPlans.java", "sha256": "25348D771F9A24001431BA08DF1BA0B351406DF971051D755B9C1A0F1569D051", "last_write": "2026-10-31 02:16:19"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireConsumption.java", "sha256": "4BCAF3931B973E56C22B51DF3C9DD36D7032E2D916E56FD825E7AA3895341668", "last_write": "2026-10-31 02:16:16"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnLedger.java", "sha256": "6027AB1DBBF1BE26FF8CD29C228A8AAD66CB5697CBDBC4675D7C24507DB3557F", "last_write": "2026-10-31 02:16:09"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnCarrier.java", "sha256": "29D76D9F956D1D2B6F943A0CA24908D03FF20B9C7FD44EF4C855051811708914", "last_write": "2026-10-31 02:16:12"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnDispatch.java", "sha256": "C159330518FA3191BD6CC90E0B780C109AD268E5B510C758C4D095EEDEB4DE59", "last_write": "2026-10-31 02:16:11"},
+    {"path": "src/main/java/com/bslx/XueXiMod/visual/fire/FireVisualLayout.java", "sha256": "715BCBC461A9959205BDEAE8959A8D160C0C7B24C91EA7F74A2D10B76079BA3C", "last_write": "2026-10-31 02:16:23"},
+    {"path": "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java", "sha256": "073C209FB620562306DF973C7C3CBDC40C8F4ECBED72E86455AC875E335622BD", "last_write": "2026-10-31 02:20:06"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java", "sha256": "8663FFFBE87A5F0BAA8F61B16D0D485F4D90411D8CAD654CE04F4F5DE96887B0", "last_write": "2026-10-31 02:16:19"},
+    {"path": "src/main/resources/assets/xueximod/lang/zh_cn.json", "sha256": "82610CF5A57107DCBF1EAD81DD1A001BD766139040B3D19F11B964895E7A589E", "last_write": "2026-10-31 02:16:20"},
+    {"path": "src/main/resources/assets/xueximod/lang/en_us.json", "sha256": "11C10B95468D8988F08A51550449572AEDEE7DAE3A0A64ECC68939D1F2859032", "last_write": "2026-10-31 02:16:21"}
+  ]
+}

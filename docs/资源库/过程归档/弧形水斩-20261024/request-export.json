@@ -1,0 +1,8 @@
+{
+  "name": "photoshop_execute_script",
+  "arguments": {
+    "document_id": 2501,
+    "code": "var old=app.preferences.rulerUnits;app.preferences.rulerUnits=Units.PIXELS;\ntry{var doc=app.activeDocument;var out='D:/alianximod/docs/资源库/特效/水流/弧形水斩_v1/';\nfor(var i=0;i<16;i++){\nvar frame;\nif(i==15){frame=app.documents.add(64,64,72,'结束透明帧',NewDocumentMode.RGB,DocumentFill.TRANSPARENT);}else{frame=doc.duplicate('弧形水斩_frame_'+i,true);frame.crop([UnitValue(0,'px'),UnitValue(i*64,'px'),UnitValue(64,'px'),UnitValue((i+1)*64,'px')]);}\nframe.saveAs(new File(out+'单帧/frame_'+('0'+i).slice(-2)+'.png'),new PNGSaveOptions(),true,Extension.LOWERCASE);frame.close(SaveOptions.DONOTSAVECHANGES);app.activeDocument=doc;\n}\napp.runMenuItem(charIDToTypeID('FtOn'));return {ok:true,frames:16};}finally{app.preferences.rulerUnits=old;}\r\n",
+    "timeout_ms": 180000
+  }
+}

@@ -1,0 +1,46 @@
+checked_at=2026-10-31T23:22:38.174+08:00
+java_version=java version "17.0.6" 2023-01-17 LTS | Java(TM) SE Runtime Environment (build 17.0.6+9-LTS-190) | Java HotSpot(TM) 64-Bit Server VM (build 17.0.6+9-LTS-190, mixed mode, sharing) |
+JAVA_HOME_selected=C:\Program Files\Java\jdk-17
+GRADLE_USER_HOME_selected=C:\Users\baishang\.gradle
+process_GRADLE_USER_HOME=C:\Users\baishang\AppData\Local\Temp\cursor-sandbox-cache\427e118d7d31e783f4ca1dab1da77817\gradle
+user_temp_parent=C:\Users\baishang\AppData\Local\Temp
+env_TEMP=C:\Users\baishang\AppData\Local\Temp
+gradle_property=org.gradle.jvmargs=-Xmx3G
+gradle_property=org.gradle.daemon=false
+absolute_build_output_or_project_path=False
+uses_layout_buildDirectory=True
+uncommented_local_lib_reference=True
+handoff src/main/java/com/bslx/XueXiMod/client/DomainWorldRenderer.java ok=True mtime=2026-10-31T23:09:08.796+08:00 sha=0ae28490d170251fb9647fdf284417086b6dbe6df9de36135086acdb53395308
+handoff src/main/java/com/bslx/XueXiMod/network/BatchReleaseCompiler.java ok=True mtime=2026-10-31T23:09:37.115+08:00 sha=10599f046c00aa3b27d3d9c39cc22f2a23b5c1d69545600fffbbc023f776f10d
+handoff src/main/java/com/bslx/XueXiMod/network/DomainWave.java ok=True mtime=2026-10-31T23:09:47.139+08:00 sha=6a3ef42e988efc54dc57ec328df18b41901bef50ad51c5bd3ecfbc439b22d1b2
+handoff src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java ok=True mtime=2026-10-31T23:09:19.048+08:00 sha=f5adcca9a85127a9dee8c481e5f76fbceb53775ecaa739946be9b0a99e87a7f4
+handoff src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java ok=True mtime=2026-10-31T23:09:10.299+08:00 sha=34d8252774bc8b27114fdad9712ef41c961ae1c5bdd03cdfb46280a74a19868c
+handoff src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/GloomDomainEffect.java ok=True mtime=2026-10-31T23:09:50.016+08:00 sha=d68ce2c54ea1fbc93950ae50f12d8ed2f70bd2d95fcff953d83a2aa9df9bd3ab
+handoff src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/ListedRelease.java ok=True mtime=2026-10-31T23:09:44.302+08:00 sha=9c16080d201c6b743e915bb3c490ec157d8fe12ec5d665686e60261082c65828
+handoff src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainDefinition.java ok=True mtime=2026-10-31T23:09:08.656+08:00 sha=510795563e269bb818542843fb1553128c335ad8ce059299a1ae55c87c430bf2
+handoff src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainVisual.java ok=True mtime=2026-10-31T23:09:06.220+08:00 sha=7390246650775c087985aa7ddd808fda5ec95c64e842fc3bb99e28c5b60b705e
+handoff src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java ok=True mtime=2026-10-31T23:09:09.009+08:00 sha=1786fb0983448512c43dc046e2ccafe187628b031740471b4f8a90055ae1df53
+handoff_ok=10/10
+stability_moves=0
+client_count=1
+runclient_wrapper_count=0
+other_project_wrapper_count=0
+idle_daemon_count=0
+dest=C:\Users\baishang\AppData\Local\Temp\xueximod-gloom-compile-20261031-232245-eaea72e5
+dest_existed_before_create=False
+proof_files=1027
+proof_mismatch=0
+compile_mode=isolate
+compile_root=C:\Users\baishang\AppData\Local\Temp\xueximod-gloom-compile-20261031-232245-eaea72e5
+compile_start=2026-10-31T23:22:48.348+08:00
+compile_end=2026-10-31T23:23:26.701+08:00
+compile_exit=0
+origin_src_main_diffs_during=0
+origin_generated_diffs_during=0
+origin_config_diffs_during=0
+copy_input_diffs_after=0
+origin_build_not_used_as_compile_output=True
+input_stable=True
+namegate_rerun=false
+namegate_cited=D report exit 1, OriginalHumanoid.java:165 i and :202 to only
+action=compile_succeeded

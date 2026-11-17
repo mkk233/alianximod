@@ -1,0 +1,58 @@
+{
+  "sha256": "E79B32B27216B167EB8FD16BAC4871ECDA11D04963822F10A0C22E8D2B6740AF",
+  "mtime": "2026-10-30T11:43:06.345+08:00",
+  "bytes": 170997,
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "dimension": "A1:EN15",
+  "validationSample": [
+    "C3:C80",
+    "D3:D80",
+    "J3:J80",
+    "M3:M80",
+    "P3:P80",
+    "Q3:Q80",
+    "R3:R80",
+    "S3:S80"
+  ],
+  "validationCount": 46,
+  "igniteHeaders": {
+    "I": "登记弹速",
+    "R": "弹道",
+    "AH": "接受弹道改写",
+    "AK": "弹道可被修改",
+    "AX": "命中灭火",
+    "BS": "承接来袭弹",
+    "CQ": "屏障承接来袭弹"
+  },
+  "found": [
+    {
+      "sheet": "已完成",
+      "row": 16,
+      "A": "奥术飞弹",
+      "B": "magic_arcane_missile"
+    },
+    {
+      "sheet": "已完成",
+      "row": 22,
+      "A": "火球",
+      "B": "fire_orb"
+    },
+    {
+      "sheet": "已完成",
+      "row": 29,
+      "A": "点火",
+      "B": "magic_ignite"
+    },
+    {
+      "sheet": "待验收",
+      "row": 5,
+      "A": "燎里",
+      "B": "fire_liaoli"
+    }
+  ]
+}

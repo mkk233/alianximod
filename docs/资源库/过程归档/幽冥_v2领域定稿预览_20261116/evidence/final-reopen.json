@@ -1,0 +1,148 @@
+{
+  "createdProject": "dfc5c52c-afcb-951b-9625-7c632d2e16d3",
+  "firstReopen": "97317922-6479-beec-c78f-a74da81002d2",
+  "finalReopen": "0ff57af5-a0c2-9110-a30c-aa29bf43c939",
+  "counts": {
+    "cubes": 199,
+    "groups": 54,
+    "textures": 10,
+    "animations": 1
+  },
+  "savePath": "D:/alianximod/docs/资源库/过程归档/幽冥_v2领域定稿预览_20261116/youming-v2-domain-current-49.bbmodel",
+  "undoActive": false,
+  "projects": [
+    {
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "name": "fire_kindle_v2_candidate_preview",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/blockbench/fire_kindle_v2_candidate_preview.bbmodel"
+    },
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate",
+      "saved": false,
+      "save_path": ""
+    },
+    {
+      "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/blockbench/fire_kindle_v3_redraw_candidate_preview.bbmodel"
+    },
+    {
+      "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/blockbench/fire_kindle_v3_redraw_candidate_preview.bbmodel"
+    },
+    {
+      "uuid": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "name": "nether_blue_palette_art_v1",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/blockbench/nether_blue_palette_art_v1.bbmodel"
+    },
+    {
+      "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel"
+    },
+    {
+      "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel"
+    },
+    {
+      "uuid": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+      "name": "nether_blue_palette_art_v1",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/blockbench/nether_blue_palette_art_v1.bbmodel"
+    },
+    {
+      "uuid": "97d2ac09-d5a8-c46f-1f79-8a8b4e5a7840",
+      "name": "nether_blue_coverage_02",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/blockbench/nether_blue_coverage_02.bbmodel"
+    },
+    {
+      "uuid": "e7791755-13e6-d20d-306a-2a39c483a95b",
+      "name": "nether_blue_coverage_02",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/blockbench/nether_blue_coverage_02.bbmodel"
+    },
+    {
+      "uuid": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "name": "fentian_dual_layer_v4",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/blockbench/fentian_dual_layer_v4.bbmodel"
+    },
+    {
+      "uuid": "fe507dca-652f-f434-b477-f92726a559a7",
+      "name": "fentian_dual_layer_v4",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/blockbench/fentian_dual_layer_v4.bbmodel"
+    },
+    {
+      "uuid": "d9c43eb2-d302-684c-1927-59016d61f4f9",
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/焚天_双层收束同步_v4_1_20261116/blockbench/fentian_dual_layer_burnout_v4_1.bbmodel"
+    },
+    {
+      "uuid": "7fa628fc-3a07-adca-a574-ce45af530859",
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/焚天_双层收束同步_v4_1_20261116/blockbench/fentian_dual_layer_burnout_v4_1.bbmodel"
+    },
+    {
+      "uuid": "2ddaf358-56ef-cd78-263a-4e6afb143ef0",
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/焚天_双层收束同步_v4_1_20261116/blockbench/fentian_dual_layer_burnout_v4_1.bbmodel"
+    },
+    {
+      "uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "name": "fire_detonate_v2_candidate",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引爆_短促火团_v2_20261116/blockbench/fire_detonate_v2_candidate.bbmodel"
+    },
+    {
+      "uuid": "e0d306f9-0f12-bc19-9636-0c56f9f1ce88",
+      "name": "fire_detonate_v2_candidate",
+      "saved": false,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引爆_短促火团_v2_20261116/blockbench/fire_detonate_v2_candidate.bbmodel"
+    },
+    {
+      "uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "name": "fire_detonate_v2_3d_candidate",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/blockbench/fire_detonate_v2_3d_candidate.bbmodel"
+    },
+    {
+      "uuid": "e9eebb72-fed6-5b89-ab9e-3991002b637d",
+      "name": "fire_detonate_v2_3d_candidate",
+      "saved": false,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/blockbench/fire_detonate_v2_3d_candidate.bbmodel"
+    },
+    {
+      "uuid": "dfc5c52c-afcb-951b-9625-7c632d2e16d3",
+      "name": "youming-v2-domain-current-49",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/幽冥_v2领域定稿预览_20261116/youming-v2-domain-current-49.bbmodel"
+    },
+    {
+      "uuid": "97317922-6479-beec-c78f-a74da81002d2",
+      "name": "youming-v2-domain-current-49",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/幽冥_v2领域定稿预览_20261116/youming-v2-domain-current-49.bbmodel"
+    },
+    {
+      "uuid": "0ff57af5-a0c2-9110-a30c-aa29bf43c939",
+      "name": "youming-v2-domain-current-49",
+      "saved": true,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/幽冥_v2领域定稿预览_20261116/youming-v2-domain-current-49.bbmodel"
+    }
+  ],
+  "obsoleteRAF": "Former destination getter throws before any write; Undo.cancelEdit completed; direct synchronous capture completed"
+}

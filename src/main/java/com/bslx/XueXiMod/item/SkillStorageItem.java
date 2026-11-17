@@ -49,7 +49,7 @@ public class SkillStorageItem extends Item {
                 }
 
                 @Override
-                public AbstractContainerMenu createMenu(int containerId, Inventory playerInv, Player p) {
+                public AbstractContainerMenu createMenu(int containerId, Inventory playerInv, Player player) {
                     return new SpellStorageMenu(containerId, playerInv);
                 }
             });

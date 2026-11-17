@@ -1,0 +1,1754 @@
+{
+  "version": "fire_detonate_v2_3d_candidate_20261116",
+  "status": "candidate_pending_user_confirmation",
+  "batchId": "待制作-20261031",
+  "taskId": "fire_detonate_v2_art",
+  "attemptId": "20261116-art-detonate-3d-01",
+  "parentId": "01a1ce06-b681-7c90-b11d-260d3c169911",
+  "authorAgentId": null,
+  "requestedModel": "gpt-6-astra",
+  "requestedEffort": "max",
+  "actualBackendModel": null,
+  "fallback": {
+    "priorModels": [
+      "antigravity/gemini-4-carbon",
+      "antigravity/gemini-4-argon"
+    ],
+    "priorError": "Unknown model",
+    "source": "existing parent-confirmed spawn evidence; not retried this attempt",
+    "quotaOr403Reason": false
+  },
+  "reviewBudget": {
+    "design": "2/2",
+    "implementation": "3/3",
+    "statement": "本阶段额度已用完，返修结果未追加复审"
+  },
+  "input": {
+    "path": "evidence/input-snapshot-used.json",
+    "bytes": 5668,
+    "sha256": "0229D3A6C5E064E12ED6E144982658D2F9E25B6195AE2D2DF4B5A629C7FA0033"
+  },
+  "latestUserWords": "效果不太行，应该参考原版爆炸的效果三维的扩散开而不是简单的二维效果",
+  "mechanicsChanged": false,
+  "units": {
+    "modelUnitsPerBlock": 16,
+    "targetHeightUnits": 28.8,
+    "targetHeightBlocks": 1.8,
+    "groundGridUnits": 16
+  },
+  "axes": {
+    "+X": "target right",
+    "+Y": "up",
+    "+Z": "target front"
+  },
+  "anchor": {
+    "previewRelativeToFeet": [
+      0,
+      16,
+      1.8
+    ],
+    "runtimeProposal": "actual world-space carrier hit point, frozen during one shot",
+    "extraYOffset": 0,
+    "cameraBias": 0
+  },
+  "geometry": {
+    "kind": "26 independent world-positioned camera-facing puff planes",
+    "outerPuffs": 24,
+    "centerPuffs": 2,
+    "singlePlaneThickness": 0,
+    "wholeEffectCameraPlane": false,
+    "seedFile": "evidence/particle-seeds.json"
+  },
+  "texture": {
+    "framePixels": [
+      32,
+      32
+    ],
+    "stripPixels": [
+      32,
+      512
+    ],
+    "frameCount": 16,
+    "sourceFrameMs": 50,
+    "sourceLayers": 2,
+    "layout": "vertical top to bottom",
+    "filter": "nearest",
+    "alpha": "0 or 255",
+    "lastFrameTransparent": true
+  },
+  "timing": {
+    "effectTicks": 20,
+    "effectMs": 1000,
+    "nativeFramesPerSequence": 20,
+    "nativeFrameMs": 50,
+    "previewHoldMs": 650,
+    "loopInGame": false,
+    "loopInPreview": true,
+    "encodedGifFrames": 19,
+    "encodedGifMs": 1650,
+    "localAgeToAtlasFrame": "floor(clamp(age/(lifetime-1),0,1)*15)"
+  },
+  "material": {
+    "nativeShade": false,
+    "nativeEmissive": false,
+    "alphaPreserved": true,
+    "transparent": true,
+    "depthTest": true,
+    "depthWrite": false,
+    "sort": "each puff back to front every frame",
+    "runtimeProposal": "lit particle material preserving alpha, nearest, FULL_BRIGHT; not yet implemented"
+  },
+  "strength": {
+    "spent0": "no extra particles",
+    "samples": [
+      {
+        "spent": 10,
+        "scale": 0.65
+      },
+      {
+        "spent": 50,
+        "scale": 1.0
+      },
+      {
+        "spent": 100,
+        "scale": 1.35
+      }
+    ],
+    "scalesAffect": [
+      "world displacement",
+      "individual puff face dimensions"
+    ],
+    "damageRadius": false,
+    "values1to9": "nonzero visual scale proposed",
+    "above100": "not previewed; mapping requires confirmation"
+  },
+  "variants": {
+    "orange": "textures/explosion_puff_orange-strip.png",
+    "soul": "textures/explosion_puff_soul-strip.png",
+    "sameAlpha": true,
+    "sameGeometryAndTiming": true,
+    "vertexColor": "white"
+  },
+  "model": {
+    "path": "blockbench/fire_detonate_v2_3d_candidate.bbmodel",
+    "sourceUuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+    "reopenedUuid": "e9eebb72-fed6-5b89-ab9e-3991002b637d",
+    "savedGlobalFrame": 7,
+    "nativeAnimationTracks": false,
+    "dynamicMethod": "native GUI pose/UV update then capture; scripts and poses archived",
+    "auxiliaryObjectsExcludedFromRuntime": true
+  },
+  "previews": {
+    "preferred": "previews/detonate_v2_3d_main.gif",
+    "side": "previews/detonate_v2_3d_side.gif",
+    "strength": "previews/detonate_v2_3d_strength.gif",
+    "soul": "previews/detonate_v2_3d_soul.gif",
+    "nativeSource": "actual Desktop Blockbench main viewport",
+    "encoding": "fixed crop per sequence of native captures; no repaint",
+    "cropRecord": "evidence/native-gif-encoding.json"
+  },
+  "protectedExistingProjects": 17,
+  "protectedProjectsUnchanged": true,
+  "oldRejectedCandidateOverwritten": false,
+  "userConfirmed": false,
+  "integrated": false,
+  "compiled": false,
+  "forgeVerified": false,
+  "writeScopeClosed": true,
+  "handoff": "visual-handoff.md",
+  "independentReceipt": {
+    "path": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\detonate-v2-3d-art-preview-20261116.md",
+    "bytes": 5992,
+    "sha256": "31C41DEC667D50A41E87B55531483B9CFB411C01E0D83F45AFD70EE25673CB53"
+  },
+  "verification": {
+    "source_export_match": true,
+    "alpha_equal_both_variants": true,
+    "embedded_texture_pixel_match": [
+      "explosion_puff_orange-strip.png",
+      "explosion_puff_soul-strip.png"
+    ],
+    "fixed_camera_each_sequence": true,
+    "world_positions_identical_across_views_and_variants": true,
+    "all_particles_inactive_final_frame": true,
+    "particle_count_per_nonzero_effect": 26,
+    "frame_measures": [
+      {
+        "frame": 1,
+        "at_ms": 0,
+        "active_puffs": 7,
+        "center_span_blocks_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 2,
+        "at_ms": 50,
+        "active_puffs": 14,
+        "center_span_blocks_xyz": [
+          0.3121,
+          0.3321,
+          0.2979
+        ]
+      },
+      {
+        "frame": 3,
+        "at_ms": 100,
+        "active_puffs": 20,
+        "center_span_blocks_xyz": [
+          0.5388,
+          0.5732,
+          0.5142
+        ]
+      },
+      {
+        "frame": 4,
+        "at_ms": 150,
+        "active_puffs": 26,
+        "center_span_blocks_xyz": [
+          0.7034,
+          0.7483,
+          0.6713
+        ]
+      },
+      {
+        "frame": 5,
+        "at_ms": 200,
+        "active_puffs": 26,
+        "center_span_blocks_xyz": [
+          0.8329,
+          0.8872,
+          0.814
+        ]
+      },
+      {
+        "frame": 6,
+        "at_ms": 250,
+        "active_puffs": 26,
+        "center_span_blocks_xyz": [
+          0.9681,
+          1.0116,
+          1.0311
+        ]
+      },
+      {
+        "frame": 7,
+        "at_ms": 300,
+        "active_puffs": 26,
+        "center_span_blocks_xyz": [
+          1.0702,
+          1.1559,
+          1.2063
+        ]
+      },
+      {
+        "frame": 8,
+        "at_ms": 350,
+        "active_puffs": 26,
+        "center_span_blocks_xyz": [
+          1.1443,
+          1.2895,
+          1.3335
+        ]
+      },
+      {
+        "frame": 9,
+        "at_ms": 400,
+        "active_puffs": 26,
+        "center_span_blocks_xyz": [
+          1.1982,
+          1.3866,
+          1.4259
+        ]
+      },
+      {
+        "frame": 10,
+        "at_ms": 450,
+        "active_puffs": 25,
+        "center_span_blocks_xyz": [
+          1.2373,
+          1.457,
+          1.493
+        ]
+      },
+      {
+        "frame": 11,
+        "at_ms": 500,
+        "active_puffs": 25,
+        "center_span_blocks_xyz": [
+          1.2656,
+          1.5082,
+          1.5417
+        ]
+      },
+      {
+        "frame": 12,
+        "at_ms": 550,
+        "active_puffs": 24,
+        "center_span_blocks_xyz": [
+          1.2863,
+          1.5453,
+          1.5771
+        ]
+      },
+      {
+        "frame": 13,
+        "at_ms": 600,
+        "active_puffs": 24,
+        "center_span_blocks_xyz": [
+          1.3012,
+          1.5723,
+          1.6028
+        ]
+      },
+      {
+        "frame": 14,
+        "at_ms": 650,
+        "active_puffs": 18,
+        "center_span_blocks_xyz": [
+          1.3121,
+          1.5919,
+          1.6214
+        ]
+      },
+      {
+        "frame": 15,
+        "at_ms": 700,
+        "active_puffs": 18,
+        "center_span_blocks_xyz": [
+          1.32,
+          1.6061,
+          1.635
+        ]
+      },
+      {
+        "frame": 16,
+        "at_ms": 750,
+        "active_puffs": 12,
+        "center_span_blocks_xyz": [
+          0.8117,
+          1.4901,
+          1.6448
+        ]
+      },
+      {
+        "frame": 17,
+        "at_ms": 800,
+        "active_puffs": 12,
+        "center_span_blocks_xyz": [
+          0.8166,
+          1.4979,
+          1.6519
+        ]
+      },
+      {
+        "frame": 18,
+        "at_ms": 850,
+        "active_puffs": 6,
+        "center_span_blocks_xyz": [
+          0.8201,
+          1.3881,
+          1.5595
+        ]
+      },
+      {
+        "frame": 19,
+        "at_ms": 900,
+        "active_puffs": 6,
+        "center_span_blocks_xyz": [
+          0.8227,
+          1.3925,
+          1.5644
+        ]
+      },
+      {
+        "frame": 20,
+        "at_ms": 950,
+        "active_puffs": 0,
+        "center_span_blocks_xyz": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "gifs": {
+      "main": {
+        "size": [
+          1200,
+          747
+        ],
+        "encoded_frames": 19,
+        "total_ms": 1650,
+        "effect_ms": 1000,
+        "display_hold_ms": 650
+      },
+      "side": {
+        "size": [
+          1152,
+          716
+        ],
+        "encoded_frames": 19,
+        "total_ms": 1650,
+        "effect_ms": 1000,
+        "display_hold_ms": 650
+      },
+      "strength": {
+        "size": [
+          1054,
+          308
+        ],
+        "encoded_frames": 19,
+        "total_ms": 1650,
+        "effect_ms": 1000,
+        "display_hold_ms": 650
+      },
+      "soul": {
+        "size": [
+          1200,
+          747
+        ],
+        "encoded_frames": 19,
+        "total_ms": 1650,
+        "effect_ms": 1000,
+        "display_hold_ms": 650
+      }
+    },
+    "forge_verified": false
+  },
+  "files": [
+    {
+      "path": "blockbench/fire_detonate_v2_3d_candidate.bbmodel",
+      "bytes": 329624,
+      "sha256": "000F4370871D97886DAF2BB8411AAAB417847A62D3807E6CAD9786C4D0C26E0E"
+    },
+    {
+      "path": "evidence/aseprite-production.json",
+      "bytes": 322,
+      "sha256": "3A039597F2A4402427F3495EEB4B430AEF340EAF26CCA469D119085201E8A2EA"
+    },
+    {
+      "path": "evidence/aseprite-reopen-verification.json",
+      "bytes": 2396,
+      "sha256": "99CCCF615E87F8DDD7DD6B3AC4497D32A1ECCA52C4C6EE6BE32924E4A6229F71"
+    },
+    {
+      "path": "evidence/asset-verification.json",
+      "bytes": 4711,
+      "sha256": "F4AA1C7E8E8ED5D8D2EB57226439AFC64BE385BA14D864B32EE7E58CCB9753FA"
+    },
+    {
+      "path": "evidence/captures_main.json",
+      "bytes": 147776,
+      "sha256": "B4F66445EB92619E9B725531E9C03792B08CD6F73E6BDDC2C498F290F7552320"
+    },
+    {
+      "path": "evidence/captures_side.json",
+      "bytes": 148076,
+      "sha256": "3E3280BCF53CF3460ABD0F2F80880FC725D034C653D085F881111C842D382D5E"
+    },
+    {
+      "path": "evidence/captures_soul.json",
+      "bytes": 147736,
+      "sha256": "F4A49B2058143C3C54222E7D9E09D56059BC0155FC98D290D1D49749259DE142"
+    },
+    {
+      "path": "evidence/captures_strength.json",
+      "bytes": 429095,
+      "sha256": "EF85E0EAE6D72E70CD339F7077F384429F7427DA4711553E4FF700C03B38129E"
+    },
+    {
+      "path": "evidence/input-snapshot-used.json",
+      "bytes": 5668,
+      "sha256": "0229D3A6C5E064E12ED6E144982658D2F9E25B6195AE2D2DF4B5A629C7FA0033"
+    },
+    {
+      "path": "evidence/local-reference.json",
+      "bytes": 3722,
+      "sha256": "B2B0F6CC1A89986B346E4756CC7D097DDBEEFC49DA6946490BC32979DBD179BB"
+    },
+    {
+      "path": "evidence/native-gif-encoding.json",
+      "bytes": 728,
+      "sha256": "385505634DBE1E1B2BC0387F7FB2326D708FF4CB172FAF733C637E18012F38B4"
+    },
+    {
+      "path": "evidence/particle-seeds.json",
+      "bytes": 6122,
+      "sha256": "B844EF6B3DD5414AE043C1FF22C091A2FADACE86BBAEB5B73600C213BCB4C86C"
+    },
+    {
+      "path": "evidence/protected-after.json",
+      "bytes": 6437,
+      "sha256": "FC233FDAE2168CEF86D3E628B41B6D4BFD3985B4308C99F77329C345CF132409"
+    },
+    {
+      "path": "evidence/protected-before.json",
+      "bytes": 6437,
+      "sha256": "FC233FDAE2168CEF86D3E628B41B6D4BFD3985B4308C99F77329C345CF132409"
+    },
+    {
+      "path": "evidence/reopen-validation.json",
+      "bytes": 1142,
+      "sha256": "23DD1A04D91DC3301130C627C29E5D29A824A5A27C6E8D07A78CC4301F096A04"
+    },
+    {
+      "path": "evidence/reopened_native_viewport.png",
+      "bytes": 182854,
+      "sha256": "68E2F64CD711AC5A6A7C346AE13C5A595D0AC237BD04E4F9AD7D2E494F9187FD",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_01.png",
+      "bytes": 175,
+      "sha256": "B55258AADFC43A7809A1B8840C828D63D93ED253C56502322F4D4E79EA4F1ADE",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_02.png",
+      "bytes": 227,
+      "sha256": "129D00DB53BA412696E9156ED63E40D93E2D973F1FBE2155C59C055EB2E7DA27",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_03.png",
+      "bytes": 256,
+      "sha256": "B45D084CED334CBA041065FD2F7A84C135C80465144668AD2FB69538E68B231C",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_04.png",
+      "bytes": 299,
+      "sha256": "12E8B9D96DECF7CF252E48A201C4AC7FABD9BEB2BA9722BA7B3F722088ACFE6C",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_05.png",
+      "bytes": 323,
+      "sha256": "219AD62BAD9E67AE28D35AB0B02EAE00ECBB7B10ECF5B60E01211416AB2E960F",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_06.png",
+      "bytes": 324,
+      "sha256": "260DA0948CA40F25F769FF9D71CC924C6EC4AA4C154882ED4FF3CD3C57627BAB",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_07.png",
+      "bytes": 371,
+      "sha256": "7821413B647D835C341C1842024F57096043249AA991128A0115B8F983AD5644",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_08.png",
+      "bytes": 354,
+      "sha256": "46C925AC41FD010E88FF2E7C278A65F27C6213D39A7B0599AD6B57BE3B269B4C",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_09.png",
+      "bytes": 356,
+      "sha256": "A1A90290A7F3DAE96737965DE4D488ECF25CB2220259C4D6C0365F55DD118152",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_10.png",
+      "bytes": 337,
+      "sha256": "38327D550A0D7D13A80F168ACDE689354673462F2C138DD36B914E63FFA819B6",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_11.png",
+      "bytes": 288,
+      "sha256": "DCCC4B2927C4C6AE3C64FF961526FC6EEAE41B38C73ABED9ABAC01A375BBED80",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_12.png",
+      "bytes": 232,
+      "sha256": "6851E969851C6CB66554936348A251A75395B3D9878CFDFE10EB774C3E9B4B03",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_13.png",
+      "bytes": 221,
+      "sha256": "602D0923CE39965429089B79688037E21321251D957D64363B268922123E3014",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_14.png",
+      "bytes": 146,
+      "sha256": "2487479343494E6C872C9FC499DBABC3D80FA6599A314B16EA9E9FC544132A66",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_15.png",
+      "bytes": 95,
+      "sha256": "5B9828872A214899830938E4D328356992ADFEF76FCF1D48ADC39C04943F7DED",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/orange/puff_16.png",
+      "bytes": 83,
+      "sha256": "9423DBF97E033D531F681D5A6856EAB97F7A0745438D00BF6C3CDA8B4D9A35AC",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_01.png",
+      "bytes": 180,
+      "sha256": "F220C00F589F809A559C4F37D7E473E65E98502B71C574ADEE60A1F9300A75A3",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_02.png",
+      "bytes": 234,
+      "sha256": "724EC07ADAB0F8674567314A8B95A556725D08419F0963EA6C4A3A74D7D156AF",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_03.png",
+      "bytes": 262,
+      "sha256": "DAF28A4A8697B34DEADD495C0ED8B3617046099AB3C52196812E6368FAE92139",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_04.png",
+      "bytes": 303,
+      "sha256": "343C2F5B2577101A0665EEAFCFA18CEB133940EBE77582FE80C438C0A5C65314",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_05.png",
+      "bytes": 326,
+      "sha256": "8E03952136666A4E7D6E044370FC072E8794EAA076E6023525DEB0E4064DB4BE",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_06.png",
+      "bytes": 331,
+      "sha256": "DE6506FC9BDC3F063ABCC22594A0A2CCCD410FE7586325DC7D5B137C713E9F86",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_07.png",
+      "bytes": 380,
+      "sha256": "A20B511C14B60D5CB2328A4273D7E691851F60E148A9C3CF137C4983FBFD4050",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_08.png",
+      "bytes": 354,
+      "sha256": "BDFC38BEF3E45ED1D5B061FE35C23653351C1E63583938A0AC283A86308C8070",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_09.png",
+      "bytes": 355,
+      "sha256": "C7BE45E9721FBD1B3AB886B9B968528CF09665F47C2E03BC282F36E5B28D51BE",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_10.png",
+      "bytes": 335,
+      "sha256": "57AD7DC14BBCA9756586B352DB82B58F05550BB61EB478D692208863B954F204",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_11.png",
+      "bytes": 288,
+      "sha256": "C5B2EE19DA786CC69B427BAF27BF8769C27629C25E82A9C1945FAFCCB6E29BAF",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_12.png",
+      "bytes": 233,
+      "sha256": "D1A120C92E5C009DC8565B20BDBD6241FD44E3EFD7F38ADEAD296D9E74E8344D",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_13.png",
+      "bytes": 221,
+      "sha256": "BFF4CE640DB29415D6356FF5F1664CC17E5040F699FB7A42C99A22C17DAB5CF0",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_14.png",
+      "bytes": 146,
+      "sha256": "8A0DACB2BDFF76E2BEEF150FE3DEE8BE0B97C8C0BE42B70ACE64172145274B2B",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_15.png",
+      "bytes": 95,
+      "sha256": "2F198CBAB1E0A61044D0E27E37D16E20A4F70F561742A2581D14E96FB641C69A",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "frames/soul/puff_16.png",
+      "bytes": 83,
+      "sha256": "9423DBF97E033D531F681D5A6856EAB97F7A0745438D00BF6C3CDA8B4D9A35AC",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "previews/detonate_v2_3d_main.gif",
+      "bytes": 892149,
+      "sha256": "054C4B5F8363DA115F0A9472DCADE60F9E7220E869974CE8BBDCED3DEB80E98B",
+      "width": 1200,
+      "height": 747,
+      "frames": 19
+    },
+    {
+      "path": "previews/detonate_v2_3d_side.gif",
+      "bytes": 852277,
+      "sha256": "179EF78C79B65A637CEF58251EBD3C7273BDB553A4099D84DA7B939251B1B971",
+      "width": 1152,
+      "height": 716,
+      "frames": 19
+    },
+    {
+      "path": "previews/detonate_v2_3d_soul.gif",
+      "bytes": 888849,
+      "sha256": "A65EE62D5D740947C9153DD6890A8514247C58D7466398497B21A1C3F8AABFB3",
+      "width": 1200,
+      "height": 747,
+      "frames": 19
+    },
+    {
+      "path": "previews/detonate_v2_3d_strength.gif",
+      "bytes": 471762,
+      "sha256": "91A893F0D26E9DABD2A369E25E2D5C18BD9B75C10598E446DA213C5587EAF729",
+      "width": 1054,
+      "height": 308,
+      "frames": 19
+    },
+    {
+      "path": "previews/gui_breakup_threequarter.png",
+      "bytes": 196547,
+      "sha256": "0CB43322955BBC1BDE0B9C2E0434257A5E497C7A7215BF5E917865F43831748C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/gui_peak_side_top.png",
+      "bytes": 159168,
+      "sha256": "B98678BF0F33252565AFCA47CAD9F53113320A9D3AC9593245B520A6BFCAC3B1",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/gui_peak_soul.png",
+      "bytes": 183374,
+      "sha256": "D0746803F04971042E261DD290C2719354C277C5E4F5A475AA273E4847668BA3",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/gui_peak_threequarter.png",
+      "bytes": 182846,
+      "sha256": "B92FCF0BA83FDEFCF1EA28B4A3B240B12DF8382FEC37347FD31CCC16EC60F9C2",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/gui_strength_comparison.png",
+      "bytes": 104396,
+      "sha256": "99400365407389F4FEEFA2C4A4978D3AC7707AAEE69F65E256212D9C04F657E0",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_01.png",
+      "bytes": 149097,
+      "sha256": "AC930C34087745DD236F32BE22EA0062AB631CE1638CD7C8B2C3A82B030481EF",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_02.png",
+      "bytes": 156210,
+      "sha256": "A40CD5722066F57AC316B9CB6A81803C287DFA5978428FF6C368574DDA196165",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_03.png",
+      "bytes": 161961,
+      "sha256": "3F2CF8C77A0D5728EA37C02106795DA3E726A8BB394472D81C42482B572A04CF",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_04.png",
+      "bytes": 170658,
+      "sha256": "D5FE0F0DEEA7E4C357A20594AF974DC20AAE265F7D00CB1CA597E7A28B19228C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_05.png",
+      "bytes": 173947,
+      "sha256": "975B29E1296262BFA7B7F0CE4FDEA2AA132C2BC4D77195DED7CFAF45D9F5268F",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_06.png",
+      "bytes": 183109,
+      "sha256": "FDA2216E899E5D5C48992EBEEF05CFE49EC3D9B3711D553D97BE9CEBF9747B5F",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_07.png",
+      "bytes": 182846,
+      "sha256": "B92FCF0BA83FDEFCF1EA28B4A3B240B12DF8382FEC37347FD31CCC16EC60F9C2",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_08.png",
+      "bytes": 190970,
+      "sha256": "B2D605FC40DE5B098F3C2A048FC710C5B728EDD37A691E2523029F0F3416B8D3",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_09.png",
+      "bytes": 188281,
+      "sha256": "7BA76E71E2A1B4E8FC20DA90A575CCC54D2E58CC58ED09FEA2DF44D35D12BFCB",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_10.png",
+      "bytes": 196547,
+      "sha256": "0CB43322955BBC1BDE0B9C2E0434257A5E497C7A7215BF5E917865F43831748C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_11.png",
+      "bytes": 200608,
+      "sha256": "543AB87A7E7753682D43DC60D3549F1EE77591EC1849DDED0F9FFB679999D9C6",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_12.png",
+      "bytes": 207847,
+      "sha256": "18E425FE0085ABB54C60686363672582FEC0D79ACC0B66C5F1EF027BE1EACB21",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_13.png",
+      "bytes": 198927,
+      "sha256": "81BBF34EF20CE8E3175C72E6B3FCB532815FF482F66638093241917987500CFC",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_14.png",
+      "bytes": 192669,
+      "sha256": "800414E6D5E96E5AD9C537ED533C4451534901577F1975541E677FEB2899571B",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_15.png",
+      "bytes": 178653,
+      "sha256": "8FB99F5739522E9E227F9BEFE3A1851FF2745890624ABF6BD1E1261DB86C43F2",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_16.png",
+      "bytes": 171244,
+      "sha256": "F4C41D6A32F670CFDB6A7C81300C37BB95B19571B6B30BA36F89B194D40B3C45",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_17.png",
+      "bytes": 156096,
+      "sha256": "B44B12672BC9AE6970793A8BA1E3D0DE90BC78A11E875C9A9739EE01A1D83AC4",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_18.png",
+      "bytes": 148077,
+      "sha256": "796AB48AF4A6D2DE8A89397E3D4DF83B6E07C598A8FEE2C86151A3314DEC9223",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_19.png",
+      "bytes": 147371,
+      "sha256": "2B08B77F5A8FE1B1D0DBFC318A6C9C2F714FD374C3ED2C183C508115D93AA02A",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main/frame_20.png",
+      "bytes": 147371,
+      "sha256": "2B08B77F5A8FE1B1D0DBFC318A6C9C2F714FD374C3ED2C183C508115D93AA02A",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/main_temporal_contact.png",
+      "bytes": 190495,
+      "sha256": "A3F7A778F82B3A67154F69B90AFED7D018DC194171080CE344C16439E8E86C27",
+      "width": 1440,
+      "height": 650,
+      "frames": 1
+    },
+    {
+      "path": "previews/puff_keyframes.png",
+      "bytes": 21250,
+      "sha256": "0CC01CBC4E573F4724723ED08863903AEE28026A18F0B758C5AC5D3E6C1304F3",
+      "width": 1280,
+      "height": 364,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_01.png",
+      "bytes": 126869,
+      "sha256": "FC0EC44684F77D4D4D3CB93B1C3E443DBBCE78AD4586B7FDE2F25D37827BAFC9",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_02.png",
+      "bytes": 132687,
+      "sha256": "AB2A84528FF1B919FDE97EA4C0EE2755B8DB3ABFD45CA5DAD823E9F05971314A",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_03.png",
+      "bytes": 138118,
+      "sha256": "3CC1D83642854A04CCF04845A681EDAC20CA3CEBA8CAEB73951830FCDA4D8733",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_04.png",
+      "bytes": 147239,
+      "sha256": "A8CE4E3B3A7991D4B57E9D3C2A80672C427E364D57ABAAC01D409EF96020B022",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_05.png",
+      "bytes": 152803,
+      "sha256": "C6385916EAD98D84EDE8EEEC4064047B69DB3C6C25F0C6B8A7FB5037D323666B",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_06.png",
+      "bytes": 163399,
+      "sha256": "7EEA7500FC05B4E44CCB9776341F0AABF45BFEDA710AF5B6B1646FACC6EA4B39",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_07.png",
+      "bytes": 159168,
+      "sha256": "B98678BF0F33252565AFCA47CAD9F53113320A9D3AC9593245B520A6BFCAC3B1",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_08.png",
+      "bytes": 161319,
+      "sha256": "F486F045DE44CF5680F45EEED4ED1C6E4454F89D85E3C6B58536FE0FBED69DC8",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_09.png",
+      "bytes": 162559,
+      "sha256": "7E5B40E76FF31E3DD4E422859F3D2869E7498FDDAD9A6E87350020F9E1920C03",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_10.png",
+      "bytes": 171977,
+      "sha256": "098A7902C25E7DBC7977B0694C63D6747BDB1891118DACA9C6774AA004A3E5A3",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_11.png",
+      "bytes": 178463,
+      "sha256": "C96CC0D1B666B31C4A17D2A1472F900806A9A2AEADA58C5BC7AA0215004C1FEC",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_12.png",
+      "bytes": 183299,
+      "sha256": "1CF27222F7567E17C9B90DB1B266537FB8EEDF2B649222279F4C61C60CF037F4",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_13.png",
+      "bytes": 174093,
+      "sha256": "40935E3505E4966947EAFAEBA36B7B8042474EA591517598D78E0AAC84E6EDA8",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_14.png",
+      "bytes": 167269,
+      "sha256": "4320CE18321179DB1D3D044DA4E8F4C7C4FC160D804A26F61BA7391AB0905314",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_15.png",
+      "bytes": 155957,
+      "sha256": "1F2913831E8EAD09CAD72EE85845C90590E67D121C6B2E1B5F4928534D69B79A",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_16.png",
+      "bytes": 148891,
+      "sha256": "D81A0B173111BA0870B56F8C51F8364DE466C3B2B621145D3F154D707497C988",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_17.png",
+      "bytes": 134619,
+      "sha256": "E50994641F9152DE165DBDE2068E689E6434E48741F07B00D0D923BF659154EB",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_18.png",
+      "bytes": 127083,
+      "sha256": "B9A5BF07073C75DE7D9437A597033E1D3907324601E5C0D42470BD79B3DBE0B9",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_19.png",
+      "bytes": 126285,
+      "sha256": "353829C4A1E066C7C27A0597C2A65F7D6B85EA7A09791F002E7C0100600CE09C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side/frame_20.png",
+      "bytes": 126285,
+      "sha256": "353829C4A1E066C7C27A0597C2A65F7D6B85EA7A09791F002E7C0100600CE09C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/side_temporal_contact.png",
+      "bytes": 192240,
+      "sha256": "CF3A7F5361397DB9F54924144D96EF5C89214784E861FE44808D414862E52EDB",
+      "width": 1440,
+      "height": 650,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_01.png",
+      "bytes": 149197,
+      "sha256": "FE25592326399FADFE9823D8E3058F622D785213E6D5C0931933B2C9CDE3A031",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_02.png",
+      "bytes": 156538,
+      "sha256": "BDCB32C93686C74FC75CB3037818BD1DF8852816CCD8E1F6A551A2982456058B",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_03.png",
+      "bytes": 162596,
+      "sha256": "E44C39AF2E816AE9D0141D268D1E8F09F858A54F8510DD6656D0CBEB7E345DCC",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_04.png",
+      "bytes": 171632,
+      "sha256": "D1FDD6222FC1BED87BE32CDD36C57A801313DF71C7BA56E21FE67851E53A2452",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_05.png",
+      "bytes": 174504,
+      "sha256": "D206F90AF0675EBCC14B390B9F56FC5C48CF4F9A409FCB06493DF11648025637",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_06.png",
+      "bytes": 184466,
+      "sha256": "FFC2D597ED17028777491724664073A2FEFF3DFB2675BF163896F2A43B4277E0",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_07.png",
+      "bytes": 183374,
+      "sha256": "D0746803F04971042E261DD290C2719354C277C5E4F5A475AA273E4847668BA3",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_08.png",
+      "bytes": 191225,
+      "sha256": "BE0D87B09493DBD2A09A86CAC0A854D8CD86DC2FBF0D94742009AC34EB5D616C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_09.png",
+      "bytes": 188336,
+      "sha256": "5D47AD15E7CE739F974DF35A5A22E2FA8FAFF64191BE046C0E48EA40D9AA2AAB",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_10.png",
+      "bytes": 196244,
+      "sha256": "9824E082DC229F4E74A4BA1716E33E1DFF8D6B5482CF58BC1F011782F13F0A8F",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_11.png",
+      "bytes": 199635,
+      "sha256": "828195B6ACE6748435BEB9E659DEAC3F6AF069B674C1E6519723933384FDB5CE",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_12.png",
+      "bytes": 207171,
+      "sha256": "78062B2F49792885F833497A6128493D5F8657FB0B028C650577B287B2306896",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_13.png",
+      "bytes": 198736,
+      "sha256": "12F8C8C1925E7C34E61A1E3FFADC3C787A5D0431470316DF2CE58D8E253AE889",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_14.png",
+      "bytes": 192485,
+      "sha256": "C2E33040674C1EA2EEC631ADE206A9064DCD01FF190D7B755C92D96C32A1A267",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_15.png",
+      "bytes": 178673,
+      "sha256": "E7C5923D2935BC5905664EF577C967E3D9D463EDA06DE3A920DF56971BCC6AE8",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_16.png",
+      "bytes": 171345,
+      "sha256": "FE49BF766275FC26DAC49DE3A3D42608655BAAE82E13D942D20EFE7A4D4F352C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_17.png",
+      "bytes": 155988,
+      "sha256": "DCF464676BDAE3EF17F3565DA3D5FEFAF97328B5F72E33B09829D802ED6BFD3C",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_18.png",
+      "bytes": 148081,
+      "sha256": "F507A3ED397609F478B15EFBFC3F7C7E1543921EA5A39089459A44C1C4ED6013",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_19.png",
+      "bytes": 147371,
+      "sha256": "2B08B77F5A8FE1B1D0DBFC318A6C9C2F714FD374C3ED2C183C508115D93AA02A",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul/frame_20.png",
+      "bytes": 147371,
+      "sha256": "2B08B77F5A8FE1B1D0DBFC318A6C9C2F714FD374C3ED2C183C508115D93AA02A",
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/soul_temporal_contact.png",
+      "bytes": 189199,
+      "sha256": "867AF8505EB4EBAA2D4C3109FDF6252801398FB05AA694CD3AA85CC8E4C869DD",
+      "width": 1440,
+      "height": 650,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_01.png",
+      "bytes": 63523,
+      "sha256": "E0CBA73C8D1D751AB2EC2B22D8C70B005D092784368298C56055AA3E324DC79A",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_02.png",
+      "bytes": 70007,
+      "sha256": "CC2D65F721627F8B29902CF62A83A88C46DF6BC540EBC021600E01770D3D694A",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_03.png",
+      "bytes": 81663,
+      "sha256": "6E2397E67C2BF6091F19003CBB66887AA8AF71CBCF7855CBC557751986698F8C",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_04.png",
+      "bytes": 91213,
+      "sha256": "8479687ACB3F3A94FFC7980E6FA4D03325C4AC191C17FFB7F7BB5D0CCFAC1DF0",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_05.png",
+      "bytes": 96285,
+      "sha256": "25476417197F214ABD03B3DE12D6EAEDA9B28C7649BCD26B74D1FC45CE50FB2D",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_06.png",
+      "bytes": 104045,
+      "sha256": "115330B150B128DC68E6D39D0F9325CE432E184203C062EB3ED3300F230BFEE5",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_07.png",
+      "bytes": 104396,
+      "sha256": "99400365407389F4FEEFA2C4A4978D3AC7707AAEE69F65E256212D9C04F657E0",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_08.png",
+      "bytes": 107921,
+      "sha256": "E8DC8DF1EA3905BCBFB72D3D6CEA988E4A34101A61194A2E164B7578371B32D0",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_09.png",
+      "bytes": 113247,
+      "sha256": "243D155C9DAC887CF7553638543176CB44E4B59DAF5E819EEDFC4B1718D4BFDE",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_10.png",
+      "bytes": 117642,
+      "sha256": "BCB3AABBF3739FCF4999F95C9C0DBC28DBD8FE30E1F10E54A168AB4EC30C343C",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_11.png",
+      "bytes": 119160,
+      "sha256": "A1685E1C730758EC33AA9175B223B7275780428A67870415B544746C1DC6C68C",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_12.png",
+      "bytes": 125007,
+      "sha256": "4A4454ACAEEE8A954932E46DF28F80922AB2F80323FE2AC3EDABAFD8C171014A",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_13.png",
+      "bytes": 118664,
+      "sha256": "54803E828112E507780E62458AED47AEA283349FB6AE29DFA2270069DA48BE13",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_14.png",
+      "bytes": 110027,
+      "sha256": "352A161238F82CEE3CA3CDDD375189DBE73F20CCFCC3FD68EB497D4AE359CAEF",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_15.png",
+      "bytes": 95554,
+      "sha256": "AB850899CAF2FF9FBDE6D37E1F9E3D9BB9AF38FE4634EDBE3334CD88C32729A2",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_16.png",
+      "bytes": 87056,
+      "sha256": "7E46B57AA17DB222365B634D252BC38CE6CD5F776325B468D15D114F2C3415CD",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_17.png",
+      "bytes": 72738,
+      "sha256": "34B6ED664443CF218CB5C78EDE282C13231833F5C6D3A07F846F4DEFBE319D93",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_18.png",
+      "bytes": 62507,
+      "sha256": "CC17F65B919242E0150A0BFDC2B9ADBA11A835A9F097F2C31E0CBEEEA7A388FF",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_19.png",
+      "bytes": 61710,
+      "sha256": "A1E59F70AE7884047562F581E177F0D1585DAE860E85A7AA96BB745FC0467DAA",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength/frame_20.png",
+      "bytes": 61710,
+      "sha256": "A1E59F70AE7884047562F581E177F0D1585DAE860E85A7AA96BB745FC0467DAA",
+      "width": 1600,
+      "height": 780,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength_comparison_detail.png",
+      "bytes": 58488,
+      "sha256": "6463FD63200FE86527BEFEC13467E365BF2204A7A889F30A6A84F1C37D51549D",
+      "width": 1054,
+      "height": 308,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength_temporal_contact.png",
+      "bytes": 150657,
+      "sha256": "797F2873C3F30747C17F829DF3E743DB3F27338266BC0CA791FA256A20B30CEC",
+      "width": 1440,
+      "height": 650,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion.json",
+      "bytes": 492,
+      "sha256": "02E11B7CCD699217F92C4DB0E271DC83925AC22D0D1B99987D64880F71751B15"
+    },
+    {
+      "path": "reference/explosion_0.png",
+      "bytes": 118,
+      "sha256": "14329E0D11D644F07D52698FE1116F5A26864A721F0D77E72D5B1F54A1C572B0",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_1.png",
+      "bytes": 124,
+      "sha256": "2EB32DFC320B85621A91CB6261CF10CCE4D5D755A5B041240F525929D5F703DB",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_10.png",
+      "bytes": 172,
+      "sha256": "E166B8AB4D3821DAE540DAAA8CFB073B44966A87383E26C64A8CA9750301468D",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_11.png",
+      "bytes": 176,
+      "sha256": "4BE5B0241D6091FD8DA22221173251811E9765813D55C39283EC65FFB5A512B4",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_12.png",
+      "bytes": 180,
+      "sha256": "1D4E5B567603E98F6770353FDA86E4DAD6EAEDA60D9E6076FE9AC6927653D7D0",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_13.png",
+      "bytes": 171,
+      "sha256": "FA825B8FDE64D40D5F64138F52468CE6369EE42870C1EA18F64BDE74B5C3E273",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_14.png",
+      "bytes": 144,
+      "sha256": "89AB701DF00D106141803F9F839A463D0023BF3AA9998AB4F74EAEBECEF9B6C8",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_15.png",
+      "bytes": 123,
+      "sha256": "94D0BBC38B84298316831EA5DA745747699036261A57D354CEFD9FE755289A19",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_2.png",
+      "bytes": 125,
+      "sha256": "D42E0E6A94AF9411A401B31C9597E4C153E2946C46C97F30F9ADEC2718743E99",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_3.png",
+      "bytes": 129,
+      "sha256": "EE43AB4B41BD6846DAE98CDAA8D5A2D922C67AC21D73B3395AE170019ABAA440",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_4.png",
+      "bytes": 136,
+      "sha256": "2F2C74554F0B53F8A55AF8503A58F74DE671001799E6C06A20DD22F0F71C8BB5",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_5.png",
+      "bytes": 137,
+      "sha256": "D1884C413FDDE7805D179EDAF9C597A89AFEB7603C6BA4E225361E129BE2DD80",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_6.png",
+      "bytes": 148,
+      "sha256": "B6A40DB64A88E925C10F3E36B38BBE40C06A1370EE3D09258455FA8C9AF28B6C",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_7.png",
+      "bytes": 163,
+      "sha256": "B49D29F5234CF45891AA06A3323F62EF2B1DF789C7648A8555BD2F900EAF0B78",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_8.png",
+      "bytes": 172,
+      "sha256": "88736321F6F3EB3A9BCEB666D2BD41F764A276FEC5AC16C38C480CF558B6989A",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/explosion_9.png",
+      "bytes": 182,
+      "sha256": "02DF87565418792B91A4E93539870D4FA6C2D8F3A2D15B0CAF79C216501F21C2",
+      "width": 32,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "reference/HugeExplosionParticle.java.txt",
+      "bytes": 1851,
+      "sha256": "CEAEEEC9D3A5F97C54BA2A1290CE5D4D4BECA5D46FD0C98CD6D057CF1FEA48AE"
+    },
+    {
+      "path": "reference/HugeExplosionSeedParticle.java.txt",
+      "bytes": 1548,
+      "sha256": "E83E0C238B5AF8D7440EFE0E8801806F172D16447D38A858725F7FA3A256FCBB"
+    },
+    {
+      "path": "reference/vanilla_explosion_board.png",
+      "bytes": 3323,
+      "sha256": "4135B30CABF728EB952477705E601D8CDE2DAADAB96244ACC92815E52254A9CA",
+      "width": 800,
+      "height": 240,
+      "frames": 1
+    },
+    {
+      "path": "scripts/build_scene.js",
+      "bytes": 9397,
+      "sha256": "E004D5BC7AF2646C5C3D5D7C1B8181677F30C37BE1942CF1392118CF2800D711"
+    },
+    {
+      "path": "scripts/capture_sequence.js",
+      "bytes": 2752,
+      "sha256": "E0109780335249E7BE964943D62BFF13959B20CF74CB3B8C7259680C4AF08FF0"
+    },
+    {
+      "path": "scripts/draw_puff.lua",
+      "bytes": 3066,
+      "sha256": "D56FBD164CF34395AE4450F9B10AAE3F26BF4E667325069B6AA31226E9985648"
+    },
+    {
+      "path": "scripts/package_preview.py",
+      "bytes": 2737,
+      "sha256": "06D3A05F9B0E009355A1F9C0DC4B421D872F900F6D3FA9A078E2F4176D00815E"
+    },
+    {
+      "path": "scripts/read_reference.py",
+      "bytes": 2650,
+      "sha256": "96BB96693CA0A454CD6BCF9D03A47B7A5C8385F6BCF499F5C5E9C9E2D8414E93"
+    },
+    {
+      "path": "scripts/reopen_model.js",
+      "bytes": 564,
+      "sha256": "428142303FB277FB625EE3B4DE572DBC77A03A091F407ED03FD3022A9249EA51"
+    },
+    {
+      "path": "scripts/validate_assets.py",
+      "bytes": 3438,
+      "sha256": "B1F8B208589DAACA3439871791AB0084E0E6379ED8BBF145A87023DE83F5661D"
+    },
+    {
+      "path": "scripts/verify_reopened.js",
+      "bytes": 2625,
+      "sha256": "FDC7E0249B414750387E1D4DFE714E471E8861B22FAB8918C1EB498940081DFC"
+    },
+    {
+      "path": "scripts/verify_sources.lua",
+      "bytes": 1127,
+      "sha256": "D0B94B4F2267758380D1B42057C6E7C7DC507E28B8F1657380E66BC2871B926B"
+    },
+    {
+      "path": "scripts/write_manifest.py",
+      "bytes": 5253,
+      "sha256": "9EE2CF2B015388B29E46147E0FB3C64EE91DA27C0D255FBC63841E1706A0BBD9"
+    },
+    {
+      "path": "source/explosion_puff_orange.aseprite",
+      "bytes": 4614,
+      "sha256": "0C3EC19FE36D420F9D909B57AEFBB059D29739E9883D9ED77795B9EF657DBC86"
+    },
+    {
+      "path": "source/explosion_puff_soul.aseprite",
+      "bytes": 4630,
+      "sha256": "EADC6C6DD861261C65A54A0A09C678C2F36C55DF79F5E9E4ECA8B93F4A8C4F73"
+    },
+    {
+      "path": "textures/explosion_puff_orange-strip.png",
+      "bytes": 2179,
+      "sha256": "28666B39C8A80E0A18EB04DDAE7F7422A546B179307DB0990F7F8109ADF8D0F7",
+      "width": 32,
+      "height": 512,
+      "frames": 1
+    },
+    {
+      "path": "textures/explosion_puff_soul-strip.png",
+      "bytes": 2193,
+      "sha256": "C4B656B506B6CB721BCEF39CFED9BA99AA0AE21F2EDED7839057FC3573835856",
+      "width": 32,
+      "height": 512,
+      "frames": 1
+    },
+    {
+      "path": "visual-handoff.md",
+      "bytes": 14512,
+      "sha256": "087AFCD37635BB3A788D25025512D4A8EBB8603AF3C1882E0B84259136CF4270"
+    }
+  ]
+}

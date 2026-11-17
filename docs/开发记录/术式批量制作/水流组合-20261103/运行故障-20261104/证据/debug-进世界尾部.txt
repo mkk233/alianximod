@@ -1,0 +1,8 @@
+来源：D:\alianximod\run\logs\debug.log
+文件最后写入时间：2026-11-04 00:41:28
+全文 1015 行，最后一行与 latest.log 相同。Connection reset 只在第 412 行出现一次，没有第二处。
+
+1008:[0411月2026 00:41:26.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+1009:[0411月2026 00:41:27.852] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+1014:[0411月2026 00:41:28.589] [Server thread/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate
+1015:[0411月2026 00:41:28.876] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：4%

@@ -1,0 +1,58 @@
+{
+  "version": "cool-v2-2d-draft",
+  "created": "2026-11-11",
+  "tool": "Aseprite MCP",
+  "status": "awaiting-2d-feedback",
+  "width": 64,
+  "height": 64,
+  "frames": 16,
+  "frameMs": 75,
+  "oneShotMs": 1200,
+  "files": [
+    {
+      "name": "cool_v2_fragments_strip.png",
+      "bytes": 475,
+      "sha256": "613BAD5DB70BAC856C28D183BE0084E4B1A1B062B637D47B055899962C4FF93E"
+    },
+    {
+      "name": "cool_v2_front_strip.png",
+      "bytes": 5812,
+      "sha256": "79FF0820D09B089354D6B47AEE83AFFD4BD8214B7A0D262EAEBB97C9D0FECF3F"
+    },
+    {
+      "name": "cool_v2_preview.aseprite",
+      "bytes": 25061,
+      "sha256": "DF59E68410323F1D223A9CB98B665D42D535BBEB4B13ECC1B789341567AEDFD7"
+    },
+    {
+      "name": "cool_v2_preview.gif",
+      "bytes": 74950,
+      "sha256": "789D3E482B687943767BF5C6AD767A2E9CD0580CAB2D32048B4EA360C162C4E4"
+    },
+    {
+      "name": "cool_v2_preview.png",
+      "bytes": 4865,
+      "sha256": "10296410BF90E22149CE29E8641AEE24CDD6ED87439C571D38906AAD611DA4B6"
+    },
+    {
+      "name": "cool_v2_rear_strip.png",
+      "bytes": 7695,
+      "sha256": "8E50FC8F212283813F2D8AF424B21F2CD27C960A6B5D3AAAFAB5CC5CCF440494"
+    },
+    {
+      "name": "cool_v2_strip.png",
+      "bytes": 13637,
+      "sha256": "18C45BBF24C7E7AB39332421A75DC7A9345734C144D5CE5132AF0296454B2FD6"
+    },
+    {
+      "name": "cool_v2.aseprite",
+      "bytes": 12706,
+      "sha256": "89421F284FD1D1CE7F5C9DF1204ED9D468D59B2EA6EDA0A2C81793163262FD64"
+    },
+    {
+      "name": "draw_cool_v2.lua",
+      "bytes": 6680,
+      "sha256": "439B00C665BB010E1C145D6EEBCB3C92E1E5D0A3C15200337DAE9A5455BC7F7C"
+    }
+  ]
+}

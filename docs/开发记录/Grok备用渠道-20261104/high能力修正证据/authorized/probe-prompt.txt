@@ -1,0 +1,1 @@
+Do not call any tool. Reply with exactly HIGH_EFFORT_AUTHORIZED_OK and nothing else.

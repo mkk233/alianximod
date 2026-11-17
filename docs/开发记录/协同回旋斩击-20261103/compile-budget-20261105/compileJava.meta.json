@@ -1,0 +1,9 @@
+{
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:\\alianximod",
+  "startedAt": "2026-11-05T01:12:08.472+08:00",
+  "endedAt": "2026-11-05T01:12:43.436+08:00",
+  "durationSeconds": 34.964,
+  "exitCode": 0,
+  "log": "D:\\alianximod\\docs\\开发记录\\协同回旋斩击-20261103\\compile-budget-20261105\\compileJava.log"
+}

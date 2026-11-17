@@ -1,0 +1,69 @@
+{
+  "attempt": "art-v1-bb-finish-20261116",
+  "active": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+  "projects": [
+    {
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "name": "fire_kindle_v2_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/blockbench/fire_kindle_v2_candidate_preview.bbmodel",
+      "contentHash": "61f9da7c33b0c7e0002f96866dcb3116d8037e58f3628e5939325ecc8d326426"
+    },
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate",
+      "saved": false,
+      "elements": 38,
+      "textures": 1,
+      "save_path": "",
+      "contentHash": "fabfaae49af9e0eeada1b7fa3ff48beb81d76ec40694016112ae81d7f8c28b65"
+    },
+    {
+      "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/blockbench/fire_kindle_v3_redraw_candidate_preview.bbmodel",
+      "contentHash": "1c179442cab72fb0a40096414853785894168bc9ced6cadb19246d72ee38cd28"
+    },
+    {
+      "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/blockbench/fire_kindle_v3_redraw_candidate_preview.bbmodel",
+      "contentHash": "e7db0ff99164a1955658657b45c379e3ac1edd496094abb8f54d1660b251f24d"
+    },
+    {
+      "uuid": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "name": "nether_blue_palette_art_v1_20261116",
+      "saved": false,
+      "elements": 0,
+      "textures": 0,
+      "save_path": "",
+      "contentHash": "fc78289a3d106e001d06fb0343f408560a36cb8a7d0f6e24204de9451c05c15a"
+    },
+    {
+      "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "elements": 27,
+      "textures": 3,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel",
+      "contentHash": "bc8155e5b94d448f95ba21ce0f5003da202e708686bab7a418e2180fd9fe94d5"
+    },
+    {
+      "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "elements": 27,
+      "textures": 3,
+      "save_path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel",
+      "contentHash": "a252b32ffd58278ad2258195b6a6afccd7729c93993216b5b03c1b66ab633778"
+    }
+  ]
+}

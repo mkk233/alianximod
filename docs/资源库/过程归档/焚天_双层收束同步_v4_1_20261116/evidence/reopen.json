@@ -1,0 +1,120 @@
+{
+  "native_reopen": "Codecs.project.load",
+  "original_project": "7fa628fc-3a07-adca-a574-ce45af530859",
+  "reopened_project": "2ddaf358-56ef-cd78-263a-4e6afb143ef0",
+  "model": "D:/alianximod/docs/资源库/过程归档/焚天_双层收束同步_v4_1_20261116/blockbench/fentian_dual_layer_burnout_v4_1.bbmodel",
+  "model_sha256": "3D9DEB29986BF7A814031BDD84F373FCC524AB5B0EAF453427AA1A924319ED87",
+  "elements": 11,
+  "groups": 3,
+  "textures": [
+    {
+      "name": "aux_mannequin_palette.png",
+      "width": 8,
+      "height": 8,
+      "loaded": true,
+      "error": 0
+    },
+    {
+      "name": "background_burnout_9tick_preview.png",
+      "width": 128,
+      "height": 1296,
+      "loaded": true,
+      "error": 0
+    },
+    {
+      "name": "foreground_fentian_v3-strip.png",
+      "width": 48,
+      "height": 1216,
+      "loaded": true,
+      "error": 0
+    }
+  ],
+  "protected_projects_after": [
+    {
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "name": "fire_kindle_v2_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2
+    },
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate",
+      "saved": false,
+      "elements": 38,
+      "textures": 1
+    },
+    {
+      "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2
+    },
+    {
+      "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2
+    },
+    {
+      "uuid": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "name": "nether_blue_palette_art_v1",
+      "saved": true,
+      "elements": 80,
+      "textures": 18
+    },
+    {
+      "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "elements": 27,
+      "textures": 3
+    },
+    {
+      "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "elements": 27,
+      "textures": 3
+    },
+    {
+      "uuid": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+      "name": "nether_blue_palette_art_v1",
+      "saved": true,
+      "elements": 80,
+      "textures": 18
+    },
+    {
+      "uuid": "97d2ac09-d5a8-c46f-1f79-8a8b4e5a7840",
+      "name": "nether_blue_coverage_02",
+      "saved": true,
+      "elements": 438,
+      "textures": 128
+    },
+    {
+      "uuid": "e7791755-13e6-d20d-306a-2a39c483a95b",
+      "name": "nether_blue_coverage_02",
+      "saved": true,
+      "elements": 438,
+      "textures": 128
+    },
+    {
+      "uuid": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "name": "fentian_dual_layer_v4",
+      "saved": true,
+      "elements": 11,
+      "textures": 3
+    },
+    {
+      "uuid": "fe507dca-652f-f434-b477-f92726a559a7",
+      "name": "fentian_dual_layer_v4",
+      "saved": true,
+      "elements": 11,
+      "textures": 3
+    }
+  ],
+  "protected_observable_summaries_equal": true,
+  "documents_closed": 0
+}

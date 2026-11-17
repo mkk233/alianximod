@@ -1,0 +1,1 @@
+Texture.all.filter(t=>t.name.startsWith("curl_wave")||t.name==="force_water.png").forEach(t=>{const m=t.getOwnMaterial();m.uniforms.SHADE.value=false;});true

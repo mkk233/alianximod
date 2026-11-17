@@ -1,0 +1,48 @@
+PASS base component
+PASS base size
+PASS x2 frozen
+PASS x2 same snapshot
+PASS x2 stays frozen
+PASS x4 frozen
+PASS first member
+PASS second member size
+PASS second member not reused
+PASS dual first
+PASS dual second
+PASS dual first stored
+PASS dual second stored
+PASS compiled dual
+PASS compiled first stays
+PASS compiled second stays
+PASS compiled accessor
+PASS triple copies
+PASS triple one snapshot
+PASS triple scale
+PASS triple shared
+PASS sword skill baseline
+PASS element sword baseline
+PASS crescent own stays
+PASS own times two
+PASS crescent own times base
+PASS gather supplies
+PASS attack does not supply
+PASS element positive two
+PASS element positive four
+PASS zero container two
+PASS zero container four
+PASS none stays base
+PASS forged sword slot
+PASS movement stays base
+PASS universal stays base
+PASS rule kind stays base
+PASS enchantment stays base
+PASS null skill
+PASS empty list
+PASS negative index
+PASS past end
+PASS null member
+PASS null definition
+PASS gather registered magic
+PASS gather blocked from sword type
+assertions=46
+failures=0

@@ -1,0 +1,1 @@
+继续同一author-adapters定位任务和完整messages。前次实际失败是本地工具读取不存在run/config/xueximod-balance.json导致FileNotFoundError，非审批/额度/路由错误，零源码写入。工具已修为返回missing并允许搜索run/config。需要配置文件路径先search实际存在项。沿既有输入完成两项实测问题的必要定位，不新增正式复审。工具返回有缺文件就按证据边界报告，不盲猜配置。

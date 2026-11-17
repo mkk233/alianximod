@@ -1,0 +1,7 @@
+# 同轮补充：剑回收路径的绑定可达性
+
+固定Cursor CLI --model grok-4.7-high-fast，继续只读核验会话，不改文件不编译不测试。本单是实现第2/3轮事实补齐，不另作正式正确性结论。
+
+你刚在check-implementation-2-final.md指出SwordComeEffect→startReturning没有PublicationAttempt回执。请只核对这条路径是否实际可由合法BoundReleasePlan到达：给SwordComeEffect对应全部注册术式的真实id、Technique.baseDamage、ReleaseDefinition.role/kind/操纵能力和直接调用点；对照BindingStructureCompiler的攻击接受谓词，明确可否被捕获为A/B攻击，是否有其他可绑定的正伤术式复用SwordComeEffect或startReturning。不要只见方法缺回执就假定是当前绑定功能漏洞。
+
+前面的read-capability-facts-final.md称正伤且manipulatesSwordEntities为真的是万剑归宗，须区分它和剑来。只读对应定义、注册、捕获谓词和startReturning直接引用，不扩展审查。输出精简精确事实和行号，建议800汉字以内。若该路径当前不可达，明确撤回把它当作本次自动绑定实际反例的表述，不顺手改代码或要求未来功能预防性修复。

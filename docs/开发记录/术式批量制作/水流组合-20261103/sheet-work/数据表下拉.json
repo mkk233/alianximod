@@ -1,0 +1,471 @@
+[
+  {
+    "name": "操作列表",
+    "ref": "数据表!$BJ$4:INDEX(数据表!$BJ$4:$BJ$1000,COUNTA(数据表!$BJ$4:$BJ$1000))",
+    "values": [
+      {
+        "row": 4,
+        "value": "增加"
+      },
+      {
+        "row": 5,
+        "value": "消费"
+      },
+      {
+        "row": 6,
+        "value": "设置"
+      },
+      {
+        "row": 7,
+        "value": "施加"
+      },
+      {
+        "row": 8,
+        "value": "移除"
+      },
+      {
+        "row": 9,
+        "value": "读取"
+      }
+    ],
+    "note": "continuous until blank; INDEX/COUNTA"
+  },
+  {
+    "name": "触发时机列表",
+    "ref": "数据表!$BN$4:INDEX(数据表!$BN$4:$BN$1000,COUNTA(数据表!$BN$4:$BN$1000))",
+    "values": [
+      {
+        "row": 4,
+        "value": "成功施放"
+      },
+      {
+        "row": 5,
+        "value": "出手提交"
+      },
+      {
+        "row": 6,
+        "value": "命中成功"
+      },
+      {
+        "row": 7,
+        "value": "潮印命中成功"
+      },
+      {
+        "row": 8,
+        "value": "领域周期"
+      },
+      {
+        "row": 9,
+        "value": "首次带资源接触"
+      },
+      {
+        "row": 10,
+        "value": "范围选取"
+      },
+      {
+        "row": 11,
+        "value": "主动结束"
+      },
+      {
+        "row": 12,
+        "value": "燃烧结算"
+      }
+    ],
+    "note": "continuous until blank; INDEX/COUNTA"
+  },
+  {
+    "name": "弹道",
+    "ref": "数据表!$A$4:$A$10",
+    "values": [
+      {
+        "row": 4,
+        "value": "直线"
+      },
+      {
+        "row": 5,
+        "value": "垂落"
+      },
+      {
+        "row": 6,
+        "value": "跟随准星"
+      },
+      {
+        "row": 7,
+        "value": "曲线函数"
+      },
+      {
+        "row": 8,
+        "value": "龙卷"
+      },
+      {
+        "row": 9,
+        "value": "抛物线"
+      },
+      {
+        "row": 10,
+        "value": "喷涌"
+      }
+    ]
+  },
+  {
+    "name": "附魔效果键",
+    "ref": "数据表!$AS$4:$AS$8",
+    "values": [
+      {
+        "row": 4,
+        "value": "fire"
+      },
+      {
+        "row": 5,
+        "value": "wood"
+      },
+      {
+        "row": 6,
+        "value": "water"
+      },
+      {
+        "row": 7,
+        "value": "earth"
+      },
+      {
+        "row": 8,
+        "value": "metal"
+      }
+    ]
+  },
+  {
+    "name": "计量单位列表",
+    "ref": "数据表!$BR$4:INDEX(数据表!$BR$4:$BR$1000,COUNTA(数据表!$BR$4:$BR$1000))",
+    "values": [
+      {
+        "row": 4,
+        "value": "每次触发"
+      },
+      {
+        "row": 5,
+        "value": "每条潮印"
+      },
+      {
+        "row": 6,
+        "value": "每目标每次施法"
+      }
+    ],
+    "note": "continuous until blank; INDEX/COUNTA"
+  },
+  {
+    "name": "链上角色",
+    "ref": "数据表!$E$4:$E$16",
+    "values": [
+      {
+        "row": 4,
+        "value": "攻击"
+      },
+      {
+        "row": 5,
+        "value": "动作"
+      },
+      {
+        "row": 6,
+        "value": "落点指定"
+      },
+      {
+        "row": 7,
+        "value": "锁定实体"
+      },
+      {
+        "row": 8,
+        "value": "追踪"
+      },
+      {
+        "row": 9,
+        "value": "垂落改写"
+      },
+      {
+        "row": 10,
+        "value": "三维交错"
+      },
+      {
+        "row": 11,
+        "value": "一分为三"
+      },
+      {
+        "row": 12,
+        "value": "双重释放"
+      },
+      {
+        "row": 13,
+        "value": "地表定位"
+      },
+      {
+        "row": 14,
+        "value": "喷涌改写"
+      },
+      {
+        "row": 15,
+        "value": "错时"
+      },
+      {
+        "row": 16,
+        "value": "命中接续"
+      }
+    ]
+  },
+  {
+    "name": "领域边界",
+    "ref": "数据表!$AG$4:$AG$5",
+    "values": [
+      {
+        "row": 4,
+        "value": "封闭"
+      },
+      {
+        "row": 5,
+        "value": "开放"
+      }
+    ]
+  },
+  {
+    "name": "领域外观",
+    "ref": "数据表!$AK$4:$AK$5",
+    "values": [
+      {
+        "row": 4,
+        "value": "体积"
+      },
+      {
+        "row": 5,
+        "value": "重压"
+      }
+    ]
+  },
+  {
+    "name": "曲线函数",
+    "ref": "数据表!$AO$4:$AO$4",
+    "values": [
+      {
+        "row": 4,
+        "value": "water_weeping"
+      }
+    ]
+  },
+  {
+    "name": "是否",
+    "ref": "数据表!$AC$4:$AC$5",
+    "values": [
+      {
+        "row": 4,
+        "value": "是"
+      },
+      {
+        "row": 5,
+        "value": "否"
+      }
+    ]
+  },
+  {
+    "name": "释放标签",
+    "ref": "数据表!$M$4:$M$5",
+    "values": [
+      {
+        "row": 4,
+        "value": "触发"
+      },
+      {
+        "row": 5,
+        "value": "持续"
+      }
+    ]
+  },
+  {
+    "name": "释放种类",
+    "ref": "数据表!$I$4:$I$7",
+    "values": [
+      {
+        "row": 4,
+        "value": "动作"
+      },
+      {
+        "row": 5,
+        "value": "命中体"
+      },
+      {
+        "row": 6,
+        "value": "规则"
+      },
+      {
+        "row": 7,
+        "value": "自身状态"
+      }
+    ]
+  },
+  {
+    "name": "寿命策略列表",
+    "ref": "数据表!$BP$4:INDEX(数据表!$BP$4:$BP$1000,COUNTA(数据表!$BP$4:$BP$1000))",
+    "values": [
+      {
+        "row": 4,
+        "value": "不适用"
+      },
+      {
+        "row": 5,
+        "value": "固定刷新"
+      },
+      {
+        "row": 6,
+        "value": "固定施加"
+      },
+      {
+        "row": 7,
+        "value": "继承剩余"
+      },
+      {
+        "row": 8,
+        "value": "无限"
+      },
+      {
+        "row": 9,
+        "value": "未定"
+      }
+    ],
+    "note": "continuous until blank; INDEX/COUNTA"
+  },
+  {
+    "name": "属性",
+    "ref": "数据表!$U$4:$U$9",
+    "values": [
+      {
+        "row": 4,
+        "value": "无"
+      },
+      {
+        "row": 5,
+        "value": "木"
+      },
+      {
+        "row": 6,
+        "value": "火"
+      },
+      {
+        "row": 7,
+        "value": "水"
+      },
+      {
+        "row": 8,
+        "value": "土"
+      },
+      {
+        "row": 9,
+        "value": "金"
+      }
+    ]
+  },
+  {
+    "name": "术式类型",
+    "ref": "数据表!$Q$4:$Q$9",
+    "values": [
+      {
+        "row": 4,
+        "value": "剑术"
+      },
+      {
+        "row": 5,
+        "value": "动作"
+      },
+      {
+        "row": 6,
+        "value": "法术"
+      },
+      {
+        "row": 7,
+        "value": "通用"
+      },
+      {
+        "row": 8,
+        "value": "领域附魔"
+      },
+      {
+        "row": 9,
+        "value": "附魔"
+      }
+    ]
+  },
+  {
+    "name": "外形",
+    "ref": "数据表!$Y$4:$Y$5",
+    "values": [
+      {
+        "row": 4,
+        "value": "方盒"
+      },
+      {
+        "row": 5,
+        "value": "球体"
+      }
+    ]
+  },
+  {
+    "name": "状态列表",
+    "ref": "数据表!$BV$4:INDEX(数据表!$BV$4:$BV$1000,COUNTA(数据表!$BV$4:$BV$1000))",
+    "values": [
+      {
+        "row": 4,
+        "value": "潮湿"
+      },
+      {
+        "row": 5,
+        "value": "炉心"
+      },
+      {
+        "row": 6,
+        "value": "缓慢"
+      }
+    ],
+    "note": "continuous until blank; INDEX/COUNTA"
+  },
+  {
+    "name": "资源列表",
+    "ref": "数据表!$BT$4:INDEX(数据表!$BT$4:$BT$1000,COUNTA(数据表!$BT$4:$BT$1000))",
+    "values": [
+      {
+        "row": 4,
+        "value": "水势"
+      },
+      {
+        "row": 5,
+        "value": "火种"
+      }
+    ],
+    "note": "continuous until blank; INDEX/COUNTA"
+  },
+  {
+    "name": "作用对象列表",
+    "ref": "数据表!$BL$4:INDEX(数据表!$BL$4:$BL$1000,COUNTA(数据表!$BL$4:$BL$1000))",
+    "values": [
+      {
+        "row": 4,
+        "value": "施术者"
+      },
+      {
+        "row": 5,
+        "value": "命中目标"
+      },
+      {
+        "row": 6,
+        "value": "选定目标"
+      },
+      {
+        "row": 7,
+        "value": "领域内敌对活物"
+      },
+      {
+        "row": 8,
+        "value": "领域内主人或盟友玩家"
+      },
+      {
+        "row": 9,
+        "value": "领域内有效目标"
+      }
+    ],
+    "note": "continuous until blank; INDEX/COUNTA"
+  }
+]

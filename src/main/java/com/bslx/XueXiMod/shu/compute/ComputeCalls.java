@@ -1,0 +1,551 @@
+package com.bslx.XueXiMod.shu.compute;
+
+import com.bslx.XueXiMod.debug.performance.PerfCounter;
+import com.bslx.XueXiMod.debug.performance.PerfMetric;
+import com.bslx.XueXiMod.debug.performance.PerformanceRecorder;
+import com.bslx.XueXiMod.shu.technique.release.Trajectory;
+import com.mojang.logging.LogUtils;
+import java.util.function.IntSupplier;
+import net.minecraft.world.phys.Vec3;
+import org.slf4j.Logger;
+
+/**
+ * 现有单次调用的适配层。默认 Java 直接执行参考公式。
+ * 显式 native 且握手能力具备时，这些单次调用以既有批量 ABI 的 count=1 进入 JNI。
+ * 公开批量入口仍保留条数下限，不把单次调用推迟去凑批。
+ */
+public final class ComputeCalls {
+    private static final Logger LOGGER = LogUtils.getLogger();
+    private static final Object LOG_GATE = new Object();
+    private static volatile boolean logged;
+    private static volatile boolean fallbackLogged;
+
+    private ComputeCalls() {
+    }
+
+    public static String selectionText() {
+        ensureLogged();
+        return ComputeSelection.recordedLine();
+    }
+
+    public static void sampleClosed(Trajectory trajectory, Vec3 origin, Vec3 forward, double speed,
+                                    int lifetimeTicks, int ageTicks, Vec3 targetPoint,
+                                    boolean followCurrentLook, Vec3 currentLook) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int trajectoryCode = mapTrajectory(trajectory);
+            boolean vortexHoldWithoutOrigin = trajectoryCode == ComputeCodes.TRAJECTORY_VORTEX
+                    && origin == null
+                    && vortexHolding(lifetimeTicks, ageTicks);
+            if (origin == null
+                    && !vortexHoldWithoutOrigin
+                    && !(trajectoryCode == ComputeCodes.TRAJECTORY_FOLLOW_LOOK && targetPoint == null)) {
+                throw absentOrigin(origin);
+            }
+            int route = ComputeSelection.liveRoute(ComputeCodes.CAPABILITY_TRAJECTORY);
+            if (route == ComputeSelection.ROUTE_NATIVE) {
+                int outcome = ComputeLiveDispatch.trajectory(
+                        trajectoryCode,
+                        origin == null ? 0 : 1,
+                        origin == null ? 0.0D : origin.x,
+                        origin == null ? 0.0D : origin.y,
+                        origin == null ? 0.0D : origin.z,
+                        forward == null ? 0 : 1,
+                        forward == null ? 0.0D : forward.x,
+                        forward == null ? 0.0D : forward.y,
+                        forward == null ? 0.0D : forward.z,
+                        speed,
+                        lifetimeTicks,
+                        ageTicks,
+                        targetPoint == null ? 0 : 1,
+                        targetPoint == null ? 0.0D : targetPoint.x,
+                        targetPoint == null ? 0.0D : targetPoint.y,
+                        targetPoint == null ? 0.0D : targetPoint.z,
+                        followCurrentLook ? 1 : 0,
+                        currentLook == null ? 0 : 1,
+                        currentLook == null ? 0.0D : currentLook.x,
+                        currentLook == null ? 0.0D : currentLook.y,
+                        currentLook == null ? 0.0D : currentLook.z,
+                        ComputeOutput.current());
+                if (outcome == ComputeLiveDispatch.ACCEPTED) {
+                    clearHeldPosition(vortexHoldWithoutOrigin);
+                    noteNative();
+                    return;
+                }
+                if (outcome == ComputeLiveDispatch.REJECTED) {
+                    writeClosed(trajectoryCode, origin, forward, speed, lifetimeTicks, ageTicks,
+                            targetPoint, followCurrentLook, currentLook);
+                    clearHeldPosition(vortexHoldWithoutOrigin);
+                    noteFallback();
+                    return;
+                }
+            }
+            writeClosed(trajectoryCode, origin, forward, speed, lifetimeTicks, ageTicks,
+                    targetPoint, followCurrentLook, currentLook);
+            clearHeldPosition(vortexHoldWithoutOrigin);
+            if (route == ComputeSelection.ROUTE_MISSING) {
+                noteFallback();
+            } else {
+                noteJava();
+            }
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static Vec3 sampledPosition(Trajectory trajectory, Vec3 origin) {
+        if (trajectory == Trajectory.FOLLOW_LOOK) {
+            return origin;
+        }
+        ComputeOutput sink = ComputeOutput.current();
+        if (sink.positionPresent == 0) {
+            return null;
+        }
+        return new Vec3(sink.positionEast, sink.positionUp, sink.positionSouth);
+    }
+
+    public static Vec3 sampledDirection() {
+        ComputeOutput sink = ComputeOutput.current();
+        return new Vec3(sink.directionEast, sink.directionUp, sink.directionSouth);
+    }
+
+    public static void turnToward(Vec3 direction, Vec3 desiredDirection) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int route = ComputeSelection.liveRoute(ComputeCodes.CAPABILITY_TURN);
+        if (route == ComputeSelection.ROUTE_NATIVE) {
+            int outcome = ComputeLiveDispatch.turn(
+                    direction == null ? 0 : 1,
+                    direction == null ? 0.0D : direction.x,
+                    direction == null ? 0.0D : direction.y,
+                    direction == null ? 0.0D : direction.z,
+                    desiredDirection == null ? 0 : 1,
+                    desiredDirection == null ? 0.0D : desiredDirection.x,
+                    desiredDirection == null ? 0.0D : desiredDirection.y,
+                    desiredDirection == null ? 0.0D : desiredDirection.z,
+                    ComputeOutput.current());
+            if (outcome == ComputeLiveDispatch.ACCEPTED) {
+                noteNative();
+                return;
+            }
+            if (outcome == ComputeLiveDispatch.REJECTED) {
+                writeTurn(direction, desiredDirection);
+                noteFallback();
+                return;
+            }
+        }
+        writeTurn(direction, desiredDirection);
+        if (route == ComputeSelection.ROUTE_MISSING) {
+            noteFallback();
+        } else {
+            noteJava();
+        }
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static Vec3 turnedDirection() {
+        return sampledDirection();
+    }
+
+    public static void trackingStep(Vec3 currentDirection, Vec3 towardTarget, double baseSpeed) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int route = ComputeSelection.liveRoute(ComputeCodes.CAPABILITY_TRACKING_STEP);
+        if (route == ComputeSelection.ROUTE_NATIVE) {
+            int outcome = ComputeLiveDispatch.tracking(
+                    currentDirection == null ? 0 : 1,
+                    currentDirection == null ? 0.0D : currentDirection.x,
+                    currentDirection == null ? 0.0D : currentDirection.y,
+                    currentDirection == null ? 0.0D : currentDirection.z,
+                    towardTarget == null ? 0 : 1,
+                    towardTarget == null ? 0.0D : towardTarget.x,
+                    towardTarget == null ? 0.0D : towardTarget.y,
+                    towardTarget == null ? 0.0D : towardTarget.z,
+                    baseSpeed,
+                    ComputeOutput.current());
+            if (outcome == ComputeLiveDispatch.ACCEPTED) {
+                noteNative();
+                return;
+            }
+            if (outcome == ComputeLiveDispatch.REJECTED) {
+                writeTracking(currentDirection, towardTarget, baseSpeed);
+                noteFallback();
+                return;
+            }
+        }
+        writeTracking(currentDirection, towardTarget, baseSpeed);
+        if (route == ComputeSelection.ROUTE_MISSING) {
+            noteFallback();
+        } else {
+            noteJava();
+        }
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static Vec3 trackingDirection() {
+        return sampledDirection();
+    }
+
+    public static double trackingStepLength() {
+        return ComputeOutput.current().stepLength;
+    }
+
+    public static boolean overlaps(double startX, double startY, double startZ,
+                                   double forwardX, double forwardY, double forwardZ,
+                                   double length, double width, double height,
+                                   double lowerX, double lowerY, double lowerZ,
+                                   double upperX, double upperY, double upperZ) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int route = ComputeSelection.liveRoute(ComputeCodes.CAPABILITY_CORRIDOR_OVERLAPS);
+        if (route == ComputeSelection.ROUTE_NATIVE) {
+            ComputeOutput sink = ComputeOutput.current();
+            int outcome = ComputeLiveDispatch.overlaps(startX, startY, startZ, forwardX, forwardY, forwardZ,
+                    length, width, height, lowerX, lowerY, lowerZ, upperX, upperY, upperZ, sink);
+            if (outcome == ComputeLiveDispatch.ACCEPTED) {
+                boolean overlap = sink.positionPresent != 0;
+                noteNative();
+                return overlap;
+            }
+            if (outcome == ComputeLiveDispatch.REJECTED) {
+                boolean overlap = JavaReference.overlaps(startX, startY, startZ, forwardX, forwardY, forwardZ,
+                        length, width, height, lowerX, lowerY, lowerZ, upperX, upperY, upperZ);
+                noteFallback();
+                return overlap;
+            }
+        }
+        boolean overlap = JavaReference.overlaps(startX, startY, startZ, forwardX, forwardY, forwardZ,
+                length, width, height, lowerX, lowerY, lowerZ, upperX, upperY, upperZ);
+        if (route == ComputeSelection.ROUTE_MISSING) {
+            noteFallback();
+        } else {
+            noteJava();
+        }
+        return overlap;
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static double contactDistance(double startX, double startY, double startZ,
+                                         double unitX, double unitY, double unitZ,
+                                         double centerX, double centerY, double centerZ,
+                                         double alongPad) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int route = ComputeSelection.liveRoute(ComputeCodes.CAPABILITY_CORRIDOR_CONTACT);
+        if (route == ComputeSelection.ROUTE_NATIVE) {
+            ComputeOutput sink = ComputeOutput.current();
+            int outcome = ComputeLiveDispatch.contact(startX, startY, startZ, unitX, unitY, unitZ,
+                    centerX, centerY, centerZ, alongPad, sink);
+            if (outcome == ComputeLiveDispatch.ACCEPTED) {
+                double distance = sink.stepLength;
+                noteNative();
+                return distance;
+            }
+            if (outcome == ComputeLiveDispatch.REJECTED) {
+                double distance = JavaReference.contactDistance(startX, startY, startZ, unitX, unitY, unitZ,
+                        centerX, centerY, centerZ, alongPad);
+                noteFallback();
+                return distance;
+            }
+        }
+        double distance = JavaReference.contactDistance(startX, startY, startZ, unitX, unitY, unitZ,
+                centerX, centerY, centerZ, alongPad);
+        if (route == ComputeSelection.ROUTE_MISSING) {
+            noteFallback();
+        } else {
+            noteJava();
+        }
+        return distance;
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static boolean blocked(double contactDistance, double obstacleDistance) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int route = ComputeSelection.liveRoute(ComputeCodes.CAPABILITY_CORRIDOR_BLOCKED);
+        if (route == ComputeSelection.ROUTE_NATIVE) {
+            ComputeOutput sink = ComputeOutput.current();
+            int outcome = ComputeLiveDispatch.blocked(contactDistance, obstacleDistance, sink);
+            if (outcome == ComputeLiveDispatch.ACCEPTED) {
+                boolean blocks = sink.positionPresent != 0;
+                noteNative();
+                return blocks;
+            }
+            if (outcome == ComputeLiveDispatch.REJECTED) {
+                boolean blocks = JavaReference.blocked(contactDistance, obstacleDistance);
+                noteFallback();
+                return blocks;
+            }
+        }
+        boolean blocks = JavaReference.blocked(contactDistance, obstacleDistance);
+        if (route == ComputeSelection.ROUTE_MISSING) {
+            noteFallback();
+        } else {
+            noteJava();
+        }
+        return blocks;
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static int trajectoryBatch(int count, int[] header, double[] input, double[] output) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int prepared = JavaReference.prepareTrajectory(count, header, input, output);
+            return dispatch(ComputeCodes.CAPABILITY_TRAJECTORY, count, prepared,
+                    () -> XuexiComputeNative.trajectoryBatch(count, header, input, output),
+                    () -> JavaReference.writeTrajectory(count, header, input, output));
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static int turnBatch(int count, int[] header, double[] input, double[] output) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int prepared = JavaReference.prepareTurn(count, header, input, output);
+            return dispatch(ComputeCodes.CAPABILITY_TURN, count, prepared,
+                    () -> XuexiComputeNative.turnBatch(count, header, input, output),
+                    () -> JavaReference.writeTurn(count, header, input, output));
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static int trackingStepBatch(int count, int[] header, double[] input, double[] output) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int prepared = JavaReference.prepareTracking(count, header, input, output);
+            return dispatch(ComputeCodes.CAPABILITY_TRACKING_STEP, count, prepared,
+                    () -> XuexiComputeNative.trackingStepBatch(count, header, input, output),
+                    () -> JavaReference.writeTracking(count, header, input, output));
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static int corridorOverlapsBatch(int count, double[] input, int[] output) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int prepared = JavaReference.prepareOverlaps(count, input, output);
+            return dispatch(ComputeCodes.CAPABILITY_CORRIDOR_OVERLAPS, count, prepared,
+                    () -> XuexiComputeNative.corridorOverlapsBatch(count, input, output),
+                    () -> JavaReference.writeOverlaps(count, input, output));
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static int corridorContactBatch(int count, double[] input, double[] output) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int prepared = JavaReference.prepareContact(count, input, output);
+            return dispatch(ComputeCodes.CAPABILITY_CORRIDOR_CONTACT, count, prepared,
+                    () -> XuexiComputeNative.corridorContactBatch(count, input, output),
+                    () -> JavaReference.writeContact(count, input, output));
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    public static int corridorBlockedBatch(int count, double[] input, int[] output) {
+        ensureLogged();
+        long started = PerformanceRecorder.begin();
+        try {
+            int prepared = JavaReference.prepareBlocked(count, input, output);
+            return dispatch(ComputeCodes.CAPABILITY_CORRIDOR_BLOCKED, count, prepared,
+                    () -> XuexiComputeNative.corridorBlockedBatch(count, input, output),
+                    () -> JavaReference.writeBlocked(count, input, output));
+        } finally {
+            PerformanceRecorder.end(PerfMetric.COMPUTE_BACKEND, started);
+        }
+    }
+
+    private static void writeClosed(int trajectoryCode, Vec3 origin, Vec3 forward, double speed,
+                                    int lifetimeTicks, int ageTicks, Vec3 targetPoint,
+                                    boolean followCurrentLook, Vec3 currentLook) {
+        JavaReference.sampleClosed(
+                trajectoryCode,
+                origin == null ? 0 : 1,
+                origin == null ? 0.0D : origin.x,
+                origin == null ? 0.0D : origin.y,
+                origin == null ? 0.0D : origin.z,
+                forward == null ? 0 : 1,
+                forward == null ? 0.0D : forward.x,
+                forward == null ? 0.0D : forward.y,
+                forward == null ? 0.0D : forward.z,
+                speed,
+                lifetimeTicks,
+                ageTicks,
+                targetPoint == null ? 0 : 1,
+                targetPoint == null ? 0.0D : targetPoint.x,
+                targetPoint == null ? 0.0D : targetPoint.y,
+                targetPoint == null ? 0.0D : targetPoint.z,
+                followCurrentLook ? 1 : 0,
+                currentLook == null ? 0 : 1,
+                currentLook == null ? 0.0D : currentLook.x,
+                currentLook == null ? 0.0D : currentLook.y,
+                currentLook == null ? 0.0D : currentLook.z,
+                ComputeOutput.current());
+    }
+
+    private static void writeTurn(Vec3 direction, Vec3 desiredDirection) {
+        JavaReference.turnToward(
+                direction == null ? 0 : 1,
+                direction == null ? 0.0D : direction.x,
+                direction == null ? 0.0D : direction.y,
+                direction == null ? 0.0D : direction.z,
+                desiredDirection == null ? 0 : 1,
+                desiredDirection == null ? 0.0D : desiredDirection.x,
+                desiredDirection == null ? 0.0D : desiredDirection.y,
+                desiredDirection == null ? 0.0D : desiredDirection.z,
+                ComputeOutput.current());
+    }
+
+    private static void writeTracking(Vec3 currentDirection, Vec3 towardTarget, double baseSpeed) {
+        JavaReference.trackingStep(
+                currentDirection == null ? 0 : 1,
+                currentDirection == null ? 0.0D : currentDirection.x,
+                currentDirection == null ? 0.0D : currentDirection.y,
+                currentDirection == null ? 0.0D : currentDirection.z,
+                towardTarget == null ? 0 : 1,
+                towardTarget == null ? 0.0D : towardTarget.x,
+                towardTarget == null ? 0.0D : towardTarget.y,
+                towardTarget == null ? 0.0D : towardTarget.z,
+                baseSpeed,
+                ComputeOutput.current());
+    }
+
+    private static int mapTrajectory(Trajectory trajectory) {
+        return switch (trajectory) {
+            case STRAIGHT -> ComputeCodes.TRAJECTORY_STRAIGHT;
+            case DROP -> ComputeCodes.TRAJECTORY_DROP;
+            case FOLLOW_LOOK -> ComputeCodes.TRAJECTORY_FOLLOW_LOOK;
+            case FUNCTION -> ComputeCodes.TRAJECTORY_FUNCTION_FALLBACK;
+            case VORTEX -> ComputeCodes.TRAJECTORY_VORTEX;
+            case PARABOLA -> ComputeCodes.TRAJECTORY_PARABOLA;
+            case UPWELL -> ComputeCodes.TRAJECTORY_UPWELL;
+            default -> ComputeCodes.TRAJECTORY_DEFAULT;
+        };
+    }
+
+    private static boolean vortexHolding(int lifetimeTicks, int ageTicks) {
+        int spiralTicks = Math.max(ComputeCodes.VORTEX_SPIRAL_TICK_FLOOR, (lifetimeTicks * 2) / 3);
+        return ageTicks >= spiralTicks;
+    }
+
+    private static void clearHeldPosition(boolean vortexHoldWithoutOrigin) {
+        if (vortexHoldWithoutOrigin) {
+            ComputeOutput.current().positionPresent = 0;
+        }
+    }
+
+    private static NullPointerException absentOrigin(Vec3 origin) {
+        return new NullPointerException(String.valueOf(origin.x));
+    }
+
+    private static int dispatch(int capability, int count, int prepared,
+                                IntSupplier nativeRun, IntSupplier javaRun) {
+        if (prepared != ComputeCodes.STATUS_OK) {
+            return prepared;
+        }
+        if (ComputeSelection.useNative(capability, count)) {
+            try {
+                int nativeStatus = nativeRun.getAsInt();
+                if (nativeStatus == ComputeCodes.STATUS_OK) {
+                    noteNative();
+                    return ComputeCodes.STATUS_OK;
+                }
+                logCallFallback("native-status-" + nativeStatus);
+            } catch (UnsatisfiedLinkError linkError) {
+                ComputeSelection.disableNative("link-failed");
+                logCallFallback(linkError.getMessage() == null ? "link" : linkError.getMessage());
+            }
+            int rewritten = javaRun.getAsInt();
+            if (rewritten == ComputeCodes.STATUS_OK) {
+                noteFallback();
+            }
+            return rewritten;
+        }
+        int rewritten = javaRun.getAsInt();
+        if (rewritten != ComputeCodes.STATUS_OK) {
+            return rewritten;
+        }
+        if (ComputeSelection.missingNativeCapability(capability, count)) {
+            noteFallback();
+        } else {
+            noteJava();
+        }
+        return ComputeCodes.STATUS_OK;
+    }
+
+    private static void ensureLogged() {
+        ComputeSelection.ensureResolved();
+        if (logged) {
+            return;
+        }
+        synchronized (LOG_GATE) {
+            if (logged) {
+                return;
+            }
+            logged = true;
+            LOGGER.info(ComputeSelection.recordedLine());
+        }
+    }
+
+    static void reportStatusFailure(int status) {
+        logCallFallback("native-status-" + status);
+    }
+
+    static void reportLinkFailure(String detail) {
+        logCallFallback(detail);
+    }
+
+    private static void logCallFallback(String detail) {
+        if (fallbackLogged) {
+            return;
+        }
+        synchronized (LOG_GATE) {
+            if (fallbackLogged) {
+                return;
+            }
+            fallbackLogged = true;
+            LOGGER.warn("纯计算后端：native 调用未被接受，已改用 Java 参考实现。后续失败不逐条记录。原因={}", detail);
+        }
+    }
+
+    private static void noteJava() {
+        PerformanceRecorder.add(PerfCounter.COMPUTE_LOGICAL_REQUESTS, 1L);
+        PerformanceRecorder.add(PerfCounter.COMPUTE_JAVA_EXECUTIONS, 1L);
+    }
+
+    private static void noteNative() {
+        PerformanceRecorder.add(PerfCounter.COMPUTE_LOGICAL_REQUESTS, 1L);
+        PerformanceRecorder.add(PerfCounter.COMPUTE_NATIVE_EXECUTIONS, 1L);
+    }
+
+    private static void noteFallback() {
+        PerformanceRecorder.add(PerfCounter.COMPUTE_LOGICAL_REQUESTS, 1L);
+        PerformanceRecorder.add(PerfCounter.COMPUTE_JAVA_FALLBACKS, 1L);
+    }
+}

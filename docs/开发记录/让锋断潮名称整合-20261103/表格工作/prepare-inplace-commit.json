@@ -1,0 +1,25 @@
+{
+  "ready": true,
+  "baselineSha256": "EBBED5631F001E599C9195E2F35DB329B9C7C2BD38FAC70FFFACAE8D04E03B4E",
+  "baselineMtime": "2026-11-03T14:53:27.667",
+  "baselineSize": 111564,
+  "candidate": "D:\\alianximod\\docs\\开发记录\\让锋断潮名称整合-20261103\\表格工作\\候选\\术式制作表-候选-原位保真-20261103-172714-1.xlsx",
+  "candidateSha256": "BACDC2AE3E552DCCB2A600A9F6C147C3FABF70DF81680E1FB3EAA59DD260AE04",
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "backup": "D:\\alianximod\\docs\\开发记录\\让锋断潮名称整合-20261103\\表格工作\\备份\\术式制作表-原位-20261103-172443-1.xlsx",
+  "rows": {
+    "tide_sever": {
+      "sheet": "制作中",
+      "row": 16,
+      "from": "断潮",
+      "to": "薄水切"
+    },
+    "water_yielding_ribbon": {
+      "sheet": "制作中",
+      "row": 17,
+      "from": "让锋",
+      "to": "断潮"
+    }
+  },
+  "artifactExportRejected": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/候选/术式制作表-候选-原位-20261103-172443-1.xlsx"
+}

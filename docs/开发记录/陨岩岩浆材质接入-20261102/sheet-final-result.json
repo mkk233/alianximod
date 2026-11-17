@@ -1,0 +1,47 @@
+{
+  "status": "moved_to_pending_acceptance",
+  "id": "fire_meteorite",
+  "name": "陨岩",
+  "from": {"sheet": "制作中", "row": 16},
+  "to": {"sheet": "待验收", "row": 9},
+  "countsBefore": {"已完成": 40, "待制作": 0, "制作中": 14, "待验收": 6},
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 13, "待验收": 7},
+  "baselineSha256": "CF8F75500E4EBDFD9288EDA51475E072A34B2AA2AF9DBACAAF99CBCE5323606E",
+  "afterSha256": "9BD702EF0B734DE57502E4D8875BCCA2C3A10185AAE010434BC25AA303E36EAF",
+  "backup": "docs/开发记录/陨岩岩浆材质接入-20261102/备份/术式制作表-20261102-022635-1.xlsx",
+  "snapshots": {
+    "aen": "docs/开发记录/陨岩岩浆材质接入-20261102/快照/变更前-AEN-20261102-022635-1.json",
+    "nodv": "docs/开发记录/陨岩岩浆材质接入-20261102/快照/变更前-NODV-20261102-022635-1.json",
+    "revised": "docs/开发记录/陨岩岩浆材质接入-20261102/快照/修订需求-20261102-022635-1.md"
+  },
+  "fourPagesUnique": true,
+  "rowCountConserved": true,
+  "archivePreserved": true,
+  "detailUnchanged": true,
+  "otherTechniquesChanged": false,
+  "approvedVersion": "meteor-magma-crust-v5",
+  "runtimeTexture": "textures/block/meteorite_v1.png",
+  "runtimeSha256": "a0f7027b8b39c4f9f3aaabb9e05713c42e5b0e86697c89d9294848a9b228e1d8",
+  "model": "minecraft:block/cube_all",
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "started": "2026-11-02T02:22:26.8186215+08:00",
+    "ended": "2026-11-02T02:22:41.5564331+08:00",
+    "exitCode": 0,
+    "compileJava": "UP-TO-DATE",
+    "javacExecuted": false,
+    "startedAfterLastWrite": true
+  },
+  "gameTested": false,
+  "playtest": {
+    "idAndName": "fire_meteorite / 陨岩",
+    "precondition": "装配陨岩并使用新材质资源",
+    "steps": "施放陨岩，观察飞行本体与落地残留块",
+    "expected": "新岩浆块风格、无紫黑缺图、体积与既有命中续飞至触地行为不变",
+    "userFeedback": ""
+  },
+  "formalReviewAdded": false,
+  "quotaNote": "本阶段额度已用完，返修结果未追加复审",
+  "blockers": [],
+  "verifyOk": true
+}

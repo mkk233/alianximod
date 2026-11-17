@@ -1,0 +1,262 @@
+{
+  "stage": "testing",
+  "round": 1,
+  "quota": "1/2",
+  "completed": true,
+  "reviewer": "本批唯一 gpt-6-astra",
+  "designQuota": "2/2",
+  "implementationQuota": "2/2",
+  "implementationReReviewed": false,
+  "sourceVersion": {
+    "workbookSha256": "CE0AF918E0A99DC586232E76B156465B12AEDF8A5C0047CAD8268BEF6A3D899D",
+    "processSha256": "DD157A4C5D69D25688903F0B888544774F977429E73968FB8F2DAD0D3FFD9BA3",
+    "productionManifest": "test-stage-pre-sources.txt",
+    "productionManifestSha256": "B58F942AD751A661491463071917C71DD23C6ED9BB7874B462EE226A3120B0E8",
+    "productionEntries": 654,
+    "productionDiffDuringExecutionAndSupplement": 0,
+    "input": "test-stage-input.json",
+    "inputSha256": "BE98A15FAB75C68D2DED83727A4E1CF3D7C3118B94E2703B80107B9DB2ED4592",
+    "compile": {
+      "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+      "start": "2026-10-29T10:48:53+08:00",
+      "end": "2026-10-29T10:49:07+08:00",
+      "exitCode": 0,
+      "status": "UP-TO-DATE",
+      "log": "test-stage-gradle.log"
+    },
+    "mainTestSha256": "C5D3F14B735DE6CB2FB9D8127A291533A341762B1619C70CB73D44F32EC915B9",
+    "supplementTestSha256": "2E0563261992F2B92A48E9CCFEC9C50AC0BFA7E843E3C308205A8F33CDF1191D"
+  },
+  "conclusion": "六项均保留制作中；已执行真实功能子集通过，无新生产断言失败；未把整项测试或实现复核标通过。可直接实际写回逐项结果和原因，不迁待验收。",
+  "items": [
+    {
+      "id": "fire_liaoyuan",
+      "name": "燎原",
+      "testStatus": "已执行功能子集通过；批次复制及实体接入未覆盖；整项未标测试通过",
+      "readyForAcceptance": false,
+      "reason": "缺六式适用的正式实现复核通过记录；共用底座R2/R3返修未追加复审；可见地表解释只有作者反馈。计划、账本和几何通过不证明地火与附着互斥或真实复制份。",
+      "evidence": [
+        "test-stage-input.json",
+        "test-stage-execution-report.md",
+        "test-stage-results.json",
+        "test-stage-supplement-report.md",
+        "test-stage-supplement-results.json",
+        "记录.md",
+        "test-stage-run-BurnLedgerCheck.log",
+        "known-limits-report.md"
+      ],
+      "passed": [
+        "注册200tick/魔力60",
+        "S=0/9/10/54/100计划及20tick调度",
+        "100点13段每段4，F=0.30时4.6",
+        "同施法者燃烧排他、一次消费、几何边界"
+      ],
+      "notExecuted": [
+        "真实地火2点/20tick与附着互斥",
+        "权限先于消费、重入不刷新、离场继续",
+        "ReleaseBatch实际规则复制"
+      ],
+      "requiredNextStep": "实际写回制作中原因，N/O保持原文。后续经用户明确授权补齐适用实现复核；补共享批次一次消费及实体地火/附着接入证据，保留可见地表解释问题。"
+    },
+    {
+      "id": "fire_liaoli",
+      "name": "燎里",
+      "testStatus": "已执行功能子集通过；真实刺击/持续输入及复制份未覆盖；整项未标测试通过",
+      "readyForAcceptance": false,
+      "reason": "缺适用正式实现复核通过记录，共用R2/R3返修未追加复审。公式及视觉几何不能证明物理/火伤分开结算、每目标一次与按住40tick生命周期。",
+      "evidence": [
+        "test-stage-input.json",
+        "test-stage-execution-report.md",
+        "test-stage-results.json",
+        "test-stage-supplement-report.md",
+        "test-stage-supplement-results.json",
+        "记录.md",
+        "test-stage-run-SixFireFunctionalCheck.log",
+        "test-stage-run-LiaoliV6LayoutCheck.log"
+      ],
+      "passed": [
+        "持续/跟随准星/持剑注册、40tick、魔力40",
+        "0.36×S线性火伤，100点火分量36，F=0.30时46.8",
+        "走廊及v6布局函数"
+      ],
+      "notExecuted": [
+        "物理6点及火伤真实结算",
+        "每目标一次、权限先于消费",
+        "松开/换剑/死亡收招及40tick不自动重发",
+        "规则复制收益隔离"
+      ],
+      "requiredNextStep": "实际写回制作中原因，N/O保持原文。后续经用户明确授权补适用实现复核及共享批次、持续输入/每目标一次接入验证；第一人称与侧面厚度交用户实测。"
+    },
+    {
+      "id": "fire_fentian",
+      "name": "焚天",
+      "testStatus": "已执行功能子集通过；真实范围/伤害节拍及复制份未覆盖；整项未标测试通过",
+      "readyForAcceptance": false,
+      "reason": "缺适用正式实现复核通过记录；共用R2/R3返修未追加复审。字节码26断言不是实际Mixin织入，也不能补签实现通过。",
+      "evidence": [
+        "test-stage-input.json",
+        "test-stage-execution-report.md",
+        "test-stage-results.json",
+        "test-stage-supplement-report.md",
+        "test-stage-supplement-results.json",
+        "记录.md",
+        "test-stage-run-FireHurtBytecodeCheck.log",
+        "test-stage-run-BurnLedgerCheck.log"
+      ],
+      "passed": [
+        "40tick/魔力100注册",
+        "0/9/10/54/100计划、余量尾段、4tick间隔",
+        "100点10段锁定指数、炉心同层一次、目标排他"
+      ],
+      "notExecuted": [
+        "8格真实存活/权限筛选、已有燃烧不扣火种",
+        "离场继续、死亡终止",
+        "4tick实际伤害、防御、规则复制收益隔离"
+      ],
+      "requiredNextStep": "实际写回制作中原因，N/O保持原文。后续经用户明确授权补适用实现复核与共享批次/实体序列验证；有火种的游戏准备方式另行解决，不擅增来源。"
+    },
+    {
+      "id": "fire_heat_up",
+      "name": "升温",
+      "testStatus": "普通转换/热量/混链门通过；玩家成功及失败事务未覆盖；整项未标测试通过",
+      "readyForAcceptance": false,
+      "reason": "缺适用正式实现复核通过记录；炉心扣费与失败恢复只有作者返修反馈。真实事务缺正常提交、魔力不足、安装失败退款且状态不变证据。",
+      "evidence": [
+        "test-stage-input.json",
+        "test-stage-execution-report.md",
+        "test-stage-results.json",
+        "test-stage-supplement-report.md",
+        "test-stage-supplement-results.json",
+        "记录.md",
+        "test-stage-run-FurnaceMathCheck.log",
+        "test-stage-supplement-run-mixed.log",
+        "test-stage-supplement-run-commit.log",
+        "furnace-atomic-report.md"
+      ],
+      "passed": [
+        "自身状态/动作、魔力20/装配1注册",
+        "无炉心进普通、已有普通/过载拒绝",
+        "150拍F=0.30、产率1.12–1.60",
+        "真实单式允许和混链拒绝"
+      ],
+      "notExecuted": [
+        "20魔力/500tick独立冷却事务",
+        "安装失败退款及状态恢复",
+        "属性、治疗/水冰承伤、抗性、牛奶、保存/死亡/登录事件"
+      ],
+      "requiredNextStep": "实际写回制作中原因。后续经用户明确授权补适用实现复核，并用真实玩家夹具或Forge环境测正常/扣费失败/安装失败恢复；无火种生产入口不是本项阻塞。"
+    },
+    {
+      "id": "fire_burn",
+      "name": "燃烧",
+      "testStatus": "过载转换/热量保留/混链门通过；玩家升级及失败事务未覆盖；整项未标测试通过",
+      "readyForAcceptance": false,
+      "reason": "缺适用正式实现复核通过记录；炉心原子返修未追加复审。安装规划不能证明实际玩家升级失败完整回滚或属性不叠加。",
+      "evidence": [
+        "test-stage-input.json",
+        "test-stage-execution-report.md",
+        "test-stage-results.json",
+        "test-stage-supplement-report.md",
+        "test-stage-supplement-results.json",
+        "记录.md",
+        "test-stage-run-FurnaceMathCheck.log",
+        "test-stage-supplement-run-mixed.log",
+        "test-stage-supplement-run-commit.log",
+        "furnace-atomic-report.md"
+      ],
+      "passed": [
+        "直接过载、普通升级保留F、已过载拒绝、不可降档",
+        "从0.30再100拍到0.60、产率2.2",
+        "注册及真实混链拒绝"
+      ],
+      "notExecuted": [
+        "玩家升级属性只一份、生命只向下钳",
+        "真实扣费/独立冷却与安装失败恢复",
+        "水冰/治疗/抗性、存档与生命周期"
+      ],
+      "requiredNextStep": "实际写回制作中原因。后续经用户明确授权补适用实现复核，补普通升级、已过载拒绝、安装失败效果/热量/魔力恢复的真实事务验证。"
+    },
+    {
+      "id": "fire_cool",
+      "name": "冷却",
+      "testStatus": "冷却纯转换/无炉心拒绝/混链门通过；真实蒸汽与恢复事务未覆盖；整项未标测试通过",
+      "readyForAcceptance": false,
+      "reason": "缺适用正式实现复核通过记录；共用伤害R2/R3及炉心事务返修未追加复审。空玩家拒绝不证明成功cool一次蒸汽或非主动移除不喷。",
+      "evidence": [
+        "test-stage-input.json",
+        "test-stage-execution-report.md",
+        "test-stage-results.json",
+        "test-stage-supplement-report.md",
+        "test-stage-supplement-results.json",
+        "记录.md",
+        "test-stage-supplement-run-mixed.log",
+        "test-stage-supplement-run-commit.log",
+        "furnace-atomic-report.md"
+      ],
+      "passed": [
+        "零魔力/动作注册",
+        "普通/过载主动清热量、无炉心拒绝",
+        "真实混链拒绝"
+      ],
+      "notExecuted": [
+        "成功cool一次蒸汽、非主动/死亡不喷",
+        "半径3敌我过滤、每目标固定2伤害",
+        "属性恢复不加生命、另外两式冷却保留",
+        "真实碰撞及击退距离"
+      ],
+      "requiredNextStep": "实际写回制作中原因。后续经用户明确授权补适用实现复核，补成功/无炉心/非主动结束的蒸汽一次性和恢复事务；距离与碰撞交真实运行验证。"
+    }
+  ],
+  "requiredNextSteps": [
+    "唯一表记录者按第8节实际写回六项制作中DV结果，保留N/O和原DV；备份、候选、源hash重检、提交后重开并报告新hash。",
+    "缺失适用正式实现复核通过记录以及R2/R3返修未复审状态不能由测试补签。后续追加实现复核必须先获用户明确范围/轮数授权，不自动追加。",
+    "共享复制份和玩家事务在当前离线框架未执行；以后补真实Forge或专用玩家夹具的受影响用例，不用计划函数替代，不做整仓无差别回归。"
+  ],
+  "runtimeBoundary": {
+    "releaseBatch": "open成功但fireContext空玩家NPE；ServerPlayer初始化Not bootstrapped，FakePlayer初始化失败；3份/2段仅是SkillChainPlan规划。",
+    "selfStatusCommit": "只执行空玩家REJECTED，未进入正常、扣费和安装退款；需玩家level、服务端线程、PlayerShuData、forceAddEffect。",
+    "interpretation": "当前没有可用夹具不等于永远不能离线测试；未测试功能不标通过。仅游戏表现未测不是单独迁移阻塞。"
+  },
+  "normalPlaySeed": "三消费者只消费不产火种，原始DV将获取途径另定。无生产授予入口是游戏准备限制，不是离线账本失败，不牵连炉心三式，也不授权新增来源。",
+  "snapshot": {
+    "file": "test-stage-transition-snapshot.json",
+    "sha256": "77D4F58C9DD19E8708FB63991AD148C18993375892E79C45A1EC0586DC35B7EA",
+    "completeOriginalNODV": true,
+    "allSixMatchInputExactly": true,
+    "versionsAndExplicitVisualChangesPresent": true,
+    "resourceMappingsPresent": true,
+    "conversionBeforeAfterPresent": true,
+    "candidateNLanguageSourcePresent": true,
+    "candidateNBehaviorFullyValidated": false,
+    "candidateOReferencedByExecutionReports": true,
+    "gameTextureFilesExist": 13,
+    "mayApplyConversionNow": false
+  },
+  "writeback": {
+    "readyToSendToWorkbookWriter": true,
+    "permittedAction": "实际追加制作中DV状态/原因/本报告链接，N/O原文不变",
+    "mayMigrateToAcceptance": false,
+    "acceptanceIds": [],
+    "retainInProgressIds": [
+      "fire_liaoyuan",
+      "fire_liaoli",
+      "fire_fentian",
+      "fire_heat_up",
+      "fire_burn",
+      "fire_cool"
+    ],
+    "mustReReadSourceAndCheckBaseline": true,
+    "reportWorkbookHashAndReopen": true
+  },
+  "notRun": [
+    "游戏内Mixin织入及真实伤害防御/无敌帧",
+    "实体世界tick和关系过滤",
+    "属性/牛奶/保存/登出/死亡/跨维度事件",
+    "真实复制份和玩家事务",
+    "第一人称/贴图/燃烧快照/蒸汽距离",
+    "全量compileTestJava"
+  ],
+  "noNewProductionAssertionFailures": true,
+  "onlyAuthorizedReviewFilesWritten": true,
+  "stoppedWriting": true
+}

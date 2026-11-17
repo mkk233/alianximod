@@ -1,0 +1,111 @@
+{
+  "task": "术式链计划缓存最终统一编译",
+  "compiler": "Cursor CLI grok-4.7-high-fast",
+  "delegated": false,
+  "workspace": "D:/alianximod",
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "environment": {
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "gradleCacheExists": true,
+    "javaVersion": "17.0.6+9-LTS-190",
+    "jvmargs": "-Xmx3G",
+    "daemonProperty": "org.gradle.daemon=false",
+    "commandNoDaemon": true,
+    "setInsideGradleProcess": true
+  },
+  "compileStartUtc": "2026-10-30T03:14:15.3089776Z",
+  "compileEndUtc": "2026-10-30T03:14:42.8134967Z",
+  "exitCode": 1,
+  "finalVersionPassed": false,
+  "reason": "退出码不是 0。源码未变，不能确认最终版本通过。",
+  "sourceFreeze": {
+    "file": "compile-source-freeze.json",
+    "javaCount": 665,
+    "scope": "src/main/java",
+    "testJavaOutsideFreeze": 74,
+    "lastSourceWriteUtc": "2026-10-30T02:51:20.1866978Z",
+    "compileStartedAfterLastWrite": true,
+    "precheck": {
+      "missing": 0,
+      "hashMismatch": 0,
+      "lengthMismatch": 0,
+      "timeMismatch": 0,
+      "timeCompare": "raw ISO string parsed to UTC ticks"
+    },
+    "postcheck": {
+      "missing": 0,
+      "hashMismatch": 0,
+      "lengthMismatch": 0,
+      "timeMismatch": 0,
+      "writesAtOrAfterCompileStart": 0,
+      "maxWriteUtc": "2026-10-30T02:51:20.1866978Z"
+    }
+  },
+  "gradleOccupancy": {
+    "before": "no java/javaw Gradle or GradleDaemon process",
+    "after": "java process count 0",
+    "note": "--no-daemon still forked a single-use daemon and stopped it at the end of this build"
+  },
+  "summary": "3 errors, 34 warnings. Failure is the 3 errors.",
+  "errors": [
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java",
+      "line": 291,
+      "owner": "A",
+      "message": "不兼容的类型: boolean无法转换为Consumer<Vec3>",
+      "source": "plan.entityLock && (mutable || dedicatedAim), plan.drop && mutable,",
+      "call": "SkillSegmentRunner.commitHostGroup",
+      "selectedOverload": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java:293",
+      "detail": "带 CastPlanContext 的 commitHostGroup 在两个 boolean 之前还有 Consumer<Vec3> onFirstTrigger。这一调用把锁定布尔放进了该参数位。"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+      "line": 337,
+      "owner": "A",
+      "message": "不兼容的类型: boolean无法转换为Consumer<Vec3>",
+      "source": "SkillChainPlan.lockThisCast(techniques, member.actionIndex(), planContext),",
+      "call": "SkillSegmentRunner.commitHostGroup",
+      "selectedOverload": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java:293",
+      "detail": "lockThisCast 返回 boolean，落在 onFirstTrigger 的 Consumer<Vec3> 参数位。同一次调用下一行的 dropThisCast 也是 boolean。"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "line": 850,
+      "owner": "A",
+      "message": "不兼容的类型: boolean无法转换为Consumer<Vec3>",
+      "source": "SkillChainPlan.lockThisCast(techniques, segment.actionIndex(), planContext),",
+      "call": "SkillSegmentRunner.commitHostGroup",
+      "selectedOverload": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java:293",
+      "detail": "与 CastExecutionSession.java:337 相同。只接受 ReleaseInput、不接受 CastPlanContext 的重载在 SkillSegmentRunner.java:267，不能匹配末尾同时传入 chainInput 和 planContext 的调用。"
+    }
+  ],
+  "authorBCompileErrors": [],
+  "notRun": [
+    "correctness review",
+    "independent tests",
+    "name gate",
+    "jar",
+    "reobf",
+    "build",
+    "runClient",
+    "game launch",
+    "sheet writeback",
+    "git commit"
+  ],
+  "sourceOrConfigChanged": false,
+  "priorFailureReportArchived": false,
+  "priorFailureReportNote": "本目录此前没有 compile-results.json 或 compile-final.md，无需留档。",
+  "logs": [
+    "docs/开发记录/术式链计划缓存-20261030/compile.log",
+    "docs/开发记录/术式链计划缓存-20261030/compile-gradle-stdout.txt",
+    "docs/开发记录/术式链计划缓存-20261030/compile-gradle-stderr.txt"
+  ],
+  "ownershipReleased": true,
+  "repairOwner": "A",
+  "repairFiles": [
+    "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java",
+    "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+    "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java"
+  ]
+}

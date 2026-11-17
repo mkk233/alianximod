@@ -1,0 +1,1240 @@
+{
+  "sha256": "787EB20E84AFC14BC29DFA97BF9F1847626B4C51EE00ECD684244C6D6FB83844",
+  "mtime": "2026-11-12T13:35:13.727",
+  "bytes": 180352,
+  "sheets": {
+    "已完成": {
+      "dimension": "A1:EN40",
+      "rowCount": 39,
+      "rowNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "ids": [
+        {
+          "row": 3,
+          "id": "sword_thrust",
+          "name": "刺击"
+        },
+        {
+          "row": 4,
+          "id": "sword_horizontal_slash",
+          "name": "横劈"
+        },
+        {
+          "row": 5,
+          "id": "sword_vertical_slash",
+          "name": "竖劈"
+        },
+        {
+          "row": 6,
+          "id": "space_cut",
+          "name": "空间切割"
+        },
+        {
+          "row": 7,
+          "id": "stone_hammer",
+          "name": "岩槌"
+        },
+        {
+          "row": 8,
+          "id": "phantom_sword",
+          "name": "幻剑术"
+        },
+        {
+          "row": 9,
+          "id": "sword_come",
+          "name": "剑来"
+        },
+        {
+          "row": 10,
+          "id": "sword_return_all",
+          "name": "万剑归宗"
+        },
+        {
+          "row": 11,
+          "id": "water_blade",
+          "name": "缺月"
+        },
+        {
+          "row": 12,
+          "id": "movement_dash",
+          "name": "冲刺"
+        },
+        {
+          "row": 13,
+          "id": "movement_leap",
+          "name": "跳跃"
+        },
+        {
+          "row": 14,
+          "id": "magic_arcane_missile",
+          "name": "奥术飞弹"
+        },
+        {
+          "row": 15,
+          "id": "magic_create_water",
+          "name": "生成水"
+        },
+        {
+          "row": 16,
+          "id": "test_sustained",
+          "name": "持续试射"
+        },
+        {
+          "row": 17,
+          "id": "heat_beam",
+          "name": "热光束"
+        },
+        {
+          "row": 18,
+          "id": "parasite_seed",
+          "name": "寄生种子"
+        },
+        {
+          "row": 19,
+          "id": "metal_needle",
+          "name": "金针"
+        },
+        {
+          "row": 20,
+          "id": "fire_orb",
+          "name": "火球"
+        },
+        {
+          "row": 21,
+          "id": "fire_burst",
+          "name": "爆燃"
+        },
+        {
+          "row": 22,
+          "id": "water_weeping_arc",
+          "name": "垂丝"
+        },
+        {
+          "row": 23,
+          "id": "water_curtain",
+          "name": "水幕"
+        },
+        {
+          "row": 24,
+          "id": "water_mist",
+          "name": "雾雨"
+        },
+        {
+          "row": 25,
+          "id": "water_ring",
+          "name": "水环"
+        },
+        {
+          "row": 27,
+          "id": "magic_ignite",
+          "name": "点火"
+        },
+        {
+          "row": 28,
+          "id": "universal_lock_target",
+          "name": "锁定实体"
+        },
+        {
+          "row": 29,
+          "id": "rule_dual_release",
+          "name": "双重释放"
+        },
+        {
+          "row": 30,
+          "id": "trajectory_drop",
+          "name": "垂落术式"
+        },
+        {
+          "row": 31,
+          "id": "rule_cast_anchor",
+          "name": "落点指定"
+        },
+        {
+          "row": 32,
+          "id": "rule_triple_cast",
+          "name": "一分为三"
+        },
+        {
+          "row": 33,
+          "id": "rule_gather_energy",
+          "name": "聚能"
+        },
+        {
+          "row": 34,
+          "id": "trajectory_3d_interleave",
+          "name": "三维交错"
+        },
+        {
+          "row": 35,
+          "id": "vine_mark",
+          "name": "缠枝"
+        },
+        {
+          "row": 36,
+          "id": "tide_mark",
+          "name": "潮印"
+        },
+        {
+          "row": 37,
+          "id": "sinking_edge",
+          "name": "沉锋"
+        },
+        {
+          "row": 38,
+          "id": "keen_mark",
+          "name": "锐锋印"
+        },
+        {
+          "row": 39,
+          "id": "trajectory_tracking",
+          "name": "追踪弹道"
+        },
+        {
+          "row": 40,
+          "id": "trajectory_storm",
+          "name": "风暴轨迹"
+        }
+      ],
+      "validationCount": 20,
+      "validations": [
+        "C3:C80",
+        "D3:D80",
+        "J3:J80 M3:M80 T3:T80 Y3:AE80 AH3:AM80 AU3:AU80 AX3:AY80 BL3:BP80 BS3:BS80 CQ3:CQ80 DA3:DA80",
+        "P3:P80",
+        "Q3:Q80",
+        "R3:R80",
+        "S3:S80",
+        "BH3:BH80",
+        "BI3:BI80",
+        "CY3:CY80",
+        "CZ3:CZ80",
+        "DN3:DN80",
+        "DW3:DW1000",
+        "DX3:DX1000",
+        "DY3:DY1000",
+        "DZ3:DZ1000",
+        "EA3:EA1000",
+        "EB3:EB1000",
+        "EE3:EE1000",
+        "EI3:EI1000"
+      ],
+      "hasId": false
+    },
+    "待制作": {
+      "dimension": "A1:EN5",
+      "rowCount": 5,
+      "rowNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "ids": [
+        {
+          "row": 3,
+          "id": "sword_guard",
+          "name": "架剑"
+        },
+        {
+          "row": 4,
+          "id": "sword_array",
+          "name": "列剑"
+        },
+        {
+          "row": 5,
+          "id": "sword_flight",
+          "name": "御剑"
+        }
+      ],
+      "validationCount": 20,
+      "validations": [
+        "C3:C80",
+        "D3:D80",
+        "J3:J80 M3:M80 T3:T80 Y3:AE80 AH3:AM80 AU3:AU80 AX3:AY80 BL3:BP80 BS3:BS80 CQ3:CQ80 DA3:DA80",
+        "P3:P80",
+        "Q3:Q80",
+        "R3:R80",
+        "S3:S80",
+        "BH3:BH80",
+        "BI3:BI80",
+        "CY3:CY80",
+        "CZ3:CZ80",
+        "DN3:DN80",
+        "DW3:DW1000",
+        "DX3:DX1000",
+        "DY3:DY1000",
+        "DZ3:DZ1000",
+        "EA3:EA1000",
+        "EB3:EB1000",
+        "EE3:EE1000",
+        "EI3:EI1000"
+      ],
+      "hasId": false
+    },
+    "制作中": {
+      "dimension": "A1:EN24",
+      "rowCount": 24,
+      "rowNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "ids": [
+        {
+          "row": 3,
+          "id": "fire_flame_trail",
+          "name": "留焰"
+        },
+        {
+          "row": 4,
+          "id": "rule_surface_anchor",
+          "name": "地表定位"
+        },
+        {
+          "row": 5,
+          "id": "fire_upwell",
+          "name": "喷涌"
+        },
+        {
+          "row": 6,
+          "id": "rule_stagger",
+          "name": "错时"
+        },
+        {
+          "row": 7,
+          "id": "rule_hit_continue",
+          "name": "命中接续"
+        },
+        {
+          "row": 8,
+          "id": "fire_seed_sow",
+          "name": "种火"
+        },
+        {
+          "row": 9,
+          "id": "fire_kindle",
+          "name": "引燃"
+        },
+        {
+          "row": 10,
+          "id": "fire_detonate",
+          "name": "引爆"
+        },
+        {
+          "row": 11,
+          "id": "fire_nether_gloom",
+          "name": "幽冥"
+        },
+        {
+          "row": 12,
+          "id": "earth_break_ground",
+          "name": "崩地"
+        },
+        {
+          "row": 13,
+          "id": "tide_sever",
+          "name": "薄水切"
+        },
+        {
+          "row": 14,
+          "id": "water_yielding_ribbon",
+          "name": "断潮"
+        },
+        {
+          "row": 16,
+          "id": "fire_burn",
+          "name": "燃烧"
+        },
+        {
+          "row": 17,
+          "id": "rule_triple_release",
+          "name": "三重释放"
+        },
+        {
+          "row": 18,
+          "id": "rule_quadruple_release",
+          "name": "四重释放"
+        },
+        {
+          "row": 19,
+          "id": "rule_octuple_release",
+          "name": "八重释放"
+        },
+        {
+          "row": 20,
+          "id": "rule_sixteen_release",
+          "name": "十六重释放"
+        },
+        {
+          "row": 21,
+          "id": "rule_exhaustive_release",
+          "name": "穷尽释放"
+        },
+        {
+          "row": 22,
+          "id": "rule_double_cast",
+          "name": "一分为二"
+        },
+        {
+          "row": 23,
+          "id": "rule_quintuple_cast",
+          "name": "一分为五"
+        },
+        {
+          "row": 24,
+          "id": "rule_octuple_cast",
+          "name": "一分为八"
+        }
+      ],
+      "validationCount": 20,
+      "validations": [
+        "C3:C80",
+        "D3:D80",
+        "J3:J80 M3:M80 T3:T80 Y3:AE80 AH3:AM80 AU3:AU80 AX3:AY80 BL3:BP80 BS3:BS80 CQ3:CQ80 DA3:DA80",
+        "P3:P80",
+        "Q3:Q80",
+        "R3:R80",
+        "S3:S80",
+        "BH3:BH80",
+        "BI3:BI80",
+        "CY3:CY80",
+        "CZ3:CZ80",
+        "DN3:DN80",
+        "DW3:DW1000",
+        "DX3:DX1000",
+        "DY3:DY1000",
+        "DZ3:DZ1000",
+        "EA3:EA1000",
+        "EB3:EB1000",
+        "EE3:EE1000",
+        "EI3:EI1000"
+      ],
+      "hasId": false,
+      "headers": {
+        "A": {
+          "text": "术式",
+          "xmlHead": "<c r=\"A1\" s=\"22\" t=\"inlineStr\"><is><t>&#26415;&#24335;</t></is></c>"
+        },
+        "B": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "C": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "D": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "E": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "F": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "N": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "O": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "DV": {
+          "text": "备注",
+          "xmlHead": "<c r=\"DV1\" s=\"20\" t=\"inlineStr\"><is><t>&#22791;&#27880;</t></is></c>"
+        },
+        "AS": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "BV": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "BW": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EB": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EC": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EG": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EH": {
+          "text": null,
+          "xmlHead": ""
+        }
+      }
+    },
+    "待验收": {
+      "dimension": "A1:EN21",
+      "rowCount": 19,
+      "rowNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "ids": [
+        {
+          "row": 3,
+          "id": "fire_fentian",
+          "name": "焚天"
+        },
+        {
+          "row": 4,
+          "id": "fire_liaoli",
+          "name": "燎里"
+        },
+        {
+          "row": 5,
+          "id": "fire_scorch_field",
+          "name": "灼地"
+        },
+        {
+          "row": 6,
+          "id": "fire_liaoyuan",
+          "name": "燎原"
+        },
+        {
+          "row": 8,
+          "id": "fire_shock_ring",
+          "name": "热波"
+        },
+        {
+          "row": 9,
+          "id": "fire_meteorite",
+          "name": "陨岩"
+        },
+        {
+          "row": 11,
+          "id": "water_bubble_column",
+          "name": "气泡柱"
+        },
+        {
+          "row": 12,
+          "id": "water_deep_pressure",
+          "name": "深海重压"
+        },
+        {
+          "row": 13,
+          "id": "water_vortex",
+          "name": "旋流"
+        },
+        {
+          "row": 14,
+          "id": "fire_spark",
+          "name": "火苗"
+        },
+        {
+          "row": 15,
+          "id": "fire_heat_up",
+          "name": "升温"
+        },
+        {
+          "row": 16,
+          "id": "fire_pick_lamp",
+          "name": "挑灯"
+        },
+        {
+          "row": 17,
+          "id": "trajectory_parallel",
+          "name": "平行"
+        },
+        {
+          "row": 18,
+          "id": "water_wave",
+          "name": "浪"
+        },
+        {
+          "row": 19,
+          "id": "water_disperse",
+          "name": "排澜"
+        },
+        {
+          "row": 20,
+          "id": "phantom_sword_surge",
+          "name": "幻剑纵横"
+        },
+        {
+          "row": 21,
+          "id": "fire_cool",
+          "name": "冷却"
+        }
+      ],
+      "validationCount": 20,
+      "validations": [
+        "C3:C80",
+        "D3:D80",
+        "J3:J80 M3:M80 T3:T80 Y3:AE80 AH3:AM80 AU3:AU80 AX3:AY80 BL3:BP80 BS3:BS80 CQ3:CQ80 DA3:DA80",
+        "P3:P80",
+        "Q3:Q80",
+        "R3:R80",
+        "S3:S80",
+        "BH3:BH80",
+        "BI3:BI80",
+        "CY3:CY80",
+        "CZ3:CZ80",
+        "DN3:DN80",
+        "DW3:DW1000",
+        "DX3:DX1000",
+        "DY3:DY1000",
+        "DZ3:DZ1000",
+        "EA3:EA1000",
+        "EB3:EB1000",
+        "EE3:EE1000",
+        "EI3:EI1000"
+      ],
+      "hasId": true,
+      "headers": {
+        "A": {
+          "text": "术式",
+          "xmlHead": "<c r=\"A1\" s=\"22\" t=\"inlineStr\"><is><t>&#26415;&#24335;</t></is></c>"
+        },
+        "B": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "C": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "D": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "E": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "F": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "N": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "O": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "DV": {
+          "text": "备注",
+          "xmlHead": "<c r=\"DV1\" s=\"20\" t=\"inlineStr\"><is><t>&#22791;&#27880;</t></is></c>"
+        },
+        "AS": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "BV": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "BW": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EB": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EC": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EG": {
+          "text": null,
+          "xmlHead": ""
+        },
+        "EH": {
+          "text": null,
+          "xmlHead": ""
+        }
+      }
+    },
+    "数据表": {
+      "dimension": "A1:BV19",
+      "rowCount": 19,
+      "rowNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "ids": [
+        {
+          "row": 3,
+          "id": "代码",
+          "name": "名称"
+        },
+        {
+          "row": 4,
+          "id": "STRAIGHT",
+          "name": "直线"
+        },
+        {
+          "row": 5,
+          "id": "DROP",
+          "name": "垂落"
+        },
+        {
+          "row": 6,
+          "id": "FOLLOW_LOOK",
+          "name": "跟随准星"
+        },
+        {
+          "row": 7,
+          "id": "FUNCTION",
+          "name": "曲线函数"
+        },
+        {
+          "row": 8,
+          "id": "VORTEX",
+          "name": "龙卷"
+        },
+        {
+          "row": 9,
+          "id": "PARABOLA",
+          "name": "抛物线"
+        },
+        {
+          "row": 10,
+          "id": "UPWELL",
+          "name": "喷涌"
+        },
+        {
+          "row": 11,
+          "id": "PARALLEL",
+          "name": "平行"
+        }
+      ],
+      "validationCount": 0,
+      "validations": [],
+      "hasId": false
+    },
+    "资源状态明细": {
+      "dimension": "A1:T7",
+      "rowCount": 7,
+      "rowNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "ids": [
+        {
+          "row": 3,
+          "id": "2",
+          "name": "water_mist"
+        },
+        {
+          "row": 4,
+          "id": "2",
+          "name": "water_deep_pressure"
+        },
+        {
+          "row": 5,
+          "id": "3",
+          "name": "water_deep_pressure"
+        },
+        {
+          "row": 6,
+          "id": "2",
+          "name": "tide_mark"
+        },
+        {
+          "row": 7,
+          "id": "2",
+          "name": "fire_scorch_field"
+        }
+      ],
+      "validationCount": 8,
+      "validations": [
+        "C3:C1000",
+        "D3:D1000",
+        "E3:E1000",
+        "F3:F1000",
+        "G3:G1000",
+        "H3:H1000",
+        "K3:K1000",
+        "O3:O1000"
+      ],
+      "hasId": false
+    },
+    "待制作原始数据": {
+      "dimension": "A1:FS41",
+      "rowCount": 41,
+      "rowNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "ids": [
+        {
+          "row": 3,
+          "id": "fire_liaoyuan",
+          "name": "燎原"
+        },
+        {
+          "row": 4,
+          "id": "fire_liaoli",
+          "name": "燎里"
+        },
+        {
+          "row": 5,
+          "id": "fire_fentian",
+          "name": "焚天"
+        },
+        {
+          "row": 6,
+          "id": "fire_heat_up",
+          "name": "升温"
+        },
+        {
+          "row": 7,
+          "id": "fire_burn",
+          "name": "燃烧"
+        },
+        {
+          "row": 8,
+          "id": "fire_cool",
+          "name": "冷却"
+        },
+        {
+          "row": 9,
+          "id": "fire_scorch_field",
+          "name": "灼地"
+        },
+        {
+          "row": 11,
+          "id": "fire_flame_trail",
+          "name": "留焰"
+        },
+        {
+          "row": 12,
+          "id": "fire_meteorite",
+          "name": "陨岩"
+        },
+        {
+          "row": 13,
+          "id": "fire_shock_ring",
+          "name": "热波"
+        },
+        {
+          "row": 14,
+          "id": "rule_surface_anchor",
+          "name": "地表定位"
+        },
+        {
+          "row": 15,
+          "id": "fire_upwell",
+          "name": "喷涌"
+        },
+        {
+          "row": 16,
+          "id": "rule_stagger",
+          "name": "错时"
+        },
+        {
+          "row": 17,
+          "id": "rule_hit_continue",
+          "name": "命中接续"
+        },
+        {
+          "row": 18,
+          "id": "fire_seed_sow",
+          "name": "种火"
+        },
+        {
+          "row": 19,
+          "id": "fire_kindle",
+          "name": "引燃"
+        },
+        {
+          "row": 20,
+          "id": "fire_detonate",
+          "name": "引爆"
+        },
+        {
+          "row": 21,
+          "id": "fire_nether_gloom",
+          "name": "幽冥"
+        },
+        {
+          "row": 22,
+          "id": "earth_break_ground",
+          "name": "崩地"
+        },
+        {
+          "row": 23,
+          "id": "fire_spark",
+          "name": "火苗"
+        },
+        {
+          "row": 24,
+          "id": "water_vortex",
+          "name": "旋流"
+        },
+        {
+          "row": 25,
+          "id": "water_bubble_column",
+          "name": "气泡柱"
+        },
+        {
+          "row": 26,
+          "id": "rule_triple_release",
+          "name": "三重释放"
+        },
+        {
+          "row": 27,
+          "id": "rule_quadruple_release",
+          "name": "四重释放"
+        },
+        {
+          "row": 28,
+          "id": "rule_octuple_release",
+          "name": "八重释放"
+        },
+        {
+          "row": 29,
+          "id": "rule_sixteen_release",
+          "name": "十六重释放"
+        },
+        {
+          "row": 30,
+          "id": "rule_exhaustive_release",
+          "name": "穷尽释放"
+        },
+        {
+          "row": 31,
+          "id": "rule_double_cast",
+          "name": "一分为二"
+        },
+        {
+          "row": 32,
+          "id": "rule_quintuple_cast",
+          "name": "一分为五"
+        },
+        {
+          "row": 33,
+          "id": "rule_octuple_cast",
+          "name": "一分为八"
+        },
+        {
+          "row": 34,
+          "id": "fire_pick_lamp",
+          "name": "挑灯"
+        },
+        {
+          "row": 35,
+          "id": "trajectory_parallel",
+          "name": "平行"
+        },
+        {
+          "row": 36,
+          "id": "water_wave",
+          "name": "浪"
+        },
+        {
+          "row": 37,
+          "id": "water_disperse",
+          "name": "排澜"
+        },
+        {
+          "row": 38,
+          "id": "sword_guard",
+          "name": "架剑"
+        },
+        {
+          "row": 39,
+          "id": "sword_array",
+          "name": "列剑"
+        },
+        {
+          "row": 40,
+          "id": "phantom_sword_surge",
+          "name": "幻剑纵横"
+        },
+        {
+          "row": 41,
+          "id": "sword_flight",
+          "name": "御剑"
+        }
+      ],
+      "validationCount": 0,
+      "validations": [],
+      "hasId": true
+    }
+  },
+  "target": {
+    "row": 6,
+    "cells": {
+      "A": {
+        "text": "燎原",
+        "len": 2,
+        "xmlHead": "<c r=\"A6\" s=\"8\" t=\"inlineStr\"><is><t>&#29134;&#21407;</t></is></c>"
+      },
+      "B": {
+        "text": "fire_liaoyuan",
+        "len": 13,
+        "xmlHead": "<c r=\"B6\" s=\"9\" t=\"inlineStr\"><is><t>fire_liaoyuan</t></is></c>"
+      },
+      "C": {
+        "text": "法术",
+        "len": 2,
+        "xmlHead": "<c r=\"C6\" s=\"8\" t=\"inlineStr\"><is><t>&#27861;&#26415;</t></is></c>"
+      },
+      "D": {
+        "text": "火",
+        "len": 1,
+        "xmlHead": "<c r=\"D6\" s=\"8\" t=\"inlineStr\"><is><t>&#28779;</t></is></c>"
+      },
+      "E": {
+        "text": "8",
+        "len": 1,
+        "xmlHead": "<c r=\"E6\" s=\"8\" t=\"n\"><v>8</v></c>"
+      },
+      "F": {
+        "text": "600",
+        "len": 3,
+        "xmlHead": "<c r=\"F6\" s=\"8\" t=\"n\"><v>600</v></c>"
+      },
+      "N": {
+        "text": "铺开半径10格的贴地火场，展开前沿即可命中。本体基础8点、每10刻一次并受一次炉心加成；有火种时足额段为4×(1+0.1n+F)，每段请求10点火种",
+        "len": 74,
+        "xmlHead": "<c r=\"N6\" s=\"9\" t=\"inlineStr\"><is><t>&#38138;&#24320;&#21322;&#24452;10&#26684;&#30340;&#36148;&#22320;&#28779;&#22330;&#65292;&#23637;&#24320;&#21069;&#27839;&#21363;&#21487;&#21629;&#20013;&#12290;&#26412;&#20307;&#22522;&#30784;8&#28857;"
+      },
+      "O": {
+        "text": "xueximod:textures/effect/liaoyuan_v3/ground_ash.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_b.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_c.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_d.png\nxueximod:textures/effect/liaoyuan_v3/ground_embers.png\nxueximod:textures/effect/liaoyuan_v2/spread_wave.png\nxueximod:textures/effect/liaoyuan_v2/ground_flame.png",
+        "len": 375,
+        "xmlHead": "<c r=\"O6\" s=\"9\" t=\"inlineStr\"><is><t>xueximod:textures/effect/liaoyuan_v3/ground_ash.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_b.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_c.png\nxueximod:textures/effect/liaoyuan_v3/ground"
+      },
+      "DV": {
+        "text": "用户原话：“这样的设计好我打算给不同持续燃烧添加一个终极术式叫做燎原，会点燃周围地形但火不会蔓延避免破坏环境，同时对高火种值的敌人烧的更疼更久”。\n首版数值由主会话按本次“帮我设计并填入待制作”授权补齐，属设计参数，未实测平衡。终极奖励获取途径待用户另定，不自动发放。等级上限20、复杂度20、装配消耗3为首版默认。\n共用目标火种值S（0—100整数），n=floor(S/10)，不新增第二种资源；三式只消费、不产火种。同次施法及其规则副本对同一目标只扣一次，先检查伤害权限再扣；后续新火种留给下一次消费。本版目标火种共享，先触发者扣除，后触发者读取剩余，不重复花同一份。炉心增伤与火种增伤同层；不另套旧BURST每10点+4%。多份攻击只按既有规则结算基础伤害，不能复制火种附加收益或燃烧序列。不修改全局无敌帧。\n[设计反馈 2026-10-28] L=4为基础伤害登记魔力，实际由AP=60覆盖，不重复扣费；地火与附着燃烧共用同源伤害节拍，避免重复。火种消费、地表火场、持久燃烧能力尚未核对源码，实施时复用公共接口，不按术式id改底座。详细需求与来源见 docs/开发记录/火属性二级设计评审-20261028/记录.md。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认燎原v2。从原点向外铺火浪，之后维持贴地火海/低矮火焰/临时炭纹。原N数值与不改地形约束保留。确认版归档docs/资源库/特效/火焰/燎原_v2/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。\n[设计反馈 2026-10-29] compile-final报告写明FireSeedState.grant在主源码没有调用方，也没有给目标加火种的现成命令。燎原无火种的地表火伤仍可按现有入口准备，但有火种的一次消费和附着燃烧目前不能按正常玩法准备。该缺口未解决，这里不新增产火种途径或调试命令。详见 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。\n[设计反馈 2026-10-29] 测试正式结果核对第1轮（1/2）决定留在制作中，不转换N/O。已执行功能子集通过，不是整项测试失败。未迁是因为缺六式适用的正式实现复核通过记录，以及共用底座R2/R3返修未追加复审；可见地表按外露碰撞顶面的解释只有作者反馈。火种来源缺失和尚未游戏实测不单独作为未迁原因。已测：注册200tick、魔力60、火种分档与20tick调度、100点13段每段4（F=0.30时4.6）、同施法者排他和一次消费、几何边界。覆盖缺口：真实地火每20tick的2点与附着互斥、权限先于消费、离场继续、规则复制份。下一步须用户明确授权后再补适用实现复核，并补共享批次一次消费与地火/附着接入。贴地、视觉持续和实体运行列用户实测。同日纠正：本式原始需求只消费火种、不产火种。正常玩法没有授予入口是准备限制，不是本轮离线计划或账本失败，也不授权新增来源。详见 docs/开发记录/术式批量制作/火系六式-20261029/test-stage-review-r1.md。\n[设计反馈 2026-10-29] 刻印台实测反馈，不是验收通过，本式仍留在制作中，不转换N/O。用户当时用的是 /shu rank sword 20 和 /shu rank magic 20，刻印台仍没有燎原。作者定位且未改生产或测试源码：当前实现把等级门槛和已学会分开，刻印台同时要求；这两条命令提高等级，但不把三式加入已学会名单。本式已注册，是法术，复杂度20。法术等级到20只打开等级门。定向学习用 /shu learn fire_liaoyuan，然后重新打开刻印台。只升剑术等级时，即使学会也不会列出。/shu stone 只给物品，不写学习名单。若当前游戏 /shu list 没有对应编号，运行版本另需排查；本单没有操作或验证游戏。获取方式原备注仍待用户另定，不自动改为满级授予，也不把作者建议写成用户新批准。待重测。先前未满足待验收的原因保留：缺适用正式实现复核通过记录，相关关键返修未追加复审。不因这次前置定位宣称六式通过。详见 docs/开发记录/术式批量制作/火系六式-20261029/unlock-repair-report.md。\n[设计反馈 2026-10-29] 共享燃料实施中，仍留在制作中，不迁待验收或已完成。用户已批准唯一共享余额、逐段扣款、多层并存、同tick按比例分配、余额0结束、补种可被各层消费。燎原完整段请求10点，伤害2×(1+0.10n+F)，最长(3+n)×20tick。旧的挂载时全部预付不再作为新挂载规则。已预付的旧存档轨道只读到自然结束，不能再扣一次。撤回的燃烧期间禁止引爆或停止产种不是本版要求。现有点火额外2、热光束每次接受命中1、火球每个实际目标3不变。本阶段尚未按新语义编译或游戏验收。详见 docs/开发记录/火种共享燃料改造-20261029/approved-requirements.json。\n[设计反馈 2026-10-29] 共享燃料最终写回。游戏内一句对齐 technique.xueximod.fire_liaoyuan.desc。资源扣款触发改为燃烧结算，周期20tick，完整段10点。首次带资源接触只保留为挂载时机，写在迁出前的详细N。有效 compileJava --offline --no-daemon 于2026-10-29 21:36:10至21:36:22退出0，compileJava为UP-TO-DATE，对应21:29已生成且晚于源码的主类。21:29:15启动的第一次包装进程因输出管道卡住，于21:34:44中止，退出码1，不是源码编译失败，也不是重新编译。SharedFuelCheck、SixFireFunctionalCheck、FireSeedCheck、BurnLedgerCheck、BurnDispatchCheck、FireReleaseStructureCheck、SixFireLogicCheck于21:38:38至21:38:40全部退出0。本版没有追加正式复审，这些退出码不是复审通过，也不是游戏验收。旧存档版本1整份预付回放且不再扣火种；版本2只有shared标记才按段扣，缺标记按预付；其它版本整份丢弃。新挂载只建共享轨道。同效果键视觉查询只显示第一条轨道。没有实体NBT往返。游戏实测尚未做。步骤：单层按周期扣种；两层同时扣；燃料不足时按比例分配并按实付折算伤害；燃烧未结束时持续补种；引爆先清空则燃烧失去燃料，燃烧先扣则引爆只拿剩余；余额到0后新火种不复活已结束的旧层；焚天最多40有效tick且指数不因补种提高；卸载或恢复后旧的已付轨道不重复扣；护甲和抗火仍生效，已付火种不退回。待验收 | 火种共享燃料改造-20261029 | docs/开发记录/火种共享燃料改造-20261029/记录.md。详见 docs/开发记录/火种共享燃料改造-20261029/final-writeback-conversion.json。\n[设计反馈 2026-10-29] 用户实测燎原未通过。用户原话：只有释放第一下有特效，后续持续伤害无特效，周围地面未正确点燃；先修燎原，其余以后反馈。本项从待验收退回制作中，恢复最近一次已批准的共享燃料详细需求，不改燃料设计。目前是返修中，尚未重新编译，也未重新实测通过。不使用待制作原始数据，也不恢复更早的一次消费需求。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 两项视觉问题已由原作者交回并停止写入。地表火场画面改用世界时间，起手之后的火海、低火和炭纹留到火场寿命结束；附着燃烧按当前还活着的最高档画火舌和炭纹，目标移动或离开火场后随活跃层持续，燃料耗尽或该层结束就停。最终命令 .\\gradlew.bat compileJava --offline --no-daemon 于2026-10-29 23:18:01至23:18:26退出0，compileJava实际执行，覆盖这三份最终源字节。名称门禁退出码1，只剩 OriginalHumanoid 原有两处，不在本次文件。三张运行贴图未新增。设计2/2、实现3/3承接。本阶段额度已用完，返修结果未追加复审。旧火种来源复审通过不能当作这次修复通过。尚未游戏重测，不迁已完成。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n待验收 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n2026-10-31已确认的新设计，待代码落实。本轮只改制作表规格，没有改游戏，也没有实测通过。当前功能描述和特效路径仍是此前实现展示。功能描述里的按段燃烧和每段10点火种是已上表的展示句，不是这次8点本体伤害的说明。下面的新参数是后续改代码的依据。完整规格见 docs/开发记录/燎原伤害定稿入表-20261031/任务.md。\n基础伤害列改为8，表示火场本体基础火伤，不是360。场地维持周期改为10，只表示本体伤害周期：每10tick对仍接触的目标结算一次，首次有效接触立即结算。火种消费仍是燃烧结算、数值10、周期20tick，不能和本体的10tick混填。火场寿命仍为200tick。同一目标站满全程，本体在第0、10、20至190tick结算，共20次，结束时不额外多打一段。本体火伤接受一次炉心加成，每次8×(1+F)；过载满热F=0.60时为12.8点。\n附着燃烧完整段为4×(1+0.1n+F)。n是启动时floor(目标火种余额/10)，F是启动时炉心加成快照。公式里的F已经是炉心增幅，不再把整段额外乘1+F。n不在每次扣燃料后重算。每20tick结算一次，每完整段仍请求10点火种；实付不足10时按实付/10缩放该段一次。最长有效期仍是(3+n)×20tick，实际段数还受燃料限制。不整笔预付，不复制私有燃料，不同存活燃烧争用唯一余额。补种不刷新已锁定倍率和期限。燃料耗尽或到期结束。\n有火种时，场内本体伤害与附着燃烧同时存在。无火种时仍有本体伤害。离开火场停止本体伤害，已挂上的火种燃烧继续按自己的周期消耗余额并造成伤害。火场结束也不强制取消尚未结束的独立附着燃烧。不蔓延，不破坏地形。场内无火种者离场后，不能再额外给一段离场仍持续的原版点燃。\n视觉半径约6格，近似圆形火焰。实际判定是对应大小的方形水平覆盖，随各处地形高度贴合的低矮接触体。用实体完整碰撞盒与火场接触体相交，不只检查脚底单点，不用圆盘裁掉方形角落。每tick检查接触，生成时立即检查。接触检测频率与10tick本体伤害周期分开。重复进出不重置同目标本体伤害计时，不能刷首次伤害。持续接触不每tick重复挂同一火场的附着燃烧。\n本体伤害与附着燃烧同tick到期时，两部分都要兑现。被无敌帧吞掉的一份不算已兑现。不靠修改全局无敌帧解决。这是待落实核对，本轮没有检查或修复代码。\n360点只在以下条件同时成立时成立：目标初始100点火种，即10档；施法时过载已满热F=0.60；目标从生成起一直接触火场200tick；期间不补种、无其他燃烧争抢余额；忽略目标减伤与免疫，并假定每次伤害正确兑现。本体8×1.60×20＝256。附着燃烧4×(1+0.1×10+0.60)＝10.4/段，100÷10＝10段，共104。附着层首段在第20tick，末段在第200tick，末段可在火场结束时由独立附着层正常完成。总计256+104＝360点理论火伤，平均36点/秒。刚开启过载而未满热不能套这个数值。这是新设计计算，不是实测已通过。\n2026-10-31追加设计：半径10、灰烬覆盖、展开即伤害与首段燃烧，待美术与代码落实。本轮没有新贴图，也没有改游戏。此条取代刚确认方案里的视觉半径约6格，以及附着层首段固定在第20tick的说法。完整追加见 docs/开发记录/燎原伤害定稿入表-20261031/灰烬特效与范围任务.md。\n场地半径改为10，填的是半径，不是直径。视觉半径10格，视觉直径约20格。实际方形贴地接触区半宽10格，水平约20×20格。低矮接触层仍随各处地表高度，用实体完整碰撞盒相交。\n保留现有从中心向外展开的动画，沿用已有12tick展开节奏，不改成瞬间铺满。服务端已展开范围与客户端进度一致。前沿扫过的地表立即参加接触检测，每tick检查。不等待展开结束才伤害，也不提前打尚未覆盖的整片最终范围。200tick从火场生成起算，包含展开过程，完全铺开后不重新计200tick。\n展开前沿扫过后，地表留下连续的深灰、炭黑与灰烬颗粒覆盖，盖住有效区域各处地表。原来稀疏的火焰斑点不再作为主体。覆盖层上零散暗红余烬和橙黄火星，疏密与明灭错开，少量火星短暂升起再熄灭。重点是大面积阴燃灰烬地表，不是每一格都立起一团同样的大火。表现贴合真实地形，不是浮在空中的大圆片。外缘保持近圆形展开观感，用破碎灰烬边缘、火浪和火星过渡弱化方形轮廓。方形接触区的边角也要有可见灰烬，避免完全看不见的伤害区。灰烬层是术式临时地表覆盖，结束时火星减弱、灰烬淡去，原方块外观恢复。不蔓延，不破坏地形，不留下永久烧焦方块，不放置原版火。参考只采用素材库 burnt 的整面炭灰与稀疏热点方向，不把该模组贴图接入，本轮也没有新的资源路径。\n目标被已展开接触体首次碰到时，立刻结算一次本体基础8点火伤，并接受一次炉心加成。这一下就是该目标本体周期的第1次，同tick不再另叠一次展开伤害和一次场地首伤。之后仍接触则每10tick结算。若目标有可用火种且本次火场允许启动附着燃烧，则立即启动并结算首个燃烧段，经共享燃料的同一结算入口请求10点火种，足额伤害仍为4×(1+0.1n+F)。这是把首段提前到接触时，不是在原有段数外赠送额外燃烧段。启动时观察n和F发生在扣这一段燃料之前。后续仍每20tick结算，按实付/10缩放。首次延迟记为0。周期仍是20。扣款触发仍是燃烧结算，不是接触时预付全部余额。\n每个目标由同一火场的首次接触机会触发一次起手。重复进出、每帧前沿相交不重复首次伤害，也不重复挂同一燃烧层。本体后续周期仍保留同目标计时。离场只停止本体伤害，已有附着燃烧独立持续。同tick的本体伤害和燃烧伤害都要兑现，不能重复提交，不能把被无敌帧吞掉的一份算成已兑现，也不修改全局无敌帧。本轮没有检查代码。\n8点/10tick本体、4×(1+0.1n+F)燃烧、每段10燃料/20tick、200tick寿命都保留。若目标获得完整20次本体命中，并且过载起手满热F=0.60、初始100点火种、无补种、无其他燃烧抢资源、无减伤和免疫，本体256加燃烧104等于360的理论上限仍成立。燃烧首段改为首次接触立即结算，满10段可在相对首次接触的第0、20、40至180tick完成，仍只消耗100点，不变成11段。展开首伤包含在20次本体里，不另加12.8。外围目标要等前沿到达才首次命中，本体结算次数可能少于20，不能把360写成范围内每个目标必得。\n[设计反馈 2026-10-31] 用户原话：“按这个版本开始修”，并强调“别忘了伤害翻倍”。8点本体、4×(1+0.1n+F)燃烧、半径10和灰烬覆盖都已批准，不再是待决定项。本项从待验收退回制作中，返修进行中。当前N/O改为合并后的详细需求。旧的一句话展示和三张贴图路径留在 docs/开发记录/燎原伤害定稿入表-20261031/实施-退回-现行快照.json。美术草稿另做，尚未预览确认，本轮不写新资源路径，也不改游戏。本批设计校验2/2、实现校验3/3已经用完。这次退回不追加、不重置额度，也不把额度用完写成已经复审通过。记录里既有的追加轮次保持原样，这次不算新批次。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-31] 本次返修已按批准版写入，并完成编译。命令 .\\gradlew.bat compileJava --offline --no-daemon 于 2026-10-31 02:40:32.528 至 02:40:58.358 退出 0，BUILD SUCCESSFUL in 25s。src/main 842 个文件前后一致，覆盖最后相关写入 2026-10-31 02:27:19。先前空缓存导致的编译失败保留为历史，不再作为现行阻塞。更早备注里的待美术与代码落实，已被这次实施结果取代。最近批准美术是过程 v5 草方块像素尺度的离散灰烬，用户原话“可以，使用这版”，正式归档 docs/资源库/特效/火焰/燎原_v3/。用户游戏实测仍待做。已知限制只引用作者结果：生成年龄 0 有效范围 0，最早年龄 1 才接触伤害；外围命中次数可能少于中心 20 次；360 只是满热且初始 100 点火种等条件下的理论值；抗火和减伤仍然适用；旧 KnownLimitsCheck 与 FireVisualLayoutCheck 仍期待半径 6 和本体 2，未更新未运行，不算通过。名称门禁里未改的 OriginalHumanoid 的 i 与 to 仍在，本次改动未新增。本阶段额度已用完，返修结果未追加复审。\n待验收 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md",
+        "len": 8026,
+        "xmlHead": "<c r=\"DV6\" s=\"9\" t=\"inlineStr\"><is><t>&#29992;&#25143;&#21407;&#35805;&#65306;&#8220;&#36825;&#26679;&#30340;&#35774;&#35745;&#22909;&#25105;&#25171;&#31639;&#32473;&#19981;&#21516;&#25345;&#32493;&#29123;&#28903;&#28155;&#21152;&#19968;&#2"
+      },
+      "AS": {
+        "text": "10",
+        "len": 2,
+        "xmlHead": "<c r=\"AS6\" s=\"8\" t=\"n\"><v>10</v></c>"
+      },
+      "BV": {
+        "text": "10",
+        "len": 2,
+        "xmlHead": "<c r=\"BV6\" s=\"8\" t=\"n\"><v>10</v></c>"
+      },
+      "BW": {
+        "text": "200",
+        "len": 3,
+        "xmlHead": "<c r=\"BW6\" s=\"8\" t=\"n\"><v>200</v></c>"
+      },
+      "EB": {
+        "text": "燃烧结算",
+        "len": 4,
+        "xmlHead": "<c r=\"EB6\" s=\"8\" t=\"inlineStr\"><is><t>&#29123;&#28903;&#32467;&#31639;</t></is></c>"
+      },
+      "EC": {
+        "text": "10",
+        "len": 2,
+        "xmlHead": "<c r=\"EC6\" s=\"8\" t=\"inlineStr\"><is><t>10</t></is></c>"
+      },
+      "EG": {
+        "text": "20",
+        "len": 2,
+        "xmlHead": "<c r=\"EG6\" s=\"8\" t=\"n\"><v>20</v></c>"
+      },
+      "EH": {
+        "text": "0",
+        "len": 1,
+        "xmlHead": "<c r=\"EH6\" s=\"8\" t=\"n\"><v>0</v></c>"
+      }
+    },
+    "hasFormula": false,
+    "rowBytes": 55284
+  },
+  "comment1Refs": [
+    "L2",
+    "AA2",
+    "AP2",
+    "BH2",
+    "BQ2",
+    "BR2",
+    "BW2",
+    "DI2"
+  ],
+  "comment2Refs": [
+    "L2",
+    "AA2",
+    "AP2",
+    "BH2",
+    "BQ2",
+    "BR2",
+    "BW2",
+    "DI2"
+  ],
+  "comment3Refs": [
+    "L2",
+    "AA2",
+    "AP2",
+    "BH2",
+    "BQ2",
+    "BR2",
+    "BW2",
+    "DI2"
+  ],
+  "comment4Refs": [
+    "L2",
+    "AA2",
+    "AP2",
+    "BH2",
+    "BQ2",
+    "BR2",
+    "BW2",
+    "DI2"
+  ]
+}

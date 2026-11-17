@@ -1,0 +1,65 @@
+{
+  "batch": "分身底座-20261102",
+  "author": "B",
+  "role": "action-and-balance",
+  "model": "grok-4.7-high-fast",
+  "stage": "implementation",
+  "design_round": "1/2",
+  "implementation_review_round": "0/3",
+  "compile": "待统一编译",
+  "game": "游戏未测",
+  "runtime_src_integrated": false,
+  "released": true,
+  "stopped_writing": true,
+  "name_gate": {
+    "official_script": "未运行。tools/check-name-gate.ps1 只扫描真实 src，本单没有改 src",
+    "candidate_parse_check": "与正式规则相同的解析检查，action 目录 6 个文件和 CloneBalance.java 均通过"
+  },
+  "gaps": [
+    "CloneEntity 冻结签名没有代次读取方法，准备只拒绝帧上 actorGeneration < 1",
+    "取消令牌为真时使用 RejectReason.BUSY，说明文字是「这次响应已经取消」",
+    "commit 不旋转分身朝向；合同限定的提交动作只有权限判断和 classifyRespecting"
+  ],
+  "files": [
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/action/CloneAction.java",
+      "sha256": "F573098457B7AAECFD1D21F1E516F5B28182C1A85454799B6ED031F94C010450",
+      "last_write_local": "2026-11-02 04:09:45.413"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/action/CloneActionResult.java",
+      "sha256": "B4918BDB5905732F990FF4000C8E12408269F2FF8F78E290CDAEAF3353D18EF1",
+      "last_write_local": "2026-11-02 04:09:46.132"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/action/ClonePreparedAction.java",
+      "sha256": "5B28EBDE0FEA37FFE2D1CC112B0D79BAB3EDA41701B5B57B1564CBB621FF34BF",
+      "last_write_local": "2026-11-02 04:09:47.679"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/action/CloneActionCapabilities.java",
+      "sha256": "7013C9099C54320F6AC0201AD153195AAC408EA9507C404FCAA2A36ED8EC6152",
+      "last_write_local": "2026-11-02 04:09:49.887"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/action/CloneActionRegistry.java",
+      "sha256": "1759FEBD1CAE45516DBD72845EB2EE634F744A7602989AC257AE9599FC4C9084",
+      "last_write_local": "2026-11-02 04:09:53.092"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneBalance.java",
+      "sha256": "C1033004DED082C9ECCB64D14D3C10D7223D63EE6B3ED74C1747E994AF11E62C",
+      "last_write_local": "2026-11-02 04:10:01.607"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/action/ClonePulseAction.java",
+      "sha256": "2319CABFE499D927E7D734DA5C055912B75E867CB04F24F111F4D881EB7A38C4",
+      "last_write_local": "2026-11-02 04:12:51.771"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/分身底座-20261102/author-B-action-report.md",
+      "sha256": "C6650CCB83163F637C0D55E6D751669F1E5316D6A7E12D95BD254C3A0428EE26",
+      "last_write_local": "2026-11-02 04:14:50.667"
+    }
+  ]
+}

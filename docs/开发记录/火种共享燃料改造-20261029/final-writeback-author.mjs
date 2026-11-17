@@ -1,0 +1,23 @@
+import fs from "node:fs/promises";
+import { FileBlob, SpreadsheetFile } from "@oai/artifact-tool";
+
+const root = "D:/alianximod/docs/开发记录/火种共享燃料改造-20261029";
+const summary = JSON.parse(await fs.readFile(`${root}/final-writeback-preserve-summary.json`, "utf8"));
+const artifactPath = `${root}/final-writeback-candidate-artifact.xlsx`;
+const workbook = await SpreadsheetFile.importXlsx(await FileBlob.load(summary.candidate));
+const pending = workbook.worksheets.getItem("待验收");
+const making = workbook.worksheets.getItem("制作中");
+const data = workbook.worksheets.getItem("数据表");
+if (pending.getRange("B3").values[0][0] !== "fire_liaoyuan") throw new Error("燎原 row");
+if (pending.getRange("B4").values[0][0] !== "fire_liaoli") throw new Error("燎里 row");
+if (pending.getRange("B5").values[0][0] !== "fire_fentian") throw new Error("焚天 row");
+if (pending.getRange("EB3").values[0][0] !== "燃烧结算") throw new Error("燎原 trigger");
+if (pending.getRange("EB5").values[0][0] !== "燃烧结算") throw new Error("焚天 trigger");
+if (pending.getRange("EG3").values[0][0] !== 20) throw new Error("燎原 period");
+if (pending.getRange("EG5").values[0][0] !== 4) throw new Error("焚天 period");
+if (pending.getRange("EB4").values[0][0] !== "命中成功") throw new Error("燎里 trigger");
+if (making.getRange("B3").values[0][0] !== "fire_heat_up") throw new Error("炉心 row");
+if (data.getRange("BN12").values[0][0] !== "燃烧结算") throw new Error("trigger option");
+const output = await SpreadsheetFile.exportXlsx(workbook);
+await output.save(artifactPath);
+console.log(JSON.stringify({ artifact: artifactPath, submitted: false }));

@@ -1,0 +1,17 @@
+{
+  "batchId": "water-name-alignment-20261103",
+  "taskId": "sheet-owner",
+  "workspace": "D:/alianximod",
+  "stage": "delivery",
+  "operation": "rename-in-place-only",
+  "authorization": "用户针对写回确认明确答复：把表里名字改了，不要移动到待验收。授权唯一表作者重新生成仅原位改名的候选并安全写回：让锋改断潮，原断潮改薄水切，保留两项所在子表和行位，只在对应备注澄清旧停用与迁表计划作废。不改功能、参数、其它术式或状态",
+  "inputVersion": "2026-11-03最新用户答复取消迁待验收；原sheet-owner a202611030743459570fbe为有效blocked且进程已结束、源表未变，旧迁表候选禁止提交。最新基线EBBED5631F001E599C9195E2F35DB329B9C7C2BD38FAC70FFFACAE8D04E03B4E",
+  "recordPath": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/docs/术式制作表.xlsx",
+    "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表完成报告.md",
+    "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表完成结果.json",
+    "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作"
+  ],
+  "dependencies": ["source-owner"]
+}

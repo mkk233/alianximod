@@ -1,0 +1,879 @@
+{
+  "nativeSource": "Screencam.screenshotPreview, existing live main viewport, synchronous",
+  "project": "de80cb3f-d9bf-e9be-d20d-95c24ad180c9",
+  "views": [
+    {
+      "file": "02-overall-three-quarter.png",
+      "time": 0.7,
+      "position": [
+        112.99999999999997,
+        93.00000000000001,
+        126.99999999999999
+      ],
+      "target": [
+        0,
+        8,
+        0
+      ],
+      "fov": 42,
+      "viewport": "main",
+      "skyProxyVisible": false
+    },
+    {
+      "file": "03-side-person-height.png",
+      "time": 0.7,
+      "position": [
+        110,
+        31.00000000000001,
+        25
+      ],
+      "target": [
+        -8,
+        14,
+        0
+      ],
+      "fov": 42,
+      "viewport": "main",
+      "skyProxyVisible": false
+    },
+    {
+      "file": "01-inside-eye-sky-and-fire.png",
+      "time": 0.7,
+      "position": [
+        0,
+        25.91999999999999,
+        42.000000000000014
+      ],
+      "target": [
+        0,
+        22,
+        -50
+      ],
+      "fov": 68,
+      "viewport": "main",
+      "skyProxyVisible": true
+    }
+  ],
+  "comparison": {
+    "old": "compare-old-same-camera.png",
+    "new": "01-inside-eye-sky-and-fire.png",
+    "position": [
+      0,
+      25.92,
+      42
+    ],
+    "target": [
+      0,
+      22,
+      -50
+    ],
+    "fov": 68,
+    "time": 0.7
+  },
+  "frames": [
+    {
+      "file": "frames/inside_000.png",
+      "time": 0,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/inside_001.png",
+      "time": 0.05,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/inside_002.png",
+      "time": 0.1,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/inside_003.png",
+      "time": 0.15000000000000002,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/inside_004.png",
+      "time": 0.2,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/inside_005.png",
+      "time": 0.25,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/inside_006.png",
+      "time": 0.30000000000000004,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/inside_007.png",
+      "time": 0.35000000000000003,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/inside_008.png",
+      "time": 0.4,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/inside_009.png",
+      "time": 0.45,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/inside_010.png",
+      "time": 0.5,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/inside_011.png",
+      "time": 0.55,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/inside_012.png",
+      "time": 0.6000000000000001,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/inside_013.png",
+      "time": 0.65,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/inside_014.png",
+      "time": 0.7000000000000001,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/inside_015.png",
+      "time": 0.75,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/inside_016.png",
+      "time": 0.8,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/inside_017.png",
+      "time": 0.8500000000000001,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/inside_018.png",
+      "time": 0.9,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/inside_019.png",
+      "time": 0.9500000000000001,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/inside_020.png",
+      "time": 1,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/inside_021.png",
+      "time": 1.05,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/inside_022.png",
+      "time": 1.1,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/inside_023.png",
+      "time": 1.1500000000000001,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/inside_024.png",
+      "time": 1.2000000000000002,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/inside_025.png",
+      "time": 1.25,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/inside_026.png",
+      "time": 1.3,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/inside_027.png",
+      "time": 1.35,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/inside_028.png",
+      "time": 1.4000000000000001,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/inside_029.png",
+      "time": 1.4500000000000002,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/inside_030.png",
+      "time": 1.5,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/inside_031.png",
+      "time": 1.55,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/inside_032.png",
+      "time": 1.6,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/inside_033.png",
+      "time": 1.6500000000000001,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/inside_034.png",
+      "time": 1.7000000000000002,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/inside_035.png",
+      "time": 1.75,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/inside_036.png",
+      "time": 1.8,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/inside_037.png",
+      "time": 1.85,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/inside_038.png",
+      "time": 1.9000000000000001,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/inside_039.png",
+      "time": 1.9500000000000002,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/inside_040.png",
+      "time": 2,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/inside_041.png",
+      "time": 2.0500000000000003,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/inside_042.png",
+      "time": 2.1,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/inside_043.png",
+      "time": 2.15,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/inside_044.png",
+      "time": 2.2,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/inside_045.png",
+      "time": 2.25,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/inside_046.png",
+      "time": 2.3000000000000003,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/inside_047.png",
+      "time": 2.35,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/inside_048.png",
+      "time": 2.4000000000000004,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/inside_049.png",
+      "time": 2.45,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/inside_050.png",
+      "time": 2.5,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/inside_051.png",
+      "time": 2.5500000000000003,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/inside_052.png",
+      "time": 2.6,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/inside_053.png",
+      "time": 2.6500000000000004,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/inside_054.png",
+      "time": 2.7,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/inside_055.png",
+      "time": 2.75,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/inside_056.png",
+      "time": 2.8000000000000003,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/inside_057.png",
+      "time": 2.85,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/inside_058.png",
+      "time": 2.9000000000000004,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/inside_059.png",
+      "time": 2.95,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/inside_060.png",
+      "time": 3,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/inside_061.png",
+      "time": 3.0500000000000003,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/inside_062.png",
+      "time": 3.1,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/inside_063.png",
+      "time": 3.1500000000000004,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/inside_064.png",
+      "time": 3.2,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/inside_065.png",
+      "time": 3.25,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/inside_066.png",
+      "time": 3.3000000000000003,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/inside_067.png",
+      "time": 3.35,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/inside_068.png",
+      "time": 3.4000000000000004,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/inside_069.png",
+      "time": 3.45,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/inside_070.png",
+      "time": 3.5,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/inside_071.png",
+      "time": 3.5500000000000003,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/inside_072.png",
+      "time": 3.6,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/inside_073.png",
+      "time": 3.6500000000000004,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/inside_074.png",
+      "time": 3.7,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/inside_075.png",
+      "time": 3.75,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/inside_076.png",
+      "time": 3.8000000000000003,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/inside_077.png",
+      "time": 3.85,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/inside_078.png",
+      "time": 3.9000000000000004,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/inside_079.png",
+      "time": 3.95,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    }
+  ],
+  "frameDurationMs": 50,
+  "duration": 4,
+  "transitionDemonstrated": false,
+  "note": "Steady inside-domain atmosphere; no synthetic interpolation; loop resets excerpt, not spell lifetime."
+}

@@ -1,0 +1,16 @@
+{
+  "batchId": "wood-secondary-base-20261109",
+  "taskId": "review-implementation",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "targeted-client-resource-registration-review-round3",
+  "authorization": "按项目流程对用户授权的木系资源底座、通用收益接口和状态入口做当前已收束阶段的集中只读复核；不实现具体术式。",
+  "inputVersion": "wood-secondary-base-review1-repairs-and-resource-integration-20261109",
+  "recordPath": "D:/alianximod/docs/开发记录/木属性二级底座-20261109/记录.md",
+  "writePaths": [],
+  "dependencies": [
+    "author-resources",
+    "author-effects",
+    "author-integration"
+  ]
+}

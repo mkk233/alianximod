@@ -1,0 +1,2 @@
+同一facts任务、原session，固定grok-4.7-high-fast。主会话已对账：前次CLI已结束、回执valid/reported_done、无源码写入；输入用户需求未变，表无迁移。当前Astra设计第1轮需要下面最小既有接口事实补查。这是同轮信息采集，不作独立正式复审、不给PASS、不计新轮次。仅只读指定类及直接调用，不改代码/资产/表/记录、不编译/游戏、不spawn。回答准确路径行号与完整签名/调用事实；没有就说没有，不自行发明接口或选方案。最终必须有唯一完整<<<CURSOR_TASK_REPORT>>>标记，reported_done或真实阻塞，writesSettled=true（只读已结束），其它字段按启动器要求。
+Astra集中补查B：TechniqueType完整枚举；clone_body现登记构造参数、归类、生效报价和开发spawn/付费入口完整签名；普通玩家以独立clone_body自身术式部署的最小既有可装配载体门（不接水幻形捕获）；CloneService可区分普通REPEAT且可协作的现有能力字段/状态、预留/提交/取消预算可复用签名。只给事实，不将dev-only改PLAYER，不改脉冲语义。Astra拟首版协同选普通REPEAT分身，水幻形已占ONE载荷暂跳过，但这只是待裁决方案，不由你实现。

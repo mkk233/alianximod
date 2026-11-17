@@ -1,0 +1,29 @@
+{
+  "workbookWritten": false,
+  "moved": false,
+  "sheet": "制作中",
+  "row": 6,
+  "id": "fire_liaoli",
+  "liveSha256": "410458A81EB7F37B5E1016072162BD31263532A92D34F2F52AB39F2574220F2C",
+  "liveMtime": "2026-10-30 02:51:01.753",
+  "liveBytes": 171136,
+  "userQuote": "采用建议数值，按迎面相对速度计算（最接近原版长矛）",
+  "pendingSuperseded": true,
+  "snapshot": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-tip-ring-burst-approved-snapshot.json",
+  "formula": {
+    "v": "沿刺击方向的实际相对接近速度，格/秒，负值截0，再封顶40",
+    "physical": "6+1.5*v",
+    "fire": "S*(1+F)，F为原炉心，不重复乘",
+    "nominalExcludingOtherModifiers": {"s100v0": 106, "s100v20": 136, "s100v40": 166}
+  },
+  "ownership": {
+    "source": "23ef4660-da4b-47a8-9341-8ec236ec5cc3",
+    "sourceExecuting": true,
+    "workbookAndRecord": "d6f84d0b-4ea1-4368-a576-8acc20cc2afd",
+    "archiveAndIndex": "主会话",
+    "newPixels": false,
+    "compiler": "b2d5b359-42e3-4a90-9d24-b26acec6d5f8",
+    "compilerDispatched": false
+  },
+  "quota": "设计2/2、实现3/3承接。本阶段额度已用完，返修结果未追加复审。"
+}

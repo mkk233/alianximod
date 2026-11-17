@@ -26,7 +26,7 @@ public class ShuSyncPacket {
     private final int swordUsage;
     private final int magicUsage;
     private final int magic;
-    private final int magicMax;
+    private final int magicUpperBound;
     private final Map<String, Integer> usageCounts;
     private final Set<String> learnedIds;
 
@@ -36,19 +36,19 @@ public class ShuSyncPacket {
         this.swordUsage = data.getSwordUsage();
         this.magicUsage = data.getMagicUsage();
         this.magic = data.getMagic();
-        this.magicMax = data.getMagicMax();
+        this.magicUpperBound = data.getMagicMax();
         this.usageCounts = new HashMap<>(data.getAllUsageCounts());
         this.learnedIds = new HashSet<>(data.getLearnedTechniqueIds());
     }
 
-    private ShuSyncPacket(int swordLevel, int magicLevel, int swordUsage, int magicUsage, int magic, int magicMax,
+    private ShuSyncPacket(int swordLevel, int magicLevel, int swordUsage, int magicUsage, int magic, int magicUpperBound,
                           Map<String, Integer> usageCounts, Set<String> learnedIds) {
         this.swordLevel = swordLevel;
         this.magicLevel = magicLevel;
         this.swordUsage = swordUsage;
         this.magicUsage = magicUsage;
         this.magic = magic;
-        this.magicMax = magicMax;
+        this.magicUpperBound = magicUpperBound;
         this.usageCounts = usageCounts;
         this.learnedIds = learnedIds;
     }
@@ -59,12 +59,12 @@ public class ShuSyncPacket {
         buf.writeInt(swordUsage);
         buf.writeInt(magicUsage);
         buf.writeInt(magic);
-        buf.writeInt(magicMax);
+        buf.writeInt(magicUpperBound);
 
         // 写入已学术
         buf.writeInt(learnedIds.size());
-        for (String id : learnedIds) {
-            buf.writeUtf(id);
+        for (String techniqueId : learnedIds) {
+            buf.writeUtf(techniqueId);
         }
 
         // 写入使用次数
@@ -81,14 +81,14 @@ public class ShuSyncPacket {
         int swordUsage = buf.readInt();
         int magicUsage = buf.readInt();
         int magic = buf.readInt();
-        int magicMax = buf.readInt();
+        int magicUpperBound = buf.readInt();
 
         int learnedCount = buf.readInt();
         if (learnedCount < 0 || learnedCount > 256) {
             throw new io.netty.handler.codec.DecoderException("learnedCount 越界: " + learnedCount);
         }
         Set<String> learnedIds = new HashSet<>();
-        for (int i = 0; i < learnedCount; i++) {
+        for (int learnedIndex = 0; learnedIndex < learnedCount; learnedIndex++) {
             learnedIds.add(buf.readUtf());
         }
 
@@ -97,25 +97,25 @@ public class ShuSyncPacket {
             throw new io.netty.handler.codec.DecoderException("usageCount 越界: " + usageCount);
         }
         Map<String, Integer> usageCounts = new HashMap<>();
-        for (int i = 0; i < usageCount; i++) {
+        for (int usageIndex = 0; usageIndex < usageCount; usageIndex++) {
             usageCounts.put(buf.readUtf(), buf.readInt());
         }
 
-        return new ShuSyncPacket(swordLevel, magicLevel, swordUsage, magicUsage, magic, magicMax, usageCounts, learnedIds);
+        return new ShuSyncPacket(swordLevel, magicLevel, swordUsage, magicUsage, magic, magicUpperBound, usageCounts, learnedIds);
     }
 
-    public void handle(Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> {
+    public void handle(Supplier<NetworkEvent.Context> contextSupplier) {
+        contextSupplier.get().enqueueWork(() -> {
             // 在客户端存储同步数据
             DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-                ClientShuCache.update(swordLevel, magicLevel, swordUsage, magicUsage, magic, magicMax, usageCounts, learnedIds);
+                ClientShuCache.update(swordLevel, magicLevel, swordUsage, magicUsage, magic, magicUpperBound, usageCounts, learnedIds);
             });
         });
-        ctx.get().setPacketHandled(true);
+        contextSupplier.get().setPacketHandled(true);
     }
 
-    public static void register(SimpleChannel channel, int id) {
-        channel.registerMessage(id,
+    public static void register(SimpleChannel channel, int packetId) {
+        channel.registerMessage(packetId,
                 ShuSyncPacket.class,
                 ShuSyncPacket::encode,
                 ShuSyncPacket::decode,
@@ -125,8 +125,8 @@ public class ShuSyncPacket {
 
     public static class Registration implements NetworkPacket {
         @Override
-        public void register(SimpleChannel channel, int id) {
-            ShuSyncPacket.register(channel, id);
+        public void register(SimpleChannel channel, int packetId) {
+            ShuSyncPacket.register(channel, packetId);
         }
     }
 
@@ -140,18 +140,18 @@ public class ShuSyncPacket {
         private static int swordUsage = 0;
         private static int magicUsage = 0;
         private static int magic = 0;
-        private static int magicMax = 0;
+        private static int magicUpperBound = 0;
         private static final Map<String, Integer> usageCounts = new HashMap<>();
         private static final Set<String> learnedIds = new HashSet<>();
 
-        public static void update(int swordLevel, int magicLevel, int swordUsage, int magicUsage, int magic, int magicMax,
+        public static void update(int swordLevel, int magicLevel, int swordUsage, int magicUsage, int magic, int magicUpperBound,
                                   Map<String, Integer> usageCounts, Set<String> learnedIds) {
             ClientShuCache.swordLevel = swordLevel;
             ClientShuCache.magicLevel = magicLevel;
             ClientShuCache.swordUsage = swordUsage;
             ClientShuCache.magicUsage = magicUsage;
             ClientShuCache.magic = magic;
-            ClientShuCache.magicMax = magicMax;
+            ClientShuCache.magicUpperBound = magicUpperBound;
             ClientShuCache.usageCounts.clear();
             ClientShuCache.usageCounts.putAll(usageCounts);
             ClientShuCache.learnedIds.clear();
@@ -163,9 +163,9 @@ public class ShuSyncPacket {
         public static int getSwordUsage() { return swordUsage; }
         public static int getMagicUsage() { return magicUsage; }
         public static int getMagic() { return magic; }
-        public static int getMagicMax() { return magicMax; }
-        public static int getUsageCount(String id) { return usageCounts.getOrDefault(id, 0); }
-        public static boolean hasLearned(String id) { return learnedIds.contains(id); }
+        public static int getMagicMax() { return magicUpperBound; }
+        public static int getUsageCount(String techniqueId) { return usageCounts.getOrDefault(techniqueId, 0); }
+        public static boolean hasLearned(String techniqueId) { return learnedIds.contains(techniqueId); }
         public static Set<String> getLearnedIds() { return learnedIds; }
         public static Map<String, Integer> getUsageCounts() { return usageCounts; }
 

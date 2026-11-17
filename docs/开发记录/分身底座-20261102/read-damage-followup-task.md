@@ -1,0 +1,2 @@
+模型固定 Cursor CLI --model grok-4.7-high-fast。继续本批只读事实采集，不是正式复审，不计新设计轮次。只读定位指定符号，不实现、不改文件、不编译、不测试、不启动游戏、不改表。报告精确源码路径/行号/完整签名与实际行为；只回最终报告。保持此前范围与禁止项。不得读其他会话中间工作。
+架构裁决者需要最小补充：TechniqueHits.classifyRoot/classifyRespecting/classifyConfirmed、DamagePermission.allows 的完整签名与必要方法体，内部是否自动触发领域/附魔/火种/原版受击事件等。新分身基础单次伤害若只传 ConfiguredDamage.amount 如何走既有权限和正常无敌帧（不清无敌帧、不混别的施法 Tally）；列已有能满足条件的入口、真实副作用及参数意义，不替架构者最终拍板。为后续的 owner/actor 区分，确认 damage source direct entity 与 causing entity 的当前形式，是否固定 playerAttack，以及对 owner 自身、友方/PvP 的具体拒绝。报告不超过 2500 中文字。

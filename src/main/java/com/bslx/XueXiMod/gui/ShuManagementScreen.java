@@ -1,6 +1,7 @@
 package com.bslx.XueXiMod.gui;
 
 import com.bslx.XueXiMod.shu.Proficiency;
+import com.bslx.XueXiMod.shu.balance.BalanceDisplay;
 import com.bslx.XueXiMod.shu.ShuAttribute;
 import com.bslx.XueXiMod.shu.Technique;
 import com.bslx.XueXiMod.shu.TechniqueType;
@@ -47,26 +48,26 @@ public class ShuManagementScreen extends AbstractContainerScreen<ShuManagementMe
     @Override
     protected void init() {
         super.init();
-        int x = (width - imageWidth) / 2;
-        int y = (height - imageHeight) / 2;
+        int screenX = (width - imageWidth) / 2;
+        int screenY = (height - imageHeight) / 2;
 
         // 分类按钮
-        swordBtn = Button.builder(Component.literal("剑术"), b -> {
+        swordBtn = Button.builder(Component.literal("剑术"), button -> {
                     menu.setSelectedCategory(TechniqueType.SWORD);
                     refreshCategoryButtons();
-                }).pos(x + 10, y + 28).size(36, 14).build();
-        movementBtn = Button.builder(Component.literal("动作"), b -> {
+                }).pos(screenX + 10, screenY + 28).size(36, 14).build();
+        movementBtn = Button.builder(Component.literal("动作"), button -> {
                     menu.setSelectedCategory(TechniqueType.MOVEMENT);
                     refreshCategoryButtons();
-                }).pos(x + 50, y + 28).size(36, 14).build();
-        magicBtn = Button.builder(Component.literal("法术"), b -> {
+                }).pos(screenX + 50, screenY + 28).size(36, 14).build();
+        magicBtn = Button.builder(Component.literal("术法"), button -> {
                     menu.setSelectedCategory(TechniqueType.MAGIC);
                     refreshCategoryButtons();
-                }).pos(x + 90, y + 28).size(36, 14).build();
-        universalBtn = Button.builder(Component.literal("通用"), b -> {
+                }).pos(screenX + 90, screenY + 28).size(36, 14).build();
+        universalBtn = Button.builder(Component.literal("通用"), button -> {
                     menu.setSelectedCategory(TechniqueType.UNIVERSAL);
                     refreshCategoryButtons();
-                }).pos(x + 130, y + 28).size(36, 14).build();
+                }).pos(screenX + 130, screenY + 28).size(36, 14).build();
 
         addRenderableWidget(swordBtn);
         addRenderableWidget(movementBtn);
@@ -87,12 +88,12 @@ public class ShuManagementScreen extends AbstractContainerScreen<ShuManagementMe
     @Override
     protected void renderBg(GuiGraphics guiGraphics, float partialTick, int mouseX, int mouseY) {
         RenderSystem.setShaderTexture(0, TEXTURE);
-        int x = (width - imageWidth) / 2;
-        int y = (height - imageHeight) / 2;
+        int screenX = (width - imageWidth) / 2;
+        int screenY = (height - imageHeight) / 2;
         // 绘制背景（使用原版贴图，拉伸到200x220）
-        guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, 166);
+        guiGraphics.blit(TEXTURE, screenX, screenY, 0, 0, imageWidth, 166);
         // 额外绘制下半部分（物品栏区域）
-        guiGraphics.blit(TEXTURE, x, y + 166, 0, 0, imageWidth, 54);
+        guiGraphics.blit(TEXTURE, screenX, screenY + 166, 0, 0, imageWidth, 54);
     }
 
     @Override
@@ -104,47 +105,47 @@ public class ShuManagementScreen extends AbstractContainerScreen<ShuManagementMe
         int swordLv = menu.getSwordLevel();
         int magicLv = menu.getMagicLevel();
         guiGraphics.drawString(font, "§c剑术 Lv." + swordLv, 10, 4, 0xFFFFFF, false);
-        guiGraphics.drawString(font, "§9法术 Lv." + magicLv, 100, 4, 0xFFFFFF, false);
+        guiGraphics.drawString(font, "§9术法 Lv." + magicLv, 100, 4, 0xFFFFFF, false);
 
         // 术列表
         List<Technique> techniques = menu.getTechniquesInCategory();
         int listY = 40;
 
-        for (int i = 0; i < techniques.size(); i++) {
-            Technique t = techniques.get(i);
-            boolean unlocked = menu.isTechniqueUnlocked(t);
-            boolean learned = menu.isTechniqueLearned(t.getId());
-            int y = listY + i * 44; // 每个术占44像素高度
+        for (int techniqueIndex = 0; techniqueIndex < techniques.size(); techniqueIndex++) {
+            Technique technique = techniques.get(techniqueIndex);
+            boolean unlocked = menu.isTechniqueUnlocked(technique);
+            boolean learned = menu.isTechniqueLearned(technique.getId());
+            int screenY = listY + techniqueIndex * 44; // 每个术占44像素高度
 
             if (unlocked && learned) {
                 // 已学习 + 已解锁：显示详细信息
-                int level = menu.getTechniqueLevel(t.getId());
-                float progress = menu.getTechniqueProgress(t.getId());
+                int level = menu.getTechniqueLevel(technique.getId());
+                float progress = menu.getTechniqueProgress(technique.getId());
 
                 // 名称和等级
-                guiGraphics.drawString(font, "§a✓ " + t.getName(), 10, y, 0xFFFFFF, false);
-                guiGraphics.drawString(font, "§eLv." + level, 100, y, 0xFFFF00, false);
+                guiGraphics.drawString(font, "§a✓ " + technique.getName(), 10, screenY, 0xFFFFFF, false);
+                guiGraphics.drawString(font, "§eLv." + level, 100, screenY, 0xFFFF00, false);
 
                 // 进度条
-                renderProgressBar(guiGraphics, 130, y, 60, 8, progress);
+                renderProgressBar(guiGraphics, 130, screenY, 60, 8, progress);
 
                 // 描述和属性
-                guiGraphics.drawString(font, "§7" + t.getDescription(), 10, y + 12, 0xAAAAAA, false);
-                guiGraphics.drawString(font, "§c伤害:" + t.getBaseDamage() + " §b冷却:" + t.getBaseCooldown() + "t",
-                        10, y + 24, 0xAAAAAA, false);
-                guiGraphics.drawString(font, "§6属性:" + attributeName(t.getAttribute()),
-                        10, y + 36, 0xAAAAAA, false);
+                guiGraphics.drawString(font, "§7" + technique.getDescription(), 10, screenY + 12, 0xAAAAAA, false);
+                guiGraphics.drawString(font, "§c伤害:" + shownDamage(technique) + " §b冷却:" + shownCooldown(technique) + "t",
+                        10, screenY + 24, 0xAAAAAA, false);
+                guiGraphics.drawString(font, "§6属性:" + attributeName(technique.getAttribute()),
+                        10, screenY + 36, 0xAAAAAA, false);
             } else if (unlocked) {
                 // 已解锁但未学习（理论上不会出现，因为解锁=自动学习）
-                guiGraphics.drawString(font, "§e○ " + t.getName(), 10, y, 0xFFFFFF, false);
-                guiGraphics.drawString(font, "§7" + t.getDescription(), 10, y + 12, 0xAAAAAA, false);
+                guiGraphics.drawString(font, "§e○ " + technique.getName(), 10, screenY, 0xFFFFFF, false);
+                guiGraphics.drawString(font, "§7" + technique.getDescription(), 10, screenY + 12, 0xAAAAAA, false);
             } else {
                 // 未解锁：显示解锁条件
-                guiGraphics.drawString(font, "§8🔒 " + t.getName(), 10, y, 0x888888, false);
-                String typeName = (t.getType() == TechniqueType.SWORD) ? "剑术" : "法术";
-                guiGraphics.drawString(font, "§c需要" + typeName + "等级 Lv." + t.getUnlockLevel(),
-                        10, y + 12, 0xFF5555, false);
-                guiGraphics.drawString(font, "§7" + t.getDescription(), 10, y + 24, 0x666666, false);
+                guiGraphics.drawString(font, "§8🔒 " + technique.getName(), 10, screenY, 0x888888, false);
+                String typeName = (technique.getType() == TechniqueType.SWORD) ? "剑术" : "术法";
+                guiGraphics.drawString(font, "§c需要" + typeName + "等级 Lv." + technique.getUnlockLevel(),
+                        10, screenY + 12, 0xFF5555, false);
+                guiGraphics.drawString(font, "§7" + technique.getDescription(), 10, screenY + 24, 0x666666, false);
             }
         }
 
@@ -152,6 +153,14 @@ public class ShuManagementScreen extends AbstractContainerScreen<ShuManagementMe
         if (techniques.isEmpty()) {
             guiGraphics.drawString(font, "§7暂无此类型术", 10, listY, 0xAAAAAA, false);
         }
+    }
+
+    private static float shownDamage(Technique technique) {
+        return BalanceDisplay.shownStructuralDamage(technique.getId(), technique.getBaseDamage());
+    }
+
+    private static int shownCooldown(Technique technique) {
+        return BalanceDisplay.cooldown(technique.getId(), technique.getBaseCooldown());
     }
 
     private String attributeName(ShuAttribute attribute) {
@@ -168,19 +177,19 @@ public class ShuManagementScreen extends AbstractContainerScreen<ShuManagementMe
     /**
      * 绘制进度条
      */
-    private void renderProgressBar(GuiGraphics guiGraphics, int x, int y, int width, int height, float progress) {
+    private void renderProgressBar(GuiGraphics guiGraphics, int screenX, int screenY, int width, int height, float progress) {
         // 背景
-        guiGraphics.fill(x, y, x + width, y + height, 0xFF333333);
+        guiGraphics.fill(screenX, screenY, screenX + width, screenY + height, 0xFF333333);
         // 进度
         int fillWidth = (int) (width * Math.min(1.0f, progress));
         if (fillWidth > 0) {
-            guiGraphics.fill(x, y, x + fillWidth, y + height, 0xFF00AA00);
+            guiGraphics.fill(screenX, screenY, screenX + fillWidth, screenY + height, 0xFF00AA00);
         }
         // 边框
-        guiGraphics.fill(x, y, x + width, y + 1, 0xFF555555); // 上
-        guiGraphics.fill(x, y + height - 1, x + width, y + height, 0xFF555555); // 下
-        guiGraphics.fill(x, y, x + 1, y + height, 0xFF555555); // 左
-        guiGraphics.fill(x + width - 1, y, x + width, y + height, 0xFF555555); // 右
+        guiGraphics.fill(screenX, screenY, screenX + width, screenY + 1, 0xFF555555); // 上
+        guiGraphics.fill(screenX, screenY + height - 1, screenX + width, screenY + height, 0xFF555555); // 下
+        guiGraphics.fill(screenX, screenY, screenX + 1, screenY + height, 0xFF555555); // 左
+        guiGraphics.fill(screenX + width - 1, screenY, screenX + width, screenY + height, 0xFF555555); // 右
     }
 
     @Override

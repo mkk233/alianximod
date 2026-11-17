@@ -1,0 +1,70 @@
+{
+  "task": "implement-A",
+  "author": "A",
+  "model": "grok-4.7-high-fast",
+  "design_rounds": "1/2",
+  "implementation_review_rounds": "0/3",
+  "formal_review_opened": false,
+  "compile": "not_run",
+  "game_test": "not_run",
+  "performance_claim": false,
+  "ownership_released": true,
+  "code_snapshot_utc": "2026-10-29T20:21:07.186Z",
+  "report_hashed_utc": "2026-10-29T20:22:15.836Z",
+  "evidence_note": "本 json 不写入自身 sha256。implementation-A-final.md 的 sha256 在 files 中。",
+  "name_gate": {
+    "touched_files_clean": true,
+    "preexisting_unfixed": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ]
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java",
+      "bytes": 2412,
+      "sha256": "1358A74F7BE55499E693CB34F4372AEACC1006CD794F46E12A7AA3E7E06ED5CD"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java",
+      "bytes": 2271,
+      "sha256": "50ACD8C5C17C03649D14EA48DF78633A936F47E941269806C452307669477F55"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java",
+      "bytes": 34455,
+      "sha256": "897A55048AE9C1AAA6CF8FE8D47E8FE8A53C9C73240421555D79244082473065"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceCommands.java",
+      "bytes": 6422,
+      "sha256": "CC12749E5C6B298F480935697D8828800B5859EBCDDA23F1A4326A8E3C7D7B49"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceEvents.java",
+      "bytes": 2160,
+      "sha256": "024620501187984A9A4E2847BC1DD9F21F2864880E7DC3E97C577543FA03914A"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/command/ModCommands.java",
+      "bytes": 1024,
+      "sha256": "F3049296125FFC5E9327045884933742A005C07DC8696D55570B4E6FE2D47220",
+      "before_sha256": "37B49C896B5E73DE2BDD6AC2F342E7F9FF5C0AF323AACC65DE53305909150EBA"
+    },
+    {
+      "path": "docs/性能记录使用说明.md",
+      "bytes": 6950,
+      "sha256": "13274A7CB49F76BC3869415EA6231FD1259DCD1084280DA2A89CB3264A506DB3"
+    },
+    {
+      "path": "docs/开发记录/性能记录-20261030/before-A/ModCommands.java",
+      "bytes": 899,
+      "sha256": "37B49C896B5E73DE2BDD6AC2F342E7F9FF5C0AF323AACC65DE53305909150EBA"
+    },
+    {
+      "path": "docs/开发记录/性能记录-20261030/implementation-A-final.md",
+      "bytes": 11631,
+      "sha256": "4FB557CBC2F6175A3C42AF309B411F47DC9D38D94003C094B3890F49DABA1438"
+    }
+  ]
+}

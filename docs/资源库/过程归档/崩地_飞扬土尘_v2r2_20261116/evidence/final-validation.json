@@ -1,0 +1,180 @@
+{
+  "ground_airborne_v2r2": {
+    "frames": 24,
+    "width": 144,
+    "height": 48,
+    "durationMs": 1200,
+    "frameDurationsMs": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ]
+  },
+  "visual_grit_v2r2": {
+    "frames": 4,
+    "width": 24,
+    "height": 8,
+    "durationMs": 200,
+    "frameDurationsMs": [
+      50,
+      50,
+      50,
+      50
+    ]
+  },
+  "gif2d": {
+    "encodedFrames": 24,
+    "uniqueFrames": 24,
+    "durationMs": 1200
+  },
+  "nativeModel": {
+    "elements": 445,
+    "textures": 3,
+    "animations": 1,
+    "length": 2.3,
+    "sha256": "a7ff96f62eeda989b8bda63889d3c0d8b45250697e127c5a3a695584c060aa2c"
+  },
+  "protectedOpenProjects": {
+    "count": 28,
+    "allRetainedWithSameNamesAndSavedStates": true
+  },
+  "nativeMeasuredGrain01": [
+    {
+      "time": 0.4,
+      "heightAboveGroundBlocks": 0.06000000000000005
+    },
+    {
+      "time": 0.55,
+      "heightAboveGroundBlocks": 1.0566760334816825
+    },
+    {
+      "time": 0.7,
+      "heightAboveGroundBlocks": 1.6567026995349394
+    },
+    {
+      "time": 0.85,
+      "heightAboveGroundBlocks": 1.8600000000000003
+    },
+    {
+      "time": 1,
+      "heightAboveGroundBlocks": 1.6567026995349394
+    },
+    {
+      "time": 1.15,
+      "heightAboveGroundBlocks": 1.0566760334816832
+    },
+    {
+      "time": 1.3,
+      "heightAboveGroundBlocks": 0.06000000000000005
+    },
+    {
+      "time": 1.45,
+      "heightAboveGroundBlocks": 0.06000000000000005
+    },
+    {
+      "time": 1.6,
+      "heightAboveGroundBlocks": 0.06000000000000005
+    },
+    {
+      "time": 1.8,
+      "heightAboveGroundBlocks": 0.06000000000000005
+    }
+  ],
+  "visibleCountsAtStages": [
+    {
+      "index": 4,
+      "time": 0.2,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 8,
+      "time": 0.4,
+      "visibleDustFrames": 3,
+      "visibleGrains": 4
+    },
+    {
+      "index": 10,
+      "time": 0.5,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 17,
+      "time": 0.85,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 24,
+      "time": 1.2,
+      "visibleDustFrames": 9,
+      "visibleGrains": 7
+    },
+    {
+      "index": 30,
+      "time": 1.5,
+      "visibleDustFrames": 9,
+      "visibleGrains": 0
+    },
+    {
+      "index": 33,
+      "time": 1.65,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 37,
+      "time": 1.85,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 45,
+      "time": 2.25,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    }
+  ],
+  "viewportBounds": {
+    "overall": {
+      "minX": 349,
+      "minY": 120,
+      "maxX": 920,
+      "maxY": 656,
+      "allObjectsWithinViewport": true
+    },
+    "side": {
+      "minX": 319,
+      "minY": 77,
+      "maxX": 961,
+      "maxY": 626,
+      "allObjectsWithinViewport": true
+    }
+  },
+  "protectedFiles": {
+    "count": 115,
+    "allUnchangedSinceCoordinatedDvUpdate": true
+  }
+}

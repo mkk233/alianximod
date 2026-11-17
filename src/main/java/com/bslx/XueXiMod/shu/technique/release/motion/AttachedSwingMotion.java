@@ -5,8 +5,13 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.phys.Vec3;
 
+/**
+ * 贴着施法者横扫。年龄从寿命起点的左侧 70 度转到右侧 70 度。
+ * 施法者不在时停在原地。不改无敌帧或账本。
+ */
 public final class AttachedSwingMotion implements TechniqueMotion {
     @Override
+    /** 位置固定在施法者前方 2 格、眼下约四成身高处，偏航跟着横扫角。 */
     public void tick(TechniqueHitEntity entity, ServerLevel level) {
         ServerPlayer caster = entity.getCaster();
         if (caster == null) {
@@ -18,13 +23,13 @@ public final class AttachedSwingMotion implements TechniqueMotion {
         double sweepRad = Math.toRadians(angleDeg);
         double cos = Math.cos(sweepRad);
         double sin = Math.sin(sweepRad);
-        double fx = -Math.sin(yawRad);
-        double fz = Math.cos(yawRad);
-        double dx = fx * cos - fz * sin;
-        double dz = fx * sin + fz * cos;
+        double forwardX = -Math.sin(yawRad);
+        double forwardZ = Math.cos(yawRad);
+        double deltaX = forwardX * cos - forwardZ * sin;
+        double deltaZ = forwardX * sin + forwardZ * cos;
         double height = caster.getY() + caster.getBbHeight() * 0.6;
-        Vec3 pos = new Vec3(caster.getX() + dx * 2.0, height, caster.getZ() + dz * 2.0);
-        entity.setPos(pos.x, pos.y, pos.z);
+        Vec3 position = new Vec3(caster.getX() + deltaX * 2.0, height, caster.getZ() + deltaZ * 2.0);
+        entity.setPos(position.x, position.y, position.z);
         entity.setYRot(caster.getYRot() + (float) angleDeg);
         entity.setXRot(0.0F);
     }

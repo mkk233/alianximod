@@ -1,0 +1,143 @@
+{
+  "startedUtc": "2026-10-30T04:11:24.0392218Z",
+  "endedUtc": "2026-10-30T04:18:49.0922529Z",
+  "released": true,
+  "compiled": false,
+  "playTested": false,
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+      "sha256": "293a627ab57f28d7e206e0ce3c06d0976b27ec096fcb5528374a12a580286ea9",
+      "mtimeUtc": "2026-10-30T04:13:50.6800673Z",
+      "bytes": 39419,
+      "originalSha256": "098f595b9be573905eb930fe37061e09719b422cacd5cc703887576cd534d994",
+      "originalMtimeUtc": "2026-10-29T20:12:19.7591939Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+      "backupSha256": "098f595b9be573905eb930fe37061e09719b422cacd5cc703887576cd534d994"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java",
+      "sha256": "ba5d383ac31170faffd66563d86abdbb34b1559c1a3c028ce75b468cca6390df",
+      "mtimeUtc": "2026-10-30T04:13:51.5787177Z",
+      "bytes": 12022,
+      "originalSha256": "c59d191555420e0f4a807d896d6307f5667f3c1385dbd2aae3fb481c8d34374e",
+      "originalMtimeUtc": "2026-10-29T20:10:22.0719612Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java",
+      "backupSha256": "c59d191555420e0f4a807d896d6307f5667f3c1385dbd2aae3fb481c8d34374e"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java",
+      "sha256": "54acfe88d65e721d2ed7614749c0ebf7f0f5edc976aac74a697601684fc445b3",
+      "mtimeUtc": "2026-10-30T04:13:53.1503288Z",
+      "bytes": 15383,
+      "originalSha256": "569623b1af9a99289faa8f7d1de71a0cfd9e6551130599091643692dede3feb8",
+      "originalMtimeUtc": "2026-10-29T20:10:17.2099552Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java",
+      "backupSha256": "569623b1af9a99289faa8f7d1de71a0cfd9e6551130599091643692dede3feb8"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/HitVolumes.java",
+      "sha256": "c1fd38f98cd8401e25c569e521a0b9516a2c32c7ac2222093c02df65293f23bb",
+      "mtimeUtc": "2026-10-30T04:14:02.0380519Z",
+      "bytes": 14981,
+      "originalSha256": "18bc0232bcc0fc2c7e2da2900ff3cb4b7a13f97dd54577b675f87b8ce2f2b71c",
+      "originalMtimeUtc": "2026-10-29T20:10:28.8349837Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/release/HitVolumes.java",
+      "backupSha256": "18bc0232bcc0fc2c7e2da2900ff3cb4b7a13f97dd54577b675f87b8ce2f2b71c"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingSupport.java",
+      "sha256": "a5f3b263885128e44a0f8888e46a670de4406d4343ef0b5cfe3ea1d24934622c",
+      "mtimeUtc": "2026-10-30T04:14:03.4656993Z",
+      "bytes": 3153,
+      "originalSha256": "116434b7a229beadfa5634bd3a10e7ddb2654ed5acc96a45b0685a338b7e8f38",
+      "originalMtimeUtc": "2026-10-25T11:36:50.4699205Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingSupport.java",
+      "backupSha256": "116434b7a229beadfa5634bd3a10e7ddb2654ed5acc96a45b0685a338b7e8f38"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LockTargetService.java",
+      "sha256": "4e3faefbd41c289fbd12d7a7a9c9d494a29c659d3917fc4317a108966a20f58c",
+      "mtimeUtc": "2026-10-30T04:14:06.3410643Z",
+      "bytes": 3419,
+      "originalSha256": "7517e05245488ab1271b6f263ddba88bcab3dbaefa4c1ea31ffbfc7ea49fb027",
+      "originalMtimeUtc": "2026-10-29T20:04:00.8239153Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/effects/LockTargetService.java",
+      "backupSha256": "7517e05245488ab1271b6f263ddba88bcab3dbaefa4c1ea31ffbfc7ea49fb027"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java",
+      "sha256": "3845e798a6025b99842da91b7eb927cad7cbf743f337983a2f1f36c0295eaa02",
+      "mtimeUtc": "2026-10-30T04:16:07.4078621Z",
+      "bytes": 12878,
+      "originalSha256": "6daa8141c265012db58f7ab76ed7cb40b3ba4869020862e7f2dd03e02881f1fd",
+      "originalMtimeUtc": "2026-10-29T20:04:20.4469837Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java",
+      "backupSha256": "6daa8141c265012db58f7ab76ed7cb40b3ba4869020862e7f2dd03e02881f1fd"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+      "sha256": "4955d6f74031317eddeb2520b7ef4c6b0c830baf2110b12e4aefa8ae679a73cf",
+      "mtimeUtc": "2026-10-30T04:14:14.1601668Z",
+      "bytes": 4912,
+      "originalSha256": "a3ddc72b68eab6a711d19c198e34c4789f449f22bb991a193c70eac0975e6309",
+      "originalMtimeUtc": "2026-10-29T20:05:43.0251843Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+      "backupSha256": "a3ddc72b68eab6a711d19c198e34c4789f449f22bb991a193c70eac0975e6309"
+    },
+    {
+      "path": "src/main/resources/xueximod.mixins.json",
+      "sha256": "353ba6fde87ca81652e2006542f2d42f6eefc3f5e307df8cf5aea527c28bba9c",
+      "mtimeUtc": "2026-10-30T04:13:54.0495718Z",
+      "bytes": 1856,
+      "originalSha256": "913316d7f4d34f42c291e9824c8afbe7e53a41d008a29f0173ca7fc44612357c",
+      "originalMtimeUtc": "2026-10-29T14:49:59.2306300Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-A/src/main/resources/xueximod.mixins.json",
+      "backupSha256": "913316d7f4d34f42c291e9824c8afbe7e53a41d008a29f0173ca7fc44612357c"
+    }
+  ],
+  "added": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/query/LivingCandidateQueries.java",
+      "sha256": "32ee646d862256fb5a4e783d4d825b892df564282ab1da1605135330623d9e04",
+      "mtimeUtc": "2026-10-30T04:14:59.3937361Z",
+      "bytes": 17404
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/query/LivingCandidateEvents.java",
+      "sha256": "c287bef00aec6da8c9d65a07b8cd3660e4a761b04b4fcd0cc90efe678c88cb76",
+      "mtimeUtc": "2026-10-30T04:13:08.7413533Z",
+      "bytes": 1709
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/LivingCandidateEntityMixin.java",
+      "sha256": "c773a1168ed71f3a7d53713111ca9c084faaef23e73762bbbaf01cae506a4e35",
+      "mtimeUtc": "2026-10-30T04:13:11.2409523Z",
+      "bytes": 1653
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/LivingCandidateSectionMixin.java",
+      "sha256": "9fb1c35e6e443322a10d448399cce4d12672fa8ddb15e645f5d989ce0948a60d",
+      "mtimeUtc": "2026-10-30T04:13:13.9720032Z",
+      "bytes": 2132
+    },
+    {
+      "path": "docs/候选查询复用说明.md",
+      "sha256": "e3c01e406f55d29a6675ac0282ddb7abf9c56e47b652c817f5821d125ab49e4b",
+      "mtimeUtc": "2026-10-30T04:17:56.2066024Z",
+      "bytes": 6338
+    },
+    {
+      "path": "docs/开发记录/候选查询复用-20261030/implementation-A-final.md",
+      "sha256": "9d39d62c57b21fa0e87b222ed6e8708815a24c26077001797e3c60ac2f219ce6",
+      "mtimeUtc": "2026-10-30T04:18:33.2520398Z",
+      "bytes": 12330
+    },
+    {
+      "path": "docs/开发记录/候选查询复用-20261030/backup-A/original-metadata.json",
+      "sha256": "d8c20fe2665cfe0978b0e6ae4dad418cd747138e2f8944d3112788e49dece787",
+      "mtimeUtc": "2026-10-30T04:11:24.1535609Z",
+      "bytes": 3828
+    }
+  ]
+}

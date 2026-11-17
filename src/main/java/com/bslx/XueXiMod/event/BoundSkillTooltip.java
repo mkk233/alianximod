@@ -22,13 +22,13 @@ public class BoundSkillTooltip {
         event.getToolTip().add(Component.literal("§6§l【已绑定技】"));
 
         // 遍历4个槽位
-        for (int i = 0; i < 4; i++) {
-            String key = "BoundSkill_" + i;
+        for (int slotIndex = 0; slotIndex < 4; slotIndex++) {
+            String key = "BoundSkill_" + slotIndex;
             if (tag.contains(key)) {
                 Skill skill = Skill.fromNbt(tag.getCompound(key));
                 if (skill != null) {
                     // 获取按键名称
-                    String keyName = getKeyDisplayName(i);
+                    String keyName = getKeyDisplayName(slotIndex);
 
                     // 技名称和类型
                     String typeIcon = skill.getType() == SkillType.SWORD ? "§c⚔" : "§9✦";
@@ -38,16 +38,16 @@ public class BoundSkillTooltip {
 
                     // 组成术（简化显示）
                     StringBuilder techs = new StringBuilder("§7  术: ");
-                    for (int j = 0; j < skill.getTechniques().size(); j++) {
-                        if (j > 0) techs.append(" + ");
-                        techs.append(skill.getTechniques().get(j).getName());
+                    for (int techniqueIndex = 0; techniqueIndex < skill.getTechniques().size(); techniqueIndex++) {
+                        if (techniqueIndex > 0) techs.append(" + ");
+                        techs.append(skill.getTechniques().get(techniqueIndex).getName());
                     }
                     event.getToolTip().add(Component.literal(techs.toString()));
 
                     // 属性
                     event.getToolTip().add(Component.literal(
-                        "§7  伤害:§c" + skill.getTotalBaseDamage() +
-                        " §7冷却:§b" + skill.getTotalBaseCooldown() + "t"
+                        "§7  伤害:§c" + skill.displayedTotalDamage() +
+                        " §7冷却:§b" + skill.displayedTotalCooldown() + "t"
                     ));
                 }
             }

@@ -1,0 +1,228 @@
+{
+  "attempt": "art-v1-bb-finish-20261116",
+  "source": "native Codecs.project.load of saved bbmodel in connected Blockbench Desktop 5.2.2",
+  "reopenedProject": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+  "saved": true,
+  "model": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/blockbench/nether_blue_palette_art_v1.bbmodel",
+  "elements": 80,
+  "groups": 20,
+  "textures": [
+    {
+      "name": "AUX_mannequin_palette.png",
+      "width": 8,
+      "height": 8,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "kindle_v3_screenshot_original.png",
+      "width": 48,
+      "height": 1216,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "kindle_v3_screenshot_legacy.png",
+      "width": 48,
+      "height": 1216,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "kindle_v3_screenshot_blue.png",
+      "width": 48,
+      "height": 1216,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "fentian_conflagration_original.png",
+      "width": 128,
+      "height": 7488,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "fentian_conflagration_legacy.png",
+      "width": 128,
+      "height": 7488,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "fentian_conflagration_blue.png",
+      "width": 128,
+      "height": 7488,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "kindle_v1_original.png",
+      "width": 64,
+      "height": 1024,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "kindle_v1_legacy.png",
+      "width": 64,
+      "height": 1024,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "kindle_v1_blue.png",
+      "width": 64,
+      "height": 1024,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "fire_seed_original.png",
+      "width": 32,
+      "height": 256,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "fire_seed_legacy.png",
+      "width": 32,
+      "height": 256,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "fire_seed_blue.png",
+      "width": 32,
+      "height": 256,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "liaoyuan_ground_flame_original.png",
+      "width": 32,
+      "height": 960,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "liaoyuan_ground_flame_legacy.png",
+      "width": 32,
+      "height": 960,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "liaoyuan_ground_flame_blue.png",
+      "width": 32,
+      "height": 960,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "nether_gloom_v2_runtime.png",
+      "width": 64,
+      "height": 1024,
+      "error": 0,
+      "complete": true
+    },
+    {
+      "name": "soul_fire_0.png",
+      "width": 16,
+      "height": 512,
+      "error": 0,
+      "complete": true
+    }
+  ],
+  "visibleFire": [
+    {
+      "name": "FIRE_V3_0",
+      "uv": [
+        0,
+        320,
+        48,
+        384
+      ],
+      "texture": "kindle_v3_screenshot_original.png"
+    },
+    {
+      "name": "FIRE_V3_1",
+      "uv": [
+        0,
+        320,
+        48,
+        384
+      ],
+      "texture": "kindle_v3_screenshot_legacy.png"
+    },
+    {
+      "name": "FIRE_V3_2",
+      "uv": [
+        0,
+        320,
+        48,
+        384
+      ],
+      "texture": "kindle_v3_screenshot_blue.png"
+    }
+  ],
+  "screenshot": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_reopened_model_front_F06.png",
+  "comparisonLighting": "Preview material SHADE=false for all comparison textures; not a Forge lighting claim",
+  "protection": [
+    {
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "name": "fire_kindle_v2_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2,
+      "contentHash": "61f9da7c33b0c7e0002f96866dcb3116d8037e58f3628e5939325ecc8d326426",
+      "unchanged": true
+    },
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate",
+      "saved": false,
+      "elements": 38,
+      "textures": 1,
+      "contentHash": "fabfaae49af9e0eeada1b7fa3ff48beb81d76ec40694016112ae81d7f8c28b65",
+      "unchanged": true
+    },
+    {
+      "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2,
+      "contentHash": "1c179442cab72fb0a40096414853785894168bc9ced6cadb19246d72ee38cd28",
+      "unchanged": true
+    },
+    {
+      "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2,
+      "contentHash": "e7db0ff99164a1955658657b45c379e3ac1edd496094abb8f54d1660b251f24d",
+      "unchanged": true
+    },
+    {
+      "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "elements": 27,
+      "textures": 3,
+      "contentHash": "bc8155e5b94d448f95ba21ce0f5003da202e708686bab7a418e2180fd9fe94d5",
+      "unchanged": true
+    },
+    {
+      "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "elements": 27,
+      "textures": 3,
+      "contentHash": "a252b32ffd58278ad2258195b6a6afccd7729c93993216b5b03c1b66ab633778",
+      "unchanged": true
+    }
+  ],
+  "allProtectedProjectsUnchanged": true
+}

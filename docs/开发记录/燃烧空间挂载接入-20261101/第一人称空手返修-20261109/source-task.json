@@ -1,0 +1,17 @@
+{
+  "batchId": "heat-burn-20261031",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "authorization": "用户2026-11-09报告第一人称空手火焰下移并确认第三人称正确，继续已授权的燃烧接入返修；主会话仅调度，检查交执行渠道",
+  "inputVersion": "burn-v3-spatial-v1 + 用户20261109第一人称空手位置反馈",
+  "recordPath": "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/记录.md",
+  "dependencies": [
+    "heat-burn-sheet-writer"
+  ],
+  "taskId": "burn-spatial-implementation",
+  "operation": "compile-empty-first-person",
+  "writePaths": [
+    "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/compile-report.md",
+    "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/编译证据"
+  ]
+}

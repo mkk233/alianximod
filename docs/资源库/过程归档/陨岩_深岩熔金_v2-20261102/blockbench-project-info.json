@@ -1,0 +1,60 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"project\": {\n    \"name\": \"陨岩_深岩熔金_v2_待确认\",\n    \"uuid\": \"a4aeb36c-dd37-cb64-4add-022dcda3aea3\",\n    \"save_path\": \"\"\n  },\n  \"format\": {\n    \"id\": \"free\",\n    \"name\": \"通用模型\"\n  },\n  \"resolution\": {\n    \"texture_width\": 16,\n    \"texture_height\": 16\n  },\n  \"counts\": {\n    \"cubes\": 9,\n    \"meshes\": 0,\n    \"groups\": 4,\n    \"textures\": 4,\n    \"outliner_elements\": 9\n  },\n  \"root_groups\": [\n    {\n      \"name\": \"meteorite_v2_material\",\n      \"uuid\": \"86e16b0a-d13a-ad86-429f-d29bf0c2804e\",\n      \"children\": 1\n    },\n    {\n      \"name\": \"示意辅助_旧材质对照\",\n      \"uuid\": \"3d9e8cec-032a-cc91-e79f-e87c63b4d963\",\n      \"children\": 1\n    },\n    {\n      \"name\": \"示意辅助_地面\",\n      \"uuid\": \"d5eb8ea1-f934-a3ca-6bd5-7260f7e25e0e\",\n      \"children\": 1\n    },\n    {\n      \"name\": \"示意辅助_两格高比例人偶\",\n      \"uuid\": \"b2d08441-a678-16e1-705f-1eb40e92cc1d\",\n      \"children\": 6\n    }\n  ]\n}"
+    },
+    {
+      "name": "陨岩_深岩熔金_v2_待确认.bbmodel",
+      "title": "陨岩_深岩熔金_v2_待确认 project file",
+      "uri": "blockbench://project/a4aeb36c-dd37-cb64-4add-022dcda3aea3.bbmodel",
+      "description": "Live Blockbench project file, including unsaved edits and embedded textures. Readable while this project is active; select it again if unavailable.",
+      "mimeType": "application/json",
+      "type": "resource_link"
+    }
+  ],
+  "structuredContent": {
+    "project": {
+      "name": "陨岩_深岩熔金_v2_待确认",
+      "uuid": "a4aeb36c-dd37-cb64-4add-022dcda3aea3",
+      "save_path": ""
+    },
+    "format": {
+      "id": "free",
+      "name": "通用模型"
+    },
+    "resolution": {
+      "texture_width": 16,
+      "texture_height": 16
+    },
+    "counts": {
+      "cubes": 9,
+      "meshes": 0,
+      "groups": 4,
+      "textures": 4,
+      "outliner_elements": 9
+    },
+    "root_groups": [
+      {
+        "name": "meteorite_v2_material",
+        "uuid": "86e16b0a-d13a-ad86-429f-d29bf0c2804e",
+        "children": 1
+      },
+      {
+        "name": "示意辅助_旧材质对照",
+        "uuid": "3d9e8cec-032a-cc91-e79f-e87c63b4d963",
+        "children": 1
+      },
+      {
+        "name": "示意辅助_地面",
+        "uuid": "d5eb8ea1-f934-a3ca-6bd5-7260f7e25e0e",
+        "children": 1
+      },
+      {
+        "name": "示意辅助_两格高比例人偶",
+        "uuid": "b2d08441-a678-16e1-705f-1eb40e92cc1d",
+        "children": 6
+      }
+    ]
+  }
+}

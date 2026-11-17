@@ -1,0 +1,65 @@
+{
+  "status": "compile_successful",
+  "session_id": "c944df97-5698-4cb3-ae72-8adf3edc9b0a",
+  "model": "grok-4.7-high-fast",
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "working_directory": "D:/alianximod",
+  "java_home": "C:/Program Files/Java/jdk-17",
+  "gradle_user_home": "C:/Users/baishang/.gradle",
+  "env_scope": "process_local",
+  "startedAt": "2026-11-02T03:55:41.3293566+08:00",
+  "endedAt": "2026-11-02T03:56:10.1974142+08:00",
+  "exitCode": 0,
+  "compileJavaOutcome": "EXECUTED",
+  "javac_executed": true,
+  "tasks": {
+    "downloadMcpConfig": "EXECUTED",
+    "extractSrg": "UP-TO-DATE",
+    "createMcpToSrg": "UP-TO-DATE",
+    "compileJava": "EXECUTED"
+  },
+  "actionable_tasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "warning_count": 40,
+  "warning_sources": [
+    "ResourceLocation constructors",
+    "HitVolumes.java:208 ProjectileImpactEvent.setCanceled"
+  ],
+  "log": "D:/alianximod/docs/开发记录/底座释放参数返修-20261102/compile-gradle.log",
+  "sources": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/BatchCastSession.java",
+      "sha256": "e958c35c223e37fab2256f65df3c87585ebc041ac26bb15dd0d5f9529e83d44f",
+      "bytes": 18999,
+      "last_write": "2026-11-02T03:50:53.9570425+08:00"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java",
+      "sha256": "665f4bcbdaef562731d6d804c865bcc9935b7360cef2f9d0307864c9c85a335d",
+      "bytes": 57505,
+      "last_write": "2026-11-02T03:51:20.4871488+08:00"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/carrier/BatchShockRingEffect.java",
+      "sha256": "48af3e6b3d44222af44b4def51dfd3ff2e5e9f97f0866354387cdfdea87d71a2",
+      "bytes": 9053,
+      "last_write": "2026-11-02T03:51:00.3990663+08:00"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+      "sha256": "fd70ab2637ca0b33091f0771740eeb49c85985571045a14ea7f17e57d534fd8e",
+      "bytes": 33044,
+      "last_write": "2026-11-02T03:51:01.9955679+08:00"
+    }
+  ],
+  "source_unchanged": true,
+  "src_main_before_after_identical": true,
+  "src_main_file_count": 1019,
+  "compile_started_after_last_write": true,
+  "gradle_daemon_66116": "present_idle_no_children",
+  "active_wrapper_or_game": 0,
+  "packaged": false,
+  "gameStarted": false,
+  "formal_review": "本阶段额度已用完，返修结果未追加复审",
+  "writes_stopped": true,
+  "blockers": []
+}

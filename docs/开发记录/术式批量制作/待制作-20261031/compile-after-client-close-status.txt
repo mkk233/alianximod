@@ -1,0 +1,37 @@
+checked_at=2026-10-31T12:44:08.413+08:00
+client_45212=gone
+daemon_12896=alive_children=0
+blocking_count=0
+JAVA_HOME_selected=C:\Program Files\Java\jdk-17
+java_exists=True
+java_version=java version "17.0.6" 2023-01-17 LTS | Java(TM) SE Runtime Environment (build 17.0.6+9-LTS-190) | Java HotSpot(TM) 64-Bit Server VM (build 17.0.6+9-LTS-190, mixed mode, sharing)
+GRADLE_USER_HOME_selected=C:\Users\baishang\.gradle
+process_GRADLE_USER_HOME=C:\Users\baishang\AppData\Local\Temp\cursor-sandbox-cache\a1e1cd1e9998e5817d68469a049d90f3\gradle
+wrapper88=True
+caches88=True
+jvmargs=org.gradle.jvmargs=-Xmx3G
+daemon_prop=org.gradle.daemon=false
+src_main_files=955
+src_main_bytes=10696906
+src_main_tree=5f8684f3309caaf9d9ba04af46affee25f8bdaf55af9855e139adfc4aab33192
+src_main_matches_original=False
+generated_files=65
+generated_bytes=26708
+generated_tree=90d855d169745e6f066ce37297834814d6080c739426e27b6844172e86badc9b
+src_main_file_diffs=0
+original_tree_reproduced=5e3feb75da9a5de7b47551eebe6a77f99e6012cd0da3f9f6e703241eedba978a
+content_matches_original_inventory=True
+prior_json src/generated/resources/data/xueximod/loot_tables/blocks/meteorite.json same=True now=fa416660e970f12c51eed7b62d9501f49b1ef25f39ab6102bca8e7235b16a830
+prior_json src/generated/resources/data/minecraft/tags/blocks/mineable/pickaxe.json same=True now=af699604b9969fddd4271faa636d134faedc2165a346510501d037726b178d0b
+prior_json src/generated/resources/data/minecraft/tags/blocks/needs_stone_tool.json same=True now=1d2581e7080321aef9e703bc4be2132a99c9ed1b2229df0001bed41b60cb4a79
+prior_generated_json_changed=False
+compile_start=2026-10-31T12:44:11.499+08:00
+compile_end=2026-10-31T12:44:33.214+08:00
+compile_exit=1
+src_main_after_scan=5f8684f3309caaf9d9ba04af46affee25f8bdaf55af9855e139adfc4aab33192
+src_main_scan_same=True
+src_main_content_diffs_during=0
+generated_after=90d855d169745e6f066ce37297834814d6080c739426e27b6844172e86badc9b
+generated_same_during_compile=True
+generated_content_diffs_during=0
+action=compiled

@@ -1,0 +1,14 @@
+{
+  "submitted": false,
+  "baselineSha256": "E79B32B27216B167EB8FD16BAC4871ECDA11D04963822F10A0C22E8D2B6740AF",
+  "backup": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\备份\\火苗-术式制作表-20261030-180454-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\火苗-candidate-preserved.xlsx",
+  "candidateSha256": "83D13762D627FF953A184F5B7F6247E88A972ED9FA139099D6FFA5A12DFEFB9E",
+  "row": 16,
+  "counts": {
+    "已完成": 40,
+    "待制作": 14,
+    "制作中": 3,
+    "待验收": 3
+  }
+}

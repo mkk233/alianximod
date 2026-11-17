@@ -1,0 +1,40 @@
+{
+  "ready": true,
+  "submitted": false,
+  "baselineSha256": "9BD702EF0B734DE57502E4D8875BCCA2C3A10185AAE010434BC25AA303E36EAF",
+  "baselineMtime": "2026-11-02T02:26:49.906+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\陨岩三分落点返修-20261102\\备份\\术式制作表-20261102-024237-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\陨岩三分落点返修-20261102\\候选\\术式制作表-候选-20261102-024237-1.xlsx",
+  "candidateSha256": "D2F7D3F0DCDFFDF370D3083A9CBFF22B30AA94A67CC206B7BE7502D112748242",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\陨岩三分落点返修-20261102\\快照\\变更前-AEN-20261102-024237-1.json",
+    "nodv": "D:\\alianximod\\docs\\开发记录\\陨岩三分落点返修-20261102\\快照\\变更前-NODV-20261102-024237-1.json",
+    "current": "D:\\alianximod\\docs\\开发记录\\陨岩三分落点返修-20261102\\快照\\当前需求-20261102-024237-1.md"
+  },
+  "from": {
+    "sheet": "待验收",
+    "row": 9
+  },
+  "to": {
+    "sheet": "制作中",
+    "row": 16
+  },
+  "countsBefore": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 13,
+    "待验收": 7
+  },
+  "countsAfter": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 14,
+    "待验收": 6
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "affectedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/workbook.xml"
+  ]
+}

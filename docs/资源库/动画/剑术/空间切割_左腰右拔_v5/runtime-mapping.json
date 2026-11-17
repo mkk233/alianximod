@@ -1,0 +1,47 @@
+{
+  "runtimeResource": "src/main/resources/assets/xueximod/actions/space_cut_left_waist_v5.json",
+  "resourceLocation": "xueximod:actions/space_cut_left_waist_v5.json",
+  "sourceKeyframes": "docs/资源库/动画/剑术/空间切割_左腰右拔_v5/animation-keyframes.json",
+  "sourceMount": "docs/资源库/动画/剑术/空间切割_左腰右拔_v5/native-mount.json",
+  "durationSeconds": 1.6,
+  "euler": "ZYX",
+  "actionId": "xueximod:space_cut",
+  "visualNoticeSeconds": 0.48,
+  "visualNotice": "draw-release",
+  "bones": [
+    "Body",
+    "Head",
+    "ArmRight",
+    "ForearmRight",
+    "SwordHand",
+    "ArmLeft",
+    "ForearmLeft",
+    "LegRight",
+    "LegLeft"
+  ],
+  "positionBones": ["Body", "LegRight", "LegLeft"],
+  "startPalmBlockbench": [5.3, 15.5, -3.6],
+  "bladeAxisBlockbench": [0, 0, 1],
+  "swordParent": "ForearmRight",
+  "itemMount": {
+    "linear": "T * inverse(vanilla handheld right-hand rotation)",
+    "displayContext": ["THIRD_PERSON_RIGHT_HAND", "FIRST_PERSON_RIGHT_HAND"],
+    "thirdPersonTranslationBlocks": [0.0, 0.25, 0.03125],
+    "firstPersonTranslationBlocks": [0.070625, 0.2, 0.070625],
+    "scale": "kept from the item display",
+    "customDisplayOverride": false
+  },
+  "excludedFromRuntime": [
+    "iaido-single-v5-left-waist.bbmodel",
+    "iaido-atlas.png",
+    "iaido-atlas.aseprite",
+    "atlas-preview.png",
+    "iaido-front-preview.gif",
+    "iaido-side-preview.gif",
+    "iaido-transition-slow.gif",
+    "iaido-front-preview.aseprite",
+    "iaido-side-preview.aseprite",
+    "left-waist-start.png",
+    "side-waist-start.png"
+  ]
+}

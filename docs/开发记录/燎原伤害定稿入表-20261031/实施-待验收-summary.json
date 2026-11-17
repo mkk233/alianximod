@@ -1,0 +1,16 @@
+{
+  "submitted": false,
+  "baselineSha256": "3905785BD053899D1CA429E07E4942E10F0B205AA2403013762C44B566D8A183",
+  "backup": "D:\\alianximod\\docs\\开发记录\\燎原伤害定稿入表-20261031\\备份\\实施-待验收-术式制作表-20261031-025049-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\燎原伤害定稿入表-20261031\\实施-待验收-candidate-preserved.xlsx",
+  "candidateSha256": "AC4BA99781DC6174B89344FC2CB2174E67B4A2AF4C0515BB50C4BE6905435F8F",
+  "from": "制作中第6行",
+  "to": "待验收第6行",
+  "targetRow": 6,
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 4
+  }
+}

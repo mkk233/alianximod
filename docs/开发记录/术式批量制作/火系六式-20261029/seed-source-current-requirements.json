@@ -1,0 +1,1150 @@
+{
+  "purpose": "本次火种来源的增量需求快照和现行表原文。不是旧的完整详细快照，也不确认实现后的实际资源引用。",
+  "preparedAt": "2026-10-29T12:41:57+08:00",
+  "isHistoricalDetailedSnapshot": false,
+  "historicalDetailedSnapshotFound": false,
+  "historicalSnapshotNote": "第9节要求的旧详细 N/O/DV 快照仍然没有找到。现行简句和源码接线都不能补造那份原文。",
+  "workbookAtIntake": {
+    "path": "docs/术式制作表.xlsx",
+    "sha256": "5F8B37C4A45673CF320F4885EB5BDBF1961960013151EE082EF2C6DFF7FADA28",
+    "lastWriteTime": "2026-10-29T12:10:57.383+08:00",
+    "bytes": 152881,
+    "modified": false,
+    "previousWritebackSha256": "B7461BA4578F7E7AF3C549E58FFAE0746D5221C28C4E106AEEBC6F62776F6435"
+  },
+  "userAuthorization": {
+    "fullText": "现在没有为敌人挂载火种的术式都只有消耗，帮我修改现有术式中的点火，热光束和火球，让他们都可以给敌人挂载火种，点火附魔后的术式或者武器的攻击可以额外挂载2点火种值，热光束每次命中都给敌人叠加1火种值火球命中会提供三点火种值。",
+    "taskShorterText": "点火附魔后的术式或武器攻击额外给敌人2点火种；热光束每次命中给敌人1点；火球命中给敌人3点。",
+    "namedModification": true,
+    "notClaimedFromCompletedQueue": true
+  },
+  "approvedIncrement": {
+    "source": "seed-source-implement-task.md",
+    "keepsExistingDamageRangeTrajectoryVisual": true,
+    "amounts": {
+      "magic_ignite": 2,
+      "heat_beam": 1,
+      "fire_orb": 3
+    },
+    "stacks": [
+      {
+        "parts": [
+          "magic_ignite",
+          "heat_beam"
+        ],
+        "seeds": 3
+      },
+      {
+        "parts": [
+          "magic_ignite",
+          "fire_orb"
+        ],
+        "seeds": 5
+      }
+    ],
+    "rules": [
+      "点火的额外是加法：宿主攻击额外加2。热光束原生加1，点火后共3。火球原生加3，点火后共5。",
+      "固定点数，生产倍率1，不随攻击伤害、炉心或聚能放大。火种已有100上限、归属、衰减或生命周期，以及消费者规则保持。",
+      "热光束沿用现有10tick命中间隔，每次有效命中可再次产种，不能被同一ReleaseBatch一次grant吞掉后续命中。",
+      "火球沿用现有轨迹、穿透和每目标hitOnce。每个实际命中目标加3，不改成爆炸，也不只给第一个目标。",
+      "命中敌人沿用现有伤害权限，在成功接受的攻击伤害结算边界生产。空挥、未命中、免疫或拒绝伤害、自己、无效或已死目标、客户端不产生火种。",
+      "只接入火种，不改旧伤害、点燃、友伤或无敌帧。",
+      "点火覆盖实际活跃的术式附魔和武器印记或普通攻击，含已有潮印路径。保留既有印记消费和时长，不改成永久附魔。未被链调用的MagicIgniteEffect视线盒子不作为新增来源。",
+      "同一次逻辑伤害结算把原生数值和点火数值合并后只挂一次。原版燃烧tick、附魔派生火伤、监听回调和Tally再次flush不得重复加。",
+      "相邻真实光束命中是新命中。同一分为三的聚合轮或重复回调不按复制份数额外倍增。双重释放仍按已有实际结算边界。",
+      "不要让任意LivingHurtEvent都产种，也不修改消费者现有的一次消费去重来偷渡光束连击。",
+      "复用统一命中、附魔和状态入口，用数值能力或载荷传递。禁止按这三项id在SkillUsePacket、公共链结算或release/fire里加特例。"
+    ]
+  },
+  "resourceIdentifiers": {
+    "actualReferencesConfirmed": false,
+    "confirmAfter": "源码作者最终说明交回后才能核对实际引用。本文件不把读取时的类名或表内O写成已经接入的资源。",
+    "sheetDisplayOnly": {
+      "heat_beam": "HeatBeamEffect",
+      "fire_orb": "FireOrbEffect",
+      "magic_ignite": "MagicIgniteEffect"
+    },
+    "sheetEnchantEffectKey": "fire",
+    "readReportBeforeImplementation": {
+      "report": "seed-source-read-final.md",
+      "seedStateId": "xueximod:fire_seed",
+      "seedStateKey": "fire_seed",
+      "weaponEnchantKey": "xueximod_weapon_enchant",
+      "grantCallersInMainAtReadTime": 0
+    }
+  },
+  "sheetStatus": {
+    "migrateThisRound": false,
+    "reason": "缺第9节旧详细快照，不擅自从已完成迁走。",
+    "completedMarkIsNotSeedAcceptance": true,
+    "laterDv": "实现和编译最终交回后另派写回，只在三项DV写明新增火种功能待实测。",
+    "sixUnchangedByThisPrep": true
+  },
+  "items": [
+    {
+      "id": "magic_ignite",
+      "name": "点火",
+      "sheet": "已完成",
+      "row": 29,
+      "n": "点燃目标/方块",
+      "o": "MagicIgniteEffect",
+      "dv": null,
+      "cells": {
+        "A": {
+          "group": "术式",
+          "header": "名称",
+          "kind": "inlineStr",
+          "text": "点火"
+        },
+        "B": {
+          "group": "术式",
+          "header": "编号",
+          "kind": "inlineStr",
+          "text": "magic_ignite"
+        },
+        "C": {
+          "group": "术式",
+          "header": "类型",
+          "kind": "inlineStr",
+          "text": "通用"
+        },
+        "D": {
+          "group": "术式",
+          "header": "属性",
+          "kind": "inlineStr",
+          "text": "火"
+        },
+        "E": {
+          "group": "术式",
+          "header": "基础伤害",
+          "kind": "n",
+          "text": "0"
+        },
+        "F": {
+          "group": "术式",
+          "header": "基础冷却tick",
+          "kind": "n",
+          "text": "40"
+        },
+        "G": {
+          "group": "术式",
+          "header": "等级上限",
+          "kind": "n",
+          "text": "20"
+        },
+        "H": {
+          "group": "术式",
+          "header": "复杂度",
+          "kind": "n",
+          "text": "0"
+        },
+        "I": {
+          "group": "术式",
+          "header": "登记弹速",
+          "kind": "n",
+          "text": "1"
+        },
+        "J": {
+          "group": "术式",
+          "header": "附魔",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "K": {
+          "group": "术式",
+          "header": "装配消耗",
+          "kind": "n",
+          "text": "2"
+        },
+        "L": {
+          "group": "术式",
+          "header": "登记魔力",
+          "kind": "n",
+          "text": "2"
+        },
+        "M": {
+          "group": "术式",
+          "header": "可接受附魔",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "N": {
+          "group": "术式",
+          "header": "功能描述",
+          "kind": "inlineStr",
+          "text": "点燃目标/方块"
+        },
+        "O": {
+          "group": "术式",
+          "header": "特效",
+          "kind": "inlineStr",
+          "text": "MagicIgniteEffect"
+        },
+        "DN": {
+          "group": "附魔累积",
+          "header": "附魔效果键",
+          "kind": "inlineStr",
+          "text": "fire"
+        },
+        "DO": {
+          "group": "附魔累积",
+          "header": "附魔初始层数",
+          "kind": "n",
+          "text": "0"
+        },
+        "DP": {
+          "group": "附魔累积",
+          "header": "附魔半径基数",
+          "kind": "n",
+          "text": "0.5"
+        },
+        "DQ": {
+          "group": "附魔累积",
+          "header": "附魔时长基数",
+          "kind": "n",
+          "text": "5"
+        },
+        "DR": {
+          "group": "附魔累积",
+          "header": "附魔半径倍率",
+          "kind": "n",
+          "text": "1"
+        },
+        "DS": {
+          "group": "附魔累积",
+          "header": "附魔时长倍率",
+          "kind": "n",
+          "text": "1"
+        },
+        "DT": {
+          "group": "附魔累积",
+          "header": "附魔伤害倍率",
+          "kind": "n",
+          "text": "1"
+        },
+        "DU": {
+          "group": "附魔累积",
+          "header": "附魔速度倍率",
+          "kind": "n",
+          "text": "1"
+        }
+      },
+      "resourceDetails": [],
+      "archiveRows": []
+    },
+    {
+      "id": "heat_beam",
+      "name": "热光束",
+      "sheet": "已完成",
+      "row": 19,
+      "n": "持续释放一束随准星转向的火属性光束，对接触的生物造成伤害",
+      "o": "HeatBeamEffect",
+      "dv": null,
+      "cells": {
+        "A": {
+          "group": "术式",
+          "header": "名称",
+          "kind": "inlineStr",
+          "text": "热光束"
+        },
+        "B": {
+          "group": "术式",
+          "header": "编号",
+          "kind": "inlineStr",
+          "text": "heat_beam"
+        },
+        "C": {
+          "group": "术式",
+          "header": "类型",
+          "kind": "inlineStr",
+          "text": "法术"
+        },
+        "D": {
+          "group": "术式",
+          "header": "属性",
+          "kind": "inlineStr",
+          "text": "火"
+        },
+        "E": {
+          "group": "术式",
+          "header": "基础伤害",
+          "kind": "n",
+          "text": "3"
+        },
+        "F": {
+          "group": "术式",
+          "header": "基础冷却tick",
+          "kind": "n",
+          "text": "20"
+        },
+        "G": {
+          "group": "术式",
+          "header": "等级上限",
+          "kind": "n",
+          "text": "20"
+        },
+        "H": {
+          "group": "术式",
+          "header": "复杂度",
+          "kind": "n",
+          "text": "0"
+        },
+        "I": {
+          "group": "术式",
+          "header": "登记弹速",
+          "kind": "n",
+          "text": "1"
+        },
+        "J": {
+          "group": "术式",
+          "header": "附魔",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "K": {
+          "group": "术式",
+          "header": "装配消耗",
+          "kind": "n",
+          "text": "1"
+        },
+        "L": {
+          "group": "术式",
+          "header": "登记魔力",
+          "kind": "n",
+          "text": "6"
+        },
+        "M": {
+          "group": "术式",
+          "header": "可接受附魔",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "N": {
+          "group": "术式",
+          "header": "功能描述",
+          "kind": "inlineStr",
+          "text": "持续释放一束随准星转向的火属性光束，对接触的生物造成伤害"
+        },
+        "O": {
+          "group": "术式",
+          "header": "特效",
+          "kind": "inlineStr",
+          "text": "HeatBeamEffect"
+        },
+        "P": {
+          "group": "释放",
+          "header": "释放种类",
+          "kind": "inlineStr",
+          "text": "命中体"
+        },
+        "Q": {
+          "group": "释放",
+          "header": "释放标签",
+          "kind": "inlineStr",
+          "text": "持续"
+        },
+        "R": {
+          "group": "释放",
+          "header": "弹道",
+          "kind": "inlineStr",
+          "text": "跟随准星"
+        },
+        "S": {
+          "group": "释放",
+          "header": "链上角色",
+          "kind": "inlineStr",
+          "text": "攻击"
+        },
+        "T": {
+          "group": "释放",
+          "header": "移动中的命中体",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "U": {
+          "group": "释放",
+          "header": "命中体存活tick",
+          "kind": "n",
+          "text": "40"
+        },
+        "V": {
+          "group": "释放",
+          "header": "飞行速度",
+          "kind": "n",
+          "text": "0"
+        },
+        "W": {
+          "group": "释放",
+          "header": "厚度",
+          "kind": "n",
+          "text": "1"
+        },
+        "X": {
+          "group": "释放",
+          "header": "双重释放再拉段数",
+          "kind": "n",
+          "text": "0"
+        },
+        "Y": {
+          "group": "释放",
+          "header": "接受持续索敌",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "Z": {
+          "group": "释放",
+          "header": "接受出手初瞄",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "AA": {
+          "group": "释放",
+          "header": "出手后不再跟随",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AB": {
+          "group": "释放",
+          "header": "必须手持剑",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AC": {
+          "group": "释放",
+          "header": "整组提交",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AD": {
+          "group": "释放",
+          "header": "使用弧带",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AE": {
+          "group": "释放",
+          "header": "推进拍号",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AF": {
+          "group": "释放",
+          "header": "弧带半径",
+          "kind": "n",
+          "text": "2.4"
+        },
+        "AG": {
+          "group": "释放",
+          "header": "弧带半宽",
+          "kind": "n",
+          "text": "0.16"
+        },
+        "AH": {
+          "group": "释放",
+          "header": "接受弹道改写",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "AI": {
+          "group": "释放",
+          "header": "为下一段指定目标",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AJ": {
+          "group": "释放",
+          "header": "为下一段改为垂落",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AK": {
+          "group": "释放",
+          "header": "弹道可被修改",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "AL": {
+          "group": "释放",
+          "header": "操纵世界剑",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AM": {
+          "group": "释放",
+          "header": "拒绝与其他段同链",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AN": {
+          "group": "释放",
+          "header": "自身能量倍率",
+          "kind": "n",
+          "text": "1"
+        },
+        "AO": {
+          "group": "释放",
+          "header": "挂到后续的能量倍率",
+          "kind": "n",
+          "text": "1"
+        },
+        "AP": {
+          "group": "释放",
+          "header": "显式魔力",
+          "kind": "n",
+          "text": "-1"
+        },
+        "AQ": {
+          "group": "释放",
+          "header": "蓄力tick",
+          "kind": "n",
+          "text": "0"
+        },
+        "AR": {
+          "group": "释放",
+          "header": "旧档·出手先扣水势",
+          "kind": "n",
+          "text": "0"
+        },
+        "AS": {
+          "group": "释放",
+          "header": "场地半径",
+          "kind": "n",
+          "text": "0"
+        },
+        "AT": {
+          "group": "释放",
+          "header": "治疗量",
+          "kind": "n",
+          "text": "0"
+        },
+        "AU": {
+          "group": "释放",
+          "header": "治疗打在施法者",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AV": {
+          "group": "释放",
+          "header": "牵引强度",
+          "kind": "n",
+          "text": "0"
+        },
+        "AW": {
+          "group": "释放",
+          "header": "旧档·命中附加潮湿",
+          "kind": "n",
+          "text": "0"
+        },
+        "AX": {
+          "group": "释放",
+          "header": "命中灭火",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AY": {
+          "group": "释放",
+          "header": "挡住移动",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AZ": {
+          "group": "释放",
+          "header": "压力脉冲",
+          "kind": "n",
+          "text": "0"
+        },
+        "BA": {
+          "group": "释放",
+          "header": "侵蚀脉冲",
+          "kind": "n",
+          "text": "0"
+        },
+        "BB": {
+          "group": "释放",
+          "header": "水平击退",
+          "kind": "n",
+          "text": "0"
+        },
+        "BC": {
+          "group": "释放",
+          "header": "向上抛",
+          "kind": "n",
+          "text": "0"
+        },
+        "BD": {
+          "group": "释放",
+          "header": "卸力比例",
+          "kind": "n",
+          "text": "0"
+        },
+        "BE": {
+          "group": "释放",
+          "header": "减速时长tick",
+          "kind": "n",
+          "text": "0"
+        },
+        "BF": {
+          "group": "释放",
+          "header": "到期爆发伤害",
+          "kind": "n",
+          "text": "0"
+        },
+        "BG": {
+          "group": "释放",
+          "header": "外观编号",
+          "kind": "n",
+          "text": "0"
+        },
+        "BI": {
+          "group": "释放",
+          "header": "外形",
+          "kind": "inlineStr",
+          "text": "方盒"
+        },
+        "BJ": {
+          "group": "释放",
+          "header": "宽度倍数",
+          "kind": "n",
+          "text": "1"
+        },
+        "BK": {
+          "group": "释放",
+          "header": "长度倍数",
+          "kind": "n",
+          "text": "1"
+        },
+        "BL": {
+          "group": "释放",
+          "header": "能量放大长度",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BM": {
+          "group": "释放",
+          "header": "能量放大宽度",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BN": {
+          "group": "释放",
+          "header": "能量放大高度",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BO": {
+          "group": "释放",
+          "header": "能量放大模型",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BP": {
+          "group": "释放",
+          "header": "同锚点分道显示",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "BQ": {
+          "group": "释放",
+          "header": "旧档·每份预留重水",
+          "kind": "n",
+          "text": "0"
+        },
+        "BR": {
+          "group": "释放",
+          "header": "旧档·重压潮湿门槛",
+          "kind": "n",
+          "text": "0"
+        },
+        "BS": {
+          "group": "释放",
+          "header": "承接来袭弹",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "BT": {
+          "group": "释放",
+          "header": "场地生成消耗",
+          "kind": "n",
+          "text": "0"
+        },
+        "BU": {
+          "group": "释放",
+          "header": "场地维持消耗",
+          "kind": "n",
+          "text": "0"
+        },
+        "BV": {
+          "group": "释放",
+          "header": "场地维持周期",
+          "kind": "n",
+          "text": "20"
+        },
+        "BW": {
+          "group": "释放",
+          "header": "场地寿命tick",
+          "kind": "n",
+          "text": "200"
+        }
+      },
+      "resourceDetails": [],
+      "archiveRows": []
+    },
+    {
+      "id": "fire_orb",
+      "name": "火球",
+      "sheet": "已完成",
+      "row": 22,
+      "n": "飞出火球，命中造成伤害并点燃。弹道可被改写",
+      "o": "FireOrbEffect",
+      "dv": null,
+      "cells": {
+        "A": {
+          "group": "术式",
+          "header": "名称",
+          "kind": "inlineStr",
+          "text": "火球"
+        },
+        "B": {
+          "group": "术式",
+          "header": "编号",
+          "kind": "inlineStr",
+          "text": "fire_orb"
+        },
+        "C": {
+          "group": "术式",
+          "header": "类型",
+          "kind": "inlineStr",
+          "text": "法术"
+        },
+        "D": {
+          "group": "术式",
+          "header": "属性",
+          "kind": "inlineStr",
+          "text": "火"
+        },
+        "E": {
+          "group": "术式",
+          "header": "基础伤害",
+          "kind": "n",
+          "text": "5"
+        },
+        "F": {
+          "group": "术式",
+          "header": "基础冷却tick",
+          "kind": "n",
+          "text": "20"
+        },
+        "G": {
+          "group": "术式",
+          "header": "等级上限",
+          "kind": "n",
+          "text": "20"
+        },
+        "H": {
+          "group": "术式",
+          "header": "复杂度",
+          "kind": "n",
+          "text": "0"
+        },
+        "I": {
+          "group": "术式",
+          "header": "登记弹速",
+          "kind": "n",
+          "text": "1.2"
+        },
+        "J": {
+          "group": "术式",
+          "header": "附魔",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "K": {
+          "group": "术式",
+          "header": "装配消耗",
+          "kind": "n",
+          "text": "1"
+        },
+        "L": {
+          "group": "术式",
+          "header": "登记魔力",
+          "kind": "n",
+          "text": "10"
+        },
+        "M": {
+          "group": "术式",
+          "header": "可接受附魔",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "N": {
+          "group": "术式",
+          "header": "功能描述",
+          "kind": "inlineStr",
+          "text": "飞出火球，命中造成伤害并点燃。弹道可被改写"
+        },
+        "O": {
+          "group": "术式",
+          "header": "特效",
+          "kind": "inlineStr",
+          "text": "FireOrbEffect"
+        },
+        "P": {
+          "group": "释放",
+          "header": "释放种类",
+          "kind": "inlineStr",
+          "text": "命中体"
+        },
+        "Q": {
+          "group": "释放",
+          "header": "释放标签",
+          "kind": "inlineStr",
+          "text": "触发"
+        },
+        "R": {
+          "group": "释放",
+          "header": "弹道",
+          "kind": "inlineStr",
+          "text": "直线"
+        },
+        "S": {
+          "group": "释放",
+          "header": "链上角色",
+          "kind": "inlineStr",
+          "text": "攻击"
+        },
+        "T": {
+          "group": "释放",
+          "header": "移动中的命中体",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "U": {
+          "group": "释放",
+          "header": "命中体存活tick",
+          "kind": "n",
+          "text": "40"
+        },
+        "V": {
+          "group": "释放",
+          "header": "飞行速度",
+          "kind": "n",
+          "text": "1.2"
+        },
+        "W": {
+          "group": "释放",
+          "header": "厚度",
+          "kind": "n",
+          "text": "0.4"
+        },
+        "X": {
+          "group": "释放",
+          "header": "双重释放再拉段数",
+          "kind": "n",
+          "text": "0"
+        },
+        "Y": {
+          "group": "释放",
+          "header": "接受持续索敌",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "Z": {
+          "group": "释放",
+          "header": "接受出手初瞄",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "AA": {
+          "group": "释放",
+          "header": "出手后不再跟随",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AB": {
+          "group": "释放",
+          "header": "必须手持剑",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AC": {
+          "group": "释放",
+          "header": "整组提交",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AD": {
+          "group": "释放",
+          "header": "使用弧带",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AE": {
+          "group": "释放",
+          "header": "推进拍号",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AF": {
+          "group": "释放",
+          "header": "弧带半径",
+          "kind": "n",
+          "text": "2.4"
+        },
+        "AG": {
+          "group": "释放",
+          "header": "弧带半宽",
+          "kind": "n",
+          "text": "0.16"
+        },
+        "AH": {
+          "group": "释放",
+          "header": "接受弹道改写",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "AI": {
+          "group": "释放",
+          "header": "为下一段指定目标",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AJ": {
+          "group": "释放",
+          "header": "为下一段改为垂落",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AK": {
+          "group": "释放",
+          "header": "弹道可被修改",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "AL": {
+          "group": "释放",
+          "header": "操纵世界剑",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AM": {
+          "group": "释放",
+          "header": "拒绝与其他段同链",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AN": {
+          "group": "释放",
+          "header": "自身能量倍率",
+          "kind": "n",
+          "text": "1"
+        },
+        "AO": {
+          "group": "释放",
+          "header": "挂到后续的能量倍率",
+          "kind": "n",
+          "text": "1"
+        },
+        "AP": {
+          "group": "释放",
+          "header": "显式魔力",
+          "kind": "n",
+          "text": "-1"
+        },
+        "AQ": {
+          "group": "释放",
+          "header": "蓄力tick",
+          "kind": "n",
+          "text": "0"
+        },
+        "AR": {
+          "group": "释放",
+          "header": "旧档·出手先扣水势",
+          "kind": "n",
+          "text": "0"
+        },
+        "AS": {
+          "group": "释放",
+          "header": "场地半径",
+          "kind": "n",
+          "text": "0"
+        },
+        "AT": {
+          "group": "释放",
+          "header": "治疗量",
+          "kind": "n",
+          "text": "0"
+        },
+        "AU": {
+          "group": "释放",
+          "header": "治疗打在施法者",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AV": {
+          "group": "释放",
+          "header": "牵引强度",
+          "kind": "n",
+          "text": "0"
+        },
+        "AW": {
+          "group": "释放",
+          "header": "旧档·命中附加潮湿",
+          "kind": "n",
+          "text": "0"
+        },
+        "AX": {
+          "group": "释放",
+          "header": "命中灭火",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AY": {
+          "group": "释放",
+          "header": "挡住移动",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "AZ": {
+          "group": "释放",
+          "header": "压力脉冲",
+          "kind": "n",
+          "text": "0"
+        },
+        "BA": {
+          "group": "释放",
+          "header": "侵蚀脉冲",
+          "kind": "n",
+          "text": "0"
+        },
+        "BB": {
+          "group": "释放",
+          "header": "水平击退",
+          "kind": "n",
+          "text": "0"
+        },
+        "BC": {
+          "group": "释放",
+          "header": "向上抛",
+          "kind": "n",
+          "text": "0"
+        },
+        "BD": {
+          "group": "释放",
+          "header": "卸力比例",
+          "kind": "n",
+          "text": "0"
+        },
+        "BE": {
+          "group": "释放",
+          "header": "减速时长tick",
+          "kind": "n",
+          "text": "0"
+        },
+        "BF": {
+          "group": "释放",
+          "header": "到期爆发伤害",
+          "kind": "n",
+          "text": "0"
+        },
+        "BG": {
+          "group": "释放",
+          "header": "外观编号",
+          "kind": "n",
+          "text": "0"
+        },
+        "BI": {
+          "group": "释放",
+          "header": "外形",
+          "kind": "inlineStr",
+          "text": "方盒"
+        },
+        "BJ": {
+          "group": "释放",
+          "header": "宽度倍数",
+          "kind": "n",
+          "text": "1"
+        },
+        "BK": {
+          "group": "释放",
+          "header": "长度倍数",
+          "kind": "n",
+          "text": "1"
+        },
+        "BL": {
+          "group": "释放",
+          "header": "能量放大长度",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BM": {
+          "group": "释放",
+          "header": "能量放大宽度",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BN": {
+          "group": "释放",
+          "header": "能量放大高度",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BO": {
+          "group": "释放",
+          "header": "能量放大模型",
+          "kind": "inlineStr",
+          "text": "是"
+        },
+        "BP": {
+          "group": "释放",
+          "header": "同锚点分道显示",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "BQ": {
+          "group": "释放",
+          "header": "旧档·每份预留重水",
+          "kind": "n",
+          "text": "0"
+        },
+        "BR": {
+          "group": "释放",
+          "header": "旧档·重压潮湿门槛",
+          "kind": "n",
+          "text": "0"
+        },
+        "BS": {
+          "group": "释放",
+          "header": "承接来袭弹",
+          "kind": "inlineStr",
+          "text": "否"
+        },
+        "BT": {
+          "group": "释放",
+          "header": "场地生成消耗",
+          "kind": "n",
+          "text": "0"
+        },
+        "BU": {
+          "group": "释放",
+          "header": "场地维持消耗",
+          "kind": "n",
+          "text": "0"
+        },
+        "BV": {
+          "group": "释放",
+          "header": "场地维持周期",
+          "kind": "n",
+          "text": "20"
+        },
+        "BW": {
+          "group": "释放",
+          "header": "场地寿命tick",
+          "kind": "n",
+          "text": "200"
+        }
+      },
+      "resourceDetails": [],
+      "archiveRows": []
+    }
+  ]
+}

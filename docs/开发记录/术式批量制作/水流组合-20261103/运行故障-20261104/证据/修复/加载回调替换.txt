@@ -1,0 +1,23 @@
+StillWaterLease 加载回调替换（2026-11-04）
+
+日志停住的两个读取点：
+- StillWaterLease.reconcile 原 level.getBlockState(cell)
+- StillWaterLease.sweepOrphans 原 level.getBlockState(cell)，线程现场停在该方法
+
+替换：
+- 两处都改为本次 ChunkEvent.Load 传入的 ChunkAccess.getBlockState(cell)
+- 补放前的方块实体检查改为 ChunkAccess.getBlockEntity(cell)
+- 回调内不再调用 Level.getBlockState、Level.setBlock、ChunkAccess.setBlockState、Level.getChunk
+- 需要改世界的格子先记入 LoadedEdit，回调返回前只调用 MinecraftServer.tell(new TickTask(tickCount, ...)）入队
+- BlockableEventLoop.tell 只加入 pendingRunnables 并 unpark，同线程不会当场 run
+- 出队后先 Level.isLoaded（内部 hasChunk，不 getChunk），再走原有 clearIfOurs / placeIfAir
+
+1.20.1 / Forge 47.3.33 映射源码核对：
+- BlockGetter.getBlockState(BlockPos)、BlockGetter.getBlockEntity(BlockPos)
+- Level.isLoaded(BlockPos) 为高度外返回 false，否则 ChunkSource.hasChunk
+- net.minecraft.server.TickTask(int, Runnable)
+- BlockableEventLoop.tell(R) 只入队；execute(Runnable) 在 scheduleExecutables()==false（已在服务端线程）时当场 run，故加载回调不使用 execute
+- MinecraftServer.shouldRun：tick+3 < tickCount 或 haveTime()；blockingCount>0 时 pollTask 仍可取出
+
+命名门：powershell -NoProfile -File tools/check-name-gate.ps1，退出码 0。
+未跑 compileJava，未进游戏。

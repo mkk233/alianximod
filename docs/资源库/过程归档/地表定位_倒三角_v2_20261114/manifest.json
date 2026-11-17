@@ -1,0 +1,185 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "rule_surface_anchor_art_v2",
+  "attemptId": "20261114-art-surface-anchor-v2-01",
+  "stage": "implementation",
+  "role": "art",
+  "status": "待确认",
+  "date": "2026-11-14",
+  "technique": {
+    "name": "地表定位",
+    "id": "rule_surface_anchor",
+    "category": "通用",
+    "element": "无",
+    "chainRole": "规则 / 触发 / 地表定位"
+  },
+  "inputTable": {
+    "path": "D:/alianximod/docs/术式制作表.xlsx",
+    "sha256": "AB344CCAAFBE723AD0ED6C6DD0834EB3B264EC5184227F655FAE9FC1B0F12C26",
+    "sheet": "制作中",
+    "row": 3
+  },
+  "mcpEnvironment": {
+    "aseprite": {
+      "namespace": "mcp__magpie__aseprite",
+      "executable": "D:/Aseprite/Aseprite.exe",
+      "version": "1.3.17",
+      "apiVersion": 39,
+      "mode": "batch"
+    },
+    "blockbench": {
+      "namespace": "mcp__magpie__blockbench",
+      "appVersion": "5.2.2",
+      "format": "free",
+      "projectName": "surface-anchor-v2-inverted-triangle-preview",
+      "projectUuid": "19a21c6d-556d-a2cf-167b-83abca62ed0a",
+      "offscreenViewDisposed": true,
+      "activeViewsAfterCleanup": [
+        "media",
+        "no_aa_media",
+        "main"
+      ]
+    }
+  },
+  "protectedPreExistingBlockbenchProjects": [
+    {
+      "name": "cool-v4.3-equal-width-steam-ground-wave-preview",
+      "uuid": "fe1b1c81-3962-2fbb-bc94-6a37e1b6e5ef",
+      "saved": true,
+      "elements": 29,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v1-spatial-draft-20261112",
+      "uuid": "e380502f-05e4-5cab-c7a2-4ff5f7e3c7c5",
+      "saved": true,
+      "elements": 514,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v2-projectile-composite-draft-20261112",
+      "uuid": "8a58e270-0fce-3a38-f8c5-528d850c4a39",
+      "saved": true,
+      "elements": 109,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v3-projectile-composite",
+      "uuid": "8cdb8be1-7355-a034-3a20-7ae41a0e5af1",
+      "saved": true,
+      "elements": 80,
+      "untouched": true
+    },
+    {
+      "name": "fire-spark-v3-1-crossed-launch-preview",
+      "uuid": "3cc70eec-3c0d-db2e-731f-2581790ce09d",
+      "saved": false,
+      "elements": 51,
+      "untouched": true
+    },
+    {
+      "name": "fire-upwell-parabolic-motion-preview",
+      "uuid": "6cfd19e7-972f-1e54-9c0f-bd74cd037ea9",
+      "saved": false,
+      "elements": 153,
+      "untouched": true
+    }
+  ],
+  "spatialAndPixelAudit": {
+    "modelUnitsPerWorldBlock": 16.0,
+    "cameraFacingTag": "NONE",
+    "geometryType": "orthogonal_diagonal_vertical_crossed_double_sided_quads_plus_minus_45deg",
+    "halfSpanBlocks": 0.4,
+    "widthBlocks": 0.8,
+    "heightBlocks": 0.8,
+    "yBottomBlocks": 0.04,
+    "yTopBlocks": 0.84,
+    "yBottomModelUnits": 0.64,
+    "yTopModelUnits": 13.44,
+    "diagonalHalfOffsetBlocks": 0.2828427,
+    "stripDimensions": "64x1024",
+    "frameDimensions": "64x64",
+    "frameCount": 16,
+    "frameDurationMs": 50,
+    "runtimeLifetimeTicks": 16,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "nonBinaryAlphaPixelCount": 0,
+    "totalOpaquePixels": 16086,
+    "embeddedTextureMatchesStripSha256": true,
+    "flameDomainTint": false
+  },
+  "deliverables": [
+    {
+      "name": "surface_anchor_v2.aseprite",
+      "role": "2d_editable_source",
+      "dimensions": "64x64x16f",
+      "bytes": 15885,
+      "sha256": "6EF4C6D35ED70916B1CC1BABEA0B56384EF6019B064C9757DBF9464527FFD335"
+    },
+    {
+      "name": "surface_anchor_v2_strip.png",
+      "role": "2d_native_strip_export",
+      "dimensions": "64x1024",
+      "bytes": 4741,
+      "sha256": "4434BDC7B0311E863277E9BD23761139E77489AD6B548FBB48AC202C4FB35A20"
+    },
+    {
+      "name": "surface_anchor_v2.gif",
+      "role": "2d_nearest_neighbor_loop_preview",
+      "dimensions": "256x256",
+      "bytes": 31730,
+      "sha256": "E71D3E77DBD1AC58D9B86F563A5013F66170467DD465530045314B1DE0695393"
+    },
+    {
+      "name": "surface_anchor_v2_sheet.png",
+      "role": "2d_frame_and_contrast_review_sheet",
+      "dimensions": "1160x740",
+      "bytes": 22178,
+      "sha256": "07C3D55DCEE8CEAD082CC3437FAF6EC48F2A61286E0CA92B7A22FE529B57C020"
+    },
+    {
+      "name": "surface-anchor-v2-inverted-triangle-preview.bbmodel",
+      "role": "3d_blockbench_spatial_project",
+      "dimensions": "40_cubes_5_groups",
+      "bytes": 40507,
+      "sha256": "6425325F4C775CCA61BF5460500063A7DED30EF5DCB8F5C0C2010BA48E2AFF56"
+    },
+    {
+      "name": "surface-anchor-v2-3d-01-player-aim-view.png",
+      "role": "3d_viewport_preview_player_aim",
+      "dimensions": "1152x816",
+      "bytes": 83690,
+      "sha256": "9C28454F62A2FAAA85594465C2610DE85A21829B642211A840C045DF73F22DF4"
+    },
+    {
+      "name": "surface-anchor-v2-3d-02-hero-3quarter.png",
+      "role": "3d_viewport_preview_hero_3quarter",
+      "dimensions": "1152x816",
+      "bytes": 150873,
+      "sha256": "CB1A19A7477BB6C863750C96D41A429BE2D4FA11FD8E54EAC177BD37E219080C"
+    },
+    {
+      "name": "surface-anchor-v2-3d-03-side-elevation.png",
+      "role": "3d_viewport_preview_orthographic_side",
+      "dimensions": "1152x816",
+      "bytes": 26324,
+      "sha256": "609D4D59ADED6B377112B65A13A698B312181BE993C57B560ED206BC19564C7A"
+    },
+    {
+      "name": "surface-anchor-v2-3d-04-azimuth-angles.png",
+      "role": "3d_viewport_preview_oblique_azimuth",
+      "dimensions": "1152x816",
+      "bytes": 207534,
+      "sha256": "FD272E7CC0B050D169406D888B5C5E31A541FAA0E67C44E67D5D8DC0D063607A"
+    },
+    {
+      "name": "visual-handoff.md",
+      "role": "visual_integration_handoff_spec",
+      "bytes": 10740,
+      "sha256": "92FE82B4A2B32EDD0386C581E24DDBF608C8B1AE44509623FE2D5990C17C4872"
+    }
+  ]
+}

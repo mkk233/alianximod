@@ -1,0 +1,19 @@
+来源：D:\alianximod\run\logs\latest.log
+本轮进程创建于 2026-11-04 00:50:33，日志从 00:50:36 开始。
+文件最后写入：2026-11-04 00:51:08。线程现场抓取于 00:54:33 至 00:54:48，日志没有再增长。
+
+[0411月2026 00:51:05.160] [Server thread/INFO] Starting integrated minecraft server version 1.20.1
+[0411月2026 00:51:05.890] [Server thread/INFO] Preparing start region for dimension minecraft:overworld
+[0411月2026 00:51:08.397] [Render thread/INFO] 准备生成区域中：5%
+[0411月2026 00:51:08.600] [Forge Version Check/WARN] Failed to process update information
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:567)
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:142)
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:180)
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:117)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:68)
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:899)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:69)
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:899)

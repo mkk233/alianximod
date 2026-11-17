@@ -32,9 +32,9 @@ public class OpenShuGuiPacket {
         return new OpenShuGuiPacket();
     }
 
-    public void handle(Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> {
-            ServerPlayer player = ctx.get().getSender();
+    public void handle(Supplier<NetworkEvent.Context> contextSupplier) {
+        contextSupplier.get().enqueueWork(() -> {
+            ServerPlayer player = contextSupplier.get().getSender();
             if (player == null) return;
 
             // 先同步最新数据到客户端
@@ -49,16 +49,16 @@ public class OpenShuGuiPacket {
                 }
 
                 @Override
-                public AbstractContainerMenu createMenu(int containerId, Inventory playerInv, Player p) {
+                public AbstractContainerMenu createMenu(int containerId, Inventory playerInv, Player player) {
                     return new ShuManagementMenu(containerId, playerInv);
                 }
             });
         });
-        ctx.get().setPacketHandled(true);
+        contextSupplier.get().setPacketHandled(true);
     }
 
-    public static void register(SimpleChannel channel, int id) {
-        channel.registerMessage(id,
+    public static void register(SimpleChannel channel, int packetId) {
+        channel.registerMessage(packetId,
                 OpenShuGuiPacket.class,
                 OpenShuGuiPacket::encode,
                 OpenShuGuiPacket::decode,
@@ -68,8 +68,8 @@ public class OpenShuGuiPacket {
 
     public static class Registration implements NetworkPacket {
         @Override
-        public void register(SimpleChannel channel, int id) {
-            OpenShuGuiPacket.register(channel, id);
+        public void register(SimpleChannel channel, int packetId) {
+            OpenShuGuiPacket.register(channel, packetId);
         }
     }
 }

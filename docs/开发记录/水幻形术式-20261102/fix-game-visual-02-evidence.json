@@ -1,0 +1,77 @@
+{
+  "repair": "fix-game-visual-02",
+  "sourceChanged": false,
+  "linesBinChanged": false,
+  "linesBinSha256": "26EF5093F3FC9CAD03272F7BDFAD06DF771953E161B69310B2FF7E37B89F9025",
+  "skinSha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5",
+  "residenceSeconds": 0.0,
+  "scaleAtResidence": [1.0, 1.0, 1.0],
+  "scaleAtScatterStart": [0.001, 0.001, 0.001],
+  "pieces": [
+    {
+      "binIndex": 0,
+      "model": "steve_arm_nx_cube",
+      "side": "model -X, character right arm",
+      "bbFrom": [-8, 12, -2],
+      "bbTo": [-4, 24, 2],
+      "pivotBlocks": [-0.3125, 0.125, 0.0],
+      "texelQuads": 571,
+      "zeroAreaQuads": 0,
+      "uvDeterminantSign": "positive on all 6 faces",
+      "boundsBeforeRenderer": { "x": [-0.5, -0.25], "y": [0.0, 0.75], "z": [-0.125, 0.125] }
+    },
+    {
+      "binIndex": 1,
+      "model": "steve_arm_px_cube",
+      "side": "model +X, character left arm",
+      "bbFrom": [4, 12, -2],
+      "bbTo": [8, 24, 2],
+      "pivotBlocks": [0.3125, 0.125, 0.0],
+      "texelQuads": 571,
+      "zeroAreaQuads": 0,
+      "uvDeterminantSign": "positive on all 6 faces",
+      "boundsBeforeRenderer": { "x": [0.25, 0.5], "y": [0.0, 0.75], "z": [-0.125, 0.125] }
+    },
+    {
+      "binIndex": 2,
+      "model": "steve_body_cube",
+      "texelQuads": 699,
+      "zeroAreaQuads": 0,
+      "boundsBeforeRenderer": { "x": [-0.25, 0.25], "y": [0.0, 0.75], "z": [-0.125, 0.125] }
+    },
+    {
+      "binIndex": 3,
+      "model": "steve_head_cube",
+      "texelQuads": 699,
+      "zeroAreaQuads": 0,
+      "boundsBeforeRenderer": { "x": [-0.25, 0.25], "y": [-0.5, 0.0], "z": [-0.25, 0.25] }
+    },
+    {
+      "binIndex": 4,
+      "model": "steve_leg_nx_cube",
+      "texelQuads": 571,
+      "zeroAreaQuads": 0,
+      "boundsBeforeRenderer": { "x": [-0.25, 0.0], "y": [0.75, 1.5], "z": [-0.125, 0.125] }
+    },
+    {
+      "binIndex": 5,
+      "model": "steve_leg_px_cube",
+      "texelQuads": 571,
+      "zeroAreaQuads": 0,
+      "boundsBeforeRenderer": { "x": [0.0, 0.25], "y": [0.75, 1.5], "z": [-0.125, 0.125] }
+    }
+  ],
+  "reversedUvSample": {
+    "piece": "steve_arm_px_cube north",
+    "binUv": [[0.5625, 0.8125], [0.625, 0.8125], [0.625, 1.0], [0.5625, 1.0]],
+    "determinant": 0.01172,
+    "texels": 115,
+    "expandedOutsideSourceQuad": 0,
+    "note": "U and V both increase along the two edges. This is the lower-atlas arm, not a mirrored winding."
+  },
+  "screenshotTorsoBrightClusters": {
+    "image": "docs/开发记录/水幻形术式-20261102/fix-game-visual-02-left.png",
+    "rows": [140, 210],
+    "clustersX": [[58, 96], [170, 237], [298, 330]]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "project": "0160f5df-5ae4-58e0-f638-74fa0e1dcca0",
+  "modelDeepEqualToSavedFile": true,
+  "changedKeys": [],
+  "saved": true,
+  "undoActive": false,
+  "explanation": "Preview-only Undo finish set dirty flag. All serialized model keys matched saved rev01 exactly before restoring original saved flag. No model write.",
+  "allPriorProjectsRetained": true,
+  "shaderBlendRemoved": true
+}

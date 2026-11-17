@@ -1,0 +1,172 @@
+{
+  "createdProject": "de80cb3f-d9bf-e9be-d20d-95c24ad180c9",
+  "reopenedProject": "0160f5df-5ae4-58e0-f638-74fa0e1dcca0",
+  "saved": true,
+  "savePath": "D:/alianximod/docs/资源库/过程归档/幽冥_魂谷天空危险魂火_v2修订_20261116/youming-v2-soulvalley-danger-candidate.bbmodel",
+  "cubes": 273,
+  "groups": 65,
+  "textures": 19,
+  "animations": 1,
+  "clusters": 49,
+  "embers": 8,
+  "written": true,
+  "undoActive": false,
+  "protectedProjects": [
+    {
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "name": "fire_kindle_v2_candidate_preview",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate",
+      "stillOpen": true,
+      "savedBefore": false,
+      "savedAfter": false
+    },
+    {
+      "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "name": "nether_blue_palette_art_v1",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "name": "kindle_fentian_approved_swap",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+      "name": "kindle_fentian_approved_swap",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+      "name": "nether_blue_palette_art_v1",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "97d2ac09-d5a8-c46f-1f79-8a8b4e5a7840",
+      "name": "nether_blue_coverage_02",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "e7791755-13e6-d20d-306a-2a39c483a95b",
+      "name": "nether_blue_coverage_02",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "name": "fentian_dual_layer_v4",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "fe507dca-652f-f434-b477-f92726a559a7",
+      "name": "fentian_dual_layer_v4",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "d9c43eb2-d302-684c-1927-59016d61f4f9",
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "7fa628fc-3a07-adca-a574-ce45af530859",
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "2ddaf358-56ef-cd78-263a-4e6afb143ef0",
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "name": "fire_detonate_v2_candidate",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "e0d306f9-0f12-bc19-9636-0c56f9f1ce88",
+      "name": "fire_detonate_v2_candidate",
+      "stillOpen": true,
+      "savedBefore": false,
+      "savedAfter": false
+    },
+    {
+      "uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "name": "fire_detonate_v2_3d_candidate",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "e9eebb72-fed6-5b89-ab9e-3991002b637d",
+      "name": "fire_detonate_v2_3d_candidate",
+      "stillOpen": true,
+      "savedBefore": false,
+      "savedAfter": false
+    },
+    {
+      "uuid": "dfc5c52c-afcb-951b-9625-7c632d2e16d3",
+      "name": "youming-v2-domain-current-49",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "97317922-6479-beec-c78f-a74da81002d2",
+      "name": "youming-v2-domain-current-49",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    },
+    {
+      "uuid": "0ff57af5-a0c2-9110-a30c-aa29bf43c939",
+      "name": "youming-v2-domain-current-49",
+      "stillOpen": true,
+      "savedBefore": true,
+      "savedAfter": true
+    }
+  ],
+  "viewport": "main",
+  "lightingRestore": "Unlit white shader uniforms reapplied after native reopen; no global app setting modified"
+}

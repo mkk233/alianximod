@@ -1,0 +1,11 @@
+{
+  "baselineSha256": "F098F1C154DEA04185CAD4F60695054A54F27B54E1D6DFAFADD6449E29FAF9E4",
+  "candidateSha256": "80696CA6E57434A8079F257C08A505FC4C88FEECFDE28E6BF927C710739BE6AB",
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\备份\\术式制作表-reclassify-types-20261101-012806-1.xlsx",
+  "changedCount": 10,
+  "keptCount": 50,
+  "oldRange": "数据表!$Q$4:$Q$10",
+  "newRange": "数据表!$Q$4:$Q$9",
+  "optionsUntouched": true,
+  "submitted": false
+}

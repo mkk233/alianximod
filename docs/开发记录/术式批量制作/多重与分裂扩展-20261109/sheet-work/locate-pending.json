@@ -1,0 +1,523 @@
+{
+  "statusCounts": {
+    "已完成": {
+      "dimension": "A1:EN40",
+      "maxRow": 40,
+      "dataRows": 37
+    },
+    "待制作": {
+      "dimension": "A1:EN2",
+      "maxRow": 2,
+      "dataRows": 0
+    },
+    "制作中": {
+      "dimension": "A1:EN27",
+      "maxRow": 27,
+      "dataRows": 24
+    },
+    "待验收": {
+      "dimension": "A1:EN13",
+      "maxRow": 13,
+      "dataRows": 9
+    },
+    "待制作原始数据": {
+      "dimension": "A1:FS33",
+      "maxRow": 33,
+      "dataRows": 30
+    },
+    "资源状态明细": {
+      "dimension": "A1:T7",
+      "maxRow": 7,
+      "dataRows": 5
+    }
+  },
+  "ids": {
+    "已完成": [
+      {
+        "row": 3,
+        "id": "sword_thrust",
+        "name": "刺击"
+      },
+      {
+        "row": 4,
+        "id": "sword_horizontal_slash",
+        "name": "横劈"
+      },
+      {
+        "row": 5,
+        "id": "sword_vertical_slash",
+        "name": "竖劈"
+      },
+      {
+        "row": 6,
+        "id": "space_cut",
+        "name": "空间切割"
+      },
+      {
+        "row": 7,
+        "id": "stone_hammer",
+        "name": "岩槌"
+      },
+      {
+        "row": 8,
+        "id": "phantom_sword",
+        "name": "幻剑术"
+      },
+      {
+        "row": 9,
+        "id": "sword_come",
+        "name": "剑来"
+      },
+      {
+        "row": 10,
+        "id": "sword_return_all",
+        "name": "万剑归宗"
+      },
+      {
+        "row": 11,
+        "id": "water_blade",
+        "name": "缺月"
+      },
+      {
+        "row": 12,
+        "id": "movement_dash",
+        "name": "冲刺"
+      },
+      {
+        "row": 13,
+        "id": "movement_leap",
+        "name": "跳跃"
+      },
+      {
+        "row": 14,
+        "id": "magic_arcane_missile",
+        "name": "奥术飞弹"
+      },
+      {
+        "row": 15,
+        "id": "magic_create_water",
+        "name": "生成水"
+      },
+      {
+        "row": 16,
+        "id": "test_sustained",
+        "name": "持续试射"
+      },
+      {
+        "row": 17,
+        "id": "heat_beam",
+        "name": "热光束"
+      },
+      {
+        "row": 18,
+        "id": "parasite_seed",
+        "name": "寄生种子"
+      },
+      {
+        "row": 19,
+        "id": "metal_needle",
+        "name": "金针"
+      },
+      {
+        "row": 20,
+        "id": "fire_orb",
+        "name": "火球"
+      },
+      {
+        "row": 21,
+        "id": "fire_burst",
+        "name": "爆燃"
+      },
+      {
+        "row": 22,
+        "id": "water_weeping_arc",
+        "name": "垂丝"
+      },
+      {
+        "row": 23,
+        "id": "water_curtain",
+        "name": "水幕"
+      },
+      {
+        "row": 24,
+        "id": "water_mist",
+        "name": "雾雨"
+      },
+      {
+        "row": 25,
+        "id": "water_ring",
+        "name": "水环"
+      },
+      {
+        "row": 27,
+        "id": "magic_ignite",
+        "name": "点火"
+      },
+      {
+        "row": 28,
+        "id": "universal_lock_target",
+        "name": "锁定实体"
+      },
+      {
+        "row": 29,
+        "id": "rule_dual_release",
+        "name": "双重释放"
+      },
+      {
+        "row": 30,
+        "id": "trajectory_drop",
+        "name": "垂落术式"
+      },
+      {
+        "row": 31,
+        "id": "rule_cast_anchor",
+        "name": "落点指定"
+      },
+      {
+        "row": 32,
+        "id": "rule_triple_cast",
+        "name": "一分为三"
+      },
+      {
+        "row": 33,
+        "id": "rule_gather_energy",
+        "name": "聚能"
+      },
+      {
+        "row": 34,
+        "id": "trajectory_3d_interleave",
+        "name": "三维交错"
+      },
+      {
+        "row": 35,
+        "id": "vine_mark",
+        "name": "缠枝"
+      },
+      {
+        "row": 36,
+        "id": "tide_mark",
+        "name": "潮印"
+      },
+      {
+        "row": 37,
+        "id": "sinking_edge",
+        "name": "沉锋"
+      },
+      {
+        "row": 38,
+        "id": "keen_mark",
+        "name": "锐锋印"
+      },
+      {
+        "row": 39,
+        "id": "trajectory_tracking",
+        "name": "追踪弹道"
+      },
+      {
+        "row": 40,
+        "id": "trajectory_storm",
+        "name": "风暴轨迹"
+      }
+    ],
+    "待制作": [],
+    "制作中": [
+      {
+        "row": 3,
+        "id": "fire_heat_up",
+        "name": "升温"
+      },
+      {
+        "row": 4,
+        "id": "fire_cool",
+        "name": "冷却"
+      },
+      {
+        "row": 5,
+        "id": "fire_flame_trail",
+        "name": "留焰"
+      },
+      {
+        "row": 6,
+        "id": "rule_surface_anchor",
+        "name": "地表定位"
+      },
+      {
+        "row": 7,
+        "id": "fire_upwell",
+        "name": "喷涌"
+      },
+      {
+        "row": 8,
+        "id": "rule_stagger",
+        "name": "错时"
+      },
+      {
+        "row": 9,
+        "id": "rule_hit_continue",
+        "name": "命中接续"
+      },
+      {
+        "row": 10,
+        "id": "fire_seed_sow",
+        "name": "种火"
+      },
+      {
+        "row": 11,
+        "id": "fire_kindle",
+        "name": "引燃"
+      },
+      {
+        "row": 12,
+        "id": "fire_detonate",
+        "name": "引爆"
+      },
+      {
+        "row": 13,
+        "id": "fire_nether_gloom",
+        "name": "幽冥"
+      },
+      {
+        "row": 14,
+        "id": "earth_break_ground",
+        "name": "崩地"
+      },
+      {
+        "row": 15,
+        "id": "fire_spark",
+        "name": "火苗"
+      },
+      {
+        "row": 16,
+        "id": "tide_sever",
+        "name": null
+      },
+      {
+        "row": 17,
+        "id": "water_yielding_ribbon",
+        "name": null
+      },
+      {
+        "row": 19,
+        "id": "fire_burn",
+        "name": "燃烧"
+      },
+      {
+        "row": 20,
+        "id": "rule_triple_release",
+        "name": "三重释放"
+      },
+      {
+        "row": 21,
+        "id": "rule_quadruple_release",
+        "name": "四重释放"
+      },
+      {
+        "row": 22,
+        "id": "rule_octuple_release",
+        "name": "八重释放"
+      },
+      {
+        "row": 23,
+        "id": "rule_sixteen_release",
+        "name": "十六重释放"
+      },
+      {
+        "row": 24,
+        "id": "rule_exhaustive_release",
+        "name": "穷尽释放"
+      },
+      {
+        "row": 25,
+        "id": "rule_double_cast",
+        "name": "一分为二"
+      },
+      {
+        "row": 26,
+        "id": "rule_quintuple_cast",
+        "name": "一分为五"
+      },
+      {
+        "row": 27,
+        "id": "rule_octuple_cast",
+        "name": "一分为八"
+      }
+    ],
+    "待验收": [
+      {
+        "row": 3,
+        "id": "fire_fentian",
+        "name": "焚天"
+      },
+      {
+        "row": 4,
+        "id": "fire_liaoli",
+        "name": "燎里"
+      },
+      {
+        "row": 5,
+        "id": "fire_scorch_field",
+        "name": "灼地"
+      },
+      {
+        "row": 6,
+        "id": "fire_liaoyuan",
+        "name": "燎原"
+      },
+      {
+        "row": 8,
+        "id": "fire_shock_ring",
+        "name": "热波"
+      },
+      {
+        "row": 9,
+        "id": "fire_meteorite",
+        "name": "陨岩"
+      },
+      {
+        "row": 11,
+        "id": "water_bubble_column",
+        "name": "气泡柱"
+      },
+      {
+        "row": 12,
+        "id": "water_deep_pressure",
+        "name": "深海重压"
+      },
+      {
+        "row": 13,
+        "id": "water_vortex",
+        "name": "旋流"
+      }
+    ]
+  },
+  "compare": [
+    {
+      "id": "rule_triple_release",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 20,
+          "N": "沿用双重释放的共享多重释放机制，从自身之后的原始装配格开始，按原始格顺序向后读取最多3格；修饰、附魔、复制声明与内层多重仍按既有解析机制处理，3不是成功攻击次数。遇链尾停止，不回绕、不补足；实际成员释放间隔沿用既有3tick。与同类术式仅数量参数不同，不建立专属执行分支。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    },
+    {
+      "id": "rule_quadruple_release",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 21,
+          "N": "沿用双重释放的共享多重释放机制，从自身之后的原始装配格开始，按原始格顺序向后读取最多4格；修饰、附魔、复制声明与内层多重仍按既有解析机制处理，4不是成功攻击次数。遇链尾停止，不回绕、不补足；实际成员释放间隔沿用既有3tick。与同类术式仅数量参数不同，不建立专属执行分支。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    },
+    {
+      "id": "rule_octuple_release",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 22,
+          "N": "沿用双重释放的共享多重释放机制，从自身之后的原始装配格开始，按原始格顺序向后读取最多8格；修饰、附魔、复制声明与内层多重仍按既有解析机制处理，8不是成功攻击次数。遇链尾停止，不回绕、不补足；实际成员释放间隔沿用既有3tick。与同类术式仅数量参数不同，不建立专属执行分支。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    },
+    {
+      "id": "rule_sixteen_release",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 23,
+          "N": "沿用双重释放的共享多重释放机制，从自身之后的原始装配格开始，按原始格顺序向后读取最多16格；修饰、附魔、复制声明与内层多重仍按既有解析机制处理，16不是成功攻击次数。遇链尾停止，不回绕、不补足；实际成员释放间隔沿用既有3tick。与同类术式仅数量参数不同，不建立专属执行分支。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    },
+    {
+      "id": "rule_exhaustive_release",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 24,
+          "N": "沿用同一多重释放底座，使用remaining模式，从自身下一个原始装配格读取到当前链尾；包含的各类规则仍走共享解析机制，实际成员间隔沿用既有3tick。不回绕、不无限循环，也不表示持续释放直到魔力耗尽。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    },
+    {
+      "id": "rule_double_cast",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 25,
+          "N": "沿用一分为三的共享复制机制，通过ReplicationSpec.of(2)把后续第一个接受复制的宿主展开为2份；作用范围、复制与多重的组合顺序、嵌套乘积、生成几何及命中结算均沿用共享复制底座，与同类术式仅份数不同，不按术式ID单独实现。现有底座接受屏障/领域/护体/场地/条件释放等宿主，完全沿用既有资格。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    },
+    {
+      "id": "rule_quintuple_cast",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 26,
+          "N": "沿用一分为三的共享复制机制，通过ReplicationSpec.of(5)把后续第一个接受复制的宿主展开为5份；作用范围、复制与多重的组合顺序、嵌套乘积、生成几何及命中结算均沿用共享复制底座，与同类术式仅份数不同，不按术式ID单独实现。现有底座接受屏障/领域/护体/场地/条件释放等宿主，完全沿用既有资格。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    },
+    {
+      "id": "rule_octuple_cast",
+      "places": [
+        {
+          "sheet": "制作中",
+          "row": 27,
+          "N": "沿用一分为三的共享复制机制，通过ReplicationSpec.of(8)把后续第一个接受复制的宿主展开为8份；作用范围、复制与多重的组合顺序、嵌套乘积、生成几何及命中结算均沿用共享复制底座，与同类术式仅份数不同，不按术式ID单独实现。现有底座接受屏障/领域/护体/场地/条件释放等宿主，完全沿用既有资格。",
+          "O": "规则自身不新增独立特效或美术，沿用现有通用规则图标；宿主视觉继续由原宿主和共享多重/复制底座生成。",
+          "DV": "帮我做几个术式\n扩展多重释放和一分为N\n三重释放、四重释放、8重释放16重释放、穷尽释放\n一分为二、一分为5，一分为8\n他们应该用同样的底座功能只是数值不一样而已，记得遵循流程\n来源：用户2026-11-09直接需求。输入版本 user-release-variants-20261109-v1。\n记录：docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md\n本批方案默认沿用同类冷却/耗魔，数量由声明决定；开发中，尚未编译/游戏验收。\n制作中 | 多重与分裂扩展-20261109 | docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md"
+        }
+      ],
+      "archiveCount": 1,
+      "sameN": true,
+      "sameO": true,
+      "sameDV": true
+    }
+  ]
+}

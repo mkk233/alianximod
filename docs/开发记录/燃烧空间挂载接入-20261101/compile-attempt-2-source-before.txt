@@ -1,0 +1,6 @@
+6d2955efeec8bab1da0aae89df9568c6bd7e8c0eb6c3a0775a52dc4f45d8e235	10694	2026-11-01T21:23:43.3300540+08:00	src\main\java\com\bslx\XueXiMod\client\furnace\BurnSpatialMount.java
+3b7622358032f0c2d57f81c8bfc9a939fd52870ab83549330512ca90ea11fa96	18733	2026-11-01T21:24:51.1851160+08:00	src\main\java\com\bslx\XueXiMod\client\furnace\BurnFirstPersonPose.java
+1efa2d30fa033c5c5f1bd23ddafa8612ebc7843388a7ea4d9fc13e844c8a354e	7806	2026-11-01T21:25:11.7927173+08:00	src\main\java\com\bslx\XueXiMod\client\furnace\FurnaceBodyLayer.java
+c1c78a879889c8cbd18cbc9ba383fc503141a3ca012007555417613f10203dcc	5416	2026-11-01T21:25:25.0680311+08:00	src\main\java\com\bslx\XueXiMod\client\furnace\FurnaceArmFlame.java
+d14651f39f1a9b26f488196533c87805da4ce35361579ea92b839c8e90065d1d	18029	2026-11-01T21:25:54.8379502+08:00	src\main\java\com\bslx\XueXiMod\client\furnace\FurnaceBodyVisual.java
+89ce0be19ad74eeb818b5c04e8f566930631bfe32ec1d10ca0b7eb521b16c0ab	35635	2026-11-01T21:22:23.2809860+08:00	src\main\resources\assets\xueximod\models\effect\burn_spatial_v1\mount.json

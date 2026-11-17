@@ -1,0 +1,17 @@
+---
+description: 改完 Java 后跑变量名可读性门禁
+alwaysApply: true
+---
+
+# 变量名门禁
+
+改过 `src` 下的 Java 之后，结束前在项目根跑一次：
+
+`powershell -NoProfile -File tools/check-name-gate.ps1`
+
+没改 Java 就不用跑。退出码不是 0 时，先改本次动过的文件里报出来的局部变量、参数和字段，再重跑。脚本扫整个 `src`。没碰过的文件里的旧违规只在结果里列出，不要在同一次改动里顺手全仓改名。
+
+检查范围是局部变量、参数和字段，含 for、catch、lambda。类名、方法名不查。循环索引也不给 `i`、`j` 开豁免。
+
+- 名字少于 3 个字符则失败。没有整词白名单。
+- 按驼峰和下划线拆开后，任一段命中这些缩写则失败：`arg` `args` `arr` `avg` `cb` `cfg` `cnt` `cond` `conds` `ctx` `dir` `doc` `dto` `env` `err` `fn` `idx` `len` `loc` `max` `min` `msg` `num` `obj` `opts` `params` `pos` `proj` `req` `res` `resp` `rot` `str` `svc` `tx` `val` `vel`。

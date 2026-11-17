@@ -1,0 +1,49 @@
+{
+  "batchId": "多重释放底座-20261030",
+  "taskId": "crash-20261109-212351-diagnosis",
+  "attemptId": "read-02",
+  "client": "Python urllib HTTP chat-completions client",
+  "endpoint": "http://127.0.0.1:3425/v1/chat/completions",
+  "requestedRoute": "group/smart-split",
+  "clientCorrelationTag": "xuexi-crash-20261109-212351-read01",
+  "providerSessionId": null,
+  "contextContinuation": "前次完整messages及assistant结果随请求传入；无提供方会话ID可续用",
+  "dependsOn": "D:\\alianximod\\docs\\开发记录\\崩溃定位-20261109-212351\\执行记录-read01.json",
+  "sourceScope": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/ReleaseBaseEvents.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainNative.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainGeometry.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainNativePolicy.java"
+  ],
+  "sourceWriter": null,
+  "authorization": "用户要求定位实测崩溃原因；只读源文件及日志，不修复、不编译。",
+  "reviews": "必要实测问题定向定位；承接既有底座实现复审累计5轮，不新增正式复审。",
+  "state": "finished",
+  "startedAt": "2026-11-09T21:29:18+0800",
+  "httpStatus": 200,
+  "actualRouteModel": "codex/gpt-6-astra",
+  "actualProvider": "codex",
+  "requestId": null,
+  "responseId": "chatcmpl-resp_0560ab98101a8772016af1cab1f03887d29b255e2331a6b769",
+  "returnedModel": "group/smart-split",
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 739,
+    "completion_tokens_details": {
+      "reasoning_tokens": 47
+    },
+    "prompt_tokens": 43299,
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 37760
+    },
+    "total_tokens": 44038
+  },
+  "sourceChanges": [],
+  "compileRun": false,
+  "gameRun": false,
+  "reportWriteReleased": true,
+  "result": "D:\\alianximod\\docs\\开发记录\\崩溃定位-20261109-212351\\定位结果.md",
+  "finishedAt": "2026-11-09T21:29:39+0800",
+  "inputChanges": []
+}

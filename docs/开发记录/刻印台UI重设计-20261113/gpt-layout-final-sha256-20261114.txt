@@ -1,0 +1,30 @@
+Final SHA-256 manifest; generated 2026-11-14T03:14:31.424770+08:00
+Self excluded to avoid recursive hash.
+
+f3ba3580c9b4aab52c13f25ae592dc16cf4258e66e010c2eb9319e0234f1aef6  D:/alianximod/src/main/java/com/bslx/XueXiMod/gui/ImprintTreeGeometry.java
+beca177439ed773163afaca0d66bf86319715bdd64609ed86815a2a3a5f350fa  D:/alianximod/src/main/java/com/bslx/XueXiMod/gui/ImprintTreeView.java
+57d6727cc443633d8658ffaae258a5e6869de3bfda7cabdb8940dcd0b4d7bfb0  D:/alianximod/src/main/java/com/bslx/XueXiMod/gui/ImprintDeskScreen.java
+6f072a76a551c8317a53eec3015d90f911dddf0e894ba77606d036837e093b10  D:/alianximod/build/classes/java/main/com/bslx/XueXiMod/gui/ImprintTreeGeometry.class
+94da53c79e61bf0e90105ba6d733e0d377f708440c884e7022d7b57a84aa54fb  D:/alianximod/build/classes/java/main/com/bslx/XueXiMod/gui/ImprintTreeView.class
+9664ea0f1d2cf780863ce7eba7fe8dbb61e1d724fb5987f5a2a238d7cbc3e770  D:/alianximod/build/classes/java/main/com/bslx/XueXiMod/gui/ImprintDeskScreen.class
+8ae4aa3072f19b133d114ad34879847e345508ab917c75022833bafa686c3665  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/runtime-fix-20261114.md
+dc5d0ae2f4b13c208ba91e76881282359b3686c720269509d0682ed2bfc23f1d  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/integration-v1-receipt.md
+02dc69dc7505cc920d1d21b617d689246ed17a20dbf605fbbea65bab0ba27a04  D:/alianximod/docs/资源库/README.md
+24bf27520eb3a44b4a2de1e26c197a6642ba526abe9efa718f31ee83467fd723  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/GptLayoutAudit.java
+14f227bd5475b5d0a2cd5ff46333f3af3330a1df8c8bb59e4202936b0930ce29  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-compile-20261114-1.txt
+cb1bbe3ca9f71af38d7d540bbeb6e9a4469e21ccceed5702e8c27c6886b7472d  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-compile-20261114-final.txt
+0701fa48b0704470900ac4fec6267f5b52ef410692a8547df034025bf4b86e17  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-compile-20261114-reserved-final.txt
+8364ac5ae884d73666229e7a4a4b373fa2e307914bf7ba86d34c65a4629a75a9  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-audit-20261114.png
+808bd3d8eb0060c2a9d246c69bdf49e953e617c2d0421583ca85d3adaab8c112  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-audit-20261114.py
+ddd965e26a6f3cc5ee16709243a8fc44bcebad79c2a415d3abbec98888a236dd  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-audit-20261114.txt
+7bd8da2c076c5bcbee750d336293d00e864f1d89aa20fe117b6fdc5f3b2e9d9c  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-baseline-20261114.txt
+4a8b83e85651f5232b2d3f9c58bc5a2af4fd7b34eede0ad585984778b0511b3b  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-default-20261114.png
+3dc2be43fc975eac5096e628f94490a06ae04e8a76562fed9606fb2a6935e5c4  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-export-20261114.json
+71de30bd65574311d942eaac0c67e5ad6a58e0e099bed58762146b82ae3d8305  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-input-20261114.json
+20bb3758b8f95560412bfcbc29c3ea6b0a76cce00abea6bedcc34b20da66fb0d  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-minzoom-20261114.png
+ba99ddb8e93284f03f74d2ef4566d31c836f2563e59f734e71bac1ecaf44390a  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-overview-20261114.png
+fdddf4693ffe20643af6a9283451b8f1499aa9f67299c614c3a79afa5f0aa85b  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-render-20261114.py
+f10e768f821835825091d2903ef53cee7fb99156f34e695558d814ca38119aa5  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-reserved-20261114.png
+02db2d33f72a6b3b11114ca6e8585687186fa39c2e8b39397c8f8fad804359db  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-reserved-20261114.txt
+d686953af42ec21f57d188770a4c0f18ea8740854942a37221e914f287b6ca57  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-verify-20261114.json
+309922c452b5c01bad9e1bacfcfcfad593aba2752403237ef4186bb84a0cb29d  D:/alianximod/docs/开发记录/刻印台UI重设计-20261113/gpt-layout-verify-20261114.py

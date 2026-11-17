@@ -1,0 +1,75 @@
+[
+  {
+    "batchId": "heat-burn-20261031",
+    "taskId": "burn-spatial-implementation",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "attemptId": "a202611090931499170bd6",
+    "endedAt": "2026-11-09T09:33:56.7360865Z",
+    "writesSettled": true,
+    "workStatus": "blocked",
+    "blocker": "共享工作区 author-resources 仍可写 src/main/java/com/bslx/XueXiMod/status/wood/resource/，compileJava 会编进未收束源码"
+  },
+  {
+    "batchId": "release-variants-20261109",
+    "taskId": "author-adapters",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "attemptId": "a20261109094809639c603",
+    "endedAt": "2026-11-09T10:04:07.2409965Z",
+    "writesSettled": true,
+    "workStatus": "reported_done",
+    "blocker": null
+  },
+  {
+    "batchId": "release-variants-20261109",
+    "taskId": "author-core",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "attemptId": "a2026110910215283366a6",
+    "endedAt": "2026-11-09T10:23:32.773477Z",
+    "writesSettled": true,
+    "workStatus": "reported_done",
+    "blocker": null
+  },
+  {
+    "batchId": "water-vortex-20261103",
+    "taskId": "source-owner",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "attemptId": "a20261109101211882f34f",
+    "endedAt": "2026-11-09T10:19:24.7616221Z",
+    "writesSettled": true,
+    "workStatus": "reported_done",
+    "blocker": null
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-effects",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "attemptId": "a20261109100522753b9cf",
+    "endedAt": "2026-11-09T10:08:22.4515739Z",
+    "writesSettled": true,
+    "workStatus": "reported_done",
+    "blocker": null
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-integration",
+    "lifecycle": "running",
+    "processAlive": true,
+    "attemptId": "a202611091021582225293"
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-resources",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "attemptId": "a202611090913301145ceb",
+    "endedAt": "2026-11-09T09:45:43.6054202Z",
+    "writesSettled": true,
+    "workStatus": "reported_done",
+    "blocker": null
+  }
+]

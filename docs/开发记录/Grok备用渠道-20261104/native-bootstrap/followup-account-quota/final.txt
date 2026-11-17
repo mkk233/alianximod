@@ -1,0 +1,9 @@
+账户额度已经确认耗尽，但现在每个新任务仍要先撞 Cursor。我先看启动器里的切换条件，再补上有期限的账户证据，让后续任务可以直接走 Grok。同任务额度路径会保留。我再加上有期限的账户证据：新任务可以据此直接启动 Grok，TLS 失败也不会被改写成额度错误。账户额度证据已经接上统一入口。本任务自己的 Cursor 周额度失败路径还在。主会话另外带上仍有效、同一登录范围的证据时，新任务可以直接 `Start` Grok，不必再撞已经耗尽的 Cursor。已有任务即使最新是 TLS 失败，也可以用这份独立证据切换一次。TLS 记录保持原样，不会被改写成额度错误，也不会伪造 Cursor 会话。
+
+证据必须有期限，最长 14 天，不能跨账户。过期、恢复或登录范围不一致都会拒绝。审批拒绝、协议异常和未收束进程不能靠证据绕过。启动器不证明当前登录，主会话要自己核对。已经转到 Grok 的任务继续原会话。额度恢复后，新任务不带证据就回到 Cursor。
+
+离线测试 `Test-CursorTask.ps1` 已通过。没有调用真实 Cursor 或真实 Grok。
+
+<<<CURSOR_TASK_REPORT>>>
+{"workStatus":"reported_done","summary":"统一入口新增有期限的同账户额度证据。新任务可直接 Start Grok；尚未切换的任务即使最新是 TLS 失败也能用独立证据切换一次。TLS 不被改写成 quota，审批拒绝不能绕过。离线 Test-CursorTask.ps1 通过。","changedFiles":["D:/alianximod/.grok/scripts/Invoke-CursorTask.ps1","D:/alianximod/.grok/scripts/Test-CursorTask.ps1","D:/alianximod/AGENTS.md","D:/alianximod/.grok/skills/max-dispatch/SKILL.md","D:/alianximod/docs/统一开发与术式批量制作流程.md","D:/alianximod/docs/开发记录/Grok备用渠道-20261104/实现交付.md"],"checks":["pwsh -NoProfile -File D:/alianximod/.grok/scripts/Test-CursorTask.ps1 PASS"],"notRun":["真实统一入口新路径烟测留主会话","未调用真实 Cursor 或真实 Grok","无 Gradle、打包、游戏或正式独立复审","未写个人技能目录"],"writesSettled":true,"blocker":null,"nextAction":"主会话用有效账户证据做真实统一入口烟测；此后常规派发回到 Invoke-CursorTask.ps1"}
+<<<END_CURSOR_TASK_REPORT>>>

@@ -1,0 +1,9 @@
+{
+  "command": ".\\gradlew.bat processResources --offline --no-daemon",
+  "workingDirectory": "D:\\alianximod",
+  "startedAt": "2026-11-05T01:13:25.155+08:00",
+  "endedAt": "2026-11-05T01:13:38.577+08:00",
+  "durationSeconds": 13.421,
+  "exitCode": 0,
+  "log": "D:\\alianximod\\docs\\开发记录\\协同回旋斩击-20261103\\compile-budget-20261105\\processResources.log"
+}

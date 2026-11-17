@@ -1,0 +1,20 @@
+{
+  "batchId": "release-variants-20261109",
+  "taskId": "author-core",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "implement",
+  "authorization": "用户v3固定八重及以上仅禁剑术、穷尽不限制，阶段B接当前所选剑链施放资格及中英文提示；公共入口作者已撤销src权限，Gradle已结束，不改容量/付款/其他源码，不编译不写表。",
+  "inputVersion": "user-release-variants-20261109-v3-carrier-limits + 载具资格补充事实（remaining禁用部分已被用户覆盖）",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+    "D:/alianximod/src/main/resources/assets/xueximod/lang/zh_cn.json",
+    "D:/alianximod/src/main/resources/assets/xueximod/lang/en_us.json",
+    "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/核心作者交付.md"
+  ],
+  "dependencies": [
+    "sheet-record",
+    "inspect-base"
+  ]
+}

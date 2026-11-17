@@ -1,0 +1,254 @@
+[
+  {
+    "sampleTime": 0,
+    "data": {
+      "time": 0,
+      "point": [
+        12.98218395180946,
+        15.68036743115827,
+        0
+      ],
+      "matrix": [
+        0.9986295347545738,
+        0.05233595624294383,
+        0,
+        0,
+        -0.05233595624294383,
+        0.9986295347545738,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        15,
+        0,
+        1
+      ],
+      "textures": [
+        {
+          "name": "saw_splash_outer.png",
+          "frame": 0,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "saw_splash_inner.png",
+          "frame": 0,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "broken_saw_flow.png",
+          "frame": 0,
+          "fps": 10,
+          "frameCount": 16
+        }
+      ],
+      "meshParents": [
+        {
+          "name": "破碎流转主体_平滑载体",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈外缘_20簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈内缘_16簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        }
+      ]
+    }
+  },
+  {
+    "sampleTime": 0.6,
+    "data": {
+      "time": 0.6,
+      "point": [
+        2.8826239066436134e-15,
+        15,
+        -13
+      ],
+      "matrix": [
+        2.2174030051104717e-16,
+        1.1620916727338188e-17,
+        -1,
+        0,
+        -0.05233595624294383,
+        0.9986295347545738,
+        0,
+        0,
+        0.9986295347545738,
+        0.05233595624294383,
+        2.220446049250313e-16,
+        0,
+        0,
+        15,
+        0,
+        1
+      ],
+      "textures": [
+        {
+          "name": "saw_splash_outer.png",
+          "frame": 6,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "saw_splash_inner.png",
+          "frame": 6,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "broken_saw_flow.png",
+          "frame": 6,
+          "fps": 10,
+          "frameCount": 16
+        }
+      ],
+      "meshParents": [
+        {
+          "name": "破碎流转主体_平滑载体",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈外缘_20簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈内缘_16簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        }
+      ]
+    }
+  },
+  {
+    "sampleTime": 2.4,
+    "data": {
+      "time": 0,
+      "point": [
+        12.98218395180946,
+        15.68036743115827,
+        0
+      ],
+      "matrix": [
+        0.9986295347545738,
+        0.05233595624294383,
+        0,
+        0,
+        -0.05233595624294383,
+        0.9986295347545738,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        15,
+        0,
+        1
+      ],
+      "textures": [
+        {
+          "name": "saw_splash_outer.png",
+          "frame": 8,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "saw_splash_inner.png",
+          "frame": 8,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "broken_saw_flow.png",
+          "frame": 8,
+          "fps": 10,
+          "frameCount": 16
+        }
+      ],
+      "meshParents": [
+        {
+          "name": "破碎流转主体_平滑载体",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈外缘_20簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈内缘_16簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        }
+      ]
+    }
+  },
+  {
+    "sampleTime": 4.8,
+    "data": {
+      "time": 0,
+      "point": [
+        12.98218395180946,
+        15.68036743115827,
+        0
+      ],
+      "matrix": [
+        0.9986295347545738,
+        0.05233595624294383,
+        0,
+        0,
+        -0.05233595624294383,
+        0.9986295347545738,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        15,
+        0,
+        1
+      ],
+      "textures": [
+        {
+          "name": "saw_splash_outer.png",
+          "frame": 0,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "saw_splash_inner.png",
+          "frame": 0,
+          "fps": 10,
+          "frameCount": 16
+        },
+        {
+          "name": "broken_saw_flow.png",
+          "frame": 0,
+          "fps": 10,
+          "frameCount": 16
+        }
+      ],
+      "meshParents": [
+        {
+          "name": "破碎流转主体_平滑载体",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈外缘_20簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        },
+        {
+          "name": "整圈内缘_16簇逆时针锯齿水花",
+          "parent": "a738413f-61fe-e1ed-6b73-11ddba7a6884"
+        }
+      ]
+    }
+  }
+]

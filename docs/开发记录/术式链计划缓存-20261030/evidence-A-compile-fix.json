@@ -1,0 +1,55 @@
+{
+  "author": "A",
+  "task": "repair-A-compile",
+  "startedUtc": "2026-10-30T03:18:35.549Z",
+  "finishedUtc": "2026-10-30T03:22:21.667Z",
+  "released": true,
+  "compileJava": false,
+  "gamePlaytest": false,
+  "formalReviewStarted": false,
+  "fix": "Added SkillSegmentRunner.commitHostGroup overload at lines 280-291. It matches the no-callback parameter order and appends CastPlanContext, forwarding a null Consumer<Vec3>. The three reported call sites were not edited.",
+  "modifiedFiles": [
+    "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java"
+  ],
+  "unchangedAuthorizedFiles": [
+    "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java",
+    "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+    "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java"
+  ],
+  "callSites": [
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java",
+      "line": 291
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+      "line": 337
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "line": 850
+    }
+  ],
+  "backupPaths": [
+    "docs/开发记录/术式链计划缓存-20261030/backup-A-compile-fix/src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java"
+  ],
+  "backupHashes": {
+    "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java": {
+      "sha256": "54F1649A6C316378CF74555C5EDB2043B9C8DED4FD1687D3C23759C6856A8DC4",
+      "utcMtime": "2026-10-30T02:48:56.646Z",
+      "bytes": 47990
+    }
+  },
+  "finalFiles": {
+    "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java": {
+      "sha256": "472AA960083F1AC2A09644F58089BEAF64CB523C28075DA7BC16C86D6955FD6D",
+      "utcMtime": "2026-10-30T03:21:34.517Z",
+      "bytes": 49159
+    },
+    "docs/开发记录/术式链计划缓存-20261030/repair-A-compile-final.md": {
+      "sha256": "29C9223BD0FA89FA6F5064B61F6123E17432C8EDD5AECBF512B3A4233C12FC87",
+      "utcMtime": "2026-10-30T03:22:16.228Z",
+      "bytes": 2694
+    }
+  }
+}

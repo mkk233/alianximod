@@ -1,0 +1,40 @@
+{
+  "id": "fire_shock_ring",
+  "movedToPendingAcceptance": true,
+  "markedComplete": false,
+  "from": {"sheet": "制作中", "row": 7},
+  "to": {"sheet": "待验收", "row": 8},
+  "countsBefore": {"已完成": 40, "待制作": 0, "制作中": 15, "待验收": 5},
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 14, "待验收": 6},
+  "archivePreserved": true,
+  "detailRowAdded": false,
+  "otherTechniquesChanged": false,
+  "baselineSha256": "CF99A04E797B741718267388A8CB7CDB94323C011093755007D2BD9B7AEE9B11",
+  "afterSha256": "01A7C04D5C3B04E92851E23E8AE86CC9B29C76B47031D494DD756FF770F82B94",
+  "backup": "docs/开发记录/热波正圆精修-20261101/备份/术式制作表-20261101-234901-1.xlsx",
+  "snapshots": {
+    "aen": "docs/开发记录/热波正圆精修-20261101/快照/变更前-AEN-20261101-234901-1.json",
+    "nodv": "docs/开发记录/热波正圆精修-20261101/快照/变更前-NODV-20261101-234901-1.json",
+    "mapping": "docs/开发记录/热波正圆精修-20261101/快照/批准要求与资源映射-20261101-234901-1.md"
+  },
+  "readmeSha256Before": "9ABD0EDE8C25E4E04739F5246DC61E2E0F1E7D62BE540D8B52B730C8FC54BEE4",
+  "readmeSha256After": "A3A688CCF1D0D1ADB39B72F92B3CC084618D0582FE19691AACF5DB746D67DC47",
+  "approvedVersion": "heat-circle-v2",
+  "outerRadiusBlocks": 5,
+  "innerRadiusBlocks": 1.5,
+  "carrierSideBlocksIsDiameter": 10,
+  "runtimeTexture": "textures/effect/shock_ring_v1/shock_ring.png",
+  "runtimeSha256": "5959d47d14ea8a69394559b13f504686c620230a35505a765731cbb76bda6d0f",
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "started": "2026-11-01T23:42:11.328+08:00",
+    "ended": "2026-11-01T23:42:27.543+08:00",
+    "exitCode": 0,
+    "compileJava": "UP-TO-DATE",
+    "javacExecuted": false
+  },
+  "formalReviewAdded": false,
+  "quotaNote": "本阶段额度已用完，返修结果未追加复审",
+  "gamePendingUser": true,
+  "verifyOk": true
+}

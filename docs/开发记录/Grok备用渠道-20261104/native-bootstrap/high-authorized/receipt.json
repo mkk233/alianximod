@@ -1,0 +1,33 @@
+{
+  "kind": "native-user-authorized-model-metadata-final",
+  "sessionId": "48e4111a-a131-46c2-863a-5a521d55d120",
+  "stopReason": "end_turn",
+  "models": [
+    "grok-4.7-build-fast"
+  ],
+  "formalReviewPerformed": false,
+  "report": {
+    "workStatus": "reported_done",
+    "summary": "已仅在 [model.\"grok-4.7\"] 补上 reasoning_efforts high 一行，其余字节未改。无工具探针 exit 0、end_turn、正文 HIGH_EFFORT_AUTHORIZED_OK，modelUsage 仅 grok-4.7-build-fast，stderr 不再忽略 high。未证明中转站内部推理强度。",
+    "changedFiles": [
+      "C:/Users/baishang/.grok/config.toml",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/authorized/probe-prompt.txt",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/authorized/probe-stderr.log",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/authorized/probe-summary.json"
+    ],
+    "checks": [
+      "config rest_unchanged=true",
+      "probe exit 0 stopReason end_turn text HIGH_EFFORT_AUTHORIZED_OK ignoreHighWarning false modelUsage grok-4.7-build-fast"
+    ],
+    "notRun": [
+      "未改启动器、测试、项目文档或技能",
+      "未跑离线测试、Gradle、打包或游戏",
+      "未调用真实 Cursor",
+      "未做正式复审",
+      "未证明中转站内部推理强度"
+    ],
+    "writesSettled": true,
+    "blocker": null,
+    "nextAction": "交回主会话继续统一入口第2/3轮集中复核"
+  }
+}

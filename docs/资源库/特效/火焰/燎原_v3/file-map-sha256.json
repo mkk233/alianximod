@@ -1,0 +1,107 @@
+[
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_base-v5.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash.png",
+    "sha256": "3A27AB77AB560BDAA10B91D1FA0BBEE9EEA2E7A2539D96B38EAF5D34E035A391"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_base-v5b.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_b.png",
+    "sha256": "FDA27E3FE5AF8D2BF24F7C640F6FB029261ED1E60249C598B3D2E1BD92CD9650"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_base-v5c.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_c.png",
+    "sha256": "E238680FE3196C8BDA7F23E18F3E864D6AA64EB9F82CB09182F29B8A308623A6"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_base-v5d.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_d.png",
+    "sha256": "45DA398493CB87E0E5E5D74EA32272B6888A51ADEBC94FB9646467CF76C2E7FA"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_embers_strip-v5.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_embers.png",
+    "sha256": "B8642145B0665A179A5C89C6A0CE0A270A5118254F2686E6BD16618A5B2C8F0F"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\liaoyuan-ground-ash-v5.aseprite",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash.aseprite",
+    "sha256": "76EED3A37B90CBB8ED9E2E05F6F5434B17F7B60418A44CE0D447E2FBF1CDB554"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\liaoyuan-ground-ash-v5b.aseprite",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_b.aseprite",
+    "sha256": "75B41F5069B12892D481F5270C4022A700142BC01054AF703E68B733CF3B0E18"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\liaoyuan-ground-ash-v5c.aseprite",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_c.aseprite",
+    "sha256": "5C0299F278099A69406942E58DE7B2AB2B4DAA1DDBC5E90FEE9A53C7B004F5AF"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\liaoyuan-ground-ash-v5d.aseprite",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_d.aseprite",
+    "sha256": "5AA6DC21B025C81F76EB99850647A75D1C91BBBE57925B9A3A25DC55F3213B29"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\liaoyuan-ground-embers-v5.aseprite",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_embers.aseprite",
+    "sha256": "B958E8AE640DBC5C5AAEA1343AB61EE91213F0921BC2C44CF36AC2CDFCF4A769"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_strip-v5.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_composite.png",
+    "sha256": "83C6F84098C06B1DB226C4DBC2EBF4759030D92FED3E20941E071531100B7103"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_strip-v5b.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_b_composite.png",
+    "sha256": "001D94996A2DDC1531764BA3B8BC7FF936BCB2E90594E25A231D851FBEA76344"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_strip-v5c.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_c_composite.png",
+    "sha256": "0ADE77F2BAC9D4C86F4B2FF3ACF8E8670288A5D309787554AA5ED25211D51713"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\ground_ash_strip-v5d.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\ground_ash_d_composite.png",
+    "sha256": "2ECEA5207749D00ED4A1B24E0B1C9F64DD4E058E3BD3321215BFFED7A44A2CFF"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\mixed-surface-preview-v5.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\mixed-surface-preview.png",
+    "sha256": "6D8734AB17C8632DE4D09FA226954482F5F6536F48C1D03E562B1798E05250A4"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\mixed-surface-preview-v5.gif",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\mixed-surface-preview.gif",
+    "sha256": "E60B25B40A129A574933A4636D2255B03DB4387F96B1B002AFA126283607D3A5"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\mixed-surface-preview-v5.aseprite",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\mixed-surface-preview.aseprite",
+    "sha256": "8351C51B8E4B33F55D5D9B5A519D2A7D9254BE7885620CB2AC6225D0C9FF381B"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\single-tile-preview-v5.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\single-tile-preview.png",
+    "sha256": "F548F1C7764192B35C27BFA47BF3738D919FF1C9DC2BA6A8B7A70242CDA93E08"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\single-tile-preview-v5b.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\single-tile-preview-b.png",
+    "sha256": "FD049D1EDD8D879AB136DEC37DE511FDD05EE7E937613F1710CF9E5A9867C611"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\single-tile-preview-v5c.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\single-tile-preview-c.png",
+    "sha256": "6CCF6BB2F32328758E0667F45439F37E5398A0E5C085EADF17D484987BF433FB"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\燎原灰烬-20261031\\single-tile-preview-v5d.png",
+    "archive": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\燎原_v3\\single-tile-preview-d.png",
+    "sha256": "023D48939B3E8244A8F2DDDF17C3A6AD16D45CEE797BB8941D04D5E68DB5A0F3"
+  }
+]

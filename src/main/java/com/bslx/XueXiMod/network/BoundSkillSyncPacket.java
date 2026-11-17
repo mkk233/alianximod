@@ -16,8 +16,8 @@ public class BoundSkillSyncPacket {
     private final Skill[] slots = new Skill[4];
 
     public BoundSkillSyncPacket(ServerPlayer player) {
-        for (int i = 0; i < 4; i++) {
-            slots[i] = PlayerBoundSkills.get(player, i);
+        for (int slotIndex = 0; slotIndex < 4; slotIndex++) {
+            slots[slotIndex] = PlayerBoundSkills.get(player, slotIndex);
         }
     }
 
@@ -30,8 +30,8 @@ public class BoundSkillSyncPacket {
     }
 
     public void encode(FriendlyByteBuf buf) {
-        for (int i = 0; i < 4; i++) {
-            Skill skill = slots[i];
+        for (int slotIndex = 0; slotIndex < 4; slotIndex++) {
+            Skill skill = slots[slotIndex];
             buf.writeBoolean(skill != null);
             if (skill != null) {
                 buf.writeNbt(skill.toNbt());
@@ -41,26 +41,26 @@ public class BoundSkillSyncPacket {
 
     public static BoundSkillSyncPacket decode(FriendlyByteBuf buf) {
         Skill[] slots = new Skill[4];
-        for (int i = 0; i < 4; i++) {
+        for (int slotIndex = 0; slotIndex < 4; slotIndex++) {
             if (buf.readBoolean()) {
-                slots[i] = Skill.fromNbt(buf.readNbt());
+                slots[slotIndex] = Skill.fromNbt(buf.readNbt());
             }
         }
         return new BoundSkillSyncPacket(slots);
     }
 
-    public void handle(Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> {
+    public void handle(Supplier<NetworkEvent.Context> context) {
+        context.get().enqueueWork(() -> {
             DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> updateClientCache(slots));
         });
-        ctx.get().setPacketHandled(true);
+        context.get().setPacketHandled(true);
     }
 
     private static final Skill[] CLIENT_SLOTS = new Skill[4];
 
     private static void updateClientCache(Skill[] slots) {
-        for (int i = 0; i < 4; i++) {
-            CLIENT_SLOTS[i] = slots[i];
+        for (int slotIndex = 0; slotIndex < 4; slotIndex++) {
+            CLIENT_SLOTS[slotIndex] = slots[slotIndex];
         }
     }
 
@@ -69,8 +69,14 @@ public class BoundSkillSyncPacket {
         return CLIENT_SLOTS[slot];
     }
 
-    public static void register(SimpleChannel channel, int id) {
-        channel.registerMessage(id,
+    public static void clearClient() {
+        for (int slotIndex = 0; slotIndex < 4; slotIndex++) {
+            CLIENT_SLOTS[slotIndex] = null;
+        }
+    }
+
+    public static void register(SimpleChannel channel, int messageId) {
+        channel.registerMessage(messageId,
                 BoundSkillSyncPacket.class,
                 BoundSkillSyncPacket::encode,
                 BoundSkillSyncPacket::decode,

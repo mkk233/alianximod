@@ -1,5 +1,6 @@
 package com.bslx.XueXiMod.item;
 
+import com.bslx.XueXiMod.shu.TechniqueIds;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.world.item.ItemStack;
@@ -34,9 +35,9 @@ public class SkillStorageData {
         CompoundTag tag = stack.getTag();
         if (tag == null) return result;
         ListTag list = tag.getList(ITEMS_KEY, 10);
-        for (int i = 0; i < list.size(); i++) {
-            CompoundTag entry = list.getCompound(i);
-            String spellId = entry.getString(KEY_SPELL);
+        for (int entryIndex = 0; entryIndex < list.size(); entryIndex++) {
+            CompoundTag entry = list.getCompound(entryIndex);
+            String spellId = TechniqueIds.canonicalId(entry.getString(KEY_SPELL));
             if (spellId.isEmpty()) continue;
             result.add(new Entry(spellId, entry.getString(KEY_EMBRYO), entry.getInt(KEY_COUNT)));
         }
@@ -45,19 +46,21 @@ public class SkillStorageData {
 
     public static void add(ItemStack stack, String spellId, String embryoId, int count) {
         if (stack.isEmpty() || spellId == null || spellId.isEmpty() || count <= 0) return;
+        String storedId = TechniqueIds.canonicalId(spellId);
         String embryo = normalizeEmbryo(embryoId);
         CompoundTag tag = stack.getOrCreateTag();
         ListTag list = tag.getList(ITEMS_KEY, 10);
-        for (int i = 0; i < list.size(); i++) {
-            CompoundTag entry = list.getCompound(i);
-            if (spellId.equals(entry.getString(KEY_SPELL))
+        for (int entryIndex = 0; entryIndex < list.size(); entryIndex++) {
+            CompoundTag entry = list.getCompound(entryIndex);
+            if (sameSpell(storedId, entry.getString(KEY_SPELL))
                     && embryo.equals(normalizeEmbryo(entry.getString(KEY_EMBRYO)))) {
+                entry.putString(KEY_SPELL, storedId);
                 entry.putInt(KEY_COUNT, entry.getInt(KEY_COUNT) + count);
                 return;
             }
         }
         CompoundTag entry = new CompoundTag();
-        entry.putString(KEY_SPELL, spellId);
+        entry.putString(KEY_SPELL, storedId);
         entry.putString(KEY_EMBRYO, embryo);
         entry.putInt(KEY_COUNT, count);
         list.add(entry);
@@ -66,26 +69,32 @@ public class SkillStorageData {
 
     public static boolean consume(ItemStack stack, String spellId, String embryoId, int count) {
         if (stack.isEmpty() || spellId == null || spellId.isEmpty() || count <= 0) return false;
+        String storedId = TechniqueIds.canonicalId(spellId);
         String embryo = normalizeEmbryo(embryoId);
         CompoundTag tag = stack.getTag();
         if (tag == null) return false;
         ListTag list = tag.getList(ITEMS_KEY, 10);
-        for (int i = 0; i < list.size(); i++) {
-            CompoundTag entry = list.getCompound(i);
-            if (spellId.equals(entry.getString(KEY_SPELL))
+        for (int entryIndex = 0; entryIndex < list.size(); entryIndex++) {
+            CompoundTag entry = list.getCompound(entryIndex);
+            if (sameSpell(storedId, entry.getString(KEY_SPELL))
                     && embryo.equals(normalizeEmbryo(entry.getString(KEY_EMBRYO)))) {
                 int current = entry.getInt(KEY_COUNT);
                 if (current < count) return false;
                 int remaining = current - count;
                 if (remaining <= 0) {
-                    list.remove(i);
+                    list.remove(entryIndex);
                 } else {
+                    entry.putString(KEY_SPELL, storedId);
                     entry.putInt(KEY_COUNT, remaining);
                 }
                 return true;
             }
         }
         return false;
+    }
+
+    private static boolean sameSpell(String leftId, String rightId) {
+        return TechniqueIds.canonicalId(leftId).equals(TechniqueIds.canonicalId(rightId));
     }
 
     private static String normalizeEmbryo(String embryoId) {

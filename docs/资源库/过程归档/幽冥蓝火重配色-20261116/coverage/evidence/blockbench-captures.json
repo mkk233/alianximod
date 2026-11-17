@@ -1,0 +1,178 @@
+[
+  {
+    "family": "burn",
+    "stage": "loop",
+    "frame": 6,
+    "blueOnly": false,
+    "camera": {
+      "position": [
+        20,
+        42,
+        170
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "projection": "orthographic",
+      "zoom": 0.32
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_burn_loop_overall_F06.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  },
+  {
+    "family": "burn",
+    "stage": "loop",
+    "frame": 6,
+    "blueOnly": true,
+    "camera": {
+      "position": [
+        120,
+        35,
+        -70
+      ],
+      "target": [
+        46,
+        16,
+        -2
+      ],
+      "projection": "orthographic",
+      "zoom": 0.5
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_burn_blue_side_F06.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  },
+  {
+    "family": "heat",
+    "stage": "loop",
+    "frame": 6,
+    "blueOnly": false,
+    "camera": {
+      "position": [
+        20,
+        42,
+        170
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "projection": "orthographic",
+      "zoom": 0.32
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_furnace_loop_overall_F06.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  },
+  {
+    "family": "heat",
+    "stage": "loop",
+    "frame": 6,
+    "blueOnly": true,
+    "camera": {
+      "position": [
+        120,
+        33,
+        45
+      ],
+      "target": [
+        46,
+        16,
+        0
+      ],
+      "projection": "orthographic",
+      "zoom": 0.5
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_furnace_blue_side_F06.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  },
+  {
+    "family": "liaoli",
+    "stage": "loop",
+    "frame": 6,
+    "blueOnly": false,
+    "camera": {
+      "position": [
+        15,
+        38,
+        170
+      ],
+      "target": [
+        0,
+        16,
+        8
+      ],
+      "projection": "orthographic",
+      "zoom": 0.28
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_liaoli_flame_overall_F06.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  },
+  {
+    "family": "liaoli",
+    "stage": "thrust",
+    "frame": 10,
+    "blueOnly": true,
+    "camera": {
+      "position": [
+        120,
+        32,
+        42
+      ],
+      "target": [
+        46,
+        16,
+        2
+      ],
+      "projection": "orthographic",
+      "zoom": 0.42
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_liaoli_blue_thrust_side_F10.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  },
+  {
+    "family": "native",
+    "stage": "loop",
+    "frame": 6,
+    "blueOnly": false,
+    "camera": {
+      "position": [
+        20,
+        42,
+        170
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "projection": "orthographic",
+      "zoom": 0.28
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_native_soul_overall_F06.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  },
+  {
+    "family": "native",
+    "stage": "loop",
+    "frame": 6,
+    "blueOnly": true,
+    "camera": {
+      "position": [
+        130,
+        40,
+        70
+      ],
+      "target": [
+        51,
+        16,
+        3
+      ],
+      "projection": "orthographic",
+      "zoom": 0.4
+    },
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_native_soul_blue_side_F06.png",
+    "source": "real Blockbench main Preview.screenshot, no postprocessing"
+  }
+]

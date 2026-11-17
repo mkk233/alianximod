@@ -1,0 +1,182 @@
+[
+  {
+    "sheet": "资源状态明细",
+    "row": 4,
+    "needles": [
+      "water_deep_pressure"
+    ],
+    "cells": [
+      {
+        "col": "A",
+        "header1": "资源状态明细",
+        "header2": "术式编号",
+        "value": "water_deep_pressure"
+      },
+      {
+        "col": "B",
+        "header1": "",
+        "header2": "配置序号",
+        "value": "2"
+      },
+      {
+        "col": "C",
+        "header1": "",
+        "header2": "配置启用",
+        "value": "否"
+      },
+      {
+        "col": "D",
+        "header1": "",
+        "header2": "资源",
+        "value": "水势"
+      },
+      {
+        "col": "F",
+        "header1": "",
+        "header2": "操作",
+        "value": "增加"
+      },
+      {
+        "col": "G",
+        "header1": "",
+        "header2": "作用对象",
+        "value": "领域内主人或盟友玩家"
+      },
+      {
+        "col": "H",
+        "header1": "",
+        "header2": "触发时机",
+        "value": "领域周期"
+      },
+      {
+        "col": "I",
+        "header1": "",
+        "header2": "数值",
+        "value": "0"
+      },
+      {
+        "col": "K",
+        "header1": "",
+        "header2": "寿命策略",
+        "value": "不适用"
+      },
+      {
+        "col": "M",
+        "header1": "",
+        "header2": "周期tick",
+        "value": "20"
+      },
+      {
+        "col": "N",
+        "header1": "",
+        "header2": "首次延迟tick",
+        "value": "20"
+      },
+      {
+        "col": "O",
+        "header1": "",
+        "header2": "计量单位",
+        "value": "每次触发"
+      },
+      {
+        "col": "R",
+        "header1": "",
+        "header2": "迁移来源",
+        "value": "DF:DH"
+      }
+    ]
+  },
+  {
+    "sheet": "资源状态明细",
+    "row": 5,
+    "needles": [
+      "water_deep_pressure"
+    ],
+    "cells": [
+      {
+        "col": "A",
+        "header1": "资源状态明细",
+        "header2": "术式编号",
+        "value": "water_deep_pressure"
+      },
+      {
+        "col": "B",
+        "header1": "",
+        "header2": "配置序号",
+        "value": "3"
+      },
+      {
+        "col": "C",
+        "header1": "",
+        "header2": "配置启用",
+        "value": "是"
+      },
+      {
+        "col": "E",
+        "header1": "",
+        "header2": "状态",
+        "value": "缓慢"
+      },
+      {
+        "col": "F",
+        "header1": "",
+        "header2": "操作",
+        "value": "施加"
+      },
+      {
+        "col": "G",
+        "header1": "",
+        "header2": "作用对象",
+        "value": "领域内有效目标"
+      },
+      {
+        "col": "H",
+        "header1": "",
+        "header2": "触发时机",
+        "value": "领域周期"
+      },
+      {
+        "col": "J",
+        "header1": "",
+        "header2": "状态amplifier",
+        "value": "0"
+      },
+      {
+        "col": "K",
+        "header1": "",
+        "header2": "寿命策略",
+        "value": "固定刷新"
+      },
+      {
+        "col": "L",
+        "header1": "",
+        "header2": "寿命tick",
+        "value": "20"
+      },
+      {
+        "col": "M",
+        "header1": "",
+        "header2": "周期tick",
+        "value": "10"
+      },
+      {
+        "col": "N",
+        "header1": "",
+        "header2": "首次延迟tick",
+        "value": "10"
+      },
+      {
+        "col": "P",
+        "header1": "",
+        "header2": "生效条件",
+        "value": "沿用原领域"
+      },
+      {
+        "col": "R",
+        "header1": "",
+        "header2": "迁移来源",
+        "value": "DI:DL"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "id": "fire_meteorite",
+  "movedToPendingAcceptance": true,
+  "markedComplete": false,
+  "from": {"sheet": "制作中", "row": 6},
+  "to": {"sheet": "待验收", "row": 9},
+  "countsBefore": {"已完成": 40, "待制作": 0, "制作中": 14, "待验收": 6},
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 13, "待验收": 7},
+  "archivePreserved": true,
+  "detailRowAdded": false,
+  "resourceIndexChanged": false,
+  "approvedV1Changed": false,
+  "repairReportPresent": false,
+  "baselineSha256": "01A7C04D5C3B04E92851E23E8AE86CC9B29C76B47031D494DD756FF770F82B94",
+  "afterSha256": "FE75EF6B099EDE5F3F4B27F11514550834C6FAC9429C94F0650038B946CDF301",
+  "backup": "docs/开发记录/陨岩实体命中续飞-20261101/备份/术式制作表-20261102-002838-1.xlsx",
+  "snapshots": {
+    "aen": "docs/开发记录/陨岩实体命中续飞-20261101/快照/变更前-AEN-20261102-002838-1.json",
+    "nodv": "docs/开发记录/陨岩实体命中续飞-20261101/快照/变更前-NODV-20261102-002838-1.json",
+    "revised": "docs/开发记录/陨岩实体命中续飞-20261101/快照/修订需求-20261102-002838-1.md"
+  },
+  "designSha256Before": "F00E1ACAD5CCBF1159CDCCFFDAFB253A332B64E1822948922F1EDAC24826A6B5",
+  "designSha256After": "2BE125382CE8E1E4ECD046D177AA96F5DBFF3E13747AED234694CC0FE1D9D90F",
+  "amendmentSha256Before": "6F9A88D772B9B0486B51CD3BFE2BB7E24EE929A519D19BCCA33875DDF8993CD2",
+  "amendmentSha256After": "E7B5C5C3C9C2E28156AB10DEB5BD91FDD266AB4DCEF0710A9AD653D257221CDB",
+  "pendingN": "撞到实体后沿当前弹道继续飞行，触地才变成陨石方块。",
+  "runtimeResources": [
+    "blockstates/meteorite.json",
+    "models/block/meteorite.json",
+    "models/item/meteorite.json",
+    "textures/block/meteorite_v1.png"
+  ],
+  "newArtVersion": false,
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "started": "2026-11-02T00:22:13.1682455+08:00",
+    "ended": "2026-11-02T00:22:49.4527498+08:00",
+    "exitCode": 0,
+    "compileJavaExecuted": true,
+    "javacExecuted": true
+  },
+  "formalReviewAdded": false,
+  "quotaNote": "本阶段额度已用完，返修结果未追加复审",
+  "gamePendingUser": true,
+  "verifyOk": true
+}

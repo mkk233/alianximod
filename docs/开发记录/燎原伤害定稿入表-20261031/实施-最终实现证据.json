@@ -1,0 +1,76 @@
+{
+  "session_id": "56a5db68-36cf-4f89-b30d-b07c214a5d68",
+  "model": "grok-4.7-high-fast",
+  "review_note": "本阶段额度已用完，返修结果未追加复审",
+  "compile": "未运行",
+  "game": "未运行",
+  "sheet": "未改",
+  "lang_changed_this_pass": false,
+  "confirmed_preview": "docs/资源库/特效/火焰/燎原_v3/mixed-surface-preview.gif",
+  "name_gate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exit_code": 1,
+    "touched_files": "无新增违规",
+    "preexisting_untouched": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ]
+  },
+  "runtime_copies": [
+    {
+      "archive": "docs/资源库/特效/火焰/燎原_v3/ground_ash.png",
+      "runtime": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash.png",
+      "size": "16x16",
+      "sha256": "3A27AB77AB560BDAA10B91D1FA0BBEE9EEA2E7A2539D96B38EAF5D34E035A391",
+      "archive_matches_runtime": true,
+      "file_time": "2026-10-31 02:02:32"
+    },
+    {
+      "archive": "docs/资源库/特效/火焰/燎原_v3/ground_ash_b.png",
+      "runtime": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash_b.png",
+      "size": "16x16",
+      "sha256": "FDA27E3FE5AF8D2BF24F7C640F6FB029261ED1E60249C598B3D2E1BD92CD9650",
+      "archive_matches_runtime": true,
+      "file_time": "2026-10-31 02:02:32"
+    },
+    {
+      "archive": "docs/资源库/特效/火焰/燎原_v3/ground_ash_c.png",
+      "runtime": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash_c.png",
+      "size": "16x16",
+      "sha256": "E238680FE3196C8BDA7F23E18F3E864D6AA64EB9F82CB09182F29B8A308623A6",
+      "archive_matches_runtime": true,
+      "file_time": "2026-10-31 02:02:32"
+    },
+    {
+      "archive": "docs/资源库/特效/火焰/燎原_v3/ground_ash_d.png",
+      "runtime": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash_d.png",
+      "size": "16x16",
+      "sha256": "45DA398493CB87E0E5E5D74EA32272B6888A51ADEBC94FB9646467CF76C2E7FA",
+      "archive_matches_runtime": true,
+      "file_time": "2026-10-31 02:02:32"
+    },
+    {
+      "archive": "docs/资源库/特效/火焰/燎原_v3/ground_embers.png",
+      "runtime": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_embers.png",
+      "size": "16x384",
+      "frames": 24,
+      "frame_size": "16x16",
+      "frame_millis": 50,
+      "sha256": "B8642145B0665A179A5C89C6A0CE0A270A5118254F2686E6BD16618A5B2C8F0F",
+      "archive_matches_runtime": true,
+      "file_time": "2026-10-31 02:02:32"
+    }
+  ],
+  "java": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/visual/fire/FireVisualLayout.java",
+      "sha256": "68CD9A0DD3CCB722647198EC1A0FF57FB3567BAF3B084F90CBDE8D64270A6522",
+      "last_write": "2026-10-31 02:27:15"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+      "sha256": "BCE8059A4FA43828467E94D1F9BE2230E089512067023117336EA7ABABF32AE4",
+      "last_write": "2026-10-31 02:27:19"
+    }
+  ]
+}

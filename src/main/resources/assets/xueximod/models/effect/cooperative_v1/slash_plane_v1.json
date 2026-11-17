@@ -1,0 +1,30 @@
+{
+  "format": "cooperative-slash-wedge-v2-20261104",
+  "loadedByGame": false,
+  "note": "Minecraft does not load this file or the Blockbench model. CooperativeSlashPlane builds the shell on the existing oblique-slash emit. The old flat quad is no longer drawn.",
+  "texture": "xueximod:textures/entity/xueximod/oblique_slash_v1.png",
+  "textureSha256": "58E741C8BED808EB4E8CC6DC77FA71FD009A9AAB0B7FEBC104ACCB68E655BFD7",
+  "sourceModel": "docs/资源库/动画/剑术/协同斩光_v2/cooperative_slash_wedge_v2.bbmodel",
+  "sourceModelSha256": "7659B9AEF7A526A6E8313288E4FDD4D1CEA26C06513700C9FA5DB979C606BDC3",
+  "blockbenchLoadedByGame": false,
+  "trianglesPerEmit": 32,
+  "quads": {
+    "top": 4,
+    "bottom": 4,
+    "left": 4,
+    "right": 4
+  },
+  "authoredStations": {
+    "alongBlocks": [-1.15, -0.75, -0.25, 0.5, 1.5],
+    "halfThicknessBlocks": [0, 0.08, 0.16, 0.1, 0]
+  },
+  "uv": "u is 0 at local -X and 1 at local +X. v is 0.5 - authoredAlong/3 so PNG top stays the forward tip.",
+  "renderType": "entityTranslucent, one write per surface, fullbright, world depth kept",
+  "phaseSeconds": [
+    [0.0, 0.92],
+    [0.04, 1.0],
+    [0.14, 1.0],
+    [0.2, 0.001]
+  ],
+  "defaultWindowSeconds": 0.2
+}

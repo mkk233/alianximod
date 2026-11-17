@@ -1,0 +1,22 @@
+{
+  "author": "C",
+  "stage": "compile-fix",
+  "model": "grok-4.7-high-fast",
+  "previousStage": "repair-1",
+  "modified": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SteamBurst.java"
+  ],
+  "created": [
+    "docs/开发记录/配置平衡-20261101/pre-compile-fix/C/",
+    "docs/开发记录/配置平衡-20261101/compile-fix-C-final.md"
+  ],
+  "backups": "docs/开发记录/配置平衡-20261101/pre-compile-fix/C/",
+  "backupNote": "本次编译修复前的 SteamBurst.java 按项目相对路径复制到 pre-compile-fix/C。pre-C 与 pre-repair-1/C 均保留未覆盖。",
+  "retainedBaseline": "docs/开发记录/配置平衡-20261101/pre-C/",
+  "retainedRepairBackup": "docs/开发记录/配置平衡-20261101/pre-repair-1/C/",
+  "nameGate": "tools/check-name-gate.ps1 exit 1. Only pre-existing OriginalHumanoid.java:165 i and :202 to. SteamBurst.java has no new violations. Those two were not renamed.",
+  "compile": "not run",
+  "game": "not run",
+  "ownershipReleased": true,
+  "writesClosed": true
+}

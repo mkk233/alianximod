@@ -1,0 +1,32 @@
+作者 A 阶段 A1。以下路径在本阶段开始时均不存在，没有可备份的旧字节。
+不修改既有源码。清单相对工作区 D:/alianximod。
+
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceSchema.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceSide.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceUnit.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceValueKind.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceKeys.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceBound.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceDefaultCalculator.java
+src/main/java/com/bslx/XueXiMod/shu/balance/RawDefault.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceParameter.java
+src/main/java/com/bslx/XueXiMod/shu/balance/TechniqueBalanceSpec.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceWarning.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceException.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceDeclarationException.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceConflictException.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceValueException.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceSideException.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceDocumentException.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceMath.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceRegistry.java
+src/main/java/com/bslx/XueXiMod/shu/balance/GlobalBalance.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceSnapshot.java
+src/main/java/com/bslx/XueXiMod/shu/balance/BalanceService.java
+src/main/java/com/bslx/XueXiMod/shu/balance/RawDamage.java
+src/main/java/com/bslx/XueXiMod/shu/balance/ConfiguredDamage.java
+
+docs/开发记录/配置平衡-20261101/API合同.md
+docs/开发记录/配置平衡-20261101/author-A-manifest.json
+docs/开发记录/配置平衡-20261101/author-A1-report.md
+docs/开发记录/配置平衡-20261101/pre-A/新建文件清单.txt

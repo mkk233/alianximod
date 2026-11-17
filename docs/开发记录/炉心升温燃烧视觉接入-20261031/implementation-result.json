@@ -1,0 +1,44 @@
+{
+  "status": "stopped_writing",
+  "model": "grok-4.7-high-fast",
+  "compile": "not_run",
+  "game_verification": "not_run",
+  "sheet_writeback": "not_this_session",
+  "report": {
+    "path": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/implementation-report.md",
+    "sha256": "b9c16d63ce2195cb576c7afe66d9f046ec65a0e3f1338eb6ff2aeae5f9a96a33",
+    "mtime": "2026-10-31 03:50:40",
+    "bytes": 8683
+  },
+  "runtime_directory": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v2/",
+  "cool_still_loaded": "textures/effect/furnace_v1/cool.png",
+  "not_loaded": [
+    "heat_up-v2-preview",
+    "heat_up-v2-strip.png",
+    "overdrive-v3-combined-strip.png",
+    "overdrive-v3-front-back-preview",
+    "过程归档/overdrive-v3-combined.aseprite"
+  ],
+  "approved_sources_unchanged": true,
+  "checks": {
+    "part_coverage_exit": 0,
+    "burn_loop_byte_match": true,
+    "name_gate_exit": 1,
+    "name_gate_note": "仅未改动的 OriginalHumanoid.java:165 与 :202；本次文件无违规"
+  },
+  "gaps": [
+    "未编译",
+    "未进游戏",
+    "披风纯侧面是薄片",
+    "余烬不跟手",
+    "第一人称只有手臂局部火"
+  ],
+  "files": [
+    {"path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java", "sha256": "d1065af29d147ccd09b385c5f8a03d8fb58d8106df0778f4df523a6a34197497", "mtime": "2026-10-31 03:46:02", "bytes": 41605},
+    {"path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceBodyVisual.java", "sha256": "adfe6ea2c74a8c07a136d67a819bf2c4e59997d7c62dde2a78e46cfaf4e546db", "mtime": "2026-10-31 03:48:02", "bytes": 20677},
+    {"path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceBodyLayer.java", "sha256": "05a8167f06a08ff0e27b00248f783b31439a113bd582cf48f8cb191d78b09339", "mtime": "2026-10-31 03:49:50", "bytes": 10470},
+    {"path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceArmFlame.java", "sha256": "79b845a283f84edfae7cd9fa8f4de9efa1e543d609a8d8ffcb61fbc167130e70", "mtime": "2026-10-31 03:48:05", "bytes": 4916},
+    {"path": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/ownership.json", "sha256": "0dcc5b2af4b5ea9c27883067796e030052ff2b975a26708e9fb3b95761e943d0", "mtime": "2026-10-31 03:38:05", "bytes": 1899},
+    {"path": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/index-update.md", "sha256": "33ad109d62936948ed5b640d834ca2c4694c2d33c48a79a945ab6485fce23210", "mtime": "2026-10-31 03:49:12", "bytes": 1322}
+  ]
+}

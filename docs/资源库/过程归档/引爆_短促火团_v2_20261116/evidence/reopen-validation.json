@@ -1,0 +1,198 @@
+{
+  "native_reopen": true,
+  "original_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+  "reopened_uuid": "e0d306f9-0f12-bc19-9636-0c56f9f1ce88",
+  "path": "D:/alianximod/docs/资源库/过程归档/引爆_短促火团_v2_20261116/blockbench/fire_detonate_v2_candidate.bbmodel",
+  "name": "fire_detonate_v2_candidate",
+  "bytes": 339806,
+  "sha256": "EED1A2BBED81BAC96F2FC6AC73A728AD99EF89D95FBDE3D878300851C1885236",
+  "elements": 90,
+  "groups": 20,
+  "textures": 22,
+  "embedded_textures": 22,
+  "effect_textures": [
+    {
+      "name": "detonate_v2_orange-strip.png",
+      "width": 64,
+      "height": 1024,
+      "error": 0,
+      "uv_width": 64,
+      "uv_height": 1024
+    },
+    {
+      "name": "detonate_v2_soul-strip.png",
+      "width": 64,
+      "height": 1024,
+      "error": 0,
+      "uv_width": 64,
+      "uv_height": 1024
+    }
+  ],
+  "effect_faces": [
+    {
+      "name": "FX_orange_S50_side1.2b",
+      "visible": true,
+      "uv": [
+        0,
+        256,
+        64,
+        320
+      ],
+      "texture": "detonate_v2_orange-strip.png",
+      "origin": [
+        -18.95123,
+        16.48822,
+        4.78357
+      ],
+      "rotation": [
+        -8.77584,
+        19.36735,
+        0
+      ],
+      "from": [
+        -28.55123,
+        6.88822,
+        4.78357
+      ],
+      "to": [
+        -9.35123,
+        26.08822,
+        4.78357
+      ]
+    },
+    {
+      "name": "FX_soul_S50_side1.2b",
+      "visible": true,
+      "uv": [
+        0,
+        256,
+        64,
+        320
+      ],
+      "texture": "detonate_v2_soul-strip.png",
+      "origin": [
+        21.04877,
+        16.48822,
+        4.78357
+      ],
+      "rotation": [
+        -8.77584,
+        19.36735,
+        0
+      ],
+      "from": [
+        11.44877,
+        6.88822,
+        4.78357
+      ],
+      "to": [
+        30.64877,
+        26.08822,
+        4.78357
+      ]
+    },
+    {
+      "name": "FX_orange_S10_side0.8b",
+      "visible": false,
+      "uv": [
+        0,
+        256,
+        64,
+        320
+      ],
+      "texture": "detonate_v2_orange-strip.png",
+      "origin": [
+        -17.95123,
+        16.48822,
+        4.78357
+      ],
+      "rotation": [
+        -8.77584,
+        19.36735,
+        0
+      ],
+      "from": [
+        -24.35123,
+        10.08822,
+        4.78357
+      ],
+      "to": [
+        -11.55123,
+        22.88822,
+        4.78357
+      ]
+    },
+    {
+      "name": "FX_orange_S50_side1.2b",
+      "visible": false,
+      "uv": [
+        0,
+        256,
+        64,
+        320
+      ],
+      "texture": "detonate_v2_orange-strip.png",
+      "origin": [
+        20.04877,
+        16.48822,
+        4.78357
+      ],
+      "rotation": [
+        -8.77584,
+        19.36735,
+        0
+      ],
+      "from": [
+        10.44877,
+        6.88822,
+        4.78357
+      ],
+      "to": [
+        29.64877,
+        26.08822,
+        4.78357
+      ]
+    },
+    {
+      "name": "FX_orange_S100_side1.6b",
+      "visible": false,
+      "uv": [
+        0,
+        256,
+        64,
+        320
+      ],
+      "texture": "detonate_v2_orange-strip.png",
+      "origin": [
+        58.04877,
+        16.48822,
+        4.78357
+      ],
+      "rotation": [
+        -8.77584,
+        19.36735,
+        0
+      ],
+      "from": [
+        45.24877,
+        3.68822,
+        4.78357
+      ],
+      "to": [
+        70.84877,
+        29.28822,
+        4.78357
+      ]
+    }
+  ],
+  "protected_projects_unchanged": true,
+  "protected_project_count": 15,
+  "protected_unsaved": [
+    {
+      "name": "daozhang_v1_candidate",
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2"
+    }
+  ],
+  "all_original_tabs_preserved": true,
+  "at_utc": "2026-11-16T07:33:42.556Z"
+}

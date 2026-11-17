@@ -1,0 +1,14 @@
+运行贴图
+路径：D:\alianximod\src\main\resources\assets\xueximod\textures\domain\water_flow_v3_1.png
+资源名：textures/domain/water_flow_v3_1.png
+SHA256：D91EA9441D1CF55B048D370E9C45A0349DAD5F8CA41AAB35931418054DAB1CCB
+长度：1207
+LastWriteTime：2026-11-03 19:05:22.274
+与确认文件哈希.json 中 water_flow_v3_1.png 的 SHA256 一致。本次未改贴图。
+
+改后 Java
+路径：D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainFlowRenderer.java
+SHA256：610D26DBF60F63804E7D06EA2CCF96DD3050015F4CF03FC003E8D36876FAB324
+长度：20345
+LastWriteTime：2026-11-09 18:17:51.077
+哈希在命名门通过、且本文件不再改动之后读取。

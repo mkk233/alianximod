@@ -1,0 +1,5 @@
+命令：powershell -NoProfile -File tools/check-name-gate.ps1
+工作目录：D:\alianximod
+退出码：0
+标准输出：源码命名可读性检查通过：未发现单字母变量或禁止缩写
+本次改动文件 DomainFlowRenderer.java 无命名违规。未改其他源码里的旧名字。

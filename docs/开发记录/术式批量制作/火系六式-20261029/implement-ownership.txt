@@ -1,0 +1,4 @@
+火系六式这次实现只由当前 Cursor 会话写入。没有第二作者。
+写入范围是六式所需的 Java、两份语言文件、定向检查，以及本目录 implement- 前缀的报告、门禁记录、自检记录和本归属说明。
+未改制作表、本目录记录.md、资源库、Gradle，也未改 OriginalHumanoid.java。
+本文件与 implement-report.md 写完后停止写入，并释放文件句柄。

@@ -1,0 +1,21 @@
+{
+  "batchId": "wood-secondary-base-20261109",
+  "taskId": "verify-delivery",
+  "workspace": "D:/alianximod",
+  "stage": "delivery",
+  "operation": "recompile-and-rerun-failed-checks-after-fixes",
+  "authorization": "用户授权底座实现；按项目流程在全部相关源码收束后做最终串行compileJava和必要定向检查，不打包不启动游戏。",
+  "inputVersion": "wood-secondary-base-final-reported-fixes-20261109",
+  "recordPath": "D:/alianximod/docs/开发记录/木属性二级底座-20261109/记录.md",
+  "writePaths": [
+    "D:/alianximod/build/",
+    "D:/alianximod/.gradle/",
+    "D:/alianximod/docs/开发记录/木属性二级底座-20261109/编译与检查结果.md"
+  ],
+  "dependencies": [
+    "author-resources",
+    "author-effects",
+    "author-integration",
+    "review-implementation"
+  ]
+}

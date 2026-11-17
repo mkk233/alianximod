@@ -1,0 +1,18 @@
+--- a/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneRemoteRecall.java
++++ b/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneRemoteRecall.java
+@@ -372,14 +372,15 @@
+                 }
+                 AABB slice = new AABB(packedX << 4, low, packedZ << 4,
+                         (packedX << 4) + 16.0D, high + 1.0D, (packedZ << 4) + 16.0D);
++                final int consideredBeforeChunk = considered;
+                 int[] seen = new int[1];
+                 List<Entity> blocking = level.getEntities(actor, slice, other -> {
+                     if (!CloneBodySweep.crowdsBody(actor, other)) {
+                         return false;
+                     }
+                     seen[0]++;
+-                    if (considered + seen[0] > CooperativeStructureLimits.REMOTE_CHANNEL_ENTITY_CAP) {
++                    if (consideredBeforeChunk + seen[0] > CooperativeStructureLimits.REMOTE_CHANNEL_ENTITY_CAP) {
+                         return false;
+                     }
+                     return meetsBody(other);

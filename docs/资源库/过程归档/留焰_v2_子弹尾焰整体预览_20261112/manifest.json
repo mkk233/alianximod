@@ -1,0 +1,762 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "flame_trail_art_preview",
+  "attemptId": "20261112-projectile-composite-3d-resume",
+  "twoDSourceAttemptId": "20261112-projectile-composite-feedback",
+  "version": "留焰_v2_子弹尾焰整体预览_20261112",
+  "state": "同版二维整体效果与真实三维草稿预览齐全；待本次用户视觉确认",
+  "designReviewRounds": "2/2 unchanged",
+  "implementationReviewRounds": "3/3 unchanged",
+  "asepriteBackend": "native batch, not GUI",
+  "twoDPreservation": {
+    "comparedAgainstPreviousManifest": true,
+    "unchangedMediaCount": 109,
+    "allHashesUnchanged": true,
+    "originalInputHashesUnchanged": true,
+    "twoDRegeneratedInThisAttempt": false
+  },
+  "inputSourcesReadOnly": [
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/留焰_v1/flame_trail.aseprite",
+      "bytes": 19751,
+      "sha256": "656C31D277D03FDBF9D4A6AAF5C398CB13ED1F0D97B07240928071B25C7FFA55"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/留焰_v1/flame_trail-strip.png",
+      "bytes": 12057,
+      "sha256": "F1B0D723B4AEA57B37FCA4928AFAF492E8F1020D864183F36EDABF379BE95284"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_飞行火舌_v3/fire_spark_v3.aseprite",
+      "bytes": 10644,
+      "sha256": "710957E6C13AB8D8CC0C9EA5BD6CFD424041EE5C8F9BE8231CF75D4EB15C8FCA"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_飞行火舌_v3/fire_spark_v3_strip.png",
+      "bytes": 5005,
+      "sha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/blockbench-capture-log.json",
+      "bytes": 3893,
+      "sha256": "6789B02AD4F114B350202774198D82BD1B11BA014FC8C6E27AE9502E17A511E8"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/blockbench-scene-parameters.json",
+      "bytes": 16251,
+      "sha256": "DBEBFAA9FDF08F415691CEBA16E18C6CD698EE6E1CD473272D75A2B7187E0A3B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/build-composite-blockbench.js",
+      "bytes": 8366,
+      "sha256": "96EBEA1E4420825552D8AAC9084476DA3D6546CD20B1CB6E3104BB3B7428A3EA"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/capture-composite-blockbench.js",
+      "bytes": 1033,
+      "sha256": "82E02FC85C18148181AF88B595A45539A8CB23328E38080048A62A005526F336"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-parameters.json",
+      "bytes": 4829,
+      "sha256": "D7B0287945196F6ED4EE2D715CB7F20B94E4DC23D6D743C56EE93968CD9786D7"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-t04.png",
+      "bytes": 2798,
+      "sha256": "50DF6F54E1123782071064182BC4A533311905D98F8328853E83A0D15C2C6D91"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-t20.png",
+      "bytes": 6867,
+      "sha256": "375392771BABC0E7EC414927CD014B5988B12194AE5AEA0EC600B323C668417C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-t40.png",
+      "bytes": 10423,
+      "sha256": "9F47FA5103462CFA056A56E63F3CFFD8015ADDF5356AD08856FD52A436CD83C2"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-t52.png",
+      "bytes": 10458,
+      "sha256": "0FC4DE631390C85947966A8357DDEA6512CD29340FC37ED45B8418BBF750728D"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-t68.png",
+      "bytes": 6229,
+      "sha256": "D51E86144154774EC4D70830A89788E50F46C13369B94C0BD6CCC8A61EC9DC08"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-t84.png",
+      "bytes": 3334,
+      "sha256": "179B8300EAE60492511FFCCA68095123D2F78513149FCAD41A06D7117AC0551B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/composite-t96.png",
+      "bytes": 2531,
+      "sha256": "A4BBDA835C6AB246FBEEB61CAE15A30D12D38642CAD3D942FBEDA58B372CE61C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/create-composite-preview.lua",
+      "bytes": 8586,
+      "sha256": "52DB96101782A01E3D6E5045B20405437EF6935BBFFEC483E8D061E72069A0EC"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/flame-trail-v2-complete-effect.gif",
+      "bytes": 590721,
+      "sha256": "482160745967BE37C832B1DD510752D3B6B120B05454F1F9EE03F95E2A9A6641"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/flame-trail-v2-composite.aseprite",
+      "bytes": 529390,
+      "sha256": "0348C592F629AC4679FCE40AC580B9A21606C6C4E24FA2F96886BF6DBA4CEAAF"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/flame-trail-v2-projectile-composite.bbmodel",
+      "bytes": 197457,
+      "sha256": "CAABEF6E76E27474B393C7CFF86CFCE32E2FAF9460DB56818DEE116D8300CC01"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/process-v1-composite-trial.png",
+      "bytes": 8195,
+      "sha256": "8033937C88043A57C5C943604874DDED068F97ECACCE091E29D098B68C2D793F"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-01.png",
+      "bytes": 372,
+      "sha256": "D38F86E004F6D5B59206099BDCDC3E8EB54B3838C28F88745D885A62813F2603"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-02.png",
+      "bytes": 366,
+      "sha256": "5561ABD452D6A8A7F94FD6531780CC04F23DCC608E0D107E130B44C6F87EDED5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-03.png",
+      "bytes": 381,
+      "sha256": "A69103F0AAB5EC8F1637A38E141ED58E3CB72CFBC8C6F76A01A4AEB6D067F750"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-04.png",
+      "bytes": 366,
+      "sha256": "1C28EC34AADA3C667A98A545C1A74DA4CED0373270595E14BC13439B3C5EF515"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-05.png",
+      "bytes": 373,
+      "sha256": "7752F7169699621AD2752C394E13619299A1AB8583FEA4B935AA4C3D853EA924"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-06.png",
+      "bytes": 377,
+      "sha256": "62A8080004B66FC25882394BA7E767DCA117723429155A0D2A347D9B8E702D45"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-07.png",
+      "bytes": 415,
+      "sha256": "9FE6E57D6FD40E08E7FF7EC3EC47084E14E55F8C657F5F0C58B9769771EC995C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-08.png",
+      "bytes": 401,
+      "sha256": "E4BBEA47345E0C2462E4983A25B466E4E3E85A5C3E7073D63E6FD73A9017B8D5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-09.png",
+      "bytes": 390,
+      "sha256": "9DE441050AF7BE8CB30787603D9CF9F8CB98318EB4888CF42EB9DF2A877A02D8"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-10.png",
+      "bytes": 372,
+      "sha256": "B0BE3D388DAC6EC029C53F974B86045F36A9D0DFDA5D54F935EA3AD4B0044BCE"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-11.png",
+      "bytes": 370,
+      "sha256": "B9CB0E2C78E7D6922D5B5D28860D70BF0FB73962965FDBA8E196ACC21C0F6E12"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-12.png",
+      "bytes": 374,
+      "sha256": "9F348C5A9549949CAB5050D8EC45C7AD23C334448A8B054746EBC49E1871634C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-13.png",
+      "bytes": 368,
+      "sha256": "C35DF83403046F9677B4025E0E56E36E1314B95C0DD4E37A96D5C39BBAE79C0C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-14.png",
+      "bytes": 385,
+      "sha256": "250F2AC95B9AD9AFC393A4E6D2F22B036D7B882AB089D52B87D9713CFBB05203"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-15.png",
+      "bytes": 399,
+      "sha256": "76053737464644CFB71F53C2A6B1098E1A86962AA1343BE7C6D6A3A8BE7D06C5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-frame-16.png",
+      "bytes": 391,
+      "sha256": "47F6600D9783477D2D3D82F1C2887A9D1F36EB3ED579EE46A02C03628A1A038A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/projectile-v3-nn-strip.png",
+      "bytes": 1702,
+      "sha256": "BDFDCFED908278F4FD07954310419E814C6483B4F6B3D3D034E5E72676CAD25B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-00.png",
+      "bytes": 407,
+      "sha256": "BBCB9BCBBDB19FC495AE37471C14FB6042DA6A6F63CC470F3432633F58B13E09"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-01.png",
+      "bytes": 385,
+      "sha256": "C46E039A00F63DCF9AD5FACC956989A52833036216E3E78A87DD32AC118CC589"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-02.png",
+      "bytes": 381,
+      "sha256": "0F2F00898B1770FE6E0A49C35FE43DDFE6297D38434701D3244B21BDEE7BED4E"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-03.png",
+      "bytes": 378,
+      "sha256": "5452AD4DDCC0A28D525C26146104E07094C4BF53DAB72EFBB4C65A3EC1497FCE"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-04.png",
+      "bytes": 380,
+      "sha256": "587E53DBC092FE376D26C4B941F55E4516E9B943D4B44FCA62C42F613B541543"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-05.png",
+      "bytes": 400,
+      "sha256": "C7D530D877EDA03017C716CC918A9706713EB1ECDCE1CBE58D09FDF09EB0EB15"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-06.png",
+      "bytes": 401,
+      "sha256": "D6639843848163AB9CF823EEC857FAACD6141DFDD98CEA73653B23A59C3C1403"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-07.png",
+      "bytes": 403,
+      "sha256": "1945A88C72C5A8065D72907FE7D6D13E7973845CC23065F5982CE6DA1341D717"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-08.png",
+      "bytes": 403,
+      "sha256": "EC9BC7211D803F4ABFB783AA250F1E6652AF00D6BDF5E03D3CAFE065C45CA999"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-09.png",
+      "bytes": 403,
+      "sha256": "D0433EEA7631C67E4401823AE02D7ABB2A63F410F94AABB23111BF26A13C8054"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-10.png",
+      "bytes": 421,
+      "sha256": "CA92BA69A3D141D0BB113DD3A7A08D04F4728A8894ED671B75C26C8B635499B5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-11.png",
+      "bytes": 419,
+      "sha256": "F11CA84EA236459B2EA306D48DF760DF3E5CEFA4AEBA99B25DC4820C1A820CC4"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-12.png",
+      "bytes": 416,
+      "sha256": "5996034245F116AD1B751E1BB5F8517E210D451D2BA1BE043FA8C561B77575E5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-13.png",
+      "bytes": 414,
+      "sha256": "99ACBB5ED2632CC8842C7B11B51AB1F7A2F13F4D22E39FF282113E0E1B47F5BF"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-14.png",
+      "bytes": 417,
+      "sha256": "AC8521404A727A5E6D75985A3072E0F79903D842226DD96C842D9088D84982A1"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-15.png",
+      "bytes": 406,
+      "sha256": "15E2BE54C1797834C78F3FA1517F06BAE179F5C69FDEF2CD907B176D97FB1D04"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-16.png",
+      "bytes": 387,
+      "sha256": "DD82FCDEB4CD291CF6CBC7ACDA7EAA02C64E77C04EC2CDBF601A0A6821BF0C0A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-17.png",
+      "bytes": 384,
+      "sha256": "7B49D295622874FED71A94EE4900102D0522A22AF6FB5F77F9FA2D21E23A073E"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-18.png",
+      "bytes": 383,
+      "sha256": "0194919DC3B24E900C5C32140401089E8D490515B1A05DEF7306E3102538C93A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-19.png",
+      "bytes": 383,
+      "sha256": "9C4994E03352A6E55238C9387535F2CF5EBA2E52EB90C9337C8CDEC72E468331"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-20.png",
+      "bytes": 405,
+      "sha256": "BB3590CB93D6C23982EA4C53EA2467BBAE741D9611E0F2D3956B155C075F7E98"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-21.png",
+      "bytes": 393,
+      "sha256": "B9B26C686D1D370138894AB32C5BB566F30E65D3114561C5B0AADC094E80ABF8"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-22.png",
+      "bytes": 391,
+      "sha256": "5CDF323600A82FC71620D44991D4AC849FD9ED0C789A09D7F46202BFA3C07247"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-23.png",
+      "bytes": 395,
+      "sha256": "C8D87EF4213B46442F1E376974E6F4849FE43B28999E4D5EF69F66F8D7A8D166"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-24.png",
+      "bytes": 395,
+      "sha256": "C24BF03D91CFAD32254D8FC79579993496AABDE6615E5529585BF6AD6C9B9826"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-25.png",
+      "bytes": 366,
+      "sha256": "13ACFCD6AA65D2EBEB8BFCD2E3721C0040C3A05A13748742BFEE523B9CA6F8ED"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-26.png",
+      "bytes": 360,
+      "sha256": "6E494099E7331454C407745DDF390DC07337D49112F5B676501B6977D3AE7D3C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-27.png",
+      "bytes": 364,
+      "sha256": "70B6BD8E0A8F5FB3681D0AD95755D1E95A819AEF3E1AEF3F830B43F486072199"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-28.png",
+      "bytes": 365,
+      "sha256": "53924FC95C959B7691862CD612FDEABCC5B19949DD035461FA9BC7F59C6286B0"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-29.png",
+      "bytes": 365,
+      "sha256": "43F1268CA8E3E6DF4BCA9BF68F7C87C44EDFC5CBE47FFEE8FB3B50B91A55B4A2"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-30.png",
+      "bytes": 377,
+      "sha256": "198F322F0E11A84EEE11E0AAF1F33DB12604F4C9F2875DDC94ACB279D54BD234"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-31.png",
+      "bytes": 359,
+      "sha256": "30CA657451EE2F21DC30DA7F474A631A4F670A791FD48A4D1559C5817755952D"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-32.png",
+      "bytes": 357,
+      "sha256": "8AF9476DADE573F3801CDCE6B838701A2C342F772CFA7E5A618D9E8C52E0B610"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-33.png",
+      "bytes": 355,
+      "sha256": "E9F15E1F7EB956A19F2CA4D405F8023CD458FA7997178BFF151B9A45EE4DFC60"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-34.png",
+      "bytes": 356,
+      "sha256": "AD08E49CA0EE98D97C261A2C8A3A827DB2169B5F4AA837A01B52894F7F36BED2"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-35.png",
+      "bytes": 373,
+      "sha256": "F2B973B74FCFF037BE785663BB8F162C906D1CDD0B1A3E7F931E14C54D246A03"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-36.png",
+      "bytes": 340,
+      "sha256": "AFFEBB02058890B2997B28BCDA1248606F63EAB7CC90FB51421C30A112D061FD"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-37.png",
+      "bytes": 341,
+      "sha256": "B891D0590DFEFC836CB70B14D141CD94570F01E3D69F60301F941D30CFFCC07A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-38.png",
+      "bytes": 336,
+      "sha256": "6C9DDF12C49CA8B950B9F34409F1E5FEA63659DD7BF7F2E7255EF152CFE82A50"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-39.png",
+      "bytes": 338,
+      "sha256": "52AEE635DC1D60523E56E4E0622808BAC49E3D4A73630A9DB9F15519E36962C4"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-40.png",
+      "bytes": 333,
+      "sha256": "3D3885778A1F758F59FBB997A0DDFB2C63F09024268AEA5FB17D76F7445FD635"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-41.png",
+      "bytes": 337,
+      "sha256": "3BBBEFD264B326099E902CB0ECD36B5F806EDFCA3EBEBDF3439AAA66EDF64D17"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-42.png",
+      "bytes": 335,
+      "sha256": "4379DD535D76802E7A230B87FC255003AEDE207144C68382745EC17699BC3DB1"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-43.png",
+      "bytes": 330,
+      "sha256": "1E5504B9D45A931B6CE741895862360C3A5EFAA55F74CAA1BBF1DAF94387E12A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-44.png",
+      "bytes": 331,
+      "sha256": "844E04CEB87F74013C40FD20EDFB7A62A37FFCF8359CD7D0BA01854C78AFA9DA"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-45.png",
+      "bytes": 354,
+      "sha256": "045C244D20485169BD528A97E7F1F05A800C5D0796B3B57F1E1274783C07081B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-46.png",
+      "bytes": 362,
+      "sha256": "FBB74C42C592ACA68959AEE30511A21698798A4B52B9D96042C3801D8C45A99D"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-47.png",
+      "bytes": 363,
+      "sha256": "8C8E997165427007382ECF3EB254EB634E389009AE32B5B792BE75AED51D5BE5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-48.png",
+      "bytes": 360,
+      "sha256": "5E2D321140D60D2F098FD4FF0CAF4415E0A80E4AE30BBB86C4F2F47762DA47D9"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-49.png",
+      "bytes": 365,
+      "sha256": "83F87EBCCE7173CF9A6CE7C49A2DEB8622A57AA6E9F7AE98DA02CE2DF5C94CA6"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-50.png",
+      "bytes": 373,
+      "sha256": "8EE80DE01B030466D3B2329D10D237925CEEADD575F2BFAF91DCBDD4246960A6"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-51.png",
+      "bytes": 375,
+      "sha256": "EFC4D228701B80BE5506D7CA0BF169C666E0DF1AC2ECD67618DB3F071FAC4142"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-52.png",
+      "bytes": 377,
+      "sha256": "C8FB31930B2928D97D67FF4AEC0C6244FA98A0D1349A0A6D65BA02DF256A8CA7"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-53.png",
+      "bytes": 377,
+      "sha256": "A2F7DF8A953A8D4A4A20F2D43A7544A7486C669EA6B4C1A9BACE1163B55F4781"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-54.png",
+      "bytes": 377,
+      "sha256": "808FD7B9DAA26DEAD3629DBE517C36620E9AA97C25072CEB7B775565FC54EF19"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-55.png",
+      "bytes": 359,
+      "sha256": "6317123AAE018F2F67CBE698B38D2CFCC3298FD16BACEB177AD2AAE060546B81"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-56.png",
+      "bytes": 359,
+      "sha256": "4BFCCFCBC8E782C3E87433BEFA87ED37EB02CCBA33B63E7FE883547503BCE0F9"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-57.png",
+      "bytes": 357,
+      "sha256": "0E72C84BF3332E296E927231227AA7392EF801C1A33F5918824544CF6D732E12"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-58.png",
+      "bytes": 360,
+      "sha256": "03CFEFACB42CC1971F1D4937EC4ABF440542E28080F6EDDBFE2A978F8716FB55"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-59.png",
+      "bytes": 357,
+      "sha256": "2B7861FF9A6830C78AAFFB752C77BA8D4805A32D891A2BEC5980991244C07355"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-60.png",
+      "bytes": 310,
+      "sha256": "669D04E7978C3ED76D7A594D4C73D677CDCE524F3BAD322AA3DC0C3EAC3EA6F8"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-61.png",
+      "bytes": 309,
+      "sha256": "4A6B8BA2B0D78C152A41E35169758B5DD01FA3808DED84EDD36CBEB1B9D694FB"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-62.png",
+      "bytes": 238,
+      "sha256": "FEFC11FA4D3986E9BE7C38348230487F4725B8CB90C03FD36E8816ECA0083AAE"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-63.png",
+      "bytes": 238,
+      "sha256": "C20685F6E5BCF84F82378DA6D4472D9D84C52165986F8FF60E5D894BFEDB320A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-64.png",
+      "bytes": 245,
+      "sha256": "5EDB530368CFF6BA00C17A4383BB8159B1572ADC195682CC66D3D4BD9359BDE8"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-65.png",
+      "bytes": 264,
+      "sha256": "4DF3999F1C96630660B07614C611A0D8FB83183321FEAEFF0396B625CBCEC93C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-66.png",
+      "bytes": 262,
+      "sha256": "6B5DF32707F584C477B9A6DF4E1E44738C6C40ED4977B2A3D6709003B84DE175"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-67.png",
+      "bytes": 262,
+      "sha256": "976FA1C6054CEBE7A437567DEA530B7835EA264B6CBF4FA30F00EA40A3D95D32"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-68.png",
+      "bytes": 226,
+      "sha256": "4E126F90285261A736040B8F79C13F0E30A238AE6324E2CBDC25432EEAA9A02B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-69.png",
+      "bytes": 257,
+      "sha256": "A5A38CCCEED1D45C2470048C3C38B3C723F5BD80011A1BCAEA026B1F04F816F5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-70.png",
+      "bytes": 244,
+      "sha256": "BF40EDD3C87289482D95C598BE64E4C8C2640D1A41BFFAD8439B9B56DF34C3AE"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-71.png",
+      "bytes": 211,
+      "sha256": "C5EDD7AC2230FFB0EA725A5479F2AB52E22454D03747A90FB9727DBEC4AD0B95"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-72.png",
+      "bytes": 214,
+      "sha256": "C8059B7093BCE9B1DF5A3EED13657C47FD00B0E58B62C962217D281EFD8570B0"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-73.png",
+      "bytes": 205,
+      "sha256": "3F194F7B93FA940F363B838B54AA38201EDB95AAA41EBA815B4B8EE1817384ED"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-74.png",
+      "bytes": 191,
+      "sha256": "1274ADC7723597E9BD90F499D8FB2DD3437F0AC017A4AC21F359C72456C37DA5"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-75.png",
+      "bytes": 176,
+      "sha256": "88690C51ACE7D298576E0B301D301BFA909C364A008FC3955C8A7EFE9B91C9EA"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-76.png",
+      "bytes": 164,
+      "sha256": "E8C793884D27A26642B2437C3E0A25898D83587E6187AB2C89E5288C460BCB1C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-77.png",
+      "bytes": 164,
+      "sha256": "C32AAD3B52A7FF17C6E8BFF318B7290E30A03A5847901A7B7560726242CC0CF6"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-78.png",
+      "bytes": 163,
+      "sha256": "F9D2B077E188868987B1201E451D26AA3F6EF14E3B08C2734D08F7A63DB74567"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-age-79.png",
+      "bytes": 163,
+      "sha256": "BA2AA746F18289EDDDC4BD83B101959DC658D32AE8FC77B813E9B20928723DEA"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-stamp-v2-strip.png",
+      "bytes": 3158,
+      "sha256": "D5E58CF5F735A1F559989A33F5063CC8528EC49A62CCE58A0DB5E9CF0BC07F46"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/trail-stamp-v2.aseprite",
+      "bytes": 4951,
+      "sha256": "3AA5B4A25F0152F86A8B6B9803609CC5930B07E2AB25A86ABD3C10E18CF1D981"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-close-perspective-t40.png",
+      "bytes": 170634,
+      "sha256": "12F7C5A096948D1AFFAC2E65D69940C8D96C8F689B412036777615EB0B18D4C7"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t04.png",
+      "bytes": 65810,
+      "sha256": "D95CCBCC580784E45183A67AC52A480569C4C28721B4749692151590E1CC9D61"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t20.png",
+      "bytes": 73471,
+      "sha256": "014597085B8A3FF4E25C3F5C51625EBE7901BE3F373CD0AF52229EA71E8FA08B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t40.png",
+      "bytes": 81566,
+      "sha256": "22EAAD47430E7BB92C14F9347EA4D334A8829780DE43E05667AB7A742E9B250B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t52.png",
+      "bytes": 82324,
+      "sha256": "703642A60104ED5B52B4E4B722AF608F7ABA6E9BCDA930B9070446A63AEB6D20"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t68.png",
+      "bytes": 75910,
+      "sha256": "92F2CF133332480D79E0839FCE27378E0FC7D98D6ED09273BC5EA02E8E15D213"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t84.png",
+      "bytes": 68164,
+      "sha256": "703D2F843A7E230C0D3D64EF9A8980D3A7B8C7641D42FFC86338B387A58B786C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t96.png",
+      "bytes": 65146,
+      "sha256": "317C3ED80E88CCC3DD7C545404E77331C76B22311B27D41D92B2245908574EE9"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-side-t40.png",
+      "bytes": 75152,
+      "sha256": "94DBA1005C7319388432723FD627D4217FDA75AC458D21955C79AF8F271CC031"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/visual-handoff.md",
+      "bytes": 9660,
+      "sha256": "22F0E2C480E16D558D3B8201179EFDA105DBD8C4D1FE454504DD8107CF84A542"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/write-manifest.ps1",
+      "bytes": 5096,
+      "sha256": "802BC9AEE50ED6F2C0DF1294E0E3A3EA47416C57F8EC912A94F5B797882ABAC0"
+    }
+  ],
+  "receipt": {
+    "path": "D:/alianximod/docs/开发记录/术式批量制作/待制作-20261031/flame-trail-composite-preview-20261112.md",
+    "bytes": 12103,
+    "sha256": "9CB1794F4AD0181BC1E68E5B51A8F28E1E676CD50A8156E4B7234993BDB73087"
+  },
+  "blockbench": {
+    "applicable": true,
+    "realAppConnected": true,
+    "version": "5.2.2",
+    "pluginVersion": "1.10.1",
+    "reusedProjectUuid": "8a58e270-0fce-3a38-f8c5-528d850c4a39",
+    "observedElementCount": 109,
+    "observedGroupCount": 4,
+    "observedTextureCount": 98,
+    "observedAnimationCount": 0,
+    "preparedBuildScriptExecuted": true,
+    "editableModel": {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/flame-trail-v2-projectile-composite.bbmodel",
+      "bytes": 197457,
+      "sha256": "CAABEF6E76E27474B393C7CFF86CFCE32E2FAF9460DB56818DEE116D8300CC01"
+    },
+    "savedPhaseTick": 40,
+    "actualViewportImages": [
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-close-perspective-t40.png",
+        "bytes": 170634,
+        "sha256": "12F7C5A096948D1AFFAC2E65D69940C8D96C8F689B412036777615EB0B18D4C7"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-side-t40.png",
+        "bytes": 75152,
+        "sha256": "94DBA1005C7319388432723FD627D4217FDA75AC458D21955C79AF8F271CC031"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t04.png",
+        "bytes": 65810,
+        "sha256": "D95CCBCC580784E45183A67AC52A480569C4C28721B4749692151590E1CC9D61"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t20.png",
+        "bytes": 73471,
+        "sha256": "014597085B8A3FF4E25C3F5C51625EBE7901BE3F373CD0AF52229EA71E8FA08B"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t40.png",
+        "bytes": 81566,
+        "sha256": "22EAAD47430E7BB92C14F9347EA4D334A8829780DE43E05667AB7A742E9B250B"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t52.png",
+        "bytes": 82324,
+        "sha256": "703642A60104ED5B52B4E4B722AF608F7ABA6E9BCDA930B9070446A63AEB6D20"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t68.png",
+        "bytes": 75910,
+        "sha256": "92F2CF133332480D79E0839FCE27378E0FC7D98D6ED09273BC5EA02E8E15D213"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t84.png",
+        "bytes": 68164,
+        "sha256": "703D2F843A7E230C0D3D64EF9A8980D3A7B8C7641D42FFC86338B387A58B786C"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t96.png",
+        "bytes": 65146,
+        "sha256": "317C3ED80E88CCC3DD7C545404E77331C76B22311B27D41D92B2245908574EE9"
+      }
+    ],
+    "viewport": "real connected main viewport; explicit render then canvas PNG; no offscreen or headless",
+    "documentVisibilityState": "hidden",
+    "blocker": null,
+    "previousBlockerResolved": "Exact-name discovery once, then successful read-only and production risky_eval calls",
+    "otherProjectIdsPreserved": [
+      "fe1b1c81-3962-2fbb-bc94-6a37e1b6e5ef",
+      "e380502f-05e4-5cab-c7a2-4ff5f7e3c7c5"
+    ]
+  },
+  "userConfirmed": false,
+  "runtimeIntegrated": false,
+  "compiled": false,
+  "gameTested": false,
+  "subagentsCreated": 0,
+  "writesConverged": true,
+  "selfHashExcluded": true
+}

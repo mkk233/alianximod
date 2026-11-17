@@ -1,0 +1,4 @@
+fail 普通150拍封顶0.30
+fail 满普通再过载100拍到0.60
+six fire functional failures=2
+note=2026-10-29T10:50:22 first run. advanceOnline was called once with elapsedTicks=150. Production contract adds one tick per call. The assertion was corrected to 150 and 100 successive calls. Rerun at 10:51:15 exited 0. This is not a production defect. The rerun overwrote test-stage-run-SixFireFunctionalCheck.err.

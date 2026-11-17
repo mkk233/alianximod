@@ -1,0 +1,37 @@
+{
+  "task": "liaoli-pose-contract-sync",
+  "sourceAuthor": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+  "checkExecuted": false,
+  "compiled": false,
+  "formalReview": false,
+  "quota": "设计 2/2、实现 3/3 不变；本单不新增测试阶段或正式复审",
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "newIssuesInCheck": false,
+    "remaining": [
+      "OriginalHumanoid.java:165 i",
+      "OriginalHumanoid.java:202 to"
+    ]
+  },
+  "checkFile": {
+    "path": "src/test/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6LayoutCheck.java",
+    "sha256": "45BC9DB109B6CE2A5F1C8A8C83F5FC2CCB4F0B9F14F1AAC84A6E64C28F2A9173",
+    "bytes": 11653,
+    "lastWriteTime": "2026-10-30 00:53:56.3400226"
+  },
+  "productionUnchanged": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java",
+      "sha256": "98169A38537D34EA19B95DC9482A863D7A85E95562A2BC44AF2C49D599394C35",
+      "lastWriteTime": "2026-10-30 00:46:47.1639184",
+      "matchesImplementReport": true
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java",
+      "sha256": "ABB8B26D9696672275CE319F4B55E01050FD7CFCBCFEE3C3E1D9B236C3DC99AA",
+      "lastWriteTime": "2026-10-30 00:47:36.0356603",
+      "matchesImplementReport": true
+    }
+  ]
+}

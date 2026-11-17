@@ -1,0 +1,366 @@
+[
+  {
+    "index": 0,
+    "direction": [
+      0.28565227501671,
+      0.9583333333333334,
+      0
+    ],
+    "onset": 0,
+    "lifetime": 13,
+    "travel": 10.6,
+    "span": 16.5,
+    "roll": 0,
+    "center": false
+  },
+  {
+    "index": 1,
+    "direction": [
+      -0.4216747864382087,
+      0.875,
+      0.2378347629811317
+    ],
+    "onset": 1,
+    "lifetime": 14,
+    "travel": 14.03,
+    "span": 21.5,
+    "roll": 137.5,
+    "center": false
+  },
+  {
+    "index": 2,
+    "direction": [
+      0.01757044135799308,
+      0.7916666666666666,
+      -0.6107005554929308
+    ],
+    "onset": 2,
+    "lifetime": 15,
+    "travel": 13.05,
+    "span": 19.5,
+    "roll": 275,
+    "center": false
+  },
+  {
+    "index": 3,
+    "direction": [
+      0.5381685170575453,
+      0.7083333333333333,
+      0.4567696751503667
+    ],
+    "onset": 3,
+    "lifetime": 16,
+    "travel": 12.07,
+    "span": 17.5,
+    "roll": 52.5,
+    "center": false
+  },
+  {
+    "index": 4,
+    "direction": [
+      -0.7483137674141869,
+      0.625,
+      -0.22226449446186036
+    ],
+    "onset": 0,
+    "lifetime": 13,
+    "travel": 11.09,
+    "span": 22.5,
+    "roll": 190,
+    "center": false
+  },
+  {
+    "index": 5,
+    "direction": [
+      0.7797210953737189,
+      0.5416666666666667,
+      -0.3140576947814368
+    ],
+    "onset": 1,
+    "lifetime": 14,
+    "travel": 14.52,
+    "span": 20.5,
+    "roll": 327.5,
+    "center": false
+  },
+  {
+    "index": 6,
+    "direction": [
+      -0.09018129254108144,
+      0.45833333333333337,
+      0.8841933555683257
+    ],
+    "onset": 2,
+    "lifetime": 15,
+    "travel": 13.54,
+    "span": 18.5,
+    "roll": 105,
+    "center": false
+  },
+  {
+    "index": 7,
+    "direction": [
+      -0.5395303523099971,
+      0.375,
+      -0.7538448109102102
+    ],
+    "onset": 3,
+    "lifetime": 16,
+    "travel": 12.559999999999999,
+    "span": 16.5,
+    "roll": 242.5,
+    "center": false
+  },
+  {
+    "index": 8,
+    "direction": [
+      0.8165760693085261,
+      0.29166666666666663,
+      0.4981305838715314
+    ],
+    "onset": 0,
+    "lifetime": 13,
+    "travel": 11.58,
+    "span": 21.5,
+    "roll": 20,
+    "center": false
+  },
+  {
+    "index": 9,
+    "direction": [
+      -0.9343081193486134,
+      0.20833333333333337,
+      0.28924999626876285
+    ],
+    "onset": 1,
+    "lifetime": 14,
+    "travel": 10.6,
+    "span": 19.5,
+    "roll": 157.5,
+    "center": false
+  },
+  {
+    "index": 10,
+    "direction": [
+      0.21319174722534165,
+      0.125,
+      -0.9689810518864681
+    ],
+    "onset": 2,
+    "lifetime": 15,
+    "travel": 14.03,
+    "span": 17.5,
+    "roll": 295,
+    "center": false
+  },
+  {
+    "index": 11,
+    "direction": [
+      0.33151258385351434,
+      0.04166666666666663,
+      0.9425302624508433
+    ],
+    "onset": 3,
+    "lifetime": 16,
+    "travel": 13.05,
+    "span": 22.5,
+    "roll": 72.5,
+    "center": false
+  },
+  {
+    "index": 12,
+    "direction": [
+      -0.7275177211195697,
+      -0.04166666666666674,
+      -0.6848224984226765
+    ],
+    "onset": 0,
+    "lifetime": 13,
+    "travel": 12.07,
+    "span": 20.5,
+    "roll": 210,
+    "center": false
+  },
+  {
+    "index": 13,
+    "direction": [
+      0.9633905447969754,
+      -0.125,
+      -0.23717853654111926
+    ],
+    "onset": 1,
+    "lifetime": 14,
+    "travel": 11.09,
+    "span": 18.5,
+    "roll": 347.5,
+    "center": false
+  },
+  {
+    "index": 14,
+    "direction": [
+      -0.3711665441347229,
+      -0.20833333333333326,
+      0.9048937057673176
+    ],
+    "onset": 2,
+    "lifetime": 15,
+    "travel": 14.52,
+    "span": 16.5,
+    "roll": 125,
+    "center": false
+  },
+  {
+    "index": 15,
+    "direction": [
+      -0.0442554329370044,
+      -0.29166666666666674,
+      -0.9554956892687239
+    ],
+    "onset": 3,
+    "lifetime": 16,
+    "travel": 13.54,
+    "span": 21.5,
+    "roll": 262.5,
+    "center": false
+  },
+  {
+    "index": 16,
+    "direction": [
+      0.5744069091592702,
+      -0.375,
+      0.7276205760628914
+    ],
+    "onset": 0,
+    "lifetime": 13,
+    "travel": 12.559999999999999,
+    "span": 19.5,
+    "roll": 40,
+    "center": false
+  },
+  {
+    "index": 17,
+    "direction": [
+      -0.8750463669635977,
+      -0.45833333333333326,
+      0.15564193271533341
+    ],
+    "onset": 1,
+    "lifetime": 14,
+    "travel": 11.58,
+    "span": 17.5,
+    "roll": 177.5,
+    "center": false
+  },
+  {
+    "index": 18,
+    "direction": [
+      0.48862933159482536,
+      -0.5416666666666667,
+      -0.6839872795070215
+    ],
+    "onset": 2,
+    "lifetime": 15,
+    "travel": 10.6,
+    "span": 22.5,
+    "roll": 315,
+    "center": false
+  },
+  {
+    "index": 19,
+    "direction": [
+      -0.17345710395474406,
+      -0.625,
+      0.7611094751004176
+    ],
+    "onset": 3,
+    "lifetime": 16,
+    "travel": 14.03,
+    "span": 20.5,
+    "roll": 92.5,
+    "center": false
+  },
+  {
+    "index": 20,
+    "direction": [
+      -0.3831299447807241,
+      -0.7083333333333333,
+      -0.5928535521536565
+    ],
+    "onset": 0,
+    "lifetime": 13,
+    "travel": 13.05,
+    "span": 18.5,
+    "roll": 230,
+    "center": false
+  },
+  {
+    "index": 21,
+    "direction": [
+      0.6092138114130082,
+      -0.7916666666666667,
+      -0.046069739227875266
+    ],
+    "onset": 1,
+    "lifetime": 14,
+    "travel": 12.07,
+    "span": 16.5,
+    "roll": 7.5,
+    "center": false
+  },
+  {
+    "index": 22,
+    "direction": [
+      -0.3777588236022125,
+      -0.875,
+      0.30277594222571996
+    ],
+    "onset": 2,
+    "lifetime": 15,
+    "travel": 11.09,
+    "span": 21.5,
+    "roll": 145,
+    "center": false
+  },
+  {
+    "index": 23,
+    "direction": [
+      0.12372672807767707,
+      -0.9583333333333333,
+      -0.2574663453374341
+    ],
+    "onset": 3,
+    "lifetime": 16,
+    "travel": 14.52,
+    "span": 19.5,
+    "roll": 282.5,
+    "center": false
+  },
+  {
+    "index": 24,
+    "direction": [
+      0,
+      0.13,
+      0
+    ],
+    "onset": 0,
+    "lifetime": 9,
+    "travel": 1,
+    "span": 27,
+    "roll": 8,
+    "center": true
+  },
+  {
+    "index": 25,
+    "direction": [
+      0.2,
+      -0.2,
+      0.4
+    ],
+    "onset": 1,
+    "lifetime": 10,
+    "travel": 2,
+    "span": 23,
+    "roll": 147,
+    "center": true
+  }
+]

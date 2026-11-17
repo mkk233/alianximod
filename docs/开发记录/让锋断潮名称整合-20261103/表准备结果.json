@@ -1,0 +1,63 @@
+{
+  "workStatus": "reported_done",
+  "writesSettled": true,
+  "baselineSha256": "06A616FBF4484B38D101BE875D6F6D0293676052F0F65747E74893AD79C3B179",
+  "baselineMtime": "2026-11-02T04:02:52.136",
+  "baselineSize": 110918,
+  "submittedSha256": "EBBED5631F001E599C9195E2F35DB329B9C7C2BD38FAC70FFFACAE8D04E03B4E",
+  "submittedMtime": "2026-11-03T14:53:27.667",
+  "submittedSize": 111564,
+  "countsBefore": {"已完成": 40, "待制作": 0, "制作中": 13, "待验收": 7},
+  "countsAfter": {"已完成": 38, "待制作": 0, "制作中": 15, "待验收": 7},
+  "totalBefore": 60,
+  "totalAfter": 60,
+  "idsUnique": true,
+  "items": [
+    {
+      "documentId": "tide_sever",
+      "sheetId": "tide_sever",
+      "nameBefore": "断潮",
+      "nameAfter": "断潮",
+      "from": {"sheet": "已完成", "row": 7},
+      "to": {"sheet": "制作中", "row": 16},
+      "migration": "success",
+      "N": "一道薄而长的水切",
+      "O": "TideSeverEffect",
+      "requirementSource": "已完成现行功能句，以及 docs/水属性术式.md 攻击表和核对表",
+      "gaps": ["没有待制作原始数据行", "没有进入待验收前的 N/O/DV 原文快照"]
+    },
+    {
+      "documentId": "water_yielding_ribbon",
+      "sheetId": "water_yielding_ribbon",
+      "nameBefore": "让锋",
+      "nameAfter": "让锋",
+      "from": {"sheet": "已完成", "row": 9},
+      "to": {"sheet": "制作中", "row": 17},
+      "migration": "success",
+      "N": "先铺开水面，再从中间劈开。水分开没有伤害，只有中间那一刀",
+      "O": "WaterYieldingEffect",
+      "requirementSource": "已完成现行功能句，以及 docs/水属性术式.md。用户要求保留重斩与真实分水，但 2026-10-26 分水指导未当作验收原文",
+      "gaps": ["没有待制作原始数据行", "没有进入待验收前的 N/O/DV 原文快照", "表内功能句写水分开没有伤害，水属性术式写两侧分开只是画面，与用户所说真实分水措辞不同；N 未改"]
+    }
+  ],
+  "unchangedColumns": ["A", "B", "N", "O"],
+  "archiveUntouched": true,
+  "resourceDetailUntouched": true,
+  "displayNameAndRetireLabelWritten": false,
+  "snapshots": {
+    "aen": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/快照/变更前-AEN-20261103-145254-1.json",
+    "current": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/快照/现行需求-20261103-145254-1.md",
+    "backup": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/备份/术式制作表-20261103-145254-1.xlsx",
+    "candidate": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/候选/术式制作表-候选-20261103-145254-1.xlsx"
+  },
+  "checks": [
+    "提交前源表哈希仍等于读取基线",
+    "独占打开后重算哈希仍等于基线，再以候选替换",
+    "重开哈希等于候选 EBBED5631F001E599C9195E2F35DB329B9C7C2BD38FAC70FFFACAE8D04E03B4E",
+    "四页合计 60 且编号唯一",
+    "两项只在制作中，A/N/O 与迁前一致",
+    "待制作、待验收、数据表、资源状态明细、待制作原始数据、共享字符串与备份相同"
+  ],
+  "notRun": ["compileJava", "代码审查", "正式复审", "游戏实测"],
+  "nextAction": "交回主会话，等待同一 task 与 session 的 Resume 做最终同步"
+}

@@ -1,0 +1,19 @@
+{
+  "batchId": "water-name-alignment-20261103",
+  "taskId": "source-owner",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "compile",
+  "authorization": "用户已授权名称修正；实现最终回执已交回并停写。本单授权唯一作者对已收束的本次最终源码执行一次compileJava --offline --no-daemon，保留证据，不改源码、不新增复审、不打包或启动游戏。",
+  "inputVersion": "2026-11-03用户异步答复为当前依据：取消停用旧薄切，两项可用性、效果、ID、配置和存档保持，水幻形仍支持tide_sever",
+  "recordPath": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/compile-report.md",
+    "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/compile-result.json",
+    "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/compile-gradle.log",
+    "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/compile-evidence",
+    "D:/alianximod/build",
+    "D:/alianximod/.gradle"
+  ],
+  "dependencies": ["sheet-owner"]
+}

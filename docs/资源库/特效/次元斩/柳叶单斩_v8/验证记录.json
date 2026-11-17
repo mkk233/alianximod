@@ -1,0 +1,29 @@
+{
+  "frames": 20,
+  "durationSeconds": 1.0,
+  "bodyHoldExtraMs": 200,
+  "fragmentHoldExtraMs": 0,
+  "pixelCounts": [
+    18,
+    73,
+    404,
+    849,
+    852,
+    839,
+    825,
+    775,
+    731,
+    670,
+    552,
+    436,
+    342,
+    225,
+    114,
+    32,
+    1,
+    0,
+    0,
+    0
+  ],
+  "lastFrameTransparent": true
+}

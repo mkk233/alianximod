@@ -1,0 +1,333 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "stopWrite": true,
+  "compile": "未运行，待统一重新编译",
+  "stage": "compile-fix",
+  "directoriesCreated": [
+    "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch"
+  ],
+  "delivery": [
+    "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\author-a-ownership.json",
+    "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\author-a-compile-fix-report.md",
+    "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\author-a-compile-fix-report.json"
+  ],
+  "fileCount": 63,
+  "files": [
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\item\\ModItems.java",
+      "sha256": "50ff76e550a21976d280d989bc7463c672547b0e2396bf49408cca08ce1ab336",
+      "mtime": "2026-10-31 03:40:11"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\item\\ModCreativeModTabs.java",
+      "sha256": "f929ec031b96b725943ab0b1bae819d026c9b2b6fc86de4f8a8dcdb51ac9f1f1",
+      "mtime": "2026-10-31 04:21:40"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\item\\StaffData.java",
+      "sha256": "d813c5cbd340cd5e0f989e247c3e9d073d858ade254dbca6bda60ddf61e89e10",
+      "mtime": "2026-10-31 03:40:19"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\item\\StaffSkills.java",
+      "sha256": "24571ba13e7d3f44353ad4b725f2074960f0f09f0b5d22e0923ff1e69842087c",
+      "mtime": "2026-10-31 12:48:22"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\gui\\SpellAssemblyMenu.java",
+      "sha256": "d56420ce6130e045afcc72d7546bf4d8122c6010c3f8cb896b325d52f559c089",
+      "mtime": "2026-10-31 03:47:34"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\gui\\SpellAssemblyScreen.java",
+      "sha256": "98bc3cd7d76300b45aec7305cc2be1bdb41c76d06fd0570c911807e9e8eb6c3c",
+      "mtime": "2026-10-31 03:51:58"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\gui\\SkillAssemblyScreen.java",
+      "sha256": "cfdf793df5ad90b7ef96dc15f0e8354011e48d3d4976ade1de64be43833dc7e3",
+      "mtime": "2026-10-31 03:50:47"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillAssemblyPacket.java",
+      "sha256": "4b535ef922b497f1403b78f2e9483427af24f52fed0fd7ae67d9f63fb0828ae5",
+      "mtime": "2026-10-31 03:50:41"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillUsePacket.java",
+      "sha256": "b71e0124a27b2ee7dd40c06e441d9bd518078f0309a59a8ea9fcbb97639b2247",
+      "mtime": "2026-10-31 04:47:29"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\CastExecutionSession.java",
+      "sha256": "3582d8e468ee4be11fcd0ac833a764d7ef7a0fe3dce335e48e0716ed33fa1107",
+      "mtime": "2026-10-31 04:48:04"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\CastPlanCache.java",
+      "sha256": "2fe499eea6d5ecf6ebb78d024d46ff75755b038a8f9f50d2432bea14e2af7837",
+      "mtime": "2026-10-31 03:50:23"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillSegmentMath.java",
+      "sha256": "3d4488abd8c02e47c7b0e2d5451ab0ebd127c39b29db25a28f351dd9f1761c06",
+      "mtime": "2026-10-31 04:08:49"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\BatchReleasePlan.java",
+      "sha256": "350ac771678f924ae846fce6f48371ff861986f3183c6050937105fc30bc9f7a",
+      "mtime": "2026-10-31 05:39:31"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\BatchReleaseCompiler.java",
+      "sha256": "31ef03ed27f41ea82b3eed10f84235678d6effb052dc0bd2e06fd5efbecdf30d",
+      "mtime": "2026-10-31 05:39:36"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\BatchCastSession.java",
+      "sha256": "8379240613cdcc49ad015d7e5c3939648368de932f59009fd0f2cb69849c26d9",
+      "mtime": "2026-10-31 05:39:02"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ChainRole.java",
+      "sha256": "b9470ab5d97904a47cd343eb535c90b172170c1078d07fa8ea80b9b3f7d0ade3",
+      "mtime": "2026-10-31 04:08:46"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\Trajectory.java",
+      "sha256": "8f8280b6642baae8de598ddec43c70da77fdee2d3ad6d3f133225b08118324a7",
+      "mtime": "2026-10-31 03:40:10"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseDefinition.java",
+      "sha256": "493417911b8c36c51dda620ceb040a3713df86a7c46207acf7e577e34a153d33",
+      "mtime": "2026-10-31 05:39:04"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseBatch.java",
+      "sha256": "2929e0014fb0f54e924773b7cbae2f78cac92491791c76e5291a2e0beea379c1",
+      "mtime": "2026-10-31 04:10:50"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\TechniqueHits.java",
+      "sha256": "3930e95bf6888c1963c3797a256c554da2be0abba150315ac5cecd46939d2f1b",
+      "mtime": "2026-10-31 03:46:31"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\TrajectorySampler.java",
+      "sha256": "abaee6aa80e19b2b54bee3cb677b414be8a18d5d329313b83205f651cc4a5c60",
+      "mtime": "2026-10-31 03:42:12"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\enchant\\TideMarkDamageScope.java",
+      "sha256": "ce5a3f0afbaf3448653a1c3e481cd83a13645d4bdf89439d6557590050c45a68",
+      "mtime": "2026-10-31 03:46:28"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\entity\\TechniqueHitSpec.java",
+      "sha256": "312488763d4d99ff4c0fc80a4691bf529309a16784065a1ba554fa2d6d4dd628",
+      "mtime": "2026-10-31 04:59:24"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\entity\\TechniqueHitEntity.java",
+      "sha256": "261e52baaae3184ab61cc552a8d2211b26ce5da967147024b14b9a66f790c1d3",
+      "mtime": "2026-10-31 05:01:18"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\entity\\TechniqueHitSettle.java",
+      "sha256": "023d18fb4adea4148d2cf9d937494e5c9dba3526d06f00ac2776ba27e50e5a46",
+      "mtime": "2026-10-31 05:38:45"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\motion\\ParabolaMotion.java",
+      "sha256": "44fb6b5e03f2c52025b4e3c0a9a1ed41b84b90c17428efed30b7a359632c0970",
+      "mtime": "2026-10-31 03:42:18"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\motion\\UpwellMotion.java",
+      "sha256": "44d7973dc61d7c9375f03d149a6df83076ecdfd82bfd171d72fa2df7358530f6",
+      "mtime": "2026-10-31 03:42:20"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\JavaReference.java",
+      "sha256": "fc4f850712dc6b8771f8a061681014b3f56b77e7e851c049cc67731977197ea9",
+      "mtime": "2026-10-31 03:42:11"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeCalls.java",
+      "sha256": "255c54718dd44aa5805f18e0375ef4d000731041befc82572f3c5bbba921505a",
+      "mtime": "2026-10-31 03:41:44"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeCodes.java",
+      "sha256": "7dac5472687674236aecb5eb95cb5fb41b63d1890507b6ab73ef6dc41c916179",
+      "mtime": "2026-10-31 03:41:32"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\BatchFollow.java",
+      "sha256": "2d57ce24864cd9a8e94a29748c0365d5b55ee38e361d8e0297d42b776e1aee89",
+      "mtime": "2026-10-31 03:41:17"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\BirthLayout.java",
+      "sha256": "2abad9fc59238a542a8469e9f16cbf38543a7db540718a7e57e6779325b8cde0",
+      "mtime": "2026-10-31 04:59:26"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\CancelToken.java",
+      "sha256": "827bd69bdc2a81faebf83385aa56e6cf32e101e6617341b34b50ef9a2d2f6b8c",
+      "mtime": "2026-10-31 03:40:47"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\CarrierHooks.java",
+      "sha256": "868c44fa31a139d8cf195a0ed53b5efbfc8f060868fb383018c3a12772b0739b",
+      "mtime": "2026-10-31 04:09:49"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\ContactSweep.java",
+      "sha256": "d24c34fb9fa181a28b6dd406ac4da185042070fa3fbaa1beeef6228b501ea53c",
+      "mtime": "2026-10-31 03:41:21"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\HitClock.java",
+      "sha256": "6ffc2d3e673ff8418e46e17e15d6978f01ccd222287a9afe93ccd23ae153ab52",
+      "mtime": "2026-10-31 05:38:30"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\HitVerdict.java",
+      "sha256": "843f13f34bf7a5f33f44e579cc8c3b072ade4c4d0869c5846bafdd8908646758",
+      "mtime": "2026-10-31 03:40:44"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\HostHandoff.java",
+      "sha256": "28b3765e14c12228ece687d16143eb78c2e47390e381f69ef9bb433fa329e87a",
+      "mtime": "2026-10-31 03:41:03"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\ImpactPartition.java",
+      "sha256": "0ba70ef74d1ef38dbf38f53cff610c8dcb8546eb81809cbc35559646f383afee",
+      "mtime": "2026-10-31 03:40:54"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\MotionProfile.java",
+      "sha256": "04146aad562fac7576f5351ea75bf9934c001090fc20c8c63448ee099c970cc3",
+      "mtime": "2026-10-31 03:40:52"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\OcclusionSnapshot.java",
+      "sha256": "1544931869e2dd14dcb628c4ba818990c2c985b27b3b5730c3e502e194c91814",
+      "mtime": "2026-10-31 03:40:59"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\RootSeedLedger.java",
+      "sha256": "ddf6cb05eb2e2d4ba86f4f93270cacaaba030dad3b3d36548f1957e2faec3172",
+      "mtime": "2026-10-31 03:41:08"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\SurfaceAnchor.java",
+      "sha256": "e933fed57648620a3df9df75c68d53072a359a4022c155e7dcc140b328976b90",
+      "mtime": "2026-10-31 05:39:03"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\models\\item\\test_staff.json",
+      "sha256": "ccff6ad24736f0271f32909b02dc64e3d13bc5bcd1385d8e33bff62945a0bb47",
+      "mtime": "2026-10-31 03:40:13"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\zh_cn.json",
+      "sha256": "a8b03aea26804a8863c780f4e72c537713776a5510e7960371bf8e8e4d768d1e",
+      "mtime": "2026-10-31 04:58:51"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\en_us.json",
+      "sha256": "fba0df0fad97dc26bd154713b853dc39e6059176792a897cbafcf4c055328815",
+      "mtime": "2026-10-31 04:58:51"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\ModTechniques.java",
+      "sha256": "62a4b5f8855871592733d06b2d4043d62f0d188c72c08a50f3c3a08998d8ea03",
+      "mtime": "2026-10-31 05:01:50"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\Technique.java",
+      "sha256": "e05ac47e3268390690abf8f2548c50cd68ea9fa738d887abd047e3fe9157e90d",
+      "mtime": "2026-10-31 04:08:48"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\gui\\ImprintTreeView.java",
+      "sha256": "a7af7c28fcee573ed41e0bf44c883fd9d0ca02c82d14a463eac0c241b1754147",
+      "mtime": "2026-10-31 04:08:50"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\enchant\\WeaponEnchant.java",
+      "sha256": "7ce69faa3504503de74bc8dcd47db019749b6cc587de05e48a237724475dde9f",
+      "mtime": "2026-10-31 05:01:46"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\ListedRelease.java",
+      "sha256": "836068c6051ff56f56577fc65757f165e967bf400d4c90e8ecc123580106ae52",
+      "mtime": "2026-10-31 05:39:23"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\RootCastBindings.java",
+      "sha256": "71535e3cf126c5842f8dab0103f06b9c636b042c4fdaf36543f0a21bed556b01",
+      "mtime": "2026-10-31 04:09:31"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\ResolvedHit.java",
+      "sha256": "1fe07f6286dbf49dbeedfe1eedd579766e5d4ef12769fca555f3ed5ab8a40019",
+      "mtime": "2026-10-31 04:09:34"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\entity\\ResourceSettlement.java",
+      "sha256": "f934b1968306b7ccce41575e3f2c25bef2885dcd7053b2b1905b465f0924ac45",
+      "mtime": "2026-10-31 04:12:30"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\XueXiMod.java",
+      "sha256": "dfeba3224d5e31ab7da9b5de27a6fb748c2963c1311015daf5d2ae9e17bca511",
+      "mtime": "2026-10-31 04:58:47"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\EntityRendererFix.java",
+      "sha256": "a1d6fda0e52b3129ceb7a78a4a30b31eb63abee2567ed01a671a2fe649a4a61c",
+      "mtime": "2026-10-31 04:58:50"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\ModNetwork.java",
+      "sha256": "f2a9f921e3ab3fb6c5db6931e15e06c866d4568ad5d073d4fe749c20fe77db47",
+      "mtime": "2026-10-31 04:46:39"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\ContactCast.java",
+      "sha256": "428ea7d0d57fd7c03b514e0b40868d5df867ee759e11cb431ae2380118cc1ea1",
+      "mtime": "2026-10-31 04:46:44"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\DomainWave.java",
+      "sha256": "af01b89d2022160861ade04aaa4b7e4092892346cf2bf796083607a3bf184521",
+      "mtime": "2026-10-31 04:47:28"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillChainPlan.java",
+      "sha256": "55bc269599e901399041c790276163e1f7f4ed9108444bb7a2ff9f3ebfb62a18",
+      "mtime": "2026-10-31 04:47:33"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\effects\\FireOrbEffect.java",
+      "sha256": "6c9ec0bdc9db59c7890d010c8c94ad47315963dba47b85f88b8c916e619fb8c4",
+      "mtime": "2026-10-31 05:01:43"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\GloomDomainEffect.java",
+      "sha256": "63ac793213eb2cfb49d3b759f8e1bb5d66afbca4761cbceaf54157507c26db9e",
+      "mtime": "2026-10-31 05:01:49"
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\batch\\BirthClearance.java",
+      "sha256": "fe6c1d00f3d2b7bdb0d78ed297f0eeada0fe9b6aae54c24bac4a7d3a2ec5612d",
+      "mtime": "2026-10-31 05:39:28"
+    }
+  ]
+}

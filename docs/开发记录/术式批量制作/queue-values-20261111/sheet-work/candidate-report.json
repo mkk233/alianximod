@@ -1,0 +1,132 @@
+{
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\queue-values-20261111\\sheet-work\\候选\\术式制作表-queue-values-20261111.xlsx",
+  "candidateHash": "9a1d52613e34e392c88fbbe097bad7b5d8259302189950498fad79400a18809c",
+  "baseline": "59640cbc39cc00ecfc41c07ea5bcffecc1ead7622252432e3f6dd510a1f6c23f",
+  "collectedAt": "2026-11-11 14:36:29",
+  "provenance": [
+    {
+      "id": "fire_pick_lamp",
+      "sourceRow": 3,
+      "archiveRow": 34
+    },
+    {
+      "id": "trajectory_parallel",
+      "sourceRow": 4,
+      "archiveRow": 35
+    },
+    {
+      "id": "water_wave",
+      "sourceRow": 5,
+      "archiveRow": 36
+    },
+    {
+      "id": "water_disperse",
+      "sourceRow": 6,
+      "archiveRow": 37
+    },
+    {
+      "id": "sword_guard",
+      "sourceRow": 7,
+      "archiveRow": 38
+    },
+    {
+      "id": "sword_array",
+      "sourceRow": 8,
+      "archiveRow": 39
+    },
+    {
+      "id": "phantom_sword_surge",
+      "sourceRow": 9,
+      "archiveRow": 40
+    },
+    {
+      "id": "sword_flight",
+      "sourceRow": 10,
+      "archiveRow": 41
+    }
+  ],
+  "changedColumns": {
+    "fire_pick_lamp": [
+      "E",
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "EC",
+      "DV"
+    ],
+    "trajectory_parallel": [
+      "R",
+      "S",
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "DV"
+    ],
+    "water_wave": [
+      "E",
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "EC",
+      "EJ",
+      "EK",
+      "DV"
+    ],
+    "water_disperse": [
+      "E",
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "EC",
+      "DV"
+    ],
+    "sword_guard": [
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "DV"
+    ],
+    "sword_array": [
+      "N",
+      "O",
+      "S",
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "DV"
+    ],
+    "phantom_sword_surge": [
+      "N",
+      "E",
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "I",
+      "V",
+      "DV"
+    ],
+    "sword_flight": [
+      "N",
+      "F",
+      "G",
+      "H",
+      "K",
+      "L",
+      "DV"
+    ]
+  }
+}

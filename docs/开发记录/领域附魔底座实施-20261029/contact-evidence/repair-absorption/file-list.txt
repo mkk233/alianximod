@@ -1,0 +1,19 @@
+repair-absorption 清单。未覆盖 before、repair-1、repair-commit。
+
+返修前快照：
+- before/src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java
+- before/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactBilling.java
+- before/src/main/java/com/bslx/XueXiMod/mixin/LivingDomainDamageCommitMixin.java
+- before/src/main/java/com/bslx/XueXiMod/mixin/PlayerDomainDamageCommitMixin.java
+
+静态依据：
+- bytecode-absorption.txt
+- living-actuallyHurt.txt、player-actuallyHurt.txt
+- living-setAbsorption.txt、player-setAbsorption.txt
+- living-getAbsorption.txt、player-getAbsorption.txt
+
+本次源码：
+- TechniqueHits：匹配帧上保存该次写入前吸收；返回后仅在变小时标记。setHealth 信号保留。
+- 两个 mixin：在 actuallyHurt 的 setAbsorptionAmount 前后注入，不替换原调用。
+- DomainContactBilling：异常路径生命已提交或吸收已减少则 retainShare 一次。正常返回仍只看 hurtConfirmed。
+未改 mixins.json。

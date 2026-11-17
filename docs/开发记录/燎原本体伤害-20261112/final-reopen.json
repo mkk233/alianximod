@@ -1,0 +1,35 @@
+{
+  "sha256": "BD92D6AB57731DCA6D15656FD47AF6022AB8397A5EBCFBB1E746BC9A79EDFA2D",
+  "mtime": "2026-11-12T15:11:06.742",
+  "bytes": 181761,
+  "counts": {
+    "已完成": 37,
+    "待制作": 3,
+    "制作中": 22,
+    "待验收": 16
+  },
+  "unique": 78,
+  "total": 78,
+  "target": [
+    [
+      "制作中",
+      25
+    ]
+  ],
+  "E": "4",
+  "NEqual": true,
+  "OEqual": true,
+  "oldSentenceAbsent": true,
+  "newSentencePresent": true,
+  "prefix": true,
+  "marker": true,
+  "pendingAbsent": true,
+  "resourceAbsent": true,
+  "body4": true,
+  "oldBodyAbsent": true,
+  "burnFormula": true,
+  "period": true,
+  "life": true,
+  "radius": true,
+  "otherSkill": true
+}

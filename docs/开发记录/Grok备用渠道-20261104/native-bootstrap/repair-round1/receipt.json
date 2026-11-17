@@ -1,0 +1,41 @@
+{
+  "kind": "native-adapter-repair-final-not-wrapper-attempt",
+  "batchId": "workflow-grok-fallback-20261104",
+  "taskId": "fallback-adapter",
+  "sessionId": "48e4111a-a131-46c2-863a-5a521d55d120",
+  "stopReason": "end_turn",
+  "models": [
+    "grok-4.7-build-fast"
+  ],
+  "formalReviewPerformed": false,
+  "report": {
+    "workStatus": "blocked",
+    "summary": "复核第1–5项和工具白名单误判已修，离线测试通过。进程级 reasoning_efforts 覆盖后 CLI 仍忽略 high；写入用户 config.toml 的 [model.\"grok-4.7\"] 被执行环境拒绝，因此没有持久修改，也不把 high 标成已生效。",
+    "changedFiles": [
+      "D:/alianximod/.grok/scripts/Invoke-CursorTask.ps1",
+      "D:/alianximod/.grok/scripts/Test-CursorTask.ps1",
+      "D:/alianximod/AGENTS.md",
+      "D:/alianximod/.grok/skills/max-dispatch/SKILL.md",
+      "D:/alianximod/docs/统一开发与术式批量制作流程.md",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/实现交付.md",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/meta.json",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/probe-prompt.txt",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/probe-stdout.json",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/probe-stderr.log"
+    ],
+    "checks": [
+      "pwsh -NoProfile -File D:/alianximod/.grok/scripts/Test-CursorTask.ps1 PASS",
+      "进程级 reasoning_efforts 探针 exit 0、stopReason end_turn、正文 HIGH_EFFORT_MARKER，stderr 仍忽略 high"
+    ],
+    "notRun": [
+      "用户 config.toml 未改，故没有改后探针",
+      "未重复 supports_reasoning_effort=true 覆盖",
+      "无 Gradle、打包、游戏或正式复审",
+      "未改个人技能目录",
+      "未改旧回执"
+    ],
+    "writesSettled": true,
+    "blocker": "CLI 仍报告 grok-4.7-build-fast 没有推理档位并忽略 high。进程级 reasoning_efforts 覆盖无效，执行环境拒绝写入 C:/Users/baishang/.grok/config.toml。",
+    "nextAction": "主会话若要让 CLI 接受 high，需在本机 [model.\"grok-4.7\"] 增补 reasoning_efforts 后再做一次无工具探针。个人技能第6项由另一作者修。两作者都停写后做实现第2/3轮。"
+  }
+}

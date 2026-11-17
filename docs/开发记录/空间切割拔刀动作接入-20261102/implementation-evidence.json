@@ -1,0 +1,100 @@
+{
+  "status": "implemented",
+  "compile": "待统一编译",
+  "gameVerified": false,
+  "nameGate": "powershell -NoProfile -File tools/check-name-gate.ps1 通过（编译错误返修后重跑）",
+  "repair": "repair-compile-report.md",
+  "nextCompileEnv": {
+    "JAVA_HOME": "C:/Program Files/Java/jdk-17",
+    "GRADLE_USER_HOME": "C:/Users/baishang/.gradle",
+    "pathPrefix": "C:/Program Files/Java/jdk-17/bin",
+    "offline": true,
+    "jvmargs": "-Xmx3G",
+    "forbidCursorTempCache": true,
+    "ranThisPhase": false
+  },
+  "gradlew": "未运行",
+  "writesStopped": true,
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java",
+      "sha256": "aa8e3de5ea422bf96106de68913b467f79fb059b7428b43289af09fb3ae1a314",
+      "mtime": "2026-11-02T05:03:56"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/ThirdPersonPoseWriter.java",
+      "sha256": "ecfb41bf937921769e4ff28211876e5aa8b973c487cb0f3e5829766a62656a5f",
+      "mtime": "2026-11-02T05:00:48"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/ActionRenderQueries.java",
+      "sha256": "774a0d8fa49bd89a67bc64283187c183016a9e6e81cea1e76e6bd89395a73fcd",
+      "mtime": "2026-11-02T05:00:50"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/EntityRenderDispatcherActionMixin.java",
+      "sha256": "a56b2dd0945717687d215cb047b49653ebe1c525570cf071bbc28663dcb136d9",
+      "mtime": "2026-11-02T05:02:19"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/LivingEntityRendererBodyMixin.java",
+      "sha256": "2ec824d216a295687c8b0ab4ef6ee31d44ef04f5717a328b4c028d31359074b0",
+      "mtime": "2026-11-02T05:02:20"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/ItemInHandSkinMixin.java",
+      "sha256": "518badda36a56f2355a694e5b3b38d04dc79a8ab0f2b2e00e074caf5d4aea4ff",
+      "mtime": "2026-11-02T05:02:22"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/HumanoidArmorSkinMixin.java",
+      "sha256": "ab7d27a26aa659092ddb207055acbd57c562c339c9615b2340a91e8d89f08cd7",
+      "mtime": "2026-11-02T05:02:24"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/ItemInHandRendererActionMixin.java",
+      "sha256": "984d51aecfa8c06af6cfe6333eae93c5462c0e6799055e70840947793710aa0c",
+      "mtime": "2026-11-02T05:02:27"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutFrame.java",
+      "sha256": "787c6d944738bf864ec4b24535557765faa2c3908082bb63d3c0b37c3ecf42d8",
+      "mtime": "2026-11-02T04:57:45"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutScope.java",
+      "sha256": "b99f05c82c711d6a5b7fcd35804a8ce3771b8fb0f092b2d319aa1a5b0a8563a7",
+      "mtime": "2026-11-02T04:57:58"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutSampler.java",
+      "sha256": "4c2837db6ba99178e5403fb5da93cd3811b0e41a2b3650e278edfa3ce054f569",
+      "mtime": "2026-11-02T04:58:33"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutMatrices.java",
+      "sha256": "c2fa2ee382ab58f7456c3bb248e41f1b9dcd810dfc5df800538d7d99eb7bc501",
+      "mtime": "2026-11-02T04:58:38"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutBodyPose.java",
+      "sha256": "783b378fb81efcb1c0977b32271b807e16999eac7b0e91d949037bf494f5f34e",
+      "mtime": "2026-11-02T05:52:27"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutArmDraw.java",
+      "sha256": "0b6e06270b0689ee60a9fbee75d95bc9ef23ddf303107371df9e8a9b29d110d5",
+      "mtime": "2026-11-02T04:59:42"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+      "sha256": "82a9d9a11fa804eb1f7a215e20918177d127021968665e3b9c27f5d52676382b",
+      "mtime": "2026-11-02T05:52:29"
+    },
+    {
+      "path": "src/main/resources/assets/xueximod/actions/space_cut_left_waist_v5.json",
+      "sha256": "64b0fe3eb2f629c3fb12b90ca1d3a8c64e1664c7661dc7794c97473a8b313c46",
+      "mtime": "2026-11-02T04:56:46"
+    }
+  ]
+}

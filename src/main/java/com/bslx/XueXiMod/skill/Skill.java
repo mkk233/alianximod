@@ -3,6 +3,7 @@ package com.bslx.XueXiMod.skill;
 import com.bslx.XueXiMod.shu.ElementReaction;
 import com.bslx.XueXiMod.shu.ShuAttribute;
 import com.bslx.XueXiMod.shu.Technique;
+import com.bslx.XueXiMod.shu.balance.BalanceDisplay;
 import com.bslx.XueXiMod.shu.TechniqueManager;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -17,6 +18,7 @@ import java.util.List;
  * 由玩家在技法撰写台自行组合命名
  */
 public class Skill {
+    public static final int CHAIN_LIMIT = 8;
     private String name;                   // 自定义名称
     private final SkillType type;          // 技类型
     private final List<Technique> techniques; // 组成的术列表
@@ -31,8 +33,8 @@ public class Skill {
         this.type = type;
         this.techniques = new ArrayList<>(techniques);
         this.embryos = new ArrayList<>();
-        for (int i = 0; i < this.techniques.size(); i++) {
-            ShuAttribute embryo = (embryos != null && i < embryos.size()) ? embryos.get(i) : null;
+        for (int slotIndex = 0; slotIndex < this.techniques.size(); slotIndex++) {
+            ShuAttribute embryo = (embryos != null && slotIndex < embryos.size()) ? embryos.get(slotIndex) : null;
             this.embryos.add(embryo != null ? embryo : ShuAttribute.NONE);
         }
     }
@@ -54,8 +56,8 @@ public class Skill {
      */
     public float getTotalBaseDamage() {
         float total = 0;
-        for (Technique t : techniques) {
-            total += t.getBaseDamage();
+        for (Technique technique : techniques) {
+            total += technique.getBaseDamage();
         }
         return total;
     }
@@ -64,14 +66,36 @@ public class Skill {
      * 计算技的总基础冷却（取最长冷却）
      */
     public int getTotalBaseCooldown() {
-        int max = 0;
-        for (int i = 0; i < techniques.size(); i++) {
-            Technique t = techniques.get(i);
-            double multiplier = ElementReaction.of(getEmbryo(i), t.getAttribute()).cooldownMultiplier();
-            int cooldown = (int) Math.round(t.getBaseCooldown() * multiplier);
-            max = Math.max(max, cooldown);
+        int upperBound = 0;
+        for (int slotIndex = 0; slotIndex < techniques.size(); slotIndex++) {
+            Technique technique = techniques.get(slotIndex);
+            double multiplier = ElementReaction.of(getEmbryo(slotIndex), technique.getAttribute()).cooldownMultiplier();
+            int cooldown = (int) Math.round(technique.getBaseCooldown() * multiplier);
+            upperBound = Math.max(upperBound, cooldown);
         }
-        return max;
+        return upperBound;
+    }
+
+    /** 说明用的当前伤害合计。结构合计仍是 {@link #getTotalBaseDamage()}。 */
+    public float displayedTotalDamage() {
+        float total = 0f;
+        for (Technique technique : techniques) {
+            total += BalanceDisplay.shownStructuralDamage(technique.getId(), technique.getBaseDamage());
+        }
+        return total;
+    }
+
+    /** 说明用的当前冷却。先取已生效基础冷却，再乘原来的反应倍率。 */
+    public int displayedTotalCooldown() {
+        int upperBound = 0;
+        for (int slotIndex = 0; slotIndex < techniques.size(); slotIndex++) {
+            Technique technique = techniques.get(slotIndex);
+            double reactionScale = ElementReaction.of(getEmbryo(slotIndex), technique.getAttribute()).cooldownMultiplier();
+            int configured = BalanceDisplay.cooldown(technique.getId(), technique.getBaseCooldown());
+            int cooled = (int) Math.round(configured * reactionScale);
+            upperBound = Math.max(upperBound, cooled);
+        }
+        return upperBound;
     }
 
     /**
@@ -83,10 +107,10 @@ public class Skill {
         tag.putString("Type", type.name());
 
         ListTag techList = new ListTag();
-        for (int i = 0; i < techniques.size(); i++) {
+        for (int slotIndex = 0; slotIndex < techniques.size(); slotIndex++) {
             CompoundTag entry = new CompoundTag();
-            entry.putString("Id", techniques.get(i).getId());
-            ShuAttribute embryo = embryos.get(i);
+            entry.putString("Id", techniques.get(slotIndex).getId());
+            ShuAttribute embryo = embryos.get(slotIndex);
             if (embryo != ShuAttribute.NONE) {
                 entry.putString("Embryo", embryo.getId());
             }
@@ -119,18 +143,18 @@ public class Skill {
         List<ShuAttribute> embryos = new ArrayList<>();
         Tag raw = tag.get("Techniques");
         if (raw instanceof ListTag techList) {
-            for (int i = 0; i < techList.size(); i++) {
-                Tag element = techList.get(i);
-                if (element instanceof StringTag str) {
-                    Technique t = TechniqueManager.getById(str.getAsString());
-                    if (t != null) {
-                        techs.add(t);
+            for (int slotIndex = 0; slotIndex < techList.size(); slotIndex++) {
+                Tag element = techList.get(slotIndex);
+                if (element instanceof StringTag text) {
+                    Technique technique = TechniqueManager.getById(text.getAsString());
+                    if (technique != null) {
+                        techs.add(technique);
                         embryos.add(ShuAttribute.NONE);
                     }
                 } else if (element instanceof CompoundTag entry) {
-                    Technique t = TechniqueManager.getById(entry.getString("Id"));
-                    if (t != null) {
-                        techs.add(t);
+                    Technique technique = TechniqueManager.getById(entry.getString("Id"));
+                    if (technique != null) {
+                        techs.add(technique);
                         ShuAttribute embryo = entry.contains("Embryo")
                                 ? ShuAttribute.fromId(entry.getString("Embryo"))
                                 : ShuAttribute.NONE;

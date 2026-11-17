@@ -1,0 +1,51 @@
+{
+  "batchId": "survival-embryo-20261109",
+  "taskId": "source-owner",
+  "attemptId": "read-01",
+  "inputVersion": "v1",
+  "inputHash": "371eb316158628e743285bb9bedd771d0f996cbced483a560f4645811d88f417",
+  "client": "Python urllib HTTP tool client",
+  "endpoint": "http://127.0.0.1:3425/v1/chat/completions",
+  "requestedRoute": "group/smart-split",
+  "clientCorrelationTag": "survival-embryo-20261109-source-owner",
+  "providerSessionId": null,
+  "role": "read",
+  "state": "finished",
+  "startedAt": "2026-11-09T22:58:12.938496+08:00",
+  "responseIds": [
+    "chatcmpl-2718b7411a8773df311c5494",
+    "chatcmpl-399c18f4d8225765d0dd265f",
+    "chatcmpl-787eddb0dc36cadf1ff7a85b",
+    "chatcmpl-8fda834b5a56a979eede0dd5",
+    "chatcmpl-b548b9ac418983dddb78b0c6",
+    "chatcmpl-46bd796514dae694b2387d6d",
+    "chatcmpl-6d71dfc528a14e47702ac358",
+    "chatcmpl-9c8c3f258f2797e738149227",
+    "chatcmpl-be8249ec3aa37e784e7c7e4c",
+    "chatcmpl-1d78f6e656fdc39b773069d3",
+    "chatcmpl-ff10fae24bbfde9af8781b6c"
+  ],
+  "returnedModels": [
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split",
+    "group/smart-split"
+  ],
+  "changes": [],
+  "responseHeaders": {
+    "X-Magpie-Model": "cursor/grok-4.7@500k",
+    "X-Magpie-Provider": "cursor",
+    "X-Magpie-Session": "survival-embryo-20261109-source-owner"
+  },
+  "writesSettled": true,
+  "compileRun": false,
+  "final": "D:\\alianximod\\docs\\开发记录\\原胚属性获取-20261109\\read-01.final.md",
+  "finishedAt": "2026-11-09T23:03:39.031871+08:00"
+}

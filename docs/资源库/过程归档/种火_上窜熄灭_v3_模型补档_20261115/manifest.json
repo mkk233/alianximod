@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "completedAtUtc": "2026-11-15T14:11:58.795251+00:00",
+  "status": "completed_authorized_confirmed_v3_model_archive_only",
+  "batchId": "待制作-20261031",
+  "taskId": "fire_seed_sow_v3_model_repair",
+  "attemptId": "20261115-art-seed-sow-05",
+  "authorRole": "sole art author",
+  "directParent": {
+    "role": "dispatching main session",
+    "id": "unknown"
+  },
+  "nativeAgentId": "unknown",
+  "requestedModel": "gpt-6-astra",
+  "reasoningEffort": "max",
+  "actualServiceModel": "unknown",
+  "fallbackErrors": [
+    {
+      "model": "antigravity/gemini-4-carbon",
+      "error": "Unknown model"
+    },
+    {
+      "model": "antigravity/gemini-4-argon",
+      "error": "Unknown model"
+    }
+  ],
+  "fallbackEvidenceSource": "explicit dispatching-parent report; not 403; not quota",
+  "reviewBudget": {
+    "design": "2/2 exhausted",
+    "implementation": "3/3 exhausted",
+    "additionalReview": false,
+    "statement": "本阶段额度已用完，返修结果未追加复审"
+  },
+  "confirmation": {
+    "date": "2026-11-11",
+    "quote": "按照这版接入",
+    "version": "seed_sow_v3",
+    "newRuntimeVisualParameters": false
+  },
+  "inputsUnchanged": {
+    "count": 65,
+    "allByteIdentical": true,
+    "evidence": [
+      "inputs-before.json",
+      "verification.json"
+    ],
+    "asepriteSha256": "D514877D8AFFFFC6D5D54A9A6E64F46FBB12E41F1CB1C0C84A90C2B9129F1C0D",
+    "stripSha256": "A50EC7ED6A8434F50987A86036201DABFF3AB8A70CFF9D82A31CAC9F12B03EEE"
+  },
+  "texture": {
+    "frameSize": [
+      64,
+      64
+    ],
+    "stripSize": [
+      64,
+      1024
+    ],
+    "frames": 16,
+    "frameDurationMs": 50,
+    "onePassMs": 800,
+    "loop": false,
+    "lastFrameTransparent": true,
+    "exportedFramesRgbaMatch": true
+  },
+  "runtimeFacts": {
+    "cameraFacing": "CAMERA_PLANE including pitch",
+    "cameraOffsetBlocks": 0.08,
+    "targetHalfSpan": "collisionHeight/2",
+    "noTargetHalfSpanBlocks": 0.875,
+    "lifetimeTicks": 16,
+    "runtimeNotSimulated": [
+      "entity collision-height scaling",
+      "Youming tint",
+      "Forge depth/lighting/transparency",
+      "multiplayer cameras",
+      "tick scheduling and damage/spawn logic"
+    ]
+  },
+  "previewFacts": {
+    "unitsPerBlock": 16,
+    "dummyHeightBlocks": 1.8,
+    "referenceFaceBlocks": [
+      1.75,
+      1.75
+    ],
+    "referenceThicknessUnits": 0.12,
+    "bodyCenterUnits": [
+      0,
+      14.4,
+      0
+    ],
+    "offsetUnits": 1.28,
+    "thicknessIsPreviewOnly": true,
+    "sideViewFrozenForInspection": true,
+    "phaseFrames": [
+      1,
+      6,
+      10,
+      12,
+      15,
+      16
+    ],
+    "persistentPlayback": false
+  },
+  "model": {
+    "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/seed_sow_v3_preview.bbmodel",
+    "bytes": 804998,
+    "sha256": "CE7AC65C0406AE3A338FBB5CD7AE98E70D005A245520C7B4603245715DB9852C"
+  },
+  "screenshots": [
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/01-hero-3quarter.png",
+      "bytes": 111915,
+      "sha256": "9DAA1D183914082A3302BCA53D46BD1410DE01934FA0066F0499EF7F65CCC62A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/02-front-billboard.png",
+      "bytes": 80661,
+      "sha256": "B8B1F9684518532E4210BF100A53BC86C616B4D62706E3E22BF5F3CEF4545E80"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/03-side-offset-thickness.png",
+      "bytes": 105380,
+      "sha256": "AE7DA9503884306FFBC89DB63DA95D338D1211AA05381D9CD4E8F152EEF5BE40"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/04-closeup-burnout-phases.png",
+      "bytes": 68776,
+      "sha256": "1894DF8AF97B4FE1BC66EF483B539A01D46CB2443536F56D46356AAA1F02FCFE"
+    }
+  ],
+  "nativeReopen": {
+    "success": true,
+    "differentProjectObject": true,
+    "elements": 634,
+    "groups": 17,
+    "embeddedTextures": 43,
+    "texturesReady": 43
+  },
+  "toolsEvidence": "tool-evidence.json",
+  "limitations": [
+    "Two risky_eval calls timed out; final artifacts and successful static save/reopen are separately evidenced",
+    "Optional timed demo was invalidated, not delivered",
+    "Computer Use stopped by user Escape; no further desktop control",
+    "Private native viewport disposal returned onContextMenu is not defined; cleanup status unknown"
+  ],
+  "noSubagents": true,
+  "noCompile": true,
+  "noPackaging": true,
+  "noGameLaunch": true,
+  "noGameTest": true,
+  "noSharedIndexOrWorkbookOrSourceWrites": true,
+  "writesClosed": true,
+  "writeScopes": [
+    "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115",
+    "D:/alianximod/docs/开发记录/术式批量制作/待制作-20261031/seed-sow-v3-model-repair-20261115.md"
+  ],
+  "outputs": [
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/01-hero-3quarter.png",
+      "bytes": 111915,
+      "sha256": "9DAA1D183914082A3302BCA53D46BD1410DE01934FA0066F0499EF7F65CCC62A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/02-front-billboard.png",
+      "bytes": 80661,
+      "sha256": "B8B1F9684518532E4210BF100A53BC86C616B4D62706E3E22BF5F3CEF4545E80"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/02d-frames-as-read.png",
+      "bytes": 7934,
+      "sha256": "CA798B13E85C0135150C668A1FABCC7C1500FD7553C63F1825D979AA22B15D78"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/03-side-offset-thickness.png",
+      "bytes": 105380,
+      "sha256": "AE7DA9503884306FFBC89DB63DA95D338D1211AA05381D9CD4E8F152EEF5BE40"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/04-closeup-burnout-phases.png",
+      "bytes": 68776,
+      "sha256": "1894DF8AF97B4FE1BC66EF483B539A01D46CB2443536F56D46356AAA1F02FCFE"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_01.png",
+      "bytes": 253,
+      "sha256": "893B3AB43B08C884D5C4392BB9728DE248B0410EDBAE4868A42478B78BEDB095"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_02.png",
+      "bytes": 369,
+      "sha256": "C386789173C49DEDAA91A1C859E452369BEC6DDF6BF83DC6233562F953BF4639"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_03.png",
+      "bytes": 398,
+      "sha256": "EF4ADDF803D31B67C0E92A5C739A4141B7E1BF34114E878EE013807ACEF6388E"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_04.png",
+      "bytes": 457,
+      "sha256": "15CD47E5645EF788C9847BA3BEE180DC5734F40CE88A8EF40B3C964349061607"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_05.png",
+      "bytes": 485,
+      "sha256": "3B6A219EEF945FAC72230FB7C35C81A1B9F58F02D76DC8060791E7BCE499279D"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_06.png",
+      "bytes": 494,
+      "sha256": "B61F99D5FB93568D74E79A79E629FB3B29577EFF8EDD8A186498705CB4B68F60"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_07.png",
+      "bytes": 504,
+      "sha256": "AC6BFC4E89EEFF4BCCAD200898AE1CF7A2C1A29EB951941C6A90DC334EC3E119"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_08.png",
+      "bytes": 458,
+      "sha256": "79E60E86CAFFE7D2FD13052828E30F5AE34051A2E25D756D6664BA343CC099F9"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_09.png",
+      "bytes": 523,
+      "sha256": "743E1E6061F2FFBAA28DAC86F9159C16CB1B57BF4D3C1AFCBC2071BC39B1559B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_10.png",
+      "bytes": 499,
+      "sha256": "CA32895E1A487B8AD588A08E4C21F338F21788A0092A1D98FD6958A192BCA3EE"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_11.png",
+      "bytes": 428,
+      "sha256": "40F723F4DF9F58BB02A19984308A2A22BB644B6EBF2509C315726A74CD512BE4"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_12.png",
+      "bytes": 358,
+      "sha256": "E3CAED09C656E472066CC7407347DC514C97EFFBC4B16DC5925BF00F3FBE97F7"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_13.png",
+      "bytes": 366,
+      "sha256": "E32F1625B1AEB64F885AECED11130C923E932A0F208D8BCB498640C0A940B1A8"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_14.png",
+      "bytes": 229,
+      "sha256": "BDB9294BDAD58688B2A663F0332206F51C2B6C23EA46C75042279FD28E9C9E68"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_15.png",
+      "bytes": 168,
+      "sha256": "E9A620BFC355963A68B2E1577260B69697BCF72B8F987B621425BB6EDC50F54B"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/frames/frame_16.png",
+      "bytes": 109,
+      "sha256": "1C044D225B66329EC488ED710D4D11AB3B6A8F9D311FE7B1AD4BA42022E16BF8"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/inputs-before.json",
+      "bytes": 18223,
+      "sha256": "0B4A711EA02526F26631D11CCDCB4A0CE82BD7341DE1267C8B6445A816036815"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/native-final-state.json",
+      "bytes": 775,
+      "sha256": "7CC8A1D406F86E1B16EB205B42A98611AD2F06782C9063969260E1724856B276"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/reopen-validation.json",
+      "bytes": 972,
+      "sha256": "B9C94740198D3DAF20488AA10D91947F41C7BD6EEC6E90BCF47B3316D97FAB57"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/build-scene.js",
+      "bytes": 6531,
+      "sha256": "37CB9DB4292EB232323AE47BCA32AD55CE91663AE6691FE3ACDF23FA9B027FB4"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/capture-and-save.js",
+      "bytes": 3901,
+      "sha256": "5A08EAA588B51509EAF2EE25E9760D7837405862771CA8CEC4F07F7C256A6F57"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/capture-front.js",
+      "bytes": 1576,
+      "sha256": "DF1ABE421D173877AB89C04B19C9231B635B343E4E0133FECF07B4B31632D49F"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/export-readonly.lua",
+      "bytes": 649,
+      "sha256": "6861EADA43DFE8338906465B3AACBD3917315EDEADFF33347150EE4703D86C54"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/finalize-and-reopen.js",
+      "bytes": 6403,
+      "sha256": "0C88B2F750014F4DC04AB719FE6BFE47FF3F49D274E2F46E6ECC1524379D8480"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/finalize-archive.py",
+      "bytes": 5725,
+      "sha256": "2028AFB6B227441D71646BD208D6E3E82A237A16A82964882C9673ABEAF8281D"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/refine-helpers.js",
+      "bytes": 1114,
+      "sha256": "B96551EC20627D59EE977D13A6FE3E6BEEE8B294EEA6DE0D1A68796DC779ECC9"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/save-reopen-static.js",
+      "bytes": 2281,
+      "sha256": "4CCEBD0F00D0A141ACC84AE85C02CADDFE36EFAC1B2BC659E2A41E72BB32CA16"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/scripts/verify-artifacts.py",
+      "bytes": 2153,
+      "sha256": "D859D7E8FA3E5BD18626D02C6CF315CAAF0CA82189E07535CFE4E7DC1D554E10"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/seed_sow_v3_preview.bbmodel",
+      "bytes": 804998,
+      "sha256": "CE7AC65C0406AE3A338FBB5CD7AE98E70D005A245520C7B4603245715DB9852C"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/tool-evidence.json",
+      "bytes": 3990,
+      "sha256": "4FAA969893C8698282A0CD1E9E4431496B6B6A24509EF06611E107EB77CAA1F7"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/verification.json",
+      "bytes": 27679,
+      "sha256": "F8BFAE63D96306D814888E3F58919631CC978D53B58458EE6751BE9FC3DF2112"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/viewport-capture-evidence.json",
+      "bytes": 8084,
+      "sha256": "DD202E0AC56E33B8D6995BB28ABA2673E0BE0FB8E9814ABE70E91E9475438850"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/visual-handoff.md",
+      "bytes": 10769,
+      "sha256": "74B64019616063634A3B6E8D61F2CDDBDA1D37B546BD00A9CA188E398C037F39"
+    }
+  ],
+  "independentReceipt": {
+    "path": "D:/alianximod/docs/开发记录/术式批量制作/待制作-20261031/seed-sow-v3-model-repair-20261115.md",
+    "bytes": 6119,
+    "sha256": "1A9F3DFD4D3C2AEABF1247D6BFC421F24598146240163C9DE5353B6003EF58FE"
+  },
+  "manifestSelfHashExcluded": true
+}

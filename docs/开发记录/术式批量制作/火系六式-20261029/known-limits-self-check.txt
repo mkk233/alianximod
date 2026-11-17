@@ -1,0 +1,10 @@
+command: javac --release 17 -encoding UTF-8 -d known-limits-check-classes GroundFireMath.java SelfStatusOrder.java FireVisualLayout.java KnownLimitsCheck.java FireVisualLayoutCheck.java
+javac exit: 0
+
+command: java -cp known-limits-check-classes com.bslx.XueXiMod.shu.technique.release.firecast.KnownLimitsCheck
+java exit: 0
+known limits check passed
+command: java -cp known-limits-check-classes com.bslx.XueXiMod.visual.fire.FireVisualLayoutCheck
+java exit: 0
+fire visual layout check passed
+gradle: not run

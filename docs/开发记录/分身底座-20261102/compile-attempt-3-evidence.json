@@ -1,0 +1,147 @@
+{
+  "batch": "分身底座-20261102",
+  "role": "compile-only",
+  "model": "grok-4.7-high-fast",
+  "attempt": 3,
+  "compileJavaExecuted": true,
+  "upToDate": false,
+  "compileJavaOutcome": "FAILED",
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "startedAt": "2026-11-02T05:46:46.9953410+08:00",
+  "finishedAt": "2026-11-02T05:47:10.5509741+08:00",
+  "buildResult": "BUILD FAILED",
+  "gradleLogPhrase": "BUILD FAILED in 23s",
+  "taskSummary": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "outerExitCode": 1,
+  "gradleExitCode": 1,
+  "log": "docs/开发记录/分身底座-20261102/compile-gradle.log",
+  "downloadedDependencies": false,
+  "javaEnvironment": {
+    "JAVA_HOME_before": "",
+    "GRADLE_USER_HOME_before": "C:\\Users\\baishang\\AppData\\Local\\Temp\\cursor-sandbox-cache\\4b6ad4d19711be11a1f1fd5edcfb931b\\gradle",
+    "JAVA_HOME_this_process": "C:\\Program Files\\Java\\jdk-17",
+    "GRADLE_USER_HOME_this_process": "C:\\Users\\baishang\\.gradle",
+    "version": "17.0.6+9-LTS-190",
+    "permanentEnvironmentModified": false,
+    "buildConfigModified": false,
+    "cacheCopiedOrDeleted": false,
+    "gradleJvmArgs": "-Xmx3G",
+    "gradleDaemonProperty": false
+  },
+  "cacheVerified": {
+    "gradle88": "C:\\Users\\baishang\\.gradle\\wrapper\\dists\\gradle-8.8-bin\\dl7vupf4psengwqhwktix4v1",
+    "foojayResolver070": "caches/modules-2/files-2.1/org.gradle.toolchains/foojay-resolver/0.7.0",
+    "foojayConventionPlugin070": "caches/modules-2/files-2.1/org.gradle.toolchains.foojay-resolver-convention/org.gradle.toolchains.foojay-resolver-convention.gradle.plugin/0.7.0"
+  },
+  "errors": [
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutBodyPose.java",
+      "line": 21,
+      "message": "slim 在 PlayerModel 中是 private 访问控制",
+      "owner": "空间切割拔刀动作接入-20261102"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+      "line": 61,
+      "message": "找不到符号: 变量 xBobO，位置 AbstractClientPlayer player",
+      "owner": "空间切割拔刀动作接入-20261102"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+      "line": 61,
+      "message": "找不到符号: 变量 xBob，位置 AbstractClientPlayer player",
+      "owner": "空间切割拔刀动作接入-20261102"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+      "line": 62,
+      "message": "找不到符号: 变量 yBobO，位置 AbstractClientPlayer player",
+      "owner": "空间切割拔刀动作接入-20261102"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+      "line": 62,
+      "message": "找不到符号: 变量 yBob，位置 AbstractClientPlayer player",
+      "owner": "空间切割拔刀动作接入-20261102"
+    }
+  ],
+  "cloneJavaErrors": [],
+  "errorCount": 5,
+  "warningCount": 41,
+  "warningSummary": "41 条 [removal]：40 条 ResourceLocation 构造器已过时并标记待删除；1 条 HitVolumes.java:208 ProjectileImpactEvent.setCanceled(boolean)。",
+  "sourceSnapshot": {
+    "before": "docs/开发记录/分身底座-20261102/compile-source-before.json",
+    "beforeCapturedAt": "2026-11-02T05:46:46.9709490+08:00",
+    "after": "docs/开发记录/分身底座-20261102/compile-source-after.json",
+    "afterCapturedAt": "2026-11-02T05:47:10.7954154+08:00",
+    "fileCountBefore": 1061,
+    "fileCountAfter": 1061,
+    "differenceCount": 0,
+    "coversThisSnapshot": true,
+    "latestPath": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+    "latestMtime": "2026-11-02T05:32:23.0236204+08:00",
+    "cloneLatestPath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/ClonePositionPolicy.java",
+    "cloneLatestMtime": "2026-11-02T04:59:12.5969106+08:00"
+  },
+  "precheck": {
+    "repairR1Retry": {
+      "status": "completed",
+      "exitCode": 0,
+      "endedAt": "2026-11-02T05:35:01.0175228+08:00"
+    },
+    "reviewR2": {
+      "status": "completed",
+      "exitCode": 0,
+      "endedAt": "2026-11-02T05:40:38.5998687+08:00"
+    },
+    "spaceCutCompileState": {
+      "status": "completed",
+      "exitCode": 0,
+      "endedAt": "2026-11-02T05:44:55.5574931+08:00"
+    },
+    "spaceCutSourceWritesStopped": true,
+    "spaceCutCompileAuthorized": false,
+    "otherGradleWrapperOrCompileJava": false,
+    "ideaDaemonPid": 66116,
+    "ideaDaemonChildren": 0,
+    "ideaDaemonKilled": false
+  },
+  "newAuthorDuringOrAfterCompile": false,
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "ranAfterFinalSnapshot": true,
+    "startedAt": "2026-11-02T05:47:11.9510406+08:00",
+    "finishedAt": "2026-11-02T05:47:14.3121107+08:00",
+    "log": "docs/开发记录/分身底座-20261102/naming-gate-final.log",
+    "exitCode": 0,
+    "output": "源码命名可读性检查通过：未发现单字母变量或禁止缩写",
+    "newBatchFindings": [],
+    "historicalFindingsInThisRun": [],
+    "sourceModified": false,
+    "correctnessReview": false
+  },
+  "archivedAttemptsPreserved": [
+    "compile-attempt-1-report.md",
+    "compile-attempt-1-evidence.json",
+    "compile-attempt-2-report.md",
+    "compile-attempt-2-evidence.json"
+  ],
+  "notRun": [
+    "second compileJava",
+    "source repair",
+    "build",
+    "jar",
+    "reobf",
+    "runClient",
+    "game",
+    "packaging",
+    "independent tests",
+    "spreadsheet",
+    "git commit",
+    "additional review"
+  ],
+  "gameTested": false,
+  "packaged": false,
+  "additionalReview": false
+}

@@ -1,0 +1,91 @@
+{
+  "batch": "空间切割拔刀动作接入-20261102",
+  "author": "grok-4.7-high-fast",
+  "writeScope": "space_cut visual pose and client render only",
+  "beforeWrite": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java",
+      "sha256": "c7c4a2fbdf17c95a7ab52ed1d826d90fda38ba3673f12ac9b4d91fe770b43534",
+      "mtime": "2026-10-25T19:24:25",
+      "action": "edit"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/ThirdPersonPoseWriter.java",
+      "sha256": "95d176789ab5b5237a2b2a44e2b945583c59d4dd115c88aff5680af593a4f3ff",
+      "mtime": "2026-10-25T03:45:28",
+      "action": "edit"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/ActionRenderQueries.java",
+      "sha256": "73cc89f7d7773410b74c0d80dac9de2fc9d4f55ed1d491a06cb3f4e40d72998f",
+      "mtime": "2026-10-25T02:49:54",
+      "action": "edit"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/mixin/client/ItemInHandRendererActionMixin.java",
+      "sha256": "b4edb90ce70f3ed5002ae7dc7025bf34e1b663f61fda604475d9f529e5500e11",
+      "mtime": "2026-10-30T01:53:52",
+      "action": "edit"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/mixin/client/skin/ItemInHandSkinMixin.java",
+      "sha256": "f253c1bcdc6e34e2a86b47bb9524a1e5303fafdadf64df6f5f7c63d326ed6f80",
+      "mtime": "2026-10-24T18:58:35",
+      "action": "edit"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/mixin/client/skin/HumanoidArmorSkinMixin.java",
+      "sha256": "bbfbafbc83d9e45bd2b5ff110ab6bb8ab2f29fb20aeedd85098858c036e673ce",
+      "mtime": "2026-10-30T01:54:25",
+      "action": "edit"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/mixin/client/LivingEntityRendererBodyMixin.java",
+      "sha256": "1d7ddc59837d5e57cc185f50fcb445c63d4c45fbb47609d35fdc0eaa1cc9da32",
+      "mtime": "2026-10-24T09:22:22",
+      "action": "edit"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/mixin/client/EntityRenderDispatcherActionMixin.java",
+      "sha256": "8dd25c2389a109d191eac8762f1965144619cf9d9e923f7fc085dcc5307920eb",
+      "mtime": "2026-10-30T01:53:48",
+      "action": "edit"
+    }
+  ],
+  "inspectedUnchanged": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/RetargetProfile.java",
+      "sha256": "48a291487c57281e49a5c1fc50533a1b234dc8e82a2dfe78786e7370774c011e",
+      "mtime": "2026-10-24T06:01:29",
+      "reason": "单矩阵重定向会把前臂收成一条臂，空间切割不走这条臂通道"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/RetargetedPose.java",
+      "sha256": "87bde484dc8347feb78ec649ddeb303d91f2b759e4c5aae14c11b9cfacb8c154",
+      "mtime": "2026-10-25T03:45:28",
+      "reason": "六个槽仍服务其它动作；双节与刀轴放在独立帧里"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/RigidPoseRetarget.java",
+      "sha256": "ba0cf91aa0a33e1aa0462961205eac17b679b8f9c8e6b828a9bb0ddfe6a41079",
+      "mtime": "2026-10-25T03:45:28",
+      "reason": "不把 v5 层级收成单臂欧拉"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/FirstPersonHandBasis.java",
+      "sha256": "efd284345aec7a6ef8b8ae39432c94958c8e0f68684915a274188cb80739134f",
+      "mtime": "2026-10-24T06:36:30",
+      "reason": "第一人称沿用相机差，但刀轴不收成这条单臂四元数"
+    }
+  ],
+  "newPathsConfirmedAbsent": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutFrame.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutScope.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutSampler.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutMatrices.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutBodyPose.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutArmDraw.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+    "D:/alianximod/src/main/resources/assets/xueximod/actions/space_cut_left_waist_v5.json"
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fire_seed",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\fire_seed\\fire_seed_flame.png",
+    "bytes": 1080,
+    "sha256": "106DD7C62A1E360C859FB598B320EBCF10A40568555C763465023380E5DE800B"
+  },
+  {
+    "id": "kindle_v1",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\kindle_v1\\kindle.png",
+    "bytes": 8474,
+    "sha256": "2490F9E2D5A8914D9A1B7080E40DD4FB0FB9188C8AA64951A88F34389F853E73"
+  },
+  {
+    "id": "fire_spark_v3",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\fire_spark_v3\\fire_spark.png",
+    "bytes": 5005,
+    "sha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E"
+  },
+  {
+    "id": "flame_trail_v3",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\flame_trail_v3\\flame_trail.png",
+    "bytes": 3718,
+    "sha256": "50946B75FBBEFDA2F4A34FC337FD8A665A18F0428638F574CB2880CA88B06D1D"
+  },
+  {
+    "id": "shock_ring_v1",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\shock_ring_v1\\shock_ring.png",
+    "bytes": 10596,
+    "sha256": "5959D47D14EA8A69394559B13F504686C620230A35505A765731CBB76BDA6D0F"
+  },
+  {
+    "id": "seed_sow_v3",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\seed_sow_v3\\seed_sow.png",
+    "bytes": 2776,
+    "sha256": "A50EC7ED6A8434F50987A86036201DABFF3AB8A70CFF9D82A31CAC9F12B03EEE"
+  },
+  {
+    "id": "detonate_v1",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\detonate_v1\\detonate.png",
+    "bytes": 11013,
+    "sha256": "F3F0FCEB4A8AAECBA5EAC2B300C1FD5036B0E9EEAF1CD04B1A4F38FC1C79D858"
+  },
+  {
+    "id": "liaoyuan_ground_flame",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\liaoyuan_v2\\ground_flame.png",
+    "bytes": 3881,
+    "sha256": "55E721DB3D53A7082EDA25D9797C28972CD3B3C2E946EA5A2BEC39C5F0A8789E"
+  },
+  {
+    "id": "liaoyuan_ground_embers",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\liaoyuan_v2\\ground_embers.png",
+    "bytes": 7134,
+    "sha256": "4A3297FCBF2F1DC13A58C022CB0E314BFC52DF5F68588F2D9C28FD46BA55D1CF"
+  },
+  {
+    "id": "liaoyuan_spread_wave",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\liaoyuan_v2\\spread_wave.png",
+    "bytes": 11384,
+    "sha256": "538194B29FB572F0CD6BA4E9DA1DEFE734D11953CA41714B4A87D1B4973B7351"
+  },
+  {
+    "id": "fentian_conflagration",
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\fentian_v2\\conflagration.png",
+    "bytes": 83272,
+    "sha256": "3AE6A95E41D92991B828EDC7491CBB40A18D503CDCF700281A50D901D6AA6A76"
+  },
+  {
+    "id": "kindle_v3_screenshot",
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\引燃_全身燃烧重绘_v3_20261116\\source\\kindle_v3.aseprite",
+    "bytes": 19782,
+    "sha256": "3EC04641BBBC573BAAABCF088DA61B6B79B7418159C2D1F6F3287D5B8B06BB42"
+  }
+]

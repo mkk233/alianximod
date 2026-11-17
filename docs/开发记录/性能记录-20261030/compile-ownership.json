@@ -1,0 +1,232 @@
+{
+  "project": "D:/alianximod",
+  "scope": "performance instrumentation",
+  "authors": [
+    {
+      "author": "A",
+      "session": "4a229679-97e3-4ab3-b48c-90be8998d782",
+      "released": true,
+      "report": "implementation-A-final.md"
+    },
+    {
+      "author": "B",
+      "session": "4b42867d-ead8-4c53-8782-d613a8ede41a",
+      "released": true,
+      "report": "implementation-B-final.md"
+    },
+    {
+      "author": "C",
+      "session": "596f98e1-316a-4c32-80e1-45e0a4c4c052",
+      "released": true,
+      "report": "implementation-C-final.md"
+    }
+  ],
+  "review": {
+    "round": 1,
+    "max": 3,
+    "session": "590c1180-a9aa-429a-a4ab-458737a03421",
+    "final": "review-1-final.md",
+    "reportedBlockingFindings": 0,
+    "released": true
+  },
+  "otherThreads": [
+    {
+      "id": "01a15fdc-4130-7c92-bece-27530e8c54be",
+      "title": "查看项目当前状态",
+      "status": "idle"
+    },
+    {
+      "id": "01a16acd-7efa-76d2-b978-e9b5cab43525",
+      "title": "用 PS 绘制像素图标",
+      "status": "idle"
+    },
+    {
+      "id": "01a182d0-9a22-70d2-a7e2-0184ef599fee",
+      "title": "按流程执行待制作术式",
+      "status": "idle"
+    },
+    {
+      "id": "01a18210-e9bf-7912-bcb9-10910a911261",
+      "title": "审阅火属性二级玩法设计",
+      "status": "idle"
+    },
+    {
+      "id": "01a18533-3c25-72a3-b1d5-4c197a483f69",
+      "title": "评估永续术式开关设计",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a17b3e-040c-79b0-a0eb-0c62559eccf6",
+      "title": "整理两个置顶会话的工作流程",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a188b1-fda9-7253-b5f6-38a9e4799233",
+      "title": "优化模组运行帧率",
+      "status": "idle"
+    },
+    {
+      "id": "01a18863-1c80-7332-8510-ef5f0ba43add",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029/implement-task.md and foll...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1c7d-7c63-9528-47b11022b15a",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029/table-task.md and follow t...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1c73-7963-9b73-25636cc6e7b0",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔底座实施-20261029/compile-run-task.md and follo...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1c70-7c01-bea4-755896b89f75",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔底座实施-20261029/compile-task.md and follow th...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1c78-7743-9f83-7e91ddc7e6f3",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029/compile-task.md and follow...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1e44-7362-99f5-4f40d882e98a",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔底座实施-20261029/review-task.md and follow tha...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1e69-7f31-a15e-34763c54fbf1",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔底座实施-20261029/contact-task.md and follow th...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1e67-73b0-a502-d70b23bb301a",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔底座实施-20261029/lifecycle-task.md and follow ...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1e72-7762-868f-aa2432ac8e61",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火种共享燃料改造-20261029/compile-task.md and follow th...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-1ea1-77f1-9663-66758c0c4103",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火种双路线消费核查-20261029/cursor-task.md and follow th...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-200c-7051-a562-872bed4c9a80",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔方案-20261029/write-document-task.md and foll...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-2036-7d50-b3ac-96097016eb26",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔方案-20261029/read-domain-task.md and follow ...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-203d-78e2-a5d9-92362a3fbd1c",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/领域附魔方案-20261029/read-release-task.md and follow...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-2057-7082-8b80-dc6573322ea3",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029/seed-source-review-task.md...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-2095-73b0-9353-68f43b7ebc49",
+      "title": "Read the complete UTF-8 task specification at C:/Users/baishang/AppData/Local/CursorAgentCodex/workflow-review-and-or...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a18863-2200-7ff1-a668-0b900c102e5a",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/炉心三式入待制作-20261029/cursor-task.md and follow tha...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bbf6-7152-8067-38831034f09e",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/review-evidence-round2-task.md and follow that authorized scope. Return the complete final report.",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bbf7-71f0-b1d7-9b4d2aaa3b24",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/compile-task.md and follow that authorized scope. Return the complete final report.",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bbfb-7450-a5f0-1f70497daad2",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/implement-combat-task.md and follow that authorized scope. Return the complete final report.",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bbf3-78c0-ac8f-8d21137c9b1e",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/review-evidence-task.md and follow that authorized scope. Return the complete final report.",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bbf9-7273-bd6d-1b1ecf689d90",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/implement-furnace-task.md and follow that authorized scope. Return the complete final report.",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bd6d-7431-915f-e14dd3765976",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/implement-seed-task.md and fol...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bd83-78e2-9840-5960d6c13258",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/read-combat-task.md and follow...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bd85-72c1-93be-0656692b1b95",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/火属性二级底座-20261028/read-state-task.md and follow ...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bd93-71f1-ad72-2abc250f8f58",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/制作表资源状态通用化-20261028/migration-author-task.md an...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bda0-7800-8ee1-3cc4e2c14177",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/制作表资源状态通用化-20261028/read-workbook-task.md and f...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bef2-71d0-808f-e49f2e22d890",
+      "title": "Read the complete UTF-8 task specification at D:/alianximod/docs/开发记录/制作表资源状态通用化-20261028/read-catalog-task.md and fo...",
+      "status": "notLoaded"
+    },
+    {
+      "id": "01a1833c-bf05-71d2-adff-0a4dd722fb3a",
+      "title": "Read the complete UTF-8 task specification at C:/Users/baishang/AppData/Local/CursorAgentCodex/workflow-wait-feedback...",
+      "status": "notLoaded"
+    }
+  ],
+  "sourceMetadata": "compile-source-freeze.json",
+  "knownGradle": {
+    "busyCandidate": {
+      "pid": 53288,
+      "createdLocal": "2026-10-30T03:03:56+08:00",
+      "lastBuildLocal": "2026-10-30T03:22:22+08:00",
+      "workspace": "D:/alianximod",
+      "log": "C:/Users/baishang/.gradle/daemon/8.8/daemon-53288.out.log"
+    },
+    "idle": {
+      "pid": 52180,
+      "log": "C:/Users/baishang/.gradle/daemon/8.8/daemon-52180.out.log"
+    }
+  },
+  "authorization": "单点import返修已释放；所有Java源文件已重新冻结；沿用真实JDK17/Gradle缓存串行执行最终compileJava。",
+  "importRepair": {
+    "author": "A",
+    "sha256": "375D26B74F181922F4BAC10FB47364880A62C811ECB903881035DD8105D430DA",
+    "lastWriteUtc": "2026-10-29T20:58:25.9842519Z",
+    "released": true,
+    "report": "repair-A-import-final.md",
+    "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java"
+  }
+}

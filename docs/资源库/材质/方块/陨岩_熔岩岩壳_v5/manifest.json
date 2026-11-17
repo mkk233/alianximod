@@ -1,0 +1,95 @@
+{
+  "version": "meteor-magma-crust-v5",
+  "created": "2026-11-02",
+  "status": "user-confirmed-archived-runtime-replaced-compileJava-up-to-date-exit-0-pending-playtest",
+  "userConfirmation": "采用这个版本",
+  "confirmedOn": "2026-11-02",
+  "priorDirection": "火焰纹理太少了要更像岩浆块",
+  "compiled": true,
+  "compileJavaOutcome": "UP-TO-DATE",
+  "compileCommand": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "compileStartedAt": "2026-11-02T02:22:26.8186215+08:00",
+  "compileEndedAt": "2026-11-02T02:22:41.5564331+08:00",
+  "compileExitCode": 0,
+  "javacExecuted": false,
+  "gameTested": false,
+  "quota": "本阶段额度已用完，返修结果未追加复审",
+  "processDirectory": "docs/资源库/过程归档/陨岩_熔岩岩壳_v5-20261102/",
+  "runtimePath": "src/main/resources/assets/xueximod/textures/block/meteorite_v1.png",
+  "runtimeReference": "xueximod:block/meteorite_v1",
+  "blockModel": "minecraft:block/cube_all",
+  "previousRuntimeSha256": "e8ca06d343a6e6a60082c542869fda9be4b9de040904eef59baf52d28cbc1d3a",
+  "backup": "docs/开发记录/陨岩岩浆材质接入-20261102/runtime-backup/meteorite_v1-before-v5.png",
+  "source": {
+    "file": "meteorite-magma-v5.aseprite",
+    "bytes": 2391,
+    "sha256": "2f6dca5d3dde69b0901f6da7392fa94aa67ace8adec6203df410a9f38d7634a7",
+    "layers": 5
+  },
+  "export": {
+    "file": "meteorite-magma-v5.png",
+    "bytes": 1324,
+    "width": 32,
+    "height": 32,
+    "frames": 1,
+    "opaque": true,
+    "colorType": 6,
+    "sha256": "a0f7027b8b39c4f9f3aaabb9e05713c42e5b0e86697c89d9294848a9b228e1d8",
+    "matchesProcess": true,
+    "matchesRuntime": true
+  },
+  "texturePreview": {
+    "file": "texture-preview.png",
+    "bytes": 4602,
+    "sha256": "33d31464e665e6934f4cb7aaa245c5ce7b1e3a99edce1ba0659afdb543ce7d0f",
+    "runtime": false
+  },
+  "model": {
+    "file": "meteorite-magma-v5.bbmodel",
+    "bytes": 5470,
+    "sha256": "fbd11fd97791f43d95d0a36b37bc95511c34ae26108f99e0de054ed86843fd33",
+    "blockbench": "5.2.2",
+    "plugin": "1.10.1",
+    "project": "78785cc2-7705-352b-40b4-690c2d3984e1",
+    "cubeFrom": [0, 0, 0],
+    "cubeTo": [16, 16, 16],
+    "modelUnitsPerBlock": 16,
+    "faceUv": [0, 0, 32, 32],
+    "boxUv": false,
+    "material": "default",
+    "embeddedTextureMatchesPng": true,
+    "runtime": false
+  },
+  "previews": [
+    {
+      "file": "bb-hero.png",
+      "bytes": 67884,
+      "sha256": "a4dab13dfdacb09bc623fd00470c1b58c205cc5ee28d95147ddbc77d0bb6b06f",
+      "runtime": false
+    },
+    {
+      "file": "bb-reverse.png",
+      "bytes": 59458,
+      "sha256": "8841da5bb40e3af1f9c41428c4f043429d2512411f762c31b273c190d7223632",
+      "runtime": false
+    },
+    {
+      "file": "blockbench-active-view.png",
+      "bytes": 43359,
+      "sha256": "b526f0572bbbd7703ea91232fe4e8514fa6cc56e89a656ca01f102db578e48af",
+      "runtime": false
+    }
+  ],
+  "documents": [
+    {
+      "file": "README.md",
+      "bytes": 2039,
+      "sha256": "6e4298df9b94a9215ee8f88a8185660ee1f4f2039d7d4a7b4009de31a052266a"
+    },
+    {
+      "file": "visual-handoff.md",
+      "bytes": 3068,
+      "sha256": "2d14553ac47dc70e3a816ed34497eb3e04ac06043386d846c3cec306c829b048"
+    }
+  ]
+}

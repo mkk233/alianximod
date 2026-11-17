@@ -1,0 +1,6 @@
+compile_start=2026-10-29T23:30:00.8701898+08:00
+src_main_latest_before=2026-10-29T23:13:25.4719538+08:00 src\main\java\com\bslx\XueXiMod\client\FireVisualClient.java
+paths13_latest_before=2026-10-29T23:11:01.0177388+08:00 TechniqueHits.java
+compile_end=2026-10-29T23:30:22.9660235+08:00
+gradle_exit=1
+elapsed_seconds=22.096

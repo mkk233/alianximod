@@ -11,15 +11,32 @@
             "id": "3d54459735a51f12",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "装配UI美术参考.jpg"
+                "file": "底座功能点.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "装配UI美术参考"
+              "icon": "lucide-file",
+              "title": "底座功能点"
+            }
+          },
+          {
+            "id": "c69cf0763a76c7f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,33 +203,53 @@
       "bases:新建数据库": false
     }
   },
-  "active": "3d54459735a51f12",
+  "active": "c69cf0763a76c7f9",
   "lastOpenFiles": [
-    "交接-2026-10-16-对外注册口.md",
-    "superpowers/specs/2026-10-16-对外注册口-design.md",
-    "_grok-resume-tail.md",
-    "交接-2026-10-16-当前进度.md",
-    "交接索引.md",
-    "grok-image-9c87c645-6d7a-4780-be0a-a59ea2911c7d.jpg",
-    "README.md",
-    "CREDITS.txt",
-    "changelog.txt",
-    "AGENTS.md",
-    "装配UI美术参考.jpg",
-    "装配UI功能分布位置示意图.png",
-    "术式释放底层实现方式指导.txt",
-    "逻辑修正.txt",
-    "交接-2026-10-14-空手可放操纵剑技.md",
-    "交接-2026-10-14-幻剑朝向与插入.md",
-    "幻剑术.txt",
-    "横劈.png",
-    "关于原胚NBT设计思路.txt",
-    "方块配置json详解.txt",
-    "xAXOb.jpg",
-    "session-01a0df2f-b247-7043-b84e-6a25eed8ef6c.md",
-    "mc-gui-gemini-sample.jpg",
-    "LICENSE.txt",
-    "HANDOFF-2026-10-14-phantom-sword-orient-embed.md",
-    "HANDOFF-2026-10-14-empty-hand-sword.md"
+    "底座功能点.md",
+    "未命名.md",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/check-frame16.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/check-frame12.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/check-frame8.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/README.md",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/weeping-trajectory.gif",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/weeping-trajectory.aseprite",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/weeping-trajectory-keys.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/labels/note.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/labels/cap-3.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/labels/cap-2.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/labels/cap-1.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/labels/title-3.png",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/labels/make-labels.ps1",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/labels",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101/draw-schematic.lua",
+    "资源库/过程归档/垂丝下垂追踪示意-20261101",
+    "开发记录/术式批量制作/灼地-20261030/writeback-final.md",
+    "开发记录/术式批量制作/灼地-20261030/writeback-exit.txt",
+    "开发记录/术式批量制作/灼地-20261030/writeback-snapshot.json",
+    "开发记录/术式批量制作/灼地-20261030/候选/术式制作表-accept-candidate.xlsx",
+    "开发记录/术式批量制作/灼地-20261030/备份/术式制作表-20261030-225022-1.xlsx",
+    "开发记录/术式批量制作/灼地-20261030/writeback-write.py",
+    "开发记录/术式批量制作/灼地-20261030/writeback-task.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-final-attempt-final.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-fix-record-final.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-final-task.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-fix-record-task.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-fix-final.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-fix-task.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-retry-final.md",
+    "开发记录/术式批量制作/灼地-20261030/delivery-prepare-final.md",
+    "开发记录/术式批量制作/灼地-20261030/delivery-prepare-task.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-retry-task.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-final.md",
+    "开发记录/术式批量制作/灼地-20261030/compile-task.md",
+    "开发记录/术式批量制作/灼地-20261030/review-3-final.md",
+    "开发记录/术式批量制作/灼地-20261030/repair-2-record-final.md",
+    "开发记录/术式批量制作/灼地-20261030/repair-2-record-task.md",
+    "开发记录/术式批量制作/灼地-20261030/review-3-task.md",
+    "开发记录/术式批量制作/灼地-20261030/repair-2-final.md",
+    "开发记录/术式批量制作/灼地-20261030/repair-2-task.md",
+    "开发记录/术式批量制作/灼地-20261030/review-2-final.md",
+    "开发记录/术式批量制作/灼地-20261030/repair-1-record-final.md",
+    "开发记录/术式批量制作/灼地-20261030/repair-1-record-task.md"
   ]
 }

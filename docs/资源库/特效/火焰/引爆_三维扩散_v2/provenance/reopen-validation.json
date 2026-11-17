@@ -1,0 +1,38 @@
+{
+  "native_gui_reopen": true,
+  "source_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+  "reopened_uuid": "e9eebb72-fed6-5b89-ab9e-3991002b637d",
+  "path": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/blockbench/fire_detonate_v2_3d_candidate.bbmodel",
+  "sha256": "000f4370871d97886daf2bb8411aaab417847a62d3807e6cad9786c4d0c26e0e",
+  "cubes": 183,
+  "groups": 17,
+  "textures": 16,
+  "puffs": [
+    {
+      "name": "explosion_puff_orange-strip.png",
+      "width": 32,
+      "height": 512,
+      "error": 0
+    },
+    {
+      "name": "explosion_puff_soul-strip.png",
+      "width": 32,
+      "height": 512,
+      "error": 0
+    }
+  ],
+  "protected_count": 17,
+  "protected_unchanged": true,
+  "preserved_unsaved": [
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate"
+    },
+    {
+      "uuid": "e0d306f9-0f12-bc19-9636-0c56f9f1ce88",
+      "name": "fire_detonate_v2_candidate"
+    }
+  ],
+  "material_override": "native preview only: unshaded, non-emissive alpha, depth test true, depth write false, sorted back-to-front",
+  "at": "2026-11-16T08:10:45.954Z"
+}

@@ -1,0 +1,15 @@
+# C 编译反馈定向返修
+
+只在主会话确认第3轮定向复核已经最终结束并带入结论后执行。保持author-integration原可写session与grok-4.7-high-fast。全部已结束任务的事实以本目录记录和编译与检查结果.md为准，不读运行中作者文件。
+
+已确认检查编译错误：FireHurtBytecodeCheck从68行起使用CALL、COUNTER_FRAME、SCOPE、ENTER、EXIT、COUNTER_OWNER、RUNTIME_OWNER却没有声明。最小补齐这些常量，值从已实现实际类型/方法owner与descriptor得出，保留目前完整的正常/异常顺序、最终返回值/再抛、各owner进入退出配对与重复包装断言。不要删断言或降低验证来通过。其编译命令还必须包括同目录已存在HurtBoundaryHook.java（原交付漏掉）；只修命令说明，不改既有fixture/hook行为。
+
+KnownLimitsCheck/FireVisualLayoutCheck当前未运行是生产compileJava失败造成缺FireVisualLayout.class，先不要为这个环境后果重写检查或生产类。主编译修好后原验证者会重跑。协议项由于游戏外Forge未初始化而UNEXECUTED，不假称通过、不启动游戏。
+
+如果主会话追加了第3轮确认的客户端岁华登记缺陷，只按该准确结论修最小公共登记入口和说明，保留现有资源provider及专服类加载安全，不做其他重构。当前实现复核3/3已用完后，不再自行审整批、调用另一会话审查或宣称修复已正式复审通过；只按已确认问题实现并交回真实工作结果。原验证者负责最终编译与必要定向检查。
+
+第3轮最终回执现已到齐：a202611091038040784a95，reported_done/valid/writesSettled=true，完整结论实现复核3.md。确认只有ServerStarted登记SuihuaStatus，远程客户端find/readAll/resourceAtLeast无法进入缓存读取。按该结论补Dist.CLIENT启动登记：正确使用客户端MOD setup事件（与原断线的Forge事件分开），按既有项目范式必要时enqueueWork；find为空才register，已有则跳过，与集成服ServerStarted不重复。可以在已授权WoodResourceClientEvents中正确分离订阅，或新增TaskFile明确授权的WoodResourceClientSetup.java。不改变water/fire内建provider，不把客户端类引入专服路径，不靠收到同步包才注册。
+
+为此明确缺陷准备最小必要回归，调用实际登记入口与实际注册表，验证未启动本地服务端时可find岁华、重复调用不抛错。能独立运行则交出命令；如果Forge客户端启动本身必须游戏环境，明确该验证限制，不编造实际客户端已测试。本单不执行检查，统一交原验证者。
+
+不运行Gradle/javac/检查脚本，不修改A/B私有目录。只改TaskFile已授权C公共路径、此检查文件与对应交付说明；保留既有脏改动。不操作启动器、运行记录、制作表、批次额度或其他模型。最终回执明确changedFiles、writesSettled、未编译、返修结果未追加复审。

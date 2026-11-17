@@ -1,0 +1,68 @@
+{
+  "author": "B",
+  "phase": "资源API与六个附魔第一阶段",
+  "model": "grok-4.7-high-fast",
+  "design_quota": "2/2",
+  "implementation_review_quota": "0/3",
+  "formal_review": false,
+  "compile": "not_run",
+  "compile_command_pending": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "name_gate": {
+    "exit_code": 1,
+    "touched_files": "clean",
+    "preexisting_untouched": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ]
+  },
+  "bowl_offset_count": 23,
+  "status": "resource_api_ready_host_wiring_pending",
+  "stopped_writing": true,
+  "documents": [
+    {
+      "path": "docs/开发记录/术式批量制作/待制作-20261031/author-b-ownership.json",
+      "sha256": "C68E73E656D52CB4E8B5A456F262A7579DC338704FFFAE67D71B7077042E602B",
+      "mtime": "2026-10-31 03:38:18"
+    },
+    {
+      "path": "docs/开发记录/术式批量制作/待制作-20261031/author-b-interface.md",
+      "sha256": "F852969F5BF66F70AE84001F1164D000AB9717411223918B1A69E0E52C410EA7",
+      "mtime": "2026-10-31 03:40:55"
+    },
+    {
+      "path": "docs/开发记录/术式批量制作/待制作-20261031/author-b-report.md",
+      "sha256": "B99714292A99832DFC5AD80D3F27220A90C0ABB623B1F5C74E8553866EF6BD6E",
+      "mtime": "2026-10-31 03:41:21"
+    }
+  ],
+  "sources": [
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java", "sha256": "3010454BF5FC38FD93B617D41DFEF4CE3A589C19E6CAB71DE5F7BAA844866272", "mtime": "2026-10-31 03:36:22"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantBonus.java", "sha256": "DFCAC88C28EAD75BDE13F038A22E497721107D1EECA4E474F7AC80ACED6514EA", "mtime": "2026-10-31 03:38:15"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireCastContext.java", "sha256": "BEA61CB9FF6B7E0B0C2629357014098C16DB8020263F0238E5DBA430C6D326DF", "mtime": "2026-10-31 03:36:01"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedAccount.java", "sha256": "14CE60BB828515D7194024620BF874E0A6654B43541F36CC0655ECABFE855488", "mtime": "2026-10-31 03:36:03"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedState.java", "sha256": "4FEB61F8C2B5CF4FD085F9BECCA80473D08E173FAF58E0E3E39BE6BDAF6DAF77", "mtime": "2026-10-31 03:36:05"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedGrant.java", "sha256": "BACCDCD1F098C6C99986C7DF1536A16F82FB5C8E8FE13CF188BDA4A6EB72AA71", "mtime": "2026-10-31 03:36:07"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedProduction.java", "sha256": "36E2A345AF15FD15D05AC676C6AFFF44ECB80194D06F1A92C143661ED526E8A4", "mtime": "2026-10-31 03:36:07"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedMath.java", "sha256": "0C6124AD26EC90517D4EC506AA3E4B41BC2434509F833E244CA632E61A9BDF29", "mtime": "2026-10-31 03:35:58"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnLedger.java", "sha256": "DC00ADD776623E3D90EA67873981D9B71F90286989694709DBE42F2F2265A31E", "mtime": "2026-10-31 03:39:12"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireConsumption.java", "sha256": "8AEAAA1395A74A29BE62148C4DDDBB93033CD32DFDA1704743763BFD05086638", "mtime": "2026-10-31 03:37:54"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantNumbers.java", "sha256": "D3D49D6D5C016E137D4CCB9AC855BF47BD4AE1C7CDB5733DC2C73F80C9CDEB2B", "mtime": "2026-10-31 03:34:42"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java", "sha256": "DF90543B4B89F99A238AC4AFA58C9F859F34D690AAD24D12AB98F97FF7F4E5BE", "mtime": "2026-10-31 03:34:48"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantLoad.java", "sha256": "0B44F14F6EA429A88460A8EBA68BDF57A254936066187DE450BB5EB4C88E3EEF", "mtime": "2026-10-31 03:34:51"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantDefinition.java", "sha256": "E47FFCCD5E6F2CF315DA1E68925F6AD4FD42C23363CF2F8991950960268EAFE2", "mtime": "2026-10-31 03:34:53"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java", "sha256": "C12519A675B032C46F3D7F0041F05849F8F3B4C889E7BC2686CC8EFE9E9B42C1", "mtime": "2026-10-31 03:34:58"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/TrailContract.java", "sha256": "EDD1E7AE1E99EC50913D69BD2F7A7F54CF2AC91F2AD08E9AFA8C16FABE90A8A9", "mtime": "2026-10-31 03:34:44"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/NetherContract.java", "sha256": "AC7DD17C608FFD68EBF06B19BF59C75A152F02B7FDC66CEF1F8E4D86BBFCD3D0", "mtime": "2026-10-31 03:37:51"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/BreakGroundShape.java", "sha256": "DA503F4CB976BC5DB8BEDC29FE47D107E813D8D62BF6F6054C78EE90BA039EF7", "mtime": "2026-10-31 03:35:13"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceHitCommit.java", "sha256": "C17201E47BA20BE420C8F214EDE9EB860D9091ACDF157A097701CCC4881C743A", "mtime": "2026-10-31 03:38:15"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/HitResourceResult.java", "sha256": "53F23B321DB6458834FFAFB7893D3111BE0BFC6EAE1987034093D7176A8BC78B", "mtime": "2026-10-31 03:35:35"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/ResourceEffectKeys.java", "sha256": "FBE01BC460EE718622328C93CCE2AD1B6B4048B682E979DE6EB8580FF0ED6A05", "mtime": "2026-10-31 03:34:41"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/KindlePlan.java", "sha256": "A83565742C7EEB42DD123FDA05FCCB1146FF98E528C5F122F049D5F345170706", "mtime": "2026-10-31 03:35:56"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/DetonatePlan.java", "sha256": "DBE3FFACABA625DC77FB26F5E7F926890E80B84ED4E8DB21ED093AF345FAB333", "mtime": "2026-10-31 03:35:22"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/RemainderRotation.java", "sha256": "1450C182256088E47AACE409E078667F226DC8625EC1FA756FFEBDD5BA2361CD", "mtime": "2026-10-31 03:35:56"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/SeedMergeResult.java", "sha256": "1A7CE34B0D00F307405662D18CE52649702C9DFF795542AA9DB94EC989D5E392", "mtime": "2026-10-31 03:35:04"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/SeedMerge.java", "sha256": "6256882E035F96E9FCF3018B039EDF741C32B55B0D7E4E919E105C3EB55CC017", "mtime": "2026-10-31 03:35:06"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/NetherWindowResult.java", "sha256": "3B568BD0523897112377B6D4DE10AC31E8752A848435BEA1AD2A13B0637539D5", "mtime": "2026-10-31 03:35:32"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/NetherSeedArbiter.java", "sha256": "D8F3053812579DDF44571F7AAE6FE6185FADB2C5576D00856113B21F6CEBABE9", "mtime": "2026-10-31 03:36:06"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "submitted": false,
+  "reason": "独占打开失败：术式制作表.xlsx 被其他进程占用。候选保留，现表未覆盖。",
+  "from": {"sheet": "待验收", "row": 3, "id": "fire_liaoli"},
+  "intendedTo": {"sheet": "制作中", "row": 6, "id": "fire_liaoli"},
+  "actual": {"sheet": "待验收", "row": 3, "id": "fire_liaoli"},
+  "baselineSha256": "0D72B6D07C7E604943AC8DC71AA6EEB783F686EC0DAE1CEB1F69A13ED30FA6E7",
+  "baselineMtime": "2026-10-29 23:45:56.971",
+  "baselineBytes": 165071,
+  "liveAfterFailedSubmit": {"bytes": 165071, "mtime": "2026-10-29 23:45:56.971"},
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoli-pose-return-术式制作表-20261030-002954-1.xlsx",
+  "candidate": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-pose-return-candidate-preserved.xlsx",
+  "candidateSha256": "69FD9B9BCC47885D0449CB135F84523894F48962745AA41BAED4FD1F05400C02",
+  "intake": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-pose-intake.json",
+  "moved": false,
+  "sourceWriteStarted": false,
+  "quota": "设计2/2、实现3/3已用完。本次不追加复审。"
+}

@@ -1,0 +1,9 @@
+几何与筛选自检（2026-11-04）
+
+干地公式：outer=8 时 inner=1.3552，turn=0.979。起点角与终点角相差约 6.15 弧度，半径从 8 收到 1.36，不是同一条射线。
+漏斗：bodyRadius=2.5 时底半径 0.75、顶半径 2.375，角程 4π，即两圈。
+水下：3 层 × 2 条，段中点才调用 waterOpen。
+命名门退出码 0。
+未跑 compileJava。
+贴图未改：assets/xueximod/textures/domain/water_flow_v3_1.png、water_bubble_v3_1.png。
+无新配置键。

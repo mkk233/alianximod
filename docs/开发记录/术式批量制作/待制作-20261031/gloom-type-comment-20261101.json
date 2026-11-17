@@ -1,0 +1,20 @@
+{
+  "submitted": true,
+  "sheet": "制作中",
+  "cell": "C16",
+  "id": "fire_nether_gloom",
+  "old": "通用",
+  "new": "领域附魔",
+  "enumAction": "append-Q8",
+  "baselineSha256": "F2B0C68637BEB17EE92A5CB71734D47D86316E0DF549C8DEB1A7E9506F884E98",
+  "liveSha256": "02FC2FD007D695611615AC9A7F26EAE4EE9562303A06E692FDC016DFA166CCE7",
+  "bytes": 222567,
+  "mtime": "2026-11-01 00:53:32.708",
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "reopenMatches": true
+}

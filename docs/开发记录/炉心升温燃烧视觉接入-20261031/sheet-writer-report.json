@@ -1,0 +1,55 @@
+{
+  "writer": "heat-burn-sheet-writer",
+  "model": "grok-4.7-high-fast",
+  "submitted": true,
+  "moved": false,
+  "compile": "not_run",
+  "gameVerification": "not_run",
+  "codexReview": "not_done",
+  "items": [
+    {"id": "fire_heat_up", "sheet": "制作中", "row": 3},
+    {"id": "fire_burn", "sheet": "制作中", "row": 4}
+  ],
+  "unchangedNeighbor": {"id": "fire_cool", "sheet": "制作中", "row": 5},
+  "counts": {"已完成": 40, "待制作": 0, "制作中": 16, "待验收": 4, "unique": 60},
+  "baselineSha256": "5F702287B96EDEB0A87AA132C6585397DFE728B05FC6F3347C7CBF3C5B4443C0",
+  "committedSha256": "D6865FF326C5D6B0A024D9E727FEA375E6F61AD9E19138452F66D0A4C0F1F8A3",
+  "committedMtime": "2026-10-31T04:16:43.530+08:00",
+  "backup": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/备份/术式制作表-20261031-041415-1.xlsx",
+  "candidate": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/候选/术式制作表-候选-20261031-041415-1.xlsx",
+  "snapshots": {
+    "aen": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/快照/变更前-AEN-20261031-041415-1.json",
+    "nodv": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/快照/变更前-NODV-20261031-041415-1.json",
+    "approvedVisual": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/快照/用户批准新视觉-20261031-041415-1.md"
+  },
+  "changedColumns": ["O", "DV"],
+  "nKept": true,
+  "archivePreserved": true,
+  "archiveRows": {"fire_heat_up": 6, "fire_burn": 7},
+  "detailPreserved": true,
+  "detailRowsAdded": 0,
+  "differentParts": ["xl/worksheets/sheet3.xml"],
+  "index": {
+    "path": "D:/alianximod/docs/资源库/README.md",
+    "beforeSha256": "4AD194D643FE5BEB9DF7B53E9CA9E69FC2576361AC1B5C7D8AB26B5D9343520F",
+    "afterSha256": "E5D6CB0CF9723B20BB4D4BBFDFE03E5CE9F37B989D7CC34290F82D579062C169",
+    "status": "已接入源码，待编译/游戏验收",
+    "entries": ["升温_贴身炽热_v2", "燃烧_双手附焰与火焰披风_v3"],
+    "otherEntriesKept": true
+  },
+  "formalStatus": {
+    "readmeStatusUpdated": true,
+    "burnManifestStatus": "已接入源码，待编译/游戏验收",
+    "heatManifestUnchanged": true,
+    "sourceArtHashesMatchManifest": true,
+    "gameVerified": false
+  },
+  "safety": {
+    "exclusiveLock": true,
+    "baselineMatchedInsideLock": true,
+    "reopenMatchesCandidate": true,
+    "fireCoolUnchanged": true,
+    "filtersAndValidationUnchanged": true,
+    "rowHeightUnchanged": true
+  }
+}

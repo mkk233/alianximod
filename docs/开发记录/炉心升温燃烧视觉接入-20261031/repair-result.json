@@ -1,0 +1,24 @@
+{
+  "status": "blocked_api",
+  "source_changed": false,
+  "model": "grok-4.7-high-fast",
+  "compile": "not_run",
+  "game_verification": "not_run",
+  "sheet_writeback": "not_this_session",
+  "name_gate": "not_run_javac_forbidden_and_java_unchanged",
+  "blocker": "Forge 1.20.1-47.3.33 只有 RenderArmEvent，ForgeHooksClient.renderSpecificFirstPersonArm 只投递一次，且发生在 PlayerRenderer.renderHand 的 setupAnim 与 arm.render 之前。RenderArmEvent.Post 不存在。",
+  "report": {
+    "path": "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/repair-report.md",
+    "sha256": "ddb753327f55b5a4ca1c300d2f5f7e1617be3ccaf74f126534528451d81c33ad",
+    "mtime": "2026-10-31 04:04:43",
+    "bytes": 3288
+  },
+  "unchanged_java": {
+    "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceArmFlame.java",
+    "sha256": "79b845a283f84edfae7cd9fa8f4de9efa1e543d609a8d8ffcb61fbc167130e70",
+    "mtime": "2026-10-31 03:48:05",
+    "bytes": 4916,
+    "on_arm_lines": "31-64"
+  },
+  "stop_writing": true
+}

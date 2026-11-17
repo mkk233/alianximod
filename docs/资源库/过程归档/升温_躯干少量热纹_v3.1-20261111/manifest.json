@@ -1,0 +1,48 @@
+{
+  "version": "heat-up-v3.1-2d-draft",
+  "created": "2026-11-11",
+  "tool": "Aseprite MCP",
+  "status": "awaiting-2d-feedback",
+  "files": [
+    {
+      "name": "draw_heat_up_v3_1.lua",
+      "bytes": 9137,
+      "sha256": "97D903E3226EC8F0C5A0B2221FDDDE455010455885C4D5583E5B58EB3FA7799B"
+    },
+    {
+      "name": "heat_up_v3_1_entry_strip.png",
+      "bytes": 5726,
+      "sha256": "3A2F947D4885AE0BBF7CEF541F1035FE41EC5F8475CE3EBE064989029B9DA71A"
+    },
+    {
+      "name": "heat_up_v3_1_entry.aseprite",
+      "bytes": 11959,
+      "sha256": "AD69A611CECDA715290E36518D5DCBE44DA665DBD37B4AE8B9D9BDDEBE29A0BC"
+    },
+    {
+      "name": "heat_up_v3_1_preview.aseprite",
+      "bytes": 54225,
+      "sha256": "3BF061A84A0226AC9076F3DC83A3E78B3B8B80870F3FFFD4CB034E902D87446D"
+    },
+    {
+      "name": "heat_up_v3_1_preview.gif",
+      "bytes": 60911,
+      "sha256": "4CFEF137E93454CF62BF3900B84927CC497F9CFC67544F2D394AF09A1807E4CF"
+    },
+    {
+      "name": "heat_up_v3_1_preview.png",
+      "bytes": 4178,
+      "sha256": "EC759E8C6C4CCB2593A50EFD6008646E84655990AF54E10D6DB052B49A89E8A8"
+    },
+    {
+      "name": "heat_up_v3_1_strip.png",
+      "bytes": 17546,
+      "sha256": "4D62F8AA9A80400DACA193CAAA169F8B2A76DFA1DF9D15B4588556EEAC6C1CC5"
+    },
+    {
+      "name": "heat_up_v3_1.aseprite",
+      "bytes": 32754,
+      "sha256": "EF3057485A5140564C75886AF6A0B8D8BE62B15C88C81F5F00AA2B24CA5BF266"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+version=1.3.17 ui=true frames=16 size=64x64 duration=0.1
+Existing v2 pixel mask and frame structure retained; palette-only cyan-white heat grading. processed opaque pixels=39476

@@ -1,0 +1,28 @@
+{
+  "text": "EFFORT_CONFIGURATION_CHECK",
+  "stopReason": "end_turn",
+  "sessionId": "453879d1-7811-4d7c-98b1-a81a4b9c0294",
+  "requestId": "853b0cda-cda5-4717-9f26-82d718017c5f",
+  "cwd": "C:\\Users\\baishang\\AppData\\Local\\Temp",
+  "usage": {
+    "input_tokens": 4686,
+    "cache_read_input_tokens": 1536,
+    "cache_creation_input_tokens": 0,
+    "output_tokens": 42,
+    "reasoning_tokens": 36,
+    "total_tokens": 6264
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.00706656,
+  "total_cost_usd_ticks": 70665600,
+  "modelUsage": {
+    "grok-4.7-build-fast": {
+      "inputTokens": 4686,
+      "outputTokens": 42,
+      "cacheReadInputTokens": 1536,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 1,
+      "costUSD": 0.00706656
+    }
+  }
+}

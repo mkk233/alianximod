@@ -1,0 +1,19 @@
+{
+  "batchId": "water-vortex-20261103",
+  "taskId": "launcher-mode-recovery",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "repair-explicit-cursor-readonly-mode-recovery",
+  "authorization": "用户2026-11-09明确允许修正启动器并继续接入；仅修复持久化Ask到已授权写入的受控恢复，保留原任务模型权限计数",
+  "inputVersion": "启动器模式恢复-20261109.md+source-owner阻塞回执a202611090928274104ee4",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/.grok/scripts/Invoke-CursorTask.ps1",
+    "D:/alianximod/.grok/scripts/Test-CursorTask.ps1",
+    "D:/alianximod/docs/统一开发与术式批量制作流程.md",
+    "D:/alianximod/.grok/skills/max-dispatch/SKILL.md",
+    "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/模式恢复交付.md",
+    "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/模式恢复证据"
+  ],
+  "dependencies": []
+}

@@ -1,0 +1,94 @@
+{
+  "author": "B",
+  "task": "B2",
+  "backupRoot": "docs/开发记录/配置平衡-20261101/pre-B",
+  "ownership": "released",
+  "compile": "not-run",
+  "repair3": {
+    "backupRoot": "docs/开发记录/配置平衡-20261101/pre-repair-3/B",
+    "previousBackupsPreserved": true,
+    "files": [
+      "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java"
+    ]
+  },
+  "repair2Tracking": {
+    "backupRoot": "docs/开发记录/配置平衡-20261101/pre-repair-2/B-tracking",
+    "previousBackupsPreserved": true,
+    "files": [
+      "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactBilling.java"
+    ]
+  },
+  "repair2": {
+    "backupRoot": "docs/开发记录/配置平衡-20261101/pre-repair-2/B",
+    "preBPreserved": true,
+    "preRepair1Preserved": true,
+    "files": [
+      "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java",
+      "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+      "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactBilling.java"
+    ]
+  },
+  "repair1": {
+    "backupRoot": "docs/开发记录/配置平衡-20261101/pre-repair-1/B",
+    "preBPreserved": true,
+    "files": [
+      "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+      "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/BarrierService.java"
+    ]
+  },
+  "new": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/SpecialBalance.java",
+      "backup": null
+    }
+  ],
+  "modified": [
+    "src/main/java/com/bslx/XueXiMod/carrier/BatchMeteoriteEffect.java",
+    "src/main/java/com/bslx/XueXiMod/carrier/BatchShockRingEffect.java",
+    "src/main/java/com/bslx/XueXiMod/carrier/BatchSparkEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+    "src/main/java/com/bslx/XueXiMod/shu/WaterTechniques.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FentianEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireBurstEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireOrbEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/HeatBeamEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoyuanEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LockTargetService.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicArcaneMissileEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MetalNeedleEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MovementDashEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/ParasiteSeedEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SpaceCutEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/StoneHammerEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordComeEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordHorizontalSlashEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordThrustEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordVerticalSlashEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/TestSustainedEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/TideSeverEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/WaterYieldingEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/WeepingCurtainEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterReleaseDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/BarrierBody.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/BarrierDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/BarrierService.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/ListedRelease.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/MotionProfile.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/WaterPrisonEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactBilling.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainNativePolicy.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainCycle.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardStates.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonPressure.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonRuntime.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusCommit.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordVortex.java"
+  ]
+}

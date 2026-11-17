@@ -1,0 +1,7 @@
+SharedFuelCheck exit=0 分配 通过 一层两段 通过 两层同拍充足 通过 不足按比例 通过 进行中补种 通过 余额归零不复活 通过 先后手 通过 挂载去重 通过 同拍不重复扣 通过 焚天锁定 通过 旧预付与恢复 通过 版本区分 通过 断言 121 失败 0 未执行：LivingEntity、CompoundTag 往返、无敌帧、护甲与抗火。没有启动游戏。
+SixFireFunctionalCheck exit=0 six fire functional check passed 未执行：玩家事务、实体命中、地火 tick、混链函数、一分为三复制份。
+FireSeedCheck exit=0 断言 258 失败 0 未运行：真实实体存档、死亡事件、玩家克隆、生物转化、牛奶、服务端主线程拒绝、Gradle 编译。没有游戏世界。
+BurnLedgerCheck exit=0 预检 失败 0 冲突 失败 0 节奏 失败 0 快照 失败 0 恢复 失败 0 燎原 失败 0 燎里 失败 0 焚天 失败 0 旧档案输入 失败 0 断言 106 失败 0 未执行：实体 NBT 往返、死亡事件、卸载暂停的真实时钟、hurt 免疫。没有启动游戏。
+BurnDispatchCheck exit=0 回调挂载 通过 回调丢弃 通过 死亡 通过 首段等待 通过 断言 16 失败 0 未执行：实体 NBT、死亡事件、真实 hurt。没有启动游戏。
+FireReleaseStructureCheck exit=0 运行源码 失败 0 标签 失败 0 断言 43 失败 0 未执行：数据包加载、标签合并、真实无敌帧。没有启动游戏。
+SixFireLogicCheck exit=0 six fire logic check passed

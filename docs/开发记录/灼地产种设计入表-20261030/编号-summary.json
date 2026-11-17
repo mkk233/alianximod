@@ -1,0 +1,45 @@
+{
+  "submitted": false,
+  "baselineSha256": "38649FA8068C42576D675D0EBF203D75EBF843B385CFC3092D769EF2E47798D3",
+  "backup": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\备份\\编号-术式制作表-20261030-114215-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\编号-candidate-preserved.xlsx",
+  "candidateSha256": "E79B32B27216B167EB8FD16BAC4871ECDA11D04963822F10A0C22E8D2B6740AF",
+  "mapping": {
+    "fire_surface_anchor": "rule_surface_anchor",
+    "fire_stagger": "rule_stagger",
+    "fire_hit_continue": "rule_hit_continue",
+    "fire_break_ground": "earth_break_ground"
+  },
+  "touched": {
+    "xl/worksheets/sheet2.xml": [
+      "B7",
+      "B9",
+      "B10",
+      "B15"
+    ]
+  },
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "commentHits": {
+    "xl/comments/comment1.xml": {},
+    "xl/drawings/commentsDrawing1.vml": {},
+    "xl/comments/comment2.xml": {},
+    "xl/drawings/commentsDrawing2.vml": {},
+    "xl/comments/comment3.xml": {},
+    "xl/drawings/commentsDrawing3.vml": {},
+    "xl/comments/comment4.xml": {},
+    "xl/drawings/commentsDrawing4.vml": {}
+  },
+  "partHits": {
+    "xl/worksheets/sheet2.xml": {
+      "fire_surface_anchor": 1,
+      "fire_stagger": 1,
+      "fire_hit_continue": 1,
+      "fire_break_ground": 1
+    }
+  }
+}

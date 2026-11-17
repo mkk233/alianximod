@@ -1,0 +1,23 @@
+{
+  "submitted": true,
+  "moved": true,
+  "from": {"sheet": "待验收", "row": 5, "id": "fire_liaoli", "name": "燎里"},
+  "to": {"sheet": "制作中", "row": 6, "id": "fire_liaoli", "name": "燎里"},
+  "baselineSha256": "EB3E24375BC4198F11C122E99523431C8B79BB9E32849E414C5913116AC2A7CA",
+  "baselineMtime": "2026-10-30 01:02:30.653",
+  "baselineBytes": 165870,
+  "sha256": "ECE5C0FAFAF440A70481463AC790F0E03BF83B33433AFF2A2495E78108EF78D3",
+  "mtime": "2026-10-30 01:29:38.543",
+  "bytes": 169869,
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoli-hit-seed-submit-术式制作表-20261030-012938-1.xlsx",
+  "reopen": {
+    "counts": {"已完成": 40, "待制作": 13, "制作中": 4, "待验收": 2},
+    "unique": 59,
+    "differentParts": ["xl/worksheets/sheet3.xml", "xl/worksheets/sheet4.xml"]
+  },
+  "implementationStarted": false,
+  "flamePreviewConfirmed": false,
+  "compile": "待统一编译。上次姿态编译不作为本次完成。",
+  "quota": "设计2/2、实现3/3承接。本阶段额度已用完，返修结果未追加复审。",
+  "crossSystem": "火种常驻火苗覆盖所有带火种实体，不新增编号，不返修其他已完成行。"
+}

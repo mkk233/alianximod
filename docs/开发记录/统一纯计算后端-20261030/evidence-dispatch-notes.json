@@ -1,0 +1,28 @@
+{
+  "released": true,
+  "author": "A",
+  "sha256": "not-required",
+  "note": "只同步下限8注释和契约末尾入口说明。未改数值，未验证C调用。",
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/compute/ComputeCodes.java",
+      "bytes": 10073,
+      "modifiedUtc": "2026-10-30T08:24:05.956Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/abi-contract.md",
+      "bytes": 14859,
+      "modifiedUtc": "2026-10-30T08:24:08.245Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/dispatch-notes-final.md",
+      "bytes": 1803,
+      "modifiedUtc": "2026-10-30T08:24:24.512Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/evidence-dispatch-notes.json",
+      "bytes": 860,
+      "modifiedUtc": "2026-10-30T08:25:02.937Z"
+    }
+  ]
+}

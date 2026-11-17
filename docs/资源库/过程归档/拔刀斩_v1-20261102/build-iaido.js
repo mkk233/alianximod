@@ -1,0 +1,47 @@
+if(Project.uuid!=='6b4f4bc7-1b12-35ea-2657-817b595661bc')throw Error('Wrong project');
+const made=[];
+Undo.initEdit({elements:made,outliner:true});
+const tex=Texture.all.find(t=>t.name==='iaido_atlas');
+function group(name,origin,parent){const g=new Group({name,origin});if(parent)g.addTo(parent);g.init();return g;}
+function uv(tile){const x=(tile%4)*16,y=Math.floor(tile/4)*16;return [x,y,x+16,y+16];}
+function cube(name,from,to,tile,parent,faces={}){const c=new Cube({name,from,to,origin:[0,0,0],box_uv:false});for(const [n,f] of Object.entries(c.faces)){f.texture=tex.uuid;f.uv=uv(faces[n]??tile);f.rotation=0;}c.addTo(parent).init();made.push(c);return c;}
+const root=group('ActorRoot',[0,0,0]);
+const body=group('Body',[0,12,0],root);
+const head=group('Head',[0,24,0],body);
+cube('示意人物_躯干',[-4,12,-2],[4,24,2],4,body,{north:0,south:5});
+cube('示意人物_腰带',[-4.15,12.5,-2.15],[4.15,14,2.15],7,body);
+cube('示意人物_头',[-4,24,-4],[4,32,4],3,head,{north:2,down:1});
+const ru=group('ArmRight',[-6,24,0],body);
+const rf=group('ForearmRight',[-6,18,0],ru);
+const rh=group('SwordHand',[-6,12,0],rf);
+cube('示意人物_右上臂',[-8,18,-2],[-4,24,2],4,ru);
+cube('示意人物_右前臂',[-7.8,13,-1.8],[-4.2,18,1.8],4,rf);
+cube('示意人物_右手',[-7.6,11,-1.6],[-4.4,13,1.6],1,rf);
+const lu=group('ArmLeft',[6,24,0],body);
+const lf=group('ForearmLeft',[6,18,0],lu);
+const sheath=group('Scabbard',[6,12,0],lf);
+cube('示意人物_左上臂',[4,18,-2],[8,24,2],4,lu);
+cube('示意人物_左前臂',[4.2,13,-1.8],[7.8,18,1.8],4,lf);
+cube('示意人物_左手',[4.4,11,-1.6],[7.6,13,1.6],1,lf);
+const lr=group('LegRight',[-2,12,0],root);
+const ll=group('LegLeft',[2,12,0],root);
+cube('示意人物_右腿',[-4,1,-2],[0,12,2],5,lr);
+cube('示意人物_右靴',[-4,0,-3],[0,3,2],6,lr);
+cube('示意人物_左腿',[0,1,-2],[4,12,2],5,ll);
+cube('示意人物_左靴',[0,0,-3],[4,3,2],6,ll);
+cube('刀柄',[-6.65,9.5,-0.65],[-5.35,14.5,0.65],11,rh);
+cube('柄头',[-6.75,9.3,-0.75],[-5.25,9.9,0.75],10,rh);
+cube('刀镡',[-7.8,14.5,-1],[-4.2,15,1],10,rh);
+cube('刀身',[-6.8,15,-0.3],[-5.2,27,0.3],8,rh,{east:9,west:9});
+cube('刀锋尖段',[-6.65,27,-0.3],[-5.2,28.5,0.3],8,rh,{east:9,west:9});
+cube('刀尖',[-6.2,28.5,-0.3],[-5.2,29.5,0.3],8,rh,{east:9,west:9});
+cube('刀鞘_左壁',[4.6,12,-0.9],[4.95,28,0.9],12,sheath,{east:13});
+cube('刀鞘_右壁',[7.05,12,-0.9],[7.4,28,0.9],12,sheath,{west:13});
+cube('刀鞘_背壁',[4.95,12,0.55],[7.05,28,0.9],12,sheath,{north:13});
+cube('刀鞘_前壁',[4.95,12,-0.9],[7.05,28,-0.55],12,sheath,{south:13});
+cube('刀鞘_鞘底',[4.6,28,-0.9],[7.4,28.5,0.9],10,sheath);
+const stage=group('示意辅助_地面',[0,0,0]);
+cube('示意辅助_地面',[-48,-1,-45],[48,0,35],15,stage);
+Canvas.updateAll();
+Undo.finishEdit('搭建单刀绑定与双节手臂拔刀模型');
+({project:Project.uuid,cubes:Cube.all.length,groups:Group.all.map(g=>({name:g.name,origin:g.origin,order:g.mesh.rotation.order}))});

@@ -1,0 +1,28 @@
+allprojects { project ->
+    project.afterEvaluate {
+        def checkClasses = project.layout.buildDirectory.dir('guard-checks')
+        def compileGuardChecks = project.tasks.register('compileGuardChecks', JavaCompile) {
+            classpath = project.sourceSets.main.runtimeClasspath
+            source = project.fileTree('src/test/java') {
+                include 'com/bslx/XueXiMod/network/GuardSyncWireCheck.java'
+                include 'com/bslx/XueXiMod/shu/technique/release/guard/GuardSnapshotPoseCheck.java'
+            }
+            destinationDirectory.set(checkClasses)
+            sourceCompatibility = '17'
+            targetCompatibility = '17'
+            options.encoding = 'UTF-8'
+        }
+        project.tasks.register('runGuardSyncWireCheck', JavaExec) {
+            dependsOn compileGuardChecks
+            classpath = project.files(checkClasses).plus(project.sourceSets.main.runtimeClasspath)
+            mainClass = 'com.bslx.XueXiMod.network.GuardSyncWireCheck'
+            jvmArgs = ['-Dfile.encoding=UTF-8']
+        }
+        project.tasks.register('runGuardSnapshotPoseCheck', JavaExec) {
+            dependsOn compileGuardChecks
+            classpath = project.files(checkClasses).plus(project.sourceSets.main.runtimeClasspath)
+            mainClass = 'com.bslx.XueXiMod.shu.technique.release.guard.GuardSnapshotPoseCheck'
+            jvmArgs = ['-Dfile.encoding=UTF-8']
+        }
+    }
+}

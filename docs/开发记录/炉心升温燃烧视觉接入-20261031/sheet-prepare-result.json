@@ -1,0 +1,34 @@
+{
+  "ready": true,
+  "submitted": false,
+  "baselineSha256": "5F702287B96EDEB0A87AA132C6585397DFE728B05FC6F3347C7CBF3C5B4443C0",
+  "baselineBytes": 221329,
+  "baselineMtime": "2026-10-31T03:36:35.510+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\炉心升温燃烧视觉接入-20261031\\备份\\术式制作表-20261031-041415-1.xlsx",
+  "backupSha256": "5F702287B96EDEB0A87AA132C6585397DFE728B05FC6F3347C7CBF3C5B4443C0",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\炉心升温燃烧视觉接入-20261031\\候选\\术式制作表-候选-20261031-041415-1.xlsx",
+  "candidateSha256": "D6865FF326C5D6B0A024D9E727FEA375E6F61AD9E19138452F66D0A4C0F1F8A3",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\炉心升温燃烧视觉接入-20261031\\快照\\变更前-AEN-20261031-041415-1.json",
+    "nodv": "D:\\alianximod\\docs\\开发记录\\炉心升温燃烧视觉接入-20261031\\快照\\变更前-NODV-20261031-041415-1.json",
+    "approvedVisual": "D:\\alianximod\\docs\\开发记录\\炉心升温燃烧视觉接入-20261031\\快照\\用户批准新视觉-20261031-041415-1.md"
+  },
+  "rows": {
+    "fire_heat_up": 3,
+    "fire_burn": 4
+  },
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "archiveUntouched": true,
+  "detailUntouched": true,
+  "changedPart": "xl/worksheets/sheet3.xml",
+  "readmeSha256": "4AD194D643FE5BEB9DF7B53E9CA9E69FC2576361AC1B5C7D8AB26B5D9343520F",
+  "readmeBytes": 15983,
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "readme": "D:\\alianximod\\docs\\资源库\\README.md",
+  "readmeCandidate": "D:\\alianximod\\docs\\开发记录\\炉心升温燃烧视觉接入-20261031\\index-candidate.md"
+}

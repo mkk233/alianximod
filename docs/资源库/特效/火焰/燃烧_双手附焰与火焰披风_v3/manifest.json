@@ -1,0 +1,109 @@
+{
+  "approvedOn": "2026-10-31",
+  "approval": "这个版本可以，采用",
+  "status": "已接入源码，待编译/游戏验收",
+  "files": [
+    {
+      "file": "overdrive-v3.aseprite",
+      "bytes": 54519,
+      "sha256": "65a68c3fdc6d8a00119264f0eb8555e958ae7dc165b9078256bd4bddca599cd8",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3.aseprite"
+    },
+    {
+      "file": "overdrive-v3-combined-strip.png",
+      "bytes": 63228,
+      "sha256": "96eebfb34a471eee72155ab5cb621321f037896c64056694577b7abe2ab3d8be",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-combined-strip.png"
+    },
+    {
+      "file": "overdrive-v3-entry.aseprite",
+      "bytes": 20233,
+      "sha256": "d6fe40c34d93bc0801f9be48c24d9bed001df0f30e38c467906f59d96d4e3585",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-entry.aseprite"
+    },
+    {
+      "file": "overdrive-v3-entry-strip.png",
+      "bytes": 23179,
+      "sha256": "d19d87388bf450b9cf52adf4b234dc11560fceda24f4e61346357783dd2a4ce3",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-entry-strip.png"
+    },
+    {
+      "file": "overdrive-v3-front-back-preview.aseprite",
+      "bytes": 197208,
+      "sha256": "68d612aa38e7700ad03818d7963a506950c130889734a03fa70db5ab5101117a",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-front-back-preview.aseprite"
+    },
+    {
+      "file": "overdrive-v3-front-back-preview.gif",
+      "bytes": 625663,
+      "sha256": "9f2171726f704db075acdf5db94b52b3feda25da38f48dd18d82c3b08d547e26",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-front-back-preview.gif"
+    },
+    {
+      "file": "overdrive-v3-front-back-preview.png",
+      "bytes": 11773,
+      "sha256": "61539864135854dc66fc2e96c261b90a55133c9b65d1863409af69165dde331b",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-front-back-preview.png"
+    },
+    {
+      "file": "overdrive-v3-cape.aseprite",
+      "bytes": 21122,
+      "sha256": "ace1c9bb7254d242cecafc686d331166f6d918b828d0399cb08a90728ae61bec",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-cape.aseprite"
+    },
+    {
+      "file": "overdrive-v3-cape-strip.png",
+      "bytes": 26704,
+      "sha256": "86d239c18d17e9bc28e3281994e87df927148d87af5caf34859126e8dc7fd446",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-cape-strip.png"
+    },
+    {
+      "file": "overdrive-v3-rear-fire.aseprite",
+      "bytes": 6368,
+      "sha256": "af3b9b8ecee89b6dd0b630890d50b58e18e5825e2ed9c23a4267d6ea5a54bbdf",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-rear-fire.aseprite"
+    },
+    {
+      "file": "overdrive-v3-rear-fire-strip.png",
+      "bytes": 5552,
+      "sha256": "28ad2a6958f75739e579cd7621dace0a5d9e350bfe986fc4a3829af849f3eaba",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-rear-fire-strip.png"
+    },
+    {
+      "file": "overdrive-v3-body-fire.aseprite",
+      "bytes": 11118,
+      "sha256": "91da07903dd894a187a48d072ee3af723e049b27260695b6f5d1c07915535f89",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-body-fire.aseprite"
+    },
+    {
+      "file": "overdrive-v3-body-fire-strip.png",
+      "bytes": 12438,
+      "sha256": "869ce595693fec5469e1f756bd6eb507bafb86b0a8686a1223e601cd00758b5d",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-body-fire-strip.png"
+    },
+    {
+      "file": "overdrive-v3-hand-fire.aseprite",
+      "bytes": 12865,
+      "sha256": "2c05cec097c09e2021f448a561ac83d34827f0bae25b8e424bca7960f81fb28e",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-hand-fire.aseprite"
+    },
+    {
+      "file": "overdrive-v3-hand-fire-strip.png",
+      "bytes": 16442,
+      "sha256": "e25810ecf701daf097e1fedd6ba5b6811b17bcc7daa41dd108f085b34697ed2b",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-hand-fire-strip.png"
+    },
+    {
+      "file": "overdrive-v3-embers.aseprite",
+      "bytes": 7977,
+      "sha256": "e6c2c740df1c8b756556d357db51115162d9558c11f59c1f5085d622578792ad",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-embers.aseprite"
+    },
+    {
+      "file": "overdrive-v3-embers-strip.png",
+      "bytes": 6217,
+      "sha256": "3c09e9c9969327f0c2cf5ddbadc1810d871318053355be9571e41e54362f4295",
+      "source": "D:/alianximod/docs/资源库/过程归档/燃烧_双手附焰与火焰披风_v3-20261031/overdrive-v3-embers-strip.png"
+    }
+  ]
+}

@@ -29,15 +29,15 @@ public class ImprintDeskBlock extends Block implements EntityBlock {
 
     @Nullable
     @Override
-    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new ImprintDeskBlockEntity(pos, state);
+    public BlockEntity newBlockEntity(BlockPos blockPosition, BlockState state) {
+        return new ImprintDeskBlockEntity(blockPosition, state);
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos,
+    public InteractionResult use(BlockState state, Level level, BlockPos blockPosition,
                                   Player player, InteractionHand hand, BlockHitResult hit) {
         if (!level.isClientSide()) {
-            if (level.getBlockEntity(pos) instanceof ImprintDeskBlockEntity) {
+            if (level.getBlockEntity(blockPosition) instanceof ImprintDeskBlockEntity) {
                 ServerPlayer serverPlayer = (ServerPlayer) player;
                 com.bslx.XueXiMod.network.ModNetwork.sendToPlayer(
                         serverPlayer,
@@ -51,11 +51,11 @@ public class ImprintDeskBlock extends Block implements EntityBlock {
 
                     @Override
                     public @Nullable AbstractContainerMenu createMenu(
-                            int containerId, net.minecraft.world.entity.player.Inventory playerInventory, Player p) {
+                            int containerId, net.minecraft.world.entity.player.Inventory playerInventory, Player player) {
                         return new com.bslx.XueXiMod.gui.ImprintDeskMenu(
-                                containerId, playerInventory, pos);
+                                containerId, playerInventory, blockPosition);
                     }
-                }, pos);
+                }, blockPosition);
             }
         }
         return InteractionResult.SUCCESS;

@@ -1,0 +1,21 @@
+{
+  "changedParts": [
+    "xl/workbook.xml",
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/sharedStrings.xml"
+  ],
+  "unchangedParts": 25,
+  "newSharedStrings": 2,
+  "nativePartsMissingFromArtifactExport": [
+    "docProps/app.xml",
+    "docProps/core.xml",
+    "xl/drawings/vmlDrawing1.vml",
+    "xl/drawings/vmlDrawing2.vml",
+    "xl/drawings/vmlDrawing3.vml",
+    "xl/drawings/vmlDrawing4.vml",
+    "xl/printerSettings/printerSettings1.bin"
+  ],
+  "bubbleAndDeepByteIdentical": true,
+  "existingMakingRowsByteIdentical": true
+}

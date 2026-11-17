@@ -105,6 +105,12 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+
+            // 只给 runClient。普通 jar 不读这个目录，也不把授权素材放进 SourceSet。
+            def devAnimationDirectory = project.findProperty('xuexiDevEpicFightAnimations')
+            if (devAnimationDirectory != null && !devAnimationDirectory.toString().trim().isEmpty()) {
+                property 'xueximod.devEpicFightAnimations', devAnimationDirectory.toString().trim()
+            }
         }
 
         server {
@@ -152,6 +158,16 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    // Jade 11.13.3 的正式包。只给开发客户端重映射，不要再把同名 jar 放进 run/mods。
+    // 不用 exclusiveContent：重映射后的构件仍是 maven.modrinth，独占过滤会挡住 ForgeGradle 的映射仓库。
+    maven {
+        name = 'Modrinth'
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup 'maven.modrinth'
+        }
+    }
 }
 
 dependencies {
@@ -176,6 +192,12 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    // Mixin 0.8.5 官方 processor 分类器。缓存没有时正常下载，不用主 jar 拼类路径。
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    // 玉（Jade 11.13.3+forge）。只进开发运行时，用来看怪物血量。不参与编译，也不写进 mods.toml。
+    runtimeOnly fg.deobf("maven.modrinth:jade:11.13.3+forge")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -207,7 +229,8 @@ tasks.named('jar', Jar).configure {
                 'Implementation-Title'    : project.name,
                 'Implementation-Version'  : project.jar.archiveVersion,
                 'Implementation-Vendor'   : mod_authors,
-                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                'MixinConfigs'            : 'xueximod.mixins.json'
         ])
     }
 
@@ -236,4 +259,306 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+// Mixin refmap 与 Shadow 成员增量。只登记任务，本段不执行构建。
+// refmap 进独立目录再挂到 main output，不经过 processResources，避免和 compileJava、classes 互等。
+def mixinRefmapRaw = layout.buildDirectory.file('tmp/compileJava/compileJava-refmap.json')
+def mixinMemberTsrg = layout.buildDirectory.file('tmp/compileJava/compileJava-mappings.tsrg')
+def mixinRefmapDirectory = layout.buildDirectory.dir('generated/mixin-refmap')
+def mcpToSrg = tasks.named('createMcpToSrg', net.minecraftforge.gradle.mcp.tasks.GenerateSRG)
+def srgToMcp = tasks.named('createSrgToMcp', net.minecraftforge.gradle.mcp.tasks.GenerateSRG)
+def compileJavaTask = tasks.named('compileJava', JavaCompile)
+
+compileJavaTask.configure {
+    dependsOn mcpToSrg
+    inputs.file(mcpToSrg.flatMap { generateTask -> generateTask.output }).withPropertyName('mcpToSrgForMixin')
+    options.compilerArgs += [
+            "-AreobfTsrgFile=${mcpToSrg.get().output.get().asFile.absolutePath}",
+            "-AoutTsrgFile=${mixinMemberTsrg.get().asFile.absolutePath}",
+            "-AoutRefMapFile=${mixinRefmapRaw.get().asFile.absolutePath}",
+            '-AmappingTypes=tsrg'
+    ]
+    outputs.files(mixinRefmapRaw, mixinMemberTsrg)
+    doFirst {
+        def refmapFile = mixinRefmapRaw.get().asFile
+        def memberFile = mixinMemberTsrg.get().asFile
+        [refmapFile.parentFile, memberFile.parentFile].unique().each { parentDirectory ->
+            if (!parentDirectory.isDirectory() && !parentDirectory.mkdirs()) {
+                throw new GradleException("Could not create Mixin output directory: ${parentDirectory}")
+            }
+        }
+        [refmapFile, memberFile].each { outputFile ->
+            if (outputFile.exists() && !outputFile.delete()) {
+                throw new GradleException("Could not clear Mixin processor output: ${outputFile}")
+            }
+        }
+    }
+    doLast {
+        def refmapFile = mixinRefmapRaw.get().asFile
+        def memberFile = mixinMemberTsrg.get().asFile
+        if (!refmapFile.isFile() || refmapFile.length() == 0L) {
+            throw new GradleException("Mixin refmap was not written: ${refmapFile}")
+        }
+        if (!memberFile.isFile() || memberFile.length() == 0L) {
+            throw new GradleException("Mixin member mapping was not written: ${memberFile}")
+        }
+        def parsedRefmap
+        try {
+            parsedRefmap = new groovy.json.JsonSlurper().parse(refmapFile)
+        } catch (Exception parseFailure) {
+            throw new GradleException("Mixin refmap is not legal JSON: ${refmapFile}", parseFailure)
+        }
+        if (!(parsedRefmap instanceof Map) || parsedRefmap.isEmpty()) {
+            throw new GradleException("Mixin refmap must be a non-empty JSON object: ${refmapFile}")
+        }
+        def officialMappings = parsedRefmap.get('mappings')
+        def dataNode = parsedRefmap.get('data')
+        def seargeMappings = dataNode instanceof Map ? dataNode.get('searge') : null
+        if (!(officialMappings instanceof Map) || officialMappings.isEmpty()) {
+            throw new GradleException("Mixin refmap mappings is missing or empty: ${refmapFile}")
+        }
+        if (!(seargeMappings instanceof Map) || seargeMappings.isEmpty()) {
+            throw new GradleException("Mixin refmap data.searge is missing or empty: ${refmapFile}")
+        }
+        def memberLine = memberFile.readLines('UTF-8').find { line ->
+            def trimmedLine = line.trim()
+            if (trimmedLine.isEmpty() || trimmedLine.startsWith('#') || trimmedLine.startsWith('tsrg2') || trimmedLine.startsWith('MD:') || trimmedLine.startsWith('FD:') || trimmedLine.startsWith('CL:')) {
+                return false
+            }
+            def columns = trimmedLine.split(/\s+/)
+            return columns.length == 3 || columns.length == 4
+        }
+        if (memberLine == null) {
+            throw new GradleException("Mixin member mapping has no slim field or method line: ${memberFile}")
+        }
+    }
+}
+
+def memberMappingProvider = compileJavaTask.map { compiledJava ->
+    compiledJava.project.file(mixinMemberTsrg.get().asFile)
+}
+// 配置回调。reobfJar 由 ForgeGradle 晚注册，不用 tasks.named 提前取。
+// 不在执行阶段改 inputs。不改 getMappings()，不送 refmap，不送 extractSrg。
+tasks.withType(net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace).configureEach {
+    if (name == 'reobfJar') {
+        dependsOn compileJavaTask
+        extraMappings.from(memberMappingProvider)
+    }
+}
+
+gradle.taskGraph.whenReady { taskGraph ->
+    def jarTask = tasks.findByName('jar')
+    def reobfTask = tasks.findByName('reobfJar')
+    def requestsPublishChain = (jarTask != null && taskGraph.hasTask(jarTask)) || (reobfTask != null && taskGraph.hasTask(reobfTask))
+    if (!requestsPublishChain) {
+        return
+    }
+    if (reobfTask == null || reobfTask.path != ':reobfJar') {
+        throw new GradleException('jar/reobf publish chain is missing :reobfJar')
+    }
+    if (!(reobfTask instanceof net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace)) {
+        throw new GradleException(":reobfJar type is ${reobfTask.getClass().name}, expected RenameJarInPlace")
+    }
+    def expectedMemberPath = mixinMemberTsrg.get().asFile.absolutePath
+    def separatorNormalized = { String rawPath -> rawPath.replace('\\', '/') }
+    def mappedPaths = reobfTask.extraMappings.files.collect { mappedFile -> mappedFile.absolutePath }
+    def foundExpectedPath = mappedPaths.any { mappedPath ->
+        separatorNormalized(mappedPath) == separatorNormalized(expectedMemberPath)
+    }
+    if (!foundExpectedPath) {
+        throw new GradleException(":reobfJar extraMappings missing ${expectedMemberPath}; found ${mappedPaths}")
+    }
+}
+
+def copyMixinRefmap = tasks.register('copyMixinRefmap', Copy) {
+    group = 'build'
+    description = 'Copy the Mixin refmap onto the main output as xueximod.refmap.json.'
+    dependsOn compileJavaTask
+    from(mixinRefmapRaw)
+    into(mixinRefmapDirectory)
+    rename { 'xueximod.refmap.json' }
+}
+sourceSets.main.output.dir(mixinRefmapDirectory, builtBy: copyMixinRefmap)
+
+tasks.named('jar', Jar).configure {
+    dependsOn copyMixinRefmap
+    doLast {
+        def archive = archiveFile.get().asFile
+        def zip = new java.util.zip.ZipFile(archive)
+        try {
+            def refmapHits = []
+            zip.entries().each { zipEntry ->
+                def entryPath = zipEntry.name.replace('\\', '/')
+                if (entryPath == 'xueximod.refmap.json' || entryPath.endsWith('/xueximod.refmap.json')) {
+                    refmapHits.add(entryPath)
+                }
+            }
+            if (refmapHits != ['xueximod.refmap.json']) {
+                throw new GradleException("Expected exactly one root xueximod.refmap.json in ${archive.name}, found: ${refmapHits}")
+            }
+        } finally {
+            zip.close()
+        }
+    }
+}
+
+minecraft.runs.configureEach { runConfig ->
+    property 'mixin.env.remapRefMap', 'true'
+    property 'mixin.env.refMapRemappingFile', srgToMcp.get().output.get().asFile.absolutePath
+    def runTaskName = runConfig.taskName
+    tasks.matching { candidate -> candidate.name == runTaskName }.configureEach {
+        dependsOn srgToMcp
+    }
+}
+def clientRunTaskName = minecraft.runs.getByName('client').taskName
+tasks.matching { candidate -> candidate.name == clientRunTaskName }.configureEach {
+    dependsOn copyMixinRefmap
+}
+
+tasks.register('nameGate', Exec) {
+    group = 'verification'
+    description = '检查局部变量和参数名'
+    workingDir = rootProject.projectDir
+    commandLine 'powershell', '-NoProfile', '-File', 'tools/check-name-gate.ps1'
+}
+
+// GPL-3.0-only 许可文件打进模组 jar。本任务只声明复制，本次移植不执行构建。
+tasks.named('jar', Jar).configure {
+    from(rootProject.file('LICENSE')) {
+        into 'META-INF'
+        rename { 'LICENSE_GPL-3.0-only.txt' }
+    }
+    from(rootProject.file('THIRD_PARTY_NOTICES.md')) {
+        into 'META-INF'
+    }
+    from(rootProject.file('docs/LICENSE.txt')) {
+        into 'META-INF'
+        rename { 'LICENSE_FORGE_LGPL.txt' }
+    }
+    from(rootProject.file('docs/动作系统移植与扩展说明-2026-10-24.md')) {
+        into 'META-INF'
+    }
+}
+
+// 允许清单内的可构建源码包。排除版本库、Gradle 缓存、构建产物、游戏运行目录、令牌和后续 dev 授权资产。
+// 本次只登记任务，不执行，因此还没有产出 zip，也没有用它验证过能够构建。
+tasks.register('sourceDistributionZip', Zip) {
+    group = 'distribution'
+    description = 'Allowlisted GPL-3.0-only source archive. Excludes VCS, Gradle cache, build output, runs, tokens, and dev-authorized assets.'
+    archiveFileName = "${mod_id}-${mod_version}-gpl-sources.zip"
+    destinationDirectory = layout.buildDirectory.dir('distributions')
+    into("${mod_id}-${mod_version}-gpl-sources") {
+        from(rootProject.file('src')) {
+            into 'src'
+            exclude '**/dev-authorized/**'
+            exclude '**/.cache/**'
+            exclude '**/*token*'
+            exclude '**/*.env'
+            exclude '**/credentials*'
+            exclude '**/secrets*'
+        }
+        from(rootProject.file('gradle/wrapper')) {
+            into 'gradle/wrapper'
+        }
+        from(rootProject.file('gradlew'))
+        from(rootProject.file('gradlew.bat'))
+        from(rootProject.file('build.gradle'))
+        from(rootProject.file('settings.gradle'))
+        from(rootProject.file('gradle.properties'))
+        from(rootProject.file('LICENSE'))
+        from(rootProject.file('THIRD_PARTY_NOTICES.md'))
+        from(rootProject.file('tools/check-name-gate.ps1')) {
+            into 'tools'
+        }
+        from(rootProject.file('tools/namegate')) {
+            into 'tools/namegate'
+        }
+        from(rootProject.file('docs/LICENSE.txt')) {
+            into 'docs'
+        }
+        from(rootProject.file('docs/动作系统移植与扩展说明-2026-10-24.md')) {
+            into 'docs'
+        }
+        from(rootProject.file('docs/动作构建验证说明-2026-10-24.md')) {
+            into 'docs'
+        }
+        from(rootProject.file('docs/动作渲染适配说明-2026-10-24.md')) {
+            into 'docs'
+        }
+        from(rootProject.file('docs/水刃重设计与实现指导-2026-10-24.md')) {
+            into 'docs'
+        }
+    }
+    exclude '**/.git/**'
+    exclude '**/.gradle/**'
+    exclude '**/build/**'
+    exclude '**/run/**'
+    exclude '**/run-data/**'
+}
+
+// 扫描发行 jar 和源码 zip 的条目名。命中授权素材相对路径就失败，不只看顶层目录名。
+tasks.register('verifyReleaseExcludesAuthorizedAssets') {
+    group = 'verification'
+    description = 'Fail when the jar or GPL source zip contains authorized Epic Fight asset entries.'
+    dependsOn tasks.named('jar'), tasks.named('sourceDistributionZip')
+    doLast {
+        def archives = [
+                tasks.named('jar', Jar).get().archiveFile.get().asFile,
+                tasks.named('sourceDistributionZip', Zip).get().archiveFile.get().asFile
+        ]
+        def forbiddenTokens = new LinkedHashSet<String>()
+        [
+                'dev-authorized/',
+                'assets/epicfight/',
+                'animmodels/',
+                'biped-armature.json',
+                'import-manifest.json',
+                'audited-whitelist.json',
+                'entity/biped.json'
+        ].each { forbiddenTokens.add(it) }
+        def manifestFile = project.file('dev-authorized/epicfight/import-manifest.json')
+        if (manifestFile.isFile()) {
+            def parsed = new groovy.json.JsonSlurper().parse(manifestFile)
+            parsed.files.each { record ->
+                if (record.devRelativePath) {
+                    forbiddenTokens.add(record.devRelativePath.toString())
+                }
+                if (record.sourceGitPath) {
+                    forbiddenTokens.add(record.sourceGitPath.toString())
+                }
+            }
+            if (parsed.skeletonExtractedRelativePath) {
+                forbiddenTokens.add(parsed.skeletonExtractedRelativePath.toString())
+            }
+            if (parsed.skeletonSourceGitPath) {
+                forbiddenTokens.add(parsed.skeletonSourceGitPath.toString())
+            }
+        }
+        archives.each { archive ->
+            def zip = new java.util.zip.ZipFile(archive)
+            try {
+                def hits = []
+                zip.entries().each { entry ->
+                    def entryName = entry.name.replace('\\', '/').toLowerCase(java.util.Locale.ROOT)
+                    def matched = forbiddenTokens.find { token ->
+                        def needle = token.toString().replace('\\', '/').toLowerCase(java.util.Locale.ROOT)
+                        !needle.isEmpty() && (entryName.contains(needle) || entryName.endsWith(needle))
+                    }
+                    if (matched != null) {
+                        hits.add(entry.name)
+                    }
+                }
+                if (!hits.isEmpty()) {
+                    throw new GradleException("Authorized asset entries in ${archive.name}: ${hits.join(', ')}")
+                }
+            } finally {
+                zip.close()
+            }
+        }
+    }
+}
+
+tasks.named('check').configure {
+    dependsOn 'verifyReleaseExcludesAuthorizedAssets'
 }

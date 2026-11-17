@@ -1,0 +1,16 @@
+third constant-vs-rotation edge 3.525108125458769e-11 blade 3.5251081254537716e-11 flat 1.2560175122338579e-11
+first constant-vs-rotation edge 2.9282337309394455e-11 blade 2.928233730934541e-11 flat 8.925304939776603e-12
+t=0.0000 palm_model 5.300000 8.500000 -3.600000
+  third grip 1.192e-11 center 0.338085 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.901561
+  first grip 7.920e-12 center 0.270468 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.721249
+t=0.1500 palm_model 3.500000 6.000000 -9.000000
+  third grip 1.192e-11 center 0.338085 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.901561
+  first grip 7.920e-12 center 0.270468 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.721249
+t=0.1875 palm_model -9.500001 6.000000 -4.500000
+  third grip 1.192e-11 center 0.338085 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.901561
+  first grip 7.920e-12 center 0.270468 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.721249
+t=0.5000 palm_model -9.000000 8.000000 -3.999999
+  third grip 1.192e-11 center 0.338085 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.901561
+  first grip 7.920e-12 center 0.270468 blade_deg 0.000e+00 old_plus_y_deg 45.000 length 0.721249
+start_palm_error 3.810858e-07
+worst_grip 1.192e-11 worst_blade_deg 0.000e+00

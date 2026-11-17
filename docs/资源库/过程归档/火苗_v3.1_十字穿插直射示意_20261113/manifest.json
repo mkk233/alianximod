@@ -1,0 +1,147 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "fire_spark_crossed_launch_preview",
+  "attemptId": "20261113-art-spark-cross-01",
+  "techniqueId": "fire_spark",
+  "techniqueName": "火苗",
+  "version": "v3.1-crossed-launch-preview",
+  "status": "candidate_pending_user_confirmation",
+  "date": "2026-11-13",
+  "blockbench": {
+    "version": "5.2.2",
+    "environment": "desktop",
+    "platform": "win32",
+    "pluginVersion": "1.10.1",
+    "projectName": "fire-spark-v3-1-crossed-launch-preview",
+    "projectUuid": "3cc70eec-3c0d-db2e-731f-2581790ce09d",
+    "formatId": "free",
+    "viewport": "main (1706x1215 -> 1366x973 lossless nearest-neighbor PNG)"
+  },
+  "scaleSpec": {
+    "modelUnitsPerBlock": 16.0,
+    "playerHeightModelUnits": 28.8,
+    "playerHeightBlocks": 1.8,
+    "playerEyeHeightModelUnits": 25.92,
+    "playerEyeHeightBlocks": 1.62,
+    "sparkQuadSizeModelUnits": [12.8, 12.8],
+    "sparkQuadSizeBlocks": [0.8, 0.8],
+    "sparkHalfSpanBlocks": 0.4,
+    "crossedFinAnglesDegAroundForwardAxis": [45.0, -45.0],
+    "cameraFacingTag": "NONE",
+    "forwardAxisInPreview": "+X (U=1 flame head at +X, U=0 tapered tail & sparks at -X)"
+  },
+  "reusedConfirmed2DAssets": [
+    {
+      "role": "editable_2d_source",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_飞行火舌_v3/fire_spark_v3.aseprite",
+      "bytes": 10644,
+      "sha256": "710957E6C13AB8D8CC0C9EA5BD6CFD424041EE5C8F9BE8231CF75D4EB15C8FCA"
+    },
+    {
+      "role": "confirmed_strip_png",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_飞行火舌_v3/fire_spark_v3_strip.png",
+      "resolution": "64x1024",
+      "frames": 16,
+      "frameSize": "64x64",
+      "bytes": 5005,
+      "sha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E",
+      "embeddedInBbmodelVerifiedSha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E"
+    },
+    {
+      "role": "confirmed_2d_preview_gif",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_飞行火舌_v3/fire_spark_v3.gif",
+      "bytes": 26426,
+      "sha256": "A3EA8EB30C557859FCE0D04E21EE0B7E1BFD5E6ED6A155DA456E8F8EE12AB0AE"
+    }
+  ],
+  "deliverables": [
+    {
+      "file": "fire-spark-v3-1-crossed-launch-preview.bbmodel",
+      "role": "editable_blockbench_scene",
+      "bytes": 42052,
+      "sha256": "8E676075011EC74FC596BC0E1F046D7CAC62DACEE87A0CF3B9C79A3567B4C47B"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-01-first-person-launch.png",
+      "role": "viewport_preview_first_person_launch",
+      "camera": {
+        "projection": "perspective",
+        "fov": 62,
+        "position": [3.85, 25.92, 0.0],
+        "target": [28.0, 22.8, 0.0]
+      },
+      "resolution": "1366x973",
+      "bytes": 50738,
+      "sha256": "A25A668C6ED21C136467E74039802B61F2B8E2FED3AD1C4634F9C86EC3FAF68D"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-02-hero-3quarter.png",
+      "role": "viewport_preview_hero_3quarter",
+      "camera": {
+        "projection": "perspective",
+        "fov": 40,
+        "position": [-24.0, 40.0, 48.0],
+        "target": [14.0, 15.0, 0.0]
+      },
+      "resolution": "1366x973",
+      "bytes": 107329,
+      "sha256": "B06516E2AB4197529B23851463050E3F5B00525EB4879FEBC47EAEB1190ACA06"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-03-axial-cross-section.png",
+      "role": "viewport_preview_axial_cross_section",
+      "camera": {
+        "projection": "perspective",
+        "fov": 38,
+        "position": [40.0, 29.2, 2.2],
+        "target": [21.5, 21.6, 0.0]
+      },
+      "resolution": "1366x973",
+      "bytes": 91082,
+      "sha256": "F4C48F8A7B95B38D1E98BA06F74CB6D930AC686ADB139A2E6F43C6D49CA46F07"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-04-side-view.png",
+      "role": "viewport_preview_orthographic_side",
+      "camera": {
+        "projection": "orthographic",
+        "zoom": 0.72,
+        "position": [14.0, 14.5, 80.0],
+        "target": [14.0, 14.5, 0.0]
+      },
+      "resolution": "1366x973",
+      "bytes": 31892,
+      "sha256": "0039AC3FB33439C300909DDBB4A9F09BB47FF67AE72327155784144783EF52A8"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-05-ray-two-stages.png",
+      "role": "viewport_preview_two_stage_coaxial_launch",
+      "camera": {
+        "projection": "perspective",
+        "fov": 42,
+        "position": [25.0, 46.0, 68.0],
+        "target": [26.0, 15.5, 0.0]
+      },
+      "resolution": "1366x973",
+      "bytes": 71835,
+      "sha256": "7280F8D7ACFFB13D50881AC04340E8F119DA275D6F006218FA3CC4312844C689"
+    },
+    {
+      "file": "visual-handoff.md",
+      "role": "visual_handoff_spec",
+      "bytes": 12296,
+      "sha256": "1AB95793AD73834B0E3B9D1BB95E49A6E805F33950690EAC2B36E1DA2B2377AB"
+    }
+  ],
+  "nonRuntimeHelpers": [
+    "示意辅助",
+    "示意辅助_地面1格刻度网格",
+    "示意辅助_施法玩家假人_28.8高",
+    "示意辅助_中段直射对照_x56",
+    "helper_floor_dark",
+    "helper_floor_light",
+    "helper_dummy_body",
+    "helper_dummy_head",
+    "helper_dummy_eye"
+  ]
+}

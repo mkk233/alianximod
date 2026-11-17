@@ -1,0 +1,73 @@
+{
+  "version": "Steve v2 water polish",
+  "approval": "pending",
+  "runtimeIntegrated": false,
+  "files": [
+    {
+      "name": "water_phantom_steve_v2.bbmodel",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\water_phantom_steve_v2.bbmodel",
+      "bytes": 278127,
+      "sha256": "E7ADAFD118CC91518DE03A55B613451302AF9E26706454A9172BCDFD37B5997A"
+    },
+    {
+      "name": "steve_water_lines.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\steve_water_lines.png",
+      "bytes": 2687,
+      "sha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5"
+    },
+    {
+      "name": "water_flakes.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\water_flakes.png",
+      "bytes": 608,
+      "sha256": "CEFDEE9E3E3FB7F701E19FC9CB3438C586C4841D3A50E3F8C9399A635BD4D70C"
+    },
+    {
+      "name": "bb_preview_replay.gif",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\bb_preview_replay.gif",
+      "bytes": 408745,
+      "sha256": "E4DF592B71B96E1147C504418ACB6EBA5005652AC27D8B76D56F53DDFB568B0A"
+    },
+    {
+      "name": "bb_hold_three_quarter.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\bb_hold_three_quarter.png",
+      "bytes": 51881,
+      "sha256": "6921449E076F46A2D952E1918E203BA700962F1B60450E3DDF2B9826876DE1B8"
+    },
+    {
+      "name": "bb_hold_side.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\bb_hold_side.png",
+      "bytes": 37453,
+      "sha256": "113AF832E03DCA07A9AE0CAC6406B2D5C392FD40D8D0758743735E656678A2D8"
+    },
+    {
+      "name": "bb_hold_back.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\bb_hold_back.png",
+      "bytes": 33336,
+      "sha256": "C7C4FFA582361008121B8D261EC402254DBE417AFAFB0B5BC110C636314E6E4F"
+    },
+    {
+      "name": "bb_break_mid.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\bb_break_mid.png",
+      "bytes": 84738,
+      "sha256": "980CE5D602C49D6429F91E4C909900BEF419C75D1FA325A1E19E031A008D2625"
+    },
+    {
+      "name": "bb_ground_drops.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\bb_ground_drops.png",
+      "bytes": 94412,
+      "sha256": "26B6CA213BBFDC855E3CF197F180B5D894BC4C9105DECF0931FF5A7FE6AC7CAD"
+    },
+    {
+      "name": "visual-handoff-candidate.md",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\visual-handoff-candidate.md",
+      "bytes": 5452,
+      "sha256": "6CD324F596894CF0BC4C793B8906EABFB11E5EA1B2B92C7336FE4503B49D63DF"
+    },
+    {
+      "name": "bb-preview-evidence.json",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2-20261102\\bb-preview-evidence.json",
+      "bytes": 5997,
+      "sha256": "08CBDD8790140D274A318AA8680162880638DE675A97950A9E4DFB60F4A9269F"
+    }
+  ]
+}

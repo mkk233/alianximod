@@ -1,0 +1,7 @@
+命令: powershell -NoProfile -File tools/check-name-gate.ps1
+退出码: 1
+源码命名可读性检查失败:
+D:\alianximod\src\main\java\com\bslx\XueXiMod\animation\runtime\OriginalHumanoid.java:165:18 i: 变量名不得少于 3 个字符
+D:\alianximod\src\main\java\com\bslx\XueXiMod\animation\runtime\OriginalHumanoid.java:202:17 to: 变量名不得少于 3 个字符
+共 2 处
+本次改动文件没有违规。上述两处是既有文件，按门禁规则未改。

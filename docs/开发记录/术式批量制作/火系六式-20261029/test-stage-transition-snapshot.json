@@ -1,0 +1,329 @@
+{
+  "purpose": "进入待验收前的 N/O 转换候选。不是迁移，不是通过结论，也不表示任何一项现在可以迁页。",
+  "preparedAt": "2026-10-29T10:41:40+08:00",
+  "mayMigrate": false,
+  "testFormalReview": "0/2，尚未开始",
+  "workbook": {
+    "path": "docs/术式制作表.xlsx",
+    "sha256": "CE0AF918E0A99DC586232E76B156465B12AEDF8A5C0047CAD8268BEF6A3D899D",
+    "matchesIntake": true,
+    "intakeSha256": "CE0AF918E0A99DC586232E76B156465B12AEDF8A5C0047CAD8268BEF6A3D899D",
+    "modified": false
+  },
+  "source": "docs/开发记录/术式批量制作/火系六式-20261029/test-stage-input.json",
+  "items": [
+    {
+      "id": "fire_liaoyuan",
+      "name": "燎原",
+      "sheet": "制作中",
+      "row": 3,
+      "mayMigrate": false,
+      "candidateOnly": true,
+      "n": "持续燃烧侧终极术式。触发后在释放原点周围形成半径6格、持续200tick的地表火场；默认原点为施法者，落点组合沿用链上原点。只覆盖上下落差3格内可见地表，火层高1格。火焰不蔓延、不放置原版火方块、不烧毁或替换方块，不破坏掉落物，结束后地形原样保留。\n站在火场上的有效目标每20tick受2点基础火伤。目标首次带有火种接触火场时，读取并一次消耗全部S点，锁定n=floor(S/10)，改为附着燃烧：每20tick造成2×(1+0.10n)点火伤，共3+n段；首段在挂载后20tick。高火种同时增加单段伤害与持续时间，不使用指数倍率。100点为13段、260tick、每段4点，总52点（不计其他加成与减伤）。\n附着燃烧替代同源地火伤害，不两份叠加；离开火场仍烧至既定结束。无火种只受站在火场内的基础灼烧。1—9点按n=0获得3段。目标本次已消费后不再扣新火种，重入不刷新或重启；同施法者同目标只保留一份燎原附着燃烧，已有燃烧时不再消费。炉心加成F使附着单段为2×(1+0.10n+F)。\n首版实际魔力60、冷却600tick；不逐段收费，不产生火种。火场尺寸可按已有能量规则变化，火种增加的段数和伤害不再被放大。",
+      "o": "火焰从释放原点向外掠过并停在半径边界，贴合地表形成疏密有层次的橙红火海与少量炭火裂纹；边缘清楚，地火不向范围外跳跃。被消耗火种的目标周身出现随增幅档数增强的火舌与余烬，低火种较薄，高火种更亮、更持久。火场和附着燃烧分别按各自寿命渐隐；结束不留焦土或被改动方块。",
+      "dv": "用户原话：“这样的设计好我打算给不同持续燃烧添加一个终极术式叫做燎原，会点燃周围地形但火不会蔓延避免破坏环境，同时对高火种值的敌人烧的更疼更久”。\n首版数值由主会话按本次“帮我设计并填入待制作”授权补齐，属设计参数，未实测平衡。终极奖励获取途径待用户另定，不自动发放。等级上限20、复杂度20、装配消耗3为首版默认。\n共用目标火种值S（0—100整数），n=floor(S/10)，不新增第二种资源；三式只消费、不产火种。同次施法及其规则副本对同一目标只扣一次，先检查伤害权限再扣；后续新火种留给下一次消费。本版目标火种共享，先触发者扣除，后触发者读取剩余，不重复花同一份。炉心增伤与火种增伤同层；不另套旧BURST每10点+4%。多份攻击只按既有规则结算基础伤害，不能复制火种附加收益或燃烧序列。不修改全局无敌帧。\n[设计反馈 2026-10-28] L=4为基础伤害登记魔力，实际由AP=60覆盖，不重复扣费；地火与附着燃烧共用同源伤害节拍，避免重复。火种消费、地表火场、持久燃烧能力尚未核对源码，实施时复用公共接口，不按术式id改底座。详细需求与来源见 docs/开发记录/火属性二级设计评审-20261028/记录.md。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认燎原v2。从原点向外铺火浪，之后维持贴地火海/低矮火焰/临时炭纹。原N数值与不改地形约束保留。确认版归档docs/资源库/特效/火焰/燎原_v2/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。\n[设计反馈 2026-10-29] compile-final报告写明FireSeedState.grant在主源码没有调用方，也没有给目标加火种的现成命令。燎原无火种的地表火伤仍可按现有入口准备，但有火种的一次消费和附着燃烧目前不能按正常玩法准备。该缺口未解决，这里不新增产火种途径或调试命令。详见 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。",
+      "approvedVersion": "燎原 v2。功能需求仍是现行 N 全文；这次批准的是视觉确认版，不改 N 里的数值和不改地形约束。",
+      "userVisualChange": "[设计反馈 2026-10-29] 用户已确认燎原v2。从原点向外铺火浪，之后维持贴地火海/低矮火焰/临时炭纹。原N数值与不改地形约束保留。确认版归档docs/资源库/特效/火焰/燎原_v2/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。",
+      "language": {
+        "zhKey": "technique.xueximod.fire_liaoyuan.desc",
+        "zh": "铺开地表火层。首次踩中时烧掉该目标的全部火种",
+        "enKey": "technique.xueximod.fire_liaoyuan.desc",
+        "en": "Lay a ground fire layer. The first contact burns every seed on that target",
+        "constructorDescription": "铺开地表火层。首次踩中时烧掉该目标的全部火种",
+        "zhMatchesConstructor": true,
+        "drawnBy": "Technique.getDescription()，调用处包括 ShuManagementScreen、SkillAssemblyScreen、SpellAssemblyScreen、ImprintTreeView",
+        "proposedNStatus": "语言有与构造描述相同的一句话"
+      },
+      "resources": {
+        "archive": "docs/资源库/特效/火焰/燎原_v2/",
+        "gameDir": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v2/",
+        "resourceDetailRows": [],
+        "textures": [
+          {
+            "archiveFile": "liaoyuan-spread-wave-v2-strip.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v2/spread_wave.png",
+            "resourceId": "xueximod:textures/effect/liaoyuan_v2/spread_wave.png",
+            "symbol": "FireVisualLayout.SPREAD_WAVE",
+            "drawnBy": "FireVisualClient"
+          },
+          {
+            "archiveFile": "liaoyuan-ground-flame-v2-strip.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v2/ground_flame.png",
+            "resourceId": "xueximod:textures/effect/liaoyuan_v2/ground_flame.png",
+            "symbol": "FireVisualLayout.GROUND_FLAME",
+            "drawnBy": "FireVisualClient"
+          },
+          {
+            "archiveFile": "liaoyuan-ground-embers-v2-strip.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoyuan_v2/ground_embers.png",
+            "resourceId": "xueximod:textures/effect/liaoyuan_v2/ground_embers.png",
+            "symbol": "FireVisualLayout.GROUND_EMBERS",
+            "drawnBy": "FireVisualClient"
+          }
+        ]
+      },
+      "conversion": {
+        "status": "待核对候选",
+        "nBefore": "持续燃烧侧终极术式。触发后在释放原点周围形成半径6格、持续200tick的地表火场；默认原点为施法者，落点组合沿用链上原点。只覆盖上下落差3格内可见地表，火层高1格。火焰不蔓延、不放置原版火方块、不烧毁或替换方块，不破坏掉落物，结束后地形原样保留。\n站在火场上的有效目标每20tick受2点基础火伤。目标首次带有火种接触火场时，读取并一次消耗全部S点，锁定n=floor(S/10)，改为附着燃烧：每20tick造成2×(1+0.10n)点火伤，共3+n段；首段在挂载后20tick。高火种同时增加单段伤害与持续时间，不使用指数倍率。100点为13段、260tick、每段4点，总52点（不计其他加成与减伤）。\n附着燃烧替代同源地火伤害，不两份叠加；离开火场仍烧至既定结束。无火种只受站在火场内的基础灼烧。1—9点按n=0获得3段。目标本次已消费后不再扣新火种，重入不刷新或重启；同施法者同目标只保留一份燎原附着燃烧，已有燃烧时不再消费。炉心加成F使附着单段为2×(1+0.10n+F)。\n首版实际魔力60、冷却600tick；不逐段收费，不产生火种。火场尺寸可按已有能量规则变化，火种增加的段数和伤害不再被放大。",
+        "oBefore": "火焰从释放原点向外掠过并停在半径边界，贴合地表形成疏密有层次的橙红火海与少量炭火裂纹；边缘清楚，地火不向范围外跳跃。被消耗火种的目标周身出现随增幅档数增强的火舌与余烬，低火种较薄，高火种更亮、更持久。火场和附着燃烧分别按各自寿命渐隐；结束不留焦土或被改动方块。",
+        "nAfter": "铺开地表火层。首次踩中时烧掉该目标的全部火种",
+        "oAfter": "xueximod:textures/effect/liaoyuan_v2/spread_wave.png；xueximod:textures/effect/liaoyuan_v2/ground_flame.png；xueximod:textures/effect/liaoyuan_v2/ground_embers.png（游戏目录 src/main/resources/assets/xueximod/textures/effect/liaoyuan_v2/；归档 docs/资源库/特效/火焰/燎原_v2/）"
+      }
+    },
+    {
+      "id": "fire_liaoli",
+      "name": "燎里",
+      "sheet": "制作中",
+      "row": 4,
+      "mayMigrate": false,
+      "candidateOnly": true,
+      "n": "引爆侧终极剑术，必须手持剑。按住释放维持一次近战刺击，最长40tick（2秒），松开、换下剑或施法者死亡时提前收招；持续按住超过40tick不会自动再起一发，需松开后重新触发。出手时刺出，随后剑前刺击区域随施法者移动和准星方向保持，长度3格、宽0.6格、高0.6格；不生成远程飞剑、不自动突进、不穿实心方块。\n40tick内接触有效目标即结算一次基础6点刺击伤害，并读取、一次消耗该目标全部火种S，追加0.36×S点即时火属性引爆伤害。100点追加36点，合计42点（不计其他加成与减伤）；无火种只造成基础刺击。使用线性转换，不套焚天的1.2指数。炉心只对火伤部分按既有同层规则增幅，不把物理刺击整体变为火伤。\n同一次出手可以接触不同目标，但对每个目标最多刺击、消费和引爆各一次；命中后保持余下刺击时间与剑上火焰，不能逐tick重复命中同一个目标。引爆只伤被刺中的目标，不产生二次范围爆炸，不点燃地形、不破坏方块，也不补发持续燃烧。\n首版实际魔力40、冷却300tick，从成功起手算；40tick内不按段重复收费。刺击命中长度与宽高可沿用已有几何放大，2秒上限固定，火种消费与附加收益不可被份数重复领取。",
+      "o": "起手时剑身被由剑柄流向剑尖的橙红火焰覆盖，快速向前刺出一道短促亮痕。维持期间火舌持续从剑身与剑尖冒出，方向跟随剑身，不脱离成飞行弹。接触有火种目标时在刺入点形成向内聚拢后炸开的短促火团与火星，强度随消耗量增加；无火种只有普通命中亮痕。收招时剑上火焰迅速熄灭。",
+      "dv": "用户原话：“而引爆侧的终极术式设计为燎里，效果是近战攻击一个持续型的近战刺击会刺出并引爆，刺出持续2s碰到目标就引爆火种期间持续从剑上冒火”。名称按用户原字“燎里”，不自行更名。\n首版数值由主会话按本次“帮我设计并填入待制作”授权补齐，属设计参数，未实测平衡。终极奖励获取途径待用户另定，不自动发放。等级上限20、复杂度20、装配消耗3为首版默认。\n共用目标火种值S（0—100整数），n=floor(S/10)，不新增第二种资源；三式只消费、不产火种。同次施法及其规则副本对同一目标只扣一次，先检查伤害权限再扣；后续新火种留给下一次消费。本版目标火种共享，先触发者扣除，后触发者读取剩余，不重复花同一份。炉心增伤与火种增伤同层；不另套旧BURST每10点+4%。多份攻击只按既有规则结算基础伤害，不能复制火种附加收益或燃烧序列。不修改全局无敌帧。\n[设计反馈 2026-10-28] 采用2秒内保持刺击、每个目标只引爆一次的设计，命中不会提前结束整次动作。R“跟随准星”指近战剑前区域随视角转动，Y/Z为否表示不接受自动实体锁定；不接受远程弹道改写。L=12为登记值，AP=40为实际魔力覆盖。多段引爆与普通刺击应走统一命中/资源接口，不按术式id特判。详细需求见 docs/开发记录/火属性二级设计评审-20261028/记录.md。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认燎里v6。八剑左右镜像，剑柄向后倾；火从玩家背后逐渐覆盖剑柄与剑身；手持刺击双流朝玩家身后；同时3道环不断增大并后移。透明视觉不新增攻击。确认版归档docs/资源库/特效/火焰/燎里_v6/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。\n[设计反馈 2026-10-29] compile-final报告写明FireSeedState.grant在主源码没有调用方，也没有给目标加火种的现成命令。燎里无火种的物理刺击仍可按现有入口准备，但火种大于0时的追加火伤和一次消费目前不能按正常玩法准备。该缺口未解决，这里不新增产火种途径或调试命令。详见 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。",
+      "approvedVersion": "燎里 v6。功能需求仍是现行 N 全文；视觉确认版是背后八剑、身后起火、朝后双流和三道后移火环，透明片不新增攻击。",
+      "userVisualChange": "[设计反馈 2026-10-29] 用户已确认燎里v6。八剑左右镜像，剑柄向后倾；火从玩家背后逐渐覆盖剑柄与剑身；手持刺击双流朝玩家身后；同时3道环不断增大并后移。透明视觉不新增攻击。确认版归档docs/资源库/特效/火焰/燎里_v6/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。",
+      "language": {
+        "zhKey": "technique.xueximod.fire_liaoli.desc",
+        "zh": "持剑向前刺击。命中时烧掉火种，并打一刀物理",
+        "enKey": "technique.xueximod.fire_liaoli.desc",
+        "en": "Thrust with a held sword. A hit burns seeds and deals one physical strike",
+        "constructorDescription": "持剑向前刺击。命中时烧掉火种，并打一刀物理",
+        "zhMatchesConstructor": true,
+        "drawnBy": "Technique.getDescription()，调用处包括 ShuManagementScreen、SkillAssemblyScreen、SpellAssemblyScreen、ImprintTreeView",
+        "proposedNStatus": "语言有与构造描述相同的一句话"
+      },
+      "resources": {
+        "archive": "docs/资源库/特效/火焰/燎里_v6/",
+        "gameDir": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/",
+        "resourceDetailRows": [],
+        "textures": [
+          {
+            "archiveFile": "sword_unlit.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/sword_unlit.png",
+            "resourceId": "xueximod:textures/effect/liaoli_v6/sword_unlit.png",
+            "symbol": "LiaoliV6Layout.SWORD_UNLIT",
+            "drawnBy": "LiaoliV6Renderer"
+          },
+          {
+            "archiveFile": "sword_hot.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/sword_hot.png",
+            "resourceId": "xueximod:textures/effect/liaoli_v6/sword_hot.png",
+            "symbol": "LiaoliV6Layout.SWORD_HOT",
+            "drawnBy": "LiaoliV6Renderer"
+          },
+          {
+            "archiveFile": "back_ignite.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/back_ignite.png",
+            "resourceId": "xueximod:textures/effect/liaoli_v6/back_ignite.png",
+            "symbol": "LiaoliV6Layout.BACK_IGNITE",
+            "drawnBy": "LiaoliV6Renderer"
+          },
+          {
+            "archiveFile": "back_flow.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/back_flow.png",
+            "resourceId": "xueximod:textures/effect/liaoli_v6/back_flow.png",
+            "symbol": "LiaoliV6Layout.BACK_FLOW",
+            "drawnBy": "LiaoliV6Renderer"
+          },
+          {
+            "archiveFile": "thrust_backflow.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/thrust_backflow.png",
+            "resourceId": "xueximod:textures/effect/liaoli_v6/thrust_backflow.png",
+            "symbol": "LiaoliV6Layout.THRUST_STREAM",
+            "drawnBy": "LiaoliV6Renderer"
+          },
+          {
+            "archiveFile": "rear_ring.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/liaoli_v6/rear_ring.png",
+            "resourceId": "xueximod:textures/effect/liaoli_v6/rear_ring.png",
+            "symbol": "LiaoliV6Layout.REAR_RING",
+            "drawnBy": "LiaoliV6Renderer"
+          }
+        ]
+      },
+      "conversion": {
+        "status": "待核对候选",
+        "nBefore": "引爆侧终极剑术，必须手持剑。按住释放维持一次近战刺击，最长40tick（2秒），松开、换下剑或施法者死亡时提前收招；持续按住超过40tick不会自动再起一发，需松开后重新触发。出手时刺出，随后剑前刺击区域随施法者移动和准星方向保持，长度3格、宽0.6格、高0.6格；不生成远程飞剑、不自动突进、不穿实心方块。\n40tick内接触有效目标即结算一次基础6点刺击伤害，并读取、一次消耗该目标全部火种S，追加0.36×S点即时火属性引爆伤害。100点追加36点，合计42点（不计其他加成与减伤）；无火种只造成基础刺击。使用线性转换，不套焚天的1.2指数。炉心只对火伤部分按既有同层规则增幅，不把物理刺击整体变为火伤。\n同一次出手可以接触不同目标，但对每个目标最多刺击、消费和引爆各一次；命中后保持余下刺击时间与剑上火焰，不能逐tick重复命中同一个目标。引爆只伤被刺中的目标，不产生二次范围爆炸，不点燃地形、不破坏方块，也不补发持续燃烧。\n首版实际魔力40、冷却300tick，从成功起手算；40tick内不按段重复收费。刺击命中长度与宽高可沿用已有几何放大，2秒上限固定，火种消费与附加收益不可被份数重复领取。",
+        "oBefore": "起手时剑身被由剑柄流向剑尖的橙红火焰覆盖，快速向前刺出一道短促亮痕。维持期间火舌持续从剑身与剑尖冒出，方向跟随剑身，不脱离成飞行弹。接触有火种目标时在刺入点形成向内聚拢后炸开的短促火团与火星，强度随消耗量增加；无火种只有普通命中亮痕。收招时剑上火焰迅速熄灭。",
+        "nAfter": "持剑向前刺击。命中时烧掉火种，并打一刀物理",
+        "oAfter": "xueximod:textures/effect/liaoli_v6/sword_unlit.png；xueximod:textures/effect/liaoli_v6/sword_hot.png；xueximod:textures/effect/liaoli_v6/back_ignite.png；xueximod:textures/effect/liaoli_v6/back_flow.png；xueximod:textures/effect/liaoli_v6/thrust_backflow.png；xueximod:textures/effect/liaoli_v6/rear_ring.png（游戏目录 src/main/resources/assets/xueximod/textures/effect/liaoli_v6/；归档 docs/资源库/特效/火焰/燎里_v6/）"
+      }
+    },
+    {
+      "id": "fire_fentian",
+      "name": "焚天",
+      "sheet": "制作中",
+      "row": 5,
+      "mayMigrate": false,
+      "candidateOnly": true,
+      "n": "火系最终奖励术式，范围内快速烧尽已有火种。触发瞬间按释放原点周围8格球形范围选取所有存活、可伤害且火种S>0的实体；默认原点为施法者，不要求准星选中，不追加视线筛选。无火种不点燃、不受本术式伤害。目标若已有焚天燃烧则跳过且不扣火种。\n逐目标读取S（最多100），一次投入并扣除，锁定n=floor(S/10)、完整段数n、余量r=S−10n；每个完整段基础伤害2，火种倍率为1.2^n。点燃后第4、8、12…tick结算，完整段伤害保持2×1.2^n，不随已烧掉的份数下降。若r>0，在下一拍追加尾段，伤害为完整段×r/10。因此总时长4×ceil(S/10)，最多40tick，1—9点也能点燃。\n100点时10段，每段约12.38，总约123.83；50点时5段，总约24.88（均不计炉心和减伤）。火种既增加单段伤害又增加段数，这种指数转换专属于焚天。炉心加成F沿用同层加算：完整段2×(1.2^n+F)，尾段再乘r/10，不叠加旧BURST每10点+4%。\n点燃后离开施法范围仍完成既定燃烧；新附加火种留给下一次，不能延长或增强本次序列。死亡或实体真正移除时终止，不退还已投入火种，不造成地形火或连锁传播。首版实际魔力100、冷却1200tick。4tick间隔、指数档数、段数与40tick上限均不被聚能或多份规则放大。",
+      "o": "释放时一道低矮火环从原点扩张至范围边界；只有有火种的目标被火线勾连并自下而上点燃，未挂火种的实体不出现受术火焰。每4tick的伤害拍对应一次明显的火焰脉冲，满火种目标火焰更亮、更厚，十拍后集中收束为余烬。目标独立结束，离开原范围仍可看到剩余脉冲。特效不得遮蔽整个屏幕，不落原版地火。",
+      "dv": "用户原话：“至于焚天就按照你说的*满火种提高了每段伤害，也增加了段数，所以总收益增长很快。**我认为可以把这种成长留给终极奖励“焚天”，普通燃烧和普通引爆不必都套用同样的指数公式。”\n已明确确认：“每个火种乘1.2：基础2点，10个约12.38点／段”。沿用已讨论的锁定初始倍率、4tick一段、满100点10段与40tick、余量比例尾段。\n首版数值由主会话按本次“帮我设计并填入待制作”授权补齐，属设计参数，未实测平衡。终极奖励获取途径待用户另定，不自动发放。等级上限20、复杂度20、装配消耗3为首版默认。\n共用目标火种值S（0—100整数），n=floor(S/10)，不新增第二种资源；三式只消费、不产火种。同次施法及其规则副本对同一目标只扣一次，先检查伤害权限再扣；后续新火种留给下一次消费。本版目标火种共享，先触发者扣除，后触发者读取剩余，不重复花同一份。炉心增伤与火种增伤同层；不另套旧BURST每10点+4%。多份攻击只按既有规则结算基础伤害，不能复制火种附加收益或燃烧序列。不修改全局无敌帧。\n[设计反馈 2026-10-28] L=4为登记值，实际由AP=100覆盖。4tick每段必须产生有效伤害，不能仅播放脉冲却被无敌帧吞掉；实施阶段核查公共持续伤害结算能力，禁止全局清空/修改无敌帧或按焚天id绕过。实际多段命中和规则组合待实现与游戏实测。详细需求见 docs/开发记录/火属性二级设计评审-20261028/记录.md。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户强调“特效是用在敌人身上的”，已确认焚天v2：金白火柱/赤红爆燃/4tick脉冲/余烬，按各敌人实际计划段数播放。确认版归档docs/资源库/特效/火焰/焚天_v2/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。\n[设计反馈 2026-10-29] compile-final报告写明FireSeedState.grant在主源码没有调用方，也没有给目标加火种的现成命令。焚天只处理火种大于0的目标，因此本式点燃和段伤害目前不能按正常玩法准备。该缺口未解决，这里不新增产火种途径或调试命令。详见 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。",
+      "approvedVersion": "焚天 v2。功能需求仍是现行 N 全文；用户强调特效用在敌人身上，确认版按各目标实际计划段数播放。",
+      "userVisualChange": "[设计反馈 2026-10-29] 用户强调“特效是用在敌人身上的”，已确认焚天v2：金白火柱/赤红爆燃/4tick脉冲/余烬，按各敌人实际计划段数播放。确认版归档docs/资源库/特效/火焰/焚天_v2/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。",
+      "language": {
+        "zhKey": "technique.xueximod.fire_fentian.desc",
+        "zh": "球内有火种的目标一次烧完，并按档数分段",
+        "enKey": "technique.xueximod.fire_fentian.desc",
+        "en": "Targets inside the sphere with seeds are consumed at once and burn in segments",
+        "constructorDescription": "球内有火种的目标一次烧完，并按档数分段",
+        "zhMatchesConstructor": true,
+        "drawnBy": "Technique.getDescription()，调用处包括 ShuManagementScreen、SkillAssemblyScreen、SpellAssemblyScreen、ImprintTreeView",
+        "proposedNStatus": "语言有与构造描述相同的一句话"
+      },
+      "resources": {
+        "archive": "docs/资源库/特效/火焰/焚天_v2/",
+        "gameDir": "src/main/resources/assets/xueximod/textures/effect/fentian_v2/",
+        "resourceDetailRows": [],
+        "textures": [
+          {
+            "archiveFile": "fentian-conflagration-v2-strip.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/fentian_v2/conflagration.png",
+            "resourceId": "xueximod:textures/effect/fentian_v2/conflagration.png",
+            "symbol": "FireVisualLayout.CONFLAGRATION",
+            "drawnBy": "FireVisualClient"
+          }
+        ]
+      },
+      "conversion": {
+        "status": "待核对候选",
+        "nBefore": "火系最终奖励术式，范围内快速烧尽已有火种。触发瞬间按释放原点周围8格球形范围选取所有存活、可伤害且火种S>0的实体；默认原点为施法者，不要求准星选中，不追加视线筛选。无火种不点燃、不受本术式伤害。目标若已有焚天燃烧则跳过且不扣火种。\n逐目标读取S（最多100），一次投入并扣除，锁定n=floor(S/10)、完整段数n、余量r=S−10n；每个完整段基础伤害2，火种倍率为1.2^n。点燃后第4、8、12…tick结算，完整段伤害保持2×1.2^n，不随已烧掉的份数下降。若r>0，在下一拍追加尾段，伤害为完整段×r/10。因此总时长4×ceil(S/10)，最多40tick，1—9点也能点燃。\n100点时10段，每段约12.38，总约123.83；50点时5段，总约24.88（均不计炉心和减伤）。火种既增加单段伤害又增加段数，这种指数转换专属于焚天。炉心加成F沿用同层加算：完整段2×(1.2^n+F)，尾段再乘r/10，不叠加旧BURST每10点+4%。\n点燃后离开施法范围仍完成既定燃烧；新附加火种留给下一次，不能延长或增强本次序列。死亡或实体真正移除时终止，不退还已投入火种，不造成地形火或连锁传播。首版实际魔力100、冷却1200tick。4tick间隔、指数档数、段数与40tick上限均不被聚能或多份规则放大。",
+        "oBefore": "释放时一道低矮火环从原点扩张至范围边界；只有有火种的目标被火线勾连并自下而上点燃，未挂火种的实体不出现受术火焰。每4tick的伤害拍对应一次明显的火焰脉冲，满火种目标火焰更亮、更厚，十拍后集中收束为余烬。目标独立结束，离开原范围仍可看到剩余脉冲。特效不得遮蔽整个屏幕，不落原版地火。",
+        "nAfter": "球内有火种的目标一次烧完，并按档数分段",
+        "oAfter": "xueximod:textures/effect/fentian_v2/conflagration.png（游戏目录 src/main/resources/assets/xueximod/textures/effect/fentian_v2/；归档 docs/资源库/特效/火焰/焚天_v2/）"
+      }
+    },
+    {
+      "id": "fire_heat_up",
+      "name": "升温",
+      "sheet": "制作中",
+      "row": 6,
+      "mayMigrate": false,
+      "candidateOnly": true,
+      "n": "升温是独立的火属性法术，只让施法者进入普通炉心。仅当前没有炉心时可以成功。成功时调用FurnaceService.enterNormal，amplifier为0。已经处于普通或过载时失败，不刷新热量、状态或计时。\n普通炉心无限持续。累计火伤F每tick增加0.002，150tick到达0.30并封顶。产火种倍率为1.12+0.48×clamp(F/0.30,0,1)。炉心不被动产生火种。生命上限×0.75，护甲和韧性各×0.50，治疗×0.50，水或冰承伤×1.40。保护附魔仍按原规则计算。施法者自己的抗性提升不再减伤，不移除抗性药水。进入时当前生命只钳到新上限，不回复生命。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n服务端先检查没有炉心、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心。只有成功才扣显式魔力20，并从成功施放起计算500tick技能冷却。装配消耗1，基础伤害0。升温、燃烧、冷却各占栏位，各自计算魔力和冷却，不互相替换，也不重置另外两式的冷却。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+      "o": "施放时，施法者周围出现短促的暖橙火星和轻微热浪。普通炉心保持期间只用低密度暖色提示，不遮挡视线。不点燃地形，不生成攻击体。这里只记录制作意图，不填写资源文件名。",
+      "dv": "本行是升温 / fire_heat_up。\n用户原话：“把三个技能写入待制作表中”。\n主设计是 docs/火属性二级玩法设计.md。原始三式数值为显式魔力20/20/0、技能冷却500/500/0 tick、装配消耗各1、基础伤害各0。本次只写入待制作。炉心底层服务已经存在，这三个技能尚未注册；底层存在不等于这三式已经实现。本记录不包含游戏验证。\n记录目录：docs/开发记录/炉心三式入待制作-20261029/。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。\n等级上限20沿用制作表已有数据行的统一取值。复杂度、登记弹速、可接受附魔、自身能量倍率、挂到后续的能量倍率没有统一取值，留空，不沿用燎原、燎里、焚天的复杂度20和装配3。弹道、命中体尺寸、外形、弧带、场地、护体、屏障、领域、附魔累积、旧档和火种列留空。登记魔力按表头批注由基础伤害0得到0，实际消耗只看显式魔力，不另扣一次。蓄力tick为0。双重释放再拉段数为0。释放种类“自身状态”是本次在数据表追加的名称，代码列没有已确认的程序常量，留空。\n本式只在主表配置一条炉心状态，不写入资源状态明细。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认炉心三式v1。升温是普通炉心低密度暖光。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。",
+      "approvedVersion": "炉心三式 v1 中的升温。功能需求仍是现行 N 全文；确认的视觉只是普通炉心低密度暖光。",
+      "userVisualChange": "[设计反馈 2026-10-29] 用户已确认炉心三式v1。升温是普通炉心低密度暖光。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。",
+      "language": {
+        "zhKey": "technique.xueximod.fire_heat_up.desc",
+        "zh": "进入普通炉心。状态没变则不扣魔力",
+        "enKey": "technique.xueximod.fire_heat_up.desc",
+        "en": "Enter the normal furnace. Mana is kept when the state does not change",
+        "constructorDescription": "进入普通炉心。状态没变则不扣魔力",
+        "zhMatchesConstructor": true,
+        "drawnBy": "Technique.getDescription()，调用处包括 ShuManagementScreen、SkillAssemblyScreen、SpellAssemblyScreen、ImprintTreeView",
+        "proposedNStatus": "语言有与构造描述相同的一句话"
+      },
+      "resources": {
+        "archive": "docs/资源库/特效/火焰/炉心三式_v1/",
+        "gameDir": "src/main/resources/assets/xueximod/textures/effect/furnace_v1/",
+        "resourceDetailRows": [],
+        "textures": [
+          {
+            "archiveFile": "heat_up-v1-strip.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/furnace_v1/heat_up.png",
+            "resourceId": "xueximod:textures/effect/furnace_v1/heat_up.png",
+            "symbol": "FireVisualLayout.HEAT_SHEET",
+            "drawnBy": "FireVisualClient"
+          }
+        ]
+      },
+      "conversion": {
+        "status": "待核对候选",
+        "nBefore": "升温是独立的火属性法术，只让施法者进入普通炉心。仅当前没有炉心时可以成功。成功时调用FurnaceService.enterNormal，amplifier为0。已经处于普通或过载时失败，不刷新热量、状态或计时。\n普通炉心无限持续。累计火伤F每tick增加0.002，150tick到达0.30并封顶。产火种倍率为1.12+0.48×clamp(F/0.30,0,1)。炉心不被动产生火种。生命上限×0.75，护甲和韧性各×0.50，治疗×0.50，水或冰承伤×1.40。保护附魔仍按原规则计算。施法者自己的抗性提升不再减伤，不移除抗性药水。进入时当前生命只钳到新上限，不回复生命。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n服务端先检查没有炉心、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心。只有成功才扣显式魔力20，并从成功施放起计算500tick技能冷却。装配消耗1，基础伤害0。升温、燃烧、冷却各占栏位，各自计算魔力和冷却，不互相替换，也不重置另外两式的冷却。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+        "oBefore": "施放时，施法者周围出现短促的暖橙火星和轻微热浪。普通炉心保持期间只用低密度暖色提示，不遮挡视线。不点燃地形，不生成攻击体。这里只记录制作意图，不填写资源文件名。",
+        "nAfter": "进入普通炉心。状态没变则不扣魔力",
+        "oAfter": "xueximod:textures/effect/furnace_v1/heat_up.png（游戏目录 src/main/resources/assets/xueximod/textures/effect/furnace_v1/；归档 docs/资源库/特效/火焰/炉心三式_v1/）"
+      }
+    },
+    {
+      "id": "fire_burn",
+      "name": "燃烧",
+      "sheet": "制作中",
+      "row": 7,
+      "mayMigrate": false,
+      "candidateOnly": true,
+      "n": "燃烧是独立的火属性法术。没有炉心时可以直接进入过载，amplifier为1。已有普通炉心时升级到amplifier 1，并保留已累计的F，不能先移除再重新进入。已经过载时失败，不刷新计时。成功时调用FurnaceService.enterOverdrive。不能从过载直接降回普通。\n过载炉心无限持续。F每tick增加0.003，封顶0.60。从0到封顶为200tick；普通炉心已满热0.30时再升级，还需100tick到顶。产火种倍率固定2.2。炉心不被动产生火种。生命上限×0.60，护甲和韧性各×0.25，治疗×0.30，水或冰承伤×1.70。保护附魔仍按原规则计算。施法者自己的抗性提升不再减伤，不移除抗性药水。升级时当前生命只钳到新上限，不回复生命。属性修饰使用可移除的稳定标识，不叠成两份。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n服务端先检查炉心状态、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心。只有成功才扣显式魔力20，并从成功施放起计算独立的500tick技能冷却。装配消耗1，基础伤害0。不重置升温或冷却各自的冷却。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+      "o": "施放时，施法者周围出现短促、更明亮的橙红火星和热浪。过载期间的提示强于普通炉心。从普通升级到过载只播放一次升级反馈，不重复播放普通入场。不蔓延，不点燃地形，不额外造成伤害。这里只记录制作意图，不填写资源文件名。",
+      "dv": "本行是燃烧 / fire_burn。\n表内操作“施加”在本行表示进入或升级为过载并保留F，不是先移除再重新进入。已有过载则失败。\n用户原话：“把三个技能写入待制作表中”。\n主设计是 docs/火属性二级玩法设计.md。原始三式数值为显式魔力20/20/0、技能冷却500/500/0 tick、装配消耗各1、基础伤害各0。本次只写入待制作。炉心底层服务已经存在，这三个技能尚未注册；底层存在不等于这三式已经实现。本记录不包含游戏验证。\n记录目录：docs/开发记录/炉心三式入待制作-20261029/。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。\n等级上限20沿用制作表已有数据行的统一取值。复杂度、登记弹速、可接受附魔、自身能量倍率、挂到后续的能量倍率没有统一取值，留空，不沿用燎原、燎里、焚天的复杂度20和装配3。弹道、命中体尺寸、外形、弧带、场地、护体、屏障、领域、附魔累积、旧档和火种列留空。登记魔力按表头批注由基础伤害0得到0，实际消耗只看显式魔力，不另扣一次。蓄力tick为0。双重释放再拉段数为0。释放种类“自身状态”是本次在数据表追加的名称，代码列没有已确认的程序常量，留空。\n本式只在主表配置一条炉心状态，不写入资源状态明细。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认炉心三式v1。燃烧是过载较强橙红反馈。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。",
+      "approvedVersion": "炉心三式 v1 中的燃烧。功能需求仍是现行 N 全文；确认的视觉只是过载较强橙红反馈。",
+      "userVisualChange": "[设计反馈 2026-10-29] 用户已确认炉心三式v1。燃烧是过载较强橙红反馈。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。",
+      "language": {
+        "zhKey": "technique.xueximod.fire_burn.desc",
+        "zh": "进入或升级超频炉心，并保留已有加成",
+        "enKey": "technique.xueximod.fire_burn.desc",
+        "en": "Enter or upgrade overdrive and keep the current bonus",
+        "constructorDescription": "进入或升级超频炉心，并保留已有加成",
+        "zhMatchesConstructor": true,
+        "drawnBy": "Technique.getDescription()，调用处包括 ShuManagementScreen、SkillAssemblyScreen、SpellAssemblyScreen、ImprintTreeView",
+        "proposedNStatus": "语言有与构造描述相同的一句话"
+      },
+      "resources": {
+        "archive": "docs/资源库/特效/火焰/炉心三式_v1/",
+        "gameDir": "src/main/resources/assets/xueximod/textures/effect/furnace_v1/",
+        "resourceDetailRows": [],
+        "textures": [
+          {
+            "archiveFile": "overdrive-v1-strip.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/furnace_v1/overdrive.png",
+            "resourceId": "xueximod:textures/effect/furnace_v1/overdrive.png",
+            "symbol": "FireVisualLayout.OVERDRIVE_SHEET",
+            "drawnBy": "FireVisualClient"
+          }
+        ]
+      },
+      "conversion": {
+        "status": "待核对候选",
+        "nBefore": "燃烧是独立的火属性法术。没有炉心时可以直接进入过载，amplifier为1。已有普通炉心时升级到amplifier 1，并保留已累计的F，不能先移除再重新进入。已经过载时失败，不刷新计时。成功时调用FurnaceService.enterOverdrive。不能从过载直接降回普通。\n过载炉心无限持续。F每tick增加0.003，封顶0.60。从0到封顶为200tick；普通炉心已满热0.30时再升级，还需100tick到顶。产火种倍率固定2.2。炉心不被动产生火种。生命上限×0.60，护甲和韧性各×0.25，治疗×0.30，水或冰承伤×1.70。保护附魔仍按原规则计算。施法者自己的抗性提升不再减伤，不移除抗性药水。升级时当前生命只钳到新上限，不回复生命。属性修饰使用可移除的稳定标识，不叠成两份。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n服务端先检查炉心状态、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心。只有成功才扣显式魔力20，并从成功施放起计算独立的500tick技能冷却。装配消耗1，基础伤害0。不重置升温或冷却各自的冷却。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+        "oBefore": "施放时，施法者周围出现短促、更明亮的橙红火星和热浪。过载期间的提示强于普通炉心。从普通升级到过载只播放一次升级反馈，不重复播放普通入场。不蔓延，不点燃地形，不额外造成伤害。这里只记录制作意图，不填写资源文件名。",
+        "nAfter": "进入或升级超频炉心，并保留已有加成",
+        "oAfter": "xueximod:textures/effect/furnace_v1/overdrive.png（游戏目录 src/main/resources/assets/xueximod/textures/effect/furnace_v1/；归档 docs/资源库/特效/火焰/炉心三式_v1/）"
+      }
+    },
+    {
+      "id": "fire_cool",
+      "name": "冷却",
+      "sheet": "制作中",
+      "row": 8,
+      "mayMigrate": false,
+      "candidateOnly": true,
+      "n": "冷却是独立的火属性法术。仅普通或过载炉心可以成功。成功时调用FurnaceService.cool，主动结束炉心并触发一次蒸汽。没有炉心时失败，不喷蒸汽。不能用普通removeEffect或end passive代替cool，也不能靠通用移除监听产生蒸汽。\n成功后恢复生命上限、护甲、韧性等被炉心改变的状态属性，当前生命不增加。蒸汽以身体中心为球心，半径3格，排除自己、队友和关系规则中的友方。每个存活敌对目标结算一次，固定2点基础蒸汽伤害，再经过该目标的正常防御。不读取炉心F、火种、能量或规则，不生产或消费火种，不标记火、水、冰。击退使用普通碰撞和击退抗性；空旷且没有抗性时大约3格，不能穿墙保证距离。这2点是内部蒸汽伤害，不能写成术式基础伤害；本式基础伤害仍是0。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n显式魔力0，技能冷却0tick，装配消耗1。不重置升温或燃烧各自的500tick冷却。服务端先检查已有炉心、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心、不喷蒸汽。只有成功才结束炉心并结算这一次蒸汽。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+      "o": "成功退出炉心时，释放一次向外扩散的白色蒸汽环，并带上随后消散的雾气。没有炉心时不播放。不得留下地形火或持续攻击体。这里只记录制作意图，不填写资源文件名。",
+      "dv": "本行是冷却 / fire_cool。\n表内操作“移除”必须调用FurnaceService.cool，成功后才产生一次蒸汽。不能用removeEffect、endPassive或通用移除监听代替。内部蒸汽伤害不写入基础伤害。\n用户原话：“把三个技能写入待制作表中”。\n主设计是 docs/火属性二级玩法设计.md。原始三式数值为显式魔力20/20/0、技能冷却500/500/0 tick、装配消耗各1、基础伤害各0。本次只写入待制作。炉心底层服务已经存在，这三个技能尚未注册；底层存在不等于这三式已经实现。本记录不包含游戏验证。\n记录目录：docs/开发记录/炉心三式入待制作-20261029/。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。\n等级上限20沿用制作表已有数据行的统一取值。复杂度、登记弹速、可接受附魔、自身能量倍率、挂到后续的能量倍率没有统一取值，留空，不沿用燎原、燎里、焚天的复杂度20和装配3。弹道、命中体尺寸、外形、弧带、场地、护体、屏障、领域、附魔累积、旧档和火种列留空。登记魔力按表头批注由基础伤害0得到0，实际消耗只看显式魔力，不另扣一次。蓄力tick为0。双重释放再拉段数为0。释放种类“自身状态”是本次在数据表追加的名称，代码列没有已确认的程序常量，留空。\n本式只在主表配置一条炉心状态，不写入资源状态明细。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认炉心三式v1。冷却只在成功主动cool时播放一次蒸汽。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。",
+      "approvedVersion": "炉心三式 v1 中的冷却。功能需求仍是现行 N 全文；确认的视觉只在成功主动 cool 时播放一次蒸汽。",
+      "userVisualChange": "[设计反馈 2026-10-29] 用户已确认炉心三式v1。冷却只在成功主动cool时播放一次蒸汽。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。",
+      "language": {
+        "zhKey": "technique.xueximod.fire_cool.desc",
+        "zh": "主动冷却炉心，并放出一次蒸汽",
+        "enKey": "technique.xueximod.fire_cool.desc",
+        "en": "Actively cool the furnace and release one steam burst",
+        "constructorDescription": "主动冷却炉心，并放出一次蒸汽",
+        "zhMatchesConstructor": true,
+        "drawnBy": "Technique.getDescription()，调用处包括 ShuManagementScreen、SkillAssemblyScreen、SpellAssemblyScreen、ImprintTreeView",
+        "proposedNStatus": "语言有与构造描述相同的一句话"
+      },
+      "resources": {
+        "archive": "docs/资源库/特效/火焰/炉心三式_v1/",
+        "gameDir": "src/main/resources/assets/xueximod/textures/effect/furnace_v1/",
+        "resourceDetailRows": [],
+        "textures": [
+          {
+            "archiveFile": "cool-v1-strip.png",
+            "gameFile": "src/main/resources/assets/xueximod/textures/effect/furnace_v1/cool.png",
+            "resourceId": "xueximod:textures/effect/furnace_v1/cool.png",
+            "symbol": "FireVisualLayout.COOL_SHEET",
+            "drawnBy": "FireVisualClient"
+          }
+        ]
+      },
+      "conversion": {
+        "status": "待核对候选",
+        "nBefore": "冷却是独立的火属性法术。仅普通或过载炉心可以成功。成功时调用FurnaceService.cool，主动结束炉心并触发一次蒸汽。没有炉心时失败，不喷蒸汽。不能用普通removeEffect或end passive代替cool，也不能靠通用移除监听产生蒸汽。\n成功后恢复生命上限、护甲、韧性等被炉心改变的状态属性，当前生命不增加。蒸汽以身体中心为球心，半径3格，排除自己、队友和关系规则中的友方。每个存活敌对目标结算一次，固定2点基础蒸汽伤害，再经过该目标的正常防御。不读取炉心F、火种、能量或规则，不生产或消费火种，不标记火、水、冰。击退使用普通碰撞和击退抗性；空旷且没有抗性时大约3格，不能穿墙保证距离。这2点是内部蒸汽伤害，不能写成术式基础伤害；本式基础伤害仍是0。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n显式魔力0，技能冷却0tick，装配消耗1。不重置升温或燃烧各自的500tick冷却。服务端先检查已有炉心、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心、不喷蒸汽。只有成功才结束炉心并结算这一次蒸汽。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+        "oBefore": "成功退出炉心时，释放一次向外扩散的白色蒸汽环，并带上随后消散的雾气。没有炉心时不播放。不得留下地形火或持续攻击体。这里只记录制作意图，不填写资源文件名。",
+        "nAfter": "主动冷却炉心，并放出一次蒸汽",
+        "oAfter": "xueximod:textures/effect/furnace_v1/cool.png（游戏目录 src/main/resources/assets/xueximod/textures/effect/furnace_v1/；归档 docs/资源库/特效/火焰/炉心三式_v1/）"
+      }
+    }
+  ]
+}

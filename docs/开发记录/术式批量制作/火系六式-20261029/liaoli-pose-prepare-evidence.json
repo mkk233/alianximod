@@ -1,0 +1,106 @@
+{
+  "task": "liaoli-pose-prepare",
+  "sourceAuthor": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+  "javaWritten": false,
+  "compiled": false,
+  "nameGate": false,
+  "spreadsheetWritten": false,
+  "recordMdWritten": false,
+  "formalReview": false,
+  "quota": "设计 2/2、实现 3/3 已用完；本单不追加复审",
+  "fireLiaoliSheet": "待验收第 3 行，未迁入制作中",
+  "archive": {
+    "directory": "docs/资源库/特效/火焰/燎里_剑阵姿态_v7",
+    "files": [
+      {
+        "path": "docs/资源库/特效/火焰/燎里_剑阵姿态_v7/liaoli-dive-leg-array-forward.bbmodel",
+        "sha256": "E55146011A0AF3C3C8AF5A696B7995FE9E5BF10196E40AB409884BBC94767CF9",
+        "bytes": 116023,
+        "lastWriteTime": "2026-10-30 00:22:37.1257133"
+      },
+      {
+        "path": "docs/资源库/特效/火焰/燎里_剑阵姿态_v7/dive-leg-forward-side.png",
+        "sha256": "6B52B4096CAC48CA68840A69599414CFF3B148880474C0498CA4C8C071341308",
+        "bytes": 43190,
+        "pixels": "1400x900",
+        "lastWriteTime": "2026-10-30 00:22:22.8649101"
+      },
+      {
+        "path": "docs/资源库/特效/火焰/燎里_剑阵姿态_v7/standing-side.png",
+        "sha256": "B92FA4DED7DB1880314041C85B73B768CEAB67229C8A5AB900EF1E3671D79490",
+        "bytes": 42985,
+        "pixels": "1200x1000",
+        "lastWriteTime": "2026-10-30 00:14:56.4536719"
+      },
+      {
+        "path": "docs/资源库/特效/火焰/燎里_剑阵姿态_v7/standing-rear.png",
+        "sha256": "21DF5319647F799CEC1CDB6C991842B75236A2BB1EF66866BCB6BE4D0B686EF6",
+        "bytes": 59005,
+        "pixels": "1200x1000",
+        "lastWriteTime": "2026-10-30 00:16:13.6301200"
+      }
+    ]
+  },
+  "laterWriteCandidates": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java",
+      "role": "八剑柄尖与火焰锚点",
+      "sha256": "98558537AB9FE6F284F576EC5CB9E6FE5C1925036E9606EC7BFAE2AD275F3D6C",
+      "bytes": 8405,
+      "lastWriteTime": "2026-10-29 03:12:30.1194550",
+      "touchedThisTask": false
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java",
+      "role": "偏航基和俯冲跟随",
+      "sha256": "5A90BCE8870F15F2446587C2E9F9689819473D13EE54B6B34F4AA49F1BC0F915",
+      "bytes": 12995,
+      "lastWriteTime": "2026-10-29 03:14:25.7414899",
+      "touchedThisTask": false
+    }
+  ],
+  "readOnlyCallers": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/TechniqueHitRenderer.java",
+      "sha256": "B8C44C1CFE6C9BC36E144AB9A60785EEBAF7AAB30A2372A4362232FEE4B3F9EE",
+      "bytes": 17205,
+      "lastWriteTime": "2026-10-29 03:13:18.2234382",
+      "note": "visual 9 调用 LiaoliV6Renderer，本单不改"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java",
+      "sha256": "D60C8021134459605975438F264CAF31AB0D299F6B02E6F7CB6630A33A05CD4F",
+      "bytes": 3335,
+      "lastWriteTime": "2026-10-29 03:13:18.8795943",
+      "note": "只登记 visual 9，姿态不从这里进"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/PlayerModelActionMixin.java",
+      "sha256": "EF26BF69FF8B502302669DD3737AD4A9CC1D8517C3ACF91EC60BEED79BB23683",
+      "bytes": 1873,
+      "lastWriteTime": "2026-10-24 09:21:51.8991429",
+      "note": "横置姿态写入入口，保持为来源"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/ThirdPersonPoseWriter.java",
+      "sha256": "95D176789AB5B5237A2B2A44E2B945583C59D4DD115C88AFF5680AF593A4F3FF",
+      "bytes": 5620,
+      "lastWriteTime": "2026-10-25 03:45:28.2751034",
+      "note": "applyScoped 写玩家模型，不写命中体"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/ActionRenderQueries.java",
+      "sha256": "73CC89F7D7773410B74C0D80DAC9DE2FC9D4F55ED1D491A06CB3F4E40D72998F",
+      "bytes": 10630,
+      "lastWriteTime": "2026-10-25 02:49:54.6443313",
+      "note": "thirdPersonPose；无动作时返回空姿态"
+    }
+  ],
+  "occupancy": {
+    "sheetAuthor": "d6f84d0b-4ea1-4368-a576-8acc20cc2afd",
+    "sheetStop": "liaoli-pose-return-final.md 写明本单停止写入",
+    "sheetMoved": false,
+    "compilerAuthor": "b2d5b359-42e3-4a90-9d24-b26acec6d5f8",
+    "compilerStop": "未确认"
+  }
+}

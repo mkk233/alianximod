@@ -1,0 +1,25 @@
+{
+  "task": "炉心升温燃烧视觉接入-20261031",
+  "author": "Cursor CLI grok-4.7-high-fast",
+  "exclusive_write_paths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceBodyVisual.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceBodyLayer.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceArmFlame.java",
+    "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v2/",
+    "D:/alianximod/docs/资源库/过程归档/炉心升温燃烧视觉接入-20261031/",
+    "D:/alianximod/docs/资源库/特效/火焰/升温_贴身炽热_v2/README.md",
+    "D:/alianximod/docs/资源库/特效/火焰/燃烧_双手附焰与火焰披风_v3/README.md",
+    "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/ownership.json",
+    "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/implementation-report.md",
+    "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/implementation-result.json",
+    "D:/alianximod/docs/开发记录/炉心升温燃烧视觉接入-20261031/index-update.md"
+  ],
+  "read_only_conflict_notes": [
+    "待制作-20261031 author-a 独占链、命中、法杖、ReleaseDefinitions、ModTechniques、语言文件，本任务不写。",
+    "待制作-20261031 author-b 独占火种与附魔，FurnaceService、FurnaceMath 只读且不得改倍率，FireRuntimeEvents 不写。",
+    "author-c 渲染范围是领域、陨岩、热波、火苗、留焰、幽冥、地形、残骸，不含本炉心视觉。",
+    "XueXiMod.ClientModEvents 已调用 FireVisualClient.bind()，本任务不改该类，层注册放在新建炉心类的 AddLayers。",
+    "不写 docs/术式制作表.xlsx，不写 docs/资源库/README.md。"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "same-native-bootstrap-document-followup",
+  "sessionId": "48e4111a-a131-46c2-863a-5a521d55d120",
+  "processId": 77788,
+  "startedAtUtc": "2026-11-03T19:45:19.7456154Z",
+  "arguments": [
+    "--cwd",
+    "D:/alianximod",
+    "--model",
+    "grok-4.7",
+    "--reasoning-effort",
+    "high",
+    "--permission-mode",
+    "auto",
+    "--no-subagents",
+    "--disable-web-search",
+    "--no-auto-update",
+    "--tools",
+    "read_file,grep,list_dir,write,search_replace,run_terminal_cmd,get_task_output,wait_tasks",
+    "--deny",
+    "MCPTool",
+    "--resume",
+    "48e4111a-a131-46c2-863a-5a521d55d120",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "20",
+    "--prompt-file",
+    "D:\\alianximod\\docs\\开发记录\\Grok备用渠道-20261104\\fallback-links.prompt.md"
+  ],
+  "scope": "AGENTS, workflow, max-dispatch skill reference only; no script writes or tests"
+}

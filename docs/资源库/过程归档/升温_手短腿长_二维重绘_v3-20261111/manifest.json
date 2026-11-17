@@ -1,0 +1,54 @@
+{
+  "version": "heat-up-v3-2d-draft",
+  "created": "2026-11-11",
+  "status": "awaiting-2d-feedback",
+  "tool": "Aseprite MCP",
+  "width": 96,
+  "height": 112,
+  "loopFrames": 20,
+  "loopFrameMs": 80,
+  "entryFrames": 8,
+  "entryFrameMs": 60,
+  "files": [
+    {
+      "name": "heat_up_v3.aseprite",
+      "bytes": 32181,
+      "sha256": "88996B1BC78AADF9FB3F0E01E72F246CD7FEEE08CCBA3FE21FFAAD539A10B259"
+    },
+    {
+      "name": "heat_up_v3_entry.aseprite",
+      "bytes": 11833,
+      "sha256": "5C380549B8D67B161317A16118B71EFC03422BC9E108EE7727899C2A46523220"
+    },
+    {
+      "name": "heat_up_v3_strip.png",
+      "bytes": 16744,
+      "sha256": "E25E5D20661DE3571D8AB25CA6B466424FEE6A90AD9269FA348AE3E13ED9D176"
+    },
+    {
+      "name": "heat_up_v3_entry_strip.png",
+      "bytes": 5517,
+      "sha256": "8AF97FBFF7C4749AE0AFE52B55790AD7FEDB5CCBE9684AB6754D3BE7E17FDDB0"
+    },
+    {
+      "name": "heat_up_v3_preview.aseprite",
+      "bytes": 52625,
+      "sha256": "16A34C3EC98965D0CAD64EA6B9CB86B02E0BB36E34F0889B786D84012DF54466"
+    },
+    {
+      "name": "heat_up_v3_preview.gif",
+      "bytes": 59170,
+      "sha256": "11083185A5C696CDCE400052E28E380BB75EF3E8BB3C070DBE7B541EDDC0DC57"
+    },
+    {
+      "name": "heat_up_v3_preview.png",
+      "bytes": 4091,
+      "sha256": "68C7FFBBB44A694293520CDF7AAF67D31F9754ECD8AB0CFEA5FF77B20BD413DD"
+    },
+    {
+      "name": "draw_heat_up_v3.lua",
+      "bytes": 9041,
+      "sha256": "C2C956175EF79AAE31E3359F2BF74EE967AFE4D424ED9B2D52A2B4E172A16921"
+    }
+  ]
+}

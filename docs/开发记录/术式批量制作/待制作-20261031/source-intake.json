@@ -1,0 +1,367 @@
+{
+  "stage": "源码事实采集",
+  "countsAsReview": false,
+  "formalVerdict": false,
+  "acceptanceClaimed": false,
+  "sourceModified": false,
+  "sheetWritten": false,
+  "compileRun": false,
+  "writingStopped": true,
+  "inputs": {
+    "intake": "docs/开发记录/术式批量制作/待制作-20261031/intake.json",
+    "sheetSha256": "3905785BD053899D1CA429E07E4942E10F0B205AA2403013762C44B566D8A183",
+    "baseDoc": "docs/底座功能点.md",
+    "handoffIndex": "docs/交接索引.md"
+  },
+  "idsAbsentFromJava": [
+    "fire_flame_trail",
+    "fire_meteorite",
+    "fire_shock_ring",
+    "rule_surface_anchor",
+    "fire_upwell",
+    "rule_stagger",
+    "rule_hit_continue",
+    "fire_seed_sow",
+    "fire_kindle",
+    "fire_detonate",
+    "fire_nether_gloom",
+    "earth_break_ground",
+    "fire_spark"
+  ],
+  "enums": {
+    "sheetChainRoles": ["攻击", "动作", "落点指定", "锁定实体", "追踪", "垂落改写", "三维交错", "一分为三", "双重释放"],
+    "codeChainRoles": ["ATTACK", "ACTION", "SEEK_SPACE", "SEEK_ENTITY", "TRAJECTORY_TRACKING", "TRAJECTORY_DROP", "TRAJECTORY_SCATTER", "RULE_TRIPLE", "RULE_DUAL", "RULE_DOMAIN_BIND"],
+    "sheetMissingChainRoles": ["地表定位", "喷涌", "错时", "命中接续", "附魔", "留焰"],
+    "codeNotInSheetDropdown": ["RULE_DOMAIN_BIND"],
+    "sheetTrajectories": ["直线", "垂落", "跟随准星", "曲线函数", "龙卷"],
+    "codeTrajectories": ["STRAIGHT", "DROP", "FOLLOW_LOOK", "FUNCTION", "VORTEX"],
+    "sheetMissingTrajectories": ["喷涌"],
+    "triggerTimingMissing": ["父攻击首次接触", "火径接触", "有效撞地"],
+    "noBurnDurationColumn": true,
+    "noTerrainBreakColumn": true
+  },
+  "ordinaryEnchantChainRole": {
+    "registeredIds": ["magic_ignite", "vine_mark", "tide_mark", "sinking_edge", "keen_mark"],
+    "techniqueFlag": "ModTechniques 构造参数 enchantment=true",
+    "effectRegistry": "EnchantmentDefinitions.registerAll 约第8-15行，效果键 fire/wood/water/earth/metal",
+    "releaseDefinition": "无。ReleaseDefinitions.registerAll 不登记这些附魔",
+    "chainSplit": "TechniqueChain.split 约第29-40行，isEnchantment 进入附魔缓冲",
+    "nullDefinitionWaitsForHost": "TechniqueChain.waitsForHost 约第49-52行，定义为空则 false",
+    "attackFallbackNotRegistration": [
+      "ReleaseDefinition.role 接口默认 ATTACK，约第100-102行，仅对已是 ReleaseDefinition 且未覆写的对象",
+      "FieldSpawner.roleOf 约第87-92行，定义为空返回 ATTACK，只用于场地扫描"
+    ],
+    "emptySheetRoleMustStayEmpty": true
+  },
+  "interfaces": {
+    "sameCastId": {
+      "present": true,
+      "names": ["ReleaseBatch.fireContext", "FireCastContext"],
+      "lines": "ReleaseBatch.java 约第55-60行",
+      "note": "每组 ReleaseBatch.open 一本账。复制份与该组延迟成员 bind 同一本。castId 为随机 UUID。"
+    },
+    "replicaGroup": {
+      "present": true,
+      "names": ["CastExecutionSession.Group", "MulticastExpansion"],
+      "note": "成员序号上的组。同一成员的复制份共用序号，不是错时副本组。"
+    },
+    "delayedReplica": {
+      "present": false,
+      "nearest": "MulticastExpansion.MEMBER_GAP_TICKS=3，gapTicks=序号×3，CastExecutionSession.beginGroup 约第290-298行用 ChainScheduler",
+      "absent": "不增加份数、只把已有副本错开 0/10/20 的接口没有。0/10/20 只是表内三份示例。"
+    },
+    "parentChildSegment": {
+      "present": false,
+      "nearest": "BoundReleasePlan 与 RULE_DOMAIN_BIND 是领域子计划，不是接触点子分支",
+      "also": "ReleaseBatch.rememberExplicitHost 按通道和槽记住宿主，供同槽复制份读取"
+    },
+    "contactPointEvent": {
+      "present": false,
+      "nearest": "TechniqueHitSpec.HitListener.onHit/onExpire 约第55-58行；burstOnImpact 方块裁剪后 onExpire，TechniqueHitEntity 约第370-384行"
+    },
+    "sharedHitList": {
+      "present": false,
+      "nearest": "ReleaseBatch.Tally 只在本账按目标、轮次、复制序号去重；TechniqueHitEntity.hitOnce 约第167行"
+    },
+    "enchantProductionMerge": {
+      "present": false,
+      "nearest": [
+        "EnchantBonus 约第193行：任意 fire 效果键的附魔快照火种固定为 2",
+        "TechniqueHitSpec.spawnReported 约第176和205-206行：spec.seedPoints 与 frame.seedPoints 相加",
+        "ReleaseBatch.Tally.rememberSeed 约第338-347行 putIfAbsent，retireSeeds 约第349-373行取较大值后 FireSeedGrant.deposit 一次",
+        "FireSeedProduction.produce 约第18-26行和 FireSeedGrant.deposit 约第17-23行每次新建 FireCastContext"
+      ],
+      "conflict": "同一上下文第二次 grant 因 hasProduced 返回 0。两次 produce 各建上下文，去重互不可见，会入账两次。没有基数 2 与基数 10 各自乘炉心倍率再合成一次的入口。"
+    },
+    "perTargetDedup": {
+      "present": true,
+      "names": ["FireCastContext.producedTargets", "FireCastContext.consumedTargets", "FireSeedAccount.grant", "FireSeedAccount.consume", "BurnLedger.duplicate", "TechniqueHitEntity.hitOnce", "ReleaseBatch.Tally"],
+      "absent": "火径片段、父子段、本体产种与附魔产种之间没有统一去重"
+    },
+    "domainEnchant": {
+      "contactSamplerPresent": true,
+      "names": ["DomainInstance.bindContact", "ContactEnchantState", "DomainService"],
+      "lines": "DomainService 约第141行 bindContact；ContactEnchantState 约第42行要求 contactDamage>0，每 2 tick",
+      "periodSeedWithoutContactDamage": false,
+      "blueFireRetint": false,
+      "nativePulseRunsExternalEnchant": false
+    },
+    "trajectorySampling": {
+      "present": true,
+      "names": ["TrajectorySampler.sample", "JavaReference", "CastFrame.DROP_LIFT"],
+      "drop": "CastFrame 约第92和190行抬高 8。JavaReference 约第64-68行 fall=0.5*0.08*age^2，方向向下。",
+      "lingeringTrail": false,
+      "upwell": false,
+      "hitEntityGravity": false,
+      "hitEntityGravityLines": "TechniqueHitEntity 约第180-181行 noPhysics 与 setNoGravity(true)"
+    },
+    "terrainBreakSwitch": {
+      "present": false
+    },
+    "meteorBlock": {
+      "present": false,
+      "existingBlocks": "ModBlocks：shu_block、zhu_block、ars 矿、imprint_desk"
+    },
+    "annulusHit": {
+      "present": false,
+      "existingShapes": ["弧扇", "有向盒", "轴对齐盒", "球", "尺寸盒"]
+    },
+    "seedMath": {
+      "upperBound": 100,
+      "floorProduction": "FireSeedMath.floorProduction 约第56-67行，floor(基数×倍率)",
+      "multiplier": "FurnaceMath.seedMultiplier 约第211-225行：无档位 1.0，普通 1.12–1.60，过载 2.2",
+      "consumeAllRequest": "FireSeedMath.invested 对 Integer.MAX_VALUE 表示当时全部余额",
+      "drawDoesNotUseConsumeSlot": "FireSeedAccount.draw",
+      "planCap": 8,
+      "standardSegmentDemand": 10,
+      "planTypes": ["FireLimits", "BurnLedger.duplicate", "BurnLedger.admitShared", "FireConsumption"]
+    }
+  },
+  "fireOrbReusableCategoryOnly": {
+    "releaseDefinitionsLine": 23,
+    "flags": {
+      "kind": "HIT_VOLUME",
+      "tag": "TRIGGER",
+      "trajectory": "STRAIGHT",
+      "moving": true,
+      "lifetimeTicks": 40,
+      "speed": 1.2,
+      "thickness": 0.4,
+      "acceptsTargetOverride": true,
+      "acceptsPathOverride": true,
+      "role": "ATTACK",
+      "trajectoryMutable": true
+    },
+    "techniqueLines": "ModTechniques 第172-175行：伤害 5，冷却 20，等级上限 20，复杂度 0，弹速 1.2",
+    "effectLines": "FireOrbEffect 第19行燃烧 4 秒；第34-43行盒子 0.45、产种 3、模型缩放 1.2",
+    "doNotCopyNumbersOntoMeteorOrSpark": true,
+    "dedicatedInitialAim": "ReleaseDefinition 约第47-48行。接受持续索敌且弹道可改时为 false。火苗 AA=否与此一致。"
+  },
+  "items": [
+    {
+      "id": "fire_flame_trail",
+      "row": 3,
+      "filled": {"type": "通用", "element": "火", "enchant": "是", "acceptsEnchant": "否", "kind": "规则", "tag": "持续", "heldSword": "否", "resourceEnabled": "否"},
+      "emptyRoleAndTrajectory": true,
+      "reusable": "附魔缓冲挂到宿主段。TrajectorySampler 只采样载体当前位置，不留火径。",
+      "missing": ["链上角色枚举", "火径寿命", "宽度", "采样间距", "片段上限", "费用", "冷却", "伤害映射"]
+    },
+    {
+      "id": "fire_meteorite",
+      "row": 4,
+      "filled": {"type": "法术", "element": "火", "damage": 24, "cooldown": 40, "enchant": "否", "acceptsEnchant": "是", "kind": "命中体", "tag": "触发", "role": "攻击", "heldSword": "否", "acceptPath": "是", "trajectoryMutable": "是", "centerRadius": 1.5, "comboHeight": 3},
+      "emptyTrajectory": true,
+      "reusable": "攻击命中体类别开关可对照 fire_orb，数值不可对照。",
+      "missing": ["弹道枚举", "抛射速度", "重力落体", "可存档陨石方块", "方块硬度与掉落", "空位搜索", "连续组费用", "魔力", "复杂度", "装配消耗", "等级上限", "等级成长"]
+    },
+    {
+      "id": "fire_shock_ring",
+      "row": 5,
+      "filled": {"type": "法术", "element": "火", "damage": 4, "cooldown": 16, "enchant": "否", "acceptsEnchant": "是", "kind": "命中体", "tag": "触发", "role": "攻击", "heldSword": "否", "innerRadius": 1.5, "outerRadius": 5},
+      "reusable": "一次命中体与单目标去重只在同一颗实体或同一本账本内。",
+      "missing": ["环形空心形状", "父段排除名单", "击退", "弹道", "魔力", "复杂度", "装配消耗", "等级上限", "等级成长"]
+    },
+    {
+      "id": "rule_surface_anchor",
+      "row": 6,
+      "filled": {"type": "通用", "element": "无", "enchant": "否", "kind": "命中体", "tag": "触发", "heldSword": "否"},
+      "emptyRoleAndTrajectory": true,
+      "nearest": "rule_cast_anchor / SEEK_SPACE；ReleaseBatch.crosshairCenter 视线最多 32 格",
+      "missing": ["地表定位角色", "可见地表与本体空位检查", "失败即拒绝", "魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"],
+      "mustNotFillAs": ["落点指定", "垂落"]
+    },
+    {
+      "id": "fire_upwell",
+      "row": 7,
+      "filled": {"type": "通用", "element": "火", "enchant": "否", "kind": "命中体", "tag": "触发", "heldSword": "否"},
+      "emptyRoleAndTrajectory": true,
+      "nearest": "DROP 抬高 8 后只向下。VORTEX 是风暴，角色仍是 TRAJECTORY_DROP。",
+      "missing": ["喷涌弹道", "上抛速度", "锥角", "飞行距离", "魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"],
+      "mustNotFillAs": ["垂落"]
+    },
+    {
+      "id": "rule_stagger",
+      "row": 8,
+      "filled": {"type": "通用", "element": "无", "enchant": "否", "kind": "规则", "tag": "触发", "heldSword": "否"},
+      "emptyRole": true,
+      "exampleTicksNotDefault": [0, 10, 20],
+      "nearest": "成员间隔 3 tick，不错开同一成员的复制份",
+      "missing": ["错时角色", "后续波次费用", "魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"],
+      "mustNotFillAs": ["一分为三"]
+    },
+    {
+      "id": "rule_hit_continue",
+      "row": 9,
+      "filled": {"type": "通用", "element": "无", "enchant": "否", "kind": "规则", "tag": "触发", "heldSword": "否"},
+      "emptyRole": true,
+      "missing": ["命中接续角色", "父子段", "一次接触机会", "接触点子分支", "父子附魔隔离", "中心名单排除", "魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"],
+      "mustNotFillAs": ["落点指定", "一分为三"]
+    },
+    {
+      "id": "fire_seed_sow",
+      "row": 10,
+      "filled": {"type": "通用", "element": "火", "cooldown": 5, "enchant": "是", "kind": "规则", "tag": "触发", "heldSword": "否", "resource": "火种", "op": "增加", "amount": 10, "timing": "命中成功", "unit": "每目标每次施法"},
+      "reusable": "上限 100，floor(10×倍率)，无炉心倍率 1.0 得到 10",
+      "draftNotReusable": "DV 草稿点数：普通炉心约 11–16，过载约 22",
+      "missing": ["按数值格 10 登记的火附魔", "与本体产种合成一次入账", "魔力", "复杂度", "装配消耗", "等级上限", "等级成长"],
+      "doNotChange": ["点火额外 2", "热光束 1", "火球 3"]
+    },
+    {
+      "id": "fire_kindle",
+      "row": 11,
+      "filled": {"type": "通用", "element": "火", "enchant": "是", "kind": "规则", "tag": "触发", "heldSword": "否", "resource": "火种", "op": "消费", "amount": 10, "periodTick": 10, "timing": "燃烧结算", "planCapText": 8},
+      "draftNotReusable": "单段 2×(1+F)、间隔 10、最长 40+10×n。周期格虽为 10，DV 仍称草案。",
+      "namedSharedLedgerNotADecision": ["FireLimits.PLAN_CAP=8", "STANDARD_SEGMENT_DEMAND=10", "BurnLedger.duplicate", "BurnLedger.admitShared", "FireSeedAccount.draw"],
+      "missing": ["已定稿段公式", "魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"]
+    },
+    {
+      "id": "fire_detonate",
+      "row": 12,
+      "filled": {"type": "通用", "element": "火", "enchant": "是", "kind": "规则", "tag": "触发", "heldSword": "否", "resource": "火种", "op": "消费", "amount": "全部", "timing": "命中成功", "unit": "每目标每次施法"},
+      "draftNotReusable": "0.2×S×(1+F) 与费用。DV 称草稿，不是燎里。",
+      "nearest": "FireSeedAccount.consume 在同一上下文同一目标只消费一次；Integer.MAX_VALUE 表示全部余额。没有该伤害公式。",
+      "missing": ["魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"]
+    },
+    {
+      "id": "fire_nether_gloom",
+      "row": 13,
+      "filled": {"type": "通用", "element": "火", "enchant": "是", "kind": "规则", "tag": "持续", "heldSword": "否", "resource": "火种", "op": "增加", "target": "领域内敌对活物", "timing": "领域周期"},
+      "draftNotReusable": "曾建议每 20 tick 基础加 5、重叠取强",
+      "missing": ["产种量", "周期", "重叠策略", "不要求接触伤害的领域周期产种", "蓝火表现开关", "魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"],
+      "mustNot": ["自建领域", "减速", "把 DI2 的 -1 当成已登记"]
+    },
+    {
+      "id": "earth_break_ground",
+      "row": 14,
+      "filled": {"type": "通用", "element": "土", "enchant": "是", "kind": "规则", "tag": "触发", "heldSword": "否"},
+      "sheetSaysSwitchDefaultsOn": true,
+      "switchPresentInCode": false,
+      "missing": ["坑形", "半径", "深度", "与体积增幅的关系", "地形破坏开关", "撞地挖坑", "魔力", "冷却", "复杂度", "装配消耗", "等级上限", "等级成长"]
+    },
+    {
+      "id": "fire_spark",
+      "row": 15,
+      "filled": {"type": "法术", "element": "火", "damage": 1, "cooldown": 5, "enchant": "否", "acceptsEnchant": "是", "kind": "命中体", "tag": "触发", "trajectory": "直线", "role": "攻击", "moving": "是", "sustainedSeek": "是", "initialAim": "是", "stopFollowing": "否", "heldSword": "否", "acceptPath": "是", "trajectoryMutable": "是", "seed": 2},
+      "reusable": "类别开关与 fire_orb 同层。直线、攻击、索敌与弹道改写已填。",
+      "doNotCopyFromFireOrb": ["寿命 40", "速度 1.2", "厚度 0.4", "盒子 0.45", "燃烧 4 秒", "产种 3", "伤害 5", "冷却 20"],
+      "burnDurationSuggestionNotApproved": 20,
+      "mergeExpectationInN": "同一命中基础 2 加种火基础 10，再按炉心规则。12 不是火苗固有值。",
+      "mergeEntryPresent": false,
+      "missing": ["原版燃烧时长", "飞行速度", "射程", "寿命", "碰撞尺寸", "魔力", "装配消耗", "等级上限", "等级成长"]
+    }
+  ],
+  "sharedFilesSingleAuthor": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ChainRole.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/Trajectory.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseRegistry.java",
+    "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantBonus.java",
+    "src/main/java/com/bslx/XueXiMod/shu/Technique.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java",
+    "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/multicast/MulticastExpansion.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/chain/TechniqueChain.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/TrajectorySampler.java",
+    "src/main/java/com/bslx/XueXiMod/shu/compute/JavaReference.java",
+    "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireCastContext.java",
+    "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedAccount.java",
+    "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedState.java",
+    "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedGrant.java",
+    "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedProduction.java",
+    "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedMath.java",
+    "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceMath.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireLimits.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnLedger.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireConsumption.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+    "src/main/java/com/bslx/XueXiMod/block/ModBlocks.java"
+  ],
+  "independentFileBoundary": "这 13 个编号还没有效果类。以后可按编号各写一个新文件，但不能绕开上面的共享注册与账本。每个共享文件只能一个作者。",
+  "newInterfaceNeedsNotDecided": [
+    "地表定位、喷涌、错时、命中接续的登记；附魔行可以继续没有 ChainRole",
+    "喷涌完整运动，与垂落、风暴互斥",
+    "对已有副本延迟且不增加份数，并冻结当时目标与锚点",
+    "父攻击一次接触机会、接触点、子分支、分支附魔隔离、中心名单排除、同一次施法上下文",
+    "沿载体留下短时火径，并与载体共享命中计时",
+    "内空外实的一次环形命中",
+    "受重力岩体与可存档陨石方块；残留不随地形破坏开关关闭",
+    "术式地形破坏开关与撞地挖坑；坑参数仍未定",
+    "同一次上下文合并本体产种基数与附魔产种基数",
+    "领域周期产种，不要求接触伤害，不减速，蓝火只是表现",
+    "引燃分段消费与引爆一次消费如何共享或隔离施法上下文；是否复用 BurnLedger 不在本采集裁决"
+  ],
+  "reusableExplicitDefaults": [
+    "已填的伤害、冷却、释放种类、标签、链上角色、火苗直线与索敌/弹道开关、陨岩的弹道改写开关",
+    "火种上限 100，floor(基数×炉心倍率)，无炉心 1.0，普通 1.12–1.60，过载 2.2",
+    "一分为三份数为 3；双重释放成员间隔 3 tick。不是错时间隔",
+    "垂落抬高 8 再按 0.5*0.08*age^2 下落。不是喷涌",
+    "命中体默认无物理无重力；间隔不大于 0 时每目标一次",
+    "通用与动作在 PlayerShuData.isUnlocked 中始终解锁。不用来填空复杂度"
+  ],
+  "pendingCannotReuse": [
+    "十三行魔力、复杂度、装配消耗、等级上限、等级成长。不能写 0，也不能写常见的等级上限 20",
+    "留焰寿命、宽度、采样间距、片段上限、费用、冷却、伤害映射",
+    "陨岩速度、弹道、方块属性、空位边界、连续组费用",
+    "热波击退",
+    "喷涌速度、锥角、飞行距离",
+    "错时 0/10/20 仅为三份示例；后续波次费用",
+    "种火 11–16/22 草稿点数",
+    "引燃段公式与时长；周期 10 仍是草案",
+    "引爆 0.2×S×(1+F) 与费用",
+    "幽冥产种量、周期、重叠；20 tick 加 5 仅为曾建议",
+    "崩地坑形、半径、深度、体积增幅关系",
+    "火苗燃烧时长、速度、射程、寿命、碰撞尺寸；建议 20 tick 未确认"
+  ],
+  "askUser": [
+    "留焰：寿命、宽度、采样间距、片段上限、费用、冷却、不同载体的伤害映射和命中策略",
+    "陨岩：抛射速度、弹道、方块硬度、采掘工具、掉落、用途、空位搜索边界、连续多组费用，以及魔力、复杂度、装配消耗、等级上限、等级成长",
+    "热波：击退，以及魔力、复杂度、装配消耗、等级上限、等级成长",
+    "地表定位、喷涌、错时、命中接续、崩地、幽冥、引燃、引爆、种火：各自 DV 已写明未定的魔力、冷却、复杂度、装配消耗、等级上限、等级成长",
+    "喷涌：上抛速度、锥角、飞行距离",
+    "错时：三份以外的间隔规则与后续波次费用。不要把 0/10/20 当成通用默认",
+    "引燃：段伤害、间隔、最长时长是否仍用草案",
+    "引爆：0.2×S×(1+F) 是否仍用草稿，费用是多少",
+    "幽冥：产种量、周期、重叠策略",
+    "崩地：坑形、基础半径、深度、与体积增幅的关系",
+    "火苗：原版燃烧时长、飞行速度、射程、寿命、碰撞尺寸，以及魔力、装配消耗、等级上限、等级成长",
+    "种火：不要确认 11–16/22 草稿，除非用户现在把点数定稿"
+  ],
+  "doNotAskUserToPickSubstituteEnum": "链上角色或弹道留空是因为名单没有对应项。不要改填攻击、动作、落点指定、垂落或一分为三。",
+  "doNotReaskMergeAmounts": "火苗 N 已写同一命中为基础 2 加种火基础 10。缺的是入账入口，不是再问用户要不要相加。",
+  "excluded": [
+    "不读不改旧火系六式效果",
+    "fire_liaoyuan 制作中，另一聊天刚收束编译",
+    "fire_heat_up 与 fire_burn 制作中，另一聊天在重画素材",
+    "fire_scorch_field 待验收",
+    "不领取、不改表、不编译"
+  ]
+}

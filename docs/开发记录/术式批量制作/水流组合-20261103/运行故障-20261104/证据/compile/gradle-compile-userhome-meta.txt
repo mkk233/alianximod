@@ -1,0 +1,8 @@
+compile_start=2026-11-04T01:31:43.0915794+08:00
+compile_end=2026-11-04T01:32:26.9456709+08:00
+exit_code=0
+JAVA_HOME=C:\Program Files\Java\jdk-17
+GRADLE_USER_HOME=C:\Users\baishang\.gradle
+stdout_chars=568
+stderr_chars=17106
+

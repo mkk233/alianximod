@@ -1,0 +1,56 @@
+{
+  "startedUtc": "2026-10-30T03:56:19.813Z",
+  "endedUtc": "2026-10-30T03:59:10.504Z",
+  "released": true,
+  "author": "B",
+  "model": "grok-4.7-high-fast",
+  "compileRan": false,
+  "gameRan": false,
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java",
+      "kind": "modified",
+      "beforeSha256": "93e2366c5e81f4b62a949bdfea5bfb456747d37ad2efd380208f5ab2d3ef13f9",
+      "beforeMtimeUtc": "2026-10-30T02:38:34.040Z",
+      "sha256": "29e8aa32f8a408ebca80b77edceb4abc3639be38a16bb469b269e971d2ff4464",
+      "mtimeUtc": "2026-10-30T03:56:53.026Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-B/src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java",
+      "kind": "modified",
+      "beforeSha256": "14ebf0fb6d3502dab9bfecdea40273d71bb2c332b2a0166f43b09c5338683bca",
+      "beforeMtimeUtc": "2026-10-30T02:38:35.783Z",
+      "sha256": "dcefb7fd6e9aa59ebeacdaf91838881dca268627e80f7f972decdc2c346a5c04",
+      "mtimeUtc": "2026-10-30T03:56:55.403Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-B/src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java",
+      "kind": "modified",
+      "beforeSha256": "375d26b74f181922f4bac10fb47364880a62c811ecb903881035dd8105d430da",
+      "beforeMtimeUtc": "2026-10-29T20:58:25.984Z",
+      "sha256": "e4feead9103572e3b29885220a577f3434d2a9df6751f9e681ad85bf4192de30",
+      "mtimeUtc": "2026-10-30T03:57:27.074Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-B/src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java"
+    },
+    {
+      "path": "docs/性能记录使用说明.md",
+      "kind": "modified",
+      "beforeSha256": "13274a7cb49f76bc3869415ea6231fd1259dcd1084280da2a89cb3264a506db3",
+      "beforeMtimeUtc": "2026-10-29T20:18:53.449Z",
+      "sha256": "f9b705eca48ab00de131ba08b7020b164001e6a1eb4aa8dbced59f732f12b476",
+      "mtimeUtc": "2026-10-30T03:57:06.785Z",
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-B/docs/性能记录使用说明.md"
+    },
+    {
+      "path": "docs/开发记录/候选查询复用-20261030/implementation-B-final.md",
+      "kind": "report",
+      "beforeSha256": null,
+      "beforeMtimeUtc": null,
+      "sha256": "6b21355e69a89265926036402afbf4083e4325fa327f4c4a6ddbb3ffb0ee075d",
+      "mtimeUtc": "2026-10-30T03:59:02.039Z",
+      "backup": null
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import com.bslx.XueXiMod.player.PlayerShuData;
 import com.bslx.XueXiMod.shu.ShuAttribute;
 import com.bslx.XueXiMod.shu.SkillStoneData;
 import com.bslx.XueXiMod.shu.Technique;
+import com.bslx.XueXiMod.shu.TechniqueAccess;
 import com.bslx.XueXiMod.shu.TechniqueManager;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.SimpleContainer;
@@ -27,6 +28,10 @@ public class ImprintActions {
         Technique technique = TechniqueManager.getById(techniqueId);
         if (technique == null) {
             imprintPlayer.displayClientMessage(Component.literal("§c未知的术"), true);
+            return false;
+        }
+        if (!TechniqueAccess.allowsPlayerUse(technique)) {
+            imprintPlayer.displayClientMessage(Component.literal(TechniqueAccess.DENIAL_TEXT), true);
             return false;
         }
         PlayerShuData data = PlayerShuData.get(imprintPlayer);

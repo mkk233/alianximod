@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "mesh": "a788ceb9-6118-8bde-239d-65f75d9e2721",
+      "vertices": 528,
+      "faces": 416,
+      "shellFaces": 288,
+      "ribbonFaces": 128,
+      "shellClosed": true
+    },
+    {
+      "mesh": "2236ba78-ad99-97b9-519f-d24105280994",
+      "vertices": 528,
+      "faces": 416,
+      "shellFaces": 288,
+      "ribbonFaces": 128,
+      "shellClosed": true
+    }
+  ],
+  "targetChecks": [
+    {
+      "target": "humanoid",
+      "placeholderCubes": 8,
+      "maxNormalizedCornerRadiusSquared": 0.7448318244170097,
+      "contained": true
+    },
+    {
+      "target": "wide",
+      "placeholderCubes": 8,
+      "maxNormalizedCornerRadiusSquared": 0.9548501275510203,
+      "contained": true
+    }
+  ],
+  "embeddedTextures": 5,
+  "textureFrames": 16,
+  "textureFps": 10,
+  "frames": {
+    "fixed": {
+      "count": 32,
+      "unique": 16
+    },
+    "orbit": {
+      "count": 96,
+      "unique": 96
+    },
+    "wide": {
+      "count": 32,
+      "unique": 16
+    }
+  },
+  "previewMaterial": "single shell quantized view-angle alpha; depth test on, write off; triangles sorted far to near; apply preview-setup.js after reload",
+  "gameIntegrated": false
+}

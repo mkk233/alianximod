@@ -1,0 +1,684 @@
+{
+  "inputCount": 65,
+  "allInputsByteUnchanged": true,
+  "inputs": [
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/bb_billboard_back.png",
+      "beforeSha256": "6783CE4C8DC48C79BFD7BDAC810BC65911C9F2ECCAE78549C8AE6AA1F9217E13",
+      "afterSha256": "6783CE4C8DC48C79BFD7BDAC810BC65911C9F2ECCAE78549C8AE6AA1F9217E13",
+      "sizeBefore": 18775,
+      "sizeAfter": 18775
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/bb_billboard_front.png",
+      "beforeSha256": "BA425CA528C08745C71F7B4944916AAECB9BCCE66C0A58E1C55F9F6634E2A253",
+      "afterSha256": "BA425CA528C08745C71F7B4944916AAECB9BCCE66C0A58E1C55F9F6634E2A253",
+      "sizeBefore": 18458,
+      "sizeAfter": 18458
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/bb_billboard_head.png",
+      "beforeSha256": "A7CA7A059E5FACA40614E15C0F8EC9442D30486251C67B988F8F886958AB5422",
+      "afterSha256": "A7CA7A059E5FACA40614E15C0F8EC9442D30486251C67B988F8F886958AB5422",
+      "sizeBefore": 18416,
+      "sizeAfter": 18416
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/bb_billboard_side.png",
+      "beforeSha256": "80A137E859B4E39011B096B1014D6F560A913DAAAEB3130E35869559D1C63984",
+      "afterSha256": "80A137E859B4E39011B096B1014D6F560A913DAAAEB3130E35869559D1C63984",
+      "sizeBefore": 18934,
+      "sizeAfter": 18934
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/preview.gif",
+      "beforeSha256": "9FA4431B00324E8A628C8956B886CA4BBB58D093241D311B5249701706295F39",
+      "afterSha256": "9FA4431B00324E8A628C8956B886CA4BBB58D093241D311B5249701706295F39",
+      "sizeBefore": 30890,
+      "sizeAfter": 30890
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/README.md",
+      "beforeSha256": "AC94A773966CB341AECB872AEF882EC622ACDB307AD5AB27E3FAC51B355D0245",
+      "afterSha256": "AC94A773966CB341AECB872AEF882EC622ACDB307AD5AB27E3FAC51B355D0245",
+      "sizeBefore": 2380,
+      "sizeAfter": 2380
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/seed_sow_v3-strip.png",
+      "beforeSha256": "A50EC7ED6A8434F50987A86036201DABFF3AB8A70CFF9D82A31CAC9F12B03EEE",
+      "afterSha256": "A50EC7ED6A8434F50987A86036201DABFF3AB8A70CFF9D82A31CAC9F12B03EEE",
+      "sizeBefore": 2776,
+      "sizeAfter": 2776
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/火焰/种火_上窜_v3/seed_sow_v3.aseprite",
+      "beforeSha256": "D514877D8AFFFFC6D5D54A9A6E64F46FBB12E41F1CB1C0C84A90C2B9129F1C0D",
+      "afterSha256": "D514877D8AFFFFC6D5D54A9A6E64F46FBB12E41F1CB1C0C84A90C2B9129F1C0D",
+      "sizeBefore": 4754,
+      "sizeAfter": 4754
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_025.png",
+      "beforeSha256": "6A4DA5FBFC1C3F6E7BFA7A2A79F6305C9842D4038A93831B9B430D60F7049D0C",
+      "afterSha256": "6A4DA5FBFC1C3F6E7BFA7A2A79F6305C9842D4038A93831B9B430D60F7049D0C",
+      "sizeBefore": 20723,
+      "sizeAfter": 20723
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_billboard_back.png",
+      "beforeSha256": "6783CE4C8DC48C79BFD7BDAC810BC65911C9F2ECCAE78549C8AE6AA1F9217E13",
+      "afterSha256": "6783CE4C8DC48C79BFD7BDAC810BC65911C9F2ECCAE78549C8AE6AA1F9217E13",
+      "sizeBefore": 18775,
+      "sizeAfter": 18775
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_billboard_front.png",
+      "beforeSha256": "BA425CA528C08745C71F7B4944916AAECB9BCCE66C0A58E1C55F9F6634E2A253",
+      "afterSha256": "BA425CA528C08745C71F7B4944916AAECB9BCCE66C0A58E1C55F9F6634E2A253",
+      "sizeBefore": 18458,
+      "sizeAfter": 18458
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_billboard_head.png",
+      "beforeSha256": "A7CA7A059E5FACA40614E15C0F8EC9442D30486251C67B988F8F886958AB5422",
+      "afterSha256": "A7CA7A059E5FACA40614E15C0F8EC9442D30486251C67B988F8F886958AB5422",
+      "sizeBefore": 18416,
+      "sizeAfter": 18416
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_billboard_side.png",
+      "beforeSha256": "80A137E859B4E39011B096B1014D6F560A913DAAAEB3130E35869559D1C63984",
+      "afterSha256": "80A137E859B4E39011B096B1014D6F560A913DAAAEB3130E35869559D1C63984",
+      "sizeBefore": 18934,
+      "sizeAfter": 18934
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_body.png",
+      "beforeSha256": "0BAC29D24D8D6351D1D9A7984CF2BD4E8F2AA011DD615A6250C4803D1BD97B05",
+      "afterSha256": "0BAC29D24D8D6351D1D9A7984CF2BD4E8F2AA011DD615A6250C4803D1BD97B05",
+      "sizeBefore": 18658,
+      "sizeAfter": 18658
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_close_back.png",
+      "beforeSha256": "1D41834F4372A686E1C91AB819711D981BD56A0DD84A4F4216A535694288D205",
+      "afterSha256": "1D41834F4372A686E1C91AB819711D981BD56A0DD84A4F4216A535694288D205",
+      "sizeBefore": 19139,
+      "sizeAfter": 19139
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_close_front.png",
+      "beforeSha256": "5C993EB0A53EB1C68F28A0245136ABE8D4E2B3DDA9C7D3F842D9656421B634C8",
+      "afterSha256": "5C993EB0A53EB1C68F28A0245136ABE8D4E2B3DDA9C7D3F842D9656421B634C8",
+      "sizeBefore": 17059,
+      "sizeAfter": 17059
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_close_head.png",
+      "beforeSha256": "D6810E6CCD967DEAE848AEAA297280641EA4956518D460F74B3CBCBC71AA858C",
+      "afterSha256": "D6810E6CCD967DEAE848AEAA297280641EA4956518D460F74B3CBCBC71AA858C",
+      "sizeBefore": 16945,
+      "sizeAfter": 16945
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_close_side.png",
+      "beforeSha256": "0FB0879F8351D5FE44766DE0BBA101A986D653A5E0836BCEDFC5301984661A6C",
+      "afterSha256": "0FB0879F8351D5FE44766DE0BBA101A986D653A5E0836BCEDFC5301984661A6C",
+      "sizeBefore": 20069,
+      "sizeAfter": 20069
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_embers.png",
+      "beforeSha256": "BEEC786F21B6C31DC2627FAEDDFB4D71EA45C510F2A554008DE7B100C76EF6D1",
+      "afterSha256": "BEEC786F21B6C31DC2627FAEDDFB4D71EA45C510F2A554008DE7B100C76EF6D1",
+      "sizeBefore": 17410,
+      "sizeAfter": 17410
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_head.png",
+      "beforeSha256": "9CA556E39C5EFF4E76FA22EB7FCBE19A074E4A611116E002878B0C1115DBBCD0",
+      "afterSha256": "9CA556E39C5EFF4E76FA22EB7FCBE19A074E4A611116E002878B0C1115DBBCD0",
+      "sizeBefore": 18805,
+      "sizeAfter": 18805
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_side.png",
+      "beforeSha256": "880592D39F172FB42DA10B631C73223EBD67E27C7626605918C541B7058D6239",
+      "afterSha256": "880592D39F172FB42DA10B631C73223EBD67E27C7626605918C541B7058D6239",
+      "sizeBefore": 20256,
+      "sizeAfter": 20256
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_start.png",
+      "beforeSha256": "5539645343590579606AAE6DA674114BAC637B9FC270C13DBED6A2A4ED408B5E",
+      "afterSha256": "5539645343590579606AAE6DA674114BAC637B9FC270C13DBED6A2A4ED408B5E",
+      "sizeBefore": 17558,
+      "sizeAfter": 17558
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_test_cube.png",
+      "beforeSha256": "C94CE2FE331C565C094AD89EE6BC37518B50F88BC5685853A93A576AFFF81978",
+      "afterSha256": "C94CE2FE331C565C094AD89EE6BC37518B50F88BC5685853A93A576AFFF81978",
+      "sizeBefore": 18356,
+      "sizeAfter": 18356
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/bb_test_frame.png",
+      "beforeSha256": "C89F9A4DD4F8217DE0B339EF35907EAB2B27D6A00E3D29E8A2EA57CD1186B993",
+      "afterSha256": "C89F9A4DD4F8217DE0B339EF35907EAB2B27D6A00E3D29E8A2EA57CD1186B993",
+      "sizeBefore": 16873,
+      "sizeAfter": 16873
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/draw_v3.lua",
+      "beforeSha256": "52945F67939CC62F3894B2348001D3FBBF54E18302335E534F43D8A138CAA1BA",
+      "afterSha256": "52945F67939CC62F3894B2348001D3FBBF54E18302335E534F43D8A138CAA1BA",
+      "sizeBefore": 2508,
+      "sizeAfter": 2508
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_01.png",
+      "beforeSha256": "CC4F4BD6D60F6E2130E270E136AE91BA0434C0E5C5694FB1B188D99230F0CCBC",
+      "afterSha256": "CC4F4BD6D60F6E2130E270E136AE91BA0434C0E5C5694FB1B188D99230F0CCBC",
+      "sizeBefore": 240,
+      "sizeAfter": 240
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_02.png",
+      "beforeSha256": "1292AF49BB4E6D7A5A366BE1C97ED31B39E372D2086E9482DDC9C018BF131989",
+      "afterSha256": "1292AF49BB4E6D7A5A366BE1C97ED31B39E372D2086E9482DDC9C018BF131989",
+      "sizeBefore": 356,
+      "sizeAfter": 356
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_03.png",
+      "beforeSha256": "D5DACEC04D45847BE30B09F4F077AA528FAEA04402DD08FDFF567E66BD94EC79",
+      "afterSha256": "D5DACEC04D45847BE30B09F4F077AA528FAEA04402DD08FDFF567E66BD94EC79",
+      "sizeBefore": 385,
+      "sizeAfter": 385
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_04.png",
+      "beforeSha256": "5ED408DAB151BE1F7594F1870F2700A5BC6709E1B1659498165033056ECAEE46",
+      "afterSha256": "5ED408DAB151BE1F7594F1870F2700A5BC6709E1B1659498165033056ECAEE46",
+      "sizeBefore": 444,
+      "sizeAfter": 444
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_05.png",
+      "beforeSha256": "508F54AF0E420CBA4F67F9DA441BF160BBD7984743B4545BC386566A47C3159B",
+      "afterSha256": "508F54AF0E420CBA4F67F9DA441BF160BBD7984743B4545BC386566A47C3159B",
+      "sizeBefore": 472,
+      "sizeAfter": 472
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_06.png",
+      "beforeSha256": "5E6CE133FFD3FAF9F228D3C99CBEC282199B615D4E97D1C254BC47854B4019E1",
+      "afterSha256": "5E6CE133FFD3FAF9F228D3C99CBEC282199B615D4E97D1C254BC47854B4019E1",
+      "sizeBefore": 481,
+      "sizeAfter": 481
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_07.png",
+      "beforeSha256": "53523E5517845D859C9638877522C7977DE40CF14EF37A71D47D61BD3FEDED45",
+      "afterSha256": "53523E5517845D859C9638877522C7977DE40CF14EF37A71D47D61BD3FEDED45",
+      "sizeBefore": 491,
+      "sizeAfter": 491
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_08.png",
+      "beforeSha256": "7D2D7A7FA953B79FA2D3099BFA28115BE6A5EDC7C3B408146F46EE3507111E31",
+      "afterSha256": "7D2D7A7FA953B79FA2D3099BFA28115BE6A5EDC7C3B408146F46EE3507111E31",
+      "sizeBefore": 445,
+      "sizeAfter": 445
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_09.png",
+      "beforeSha256": "C00F7B39E7F2C581F2F5D40B58A87255B6BF93189F5B06399F4C4CFF4C410DFF",
+      "afterSha256": "C00F7B39E7F2C581F2F5D40B58A87255B6BF93189F5B06399F4C4CFF4C410DFF",
+      "sizeBefore": 510,
+      "sizeAfter": 510
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_10.png",
+      "beforeSha256": "D00FF1ABCB5576F795F0C6E0A05EAFFA3A28DFB72A56E51C5FF4FC5C071C5C0E",
+      "afterSha256": "D00FF1ABCB5576F795F0C6E0A05EAFFA3A28DFB72A56E51C5FF4FC5C071C5C0E",
+      "sizeBefore": 486,
+      "sizeAfter": 486
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_11.png",
+      "beforeSha256": "B039731E65A7B835CA1EC18100DC3D4EC1CC2ED28B34371B93560F909A11D434",
+      "afterSha256": "B039731E65A7B835CA1EC18100DC3D4EC1CC2ED28B34371B93560F909A11D434",
+      "sizeBefore": 415,
+      "sizeAfter": 415
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_12.png",
+      "beforeSha256": "93BF36937C54A32C7D41D8F1C83000896D42464A5471786C8C94C2D2EBB6DEEE",
+      "afterSha256": "93BF36937C54A32C7D41D8F1C83000896D42464A5471786C8C94C2D2EBB6DEEE",
+      "sizeBefore": 345,
+      "sizeAfter": 345
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_13.png",
+      "beforeSha256": "666F6F90E521D7CBCC3EC0A7C7930EA84D96D675F9793CEB3247C42C8EDE617B",
+      "afterSha256": "666F6F90E521D7CBCC3EC0A7C7930EA84D96D675F9793CEB3247C42C8EDE617B",
+      "sizeBefore": 353,
+      "sizeAfter": 353
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_14.png",
+      "beforeSha256": "FDD7B037AFA8B6A1B68A556A8CA4C59E4C984C53205F4C1FDF02E3974CAFCFC9",
+      "afterSha256": "FDD7B037AFA8B6A1B68A556A8CA4C59E4C984C53205F4C1FDF02E3974CAFCFC9",
+      "sizeBefore": 216,
+      "sizeAfter": 216
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_15.png",
+      "beforeSha256": "60A7EEF2C70DE5ABC939DC0573846F84412FD316A0D0071B20FF9726A842F72A",
+      "afterSha256": "60A7EEF2C70DE5ABC939DC0573846F84412FD316A0D0071B20FF9726A842F72A",
+      "sizeBefore": 155,
+      "sizeAfter": 155
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frame_16.png",
+      "beforeSha256": "8D447892B6EFBC450BEAB391A7003090694CFCD0014D20766150112CAB1675A0",
+      "afterSha256": "8D447892B6EFBC450BEAB391A7003090694CFCD0014D20766150112CAB1675A0",
+      "sizeBefore": 96,
+      "sizeAfter": 96
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/phases.png",
+      "beforeSha256": "85F3373A84F64ECC88FE1251915A48E8F417EEB9E43B076AE9C5B4F40ED5376C",
+      "afterSha256": "85F3373A84F64ECC88FE1251915A48E8F417EEB9E43B076AE9C5B4F40ED5376C",
+      "sizeBefore": 7120,
+      "sizeAfter": 7120
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/preview_peak.png",
+      "beforeSha256": "20F55A937CEA1E763BB1BC8C708D1A16AE24E1C5A9E47F1DF8CE5CD178FB7F7A",
+      "afterSha256": "20F55A937CEA1E763BB1BC8C708D1A16AE24E1C5A9E47F1DF8CE5CD178FB7F7A",
+      "sizeBefore": 2128,
+      "sizeAfter": 2128
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/preview.aseprite",
+      "beforeSha256": "D4D9A0A963E4F0EDF9B7C24DAA2E87C992E57601FECF01611D7C30546A9F4BE6",
+      "afterSha256": "D4D9A0A963E4F0EDF9B7C24DAA2E87C992E57601FECF01611D7C30546A9F4BE6",
+      "sizeBefore": 48964,
+      "sizeAfter": 48964
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/preview.gif",
+      "beforeSha256": "9FA4431B00324E8A628C8956B886CA4BBB58D093241D311B5249701706295F39",
+      "afterSha256": "9FA4431B00324E8A628C8956B886CA4BBB58D093241D311B5249701706295F39",
+      "sizeBefore": 30890,
+      "sizeAfter": 30890
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/README.md",
+      "beforeSha256": "252C32962D82254D1BD834276EB24A40710FB67597EA7D2E224DEFAB04BFD45E",
+      "afterSha256": "252C32962D82254D1BD834276EB24A40710FB67597EA7D2E224DEFAB04BFD45E",
+      "sizeBefore": 1643,
+      "sizeAfter": 1643
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/seed_sow_v3-strip.png",
+      "beforeSha256": "A50EC7ED6A8434F50987A86036201DABFF3AB8A70CFF9D82A31CAC9F12B03EEE",
+      "afterSha256": "A50EC7ED6A8434F50987A86036201DABFF3AB8A70CFF9D82A31CAC9F12B03EEE",
+      "sizeBefore": 2776,
+      "sizeAfter": 2776
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/seed_sow_v3.aseprite",
+      "beforeSha256": "D514877D8AFFFFC6D5D54A9A6E64F46FBB12E41F1CB1C0C84A90C2B9129F1C0D",
+      "afterSha256": "D514877D8AFFFFC6D5D54A9A6E64F46FBB12E41F1CB1C0C84A90C2B9129F1C0D",
+      "sizeBefore": 4754,
+      "sizeAfter": 4754
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/shot.js",
+      "beforeSha256": "EDECE88B3E4C6C7841E97348B08F9EFF654D29299DAC90A0F477E5F01BEDFE24",
+      "afterSha256": "EDECE88B3E4C6C7841E97348B08F9EFF654D29299DAC90A0F477E5F01BEDFE24",
+      "sizeBefore": 1271,
+      "sizeAfter": 1271
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_0.png",
+      "beforeSha256": "C386789173C49DEDAA91A1C859E452369BEC6DDF6BF83DC6233562F953BF4639",
+      "afterSha256": "C386789173C49DEDAA91A1C859E452369BEC6DDF6BF83DC6233562F953BF4639",
+      "sizeBefore": 369,
+      "sizeAfter": 369
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_1.png",
+      "beforeSha256": "EF4ADDF803D31B67C0E92A5C739A4141B7E1BF34114E878EE013807ACEF6388E",
+      "afterSha256": "EF4ADDF803D31B67C0E92A5C739A4141B7E1BF34114E878EE013807ACEF6388E",
+      "sizeBefore": 398,
+      "sizeAfter": 398
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_10.png",
+      "beforeSha256": "E3CAED09C656E472066CC7407347DC514C97EFFBC4B16DC5925BF00F3FBE97F7",
+      "afterSha256": "E3CAED09C656E472066CC7407347DC514C97EFFBC4B16DC5925BF00F3FBE97F7",
+      "sizeBefore": 358,
+      "sizeAfter": 358
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_11.png",
+      "beforeSha256": "E32F1625B1AEB64F885AECED11130C923E932A0F208D8BCB498640C0A940B1A8",
+      "afterSha256": "E32F1625B1AEB64F885AECED11130C923E932A0F208D8BCB498640C0A940B1A8",
+      "sizeBefore": 366,
+      "sizeAfter": 366
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_12.png",
+      "beforeSha256": "BDB9294BDAD58688B2A663F0332206F51C2B6C23EA46C75042279FD28E9C9E68",
+      "afterSha256": "BDB9294BDAD58688B2A663F0332206F51C2B6C23EA46C75042279FD28E9C9E68",
+      "sizeBefore": 229,
+      "sizeAfter": 229
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_13.png",
+      "beforeSha256": "E9A620BFC355963A68B2E1577260B69697BCF72B8F987B621425BB6EDC50F54B",
+      "afterSha256": "E9A620BFC355963A68B2E1577260B69697BCF72B8F987B621425BB6EDC50F54B",
+      "sizeBefore": 168,
+      "sizeAfter": 168
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_14.png",
+      "beforeSha256": "1C044D225B66329EC488ED710D4D11AB3B6A8F9D311FE7B1AD4BA42022E16BF8",
+      "afterSha256": "1C044D225B66329EC488ED710D4D11AB3B6A8F9D311FE7B1AD4BA42022E16BF8",
+      "sizeBefore": 109,
+      "sizeAfter": 109
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_15.png",
+      "beforeSha256": "1C044D225B66329EC488ED710D4D11AB3B6A8F9D311FE7B1AD4BA42022E16BF8",
+      "afterSha256": "1C044D225B66329EC488ED710D4D11AB3B6A8F9D311FE7B1AD4BA42022E16BF8",
+      "sizeBefore": 109,
+      "sizeAfter": 109
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_2.png",
+      "beforeSha256": "15CD47E5645EF788C9847BA3BEE180DC5734F40CE88A8EF40B3C964349061607",
+      "afterSha256": "15CD47E5645EF788C9847BA3BEE180DC5734F40CE88A8EF40B3C964349061607",
+      "sizeBefore": 457,
+      "sizeAfter": 457
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_3.png",
+      "beforeSha256": "3B6A219EEF945FAC72230FB7C35C81A1B9F58F02D76DC8060791E7BCE499279D",
+      "afterSha256": "3B6A219EEF945FAC72230FB7C35C81A1B9F58F02D76DC8060791E7BCE499279D",
+      "sizeBefore": 485,
+      "sizeAfter": 485
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_4.png",
+      "beforeSha256": "B61F99D5FB93568D74E79A79E629FB3B29577EFF8EDD8A186498705CB4B68F60",
+      "afterSha256": "B61F99D5FB93568D74E79A79E629FB3B29577EFF8EDD8A186498705CB4B68F60",
+      "sizeBefore": 494,
+      "sizeAfter": 494
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_5.png",
+      "beforeSha256": "AC6BFC4E89EEFF4BCCAD200898AE1CF7A2C1A29EB951941C6A90DC334EC3E119",
+      "afterSha256": "AC6BFC4E89EEFF4BCCAD200898AE1CF7A2C1A29EB951941C6A90DC334EC3E119",
+      "sizeBefore": 504,
+      "sizeAfter": 504
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_6.png",
+      "beforeSha256": "79E60E86CAFFE7D2FD13052828E30F5AE34051A2E25D756D6664BA343CC099F9",
+      "afterSha256": "79E60E86CAFFE7D2FD13052828E30F5AE34051A2E25D756D6664BA343CC099F9",
+      "sizeBefore": 458,
+      "sizeAfter": 458
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_7.png",
+      "beforeSha256": "743E1E6061F2FFBAA28DAC86F9159C16CB1B57BF4D3C1AFCBC2071BC39B1559B",
+      "afterSha256": "743E1E6061F2FFBAA28DAC86F9159C16CB1B57BF4D3C1AFCBC2071BC39B1559B",
+      "sizeBefore": 523,
+      "sizeAfter": 523
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_8.png",
+      "beforeSha256": "CA32895E1A487B8AD588A08E4C21F338F21788A0092A1D98FD6958A192BCA3EE",
+      "afterSha256": "CA32895E1A487B8AD588A08E4C21F338F21788A0092A1D98FD6958A192BCA3EE",
+      "sizeBefore": 499,
+      "sizeAfter": 499
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3-20261111/frames/frame_9.png",
+      "beforeSha256": "40F723F4DF9F58BB02A19984308A2A22BB644B6EBF2509C315726A74CD512BE4",
+      "afterSha256": "40F723F4DF9F58BB02A19984308A2A22BB644B6EBF2509C315726A74CD512BE4",
+      "sizeBefore": 428,
+      "sizeAfter": 428
+    }
+  ],
+  "stripDimensions": [
+    64,
+    1024
+  ],
+  "asepriteDurationsMs": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 96,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 2,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 244,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 3,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 352,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 4,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 504,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 5,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 752,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 6,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 804,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 7,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 700,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 8,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 632,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 9,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 560,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 10,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 526,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 11,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 302,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 12,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 178,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 13,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 144,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 14,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 66,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 15,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 20,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "frame": 16,
+      "durationMs": 50,
+      "matchesStripRGBA": true,
+      "nontransparentPixels": 0,
+      "alphaValues": [
+        0
+      ]
+    }
+  ],
+  "allFramesMatchStrip": true,
+  "frame16FullyTransparent": true,
+  "screenshots": [
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/01-hero-3quarter.png",
+      "size": 111915,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "sha256": "9DAA1D183914082A3302BCA53D46BD1410DE01934FA0066F0499EF7F65CCC62A"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/02-front-billboard.png",
+      "size": 80661,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "sha256": "B8B1F9684518532E4210BF100A53BC86C616B4D62706E3E22BF5F3CEF4545E80"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/03-side-offset-thickness.png",
+      "size": 105380,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "sha256": "AE7DA9503884306FFBC89DB63DA95D338D1211AA05381D9CD4E8F152EEF5BE40"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/04-closeup-burnout-phases.png",
+      "size": 68776,
+      "dimensions": [
+        2048,
+        760
+      ],
+      "sha256": "1894DF8AF97B4FE1BC66EF483B539A01D46CB2443536F56D46356AAA1F02FCFE"
+    }
+  ]
+}

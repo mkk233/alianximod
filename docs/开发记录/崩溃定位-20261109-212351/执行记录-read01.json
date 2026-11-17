@@ -1,0 +1,56 @@
+{
+  "batchId": "多重释放底座-20261030",
+  "taskId": "crash-20261109-212351-diagnosis",
+  "attemptId": "read-01",
+  "client": "Python urllib HTTP chat-completions client",
+  "endpoint": "http://127.0.0.1:3425/v1/chat/completions",
+  "requestedRoute": "group/smart-split",
+  "provider": "喜鹊当前路由选择，返回前未知",
+  "clientCorrelationTag": "xuexi-crash-20261109-212351-read01",
+  "providerSessionId": null,
+  "sessionNote": "客户端关联标签不是提供方会话ID；不声称Cursor CLI已连接。",
+  "scope": [
+    "run/crash-reports/crash-2026-11-09_21.23.51-client.txt",
+    "run/logs/latest.log",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/PressureBreath.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java",
+    "src/main/java/com/bslx/XueXiMod/mixin/PressureDrownMixin.java",
+    "src/main/java/com/bslx/XueXiMod/client/DomainClientState.java"
+  ],
+  "authorization": "用户要求定位实测崩溃原因；只读源文件及日志，不修复、不编译。",
+  "sourceWriter": null,
+  "receiptWriter": "本次一次性HTTP客户端",
+  "reviews": "必要实测问题定向定位；承接既有底座实现复审累计5轮，不新增正式复审。",
+  "startedAt": "2026-11-09T21:27:26+0800",
+  "state": "finished",
+  "inputManifest": "C:\\Users\\baishang\\.codex\\visualizations\\2026\\11\\09\\01a15fdc-4130-7c92-bece-27530e8c54be\\crash-212351-read\\input-manifest.json",
+  "httpStatus": 200,
+  "responseHeaders": {
+    "X-Magpie-Model": "codex/gpt-6-astra",
+    "X-Magpie-Provider": "codex",
+    "X-Magpie-Session": "xuexi-crash-20261109-212351-read01"
+  },
+  "responseId": "chatcmpl-resp_077290d9354f3bff016af1ca42699487d2ac0a9bbfa154e3c1",
+  "returnedModel": "group/smart-split",
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 839,
+    "completion_tokens_details": {
+      "reasoning_tokens": 199
+    },
+    "prompt_tokens": 37898,
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 3968
+    },
+    "total_tokens": 38737
+  },
+  "result": "D:\\alianximod\\docs\\开发记录\\崩溃定位-20261109-212351\\定位结果.md",
+  "sourceChanges": [],
+  "compileRun": false,
+  "gameRun": false,
+  "reportWriteReleased": true,
+  "finishedAt": "2026-11-09T21:28:02+0800",
+  "inputChanges": []
+}

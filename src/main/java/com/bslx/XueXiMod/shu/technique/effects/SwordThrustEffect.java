@@ -4,6 +4,10 @@ import com.bslx.XueXiMod.shu.Technique;
 import com.bslx.XueXiMod.shu.technique.EnchantmentAccumulator;
 import com.bslx.XueXiMod.shu.technique.TechniqueCastContext;
 import com.bslx.XueXiMod.shu.technique.TechniqueEffect;
+import com.bslx.XueXiMod.shu.balance.BalanceKeys;
+import com.bslx.XueXiMod.shu.technique.release.ReleaseDefinition;
+import com.bslx.XueXiMod.shu.technique.release.ReleaseRegistry;
+import com.bslx.XueXiMod.shu.technique.release.batch.SpecialBalance;
 import com.bslx.XueXiMod.shu.technique.release.entity.TechniqueHitSpec;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -17,15 +21,26 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class SwordThrustEffect implements TechniqueEffect {
+    static final float BASE_REACH = 3.0F;
+    static final double CROSS_SECTION = 1.0D;
+
+    public static void declareBalance() {
+        SpecialBalance.publish(SpecialBalance.blocks(
+                SpecialBalance.blocks(SpecialBalance.begin("sword_thrust"),
+                        BalanceKeys.BEAM_LENGTH, BASE_REACH, "刺击基础距离"),
+                BalanceKeys.HIT_SIZE, CROSS_SECTION, "刺击截面"));
+    }
+
     @Override
     public void execute(ServerPlayer player, Technique technique, ItemStack weapon, TechniqueCastContext cast) {
         Vec3 look = cast.getLook();
-        Vec3 pos = cast.getPos();
+        Vec3 castPoint = cast.getPos();
 
         boolean hasFire = cast.enchantments().has("fire");
         EnchantmentAccumulator fire = hasFire ? cast.enchantments().effect("fire") : null;
 
-        float range = hasFire ? 3 * fire.radiusMultiplier() : 3;
+        float baseReach = SpecialBalance.decimal("sword_thrust", BalanceKeys.BEAM_LENGTH, BASE_REACH);
+        float range = hasFire ? baseReach * fire.radiusMultiplier() : baseReach;
         Consumer<Vec3> trigger = cast.onFirstTrigger();
         if (player.level() instanceof ServerLevel serverLevel) {
             java.util.concurrent.atomic.AtomicBoolean triggered = new java.util.concurrent.atomic.AtomicBoolean(false);
@@ -33,11 +48,13 @@ public class SwordThrustEffect implements TechniqueEffect {
             spec.techniqueId = technique.getId();
             spec.path = TechniqueHitSpec.Path.STILL_AIM;
             spec.speed = 0.0;
+            ReleaseDefinition definition = ReleaseRegistry.get(technique.getId());
+            double crossSection = SpecialBalance.number("sword_thrust", BalanceKeys.HIT_SIZE, CROSS_SECTION);
             spec.length = range;
-            spec.width = 1.0;
-            spec.height = 1.0;
+            spec.width = crossSection;
+            spec.height = crossSection;
             spec.texture = "xueximod:textures/entity/xueximod/horizontal_slash.png";
-            spec.lifetime = 4;
+            spec.lifetime = definition != null ? definition.lifetimeTicks() : 4;
             spec.lockThisCast = false;
             spec.dropThisCast = false;
             spec.anchor = player.getEyePosition();

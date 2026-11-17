@@ -1,0 +1,7 @@
+你是Cursor Grok4.7HighFast实施代理。用户授权Cursor修改及编译、主控审查，不打包不进游戏。DeepSeek只读及唯一GPT-6-astra裁决已完成；Cursor DeepSeek实际额度不可用，用户已授权本模型替代。不要重启调度、另派代理或通读整仓。工作D:/alianximod，报告目录docs/开发记录/聚能输入链核查-20261027。其他writer互斥并行，越界需求报告主控，不动别人文件。禁止commit/reset/打包/启动游戏，此阶段禁止Gradle，合并后单人执行。保留无关改动；before可对照；git用-c safe.directory=D:/alianximod。
+共同契约：公共release包新增不可变record ReleaseInput(float chainEnergyMultiplier)，BASE=1，sizeMultiplier()只返回有效链聚能，scaleDuration(int baseTicks)只延长有限正寿命，非法倍率回1，非正/无限语义保留。CastFrame新增public ReleaseInput releaseInput = ReleaseInput.BASE。这两个文件A独占，B/C禁止创建或修改。输入不能夹带定义自身energyScale、附魔半径、操作ID。禁止原地修改共享定义。
+B容器writer。独占release/domain包DomainDefinition/Service/Instance/Geometry及必要几何实现，release/guard包GuardDefinition/States参数消费，release/barrier包Definition/Service/Body/AxisAlignedWall，release/field包FieldSpawner/Zone/Zones。不改网络路由、CastFrame/ReleaseInput、Conditional/Prison/TechniqueHit实体。同步包或渲染若需更改先报告，已有AABB/radius/expiry同步可复用。
+公共入口加末尾ReleaseInput input新重载，旧重载委托BASE，含reserved、schedule。输入由A在计划建立冻结，你存快照或派生参数，禁止重新扫装配或读CastFrame.current。
+领域按原放置锚点扩大宽深高，底部保持原地面minY；寿命乘；实例AABB/到期同步同源。护体半径、band、寿命乘，bodyHeight/费用/维护周期/减伤不乘；刷新替换派生参数、重绑偏转、保留animationStart与维护节奏；普通→2倍→普通必须恢复。屏障宽高厚寿命乘，脚底/锚点、forward不变，放大后执行放置安全预检。场地半径寿命乘，子范围由主半径派生一次，没有实际注册者就合成定义测试，不新增术式。禁止按具体术式ID补丁，不改姿态/去重规则/伤害费用退款。
+缩放结果冻结到实例或新不可变派生定义，不能修改注册对象；接触/偏转/同步同源。BASE基线不变，2/4只消费一次。expiresAt安全相加规则主控稍后补充，不可now+duration溢出。
+只读read-containers-report.md及read-durations-report.md相关部分和必要源文件后直接改。补定向实际生产消费者BASE/2/4、刷新、锚点/同步检查，专属ReleaseContainerEnergyCheck命名；不启动Gradle。完成containers-report.md列全部新增入口完整签名、A调用方要改何处、验证边界，立即结束。

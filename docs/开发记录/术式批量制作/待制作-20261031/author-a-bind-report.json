@@ -1,0 +1,41 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "stage": "bind-resources",
+  "review": "不是正式复审。设计 2/2，实现 0/3。",
+  "compile": "未运行，待统一编译",
+  "stopWrite": true,
+  "staff": {
+    "basic": "StaffData(6, 0.20, 0.10, 100, null)",
+    "test": "StaffData(32, 15.0, 0.50, 1000, null)",
+    "efficiency": "5 * (1 + 15.0) = 80，为基础 5 的 16 倍"
+  },
+  "registered": [
+    "fire_flame_trail",
+    "fire_meteorite",
+    "fire_shock_ring",
+    "rule_surface_anchor",
+    "fire_upwell",
+    "rule_stagger",
+    "rule_hit_continue",
+    "fire_seed_sow",
+    "fire_kindle",
+    "fire_detonate",
+    "fire_nether_gloom",
+    "earth_break_ground",
+    "fire_spark"
+  ],
+  "effects": "未实现，等待 C。没有空的成功效果。",
+  "quote174": "3*48 + 2 + 2 + 3*8 + 2 = 174，附魔按原槽收费一次",
+  "commit": "ResourceHitCommit.commit 一次。本体基数与种火 10 不重复 deposit 或 produce。",
+  "root": "FireCastContext 与 BatchCastSession.rootCastId 是同一次释放。最后持有者结束才移出表。",
+  "weapon": "纯新载荷写入 ResourceIds。合法普通攻击接受后提交一次。非 APPLIED 保留印记，不二次收魔力。",
+  "bRequest": "无",
+  "nameGate": "退出码 1。本轮文件无新增违规。OriginalHumanoid.java:165 i，:202 to。",
+  "ownershipSha256": "a7a872f42e3cc7953acccacff10526fdd5393fee69ef2e43a8166c2c738b9a30",
+  "blockers": [
+    "C 的陨岩、热波、火苗效果未登记，攻击宿主不能生成",
+    "留焰、幽冥、崩地的持续实现未写",
+    "陨石方块与实体类名未知，未注册"
+  ]
+}

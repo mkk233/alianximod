@@ -1,0 +1,103 @@
+{
+  "source": "40 direct native Blockbench Preview.screenshot PNGs, 20fps. No offline rendering or collaging. Solid dark matte and common palette applied only for GIF encoding.",
+  "png_frames": 40,
+  "unique_png_frames": 24,
+  "checks": {
+    "earth_break_ground_v2-real-blockbench.gif": {
+      "size": [
+        1100,
+        900
+      ],
+      "encoded_frames": 28,
+      "unique_decoded_frames": 24,
+      "duration_ms": 2000,
+      "frame_durations_ms": [
+        50,
+        100,
+        50,
+        200,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        250,
+        50,
+        200,
+        50,
+        50,
+        50,
+        50,
+        50,
+        100
+      ],
+      "loop": 0
+    },
+    "ground_dust_v2-2d.gif": {
+      "size": [
+        768,
+        256
+      ],
+      "encoded_frames": 16,
+      "unique_decoded_frames": 16,
+      "duration_ms": 800,
+      "frame_durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "loop": 0
+    },
+    "ground_dust_v2-original.gif": {
+      "size": [
+        96,
+        32
+      ],
+      "encoded_frames": 16,
+      "unique_decoded_frames": 16,
+      "duration_ms": 800,
+      "frame_durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "loop": 0
+    }
+  }
+}

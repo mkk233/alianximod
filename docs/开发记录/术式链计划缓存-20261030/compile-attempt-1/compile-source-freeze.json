@@ -1,0 +1,3992 @@
+[
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/AnimationClip.java",
+    "lastWriteUtc": "2026-10-23T20:02:15.3975198Z",
+    "length": 6614,
+    "sha256": "C63A4E5443FFA9643E5F76C4C01B5288BA0736386EC1D0F0ED554F4A86663001"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/Joint.java",
+    "lastWriteUtc": "2026-10-23T19:17:02.5386643Z",
+    "length": 10989,
+    "sha256": "454A791C5BAE0C4B14F1A19F77859078ED3F88D5D7E29455438026F3ED3CF096"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/JointTransform.java",
+    "lastWriteUtc": "2026-10-23T20:13:56.1878641Z",
+    "length": 14065,
+    "sha256": "C93EC94D02B9216B2C2802E8FA146AC421718D54E5AA2B736CCF70B7E08FF434"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/Keyframe.java",
+    "lastWriteUtc": "2026-10-23T20:01:34.3983530Z",
+    "length": 2346,
+    "sha256": "ED35EF39B9FD8FB9F2C7EA69C3D530FFBC2DE58301D9110D0ABB9B4B180463DC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/math/AnimationTransformEntry.java",
+    "lastWriteUtc": "2026-10-23T19:13:39.2225921Z",
+    "length": 2717,
+    "sha256": "9CCF1B360EB0DCC355B8F215F04609F395D667AFC12C4D733BEABC2750E9CC57"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/math/FiniteChecks.java",
+    "lastWriteUtc": "2026-10-23T19:13:27.2609311Z",
+    "length": 2055,
+    "sha256": "25C14C76ADF528A6DF83215BECCDD151C405C494245A4ACEC66340FB48AC1CD8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/math/MathUtils.java",
+    "lastWriteUtc": "2026-10-23T20:01:36.3391760Z",
+    "length": 5334,
+    "sha256": "301D6DF90AE0594FFDF5057F9697FB4928CD835BB6A0A930A48B63F1611AA3C3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/math/MatrixOperation.java",
+    "lastWriteUtc": "2026-10-23T19:13:29.2763013Z",
+    "length": 682,
+    "sha256": "15B9D6CA78FB9ADF51DC72762E9640A5743B85D3B2CAAE85796F4BEC54EEF604"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/math/OpenMatrix4f.java",
+    "lastWriteUtc": "2026-10-23T19:15:37.8126829Z",
+    "length": 47791,
+    "sha256": "17E0E16C05E528DA96E5CB1CBA2C4FD414B5775E0ACA1F7DE093F7AB3C1363D3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/math/Vec3f.java",
+    "lastWriteUtc": "2026-10-23T20:01:37.2497820Z",
+    "length": 19259,
+    "sha256": "11D0BF92C090841BD58AD871837129339C4DD6003BFEC8E68C844462617A47AB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/math/Vec4f.java",
+    "lastWriteUtc": "2026-10-23T19:13:47.8916464Z",
+    "length": 3507,
+    "sha256": "9E5449CE40A34DAC5A72D9654064D9DA98961B0FA05327402B33C0CF80312216"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/model/Armature.java",
+    "lastWriteUtc": "2026-10-23T19:17:43.9192035Z",
+    "length": 13964,
+    "sha256": "92BA3F32D778E361F910408323AEB07E42701B2DB6E0BEBEBE0E080B8EC3FC1D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/Pose.java",
+    "lastWriteUtc": "2026-10-23T19:16:38.4160182Z",
+    "length": 4564,
+    "sha256": "35F6990DA5D4FE7DD18E1112F77F612D72441D41A02FE53C687FFA397D7AB359"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/SampleSearch.java",
+    "lastWriteUtc": "2026-10-23T19:13:28.0499387Z",
+    "length": 3489,
+    "sha256": "D392425F7C9D7C0DC751693E71C494DB42E845C43073D37B4EF1F3648E95A268"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/core/TransformSheet.java",
+    "lastWriteUtc": "2026-10-23T20:01:57.5451004Z",
+    "length": 21854,
+    "sha256": "3F223D718B05412D69F98D55F1166DDBEFE2735507E4A037C90C1EE5C6BC21AC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionBootstrap.java",
+    "lastWriteUtc": "2026-10-23T20:37:58.2057072Z",
+    "length": 2404,
+    "sha256": "89AB136D180B3434800BCDF68F3AC2A78EAA69FD8CA10CD4C5235D918326A020"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionClientIngress.java",
+    "lastWriteUtc": "2026-10-23T21:11:37.2911418Z",
+    "length": 773,
+    "sha256": "9DCEBA2E079AA3E229DFE57E5DCFF1F69F8DD2BE2114A841020479B696D7D974"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionCommit.java",
+    "lastWriteUtc": "2026-10-23T21:19:41.0307895Z",
+    "length": 5129,
+    "sha256": "5B5ABFD8FF9E1BB7511275A3CD6EFF3BD09FC58DB42BC716BE36B8210F279535"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionDefinition.java",
+    "lastWriteUtc": "2026-10-23T20:31:28.2317143Z",
+    "length": 5053,
+    "sha256": "ACE08EF38297A27E8FDDBEB57024A8754BBED1350FC90E0A651CB53975F6703A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionFrame.java",
+    "lastWriteUtc": "2026-10-23T21:26:35.5016508Z",
+    "length": 5887,
+    "sha256": "FCCB238890A2E46DA0FB42AB1A0DF388FE43144786E875F7F65A3A31F04DCA68"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionPlaybackGate.java",
+    "lastWriteUtc": "2026-10-23T21:10:27.5784273Z",
+    "length": 2429,
+    "sha256": "3EA1E09E6B8080CAFB9D178B278F198002B80E3F83C714EE2D8146EB8C37A4AC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionPlayer.java",
+    "lastWriteUtc": "2026-10-23T21:12:17.7786301Z",
+    "length": 21450,
+    "sha256": "061D2DB0C908BC92752372AA27FB357C46325747C69CE731E48CAEE427D4CD27"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionRegistry.java",
+    "lastWriteUtc": "2026-10-23T20:33:26.3758104Z",
+    "length": 6744,
+    "sha256": "411745023C46D7C81F5DF8496CF49ABDB38318AE0C8F3F05482BCFB0908D0FD7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionRuntime.java",
+    "lastWriteUtc": "2026-10-23T21:10:48.4355300Z",
+    "length": 27549,
+    "sha256": "6AFCDD8876C20A1B01BCA847B8B3A6550205DA5AF36A4A614D0DA3E1D561330A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionSampleContext.java",
+    "lastWriteUtc": "2026-10-23T21:19:42.2025805Z",
+    "length": 7697,
+    "sha256": "1597377FF92D0046F43ACAAC284923A04376EB0893B5038B6100059650BB9BB2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionServerEvents.java",
+    "lastWriteUtc": "2026-10-23T21:11:38.7259139Z",
+    "length": 2939,
+    "sha256": "87341D60B5574AE5047EA6B74D1A5D679EF9F5FCED3903B096E3696D82F85B1C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionStatus.java",
+    "lastWriteUtc": "2026-10-23T20:31:32.5046112Z",
+    "length": 3940,
+    "sha256": "7378A8EDA6DC23806A7AEE0B15EF58D38E64CA098780D142C5F012DBA263C4E2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/ActionVisualFallback.java",
+    "lastWriteUtc": "2026-10-25T11:19:25.9360266Z",
+    "length": 7405,
+    "sha256": "22243C65C96FE79339F7ED7AD42047060C01D807135E54D37298805BA95F56E9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/CommitAuthorization.java",
+    "lastWriteUtc": "2026-10-23T21:10:20.5880649Z",
+    "length": 1239,
+    "sha256": "62BC3763A55CA24FF45FDFB7351C19C476A502E05A6BFE442EDFE928D2AA6DDA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/CommitPermit.java",
+    "lastWriteUtc": "2026-10-23T21:10:19.1628926Z",
+    "length": 1059,
+    "sha256": "EE01C850F554EE87203F61347A7FE7736975B13A9C61CA8FF6D1F2936A5F3AC7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/GroupReplayLedger.java",
+    "lastWriteUtc": "2026-10-23T21:10:40.7720544Z",
+    "length": 3469,
+    "sha256": "82A5E497919209C1FDF4472F57A458074639E36D4948989361BB69C76F524907"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/loader/ActionPoseProbe.java",
+    "lastWriteUtc": "2026-10-23T20:35:20.5117253Z",
+    "length": 10304,
+    "sha256": "05806536083A49D4B6D63F683B66AC8497505A55668E69475BE5EC3EC696BF8F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/loader/DevActionLoader.java",
+    "lastWriteUtc": "2026-10-24T00:25:41.6979613Z",
+    "length": 40618,
+    "sha256": "8CA3C3595D2D6155558D5035F215271B8CC62DA8DDEC46136752340E6019190C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/loader/DevLoadResult.java",
+    "lastWriteUtc": "2026-10-23T20:31:56.9663331Z",
+    "length": 4184,
+    "sha256": "B4723B9604FC08772570B3FC528D67E791DBC953078B35298FA61188BD29D29F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/loader/SourceMatrixMath.java",
+    "lastWriteUtc": "2026-10-23T20:31:22.6205946Z",
+    "length": 1850,
+    "sha256": "B492415BAA97595DBD939F579DA107C3B39B5A406DBC20B70A3E8B5ABFB19744"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java",
+    "lastWriteUtc": "2026-10-25T11:24:25.6988952Z",
+    "length": 12476,
+    "sha256": "C7C4A2FBDF17C95A7AB52ED1D826D90FDA38BA3673F12AC9B4D91FE770B43534"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/WaterBladeActionMap.java",
+    "lastWriteUtc": "2026-10-23T20:35:03.3415186Z",
+    "length": 2696,
+    "sha256": "8100C0AFD230674BB1A828980E072CC43F8C1A10F50F19929A27929511AC7510"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/api/RegisterXueXiContentEvent.java",
+    "lastWriteUtc": "2026-10-22T02:33:00.6626806Z",
+    "length": 3510,
+    "sha256": "D9619D000F890DD48A1C62095E5CF45EF31611C1EF658CA6961ABF323D2286A8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/block/custom/TeShuBlocks.java",
+    "lastWriteUtc": "2026-10-19T17:49:00.0184114Z",
+    "length": 1898,
+    "sha256": "D3A404AC72A6EF6DAF4FFFFA3FC334D2FB85BBD4A2EA73A16055D8D3D157EC3F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/block/ImprintDeskBlock.java",
+    "lastWriteUtc": "2026-10-19T17:49:19.1298910Z",
+    "length": 2627,
+    "sha256": "DA6A4D537D076A7EE43E1ABBDF02684EBE4B685D1351433911E1AECCE73E76C8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/block/ImprintDeskBlockEntity.java",
+    "lastWriteUtc": "2026-10-19T17:49:26.0788956Z",
+    "length": 1052,
+    "sha256": "52ED0C087B5D2ABC877799E10520869A6BCDF169BB5C9E528E9BFC50444DBBF8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/block/ModBlockEntities.java",
+    "lastWriteUtc": "2026-09-26T19:44:34.9058271Z",
+    "length": 953,
+    "sha256": "3C5A04746406314CA7DEED88BC3C99C73DD29BB0E1606EE3DF8851F93373A732"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/block/ModBlocks.java",
+    "lastWriteUtc": "2026-10-19T17:48:53.3258777Z",
+    "length": 3193,
+    "sha256": "0E175D65096DD29BDEF88DFCB493B56669B31C56A68B0320E5D5A735BB818C88"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/ActionClientPlayback.java",
+    "lastWriteUtc": "2026-10-29T17:53:24.7140994Z",
+    "length": 17750,
+    "sha256": "A21A6D89B85683979F60F871049A015B5C0AAA4BA134CD497E34A41CCFCFD5C3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/ActionRenderClock.java",
+    "lastWriteUtc": "2026-10-23T22:02:23.8199671Z",
+    "length": 783,
+    "sha256": "057A3B4C3BCA5A1ECF9984231266C8A18A427B8C84A496FB61675F7A3B124976"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/ActionRenderQueries.java",
+    "lastWriteUtc": "2026-10-24T18:49:54.6443313Z",
+    "length": 10630,
+    "sha256": "73CC89F7D7773410B74C0D80DAC9DE2FC9D4F55ED1D491A06CB3F4E40D72998F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/ActionVisualCatalog.java",
+    "lastWriteUtc": "2026-10-25T11:19:35.0674832Z",
+    "length": 23530,
+    "sha256": "8BF69FCE1926F1D5F58AFD932E96C2824F53310DAF9DA044BF0F3E748285EC3B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/FirstPersonHandBasis.java",
+    "lastWriteUtc": "2026-10-23T22:36:30.2453791Z",
+    "length": 8669,
+    "sha256": "EFD284345AEC7A6EF8B8AE39432C94958C8E0F68684915A274188CB80739134F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/MatrixFrames.java",
+    "lastWriteUtc": "2026-10-24T00:24:38.1160694Z",
+    "length": 5174,
+    "sha256": "C2102A84FE6AFF883857D25D0DB5DCD822F0A93F3FDC1D0790E32AF7F679B2FA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/CornerSink.java",
+    "lastWriteUtc": "2026-10-23T23:34:44.4390461Z",
+    "length": 454,
+    "sha256": "A7B406D5AD8E9AB469E347D33755772827C4A4D804FA4AE13518845657CBEAD9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/CpuSkinner.java",
+    "lastWriteUtc": "2026-10-24T00:25:44.3797600Z",
+    "length": 7764,
+    "sha256": "E09C0D232A2CD5E89FD60CCA6A255EB919BC8DE6B8D6547D39AD7062E3F39734"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/MeshCatalog.java",
+    "lastWriteUtc": "2026-10-23T23:38:18.2494138Z",
+    "length": 10514,
+    "sha256": "F60A5F3BF9BC24ADDAF9807063E58A580B23F7DEA6FC34A31EB432743C5DD943"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/MeshJsonDecoder.java",
+    "lastWriteUtc": "2026-10-23T23:43:09.2929414Z",
+    "length": 16412,
+    "sha256": "2E6D0B3478B7FE5DB67D3CD1E63106897780F5E5C99308A0D31D37E72C2EE321"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/MeshLimits.java",
+    "lastWriteUtc": "2026-10-23T23:36:14.3656407Z",
+    "length": 1372,
+    "sha256": "BFB4DF5F27D2B1BD71667DBB938184937F2CC9F1AD3C08A8A1872354007685E1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/MeshLoadResult.java",
+    "lastWriteUtc": "2026-10-23T23:34:07.0197832Z",
+    "length": 3314,
+    "sha256": "B4B3F4C64D1104B2B9B1D4A6E58BC62A9158EB3707254AB0A147D07DBB52996E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/MeshRenderView.java",
+    "lastWriteUtc": "2026-10-23T23:35:40.4928519Z",
+    "length": 7399,
+    "sha256": "24B324CF97B6200A726ACB19A334C8FB010E40E5E683FABE9074BFDB74D31852"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/MeshRepository.java",
+    "lastWriteUtc": "2026-10-23T23:39:58.2677288Z",
+    "length": 12374,
+    "sha256": "2AE9038D9791BC0CB279AE2675C346504674C583A6D54BE74A1B02DA84CDDBF4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/PaletteFrames.java",
+    "lastWriteUtc": "2026-10-23T23:32:38.8862184Z",
+    "length": 726,
+    "sha256": "D10944FBE1593878071DC97C6E76006AB72369D4293AA680B232F3EA279040A0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/PartVisibility.java",
+    "lastWriteUtc": "2026-10-23T23:32:37.2630069Z",
+    "length": 1115,
+    "sha256": "240EA3595CFBBD4056FD7FB479C2127410C1B8579A33CEC09D494DEA3820D211"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/PlayerMeshKind.java",
+    "lastWriteUtc": "2026-10-23T23:32:30.3494588Z",
+    "length": 947,
+    "sha256": "494973EF8E3E95B7BA5A3D91EDD540588E44AC2BDD80BD59E388F9A9F6220873"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/PlayerMeshPart.java",
+    "lastWriteUtc": "2026-10-23T23:32:31.7582777Z",
+    "length": 867,
+    "sha256": "A47E14B91430D16F0F748B0DB3ACBE698C353BBF883680522105788307DBD5C2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/PlayerSkinMesh.java",
+    "lastWriteUtc": "2026-10-23T23:43:07.2529798Z",
+    "length": 16238,
+    "sha256": "F071C69816F7C61A222EB0C419B03FE771C8F1ADAE353CEF3E7B6FEC87524E01"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/SkinDiagnostic.java",
+    "lastWriteUtc": "2026-10-23T23:32:35.5075784Z",
+    "length": 571,
+    "sha256": "B7626B41670D67EEEA6BA142E8F1052EB870427857A3ADA5EEAA9AEFDB450CA1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/SkinLease.java",
+    "lastWriteUtc": "2026-10-24T00:25:44.7176813Z",
+    "length": 1262,
+    "sha256": "D7ED58EB74AAD856CC4798330930229BE00332E80177D3530B91131C9AFE8DF1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/SkinPalette.java",
+    "lastWriteUtc": "2026-10-23T23:34:21.7071946Z",
+    "length": 11284,
+    "sha256": "3E9FD57B6CD144DB2C5C6637040B833B01742640EB12AE68F8EC96C82108DCEE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/SkinSampleView.java",
+    "lastWriteUtc": "2026-10-23T23:36:19.8096121Z",
+    "length": 2853,
+    "sha256": "64E453767FCBB88D323B7E9F8FBEFC184F54CB351AF32C314F7A1C96F81990D1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/SkinWorkspace.java",
+    "lastWriteUtc": "2026-10-24T00:25:42.3936620Z",
+    "length": 2552,
+    "sha256": "58C85A90A1DEB50173FBA78FB5B10E09E602C16256D1C6BF929D1AAB2B634C17"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/SkinWorkspacePool.java",
+    "lastWriteUtc": "2026-10-24T00:25:42.7138554Z",
+    "length": 2925,
+    "sha256": "888D15E3094DD35C5463341EB9FFFC6FDC093DD79B351B216E192913967D7BDB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/mesh/VertexConsumerCornerSink.java",
+    "lastWriteUtc": "2026-10-23T23:36:16.4744292Z",
+    "length": 1447,
+    "sha256": "3B7111F7C6466BE639D1DFB1EC280E4228450D0EA8D0B33D4A773B5D0F37D534"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/ModelPartSnapshot.java",
+    "lastWriteUtc": "2026-10-23T22:03:20.7561270Z",
+    "length": 3932,
+    "sha256": "6826F81614C1F4546C8CEC15E1192F940BB761B3EABA0961BC2C93F1DB2C4BE2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/PartRotation.java",
+    "lastWriteUtc": "2026-10-23T21:44:21.6889296Z",
+    "length": 645,
+    "sha256": "D757B291EBDA5287EC605143D3DD3BD13C696CF0F704DDF73AB81A4C66D7279E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/PoseStackGuard.java",
+    "lastWriteUtc": "2026-10-23T22:02:40.1868866Z",
+    "length": 872,
+    "sha256": "CEC926E9F7603AD26EA1B1F653A8AAB92EF160C1573919B66BA7F00048979B22"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/RenderPoseScope.java",
+    "lastWriteUtc": "2026-10-24T01:18:51.3688450Z",
+    "length": 3900,
+    "sha256": "05CA447C306AD46F4FC4197033EAA2EC5F5560E8B08D1DFAE5E6051983C8B607"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/RenderSpaceCapture.java",
+    "lastWriteUtc": "2026-10-23T22:36:12.3448465Z",
+    "length": 2539,
+    "sha256": "3AB9DC7892D7C789DB58FE95996BC38E3C8088762A04752F3CD230087892523E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/RetargetedPose.java",
+    "lastWriteUtc": "2026-10-24T19:45:28.2751034Z",
+    "length": 3585,
+    "sha256": "87BDE484DC8347FEB78EC649DDEB303D91F2B759E4C5AAE14C11B9CFACB8C154"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/RetargetProfile.java",
+    "lastWriteUtc": "2026-10-23T22:01:29.2078373Z",
+    "length": 4168,
+    "sha256": "48A291487C57281E49A5C1FC50533A1B234DC8E82A2DFE78786E7370774C011E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/RigidFallback.java",
+    "lastWriteUtc": "2026-10-24T00:24:44.9562454Z",
+    "length": 3245,
+    "sha256": "45C368BE2ABDDB0AD96CD65B06D5C74A64D3EFD5B387A5D64CB96C03EBAE7F97"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/RigidPoseRetarget.java",
+    "lastWriteUtc": "2026-10-24T19:45:28.2761090Z",
+    "length": 8647,
+    "sha256": "BA0CF91AA0A33E1AA0462961205EAC17B679B8F9C8E6B828A9BB0DDFE6A41079"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/SkinBinding.java",
+    "lastWriteUtc": "2026-10-24T01:18:50.9436711Z",
+    "length": 308,
+    "sha256": "9A35B6C75FEC50A6F9453FD0DD77F0B35EA09C6634297D601FCBC47727D0ACA9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/AffinePose.java",
+    "lastWriteUtc": "2026-10-24T10:55:25.9962799Z",
+    "length": 1511,
+    "sha256": "7AFD113B184AF7542CBB4074403BCE0C6D3C573DFC9C2E33E270D696ED94130A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/ArmorDraw.java",
+    "lastWriteUtc": "2026-10-24T10:55:41.1290797Z",
+    "length": 8730,
+    "sha256": "DE8805479C2D568BA571394D576FA51C03D35FB865005B67A0C8D4B256090476"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/ArmorMeshes.java",
+    "lastWriteUtc": "2026-10-24T10:55:50.6934869Z",
+    "length": 26656,
+    "sha256": "E0E7CB9B7CD41F31DBDCE7C4C1A8E00484D6397ADD0C7B4E60ED913015E9CD69"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/ArmorPreflight.java",
+    "lastWriteUtc": "2026-10-24T01:33:22.4737135Z",
+    "length": 6488,
+    "sha256": "E28291E7B913BA0D11162784FE6BECEA4389429079308F0FBC5D313C2037D5A6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/ArmorRegion.java",
+    "lastWriteUtc": "2026-10-24T01:25:54.8205984Z",
+    "length": 265,
+    "sha256": "8894ECB168D954BB479CA2C289F2C69D464B4794329A2F355EC6960CFD4F4B34"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/ArmorWeights.java",
+    "lastWriteUtc": "2026-10-24T01:25:54.2998602Z",
+    "length": 7317,
+    "sha256": "8D8828522BE6C04DFBAD5FCE23AB5B8D39A48998379976549E284C05712E3585"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/AttachmentMotion.java",
+    "lastWriteUtc": "2026-10-24T01:26:01.6765640Z",
+    "length": 4607,
+    "sha256": "C2AACEDD430B923FBE1855BA3E78ABC6215E74CE9E4A0B4A5CDBE04748BAD144"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/AttachmentSupport.java",
+    "lastWriteUtc": "2026-10-24T10:55:42.0150465Z",
+    "length": 3454,
+    "sha256": "6667A1CD11057A247FB25172B0EF78CBE45094672210CE67DFB9720B098FE224"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/BindJointTable.java",
+    "lastWriteUtc": "2026-10-24T01:25:34.1778064Z",
+    "length": 4387,
+    "sha256": "630252A0781ECD9F2560F103EDCC27724501ED6450DB080490116133F94E95F2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/FirstPersonItemPlan.java",
+    "lastWriteUtc": "2026-10-24T01:25:27.1314200Z",
+    "length": 3033,
+    "sha256": "02AD40EDD1E64A446FEDC00DF213812104766D0052139A3DD456DC5B1FD1034D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/JomlCopy.java",
+    "lastWriteUtc": "2026-10-24T01:25:28.3698467Z",
+    "length": 626,
+    "sha256": "6B5EEDDF768149CDB7418EF635BD5A1DBD2C23CB4A451F06673F3F37660661B5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/LayerHold.java",
+    "lastWriteUtc": "2026-10-24T10:55:27.9605239Z",
+    "length": 1595,
+    "sha256": "ADEE577D310F2AB6EDB5810FB1ECE9AEE9D1E7C3429A286F56A8D84F082A3298"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/package-info.java",
+    "lastWriteUtc": "2026-10-24T10:56:42.6903815Z",
+    "length": 1850,
+    "sha256": "3788ACB7F5646150E230E89E41DA9AA73133FDA7D6BC95B58EC6CA48E89BDB2D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/PartRest.java",
+    "lastWriteUtc": "2026-10-24T01:26:05.8315542Z",
+    "length": 2977,
+    "sha256": "EB9B77EE2B1315F4CCFFABE1196450FE50FFDA8742E320245E2511BD1D94F436"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/PlayerPartRegions.java",
+    "lastWriteUtc": "2026-10-24T01:32:15.7597892Z",
+    "length": 1861,
+    "sha256": "0F2B2C4BB95FBF44647BF5BE9540E899007000493B4852DBC2D26A12F4CAFE1A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/SkinAttachmentBridge.java",
+    "lastWriteUtc": "2026-10-29T17:54:05.7721510Z",
+    "length": 18690,
+    "sha256": "9742405AD9171DBBE5FF6EBEE14D8BC2A69BFCA08E66336C998B60991E16CE5C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/StuckMarks.java",
+    "lastWriteUtc": "2026-10-24T10:55:31.2639638Z",
+    "length": 2860,
+    "sha256": "403EC4BE91B8C840F0DC7A515E12DDC4CBA5F1FA0E0D4A1AC68DBFF81FE02B6F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/AttachmentTransform.java",
+    "lastWriteUtc": "2026-10-24T00:56:55.4164777Z",
+    "length": 5990,
+    "sha256": "BC5B3613C361D96F46B9C01DE5F6BBA4C3E03DB3C9D90ED87421316CC50F857C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/FirstPersonSkinDraw.java",
+    "lastWriteUtc": "2026-10-24T10:52:09.0272054Z",
+    "length": 12534,
+    "sha256": "F0F01499D678C3742E85EE5A72A307DAD68C37298344E7108FF7240619708B42"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/HandFrameCalibration.java",
+    "lastWriteUtc": "2026-10-24T10:44:25.5597028Z",
+    "length": 14223,
+    "sha256": "D3A3BF6723C4B19C6AF3FC2DB24741570BDB883CA9B28D1C79E64C7DAF1A9BEB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/ImmutableSkinFrame.java",
+    "lastWriteUtc": "2026-10-24T00:57:08.4384106Z",
+    "length": 9386,
+    "sha256": "0564E968FB4F1C7B09CC72479AAC5A4D4391725D7BA79516A62BEB965B6104C9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/PoseStackCornerSink.java",
+    "lastWriteUtc": "2026-10-24T01:19:50.5303519Z",
+    "length": 2221,
+    "sha256": "250B75A6D1B5993468FCF77149DD9A449AE8DA15C89F78A0AA75F390BB764622"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/RenderPlan.java",
+    "lastWriteUtc": "2026-10-24T00:59:41.3175950Z",
+    "length": 3497,
+    "sha256": "85BCCEAFCFC457F200869C2294231335D19FBA45C4E8BB88884B3A241E8F58C4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/SkinAssetLifecycle.java",
+    "lastWriteUtc": "2026-10-24T01:21:32.3414594Z",
+    "length": 1193,
+    "sha256": "8ED93733479ACC0168C4B28FA8215D2521B80C7D39DCFA7DEF3BC06DDA08C83B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/SkinAssetReload.java",
+    "lastWriteUtc": "2026-10-24T01:21:36.1392327Z",
+    "length": 1743,
+    "sha256": "B4DD1F391DE6A15D113EEFAE61FC89AAD6077661FCD09B4525ADA6A9BA7D105A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/SkinAssets.java",
+    "lastWriteUtc": "2026-10-24T01:21:32.2279360Z",
+    "length": 11938,
+    "sha256": "4AC435C5D664664F5FF7E42A8B1F01C373B508482B0B4EB0D5F807A6D0E7BEFC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/SkinnedBodyDraw.java",
+    "lastWriteUtc": "2026-10-24T10:52:04.4352880Z",
+    "length": 6030,
+    "sha256": "E868F9C785BF7012C38B31479709CE3042FAA88F45EE765BB021F54CD02C0D7C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/SkinRenderAccess.java",
+    "lastWriteUtc": "2026-10-24T01:20:59.2483444Z",
+    "length": 1884,
+    "sha256": "F84E1FEC70AFABA4AE5E87BBC46413F9060CC788952945DF2DBD16B73725343E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/SkinSession.java",
+    "lastWriteUtc": "2026-10-24T10:58:16.7009938Z",
+    "length": 15815,
+    "sha256": "9246481B23DF7B2DD12C21DBA3B98878D2B12296A834D94EB77B88AD829389D6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/SlashAlignmentScope.java",
+    "lastWriteUtc": "2026-10-24T19:45:28.2751034Z",
+    "length": 321,
+    "sha256": "969736D23F9EE268DFA5D62815C81D246357C166C754FDFA4C7F47178B90CFB3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/SlashPlaneAlign.java",
+    "lastWriteUtc": "2026-10-23T22:36:18.0486154Z",
+    "length": 5251,
+    "sha256": "F7D0FD65D1EEADE6E6CD649F6A18A5196557AACD08E39E16EFE1389929E8BC6B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/ThirdPersonPoseWriter.java",
+    "lastWriteUtc": "2026-10-24T19:45:28.2751034Z",
+    "length": 5620,
+    "sha256": "95D176789AB5B5237A2B2A44E2B945583C59D4DD115C88AFF5680AF593A4F3FF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/VanillaEuler.java",
+    "lastWriteUtc": "2026-10-24T00:24:38.1190755Z",
+    "length": 3340,
+    "sha256": "0E10723E1D9B12E3F25FCAC3F5B2643605566D2C4009E4E92C86E0C309F4B7E4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainClientState.java",
+    "lastWriteUtc": "2026-10-29T17:46:03.8093927Z",
+    "length": 2832,
+    "sha256": "355D612C449FD7E4981A3FC2C24B05F336749615416BF97A632C03BBAC7E319D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainMistRainRenderer.java",
+    "lastWriteUtc": "2026-10-26T03:40:44.6818672Z",
+    "length": 8096,
+    "sha256": "8B3C4B642FD7426BE11138E7C980FA9AAA3926840926B9F965C43C1066194699"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainMistRingLayout.java",
+    "lastWriteUtc": "2026-10-26T03:53:33.6676935Z",
+    "length": 11281,
+    "sha256": "0DB1AB44897FB0C387F67C7749DD53B5CECDF9AAB8032904A11144CD7B020095"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainMistRingRenderer.java",
+    "lastWriteUtc": "2026-10-27T18:38:57.1929980Z",
+    "length": 3067,
+    "sha256": "32D5BE5D5DCBF9EF9BF7F92DD47B79D94DA31F51758A64D5308788424F3E429A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainMistShaders.java",
+    "lastWriteUtc": "2026-10-26T03:39:03.0349619Z",
+    "length": 1467,
+    "sha256": "34003436C2C8E384771D283CCEB6A2A3B8A71EB474FC42E78433EF1C7AAE1885"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainPressureRenderer.java",
+    "lastWriteUtc": "2026-10-26T20:51:58.9467720Z",
+    "length": 10129,
+    "sha256": "861945E4F63A9F6E7CB4D121EBD0EA680CEABEF00852B27016965615A1670A1D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainSheetMesh.java",
+    "lastWriteUtc": "2026-10-26T03:40:16.4373419Z",
+    "length": 2209,
+    "sha256": "E53CFC54C96F52CD6CA0B04BA3921036F53D138F7F54BA186FDD1784BC5868E9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainVolumeBatch.java",
+    "lastWriteUtc": "2026-10-26T03:39:25.7251334Z",
+    "length": 3971,
+    "sha256": "73E39F7106732B4652D3004B238228B1FB80A9941EE9D4BF58603917BED265EF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/DomainWorldRenderer.java",
+    "lastWriteUtc": "2026-10-26T03:41:05.8651347Z",
+    "length": 5585,
+    "sha256": "8128F3A0BB9462DEE8D7D16A17A25BC795B36B593F5F98496510A0D86B361C50"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/EntityRendererFix.java",
+    "lastWriteUtc": "2026-10-23T14:06:26.1671901Z",
+    "length": 4815,
+    "sha256": "2CF155C8068F2AF6066D4D61A7E0A0C702389501B6F617CC072DBFB8C3F391C5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/FireSeedFlameClient.java",
+    "lastWriteUtc": "2026-10-29T17:48:18.8441063Z",
+    "length": 9932,
+    "sha256": "657D3A2662C592DF00987A60E91DA5A7F016A128B4C180F8363A435765DB1B5E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+    "lastWriteUtc": "2026-10-29T19:06:49.3191094Z",
+    "length": 28706,
+    "sha256": "A15496FAEBCEA351C10144E63F6A7B71D6FB2619E2E7CDA3E11C914144418C87"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/GuardClientLifecycle.java",
+    "lastWriteUtc": "2026-10-26T19:36:53.6322617Z",
+    "length": 1305,
+    "sha256": "C6EC26DA56088F0C8040A7EBDD5C6026BB9032721204D432E22975AFBC370258"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/GuardRingRenderer.java",
+    "lastWriteUtc": "2026-10-26T19:31:38.3293594Z",
+    "length": 7436,
+    "sha256": "20538407EF9A78611D776C231240D29B7B3DCE1579457951BC22EF2BAA73DAC7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliRingTrail.java",
+    "lastWriteUtc": "2026-10-29T19:08:33.6172734Z",
+    "length": 5836,
+    "sha256": "54C000A69C5A3BF923DF59B3D2B31C7DC166D211760CE32B8DC5D273F1BC5DEF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java",
+    "lastWriteUtc": "2026-10-29T19:07:00.4746737Z",
+    "length": 19282,
+    "sha256": "F84350C2D44F8B5A72A9DEEDC24C5895D32B2052D91A8C53F4346620196E0E0A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/MagicHudOverlay.java",
+    "lastWriteUtc": "2026-10-19T17:48:59.4403641Z",
+    "length": 1127,
+    "sha256": "9199A4291692FEB81923E2D06E60A5A2D910C4704AC25F961291D784E108ED80"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/PrisonClientEntry.java",
+    "lastWriteUtc": "2026-10-26T12:34:52.1331810Z",
+    "length": 1061,
+    "sha256": "5F569F410AB2C34479BC6213266A279AAC8BA3895C34C07D0FE0395F33DE3F71"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/PrisonClientState.java",
+    "lastWriteUtc": "2026-10-26T12:36:58.7036634Z",
+    "length": 9095,
+    "sha256": "07CE4FF4C7414010FC12587ADA71CE53767200B1EB5E8AA84F89F971360FDB88"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/PrisonShellRenderer.java",
+    "lastWriteUtc": "2026-10-28T09:52:54.5447434Z",
+    "length": 14086,
+    "sha256": "4304E7A4BF892D3B3A23413DD017A17E982E741F18A26C26DC1884283806D9FB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/StillSheetMesh.java",
+    "lastWriteUtc": "2026-10-25T12:09:38.2896837Z",
+    "length": 1635,
+    "sha256": "714D8849DD0E687134B5027B4AD33314D135E7F8718AA79C8EC5434C0983A168"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/StillSheetPlayback.java",
+    "lastWriteUtc": "2026-10-29T17:57:10.7875292Z",
+    "length": 13834,
+    "sha256": "49698BFDEA55596E92A47CA8A2732FD7F7EF0909C6C1F59657D278739D7AF2F6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/SwordEntityRenderer.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8162801Z",
+    "length": 4610,
+    "sha256": "35908705DD8559E826D74FE5EF5E8A6B3A0D458AC164C68A7CF5D08DDC2FC591"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/TechniqueHitRenderer.java",
+    "lastWriteUtc": "2026-10-28T19:13:18.2234382Z",
+    "length": 17205,
+    "sha256": "B8C44C1CFE6C9BC36E144AB9A60785EEBAF7AAB30A2372A4362232FEE4B3F9EE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterArcRenderer.java",
+    "lastWriteUtc": "2026-10-24T22:19:49.5752065Z",
+    "length": 3669,
+    "sha256": "3AAECBA866D6F17EE9638CDF9EDB5D50EEAE47AB4464B5C16B099554CBDC205F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterArcSheetMap.java",
+    "lastWriteUtc": "2026-10-24T22:04:50.7201176Z",
+    "length": 11700,
+    "sha256": "AC373593BAAD8313DB0673298A2712BCA8C4B506B8248C0954E00D61CB2218DB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterBarrierRenderer.java",
+    "lastWriteUtc": "2026-10-22T18:25:33.4086029Z",
+    "length": 4242,
+    "sha256": "66226969EE0935B510726E83EEFDD470F015D401DA716899CD7E484F805AEAAD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterCurtainLayout.java",
+    "lastWriteUtc": "2026-10-26T20:37:02.4877410Z",
+    "length": 9599,
+    "sha256": "1B80EF8639DCD8969A1177823A4E5ABC783F318C0131AE1CD3C5115B619362F3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterCurtainRenderer.java",
+    "lastWriteUtc": "2026-10-26T20:37:03.4837068Z",
+    "length": 7462,
+    "sha256": "97D686BF6930D4DED3C34CBC01E43AEF0CBD7C973211ABA0BD6354C8AB2B7D6C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterMomentumOverlay.java",
+    "lastWriteUtc": "2026-10-22T07:17:38.6943429Z",
+    "length": 1939,
+    "sha256": "5F87F22AE252B264565E6048126479BC8405A5707BEC98654003A96489B239A4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterPartingRenderer.java",
+    "lastWriteUtc": "2026-10-24T22:19:50.7143053Z",
+    "length": 9172,
+    "sha256": "0AC694B9029116E8442490C84877652AAD83A137561B4E8461D3F6EC9D6AC953"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterRibbonRenderer.java",
+    "lastWriteUtc": "2026-10-24T22:19:50.3707256Z",
+    "length": 6302,
+    "sha256": "70D1D70669A59C9354181024459F1A80870CA6A65F498D79584EAA18EF611012"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterRingV8Material.java",
+    "lastWriteUtc": "2026-10-26T19:31:13.9669235Z",
+    "length": 1540,
+    "sha256": "85470E089D3921FD5A8A347FE0688C04F1EB974838041D00DA450CB0A3FBB80D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterRingV8Math.java",
+    "lastWriteUtc": "2026-10-26T19:31:11.7270987Z",
+    "length": 7839,
+    "sha256": "8117AD9A8B008432F8E71B1000DDAEC59ED82E9C47D5EBDD84E4FC8E53209F0E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterRingV8Mesh.java",
+    "lastWriteUtc": "2026-10-26T19:31:27.6015240Z",
+    "length": 5865,
+    "sha256": "3934661A34EDC018DA8894FF6DCB228CF2953C0296FF2105330259A97E4EF014"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterRingV8Reload.java",
+    "lastWriteUtc": "2026-10-26T19:31:16.3561585Z",
+    "length": 1749,
+    "sha256": "F40A5503D82F87EC5AA448DA142074198C778B56543EA9AA3BC3122F32623008"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/command/ActionCommands.java",
+    "lastWriteUtc": "2026-10-23T20:58:29.5201725Z",
+    "length": 6707,
+    "sha256": "1A78EEDA327C26F3BC81EBCA68CD4E66E6DC356EDDE9A79DE0D4FC7C61562DFC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/command/ModCommands.java",
+    "lastWriteUtc": "2026-10-29T20:16:35.6679755Z",
+    "length": 1024,
+    "sha256": "F3049296125FFC5E9327045884933742A005C07DC8696D55570B4E6FE2D47220"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/command/ShuCommands.java",
+    "lastWriteUtc": "2026-10-29T18:39:23.1054812Z",
+    "length": 28843,
+    "sha256": "4CB68B00808606871A5435F3269D39BDF6E4D9902E1489B540671EDEC643EBF8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/command/SkillEntityCount.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8162801Z",
+    "length": 663,
+    "sha256": "9C92CB2010DF779B02BD0136E0823D4CA4AAE8A6B836994525144A5CA60B435A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/Config.java",
+    "lastWriteUtc": "2026-10-26T16:07:50.6798033Z",
+    "length": 4056,
+    "sha256": "222012F2AA2E34414F547710EDB2EEF7C027FB88E1909E53B0A88E4A8D702709"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/DataGenerators.java",
+    "lastWriteUtc": "2025-09-01T17:47:35.0000000Z",
+    "length": 1655,
+    "sha256": "6CDECD73C17613DFDD1619EDEC644BBC598645EFF0F19CCA7478C9F713078024"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/loot/ModBlockLootTables.java",
+    "lastWriteUtc": "2026-09-26T17:53:12.9509300Z",
+    "length": 3420,
+    "sha256": "5E040EB2D4CB2762174CC8B06A0773B33ED0EB5B566163691EC60CDB60BE19ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/ModBlockStateProvider.java",
+    "lastWriteUtc": "2026-09-26T17:53:12.9534505Z",
+    "length": 2088,
+    "sha256": "0DF3815173509080E2F45B905F9A241DDE5D8D17BEB54B36CB1EC44C36B97E83"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/ModBlockTagGenerator.java",
+    "lastWriteUtc": "2026-09-26T19:14:20.3582559Z",
+    "length": 2711,
+    "sha256": "232648122133410C6726C863AB5F1C23E539E14397C7EB9BD6DCBE47BA0EECEC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/ModItemModelProvider.java",
+    "lastWriteUtc": "2026-09-26T17:52:35.4026019Z",
+    "length": 1649,
+    "sha256": "52577078BAE0D4A506106D803D4B4F05B9933FF71B18E792A599D128899E1305"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/ModItemTagGenerator.java",
+    "lastWriteUtc": "2025-09-01T17:47:35.0000000Z",
+    "length": 1965,
+    "sha256": "1DA7C40892590775A909BAABF522EA9DEEFD048CFE7581C2D46E8E3C140581D4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/ModLootTableProvider.java",
+    "lastWriteUtc": "2025-09-01T17:47:35.0000000Z",
+    "length": 1123,
+    "sha256": "95517504B9EA344365293F56DFCA5E353FE7CDD7EDDDE1C62CF3C55712E61DF8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/datagen/ModRecipeProvider.java",
+    "lastWriteUtc": "2026-10-09T14:25:35.3614369Z",
+    "length": 4807,
+    "sha256": "91FA924A19E122AA7AECBE3A7B5A9C8F5DE1051F903CA6556F55C2884A64CA19"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/DebugLog.java",
+    "lastWriteUtc": "2026-09-26T22:01:00.3900359Z",
+    "length": 1381,
+    "sha256": "312E70AA46AA6E85AC2E87A63F7110086C2F18B9A3C9B1D3505AB69A2A1AB7DA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/DebugLogCommands.java",
+    "lastWriteUtc": "2026-10-19T17:48:57.6760657Z",
+    "length": 1767,
+    "sha256": "966BA76FAF7E6D45E2FBE1483D53006A270572EE2F245CAF17A78381394BD37B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java",
+    "lastWriteUtc": "2026-10-30T02:38:34.0403353Z",
+    "length": 2814,
+    "sha256": "93E2366C5E81F4B62A949BDFEA5BFB456747D37AD2EFD380208F5AB2D3EF13F9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java",
+    "lastWriteUtc": "2026-10-30T02:38:35.7831622Z",
+    "length": 2702,
+    "sha256": "14EBF0FB6D3502DAB9BFECDEA40273D71BB2C332B2A0166F43B09C5338683BCA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceCommands.java",
+    "lastWriteUtc": "2026-10-29T20:14:57.7481242Z",
+    "length": 6422,
+    "sha256": "CC12749E5C6B298F480935697D8828800B5859EBCDDA23F1A4326A8E3C7D7B49"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceEvents.java",
+    "lastWriteUtc": "2026-10-29T20:14:50.2739053Z",
+    "length": 2160,
+    "sha256": "024620501187984A9A4E2847BC1DD9F21F2864880E7DC3E97C577543FA03914A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java",
+    "lastWriteUtc": "2026-10-29T20:58:25.9842519Z",
+    "length": 34461,
+    "sha256": "375D26B74F181922F4BAC10FB47364880A62C811ECB903881035DD8105D430DA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/event/BoundSkillTooltip.java",
+    "lastWriteUtc": "2026-10-19T17:48:58.5738402Z",
+    "length": 2749,
+    "sha256": "7E398C0677D84F4F6A8CF9821247B77FF1BFFC9CCE9E6FCBDDD1D59511523ABB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/event/EnchantedProjectileHandler.java",
+    "lastWriteUtc": "2026-10-19T17:48:56.2788607Z",
+    "length": 1636,
+    "sha256": "836C2112D7F4B7C36C8E38DFD09DCD09039071F0519C828F11EB143A2772C30F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/event/ItemTooltipHandler.java",
+    "lastWriteUtc": "2026-09-26T19:38:38.6275321Z",
+    "length": 543,
+    "sha256": "978DB3CBEF02670AB91EE49101BFC9F15A9484CBB25AEF1845A5B88B9EFFA3EB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/event/ModEvents.java",
+    "lastWriteUtc": "2026-10-25T17:54:16.5591455Z",
+    "length": 5531,
+    "sha256": "2DE8FB118A3174C1D806FDE7FE53EBEE08A38B5A7082DA6FC69D0D8932F06073"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/event/PlayerConnectionHandler.java",
+    "lastWriteUtc": "2026-10-23T06:16:19.1010603Z",
+    "length": 2411,
+    "sha256": "3CB559AC6C24E853131FE989CF21189BEED88BCCED73707241A4E94202C24E07"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/event/SkillHotkeyHandler.java",
+    "lastWriteUtc": "2026-10-28T08:52:43.3403447Z",
+    "length": 5627,
+    "sha256": "A04480064036DFCA61DA7EE8821A636A05B90215805DC74E08837DE2D7E3EC57"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/DebugLogScreen.java",
+    "lastWriteUtc": "2026-10-19T17:49:16.1739986Z",
+    "length": 2669,
+    "sha256": "45FD77B0E0C6BCB280131DFD6E374BD44B1AD831F392FE516FC8200DE29BE597"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/ImprintActions.java",
+    "lastWriteUtc": "2026-09-27T11:19:29.4652323Z",
+    "length": 2144,
+    "sha256": "56796E4429E0D9D247EC9BD4585E9C21B9F8FC8FEF4F7BBD0C8BE13F2682EC08"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/ImprintDeskMenu.java",
+    "lastWriteUtc": "2026-10-19T17:49:20.8134214Z",
+    "length": 4834,
+    "sha256": "54EE62EA6DF969E81C6894D904038EAF80E565BA79259B15FACD857122DD5F78"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/ImprintDeskScreen.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8092410Z",
+    "length": 14594,
+    "sha256": "62861F184890A1CA39F126134957C5BB02665A35872053D657B1D35E6ACE128B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/ImprintTreeView.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8361528Z",
+    "length": 16204,
+    "sha256": "68E84C7A3A5CF45673B672591EE9F05BAA4F8146FCCA2FB62C46D83618354EA0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/ModMenuTypes.java",
+    "lastWriteUtc": "2026-10-19T17:49:21.7038843Z",
+    "length": 1933,
+    "sha256": "8674588F7DDA94169D83B3EBFA4DF9B6027EB7A3104A24C0DD2382EA9A10E58B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/ShuManagementMenu.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8127553Z",
+    "length": 5280,
+    "sha256": "A010527313C55AAF7138FF1AC771DC3394C0EEBB4F2F83E02AB9CA89233E7231"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/ShuManagementScreen.java",
+    "lastWriteUtc": "2026-10-19T17:43:15.8243508Z",
+    "length": 9187,
+    "sha256": "7B999AED3EF17AEE6238C8BF78496CB9EE6E8F06A8FFEFC4EBAE5CA622992CC2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/SkillAssemblyMenu.java",
+    "lastWriteUtc": "2026-09-27T08:34:56.0074316Z",
+    "length": 834,
+    "sha256": "DFCCB7314B5FB1D6BC3B3ED857A5CA585644700074AFD3EFD72CF1D4686E5713"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/SkillAssemblyScreen.java",
+    "lastWriteUtc": "2026-10-19T17:45:14.1168054Z",
+    "length": 20165,
+    "sha256": "CFA5C74637EE6999168E9CF4371DC7212EA10E51C81DAE6508813C7505AF868F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyMenu.java",
+    "lastWriteUtc": "2026-10-26T21:31:01.3456579Z",
+    "length": 22224,
+    "sha256": "3FC1C2535E1F4A58A2567415180A484B2DC42957BADAF01387C1557FD382CE0C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyScreen.java",
+    "lastWriteUtc": "2026-10-23T18:44:06.6177943Z",
+    "length": 13071,
+    "sha256": "1A0398555452D842359C7DD4BAD11741E5F0CD0BC9E710D67772A30440FE6AF7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/SpellStorageMenu.java",
+    "lastWriteUtc": "2026-10-19T17:49:14.6960717Z",
+    "length": 2928,
+    "sha256": "5B59D50BBDF4C62E0D81F1C3E9D2383A31317D40230025DEA64D44F5057454F7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/gui/SpellStorageScreen.java",
+    "lastWriteUtc": "2026-10-19T17:49:17.1708595Z",
+    "length": 1376,
+    "sha256": "4696E0E1D19797C8A2E1C8B22E4FAC90A64C9D7A432C86F50C25F10DCBC62922"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/custom/FuelItem.java",
+    "lastWriteUtc": "2026-09-26T19:39:39.8524676Z",
+    "length": 905,
+    "sha256": "5CF5FC79A58E4E453B32EF4374ED29DB6C462A93EAE3D129480815AB1E91D850"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/custom/TeShuItem.java",
+    "lastWriteUtc": "2026-10-19T17:49:27.0439439Z",
+    "length": 2848,
+    "sha256": "240DF16320A1709C3F7FBCF711B560822BB45E4D927DB3F5A70148B482C29C5D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/FoodItem.java",
+    "lastWriteUtc": "2026-09-26T19:39:39.8524676Z",
+    "length": 738,
+    "sha256": "6AAF8F5C005C5929302D6AF469A0E102EB63B72931BDBFD696FD77264AF8594D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/ModCreativeModTabs.java",
+    "lastWriteUtc": "2026-10-09T14:25:35.3629519Z",
+    "length": 3305,
+    "sha256": "1EABA0427D144C6058AAB50B3A08876EC8D4F0476F0A28F8C9C2A132825543D2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/ModItems.java",
+    "lastWriteUtc": "2026-09-30T16:33:14.9676418Z",
+    "length": 2276,
+    "sha256": "DA7901540E52A8394DBFCDD155E05EF8F793772C80898078D76EAD62397246AF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/ShuEmbryoItem.java",
+    "lastWriteUtc": "2026-09-26T19:14:23.2654677Z",
+    "length": 2673,
+    "sha256": "DE95703AC0A17EDEA7E24839908331F49DD3EDC293A6DA903AD5E290527ACF22"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/SkillBookItem.java",
+    "lastWriteUtc": "2026-10-19T17:49:19.9191561Z",
+    "length": 5373,
+    "sha256": "653663F1D760C96AF6C0D7DD90931F33FCE0EEA54B100590AF36DB37624C55B1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/SkillCarrier.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8092410Z",
+    "length": 2347,
+    "sha256": "02521D3579C109E4390504F94C837128EF3A92AE126C87DD612F6A4495E49135"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/SkillStoneItem.java",
+    "lastWriteUtc": "2026-10-09T12:27:56.0961318Z",
+    "length": 5113,
+    "sha256": "BD037D56AFFFB27D60012835F8389C48860A304DFBFDA2B50D15464234AB2803"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/SkillStorageData.java",
+    "lastWriteUtc": "2026-10-25T08:15:35.0118940Z",
+    "length": 4274,
+    "sha256": "09F205F538ADCC4F8E189B524A4F6E8E946F5FDA7669A9F410506138F2C48CE3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/SkillStorageItem.java",
+    "lastWriteUtc": "2026-10-19T17:49:32.1256919Z",
+    "length": 2358,
+    "sha256": "606014C389533CE72D288E537AB12E54929159DE0A9323FE00BA7EF18B4AEA14"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/StaffData.java",
+    "lastWriteUtc": "2026-10-19T17:49:55.4304220Z",
+    "length": 1122,
+    "sha256": "EE8B2552B8EB90A3E3671FE1509348CBD3BEA552B63012070092A07AD30676E4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/StaffItem.java",
+    "lastWriteUtc": "2026-10-23T06:12:59.8011915Z",
+    "length": 3568,
+    "sha256": "6A98DB1C5B37BD000C73108F7DE373716E621443BD3FDA53AA853FB7E6AEFF1E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/item/StaffSkills.java",
+    "lastWriteUtc": "2026-10-25T08:15:30.1708459Z",
+    "length": 7085,
+    "sha256": "FF819A81465C9565B07807E6B96052602A967EB2D92D35044C604943E9AE38C5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/keybind/ModKeyBindings.java",
+    "lastWriteUtc": "2026-09-26T19:38:23.1173084Z",
+    "length": 2017,
+    "sha256": "40A99D5D0A625CE300F95F6A97A0F22AB3DAD9B0E4D76B46E7503F80E0EF7444"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/ArrowAuraMixin.java",
+    "lastWriteUtc": "2026-10-25T18:28:41.1474818Z",
+    "length": 1242,
+    "sha256": "53871D5A91A5D48EF0CE477324545AA6D7FC190D6ACC069B654C5B5BEEAAC823"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/ArrowBarrierMixin.java",
+    "lastWriteUtc": "2026-10-22T18:20:36.7409945Z",
+    "length": 1186,
+    "sha256": "52B9101E5CBB24AFCCDBA8392F27E5058109D73BE41CEC9D47CA4D62ED79EBAA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/ArrowDeflectionMixin.java",
+    "lastWriteUtc": "2026-10-25T19:56:14.2274757Z",
+    "length": 8041,
+    "sha256": "357E67FF237D1ECB8408CF813CDE4461484D70A52103AB07894CE70D877D23D5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/ClientPlayPrisonMixin.java",
+    "lastWriteUtc": "2026-10-26T12:34:44.0841724Z",
+    "length": 1983,
+    "sha256": "3A315F94228E6B4A0406D49E3EF084CCBB04C158AFFAABF8E6AC0B723A785A90"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/EntityRenderDispatcherActionMixin.java",
+    "lastWriteUtc": "2026-10-29T17:53:48.8147673Z",
+    "length": 3840,
+    "sha256": "8DD25C2389A109D191EAC8762F1965144619CF9D9E923F7FC085DCC5307920EB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/HumanoidAttackTimeMixin.java",
+    "lastWriteUtc": "2026-10-29T17:54:04.2040058Z",
+    "length": 3291,
+    "sha256": "68721C74962DEEDBD9A5958DD886658F50831A14529A62D7F5EC0A92FFE72EB6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/ItemInHandRendererActionMixin.java",
+    "lastWriteUtc": "2026-10-29T17:53:52.4898826Z",
+    "length": 7700,
+    "sha256": "B4EDB90CE70F3ED5002AE7DC7025BF34E1B663F61FDA604475D9F529E5500E11"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/LivingEntityRendererBodyMixin.java",
+    "lastWriteUtc": "2026-10-24T01:22:22.0264059Z",
+    "length": 1678,
+    "sha256": "1D7DDC59837D5E57CC185F50FCB445C63D4C45FBB47609D35FDC0EAA1CC9DA32"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/LocalPlayerPrisonMixin.java",
+    "lastWriteUtc": "2026-10-26T12:33:14.5815749Z",
+    "length": 1427,
+    "sha256": "B129D1B1C680EC36090C9C8592367CB163161F4F18969B4CE449C1259BF58A51"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/PlayerModelActionMixin.java",
+    "lastWriteUtc": "2026-10-24T01:21:51.8991429Z",
+    "length": 1873,
+    "sha256": "EF26BF69FF8B502302669DD3737AD4A9CC1D8517C3ACF91EC60BEED79BB23683"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/PlayerModelPartsAccessor.java",
+    "lastWriteUtc": "2026-10-23T22:03:39.8185093Z",
+    "length": 402,
+    "sha256": "57742C287D4C05F5B53200F6CC551EE67D827D1613D87D9C89219B9AB0449EC0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/PoseStackFramesAccessor.java",
+    "lastWriteUtc": "2026-10-23T22:03:39.1814647Z",
+    "length": 340,
+    "sha256": "02EA453E34F824B964AC58C9387CFEAA2676622CD1C4786831862DC46ECF3CA4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/CapeSkinMixin.java",
+    "lastWriteUtc": "2026-10-24T10:56:27.4689429Z",
+    "length": 1361,
+    "sha256": "C7CEB6CBEEFA8F1A29FC060D7A5B517FC1F4F399972C5F223CCF898FA894CBFC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/CustomHeadSkinMixin.java",
+    "lastWriteUtc": "2026-10-24T10:56:25.9077230Z",
+    "length": 1524,
+    "sha256": "151E7B97CE6788EEC0434EDB1FADE08F64986942E6B6128998E12D3C971428BA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/ElytraSkinMixin.java",
+    "lastWriteUtc": "2026-10-24T10:56:28.9966341Z",
+    "length": 1357,
+    "sha256": "9CC05A0D5A09403E25BEC7CB71A6488589FADD373B264AA46AD878FD11B1B198"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/HumanoidArmorLayerAccess.java",
+    "lastWriteUtc": "2026-10-24T01:33:56.3650752Z",
+    "length": 657,
+    "sha256": "FB060F6DF363C279C45BABE3F9F1D11FE4CA9480E3B8909AE22FF5F8FB010493"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/HumanoidArmorSkinMixin.java",
+    "lastWriteUtc": "2026-10-29T17:54:25.1471878Z",
+    "length": 7440,
+    "sha256": "BBFBAFBC83D9E45BD2B5FF110AB6BB8AB2F29FB20AEEDD85098858C036E673CE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/ItemInHandSkinMixin.java",
+    "lastWriteUtc": "2026-10-24T10:58:35.2791506Z",
+    "length": 3365,
+    "sha256": "F253C1BCDC6E34E2A86B47BB9524A1E5303FAFDADF64DF6F5F7C63D326ED6F80"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/LivingRendererLayersAccessor.java",
+    "lastWriteUtc": "2026-10-24T01:33:55.9980577Z",
+    "length": 445,
+    "sha256": "99DA31852E55300794990AEE22085988EECABA00DC3ED1F7D395B0D4AE837B7E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/PlayerSkinOverlayAccessor.java",
+    "lastWriteUtc": "2026-10-24T01:33:57.3837159Z",
+    "length": 662,
+    "sha256": "0F3AB506FFDBD6A459605C74C4C7EE953F26200297684C4741227A6C7A5F9D58"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/StuckInBodySkinMixin.java",
+    "lastWriteUtc": "2026-10-24T10:56:42.4767592Z",
+    "length": 2788,
+    "sha256": "0E8081236717CAAB018D5DFB260C634E05ACBC7AACF4FEBCF59266FDE2302D5E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/StuckLayerScopeMixin.java",
+    "lastWriteUtc": "2026-10-29T17:54:09.3410503Z",
+    "length": 3359,
+    "sha256": "F741D20FC84E68FED21B56B0604CEF6762D09C77AD12B9DACC4D1507BEF7848B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/EntityBarrierMixin.java",
+    "lastWriteUtc": "2026-10-22T18:20:35.0978568Z",
+    "length": 983,
+    "sha256": "ECD37484FE3C9DB892C78AF99D2A9D438A3D0030018E2CE175E142AB3BE92EA9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/EntityMoveMixin.java",
+    "lastWriteUtc": "2026-10-23T06:14:47.0889657Z",
+    "length": 1042,
+    "sha256": "331496FF26A9BBC5B2A720CDD09EC51F7DB77C0B07F12FFF3A0E882415C39D22"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/EntityRandomAccessor.java",
+    "lastWriteUtc": "2026-10-25T18:32:44.1449561Z",
+    "length": 327,
+    "sha256": "F63897B32E54C0C00C5B12D38403A467200043E519C00417257329D5E765390C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/FireHurtMixinPlugin.java",
+    "lastWriteUtc": "2026-10-29T01:08:29.6649850Z",
+    "length": 1556,
+    "sha256": "EA0A228403E5B01D5FA38AEE67EB73AB59655B77E89583FBE2F2F399C5A8B850"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/FireResourceHurtMixin.java",
+    "lastWriteUtc": "2026-10-28T16:33:18.1207600Z",
+    "length": 2319,
+    "sha256": "267BC3F0C400D30266B56052488197AA90D523BED319465F25CBF9E3E9962172"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/FlowingFluidPartingMixin.java",
+    "lastWriteUtc": "2026-10-26T09:32:11.7613977Z",
+    "length": 2172,
+    "sha256": "5D41D08E909CB0496DFFCC333A9E801B362E77F9BDF85774CA4CDBBFAD98614A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/FurnaceEffectAccess.java",
+    "lastWriteUtc": "2026-10-28T14:43:37.7099570Z",
+    "length": 591,
+    "sha256": "4F883BBDF33850ED99F637D7DE5431B27B14EF4DC7887BBCA3CEB4BA3FD13538"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/FurnaceResistanceMixin.java",
+    "lastWriteUtc": "2026-10-28T14:43:40.9830576Z",
+    "length": 1434,
+    "sha256": "91A00D119A0F952FAA5C05EF0A36AE991B14F9708EB1C329E745F6DF7210D967"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/GuardianBeamMeleeScopeMixin.java",
+    "lastWriteUtc": "2026-10-26T20:41:31.3126974Z",
+    "length": 1483,
+    "sha256": "E923488C942B861AEF5C0A1E57BC1FCB5A4F2717691F0B1585FBA2DC830975A1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/LivingDomainDamageCommitMixin.java",
+    "lastWriteUtc": "2026-10-29T15:10:25.8451475Z",
+    "length": 3272,
+    "sha256": "9DC2DD9109A2F3A777E7729777919FE0BA0BA99679E2C92F8BB399A9D1E4FDCA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/MobMeleeDeflectionMixin.java",
+    "lastWriteUtc": "2026-10-25T18:28:39.4079084Z",
+    "length": 1993,
+    "sha256": "D19250D329E313F21EE059F1869BB431C04938492AC731952BBE489495A1BE33"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/PlayerAttackMixin.java",
+    "lastWriteUtc": "2026-10-25T18:28:45.2606407Z",
+    "length": 3405,
+    "sha256": "1A452E5D6640A60E21A6DD461853D369871D3A4998A54D172602F07DE0CC32A1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/PlayerDomainDamageCommitMixin.java",
+    "lastWriteUtc": "2026-10-29T15:10:27.8508250Z",
+    "length": 2367,
+    "sha256": "AF9B9FF55C743DBED786F034C033190A8B8E198E695367FD8988D50FD6A81DB8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/PressureDrownMixin.java",
+    "lastWriteUtc": "2026-10-23T08:56:46.1356251Z",
+    "length": 1378,
+    "sha256": "CA6F23945D02FEE88FAD521173EF5C4569FC2ECF63F090D9071BA2D7210A5640"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/PrisonConnectionMixin.java",
+    "lastWriteUtc": "2026-10-26T12:52:15.3975416Z",
+    "length": 3547,
+    "sha256": "D6F8E5A1BFAEB4BE91FD0DBB0EAEBDD4FD23FF50C8D65A6A2209583AE5C1E785"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/PrisonEntityMixin.java",
+    "lastWriteUtc": "2026-10-26T13:08:52.7915293Z",
+    "length": 3897,
+    "sha256": "A7FFD732655259F3BF4D86CA3A5F7AFCF881A3533A2A74778E9C851990743F96"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/PrisonLivingMixin.java",
+    "lastWriteUtc": "2026-10-26T14:24:56.6333574Z",
+    "length": 4077,
+    "sha256": "9E4BD4D6C451B0D8481A05348AC1B918F58A37ECD071D056F6368C5E31F15AB1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/PrisonServerPlayerMixin.java",
+    "lastWriteUtc": "2026-10-26T14:27:39.4839849Z",
+    "length": 2914,
+    "sha256": "A055174F10FF4B765F308DF7B4AA36A710980D2C54FACEA426384A8805187F6C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/WetnessAllayMixin.java",
+    "lastWriteUtc": "2026-10-26T05:14:42.8982423Z",
+    "length": 752,
+    "sha256": "0AA1EF6109B9D553496BF7133A5630C480EF9A87F7B05D998478C76608F132BE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/WetnessDragonMixin.java",
+    "lastWriteUtc": "2026-10-26T15:51:48.1709856Z",
+    "length": 3178,
+    "sha256": "2ABAEF08D74E9205055BE20BC68F66079DAD94F2672EEFF785CE6A7876A35A31"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/WetnessFlyingMixin.java",
+    "lastWriteUtc": "2026-10-26T04:29:53.5478538Z",
+    "length": 811,
+    "sha256": "D023A2B4294ABB3D8DEFFB04F93EF603DDEFA6EB44CA862E85E62FD3C1AEFAF6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/WetnessLivingMixin.java",
+    "lastWriteUtc": "2026-10-26T04:29:53.4592171Z",
+    "length": 1000,
+    "sha256": "F38CBA3396A2DFDB840C78DE2195AFC52F8D8EA848E698A5773A37814BF7014D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/WetnessVexMixin.java",
+    "lastWriteUtc": "2026-10-26T16:00:13.2800652Z",
+    "length": 985,
+    "sha256": "6BB7EC3BA98677F0F14A97CCF63881C4DC40B3605DE620243EDEBC98B4880CF8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/mixin/WetnessWitherMixin.java",
+    "lastWriteUtc": "2026-10-26T05:47:26.8655794Z",
+    "length": 1398,
+    "sha256": "0E86CCB73DBF4DE0C37D115DA7F340F9AD74B5A6019743801682F4E332E0F685"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ActionContact.java",
+    "lastWriteUtc": "2026-10-23T15:14:25.9120507Z",
+    "length": 976,
+    "sha256": "C07B662A951A0758A1E01F6AA516303B4464DA2E9F85317D76E076E992148452"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ActionSyncS2CPacket.java",
+    "lastWriteUtc": "2026-10-23T21:19:49.4859758Z",
+    "length": 11586,
+    "sha256": "AC844F494DE629AB025657EC373CFFEF226A075EEE7F5EB4A0FC8915B189B0AE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/AttackBudgetWindow.java",
+    "lastWriteUtc": "2026-10-30T02:51:12.4369714Z",
+    "length": 4012,
+    "sha256": "89B989FA59363064A73A10D3B039D5C40DD41E75A899344AC3387DCB3E8742C4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/BoundSkillSyncPacket.java",
+    "lastWriteUtc": "2026-10-22T02:29:56.9079515Z",
+    "length": 2781,
+    "sha256": "B195D39246A6ADC54625E05D870B5164EF3AA566C2E9465409D938F2FB932D5C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CastCooldown.java",
+    "lastWriteUtc": "2026-10-29T18:39:19.1982058Z",
+    "length": 4163,
+    "sha256": "39B30F9148C1C5784E2A7F872882B6D6D226B03C4F0287D5F7F078FC76C435D0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+    "lastWriteUtc": "2026-10-30T02:51:20.1866978Z",
+    "length": 22737,
+    "sha256": "3C400A2B378D36C0E476E4F22892E87A0418AACEB3F217E27E38492C04DB6055"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CastPlanCache.java",
+    "lastWriteUtc": "2026-10-30T02:45:14.9793197Z",
+    "length": 7009,
+    "sha256": "73B71269FD3DC1A1CE765F6375A328F847F4C28664C5A5D1E651DDBE56B85D0A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CastPlanCacheEvents.java",
+    "lastWriteUtc": "2026-10-30T02:44:59.7829581Z",
+    "length": 801,
+    "sha256": "B8723B32E4CD22487A6D9A86C44EEE231F30A6FC2F0F3D7D60B591F0075C8B94"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CastPlanContext.java",
+    "lastWriteUtc": "2026-10-30T02:45:03.4341206Z",
+    "length": 2664,
+    "sha256": "94B1CF0E0DAF8A0A3180521DB8689BCC022EA2F397F0EC2B952466F86AC3D87F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CastTiming.java",
+    "lastWriteUtc": "2026-10-28T08:53:48.5025987Z",
+    "length": 2014,
+    "sha256": "E56D2BC71F21CA4ECBACE12490F7B1669FC25080BFEC0846BB0D8EFFB9429827"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ChainProgress.java",
+    "lastWriteUtc": "2026-10-22T11:07:38.8167406Z",
+    "length": 2403,
+    "sha256": "E8BCEBEBB817F7C6E2D8B502EC4F73C279747D8B39E771B62A9A00A3CB731AFC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ChainSteps.java",
+    "lastWriteUtc": "2026-10-30T02:44:58.6343872Z",
+    "length": 7447,
+    "sha256": "3619111E65C2E3488F1B3A3511CC006468A1D5B470D38CF45528B3C693E9650C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CompiledCastPlan.java",
+    "lastWriteUtc": "2026-10-30T02:46:03.0605046Z",
+    "length": 12459,
+    "sha256": "0A61341EFE5238EC8502966B63268FB548B15BBAAB7F68651969BAFCDA3B9DE1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/CompiledReleaseStep.java",
+    "lastWriteUtc": "2026-10-30T02:46:21.5141315Z",
+    "length": 12977,
+    "sha256": "FCFC3882CCE28C0EAB008AB1A5314FCD0BA6B3925DBC81F3064496B87AA90DB2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ContactCast.java",
+    "lastWriteUtc": "2026-10-26T12:28:16.9245918Z",
+    "length": 3216,
+    "sha256": "E914A39E3CF4AD4F921230E6C589922883AAD66FA82A51B5C5395C465BFC3EBE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/DomainSyncPacket.java",
+    "lastWriteUtc": "2026-10-23T08:59:19.3743449Z",
+    "length": 7114,
+    "sha256": "AA8668C82D61129422C88BA91D0BE58AE82A881352DFABED0741AE8EDE21FD3F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/FireSeedVisualBridge.java",
+    "lastWriteUtc": "2026-10-29T17:47:58.5675820Z",
+    "length": 566,
+    "sha256": "B0D03396F3ADB06C249AF5B96690CD808272080152F048D5961E9DB3C6092BBD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/FireSeedVisualPacket.java",
+    "lastWriteUtc": "2026-10-29T17:48:00.9906426Z",
+    "length": 1871,
+    "sha256": "A81D9B74C15745D6C994CBDBFD13A9C35E5AEB6A3E557A2E23C3984C35AB634F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/FireVisualBridge.java",
+    "lastWriteUtc": "2026-10-28T19:31:05.5188798Z",
+    "length": 547,
+    "sha256": "5C5A4E30C459860445F6AE127B22A5A973B8D15BA97BE34D4B008A7744D365E3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/FireVisualPacket.java",
+    "lastWriteUtc": "2026-10-28T20:13:24.4129322Z",
+    "length": 7140,
+    "sha256": "FA2390975180F20165893AEF8F4F9E68DD2A7B08B40085E0A715B0440EFE5132"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/GuardSyncPacket.java",
+    "lastWriteUtc": "2026-10-26T19:52:42.4381961Z",
+    "length": 12256,
+    "sha256": "6EC6B40D9313A97715A0A8F0D6C614A963B32FFD7081933E1EE4F970B1C5C7C1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/HeldSwordGate.java",
+    "lastWriteUtc": "2026-10-25T08:15:15.9184916Z",
+    "length": 3125,
+    "sha256": "6B5507C64DA3CA01C4169F668BF66B61A21BE7BC738055861CDD8086B39FA492"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/HoldRepeat.java",
+    "lastWriteUtc": "2026-10-29T15:11:17.2038331Z",
+    "length": 3746,
+    "sha256": "A6581267EE6A732AE0B60047F387186668CC872117579D4B93D4D1663D48D243"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ImprintPacket.java",
+    "lastWriteUtc": "2026-10-19T17:49:52.1730071Z",
+    "length": 1730,
+    "sha256": "4BE2AEEAB52495FDC8ACDF144F031E9EF2C9D1A2080FD949635183FE06A312BF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/LiaoliRingBridge.java",
+    "lastWriteUtc": "2026-10-29T19:07:39.3517363Z",
+    "length": 547,
+    "sha256": "4B46E283002CA52C787A2010CEAEF7616AE0FC5A2BBC16F8A9A3EB9F71887301"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/LiaoliRingPacket.java",
+    "lastWriteUtc": "2026-10-29T19:07:42.3312102Z",
+    "length": 2204,
+    "sha256": "5CE9629BA023644BA9D9C6378055440207C3A691E608C5E10BA3A92AAE1880C7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ModNetwork.java",
+    "lastWriteUtc": "2026-10-29T19:06:49.1630769Z",
+    "length": 1890,
+    "sha256": "92CC36F72ADC8B3EBDEB9445AF9D6EFF7634585A678DAD701B1F1C44C1A140B1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/NetworkPacket.java",
+    "lastWriteUtc": "2026-10-19T17:49:37.6249328Z",
+    "length": 184,
+    "sha256": "CEF596FE04E422BC0E362104422FBD95229C567197E9BB4F62B3EC7BCB0C5047"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/OpenShuGuiPacket.java",
+    "lastWriteUtc": "2026-10-19T17:50:22.5925222Z",
+    "length": 2601,
+    "sha256": "FD84FFF9AD431ED138E90C52900AF0D5718ADF8F4F92B45DAB5DBA86EEB5CEE3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/prison/PrisonClientBridge.java",
+    "lastWriteUtc": "2026-10-26T12:30:51.2400017Z",
+    "length": 603,
+    "sha256": "7DA167CC9FC24886E31F0D91D28112ACCD5E2B2C68E55B4986A2DAEA5F7564EA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/prison/PrisonSyncPacket.java",
+    "lastWriteUtc": "2026-10-26T12:34:53.3875890Z",
+    "length": 9423,
+    "sha256": "8E3F3F3CBF702B4F7D0B13F52A6B3EBA7583D42289000FB4955AA713DE9F795D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ReleaseOutcome.java",
+    "lastWriteUtc": "2026-10-23T15:14:25.9110512Z",
+    "length": 1099,
+    "sha256": "3635C40E8EA325D6F5C4A8853143AC424CAAE76D0C368967FF4C8C76ECDD863E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/ShuSyncPacket.java",
+    "lastWriteUtc": "2026-10-19T17:44:38.9424989Z",
+    "length": 7535,
+    "sha256": "94F770D50B844889AD9D7FDE2E15A62080D27C82F86F0037D769B9FAEDA7D39A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/SkillAssemblyPacket.java",
+    "lastWriteUtc": "2026-10-28T18:48:01.1691772Z",
+    "length": 12179,
+    "sha256": "7B28AA973230323A70CB8BF1C4C06FD54E90F6134CB574DCFD9165030EBFFF2E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java",
+    "lastWriteUtc": "2026-10-30T02:48:01.7642985Z",
+    "length": 50955,
+    "sha256": "7B399681F7E2525EFFF2C23884BCDE1A6A434EF2553CAFD52E31AC319019E287"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/SkillFollowCast.java",
+    "lastWriteUtc": "2026-10-25T15:04:24.9769736Z",
+    "length": 14335,
+    "sha256": "76B8B95707B436C7B7B0AB71DF9E10521E0DB56245A518C1D945075244D7B4EC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentMath.java",
+    "lastWriteUtc": "2026-10-28T18:59:04.1791939Z",
+    "length": 11816,
+    "sha256": "0CAB351062D50251D9CC228911F4D5319AD1CA209A71465AB740D799229E7AC2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java",
+    "lastWriteUtc": "2026-10-30T02:48:56.6460700Z",
+    "length": 47990,
+    "sha256": "54F1649A6C316378CF74555C5EDB2043B9C8DED4FD1687D3C23759C6856A8DC4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+    "lastWriteUtc": "2026-10-30T02:50:51.8774088Z",
+    "length": 62577,
+    "sha256": "A17D7A0D85D875AD4D7C388EA42CF939EF40269E35CFCB9A0B73D6113583D498"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/UncommittedShare.java",
+    "lastWriteUtc": "2026-10-26T14:27:50.1782756Z",
+    "length": 3298,
+    "sha256": "931F0BACA56919505B00B275B2EBC27B34CB8AFD81BD23E38021B00262A966ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/network/WaterMomentumNotice.java",
+    "lastWriteUtc": "2026-10-22T07:17:36.2206338Z",
+    "length": 3155,
+    "sha256": "3D833CD0E4D5F7E5AFC2310C9661DAF3797E44CE79A289C24E59D7AE3B0C7050"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/player/DomainLearning.java",
+    "lastWriteUtc": "2026-10-23T08:58:59.6301621Z",
+    "length": 2130,
+    "sha256": "44F9CF5FB38EA662585F248E50DA277C73E52FBBD4658F33E5AD701AD2659EC8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/player/MagicPool.java",
+    "lastWriteUtc": "2026-10-28T10:33:30.7427174Z",
+    "length": 8699,
+    "sha256": "2BECAB0E8401B71CB7787A2E4FFA6FC71696C4B52B7249A3A0D1B81A86BF143C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/player/ManaPaymentReceipt.java",
+    "lastWriteUtc": "2026-10-28T11:02:01.1307765Z",
+    "length": 7780,
+    "sha256": "4A7490B9A768E9FB4373D30748ED055CE93F04AA00CE316B78D8192601E13660"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/player/PlayerBoundSkills.java",
+    "lastWriteUtc": "2026-09-27T16:51:29.0007818Z",
+    "length": 1269,
+    "sha256": "54AD4D3D96A29AF787E7958C911F1A428ECDACB7F1E1EDE74111DFAC09561E38"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/player/PlayerShuData.java",
+    "lastWriteUtc": "2026-10-25T08:15:46.7481218Z",
+    "length": 13476,
+    "sha256": "B97E916C769C0E3E5442B7050FCCEDEDB7971922C73FE62707BCB1164EC34EA7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/player/PlayerSpellStorage.java",
+    "lastWriteUtc": "2026-10-22T02:29:55.9369278Z",
+    "length": 4833,
+    "sha256": "19F80AEF41ECE124CAF78A2012719B8C91747130E67100A83DAA7A941FF7066B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/registry/ModMobEffects.java",
+    "lastWriteUtc": "2026-10-28T14:48:15.2361476Z",
+    "length": 1114,
+    "sha256": "CD44D81BBA40C3EF583D18B7A94430D6FBA55CC2928432B8DF48879692931F4D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/ElementReaction.java",
+    "lastWriteUtc": "2026-09-26T20:19:54.4225352Z",
+    "length": 3727,
+    "sha256": "8449F60DB3998F6EB07B8315FBD4BEDC20CF071DADEDEFDDCFBF981571F96F9B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+    "lastWriteUtc": "2026-10-29T13:12:59.8089579Z",
+    "length": 17812,
+    "sha256": "6E9A99E3EC1C9549FC276A9BF823C800823133956A5227767B5BA99A8F80E20F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/Proficiency.java",
+    "lastWriteUtc": "2026-10-19T17:49:58.3687571Z",
+    "length": 2266,
+    "sha256": "05F876B1A3CF705B3E88E0FBC96645B291E07E0294CC2A56B93762BA8D56248E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/ShuAttribute.java",
+    "lastWriteUtc": "2026-10-19T17:49:57.1032016Z",
+    "length": 1034,
+    "sha256": "D2F98CBB53C4DD321CEE164C50ED9CA3F66948CC51E6E584FA14FE1DA89CE08D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/SkillStoneData.java",
+    "lastWriteUtc": "2026-10-25T08:15:27.8806999Z",
+    "length": 3415,
+    "sha256": "2FD97DD6A6C340F5B3B77851C02C0AC83C335DB8849450BEAD82F67BC0400D07"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/Technique.java",
+    "lastWriteUtc": "2026-10-28T18:47:30.9807266Z",
+    "length": 5551,
+    "sha256": "FF4789D922A831598655D7EC54C0B6F16C315FCF706E5A402C19E7C4BD6C1728"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/ActionWindow.java",
+    "lastWriteUtc": "2026-10-23T19:05:15.5868134Z",
+    "length": 1216,
+    "sha256": "2A21F0DE666A8897DF9B7B1FF48558CC2C72C9E68AB061DCB486A67520CECE53"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/chain/ChainScheduler.java",
+    "lastWriteUtc": "2026-10-29T20:03:57.5618710Z",
+    "length": 2270,
+    "sha256": "2CF06EDEEF34A8B486AA019F71895FEFF9F763BC5AB366EE649686A0488AD309"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/chain/ChainSegment.java",
+    "lastWriteUtc": "2026-09-27T07:54:09.7597858Z",
+    "length": 518,
+    "sha256": "8CF72573CA735C36A0AEA2E7B572536E54664A9C65746B41B4C827AB0142B3D3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/chain/TechniqueChain.java",
+    "lastWriteUtc": "2026-10-29T20:03:55.0664489Z",
+    "length": 3744,
+    "sha256": "F152C5089B4B197E1434C665A60A5EAF01D0B5BFAD06CC73B304CEDF580D962F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/ChainStructureEpoch.java",
+    "lastWriteUtc": "2026-10-30T02:38:28.8385809Z",
+    "length": 624,
+    "sha256": "1D0F1F1C1C0685B4FF03728FB428EBE4B3FC72DA9A0797FA785719826E212074"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/BodySweep.java",
+    "lastWriteUtc": "2026-10-23T15:14:30.5585180Z",
+    "length": 2543,
+    "sha256": "957A33BA6ACE2DDED494FE996737D4627A191D33583B4081984D933300BD00F1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/CastAnchorEffect.java",
+    "lastWriteUtc": "2026-10-09T18:52:19.3291740Z",
+    "length": 687,
+    "sha256": "8414A8C8B026655A4367B2A8715DA4D965C36A7413DDB6A2CBD2A2DC464063D6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/DamageTallyEffect.java",
+    "lastWriteUtc": "2026-10-09T18:52:19.3231487Z",
+    "length": 494,
+    "sha256": "1D43923104EF44FD8FEC8CF1F2F66A5130F56ED9D36B312B5E0804A79C63F024"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FentianEffect.java",
+    "lastWriteUtc": "2026-10-29T13:13:26.0643965Z",
+    "length": 2814,
+    "sha256": "0CE537DDF93204F366BCEB0B58275D78EC4514A1C5203B414DDBEE8169B46FE4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireBurstEffect.java",
+    "lastWriteUtc": "2026-10-23T06:15:49.3702593Z",
+    "length": 4584,
+    "sha256": "D812EFE35AD6C9560F30F613A553C8423A438B003EB1DDB3706072E42A1BA5EA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireOrbEffect.java",
+    "lastWriteUtc": "2026-10-29T04:45:33.6425053Z",
+    "length": 2602,
+    "sha256": "197E580ED74017577846A8F408681544C9B60A5B7C4E8A533127029BFC924775"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/HeatBeamEffect.java",
+    "lastWriteUtc": "2026-10-29T04:45:33.6410014Z",
+    "length": 2458,
+    "sha256": "7F3403812705D52ABA1420293DBEA1134A2583424106BD12ACCEBE6662DE1BBE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/InterleaveEffect.java",
+    "lastWriteUtc": "2026-10-09T18:52:19.3231487Z",
+    "length": 493,
+    "sha256": "74B3E12E54095E55457405E037D1C43C124BCE4BED62E7522FB30C8D466AEF18"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java",
+    "lastWriteUtc": "2026-10-29T19:07:24.1927953Z",
+    "length": 8676,
+    "sha256": "729DF1E027F9058828FEF11C4C201DDEC72F305BC2C74F156107B75BAA3ECB01"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoyuanEffect.java",
+    "lastWriteUtc": "2026-10-28T18:55:44.5746928Z",
+    "length": 1938,
+    "sha256": "6226AA1F990F084AE94155C94098C49B665ECADB391C7ED895F93610F7B62F3F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LockTargetService.java",
+    "lastWriteUtc": "2026-10-29T20:04:00.8239153Z",
+    "length": 4026,
+    "sha256": "7517E05245488AB1271B6F263DDBA88BCAB3DBAEFA4C1EA31FFBFC7EA49FB027"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicArcaneMissileEffect.java",
+    "lastWriteUtc": "2026-10-10T20:13:34.9899126Z",
+    "length": 3319,
+    "sha256": "B9399E9A2499D26D5FFD161D45572161AA183D68940E14E6ED8E17D84A47F912"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicCreateWaterEffect.java",
+    "lastWriteUtc": "2026-10-19T17:49:55.0133256Z",
+    "length": 1007,
+    "sha256": "1A83DEE6E183E31244296BACBC19D8BDC4FDBE3CAC8C3696896C34996CE87CB4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicIgniteEffect.java",
+    "lastWriteUtc": "2026-10-19T17:49:59.0436122Z",
+    "length": 1118,
+    "sha256": "E66C2E5214BB4FE97B8FFB7E4609AFED46EB9AD3A09E77F5994BAE6281554B4A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MetalNeedleEffect.java",
+    "lastWriteUtc": "2026-10-12T13:38:18.0618760Z",
+    "length": 2314,
+    "sha256": "B73439B52A69F6D75C0ACDA8E988D18135FCEB7B9E9C05B6BAE7371CC9BF394B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MovementDashEffect.java",
+    "lastWriteUtc": "2026-10-23T19:05:17.8825503Z",
+    "length": 7251,
+    "sha256": "D4B39718F381CE540BA58CC1FF92A6E061984DF62E5A7939FB2AC11127937368"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MovementLeapEffect.java",
+    "lastWriteUtc": "2026-09-26T19:39:14.9771815Z",
+    "length": 631,
+    "sha256": "65C5FFB2D58C0AB37A580429D33CFCA2A2494CB2483B031AF3C4AAEB1B06D1A8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/ParasiteSeedEffect.java",
+    "lastWriteUtc": "2026-10-19T17:50:01.5781029Z",
+    "length": 2263,
+    "sha256": "38EBED484776B87D00BA25D78E36B174493C64C25930A22113F819BB43171554"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java",
+    "lastWriteUtc": "2026-10-29T20:11:15.4962086Z",
+    "length": 3572,
+    "sha256": "0127EF6E59840C75162AFB4A69F75D4C57966703BC321D998E8D6EF50154BDFB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/Scatter3dEffect.java",
+    "lastWriteUtc": "2026-10-10T20:12:46.0278523Z",
+    "length": 492,
+    "sha256": "2041244A142D6F97C069BB147D91921FA332465D9EC5C4A2B26B6DE19943EFDE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SpaceCutEffect.java",
+    "lastWriteUtc": "2026-10-25T12:10:51.7408733Z",
+    "length": 3376,
+    "sha256": "AA4E47096A9F32CDB4621EE477AEAE1CCAD102DD9511607BC8E6DBD62E0DED88"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/StoneHammerEffect.java",
+    "lastWriteUtc": "2026-10-12T14:21:11.9211964Z",
+    "length": 2054,
+    "sha256": "5287BAA51403C8C968F916CEEC88D857E129CA9AC4C667CC8BE565E124AFF6ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordComeEffect.java",
+    "lastWriteUtc": "2026-10-14T15:50:55.3401231Z",
+    "length": 1020,
+    "sha256": "DC980704BCB5CA93DF14A6D394F7AD43840A614BC4E633BDCD19CBC9B868C631"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordHorizontalSlashEffect.java",
+    "lastWriteUtc": "2026-10-19T17:50:04.3968694Z",
+    "length": 3210,
+    "sha256": "1E83EC1D5A6F80FCBFF61D7C13050FD241DD65F4E0B8FC327D895404D4D105C6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordReturnAllEffect.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8092410Z",
+    "length": 1207,
+    "sha256": "5319DF8D9CFCFD1D28AC18AE3FDB8A9883A3F5A0EFBD96ED4ADD6D21C73BA1B8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordThrustEffect.java",
+    "lastWriteUtc": "2026-10-19T17:50:15.1257201Z",
+    "length": 2682,
+    "sha256": "560E3D0CD2B571DAA71E120806D9BD2264573853BC79969BE3727C890BB054C0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordVerticalSlashEffect.java",
+    "lastWriteUtc": "2026-10-19T17:50:38.7657613Z",
+    "length": 4318,
+    "sha256": "39A365DF9DBD305C46E66A31A1C61202840526E3C3C6E87E7FA6E353431EA42A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/TestSustainedEffect.java",
+    "lastWriteUtc": "2026-10-10T20:14:08.7026617Z",
+    "length": 2479,
+    "sha256": "6826EA685EC93F1376BB07D96FFF3CD225F6286A7D19E14417A288CE444736B8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/TideSeverEffect.java",
+    "lastWriteUtc": "2026-10-12T14:21:11.9224708Z",
+    "length": 2211,
+    "sha256": "D35346320B88E95FB47372F10483D5585E163C326A024CC57A0E157BD23C31E9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/TripleCastEffect.java",
+    "lastWriteUtc": "2026-10-10T20:12:46.0288279Z",
+    "length": 493,
+    "sha256": "4021643D73BB3CBC12E3E9ED695E08E96D98DF5459744207C81812BBD83566DE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/UniversalLockTargetEffect.java",
+    "lastWriteUtc": "2026-10-19T17:50:15.5443738Z",
+    "length": 1184,
+    "sha256": "F69555EA8AB43A306713102D5D195EB684EB2E2985835E9A8C01C3E858BF8A14"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/WaterFormEffect.java",
+    "lastWriteUtc": "2026-10-24T21:26:38.9090377Z",
+    "length": 5078,
+    "sha256": "D44376A69E6CA1C1EBCBD031331C63EA3B48AB69EB28D13C59BC88B836393FAD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/WaterYieldingEffect.java",
+    "lastWriteUtc": "2026-10-26T09:32:37.6941150Z",
+    "length": 3194,
+    "sha256": "50598C096F82046BF58D7C4409A218FA29F6C8ECA8EFA721EF2605A627CD8F48"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/WeepingCurtainEffect.java",
+    "lastWriteUtc": "2026-10-26T18:52:34.7724891Z",
+    "length": 2805,
+    "sha256": "1791315B75E2AF4FE33B12D9732A12D4F86B107095EAE3D141CD9AC38BEF36AA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantBonus.java",
+    "lastWriteUtc": "2026-10-29T04:45:15.6068751Z",
+    "length": 8549,
+    "sha256": "F706EBE642B0BE02E103E6F0FDDC718D7C093BAA82592FBA3E46FC0AAACE270F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantmentSnapshot.java",
+    "lastWriteUtc": "2026-10-29T14:05:32.0629754Z",
+    "length": 7788,
+    "sha256": "9AE76CA6857659B91B6A63E27E7409D7E279B37622B2A367365DE70812BC8293"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/TideMarkDamageScope.java",
+    "lastWriteUtc": "2026-10-26T18:52:35.4167554Z",
+    "length": 5711,
+    "sha256": "672FD932608339833B93EF28BB532D2380E74E6B9CCC8906D07286340D84B2E1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/TideMarkSuccess.java",
+    "lastWriteUtc": "2026-10-25T15:02:01.1209813Z",
+    "length": 2113,
+    "sha256": "F7B304FEDC4D17833008E1264B6CFEDC09E7B49AA3E995E1B932A5A714656D25"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/WeaponEnchant.java",
+    "lastWriteUtc": "2026-10-29T04:46:33.5439953Z",
+    "length": 9445,
+    "sha256": "6251AE5D7EAC0CC562B3499438BA6F76B01F7A2538669994A52C820F895996E1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentAccumulator.java",
+    "lastWriteUtc": "2026-09-26T20:45:54.3890082Z",
+    "length": 1784,
+    "sha256": "E6117761B4E6DD5EDA5001A437771C1DFC68F41E51FF12EEB38CDA8A3E60FC6D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinition.java",
+    "lastWriteUtc": "2026-09-27T07:51:49.2151111Z",
+    "length": 440,
+    "sha256": "CB95C0D8A65A3975507971BFE868924E56D97C88A74A738E77153941C8FF0953"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java",
+    "lastWriteUtc": "2026-10-25T15:02:24.2898985Z",
+    "length": 2229,
+    "sha256": "A4C3D38C98D00C30293503E912480E43925DC923A7F37F0645D0273800511610"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentRegistry.java",
+    "lastWriteUtc": "2026-10-30T02:38:33.2487717Z",
+    "length": 623,
+    "sha256": "657C255E2F64E3C118DC7124832462C5DDAD0285086D078A1F707831A35001A7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentResolution.java",
+    "lastWriteUtc": "2026-09-26T20:45:54.3890082Z",
+    "length": 1550,
+    "sha256": "CE0F069C04FA9D09B279EA0198E0C3CB60192B0887470CEA376D51459D7964CC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/AxisAlignedWall.java",
+    "lastWriteUtc": "2026-10-22T18:26:45.3742348Z",
+    "length": 4098,
+    "sha256": "3364854F215E8FF0944270FBAAD82DF7EDC73545ACA50375BC515BFB6EF82A19"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/BarrierBody.java",
+    "lastWriteUtc": "2026-10-26T20:39:36.3556458Z",
+    "length": 9397,
+    "sha256": "CAAB029C68C84F502CB08FBC5373C4974730A782B7184D03995C6D85D23A8AD6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/BarrierDefinition.java",
+    "lastWriteUtc": "2026-10-26T20:38:47.7773881Z",
+    "length": 3023,
+    "sha256": "E0EEEDB0FDDF3890847CDA66B9F4A9E2F0C2149AAE38100DA782200C6A2D49FC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/BarrierService.java",
+    "lastWriteUtc": "2026-10-26T20:39:34.0896301Z",
+    "length": 12231,
+    "sha256": "06C325C0CE7E124302F83AE33BAEF4DE01E1F3352A6FC9B4667509A9FE9D3EF4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/ProjectileBarrierTracker.java",
+    "lastWriteUtc": "2026-10-25T18:59:35.6691739Z",
+    "length": 6708,
+    "sha256": "9045FE4B6A1AAF4EFBD6D1F4E3EF76718EA010880B83348D1CC80A936EFAA416"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java",
+    "lastWriteUtc": "2026-10-29T20:04:23.8162227Z",
+    "length": 13327,
+    "sha256": "58C587F4E7530B3510CB66028BB72000E89353E2498D327F22BCCE5E17CBF8FB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ChainRole.java",
+    "lastWriteUtc": "2026-10-23T16:11:15.3348592Z",
+    "length": 333,
+    "sha256": "47ECB5050D2FE7285B0AD342B7E893248CC57ACDDBCD979775B4847E383479C4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/ConditionalEffect.java",
+    "lastWriteUtc": "2026-10-28T10:27:46.2761416Z",
+    "length": 1841,
+    "sha256": "1668368D80EDE06AD0DED825E069A5A82501F48A144788B03AAA9E6267704073"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/ConditionalEffects.java",
+    "lastWriteUtc": "2026-10-26T12:27:43.8575860Z",
+    "length": 757,
+    "sha256": "43218A113195D0442C7703EE0FBA5735A890F9F1A7396B94AE4987DDA2CD5D92"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/ConditionalIntent.java",
+    "lastWriteUtc": "2026-10-28T10:27:48.6196547Z",
+    "length": 1967,
+    "sha256": "9CEAF1E442F658414DD98B3C123F82B6CF22DAD6C5C6F44ABA7A489D199405AF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/ConditionalResult.java",
+    "lastWriteUtc": "2026-10-26T13:07:29.4662363Z",
+    "length": 759,
+    "sha256": "BC04172151731097ACFDEF9CBBFD8ECD92E672DE5DD0ED81E74D08A9F33E8B1E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/TargetPayment.java",
+    "lastWriteUtc": "2026-10-28T10:28:09.6360043Z",
+    "length": 1131,
+    "sha256": "575521796CF1D15BB6922028C69638B1ED080FD322087A47D72B70F602EC58D9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/WaterPrisonEffect.java",
+    "lastWriteUtc": "2026-10-28T10:31:29.3901457Z",
+    "length": 7330,
+    "sha256": "15B66B3F0E652780524938278321D7A73D4321F18CB2B0EC1A408BD57A7B9374"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactCarrier.java",
+    "lastWriteUtc": "2026-10-22T18:24:15.0106396Z",
+    "length": 600,
+    "sha256": "0C584C5FFC3B50338581EE908256A3D9F4AAB84EBD57A7C8928E31D09DCE5CF5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+    "lastWriteUtc": "2026-10-29T20:05:43.0251843Z",
+    "length": 5343,
+    "sha256": "A3DDC72B68EAB6A711D19C198E34C4789F449F22BB991A193C70EAC0975E6309"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactPolicy.java",
+    "lastWriteUtc": "2026-10-22T18:26:45.3757214Z",
+    "length": 2198,
+    "sha256": "D00B389C9A921D2E8B5DD9C10A7BAB2AC8FE76875B76593A2067F40EAA8103B8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/AttackKey.java",
+    "lastWriteUtc": "2026-10-25T17:54:28.6304172Z",
+    "length": 1474,
+    "sha256": "AF9D141F8FA09B2AA4167F31C365CDB48E411A5B3AE91952085C11BA4F018F41"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/CaptureRoute.java",
+    "lastWriteUtc": "2026-10-25T17:54:32.4158524Z",
+    "length": 393,
+    "sha256": "6E916E28364B4C4E8256BCFAA1870ADAC42F333C0438590B7ED201DEC8887F54"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/DeflectionAttack.java",
+    "lastWriteUtc": "2026-10-26T12:30:04.4906720Z",
+    "length": 478,
+    "sha256": "BCCAA3DD6FCAE36707A053555C4B8522B61362D5C1FECA53E960A8EEFF696DFA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/DeflectionEconomy.java",
+    "lastWriteUtc": "2026-10-26T04:25:41.2899212Z",
+    "length": 3419,
+    "sha256": "8F2E5C930481DB7931B1BCE6931F2DF4BBE3E0AA5CC0EA8691C7A3C4508282F2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/DeflectionEligibility.java",
+    "lastWriteUtc": "2026-10-26T12:30:04.7671147Z",
+    "length": 573,
+    "sha256": "F89DAEB0BEF7EA25809D407D112801F227413E442A85CB0A2349C5EA50718423"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/DeflectionHost.java",
+    "lastWriteUtc": "2026-10-26T17:09:19.9946845Z",
+    "length": 1787,
+    "sha256": "86C1FCA3837CE3AE2DB1FA29086AA814725FDD308A97C552E54B4F2084B44986"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/DeflectionHosts.java",
+    "lastWriteUtc": "2026-10-26T17:09:22.5435627Z",
+    "length": 9434,
+    "sha256": "E8331D453915871BE87DE49CFCC827637DBF2D5E54EED084B42008982869EAA5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/DeflectionMarks.java",
+    "lastWriteUtc": "2026-10-25T17:58:55.6056776Z",
+    "length": 1038,
+    "sha256": "17E6D29195646ABBF42C7107E04BB22A618C4BC1DFF10098C31DA128AB99FFBD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/DeflectionService.java",
+    "lastWriteUtc": "2026-10-26T04:25:55.4669770Z",
+    "length": 14976,
+    "sha256": "6CE5FD46EA02E463E636DD74F41D81C2C6B320E6074D22353CC0CD80AF54DF36"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/HostContact.java",
+    "lastWriteUtc": "2026-10-25T17:54:29.7618397Z",
+    "length": 553,
+    "sha256": "7321F1439839DE5F7A488D7D3CC106359626840DD277B2F6F9963ADE2EE4B26E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/HostKey.java",
+    "lastWriteUtc": "2026-10-25T17:54:26.5315056Z",
+    "length": 693,
+    "sha256": "42269B332C9C8A9E6D614EE91022232ED7CECACD9399AF104A38D5BE84C96E74"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/ArcDeflectionHost.java",
+    "lastWriteUtc": "2026-10-25T18:59:10.4642591Z",
+    "length": 5441,
+    "sha256": "13274147ABEBF4175F6952E434008AA8AB515354C310F9D829809610AC9285D4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/ArcPresence.java",
+    "lastWriteUtc": "2026-10-25T18:23:37.3008448Z",
+    "length": 259,
+    "sha256": "37BC1B0530A259FA2A13B65A152929D3B5325518989E8F428EADD5E4B88D68A1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/ArcSliceGeometry.java",
+    "lastWriteUtc": "2026-10-25T18:59:09.7443599Z",
+    "length": 18387,
+    "sha256": "49BE3952A257CC270F807FF84F01DCB9712814E1514A61FD2B85EDF1F5180A2A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/ArcTransportRoute.java",
+    "lastWriteUtc": "2026-10-25T18:23:44.0506157Z",
+    "length": 5226,
+    "sha256": "47936673D24FEDDE5B82D46DDB5C5A9C466CCF87F6B64C638B1B8833E67FC3A1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/IncomingPassage.java",
+    "lastWriteUtc": "2026-10-25T18:59:11.9321145Z",
+    "length": 958,
+    "sha256": "D230BCF2599AA74CDE657B7EC29FF28281C59F9004D59D5D520EFDCC743DE815"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/RingBandGeometry.java",
+    "lastWriteUtc": "2026-10-25T18:59:05.7871523Z",
+    "length": 13830,
+    "sha256": "F769634B4EC9AB1D00BE5237187B01F92D469BB916D35C7E83DA59DFB14405B2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/RingBodyShell.java",
+    "lastWriteUtc": "2026-10-28T04:45:41.6186244Z",
+    "length": 5399,
+    "sha256": "517F5ABD117BDF4DD4ABE6EBA050F176CEA7AA2D2112C1A8092AC3731CB3A5D0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/RingDeflectionHost.java",
+    "lastWriteUtc": "2026-10-28T04:45:45.8493272Z",
+    "length": 6262,
+    "sha256": "9A21F54327318DB40239B4CFB5FAFE7DC41248CFFF7A5A7D2B00D687CBB73BE1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/RingFollow.java",
+    "lastWriteUtc": "2026-10-25T18:22:39.7720208Z",
+    "length": 426,
+    "sha256": "32118A29E9AAF2D1A53F83D1D248D7C4F5F06BAEFDCA0A81FCA075F81A7F6506"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/RingMeleeGeometry.java",
+    "lastWriteUtc": "2026-10-26T17:09:17.9394605Z",
+    "length": 6297,
+    "sha256": "FF8197E3F32064EC6BABBD387E5C82C0CB6E3055E50B40AFC4A25C303710B011"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/RingOrbitRoute.java",
+    "lastWriteUtc": "2026-10-25T18:23:36.7399137Z",
+    "length": 7271,
+    "sha256": "EDBA2FC2EF921B766F074D196F537CEA6063DC295F6055A3A2EFDED6CA8FBF25"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/WallBandGeometry.java",
+    "lastWriteUtc": "2026-10-25T18:59:03.3592524Z",
+    "length": 7622,
+    "sha256": "20045A3020CD6EBDC9C6BE5C739B267020168FF057952961BA81888F2F8391D8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/WallDeflectionHost.java",
+    "lastWriteUtc": "2026-10-26T20:51:58.4971942Z",
+    "length": 4589,
+    "sha256": "9311694C7FD4FD7BE054AA48572EF1873E42D4567F011E8C110B326FEE77ABE8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/WallReflectRoute.java",
+    "lastWriteUtc": "2026-10-25T18:23:25.6618320Z",
+    "length": 1544,
+    "sha256": "EE599A02E0B5C8A3B97B825727BFF0B23B20A6986C48BD974C85990B03C5672D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/WeepingDeflectionBinding.java",
+    "lastWriteUtc": "2026-10-26T18:56:14.4487035Z",
+    "length": 2811,
+    "sha256": "15D8427408E9C5A9138DE68001103012E71DE2EC00E4A66FDFD7D393FC4CD967"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/WeepingDeflectionHost.java",
+    "lastWriteUtc": "2026-10-26T19:01:42.3915618Z",
+    "length": 12416,
+    "sha256": "E947E83D93B353B6594D212F25E53F27F53D6C791B56E5E3ED70588E3FFDB379"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/hosts/WeepingDownflowRoute.java",
+    "lastWriteUtc": "2026-10-26T18:59:51.3847768Z",
+    "length": 6108,
+    "sha256": "8211C38414BC66972C7CB25FD846AA65D8AF7A19E06DEF54BEE92EEBC49D0127"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/melee/DirectMeleeAdmission.java",
+    "lastWriteUtc": "2026-10-26T20:41:30.5704609Z",
+    "length": 3622,
+    "sha256": "0528F960B24F1D48E8CA3E0B50ED6B20A4CEC913F0149612FDA3CCD7B7FD9325"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/melee/DirectMeleeAttempts.java",
+    "lastWriteUtc": "2026-10-26T20:34:16.8525080Z",
+    "length": 948,
+    "sha256": "E47571CF2289BB89A6117E4EE52DC6144021005DB9B27F03C9E6BC78E4E43260"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/melee/DirectMeleeFallback.java",
+    "lastWriteUtc": "2026-10-26T20:34:23.0060519Z",
+    "length": 2080,
+    "sha256": "BC7DA6546DC836B985356529D6938DACFC4112D03BFB792664FC32B58DA35AD9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/melee/MeleeDeflection.java",
+    "lastWriteUtc": "2026-10-26T20:34:39.3357242Z",
+    "length": 13001,
+    "sha256": "52FAB940EECD0EBD3BF0662EE42ED0DECCFC09411EE257192F44A4A84B6E51F2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/melee/MeleeLine.java",
+    "lastWriteUtc": "2026-10-25T18:30:25.8156557Z",
+    "length": 1093,
+    "sha256": "52631DD93F5FDB3F5311CF51885A2C892CE4176C3872A2687572D9542F98069D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/melee/NonPhysicalMeleeScope.java",
+    "lastWriteUtc": "2026-10-26T20:41:30.4714262Z",
+    "length": 2349,
+    "sha256": "764291DA9FC8ED6E8E4B447CC84A54A2177358B04B1BAD274A8A3B0ED5C8EF30"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/MitigationCreditScope.java",
+    "lastWriteUtc": "2026-10-25T17:54:51.2751618Z",
+    "length": 2633,
+    "sha256": "AA8040292B8FE41C9DE9324326417D8259407B5468AC63E5A18D0E32EDEE197C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/MomentumPurse.java",
+    "lastWriteUtc": "2026-10-25T17:54:35.3433039Z",
+    "length": 558,
+    "sha256": "7E5119C1017E42D9ED89934B9E037D21A36D71C9C7B09BD24D6F83870BBA43F4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/package-info.java",
+    "lastWriteUtc": "2026-10-25T17:54:25.5239280Z",
+    "length": 260,
+    "sha256": "C9AEEA2684522C3A6BFEE7A6CC3A0D5B1FE2F0872FEDB91756D373E4531B2841"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/PlayerMomentumPurse.java",
+    "lastWriteUtc": "2026-10-25T17:54:37.0915188Z",
+    "length": 1277,
+    "sha256": "A6C95442472042123C2AD901730BD0060E43AC55CCB95EEC2F3F6C1F801BF2ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowBook.java",
+    "lastWriteUtc": "2026-10-26T04:25:56.7857125Z",
+    "length": 10501,
+    "sha256": "71A10A122540789BF0EBAA0377C79F321AEB9A1151806644192D1B822FC9CAA8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowCaptureAccess.java",
+    "lastWriteUtc": "2026-10-25T19:56:10.1076792Z",
+    "length": 292,
+    "sha256": "119F33E7000D23231EF77AC2CEDA6C55C47BB1E230FB9F148254E24C954D74F8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowCaptureBook.java",
+    "lastWriteUtc": "2026-10-25T19:56:16.4842133Z",
+    "length": 13483,
+    "sha256": "9CA49F1B5D5AF73DF498E2EFD978C77268925C64872A5F0BAC081CF0BE3737FB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowDamageFreeze.java",
+    "lastWriteUtc": "2026-10-25T18:25:16.2430222Z",
+    "length": 1179,
+    "sha256": "97358923EF6CC310697CC0BB76AA2218FB0561A01B6A8ED847ADF81C2BBB106F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowFlight.java",
+    "lastWriteUtc": "2026-10-26T12:33:29.2661514Z",
+    "length": 10680,
+    "sha256": "AB08D91F4EE69E051E3C747E23B2D4B44E81D9DCC6572DB8D8BC11C60159F7C8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowSegmentOrder.java",
+    "lastWriteUtc": "2026-10-25T19:19:56.3844360Z",
+    "length": 3897,
+    "sha256": "2110B89D205CC7E1CAB753EB44067794FE2BFED825C03EE647D159FC9CB7FCD2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowSupport.java",
+    "lastWriteUtc": "2026-10-25T18:25:15.0237122Z",
+    "length": 721,
+    "sha256": "3B9693464D601A1B0B69B722AD41BD443C8D03B1C0BA51E1A7EC545CA6061BDD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/ArrowTickState.java",
+    "lastWriteUtc": "2026-10-25T18:25:37.5450061Z",
+    "length": 1795,
+    "sha256": "4B5EB31CB250F148679E89E69E728E90F5031FFF69D3BF468481E0235B67F334"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/projectile/DeflectionFlightEvents.java",
+    "lastWriteUtc": "2026-10-25T19:00:40.6955900Z",
+    "length": 3099,
+    "sha256": "25F9F4466578536D0F25542B47B088C0273426B968DD8B1090FEE675D7E5F235"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/ReleaseSample.java",
+    "lastWriteUtc": "2026-10-25T17:54:31.4904340Z",
+    "length": 444,
+    "sha256": "F3952A6935DDA75C06691D70B57C08A961F3BCCE1DB08C0556808371662C546E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/RouteSample.java",
+    "lastWriteUtc": "2026-10-25T17:54:30.6351053Z",
+    "length": 401,
+    "sha256": "A092AF5B15A6968EABC5B45CFAAEC45A842AB12E68FC1B7EE97D76F5C7AFDD2D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/AttackEnchantmentContext.java",
+    "lastWriteUtc": "2026-10-23T06:13:12.6225730Z",
+    "length": 556,
+    "sha256": "8DE24000285FC4DB5D7A491EE2E8FA9860AEFBD3B23B9C0688A2D5DCB1366E6F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/AuraContribution.java",
+    "lastWriteUtc": "2026-10-23T06:13:13.3683236Z",
+    "length": 697,
+    "sha256": "E38B803A42ECF3E4F353CEA72DB9180E768C0F1A49E20FADE7B0FF8466F43089"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/AxisBoxGeometry.java",
+    "lastWriteUtc": "2026-10-26T20:38:39.8376772Z",
+    "length": 5013,
+    "sha256": "F6F24CF670368BD25FAEAD70F705475C9269F95EC1641DFBDE547E98399368BD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainAuraResolver.java",
+    "lastWriteUtc": "2026-10-23T06:13:38.2185187Z",
+    "length": 2027,
+    "sha256": "E83472040ECAE03EFA25791D8454B1AE61C2DE40584990F68DF5D245A32B36D7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainAuraSpec.java",
+    "lastWriteUtc": "2026-10-25T15:03:29.9879800Z",
+    "length": 1178,
+    "sha256": "DA24F2CF62D42117F8F9226A9CF6A26E8429468583EF5BBE7794436EDC1A428E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainBound.java",
+    "lastWriteUtc": "2026-10-23T08:57:03.2730162Z",
+    "length": 592,
+    "sha256": "07F9045E6408E687FDC712E8A2643D5E30D3B0757082C111E3F7C75251AE8B48"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainBoundary.java",
+    "lastWriteUtc": "2026-10-23T08:56:37.9016219Z",
+    "length": 195,
+    "sha256": "8677040623CB6A5C8E1F55FDB841538248D7F894314381679A3ED74C9A872576"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainClientBridge.java",
+    "lastWriteUtc": "2026-10-23T06:14:07.5104609Z",
+    "length": 649,
+    "sha256": "CACABD091FC44A61A729E3DB3B2D887FECD6007B854E7186022F47DDCA376476"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactBilling.java",
+    "lastWriteUtc": "2026-10-29T15:10:23.9040732Z",
+    "length": 7566,
+    "sha256": "898E80B8674F650F2C00037810C3BA880F611C805B8146BCE8059EF0CEB7CF8A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactCharge.java",
+    "lastWriteUtc": "2026-10-29T14:06:26.5856109Z",
+    "length": 1058,
+    "sha256": "22B7C2AF887F00BCEE958356E5F816C2464C18A14BECADD724AB7BAB10336832"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainDefinition.java",
+    "lastWriteUtc": "2026-10-29T14:00:22.6126585Z",
+    "length": 5216,
+    "sha256": "CEEE8F436A39E5F2A8CC1E5E92CC92957CD7BA896370BCE7E81B0D806B1D209F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainGeometry.java",
+    "lastWriteUtc": "2026-10-26T19:59:36.1292197Z",
+    "length": 703,
+    "sha256": "B7D49D3B64D773DAD1BEAA6217F2EA6C0719B5B56555CAEA07892D4A575F0F8B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java",
+    "lastWriteUtc": "2026-10-29T14:05:26.9908642Z",
+    "length": 4432,
+    "sha256": "2B87A3537600EC0E6AA08967457C52912E818B1950E3B10EACEB72736A41A43F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainMotion.java",
+    "lastWriteUtc": "2026-10-29T17:46:01.4170905Z",
+    "length": 4028,
+    "sha256": "4B74D8D1F87298217AEF6FC1ED8F0BADB3599088E3314476CF960C19F94C2AE5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainNative.java",
+    "lastWriteUtc": "2026-10-23T08:56:39.9093344Z",
+    "length": 928,
+    "sha256": "6EC61AEC0FA92D7BCC240B62EAACD3C5766B2DA94F2D8BBA7719B602E78B417B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainNativePolicy.java",
+    "lastWriteUtc": "2026-10-23T08:57:14.4910379Z",
+    "length": 2607,
+    "sha256": "92C7C2B5C8B82ABAD741F0949F09CDB08E6B00AEFBF49E691E070759900275C5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainPulses.java",
+    "lastWriteUtc": "2026-10-23T09:26:22.3436150Z",
+    "length": 7181,
+    "sha256": "D2D2717E41B9EED5BBA5555937896ACD23DD154451A9559613555B66984820A2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+    "lastWriteUtc": "2026-10-29T14:00:23.9182522Z",
+    "length": 8294,
+    "sha256": "6E47970684831E1B7FB79E49ADDB15FA0049ED9F8A3A3065A177E42DF9BE8FCD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainSightStore.java",
+    "lastWriteUtc": "2026-10-23T09:26:16.1666232Z",
+    "length": 3381,
+    "sha256": "673A664628DA51DC4184DE88F5C4EF9C6A41D0F808BC32F10026E93E99178768"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainVisual.java",
+    "lastWriteUtc": "2026-10-23T08:56:37.9031285Z",
+    "length": 173,
+    "sha256": "D63B6FEA6741769E82873753F8698981604B504F8D795C1AE86A3BCEF342D60F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/PressureBreath.java",
+    "lastWriteUtc": "2026-10-26T12:41:29.7676494Z",
+    "length": 4826,
+    "sha256": "8FDBAF93A10D85D4A3EC937D343F317C9245FF3F93961F342012DC896686DAE7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/CastToken.java",
+    "lastWriteUtc": "2026-10-23T19:42:31.0343662Z",
+    "length": 470,
+    "sha256": "B34F66EEF013A63409E801B88277AFC20CFC5FEB591BF3FFB0CD8B391610F025"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/ClientTrack.java",
+    "lastWriteUtc": "2026-10-19T17:42:50.3034957Z",
+    "length": 1314,
+    "sha256": "1C9F36BFA6C03F2C0F40F1C385AF0D31E05A89EEC0513169D2FA1026F58AA029"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/CohortLaneLayout.java",
+    "lastWriteUtc": "2026-10-24T22:03:25.8040408Z",
+    "length": 11155,
+    "sha256": "896427F4B2672F174E58A1B489837E565AF64F553A1ADDE4024495901B2CD643"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/CohortVisual.java",
+    "lastWriteUtc": "2026-10-24T22:19:43.1890077Z",
+    "length": 4092,
+    "sha256": "01D111542C119D7B106FA825E3CF74E45A5057BECB008783EB3F42E56F6614D2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostBeatHooks.java",
+    "lastWriteUtc": "2026-10-23T21:57:52.1138208Z",
+    "length": 1627,
+    "sha256": "D4A2D89320A45432FC117CEF2F9C96889A4FBC852CBA153DF4049DA805AD53E1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostCast.java",
+    "lastWriteUtc": "2026-10-23T21:57:50.8931305Z",
+    "length": 3726,
+    "sha256": "6571F253558A2CE97AE69F5E91A1EDB99A252A2CB945DE1A74055406C2060EDB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostCastEvents.java",
+    "lastWriteUtc": "2026-10-23T21:57:55.3989182Z",
+    "length": 3061,
+    "sha256": "B516CCDCB1072151E6152C5C1D83DEBE2AB07B1BBF4436A5729ABD89EAC8BDDF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupCommit.java",
+    "lastWriteUtc": "2026-10-25T11:20:57.8796853Z",
+    "length": 4417,
+    "sha256": "2147E776107872385CCA3A8DA3105F2DAB8976BDFDC01065E09AC7AFA978C5F6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupContext.java",
+    "lastWriteUtc": "2026-10-25T11:20:55.5612075Z",
+    "length": 6872,
+    "sha256": "F97D97EE815071E63E91D2D44F3BAD857EC5ADE34C4BCA23C2D913AB5E82B4E7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupIds.java",
+    "lastWriteUtc": "2026-10-23T19:42:38.8462011Z",
+    "length": 1035,
+    "sha256": "53EAD0444976E6A62FCD8AFBEA0C2296CB5FAFEE422F060A495722DEC6330AFA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupListener.java",
+    "lastWriteUtc": "2026-10-23T19:20:07.9585293Z",
+    "length": 307,
+    "sha256": "C6DAE33944FAC38979791AD28E8E07765CC85620AB5A0A1E6A225683ECD26714"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupReceipt.java",
+    "lastWriteUtc": "2026-10-23T21:41:19.7865728Z",
+    "length": 2426,
+    "sha256": "CBCDB39A951EE5290D56AAC3634C942283092645B489F9E33CD5768467EECE26"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/ReleaseEntities.java",
+    "lastWriteUtc": "2026-10-22T18:21:17.9629899Z",
+    "length": 2223,
+    "sha256": "EAF61CC14BBE94B5907E352D108A11FF4BECA39148CD07127A1A0F4185CDCC2F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetCache.java",
+    "lastWriteUtc": "2026-10-29T17:54:31.1036328Z",
+    "length": 3147,
+    "sha256": "5212D623FF8B805440D0B088500686D259B6D8C5D289CE285BF18C9783FC05AD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetClock.java",
+    "lastWriteUtc": "2026-10-25T12:09:36.9221200Z",
+    "length": 2473,
+    "sha256": "49A3555317EC119E866223720CE78E7B4AC62F69C0F5F56298A1780BE6E8AB00"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetLayout.java",
+    "lastWriteUtc": "2026-10-25T12:09:28.3869549Z",
+    "length": 531,
+    "sha256": "E3C3C3CBC73126B05DA4BC36879DC9FCA4724FEC52A02FA5B21B7ED8457DA2B7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetSnapshot.java",
+    "lastWriteUtc": "2026-10-25T12:09:23.7744923Z",
+    "length": 3017,
+    "sha256": "531B909A0AAA5100B3E8CED4C1E30FEAA512FDE6B22D893468202293552FEE00"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetVisual.java",
+    "lastWriteUtc": "2026-10-25T12:09:16.9737170Z",
+    "length": 1488,
+    "sha256": "300A0B5B68502372E5CA0D23292E31047CC13EFA288AA4A1063E0A4B9B68A095"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+    "lastWriteUtc": "2026-10-29T20:12:19.7591939Z",
+    "length": 40698,
+    "sha256": "098F595B9BE573905EB930FE37061E09719B422CACD5CC703887576CD534D994"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitKinds.java",
+    "lastWriteUtc": "2026-10-22T05:07:57.3438005Z",
+    "length": 1658,
+    "sha256": "8073898F5501AB2861CD76AC07E636EA84F5889E4210E706156CFE9AB92DDD9B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java",
+    "lastWriteUtc": "2026-10-29T20:10:22.0719612Z",
+    "length": 12350,
+    "sha256": "C59D191555420E0F4A807D896D6307F5667F3C1385DBD2AAE3FB481C8D34374E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+    "lastWriteUtc": "2026-10-29T20:11:16.0328634Z",
+    "length": 22685,
+    "sha256": "4D70193A86DE7034B65C996679682189A834D498053BAB82BC38CEF6869AE4B9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/field/FieldInfluence.java",
+    "lastWriteUtc": "2026-10-23T16:11:30.2051483Z",
+    "length": 1541,
+    "sha256": "153C7640BC9E8A3025E8EDBE56ADEAD24F2C4034786DE6549DF42B15809CB88F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/field/FieldSpawner.java",
+    "lastWriteUtc": "2026-10-26T20:39:56.6673764Z",
+    "length": 4147,
+    "sha256": "B88580695286025C81750BE5B266E4D0E274F05A67916E2F8011BFC902B4AD4A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/field/FieldZone.java",
+    "lastWriteUtc": "2026-10-26T20:39:45.2127976Z",
+    "length": 2559,
+    "sha256": "315B48504D8B7F0153FFF2EBE8C104AB0892A99BDA51856DBFB7D0CD75503E03"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/field/FieldZones.java",
+    "lastWriteUtc": "2026-10-26T20:39:51.8792257Z",
+    "length": 17945,
+    "sha256": "44CEE04E1237C6CA5BB194F7DE23858455DB670D7EFE39BF128E7ECCF4E8CC3C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnCarrier.java",
+    "lastWriteUtc": "2026-10-29T13:12:27.2298433Z",
+    "length": 8773,
+    "sha256": "F64DEDD1E241CE7F15709666252A985D15EE6C892BA92A1E6020260C7601BD80"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnComponent.java",
+    "lastWriteUtc": "2026-10-28T14:41:38.9534651Z",
+    "length": 911,
+    "sha256": "8700DF06C478AA4179C7D02529D98F5D3FB7B21576C02AF08E05FD552ECF0576"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnDispatch.java",
+    "lastWriteUtc": "2026-10-29T13:12:03.8644596Z",
+    "length": 1534,
+    "sha256": "93DB1B98E744468236CBA1925CEB702807C21A145EA03232AB8F1E86F6D8CCEF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnIdentity.java",
+    "lastWriteUtc": "2026-10-28T14:41:50.3272254Z",
+    "length": 1288,
+    "sha256": "C249763BCE6C14AFEB13AFD137B547CA07086C6BA1B162131C04EEACF0542D13"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnLedger.java",
+    "lastWriteUtc": "2026-10-29T13:11:42.3138511Z",
+    "length": 17120,
+    "sha256": "C66A59846A4C24384D72C29B56B484A2996339D84AAFCAEDC42E676D0918FB86"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnPlanner.java",
+    "lastWriteUtc": "2026-10-28T14:41:44.2994000Z",
+    "length": 388,
+    "sha256": "DC072F5BCC020A19DF9A78C8300E44EEEFB37334D31F136D06B2B5A7C94CD1C6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnPulse.java",
+    "lastWriteUtc": "2026-10-28T14:41:51.7411835Z",
+    "length": 1139,
+    "sha256": "225566FE785C15BD60E53F00E95A6DFC538255866DF9E828BA2B1BD646690D68"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnSchedule.java",
+    "lastWriteUtc": "2026-10-28T14:41:43.0852387Z",
+    "length": 1826,
+    "sha256": "64261ED051FE4DCB38BCD87B17321E45455D702604C9516BEBAA9CC6BEA75174"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnTrackState.java",
+    "lastWriteUtc": "2026-10-29T13:11:11.3638273Z",
+    "length": 4069,
+    "sha256": "C9A483F8C255344EF475391DA9EC07D4473B1725BE1507D0DF260FC0F3FA0A8E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/ElementAdjustment.java",
+    "lastWriteUtc": "2026-10-28T14:41:37.2247211Z",
+    "length": 1417,
+    "sha256": "75EA1434DBC7BC1A1C4C6D084FAB629882597C07B7CC36E2FA6D819A365C6C8A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/ElementDamageScope.java",
+    "lastWriteUtc": "2026-10-28T16:33:25.8282407Z",
+    "length": 6483,
+    "sha256": "2E7D16B22FEBF955D37ADE183AA87EE48605C2E62FB3B3783E8D5548DA32AB5A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireChannels.java",
+    "lastWriteUtc": "2026-10-28T14:41:33.7192995Z",
+    "length": 356,
+    "sha256": "0FF55A9FF279B308A215B52E371EA247ACAAE2CF32A794A5A2F5D2BD7AE204E8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireConsumption.java",
+    "lastWriteUtc": "2026-10-29T13:17:14.1668681Z",
+    "length": 5689,
+    "sha256": "C1FA484C8C2CFDE97C8FF27E41E50E36C131649BFBF8D1E557FADC6EE5DE74EE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireCooldownPolicy.java",
+    "lastWriteUtc": "2026-10-28T15:24:45.1940664Z",
+    "length": 327,
+    "sha256": "D155D6C6AABDB926F9CBB8748AC03B2CE0C6935C37DB5BE8F830B4E8ECDC0A43"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireDamage.java",
+    "lastWriteUtc": "2026-10-28T16:33:25.9693749Z",
+    "length": 3020,
+    "sha256": "D6A0D91A51568E1013542FC843D94D91EFBA729ECB2EAB9636BF663609234B02"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireHurtBoundary.java",
+    "lastWriteUtc": "2026-10-29T01:08:29.6649850Z",
+    "length": 5554,
+    "sha256": "3EFD234372FBFE88492C46897B9F3975A6F341F77EDC56A908D58002620DFCEC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireLayer.java",
+    "lastWriteUtc": "2026-10-28T14:41:34.7797817Z",
+    "length": 548,
+    "sha256": "1856D892BABD60D59BE329E92985EC8E0F70161B0F8CDEB0C06DA91107B44712"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireLimits.java",
+    "lastWriteUtc": "2026-10-29T13:11:06.9866879Z",
+    "length": 1279,
+    "sha256": "0502336C44E847AD432681869BEFA6B55010C6CF644270FC90F0D032FBBBEAD4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireRuntimeEvents.java",
+    "lastWriteUtc": "2026-10-28T19:35:43.6609637Z",
+    "length": 3606,
+    "sha256": "7585456592D5608FC6A5F8073C05AEB99F172EF6128A254DE647035EE826033B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireVisualRelay.java",
+    "lastWriteUtc": "2026-10-29T15:12:54.5845171Z",
+    "length": 11953,
+    "sha256": "6FF8382B6E9FF73C2D0A20D7B9D849E3C218BF21A3FD97D1C3F264754FA91F1D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FuelMode.java",
+    "lastWriteUtc": "2026-10-29T13:10:54.0252696Z",
+    "length": 800,
+    "sha256": "B99AA01862A60CF98251381A0EC183FE5F2BA64DD15CBAAB7FAAA1DA0721A4B3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/OnlineCaster.java",
+    "lastWriteUtc": "2026-10-28T14:43:56.9358886Z",
+    "length": 1039,
+    "sha256": "DAA63C1AA2FC30358A212EA0F4A3B32FA44117BBA98948AB3B5785289C8941CE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/PumpResult.java",
+    "lastWriteUtc": "2026-10-29T13:10:57.7677654Z",
+    "length": 731,
+    "sha256": "1BAC3E28A93D4BEAC1D4C5244A180950722B197C30A4B682F6A9D81A15934A36"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SegmentPlan.java",
+    "lastWriteUtc": "2026-10-28T14:41:40.7233868Z",
+    "length": 1302,
+    "sha256": "08453E4DC21A7D8CD9C4AD4899864C75F6F3AE300AC3EC386F42B7B5FFA6D967"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SharedSpec.java",
+    "lastWriteUtc": "2026-10-29T13:10:56.6331193Z",
+    "length": 2094,
+    "sha256": "CEB8B250AC7A7CBC3BCDEE4B4DADF1207E0036CE50ECCF118EA2ABE12E84B822"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SteamBurst.java",
+    "lastWriteUtc": "2026-10-28T16:33:26.7856595Z",
+    "length": 4997,
+    "sha256": "C2B991333BE27FD42BCE9AB1DB5C1D535BDF7AF3398A7346C7F04AD14A14AC7C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SteamHostility.java",
+    "lastWriteUtc": "2026-10-28T14:42:07.4532044Z",
+    "length": 478,
+    "sha256": "4CF463E333ADD703E042E18A8AC705B1B36A0C2FA6C5F46D8034AADB450DCBD8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SteamTuning.java",
+    "lastWriteUtc": "2026-10-28T14:42:07.9076685Z",
+    "length": 529,
+    "sha256": "26A07A95E2C2DDB1E2F9DB930AC904B85C4A6E161533E155FE03412D15F8050B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SteamVector.java",
+    "lastWriteUtc": "2026-10-28T14:42:10.1590667Z",
+    "length": 1269,
+    "sha256": "4AFFBCA31EEA7ABA2C582A6E61FFB4CCA7A873E9A54F7DE161AFBC645DE82E49"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/StrikePlanner.java",
+    "lastWriteUtc": "2026-10-28T14:41:44.7262209Z",
+    "length": 290,
+    "sha256": "11D64B266FCA7356E5E5F675DE6CF5CE3B4C7DB5C89FFDF25E2C843FDCB32647"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/DamagePermission.java",
+    "lastWriteUtc": "2026-10-28T18:48:48.0002117Z",
+    "length": 956,
+    "sha256": "38B5782CC5ED8459F0D3A92F810C1109C7C5FD3FCA8768FC0C78D256EF382200"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/FireConsumerPlans.java",
+    "lastWriteUtc": "2026-10-29T19:06:47.7111271Z",
+    "length": 4855,
+    "sha256": "6A72DA11B8590F8F518EB4DC33D6D8B7967517FE0D43E1A14F0AA589A1D8586B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/GroundFireFields.java",
+    "lastWriteUtc": "2026-10-29T15:12:51.6352206Z",
+    "length": 6252,
+    "sha256": "476C45516D3AA55750ACBA0C196A76A5B690019282606C1F4617A6417E3C5A99"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/GroundFireMath.java",
+    "lastWriteUtc": "2026-10-28T19:48:09.9152498Z",
+    "length": 4014,
+    "sha256": "05D914C9D247EB321EA9CBA3077E4FA16021F627FDE9D5DD977481EB7041E947"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/MeleeCorridorMath.java",
+    "lastWriteUtc": "2026-10-28T18:48:46.6983303Z",
+    "length": 4371,
+    "sha256": "A99AC957765F0E0A14D553F4CAACD856DCEDC060FC3CE8A80B71298EFB0B4769"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/SphereTouch.java",
+    "lastWriteUtc": "2026-10-28T18:48:38.9016658Z",
+    "length": 1172,
+    "sha256": "9D13A26BD834C99AAB0323EDB58CA9B63104BC2FCA5A147BBC4B1477F88EF5B4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/StandSurface.java",
+    "lastWriteUtc": "2026-10-28T19:47:43.3541462Z",
+    "length": 2112,
+    "sha256": "5A771137074D35C654014DE7930219C2A8904B8F9246AE258E4DD82398486C60"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/FlowRoundLedger.java",
+    "lastWriteUtc": "2026-10-26T18:52:26.7717044Z",
+    "length": 2736,
+    "sha256": "4FE4C1687F295FAC682687D453D44A7E55767C1A599387AA56D6948D39A0D744"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardDefinition.java",
+    "lastWriteUtc": "2026-10-26T20:38:45.9474942Z",
+    "length": 3253,
+    "sha256": "7B72FC808743B1034CD3BF478927257C7269A32F8FE0C4880CDD196C01EE6546"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardMitigation.java",
+    "lastWriteUtc": "2026-10-25T18:28:46.0674148Z",
+    "length": 5749,
+    "sha256": "AB84FB4F9304B9375147CE97BEE8731465CBED201B8164AEE3800CA4EAFCE7B4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardPose.java",
+    "lastWriteUtc": "2026-10-22T10:40:58.7966993Z",
+    "length": 1455,
+    "sha256": "910A982836FC73ADABECD1DA29E9379D52CCD59DDF8CF6D0372BFF8064F38ABD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardPreview.java",
+    "lastWriteUtc": "2026-10-22T10:40:33.5690092Z",
+    "length": 3554,
+    "sha256": "084A301F4EE9CE6D216A7DBF69DC2E3ACD0DA04DD80C36CD592404672EE87911"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardStates.java",
+    "lastWriteUtc": "2026-10-26T20:39:26.9499338Z",
+    "length": 26539,
+    "sha256": "06ACD172357142CD98D0CE6E0DA93EAA761E4B6D3CB4883B693D8B5C139DAE21"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/ArcHitbox.java",
+    "lastWriteUtc": "2026-10-19T17:42:48.4325820Z",
+    "length": 2440,
+    "sha256": "E7B70CF79E5838761E52BB2C9969C4750892E691CC8402F3136D3E4DD9F4535E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/BoxHitbox.java",
+    "lastWriteUtc": "2026-10-19T17:50:21.8610797Z",
+    "length": 934,
+    "sha256": "CA33147C5C35D65CF3E1B6C714998F18394DC0FEF56719B58D0E46B5488CCB7A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/MeleeCorridor.java",
+    "lastWriteUtc": "2026-10-28T18:49:09.2517464Z",
+    "length": 2341,
+    "sha256": "F8ADBAFA536A0BA905DBE38A28CB93FDB49BF1111E8AB0781F421F734388A742"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/ObbHitbox.java",
+    "lastWriteUtc": "2026-10-09T08:53:19.6761763Z",
+    "length": 1172,
+    "sha256": "8496EBAB488335865068B59096C1EEFC5A756371021A7A1FA603EF350C3B7B5A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/SizedBoxHitbox.java",
+    "lastWriteUtc": "2026-10-28T18:56:19.8168069Z",
+    "length": 5404,
+    "sha256": "883D4A82F5900FC880E3166B59415F03BB7D4AB3F6D3AA81BE3F9B01B25759B2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/SphereHitbox.java",
+    "lastWriteUtc": "2026-10-19T17:50:21.1922508Z",
+    "length": 1012,
+    "sha256": "BB5A90DC5FB3F3C5275BE6A5FF6B066C36314318D0C3375742F595A7FC331D23"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/TechniqueHitbox.java",
+    "lastWriteUtc": "2026-10-09T08:53:19.6751761Z",
+    "length": 374,
+    "sha256": "096DE51B1D711CAC85F7FC9DBB58ABF6827A38140F637EAB27463CEDFA26E8FD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/HitVolumes.java",
+    "lastWriteUtc": "2026-10-29T20:10:28.8349837Z",
+    "length": 16089,
+    "sha256": "18BC0232BCC0FC2C7E2DA2900FF3CB4B7A13F97DD54577B675F87B8CE2F2B71C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/LifeDrain.java",
+    "lastWriteUtc": "2026-10-23T09:26:09.6882336Z",
+    "length": 1410,
+    "sha256": "6E0B990E078575E3D591ECC5F3945C28D5709084146A1A127DD17B709C8936F5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/ChargeGate.java",
+    "lastWriteUtc": "2026-10-21T15:52:03.1346231Z",
+    "length": 1140,
+    "sha256": "1313A4A00F17C4174BDD361D5129F8E4F3E6C23E5D21159E95BB5DFD097E4609"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/HeavyWater.java",
+    "lastWriteUtc": "2026-10-26T04:23:26.2103057Z",
+    "length": 3220,
+    "sha256": "59ED546DE129D1E6BC634E2D8C74A79C825A02A08D272B95F3E8CF008FC30B8D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/MomentumCreditPolicy.java",
+    "lastWriteUtc": "2026-10-23T09:26:11.1875670Z",
+    "length": 1237,
+    "sha256": "3F7B01E590EF2C22305FB16EF5E10E23019196BF41947FDE77A1C1C3F45C4F95"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/ReleaseBaseEvents.java",
+    "lastWriteUtc": "2026-10-28T08:52:36.8392529Z",
+    "length": 8865,
+    "sha256": "1F1EC9816AF865C51CA35226AF352B0E88C4772BEE7433A7EBCBE2D64823B6A8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/WaterMomentum.java",
+    "lastWriteUtc": "2026-10-26T09:31:59.8263920Z",
+    "length": 5456,
+    "sha256": "84F6F3A81F3111B65DFBA2504DEE724EB0F5102219EDCA6DD07999CBE9EB2BCC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/WetAttackReward.java",
+    "lastWriteUtc": "2026-10-26T04:25:44.1150799Z",
+    "length": 2041,
+    "sha256": "F44BF2ED92F509413A8AF156295590E14F1AD6F624416D1C7266CCBE1AF1615A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/AttachedSwingMotion.java",
+    "lastWriteUtc": "2026-10-19T17:42:46.1113039Z",
+    "length": 1383,
+    "sha256": "F7F63E5D6F8AB59D19DA1DF38555647EAD55018798BFD86298B318288949E108"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/DropMotion.java",
+    "lastWriteUtc": "2026-10-09T08:53:04.5821227Z",
+    "length": 1207,
+    "sha256": "B47BE4A41AB9D56B8D0C7545B3B83B85F9B2050014E5731BC488A4FF74FDA8E0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/FollowCasterMotion.java",
+    "lastWriteUtc": "2026-10-19T17:50:21.6913587Z",
+    "length": 1834,
+    "sha256": "A8687BF126E0AE2A41C360D862B79670A57074189A1EF35C9938A2019C6362B3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/FunctionMotion.java",
+    "lastWriteUtc": "2026-10-22T07:06:14.3036051Z",
+    "length": 1822,
+    "sha256": "C35F7D566C48298823F24F1EB04550F77BE47F29B57AC59C8B356EF9EEA636E7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/ProjectileMotion.java",
+    "lastWriteUtc": "2026-10-09T08:53:04.5831228Z",
+    "length": 1217,
+    "sha256": "1AEBF77D3000EB99D0F4AD8AB0041416FA92671D0C89DFAA042B137A75B6941D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/StillAimMotion.java",
+    "lastWriteUtc": "2026-10-19T17:50:27.0360733Z",
+    "length": 1683,
+    "sha256": "CEA1813E2CE0FEFC719FE1EED00C253B95623A12E31DBF1A307CCDA3602C1026"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TechniqueMotion.java",
+    "lastWriteUtc": "2026-10-09T08:53:04.5821227Z",
+    "length": 277,
+    "sha256": "DD693F16757A454937933AD8983EF807F8BA2937AF0F8E5D532EF65030126E2E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingMotion.java",
+    "lastWriteUtc": "2026-10-23T16:13:42.7912863Z",
+    "length": 3462,
+    "sha256": "862C68C9A97C69A0CF5ECA42C36AF4232260EEF2A29F33BD1C7D07F5A9A29515"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingSupport.java",
+    "lastWriteUtc": "2026-10-25T11:36:50.4699205Z",
+    "length": 3087,
+    "sha256": "116434B7A229BEADFA5634BD3A10E7DDB2654ED5ACC96A45B0685A338B7E8F38"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrapFallMotion.java",
+    "lastWriteUtc": "2026-10-19T17:50:28.3186708Z",
+    "length": 1042,
+    "sha256": "FB3555A43173BFA5B1100C8DE8C298E25E77BD8BB671B6E86042C145E4CA6470"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/VortexMotion.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8092410Z",
+    "length": 776,
+    "sha256": "78BC7BE05783E81CB23AA54A258C1CBD1B6F85A73A79C35FDBC0C7332A5B523C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/PartingCellLease.java",
+    "lastWriteUtc": "2026-10-26T09:29:35.8445158Z",
+    "length": 1289,
+    "sha256": "1F29A6799002527BFF8D65CF3CEC143081DAF33E877569F650E0AFBE710095D4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/PartingGeometrySnapshot.java",
+    "lastWriteUtc": "2026-10-26T09:29:33.8518308Z",
+    "length": 3789,
+    "sha256": "01FE9FA66370A20EDE8D3C13B65C870EC0A8DFFF5C393603A09507E627CDEB9E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/PartingOffers.java",
+    "lastWriteUtc": "2026-10-26T09:29:27.4717851Z",
+    "length": 675,
+    "sha256": "7011D19BB92F35861F5E720F41DE2237AFE19A6375557C30638C54F2C63C66E4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/PartingOperation.java",
+    "lastWriteUtc": "2026-10-26T09:32:45.7230556Z",
+    "length": 3213,
+    "sha256": "572C867409CD77CEDB88A60AD5745638B15C52F1EED7B6E7B1E92FEFF0A5C3A0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/PartingOperationId.java",
+    "lastWriteUtc": "2026-10-26T09:29:26.3132548Z",
+    "length": 659,
+    "sha256": "A9B79A5CD8047BC47D9690EB40323CACD9DDBAD53CE83CA0F2540C580DAFB936"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/WaterPartingSavedData.java",
+    "lastWriteUtc": "2026-10-26T09:34:48.0641120Z",
+    "length": 11567,
+    "sha256": "7E05CA997A8496FB293298BD2A612DB5ECDE3E1FC776D7CF8004E9C6B094D8ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/WaterPartingService.java",
+    "lastWriteUtc": "2026-10-26T09:34:52.3013968Z",
+    "length": 14733,
+    "sha256": "B59B421F58326612179788EA1ECC4A5C66F0E778C203ADA4DFF72A67F10FD337"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/payload/FlowSuccessPayload.java",
+    "lastWriteUtc": "2026-10-26T18:52:23.4885488Z",
+    "length": 6101,
+    "sha256": "B9927FB8A3869EF525A7586A90EC22C8549978A12475DEEB83504796D883FA18"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/payload/HitPayloads.java",
+    "lastWriteUtc": "2026-10-26T18:52:52.8319889Z",
+    "length": 4347,
+    "sha256": "E25B15474AD67FCB5E33D383367F45241A04FCD42FF4E69922C53E84387F1CFD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/payload/ObstacleBodies.java",
+    "lastWriteUtc": "2026-10-21T15:53:26.6215680Z",
+    "length": 5113,
+    "sha256": "92DE35B29D617E5716B03F2917F3E98679238E681E78CD725A8C584D140C49D7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/payload/WetPressure.java",
+    "lastWriteUtc": "2026-10-26T04:23:27.6787290Z",
+    "length": 987,
+    "sha256": "AF489ABBBFC4C00054291E65C177426281FACDB5E5FE327731922ED96F974998"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/phantom/PhantomEndReason.java",
+    "lastWriteUtc": "2026-10-21T15:52:38.8863161Z",
+    "length": 131,
+    "sha256": "9E7863F00C6908CBB1F4B399EFA1C97EA730FD5865D634D2D75F846CF7F172B7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/phantom/PhantomFactory.java",
+    "lastWriteUtc": "2026-10-21T15:52:39.8861427Z",
+    "length": 975,
+    "sha256": "544492AC1D2883DB058E5D5B752FB2D3D25B1461E6DE911E83A0BE428AC9599B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/phantom/PhantomHandle.java",
+    "lastWriteUtc": "2026-10-21T15:52:38.5904841Z",
+    "length": 155,
+    "sha256": "B2AB118FD3DD56069F77B93A3E5689721D0E4173FD497807B00FE94BBD6429F2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/phantom/PhantomSpec.java",
+    "lastWriteUtc": "2026-10-21T15:52:38.2066432Z",
+    "length": 257,
+    "sha256": "6E49FC70876F774F6058DBDC78DC7CB4119F987EFFAC0E6E97EC8351D4B4AC1B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/deflection/PrisonDeflectionHost.java",
+    "lastWriteUtc": "2026-10-26T12:30:33.7908644Z",
+    "length": 4681,
+    "sha256": "900A3B2A6F8CBF638BC9239D36499F34096A76C2C024088A204831896BB36DEB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/deflection/PrisonDeflectionLifecycle.java",
+    "lastWriteUtc": "2026-10-26T12:30:46.0805536Z",
+    "length": 3477,
+    "sha256": "B3747828852A30F0E45686CFC2DE27420C90954B8C55D65851532DCDF48A64DD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/deflection/PrisonReflectRoute.java",
+    "lastWriteUtc": "2026-10-26T12:30:11.5847463Z",
+    "length": 1252,
+    "sha256": "73C58ADF5884C9B2B8CF243EAB3C6997DE3613286A8BF2474445B66EC8E1806A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/deflection/PrisonShellGeometry.java",
+    "lastWriteUtc": "2026-10-26T12:30:27.5594672Z",
+    "length": 6309,
+    "sha256": "8DB6F95AF79714B134F1A2A41E4F399AD7070A02BDF34A284BF62AA58CAA694D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/deflection/PrisonStrike.java",
+    "lastWriteUtc": "2026-10-26T12:30:04.7704008Z",
+    "length": 703,
+    "sha256": "F18D0CF29EF24BEE2019624E4E90C2D8349EC41CFEC0027DE12C54ED8AA9F3FF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/EndReason.java",
+    "lastWriteUtc": "2026-10-26T12:42:37.1843760Z",
+    "length": 335,
+    "sha256": "D09DE9B262E954A378DDE0458060FEA35152AD57BB8D1982203876CBDCB947D6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonAim.java",
+    "lastWriteUtc": "2026-10-26T12:44:59.1295985Z",
+    "length": 3380,
+    "sha256": "8DD661A8AFEF4EE4EB78A13C552F7DF5EC1116127FDA4BB1CEBA36D728577FD7"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonCommitResult.java",
+    "lastWriteUtc": "2026-10-26T12:42:39.9299689Z",
+    "length": 530,
+    "sha256": "B4E9AB5707056F008068327068346F882E105A7BABC9C6AF2296960E5D4A684B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonEvents.java",
+    "lastWriteUtc": "2026-10-26T12:42:42.6440100Z",
+    "length": 1789,
+    "sha256": "62709ACEDB2EAB1B48C604F9D0956CA0474BB13C7EC6D4E8F988404C5BC5D704"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonLifecycle.java",
+    "lastWriteUtc": "2026-10-26T14:27:05.8441859Z",
+    "length": 2434,
+    "sha256": "CA8E8F6C316C5E3B26B777E15EA2E1969D4C396DABF95B92B9241A8AD26A14F6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonMotion.java",
+    "lastWriteUtc": "2026-10-26T14:24:53.3505235Z",
+    "length": 3033,
+    "sha256": "10A9E6D58075ACD16780F1EBC2F38C8349883706666AC66DFEBD4664194CB72F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonMotionScope.java",
+    "lastWriteUtc": "2026-10-26T12:42:45.3707138Z",
+    "length": 1723,
+    "sha256": "48932DA3C3EF876269741DD1328A5B4CAB54850756AE7BD9F469C319F374D6AB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonPressure.java",
+    "lastWriteUtc": "2026-10-26T12:45:22.3778488Z",
+    "length": 2049,
+    "sha256": "DE6960A8AB163DF399211F4A5AD761A6D7746B9A066B5E14F4A9F0096ECF92B4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonRandomGate.java",
+    "lastWriteUtc": "2026-10-26T14:23:45.1688490Z",
+    "length": 2458,
+    "sha256": "312BE86B1F0BDE3855F1217C54A2AF52268143D795AAEDDE579D10F224D708D5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonReservation.java",
+    "lastWriteUtc": "2026-10-26T20:37:28.5726822Z",
+    "length": 2677,
+    "sha256": "B51F4665BCEF5885BE70561A59580962308BB928CF83D92D86842E79EFCF10DD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonRuntime.java",
+    "lastWriteUtc": "2026-10-28T10:27:49.3489109Z",
+    "length": 25822,
+    "sha256": "8F254129A5412E59EC64EEBDDE4D29AF581B47C3FC1FED75E7664040431A0514"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonService.java",
+    "lastWriteUtc": "2026-10-28T10:27:50.2791316Z",
+    "length": 2162,
+    "sha256": "9AF211CE013547758BE2EC91998119628367B59F648B26F64D54B59A60AC4820"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonShell.java",
+    "lastWriteUtc": "2026-10-26T20:37:32.3528786Z",
+    "length": 3013,
+    "sha256": "B3585C9A180AC2780F496974E8170A216259B10579318721BCCAF338FA0C2CC4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonView.java",
+    "lastWriteUtc": "2026-10-26T12:42:38.5702462Z",
+    "length": 671,
+    "sha256": "86CEC7797CBE1758973A8F6BA8F4EAD42B6D925A77368E54CCBFDD5EB0474925"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonWetDue.java",
+    "lastWriteUtc": "2026-10-26T14:27:03.9810553Z",
+    "length": 7107,
+    "sha256": "002D13D5329F664832F217EB1F954DDFE238B46D4FAC08688CE16D92CE86245E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/PrisonWetTransfer.java",
+    "lastWriteUtc": "2026-10-26T14:23:41.8298025Z",
+    "length": 5526,
+    "sha256": "3A33987917FC56F9DA4F5F9007E6EC649F13694DEC450A4BD02E9A42CF8F889F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/relations/Relations.java",
+    "lastWriteUtc": "2026-10-22T18:18:44.9928612Z",
+    "length": 520,
+    "sha256": "498839B9C9BFBD565EF0E1752673F6DEBD80EFCAD71DAE5F42B24CB4E6B90BE9"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java",
+    "lastWriteUtc": "2026-10-29T20:04:20.4469837Z",
+    "length": 13831,
+    "sha256": "6DAA8141C265012DB58F7AB76ED7CB40B3BA4869020862E7F2DD03E02881F1FD"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java",
+    "lastWriteUtc": "2026-10-30T02:38:29.0382543Z",
+    "length": 10441,
+    "sha256": "BDDBFB077219596BA533717AD50C615294B41335830B50831C8EE2804E2F8E05"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+    "lastWriteUtc": "2026-10-30T02:38:29.6109721Z",
+    "length": 18329,
+    "sha256": "1B6FF094512E87144F761D83F63807696AAF7E3411F6542661E16B62A30F6C4D"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseInput.java",
+    "lastWriteUtc": "2026-10-26T20:29:12.4805992Z",
+    "length": 2043,
+    "sha256": "C90FFB9DD2981D04FDCB5E06322F6F3C4F7C9F7BFECA57A9DE27185B711921DE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseKind.java",
+    "lastWriteUtc": "2026-10-28T18:47:28.2528569Z",
+    "length": 219,
+    "sha256": "CC957D3446C118357B5C7850B8D193B6B20B49EF29E2A10368D55A190A993F03"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseRegistry.java",
+    "lastWriteUtc": "2026-10-30T02:38:32.7852383Z",
+    "length": 1208,
+    "sha256": "FBC07C2B8F5CECEA8F5FB19902F1CC0BA4B0125812F895BD17DD96C8F730DF33"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseShape.java",
+    "lastWriteUtc": "2026-10-21T16:02:34.9844046Z",
+    "length": 164,
+    "sha256": "B8E2EA4A4042990F2D13A845BC94882A11E4FFB42DA55EBE740C8AFBBDDE294E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseTag.java",
+    "lastWriteUtc": "2026-09-28T17:02:58.1777505Z",
+    "length": 104,
+    "sha256": "0D5BA8504B63D19AE898561F6BDD968C578B04F8A267FF1078FCA24F60942CB4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusCast.java",
+    "lastWriteUtc": "2026-10-28T18:47:36.5788012Z",
+    "length": 358,
+    "sha256": "77BE9C1FC84E7A763D2CFCA756E04995E61F4AA270496D48D96367EE87377A4A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusCommit.java",
+    "lastWriteUtc": "2026-10-28T19:47:43.9350705Z",
+    "length": 4359,
+    "sha256": "55452DA511795C188443D39A120EFED5FA4C126D01C71247EE85C7CBE450B6ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusDefinition.java",
+    "lastWriteUtc": "2026-10-30T02:38:29.8970366Z",
+    "length": 2941,
+    "sha256": "610BDDE78CE3EE648094FF1AE8454C8A840C723CE341C5F80A094990F7BD3679"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusOrder.java",
+    "lastWriteUtc": "2026-10-28T19:43:34.6776929Z",
+    "length": 702,
+    "sha256": "CBB455B44CC89C54430D0D2C200B8D8ECA5DA35714B08E260A6A8082DD80DEEA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/BlockOcclusion.java",
+    "lastWriteUtc": "2026-10-28T10:30:48.8105378Z",
+    "length": 2848,
+    "sha256": "6E1CEF73F8EECF37028324A3573988FB4B1A4B89A953A69EEB421827A835246E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/EffectView.java",
+    "lastWriteUtc": "2026-10-28T10:30:40.9507385Z",
+    "length": 458,
+    "sha256": "823ED31A14F2F0605435559885B1AA0C2A7756016DA437A5C3B2E48A4C618D82"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/RelationDecision.java",
+    "lastWriteUtc": "2026-10-28T10:30:58.3114278Z",
+    "length": 3410,
+    "sha256": "3ADFB593C53BBDAB74EA145CB7EF5AF6DFAC351F1A5499B2879CB7572CF2C9CA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/RelationPolicy.java",
+    "lastWriteUtc": "2026-10-28T10:31:01.0240193Z",
+    "length": 1970,
+    "sha256": "AD3AFC8027CA13E2BDCC6B5CBC0670277CC2B13DE42D152935D2FF2D944293A0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/ResourceStatus.java",
+    "lastWriteUtc": "2026-10-28T10:30:41.7646101Z",
+    "length": 390,
+    "sha256": "C4549476B585263750674FA6547974E7A188F0340B377BA6856A79604F7B1ECC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/ResourceStatuses.java",
+    "lastWriteUtc": "2026-10-28T14:39:01.4190063Z",
+    "length": 3956,
+    "sha256": "213ECE5651AD5DF6F34A0282BF25E14718142AC5323109F03CDE8FB03F264A93"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/ResourceView.java",
+    "lastWriteUtc": "2026-10-28T10:30:40.6008894Z",
+    "length": 463,
+    "sha256": "25E50B64D32DB647D48B31F1E5A7DE982B21E192DF864A6EF17F47502CE407ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/StatusCandidate.java",
+    "lastWriteUtc": "2026-10-28T10:32:15.6627362Z",
+    "length": 1505,
+    "sha256": "89BB8A99F9DF68CEC0BE40D18B49582239406BA078E0B11C82FB597F4EAEE513"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/StatusQuery.java",
+    "lastWriteUtc": "2026-10-28T10:31:10.7363226Z",
+    "length": 5431,
+    "sha256": "73DFCD750FCA3068399FC332F61D5476BD6032303968BF1C15A39A6C90CB4B9F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/StatusScan.java",
+    "lastWriteUtc": "2026-10-28T10:33:47.9960672Z",
+    "length": 5190,
+    "sha256": "E1AFAAA85D5C360AE003FB2CA783203AE4B2976FAA156DE54EAAB410F35928FA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/StatusScanRequest.java",
+    "lastWriteUtc": "2026-10-28T10:30:43.2170593Z",
+    "length": 658,
+    "sha256": "E1BB54F63831E7FF3D54D9DB09B86947CEDD645A3BCE1BDD6A97427F9373EF45"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java",
+    "lastWriteUtc": "2026-10-29T20:10:25.7602345Z",
+    "length": 14434,
+    "sha256": "6C594E3DF8BB09E53CC79031AFA2387314F40A89AC64D35F4BB394D7E9EFBC9E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/TideMarkCopies.java",
+    "lastWriteUtc": "2026-10-25T15:02:10.5636543Z",
+    "length": 1387,
+    "sha256": "0903A1362BC79C6F4F51712E4C77F42B743C184F4680DCE8CD56AA20031DB630"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/Trajectory.java",
+    "lastWriteUtc": "2026-10-28T19:28:07.8092410Z",
+    "length": 236,
+    "sha256": "1A0D5CA248460AD3BC68133495CF1ACE1D5D2B3AA929AA891DD574B7CECED50A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/TrajectorySampler.java",
+    "lastWriteUtc": "2026-10-22T05:07:33.6887299Z",
+    "length": 6519,
+    "sha256": "7EF1AAEFED08A5D1550BAC17C984FD9FBDC30B3B10CFFC551596E7CB995A9405"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/ArcBandDraft.java",
+    "lastWriteUtc": "2026-10-24T21:24:41.8251635Z",
+    "length": 1709,
+    "sha256": "8F5FBBFD174B9A55B8CAE54B97C8F57B8DDD9D1FEBDC7E09CA994D9BD3B9AB37"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/ArcBandMode.java",
+    "lastWriteUtc": "2026-10-24T21:24:40.3213157Z",
+    "length": 519,
+    "sha256": "CCE19C1D5F7B3853230825A1044D2D00D0A323626AB1B3E9493375E15A23094E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/ArcBandSnapshot.java",
+    "lastWriteUtc": "2026-10-25T16:09:30.9068194Z",
+    "length": 12927,
+    "sha256": "9B2FE0E92F40201359733ED60B4A43E367558782E2F9EB03E6CD315E661F947B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/ArcBounds.java",
+    "lastWriteUtc": "2026-10-23T20:10:11.8569935Z",
+    "length": 1738,
+    "sha256": "D8FBFF5796B7FB47179435CA6FF1A0E2CB8A09C6F4061D07FB7BE8C22383CBA6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/ArcVec.java",
+    "lastWriteUtc": "2026-10-23T20:10:09.7877884Z",
+    "length": 1861,
+    "sha256": "B81413A27D507F25892185763F98A345E970722F7D1B8A57F68E5AE7F09DAA8C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/CarrierWatch.java",
+    "lastWriteUtc": "2026-10-23T21:57:31.7278953Z",
+    "length": 2249,
+    "sha256": "CFC11FCA077C40AFB2338E5D23E2C4F8DDD00E5FDC5A5F2256CA3DECEFB120FB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/CastSource.java",
+    "lastWriteUtc": "2026-10-23T21:57:28.8097684Z",
+    "length": 1107,
+    "sha256": "C5D3B9962AA6F0B198B72222DB339B4B5CCAF06C41567151D9FAC6D5D89DE3A1"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/ProgressArcBand.java",
+    "lastWriteUtc": "2026-10-24T21:25:30.4613692Z",
+    "length": 18004,
+    "sha256": "06ABCD0675A1F3F34FC6666D44F744341EF7FD1F35F407810014C2288D456AF6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/RadialBladeVolume.java",
+    "lastWriteUtc": "2026-10-24T21:24:57.7954699Z",
+    "length": 12937,
+    "sha256": "1E619875ED7A205FE0CAF9D8B52DD526F05968ABBE091A887F08D677C3E70DD2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/RadialCopyPlane.java",
+    "lastWriteUtc": "2026-10-25T16:09:44.2717506Z",
+    "length": 4550,
+    "sha256": "32735DFEA19D3898124804027C8C5A7F3785E31C936660478F09F719BF0B8F5B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/WaterBeatBridge.java",
+    "lastWriteUtc": "2026-10-23T21:58:09.1547367Z",
+    "length": 6473,
+    "sha256": "3D5023B7CAF50E0D7695D784C08F8C0C95CBC904B50D3D65650240C2FF988DD6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/WaterBeatFrame.java",
+    "lastWriteUtc": "2026-10-23T21:41:42.7753694Z",
+    "length": 1721,
+    "sha256": "489B3F1580075990DDB3741038278F858CC2A2A9DEF4372584D6469BC00D7596"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/water/WaterBeatLedger.java",
+    "lastWriteUtc": "2026-10-23T21:57:39.6214690Z",
+    "length": 8422,
+    "sha256": "08EC10A83141CD6B4CD9022F94BCA0C84E56636053697038290A19F1FCBAFB40"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterCurveFunctions.java",
+    "lastWriteUtc": "2026-10-25T08:15:19.8569709Z",
+    "length": 496,
+    "sha256": "C1CA9E001B33A7B8839CB1D8919075F90494F5F9F1BD18EA66C75C1E5006EEE0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterReleaseDefinition.java",
+    "lastWriteUtc": "2026-10-30T02:38:59.8827449Z",
+    "length": 13245,
+    "sha256": "DAE15FEE635FA8F3E3AF37FF73D7FAAD9B57B5E1291C7B32BECF9A06A7992ABE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterSegment.java",
+    "lastWriteUtc": "2026-10-26T18:55:09.0642694Z",
+    "length": 3098,
+    "sha256": "D673D8EE6B63F3ABAF22F10F7C89AAB14CA610B6C4B02CDD6378706D4B60144B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/WeepingCurtain.java",
+    "lastWriteUtc": "2026-10-26T20:36:59.8907892Z",
+    "length": 20093,
+    "sha256": "89886FC1A8BB0B9B1E94D92F9A7A8254D0C285872C14C5F102BD1CE6C6E63383"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/WeepingSettings.java",
+    "lastWriteUtc": "2026-10-26T20:37:19.4709164Z",
+    "length": 1160,
+    "sha256": "3D35159C38C74E9461BD80C2DFF479CFB2E0E502984267ADCF52FA4E3B027730"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java",
+    "lastWriteUtc": "2026-10-29T20:12:22.7401725Z",
+    "length": 21793,
+    "sha256": "3A49C611C5AAC4CE2A1EAF20D29CEABA0E48F94B7B014E9DF8375265A9C3113E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java",
+    "lastWriteUtc": "2026-10-29T20:10:17.2099552Z",
+    "length": 15712,
+    "sha256": "569623B1AF9A99289FAA8F7D1DE71A0CFD9E6551130599091643692DEDE3FEB8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordTrackingStep.java",
+    "lastWriteUtc": "2026-10-25T11:36:55.0365295Z",
+    "length": 4427,
+    "sha256": "B811CFA9FB037C52D5AE016225954629862529262F222D27CD2EFD9422FC0871"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordVortex.java",
+    "lastWriteUtc": "2026-10-25T11:37:08.6693698Z",
+    "length": 9422,
+    "sha256": "EDA37D759B724276009281982E3FE3B223DF2B847D31DE506E3DD55C118FCB83"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueCastContext.java",
+    "lastWriteUtc": "2026-10-23T15:17:55.1902548Z",
+    "length": 2471,
+    "sha256": "BA8B567B8B15B35AEA6D76EE81FB64D409DA0D24D3BA1E556035C359AC05CB97"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueEffect.java",
+    "lastWriteUtc": "2026-09-26T19:38:55.0480839Z",
+    "length": 316,
+    "sha256": "B93C2BA303EDBE57D154A2859A7943DBB2AD46DFCEFA07D6758E462F35922AFF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueEffectRegistry.java",
+    "lastWriteUtc": "2026-10-30T02:38:32.6580983Z",
+    "length": 681,
+    "sha256": "2E529C7222A40DED473F15DA1F6D085E8813D971947F9466E29CD7575B548CAC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/TechniqueIds.java",
+    "lastWriteUtc": "2026-10-25T08:15:12.2418483Z",
+    "length": 405,
+    "sha256": "94E7107336DCA7E90A12D3F39F3BF203664975B372119AEB4404EA9E89EB6499"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/TechniqueManager.java",
+    "lastWriteUtc": "2026-10-30T02:38:31.6102855Z",
+    "length": 1833,
+    "sha256": "EAA6B09B84628B3D81F455A5FF795DB329C383491A1B863768975649836539A6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/TechniqueType.java",
+    "lastWriteUtc": "2026-06-02T16:29:07.9594392Z",
+    "length": 637,
+    "sha256": "07922DC66222BB731B86A0D3FB260235EDDDDF6CFF10700A6357263DF57AF8A2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/shu/WaterTechniques.java",
+    "lastWriteUtc": "2026-10-28T10:27:50.7917053Z",
+    "length": 5883,
+    "sha256": "41CB6F9C0C9930B55F45269D690784AA8849AB9601311D51B420D58E337BC954"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/skill/Skill.java",
+    "lastWriteUtc": "2026-10-22T02:29:58.0582335Z",
+    "length": 5336,
+    "sha256": "B20696E5D1E7CAFCC4F43F33F6D07BF8350DAD12893997E78E46FE597761024B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/skill/SkillType.java",
+    "lastWriteUtc": "2026-06-02T16:30:36.5284353Z",
+    "length": 209,
+    "sha256": "693631C7C854980FE61A94BBF7DAC96B2C460A8BF937B500F134EB747EB1208A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateData.java",
+    "lastWriteUtc": "2026-10-21T15:33:46.2615055Z",
+    "length": 1178,
+    "sha256": "A70A3496B3D0574E37ED8A771237837E184F732B3F3793B3A99AF71A31FB460F"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateDefinition.java",
+    "lastWriteUtc": "2026-10-21T15:33:44.6925817Z",
+    "length": 540,
+    "sha256": "4A70B573BBDED4CEB5414C4954E8E1BC1E4D794FC3E23FA7C9AD4147CE0B406C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateEvents.java",
+    "lastWriteUtc": "2026-10-21T15:33:55.0707783Z",
+    "length": 673,
+    "sha256": "674ECA1B2C7B23CCDB980574153521BBCBE2BA45AAE16A81FE99687E6B6B1A5C"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateMobEffect.java",
+    "lastWriteUtc": "2026-10-26T04:30:21.3494294Z",
+    "length": 2928,
+    "sha256": "E63E587D3915EC29D998679F14662F1EBC868C65BF51C4E83A7D84D2466798D5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateService.java",
+    "lastWriteUtc": "2026-10-26T12:42:36.3332111Z",
+    "length": 6499,
+    "sha256": "57DD26BC51F813170D827B82FDF4B0CF4F9C28E8BF92C52E682CC82A4435477B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceAttributes.java",
+    "lastWriteUtc": "2026-10-28T14:44:08.0150011Z",
+    "length": 4422,
+    "sha256": "AAEEEA3A23762A4D919A49A9AB473A00D9193DBA2ADDB7FB4E107EA749D696BB"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceChange.java",
+    "lastWriteUtc": "2026-10-28T14:43:35.4040991Z",
+    "length": 567,
+    "sha256": "BDF0D8EA2E5661FBF3E3DBFC15F604220901C77287156A5E310CC1C7E12DF8A4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceEvents.java",
+    "lastWriteUtc": "2026-10-28T15:24:57.6449350Z",
+    "length": 5986,
+    "sha256": "7A3843BC7D0F9B82BBE4CE295373EBD3A2AA66F8EB492B788BCB6D6F29AB1DD2"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceInstall.java",
+    "lastWriteUtc": "2026-10-28T19:58:02.9333826Z",
+    "length": 2160,
+    "sha256": "F5973A4A92DFD5900921193847A985364FE0A8BDF0C997873B43E0B808D46300"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceLog.java",
+    "lastWriteUtc": "2026-10-28T14:43:36.3472716Z",
+    "length": 414,
+    "sha256": "6D384496012E02D63592FC10C2E26231B4FBCCC8DCCFE681F199E5DF51818207"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceMath.java",
+    "lastWriteUtc": "2026-10-28T15:24:57.7899454Z",
+    "length": 9173,
+    "sha256": "A3E206BAD8C208C104E50765305549C44A790DCCF802CEBB6AFB25CF4A878ECC"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceMobEffect.java",
+    "lastWriteUtc": "2026-10-28T14:44:12.5083380Z",
+    "length": 2820,
+    "sha256": "61861405A759A533980251CF72348D7F7CC9F439C3468CBF7BCBDB377D9D92EE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceRuntime.java",
+    "lastWriteUtc": "2026-10-28T15:25:10.6220870Z",
+    "length": 2687,
+    "sha256": "E517798E3D63A286F52A4341DD65433CD7862EB8096852D1788D2AFE4F22C5BE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceService.java",
+    "lastWriteUtc": "2026-10-28T19:58:40.3639506Z",
+    "length": 8152,
+    "sha256": "7C199D2149F972B27F7C02BBA73F457D20240560AD6FEDD6915D5E6209114EB6"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceStore.java",
+    "lastWriteUtc": "2026-10-28T19:58:09.5113031Z",
+    "length": 7797,
+    "sha256": "AE7C40785E0161DE53D16A444CFBA27117D505F750EBA126E5DB0ABE3E3D81ED"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceThreadGate.java",
+    "lastWriteUtc": "2026-10-28T15:25:05.7188756Z",
+    "length": 662,
+    "sha256": "F7B205026280C4DA8EB388DD7336576ABF7B6A9D36EB3A8B816C4856D47F5666"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireCastContext.java",
+    "lastWriteUtc": "2026-10-28T14:38:40.9236634Z",
+    "length": 1613,
+    "sha256": "AEE3BE1A66A5D0396487B818A260389F956AEF771CA2068CCCA3E7584C72EBEE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedAccount.java",
+    "lastWriteUtc": "2026-10-29T13:11:42.2110487Z",
+    "length": 3228,
+    "sha256": "96A8CB3001EA93450C3C27B7B736C76FF3D0B5B1B916B3A7F95F4F67163ABEAF"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedArchive.java",
+    "lastWriteUtc": "2026-10-28T14:38:33.8300657Z",
+    "length": 477,
+    "sha256": "FF52955192F25F9A3D0CB93439F66FC36DE9F0BB49932627752E83B8A55BD8C5"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedGrant.java",
+    "lastWriteUtc": "2026-10-29T04:45:12.7472922Z",
+    "length": 843,
+    "sha256": "6B2BC42A776DE35F8C1ACB1B92B2582AF56213DD9B6E830E9109F24B930172F8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedLifecycle.java",
+    "lastWriteUtc": "2026-10-28T14:38:56.9529052Z",
+    "length": 1780,
+    "sha256": "81062354EC77FD3149C725DD9A21815C92DD04C8D6DD93574A492E654E13609A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedMath.java",
+    "lastWriteUtc": "2026-10-28T14:38:38.2993397Z",
+    "length": 2607,
+    "sha256": "44013068A5D4C3D639F6B8808F8D54A95D5AA4A5775B05E6F1C0C19DFD4EA7EE"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedSnapshot.java",
+    "lastWriteUtc": "2026-10-28T14:38:43.2780140Z",
+    "length": 1495,
+    "sha256": "272F2B08666D3F3D76F0080D5BD612EB0E31B07D7A17A9F83AA7E50DC9615DE0"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedState.java",
+    "lastWriteUtc": "2026-10-29T17:47:54.2186654Z",
+    "length": 6199,
+    "sha256": "4F751ACE9355F5185B632A9E8FC3BA9A87956CEBE1DCA708E843E6F77733F230"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedVisualRelay.java",
+    "lastWriteUtc": "2026-10-29T17:49:17.4081153Z",
+    "length": 2789,
+    "sha256": "42946CF97C5CDD65E0BFB9ECDE3AC8485269480AC8591344349A96176A1F7A18"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FuelShare.java",
+    "lastWriteUtc": "2026-10-29T13:22:29.1612383Z",
+    "length": 3364,
+    "sha256": "CCB368E4F6388A29A6D7148A1867E29AB984AFA6E86A18D078C079CEB179134A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/WetnessFlight.java",
+    "lastWriteUtc": "2026-10-26T16:07:56.4417109Z",
+    "length": 8172,
+    "sha256": "004C552FFF838D04EC97A9BE3559AD22DCF844E1AD3787B70970CF01493E6EB3"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/WetnessFlightClip.java",
+    "lastWriteUtc": "2026-10-26T05:18:40.7151246Z",
+    "length": 3950,
+    "sha256": "B2999F0B148F2BF55E62988DD9CA6DEBA56CB4FBDE2A27167E53213B7CD183C4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/WetnessFlightExempt.java",
+    "lastWriteUtc": "2026-10-26T16:07:47.7261031Z",
+    "length": 2355,
+    "sha256": "299A83F77BE643C71EDB76599CB25BA0A13E05D15BF560A61598B74C6032D515"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/WetnessFlyer.java",
+    "lastWriteUtc": "2026-10-26T04:28:33.6107989Z",
+    "length": 242,
+    "sha256": "C477BFA36DF0B70355042319701D87617705736E7921B13F7A9CD4B4C1D407C4"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/WetnessSensitivity.java",
+    "lastWriteUtc": "2026-10-26T04:28:38.8350665Z",
+    "length": 695,
+    "sha256": "C2E2D81F5F6A35C42FDB0D8810FC7D8694A2EB93590901506ABC09F2322254F8"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/WetnessState.java",
+    "lastWriteUtc": "2026-10-26T14:24:05.4689026Z",
+    "length": 3825,
+    "sha256": "84A6A511A9B6556717681BAF2D819AD9D5D29CA1A73E11EAAECB9EA919FED77A"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/status/WetnessTiers.java",
+    "lastWriteUtc": "2026-10-26T04:28:33.1299586Z",
+    "length": 1316,
+    "sha256": "98EDAA4E5F7DC308A3B6D473C545401D1CF3DB41FB6E17F8A85F95E0D39118FA"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/tag/ModTags.java",
+    "lastWriteUtc": "2026-09-26T15:43:51.3446267Z",
+    "length": 1153,
+    "sha256": "913E34503B2543AF5D64E734AC3202EB1FFD405DF1243909DEC8AC247041493B"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/visual/fire/FireVisualLayout.java",
+    "lastWriteUtc": "2026-10-28T19:43:53.5242057Z",
+    "length": 6809,
+    "sha256": "4F77D25629780F2B9A1355232D94A4EF75E91EAB019467BD06DE1B92BBD13B3E"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java",
+    "lastWriteUtc": "2026-10-29T19:06:46.5265296Z",
+    "length": 16195,
+    "sha256": "23954CA7C4F52400027A6B717587BA211E690961AD0F193BE6E4C2657E58B819"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/XueXiMod.java",
+    "lastWriteUtc": "2026-10-28T19:34:20.4371788Z",
+    "length": 7898,
+    "sha256": "AA68AAA0516D116756B646D39E4E5FFDD93DF4252C7DE130676A359A0FF15DC0"
+  }
+]

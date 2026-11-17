@@ -1,0 +1,7 @@
+{
+  "src/main/java/com/bslx/XueXiMod/client/GuardRingRenderer.java": "2321df48fd728c410144048a519546de4a01b3b89d1d74e38880d7beb93b0e9f",
+  "src/main/java/com/bslx/XueXiMod/network/GuardSyncPacket.java": "7448f37b30589ae1c1c9c07a8ec97d18eae7f8d453f9e8c9ec3fcf0573b16ad2",
+  "src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/GuardStates.java": "0f8a4514d49b93acc2d38e54112cdb4578e7841c5f561d483e5c62d9e95fd431",
+  "src/main/java/com/bslx/XueXiMod/network/ModNetwork.java": "be59c55c8043996e862352096932ea7669679b3b16e574a25be48e942548b2f0",
+  "src/main/java/com/bslx/XueXiMod/event/ModEvents.java": "2de8fb118a3174c1d806fde7fe53ebee08a38b5a7082da6fc69d0d8932f06073"
+}

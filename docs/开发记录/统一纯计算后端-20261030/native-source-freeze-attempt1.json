@@ -1,0 +1,79 @@
+{
+  "capturedUtc": "2026-10-30T08:26:06.5151183Z",
+  "evidence": "path/length/UTC ticks only; no independent SHA256",
+  "scope": "native sources/build scripts and compute Java",
+  "files": [
+    {
+      "path": "D:\\alianximod\\native\\compute\\build-unix.sh",
+      "length": 6825,
+      "lastWriteTimeUtc": "2026-10-30T08:19:21.0927202Z",
+      "lastWriteTimeUtcTicks": 639289451610927202
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\build-windows.cmd",
+      "length": 172,
+      "lastWriteTimeUtc": "2026-10-30T07:51:43.2419211Z",
+      "lastWriteTimeUtcTicks": 639289435032419211
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\build-windows.ps1",
+      "length": 15452,
+      "lastWriteTimeUtc": "2026-10-30T08:19:19.1203653Z",
+      "lastWriteTimeUtcTicks": 639289451591203653
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\CMakeLists.txt",
+      "length": 5578,
+      "lastWriteTimeUtc": "2026-10-30T08:19:17.3762850Z",
+      "lastWriteTimeUtcTicks": 639289451573762850
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\src\\xueximod_compute.c",
+      "length": 44883,
+      "lastWriteTimeUtc": "2026-10-30T08:20:44.3571677Z",
+      "lastWriteTimeUtcTicks": 639289452443571677
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeCalls.java",
+      "length": 22909,
+      "lastWriteTimeUtc": "2026-10-30T08:15:59.2849177Z",
+      "lastWriteTimeUtcTicks": 639289449592849177
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeCodes.java",
+      "length": 10073,
+      "lastWriteTimeUtc": "2026-10-30T08:24:05.9560954Z",
+      "lastWriteTimeUtcTicks": 639289454459560954
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeLiveDispatch.java",
+      "length": 16481,
+      "lastWriteTimeUtc": "2026-10-30T08:15:20.8434903Z",
+      "lastWriteTimeUtcTicks": 639289449208434903
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeOutput.java",
+      "length": 738,
+      "lastWriteTimeUtc": "2026-10-30T07:59:10.9331621Z",
+      "lastWriteTimeUtcTicks": 639289439509331621
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeSelection.java",
+      "length": 8783,
+      "lastWriteTimeUtc": "2026-10-30T08:15:39.3915145Z",
+      "lastWriteTimeUtcTicks": 639289449393915145
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\JavaReference.java",
+      "length": 38172,
+      "lastWriteTimeUtc": "2026-10-30T08:00:57.9955117Z",
+      "lastWriteTimeUtcTicks": 639289440579955117
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\XuexiComputeNative.java",
+      "length": 1495,
+      "lastWriteTimeUtc": "2026-10-30T07:59:13.6103036Z",
+      "lastWriteTimeUtcTicks": 639289439536103036
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "sha256": "8484FF0E762FA8BD8C2C3382BEF2718959F2613097D4BABB4FFAC9D110E7D92D",
+  "bytes": 182351,
+  "mtime": "2026-10-31T01:31:10.078+08:00",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 4
+  },
+  "unique": 60,
+  "row": 4,
+  "id": "fire_liaoyuan",
+  "damage": "8",
+  "bodyPeriod": "10",
+  "life": "200",
+  "seed": "10",
+  "burnPeriod": "20",
+  "displayKept": true,
+  "pendingMark": true,
+  "formula": true,
+  "total": true,
+  "detailAdded": false
+}

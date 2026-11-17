@@ -1,0 +1,27 @@
+{
+  "submitted": true,
+  "baselineSha256": "D80BC892E051CAD5CB5E553244A04E5EF96961CEB4A1F85C894269BAEB83EC16",
+  "baselineMtime": "2026-10-29T21:49:31.567+08:00",
+  "baselineBytes": 154878,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\liaoyuan-visual-return-术式制作表-20261029-230606-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\liaoyuan-visual-return-candidate-preserved.xlsx",
+  "candidateSha256": "50877EAF6C0D34DAAA49465DE447F8600073BE19348D3C90B96B2F0A1D4985E7",
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 4,
+    "待验收": 2
+  },
+  "changedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml"
+  ],
+  "from": {
+    "sheet": "待验收",
+    "row": 3
+  },
+  "to": {
+    "sheet": "制作中",
+    "row": 6
+  }
+}

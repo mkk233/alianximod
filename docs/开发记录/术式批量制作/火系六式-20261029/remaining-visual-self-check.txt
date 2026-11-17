@@ -1,0 +1,3 @@
+javac-exit=0
+fire visual layout check passed
+java-exit=0

@@ -1,0 +1,1103 @@
+{
+  "version": "earth-ground-mouth-dust-v2-20261116",
+  "batchId": "待制作-20261031",
+  "taskId": "earth_break_ground_v2_art_preview",
+  "attemptId": "20261116-art-ground-v2-03",
+  "generated_at": "2026-11-16T22:08:52.204277+08:00",
+  "parent": "01a1ce06-b681-7c90-b11d-260d3c169911",
+  "status": {
+    "art": "candidate complete",
+    "user_same_version_confirmation": false,
+    "formal_adoption": false,
+    "runtime_integrated": false,
+    "compiled": false,
+    "game_tested": false,
+    "writes_converged": true
+  },
+  "review_budget": {
+    "design": "2/2",
+    "implementation": "3/3",
+    "statement": "本阶段额度已用完，返修结果未追加复审"
+  },
+  "model_request": {
+    "requested": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "reason": "parent-reported actual Carbon/Argon art task spawn Unknown model; no agent_id/artifacts",
+    "backend_identity_independently_checked": false
+  },
+  "input_workbook": {
+    "sha256": "87F22C7DCE22FD0AB83F219C1D18938AF381D2286C106A62CEBCA1A6A56E9C75",
+    "bytes": 190802,
+    "sheet": "制作中",
+    "row": 11,
+    "N_chars": 236,
+    "O_chars": 26,
+    "DV_chars": 1116
+  },
+  "units": {
+    "model_units_per_block": 16,
+    "impact_center": [
+      0,
+      0,
+      0
+    ],
+    "ground_top_model_y": 8,
+    "dust_root_offset_from_C_y_blocks": 0.53,
+    "dust_root_above_top_blocks": 0.03,
+    "texture_anchor_px": [
+      16,
+      28
+    ]
+  },
+  "visual": {
+    "emitters": 11,
+    "texture_variants": 3,
+    "dust_frames": 16,
+    "frame_ms": 50,
+    "dust_duration_ms": 800,
+    "preview_duration_ms": 2000,
+    "preview_source_frames": 40,
+    "removed_cells_preview_only": 23
+  },
+  "gif_verification": {
+    "source": "40 direct native Blockbench Preview.screenshot PNGs, 20fps. No offline rendering or collaging. Solid dark matte and common palette applied only for GIF encoding.",
+    "png_frames": 40,
+    "unique_png_frames": 24,
+    "checks": {
+      "earth_break_ground_v2-real-blockbench.gif": {
+        "size": [
+          1100,
+          900
+        ],
+        "encoded_frames": 28,
+        "unique_decoded_frames": 24,
+        "duration_ms": 2000,
+        "frame_durations_ms": [
+          50,
+          100,
+          50,
+          200,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          250,
+          50,
+          200,
+          50,
+          50,
+          50,
+          50,
+          50,
+          100
+        ],
+        "loop": 0
+      },
+      "ground_dust_v2-2d.gif": {
+        "size": [
+          768,
+          256
+        ],
+        "encoded_frames": 16,
+        "unique_decoded_frames": 16,
+        "duration_ms": 800,
+        "frame_durations_ms": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "loop": 0
+      },
+      "ground_dust_v2-original.gif": {
+        "size": [
+          96,
+          32
+        ],
+        "encoded_frames": 16,
+        "unique_decoded_frames": 16,
+        "duration_ms": 800,
+        "frame_durations_ms": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "loop": 0
+      }
+    }
+  },
+  "native_reopen": {
+    "project": "3eaaca81-4233-01ff-c351-cb6d780f81b3",
+    "path": "D:/alianximod/docs/资源库/过程归档/崩地_坑口扬尘_v2_20261116/source/earth_break_ground_v2_preview.bbmodel",
+    "saved": true,
+    "counts": {
+      "elements": 367,
+      "groups": 192,
+      "textures": 2,
+      "animations": 1
+    },
+    "textureErrors": [
+      {
+        "name": "ground_dust_v2-atlas",
+        "error": 0,
+        "width": 96,
+        "height": 512
+      },
+      {
+        "name": "AUX_ONLY_ground_scale_palette",
+        "error": 0,
+        "width": 64,
+        "height": 16
+      }
+    ],
+    "timeline": 0.65,
+    "viewport": "main",
+    "renderedAfterNativeReopen": true,
+    "finalCamera": {
+      "position": [
+        94.99999999999999,
+        180,
+        109.99999999999999
+      ],
+      "target": [
+        0,
+        -8,
+        0
+      ],
+      "fov": 36
+    }
+  },
+  "receipt": {
+    "path": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\ground-v2-art-preview-20261116.md",
+    "sha256": "4287AD75CD87F0152578DC6AB74D5E34B369415228C144A9E6C72E552E388994",
+    "bytes": 4075
+  },
+  "protected_inputs": [
+    {
+      "path": "D:/alianximod/docs/术式制作表.xlsx",
+      "expected_sha256": "87F22C7DCE22FD0AB83F219C1D18938AF381D2286C106A62CEBCA1A6A56E9C75",
+      "sha256": "87F22C7DCE22FD0AB83F219C1D18938AF381D2286C106A62CEBCA1A6A56E9C75",
+      "unchanged": true
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/大地/崩地_v1/ground_dust.aseprite",
+      "expected_sha256": "3B518E0FD4D3272D05C4A377987D018EA7F9E37AB603ED798AFDFE5B507F0C07",
+      "sha256": "3B518E0FD4D3272D05C4A377987D018EA7F9E37AB603ED798AFDFE5B507F0C07",
+      "unchanged": true
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/特效/大地/崩地_v1/ground_dust-strip.png",
+      "expected_sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+      "sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+      "unchanged": true
+    },
+    {
+      "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png",
+      "expected_sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+      "sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+      "unchanged": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "evidence/2d-frame-inspection.json",
+      "sha256": "F4F4D09AB791C4B83ACA4BD2553997A506D50A871ED260D70FFFCB3F99E61772",
+      "bytes": 4417
+    },
+    {
+      "path": "evidence/aseprite-draw-result.json",
+      "sha256": "ECD4DCEA76C806CEEDAA4364EB2D26A87457E68970119F911B6DF959FDE80A22",
+      "bytes": 406
+    },
+    {
+      "path": "evidence/aseprite-status.json",
+      "sha256": "35E455631B927D3AA20F38870158188A6AE91AC86D8A6F77A61AC6BD5A811D4B",
+      "bytes": 406
+    },
+    {
+      "path": "evidence/blockbench-build-result.json",
+      "sha256": "C9EE094A628592CFE5FF05392CBD428EB68BA53AC2059A032386907AF995E16D",
+      "bytes": 322
+    },
+    {
+      "path": "evidence/blockbench-capabilities-initial.json",
+      "sha256": "887A966953AD561EEAA9EC8024221C79BC32768760A418909155D2A10355FDA3",
+      "bytes": 9761
+    },
+    {
+      "path": "evidence/blockbench-capture-result.json",
+      "sha256": "07C9EC717318FFA928629C82CBE1B1106CE6F86DE32AF3CE5EC4D8112A871F22",
+      "bytes": 597
+    },
+    {
+      "path": "evidence/blockbench-project-inventory-initial.json",
+      "sha256": "899C7B9337EF7A187AE49DD2E18331257FC5AA18219C441E9D2BED75326C3072",
+      "bytes": 4553
+    },
+    {
+      "path": "evidence/blockbench-reopen-result.json",
+      "sha256": "B213FFEFDF4F650064870BD066F444A22202F91006DD50C2591A2D48CFE54E30",
+      "bytes": 4111
+    },
+    {
+      "path": "evidence/crater-offsets-23.json",
+      "sha256": "E3E4EF48D42C73275C974EA9569C86F63B6F378596C483DCB82EFE297542706F",
+      "bytes": 1691
+    },
+    {
+      "path": "evidence/emitter-layout-candidate.json",
+      "sha256": "77EE6F0BCC448094E820EDE4D05BDAB8AC5C1BFD9AF921B4EA98E0527BAE5E20",
+      "bytes": 4747
+    },
+    {
+      "path": "evidence/gif-verification.json",
+      "sha256": "ED6DB37A49F2060AE1EDC80CEF19ED19186CF61F677F799BA2286223E4F777C8",
+      "bytes": 1790
+    },
+    {
+      "path": "evidence/native-capture-overall.json",
+      "sha256": "ECB6FD23D7A963D1A2B230C912790E1A2D33BCBBEE824A3403EC0806FB5C1E23",
+      "bytes": 9960
+    },
+    {
+      "path": "evidence/native-capture-views.json",
+      "sha256": "3DB0A69A618FEA5A7FE3E1E65851FA067AB334D7DBBB1E9293AFE786EFB24243",
+      "bytes": 1166
+    },
+    {
+      "path": "evidence/native-reopen.json",
+      "sha256": "AB3BC61AB19787C1DB94F886BBAAF74056D40994C2CF06F13ED7FF28688C49DD",
+      "bytes": 4114
+    },
+    {
+      "path": "evidence/protected-input-hashes-final.json",
+      "sha256": "2C999AA6F4FE6F77526CBC533819CA33B8F2CEE015865866167718F1211F4178",
+      "bytes": 1188
+    },
+    {
+      "path": "evidence/reopened-render.json",
+      "sha256": "BF83EB4C47A3352645BF48EFDEA174BA024CB566EE21642E27105748AEF67F87",
+      "bytes": 804
+    },
+    {
+      "path": "evidence/requirements-N-O-DV-original.json",
+      "sha256": "C2115FEE35ADE14B5A046EC4C128DF30B87F1AA6E5BC060A310F9E817EC2AF3F",
+      "bytes": 7344
+    },
+    {
+      "path": "evidence/requirements-N-O-DV-original.txt",
+      "sha256": "12B7DB2E097E34FB97E73065B459B96C3A11A2DF14C864D65ACBC3CF30F67F09",
+      "bytes": 3476
+    },
+    {
+      "path": "evidence/tool-evidence.md",
+      "sha256": "5D0372C5AE1212B831D70E1458EFCE55B84A9C022372A5DE61E0B1B1545D7838",
+      "bytes": 4006
+    },
+    {
+      "path": "exports/frames/dust_01.png",
+      "sha256": "E76AC0DD0A5DD4E618D31BB3040D4E7DC085C2ADCBE292F3AB6D2C2A1EA4D1FD",
+      "bytes": 502,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_02.png",
+      "sha256": "9FEDB3D4B27C7214252C89F601C1B5C7FD558B9B75ED1B9F639D607E90857EF1",
+      "bytes": 796,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_03.png",
+      "sha256": "D3E48E888D9FDDA8B368B50648CE522A18A901E01B4B31EFE7E532CC063CE5FE",
+      "bytes": 1034,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_04.png",
+      "sha256": "40A41327B548A662037B7CC226F7AF101787CBC568B77D38057C387BF69A1A85",
+      "bytes": 1192,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_05.png",
+      "sha256": "100FBAE02024BC2141E338650AFE5B3C9980C7BF8C21DFD359DEA6D1559FC44F",
+      "bytes": 1244,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_06.png",
+      "sha256": "FF6100865056F88C48CD92CBD93C075ED307F73A8143D87EADE8CD5132057070",
+      "bytes": 1479,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_07.png",
+      "sha256": "53FA4596E859A15FDC95600D919301E0F7B76F559C6AE2B19AFCD06916269E52",
+      "bytes": 1586,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_08.png",
+      "sha256": "2F7067BDECF816A053C57A5B0A704025B5122F32A16897EDC45309423903587D",
+      "bytes": 1871,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_09.png",
+      "sha256": "F4CC924625E71FB19227D6A20AABCF50244F9B4CB8B93F5ECE5CA1E66E5BDCF1",
+      "bytes": 2256,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_10.png",
+      "sha256": "DE7ABCFF23BAA37CEC9BB82425C6E2D2695004626D21FF00FF033E63EAA58D99",
+      "bytes": 2536,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_11.png",
+      "sha256": "18D8BE3F259CA4CFB7EB004285CB333D6684E29EB1AF4DEF44F4D4BB0285149A",
+      "bytes": 2522,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_12.png",
+      "sha256": "7DDE71B57EB7D4EB67AFA580FCE9FAED1B88538DCFAB3C03B8518DAEB674B410",
+      "bytes": 2436,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_13.png",
+      "sha256": "09A25691A1ACA377303447BFA0189FC13A587BA637EF7F6516861181A42CC5FB",
+      "bytes": 2144,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_14.png",
+      "sha256": "CA582ACADE80202CCB1223CA5AA97A2B582487EC3B792C73C65CFC1D5CD64E0E",
+      "bytes": 1417,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_15.png",
+      "sha256": "61B3773A56C856E183A23BBFA975D15E12B6DF357256891A4BABEC0E32A5F250",
+      "bytes": 886,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/frames/dust_16.png",
+      "sha256": "C514E30C9D2415EC26AA39C51E48A70ECABEE8E86A777AFD83C0753EF28BF684",
+      "bytes": 92,
+      "width": 96,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/ground_dust_v2-a-strip.png",
+      "sha256": "3057D332F8249B875AD750F7E56B64D17FC01E38F24477EFC794B38CC6D871AC",
+      "bytes": 9001,
+      "width": 32,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/ground_dust_v2-atlas.png",
+      "sha256": "AB2D2A81D4328446FD609C7803869679CB9FAF410201BADD99A1FC0A89DDC39B",
+      "bytes": 21919,
+      "width": 96,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/ground_dust_v2-b-strip.png",
+      "sha256": "F1E7D9A2FDD12FC445B91310E6E3F170586153989A9FB25AA8406C3FD5E86274",
+      "bytes": 9012,
+      "width": 32,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/ground_dust_v2-c-strip.png",
+      "sha256": "1715FB44C1893A990719860BDBDAFC6FF28DEE76BD08F530B5534F19116DB984",
+      "bytes": 8522,
+      "width": 32,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "exports/preview_auxiliary_palette.png",
+      "sha256": "FE4E70AA37770F784F3BFD67AB8A54853AEC3B6A9B99187A3B249C7F8FCC445D",
+      "bytes": 687,
+      "width": 64,
+      "height": 16,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_000.png",
+      "sha256": "786C3F8D1BFD9EF2C4D92A5AA508ABED0FA2067D4278C20185769FE9CCDF9105",
+      "bytes": 547040,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_001.png",
+      "sha256": "7EB19F1D9D4DE7D3726C95CA77869B0B55E69FF64028EB9529FC24D93D4ABD47",
+      "bytes": 547506,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_002.png",
+      "sha256": "7EB19F1D9D4DE7D3726C95CA77869B0B55E69FF64028EB9529FC24D93D4ABD47",
+      "bytes": 547506,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_003.png",
+      "sha256": "2CE51F459047F5D8365EBF8026EB3BF83E62A8BB0B41250A4CBE6DCDA1E02D9A",
+      "bytes": 547491,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_004.png",
+      "sha256": "7EB19F1D9D4DE7D3726C95CA77869B0B55E69FF64028EB9529FC24D93D4ABD47",
+      "bytes": 547506,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_005.png",
+      "sha256": "7EB19F1D9D4DE7D3726C95CA77869B0B55E69FF64028EB9529FC24D93D4ABD47",
+      "bytes": 547506,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_006.png",
+      "sha256": "7EB19F1D9D4DE7D3726C95CA77869B0B55E69FF64028EB9529FC24D93D4ABD47",
+      "bytes": 547506,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_007.png",
+      "sha256": "7EB19F1D9D4DE7D3726C95CA77869B0B55E69FF64028EB9529FC24D93D4ABD47",
+      "bytes": 547506,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_008.png",
+      "sha256": "C191F0E0B15650EED2B67B4F9ED89A0C8AD5F802D32A9B1EF87BC9047E2C5A20",
+      "bytes": 579044,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_009.png",
+      "sha256": "D8DD5B3F88FA8C46EF05C1BE96B428243A40B34E2644AB923F86F32752B7161D",
+      "bytes": 582921,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_010.png",
+      "sha256": "79CE6236060A8FA051E95EAFF6E96E87C3AE3DEEF3B553811A136979D09298C2",
+      "bytes": 584851,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_011.png",
+      "sha256": "0575305F4150E49AC986C8784496EC047834AF0D622039B4D6F2CD702B66619E",
+      "bytes": 585220,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_012.png",
+      "sha256": "F7F0F2BE1F9A886760A4ED8C150FE9C4AD3057C50680986971229E782F13603B",
+      "bytes": 586928,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_013.png",
+      "sha256": "BA3547AB2A336BF8640C693E2D41CCC1851ADD8072F4BA644190AF11BB6E7FC5",
+      "bytes": 589545,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_014.png",
+      "sha256": "657F21FA6BD75C5E637E201797C21A4D534D740143FD55B2A7D664577A04D804",
+      "bytes": 591423,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_015.png",
+      "sha256": "72BD51BE059179ECCA4F2B48D3225C483A7707D4BAFD1088457F89818852702B",
+      "bytes": 594155,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_016.png",
+      "sha256": "ED7B35B3747CC33DF2F63B2CFA659EA7F6F73AAC9DBCFC0897387148176C272C",
+      "bytes": 599698,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_017.png",
+      "sha256": "194B595EB244717C48BCCF5C9E2D43E0EF5C7908A8A3B5AB96ABA092716BE7D7",
+      "bytes": 601225,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_018.png",
+      "sha256": "61ECE1DA76FD75149AC2DFA6A15813C5369D0A6BA945665F21C5492820C62593",
+      "bytes": 601946,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_019.png",
+      "sha256": "6ECAD4C6BFB5E352C9E29957E92A85B5760AC8730A40346F6D2CA6BAD4DE9336",
+      "bytes": 604319,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_020.png",
+      "sha256": "9B0F0BDE08A9A343A32C5BE877B98E74BBB8801D76F4E363C88AA232E21323F3",
+      "bytes": 605064,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_021.png",
+      "sha256": "392F3F3FA50B3A3536BC27B6ABCCFAB4B3315AF84624BB1DC01EAAA628524523",
+      "bytes": 603197,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_022.png",
+      "sha256": "5A3332D32698EB3F39A2275143BDE3F199058350D36F43915936B5B0FFBF123D",
+      "bytes": 595515,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_023.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_024.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_025.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_026.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_027.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_028.png",
+      "sha256": "678B4A3BE8389F4EAA77DE9727D8EA6D923A4A6281D5BCEA032E619D3FE3DD21",
+      "bytes": 572804,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_029.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_030.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_031.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_032.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_033.png",
+      "sha256": "975DA6BAD850B623EB51F0B2953844529C1E934E01735D2A936A604DA640C675",
+      "bytes": 572733,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_034.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_035.png",
+      "sha256": "99B7EC18364BE794F68A80BFB88DE518A9570DCE6AA81A6D3542D082392007E2",
+      "bytes": 572700,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_036.png",
+      "sha256": "2B07DABAAC9C1435C241811CEF24E34C2DC10BF403A3B58F7545D8F3082C957B",
+      "bytes": 572684,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_037.png",
+      "sha256": "0508EE742526E93223EC94F166A4A4BB1D0BA9BFE5DB5A77195EE422F75BD735",
+      "bytes": 572797,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_038.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/3d-frames/overall_039.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/earth_break_ground_v2-real-blockbench.gif",
+      "sha256": "7BD108A7EEBF63CDA992AE4B342A4E995801584C55074C2658E6F6E0D8906849",
+      "bytes": 1712682,
+      "width": 1100,
+      "height": 900,
+      "mode": "P",
+      "frames": 28,
+      "duration_ms": 2000,
+      "frame_durations_ms": [
+        50,
+        100,
+        50,
+        200,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        250,
+        50,
+        200,
+        50,
+        50,
+        50,
+        50,
+        50,
+        100
+      ]
+    },
+    {
+      "path": "previews/ground_dust_v2-2d-contact.png",
+      "sha256": "0F4CD1100D2AB35CC668FFC615E31A05F6C730B9606413C9661753B4FFAC5E86",
+      "bytes": 13691,
+      "width": 768,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "previews/ground_dust_v2-2d-peak.png",
+      "sha256": "03C1A5592C7171F8CEFD38647EC077BE2FADD66B3DA1DF899DC0774579F5357F",
+      "bytes": 3306,
+      "width": 768,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "previews/ground_dust_v2-2d.gif",
+      "sha256": "E54558DB4D26AEC96175FA9C7D74FF874D30356BC0782707D94A80702034325C",
+      "bytes": 154917,
+      "width": 768,
+      "height": 256,
+      "mode": "P",
+      "frames": 16,
+      "duration_ms": 800,
+      "frame_durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ]
+    },
+    {
+      "path": "previews/ground_dust_v2-original.gif",
+      "sha256": "E785D24F714BA02AF1743E6ABF1F86AC6F6FD3940101606A8C108DDF65FD0E33",
+      "bytes": 8983,
+      "width": 96,
+      "height": 32,
+      "mode": "P",
+      "frames": 16,
+      "duration_ms": 800,
+      "frame_durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ]
+    },
+    {
+      "path": "previews/overall-before.png",
+      "sha256": "7EB19F1D9D4DE7D3726C95CA77869B0B55E69FF64028EB9529FC24D93D4ABD47",
+      "bytes": 547506,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/overall-clear.png",
+      "sha256": "8EA36B1E5DFED183730243C38840C19B8E439D2800703FDB3BB01D5110662668",
+      "bytes": 572723,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/overall-dust.png",
+      "sha256": "BA3547AB2A336BF8640C693E2D41CCC1851ADD8072F4BA644190AF11BB6E7FC5",
+      "bytes": 589545,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/overall-final.png",
+      "sha256": "BA3547AB2A336BF8640C693E2D41CCC1851ADD8072F4BA644190AF11BB6E7FC5",
+      "bytes": 589545,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/reopened-native-viewport.png",
+      "sha256": "C6E85FAC2415B1B101844D4DBFC975E927CBE3576443274168A23C7AFFFB128A",
+      "bytes": 589497,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/side-west-clear.png",
+      "sha256": "7D28A75C3270D7B1E8DBA193DF243FBB29E16E84F74BCEF4A9CBFF328E6F66D9",
+      "bytes": 95304,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/side-west-dust.png",
+      "sha256": "EF377894A9316AF2180135FA8BCBD0108A46CFB69B6E0895819553B3CEEF4516",
+      "bytes": 107747,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/top-clear.png",
+      "sha256": "6FB7B7ABB84AA7DFF2EC0C55C385F30DD9E6DC0387A35032135E570AC5C69852",
+      "bytes": 235700,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "previews/top-dust.png",
+      "sha256": "6BBDD568963300126E7A94AB1CE23DBEB5CBA9122D5E3E8A05CEBF9D66D53E1C",
+      "bytes": 247312,
+      "width": 1100,
+      "height": 900,
+      "mode": "RGBA"
+    },
+    {
+      "path": "scripts/build-blockbench.js",
+      "sha256": "459E224963D017310295EFC179900DF29C3AC32BE0662AE156792BEA10BF0931",
+      "bytes": 5265
+    },
+    {
+      "path": "scripts/capture-native-overall.js",
+      "sha256": "9FAE9E391A637AF64E4479310F948B471E3DE70F6C2D365CFA1EDEA6A5D0CDC4",
+      "bytes": 2557
+    },
+    {
+      "path": "scripts/capture-native-views-and-reopen.js",
+      "sha256": "23599049C8E4FB1FE416E97EBF1B6762A9CA0E09181B2139782ADF94B410AE43",
+      "bytes": 2060
+    },
+    {
+      "path": "scripts/draw-dust.lua",
+      "sha256": "2690B079D633071B0B430BC7148706132C5F01275354248B86C57C3EA5AE7593",
+      "bytes": 4326
+    },
+    {
+      "path": "scripts/encode-preview.py",
+      "sha256": "0D322438C2F4E7212FE084EEBB587E27A43E2622E5B091B695D012A6139222B0",
+      "bytes": 2075
+    },
+    {
+      "path": "scripts/finalize-manifest.py",
+      "sha256": "87E7A6CD19C73A729757258EC580CA6CD83646E46FBF4BD884AAA6B3FAE816DE",
+      "bytes": 5536
+    },
+    {
+      "path": "scripts/preview2d.py",
+      "sha256": "FCD90D64AB9F460544054ABF49A5BCE44944E6A24E2F831B917505A7F28D26F1",
+      "bytes": 1374
+    },
+    {
+      "path": "scripts/snapshot.py",
+      "sha256": "339898409E9536AE9EA1BBDB2DAF8DFBC80552859DF845321AE2FDF1D43CBB10",
+      "bytes": 3185
+    },
+    {
+      "path": "source/earth_break_ground_v2_preview.bbmodel",
+      "sha256": "9A3B145082A8DFEAE1CB0E1B9DC7750B5036F18487391996BBAC17E4C93FD0F6",
+      "bytes": 469278,
+      "format": "free",
+      "elements": 367,
+      "textures": 2,
+      "animations": 1,
+      "native_saved_and_reopened": true
+    },
+    {
+      "path": "source/ground_dust_v2.aseprite",
+      "sha256": "56D8AFEAE09AFC2B0B52129B21CF38D38295964BEE005CE39C6388573D0EB26D",
+      "bytes": 16205,
+      "width": 96,
+      "height": 32,
+      "color_depth": 32,
+      "frames": 16,
+      "duration_ms": 800,
+      "frame_durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ]
+    },
+    {
+      "path": "source/preview_auxiliary_palette.aseprite",
+      "sha256": "9D8409FDF3F6D9D27E8468692AB714AC66C98FC81614BB3E473B7B6CD16D3CD4",
+      "bytes": 1450,
+      "width": 64,
+      "height": 16,
+      "color_depth": 32,
+      "frames": 1,
+      "duration_ms": 100,
+      "frame_durations_ms": [
+        100
+      ]
+    },
+    {
+      "path": "visual-handoff.md",
+      "sha256": "5EBA3FFBFFD9DC3A625625508A050BE66132E62F0DE0923B3B3E2E36E941C670",
+      "bytes": 9272
+    }
+  ],
+  "hash_note": "SHA256 covers all listed delivered files. manifest.json is excluded to avoid recursive self-hashing; receipt references this manifest by path only."
+}

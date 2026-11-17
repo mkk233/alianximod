@@ -1,0 +1,53 @@
+{
+  "writesStopped": true,
+  "compileRan": false,
+  "nameGate": "passed",
+  "formalReviewRound": "2/3 unchanged",
+  "backupDirectory": "docs/开发记录/空间切割拔刀动作接入-20261102/游戏反馈-握柄与提速/before-feedback",
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+      "sha256": "1f22ff8f7de39ea728e08d2909a0059d852ef076e633a748b3e6106ac34dc0bd",
+      "bytes": 16600,
+      "mtime": "2026-11-02T22:27:37"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java",
+      "sha256": "d39d1f508e7a6d80e5e5ec70334c7e6915d2bfb79872896eaf14850498e493df",
+      "bytes": 9970,
+      "mtime": "2026-11-02T22:27:38"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutSampler.java",
+      "sha256": "99abd56756779da4a9ba4ea4e76f3b1b95b60e415979ecdd7def165643a90b19",
+      "bytes": 16446,
+      "mtime": "2026-11-02T22:27:39"
+    },
+    {
+      "path": "src/main/resources/assets/xueximod/actions/space_cut_grip_fast_v6.json",
+      "sha256": "427a4d7653ca570e2bb3e3959ea98d93e01aec2f2baacf73a004be10b54af41b",
+      "bytes": 55086,
+      "mtime": "2026-11-02T22:27:21"
+    }
+  ],
+  "unchangedRuntimeV5": {
+    "path": "src/main/resources/assets/xueximod/actions/space_cut_left_waist_v5.json",
+    "sha256": "64b0fe3eb2f629c3fb12b90ca1d3a8c64e1664c7661dc7794c97473a8b313c46",
+    "bytes": 49498,
+    "mtime": "2026-11-02T04:56:46"
+  },
+  "selfCheck": {
+    "script": "docs/开发记录/空间切割拔刀动作接入-20261102/游戏反馈-握柄与提速/grip-check/check_grip.py",
+    "output": "docs/开发记录/空间切割拔刀动作接入-20261102/游戏反馈-握柄与提速/grip-check/check_grip.txt",
+    "times": [0, 0.15, 0.1875, 0.5],
+    "views": ["third", "first"],
+    "worstGripErrorBlocks": 1.192e-11,
+    "worstBladeDegrees": 0,
+    "thirdCenterResidualBlocks": 0.338085,
+    "firstCenterResidualBlocks": 0.270468,
+    "thirdBladeLengthBlocks": 0.901561,
+    "firstBladeLengthBlocks": 0.721249,
+    "oldPlusYDegrees": 45,
+    "startPalmError": 3.811e-7
+  }
+}

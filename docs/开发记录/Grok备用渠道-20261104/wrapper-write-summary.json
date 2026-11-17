@@ -1,0 +1,18 @@
+{
+  "marker": "wrapper-grok-write-ok",
+  "provider": "grok",
+  "sessionId": "f91a4a56-255f-4060-ad21-d18522ab5eb4",
+  "attemptId": "a20261103194649718a070",
+  "lifecycle": "reported",
+  "reportStatus": "valid",
+  "workStatus": "reported_done",
+  "readOnly": false,
+  "permissionMode": "auto",
+  "requestedModel": "grok-4.7",
+  "reportedModel": "grok-4.7-build-fast",
+  "reasoningEffort": "high",
+  "modelAssurance": "matched",
+  "changedFiles": [
+    "C:\\Users\\baishang\\AppData\\Local\\Temp\\xueximod-grok-wrapper-smoke-20261104-b6edf9ef\\workspace\\write-smoke.txt"
+  ]
+}

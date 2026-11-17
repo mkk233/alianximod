@@ -1,0 +1,26 @@
+{
+  "liveEqualsCandidate": true,
+  "sha256": "4A61BC491A040E2AFB6879F61652BE597521FB10E6A71D524859F895B123BB09",
+  "bytes": 181940,
+  "mtime": "2026-10-30T20:30:27.164+08:00",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 3
+  },
+  "unique": 60,
+  "total": 60,
+  "makingOrder": [
+    "fire_heat_up",
+    "fire_burn",
+    "fire_cool",
+    "fire_scorch_field"
+  ],
+  "levelCap": "20",
+  "complexity": "0",
+  "radius": "2",
+  "dvKept": true,
+  "archiveClean": true,
+  "otherSheetsUntouched": true
+}

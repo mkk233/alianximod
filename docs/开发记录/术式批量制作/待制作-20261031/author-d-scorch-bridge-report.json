@@ -1,0 +1,56 @@
+{
+  "author": "D",
+  "model": "grok-4.7-high-fast",
+  "phase": "灼地幽冥载荷、根与真实切片范围",
+  "stopWrite": true,
+  "compile": "未运行",
+  "game": "未运行",
+  "review": "实现正式复审 0/3，本单未开复审",
+  "nameGate": "本次文件无新违规。未改的 OriginalHumanoid.java 仍有 i 与 to，未顺手修改。",
+  "sampleSignature": "NetherDomainTint.sample(Level, double, double, double)",
+  "root": "BatchCastSession.currentRootId。找不到不新建 FireCastContext。宿主结束时 release 自己的一次。",
+  "range": "服务端 contains 与客户端 probe 使用同一份切片。外包盒不染色。上限 3072，超出则两边都不染蓝。",
+  "remainingA": [],
+  "files": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+      "sha256": "ac26a4f0578aa3504a8e6af0fc6f8adfd72d1a9cf682db60c5beac9fcde47978",
+      "mtime": "2026-10-31 05:00:06"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/SurfaceFireHosts.java",
+      "sha256": "f8953b798fafa45a20e33c1301064ecea040b92f2b85431911cb4d9ff96bfc86",
+      "mtime": "2026-10-31 05:00:19"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/effects/ScorchEffect.java",
+      "sha256": "4e4beaaee40d4bb2e31faf5fc4a69a113b37a7f81ad71f19f6f025c0b4d074c4",
+      "mtime": "2026-10-31 05:00:30"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/GloomVolumes.java",
+      "sha256": "14a01bda239c0fc4ed3967f3d66883de0ec6b5c085b319019f9472b80d096b5d",
+      "mtime": "2026-10-31 04:59:57"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/NetherDomainSync.java",
+      "sha256": "c4cb0878d08a1e60204ea459bf4bd54ebd0b2c18adc311e65e898b19ae47aa55",
+      "mtime": "2026-10-31 05:00:44"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainSight.java",
+      "sha256": "bbed914e521b6adc28b98fdd86c6860476c6a41ff4dedb4de6e114b423f0c06e",
+      "mtime": "2026-10-31 05:00:53"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainCycle.java",
+      "sha256": "2d1611b34aabe1a89f69a28558858582817e8908a5d56f5317053c33f65f5d4e",
+      "mtime": "2026-10-31 05:01:12"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/NetherDomainWisps.java",
+      "sha256": "2e82993eae9cea19073f378a89aea00ddd016a83c918668a09323e532ab1cfc5",
+      "mtime": "2026-10-31 05:02:06"
+    }
+  ]
+}

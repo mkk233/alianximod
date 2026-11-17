@@ -1,0 +1,52 @@
+[
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_drop.aseprite",
+    "sha256": "2EE2CCA7C9E043F1D9B55468C13ADE2578B98F3A878840F71F826AD166E245BE",
+    "bytes": 1072
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_drop.png",
+    "sha256": "5F559995941422CD9E4AC73EEC054AFE7AE28BCDFF9070810F2C948EAA2449AA",
+    "bytes": 175
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_flow_strip.json",
+    "sha256": "4A2E097CF64E8AEABCE1347F7E5DEB6E5D58ABE5E4421C02760F209F06A6CDDB",
+    "bytes": 4640
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_flow_strip.png",
+    "sha256": "6DCBE9BD064C84BCCEF52CD5FD5C9B3406950EF2BF5424644A343312FCA76453",
+    "bytes": 381
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_flow_tile.png",
+    "sha256": "9CC24EBEB8755D94D5A430D4BE43B3B61E6234C9D7F0F82B52C352D19783D483",
+    "bytes": 196
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_flow.aseprite",
+    "sha256": "ADB806D422257CA6B6CD0610B1F93312E7C87C3A4142EA435E95D6CEAD1CBD19",
+    "bytes": 3062
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_phantom_2d_front.png",
+    "sha256": "7CFECC058C07236CD01F1B28CDDE67681FD4F21BD6BA4980F162C4DC0F8F7B47",
+    "bytes": 5483
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_phantom_2d.gif",
+    "sha256": "58A5DAE50902707BD15F4AE42FD34FC94EBD207A21D4BE1ACFA4AA7A89C52FA8",
+    "bytes": 154509
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_phantom_preview_dark.aseprite",
+    "sha256": "064AA509F271A4314EC9DCFCCF28A1E10F12501F4B4A8E0996C7858A1FB042BF",
+    "bytes": 46513
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_水线人形_v1-20261102\\water_phantom_study.aseprite",
+    "sha256": "F2B2FDDDCC1F7FA616C397DDCF4FEF8257D45E6487D395B19A12E18D75B5D60A",
+    "bytes": 64388
+  }
+]

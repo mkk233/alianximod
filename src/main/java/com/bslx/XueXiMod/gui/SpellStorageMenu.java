@@ -20,8 +20,8 @@ public class SpellStorageMenu extends AbstractContainerMenu {
         if (player instanceof ServerPlayer) {
             SimpleContainer loaded = PlayerSpellStorage.load(player);
             PlayerSpellStorage.migrate(player, loaded);
-            for (int i = 0; i < PlayerSpellStorage.SIZE; i++) {
-                storage.setItem(i, loaded.getItem(i));
+            for (int segmentIndex = 0; segmentIndex < PlayerSpellStorage.SIZE; segmentIndex++) {
+                storage.setItem(segmentIndex, loaded.getItem(segmentIndex));
             }
             PlayerSpellStorage.save(player, storage);
         }

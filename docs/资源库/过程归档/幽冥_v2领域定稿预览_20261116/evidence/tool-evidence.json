@@ -1,0 +1,50 @@
+{
+  "asepriteInitial": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"executable\":\"D:/Aseprite/Aseprite.exe\",\"batch\":{\"apiVersion\":39,\"mode\":\"batch\",\"os\":\"Windows NT 10.0.26100\",\"runtime\":\"0.1.1\",\"sprites\":0,\"ui\":false,\"version\":\"1.3.17\"},\"live\":{\"port\":41235,\"listening\":true,\"connected\":false},\"extensionInstalled\":true,\"workDir\":\"C:\\\\Users\\\\baishang\"}"
+      }
+    ]
+  },
+  "blockbench": {
+    "blockbench": {
+      "version": "5.2.2",
+      "environment": "desktop",
+      "platform": "win32",
+      "is_mobile": false
+    },
+    "plugin": {
+      "version": "1.10.1",
+      "build_id": "a66e717ad742a552424659f33c9b6149dafef4901888c66a956832d1d7e68062",
+      "build_mode": "production"
+    },
+    "initialProject": {
+      "uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "name": "fire_detonate_v2_3d_candidate",
+      "format_id": "free",
+      "counts": {
+        "elements": 183,
+        "meshes": 0,
+        "cubes": 183,
+        "groups": 17,
+        "textures": 16,
+        "animations": 0
+      }
+    }
+  },
+  "createdProject": "dfc5c52c-afcb-951b-9625-7c632d2e16d3",
+  "finalReopenProject": "0ff57af5-a0c2-9110-a30c-aa29bf43c939",
+  "toolsUsed": [
+    "mcp__magpie__aseprite__status",
+    "mcp__magpie__aseprite__launch_aseprite",
+    "mcp__magpie__aseprite__export_sprite_sheet",
+    "mcp__magpie__aseprite__run_lua",
+    "mcp__magpie__aseprite__export",
+    "mcp__magpie__blockbench__get_capabilities",
+    "mcp__magpie__blockbench__create_project",
+    "mcp__magpie__blockbench__set_mode",
+    "mcp__magpie__blockbench__risky_eval"
+  ],
+  "notes": "Native application APIs executed only through the existing live MCP; screenshots from main viewport. MCP response errors were verified against actual native outputs; no errors reclassified as quota exhaustion."
+}

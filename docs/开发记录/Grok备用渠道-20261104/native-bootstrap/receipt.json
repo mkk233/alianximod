@@ -1,0 +1,41 @@
+{
+  "kind": "native-bootstrap-final-report-not-wrapper-attempt",
+  "provider": "grok-laozhu",
+  "sessionId": "48e4111a-a131-46c2-863a-5a521d55d120",
+  "stopReason": "end_turn",
+  "modelUsage": {
+    "grok-4.7-build-fast": {
+      "inputTokens": 405539,
+      "outputTokens": 116677,
+      "cacheReadInputTokens": 10865536,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 70,
+      "costUSD": 5.5456414
+    }
+  },
+  "report": {
+    "workStatus": "reported_done",
+    "summary": "Invoke-CursorTask 已支持一次 Cursor 周额度耗尽后切到 Grok CLI grok-4.7/high；原 Cursor 离线测试与切换、假阳性、终局、旧任务和权限用例通过。",
+    "changedFiles": [
+      "D:/alianximod/.grok/scripts/Invoke-CursorTask.ps1",
+      "D:/alianximod/.grok/scripts/Test-CursorTask.ps1",
+      "D:/alianximod/AGENTS.md",
+      "D:/alianximod/.grok/skills/max-dispatch/SKILL.md",
+      "D:/alianximod/docs/统一开发与术式批量制作流程.md",
+      "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/实现交付.md"
+    ],
+    "checks": [
+      "pwsh -NoProfile -File D:/alianximod/.grok/scripts/Test-CursorTask.ps1 PASS",
+      "本机 grok-4.7 配置只核对别名、显示名、wire、responses、high 与凭据存在性"
+    ],
+    "notRun": [
+      "真实 Grok 连通/续跑未重复",
+      "未用耗尽的 Cursor 配额触发生产额度错误",
+      "无 mod Gradle、打包、游戏或正式独立复审",
+      "wrapper 真实 Grok 烟测留主会话"
+    ],
+    "writesSettled": true,
+    "blocker": null,
+    "nextAction": "主会话收取结果并按本批额度安排必要集中检查/真实统一入口验证"
+  }
+}

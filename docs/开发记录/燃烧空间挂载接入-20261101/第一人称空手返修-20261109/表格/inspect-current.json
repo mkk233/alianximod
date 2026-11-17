@@ -1,0 +1,212 @@
+{
+  "bytes": 122456,
+  "sheets": [
+    {
+      "name": "已完成",
+      "part": "xl/worksheets/sheet1.xml"
+    },
+    {
+      "name": "待制作",
+      "part": "xl/worksheets/sheet2.xml"
+    },
+    {
+      "name": "制作中",
+      "part": "xl/worksheets/sheet3.xml"
+    },
+    {
+      "name": "待验收",
+      "part": "xl/worksheets/sheet4.xml"
+    },
+    {
+      "name": "数据表",
+      "part": "xl/worksheets/sheet5.xml"
+    },
+    {
+      "name": "资源状态明细",
+      "part": "xl/worksheets/sheet6.xml"
+    },
+    {
+      "name": "待制作原始数据",
+      "part": "xl/worksheets/sheet7.xml"
+    }
+  ],
+  "counts": {
+    "已完成": 37,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 9
+  },
+  "total": 62,
+  "unique": 62,
+  "repeated": {},
+  "headers": {
+    "已完成": {
+      "名称": "A",
+      "编号": "B",
+      "功能描述": "N",
+      "特效": "O",
+      "备注": "DV"
+    },
+    "待制作": {
+      "名称": "A",
+      "编号": "B",
+      "功能描述": "N",
+      "特效": "O",
+      "备注": "DV"
+    },
+    "制作中": {
+      "名称": "A",
+      "编号": "B",
+      "功能描述": "N",
+      "特效": "O",
+      "备注": "DV"
+    },
+    "待验收": {
+      "名称": "A",
+      "编号": "B",
+      "功能描述": "N",
+      "特效": "O",
+      "备注": "DV"
+    },
+    "数据表": {},
+    "资源状态明细": {
+      "术式编号": "A"
+    },
+    "待制作原始数据": {
+      "名称": "A",
+      "编号": "B",
+      "功能描述": "N",
+      "特效": "O",
+      "备注": "DV"
+    }
+  },
+  "filters": {
+    "已完成": [
+      "A2:EN40"
+    ],
+    "待制作": [
+      "A2:EN2"
+    ],
+    "制作中": [
+      "A2:EN5"
+    ],
+    "待验收": [
+      "A2:EN2"
+    ],
+    "资源状态明细": [
+      "A2:T6"
+    ]
+  },
+  "dimensions": {
+    "已完成": [
+      "A1:EN40"
+    ],
+    "待制作": [
+      "A1:EN2"
+    ],
+    "制作中": [
+      "A1:EN18"
+    ],
+    "待验收": [
+      "A1:EN12"
+    ],
+    "数据表": [
+      "A1:BV16"
+    ],
+    "资源状态明细": [
+      "A1:T7"
+    ],
+    "待制作原始数据": [
+      "A1:FS25"
+    ]
+  },
+  "hits": [
+    {
+      "sheet": "待验收",
+      "part": "xl/worksheets/sheet4.xml",
+      "row": 7,
+      "column": "B",
+      "A": "燃烧",
+      "B": "fire_burn",
+      "N": "进入或升级超频炉心，并保留已有加成",
+      "O": "燃烧_空间挂载_v1 / burn-v3-spatial-v1\n正式源：docs/资源库/特效/火焰/燃烧_空间挂载_v1/\n运行：models/effect/burn_spatial_v1/mount.json\n运行贴图：textures/effect/burn_spatial_v1/loop 与 entry 的 cape.png、rear.png、hand.png、shoulder_right.png、shoulder_left.png、abdomen_right.png、abdomen_left.png、hip_left.png、shin_right.png、shin_left.png、hand_embers_right.png、hand_embers_left.png、body_embers.png",
+      "DV": "本行是燃烧 / fire_burn。\n表内操作“施加”在本行表示进入或升级为过载并保留F，不是先移除再重新进入。已有过载则失败。\n用户原话：“把三个技能写入待制作表中”。\n主设计是 docs/火属性二级玩法设计.md。原始三式数值为显式魔力20/20/0、技能冷却500/500/0 tick、装配消耗各1、基础伤害各0。本次只写入待制作。炉心底层服务已经存在，这三个技能尚未注册；底层存在不等于这三式已经实现。本记录不包含游戏验证。\n记录目录：docs/开发记录/炉心三式入待制作-20261029/。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。\n等级上限20沿用制作表已有数据行的统一取值。复杂度、登记弹速、可接受附魔、自身能量倍率、挂到后续的能量倍率没有统一取值，留空，不沿用燎原、燎里、焚天的复杂度20和装配3。弹道、命中体尺寸、外形、弧带、场地、护体、屏障、领域、附魔累积、旧档和火种列留空。登记魔力按表头批注由基础伤害0得到0，实际消耗只看显式魔力，不另扣一次。蓄力tick为0。双重释放再拉段数为0。释放种类“自身状态”是本次在数据表追加的名称，代码列没有已确认的程序常量，留空。\n本式只在主表配置一条炉心状态，不写入资源状态明细。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认炉心三式v1。燃烧是过载较强橙红反馈。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。\n[设计反馈 2026-10-29] 测试正式结果核对第1轮（1/2）决定留在制作中，不转换N/O。已执行功能子集通过，不是整项测试失败。未迁是因为缺六式适用的正式实现复核通过记录；炉心原子返修未追加复审。安装规划通过不证明玩家升级失败能完整回滚。不是因为没有火种生产入口。已测：直接过载、普通升级保留F=0.30、已过载拒绝、不能降普通、再100拍到0.60、产率2.2、真实混链拒绝。覆盖缺口：升级只装一份属性、当前生命只向下钳、真实扣费和独立冷却、失败时效果/热量/魔力恢复，以及水冰/治疗/抗性和存档事件。下一步须用户明确授权后再补适用实现复核，并补普通升级、已过载拒绝和安装失败恢复的真实事务。同日纠正：本式不依赖火种余额。详见 docs/开发记录/术式批量制作/火系六式-20261029/test-stage-review-r1.md。\n2026-10-31 已采用升温v2/燃烧v3并完成客户端接入，待Cursor结论收束及统一编译；游戏待用户验证；Codex未复审\n2026-11-01 已按确认模型 burn-v3-spatial-v1 接入。.\\gradlew.bat compileJava --offline --no-daemon 于 2026-11-01 21:37:58–21:38:35 退出码 0，BUILD SUCCESSFUL。游戏待用户实测。Codex未复审。\n待验收 | 燃烧空间挂载接入-20261101 | docs/开发记录/燃烧空间挂载接入-20261101/调度记录.md",
+      "cellCount": 44
+    },
+    {
+      "sheet": "待制作原始数据",
+      "part": "xl/worksheets/sheet7.xml",
+      "row": 7,
+      "column": "B",
+      "A": "燃烧",
+      "B": "fire_burn",
+      "N": "燃烧是独立的火属性法术。没有炉心时可以直接进入过载，amplifier为1。已有普通炉心时升级到amplifier 1，并保留已累计的F，不能先移除再重新进入。已经过载时失败，不刷新计时。成功时调用FurnaceService.enterOverdrive。不能从过载直接降回普通。\n过载炉心无限持续。F每tick增加0.003，封顶0.60。从0到封顶为200tick；普通炉心已满热0.30时再升级，还需100tick到顶。产火种倍率固定2.2。炉心不被动产生火种。生命上限×0.60，护甲和韧性各×0.25，治疗×0.30，水或冰承伤×1.70。保护附魔仍按原规则计算。施法者自己的抗性提升不再减伤，不移除抗性药水。升级时当前生命只钳到新上限，不回复生命。属性修饰使用可移除的稳定标识，不叠成两份。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n服务端先检查炉心状态、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心。只有成功才扣显式魔力20，并从成功施放起计算独立的500tick技能冷却。装配消耗1，基础伤害0。不重置升温或冷却各自的冷却。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+      "O": "施放时，施法者周围出现短促、更明亮的橙红火星和热浪。过载期间的提示强于普通炉心。从普通升级到过载只播放一次升级反馈，不重复播放普通入场。不蔓延，不点燃地形，不额外造成伤害。这里只记录制作意图，不填写资源文件名。",
+      "DV": "本行是燃烧 / fire_burn。\n表内操作“施加”在本行表示进入或升级为过载并保留F，不是先移除再重新进入。已有过载则失败。\n用户原话：“把三个技能写入待制作表中”。\n主设计是 docs/火属性二级玩法设计.md。原始三式数值为显式魔力20/20/0、技能冷却500/500/0 tick、装配消耗各1、基础伤害各0。本次只写入待制作。炉心底层服务已经存在，这三个技能尚未注册；底层存在不等于这三式已经实现。本记录不包含游戏验证。\n记录目录：docs/开发记录/炉心三式入待制作-20261029/。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。\n等级上限20沿用制作表已有数据行的统一取值。复杂度、登记弹速、可接受附魔、自身能量倍率、挂到后续的能量倍率没有统一取值，留空，不沿用燎原、燎里、焚天的复杂度20和装配3。弹道、命中体尺寸、外形、弧带、场地、护体、屏障、领域、附魔累积、旧档和火种列留空。登记魔力按表头批注由基础伤害0得到0，实际消耗只看显式魔力，不另扣一次。蓄力tick为0。双重释放再拉段数为0。释放种类“自身状态”是本次在数据表追加的名称，代码列没有已确认的程序常量，留空。\n本式只在主表配置一条炉心状态，不写入资源状态明细。",
+      "cellCount": 53
+    }
+  ],
+  "definedNames": [
+    "<definedName name=\"_xlnm._FilterDatabase\" localSheetId=\"3\" hidden=\"1\">待验收!$A$2:$EN$2</definedName>",
+    "<definedName name=\"_xlnm._FilterDatabase\" localSheetId=\"1\" hidden=\"1\">待制作!$A$2:$EN$2</definedName>",
+    "<definedName name=\"_xlnm._FilterDatabase\" localSheetId=\"0\" hidden=\"1\">已完成!$A$2:$EN$40</definedName>",
+    "<definedName name=\"_xlnm._FilterDatabase\" localSheetId=\"2\" hidden=\"1\">制作中!$A$2:$EN$18</definedName>",
+    "<definedName name=\"_xlnm._FilterDatabase\" localSheetId=\"5\" hidden=\"1\">资源状态明细!$A$2:$T$6</definedName>",
+    "<definedName name=\"操作列表\">数据表!$BJ$4:INDEX(数据表!$BJ$4:$BJ$1000,COUNTA(数据表!$BJ$4:$BJ$1000))</definedName>",
+    "<definedName name=\"触发时机列表\">数据表!$BN$4:INDEX(数据表!$BN$4:$BN$1000,COUNTA(数据表!$BN$4:$BN$1000))</definedName>",
+    "<definedName name=\"弹道\">数据表!$A$4:$A$10</definedName>",
+    "<definedName name=\"附魔效果键\">数据表!$AS$4:$AS$8</definedName>",
+    "<definedName name=\"计量单位列表\">数据表!$BR$4:INDEX(数据表!$BR$4:$BR$1000,COUNTA(数据表!$BR$4:$BR$1000))</definedName>",
+    "<definedName name=\"链上角色\">数据表!$E$4:$E$16</definedName>",
+    "<definedName name=\"领域边界\">数据表!$AG$4:$AG$5</definedName>",
+    "<definedName name=\"领域外观\">数据表!$AK$4:$AK$5</definedName>",
+    "<definedName name=\"曲线函数\">数据表!$AO$4:$AO$4</definedName>",
+    "<definedName name=\"是否\">数据表!$AC$4:$AC$5</definedName>",
+    "<definedName name=\"释放标签\">数据表!$M$4:$M$5</definedName>",
+    "<definedName name=\"释放种类\">数据表!$I$4:$I$7</definedName>",
+    "<definedName name=\"寿命策略列表\">数据表!$BP$4:INDEX(数据表!$BP$4:$BP$1000,COUNTA(数据表!$BP$4:$BP$1000))</definedName>",
+    "<definedName name=\"属性\">数据表!$U$4:$U$9</definedName>",
+    "<definedName name=\"术式类型\">数据表!$Q$4:$Q$9</definedName>",
+    "<definedName name=\"外形\">数据表!$Y$4:$Y$5</definedName>",
+    "<definedName name=\"状态列表\">数据表!$BV$4:INDEX(数据表!$BV$4:$BV$1000,COUNTA(数据表!$BV$4:$BV$1000))</definedName>",
+    "<definedName name=\"资源列表\">数据表!$BT$4:INDEX(数据表!$BT$4:$BT$1000,COUNTA(数据表!$BT$4:$BT$1000))</definedName>",
+    "<definedName name=\"作用对象列表\">数据表!$BL$4:INDEX(数据表!$BL$4:$BL$1000,COUNTA(数据表!$BL$4:$BL$1000))</definedName>"
+  ],
+  "commentParts": [
+    "xl/comments1.xml",
+    "xl/comments2.xml",
+    "xl/comments3.xml",
+    "xl/comments4.xml"
+  ],
+  "commentHits": [],
+  "makingIds": [
+    "fire_heat_up",
+    "fire_cool",
+    "fire_flame_trail",
+    "rule_surface_anchor",
+    "fire_upwell",
+    "rule_stagger",
+    "rule_hit_continue",
+    "fire_seed_sow",
+    "fire_kindle",
+    "fire_detonate",
+    "fire_nether_gloom",
+    "earth_break_ground",
+    "fire_spark",
+    "tide_sever",
+    "water_yielding_ribbon",
+    "water_vortex"
+  ],
+  "pendingIds": [
+    "fire_fentian",
+    "fire_liaoli",
+    "fire_scorch_field",
+    "fire_liaoyuan",
+    "fire_burn",
+    "fire_shock_ring",
+    "fire_meteorite",
+    "water_bubble_column",
+    "water_deep_pressure"
+  ],
+  "queueIds": []
+}

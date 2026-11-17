@@ -1,0 +1,1 @@
+继续原C任务。先读shared-contract.md新的到期计算和垂丝同步规则，再按implement-entities-task.md边界实施，A负责helper。你已完成必要上下文阅读，直接开始修改，不再泛读无关测试或重复设计。保持按实例冻结、模板只消费一次、预约幂等及退款语义。禁止路由和别组文件。写entities-report.md后结束，不跑Gradle。

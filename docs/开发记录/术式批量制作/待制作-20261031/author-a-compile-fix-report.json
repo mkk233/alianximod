@@ -1,0 +1,16 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "stage": "compile-fix",
+  "review": "本阶段额度已用完，返修结果未追加复审。",
+  "compile": "未运行，待统一重新编译",
+  "stopWrite": true,
+  "diagnostic": "StaffSkills.java:126 ItemStack无法转换为CompoundTag，flattenOldSlots(stack, skills)",
+  "fix": "flattenOldSlots(skills, slotLimit)，skills 为 xueximod_staff_skills 复合标签",
+  "preserved": "旧 SlotN 迁移、PreservedSlots 与 MigrationHeld、基础 6 与测试 32 未改",
+  "otherAuthors": "本诊断不需要其他作者。B 的附魔编译错误仍由 B 处理，本单未改那些文件。",
+  "staffSkillsSha256": "24571ba13e7d3f44353ad4b725f2074960f0f09f0b5d22e0923ff1e69842087c",
+  "staffSkillsMtime": "2026-10-31 12:48:22",
+  "nameGate": "退出码 1。StaffSkills 无新增违规。OriginalHumanoid.java:165 i，:202 to。",
+  "ownershipFileCount": 63
+}

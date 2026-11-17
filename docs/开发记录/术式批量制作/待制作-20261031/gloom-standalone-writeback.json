@@ -1,0 +1,33 @@
+{
+  "submitted": false,
+  "sheetActuallyWritten": false,
+  "syncStatus": "表格同步未完成",
+  "reason": "Shell rejected before start. Returned only Rejected:. No live hash, no candidate, no exclusive submit, no reopen.",
+  "id": "fire_nether_gloom",
+  "from": null,
+  "to": null,
+  "migrated": false,
+  "movedToCompleted": false,
+  "countsAsReview": false,
+  "design": "2/2",
+  "implementation": "3/3",
+  "quotaSentence": "本阶段额度已用完，返修结果未追加复审",
+  "compile": {
+    "executed": true,
+    "exitCode": 0,
+    "isolatedCopy": true,
+    "report": "docs/开发记录/术式批量制作/待制作-20261031/gloom-standalone-compile-report.md",
+    "clientClassUpdated": false,
+    "playtestPassed": false
+  },
+  "docsUpdated": [
+    "approved-v1.md",
+    "implementation-contract.md",
+    "实测清单.md",
+    "记录.md"
+  ],
+  "scriptNotRun": "docs/开发记录/术式批量制作/待制作-20261031/gloom-move.py",
+  "resource": "assets/xueximod/textures/effect/nether_gloom_v1/nether_gloom.png",
+  "override": "单独装配即可打开自身领域。旧句不自建领域、必须已有载体只作历史。",
+  "next": "重读源表后只迁幽冥到待验收。不要把本文件当成表已更新。"
+}

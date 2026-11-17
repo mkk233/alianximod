@@ -1,0 +1,245 @@
+{
+  "source_pixels_verified_by": "Aseprite MCP verify_sources.lua",
+  "two_variant_alpha_equal": true,
+  "soul_palette_exact": true,
+  "frame_exports_equal_strips": true,
+  "alpha_bounds": [
+    {
+      "frame": 1,
+      "alpha_bbox": [
+        27,
+        28,
+        37,
+        38
+      ]
+    },
+    {
+      "frame": 2,
+      "alpha_bbox": [
+        23,
+        23,
+        42,
+        42
+      ]
+    },
+    {
+      "frame": 3,
+      "alpha_bbox": [
+        18,
+        18,
+        47,
+        47
+      ]
+    },
+    {
+      "frame": 4,
+      "alpha_bbox": [
+        14,
+        13,
+        52,
+        51
+      ]
+    },
+    {
+      "frame": 5,
+      "alpha_bbox": [
+        11,
+        9,
+        55,
+        54
+      ]
+    },
+    {
+      "frame": 6,
+      "alpha_bbox": [
+        10,
+        8,
+        56,
+        55
+      ]
+    },
+    {
+      "frame": 7,
+      "alpha_bbox": [
+        10,
+        8,
+        56,
+        55
+      ]
+    },
+    {
+      "frame": 8,
+      "alpha_bbox": [
+        11,
+        8,
+        55,
+        54
+      ]
+    },
+    {
+      "frame": 9,
+      "alpha_bbox": [
+        11,
+        9,
+        55,
+        53
+      ]
+    },
+    {
+      "frame": 10,
+      "alpha_bbox": [
+        12,
+        15,
+        55,
+        52
+      ]
+    },
+    {
+      "frame": 11,
+      "alpha_bbox": [
+        18,
+        15,
+        55,
+        51
+      ]
+    },
+    {
+      "frame": 12,
+      "alpha_bbox": [
+        19,
+        15,
+        54,
+        25
+      ]
+    },
+    {
+      "frame": 13,
+      "alpha_bbox": [
+        19,
+        13,
+        54,
+        22
+      ]
+    },
+    {
+      "frame": 14,
+      "alpha_bbox": [
+        19,
+        12,
+        54,
+        20
+      ]
+    },
+    {
+      "frame": 15,
+      "alpha_bbox": [
+        20,
+        12,
+        21,
+        14
+      ]
+    },
+    {
+      "frame": 16,
+      "alpha_bbox": null
+    }
+  ],
+  "bbmodel_embedded_textures": [
+    {
+      "name": "detonate_v2_orange-strip.png",
+      "embedded_decoded_pixels_equal_source": true
+    },
+    {
+      "name": "detonate_v2_soul-strip.png",
+      "embedded_decoded_pixels_equal_source": true
+    }
+  ],
+  "gif_timings": [
+    {
+      "name": "detonate_v2_native_complete.gif",
+      "frames": 16,
+      "durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        650
+      ],
+      "total_ms": 1400
+    },
+    {
+      "name": "detonate_v2_native_strengths.gif",
+      "frames": 16,
+      "durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        650
+      ],
+      "total_ms": 1400
+    },
+    {
+      "name": "target_comparison_2d.gif",
+      "frames": 28,
+      "durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "total_ms": 1400
+    }
+  ],
+  "effects_not_exported_from_headless_renderer": true,
+  "native_viewport_pngs_unmodified": true,
+  "gif_processing": "native screenshot sequence composited over solid dark preview background; global 256-color GIF palette, no dithering; no shape/pixel repaint",
+  "reopen_first_immediate_capture": "blank because native project load UI had not settled; one later native capture after 700ms succeeded; no asset changes",
+  "formal_review_added": false
+}

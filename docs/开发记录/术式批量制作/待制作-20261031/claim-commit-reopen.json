@@ -1,0 +1,229 @@
+{
+  "sha256": "019494902D2EE20A30E6F8DDA382020E5BD911153C68D6EE4151A7D941E251EA",
+  "bytes": 219127,
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "unique": 60,
+  "total": 60,
+  "archiveCount": 20,
+  "archiveUnique": 20,
+  "archiveIds": [
+    "fire_liaoyuan",
+    "fire_liaoli",
+    "fire_fentian",
+    "fire_heat_up",
+    "fire_burn",
+    "fire_cool",
+    "fire_scorch_field",
+    "fire_flame_trail",
+    "fire_meteorite",
+    "fire_shock_ring",
+    "rule_surface_anchor",
+    "fire_upwell",
+    "rule_stagger",
+    "rule_hit_continue",
+    "fire_seed_sow",
+    "fire_kindle",
+    "fire_detonate",
+    "fire_nether_gloom",
+    "earth_break_ground",
+    "fire_spark"
+  ],
+  "located": {
+    "fire_flame_trail": [
+      {
+        "sheet": "制作中",
+        "row": 6
+      }
+    ],
+    "fire_meteorite": [
+      {
+        "sheet": "制作中",
+        "row": 7
+      }
+    ],
+    "fire_shock_ring": [
+      {
+        "sheet": "制作中",
+        "row": 8
+      }
+    ],
+    "rule_surface_anchor": [
+      {
+        "sheet": "制作中",
+        "row": 9
+      }
+    ],
+    "fire_upwell": [
+      {
+        "sheet": "制作中",
+        "row": 10
+      }
+    ],
+    "rule_stagger": [
+      {
+        "sheet": "制作中",
+        "row": 11
+      }
+    ],
+    "rule_hit_continue": [
+      {
+        "sheet": "制作中",
+        "row": 12
+      }
+    ],
+    "fire_seed_sow": [
+      {
+        "sheet": "制作中",
+        "row": 13
+      }
+    ],
+    "fire_kindle": [
+      {
+        "sheet": "制作中",
+        "row": 14
+      }
+    ],
+    "fire_detonate": [
+      {
+        "sheet": "制作中",
+        "row": 15
+      }
+    ],
+    "fire_nether_gloom": [
+      {
+        "sheet": "制作中",
+        "row": 16
+      }
+    ],
+    "earth_break_ground": [
+      {
+        "sheet": "制作中",
+        "row": 17
+      }
+    ],
+    "fire_spark": [
+      {
+        "sheet": "制作中",
+        "row": 18
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "fire_flame_trail",
+      "row": 6,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_meteorite",
+      "row": 7,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_shock_ring",
+      "row": 8,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "rule_surface_anchor",
+      "row": 9,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_upwell",
+      "row": 10,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "rule_stagger",
+      "row": 11,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "rule_hit_continue",
+      "row": 12,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_seed_sow",
+      "row": 13,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_kindle",
+      "row": 14,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_detonate",
+      "row": 15,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_nether_gloom",
+      "row": 16,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "earth_break_ground",
+      "row": 17,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    },
+    {
+      "id": "fire_spark",
+      "row": 18,
+      "nKept": true,
+      "oKept": true,
+      "dvOriginalKept": true,
+      "claimed": true
+    }
+  ],
+  "differentParts": [
+    "xl/worksheets/sheet2.xml",
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet7.xml"
+  ],
+  "detailSame": true,
+  "pendingEmpty": true
+}

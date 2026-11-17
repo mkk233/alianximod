@@ -1,0 +1,66 @@
+{
+  "task": "火种共享燃料改造-20261029",
+  "authorSession": "c921a3df-f27e-484d-a735-36dd1b1f65a9",
+  "docAuthor": "d6f84d0b-4ea1-4368-a576-8acc20cc2afd",
+  "review": "本阶段复审额度已用完，本版未追加正式复审",
+  "unifiedCompile": "待统一编译",
+  "gradle": "未运行",
+  "game": "未启动",
+  "leftoverProcesses": [],
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exit": 1,
+    "note": "仅 OriginalHumanoid.java:165 i 与 :202 to 两处旧违规。本次改动文件没有新违规，未改那两处旧名字。"
+  },
+  "authorJavac": {
+    "command": "javac --release 17 -encoding UTF-8",
+    "classpath": "build/classes/java/main + build/classpath/runClient_minecraftClasspath.txt",
+    "output": "docs/开发记录/火种共享燃料改造-20261029/check-classes",
+    "fullSetExit": 0,
+    "fuelShareFollowUpExit": 0,
+    "note": "既有 ResourceLocation 构造有一条过时警告。这不是统一 compileJava。"
+  },
+  "checks": [
+    {"name": "SharedFuelCheck", "exit": 0, "assertions": 121, "failures": 0},
+    {"name": "SixFireFunctionalCheck", "exit": 0, "result": "passed"},
+    {"name": "FireSeedCheck", "exit": 0, "assertions": 258, "failures": 0},
+    {"name": "BurnLedgerCheck", "exit": 0, "assertions": 106, "failures": 0},
+    {"name": "BurnDispatchCheck", "exit": 0, "assertions": 16, "failures": 0},
+    {"name": "FireReleaseStructureCheck", "exit": 0, "assertions": 43, "failures": 0},
+    {"name": "SixFireLogicCheck", "exit": 0, "result": "passed"}
+  ],
+  "notExecuted": [
+    "LivingEntity",
+    "CompoundTag 往返",
+    "无敌帧、护甲与抗火",
+    "Gradle compileJava",
+    "游戏"
+  ],
+  "files": [
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FuelShare.java", "sha256": "ccb368e4f6388a29a6d7148a1867e29ab984afa6e86a18d078c079ceb179134a", "lastWrite": "2026-10-29T21:22:29.161+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedAccount.java", "sha256": "96a8cb3001ea93450c3c27b7b736c76ff3d0b5b1b916b3a7f95f4f67163abeaf", "lastWrite": "2026-10-29T21:11:42.211+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedState.java", "sha256": "078a0724acebd3dc72cf0268018a47106d15a243da398557e2afc7f9b61ec42e", "lastWrite": "2026-10-29T21:11:45.384+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FuelMode.java", "sha256": "b99aa01862a60cf98251381a0ec183fe5f2ba64dd15cbaab7faaa1da0721a4b3", "lastWrite": "2026-10-29T21:10:54.025+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/SharedSpec.java", "sha256": "ceb8b250ac7a7cbc3bcdee4b4dadf1207e0036ce50eccf118ea2abe12e84b822", "lastWrite": "2026-10-29T21:10:56.633+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/PumpResult.java", "sha256": "1bac3e28a93d4beac1d4c5244a180950722b197c30a4b682f6a9d81a15934a36", "lastWrite": "2026-10-29T21:10:57.767+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireLimits.java", "sha256": "0502336c44e847ad432681869befa6b55010c6cf644270fc90f0d032fbbbead4", "lastWrite": "2026-10-29T21:11:06.986+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnTrackState.java", "sha256": "c9a483f8c255344ef475391da9ec07d4473b1725be1507d0df260fc0f3fa0a8e", "lastWrite": "2026-10-29T21:11:11.363+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnLedger.java", "sha256": "c66a59846a4c24384d72c29b56b484a2996339d84aafcaedc42e676d0918fb86", "lastWrite": "2026-10-29T21:11:42.313+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnDispatch.java", "sha256": "93db1b98e744468236cba1925ceb702807c21a145ea03232ab8f1e86f6d8ccef", "lastWrite": "2026-10-29T21:12:03.864+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnCarrier.java", "sha256": "f64dedd1e241ce7f15709666252a985d15ee6c892ba92a1e6020260c7601bd80", "lastWrite": "2026-10-29T21:12:27.229+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireConsumption.java", "sha256": "c1fa484c8c2cfde97c8ff27e41e50e36c131649bfbf8d1e557fadc6ee5de74ee", "lastWrite": "2026-10-29T21:17:14.166+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/FireConsumerPlans.java", "sha256": "7e7d9b88d278c834774f57cf5e6fb64ea53adef6b34d4a130e86f1bb4bba099c", "lastWrite": "2026-10-29T21:12:51.831+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/GroundFireFields.java", "sha256": "400d2859b3739901f95dcbad92cbe00db343ae40bb66dd1557604d0072866cd0", "lastWrite": "2026-10-29T21:12:53.746+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FentianEffect.java", "sha256": "0ce537ddf93204f366bceb0b58275d78ec4514a1c5203b414ddbee8169b46fe4", "lastWrite": "2026-10-29T21:13:26.064+08:00"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java", "sha256": "6e9a99e3ec1c9549fc276a9bf823c800823133956a5227767b5ba99a8f80e20f", "lastWrite": "2026-10-29T21:12:59.808+08:00"},
+    {"path": "src/main/resources/assets/xueximod/lang/zh_cn.json", "sha256": "40841d0dec91d11423e83f50489163f89e0a5aa6bf1859548e6e9347dae722fc", "lastWrite": "2026-10-29T21:12:56.350+08:00"},
+    {"path": "src/main/resources/assets/xueximod/lang/en_us.json", "sha256": "9b8b9040c5df6d66437030701e88964bff4a6f1470a514b1aa8e8192ba8b034c", "lastWrite": "2026-10-29T21:12:58.093+08:00"},
+    {"path": "src/test/java/com/bslx/XueXiMod/status/fire/seed/SharedFuelCheck.java", "sha256": "f631d87ee3942d2cfc70e3a5ce8b5b2bafc8b757a541ad01c715fd77b4da42ba", "lastWrite": "2026-10-29T21:19:39.643+08:00"},
+    {"path": "src/test/java/com/bslx/XueXiMod/status/fire/seed/SixFireFunctionalCheck.java", "sha256": "7bfaf85c45e42387d9025205cfe4809900902e9e021bce34a83f2cffaa8533c9", "lastWrite": "2026-10-29T21:17:52.383+08:00"},
+    {"path": "src/test/java/com/bslx/XueXiMod/status/fire/seed/FireSeedCheck.java", "sha256": "4bb30e83e3e4437edaf96347720d1578a8453cf15e2577eb7d65e4cf8c064420", "lastWrite": "2026-10-29T21:18:00.749+08:00"},
+    {"path": "src/test/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnLedgerCheck.java", "sha256": "e82b7b35f63e91d8cc3455cfdbbf40f9b094751b84eb7e71ae824a7728f2c2af", "lastWrite": "2026-10-29T21:17:35.473+08:00"},
+    {"path": "src/test/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnDispatchCheck.java", "sha256": "2fbb6c2f065b596ba79847b80df8bce1af5b13fd8704b2b11eb6e943506d6e77", "lastWrite": "2026-10-29T21:18:06.113+08:00"},
+    {"path": "src/test/java/com/bslx/XueXiMod/shu/technique/release/fire/FireReleaseStructureCheck.java", "sha256": "1119bc2dee8e679db08b46daef614bc2cb68b18372d993ce1bc5362dbb008a48", "lastWrite": "2026-10-29T21:18:00.313+08:00"},
+    {"path": "src/test/java/com/bslx/XueXiMod/shu/technique/release/firecast/SixFireLogicCheck.java", "sha256": "30a73351dfb51b70163a147c79dd8681c9b1c774a075016243fc7d2007cfd68f", "lastWrite": "2026-10-29T21:17:56.434+08:00"}
+  ]
+}

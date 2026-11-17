@@ -1,0 +1,61 @@
+nodes=73 groups=2,21,7,3,2,11,27 duplicateIds=0 duplicatePoints=0 maxRadius=1180 rawEdges=32 uniqueEdges=32 peripheral=4 longEdges=8 trunks=7
+zoom=0.45 overlaps=0 altar=0
+zoom=1.0 overlaps=0 altar=0
+zoom=2.2 overlaps=0 altar=0
+parsedTechniques=73 learningNodes=50 learningIdsMissingFromCatalog=5 releaseRoles=49
+groupCounts wood,fire,water,earth,metal,none,rule=[2, 21, 7, 3, 2, 11, 27]
+coverage=Parsed ModTechniques constructors, LearningGraph parent lists, and ReleaseDefinitions ChainRole. This is not a live Minecraft Font or TechniqueManager snapshot. Five learning-graph ids were not recovered from the constructor parser, so their edges are absent from this count. Name widths estimate ASCII as 6px and other characters as 9px.
+routing=Same-group dependencies are straight segments unless they cross the altar, then a short local bend. Cross-group dependencies use one outer arc. Each occupied group has one altar trunk, not one ray per node.
+
+## supplement 2026-11-14 five LearningGraph ids
+
+The five ids absent from the literal `new Technique("id"` parse are real player techniques, not historical graph entries:
+water_curtain, water_mist, water_deep_pressure, water_bubble_column, water_prison.
+They are constructed inside `WaterTechniques.register()` by `barrier`, `domain`, and `prison`. The id is a method argument, so the first quoted string is the display name. `ModTechniques.registerAll()` calls `WaterTechniques.register()` after the literal registrations. `XueXiMod` calls `registerAll()`. Constructors use the player-available overload; none pass `DEVELOPMENT_ONLY`.
+
+The same method also registers `water_vortex` and `water_ring` through `domain` and `guard`. They are not LearningGraph node ids. `water_vortex` is the parent of the bubble, mist, and pressure nodes. `water_ring` is the second alternative beside `water_curtain` for `water_yielding_ribbon`. Both were added so those edges have real endpoints.
+
+`WaterReleaseDefinition.role()` is `ATTACK` and `chainEnergyScale()` stays the interface default `1f`, so production `layoutGroup` places all seven in the water sector, not the rule sector.
+
+Supplemented geometry input: literal ModTechniques 73 + these 7 = 80.
+nodes=80 groups=2,21,14,3,2,11,27 duplicateIds=0 duplicatePoints=0 maxRadius=1180 rawEdges=39 uniqueEdges=39 peripheral=4 longEdges=9 trunks=7
+zoom=0.45 overlaps=0 altar=0
+zoom=1.0 overlaps=0 altar=0
+zoom=2.2 overlaps=0 altar=0
+waterHelperEdges=7, all non-peripheral:
+water_curtain -> water_yielding_ribbon
+water_vortex -> water_bubble_column
+water_vortex -> water_mist
+water_bubble_column -> water_mist
+water_vortex -> water_deep_pressure
+water_bubble_column -> water_deep_pressure
+tide_mark -> water_prison
+LearningGraph node ids in this input: 50/50. The earlier 5-id gap is closed.
+
+Not included, and therefore 80 is not the whole `playerCatalog()`:
+`clone_body` is `TechniqueAvailability.PLAYER` from `CloneTechniqueRegistry`. `clone_phantom` and `clone_response_pulse` are `DEVELOPMENT_ONLY` and are correctly absent from the player tree.
+`sword_oblique_slash`, `movement_spin`, and `rule_cooperative` are `PLAYER` techniques from `CooperativeContent.register()`, also called by `registerAll()`. None of these four ids is a LearningGraph node.
+Name widths remain ASCII 6px and other characters 9px. This is not a live client Font or a `TechniqueManager` runtime snapshot. No Java source was changed and Gradle was not run for this supplement.
+
+## registerAll player catalog 2026-11-14
+
+Static enumeration of `XueXiMod` -> `ModTechniques.registerAll()` player-available technique registrations:
+
+- 73 literal `TechniqueManager.register(...)` calls in `ModTechniques.registerAll`.
+- 8 from `WaterTechniques.register`: `water_blade`, `water_curtain`, `water_mist`, `water_ring`, `water_deep_pressure`, `water_vortex`, `water_bubble_column`, `water_prison`.
+- 1 player technique from `CloneTechniqueRegistry.registerAll`: `clone_body`.
+- 3 from `CooperativeContent.register`: `sword_oblique_slash`, `movement_spin`, `rule_cooperative`.
+- Total player input: 85. Duplicate registrations in this chain: 0.
+
+Excluded by `TechniqueAvailability.DEVELOPMENT_ONLY`: `clone_phantom`, `clone_response_pulse`. `EnchantmentDefinitions.registerAll()` registers enchantment definitions, not techniques. `ReleaseDefinitions.registerAll()` registers release definitions for already constructed techniques. `WaterCurveFunctions.register()` and `ClonePulseAction.register()` do not call `TechniqueManager.register`.
+
+Role mapping follows production `ImprintTreeView.layoutGroup`: non-`ATTACK` roles, non-1 `chainEnergyScale`, and movement without a release definition go to the rule sector. Five roles absent from the literal `ReleaseDefinitions` parser were supplied from their actual release classes: `rule_gather_energy` energy scale 2, `rule_surface_anchor` `SEEK_SURFACE`, `rule_stagger` `RULE_STAGGER`, `rule_hit_continue` `RULE_HIT_CONTINUE`, and `fire_upwell` `TRAJECTORY_UPWELL`.
+
+Same production geometry result:
+nodes=85 groups=2,20,15,3,2,12,31 duplicateIds=0 duplicatePoints=0 maxRadius=1312 rawEdges=39 uniqueEdges=39 peripheral=4 longEdges=11 trunks=7
+zoom=0.45 overlaps=0 altar=0
+zoom=1.0 overlaps=0 altar=0
+zoom=2.2 overlaps=0 altar=0
+LearningGraph node ids covered by this player input: 50/50.
+
+Boundary: this is a static reading of the `registerAll` call chain, not a live `TechniqueManager.playerCatalog()` snapshot. Name widths remain estimates of ASCII 6px and other characters 9px, not the actual client Font. No overlap was found at the three checked zooms. No Java source was changed and Gradle was not run for this pass.

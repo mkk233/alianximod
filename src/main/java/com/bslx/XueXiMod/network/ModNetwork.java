@@ -1,6 +1,8 @@
 package com.bslx.XueXiMod.network;
 
 import com.bslx.XueXiMod.XueXiMod;
+import com.bslx.XueXiMod.network.prison.PrisonSyncPacket;
+import com.bslx.XueXiMod.shu.balance.BalanceSyncPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkRegistry;
@@ -13,7 +15,7 @@ import net.minecraftforge.network.simple.SimpleChannel;
  * OpenShuGuiPacket（打开术管理）、ImprintPacket（刻印确认）
  */
 public class ModNetwork {
-    private static final String PROTOCOL_VERSION = "1";
+    private static final String PROTOCOL_VERSION = "5";
 
     public static final SimpleChannel CHANNEL = NetworkRegistry.newSimpleChannel(
             ResourceLocation.fromNamespaceAndPath(XueXiMod.MOD_ID, "main"),
@@ -21,6 +23,10 @@ public class ModNetwork {
             PROTOCOL_VERSION::equals,
             PROTOCOL_VERSION::equals
     );
+
+    static String protocolVersion() {
+        return PROTOCOL_VERSION;
+    }
 
     public static void sendToPlayer(ServerPlayer player, Object message) {
         CHANNEL.send(PacketDistributor.PLAYER.with(() -> player), message);
@@ -33,5 +39,24 @@ public class ModNetwork {
         ImprintPacket.register(CHANNEL, 3);
         SkillAssemblyPacket.register(CHANNEL, 4);
         BoundSkillSyncPacket.register(CHANNEL, 5);
+        WaterMomentumNotice.register(CHANNEL, 6);
+        GuardSyncPacket.register(CHANNEL, 7);
+        DomainSyncPacket.register(CHANNEL, 8);
+        ActionSyncS2CPacket.register(CHANNEL, 9);
+        PrisonSyncPacket.register(CHANNEL, 10);
+        FireVisualPacket.register(CHANNEL, 11);
+        FireSeedVisualPacket.register(CHANNEL, 12);
+        LiaoliRingPacket.register(CHANNEL, 13);
+        NetherDomainSync.register(CHANNEL, 14);
+        BalanceSyncPacket.register(CHANNEL, 15);
+        ClonePresentationS2CPacket.register(CHANNEL, 16);
+        CooperativeActionS2CPacket.register(CHANNEL, 17);
+        FlowIntentS2CPacket.register(CHANNEL, 18);
+        FlowMoveC2SPacket.register(CHANNEL, 19);
+        FlowCorrectionS2CPacket.register(CHANNEL, 20);
+        FlowCorrectionAckC2SPacket.register(CHANNEL, 21);
+        SuihuaSyncPacket.register(CHANNEL, 22);
+        DaozhangActionPacket.register(CHANNEL, 23);
+        DaozhangSyncPacket.register(CHANNEL, 24);
     }
 }

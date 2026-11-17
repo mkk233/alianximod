@@ -1,0 +1,90 @@
+{
+  "repair": "fix-game-visual-03b",
+  "status": "诊断版，缺臂尚未修复",
+  "fixed": false,
+  "sourceChanged": true,
+  "pictureChanged": false,
+  "compiled": false,
+  "playtested": false,
+  "writingStopped": true,
+  "diagnosticLogIsCurrentMeasurement": false,
+  "marker": "WATER_PHANTOM_VISUAL_DIAG_03B",
+  "deletionMarker": "WaterPhantomVisualDiagnostics.java:29-33",
+  "nameGate": "tools/check-name-gate.ps1 exit 0",
+  "capture": {
+    "entity": "first water phantom only",
+    "hook": "CloneRenderer WATER_OUTLINE residencePhase",
+    "limit": 4,
+    "intervalMillis": 1000,
+    "firstImmediate": true,
+    "thenClosedForProcess": true,
+    "logLinesMax": 5,
+    "estimatedBytesMax": 51200,
+    "limbRaysMax": 16,
+    "nonCaptureWork": "uuid and millis gate, one capturing read per water draw",
+    "captureWork": "copy projection, hash mesh and skin once, transform submitted steve vertices, four block clips"
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/WaterPhantomVisualDiagnostics.java",
+      "lines": "29-33, 35-47, 101-138, 141-232, 235-247, 306-352, 354-422"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/CloneRenderer.java",
+      "lines": "52-67"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/SteveWaterLineMesh.java",
+      "lines": "87-88, 95-155"
+    }
+  ],
+  "pieceNames": {
+    "source": "load-order-not-stored-in-bin",
+    "0": "steve_arm_nx",
+    "1": "steve_arm_px",
+    "2": "steve_body",
+    "3": "steve_head",
+    "4": "steve_leg_nx",
+    "5": "steve_leg_px"
+  },
+  "collected": [
+    "capture index",
+    "entity uuid and numeric id",
+    "tick",
+    "partial",
+    "phaseSeconds",
+    "clientMillis",
+    "alignBodyYawDegrees",
+    "renderBodyYawDegrees",
+    "entityYawDegrees",
+    "cameraYawDegrees",
+    "cameraPitchDegrees",
+    "entityWorld",
+    "cameraWorld",
+    "relativeWorld entity minus camera",
+    "meshSha256",
+    "skinSha256",
+    "meshLocation",
+    "skinLocation",
+    "six pieces index name present submitted reason timeSeconds scale rotationDegrees positionChannel pivot quadCount vertexCount",
+    "submittedView space view",
+    "submittedNdc space ndc",
+    "modelViewRowMajor",
+    "blockRayCandidate derivedWorldFromView for limbs 0 1 4 5"
+  ],
+  "notCollected": [
+    "gpu fragment depth test",
+    "framebuffer pixels",
+    "scatter phase",
+    "pieces after the first six",
+    "phantoms after the locked uuid",
+    "frames between the four snapshots",
+    "view bob inverse"
+  ],
+  "nextLog": {
+    "path": "D:\\alianximod\\run\\logs\\latest.log",
+    "search": "WATER_PHANTOM_VISUAL_DIAG_03B",
+    "action": "compile by the designated session, fully restart the dev client, enter the world, release one water phantom, wait about 4 seconds"
+  },
+  "quota": "本阶段额度已用完，返修结果未追加复审"
+}

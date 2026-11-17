@@ -1,0 +1,183 @@
+{
+  "attemptId": "20261116-art-detonate-3d-archive-02",
+  "checkedAtUtc": "2026-11-16T08:31:03.562852+00:00",
+  "method": "verify candidate SHA256; binary copy; byte-for-byte comparison; verify candidate again",
+  "copiedFiles": 21,
+  "allCopiedFilesByteIdentical": true,
+  "candidateRegisteredFilesCheckedBeforeAndAfter": 178,
+  "candidateManifestSHA256BeforeAndAfter": "E5CB8F5FADA414121FB03DC812B56DB26704035F420ECF5CB413A0EF8245FA23",
+  "candidateUnchanged": true,
+  "mcpStartedThisAttempt": false,
+  "spatialParametersChanged": false,
+  "runtimeFilesChecked": false,
+  "matches": [
+    {
+      "formalPath": "source/explosion_puff_orange.aseprite",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\source\\explosion_puff_orange.aseprite",
+      "bytes": 4614,
+      "candidateSHA256": "0C3EC19FE36D420F9D909B57AEFBB059D29739E9883D9ED77795B9EF657DBC86",
+      "formalSHA256": "0C3EC19FE36D420F9D909B57AEFBB059D29739E9883D9ED77795B9EF657DBC86",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "source/explosion_puff_soul.aseprite",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\source\\explosion_puff_soul.aseprite",
+      "bytes": 4630,
+      "candidateSHA256": "EADC6C6DD861261C65A54A0A09C678C2F36C55DF79F5E9E4ECA8B93F4A8C4F73",
+      "formalSHA256": "EADC6C6DD861261C65A54A0A09C678C2F36C55DF79F5E9E4ECA8B93F4A8C4F73",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "textures/explosion_puff_orange-strip.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\textures\\explosion_puff_orange-strip.png",
+      "bytes": 2179,
+      "candidateSHA256": "28666B39C8A80E0A18EB04DDAE7F7422A546B179307DB0990F7F8109ADF8D0F7",
+      "formalSHA256": "28666B39C8A80E0A18EB04DDAE7F7422A546B179307DB0990F7F8109ADF8D0F7",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "textures/explosion_puff_soul-strip.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\textures\\explosion_puff_soul-strip.png",
+      "bytes": 2193,
+      "candidateSHA256": "C4B656B506B6CB721BCEF39CFED9BA99AA0AE21F2EDED7839057FC3573835856",
+      "formalSHA256": "C4B656B506B6CB721BCEF39CFED9BA99AA0AE21F2EDED7839057FC3573835856",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "blockbench/fire_detonate_v2_3d_candidate.bbmodel",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\blockbench\\fire_detonate_v2_3d_candidate.bbmodel",
+      "bytes": 329624,
+      "candidateSHA256": "000F4370871D97886DAF2BB8411AAAB417847A62D3807E6CAD9786C4D0C26E0E",
+      "formalSHA256": "000F4370871D97886DAF2BB8411AAAB417847A62D3807E6CAD9786C4D0C26E0E",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/detonate_v2_3d_main.gif",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\detonate_v2_3d_main.gif",
+      "bytes": 892149,
+      "candidateSHA256": "054C4B5F8363DA115F0A9472DCADE60F9E7220E869974CE8BBDCED3DEB80E98B",
+      "formalSHA256": "054C4B5F8363DA115F0A9472DCADE60F9E7220E869974CE8BBDCED3DEB80E98B",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/detonate_v2_3d_side.gif",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\detonate_v2_3d_side.gif",
+      "bytes": 852277,
+      "candidateSHA256": "179EF78C79B65A637CEF58251EBD3C7273BDB553A4099D84DA7B939251B1B971",
+      "formalSHA256": "179EF78C79B65A637CEF58251EBD3C7273BDB553A4099D84DA7B939251B1B971",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/detonate_v2_3d_strength.gif",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\detonate_v2_3d_strength.gif",
+      "bytes": 471762,
+      "candidateSHA256": "91A893F0D26E9DABD2A369E25E2D5C18BD9B75C10598E446DA213C5587EAF729",
+      "formalSHA256": "91A893F0D26E9DABD2A369E25E2D5C18BD9B75C10598E446DA213C5587EAF729",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/detonate_v2_3d_soul.gif",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\detonate_v2_3d_soul.gif",
+      "bytes": 888849,
+      "candidateSHA256": "A65EE62D5D740947C9153DD6890A8514247C58D7466398497B21A1C3F8AABFB3",
+      "formalSHA256": "A65EE62D5D740947C9153DD6890A8514247C58D7466398497B21A1C3F8AABFB3",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/puff_keyframes.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\puff_keyframes.png",
+      "bytes": 21250,
+      "candidateSHA256": "0CC01CBC4E573F4724723ED08863903AEE28026A18F0B758C5AC5D3E6C1304F3",
+      "formalSHA256": "0CC01CBC4E573F4724723ED08863903AEE28026A18F0B758C5AC5D3E6C1304F3",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/gui_peak_threequarter.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\gui_peak_threequarter.png",
+      "bytes": 182846,
+      "candidateSHA256": "B92FCF0BA83FDEFCF1EA28B4A3B240B12DF8382FEC37347FD31CCC16EC60F9C2",
+      "formalSHA256": "B92FCF0BA83FDEFCF1EA28B4A3B240B12DF8382FEC37347FD31CCC16EC60F9C2",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/gui_peak_side_top.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\gui_peak_side_top.png",
+      "bytes": 159168,
+      "candidateSHA256": "B98678BF0F33252565AFCA47CAD9F53113320A9D3AC9593245B520A6BFCAC3B1",
+      "formalSHA256": "B98678BF0F33252565AFCA47CAD9F53113320A9D3AC9593245B520A6BFCAC3B1",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/gui_breakup_threequarter.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\gui_breakup_threequarter.png",
+      "bytes": 196547,
+      "candidateSHA256": "0CB43322955BBC1BDE0B9C2E0434257A5E497C7A7215BF5E917865F43831748C",
+      "formalSHA256": "0CB43322955BBC1BDE0B9C2E0434257A5E497C7A7215BF5E917865F43831748C",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/gui_peak_soul.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\gui_peak_soul.png",
+      "bytes": 183374,
+      "candidateSHA256": "D0746803F04971042E261DD290C2719354C277C5E4F5A475AA273E4847668BA3",
+      "formalSHA256": "D0746803F04971042E261DD290C2719354C277C5E4F5A475AA273E4847668BA3",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "previews/strength_comparison_detail.png",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews\\strength_comparison_detail.png",
+      "bytes": 58488,
+      "candidateSHA256": "6463FD63200FE86527BEFEC13467E365BF2204A7A889F30A6A84F1C37D51549D",
+      "formalSHA256": "6463FD63200FE86527BEFEC13467E365BF2204A7A889F30A6A84F1C37D51549D",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "provenance/input-snapshot-used.json",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\evidence\\input-snapshot-used.json",
+      "bytes": 5668,
+      "candidateSHA256": "0229D3A6C5E064E12ED6E144982658D2F9E25B6195AE2D2DF4B5A629C7FA0033",
+      "formalSHA256": "0229D3A6C5E064E12ED6E144982658D2F9E25B6195AE2D2DF4B5A629C7FA0033",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "provenance/particle-seeds.json",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\evidence\\particle-seeds.json",
+      "bytes": 6122,
+      "candidateSHA256": "B844EF6B3DD5414AE043C1FF22C091A2FADACE86BBAEB5B73600C213BCB4C86C",
+      "formalSHA256": "B844EF6B3DD5414AE043C1FF22C091A2FADACE86BBAEB5B73600C213BCB4C86C",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "provenance/asset-verification.json",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\evidence\\asset-verification.json",
+      "bytes": 4711,
+      "candidateSHA256": "F4AA1C7E8E8ED5D8D2EB57226439AFC64BE385BA14D864B32EE7E58CCB9753FA",
+      "formalSHA256": "F4AA1C7E8E8ED5D8D2EB57226439AFC64BE385BA14D864B32EE7E58CCB9753FA",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "provenance/reopen-validation.json",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\evidence\\reopen-validation.json",
+      "bytes": 1142,
+      "candidateSHA256": "23DD1A04D91DC3301130C627C29E5D29A824A5A27C6E8D07A78CC4301F096A04",
+      "formalSHA256": "23DD1A04D91DC3301130C627C29E5D29A824A5A27C6E8D07A78CC4301F096A04",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "provenance/native-gif-encoding.json",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\evidence\\native-gif-encoding.json",
+      "bytes": 728,
+      "candidateSHA256": "385505634DBE1E1B2BC0387F7FB2326D708FF4CB172FAF733C637E18012F38B4",
+      "formalSHA256": "385505634DBE1E1B2BC0387F7FB2326D708FF4CB172FAF733C637E18012F38B4",
+      "byteIdentical": true
+    },
+    {
+      "formalPath": "provenance/candidate-manifest.json",
+      "candidatePath": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\manifest.json",
+      "bytes": 49517,
+      "candidateSHA256": "E5CB8F5FADA414121FB03DC812B56DB26704035F420ECF5CB413A0EF8245FA23",
+      "formalSHA256": "E5CB8F5FADA414121FB03DC812B56DB26704035F420ECF5CB413A0EF8245FA23",
+      "byteIdentical": true
+    }
+  ]
+}

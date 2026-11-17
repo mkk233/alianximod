@@ -1,0 +1,32 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "stage": "final-integration",
+  "review": "不是正式复审。设计 2/2，实现正式复审 0/3。",
+  "compile": "未运行，待统一编译",
+  "stopWrite": true,
+  "staffKept": "basic_staff StaffData(6, 0.20, 0.10, 100, null)；test_staff StaffData(32, 15.0, 0.50, 1000, null)",
+  "dScorchBridge": "尚未交回，本轮未读其中间源码，不挡住本单",
+  "remaining": {
+    "B": "无",
+    "C": "BatchFlightBook 实体拦截在取消时不要扩圈或记已处理",
+    "D": "ContactEnchantState.open(ContactCarrier, EnchantmentSnapshot, ResourceEnchantLoad, UUID)，SurfaceFireHosts.open 传入同一载荷和根"
+  },
+  "implemented": [
+    "fire_flame_trail",
+    "fire_meteorite",
+    "fire_shock_ring",
+    "rule_surface_anchor",
+    "fire_upwell",
+    "rule_stagger",
+    "rule_hit_continue",
+    "fire_seed_sow",
+    "fire_kindle",
+    "fire_detonate",
+    "fire_nether_gloom",
+    "earth_break_ground",
+    "fire_spark"
+  ],
+  "nameGate": "退出码 1。本轮文件无新增违规。OriginalHumanoid.java:165 i，:202 to。",
+  "ownershipFileCount": 62
+}

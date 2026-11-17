@@ -1,0 +1,34 @@
+{
+  "submitted": true,
+  "countsAsReview": false,
+  "design": "2/2",
+  "implementation": "0/3",
+  "compiled": false,
+  "srcEdited": false,
+  "playtestPassed": false,
+  "basicStaffSlots": 6,
+  "testStaff": {
+    "id": "test_staff",
+    "name": "测试法杖",
+    "slots": 32,
+    "manaCap": 1000,
+    "cooldownReduction": 0.5,
+    "regenBonusField": 15.0,
+    "workbookRow": false
+  },
+  "baselineSha256": "019494902D2EE20A30E6F8DDA382020E5BD911153C68D6EE4151A7D941E251EA",
+  "liveSha256": "5F702287B96EDEB0A87AA132C6585397DFE728B05FC6F3347C7CBF3C5B4443C0",
+  "bytes": 221329,
+  "mtime": "2026-10-31 03:36:35.510",
+  "counts": {"已完成": 40, "待制作": 0, "制作中": 16, "待验收": 4, "unique": 60},
+  "makingRows": "6-18",
+  "archiveSheetUntouched": true,
+  "changedParts": ["制作中", "数据表", "xl/workbook.xml"],
+  "manifest": "docs/开发记录/术式批量制作/待制作-20261031/resource-manifest-v1.json",
+  "indexAppended": true,
+  "authors": {
+    "A": "f3218ea0-0ec4-43ba-ad9a-098da8ac9d0f",
+    "B": "4916f9a6-4412-453d-9aff-cc07e68fc051",
+    "C": null
+  }
+}

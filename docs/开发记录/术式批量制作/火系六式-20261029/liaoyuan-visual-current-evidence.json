@@ -1,0 +1,70 @@
+{
+  "task": "liaoyuan-visual-repair-current-task",
+  "author": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+  "review": "本阶段额度已用完，返修结果未追加复审",
+  "compile": "未跑。停止全部源码写入，待统一编译",
+  "sharedFuelReverted": false,
+  "rootCauses": [
+    {
+      "id": "ground-clock",
+      "symptom": "只有起手有特效，周围地面没有持续点燃；无火种时每20tick的地火也看不见火",
+      "server": "GroundFireFields.open 原第54行把 getTickCount 写入画面 birth/expire",
+      "client": "FireVisualClient.drawGrounds 第169-174行用 getGameTime 减 birth，并在 gameTime > expireTick 时删除",
+      "fix": "画面改用 level.getGameTime() 与 getGameTime()+lifeTicks。伤害节拍仍用 getTickCount。同一火场的后续包不重置出生；时钟对不上时只在第一次把包内时长挂到客户端世界时间"
+    },
+    {
+      "id": "attached-visual",
+      "symptom": "有余额的持续伤害在20tick间隔和离场后缺少跟随目标的火舌与炭纹",
+      "server": "FireVisualRelay 原先 find 只返回同效果键第一条；火场 GROUND_END 不携带附着",
+      "client": "drawSpread 原先只画 ground_flame，不画 ground_embers",
+      "fix": "shownSpread 取仍存活的最高档，轨道清空、死亡或中止才发 BURN_END。客户端在目标身上同时画火舌和炭纹，不按启动上限计时，也不随火场删除"
+    }
+  ],
+  "unchanged": [
+    "BurnLedger.pump",
+    "FuelShare",
+    "FireConsumption 挂载与扣款",
+    "点火+2 热光束+1 火球+3",
+    "魔力60 冷却600",
+    "地火与附着互斥",
+    "StandSurface.columnTop",
+    "不放置原版火，不改地形"
+  ],
+  "gameSentence": "铺开地表火层。踩中后按段燃烧，每段消耗10点火种，燃料耗尽或到达期限就结束",
+  "resources": [
+    "textures/effect/liaoyuan_v2/ground_flame.png",
+    "textures/effect/liaoyuan_v2/ground_embers.png",
+    "textures/effect/liaoyuan_v2/spread_wave.png"
+  ],
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "introduced": [],
+    "preexisting": [
+      "OriginalHumanoid.java:165 i",
+      "OriginalHumanoid.java:202 to"
+    ]
+  },
+  "sources": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/GroundFireFields.java",
+      "sha256": "476C45516D3AA55750ACBA0C196A76A5B690019282606C1F4617A6417E3C5A99",
+      "mtime": "2026-10-29 23:12:51.6352206",
+      "mtimeBefore": "2026-10-29 21:12:53"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+      "sha256": "3530865D3D9B2306FC43FEA849379B5785E960132D0A0312C5E6ED889DDBAAD5",
+      "mtime": "2026-10-29 23:13:25.4719538",
+      "mtimeBefore": "2026-10-29 04:13:24"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireVisualRelay.java",
+      "sha256": "6FF8382B6E9FF73C2D0A20D7B9D849E3C218BF21A3FD97D1C3F264754FA91F1D",
+      "mtime": "2026-10-29 23:12:54.5845171",
+      "mtimeBefore": "2026-10-29 03:33:48"
+    }
+  ],
+  "concurrentWrite": "改前三份源码时间与读到的内容一致，补丁期间没有外部覆盖。表记录者的 liaoyuan-visual-intake 只读未改。",
+  "playtest": "未做。待统一编译后由用户重测火浪、200tick火海、每列地表、无火种地火、有火种附着离场后续烧。"
+}

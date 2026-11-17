@@ -1,0 +1,80 @@
+{
+  "submitted": false,
+  "baselineSha256": "CE0AF918E0A99DC586232E76B156465B12AEDF8A5C0047CAD8268BEF6A3D899D",
+  "baselineMtime": "2026-10-29T04:32:26.244+08:00",
+  "baselineBytes": 79045,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\test-stage-writeback-术式制作表-20261029-112003-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\test-stage-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "8B2CE30DA8263C3FCBB1AFD4E162EE953D7141EFF5FE433B9AB4995511B61054",
+  "changedParts": [
+    "xl/worksheets/sheet3.xml"
+  ],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 6,
+    "待验收": 0
+  },
+  "resourceDetailIds": [
+    {
+      "id": "water_mist",
+      "row": 3
+    },
+    {
+      "id": "water_deep_pressure",
+      "row": 4
+    },
+    {
+      "id": "water_deep_pressure",
+      "row": 5
+    },
+    {
+      "id": "tide_mark",
+      "row": 6
+    }
+  ],
+  "snapshotReconcile": [
+    {
+      "id": "fire_liaoyuan",
+      "row": 3,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    },
+    {
+      "id": "fire_liaoli",
+      "row": 4,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    },
+    {
+      "id": "fire_fentian",
+      "row": 5,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    },
+    {
+      "id": "fire_heat_up",
+      "row": 6,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    },
+    {
+      "id": "fire_burn",
+      "row": 7,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    },
+    {
+      "id": "fire_cool",
+      "row": 8,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+模型：Cursor CLI --model grok-4.7-high-fast。本阶段只读事实采集，不是正式设计/代码复审。不要递归派发代理/CLI，不写文件，不编译/测试/启动游戏/提交，不读写制作表。主会话已读 AGENTS 和 max-dispatch；本单是其派发任务，直接完成只读工作。
+工作区 D:/alianximod。允许读 src/main/java/com/bslx/XueXiMod/{shu,network,player,event} 下与数值/平衡实际有关的类；重点 SkillUsePacket、Technique、ModTechniques、ReleaseDefinitions、ReleaseBatch/Tally、TechniqueHitSpec/Entity、SwordEntity、WeaponEnchant/EnchantBonus、MagicPool、具体effects及其settings。可 rg 定位调用链再读取，不通读无关仓库。可读 docs/底座功能点.md 与现有开发说明。git 命令附 -c safe.directory=D:/alianximod，不改全局配置。
+用户批准：底座统一读取/应用配置；术式各自声明有意义的伤害倍率、魔力消耗、冷却、射程/速度/持续等关键参数；少量全局倍率；未配置用默认值；全局倍率仅应用一次；后续新术式必须兼容。不要开放 ChainRole、结算顺序、命中去重等结构机制。不要改变原玩法默认数值。
+事实采集：列出现有注册术式的关键可调平衡字段及其真正消费处，优先可共用字段而非每个视觉常量；分别说明玩家攻击/固定伤害、三重与多重汇总、附魔/领域/持续伤害等调用链，标明倍率何处已有应用；魔力消耗、冷却、范围速度持续哪些走共用读取哪些硬编码；客户端是否读取这些参数，哪些值已经同步/NBT保存。目的为唯一Astra给实现架构裁决提供事实，不由你进行正式方案裁决。输出路径行号、完整但紧凑的调用链/风险事实和可按文件拆作者的清单。最终报告stdout返回，不在磁盘写报告。

@@ -1,0 +1,27 @@
+{
+  "submitted": false,
+  "baselineSha256": "FEFBC4B30087C08C6E8B9B6C482FEEEBC8DB6F6F3E65F6B88117E4D3D630C070",
+  "baselineMtime": "2026-10-29T23:09:37.059+08:00",
+  "baselineBytes": 167294,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\liaoyuan-visual-writeback-术式制作表-20261029-232409-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\liaoyuan-visual-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "FF2D4227625B4C1E19ADD49BC34BFCFD6B9CA98F0C8D221FF6AA98AB0B75E0E8",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "changedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml"
+  ],
+  "from": {
+    "sheet": "制作中",
+    "row": 6
+  },
+  "to": {
+    "sheet": "待验收",
+    "row": 5
+  }
+}

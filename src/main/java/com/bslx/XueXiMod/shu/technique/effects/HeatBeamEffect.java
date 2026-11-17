@@ -3,8 +3,10 @@ package com.bslx.XueXiMod.shu.technique.effects;
 import com.bslx.XueXiMod.shu.Technique;
 import com.bslx.XueXiMod.shu.technique.TechniqueCastContext;
 import com.bslx.XueXiMod.shu.technique.TechniqueEffect;
+import com.bslx.XueXiMod.shu.balance.BalanceKeys;
 import com.bslx.XueXiMod.shu.technique.release.ReleaseDefinition;
 import com.bslx.XueXiMod.shu.technique.release.ReleaseRegistry;
+import com.bslx.XueXiMod.shu.technique.release.batch.SpecialBalance;
 import com.bslx.XueXiMod.shu.technique.release.entity.TechniqueHitSpec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -16,6 +18,15 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
 
 public class HeatBeamEffect implements TechniqueEffect {
+    static final double BEAM_LENGTH = 6.0D;
+    static final int HIT_INTERVAL = 10;
+
+    public static void declareBalance() {
+        SpecialBalance.publish(SpecialBalance.blocks(
+                SpecialBalance.ticks(SpecialBalance.begin("heat_beam"), BalanceKeys.HIT_INTERVAL_TICKS, HIT_INTERVAL, "热光束命中间隔"),
+                BalanceKeys.BEAM_LENGTH, BEAM_LENGTH, "热光束长度"));
+    }
+
     @Override
     public void execute(ServerPlayer player, Technique technique, ItemStack weapon, TechniqueCastContext cast) {
         ReleaseDefinition definition = ReleaseRegistry.get(technique.getId());
@@ -27,12 +38,15 @@ public class HeatBeamEffect implements TechniqueEffect {
             TechniqueHitSpec spec = new TechniqueHitSpec();
             spec.techniqueId = technique.getId();
             spec.path = TechniqueHitSpec.Path.FOLLOW;
+            double beamLength = SpecialBalance.number("heat_beam", BalanceKeys.BEAM_LENGTH, BEAM_LENGTH);
+            float beamWidth = definition != null ? definition.thickness() : 1.0F;
             spec.speed = 0.0;
-            spec.length = 6.0;
-            spec.width = 1.0;
-            spec.height = 1.0;
+            spec.length = beamLength;
+            spec.width = beamWidth;
+            spec.height = beamWidth;
             spec.lifetime = lifetime;
-            spec.hitInterval = 10;
+            spec.hitInterval = SpecialBalance.integer("heat_beam", BalanceKeys.HIT_INTERVAL_TICKS, HIT_INTERVAL);
+            spec.seedPoints = 1;
             spec.lockThisCast = cast.lockThisCast();
             spec.dropThisCast = cast.dropThisCast();
             spec.visual = 2;

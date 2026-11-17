@@ -1,0 +1,29 @@
+{
+  "text": "GROK_FALLBACK_CONNECTION_OK",
+  "stopReason": "end_turn",
+  "sessionId": "4ef76331-d1d2-4b5f-aea8-8a575106d7d2",
+  "requestId": "8c2d5b94-3796-4bd8-9d55-509f23482a33",
+  "cwd": "D:\\alianximod",
+  "thought": "已明确仅需返回一行：GROK_FALLBACK_CONNECTION_OK。",
+  "usage": {
+    "input_tokens": 8878,
+    "cache_read_input_tokens": 1152,
+    "cache_creation_input_tokens": 0,
+    "output_tokens": 109,
+    "reasoning_tokens": 100,
+    "total_tokens": 10139
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.01291048,
+  "total_cost_usd_ticks": 129104800,
+  "modelUsage": {
+    "grok-4.7-build-fast": {
+      "inputTokens": 8878,
+      "outputTokens": 109,
+      "cacheReadInputTokens": 1152,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 1,
+      "costUSD": 0.01291048
+    }
+  }
+}

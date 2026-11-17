@@ -1,0 +1,140 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "flame_trail_v3_integration",
+  "attemptId": "20261113-integrate-01",
+  "techniqueB": "fire_flame_trail",
+  "version": "v3",
+  "date": "2026-11-13",
+  "status": "archived_and_runtime_integrated_compile_pending",
+  "userConfirmation": "接入这版",
+  "note": "清单列出本目录除 manifest.json 以外的全部文件。清单自身的哈希写在接入回执，避免把自身哈希写进正文后改变哈希。",
+  "fileCount": 21,
+  "files": [
+    {
+      "relativePath": "flame_trail_v3_grid_4x4.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame_trail_v3_grid_4x4.png",
+      "bytes": 4893,
+      "sha256": "5B02474D568E799CB3D42721BBFA8F56787C45478155657F0172817D71A3D6C4"
+    },
+    {
+      "relativePath": "flame_trail_v3_single.gif",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame_trail_v3_single.gif",
+      "bytes": 10375,
+      "sha256": "8F8EFCEB9094E551619AC4CA2ED023035ABE94ECA3C9FF8A1C66C2CABD1C8217"
+    },
+    {
+      "relativePath": "flame_trail_v3_strip.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame_trail_v3_strip.png",
+      "bytes": 3718,
+      "sha256": "50946B75FBBEFDA2F4A34FC337FD8A665A18F0428638F574CB2880CA88B06D1D"
+    },
+    {
+      "relativePath": "flame_trail_v3.aseprite",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame_trail_v3.aseprite",
+      "bytes": 5259,
+      "sha256": "63E13A9356846D981AB111DFE2A774ED50827E741EB8654E9385293E77DDFD9E"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage0-launch-t03.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-2d-stage0-launch-t03.png",
+      "bytes": 3378,
+      "sha256": "E9108FC52EE2E5584F6A45E6F5C198ECED4538413451242E9CDEA2BAE1DA0098"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage1-dash-t08.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-2d-stage1-dash-t08.png",
+      "bytes": 4073,
+      "sha256": "1666042D4892ED4290634E25C394C223F20F687130661F6122D67650DEBCEB7B"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage2-full-wake-t14.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-2d-stage2-full-wake-t14.png",
+      "bytes": 4725,
+      "sha256": "21A3B7E311F154D5B1FC535C3E6CBEE0732EFA02418E4D57D10FDD659CC59106"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage3-linger-rise-t24.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-2d-stage3-linger-rise-t24.png",
+      "bytes": 4503,
+      "sha256": "CA15F0214139F336AC56A3496DEF4C65AA97AAD51B1F5C10C7621FC720F88D72"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage4-breakup-embers-t36.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-2d-stage4-breakup-embers-t36.png",
+      "bytes": 3552,
+      "sha256": "2C86E2281378D57D22C8049701933E47F54C5768A10885B05A3EA97EF49ACC5E"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage5-fadeout-t48.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-2d-stage5-fadeout-t48.png",
+      "bytes": 2651,
+      "sha256": "5889648709ADF863A47A90337563E2C895F58368469BBD210C29180F8F18231E"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-hero-closeup.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-3d-hero-closeup.png",
+      "bytes": 102042,
+      "sha256": "971A4D712280FE532EA627527FEA64C057D8382DB6141E895A4C9E0361ACB377"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-side-view.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-3d-side-view.png",
+      "bytes": 63633,
+      "sha256": "6578840919FBE79E9415C81F7C5186D6C69BA1403441127A77C44A716024DC1B"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage1-launch-t03.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-3d-stage1-launch-t03.png",
+      "bytes": 62143,
+      "sha256": "9EFF891C5CEB834BA1850E128B51B3DEE6EBE8ABBB3439FC5D1EAD4B7EA6B8A7"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage2-dash-t08.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-3d-stage2-dash-t08.png",
+      "bytes": 66244,
+      "sha256": "EEE351B9D1BF4DDB7020E5FCB02964383B4D35C731C531A9CB146770117933F9"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage3-full-wake-t14.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-3d-stage3-full-wake-t14.png",
+      "bytes": 70414,
+      "sha256": "1F876758949F26CDD57651197BB5DEFC2C75B6FFCD8B7B513BA7938F105D7A74"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage4-linger-rise-t24.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-3d-stage4-linger-rise-t24.png",
+      "bytes": 68013,
+      "sha256": "3C0DDE4900A6FF661F4488FE22F29A5D917762D6277FC13BCC7626A7687549C4"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage5-breakup-embers-t38.png",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-3d-stage5-breakup-embers-t38.png",
+      "bytes": 63498,
+      "sha256": "BA1BBE06A522A7526C6DEFE9A45193014F12909AC0F02CB52410BF70D3B1FB28"
+    },
+    {
+      "relativePath": "flame-trail-v3-complete-effect.gif",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-complete-effect.gif",
+      "bytes": 111390,
+      "sha256": "C1ACF6A69E6DC464C158F1A7EFD96942A3C54A5C9E51F9AE9F4CDC773110BF44"
+    },
+    {
+      "relativePath": "flame-trail-v3-projectile-composite.bbmodel",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-projectile-composite.bbmodel",
+      "bytes": 70103,
+      "sha256": "365064F04B05A9816CDCE2E37B77B09F2944A34A4EF31D82B968C9F2701CD85F"
+    },
+    {
+      "relativePath": "flame-trail-v3-scene.aseprite",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/flame-trail-v3-scene.aseprite",
+      "bytes": 104367,
+      "sha256": "21EFDFE97C317CF36DB57164A8BE0874434FBE64426FABB96FB40A591B04EC49"
+    },
+    {
+      "relativePath": "README.md",
+      "absolutePath": "D:/alianximod/docs/资源库/特效/火焰/留焰_真实翻腾尾迹_v3/README.md",
+      "bytes": 4177,
+      "sha256": "808265B801BD3E7CAF85AAF0FED99AA0ACB66843153DCB32E408BB7F5F528579"
+    }
+  ]
+}

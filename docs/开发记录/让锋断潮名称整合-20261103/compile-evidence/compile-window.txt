@@ -1,0 +1,2 @@
+started=2026-11-03T15:39:43.983+08:00 javaHome=C:\Program Files\Java\jdk-17 gradleUserHome=C:\Users\baishang\.gradle command=.\gradlew.bat compileJava --offline --no-daemon
+ended=2026-11-03T15:40:12.387+08:00 exit=0

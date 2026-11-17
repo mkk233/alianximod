@@ -1,0 +1,23 @@
+领域生命周期停维护 — 本作者文件清单
+写入已收束。未经新派发不再改这些路径。
+
+改过的源文件（LastWriteTime）：
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\domain\DomainDefinition.java	2026-10-29 22:00:22.612
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\domain\DomainService.java	2026-10-29 22:00:23.918
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\WaterReleaseDefinition.java	2026-10-29 22:00:45.242
+
+改前快照（相对结构，复制时保留原文件时间）：
+D:\alianximod\docs\开发记录\领域附魔底座实施-20261029\lifecycle-evidence\before\src\main\java\com\bslx\XueXiMod\shu\technique\release\domain\DomainDefinition.java	2026-10-25 05:40:21.334	3747
+D:\alianximod\docs\开发记录\领域附魔底座实施-20261029\lifecycle-evidence\before\src\main\java\com\bslx\XueXiMod\shu\technique\release\domain\DomainService.java	2026-10-27 04:39:02.204	8602
+D:\alianximod\docs\开发记录\领域附魔底座实施-20261029\lifecycle-evidence\before\src\main\java\com\bslx\XueXiMod\shu\technique\release\WaterReleaseDefinition.java	2026-10-26 20:28:28.847	12192
+
+未改：DomainInstance.java、接触包、计费类、FieldZones、护体、屏障、制作表。
+未跑：gradlew、compileJava、测试、游戏。
+name-gate 退出码 1。本作者三个源文件无命中。未改文件 OriginalHumanoid.java 两处旧名只记录。
+
+契约同步（只改检查预期，三个生产文件时间未变）：
+D:\alianximod\src\test\java\com\bslx\XueXiMod\shu\technique\release\ReleaseContainerEnergyCheck.java	2026-10-29 22:04:11.447
+快照：
+D:\alianximod\docs\开发记录\领域附魔底座实施-20261029\lifecycle-evidence\before\src\test\java\com\bslx\XueXiMod\shu\technique\release\ReleaseContainerEnergyCheck.java	2026-10-27 04:42:57.856	22493
+name-gate 仍退出码 1。本文件无命中。OriginalHumanoid.java 两处旧名未修。
+未运行测试、编译或游戏。写入已收束。

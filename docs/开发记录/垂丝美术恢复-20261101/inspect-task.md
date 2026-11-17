@@ -1,0 +1,6 @@
+本次阶段：只读定位。你是唯一 Cursor CLI 执行者，固定 --model grok-4.7-high-fast；不要再递归派发。主会话按 max-dispatch 调度你。
+用户：cursor错误地修改了垂丝美术素材，要求恢复以前的版本。已批准的逻辑是上沿走弹道、帘身垂直下泻，锁定/追踪/领域规则兼容；逻辑保持，原来使用的瀑布美术应保留。上一轮声称没有改 WaterCurtainRenderer，但用户实际反馈外观有误，请用当前文件核实，勿假定反馈错误。
+只读范围 D:/alianximod 内与垂丝相关的 Git status/history/diff、src/main/resources/assets/xueximod/ 下 waterfall* 运行素材、docs/资源库/特效/水流/垂丝聚能瀑布_v1/、docs/资源库/过程归档/垂丝瀑布接入-20261026/、相关 README/开发记录；Java 限 WaterCurtainRenderer、WaterCurtainLayout、WeepingCurtainEffect、WeepingSettings、WeepingCurtain、WeepingLipMotion 及必要的直接资源引用。不要通读整仓，不写任何项目文件，不运行 Gradle、不打包、不启动游戏，不碰制作表（这是定点恢复，不领取批量任务）。禁止 git reset/clean/checkout/restore。若 Git ownership 不匹配只使用命令级 -c safe.directory=D:/alianximod。
+已知原版归档 README：游戏采用 waterfall_runtime_left/middle/right.png 各4x2048（16帧，每帧4x128），waterfall_thin.png 64x2048。旧 waterfall_left/middle/right.png、waterfall_flow.png、waterfall_charge.* 只是参考或美术演示。原版6色、亮纹下流、左右4px边缘固定宽，中段按4px重复或裁切，最细4+4+4。
+请：1) 查运行素材与归档原版的 SHA256/尺寸/最近修改以及 git 跟踪情况，若逐字一致直接说明。2) 定位任何实际生效的美术变化（贴图被换、引用错、UV/分件/拉伸/材质更改等），用具体文件/行号与可追溯旧版来源支撑。3) 给出恢复最小清单，区分素材恢复、渲染恢复、不可回滚的已授权运动逻辑。若目前只有尺寸改动，明确它对视觉影响，不自行定义新美术。4) 确认能否找到可信旧版，缺失则报告；不要凭空重画。
+返回完整最终反馈：事实/证据、需恢复路径及原版来源、是否需改 Java、阻塞。不要输出执行过程。本单为信息采集，不开启额外正式正确性复审。

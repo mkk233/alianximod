@@ -1,0 +1,28 @@
+{
+  "task": "seed-source-implement",
+  "sourceWriteStopped": true,
+  "compileStatus": "待统一编译",
+  "reviewAdded": false,
+  "nameGateExitCode": 1,
+  "nameGateLog": "docs/开发记录/术式批量制作/火系六式-20261029/seed-source-implementation-name-gate.txt",
+  "files": [
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedGrant.java", "sha256": "6B2BC42A776DE35F8C1ACB1B92B2582AF56213DD9B6E830E9109F24B930172F8", "mtime": "2026-10-29 12:45:12.7472922"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantBonus.java", "sha256": "F706EBE642B0BE02E103E6F0FDDC718D7C093BAA82592FBA3E46FC0AAACE270F", "mtime": "2026-10-29 12:45:15.6068751"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantmentSnapshot.java", "sha256": "F5C2B3FA2AF855747CD46304973BC0C78CF93B6C49EE9FE80DB4F221253ED56C", "mtime": "2026-10-29 12:45:25.5539364"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/WeaponEnchant.java", "sha256": "6251AE5D7EAC0CC562B3499438BA6F76B01F7A2538669994A52C820F895996E1", "mtime": "2026-10-29 12:46:33.5439953"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java", "sha256": "F7C60E01EC9295F3C0EE24B31029A614AB5F80ECD3468A81366B81E2B6FC0C53", "mtime": "2026-10-29 12:45:16.0972745"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java", "sha256": "382015A6071CA0204BF3CF343D230E7AD374A5C150FE371D9472203869C316A7", "mtime": "2026-10-29 12:46:13.5316186"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java", "sha256": "F3E6D4C4233F5B7624FD85CB9BF1F1DE58D0790DA3D6102C09D7070A9CDD9868", "mtime": "2026-10-29 12:45:27.0972347"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java", "sha256": "BA5D551BA515FF06082214CCB7BAF78FD04DFF5E306DB2A87ED8B69D6D696F05", "mtime": "2026-10-29 12:45:34.9659414"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java", "sha256": "EB9D28579813ED27A7EF9DB08A01D27C00A7F2F2D6FE3377FEB8D7382225D0A2", "mtime": "2026-10-29 12:45:54.5478610"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java", "sha256": "3403EF6C20659FBDD9FA70DFFAE5CBD8ED19D94B508AB054109431C20C064136", "mtime": "2026-10-29 12:46:37.3625450"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/HeatBeamEffect.java", "sha256": "7F3403812705D52ABA1420293DBEA1134A2583424106BD12ACCEBE6662DE1BBE", "mtime": "2026-10-29 12:45:33.6410014"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireOrbEffect.java", "sha256": "197E580ED74017577846A8F408681544C9B60A5B7C4E8A533127029BFC924775", "mtime": "2026-10-29 12:45:33.6425053"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java", "sha256": "59A69CAA5879EB6290BFFC9B734C234203ABDC17E8D6A63560C4F9D43D4B3E90", "mtime": "2026-10-29 12:46:36.6204253"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java", "sha256": "052242CEF481905EF05D73AE8DAAE68FE9D4312AF86702DB9BF2D4D25B7E1D8A", "mtime": "2026-10-29 12:46:35.8294253"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java", "sha256": "7DA5C7B07C21D5D1E7C51319CC9452BD7254863F0AC898BAF1D3A626B4B1B657", "mtime": "2026-10-29 12:45:35.7399397"},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java", "sha256": "C555BF9C6DD5082F51CA6C8BC56B95C453E4DEEB273598F9A5052BD75F211EB6", "mtime": "2026-10-29 12:45:16.5475473"},
+    {"path": "src/main/resources/assets/xueximod/lang/zh_cn.json", "sha256": "037EF58BCD12C6D58EEB171D5CC57DB7D97D3562974227D9BA857C74790EAE52", "mtime": "2026-10-29 12:46:38.3285838"},
+    {"path": "src/main/resources/assets/xueximod/lang/en_us.json", "sha256": "BAE83B8143C8390D85E534D3AF04F46F424A46EEDC93CD9417DFD712812730E1", "mtime": "2026-10-29 12:46:40.4509151"}
+  ]
+}

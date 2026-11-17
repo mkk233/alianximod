@@ -1,0 +1,79 @@
+{
+  "capturedUtc": "2026-10-30T09:28:08.7578015Z",
+  "evidence": "path/length/UTC ticks only; no independent SHA256",
+  "files": [
+    {
+      "path": "D:\\alianximod\\native\\compute\\build-unix.sh",
+      "length": 7988,
+      "lastWriteTimeUtc": "2026-10-30T08:36:18.6624943Z",
+      "lastWriteTimeUtcTicks": 639289461786624943
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\build-windows.cmd",
+      "length": 172,
+      "lastWriteTimeUtc": "2026-10-30T07:51:43.2419211Z",
+      "lastWriteTimeUtcTicks": 639289435032419211
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\build-windows.ps1",
+      "length": 21632,
+      "lastWriteTimeUtc": "2026-10-30T09:25:31.7987271Z",
+      "lastWriteTimeUtcTicks": 639289491317987271
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\CMakeLists.txt",
+      "length": 5578,
+      "lastWriteTimeUtc": "2026-10-30T08:19:17.3762850Z",
+      "lastWriteTimeUtcTicks": 639289451573762850
+    },
+    {
+      "path": "D:\\alianximod\\native\\compute\\src\\xueximod_compute.c",
+      "length": 44883,
+      "lastWriteTimeUtc": "2026-10-30T08:20:44.3571677Z",
+      "lastWriteTimeUtcTicks": 639289452443571677
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeCalls.java",
+      "length": 23770,
+      "lastWriteTimeUtc": "2026-10-30T09:16:08.4285691Z",
+      "lastWriteTimeUtcTicks": 639289485684285691
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeCodes.java",
+      "length": 10073,
+      "lastWriteTimeUtc": "2026-10-30T08:24:05.9560954Z",
+      "lastWriteTimeUtcTicks": 639289454459560954
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeLiveDispatch.java",
+      "length": 16481,
+      "lastWriteTimeUtc": "2026-10-30T08:15:20.8434903Z",
+      "lastWriteTimeUtcTicks": 639289449208434903
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeOutput.java",
+      "length": 738,
+      "lastWriteTimeUtc": "2026-10-30T07:59:10.9331621Z",
+      "lastWriteTimeUtcTicks": 639289439509331621
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\ComputeSelection.java",
+      "length": 9122,
+      "lastWriteTimeUtc": "2026-10-30T09:16:07.0112234Z",
+      "lastWriteTimeUtcTicks": 639289485670112234
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\JavaReference.java",
+      "length": 38172,
+      "lastWriteTimeUtc": "2026-10-30T08:00:57.9955117Z",
+      "lastWriteTimeUtcTicks": 639289440579955117
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\compute\\XuexiComputeNative.java",
+      "length": 1495,
+      "lastWriteTimeUtc": "2026-10-30T07:59:13.6103036Z",
+      "lastWriteTimeUtcTicks": 639289439536103036
+    }
+  ],
+  "scope": "native source/build scripts and seven Java compute bridge files"
+}

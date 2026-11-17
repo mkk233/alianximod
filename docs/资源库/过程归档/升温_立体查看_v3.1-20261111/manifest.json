@@ -1,0 +1,142 @@
+{
+  "version": "heat-up-v3.1-spatial-preview",
+  "created": "2026-11-11",
+  "status": "awaiting-3d-feedback",
+  "sourceFiles": [
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_躯干少量热纹_v3.1-20261111\\heat_up_v3_1.aseprite",
+      "sha256": "EF3057485A5140564C75886AF6A0B8D8BE62B15C88C81F5F00AA2B24CA5BF266"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_躯干少量热纹_v3.1-20261111\\heat_up_v3_1_entry.aseprite",
+      "sha256": "AD69A611CECDA715290E36518D5DCBE44DA665DBD37B4AE8B9D9BDDEBE29A0BC"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\build_scene_v3_1.js",
+      "bytes": 7374,
+      "sha256": "358EA7C1450E4E07562A880BFE2BA02291BEC0B661FAB563923D960537B9F0F7"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\capture_v3_1.js",
+      "bytes": 1706,
+      "sha256": "C85742310337D72D86353C2ECF1F347CEB939F1FF2887A77629C9EF36086354A"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_front_entry_loop.aseprite",
+      "bytes": 475291,
+      "sha256": "E0F53126810E17E48CA34C5EAC604F96D5CE0806A420971D0D3F372378ED7796"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_front_entry_loop.gif",
+      "bytes": 70639,
+      "sha256": "4A82496611675AA423227C8F85D84685C529AC08B682630E35619A56F100E392"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_front.png",
+      "bytes": 22355,
+      "sha256": "DD633878A8A1CDFF2B906E76248C02811310795082A128E7722D494C6E267913"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_rear_loop.aseprite",
+      "bytes": 206460,
+      "sha256": "8D3BFFDD94F30D191201AB6C074E4EC57E1FBAD5A4E608864E8892296C2C0706"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_rear_loop.gif",
+      "bytes": 37598,
+      "sha256": "C5958631B193E02C5CF2C29EF01B760ABA6DB1ACE318F34CC635F941BA9B055B"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_rear.png",
+      "bytes": 23456,
+      "sha256": "70166EDB0A7A7444FB834266216A6B04961630290C2C637FB30A338A04E5AA79"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_side.png",
+      "bytes": 18050,
+      "sha256": "40A1E8E7E83E49427B3C52152EFA097FA51920E892B0C5E5E583C46BFFA12C44"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\heat_up_v3_1_spatial.bbmodel",
+      "bytes": 94810,
+      "sha256": "D0AF5ED3CFC8112150FC80C12348F92D84715E86D5FBC6B54E84D71129BFCBA1"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\placement.json",
+      "bytes": 11694,
+      "sha256": "006C9367E56EFCA0D4D3546CFAB13C5669EF4C138AD19C10A051A56207A98D5C"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\entry_embers.png",
+      "bytes": 616,
+      "sha256": "5197B8FC47216C96E8AEC59B7BADCAE2B20F65C33D8BD258573997FD56B967E5"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\entry_hand_front.png",
+      "bytes": 1035,
+      "sha256": "89755CFA8EA4D838505D16EC70342711F55ADFD503970C012B87A3535C0B332F"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\entry_hand_rear.png",
+      "bytes": 1662,
+      "sha256": "BD70F5C35588AA5BA0F03DFBBA57599DB44EA694D04E70E11DB4EFE9CB47EDA8"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\entry_leg_front.png",
+      "bytes": 1547,
+      "sha256": "CA9B5D9D17A0837B23F9A5A2265757A1FAFB3870587B4CC03C3138314DBFF0E1"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\entry_leg_rear.png",
+      "bytes": 2078,
+      "sha256": "3F748DC5070F8A776E954E6163934F9D07969DBB41C123C0B8E09A2D69034632"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\entry_torso.png",
+      "bytes": 1320,
+      "sha256": "C13079460F369267CC2179B88106D5FECC558956C463E372846D347FC8CA03B3"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\entry_warmth.png",
+      "bytes": 820,
+      "sha256": "1DFE5791A28CD74960F68B876057AF6DDC690968C5165A443B24005197F041F4"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\loop_embers.png",
+      "bytes": 1752,
+      "sha256": "5187983B7C9C6487D4D5D2F729DBAFC2D699DC9D912AFCEF3598A227F94CC244"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\loop_hand_front.png",
+      "bytes": 2840,
+      "sha256": "DEFD1A669ECF08F1C3E0352E4B90DDF40A55CAF7A55A489AC521AC352DA04D9C"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\loop_hand_rear.png",
+      "bytes": 4638,
+      "sha256": "DD12107EF74732DC55D8ACB0C96FA843110CDFB65633BB5CF01C3C06107F5A6C"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\loop_leg_front.png",
+      "bytes": 4675,
+      "sha256": "DBC1EDB648604946097DE12203C6892B2D2A7776D6F4509350B467B7EEA19FC4"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\loop_leg_rear.png",
+      "bytes": 6325,
+      "sha256": "D996B489A133D49BF314E22161371FB0B4DAC0BEDCC6517441F676DDA9A94A69"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\loop_torso.png",
+      "bytes": 4101,
+      "sha256": "E1432DBC637B19E7EA502B2409E0C127D0A8B4F1CB1EEBF6EEEA1DCB1A4C0B91"
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\升温_立体查看_v3.1-20261111\\textures\\loop_warmth.png",
+      "bytes": 1808,
+      "sha256": "1E81DC23F43BC2C32CB0BD9C94129D22B1EE2396755E820E18939A49D22FA345"
+    }
+  ]
+}

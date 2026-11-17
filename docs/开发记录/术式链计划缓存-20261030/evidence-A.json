@@ -1,0 +1,120 @@
+{
+  "author": "A",
+  "startedUtc": "2026-10-30T02:42:39.756Z",
+  "finishedUtc": "2026-10-30T02:56:44.338Z",
+  "released": true,
+  "compileJava": false,
+  "gamePlaytest": false,
+  "formalReviewStarted": false,
+  "modifiedFiles": [
+    "src/main/java/com/bslx/XueXiMod/network/ChainSteps.java",
+    "src/main/java/com/bslx/XueXiMod/network/CompiledReleaseStep.java",
+    "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java",
+    "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+    "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java",
+    "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+    "src/main/java/com/bslx/XueXiMod/network/AttackBudgetWindow.java"
+  ],
+  "newFiles": [
+    "src/main/java/com/bslx/XueXiMod/network/CompiledCastPlan.java",
+    "src/main/java/com/bslx/XueXiMod/network/CastPlanContext.java",
+    "src/main/java/com/bslx/XueXiMod/network/CastPlanCache.java",
+    "src/main/java/com/bslx/XueXiMod/network/CastPlanCacheEvents.java",
+    "docs/术式链计划缓存说明.md",
+    "docs/开发记录/术式链计划缓存-20261030/implementation-A-final.md",
+    "docs/开发记录/术式链计划缓存-20261030/evidence-A.json"
+  ],
+  "backupPaths": [
+    "docs/开发记录/术式链计划缓存-20261030/backup-A/src/main/java/com/bslx/XueXiMod/network/ChainSteps.java",
+    "docs/开发记录/术式链计划缓存-20261030/backup-A/src/main/java/com/bslx/XueXiMod/network/CompiledReleaseStep.java",
+    "docs/开发记录/术式链计划缓存-20261030/backup-A/src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java",
+    "docs/开发记录/术式链计划缓存-20261030/backup-A/src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+    "docs/开发记录/术式链计划缓存-20261030/backup-A/src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java",
+    "docs/开发记录/术式链计划缓存-20261030/backup-A/src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java",
+    "docs/开发记录/术式链计划缓存-20261030/backup-A/src/main/java/com/bslx/XueXiMod/network/AttackBudgetWindow.java"
+  ],
+  "backupHashes": {
+    "src/main/java/com/bslx/XueXiMod/network/ChainSteps.java": {
+      "sha256": "D131D8E8A10A8A2298DD63E919EBC667B2FDF2922DAC69785C08CC97FB652CDC",
+      "utcMtime": "2026-10-23T16:11:15.337Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CompiledReleaseStep.java": {
+      "sha256": "430A6BD68959697233F1317FBD0D57EACB972D1D041547B0EFD1AF59EBE9C62D",
+      "utcMtime": "2026-10-28T10:28:51.206Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java": {
+      "sha256": "DC674A2FE6ADF83C66AE985C4E13F7FE8300FFFDDAFB41D6DE5AD8FD29A84336",
+      "utcMtime": "2026-10-28T18:47:57.901Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java": {
+      "sha256": "CD687E039956C02BE1142949844E5D6B8B0C34F33BA6EF9BC7149DFB47317EB2",
+      "utcMtime": "2026-10-29T20:03:53.814Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java": {
+      "sha256": "334F936B45C2D44DC628C574CFEB5A5B0D8E1C000B7C89B0AB096E447DE8AA27",
+      "utcMtime": "2026-10-29T20:04:33.714Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java": {
+      "sha256": "F5596A56DC07140130F8A0F2F966AC082805BEF5361565A2B6BB259766698B0A",
+      "utcMtime": "2026-10-28T10:28:56.690Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/AttackBudgetWindow.java": {
+      "sha256": "181A33A06A28B734E998AB574977917396C9AB5A09FB8716A3F9DBA55108F841",
+      "utcMtime": "2026-10-23T21:58:56.371Z"
+    }
+  },
+  "finalFiles": {
+    "src/main/java/com/bslx/XueXiMod/network/ChainSteps.java": {
+      "sha256": "3619111E65C2E3488F1B3A3511CC006468A1D5B470D38CF45528B3C693E9650C",
+      "utcMtime": "2026-10-30T02:44:58.634Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CompiledReleaseStep.java": {
+      "sha256": "FCFC3882CCE28C0EAB008AB1A5314FCD0BA6B3925DBC81F3064496B87AA90DB2",
+      "utcMtime": "2026-10-30T02:46:21.514Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java": {
+      "sha256": "7B399681F7E2525EFFF2C23884BCDE1A6A434EF2553CAFD52E31AC319019E287",
+      "utcMtime": "2026-10-30T02:48:01.764Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java": {
+      "sha256": "A17D7A0D85D875AD4D7C388EA42CF939EF40269E35CFCB9A0B73D6113583D498",
+      "utcMtime": "2026-10-30T02:50:51.877Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java": {
+      "sha256": "54F1649A6C316378CF74555C5EDB2043B9C8DED4FD1687D3C23759C6856A8DC4",
+      "utcMtime": "2026-10-30T02:48:56.646Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java": {
+      "sha256": "3C400A2B378D36C0E476E4F22892E87A0418AACEB3F217E27E38492C04DB6055",
+      "utcMtime": "2026-10-30T02:51:20.186Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/AttackBudgetWindow.java": {
+      "sha256": "89B989FA59363064A73A10D3B039D5C40DD41E75A899344AC3387DCB3E8742C4",
+      "utcMtime": "2026-10-30T02:51:12.436Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CompiledCastPlan.java": {
+      "sha256": "0A61341EFE5238EC8502966B63268FB548B15BBAAB7F68651969BAFCDA3B9DE1",
+      "utcMtime": "2026-10-30T02:46:03.060Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CastPlanContext.java": {
+      "sha256": "94B1CF0E0DAF8A0A3180521DB8689BCC022EA2F397F0EC2B952466F86AC3D87F",
+      "utcMtime": "2026-10-30T02:45:03.434Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CastPlanCache.java": {
+      "sha256": "73B71269FD3DC1A1CE765F6375A328F847F4C28664C5A5D1E651DDBE56B85D0A",
+      "utcMtime": "2026-10-30T02:45:14.979Z"
+    },
+    "src/main/java/com/bslx/XueXiMod/network/CastPlanCacheEvents.java": {
+      "sha256": "B8723B32E4CD22487A6D9A86C44EEE231F30A6FC2F0F3D7D60B591F0075C8B94",
+      "utcMtime": "2026-10-30T02:44:59.782Z"
+    },
+    "docs/术式链计划缓存说明.md": {
+      "sha256": "4387386ADA38AB9E8CC64BD0268D9D834E065FE1B7C42A5566DA61590916413E",
+      "utcMtime": "2026-10-30T02:55:51.167Z"
+    },
+    "docs/开发记录/术式链计划缓存-20261030/implementation-A-final.md": {
+      "sha256": "02DC2129F74B6FD8B4EC10EB600187796F115786B6FD7AD4BA130336F85A8966",
+      "utcMtime": "2026-10-30T02:56:37.626Z"
+    }
+  }
+}

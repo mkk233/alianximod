@@ -1,0 +1,1607 @@
+{
+  "frames": 160,
+  "normalAlwaysFacesCamera": true,
+  "planeAlwaysInFrontOfTarget": true,
+  "checks": [
+    {
+      "view": "orbit",
+      "frame": 0,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "orbit",
+      "frame": 1,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.64130103440759,
+      "nearestTargetDepth": 94.72130103440759,
+      "width": 44.60484374158243,
+      "height": 44.60484374158243
+    },
+    {
+      "view": "orbit",
+      "frame": 2,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.42779996183465,
+      "nearestTargetDepth": 94.50779996183465,
+      "width": 44.51790385155,
+      "height": 44.51790385155
+    },
+    {
+      "view": "orbit",
+      "frame": 3,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.24609399928511,
+      "nearestTargetDepth": 94.3260939992851,
+      "width": 44.392727098602414,
+      "height": 44.392727098602414
+    },
+    {
+      "view": "orbit",
+      "frame": 4,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 94.09696123958669,
+      "nearestTargetDepth": 94.17696123958669,
+      "width": 44.231094094152894,
+      "height": 44.231094094152894
+    },
+    {
+      "view": "orbit",
+      "frame": 5,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 93.98104029211163,
+      "nearestTargetDepth": 94.06104029211163,
+      "width": 44.035175427997196,
+      "height": 44.035175427997196
+    },
+    {
+      "view": "orbit",
+      "frame": 6,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.89882754815352,
+      "nearestTargetDepth": 93.97882754815352,
+      "width": 43.80752377710539,
+      "height": 43.80752377710539
+    },
+    {
+      "view": "orbit",
+      "frame": 7,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 93.85067505530361,
+      "nearestTargetDepth": 93.93067505530361,
+      "width": 43.551068348306245,
+      "height": 43.551068348306245
+    },
+    {
+      "view": "orbit",
+      "frame": 8,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 93.8367890099287,
+      "nearestTargetDepth": 93.91678900992869,
+      "width": 43.26911061400008,
+      "height": 43.26911061400008
+    },
+    {
+      "view": "orbit",
+      "frame": 9,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.85722887420694,
+      "nearestTargetDepth": 93.93722887420694,
+      "width": 42.96532000325128,
+      "height": 42.96532000325128
+    },
+    {
+      "view": "orbit",
+      "frame": 10,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.91190712150146,
+      "nearestTargetDepth": 93.99190712150146,
+      "width": 42.64372791400158,
+      "height": 42.64372791400158
+    },
+    {
+      "view": "orbit",
+      "frame": 11,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.00058961116306,
+      "nearestTargetDepth": 94.08058961116306,
+      "width": 42.30871812696264,
+      "height": 42.30871812696264
+    },
+    {
+      "view": "orbit",
+      "frame": 12,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.12289659115615,
+      "nearestTargetDepth": 94.20289659115615,
+      "width": 41.9650114469774,
+      "height": 41.9650114469774
+    },
+    {
+      "view": "orbit",
+      "frame": 13,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 94.27830432421563,
+      "nearestTargetDepth": 94.35830432421562,
+      "width": 41.61764220166027,
+      "height": 41.61764220166027
+    },
+    {
+      "view": "orbit",
+      "frame": 14,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.46614733056973,
+      "nearestTargetDepth": 94.54614733056972,
+      "width": 41.27192412877235,
+      "height": 41.27192412877235
+    },
+    {
+      "view": "orbit",
+      "frame": 15,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.68562123762716,
+      "nearestTargetDepth": 94.76562123762716,
+      "width": 40.933403232081865,
+      "height": 40.933403232081865
+    },
+    {
+      "view": "orbit",
+      "frame": 16,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 94.93578622442365,
+      "nearestTargetDepth": 95.01578622442365,
+      "width": 40.811582248255405,
+      "height": 40.811582248255405
+    },
+    {
+      "view": "orbit",
+      "frame": 17,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.69208404016926,
+      "nearestTargetDepth": 94.77208404016926,
+      "width": 40.9385918206376,
+      "height": 40.9385918206376
+    },
+    {
+      "view": "orbit",
+      "frame": 18,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000004,
+      "planeViewDepth": 94.47904526094125,
+      "nearestTargetDepth": 94.55904526094125,
+      "width": 41.277371072978674,
+      "height": 41.277371072978674
+    },
+    {
+      "view": "orbit",
+      "frame": 19,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.29758215149856,
+      "nearestTargetDepth": 94.37758215149856,
+      "width": 41.62323896326065,
+      "height": 41.62323896326065
+    },
+    {
+      "view": "orbit",
+      "frame": 20,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.14847176473461,
+      "nearestTargetDepth": 94.2284717647346,
+      "width": 41.97065343762902,
+      "height": 41.97065343762902
+    },
+    {
+      "view": "orbit",
+      "frame": 21,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.03235261421729,
+      "nearestTargetDepth": 94.11235261421729,
+      "width": 42.31430755468295,
+      "height": 42.31430755468295
+    },
+    {
+      "view": "orbit",
+      "frame": 22,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 93.94972193997609,
+      "nearestTargetDepth": 94.02972193997608,
+      "width": 42.64917616256734,
+      "height": 42.64917616256734
+    },
+    {
+      "view": "orbit",
+      "frame": 23,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 93.90093357924378,
+      "nearestTargetDepth": 93.98093357924378,
+      "width": 42.970549542770286,
+      "height": 42.970549542770286
+    },
+    {
+      "view": "orbit",
+      "frame": 24,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.88619645127113,
+      "nearestTargetDepth": 93.96619645127113,
+      "width": 43.274056458752504,
+      "height": 43.274056458752504
+    },
+    {
+      "view": "orbit",
+      "frame": 25,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 93.90557366270268,
+      "nearestTargetDepth": 93.98557366270268,
+      "width": 43.55567908879604,
+      "height": 43.55567908879604
+    },
+    {
+      "view": "orbit",
+      "frame": 26,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 93.95898223734419,
+      "nearestTargetDepth": 94.03898223734419,
+      "width": 43.81176221825945,
+      "height": 43.81176221825945
+    },
+    {
+      "view": "orbit",
+      "frame": 27,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.04619347147954,
+      "nearestTargetDepth": 94.12619347147954,
+      "width": 44.03901886593132,
+      "height": 44.03901886593132
+    },
+    {
+      "view": "orbit",
+      "frame": 28,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.16683391321537,
+      "nearestTargetDepth": 94.24683391321537,
+      "width": 44.23453426120962,
+      "height": 44.23453426120962
+    },
+    {
+      "view": "orbit",
+      "frame": 29,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.32038696165903,
+      "nearestTargetDepth": 94.40038696165902,
+      "width": 44.39576980166694,
+      "height": 44.39576980166694
+    },
+    {
+      "view": "orbit",
+      "frame": 30,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.50619507908326,
+      "nearestTargetDepth": 94.58619507908325,
+      "width": 44.52056832302975,
+      "height": 44.52056832302975
+    },
+    {
+      "view": "orbit",
+      "frame": 31,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.72346260660338,
+      "nearestTargetDepth": 94.80346260660338,
+      "width": 44.6071617168,
+      "height": 44.6071617168
+    },
+    {
+      "view": "orbit",
+      "frame": 32,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 94.97125917131112,
+      "nearestTargetDepth": 95.05125917131112,
+      "width": 44.65418163980407,
+      "height": 44.65418163980407
+    },
+    {
+      "view": "orbit",
+      "frame": 33,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000004,
+      "planeViewDepth": 95.24852367027387,
+      "nearestTargetDepth": 95.32852367027387,
+      "width": 44.66067377558452,
+      "height": 44.66067377558452
+    },
+    {
+      "view": "orbit",
+      "frame": 34,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 95.55406881434075,
+      "nearestTargetDepth": 95.63406881434075,
+      "width": 44.62611582733478,
+      "height": 44.62611582733478
+    },
+    {
+      "view": "orbit",
+      "frame": 35,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 95.88658621229673,
+      "nearestTargetDepth": 95.96658621229673,
+      "width": 44.55043914144422,
+      "height": 44.55043914144422
+    },
+    {
+      "view": "orbit",
+      "frame": 36,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 96.24465197359467,
+      "nearestTargetDepth": 96.32465197359467,
+      "width": 44.43405357369532,
+      "height": 44.43405357369532
+    },
+    {
+      "view": "orbit",
+      "frame": 37,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 96.6267328056735,
+      "nearestTargetDepth": 96.7067328056735,
+      "width": 44.27787490998305,
+      "height": 44.27787490998305
+    },
+    {
+      "view": "orbit",
+      "frame": 38,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 97.03119257975219,
+      "nearestTargetDepth": 97.11119257975218,
+      "width": 44.083353833225836,
+      "height": 44.083353833225836
+    },
+    {
+      "view": "orbit",
+      "frame": 39,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999996,
+      "planeViewDepth": 97.4562993369842,
+      "nearestTargetDepth": 97.5362993369842,
+      "width": 43.86486716714381,
+      "height": 43.86486716714381
+    },
+    {
+      "view": "orbit",
+      "frame": 40,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 97.90023270497163,
+      "nearestTargetDepth": 97.98023270497163,
+      "width": 43.92497060188235,
+      "height": 43.92497060188235
+    },
+    {
+      "view": "orbit",
+      "frame": 41,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999996,
+      "planeViewDepth": 97.4562993369842,
+      "nearestTargetDepth": 97.5362993369842,
+      "width": 43.86486716714381,
+      "height": 43.86486716714381
+    },
+    {
+      "view": "orbit",
+      "frame": 42,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 97.03119257975216,
+      "nearestTargetDepth": 97.11119257975216,
+      "width": 44.08335383322582,
+      "height": 44.08335383322582
+    },
+    {
+      "view": "orbit",
+      "frame": 43,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 96.6267328056735,
+      "nearestTargetDepth": 96.7067328056735,
+      "width": 44.27787490998305,
+      "height": 44.27787490998305
+    },
+    {
+      "view": "orbit",
+      "frame": 44,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 96.24465197359471,
+      "nearestTargetDepth": 96.32465197359471,
+      "width": 44.43405357369534,
+      "height": 44.43405357369534
+    },
+    {
+      "view": "orbit",
+      "frame": 45,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 95.88658621229669,
+      "nearestTargetDepth": 95.96658621229669,
+      "width": 44.5504391414442,
+      "height": 44.5504391414442
+    },
+    {
+      "view": "orbit",
+      "frame": 46,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 95.55406881434074,
+      "nearestTargetDepth": 95.63406881434074,
+      "width": 44.626115827334765,
+      "height": 44.626115827334765
+    },
+    {
+      "view": "orbit",
+      "frame": 47,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 95.24852367027381,
+      "nearestTargetDepth": 95.32852367027381,
+      "width": 44.66067377558452,
+      "height": 44.66067377558452
+    },
+    {
+      "view": "orbit",
+      "frame": 48,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999996,
+      "planeViewDepth": 94.9712591713111,
+      "nearestTargetDepth": 95.0512591713111,
+      "width": 44.65418163980405,
+      "height": 44.65418163980405
+    },
+    {
+      "view": "orbit",
+      "frame": 49,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.72346260660339,
+      "nearestTargetDepth": 94.80346260660339,
+      "width": 44.60716171680001,
+      "height": 44.60716171680001
+    },
+    {
+      "view": "orbit",
+      "frame": 50,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999996,
+      "planeViewDepth": 94.50619507908327,
+      "nearestTargetDepth": 94.58619507908327,
+      "width": 44.52056832302976,
+      "height": 44.52056832302976
+    },
+    {
+      "view": "orbit",
+      "frame": 51,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.32038696165903,
+      "nearestTargetDepth": 94.40038696165902,
+      "width": 44.39576980166694,
+      "height": 44.39576980166694
+    },
+    {
+      "view": "orbit",
+      "frame": 52,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.16683391321536,
+      "nearestTargetDepth": 94.24683391321535,
+      "width": 44.2345342612096,
+      "height": 44.2345342612096
+    },
+    {
+      "view": "orbit",
+      "frame": 53,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.04619347147953,
+      "nearestTargetDepth": 94.12619347147952,
+      "width": 44.03901886593132,
+      "height": 44.03901886593132
+    },
+    {
+      "view": "orbit",
+      "frame": 54,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.95898223734413,
+      "nearestTargetDepth": 94.03898223734413,
+      "width": 43.81176221825946,
+      "height": 43.81176221825946
+    },
+    {
+      "view": "orbit",
+      "frame": 55,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 93.90557366270268,
+      "nearestTargetDepth": 93.98557366270268,
+      "width": 43.55567908879604,
+      "height": 43.55567908879604
+    },
+    {
+      "view": "orbit",
+      "frame": 56,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.88619645127112,
+      "nearestTargetDepth": 93.96619645127112,
+      "width": 43.274056458752504,
+      "height": 43.274056458752504
+    },
+    {
+      "view": "orbit",
+      "frame": 57,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 93.90093357924378,
+      "nearestTargetDepth": 93.98093357924378,
+      "width": 42.9705495427703,
+      "height": 42.9705495427703
+    },
+    {
+      "view": "orbit",
+      "frame": 58,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.94972193997607,
+      "nearestTargetDepth": 94.02972193997607,
+      "width": 42.64917616256734,
+      "height": 42.64917616256734
+    },
+    {
+      "view": "orbit",
+      "frame": 59,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.03235261421733,
+      "nearestTargetDepth": 94.11235261421733,
+      "width": 42.31430755468295,
+      "height": 42.31430755468295
+    },
+    {
+      "view": "orbit",
+      "frame": 60,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.14847176473462,
+      "nearestTargetDepth": 94.22847176473462,
+      "width": 41.97065343762902,
+      "height": 41.97065343762902
+    },
+    {
+      "view": "orbit",
+      "frame": 61,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 94.29758215149864,
+      "nearestTargetDepth": 94.37758215149864,
+      "width": 41.623238963260654,
+      "height": 41.623238963260654
+    },
+    {
+      "view": "orbit",
+      "frame": 62,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.47904526094126,
+      "nearestTargetDepth": 94.55904526094126,
+      "width": 41.277371072978674,
+      "height": 41.277371072978674
+    },
+    {
+      "view": "orbit",
+      "frame": 63,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.69208404016926,
+      "nearestTargetDepth": 94.77208404016926,
+      "width": 40.93859182063761,
+      "height": 40.93859182063761
+    },
+    {
+      "view": "orbit",
+      "frame": 64,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 94.93578622442365,
+      "nearestTargetDepth": 95.01578622442365,
+      "width": 40.811582248255405,
+      "height": 40.811582248255405
+    },
+    {
+      "view": "orbit",
+      "frame": 65,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.68562123762715,
+      "nearestTargetDepth": 94.76562123762714,
+      "width": 40.93340323208185,
+      "height": 40.93340323208185
+    },
+    {
+      "view": "orbit",
+      "frame": 66,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 94.46614733056973,
+      "nearestTargetDepth": 94.54614733056972,
+      "width": 41.27192412877234,
+      "height": 41.27192412877234
+    },
+    {
+      "view": "orbit",
+      "frame": 67,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 94.27830432421561,
+      "nearestTargetDepth": 94.35830432421561,
+      "width": 41.61764220166028,
+      "height": 41.61764220166028
+    },
+    {
+      "view": "orbit",
+      "frame": 68,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.12289659115618,
+      "nearestTargetDepth": 94.20289659115618,
+      "width": 41.9650114469774,
+      "height": 41.9650114469774
+    },
+    {
+      "view": "orbit",
+      "frame": 69,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.00058961116306,
+      "nearestTargetDepth": 94.08058961116306,
+      "width": 42.30871812696263,
+      "height": 42.30871812696263
+    },
+    {
+      "view": "orbit",
+      "frame": 70,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.91190712150147,
+      "nearestTargetDepth": 93.99190712150147,
+      "width": 42.64372791400158,
+      "height": 42.64372791400158
+    },
+    {
+      "view": "orbit",
+      "frame": 71,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.85722887420691,
+      "nearestTargetDepth": 93.93722887420691,
+      "width": 42.96532000325127,
+      "height": 42.96532000325127
+    },
+    {
+      "view": "orbit",
+      "frame": 72,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999998,
+      "planeViewDepth": 93.8367890099287,
+      "nearestTargetDepth": 93.91678900992869,
+      "width": 43.26911061400008,
+      "height": 43.26911061400008
+    },
+    {
+      "view": "orbit",
+      "frame": 73,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 93.85067505530361,
+      "nearestTargetDepth": 93.93067505530361,
+      "width": 43.551068348306245,
+      "height": 43.551068348306245
+    },
+    {
+      "view": "orbit",
+      "frame": 74,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 93.89882754815352,
+      "nearestTargetDepth": 93.97882754815352,
+      "width": 43.80752377710539,
+      "height": 43.80752377710539
+    },
+    {
+      "view": "orbit",
+      "frame": 75,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000004,
+      "planeViewDepth": 93.98104029211162,
+      "nearestTargetDepth": 94.06104029211161,
+      "width": 44.035175427997196,
+      "height": 44.035175427997196
+    },
+    {
+      "view": "orbit",
+      "frame": 76,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999996,
+      "planeViewDepth": 94.09696123958668,
+      "nearestTargetDepth": 94.17696123958667,
+      "width": 44.23109409415289,
+      "height": 44.23109409415289
+    },
+    {
+      "view": "orbit",
+      "frame": 77,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.24609399928514,
+      "nearestTargetDepth": 94.32609399928513,
+      "width": 44.39272709860242,
+      "height": 44.39272709860242
+    },
+    {
+      "view": "orbit",
+      "frame": 78,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.42779996183465,
+      "nearestTargetDepth": 94.50779996183465,
+      "width": 44.517903851549995,
+      "height": 44.517903851549995
+    },
+    {
+      "view": "orbit",
+      "frame": 79,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 94.64130103440759,
+      "nearestTargetDepth": 94.72130103440759,
+      "width": 44.60484374158243,
+      "height": 44.60484374158243
+    },
+    {
+      "view": "orbit",
+      "frame": 80,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 94.88568297263396,
+      "nearestTargetDepth": 94.96568297263396,
+      "width": 44.65216710995112,
+      "height": 44.65216710995112
+    },
+    {
+      "view": "orbit",
+      "frame": 81,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 95.15989929553598,
+      "nearestTargetDepth": 95.23989929553598,
+      "width": 44.65890977137196,
+      "height": 44.65890977137196
+    },
+    {
+      "view": "orbit",
+      "frame": 82,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 95.46277576672064,
+      "nearestTargetDepth": 95.54277576672064,
+      "width": 44.62454126269757,
+      "height": 44.62454126269757
+    },
+    {
+      "view": "orbit",
+      "frame": 83,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 95.79301542263978,
+      "nearestTargetDepth": 95.87301542263978,
+      "width": 44.54898671789433,
+      "height": 44.54898671789433
+    },
+    {
+      "view": "orbit",
+      "frame": 84,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 96.14920412638754,
+      "nearestTargetDepth": 96.22920412638754,
+      "width": 44.43265197811859,
+      "height": 44.43265197811859
+    },
+    {
+      "view": "orbit",
+      "frame": 85,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 96.52981662325136,
+      "nearestTargetDepth": 96.60981662325136,
+      "width": 44.276451242654474,
+      "height": 44.276451242654474
+    },
+    {
+      "view": "orbit",
+      "frame": 86,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 96.93322307208693,
+      "nearestTargetDepth": 97.01322307208693,
+      "width": 44.08183624325119,
+      "height": 44.08183624325119
+    },
+    {
+      "view": "orbit",
+      "frame": 87,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 97.35769602454822,
+      "nearestTargetDepth": 97.43769602454822,
+      "width": 43.86319955307056,
+      "height": 43.86319955307056
+    },
+    {
+      "view": "orbit",
+      "frame": 88,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 97.80141782228667,
+      "nearestTargetDepth": 97.88141782228666,
+      "width": 43.92338931581691,
+      "height": 43.92338931581691
+    },
+    {
+      "view": "orbit",
+      "frame": 89,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 97.35769602454823,
+      "nearestTargetDepth": 97.43769602454823,
+      "width": 43.86319955307058,
+      "height": 43.86319955307058
+    },
+    {
+      "view": "orbit",
+      "frame": 90,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000004,
+      "planeViewDepth": 96.93322307208692,
+      "nearestTargetDepth": 97.01322307208692,
+      "width": 44.08183624325119,
+      "height": 44.08183624325119
+    },
+    {
+      "view": "orbit",
+      "frame": 91,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 96.52981662325138,
+      "nearestTargetDepth": 96.60981662325138,
+      "width": 44.276451242654474,
+      "height": 44.276451242654474
+    },
+    {
+      "view": "orbit",
+      "frame": 92,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999999,
+      "planeViewDepth": 96.14920412638753,
+      "nearestTargetDepth": 96.22920412638753,
+      "width": 44.432651978118585,
+      "height": 44.432651978118585
+    },
+    {
+      "view": "orbit",
+      "frame": 93,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 95.7930154226398,
+      "nearestTargetDepth": 95.8730154226398,
+      "width": 44.548986717894316,
+      "height": 44.548986717894316
+    },
+    {
+      "view": "orbit",
+      "frame": 94,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 95.46277576672063,
+      "nearestTargetDepth": 95.54277576672062,
+      "width": 44.624541262697555,
+      "height": 44.624541262697555
+    },
+    {
+      "view": "orbit",
+      "frame": 95,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1.0000000000000002,
+      "planeViewDepth": 95.159899295536,
+      "nearestTargetDepth": 95.23989929553599,
+      "width": 44.65890977137198,
+      "height": 44.65890977137198
+    },
+    {
+      "view": "fixed",
+      "frame": 0,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 1,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 2,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 3,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 4,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 5,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 6,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 7,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 8,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 9,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 10,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 11,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 12,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 13,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 14,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 15,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 16,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 17,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 18,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 19,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 20,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 21,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 22,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 23,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 24,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 25,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 26,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 27,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 28,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 29,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 30,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "fixed",
+      "frame": 31,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 0.9999999999999997,
+      "planeViewDepth": 94.88568297263394,
+      "nearestTargetDepth": 94.96568297263394,
+      "width": 44.652167109951115,
+      "height": 44.652167109951115
+    },
+    {
+      "view": "wide",
+      "frame": 0,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 1,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 2,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 3,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 4,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 5,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 6,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 7,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 8,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 9,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 10,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 11,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 12,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 13,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 14,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 15,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 16,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 17,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 18,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 19,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 20,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 21,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 22,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 23,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 24,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 25,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 26,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 27,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 28,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 29,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 30,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    },
+    {
+      "view": "wide",
+      "frame": 31,
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "normalDot": 1,
+      "planeViewDepth": 92.8877175057124,
+      "nearestTargetDepth": 92.9677175057124,
+      "width": 39.45133035878639,
+      "height": 39.45133035878639
+    }
+  ]
+}

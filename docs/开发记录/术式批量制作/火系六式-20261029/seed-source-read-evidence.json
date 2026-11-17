@@ -1,0 +1,101 @@
+{
+  "task": "seed-source-read",
+  "scope": "read-only wiring facts for magic_ignite, heat_beam, fire_orb and FireSeedState.grant",
+  "sourceModified": false,
+  "reviewAdded": false,
+  "gradleRun": false,
+  "nameGateRun": false,
+  "grantCallSitesInMain": 0,
+  "requestedAmounts": {
+    "igniteEnchantOrWeaponAttack": 2,
+    "heatBeamPerHit": 1,
+    "fireOrbOnHit": 3
+  },
+  "ids": {
+    "magic_ignite": {
+      "name": "点火",
+      "enchantment": true,
+      "releaseDefinition": false,
+      "effect": "MagicIgniteEffect",
+      "effectLine": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicIgniteEffect.java:16-27",
+      "chainCallsEffect": false
+    },
+    "heat_beam": {
+      "name": "热光束",
+      "kind": "HIT_VOLUME",
+      "tag": "SUSTAINED",
+      "trajectory": "FOLLOW_LOOK",
+      "hitInterval": 10,
+      "burstOnImpact": false,
+      "fieldRadius": 0,
+      "persistentFlow": false,
+      "register": "ReleaseDefinitions.java:15"
+    },
+    "fire_orb": {
+      "name": "火球",
+      "kind": "HIT_VOLUME",
+      "tag": "TRIGGER",
+      "trajectory": "STRAIGHT",
+      "hitInterval": 0,
+      "burstOnImpact": false,
+      "fieldRadius": 0,
+      "persistentFlow": false,
+      "burnSecondsInListener": 4,
+      "register": "ReleaseDefinitions.java:21"
+    }
+  },
+  "effectiveHitSteps": [
+    "TechniqueHitSettle.canHit alive, not spectator, not caster",
+    "tryHit hitOnce or hitInterval gate",
+    "settle setSecondsOnFire before hurt",
+    "listener.onHit after settle when not burst",
+    "Tally.flush one hurtRoot per target per round, damage multiplied by accepted copies"
+  ],
+  "openChoices": [
+    "whether +2 stacks on the host 1 or 3",
+    "whether the unused MagicIgniteEffect look box also grants",
+    "heat beam hit means interval gate or successful flush hurt",
+    "fire orb 3 is per victim or once per projectile",
+    "which FireCastContext is reused; one batch context blocks a second grant on the same target",
+    "productionMultiplier stays 1"
+  ],
+  "checksThatWouldStopMatching": [
+    "FireSeedCheck.production second grant on same context and target must be 0",
+    "FireSeedCheck.production grant after consume must be 0",
+    "FireReleaseStructureCheck forbids heat_beam, magic_ignite, fire_orb, setSecondsOnFire inside release/fire"
+  ],
+  "verificationNotRun": [
+    "src/test/java/com/bslx/XueXiMod/status/fire/seed/FireSeedCheck.java",
+    "src/test/java/com/bslx/XueXiMod/shu/technique/release/fire/FireReleaseStructureCheck.java"
+  ],
+  "sources": [
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicIgniteEffect.java", "sha256": "E66C2E5214BB4FE97B8FFB7E4609AFED46EB9AD3A09E77F5994BAE6281554B4A", "mtime": "2026-10-20 01:49:59.0436122"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/HeatBeamEffect.java", "sha256": "C8968E15F8B2C01BD410EC8D5F316C0CC62CC42F636E64785C0B985FDB4E8D2B", "mtime": "2026-10-11 04:13:40.8172563"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireOrbEffect.java", "sha256": "542C536473FA9423FDDD318371A1D09AD1D734AF6D969BCD0698DD32DF3F7D6A", "mtime": "2026-10-29 03:28:07.8092410"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java", "sha256": "0232C89803D9DE48B021BFBE5764DCF38449A67534FE497D1C5754E5E1038EC4", "mtime": "2026-10-29 02:56:43.1245925"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java", "sha256": "2979B0584625307DC454A65351990453D9CAE226CE0C885FF5BB9137675C5F03", "mtime": "2026-10-29 02:56:08.9157658"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java", "sha256": "A4C3D38C98D00C30293503E912480E43925DC923A7F37F0645D0273800511610", "mtime": "2026-10-25 23:02:24.2898985"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantBonus.java", "sha256": "7F12050BA5129C882529029A26BF8F9D29FD637F0863FF9923F37ABB24D313B1", "mtime": "2026-10-25 23:02:23.1209968"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/WeaponEnchant.java", "sha256": "7B576CAE3F5667B59D60409D429859BB4F7B17A9760B3301123CCDABFA793766", "mtime": "2026-10-25 23:02:52.2996887"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java", "sha256": "BC40DE8FAD5697194B4B4EBC122E01C56C6BF0016F6CDCC17CEDD3915175838A", "mtime": "2026-10-27 02:53:18.4626608"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java", "sha256": "71B188EEB8B741CF3A456049E41BDE0E5D0D55433CAE7F92A3BF9F5FF3683A2A", "mtime": "2026-10-29 02:56:26.6094182"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java", "sha256": "E8BE6CB2C2901079A6F29F94BACB54E20E7FD9964DD6BBC6CF3871E84378DCE8", "mtime": "2026-10-29 02:56:37.1098890"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java", "sha256": "436070AA8E37DD64F5491133CD19731874D0140BDAABB55C7A63B9BF2E11422D", "mtime": "2026-10-27 02:52:51.8055239"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java", "sha256": "C33653D0F069ADA7BF89A59664FA943FF70E6348424E472B9E2D5C46145F3015", "mtime": "2026-10-29 02:48:14.5896232"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/FlowRoundLedger.java", "sha256": "4FE4C1687F295FAC682687D453D44A7E55767C1A599387AA56D6948D39A0D744", "mtime": "2026-10-27 02:52:26.7717044"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/TideMarkCopies.java", "sha256": "0903A1362BC79C6F4F51712E4C77F42B743C184F4680DCE8CD56AA20031DB630", "mtime": "2026-10-25 23:02:10.5636543"},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java", "sha256": "F30C2E46A5BE9414CF6C6860C66F1BCD2F9911A5C594E9423B2CD30AA5AFEE98", "mtime": "2026-10-28 18:28:54.0681186"},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java", "sha256": "3BF4BC544CA3F3F5D27F32118DBFA34CBE7F3095798D995BF953F645137C07D3", "mtime": "2026-10-29 02:59:04.3123427"},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java", "sha256": "DC674A2FE6ADF83C66AE985C4E13F7FE8300FFFDDAFB41D6DE5AD8FD29A84336", "mtime": "2026-10-29 02:47:57.9018025"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedState.java", "sha256": "91E746A6FA87FF744AEB690BECA9CE093C126092CC9514976FD663D5D958EC31", "mtime": "2026-10-28 22:40:46.9035306"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedAccount.java", "sha256": "5023B2EAE80B8840C0748B40C76E2EC4EF059EC4B0249DC124884E0FDD7F95AF", "mtime": "2026-10-28 22:40:46.9035306"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireCastContext.java", "sha256": "AEE3BE1A66A5D0396487B818A260389F956AEF771CA2068CCCA3E7584C72EBEE", "mtime": "2026-10-28 22:38:40.9236634"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedMath.java", "sha256": "44013068A5D4C3D639F6B8808F8D54A95D5AA4A5775B05E6F1C0C19DFD4EA7EE", "mtime": "2026-10-28 22:38:38.2993397"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedLifecycle.java", "sha256": "81062354EC77FD3149C725DD9A21815C92DD04C8D6DD93574A492E654E13609A", "mtime": "2026-10-28 22:38:56.9529052"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateData.java", "sha256": "A70A3496B3D0574E37ED8A771237837E184F732B3F3793B3A99AF71A31FB460F", "mtime": "2026-10-21 23:33:46.2615055"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateService.java", "sha256": "57DD26BC51F813170D827B82FDF4B0CF4F9C28E8BF92C52E682CC82A4435477B", "mtime": "2026-10-26 20:42:36.3332111"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/DamagePermission.java", "sha256": "38B5782CC5ED8459F0D3A92F810C1109C7C5FD3FCA8768FC0C78D256EF382200", "mtime": "2026-10-29 02:48:48.0002117"},
+    {"path": "src/test/java/com/bslx/XueXiMod/status/fire/seed/FireSeedCheck.java", "sha256": "C35AE8DF97536F3908FE7D55E46CEB1C940BA4AD0408ADA58AAC1BAA94DFDE03", "mtime": "2026-10-28 22:41:37.4080568"},
+    {"path": "src/test/java/com/bslx/XueXiMod/shu/technique/release/fire/FireReleaseStructureCheck.java", "sha256": "3DF0B61A058A3548DFD6FF89DA91FAC73E07763D05EB524DC355AE2F1E23227A", "mtime": "2026-10-28 23:26:47.9747863"}
+  ]
+}

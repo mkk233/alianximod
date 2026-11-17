@@ -1,0 +1,37 @@
+[
+  {
+    "path": "D:\\alianximod\\.grok\\scripts\\Invoke-CursorTask.ps1",
+    "length": 123005,
+    "sha256": "CB7B596DB5A9CEF701E4A5513B3DDE2FD56676693D1AC26D17BC53B4C9E9CBCA"
+  },
+  {
+    "path": "D:\\alianximod\\.grok\\scripts\\Test-CursorTask.ps1",
+    "length": 98717,
+    "sha256": "168AC57DB3416CCA219925311E2FF0D0F71A74BB6070D44DC695AC1D9203FAC6"
+  },
+  {
+    "path": "D:\\alianximod\\AGENTS.md",
+    "length": 15858,
+    "sha256": "C89426F9AF47CA4384DA6031E89AC43A9B442A51E2D89F1E4878C9F2A5A62DEE"
+  },
+  {
+    "path": "D:\\alianximod\\.grok\\skills\\max-dispatch\\SKILL.md",
+    "length": 21581,
+    "sha256": "4DA19A9C013FD238F70427FE6D3BFB8185A6FC051E8CEFF47A823A27522B2EB9"
+  },
+  {
+    "path": "D:\\alianximod\\docs\\统一开发与术式批量制作流程.md",
+    "length": 65900,
+    "sha256": "83F6B6C0FE58C7F713F2CA343AEB2EB6DF658F23FC28BD0095B50F7AB2214564"
+  },
+  {
+    "path": "C:\\Users\\baishang\\.codex\\skills\\xueximod-grok-fallback\\SKILL.md",
+    "length": 5486,
+    "sha256": "A58FF1FA8AC934E8511DD570F38C6D090E26CCD8F4C4B27AF02F011949E12260"
+  },
+  {
+    "path": "C:\\Users\\baishang\\.codex\\skills\\xueximod-grok-fallback\\agents\\openai.yaml",
+    "length": 289,
+    "sha256": "1F40FF29E6C8ECEB030F6FEF75C12F1DAF6159CACF0C7A364282B87D5681109B"
+  }
+]

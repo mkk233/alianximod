@@ -1,0 +1,10 @@
+gradle.projectsEvaluated {
+    def outputPath = rootProject.findProperty("startupqaClasspathOut")
+    if (outputPath == null || outputPath.toString().trim().isEmpty()) {
+        outputPath = "C:/Users/baishang/AppData/Local/CursorAgentCodex/water-deflection-startup-qa-20261026/compile-classpath.txt"
+    }
+    def output = new File(outputPath.toString())
+    output.parentFile.mkdirs()
+    output.setText(rootProject.sourceSets.main.compileClasspath.asPath, "UTF-8")
+    println "WROTE_CLASSPATH " + output.absolutePath
+}

@@ -1,0 +1,19 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "stage": "domain-bridge",
+  "review": "不是正式复审。设计 2/2，实现 0/3。",
+  "compile": "未运行，待统一编译",
+  "stopWrite": true,
+  "staffKept": "basic_staff 6 槽，test_staff 32 槽，本轮未改",
+  "wired": [
+    "NetherDomainSync 登记在原通道 14 号",
+    "ContactCast 对领域和灼地的幽冥放行零接触伤",
+    "SkillUsePacket、CastExecutionSession、SkillChainPlan 经 DomainWave 传真实载荷和 currentRootId",
+    "普通幽冥加旧领域不因报价标记被整段拒绝",
+    "武器纯幽冥不再 adopt；留焰和崩地租约保留"
+  ],
+  "dRequest": "ContactEnchantState.open(carrier, snapshot, load, rootCastId)，再由 SurfaceFireHosts 传入。不要新建 FireCastContext。",
+  "ownershipSha256": "428aadee44f340760084d89ce397fd8579381affb0f8e48ec2eb9e3a49c5ecf2",
+  "nameGate": "退出码 1。本轮文件无新增违规。OriginalHumanoid.java:165 i，:202 to。"
+}

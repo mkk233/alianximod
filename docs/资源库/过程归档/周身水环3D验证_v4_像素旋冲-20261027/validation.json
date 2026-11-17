@@ -1,0 +1,35 @@
+{
+  "fixedFrames": 32,
+  "uniqueFixedFrames": 32,
+  "loopMaxMatrixDelta": 3.1086244689504383e-15,
+  "startFrames": [
+    {
+      "name": "surge_arc.png",
+      "frame": 0
+    },
+    {
+      "name": "surge_arc_echo.png",
+      "frame": 8
+    },
+    {
+      "name": "surge_flow.png",
+      "frame": 0
+    }
+  ],
+  "endFrames": [
+    {
+      "name": "surge_arc.png",
+      "frame": 0
+    },
+    {
+      "name": "surge_arc_echo.png",
+      "frame": 8
+    },
+    {
+      "name": "surge_flow.png",
+      "frame": 0
+    }
+  ],
+  "reference": "https://huaban.com/pins/5784587260",
+  "adopted": false
+}

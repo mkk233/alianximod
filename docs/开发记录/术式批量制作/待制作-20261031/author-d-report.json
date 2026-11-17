@@ -1,0 +1,90 @@
+{
+  "author": "D",
+  "model": "grok-4.7-high-fast",
+  "stopWrite": true,
+  "compile": "未运行",
+  "game": "未运行",
+  "review": "实现正式复审 0/3，本单未开复审",
+  "nameGate": "本次文件无新违规。未改的 OriginalHumanoid.java 仍有 i 与 to 两处旧违规，未顺手修改。",
+  "texture": {
+    "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/nether_gloom_v1/nether_gloom.png",
+    "sha256": "1E7CD18441C29D5F018D8B239D0A9A737B784C9F45BAA4202F45AEFF07F3B49F",
+    "width": 64,
+    "height": 1024,
+    "frames": 16,
+    "matchesManifest": true
+  },
+  "files": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainCycle.java",
+      "sha256": "476df22238c99cbeb148811435fec1e24784fee97f79e35e5e1820ee8819747a",
+      "mtime": "2026-10-31 04:37:13"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainTint.java",
+      "sha256": "4feb45d8859b5409a6b8cfe799c7fe56e26f8a9ec5776e539e1ba5afe8c02296",
+      "mtime": "2026-10-31 04:32:12"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainSight.java",
+      "sha256": "2773a01b38e808649c93da1478f039001f11868a5b7c9ce45045c2aaad920c51",
+      "mtime": "2026-10-31 04:32:17"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainEvents.java",
+      "sha256": "5cf1e6183cea2600efe4a05056672483a25354b51e61a13bedce921e6dd7acc9",
+      "mtime": "2026-10-31 04:32:19"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+      "sha256": "d8b982181eb23f79ca03ca6839640a33be34cf11234b7cd08adacc875a309303",
+      "mtime": "2026-10-31 04:33:17"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java",
+      "sha256": "05c6e9864f7c5ee624b18c3a04e6619fc43ce372b7f6078ee6b2f895026d4823",
+      "mtime": "2026-10-31 04:33:17"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+      "sha256": "8e6ed71b1111fb92ec4e158a5755a9247d35786f4a52bb0d1f326947e97c12ae",
+      "mtime": "2026-10-31 04:33:18"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/NetherDomainSync.java",
+      "sha256": "1701771aeab2893c6ed906a6684b9e92d826d682fc94a82e3f5f4989ed2d6a5b",
+      "mtime": "2026-10-31 04:32:10"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/NetherDomainWisps.java",
+      "sha256": "82613056f2ec20885d4797f9e763aa34d3263f1f87f25c91c869885940a28e46",
+      "mtime": "2026-10-31 04:36:22"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+      "sha256": "e7520a850db753fa86e6c5927a3bf84b526ac4ee17da7c53743f75640fd71553",
+      "mtime": "2026-10-31 04:34:48"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/FireSeedFlameClient.java",
+      "sha256": "fec34f797d9461276b1832309f2804c7902b5609ceda2d8fad2a715c3550a875",
+      "mtime": "2026-10-31 04:33:29"
+    }
+  ],
+  "colorApi": "NetherDomainTint.sample(Level, double, double, double) -> Sample(gloom, red, green, blue, tintKey)",
+  "gloomTint": {
+    "red": 90,
+    "green": 160,
+    "blue": 255,
+    "tintKey": "blue"
+  },
+  "incomplete": [
+    "ModNetwork 未登记 NetherDomainSync，客户端蓝火与魂火条带在登记前不会出现",
+    "ContactCast.refusal 与 snapshot 仍会拦住接触伤害为 0 的纯幽冥",
+    "BatchCastSession 未公开根标识，找不到现成根账时不 retain",
+    "武器幽冥的 adopt 没有领域租约时本单不 release",
+    "灼地客户端色用切片外包盒，产种用切片相交",
+    "原版火焰粒子、燎系、炉身、雾雨重压材质，以及 C 的新载体渲染未自动接色",
+    "领域不存档"
+  ]
+}

@@ -1,0 +1,970 @@
+{
+  "project": "97317922-6479-beec-c78f-a74da81002d2",
+  "viewport": "main",
+  "source": "Screencam.screenshotPreview live main viewport",
+  "frames": [
+    {
+      "file": "frames/domain_000.png",
+      "time": 0,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/domain_001.png",
+      "time": 0.05,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/domain_002.png",
+      "time": 0.1,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/domain_003.png",
+      "time": 0.15000000000000002,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/domain_004.png",
+      "time": 0.2,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/domain_005.png",
+      "time": 0.25,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/domain_006.png",
+      "time": 0.30000000000000004,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/domain_007.png",
+      "time": 0.35000000000000003,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/domain_008.png",
+      "time": 0.4,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/domain_009.png",
+      "time": 0.45,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/domain_010.png",
+      "time": 0.5,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/domain_011.png",
+      "time": 0.55,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/domain_012.png",
+      "time": 0.6000000000000001,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/domain_013.png",
+      "time": 0.65,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/domain_014.png",
+      "time": 0.7000000000000001,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/domain_015.png",
+      "time": 0.75,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/domain_016.png",
+      "time": 0.8,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/domain_017.png",
+      "time": 0.8500000000000001,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/domain_018.png",
+      "time": 0.9,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/domain_019.png",
+      "time": 0.9500000000000001,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/domain_020.png",
+      "time": 1,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/domain_021.png",
+      "time": 1.05,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/domain_022.png",
+      "time": 1.1,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/domain_023.png",
+      "time": 1.1500000000000001,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/domain_024.png",
+      "time": 1.2000000000000002,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/domain_025.png",
+      "time": 1.25,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/domain_026.png",
+      "time": 1.3,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/domain_027.png",
+      "time": 1.35,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/domain_028.png",
+      "time": 1.4000000000000001,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/domain_029.png",
+      "time": 1.4500000000000002,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/domain_030.png",
+      "time": 1.5,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/domain_031.png",
+      "time": 1.55,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/domain_032.png",
+      "time": 1.6,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/domain_033.png",
+      "time": 1.6500000000000001,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/domain_034.png",
+      "time": 1.7000000000000002,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/domain_035.png",
+      "time": 1.75,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/domain_036.png",
+      "time": 1.8,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/domain_037.png",
+      "time": 1.85,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/domain_038.png",
+      "time": 1.9000000000000001,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/domain_039.png",
+      "time": 1.9500000000000002,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/domain_040.png",
+      "time": 2,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/domain_041.png",
+      "time": 2.0500000000000003,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/domain_042.png",
+      "time": 2.1,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/domain_043.png",
+      "time": 2.15,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/domain_044.png",
+      "time": 2.2,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/domain_045.png",
+      "time": 2.25,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/domain_046.png",
+      "time": 2.3000000000000003,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/domain_047.png",
+      "time": 2.35,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/domain_048.png",
+      "time": 2.4000000000000004,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/domain_049.png",
+      "time": 2.45,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/domain_050.png",
+      "time": 2.5,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/domain_051.png",
+      "time": 2.5500000000000003,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/domain_052.png",
+      "time": 2.6,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/domain_053.png",
+      "time": 2.6500000000000004,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/domain_054.png",
+      "time": 2.7,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/domain_055.png",
+      "time": 2.75,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/domain_056.png",
+      "time": 2.8000000000000003,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/domain_057.png",
+      "time": 2.85,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/domain_058.png",
+      "time": 2.9000000000000004,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/domain_059.png",
+      "time": 2.95,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/domain_060.png",
+      "time": 3,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/domain_061.png",
+      "time": 3.0500000000000003,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/domain_062.png",
+      "time": 3.1,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/domain_063.png",
+      "time": 3.1500000000000004,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/domain_064.png",
+      "time": 3.2,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/domain_065.png",
+      "time": 3.25,
+      "textureFrames": [
+        15,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "file": "frames/domain_066.png",
+      "time": 3.3000000000000003,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/domain_067.png",
+      "time": 3.35,
+      "textureFrames": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "file": "frames/domain_068.png",
+      "time": 3.4000000000000004,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/domain_069.png",
+      "time": 3.45,
+      "textureFrames": [
+        1,
+        5,
+        9,
+        13
+      ]
+    },
+    {
+      "file": "frames/domain_070.png",
+      "time": 3.5,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/domain_071.png",
+      "time": 3.5500000000000003,
+      "textureFrames": [
+        2,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "file": "frames/domain_072.png",
+      "time": 3.6,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/domain_073.png",
+      "time": 3.6500000000000004,
+      "textureFrames": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "file": "frames/domain_074.png",
+      "time": 3.7,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/domain_075.png",
+      "time": 3.75,
+      "textureFrames": [
+        4,
+        8,
+        12,
+        0
+      ]
+    },
+    {
+      "file": "frames/domain_076.png",
+      "time": 3.8000000000000003,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/domain_077.png",
+      "time": 3.85,
+      "textureFrames": [
+        5,
+        9,
+        13,
+        1
+      ]
+    },
+    {
+      "file": "frames/domain_078.png",
+      "time": 3.9000000000000004,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/domain_079.png",
+      "time": 3.95,
+      "textureFrames": [
+        6,
+        10,
+        14,
+        2
+      ]
+    },
+    {
+      "file": "frames/domain_080.png",
+      "time": 4,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/domain_081.png",
+      "time": 4.05,
+      "textureFrames": [
+        7,
+        11,
+        15,
+        3
+      ]
+    },
+    {
+      "file": "frames/domain_082.png",
+      "time": 4.1000000000000005,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/domain_083.png",
+      "time": 4.15,
+      "textureFrames": [
+        8,
+        12,
+        0,
+        4
+      ]
+    },
+    {
+      "file": "frames/domain_084.png",
+      "time": 4.2,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/domain_085.png",
+      "time": 4.25,
+      "textureFrames": [
+        9,
+        13,
+        1,
+        5
+      ]
+    },
+    {
+      "file": "frames/domain_086.png",
+      "time": 4.3,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/domain_087.png",
+      "time": 4.3500000000000005,
+      "textureFrames": [
+        10,
+        14,
+        2,
+        6
+      ]
+    },
+    {
+      "file": "frames/domain_088.png",
+      "time": 4.4,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/domain_089.png",
+      "time": 4.45,
+      "textureFrames": [
+        11,
+        15,
+        3,
+        7
+      ]
+    },
+    {
+      "file": "frames/domain_090.png",
+      "time": 4.5,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/domain_091.png",
+      "time": 4.55,
+      "textureFrames": [
+        12,
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "file": "frames/domain_092.png",
+      "time": 4.6000000000000005,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/domain_093.png",
+      "time": 4.65,
+      "textureFrames": [
+        13,
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "file": "frames/domain_094.png",
+      "time": 4.7,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "file": "frames/domain_095.png",
+      "time": 4.75,
+      "textureFrames": [
+        14,
+        2,
+        6,
+        10
+      ]
+    }
+  ],
+  "frameDurationMs": 50,
+  "durationSeconds": 4.8,
+  "note": "Demonstration segment restarts at GIF loop; not domain lifetime. No synthetic frames."
+}

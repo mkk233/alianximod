@@ -1,0 +1,42 @@
+{
+  "role": "formal-archive-index",
+  "version": "幽冥_魂谷摇曳_v2",
+  "status": "user_adopted_runtime_integrated_compile_failed",
+  "adoptedOn": "2026-11-16",
+  "userQuote": "按这版接入",
+  "boundPreviews": [
+    "close-sway-3p2s.gif",
+    "inside-sway-3p2s.gif"
+  ],
+  "includesPreviouslyShownSkyAndFarFog": true,
+  "sourceProcessDirectory": "D:/alianximod/docs/资源库/过程归档/幽冥_魂火摇曳_v2修订2_batch_20261116",
+  "sourceManifestCopy": {
+    "file": "来源-manifest.json",
+    "sha256": "4841D6409142A91D625B934C241AA4C1202023EFE6EA24E0DAFB419B1601168B",
+    "note": "过程目录 manifest.json 的逐字节副本。本索引不替代、也不改写该哈希。"
+  },
+  "plannedRuntime": {
+    "path": "assets/xueximod/textures/effect/nether_gloom_v2/nether_gloom.png",
+    "sourceSha256": "7699297D207AC3CCACEC25E9CF7226C5B3765C0E16F620F3E1D717C1E23AD0FB",
+    "state": "integrated_compile_failed_pending_unblock",
+    "verifiedRuntimeBytes": 5310,
+    "verifiedRuntimeSha256": "7699297D207AC3CCACEC25E9CF7226C5B3765C0E16F620F3E1D717C1E23AD0FB",
+    "mcmetaSha256": "A2313FCC609089214681B434F5959499F068679AA7DFEBDF5B3F0E7551ACC2F9",
+    "compileExitCode": 1,
+    "compileWindow": "2026-11-16 21:15:12.347–21:15:38.292 +08:00"
+  },
+  "files": [
+    {"path": "youming_v2_sway_fixed_root.aseprite", "bytes": 16091, "sha256": "9D7D6867771F216A3CA7552844FB66D15D764DF9A3FAE4737114FF39C5000032"},
+    {"path": "textures/youming_v2_sway_strip.png", "bytes": 5310, "sha256": "7699297D207AC3CCACEC25E9CF7226C5B3765C0E16F620F3E1D717C1E23AD0FB"},
+    {"path": "sway-2d-native.gif", "bytes": 8062, "sha256": "E307D2239A595A2F6526FD9CD460CAFFFC49B13035A5116C821DA99FAD28F91E"},
+    {"path": "sway-2d-4x.gif", "bytes": 43542, "sha256": "4D5D09649367B78916BE9F9E3E43002B2B683E1D293F123BAAC269228F450124"},
+    {"path": "youming-v2-fixed-root-sway-candidate.bbmodel", "bytes": 319122, "sha256": "350EF6D81BC057E9C577B09F04F42225009DF19EA2B59CE0C4AD4B52DD7309C9"},
+    {"path": "01-inside-sway.png", "bytes": 242068, "sha256": "05999F90F94B721781DFE96C2FC7A4D9E7361F07E0D31724BB2511272A2FDDB7"},
+    {"path": "02-close-fixed-root.png", "bytes": 94912, "sha256": "FE24B6C52F3A15359D23AE9762FA0C5AC58F008254855C7D0C488C151D49C7D6"},
+    {"path": "03-side-person-height.png", "bytes": 321524, "sha256": "6687C1043E72B6ECC9F530DAEDC60906C71D8B838083B3FEDC8EF8D1181B604F"},
+    {"path": "inside-sway-3p2s.gif", "bytes": 5968429, "sha256": "B92B910CE7DCE0116EA75F670F44446812126273EC05E37DFF7E111769E22308"},
+    {"path": "close-sway-3p2s.gif", "bytes": 1007045, "sha256": "A8C514EAE8E8E862FC154C472CE2E2246FF518695C75100F72C5F06488631CB8"},
+    {"path": "visual-handoff.md", "bytes": 7572, "sha256": "1BA364C752FDD27504A74C7D980708DD76AC871663742F2BC2B7BF8DA035B01E"},
+    {"path": "来源-manifest.json", "bytes": 30007, "sha256": "4841D6409142A91D625B934C241AA4C1202023EFE6EA24E0DAFB419B1601168B"}
+  ]
+}

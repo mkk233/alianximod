@@ -1,0 +1,116 @@
+{
+  "version": "iaido-single-v5-left-waist",
+  "status": "historical_superseded_by_grip_fast_v6",
+  "approvedDate": "2026-11-02",
+  "userApproval": "可以的，用这个版本作为空间切割术式的挥刀动作接入",
+  "purpose": "空间切割术式玩家挥刀动作",
+  "sourceDirectory": "D:/alianximod/docs/资源库/过程归档/拔刀斩_v5-20261102",
+  "animation": {
+    "name": "animation.iaido_single_v5_left_waist",
+    "previewDurationSeconds": 1.6,
+    "loop": "once",
+    "mountSide": "left",
+    "drawHand": "right",
+    "scabbard": false,
+    "tipDirection": [
+      0,
+      0,
+      1
+    ]
+  },
+  "files": {
+    "iaido-atlas.aseprite": {
+      "bytes": 1818,
+      "sha256": "0757e8946d148771c9827e46a1caa61724f8ea0e6de02d70dd04551023eb01dd"
+    },
+    "iaido-atlas.png": {
+      "bytes": 961,
+      "sha256": "12c0dd4e4d2735f18136c548a35e7695a00eae52e3cd5389ff5d4747b8bc6405"
+    },
+    "atlas-preview.png": {
+      "bytes": 3417,
+      "sha256": "e0c8437359ac802c4bef4231091471d5fbc77ce9ae9f3d7e8959213c4c835c6c"
+    },
+    "iaido-single-v5-left-waist.bbmodel": {
+      "bytes": 354939,
+      "sha256": "9a9a53dcbcb17f615fb34fe506ee5501a26b6ae7e560271f2ea2a54d0ee39519"
+    },
+    "left-waist-start.png": {
+      "bytes": 32640,
+      "sha256": "597ca6d63e179fb803d4ea556e51dd30947d27379ce7934db23bf8922fabc6bc"
+    },
+    "side-waist-start.png": {
+      "bytes": 30611,
+      "sha256": "b306c8c692d8e5f67d944c60e8a9c7ba173292adb32bdc0a932aaab6f1163b8a"
+    },
+    "iaido-front-preview.gif": {
+      "bytes": 491456,
+      "sha256": "10cd9760469e9625e78fd34b4545df6d5395ea952a280ebe93f3e1550458e915"
+    },
+    "iaido-side-preview.gif": {
+      "bytes": 421766,
+      "sha256": "e1d60de806f96354ab389a36d8bb7ede01f9af14520b93523835d49d3e55fec6"
+    },
+    "iaido-transition-slow.gif": {
+      "bytes": 139959,
+      "sha256": "f95aa2bb132743775df68fc36082306db743de84f423d9ff2e2c3803362d9d68"
+    },
+    "iaido-front-preview.aseprite": {
+      "bytes": 979772,
+      "sha256": "8cbe599bf230dab39fc43a7555964a0fa7830e306f2cf7ff40aa09ceb39d78e2"
+    },
+    "iaido-side-preview.aseprite": {
+      "bytes": 876092,
+      "sha256": "d10eb39fa184582e098315c4a9c116f5db2a8ddb9cf4d841c30873e2cc27920b"
+    },
+    "animation-keyframes.json": {
+      "bytes": 300460,
+      "sha256": "59b09c2d97b9f0e8745b2d286e35bb4c567854f2d036edb6b5f25519944fdf27"
+    },
+    "native-mount.json": {
+      "bytes": 250,
+      "sha256": "9c95a805c9b28281bf66a8111799c3406e5d32d56eeacf77b62b17d5df482f88"
+    },
+    "runtime-mapping.md": {
+      "bytes": 1598,
+      "sha256": "b113cb81169ce6aa74ccd034965c7d155d193bcdcc8c60a6e83e1666c68738c8"
+    },
+    "runtime-mapping.json": {
+      "bytes": 1578,
+      "sha256": "0b015697c574a3fd7458c00d625066eae24ead1d1581bf8658115e56bfe6b1f5"
+    }
+  },
+  "runtime": {
+    "integrated": true,
+    "actionId": "xueximod:space_cut",
+    "resourceLocation": "xueximod:actions/space_cut_left_waist_v5.json",
+    "resourceFile": "src/main/resources/assets/xueximod/actions/space_cut_left_waist_v5.json",
+    "resourceSha256": "64b0fe3eb2f629c3fb12b90ca1d3a8c64e1664c7661dc7794c97473a8b313c46",
+    "durationSeconds": 1.6,
+    "compiled": true,
+    "compileCommand": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "compileStartedAt": "2026-11-02T05:55:18",
+    "compileEndedAt": "2026-11-02T05:55:43",
+    "compileExitCode": 0,
+    "compileJavaOutcome": "executed",
+    "sourceFileCount": 1200,
+    "sourceDiffCount": 0,
+    "compileEvidence": "../../../../开发记录/空间切割拔刀动作接入-20261102/compile-evidence.json",
+    "gameTested": false,
+    "packaged": false,
+    "review": {
+      "designUsed": 2,
+      "designLimit": 2,
+      "implementationUsed": 2,
+      "implementationLimit": 3,
+      "lastReviewScope": "完整剑挂接/第一人称变换；后续两文件API修复由最终javac验证，未追加正式复核"
+    },
+    "limitations": [
+      "自定义模型若覆盖默认handheld的右手旋转/平移，当前挂接可能偏移；缩放保留。",
+      "特殊护甲模型不保证双节臂，非精确HumanoidModel按原单段臂呈现。",
+      "没有启动游戏，第一/第三人称和联机视觉待用户实测。"
+    ]
+  },
+  "supersededBy": "../空间切割_握柄快拔_v6/README.md",
+  "supersededReason": "用户游戏反馈握点在刀刃、动作拖过特效；v6修复并编译通过"
+}

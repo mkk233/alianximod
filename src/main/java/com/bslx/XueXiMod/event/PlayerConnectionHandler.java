@@ -3,9 +3,10 @@ package com.bslx.XueXiMod.event;
 import com.bslx.XueXiMod.network.BoundSkillSyncPacket;
 import com.bslx.XueXiMod.network.ModNetwork;
 import com.bslx.XueXiMod.network.ShuSyncPacket;
+import com.bslx.XueXiMod.player.DomainLearning;
 import com.bslx.XueXiMod.player.PlayerShuData;
-import com.bslx.XueXiMod.shu.Technique;
-import com.bslx.XueXiMod.shu.TechniqueManager;
+import com.bslx.XueXiMod.player.StarterLearning;
+import com.bslx.XueXiMod.shu.technique.release.momentum.WaterMomentum;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
@@ -15,18 +16,14 @@ public class PlayerConnectionHandler {
 
     public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
         Player player = event.getEntity();
+        StarterLearning.grantMissing(player);
+        DomainLearning.onLogin(player);
         PlayerShuData data = PlayerShuData.get(player);
 
-        for (Technique t : TechniqueManager.getAll()) {
-            if (t.getUnlockLevel() == 0 && !data.hasLearned(t.getId())) {
-                data.learnTechnique(t.getId());
-            }
-        }
-
-        PlayerShuData.save(player, data);
-
         if (player instanceof ServerPlayer serverPlayer) {
-            ModNetwork.sendToPlayer(serverPlayer, new ShuSyncPacket(data));
+            BoundSkillSyncPacket.send(serverPlayer);
+            ModNetwork.sendToPlayer(serverPlayer, new ShuSyncPacket(PlayerShuData.get(serverPlayer)));
+            WaterMomentum.syncBalance(serverPlayer);
         }
     }
 
@@ -42,12 +39,13 @@ public class PlayerConnectionHandler {
         if (event.getEntity() instanceof ServerPlayer serverPlayer) {
             BoundSkillSyncPacket.send(serverPlayer);
             ModNetwork.sendToPlayer(serverPlayer, new ShuSyncPacket(PlayerShuData.get(serverPlayer)));
+            WaterMomentum.syncBalance(serverPlayer);
         }
     }
 
-    private static void copyKey(CompoundTag from, CompoundTag to, String key) {
+    private static void copyKey(CompoundTag from, CompoundTag target, String key) {
         if (from.contains(key)) {
-            to.put(key, from.get(key).copy());
+            target.put(key, from.get(key).copy());
         }
     }
 

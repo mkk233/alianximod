@@ -1,0 +1,48 @@
+{
+  "workStatus": "reported_done",
+  "writesSettled": true,
+  "synced": true,
+  "movedSheets": false,
+  "baselineSha256": "EBBED5631F001E599C9195E2F35DB329B9C7C2BD38FAC70FFFACAE8D04E03B4E",
+  "baselineMtime": "2026-11-03T14:53:27.667",
+  "submittedSha256": "BACDC2AE3E552DCCB2A600A9F6C147C3FABF70DF81680E1FB3EAA59DD260AE04",
+  "submittedMtime": "2026-11-03T17:27:40.197",
+  "submittedSize": 111673,
+  "counts": {"已完成": 38, "待制作": 0, "制作中": 15, "待验收": 7},
+  "total": 60,
+  "items": [
+    {
+      "id": "tide_sever",
+      "sheet": "制作中",
+      "row": 16,
+      "nameBefore": "断潮",
+      "nameAfter": "薄水切",
+      "N": "一道薄而长的水切",
+      "O": "TideSeverEffect"
+    },
+    {
+      "id": "water_yielding_ribbon",
+      "sheet": "制作中",
+      "row": 17,
+      "nameBefore": "让锋",
+      "nameAfter": "断潮",
+      "N": "先铺开水面，再从中间劈开。水分开没有伤害，只有中间那一刀",
+      "O": "WaterYieldingEffect"
+    }
+  ],
+  "noteAppended": "2026-11-03 用户最新决定：仅改名，原停用计划取消；保留功能及水幻形可用，不迁待验收，保持当前子表。",
+  "changedCells": ["制作中!A16", "制作中!A17", "制作中!DV16", "制作中!DV17"],
+  "priorBlockedWriteUnchangedSource": true,
+  "rejectedMigrationCandidate": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/候选/术式制作表-候选-20261103-154717-1.xlsx",
+  "rejectedArtifactExport": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/候选/术式制作表-候选-原位-20261103-172443-1.xlsx",
+  "submittedCandidate": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/表格工作/候选/术式制作表-候选-原位保真-20261103-172714-1.xlsx",
+  "checks": [
+    "提交前源表哈希仍等于 EBBED5631F001E599C9195E2F35DB329B9C7C2BD38FAC70FFFACAE8D04E03B4E",
+    "候选只改制作中工作表的 A16、A17、DV16、DV17",
+    "重开后两项仍在制作中第16、17行，名称分别为薄水切、断潮",
+    "四页计数仍为 38/0/15/7",
+    "功能句、资源标识、筛选和验证保持"
+  ],
+  "notRun": ["compileJava", "读取 Java", "正式复审", "游戏实测", "状态页迁移"],
+  "gameAcceptance": false
+}

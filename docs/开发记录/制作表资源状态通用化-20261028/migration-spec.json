@@ -1,0 +1,79 @@
+{
+  "statusSheets": ["已完成", "待制作", "制作中", "待验收"],
+  "sheetFiles": {
+    "已完成": "xl/worksheets/sheet1.xml",
+    "待制作": "xl/worksheets/sheet2.xml",
+    "制作中": "xl/worksheets/sheet3.xml",
+    "待验收": "xl/worksheets/sheet4.xml",
+    "数据表": "xl/worksheets/sheet5.xml"
+  },
+  "lastDataRow": {"已完成": 42, "待制作": 5, "制作中": 2, "待验收": 2},
+  "filterRef": {"已完成": "A2:EN42", "待制作": "A2:EN5", "制作中": "A2:EN2", "待验收": "A2:EN2"},
+  "dimensionRef": {"已完成": "A1:EN42", "待制作": "A1:EN5", "制作中": "A1:EN2", "待验收": "A1:EN2"},
+  "groupTitle": "资源与状态",
+  "newHeaders": ["配置启用", "资源", "状态", "操作", "作用对象", "触发时机", "数值", "状态amplifier", "寿命策略", "寿命tick", "周期tick", "首次延迟tick", "计量单位", "生效条件", "结算约束", "迁移来源", "关联说明", "附加明细键"],
+  "newColumns": ["DW", "DX", "DY", "DZ", "EA", "EB", "EC", "ED", "EE", "EF", "EG", "EH", "EI", "EJ", "EK", "EL", "EM", "EN"],
+  "leftColumns": ["EJ", "EK", "EM"],
+  "prefixColumns": ["AR", "AW", "BQ", "BR", "DC", "DD", "DE", "DF", "DG", "DH", "DI", "DJ", "DK", "DL"],
+  "columnWidths": {"DW": 12, "DX": 12, "DY": 12, "DZ": 12, "EA": 26, "EB": 18, "EC": 12, "ED": 16, "EE": 14, "EF": 12, "EG": 12, "EH": 16, "EI": 16, "EJ": 36, "EK": 46, "EL": 14, "EM": 28, "EN": 22},
+  "validations": [
+    {"col": "DW", "title": "配置启用", "formula": "=是否"},
+    {"col": "DX", "title": "资源", "formula": "=资源列表"},
+    {"col": "DY", "title": "状态", "formula": "=状态列表"},
+    {"col": "DZ", "title": "操作", "formula": "=操作列表"},
+    {"col": "EA", "title": "作用对象", "formula": "=作用对象列表"},
+    {"col": "EB", "title": "触发时机", "formula": "=触发时机列表"},
+    {"col": "EE", "title": "寿命策略", "formula": "=寿命策略列表"},
+    {"col": "EI", "title": "计量单位", "formula": "=计量单位列表"}
+  ],
+  "mainRows": [
+    {"sheet": "已完成", "row": 13, "id": "water_blade", "values": {"DW": "是", "DY": "潮湿", "DZ": "增加", "EA": "命中目标", "EB": "命中成功", "EC": 6, "EE": "固定刷新", "EF": 1000, "EI": "每次触发", "EK": "不按复制份数乘", "EL": "AW"}},
+    {"sheet": "已完成", "row": 24, "id": "water_weeping_arc", "values": {"DW": "是", "DY": "潮湿", "DZ": "增加", "EA": "命中目标", "EB": "命中成功", "EC": 6, "EE": "固定刷新", "EF": 1000, "EI": "每次触发", "EK": "不按复制份数乘", "EL": "AW"}},
+    {"sheet": "已完成", "row": 26, "id": "water_mist", "values": {"DW": "是", "DY": "潮湿", "DZ": "增加", "EA": "领域内敌对活物", "EB": "领域周期", "EC": 2, "EE": "固定刷新", "EF": 1000, "EG": 10, "EH": 10, "EI": "每次触发", "EL": "DC:DE", "EN": "water_mist"}},
+    {"sheet": "已完成", "row": 28, "id": "water_deep_pressure", "values": {"DW": "是", "DY": "潮湿", "DZ": "增加", "EA": "领域内敌对活物", "EB": "领域周期", "EC": 4, "EE": "固定刷新", "EF": 1000, "EG": 10, "EH": 10, "EI": "每次触发", "EL": "DC:DE", "EN": "water_deep_pressure"}},
+    {"sheet": "已完成", "row": 38, "id": "tide_mark", "values": {"DW": "是", "DY": "潮湿", "DZ": "增加", "EA": "命中目标", "EB": "潮印命中成功", "EC": 5, "EE": "固定刷新", "EF": 1000, "EI": "每条潮印", "EK": "结构化记录原潮印行为，不叠加执行。每条2点伤害和附魔数据仍在原列。", "EL": "N", "EN": "tide_mark"}},
+    {"sheet": "待制作", "row": 3, "id": "fire_liaoyuan", "values": {"DW": "是", "DX": "火种", "DZ": "消费", "EA": "选定目标", "EB": "首次带资源接触", "EC": "全部", "EE": "不适用", "EI": "每目标每次施法", "EJ": "有效目标S>0且无同施法者已有燎原附着燃烧", "EK": "消费前快照S，1—9也全扣，收益依N。同次施法及规则副本同目标一次，共享余额先到先扣，新火种后续使用，不复制收益，不套旧BURST，不丢余数。", "EL": "N/DV", "EM": "不产火种、不施加炉心"}},
+    {"sheet": "待制作", "row": 4, "id": "fire_liaoli", "values": {"DW": "是", "DX": "火种", "DZ": "消费", "EA": "命中目标", "EB": "命中成功", "EC": "全部", "EE": "不适用", "EI": "每目标每次施法", "EJ": "伤害权限检查后消费。S=0不扣资源，基础刺击仍发生", "EK": "同次施法及规则副本同目标一次，共享余额先到先扣，新火种后续使用，不复制收益，不套旧BURST，不丢余数。", "EL": "N/DV", "EM": "不产火种、不施加炉心"}},
+    {"sheet": "待制作", "row": 5, "id": "fire_fentian", "values": {"DW": "是", "DX": "火种", "DZ": "消费", "EA": "选定目标", "EB": "范围选取", "EC": "全部", "EE": "不适用", "EI": "每目标每次施法", "EJ": "存活可伤害且S>0，且无已有焚天燃烧", "EK": "快照完整段与余量，一次全扣，收益依N。同次施法及规则副本同目标一次，共享余额先到先扣，新火种后续使用，不复制收益，不套旧BURST，不丢余数。", "EL": "N/DV", "EM": "不产火种、不施加炉心"}}
+  ],
+  "detailHeaders": ["术式编号", "配置序号", "配置启用", "资源", "状态", "操作", "作用对象", "触发时机", "数值", "状态amplifier", "寿命策略", "寿命tick", "周期tick", "首次延迟tick", "计量单位", "生效条件", "结算约束", "迁移来源", "关联说明", "附加明细键"],
+  "detailColumns": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T"],
+  "detailLeft": ["P", "Q", "S"],
+  "detailWidths": {"A": 26, "B": 12, "C": 12, "D": 12, "E": 12, "F": 12, "G": 26, "H": 18, "I": 12, "J": 16, "K": 14, "L": 12, "M": 12, "N": 16, "O": 16, "P": 36, "Q": 46, "R": 14, "S": 28, "T": 22},
+  "detailValidations": [
+    {"col": "C", "title": "配置启用", "formula": "=是否"},
+    {"col": "D", "title": "资源", "formula": "=资源列表"},
+    {"col": "E", "title": "状态", "formula": "=状态列表"},
+    {"col": "F", "title": "操作", "formula": "=操作列表"},
+    {"col": "G", "title": "作用对象", "formula": "=作用对象列表"},
+    {"col": "H", "title": "触发时机", "formula": "=触发时机列表"},
+    {"col": "K", "title": "寿命策略", "formula": "=寿命策略列表"},
+    {"col": "O", "title": "计量单位", "formula": "=计量单位列表"}
+  ],
+  "detailRows": [
+    {"row": 3, "values": {"A": "water_mist", "B": 2, "C": "是", "D": "水势", "F": "增加", "G": "领域内主人或盟友玩家", "H": "领域周期", "I": 2, "K": "不适用", "M": 20, "N": 20, "O": "每次触发", "R": "DF:DH"}},
+    {"row": 4, "values": {"A": "water_deep_pressure", "B": 2, "C": "否", "D": "水势", "F": "增加", "G": "领域内主人或盟友玩家", "H": "领域周期", "I": 0, "K": "不适用", "M": 20, "N": 20, "O": "每次触发", "R": "DF:DH"}},
+    {"row": 5, "values": {"A": "water_deep_pressure", "B": 3, "C": "是", "E": "缓慢", "F": "施加", "G": "领域内有效目标", "H": "领域周期", "J": 0, "K": "固定刷新", "L": 20, "M": 10, "N": 10, "P": "沿用原领域", "R": "DI:DL"}},
+    {"row": 6, "values": {"A": "tide_mark", "B": 2, "C": "是", "D": "水势", "F": "增加", "G": "施术者", "H": "潮印命中成功", "I": 2, "K": "不适用", "O": "每条潮印", "Q": "结构化记录原潮印行为，不叠加执行", "R": "N"}}
+  ],
+  "dictionaryColumns": ["AW", "AX", "AY", "AZ", "BA", "BB", "BC", "BD", "BE", "BF", "BG", "BH"],
+  "dictionaryHeaders": ["显示名", "种类", "表内字典键", "真实存储或接口标识", "实现状态", "允许对象", "值类型", "范围", "默认寿命策略", "默认寿命tick", "允许操作", "说明"],
+  "dictionaryWidths": {"AW": 12, "AX": 10, "AY": 18, "AZ": 42, "BA": 12, "BB": 28, "BC": 16, "BD": 24, "BE": 16, "BF": 16, "BG": 28, "BH": 56},
+  "dictionaryRows": [
+    ["水势", "资源", "water_momentum", "PlayerShuData.WaterMomentum / WaterMomentum", "已实现", "施术者", "浮点", "0—100", "不适用", null, "增加、消费、设置、读取", "无ResourceLocation。表内字典键不是已注册的游戏ID。"],
+    ["火种", "资源", "fire_seed", null, "仅设计", "目标实体", "整数", "0—100", "未定", null, "增加、消费、设置、读取", "设计标识mod:fire_seed，未注册。共享整数。三式配置只消费。"],
+    ["潮湿", "状态", "wetness", "xueximod:wetness / xueximod_attribute_states.wetness", "已实现", "命中目标、领域内敌对活物", "整数", "0—100", "固定刷新", 1000, "增加、移除、读取", "增加时刷新1000tick。档位由数值派生。"],
+    ["炉心", "状态", "furnace_core", null, "仅设计", "施术者", "等级", "amp0普通、amp1过载", "无限", null, "施加、移除", "设计标识mod:furnace_core，未注册。不是资源。另有运行态。默认寿命无限，tick留空。"],
+    ["缓慢", "状态", "slowness", "minecraft:slowness", "已实现", "领域内有效目标", "非负amplifier", "0起，0为缓慢I", "固定刷新", null, "施加、移除", "原版状态。amplifier 0是缓慢I，不是未配置。时长由术式填写。"],
+    ["魔力", "费用", null, "PlayerShuData.Magic", "已实现", "施术者", "整数", "既有费用列", "不适用", null, null, "不进入资源下拉。不得用通用资源操作重复扣费。"]
+  ],
+  "lists": [
+    {"col": "BJ", "title": "操作", "name": "操作列表", "width": 14, "values": ["增加", "消费", "设置", "施加", "移除", "读取"]},
+    {"col": "BL", "title": "作用对象", "name": "作用对象列表", "width": 28, "values": ["施术者", "命中目标", "选定目标", "领域内敌对活物", "领域内主人或盟友玩家", "领域内有效目标"]},
+    {"col": "BN", "title": "触发时机", "name": "触发时机列表", "width": 18, "values": ["成功施放", "出手提交", "命中成功", "潮印命中成功", "领域周期", "首次带资源接触", "范围选取", "主动结束"]},
+    {"col": "BP", "title": "寿命策略", "name": "寿命策略列表", "width": 14, "values": ["不适用", "固定刷新", "固定施加", "继承剩余", "无限", "未定"]},
+    {"col": "BR", "title": "计量单位", "name": "计量单位列表", "width": 18, "values": ["每次触发", "每条潮印", "每目标每次施法"]},
+    {"col": "BT", "title": "资源", "name": "资源列表", "width": 12, "values": ["水势", "火种"]},
+    {"col": "BV", "title": "状态", "name": "状态列表", "width": 12, "values": ["潮湿", "炉心", "缓慢"]}
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "rule_stagger_motion_preview",
+  "attemptId": "20261114-art-stagger-01",
+  "techniqueId": "rule_stagger",
+  "techniqueName": "错时",
+  "version": "v1-wave-timing-preview-20261114",
+  "status": "candidate_pending_user_confirmation",
+  "date": "2026-11-14",
+  "inputWorkbook": {
+    "path": "D:/alianximod/docs/术式制作表.xlsx",
+    "sha256": "AB344CCAAFBE723AD0ED6C6DD0834EB3B264EC5184227F655FAE9FC1B0F12C26",
+    "sheet": "制作中",
+    "row": 5
+  },
+  "motionOnlyBoundary": {
+    "isWaveTimingDiagramOnly": true,
+    "noNewProjectileTexture": true,
+    "noExtraAttackCopyCount": true,
+    "noAutoSpawnedProjectile": true,
+    "freezesCastTimeOriginTargetAndAnchor": true,
+    "noReAimOnPlayerMovementOrRotation": true,
+    "noNewFireContextPerWave": true,
+    "runtimeAssetsAdded": false,
+    "note": "仅示意错时对已经存在的多个副本按 10i tick（三份示例 0/10/20 tick）依次放行的空间波次关系，以及释放瞬间冻结原点/方向（玩家后续走位转头不重新瞄准）与单份立即出手不凭空多变出弹体的对照；不新增任何运行贴图或模型。"
+  },
+  "blockbench": {
+    "version": "5.2.2",
+    "environment": "desktop",
+    "platform": "win32",
+    "pluginVersion": "1.10.1",
+    "projectName": "rule-stagger-wave-timing-preview",
+    "projectUuid": "3d79dbaa-5e99-e81f-8116-db817cd0cee2",
+    "formatId": "free",
+    "counts": {
+      "cubes": 253,
+      "meshes": 0,
+      "groups": 11,
+      "textures": 12,
+      "outlinerElements": 253
+    },
+    "viewport": "1706x1215 lossless PNG (temporary offscreen views cleaned; main viewport active)"
+  },
+  "protectedOpenProjects": [
+    {
+      "name": "cool-v4.3-equal-width-steam-ground-wave-preview",
+      "uuid": "fe1b1c81-3962-2fbb-bc94-6a37e1b6e5ef",
+      "saved": true,
+      "elements": 29,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v1-spatial-draft-20261112",
+      "uuid": "e380502f-05e4-5cab-c7a2-4ff5f7e3c7c5",
+      "saved": true,
+      "elements": 514,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v2-projectile-composite-draft-20261112",
+      "uuid": "8a58e270-0fce-3a38-f8c5-528d850c4a39",
+      "saved": true,
+      "elements": 109,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v3-projectile-composite",
+      "uuid": "8cdb8be1-7355-a034-3a20-7ae41a0e5af1",
+      "saved": true,
+      "elements": 80,
+      "untouched": true
+    },
+    {
+      "name": "fire-spark-v3-1-crossed-launch-preview",
+      "uuid": "3cc70eec-3c0d-db2e-731f-2581790ce09d",
+      "saved": false,
+      "elements": 51,
+      "untouched": true
+    },
+    {
+      "name": "fire-upwell-parabolic-motion-preview",
+      "uuid": "6cfd19e7-972f-1e54-9c0f-bd74cd037ea9",
+      "saved": false,
+      "elements": 153,
+      "untouched": true
+    },
+    {
+      "name": "surface-anchor-v2-inverted-triangle-preview",
+      "uuid": "19a21c6d-556d-a2cf-167b-83abca62ed0a",
+      "saved": false,
+      "elements": 40,
+      "untouched": true
+    }
+  ],
+  "scaleAndTimingSpec": {
+    "modelUnitsPerBlock": 16.0,
+    "groundTopY": 0.0,
+    "snapshotTick": 20,
+    "staggerStepTicks": 10,
+    "referenceStraightCarrierSpeedBlocksPerTick": 0.8,
+    "referenceStraightCarrierSpeedModelUnitsPerTick": 12.8,
+    "frozenCasterGhostAtT0": {
+      "positionModelUnits": [-20.0, 0.0, 0.0],
+      "positionBlocks": [-1.25, 0.0, 0.0],
+      "heightModelUnits": 28.8,
+      "heightBlocks": 1.8,
+      "eyeHeightModelUnits": 25.92,
+      "eyeHeightBlocks": 1.62,
+      "frozenOriginModelUnits": [0.0, 24.0, 0.0],
+      "frozenDirection": [1.0, 0.0, 0.0]
+    },
+    "movedPlayerDummyAtT20": {
+      "positionModelUnits": [-48.0, 0.0, -42.0],
+      "positionBlocks": [-3.0, 0.0, -2.625],
+      "yawDeg": 38.0,
+      "heightModelUnits": 28.8,
+      "heightBlocks": 1.8,
+      "eyeHeightModelUnits": 25.92,
+      "eyeHeightBlocks": 1.62
+    },
+    "triplePlusStaggerMainLaneZ0": [
+      {
+        "copyOrdinal": 0,
+        "birthTick": 0,
+        "elapsedTicksAtSnapshot": 20,
+        "positionModelUnits": [256.0, 24.0, 0.0],
+        "distanceBlocks": 16.0
+      },
+      {
+        "copyOrdinal": 1,
+        "birthTick": 10,
+        "elapsedTicksAtSnapshot": 10,
+        "positionModelUnits": [128.0, 24.0, 0.0],
+        "distanceBlocks": 8.0
+      },
+      {
+        "copyOrdinal": 2,
+        "birthTick": 20,
+        "elapsedTicksAtSnapshot": 0,
+        "positionModelUnits": [0.0, 24.0, 0.0],
+        "distanceBlocks": 0.0
+      }
+    ],
+    "singleNoDuplicateControlLaneZ48": {
+      "laneZModelUnits": 48.0,
+      "laneZBlocks": 3.0,
+      "spawnedCopy": {
+        "copyOrdinal": 0,
+        "birthTick": 0,
+        "elapsedTicksAtSnapshot": 20,
+        "positionModelUnits": [256.0, 24.0, 48.0],
+        "distanceBlocks": 16.0
+      },
+      "emptySlotMarkersBlocks": [8.0, 0.0]
+    }
+  },
+  "deliverables": [
+    {
+      "file": "rule-stagger-wave-timing-preview.bbmodel",
+      "role": "editable_blockbench_scene",
+      "bytes": 157454,
+      "sha256": "4995CF2CC4DFEF3B85926677BAF88A5120D1E1226E1C25AADC8FD247F15E2287"
+    },
+    {
+      "file": "rule-stagger-01-side-wave-spacing.png",
+      "role": "viewport_preview_orthographic_side",
+      "camera": {
+        "projection": "orthographic",
+        "zoom": 0.12,
+        "position": [114.0, 18.0, 420.0],
+        "target": [114.0, 18.0, 0.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 52008,
+      "sha256": "4234A3EEBC1A7E312F906963EEC0C5222AB091B6F5140FC1A47B2C25807971E1"
+    },
+    {
+      "file": "rule-stagger-02-top-frozen-aim-comparison.png",
+      "role": "viewport_preview_orthographic_top",
+      "camera": {
+        "projection": "orthographic",
+        "zoom": 0.114,
+        "position": [108.0, 420.0, -7.6],
+        "target": [108.0, 0.0, -8.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 65194,
+      "sha256": "0C6A20716A44AFB4A43C108198CF496F218C120400388C7C6F125A1F4A41E35B"
+    },
+    {
+      "file": "rule-stagger-03-closeup-frozen-origin.png",
+      "role": "viewport_preview_perspective_closeup",
+      "camera": {
+        "projection": "perspective",
+        "fov": 44,
+        "position": [-114.0, 68.0, 94.0],
+        "target": [22.0, 20.0, -6.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 319668,
+      "sha256": "72837345A894931571BF3D53E267CE774A30B90E69B85E01C708EB3AF944C957"
+    },
+    {
+      "file": "rule-stagger-04-hero-3quarter.png",
+      "role": "viewport_preview_perspective_hero_3quarter",
+      "camera": {
+        "projection": "perspective",
+        "fov": 40,
+        "position": [-152.0, 140.0, 198.0],
+        "target": [92.0, 16.0, 0.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 275765,
+      "sha256": "2B1CAAE48970688D82C0D905A83F9B8E22D80001D169CAD294D1A45EC2C5E98D"
+    },
+    {
+      "file": "visual-handoff.md",
+      "role": "visual_handoff_spec",
+      "bytes": 12158,
+      "sha256": "972D64FB6E6BBAA600FA6CE149A12930B26784C9CDD19D2D36DB308B383E76FD"
+    }
+  ]
+}

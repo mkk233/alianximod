@@ -1,0 +1,1 @@
+你是本轮唯一Cursor编译执行者，用户授权Cursor编译且不打包。两位writer已经结束，独立只读审核正在进行。现在只执行一次编译读取错误，不改任何源文件，不读整仓，不另派代理。根目录D:/alianximod运行powershell：.\gradlew.bat compileJava --offline --no-daemon，把完整stdout/stderr保留到D:/alianximod/docs/资源库/过程归档/水环接入-20261027/compile-first.log。禁止build/jar/reobf/runClient。完成直接给退出码、具体文件/行号/编译错误；成功就报告BUILD SUCCESSFUL。仅这一步，不修错误，主控随后集中修复。不要跑命名门禁或其他检查。

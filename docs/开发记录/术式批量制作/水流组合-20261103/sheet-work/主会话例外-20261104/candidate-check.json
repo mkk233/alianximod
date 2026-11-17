@@ -1,0 +1,47 @@
+{
+  "time": "2026-11-03T19:03:49.315Z",
+  "sourceHash": "882F639DB28818BDFA56D3419A49C4AB54B4C6EFA6C6B8FE429A2E45B9FAA352",
+  "candidateHash": "314BD5EF7367DF1192093467F51F5BCBA2070F2FBC32BCC99F18300950CFC3C5",
+  "counts": {
+    "已完成": 37,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 10
+  },
+  "unique": 62,
+  "rows": [
+    {
+      "id": "water_vortex",
+      "row": 10
+    },
+    {
+      "id": "water_bubble_column",
+      "row": 11
+    },
+    {
+      "id": "water_deep_pressure",
+      "row": 12
+    }
+  ],
+  "native": {
+    "changedParts": [
+      "xl/workbook.xml",
+      "xl/worksheets/sheet3.xml",
+      "xl/worksheets/sheet4.xml",
+      "xl/sharedStrings.xml"
+    ],
+    "unchangedParts": 25,
+    "newSharedStrings": 3,
+    "nativePartsMissingFromArtifactExport": [
+      "docProps/app.xml",
+      "docProps/core.xml",
+      "xl/drawings/vmlDrawing1.vml",
+      "xl/drawings/vmlDrawing2.vml",
+      "xl/drawings/vmlDrawing3.vml",
+      "xl/drawings/vmlDrawing4.vml",
+      "xl/printerSettings/printerSettings1.bin"
+    ],
+    "otherRowsByteIdentical": true,
+    "resourceDetailsAndArchiveByteIdentical": true
+  }
+}

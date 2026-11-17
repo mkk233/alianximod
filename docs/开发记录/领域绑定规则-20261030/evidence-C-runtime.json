@@ -1,0 +1,50 @@
+{
+  "task": "implement-C-runtime",
+  "author": "C",
+  "model": "grok-4.7-high-fast",
+  "stage": "implementation",
+  "designReview": "2/2",
+  "implementationReview": "0/3",
+  "released": true,
+  "featureComplete": false,
+  "compile": "not-run",
+  "nameGate": "not-run",
+  "shell": "rejected",
+  "playTested": false,
+  "hashNote": "本会话 Shell 调用立即返回 Rejected，没有输出。SHA-256、mtime、字节长度没有文件系统读数，填写 null。",
+  "backupRoot": "docs/开发记录/领域绑定规则-20261030/backup-C-runtime",
+  "backupNote": "DomainInstance 与 DomainService 的改前全文已按相对路径写入。内容来自本会话读取后的 UTF-8 写入，未与原字节核对换行。DomainBindingRuntime 是新文件，没有改前备份。",
+  "files": [
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-C-runtime/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java",
+      "change": "保存 BoundReleasePlan、下一拍和未完成 RoundHandle；close 时取消句柄",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-C-runtime/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+      "change": "新增 boundPlan 与 claimSuffix 重载；快照后调用 DomainBindingRuntime",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainBindingRuntime.java",
+      "backup": null,
+      "change": "新增 20 刻周期、选敌、寿命令牌和自动执行调用",
+      "sha256": null,
+      "mtimeUtc": null
+    }
+  ],
+  "unchangedRegistration": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ChainRole.java",
+    "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainGeometry.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/AxisBoxGeometry.java"
+  ],
+  "periodTicks": 20,
+  "firstBeat": "startedAt+20",
+  "fee": "开域仍只收 initialCost*copies；周期费用交给 BoundReleases.executeAutomatic"
+}

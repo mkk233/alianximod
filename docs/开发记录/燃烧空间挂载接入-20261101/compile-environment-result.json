@@ -1,0 +1,38 @@
+{
+  "status": "environment_restored_compile_succeeded",
+  "session_id": "14dc9491-4e97-4a66-a10f-b7a91f9ff90a",
+  "model": "grok-4.7-high-fast",
+  "injected_gradle_user_home": "C:\\Users\\baishang\\AppData\\Local\\Temp\\cursor-sandbox-cache\\1666b9acff5b60e1c6fe638eb4f17110\\gradle",
+  "restored_java_home": "C:\\Program Files\\Java\\jdk-17",
+  "restored_gradle_user_home": "C:\\Users\\baishang\\.gradle",
+  "java_version": "17.0.6",
+  "persistent_environment_changed": false,
+  "build_files_changed": false,
+  "cache_deleted": false,
+  "download_required": false,
+  "gradle_help_ran": false,
+  "plugin_cache_present": [
+    "org.gradle.toolchains:foojay-resolver:0.7.0",
+    "org.gradle.toolchains.foojay-resolver-convention:org.gradle.toolchains.foojay-resolver-convention.gradle.plugin:0.7.0"
+  ],
+  "wrapper_dists_present": ["gradle-8.8-bin", "gradle-8.10-bin"],
+  "attempt_1": {
+    "preserved": true,
+    "exit_code": 1,
+    "javac_started": false,
+    "log_sha256": "60523b94de1ef782a267b0ba4d0588cdd65a71256ff07e049c59c7fdbe90a8d3"
+  },
+  "attempt_2": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "started_at": "2026-11-01T21:37:58.9101183+08:00",
+    "ended_at": "2026-11-01T21:38:35.9135652+08:00",
+    "exit_code": 0,
+    "javac_started": true,
+    "source_hashes_unchanged": true,
+    "result": "BUILD SUCCESSFUL in 35s"
+  },
+  "archive_status_updated": true,
+  "spreadsheet_or_index_written": false,
+  "game_unverified": true,
+  "blockers": []
+}

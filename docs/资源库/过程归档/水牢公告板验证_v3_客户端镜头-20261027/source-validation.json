@@ -1,0 +1,17 @@
+{
+  "sourceTextureUnchanged": true,
+  "sha256": "8ba44798140ec92fc45b826549cec03cf629bcb7bcd1d34dab750462101e5096",
+  "planeChecks": [
+    {
+      "name": "水牢2D_人形_单平面",
+      "vertices": 4,
+      "faces": 1
+    },
+    {
+      "name": "水牢2D_宽矮_单平面",
+      "vertices": 4,
+      "faces": 1
+    }
+  ],
+  "gameCodeModified": false
+}

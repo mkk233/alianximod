@@ -1,0 +1,107 @@
+{
+  "startedUtc": "2026-10-30T02:38:07.044Z",
+  "endedUtc": "2026-10-30T02:41:33.257Z",
+  "released": true,
+  "author": "B",
+  "newFiles": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/ChainStructureEpoch.java"
+  ],
+  "modifiedFiles": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterReleaseDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusDefinition.java",
+    "src/main/java/com/bslx/XueXiMod/shu/TechniqueManager.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseRegistry.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueEffectRegistry.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentRegistry.java",
+    "src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java",
+    "src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java"
+  ],
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/ChainStructureEpoch.java",
+      "mtimeUtc": "2026-10-30T02:38:28.838Z",
+      "kind": "new",
+      "sha256": "1d0f1f1c1c0685b4ff03728fb428ebe4b3fc72da9a0797fa785719826e212074",
+      "backup": null
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java",
+      "mtimeUtc": "2026-10-30T02:38:29.038Z",
+      "kind": "modified",
+      "sha256": "bddbfb077219596ba533717ad50c615294b41335830b50831c8ee2804e2f8e05",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+      "mtimeUtc": "2026-10-30T02:38:29.610Z",
+      "kind": "modified",
+      "sha256": "1b6ff094512e87144f761d83f63807696aaf7e3411f6542661e16b62a30f6c4d",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterReleaseDefinition.java",
+      "mtimeUtc": "2026-10-30T02:38:59.882Z",
+      "kind": "modified",
+      "sha256": "dae15fee635fa8f3e3af37ff73d7faad9b57b5e1291c7b32becf9a06a7992abe",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterReleaseDefinition.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusDefinition.java",
+      "mtimeUtc": "2026-10-30T02:38:29.897Z",
+      "kind": "modified",
+      "sha256": "610bdde78ce3ee648094ff1ae8454c8a840c723ce341c5f80a094990f7bd3679",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusDefinition.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/TechniqueManager.java",
+      "mtimeUtc": "2026-10-30T02:38:31.610Z",
+      "kind": "modified",
+      "sha256": "eaa6b09b84628b3d81f455a5ff795db329c383491a1b863768975649836539a6",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/TechniqueManager.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseRegistry.java",
+      "mtimeUtc": "2026-10-30T02:38:32.785Z",
+      "kind": "modified",
+      "sha256": "fbc07c2b8f5cecea8f5fb19902f1cc0ba4b0125812f895bd17dd96c8f730df33",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseRegistry.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueEffectRegistry.java",
+      "mtimeUtc": "2026-10-30T02:38:32.658Z",
+      "kind": "modified",
+      "sha256": "2e529c7222a40ded473f15da1f6d085e8813d971947f9466e29cd7575b548cac",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueEffectRegistry.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentRegistry.java",
+      "mtimeUtc": "2026-10-30T02:38:33.248Z",
+      "kind": "modified",
+      "sha256": "657c255e2f64e3c118dc7124832462c5ddad0285086d078a1f707831a35001a7",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentRegistry.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java",
+      "mtimeUtc": "2026-10-30T02:38:34.040Z",
+      "kind": "modified",
+      "sha256": "93e2366c5e81f4b62a949bdfea5bfb456747d37ad2efd380208f5ab2d3ef13f9",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java",
+      "mtimeUtc": "2026-10-30T02:38:35.783Z",
+      "kind": "modified",
+      "sha256": "14ebf0fb6d3502dab9bfecdea40273d71bb2c332b2a0166f43b09c5338683bca",
+      "backup": "docs/开发记录/术式链计划缓存-20261030/backup-B/src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java"
+    },
+    {
+      "path": "docs/开发记录/术式链计划缓存-20261030/implementation-B-final.md",
+      "mtimeUtc": "2026-10-30T02:41:10.498Z",
+      "kind": "report",
+      "sha256": "7a5e8a5e12d34486b0e62f58bcf195d3345e0a8f4a0df7485b58624889845399",
+      "backup": null
+    }
+  ]
+}

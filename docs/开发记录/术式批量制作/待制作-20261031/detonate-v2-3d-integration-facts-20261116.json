@@ -1,0 +1,50 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "fire_detonate_v2_integration",
+  "attemptId": "20261116-impl-detonate-3d-01",
+  "relatedB": "fire_detonate",
+  "parentSession": "01a1ce06-b681-7c90-b11d-260d3c169911",
+  "confirmedVersion": "fire_detonate_v2_3d_candidate_20261116",
+  "userWords": "可以先采用这一版",
+  "review": "本阶段额度已用完，返修结果未追加复审",
+  "designRounds": "2/2",
+  "implementationRounds": "3/3",
+  "subagents": [],
+  "compileJava": "not-run",
+  "gameVerification": "not-run",
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "changedFilesAfterRename": 0,
+    "preexistingFindings": 290
+  },
+  "visualCap": {
+    "shownMaximumSpent": 100,
+    "shownMaximumScale": 1.35,
+    "aboveShownSpent": "visual scale fixed at 1.35; seed consumption and damage remain uncapped"
+  },
+  "runtimeTextures": {
+    "orange": {
+      "path": "src/main/resources/assets/xueximod/textures/effect/detonate_v2_3d/explosion_puff_orange.png",
+      "sha256": "28666B39C8A80E0A18EB04DDAE7F7422A546B179307DB0990F7F8109ADF8D0F7",
+      "bytes": 2179,
+      "size": "32x512"
+    },
+    "soul": {
+      "path": "src/main/resources/assets/xueximod/textures/effect/detonate_v2_3d/explosion_puff_soul.png",
+      "sha256": "C4B656B506B6CB721BCEF39CFED9BA99AA0AE21F2EDED7839057FC3573835856",
+      "bytes": 2193,
+      "size": "32x512"
+    }
+  },
+  "javaSha256": {
+    "src/main/java/com/bslx/XueXiMod/carrier/DetonateCloudLayout.java": "8C4BAFEBD291B9B8A57DE8888C43A14E66F938B6BD3D403F54A646DCBA742D68",
+    "src/main/java/com/bslx/XueXiMod/carrier/BatchTriggerVisuals.java": "97A6B5B7D43965A4C3CB2E2CB3397EA1BFA2CFA3921B9DC4A25B3BAE4B5E1F81",
+    "src/main/java/com/bslx/XueXiMod/carrier/BatchVisualTexture.java": "83CA33CDAFA36805955D60124B39FACA31AD2203D43E88CD36B9F3275C792AA8",
+    "src/main/java/com/bslx/XueXiMod/client/DetonateCloudMesh.java": "3BA9C02A9B7A51DC278086BBA7DD4C30902BA5DC37B43755B976B7F8DC9543E1",
+    "src/main/java/com/bslx/XueXiMod/client/BatchCarrierVisualRenderer.java": "A587B2F9F255C16A0F3705EFB1ACD9F53D419625A51FF01D767674C7E3AA3FC9",
+    "src/main/java/com/bslx/XueXiMod/client/CameraFacingClient.java": "947DD3C45D02EAFE399335FBE2821434E24D4CE36E9575474ABAE47E1589E84B",
+    "src/main/java/com/bslx/XueXiMod/visual/facing/CameraFacingRegistry.java": "2325BDB82679CA7783CEBC184FC90F4C7291E30BCFA4D67BC267D8D3FA3E883D",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/DetonatePlan.java": "8B170D851511FC3919DFC9DE8A2859CC118AE7C6D7F9659BC9B17CBE78B3ABE8"
+  }
+}

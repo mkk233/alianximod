@@ -1,0 +1,2 @@
+native GUI reopen: D:\alianximod\docs\资源库\过程归档\幽冥_魂谷天空危险魂火_v2修订_20261116\youming_v2_soulvalley_palette.aseprite
+frames=16 duration=0.1 ui=true

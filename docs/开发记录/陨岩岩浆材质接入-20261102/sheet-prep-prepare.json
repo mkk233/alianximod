@@ -1,0 +1,35 @@
+{
+  "ready": true,
+  "submitted": false,
+  "baselineSha256": "FE75EF6B099EDE5F3F4B27F11514550834C6FAC9429C94F0650038B946CDF301",
+  "baselineMtime": "2026-11-02T00:29:03.007+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\陨岩岩浆材质接入-20261102\\备份\\术式制作表-20261102-021439-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\陨岩岩浆材质接入-20261102\\候选\\术式制作表-候选-20261102-021439-1.xlsx",
+  "candidateSha256": "CF8F75500E4EBDFD9288EDA51475E072A34B2AA2AF9DBACAAF99CBCE5323606E",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\陨岩岩浆材质接入-20261102\\快照\\变更前-AEN-20261102-021439-1.json",
+    "nodv": "D:\\alianximod\\docs\\开发记录\\陨岩岩浆材质接入-20261102\\快照\\变更前-NODV-20261102-021439-1.json",
+    "revised": "D:\\alianximod\\docs\\开发记录\\陨岩岩浆材质接入-20261102\\快照\\修订需求-20261102-021439-1.md"
+  },
+  "from": {
+    "sheet": "待验收",
+    "row": 9
+  },
+  "to": {
+    "sheet": "制作中",
+    "row": 16
+  },
+  "countsBefore": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 13,
+    "待验收": 7
+  },
+  "countsAfter": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 14,
+    "待验收": 6
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx"
+}

@@ -1,0 +1,6 @@
+compile_start=2026-11-04T01:25:09.9755371+08:00
+compile_end=2026-11-04T01:25:29.3430077+08:00
+exit_code=1
+stdout_chars=773
+stderr_chars=981
+

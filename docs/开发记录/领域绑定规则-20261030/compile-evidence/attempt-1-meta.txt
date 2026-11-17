@@ -1,0 +1,12 @@
+index=1
+launched=false
+start=2026-10-30T13:49:55.4394675+08:00
+end=2026-10-30T13:49:55.4395219+08:00
+gradle_exit=
+JAVA_HOME=
+GRADLE_USER_HOME=C:\Users\baishang\AppData\Local\Temp\cursor-sandbox-cache\da9014e6892998c9b90f6055eb2faa2f\gradle
+java_on_path=C:\Program Files\Common Files\Oracle\Java\javapath\java.exe
+sandbox_dist=False
+sandbox_caches=False
+sandbox_forge_gradle=False
+reason=inherited GRADLE_USER_HOME is sandbox and gradle-8.8 distribution is absent; launching gradlew would download the distribution, which this task forbids

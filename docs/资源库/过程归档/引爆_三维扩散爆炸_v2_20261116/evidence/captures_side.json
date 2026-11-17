@@ -1,0 +1,6668 @@
+{
+  "duration_ms": 1000,
+  "frame_ms": 50,
+  "preview_hold_ms": 650,
+  "mode": "side",
+  "samples": [
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_01.png",
+      "frame": 1,
+      "at_ms": 0,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": false,
+          "age": -3,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": false,
+          "age": -3,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": false,
+          "age": -3,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": false,
+          "age": -3,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": false,
+          "age": -3,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": false,
+          "age": -3,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_02.png",
+      "frame": 2,
+      "at_ms": 50,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            0.829197196099419,
+            18.836869365059755,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -2.2726342836712456,
+            17.95312948678298,
+            1.124981134715249
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            2.5895212545819017,
+            16.97993162728361,
+            3.379668793851531
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -2.404723341687796,
+            15.917275786561643,
+            -0.4635993585636744
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            1.9757116779209758,
+            14.765161964617084,
+            4.30270051822172
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -1.3692125811685691,
+            13.523590161449931,
+            -0.31871338551687933
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": false,
+          "age": -2,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            0,
+            16.09060062518042,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_03.png",
+      "frame": 3,
+      "at_ms": 100,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            1.4313179415912167,
+            20.9119211257627,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -1.620128929699124,
+            19.416862883624102,
+            2.7137918424020597
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -3.9229054803797783,
+            19.386454385851618,
+            0.6348168356821513
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            3.100417452795357,
+            18.208837823415422,
+            0.5512073690678505
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            4.469899620078406,
+            17.706569837794603,
+            4.526743767402179
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -2.7121284884269583,
+            16.659754209795597,
+            2.6396407340490993
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -4.150910880683018,
+            15.87226748159165,
+            -2.1073098531053116
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            2.925824000587293,
+            15.675374102643405,
+            1.0796870818548274
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            3.4103728103785382,
+            13.883547317242758,
+            6.12003408961225
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -2.7749419204945727,
+            14.601536014268614,
+            2.293570786628432
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -2.3634649785333086,
+            11.740409344747931,
+            -1.8572150702451011
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            2.013683831823352,
+            13.438239944671231,
+            1.6477219536367367
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": false,
+          "age": -1,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 3,
+          "center": [
+            0,
+            16.171451984874402,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            0.10954038517052363,
+            15.945459614829476,
+            2.019080770341047
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_04.png",
+      "frame": 4,
+      "at_ms": 150,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            1.8685473411321782,
+            22.433779766636153,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -2.7965839919353725,
+            21.913076379341526,
+            3.377340908848109
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            0.06279245381829278,
+            18.88422276073243,
+            -0.3824942041168906
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -5.1212483207801265,
+            20.442323684085004,
+            0.27888450193136705
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            5.351782600669171,
+            19.827845084901423,
+            -0.35560219738825105
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -0.33438700565625595,
+            17.75447343409352,
+            5.078537712851727
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            5.835334559517893,
+            18.24927927761906,
+            5.359691154897311
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -4.681537978718319,
+            17.153895896904935,
+            3.2493450445667
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            0.8191101966763973,
+            16.535266126232013,
+            -1.9229502094538933
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -5.418903280674476,
+            15.854646547238316,
+            -3.3008886459446414
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            5.05040828126085,
+            15.454709122829675,
+            0.5566325499519698
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -1.4758754613115481,
+            15.226600837147915,
+            5.3981433039732805
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            4.452150610239649,
+            13.258425492942777,
+            7.439689112519175
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -4.789963323997126,
+            13.60110454060848,
+            2.651976738066372
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            1.418403097495586,
+            14.482639054531441,
+            -0.18549209629685004
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -3.085440399487923,
+            10.460616114732442,
+            -2.9743965871467504
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            3.47591840727274,
+            11.593082150241345,
+            1.53714539690259
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -1.1472562591548956,
+            13.397618718503828,
+            2.7195327101234223
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 0,
+          "textureFrame": 0,
+          "center": [
+            0,
+            16,
+            1.8
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 5,
+          "center": [
+            0,
+            16.245223924823236,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 3,
+          "center": [
+            0.1890830303827806,
+            15.920916969617219,
+            2.178166060765561
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_05.png",
+      "frame": 5,
+      "at_ms": 200,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 5,
+          "center": [
+            2.1860410485891557,
+            23.553937756229637,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -3.650865702538693,
+            23.74076120854803,
+            3.8591764244990543
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            0.1083891336939403,
+            20.993660144105256,
+            -1.9673102688552826
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            1.778852057016889,
+            18.396311628452057,
+            3.309797861581866
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 5,
+          "center": [
+            -5.991423820420991,
+            21.224103961233798,
+            0.020424580514843305
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            6.986609234899009,
+            21.018547451805745,
+            -1.0140810908795606
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -0.5772018078235011,
+            19.043544431792846,
+            7.459244716048789
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -1.8557513857412773,
+            17.344838035382914,
+            -0.792900559701416
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 5,
+          "center": [
+            6.826843825978649,
+            18.658429017719335,
+            5.9645350982599465
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -6.11162278369718,
+            17.527778210138294,
+            3.692081242548734
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            1.413906277250205,
+            16.939010911334503,
+            -4.626366919122135
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            1.1847447760516816,
+            16.20390646109118,
+            5.16837230046952
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 5,
+          "center": [
+            -6.339654740945031,
+            15.856912925686252,
+            -4.167604737036498
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            6.593173110853853,
+            15.309535263182998,
+            0.17681700527367994
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -2.547581006383618,
+            14.680059582730221,
+            8.010931599406627
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -0.16409658019799198,
+            14.973516905576851,
+            -1.742922633388522
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 5,
+          "center": [
+            5.208636556453542,
+            12.819555685134546,
+            8.397955336672497
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -6.253169175833381,
+            12.889703992312906,
+            2.912232874584512
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            2.4483751409243464,
+            13.39587066804717,
+            -1.627255270140232
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            -0.6664445710701502,
+            13.653669368839928,
+            4.724280793959675
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 5,
+          "center": [
+            -3.6097021562049885,
+            9.546357296064215,
+            -3.785636869881408
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            4.537718636211169,
+            10.268284397528017,
+            1.4568503367071652
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -1.9803352870169881,
+            11.522963859807732,
+            3.3872505021373067
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 1,
+          "textureFrame": 1,
+          "center": [
+            0.4919765662174811,
+            12.24436385088041,
+            0.7762324562874421
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 7,
+          "center": [
+            0,
+            16.313855150941084,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 5,
+          "center": [
+            0.24684284560995517,
+            15.918157154390045,
+            2.2936856912199106
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_06.png",
+      "frame": 6,
+      "at_ms": 250,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 6,
+          "center": [
+            2.416588798535996,
+            24.38240120470429,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -4.2712015440829605,
+            25.082994590311472,
+            4.2090608202168935
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            0.1414991188793991,
+            22.54048787176962,
+            -3.1181229282039817
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            3.070563765316258,
+            20.15145281294195,
+            4.406136124945457
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 6,
+          "center": [
+            -6.623300921570324,
+            21.806854759649543,
+            -0.16725584254390746
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            8.173737021127428,
+            21.898236631935628,
+            -1.492234905321624
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -0.7535215426044848,
+            19.99466389845278,
+            9.187992813974928
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -3.2033034675454735,
+            18.33645268275724,
+            -2.675732804356433
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 6,
+          "center": [
+            7.546827325068771,
+            18.97059451047305,
+            6.40374194531258
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -7.150077487766296,
+            17.814334294832527,
+            4.013573706391055
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            1.8458168784140805,
+            17.247251601221148,
+            -6.589450359656653
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            2.045046054359696,
+            16.36703474442659,
+            7.6143126029611565
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 6,
+          "center": [
+            -7.008257527204691,
+            15.873620457174813,
+            -4.796969791999125
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            7.71345030629397,
+            15.21917920775324,
+            -0.0989856867600798
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -3.325798955964237,
+            14.298250980074714,
+            9.908205304212963
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -0.28325515389584954,
+            14.243198997950005,
+            -4.315612492050183
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 6,
+          "center": [
+            5.757958097856541,
+            12.515932599754828,
+            9.093799432601676
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -7.3156746961848675,
+            12.38818297215533,
+            3.101217617509678
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            3.1962883484729625,
+            12.621776653640435,
+            -2.6741902105149125
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            -1.1503826546157288,
+            11.964945443327482,
+            6.847744476626582
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 6,
+          "center": [
+            -3.990394326019648,
+            8.897530938213096,
+            -4.37471822002457
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            5.308743850019434,
+            9.321345588038794,
+            1.3985441560644833
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -2.5852748209053327,
+            10.176746842280993,
+            3.8721131338451595
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 2,
+          "textureFrame": 2,
+          "center": [
+            0.849224876039126,
+            9.53227408055902,
+            0.032824640233270364
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 9,
+          "center": [
+            0,
+            16.378753452660693,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 6,
+          "center": [
+            0.2887850798187223,
+            15.931214920181278,
+            2.3775701596374446
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_07.png",
+      "frame": 7,
+      "at_ms": 300,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 7,
+          "center": [
+            2.5840008251594,
+            24.999050943025857,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -4.721657818082628,
+            26.07271787096811,
+            4.463129037254514
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            0.16554190273934413,
+            23.678777139692937,
+            -3.9537844326422533
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            4.008538978474657,
+            21.441008696948614,
+            5.202241099193969
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 7,
+          "center": [
+            -7.082137870118825,
+            22.245080493734008,
+            -0.30353980102560185
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            9.03576871998062,
+            22.552083885972035,
+            -1.8394458372518414
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -0.8815559482327847,
+            20.700380186270884,
+            10.44332158062697
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -4.181827114154237,
+            19.07157450705722,
+            -4.0429496257839705
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 7,
+          "center": [
+            8.069642649642008,
+            19.21233498540474,
+            6.722671574376021
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -7.90415037117073,
+            18.037478522761802,
+            4.247025149436605
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            2.159448345551148,
+            17.48614208433021,
+            -8.0149415096961
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            2.6697529991963256,
+            16.500551993251033,
+            9.39042979835519
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 7,
+          "center": [
+            -7.493762796631928,
+            15.900814418038054,
+            -5.253982620628065
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            8.526938513018425,
+            15.168629048070091,
+            -0.29925954600272653
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -3.890901170685665,
+            14.036062833870913,
+            11.285908778023316
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -0.36978203744562327,
+            13.727941155530045,
+            -6.1837687556065974
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 7,
+          "center": [
+            6.156847406190163,
+            12.31051879163395,
+            9.59908595281406
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -8.087212056673582,
+            12.039065769256634,
+            3.238448706606407
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            3.7393848039490853,
+            12.074730833435423,
+            -3.4344210093467877
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            -1.501793827985638,
+            10.753741993894263,
+            8.38969558505611
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 7,
+          "center": [
+            -4.266833578552056,
+            8.441448106192425,
+            -4.802479075189096
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            5.868623066585844,
+            8.64878868632143,
+            1.3562051791353553
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -3.024551080926162,
+            9.214254454272684,
+            4.224195666972833
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 3,
+          "textureFrame": 3,
+          "center": [
+            1.108640392212317,
+            7.577954508343685,
+            -0.5070002295475218
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 11,
+          "center": [
+            0,
+            16.44094109492305,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 8,
+          "center": [
+            0.31924139280213787,
+            15.955758607197863,
+            2.438482785604276
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_08.png",
+      "frame": 8,
+      "at_ms": 350,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            2.7055669070865407,
+            25.46189235968076,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -5.048756207691288,
+            26.806466281147287,
+            4.64762042840741
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            0.18300054708781416,
+            24.520406598467716,
+            -4.560599229409657
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            4.689648776308617,
+            22.39248026333371,
+            5.780331959654103
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            -7.415321878481151,
+            22.578359491521308,
+            -0.40250226624567564
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            9.66173220802986,
+            23.041936242844795,
+            -2.091572721134427
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -0.9745280085920772,
+            21.227897192078167,
+            11.354877355742255
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -4.892381117893029,
+            19.620444314865452,
+            -5.035752804134528
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            8.449284494148236,
+            19.402936401459076,
+            6.95426201741471
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -8.45171966933824,
+            18.214576291962143,
+            4.416545690007595
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            2.3871915334087386,
+            17.674673981566873,
+            -9.050060535654316
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            3.1233833456426914,
+            16.612567217878574,
+            10.680155589520592
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            -7.846311980520721,
+            15.935623089494065,
+            -5.585842046067296
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            9.117652191002193,
+            15.146983901253199,
+            -0.44468821604280584
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -4.301249599753841,
+            13.860736966933834,
+            12.286326828903785
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -0.4326134506162788,
+            13.368848972373073,
+            -7.540328627491273
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            6.446500493335615,
+            12.17641955562628,
+            9.965999272912601
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -8.647463168058836,
+            11.800616451506835,
+            3.3380989298105703
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            4.133753772131207,
+            11.692555840819312,
+            -3.9864618718723177
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            -1.7569707131451335,
+            9.889289578348947,
+            9.509381897656922
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            -4.467569675587836,
+            8.125325799855718,
+            -5.113097208264635
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            6.275178820573113,
+            8.17547394272305,
+            1.3254607718075837
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -3.3435311141496196,
+            8.530403336490638,
+            4.4798600593739595
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 4,
+          "textureFrame": 4,
+          "center": [
+            1.297014719483454,
+            6.173889035806199,
+            -0.8989935389272745
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 13,
+          "center": [
+            0,
+            16.5011603944307,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 10,
+          "center": [
+            0.34135721514785994,
+            15.98864278485214,
+            2.48271443029572
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_09.png",
+      "frame": 9,
+      "at_ms": 400,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 10,
+          "center": [
+            2.7938420004187545,
+            25.813046011663484,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            -5.286278388333973,
+            27.3543387856142,
+            4.781588674441472
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            0.19567812487006767,
+            25.14661682249082,
+            -5.001237209764374
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            5.184236000147205,
+            23.098452228028194,
+            6.200112081318331
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 10,
+          "center": [
+            -7.6572631253218075,
+            22.83543151780238,
+            -0.47436376507167055
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            10.116274992120106,
+            23.412703863057178,
+            -2.2746544150861574
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -1.0420395806967344,
+            21.626014960846067,
+            12.01680270408118
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -5.408349223496808,
+            20.03406740024517,
+            -5.7566758760974865
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 10,
+          "center": [
+            8.724961053969311,
+            19.556403239152758,
+            7.122431194622721
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            -8.849336587933697,
+            18.35823746949582,
+            4.539642867307431
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            2.55256702997162,
+            17.826638040163896,
+            -9.80171121961053
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            3.452786584902126,
+            16.708968768340405,
+            11.616688730864453
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 10,
+          "center": [
+            -8.102315230922683,
+            15.975961175714609,
+            -5.826821448293821
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            9.546598359456365,
+            15.146328101695739,
+            -0.5502911047553176
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -4.5992237163863985,
+            13.74848606044431,
+            13.012779433221775
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -0.4782384207881296,
+            13.123156332313894,
+            -8.525393272193138
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 10,
+          "center": [
+            6.6568318036517065,
+            12.094105327487942,
+            10.232433026991666
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            -9.054288973110708,
+            11.642528511992884,
+            3.4104598434344524
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            4.4201244186284,
+            11.430101640898426,
+            -4.387325812620561
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            -1.942267162587165,
+            9.276630092165634,
+            10.322441035376595
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 10,
+          "center": [
+            -4.613333999156298,
+            7.910835694472753,
+            -5.338652266495065
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 8,
+          "center": [
+            6.570398889847739,
+            7.84683870038725,
+            1.303135750031121
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -3.575158158120567,
+            8.048887308772384,
+            4.6655105117300675
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 5,
+          "textureFrame": 5,
+          "center": [
+            1.4338025558407947,
+            5.1693900478956305,
+            -1.1836391030727118
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.559950383742372,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 11,
+          "center": [
+            0.3574165982482989,
+            16.027583401751702,
+            2.514833196496598
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_10.png",
+      "frame": 10,
+      "at_ms": 450,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 11,
+          "center": [
+            2.857942874439532,
+            26.083097700876593,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 9,
+          "center": [
+            -5.458754891091301,
+            27.76723768013294,
+            4.878869587297557
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            0.20488393576907787,
+            25.616400576631847,
+            -5.321206054897048
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            5.543380036486544,
+            23.626154893353057,
+            6.504935012447485
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 11,
+          "center": [
+            -7.8329485287435565,
+            23.037165925105914,
+            -0.5265459232468388
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 9,
+          "center": [
+            10.446340797096033,
+            23.69699821641345,
+            -2.4075990108550265
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            -1.0910630437718623,
+            21.930169598239754,
+            12.497459158392157
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -5.783018966541728,
+            20.34948120836605,
+            -6.280173470607594
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 11,
+          "center": [
+            8.925143322427171,
+            19.682904838527715,
+            7.244547080717794
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 9,
+          "center": [
+            -9.138065730495994,
+            18.477618698187715,
+            4.629029764070196
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            2.672654287556341,
+            17.952048397944885,
+            -10.347521639981117
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            3.691982429899318,
+            16.79403246434162,
+            12.296751369638896
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 11,
+          "center": [
+            -8.288211744689802,
+            16.020314441142,
+            -6.001808409175205
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 9,
+          "center": [
+            9.85807720663581,
+            15.160913696439524,
+            -0.6269745407061078
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            -4.815597334252014,
+            13.68203697574724,
+            13.540292292326958
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -0.5113689489449349,
+            12.959808661279775,
+            -9.240697015398736
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 11,
+          "center": [
+            6.809563682104184,
+            12.04939473294877,
+            10.425903640960108
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 9,
+          "center": [
+            -9.34970513970585,
+            11.542794909902813,
+            3.4630046511842068
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            4.628072187828507,
+            11.254582579310876,
+            -4.678412777192464
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            -2.07682000092267,
+            8.846809799180509,
+            10.9128431453157
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 11,
+          "center": [
+            -4.719180622355234,
+            7.770145713948025,
+            -5.502438854836192
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 9,
+          "center": [
+            6.784772658876336,
+            7.62326233857758,
+            1.2869244569654934
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            -3.743353913060296,
+            7.714296711870174,
+            4.80032040894075
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 6,
+          "textureFrame": 6,
+          "center": [
+            1.533130911495071,
+            4.455035878043823,
+            -1.3903342053842185
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 9,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.617702480831564,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 13,
+          "center": [
+            0.36907810382268014,
+            16.07092189617732,
+            2.5381562076453603
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_11.png",
+      "frame": 11,
+      "at_ms": 500,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 12,
+          "center": [
+            2.9044896623853016,
+            26.294257277919765,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 10,
+          "center": [
+            -5.583998537486373,
+            28.082125617757466,
+            4.949510028493653
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            0.21156872648887662,
+            25.97259540029516,
+            -5.553551123683719
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            5.804172132645116,
+            24.02440747860088,
+            6.726281890364903
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 12,
+          "center": [
+            -7.960522315266164,
+            23.19871697367495,
+            -0.5644379471581644
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 10,
+          "center": [
+            10.686017763550254,
+            23.91850009030954,
+            -2.504136601056741
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            -1.126661384277884,
+            22.166092998265622,
+            12.846487379853327
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            -6.055085039674445,
+            20.59358044437372,
+            -6.660310744771505
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 12,
+          "center": [
+            9.070505483907077,
+            19.78982565606307,
+            7.333221413817132
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 10,
+          "center": [
+            -9.347726119342719,
+            18.579369065407956,
+            4.693937973081483
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            2.7598555340163053,
+            18.058176811447563,
+            -10.743861351158003
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            3.865674262416057,
+            16.87086318824378,
+            12.790578199934753
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 12,
+          "center": [
+            -8.423200319157152,
+            16.06758332508412,
+            -6.128875022319675
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 10,
+          "center": [
+            10.084257271583986,
+            15.186566814978818,
+            -0.682658143881276
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            -4.97271682851328,
+            13.648846839840983,
+            13.923345247010177
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            -0.5354266500637419,
+            12.856255710211064,
+            -9.760114139742688
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 12,
+          "center": [
+            6.920469788572906,
+            12.031989980738107,
+            10.566392140995347
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 10,
+          "center": [
+            -9.564221304614914,
+            11.485435253742166,
+            3.5011600127349127
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            4.779073260194786,
+            11.142191384711944,
+            -4.889785296221053
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            -2.174525414915529,
+            8.549758010275573,
+            11.341563068934258
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 12,
+          "center": [
+            -4.796041045868645,
+            7.683045623025023,
+            -5.6213723282456876
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 10,
+          "center": [
+            6.940439964830309,
+            7.475974381697994,
+            1.2751526421161685
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            -3.865489098549663,
+            7.48639587507667,
+            4.8982124859882905
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 7,
+          "textureFrame": 7,
+          "center": [
+            1.605258101307537,
+            3.9513700884373044,
+            -1.5404256548955673
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 10,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.674700913482813,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 15,
+          "center": [
+            0.3775460948663465,
+            16.117453905133655,
+            2.555092189732693
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_12.png",
+      "frame": 12,
+      "at_ms": 550,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 13,
+          "center": [
+            2.9382895676309952,
+            26.462652404419497,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 11,
+          "center": [
+            -5.674944090715752,
+            28.325842993410582,
+            5.0008055168466585
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            0.21642288083309763,
+            26.246307731469855,
+            -5.722268271651981
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            5.993546062147091,
+            24.32866001285164,
+            6.8870127126239025
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 13,
+          "center": [
+            -8.053159897505399,
+            23.33108891499255,
+            -0.5919532038341464
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 11,
+          "center": [
+            10.860058961949731,
+            24.09440526571015,
+            -2.574237279223132
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            -1.1525110849577531,
+            22.352470350978507,
+            13.0999338867789
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            -6.2526455567001875,
+            20.78589467251206,
+            -6.936347060361446
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 13,
+          "center": [
+            9.176060077492657,
+            19.882527907720444,
+            7.3976121954103675
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 11,
+          "center": [
+            -9.499970808816263,
+            18.668316799547775,
+            4.741071006553208
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            2.823176635164834,
+            18.15030365967964,
+            -11.031663050783164
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            3.9918004193456516,
+            16.941715547383957,
+            13.14917007723524
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 13,
+          "center": [
+            -8.521222142522568,
+            16.116969382603184,
+            -6.221144321098746
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 11,
+          "center": [
+            10.24849770795137,
+            15.22025660526501,
+            -0.7230927387077182
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            -5.086808997976605,
+            13.639807657573256,
+            14.201498781201627
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            -0.5528961265653702,
+            12.79612263746733,
+            -10.137288384424634
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 13,
+          "center": [
+            7.00100415099076,
+            12.034413339640771,
+            10.668407730015865
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 11,
+          "center": [
+            -9.719992011200373,
+            11.45884539761518,
+            3.528866491784157
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            4.888722543490655,
+            11.075640429939316,
+            -5.0432732473775035
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            -2.2454741072033295,
+            8.349115942762184,
+            11.652877628644177
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 13,
+          "center": [
+            -4.851853168391983,
+            7.634859778833203,
+            -5.707735755437821
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 11,
+          "center": [
+            7.053477629152643,
+            7.384083176598279,
+            1.2666045500987217
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            -3.9541774458855827,
+            7.335967704851725,
+            4.969296723473506
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 8,
+          "textureFrame": 8,
+          "center": [
+            1.6576331907366906,
+            3.6006954632685173,
+            -1.6494144164312272
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 11,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.731152073428174,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 10,
+          "textureFrame": 15,
+          "center": [
+            0.38369511840865356,
+            16.166304881591348,
+            2.567390236817307
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_13.png",
+      "frame": 13,
+      "at_ms": 600,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            2.962833336278338,
+            26.599994166336128,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 12,
+          "center": [
+            -5.7409841166194004,
+            28.517879934020165,
+            5.038053686320418
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            0.2199477203359608,
+            26.460125480148506,
+            -5.844782066186955
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            6.131059758701811,
+            24.564654500586006,
+            7.003727244435337
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            -8.120428588645254,
+            23.442272475676845,
+            -0.6119333809742467
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 12,
+          "center": [
+            10.986438810578662,
+            24.237200442404532,
+            -2.625140819171868
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            -1.1712818202150832,
+            22.502869889144257,
+            13.283973823732596
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            -6.39610393590221,
+            20.94060526705123,
+            -7.136790565124451
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            9.252708443983533,
+            19.96490536145696,
+            7.444369499460718
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 12,
+          "center": [
+            -9.61052314347706,
+            18.74796791400424,
+            4.775296613423062
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            2.869157191790285,
+            18.23226328477294,
+            -11.240649977834149
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            4.083386806749882,
+            17.00822672270894,
+            13.409561223639436
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            -8.592400595171572,
+            16.167892823676468,
+            -6.288145583558632
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 12,
+          "center": [
+            10.367760742668109,
+            15.25978221700149,
+            -0.7524542808054038
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            -5.169656916970046,
+            13.64830566703456,
+            14.403479702213396
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            -0.565581570105209,
+            12.767518867559131,
+            -10.411173099009424
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            7.05948410071183,
+            12.051234862335374,
+            10.742486251749618
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 12,
+          "center": [
+            -9.833104759791693,
+            11.454599002153588,
+            3.5489855248664677
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            4.96834426497177,
+            11.042376321175785,
+            -5.1547283753121755
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            -2.296993431789754,
+            8.21848170160181,
+            11.878938396404555
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            -4.892381087419344,
+            7.614931477433675,
+            -5.770448474931772
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 12,
+          "center": [
+            7.135559820253364,
+            7.332418269460527,
+            1.2603973613114352
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            -4.018578403903218,
+            7.241796236855071,
+            5.020914474074512
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 9,
+          "textureFrame": 9,
+          "center": [
+            1.6956653114923188,
+            3.361115224836973,
+            -1.7285565006722006
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.787205831825137,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 11,
+          "textureFrame": 15,
+          "center": [
+            0.3881602259328432,
+            16.216839774067157,
+            2.5763204518656866
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_14.png",
+      "frame": 14,
+      "at_ms": 650,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            2.980655770247765,
+            26.71478655746284,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 13,
+          "center": [
+            -5.788939017837656,
+            28.67238917648734,
+            5.065101408716546
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            0.2225072791468042,
+            26.630450835421716,
+            -5.93374534011677
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            6.230915197039466,
+            24.75108347356996,
+            7.088479389322718
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            -8.169275683941668,
+            23.53807011416712,
+            -0.6264419673650921
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 13,
+          "center": [
+            11.078209415966079,
+            24.355952825420868,
+            -2.6621043756892853
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            -1.1849121715473585,
+            22.62714417192059,
+            13.417614246734624
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            -6.500276099819912,
+            21.068010019261894,
+            -7.282342423095781
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            9.308366581504153,
+            20.039785473125256,
+            7.478322270773042
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 13,
+          "center": [
+            -9.690800614837247,
+            18.820868297029595,
+            4.800149504894869
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            2.902545928707968,
+            18.30683999057431,
+            -11.39240563367321
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            4.149892173772522,
+            17.071585551586764,
+            13.59864400386336
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            -8.644086760023043,
+            16.21993263433726,
+            -6.336798485776602
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 13,
+          "center": [
+            10.454363480486155,
+            15.303545504864632,
+            -0.7737751363266365
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            -5.229816853570694,
+            13.669538291382874,
+            14.550147953513347
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            -0.5747930927165158,
+            12.761810070544565,
+            -10.610054220774375
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            7.101949259889902,
+            12.07851159780312,
+            10.796278298974425
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 13,
+          "center": [
+            -9.915241473262038,
+            11.466577289139066,
+            3.5635949413660413
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            5.026161501355431,
+            11.03328342358898,
+            -5.23566140913886
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            -2.3344041397288726,
+            8.1386835761353,
+            12.043092205233895
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            -4.921810396795664,
+            7.615522363522841,
+            -5.815987255804579
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 13,
+          "center": [
+            7.195163724282051,
+            7.309963649852895,
+            1.2558900171506124
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            -4.065343097554347,
+            7.188475519010433,
+            5.058396653969343
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 10,
+          "textureFrame": 10,
+          "center": [
+            1.7232822993568886,
+            3.2022060683589677,
+            -1.7860254489357892
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.8429710174704,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 12,
+          "textureFrame": 15,
+          "center": [
+            0.39140255946196406,
+            16.268597440538034,
+            2.582805118923928
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_15.png",
+      "frame": 15,
+      "at_ms": 700,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            2.9935975135129738,
+            26.813204744703835,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            -5.8237614231802555,
+            28.79964771708481,
+            5.084742086289531
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            0.2243659003126316,
+            26.76919423110354,
+            -5.998345935815827
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            6.303425127434924,
+            24.901520495745842,
+            7.150022077722618
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -8.204745955155007,
+            23.62269528007171,
+            -0.6369773634021045
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            11.144848552699822,
+            24.457246556959337,
+            -2.6889454266612276
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            -1.1948098380422665,
+            22.732447625652597,
+            13.514657111211669
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            -6.5759206163386335,
+            21.17558666035923,
+            -7.38803476460595
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            9.348782684470066,
+            20.10922139707011,
+            7.502977042967469
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            -9.749094023364158,
+            18.888866642926704,
+            4.818196408105619
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            2.92679112786985,
+            18.37605559664105,
+            -11.50260285703123
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            4.198184981996245,
+            17.132655307127457,
+            13.735946282650177
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -8.681618618859968,
+            16.272783095699033,
+            -6.37212774387302
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            10.517249975160675,
+            15.350385977166576,
+            -0.7892572550329675
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            -5.273501933603667,
+            13.700018144068899,
+            14.656650962964088
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            -0.5814820309906987,
+            12.772726436050533,
+            -10.754471555836128
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            7.13278529433624,
+            12.113380375958483,
+            10.835339342268941
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            -9.974884968656925,
+            11.49033711366031,
+            3.574203555089415
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            5.068145431881689,
+            11.041742427723058,
+            -5.294430853719561
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            -2.361569889275109,
+            8.095800047128453,
+            12.1622923354473
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -4.94318046146102,
+            7.631013237848457,
+            -5.8490551976848755
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            7.238445041798316,
+            7.308720052407901,
+            1.2526170135284715
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            -4.099301234818161,
+            7.164818534052417,
+            5.085614302807397
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 11,
+          "textureFrame": 11,
+          "center": [
+            1.7433363485016218,
+            3.101876140361218,
+            -1.8277564703790314
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.898526656289892,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 13,
+          "textureFrame": 15,
+          "center": [
+            0.3937569768320069,
+            16.321243023167995,
+            2.587513953664014
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_16.png",
+      "frame": 16,
+      "at_ms": 750,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            3.0029951479230608,
+            26.899732819560374,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -5.8490476792883745,
+            28.907118186760012,
+            5.09900414539663
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            0.22571553628248198,
+            26.885004417239177,
+            -6.045255596177086
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            6.356078143569866,
+            25.025821997500042,
+            7.194711241643133
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -8.230502658441315,
+            23.69920756576648,
+            -0.6446276310895718
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            11.19323849767045,
+            24.545862705538543,
+            -2.7084360299785484
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            -1.2019970190368203,
+            22.823975430141573,
+            13.585124693806545
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            -6.630849809168608,
+            21.268765137664627,
+            -7.464783156619624
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            9.378130798721036,
+            20.174704029341935,
+            7.520880082055723
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -9.791423725833717,
+            18.953305379283442,
+            4.8313011494942675
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            2.944396755894911,
+            18.44137824529783,
+            -11.58262246466085
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            4.233252758185485,
+            17.192062854268606,
+            13.835648200179246
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -8.70887234201399,
+            16.326222210286737,
+            -6.397782050620262
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            10.562914942713515,
+            15.399460943985657,
+            -0.8004995806234299
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            -5.3052238124040985,
+            13.737212862707949,
+            14.733988020722196
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            -0.586339197077542,
+            12.795715147311984,
+            -10.859340064627968
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            7.15517685105662,
+            12.153762108600883,
+            10.863703481244348
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -10.018195035405633,
+            11.522652090318399,
+            3.5819069897293296
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            5.0986320226059005,
+            11.062946728390568,
+            -5.3371062293111935
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            -2.3812962721494935,
+            8.079722016794758,
+            12.24884939522082
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -4.958698313339973,
+            7.657323724284379,
+            -5.873067451839263
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            7.269873728836031,
+            7.32287881828166,
+            1.250240325099915
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            -4.123959903493096,
+            7.162701840166033,
+            5.10537837230256
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 12,
+          "textureFrame": 12,
+          "center": [
+            1.7578985769774982,
+            3.0440834627169284,
+            -1.858059411416143
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            0,
+            16.953930132883627,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            0.39546663473813304,
+            16.37453336526187,
+            2.590933269476266
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_17.png",
+      "frame": 17,
+      "at_ms": 800,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            3.0098192311007153,
+            26.977626900758228,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -5.867409269812485,
+            29.00021956778947,
+            5.109360525883937
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            0.2266955731423888,
+            26.98416167534584,
+            -6.079319000877867
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            6.394312080535282,
+            25.131145216266614,
+            7.227162234991643
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -8.24920586373086,
+            23.76982869130899,
+            -0.6501828656041819
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            11.228376809614922,
+            24.625273039459458,
+            -2.7225891128094064
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -1.20721598359529,
+            22.90550006019766,
+            13.636294661052727
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            -6.670736589649329,
+            21.351488402196882,
+            -7.520513927577306
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            9.399441903624306,
+            20.237315982672115,
+            7.533880356650352
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -9.822161398521603,
+            19.01515930860008,
+            4.840817144834734
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            2.957181065732386,
+            18.503874026680002,
+            -11.640728625688114
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            4.258717190097618,
+            17.250263390381008,
+            13.908046651587384
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -8.728662606838954,
+            16.38008877484761,
+            -6.416410900761565
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            10.596074514930015,
+            15.450158486846703,
+            -0.8086631845254135
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -5.3282586241492,
+            13.77928357479287,
+            14.790146250743355
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            -0.5898662235544102,
+            12.827470180818999,
+            -10.935490231306519
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            7.171436458407704,
+            12.19814706783548,
+            10.884300073448765
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -10.049644598670804,
+            11.561179382462674,
+            3.587500831375264
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            5.120769831103945,
+            11.09340601386305,
+            -5.368094912203813
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            -2.3956205660786747,
+            8.08310877351085,
+            12.311702720827292
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -4.969966586539326,
+            7.691490861635711,
+            -5.89050392707144
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            7.292695639664959,
+            7.348221995447989,
+            1.2485144950860945
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 15,
+          "center": [
+            -4.141865772006918,
+            7.176226607899604,
+            5.11973003233513
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 13,
+          "textureFrame": 13,
+          "center": [
+            1.7684729251629032,
+            3.017179168456561,
+            -1.8800638628707433
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            0,
+            17.009223117023648,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            0.396708101180392,
+            16.42829189881961,
+            2.593416202360784
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_18.png",
+      "frame": 18,
+      "at_ms": 850,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            3.0147745325290805,
+            27.049251415774744,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -5.880742521090707,
+            29.082886848935182,
+            5.116880801602364
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            0.22740722596450688,
+            27.07122642579981,
+            -6.10405410940079
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 14,
+          "center": [
+            6.422075617046253,
+            25.222687373116404,
+            7.250726492563748
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -8.262787178242055,
+            23.83617195657969,
+            -0.6542167937976846
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            11.253892460997795,
+            24.69799857993078,
+            -2.732866360278659
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -1.2110057296839445,
+            22.979760894771623,
+            13.673451683495633
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 14,
+          "center": [
+            -6.699700336887375,
+            21.426619624041518,
+            -7.560982773243601
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            9.414916941928793,
+            20.29784339525308,
+            7.5433204935289355
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -9.844481529945798,
+            19.075136282773528,
+            4.847727175688012
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            2.9664643800105206,
+            18.56431708111278,
+            -11.682922358566111
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 14,
+          "center": [
+            4.277208162810242,
+            17.307587456597147,
+            13.960618717363026
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -8.743033288585035,
+            16.43426573179491,
+            -6.4299382223534645
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            10.6201533063648,
+            15.502034261738203,
+            -0.81459117763789
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -5.344985330517079,
+            13.824894984823286,
+            14.830925495396984
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 14,
+          "center": [
+            -0.5924273704343214,
+            12.865590870783306,
+            -10.990786601513147
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            7.18324335662889,
+            12.245438966205182,
+            10.899256269045
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -10.072481668752197,
+            11.604217741515246,
+            3.5915627941000015
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            5.136845179427723,
+            11.130585797639789,
+            -5.390597314446473
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 14,
+          "center": [
+            -2.4060221383221103,
+            8.10062986659999,
+            12.35734360269331
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -4.978149032272519,
+            7.731363098483893,
+            -5.903165406771244
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            7.309267748237566,
+            7.3816867221046545,
+            1.247261285283406
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": false,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -4.154868101186199,
+            7.2011094079269276,
+            5.13015147644819
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 14,
+          "textureFrame": 14,
+          "center": [
+            1.7761514779154166,
+            3.012704444047199,
+            -1.896042374105835
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            0,
+            17.064435867174804,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            0.39760959084199765,
+            16.482390409158,
+            2.595219181683995
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_19.png",
+      "frame": 19,
+      "at_ms": 900,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            3.0183728198896977,
+            27.1163232913458,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -5.890424448667451,
+            29.15797741849759,
+            5.122341642573828
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            0.22792399197601873,
+            27.14951021346597,
+            -6.122015484636624
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": true,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            6.4422360823494556,
+            25.30422242512548,
+            7.267837655509089
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            -8.272649236696553,
+            23.89940885773328,
+            -0.6571460268710207
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            11.272420626679777,
+            24.765869964075637,
+            -2.740329173632224
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -1.2137576501569747,
+            23.04874713125074,
+            13.700433219563076
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": true,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -6.720732334054328,
+            21.496237891399115,
+            -7.590369186555667
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            9.426154126092275,
+            20.35685712057625,
+            7.550175439833163
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -9.860689271886836,
+            19.133750307777117,
+            4.852744887938269
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            2.9732054497344405,
+            18.623269549847883,
+            -11.713561297066011
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": true,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            4.290635364840069,
+            17.364275075042094,
+            13.998793872302985
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            -8.753468545297046,
+            16.488668079874717,
+            -6.4397610739016065
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            10.637638097579067,
+            15.554765608684063,
+            -0.818895784128294
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -5.357131412239529,
+            13.873077469257394,
+            14.86053730463481
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": true,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -0.5942871447749734,
+            12.90833397605442,
+            -11.030940007492362
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            7.1918169244030326,
+            12.294841735628674,
+            10.910116696075495
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -10.089064785201385,
+            11.650531807459448,
+            3.5945123844211997
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            5.148518278133658,
+            11.172645664788826,
+            -5.406937412166824
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": true,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            -2.4135752299907334,
+            8.128414594436094,
+            12.390485685111516
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            -4.9840907073625855,
+            7.775378087838121,
+            -5.912359528063185
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            7.321301568919847,
+            7.421048904103271,
+            1.2463512681919322
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -4.164309729999449,
+            7.234239832167414,
+            5.137718998055806
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": true,
+          "age": 15,
+          "textureFrame": 15,
+          "center": [
+            1.7817272516027738,
+            3.024516930187116,
+            -1.9076451546530684
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            0,
+            17.1195903554922,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            0.3982642066917045,
+            16.536735793308296,
+            2.596528413383409
+          ],
+          "span": 23
+        }
+      ]
+    },
+    {
+      "file": "D:/alianximod/docs/资源库/过程归档/引爆_三维扩散爆炸_v2_20261116/previews/side/frame_20.png",
+      "frame": 20,
+      "at_ms": 950,
+      "camera_position": [
+        98.00000000000001,
+        81,
+        -23
+      ],
+      "camera_target": [
+        0,
+        15,
+        0
+      ],
+      "camera_zoom": 0.34,
+      "source": "actual Desktop Blockbench Preview.selected.screenshot",
+      "project_uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "variant": "orange",
+      "particles": [
+        {
+          "index": 0,
+          "alive": false,
+          "age": 19,
+          "textureFrame": 15,
+          "center": [
+            3.020985712791724,
+            27.1800892721674,
+            1.8
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 1,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            -5.89745497105432,
+            29.227566166239594,
+            5.126307026986869
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 2,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            0.22829924111767044,
+            27.22141771345918,
+            -6.135058119968645
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 3,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            6.456875584816332,
+            25.37849082759057,
+            7.280262910005058
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 4,
+          "alive": false,
+          "age": 19,
+          "textureFrame": 15,
+          "center": [
+            -8.279810560946853,
+            23.96039007557443,
+            -0.6592730866465886
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 5,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            11.285874836348489,
+            24.830216507278234,
+            -2.745748288362776
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 6,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -1.215755954558569,
+            23.11390322340234,
+            13.72002583599722
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 7,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -6.736004698544846,
+            21.56185293216452,
+            -7.611708102285271
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 8,
+          "alive": false,
+          "age": 19,
+          "textureFrame": 15,
+          "center": [
+            9.434313996552007,
+            20.414771683354758,
+            7.55515315249117
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 9,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            -9.872458508090459,
+            19.191374628553433,
+            4.856388494857105
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 10,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            2.9781004710233114,
+            18.68113963121394,
+            -11.735809732754676
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 11,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            4.300385514664622,
+            17.42050053755084,
+            14.026514724302775
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 12,
+          "alive": false,
+          "age": 19,
+          "textureFrame": 15,
+          "center": [
+            -8.761046096910087,
+            16.543234095508364,
+            -6.446893928094606
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 13,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            10.650334661882743,
+            15.608118228453344,
+            -0.8220215699862823
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 14,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -5.365951277786504,
+            13.923126936893986,
+            14.882039891398868
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 15,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -0.595637618121612,
+            12.954433643749528,
+            -11.060097364579397
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 16,
+          "alive": false,
+          "age": 19,
+          "textureFrame": 15,
+          "center": [
+            7.198042612386511,
+            12.345777312035263,
+            10.918002984705895
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 17,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            -10.101106599242643,
+            11.699224524808743,
+            3.5966542265926993
+          ],
+          "span": 17.5
+        },
+        {
+          "index": 18,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            5.156994687518639,
+            11.21824919977949,
+            -5.418802758392148
+          ],
+          "span": 22.5
+        },
+        {
+          "index": 19,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            -2.4190599002328335,
+            8.163652250760585,
+            12.41455177634611
+          ],
+          "span": 20.5
+        },
+        {
+          "index": 20,
+          "alive": false,
+          "age": 19,
+          "textureFrame": 15,
+          "center": [
+            -4.988405249007842,
+            7.822401332935449,
+            -5.9190358303860675
+          ],
+          "span": 18.5
+        },
+        {
+          "index": 21,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            7.330039916220602,
+            7.464693517619635,
+            1.245690460157238
+          ],
+          "span": 16.5
+        },
+        {
+          "index": 22,
+          "alive": false,
+          "age": 17,
+          "textureFrame": 15,
+          "center": [
+            -4.171165759670598,
+            7.273359260788432,
+            5.14321414658421
+          ],
+          "span": 21.5
+        },
+        {
+          "index": 23,
+          "alive": false,
+          "age": 16,
+          "textureFrame": 15,
+          "center": [
+            1.7857760942967893,
+            3.0481563585840084,
+            -1.9160705025748197
+          ],
+          "span": 19.5
+        },
+        {
+          "index": 24,
+          "alive": false,
+          "age": 19,
+          "textureFrame": 15,
+          "center": [
+            0,
+            17.174702537035117,
+            1.8
+          ],
+          "span": 27
+        },
+        {
+          "index": 25,
+          "alive": false,
+          "age": 18,
+          "textureFrame": 15,
+          "center": [
+            0.3987395553606223,
+            16.591260444639378,
+            2.5974791107212445
+          ],
+          "span": 23
+        }
+      ]
+    }
+  ]
+}

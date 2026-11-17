@@ -1,0 +1,57 @@
+{
+  "released": true,
+  "write_ownership_released": true,
+  "role": "author-B",
+  "stage": "repair-native-build",
+  "review_added": false,
+  "cmake_configure_executed": false,
+  "c_compile_executed": false,
+  "build_directory_deleted": false,
+  "dll_present": false,
+  "prior_exit_code": 6,
+  "prior_cause": "CMakeCache.txt had no CMAKE_SIZEOF_VOID_P. CMakeCCompiler.cmake recorded CMAKE_C_SIZEOF_DATA_PTR \"8\". The script treated the missing cache line as a non-64-bit configure.",
+  "files_before": [
+    {
+      "path": "D:/alianximod/native/compute/build-windows.ps1",
+      "bytes": 15452,
+      "utc": "2026-10-30T08:19:19.1203653Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/build-unix.sh",
+      "bytes": 6825,
+      "utc": "2026-10-30T08:19:21.0927202Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/README.md",
+      "bytes": 4597,
+      "utc": "2026-10-30T08:20:09.8842647Z"
+    }
+  ],
+  "files_after": [
+    {
+      "path": "D:/alianximod/native/compute/build-windows.ps1",
+      "bytes": 16585,
+      "utc": "2026-10-30T08:36:15.9459820Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/build-unix.sh",
+      "bytes": 7988,
+      "utc": "2026-10-30T08:36:18.6624943Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/README.md",
+      "bytes": 5176,
+      "utc": "2026-10-30T08:36:22.1808221Z"
+    }
+  ],
+  "backup": "D:/alianximod/docs/开发记录/统一纯计算后端-20261030/backup-B-buildfix/",
+  "cmake_lists_modified": false,
+  "c_source_modified": false,
+  "checks": {
+    "preserved_cmake_c_sizeof_data_ptr": "8",
+    "preserved_cache_has_sizeof_void_p": false,
+    "powershell_parse_errors": 0,
+    "unix_bash_n_exit": 0,
+    "unix_sed_data_ptr": "8"
+  }
+}

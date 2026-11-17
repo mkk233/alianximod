@@ -1,0 +1,288 @@
+{
+  "source": "Blockbench desktop connected main viewport; render() + canvas.toDataURL; no offscreen/headless/compositing",
+  "viewportId": "main",
+  "visibilityState": "hidden",
+  "captures": [
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-phase-t00.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 0,
+        "counts": {
+          "straight": 1,
+          "rise-fall": 1,
+          "orbit": 1
+        }
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/phase-t00.bbmodel",
+        "bytes": 957356
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-phase-t08.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 8,
+        "counts": {
+          "straight": 6,
+          "rise-fall": 9,
+          "orbit": 13
+        }
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/phase-t08.bbmodel",
+        "bytes": 957172
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-phase-t20.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 20,
+        "counts": {
+          "straight": 13,
+          "rise-fall": 18,
+          "orbit": 31
+        }
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/phase-t20.bbmodel",
+        "bytes": 957220
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-phase-t32.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 32,
+        "counts": {
+          "straight": 21,
+          "rise-fall": 31,
+          "orbit": 50
+        }
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/phase-t32.bbmodel",
+        "bytes": 956309
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-phase-t48.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 48,
+        "counts": {
+          "straight": 15,
+          "rise-fall": 22,
+          "orbit": 37
+        }
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/phase-t48.bbmodel",
+        "bytes": 956982
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-phase-t64.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 64,
+        "counts": {
+          "straight": 5,
+          "rise-fall": 9,
+          "orbit": 13
+        }
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/phase-t64.bbmodel",
+        "bytes": 957746
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-phase-t72.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 72,
+        "counts": {}
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/phase-t72.bbmodel",
+        "bytes": 957883
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-overview-t32.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          170,
+          135,
+          340
+        ],
+        "target": [
+          0,
+          47,
+          0
+        ],
+        "tick": 32,
+        "counts": {
+          "straight": 21,
+          "rise-fall": 31,
+          "orbit": 50
+        }
+      },
+      "model": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/flame-trail-v1-spatial-draft.bbmodel",
+        "bytes": 956309
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-side-t32.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          280,
+          85,
+          105.00000000000003
+        ],
+        "target": [
+          38,
+          30,
+          0
+        ],
+        "tick": 32,
+        "counts": {
+          "straight": 21,
+          "rise-fall": 31,
+          "orbit": 50
+        }
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-back-t32.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          -159.99999999999997,
+          119.99999999999997,
+          -335.00000000000006
+        ],
+        "target": [
+          0,
+          40,
+          0
+        ],
+        "tick": 32,
+        "counts": {
+          "straight": 21,
+          "rise-fall": 31,
+          "orbit": 50
+        }
+      }
+    },
+    {
+      "capture": {
+        "path": "D:/alianximod/docs/资源库/过程归档/留焰_v1_空间补全_20261112/viewport-scale-close-t32.png",
+        "width": 1706,
+        "height": 1215,
+        "camera": [
+          -118,
+          33,
+          75
+        ],
+        "target": [
+          -118,
+          15,
+          -5
+        ],
+        "tick": 32,
+        "counts": {
+          "straight": 21,
+          "rise-fall": 31,
+          "orbit": 50
+        }
+      }
+    }
+  ]
+}

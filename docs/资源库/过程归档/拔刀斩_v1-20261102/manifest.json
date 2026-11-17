@@ -1,0 +1,105 @@
+{
+  "version": "iaido-single-v1",
+  "status": "preview_pending_user_confirmation",
+  "created": "2026-11-02",
+  "request": "帮我用blockbench做一个拔刀斩的动画",
+  "tools": {
+    "model": "Blockbench 5.2.2 / native MCP",
+    "textureAndGif": "Aseprite"
+  },
+  "model": {
+    "file": "iaido-single-v1.bbmodel",
+    "format": "free",
+    "cubes": 25,
+    "groups": 12,
+    "textureSize": [
+      64,
+      64
+    ],
+    "animation": "animation.iaido_single_v1",
+    "durationSeconds": 1.6,
+    "loop": "once",
+    "animatedBones": 10,
+    "keySampleSeconds": 0.02
+  },
+  "preview": {
+    "source": "Real Blockbench viewport frame capture",
+    "size": [
+      960,
+      720
+    ],
+    "frames": 41,
+    "sampleSeconds": 0.04,
+    "gifDurationSeconds": 2.36,
+    "firstFrameSeconds": 0.2,
+    "lastFrameSeconds": 0.6,
+    "note": "GIF repeats for presentation; model animation plays once."
+  },
+  "runtime": {
+    "integrated": false,
+    "compiled": false,
+    "gameTested": false
+  },
+  "files": {
+    "iaido-atlas.aseprite": {
+      "bytes": 1818,
+      "sha256": "0757e8946d148771c9827e46a1caa61724f8ea0e6de02d70dd04551023eb01dd"
+    },
+    "iaido-atlas.png": {
+      "bytes": 961,
+      "sha256": "12c0dd4e4d2735f18136c548a35e7695a00eae52e3cd5389ff5d4747b8bc6405"
+    },
+    "atlas-preview.png": {
+      "bytes": 3417,
+      "sha256": "e0c8437359ac802c4bef4231091471d5fbc77ce9ae9f3d7e8959213c4c835c6c"
+    },
+    "iaido-single-v1.bbmodel": {
+      "bytes": 204904,
+      "sha256": "ca91722240bb926da19fd186ed079e0cc5c30390664eaf572d0335a813ac5d44"
+    },
+    "iaido-front-preview.gif": {
+      "bytes": 361697,
+      "sha256": "79ad51b90c7710d5b6bc568504f3c5c644ab1a24012b5f148e86c5ecdf40131b"
+    },
+    "iaido-side-preview.gif": {
+      "bytes": 231578,
+      "sha256": "f9d1ad58b267c7476d3192e2a826543ef4da900caf82678f21c1864ca22fe7f7"
+    },
+    "iaido-front-preview.aseprite": {
+      "bytes": 526224,
+      "sha256": "6a500732b472cefc4330bbbd3b116d865f20478159e96b9e1da0ad791a5fcc24"
+    },
+    "iaido-side-preview.aseprite": {
+      "bytes": 434519,
+      "sha256": "f91f554980c985cc7446843fa1ef8c8ec8b4729a635754877dea4aa794f02c83"
+    },
+    "blockbench-active-view.png": {
+      "bytes": 23131,
+      "sha256": "f9831838a4e60e53928673040cf6f7339c1c47f15abe80e0453c49ca85c2cde8"
+    },
+    "native-pose-check.json": {
+      "bytes": 1352,
+      "sha256": "30cf328d066cd2ac000c19d6e5dd21a85b6e97db77619c1c91eb0c3c37f5b4e5"
+    },
+    "animation-keyframes.json": {
+      "bytes": 122137,
+      "sha256": "bc3a25f4e6b3ecb4646129cf17ab471a6a35f131ace5a13771cd2eddfdf25196"
+    },
+    "build-iaido.js": {
+      "bytes": 2970,
+      "sha256": "77c01e4b39fbd4759ba6ea95de52181e978c689150577881beeea9879233126d"
+    },
+    "solve-iaido-keys.js": {
+      "bytes": 3943,
+      "sha256": "6b2ceb948cf1a10518a87aa176e4af93911ac6f21cfca10806e867a8a6cb99c5"
+    },
+    "draw-iaido-atlas.lua": {
+      "bytes": 3072,
+      "sha256": "4f1906c358def97ea9437a841fdfbdd3f8280f35e4d916557f75c14ce8475f74"
+    },
+    "assemble-previews.lua": {
+      "bytes": 1051,
+      "sha256": "1e46c849b3b936419ede3c4a0b89429bb1015c62fcdf443a55031d6937109867"
+    }
+  }
+}

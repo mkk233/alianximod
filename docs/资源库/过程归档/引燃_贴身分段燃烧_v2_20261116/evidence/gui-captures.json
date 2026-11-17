@@ -1,0 +1,177 @@
+{
+  "status": "candidate_pending_user_confirmation",
+  "blockbench": "5.2.2",
+  "plugin": "1.10.1",
+  "captures": [
+    {
+      "name": "gui_oblique_sustain",
+      "frame": 6,
+      "position": [
+        45,
+        26,
+        65
+      ],
+      "target": [
+        0,
+        14.4,
+        0
+      ],
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_oblique_sustain.png",
+      "project": "41e5bed5-092c-5649-685e-72cee9618239",
+      "viewport": "main",
+      "source": "connected Blockbench Desktop Preview.screenshot, native WebGL render on demand",
+      "document_visibility": "hidden",
+      "plane_rotation_deg": [
+        -8.347426114367458,
+        34.695153531233984,
+        4.835479334680787e-16
+      ],
+      "plane_offset_units": 9.338498900271373,
+      "texture_path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_strip.png",
+      "uv": [
+        0,
+        320,
+        48,
+        384
+      ],
+      "unlit_texture_preview": true
+    },
+    {
+      "name": "gui_front_pulse",
+      "frame": 11,
+      "position": [
+        0,
+        14.4,
+        65
+      ],
+      "target": [
+        0,
+        14.4,
+        0
+      ],
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_front_pulse.png",
+      "project": "41e5bed5-092c-5649-685e-72cee9618239",
+      "viewport": "main",
+      "source": "connected Blockbench Desktop Preview.screenshot, native WebGL render on demand",
+      "document_visibility": "hidden",
+      "plane_rotation_deg": [
+        -3.131623070979463e-15,
+        0,
+        0
+      ],
+      "plane_offset_units": 5.44,
+      "texture_path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_strip.png",
+      "uv": [
+        0,
+        640,
+        48,
+        704
+      ],
+      "unlit_texture_preview": true
+    },
+    {
+      "name": "gui_side_distance_frozen_plane",
+      "frame": 11,
+      "position": [
+        70,
+        24,
+        16
+      ],
+      "target": [
+        0,
+        14.4,
+        1.6
+      ],
+      "follow": false,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_side_distance_frozen_plane.png",
+      "project": "41e5bed5-092c-5649-685e-72cee9618239",
+      "viewport": "main",
+      "source": "connected Blockbench Desktop Preview.screenshot, native WebGL render on demand",
+      "document_visibility": "hidden",
+      "plane_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "plane_offset_units": 5.44,
+      "texture_path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_strip.png",
+      "uv": [
+        0,
+        640,
+        48,
+        704
+      ],
+      "unlit_texture_preview": true
+    },
+    {
+      "name": "gui_front_extinguish_F16",
+      "frame": 16,
+      "position": [
+        0,
+        14.4,
+        65
+      ],
+      "target": [
+        0,
+        14.4,
+        0
+      ],
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_front_extinguish_F16.png",
+      "project": "41e5bed5-092c-5649-685e-72cee9618239",
+      "viewport": "main",
+      "source": "connected Blockbench Desktop Preview.screenshot, native WebGL render on demand",
+      "document_visibility": "hidden",
+      "plane_rotation_deg": [
+        -3.131623070979463e-15,
+        0,
+        0
+      ],
+      "plane_offset_units": 5.44,
+      "texture_path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_strip.png",
+      "uv": [
+        0,
+        960,
+        48,
+        1024
+      ],
+      "unlit_texture_preview": true
+    },
+    {
+      "name": "gui_front_off_F19",
+      "frame": 19,
+      "position": [
+        0,
+        14.4,
+        65
+      ],
+      "target": [
+        0,
+        14.4,
+        0
+      ],
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_front_off_F19.png",
+      "project": "41e5bed5-092c-5649-685e-72cee9618239",
+      "viewport": "main",
+      "source": "connected Blockbench Desktop Preview.screenshot, native WebGL render on demand",
+      "document_visibility": "hidden",
+      "plane_rotation_deg": [
+        -3.131623070979463e-15,
+        0,
+        0
+      ],
+      "plane_offset_units": 5.44,
+      "texture_path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_strip.png",
+      "uv": [
+        0,
+        1152,
+        48,
+        1216
+      ],
+      "unlit_texture_preview": true
+    }
+  ]
+}

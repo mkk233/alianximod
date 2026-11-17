@@ -1,57 +1,48 @@
 ---
 name: max-dispatch
-description: Use when the user wants max-parallel codebase audit or implementation with DeepSeek and GPT, or says 用ds读取, 汇总给gpt, 拉满效率, 最大数量子agent, 通读审查, 并行改然后4.7审核. Use when reviewing a whole mod/repo/module with as many subagents as allowed.
-when-to-use: 用ds读取 汇总给gpt 拉满效率 最大数量子agent 通读 并行改 4.7审核 DeepSeek GPT 子模型
-user-invocable: true
-argument-hint: "[read|fix] [scope]"
+description: "XueXi Mod 原生子代理调度速查：主会话用真实模型名派子代理（不填 group 路由组）；Grok 执行，Flash 只读，Gemini Carbon 美术，Astra high 裁决，Opus 代码复审，首选报错才按降级链。用于已授权的实现、编译、制作表写回和美术任务；直接设计讨论由主会话回答。完整规则见统一流程，不启动 Python/CLI 模型包装器。"
 ---
 
 # Max Dispatch
 
-两条先于流水线：
+本技能是已授权执行任务的速查卡。完整规范只在 `docs/统一开发与术式批量制作流程.md`：额度见第 1.1 节，等待见第 1.2 节，美术见第 5/5.1 节，迁表见第 8 节，模型、协议、任务包、嵌套与续行见第 11 节。两者冲突以流程为准。
 
-1. **并行优先。** 主代理只调度。通读、审查、并行修改走下面的模型表，不自己通读整仓。
-2. **难度升高就先问。** 这一步只要比照着改、读一个文件、跑一条命令更难一点，或明显难，先问 `gpt-6-luna`，不要先自己试。问完再派 DeepSeek 落地，一项结束立刻用 Grok 4.7 审。
+用户直接讨论玩法、机制、需求或取舍时，主会话直接回答，不派子代理，不领表、改代码、编译或迁表。混合消息先答设计部分，再派已授权且明确的执行部分。已有授权在范围内持续有效。
 
-**不写 `model` 会继承主会话 Grok。每次 spawn 必须显式传 model。禁止 grok-4.5。**
+## 角色
 
-## 模型
+| 角色 | 模型 / 档位 | 做什么 | 不做什么 |
+|---|---|---|---|
+| 主会话 | 喜鹊路由 | 调度、读记录与单符号、额度内集中复核 | 通读整仓、写 Java、跑 Gradle、亲自写表 |
+| Flash | `deepseek/deepseek-flash` · `low` | 只读定位、事实摘要，按独立范围并行 | 写文件、编译、写表、正式裁决、再派生 |
+| Grok | `cursor/grok-4.7@500k` · `high` + Fast | 实现、修复、定向检查、编译、写表；按需派 Flash | 绘图建模、架构裁决、另派其他角色 |
+| 美术 | `antigravity/gemini-4-carbon` → Argon → Astra max | 美术制作、2D/3D 预览、视觉调整 | 写 Java、编译、写表 |
+| 裁决 | `gpt-6-astra` · `high` → Carbon → Argon | 额度内困难/架构裁决；故障先查根因给方案再交 Grok；同时只开一个 | 额度用完后重审 |
+| 代码复审 | `antigravity/claude-opus-5-5` → Astra high | 实现阶段额度内审代码 | 交 Google 模型 |
 
-| 活 | model（必填） |
-|---|---|
-| 只读通读 | `deepseek-flash` |
-| 改文件 | `deepseek-v4-pro` |
-| 不合理/架构裁决 | `gpt-6-luna`（别名 `gpt6`） |
-| 单项改完审核 | `grok-4.7` |
-| 禁止 | `grok-4.5`、把 Grok 当通读/改代码子模型 |
+模型名与降级链只以流程第 11.1 节为准（与喜鹊「分工」同步）。子代理 `model` 填真实模型名，**不填 `group/...`**；首选明确报额度耗尽或不可用才换下一个并记录。实际服务模型看 `magpie usage --csv`，不问子代理自称。
 
-## 流水线（不可跳步）
+Fast = `service_tier="priority"`，模型 ID 不加 `-fast`；工具没有 tier 参数就沿用客户端配置，不传未知字段。
 
-1. **切块** — 按文件/包切开，两个人不能写同一文件。先数并发上限（常见 32），通读开满，一块一个 flash。
-2. **通读** — 只读。prompt 写死路径、禁止改文件、要结构化中文摘要。截断就 `resume_from` 同一子代理补全，不要另开一个猜。
-3. **等齐再汇总** — 父代理压成事实清单（路径+行号+现象），**只开一个** `gpt-6-luna` 做脑子。GPT 没拍板前不要改代码。
-4. **改** — 只改 GPT 已确认且用户没否决的项。互斥文件则 `deepseek-v4-pro` 并行（用户说 N 并行就 N，上限内）。用户没让删的系统不要删。
-5. **一项结束立刻审** — 该 DS 一结束就 spawn `grok-4.7` 审这一项，不要等 15 个都改完再审。不过 → 同一文件再派 DS 修 → 再 4.7。全过后再向用户汇报。没跑的验证（编译/测试）必须明说。
+## 派发检查单
 
-## 子代理 prompt
+1. **入口**：子代理一律走 `multi_agent_v1`：`spawn_agent(message, model, reasoning_effort, fork_context=false)` + `wait_agent`。会话只有 V2（`collaboration.*`）时不派非 Codex 模型（会 `task was sealed`），报告阻塞，不重试。
+2. **任务包**：按流程第 10 节最小任务头，自包含；必须写明唯一作者与写路径、依赖、当前设计/实现计数、编译/写回权限、真实直接父代理、完成后的下一步。Grok 任务注明可嵌套 Flash 的只读范围；Flash 任务写明全部权限为无、不再派生。
+3. **并行**：同一文件同时只有一个作者；公共注册器、资源库索引、制作表各有唯一作者；依赖未就绪不派；全树共享槽位，不循环探测。
+4. **等待**：有独立工作先做，没有就有界 `wait_agent`。超时不是结束，仍有必要任务在跑就继续等；不发「先不空等」的 final。不读实时内容，无变化不报心跳。
+5. **接收**：拿到 final 后核对身份、输入、写入与下属收束，登记，**立即 `close_agent`**（交完 final 不会自动关，会一直占槽位），当轮推进下一步。同一 task/attempt 只接收一次。
+6. **子代理**：结束时（支持则）向直接父代理发一条终态短讯，再交完整 final；不问能否结束，不等父方确认。
+7. **返修**：沿用原 batch/task；先 `resume_agent(原标识)` 再向原代理续派，用完再关，否则确认收束后交接新代理并新记 attempt。停止等待不释放文件所有权。
 
-- 范围：允许读/改的绝对路径
-- 目标：一条结论，不要整仓
-- 约束：禁止改范围外文件
-- 产出：路径、行号、做了什么 / 发现什么
+## 执行顺序
+
+设计（额度内裁决）→ 功能实现（可用占位，留制作中）→ 美术角色制作与二维/适用三维预览 → 用户确认同一版本 → Grok 接入确认版、替换占位 → 额度内集中复核 → 写入收束后统一 `.\gradlew.bat compileJava --offline --no-daemon` → 唯一写回者按第 8 节迁待验收 → 用户实测通过迁已完成。
 
 ## 红线
 
-- 自己通读整仓、自己大面积改
-- `model: grok-4.5` 或省略 model
-- GPT 还没裁决就开始改
-- 两个 writer 碰同一文件
-- 全部改完才审
-- 截断报告当完整
-
-| 借口 | 现实 |
-|---|---|
-| 模块不多，我自己读更快 | 通读就是为了拉满并行，开 flash |
-| 先改着，GPT 回头看 | 没有裁决就没有改动清单 |
-| 一起审省 spawn | 用户要的是一项结束立刻 4.7 |
-| 不写 model，配置会钉 DeepSeek | 省略会继承 Grok |
+- 额度：设计 ≤2、实现 ≤3，挂 batchId，任何方式不重置；用完不自动追加、不换人重审，记「本阶段额度已用完，返修结果未追加复审」；不豁免美术、确认、接入或编译。
+- 迁页：占位、缺用户确认、未接入、编译失败都留制作中；只写进度文档不算更新表。
+- 美术：先读 `C:/Users/baishang/.codex/skills/xueximod-art-preview/SKILL.md`；工具在喜鹊 `mcp__magpie` 下，先发现具体工具再判断；空间表现必须真实 Blockbench，不改派 Grok 绘制建模。
+- 不打包、不 build/jar/reobf、不 runClient、不启动游戏、无独立测试阶段；不 reset/clean/checkout 覆盖未提交改动。
+- 不用 Python/Shell/CLI/SDK 启动模型，不建后台调度；失败按真实类别记录，不换模型、账户或路由绕过审批；主会话不接管 Java 或编译。
+- 创建成功、代理结束、自报完成、复审通过、表已迁页是不同事实，分别记录。

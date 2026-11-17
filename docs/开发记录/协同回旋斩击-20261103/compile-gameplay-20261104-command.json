@@ -1,0 +1,7 @@
+{
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "startedAtUtc": "2026-11-03T18:53:42.2375660Z",
+  "endedAtUtc": "2026-11-03T18:54:15.1833509Z",
+  "exitCode": 1,
+  "executor": "Codex main; explicit user one-time authorization"
+}

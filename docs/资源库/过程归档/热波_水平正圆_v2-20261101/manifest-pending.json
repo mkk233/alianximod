@@ -1,0 +1,76 @@
+{
+  "version": "heat-circle-v2",
+  "date": "2026-11-01",
+  "status": "pending_user_actual_preview_confirmation",
+  "approvedDirection": "世界中的水平正圆；俯视为圆，斜视正常透视",
+  "frames": 16,
+  "frameSize": [
+    64,
+    64
+  ],
+  "stripSize": [
+    64,
+    1024
+  ],
+  "effectDurationSeconds": 0.6,
+  "previewOnlyGapSeconds": 0.4,
+  "nativeBlockbench": true,
+  "gameAssetsChanged": false,
+  "files": [
+    {
+      "file": "shock_ring_circle.aseprite",
+      "bytes": 11687,
+      "sha256": "cd7d21582a1020c211ac199d2fed5ec23895a6ae6fd7bbb35aba11767648dcf8"
+    },
+    {
+      "file": "shock_ring_circle-strip.png",
+      "bytes": 10596,
+      "sha256": "5959d47d14ea8a69394559b13f504686c620230a35505a765731cbb76bda6d0f"
+    },
+    {
+      "file": "shock_ring_circle-frame10.png",
+      "bytes": 789,
+      "sha256": "dabcfa7c5afdcf0f0a78938e72af6bc00d7806a85e18beb8d42bd500163243c0"
+    },
+    {
+      "file": "circle-2d-preview.gif",
+      "bytes": 65707,
+      "sha256": "62c815409f6ff4431f3c91c53448457a9d3eceab2c03e5f396070023dc04776d"
+    },
+    {
+      "file": "热波_水平正圆_v2.bbmodel",
+      "bytes": 37263,
+      "sha256": "ef2f16cb9e4c2a11b763129966b39779f480610f04d5a93bcc90301a7bcd5b4d"
+    },
+    {
+      "file": "bb-top-animation.gif",
+      "bytes": 103597,
+      "sha256": "6ffddae6444382d2afc8f892af41c5cdd355e0a09c0cc983169536f918be3ef0"
+    },
+    {
+      "file": "bb-oblique-animation.gif",
+      "bytes": 70203,
+      "sha256": "6a8eceb6b59b04baa0fabbaffb3ef40c1f1feacf02738c4d7bf33f6431663b8b"
+    },
+    {
+      "file": "bb-top-still.png",
+      "bytes": 21724,
+      "sha256": "646e4553c5ec40e038a03d5b16f788711d49a7ebd0635e438275bf75cc4339b4"
+    },
+    {
+      "file": "bb-oblique-still.png",
+      "bytes": 59833,
+      "sha256": "855a5e73ed8774b672c09080761730653fcd7aa769f790ce17d51872dd274a9e"
+    },
+    {
+      "file": "blockbench-app-proof.png",
+      "bytes": 206914,
+      "sha256": "9702a987a2af8cd9faaa5ac10698386b781a89a85c10fe881f4d0a893b266056"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4930,
+      "sha256": "d33954b5373a52f0333085c5e5bbe73fe3e14a87f864462d236e809763d4cd4a"
+    }
+  ]
+}

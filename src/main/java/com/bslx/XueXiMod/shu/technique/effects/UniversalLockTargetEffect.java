@@ -15,7 +15,7 @@ import java.util.function.Consumer;
 public class UniversalLockTargetEffect implements TechniqueEffect {
     @Override
     public void execute(ServerPlayer player, Technique technique, ItemStack weapon, TechniqueCastContext cast) {
-        Vec3 pos = cast.getPos();
+        Vec3 castPoint = cast.getPos();
         Consumer<Vec3> trigger = cast.onFirstTrigger();
 
         LivingEntity target = LockTargetService.resolve(player);
@@ -25,7 +25,7 @@ public class UniversalLockTargetEffect implements TechniqueEffect {
                 trigger.accept(target.position());
             }
         } else if (trigger != null) {
-            trigger.accept(pos);
+            trigger.accept(castPoint);
         }
     }
 }

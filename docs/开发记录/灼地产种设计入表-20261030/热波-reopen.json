@@ -1,0 +1,20 @@
+{
+  "sha256": "38649FA8068C42576D675D0EBF203D75EBF843B385CFC3092D769EF2E47798D3",
+  "bytes": 170988,
+  "mtime": "2026-10-30T11:35:37.806+08:00",
+  "name": "热波",
+  "id": "fire_shock_ring",
+  "element": "火",
+  "damage": "4",
+  "cooling": "16",
+  "anchor": "地表定位",
+  "anchorId": "fire_surface_anchor",
+  "anchorType": "通用",
+  "anchorElement": "无",
+  "oldNameLeft": 0,
+  "meteor": true,
+  "continue": true,
+  "kindle": true,
+  "detonate": true,
+  "note": true
+}

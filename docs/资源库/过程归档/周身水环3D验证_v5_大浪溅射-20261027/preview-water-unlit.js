@@ -1,0 +1,1 @@
+Texture.all.filter(t=>t.name.startsWith("great_splash")||t.name==="splash_ring_flow.png").forEach(t=>t.getOwnMaterial().uniforms.SHADE.value=false);true

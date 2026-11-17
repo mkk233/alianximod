@@ -1,0 +1,63 @@
+{
+  "ready": true,
+  "baselineSha256": "06A616FBF4484B38D101BE875D6F6D0293676052F0F65747E74893AD79C3B179",
+  "baselineMtime": "2026-11-02T04:02:52.136",
+  "baselineSize": 110918,
+  "backup": "D:\\alianximod\\docs\\开发记录\\让锋断潮名称整合-20261103\\表格工作\\备份\\术式制作表-20261103-145254-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\让锋断潮名称整合-20261103\\表格工作\\候选\\术式制作表-候选-20261103-145254-1.xlsx",
+  "candidateSha256": "EBBED5631F001E599C9195E2F35DB329B9C7C2BD38FAC70FFFACAE8D04E03B4E",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\让锋断潮名称整合-20261103\\表格工作\\快照\\变更前-AEN-20261103-145254-1.json",
+    "current": "D:\\alianximod\\docs\\开发记录\\让锋断潮名称整合-20261103\\表格工作\\快照\\现行需求-20261103-145254-1.md"
+  },
+  "moves": {
+    "tide_sever": {
+      "from": {
+        "sheet": "已完成",
+        "row": 7
+      },
+      "to": {
+        "sheet": "制作中",
+        "row": 16
+      },
+      "name": "断潮"
+    },
+    "water_yielding_ribbon": {
+      "from": {
+        "sheet": "已完成",
+        "row": 9
+      },
+      "to": {
+        "sheet": "制作中",
+        "row": 17
+      },
+      "name": "让锋"
+    }
+  },
+  "countsBefore": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 13,
+    "待验收": 7
+  },
+  "countsAfter": {
+    "已完成": 38,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 7
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "affectedParts": [
+    "xl/worksheets/sheet1.xml",
+    "xl/worksheets/sheet3.xml",
+    "xl/workbook.xml"
+  ],
+  "archiveUntouched": true,
+  "resourceDetailUntouched": true,
+  "nameAndRequirementColumnsUnchanged": [
+    "A",
+    "B",
+    "N",
+    "O"
+  ]
+}

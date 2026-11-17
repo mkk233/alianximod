@@ -1,0 +1,100 @@
+  protected void actuallyHurt(net.minecraft.world.damagesource.DamageSource, float);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1514               // Method isInvulnerableTo:(Lnet/minecraft/world/damagesource/DamageSource;)Z
+       5: ifne          167
+       8: aload_0
+       9: aload_1
+      10: fload_2
+      11: invokestatic  #2296               // Method net/minecraftforge/common/ForgeHooks.onLivingHurt:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/damagesource/DamageSource;F)F
+      14: fstore_2
+      15: fload_2
+      16: fconst_0
+      17: fcmpg
+      18: ifgt          22
+      21: return
+      22: aload_0
+      23: aload_1
+      24: fload_2
+      25: invokevirtual #2300               // Method getDamageAfterArmorAbsorb:(Lnet/minecraft/world/damagesource/DamageSource;F)F
+      28: fstore_2
+      29: aload_0
+      30: aload_1
+      31: fload_2
+      32: invokevirtual #2304               // Method getDamageAfterMagicAbsorb:(Lnet/minecraft/world/damagesource/DamageSource;F)F
+      35: fstore_2
+      36: fload_2
+      37: aload_0
+      38: invokevirtual #977                // Method getAbsorptionAmount:()F
+      41: fsub
+      42: fconst_0
+      43: invokestatic  #2273               // Method java/lang/Math.max:(FF)F
+      46: fstore_3
+      47: aload_0
+      48: aload_0
+      49: invokevirtual #977                // Method getAbsorptionAmount:()F
+      52: fload_2
+      53: fload_3
+      54: fsub
+      55: fsub
+      56: invokevirtual #1066               // Method setAbsorptionAmount:(F)V
+      59: fload_2
+      60: fload_3
+      61: fsub
+      62: fstore        4
+      64: fload         4
+      66: fconst_0
+      67: fcmpl
+      68: ifle          118
+      71: fload         4
+      73: ldc_w         #1688               // float 3.4028235E37f
+      76: fcmpg
+      77: ifge          118
+      80: aload_1
+      81: invokevirtual #1602               // Method net/minecraft/world/damagesource/DamageSource.getEntity:()Lnet/minecraft/world/entity/Entity;
+      84: astore        5
+      86: aload         5
+      88: instanceof    #605                // class net/minecraft/server/level/ServerPlayer
+      91: ifeq          118
+      94: aload         5
+      96: checkcast     #605                // class net/minecraft/server/level/ServerPlayer
+      99: astore        6
+     101: aload         6
+     103: getstatic     #2306               // Field net/minecraft/stats/Stats.DAMAGE_DEALT_ABSORBED:Lnet/minecraft/resources/ResourceLocation;
+     106: fload         4
+     108: ldc_w         #1581               // float 10.0f
+     111: fmul
+     112: invokestatic  #1704               // Method java/lang/Math.round:(F)I
+     115: invokevirtual #2309               // Method net/minecraft/server/level/ServerPlayer.awardStat:(Lnet/minecraft/resources/ResourceLocation;I)V
+     118: aload_0
+     119: aload_1
+     120: fload_3
+     121: invokestatic  #2312               // Method net/minecraftforge/common/ForgeHooks.onLivingDamage:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/damagesource/DamageSource;F)F
+     124: fstore_3
+     125: fload_3
+     126: fconst_0
+     127: fcmpl
+     128: ifeq          167
+     131: aload_0
+     132: invokevirtual #1849               // Method getCombatTracker:()Lnet/minecraft/world/damagesource/CombatTracker;
+     135: aload_1
+     136: fload_3
+     137: invokevirtual #2315               // Method net/minecraft/world/damagesource/CombatTracker.recordDamage:(Lnet/minecraft/world/damagesource/DamageSource;F)V
+     140: aload_0
+     141: aload_0
+     142: invokevirtual #952                // Method getHealth:()F
+     145: fload_3
+     146: fsub
+     147: invokevirtual #109                // Method setHealth:(F)V
+     150: aload_0
+     151: aload_0
+     152: invokevirtual #977                // Method getAbsorptionAmount:()F
+     155: fload_3
+     156: fsub
+     157: invokevirtual #1066               // Method setAbsorptionAmount:(F)V
+     160: aload_0
+     161: getstatic     #2318               // Field net/minecraft/world/level/gameevent/GameEvent.ENTITY_DAMAGE:Lnet/minecraft/world/level/gameevent/GameEvent;
+     164: invokevirtual #942                // Method gameEvent:(Lnet/minecraft/world/level/gameevent/GameEvent;)V
+     167: return
+

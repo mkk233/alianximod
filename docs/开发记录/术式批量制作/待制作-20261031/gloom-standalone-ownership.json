@@ -1,0 +1,52 @@
+{
+  "author": "D",
+  "uuid": "1c4d13b2-78cf-45ba-acb1-dc42a9d1c804",
+  "ticket": "gloom-standalone-repair",
+  "takenBeforeCode": true,
+  "reason": "用户要求幽冥单独装配即可打开自身领域。A/B/C已停写。下列路径是这次修复直接要用的登记、领域底座和释放入口。",
+  "paths": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainDefinition.java",
+      "why": "给幽冥一份领域声明。水平与寿命用两套现成领域的共同值，高度用体积领域已登记的值，不复制潮湿、减速或潮印伤害。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainVisual.java",
+      "why": "在现有外观枚举末尾增加安静档，避免幽冥被画成雾雨、重压或水面盒子。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/DomainWorldRenderer.java",
+      "why": "现有领域渲染遇到未知外观会画水面。安静档必须显式跳过，蓝火仍由已有幽冥粒子负责。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/ListedRelease.java",
+      "why": "幽冥的释放登记要能返回领域声明。其他附魔工厂仍返回空领域，不改它们的行为。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+      "why": "把幽冥的登记从纯附魔改成带领域声明的同一条登记，不新增术式编号。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/BatchReleaseCompiler.java",
+      "why": "单独的领域附魔现在会得到缺少父段。整段只有自身领域声明时改回旧领域路径，组合链仍走原编译。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "why": "旧路径会把附魔动作直接印上武器并跳过。自身带领域声明的动作要落到现有开域分支。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/DomainWave.java",
+      "why": "单独幽冥的分段没有前置附魔下标，载荷必须包含这个动作自身，产种才能挂到刚打开的领域。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/GloomDomainEffect.java",
+      "why": "旧效果只往玩家已有领域上挂产种，不创建领域，也会涂到无关领域。开域改由领域分支负责后，这里不再扫描。"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+      "why": "物品说明仍只写产种。改成单独释放会打开自身领域，费用、冷却和附魔标记不动。"
+    }
+  ],
+  "notTaken": [
+    "NetherContract、火种仲裁、灼地宿主、网络注册、语言文件、制作表、主记录、资源库"
+  ]
+}

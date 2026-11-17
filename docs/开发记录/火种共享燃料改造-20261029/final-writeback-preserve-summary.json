@@ -1,0 +1,23 @@
+{
+  "submitted": true,
+  "baselineSha256": "7831A4B2570E5C31C0367F6EEF0B7F463A5A341D77266B65F97A86002FD149B4",
+  "backup": "D:\\alianximod\\docs\\开发记录\\火种共享燃料改造-20261029\\备份\\final-writeback-术式制作表-20261029-214909-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\火种共享燃料改造-20261029\\final-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "D80BC892E051CAD5CB5E553244A04E5EF96961CEB4A1F85C894269BAEB83EC16",
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "changedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/worksheets/sheet5.xml"
+  ],
+  "rows": {
+    "fire_liaoyuan": 3,
+    "fire_liaoli": 4,
+    "fire_fentian": 5
+  }
+}

@@ -1,0 +1,65 @@
+branch=master
+statusLines=427
+gitConfigWritten=false
+javaOrGradleProcess=none
+gradleLockFiles=.gradle/8.8 checksums, executionHistory, expanded, fileHashes; .gradle/buildOutputCleanup
+----relevant status----
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicCreateWaterEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ChainRole.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainClientState.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistRainRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistRingLayout.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistRingRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistShaders.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainPressureRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainSheetMesh.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainVolumeBatch.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainWorldRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/NetherDomainWisps.java
+?? src/main/java/com/bslx/XueXiMod/client/SteveWaterLineMesh.java
+?? src/main/java/com/bslx/XueXiMod/client/SteveWaterLineReload.java
+?? src/main/java/com/bslx/XueXiMod/client/SteveWaterLineVisual.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterArcRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterArcSheetMap.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterBarrierRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterCurtainLayout.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterCurtainRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterMomentumOverlay.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterPartingRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRibbonRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Material.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Math.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Mesh.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Reload.java
+?? src/main/java/com/bslx/XueXiMod/network/DomainOpening.java
+?? src/main/java/com/bslx/XueXiMod/network/DomainSyncPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/DomainWave.java
+?? src/main/java/com/bslx/XueXiMod/network/NetherDomainSync.java
+?? src/main/java/com/bslx/XueXiMod/network/WaterMomentumNotice.java
+?? src/main/java/com/bslx/XueXiMod/player/DomainLearning.java
+?? src/main/java/com/bslx/XueXiMod/shu/WaterTechniques.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/WaterFormEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/WaterYieldingEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterCurveFunctions.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterReleaseDefinition.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterSegment.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/water/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordVortex.java
+?? src/main/resources/assets/xueximod/textures/domain/
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/steve_water_lines.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_arc_slash.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_flakes.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_prison_billboard.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_ring_v8.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_ring_v8.png.mcmeta
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_runtime_left.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_runtime_middle.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_runtime_right.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_thin.png
+?? src/main/resources/assets/xueximod/waterring/

@@ -1,0 +1,1363 @@
+# Manual Cursor task launcher. One Start, Resume, Status, or Result.
+# Requires PowerShell 7. Verified host is 7.6.5. Windows PowerShell 5.1 is not supported.
+# Fixed request id grok-4.7-high-fast. Does not schedule, retry, compile, review, or change quota.
+#Requires -Version 7.0
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory = $true)]
+    [ValidateSet('Start', 'Resume', 'Status', 'Result')]
+    [string]$Action,
+
+    [Parameter(Mandatory = $true)]
+    [string]$TaskFile,
+
+    [string]$PromptFile,
+    [switch]$WriteMode,
+    [string]$CursorAgentPath,
+    [string]$AttemptId,
+    [string]$ResumeReason
+)
+
+if ($PSVersionTable.PSVersion.Major -lt 7) {
+    [Console]::Error.WriteLine('Invoke-CursorTask.ps1 需要 PowerShell 7。已验证版本是 7.6.5，不支持 Windows PowerShell 5.1。')
+    exit 2
+}
+$ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
+$script:ExitCode = 2
+$script:TaskLock = $null
+$script:SessionLock = $null
+$FixedModel = 'grok-4.7-high-fast'
+# Exact labels for the fixed request id. Trailing format/control characters may be stripped.
+# Internal spacing is significant. Do not match on High or Fast substrings.
+$FixedModelLabels = @(
+    'grok-4.7-high-fast',
+    'Grok 4.7 256K High Fast',
+    'Grok 4.7  High Fast'
+)
+$DefaultCursorAgent = 'C:\Users\baishang\AppData\Local\CursorAgentCodex\2026.10.22-27dcf5f\dist-package\cursor-agent.cmd'
+$Utf8 = New-Object System.Text.UTF8Encoding $false
+$Utf8Strict = New-Object System.Text.UTF8Encoding $false, $true
+
+function Close-OwnedLocks {
+    if ($script:SessionLock) {
+        $script:SessionLock.Dispose()
+        $script:SessionLock = $null
+    }
+    if ($script:TaskLock) {
+        $script:TaskLock.Dispose()
+        $script:TaskLock = $null
+    }
+}
+
+function Write-AtomicUtf8 {
+    param([string]$Path, [string]$Content)
+    $parent = Split-Path -Parent $Path
+    if (-not (Test-Path -LiteralPath $parent)) {
+        [void][System.IO.Directory]::CreateDirectory($parent)
+    }
+    $temporary = Join-Path $parent ('.tmp-' + [guid]::NewGuid().ToString('n'))
+    [System.IO.File]::WriteAllText($temporary, $Content, $Utf8)
+    $overwrite = $false
+    foreach ($method in [System.IO.File].GetMethods()) {
+        if ($method.Name -eq 'Move' -and $method.GetParameters().Count -eq 3) { $overwrite = $true }
+    }
+    try {
+        if ($overwrite) {
+            [System.IO.File]::Move($temporary, $Path, $true)
+        }
+        elseif ([System.IO.File]::Exists($Path)) {
+            $backup = $temporary + '.bak'
+            [System.IO.File]::Replace($temporary, $Path, $backup)
+            if ([System.IO.File]::Exists($backup)) { [System.IO.File]::Delete($backup) }
+        }
+        else {
+            [System.IO.File]::Move($temporary, $Path)
+        }
+    }
+    catch {
+        if ([System.IO.File]::Exists($temporary)) {
+            [System.IO.File]::Delete($temporary)
+        }
+        throw
+    }
+}
+
+function Write-AtomicJson {
+    param([string]$Path, $Object)
+    $json = $Object | ConvertTo-Json -Depth 30
+    Write-AtomicUtf8 -Path $Path -Content $json
+}
+
+function Read-Utf8Text {
+    param([string]$Path, [switch]$Strict)
+    $encoding = $Utf8
+    if ($Strict) { $encoding = $Utf8Strict }
+    return [System.IO.File]::ReadAllText($Path, $encoding)
+}
+
+function Read-JsonFile {
+    param([string]$Path)
+    $text = Read-Utf8Text -Path $Path -Strict
+    if ([string]::IsNullOrWhiteSpace($text)) {
+        throw "JSON 文件是空的: $Path"
+    }
+    return $text | ConvertFrom-Json
+}
+
+function Get-Sha256Bytes {
+    param([byte[]]$Bytes)
+    $algorithm = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $hash = $algorithm.ComputeHash($Bytes)
+    }
+    finally {
+        $algorithm.Dispose()
+    }
+    return ([System.BitConverter]::ToString($hash)).Replace('-', '').ToLowerInvariant()
+}
+
+function Test-StableId {
+    param([string]$Value)
+    if ([string]::IsNullOrWhiteSpace($Value) -or $Value.Length -gt 80) { return $false }
+    if ($Value -notmatch '^[A-Za-z0-9][A-Za-z0-9._-]*$') { return $false }
+    if ($Value -match '\.\.') { return $false }
+    $reserved = @(
+        'CON', 'PRN', 'AUX', 'NUL',
+        'COM1', 'COM2', 'COM3', 'COM4', 'COM5', 'COM6', 'COM7', 'COM8', 'COM9',
+        'LPT1', 'LPT2', 'LPT3', 'LPT4', 'LPT5', 'LPT6', 'LPT7', 'LPT8', 'LPT9'
+    )
+    if ($reserved -contains $Value.ToUpperInvariant()) { return $false }
+    return $true
+}
+
+function Test-ControlFree {
+    param([string]$Value, [int]$MaxLength)
+    if ([string]::IsNullOrWhiteSpace($Value) -or $Value.Length -gt $MaxLength) { return $false }
+    if ($Value -match '[\u0000-\u001F]') { return $false }
+    return $true
+}
+
+function Test-PathArgSafe {
+    param([string]$Value)
+    if ([string]::IsNullOrWhiteSpace($Value)) { return $false }
+    if ($Value -match '[%"]|[\u0000-\u001F]') { return $false }
+    return $true
+}
+
+function Get-FullDirectory {
+    param([string]$Path)
+    $full = [System.IO.Path]::GetFullPath($Path)
+    return $full.TrimEnd('\', '/')
+}
+
+function Test-IsList {
+    param($Value)
+    if ($null -eq $Value) { return $false }
+    if ($Value -is [string]) { return $false }
+    return $Value -is [System.Collections.IEnumerable]
+}
+
+function Test-Property {
+    param($Object, [string]$Name)
+    if ($null -eq $Object) { return $false }
+    return $null -ne $Object.PSObject.Properties[$Name]
+}
+
+function ConvertTo-StringArray {
+    param($Value)
+    $items = New-Object System.Collections.Generic.List[string]
+    foreach ($entry in @($Value)) {
+        $items.Add([string]$entry)
+    }
+    # A bare return enumerates 0- and 1-element arrays into null or a string.
+    return ,$items.ToArray()
+}
+
+function New-Response {
+    param(
+        [bool]$Ok,
+        [string]$Code,
+        [int]$ExitCode,
+        [string]$Message,
+        [string]$Lifecycle = $null,
+        $Meta = $null,
+        [string]$WorkStatus = $null,
+        [string]$ReportStatus = $null,
+        [string]$Feedback = $null,
+        $Receipt = $null,
+        [string]$AttemptDir = $null,
+        [string]$SessionId = $null,
+        [string]$Attempt = $null,
+        [bool]$PendingCompile = $false,
+        [string]$NextAction = $null,
+        $AttemptIds = $null,
+        $Paths = $null
+    )
+    $script:ExitCode = $ExitCode
+    return [ordered]@{
+        ok              = $Ok
+        code            = $Code
+        action          = $Action
+        message         = $Message
+        accepted        = $false
+        quotaChanged    = $false
+        complete        = $false
+        lifecycle       = $Lifecycle
+        workStatus      = $WorkStatus
+        reportStatus    = $ReportStatus
+        pendingCompile  = $PendingCompile
+        sessionId       = $SessionId
+        attemptId       = $Attempt
+        attemptDir      = $AttemptDir
+        attemptIds      = $AttemptIds
+        nextAction      = $NextAction
+        paths           = $Paths
+        meta            = $Meta
+        feedback        = $Feedback
+        receipt         = $Receipt
+    }
+}
+
+function Get-ModelLabelCore {
+    param([string]$Reported)
+    if ([string]::IsNullOrEmpty($Reported)) { return '' }
+    $text = $Reported.TrimStart()
+    while ($text.Length -gt 0) {
+        $last = $text[$text.Length - 1]
+        $category = [System.Globalization.CharUnicodeInfo]::GetUnicodeCategory($last)
+        $trailing = $category -eq [System.Globalization.UnicodeCategory]::Format -or
+            $category -eq [System.Globalization.UnicodeCategory]::Control -or
+            [char]::IsWhiteSpace($last)
+        if (-not $trailing) { break }
+        $text = $text.Substring(0, $text.Length - 1)
+    }
+    return $text
+}
+
+function Test-FixedModelLabel {
+    param([string]$Reported)
+    $core = Get-ModelLabelCore $Reported
+    foreach ($label in $FixedModelLabels) {
+        if ($core -ceq $label) { return $true }
+    }
+    return $false
+}
+
+function Get-OrphanState {
+    param($Context)
+    $taskJsonPath = Join-Path $Context.taskRoot 'task.json'
+    $attemptsRoot = Join-Path $Context.taskRoot 'attempts'
+    if (Test-Path -LiteralPath $taskJsonPath -PathType Leaf) { return $null }
+    if (-not (Test-Path -LiteralPath $attemptsRoot -PathType Container)) { return $null }
+    $children = @(Get-ChildItem -LiteralPath $attemptsRoot -Force)
+    if ($children.Count -eq 0) { return $null }
+    $attemptPaths = New-Object System.Collections.Generic.List[string]
+    foreach ($child in $children) { $attemptPaths.Add($child.FullName) }
+    return [ordered]@{
+        taskRoot      = $Context.taskRoot
+        attemptsRoot  = $attemptsRoot
+        taskJsonPath  = $taskJsonPath
+        taskLockPath  = Join-Path $Context.taskRoot 'task.lock'
+        attemptPaths  = $attemptPaths.ToArray()
+    }
+}
+
+function New-RecoveryResponse {
+    param($Orphan)
+    $script:ExitCode = 2
+    return New-Response -Ok $false -Code 'recovery_required' -ExitCode 2 -Lifecycle 'unknown' -Paths $Orphan `
+        -Message '初始化中断：attempt 目录已在，但 task.json 尚未落盘。目录和锁都保留，没有删除或重放。' `
+        -NextAction '人工对账 paths 里的目录后自行处理。本工具不会自动补会话，也不会自动清理。'
+}
+
+function New-StatusResponse {
+    param(
+        [bool]$Ok,
+        [string]$Code,
+        [int]$ExitCode,
+        [string]$Message,
+        [string]$Lifecycle,
+        [string]$BatchId,
+        [string]$TaskId,
+        [string]$Attempt,
+        [string]$SessionId,
+        [string]$Model,
+        [string]$RequestedModel,
+        $ReportedModel,
+        $WorkStatus,
+        [string]$ReportStatus,
+        $ProcessAlive,
+        [bool]$NeedsHuman,
+        [string]$NextAction,
+        $Paths = $null
+    )
+    $script:ExitCode = $ExitCode
+    return [ordered]@{
+        ok              = $Ok
+        code            = $Code
+        action          = $Action
+        message         = $Message
+        accepted        = $false
+        quotaChanged    = $false
+        complete        = $false
+        lifecycle       = $Lifecycle
+        batchId         = $BatchId
+        taskId          = $TaskId
+        attemptId       = $Attempt
+        sessionId       = $SessionId
+        model           = $Model
+        requestedModel  = $RequestedModel
+        reportedModel   = $ReportedModel
+        workStatus      = $WorkStatus
+        reportStatus    = $ReportStatus
+        processAlive    = $ProcessAlive
+        needsHuman      = $NeedsHuman
+        nextAction      = $NextAction
+        paths           = $Paths
+    }
+}
+
+function Open-ExclusiveFile {
+    param([string]$Path)
+    $parent = Split-Path -Parent $Path
+    if (-not (Test-Path -LiteralPath $parent)) {
+        [void][System.IO.Directory]::CreateDirectory($parent)
+    }
+    try {
+        return [System.IO.File]::Open(
+            $Path,
+            [System.IO.FileMode]::OpenOrCreate,
+            [System.IO.FileAccess]::ReadWrite,
+            [System.IO.FileShare]::None)
+    }
+    catch [System.IO.IOException] {
+        return $null
+    }
+}
+
+function Write-LockText {
+    param($Stream, [string]$Text)
+    $bytes = $Utf8.GetBytes($Text)
+    $Stream.SetLength(0)
+    $Stream.Write($bytes, 0, $bytes.Length)
+    $Stream.Flush($true)
+}
+
+function Get-ProcessStartIso {
+    param([int]$ProcessId)
+    try {
+        $process = Get-Process -Id $ProcessId -ErrorAction Stop
+        return $process.StartTime.ToUniversalTime().ToString('o')
+    }
+    catch {
+        return $null
+    }
+}
+
+function Test-SameProcess {
+    param([int]$ProcessId, [string]$RecordedStart)
+    if ($ProcessId -le 0 -or [string]::IsNullOrWhiteSpace($RecordedStart)) { return $false }
+    try {
+        $process = Get-Process -Id $ProcessId -ErrorAction Stop
+        $actual = $process.StartTime.ToUniversalTime()
+        $expected = [DateTime]::Parse($RecordedStart, $null, [System.Globalization.DateTimeStyles]::RoundtripKind).ToUniversalTime()
+        $delta = [Math]::Abs(($actual - $expected).TotalSeconds)
+        return $delta -lt 3
+    }
+    catch {
+        return $false
+    }
+}
+
+function Get-OwnerAlive {
+    param($Meta)
+    if (-not (Test-Property $Meta 'pid') -or -not (Test-Property $Meta 'processStartTime')) { return $false }
+    if ($null -eq $Meta.pid -or [string]::IsNullOrWhiteSpace([string]$Meta.processStartTime)) { return $false }
+    return Test-SameProcess -ProcessId ([int]$Meta.pid) -RecordedStart ([string]$Meta.processStartTime)
+}
+
+function Get-CliAlive {
+    param($Meta)
+    if (-not (Test-Property $Meta 'cliPid') -or -not (Test-Property $Meta 'cliProcessStartTime')) { return $false }
+    if ($null -eq $Meta.cliPid -or [string]::IsNullOrWhiteSpace([string]$Meta.cliProcessStartTime)) { return $false }
+    return Test-SameProcess -ProcessId ([int]$Meta.cliPid) -RecordedStart ([string]$Meta.cliProcessStartTime)
+}
+
+function Resolve-CursorAgentPath {
+    if (-not [string]::IsNullOrWhiteSpace($CursorAgentPath)) {
+        if (-not (Test-PathArgSafe $CursorAgentPath)) {
+            return New-Response -Ok $false -Code 'unsafe_argument' -ExitCode 2 -Message 'CursorAgentPath 含有 %、引号或控制字符，已拒绝调用。' -NextAction '换一个不含这些字符的 CLI 路径。'
+        }
+        if (-not [System.IO.Path]::IsPathRooted($CursorAgentPath) -or -not (Test-Path -LiteralPath $CursorAgentPath -PathType Leaf)) {
+            return New-Response -Ok $false -Code 'cli_missing' -ExitCode 2 -Message "指定的 CLI 不存在: $CursorAgentPath" -NextAction '安装并核对 cursor-agent.cmd，或修正 -CursorAgentPath。不能改模型代替执行。'
+        }
+        return [ordered]@{ path = [System.IO.Path]::GetFullPath($CursorAgentPath) }
+    }
+    if (Test-Path -LiteralPath $DefaultCursorAgent -PathType Leaf) {
+        return [ordered]@{ path = $DefaultCursorAgent }
+    }
+    return New-Response -Ok $false -Code 'cli_missing' -ExitCode 2 -Message "找不到固定 CLI: $DefaultCursorAgent" -NextAction '安装已核实的 cursor-agent 后再启动。不能换模型或改由本脚本代替执行。'
+}
+
+function Add-ProcessArguments {
+    param($StartInfo, [string[]]$Arguments)
+    $property = $StartInfo.PSObject.Properties['ArgumentList']
+    if ($null -ne $property) {
+        foreach ($argument in $Arguments) {
+            [void]$StartInfo.ArgumentList.Add($argument)
+        }
+        return
+    }
+    $pieces = New-Object System.Collections.Generic.List[string]
+    foreach ($argument in $Arguments) {
+        if ($argument -notmatch '[\s"]') {
+            $pieces.Add($argument)
+            continue
+        }
+        $escaped = $argument -replace '(\\*)"', '$1$1\"' -replace '(\\+)$', '$1$1'
+        $pieces.Add('"' + $escaped + '"')
+    }
+    $StartInfo.Arguments = ($pieces -join ' ')
+}
+
+function Invoke-CapturedProcess {
+    param(
+        [string]$FilePath,
+        [string]$WorkingDirectory,
+        [string[]]$Arguments,
+        [string]$StdoutPath,
+        [string]$StderrPath
+    )
+    foreach ($argument in $Arguments) {
+        if ($argument -match '[%]|[\u0000-\u001F]') {
+            throw "参数含有 % 或控制字符，已拒绝拼进 CLI。"
+        }
+    }
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = $FilePath
+    $startInfo.WorkingDirectory = $WorkingDirectory
+    $startInfo.UseShellExecute = $false
+    $startInfo.RedirectStandardOutput = $true
+    $startInfo.RedirectStandardError = $true
+    $startInfo.CreateNoWindow = $true
+    Add-ProcessArguments -StartInfo $startInfo -Arguments $Arguments
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    [void]$process.Start()
+    $stdoutStream = [System.IO.File]::Create($StdoutPath)
+    $stderrStream = [System.IO.File]::Create($StderrPath)
+    try {
+        $stdoutCopy = $process.StandardOutput.BaseStream.CopyToAsync($stdoutStream)
+        $stderrCopy = $process.StandardError.BaseStream.CopyToAsync($stderrStream)
+        $process.WaitForExit()
+        $stdoutCopy.Wait()
+        $stderrCopy.Wait()
+        $started = $null
+        try { $started = $process.StartTime.ToUniversalTime().ToString('o') } catch { $started = $null }
+        return [ordered]@{
+            exitCode         = $process.ExitCode
+            pid              = $process.Id
+            processStartTime = $started
+        }
+    }
+    finally {
+        $stdoutStream.Dispose()
+        $stderrStream.Dispose()
+        $process.Dispose()
+    }
+}
+
+function Get-LaunchPlan {
+    param([string]$AgentPath, [string[]]$AgentArguments)
+    $extension = [System.IO.Path]::GetExtension($AgentPath).ToLowerInvariant()
+    if ($extension -eq '.ps1') {
+        $hostPath = (Get-Process -Id $PID).Path
+        $prefix = @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', $AgentPath)
+        return [ordered]@{ fileName = $hostPath; arguments = @($prefix + $AgentArguments) }
+    }
+    return [ordered]@{ fileName = $AgentPath; arguments = $AgentArguments }
+}
+
+function New-AgentArguments {
+    param([string]$Workspace, [string]$SessionId, [bool]$AskMode, [string]$Prompt)
+    $arguments = New-Object System.Collections.Generic.List[string]
+    $arguments.Add('--print')
+    $arguments.Add('--model')
+    $arguments.Add($FixedModel)
+    $arguments.Add('--auto-review')
+    $arguments.Add('--workspace')
+    $arguments.Add($Workspace)
+    $arguments.Add('--output-format')
+    $arguments.Add('stream-json')
+    $arguments.Add('--resume')
+    $arguments.Add($SessionId)
+    if ($AskMode) {
+        $arguments.Add('--mode')
+        $arguments.Add('ask')
+    }
+    $arguments.Add($Prompt)
+    return $arguments.ToArray()
+}
+
+function New-CliPrompt {
+    param([string]$TaskPath, [string]$PromptPath)
+    return "Read the complete UTF-8 task file at $TaskPath and the complete UTF-8 prompt file at $PromptPath. Follow their exact scope. Do not operate the launcher, run records, or batch quota. Do not compile, review, migrate the sheet, or accept the game on your own. In the final answer include exactly one block marked <<<CURSOR_TASK_REPORT>>> then one JSON object then <<<END_CURSOR_TASK_REPORT>>>. Keys are workStatus, summary, changedFiles, checks, notRun, writesSettled, blocker, nextAction. workStatus must be reported_done or blocked or needs_input or failed. Do not invent task, attempt, session, or inputHash. Example: {""workStatus"":""reported_done"",""summary"":"""",""changedFiles"":[],""checks"":[],""notRun"":[],""writesSettled"":false,""blocker"":null,""nextAction"":""""}"
+}
+
+function New-AttemptIdentifier {
+    param([string]$AttemptsDirectory)
+    for ($try = 0; $try -lt 5; $try++) {
+        $suffix = [guid]::NewGuid().ToString('n').Substring(0, 4)
+        $identifier = 'a' + [DateTime]::UtcNow.ToString('yyyyMMddHHmmssfff') + $suffix
+        $candidate = Join-Path $AttemptsDirectory $identifier
+        if (-not (Test-Path -LiteralPath $candidate)) { return $identifier }
+        Start-Sleep -Milliseconds 20
+    }
+    throw '无法分配不冲突的 attemptId。'
+}
+
+function Get-TaskContext {
+    param([switch]$RequirePrompt)
+    if (-not [string]::IsNullOrWhiteSpace($AttemptId) -and $Action -ne 'Result') {
+        return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message '-AttemptId 只用于 Result。'
+    }
+    if (-not [string]::IsNullOrWhiteSpace($ResumeReason) -and $Action -ne 'Resume') {
+        return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message '-ResumeReason 只用于 Resume。'
+    }
+    if ($Action -eq 'Resume' -and -not (Test-ControlFree $ResumeReason 500)) {
+        return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message 'Resume 必须提供 ResumeReason，说明已经对账以及为什么接续。' -NextAction '核对原进程和锁之后，用 -ResumeReason 显式接续。本工具不会自动接续，也不会重置额度。'
+    }
+    if (-not [System.IO.Path]::IsPathRooted($TaskFile) -or -not (Test-Path -LiteralPath $TaskFile -PathType Leaf)) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'TaskFile 必须是已存在的绝对路径。'
+    }
+    if (-not (Test-PathArgSafe $TaskFile)) {
+        return New-Response -Ok $false -Code 'unsafe_argument' -ExitCode 2 -Message 'TaskFile 含有 %、引号或控制字符。'
+    }
+    $taskFull = [System.IO.Path]::GetFullPath($TaskFile)
+    $taskBytes = [System.IO.File]::ReadAllBytes($taskFull)
+    if ($taskBytes.Length -gt 8MB) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'TaskFile 超过 8MB。'
+    }
+    try {
+        $task = Read-JsonFile -Path $taskFull
+    }
+    catch {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message ('TaskFile 不是合法 UTF-8 JSON: ' + $_.Exception.Message)
+    }
+    foreach ($name in @('batchId', 'taskId', 'workspace', 'stage', 'operation', 'authorization', 'inputVersion', 'recordPath', 'writePaths', 'dependencies')) {
+        if (-not (Test-Property $task $name)) {
+            return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message "TaskFile 缺少字段 $name。"
+        }
+    }
+    if (-not (Test-StableId ([string]$task.batchId)) -or -not (Test-StableId ([string]$task.taskId))) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'batchId 和 taskId 必须是不含路径的 ASCII 稳定 ID。'
+    }
+    if (([string]$task.stage) -notin @('design', 'implementation', 'delivery')) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'stage 只能是 design、implementation 或 delivery。'
+    }
+    if (-not (Test-ControlFree ([string]$task.operation) 80)) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'operation 无效。'
+    }
+    foreach ($label in @('authorization', 'inputVersion', 'recordPath')) {
+        if (-not (Test-ControlFree ([string]$task.$label) 2000)) {
+            return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message "$label 无效。"
+        }
+    }
+    if (-not (Test-IsList $task.writePaths) -or -not (Test-IsList $task.dependencies)) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'writePaths 和 dependencies 必须是数组。'
+    }
+    $writePaths = ConvertTo-StringArray $task.writePaths
+    $dependencies = ConvertTo-StringArray $task.dependencies
+    if ($writePaths.Count -gt 100 -or $dependencies.Count -gt 50) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'writePaths 或 dependencies 过多。'
+    }
+    foreach ($writePath in $writePaths) {
+        if (-not (Test-ControlFree $writePath 500)) {
+            return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'writePaths 含有空值或控制字符。'
+        }
+    }
+    foreach ($dependency in $dependencies) {
+        if (-not (Test-StableId $dependency)) {
+            return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message "dependencies 含有非法 taskId: $dependency"
+        }
+    }
+    if (-not [System.IO.Path]::IsPathRooted([string]$task.workspace) -or -not (Test-PathArgSafe ([string]$task.workspace))) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'workspace 必须是不含 % 和引号的绝对路径。'
+    }
+    $workspace = Get-FullDirectory ([string]$task.workspace)
+    if (-not (Test-Path -LiteralPath $workspace -PathType Container)) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message "workspace 不存在: $workspace"
+    }
+    if ($WriteMode -and $writePaths.Count -eq 0) {
+        return New-Response -Ok $false -Code 'write_not_authorized' -ExitCode 2 -Message 'TaskFile 的 writePaths 为空，拒绝 -WriteMode。' -NextAction '保持默认 ask，或先在任务清单写入已授权路径。'
+    }
+    $runRoot = Get-FullDirectory (Join-Path $workspace '.grok\runs')
+    $taskRoot = Get-FullDirectory (Join-Path (Join-Path $runRoot ([string]$task.batchId)) ([string]$task.taskId))
+    $prefix = $runRoot + [System.IO.Path]::DirectorySeparatorChar
+    if (-not $taskRoot.StartsWith($prefix, [System.StringComparison]::OrdinalIgnoreCase)) {
+        return New-Response -Ok $false -Code 'invalid_task' -ExitCode 2 -Message 'batchId 或 taskId 越出了运行目录。'
+    }
+    $promptFull = $null
+    $promptBytes = $null
+    if ($RequirePrompt) {
+        if ([string]::IsNullOrWhiteSpace($PromptFile)) {
+            return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message 'Start 和 Resume 必须提供 PromptFile 绝对路径。'
+        }
+        if (-not [System.IO.Path]::IsPathRooted($PromptFile) -or -not (Test-Path -LiteralPath $PromptFile -PathType Leaf) -or -not (Test-PathArgSafe $PromptFile)) {
+            return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message 'PromptFile 必须是已存在、不含 % 和引号的绝对路径。'
+        }
+        $promptFull = [System.IO.Path]::GetFullPath($PromptFile)
+        $promptBytes = [System.IO.File]::ReadAllBytes($promptFull)
+        if ($promptBytes.Length -gt 8MB) {
+            return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message 'PromptFile 超过 8MB。'
+        }
+        try {
+            $null = $Utf8Strict.GetString($promptBytes)
+        }
+        catch {
+            return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message 'PromptFile 不是合法 UTF-8。'
+        }
+    }
+    return [ordered]@{
+        context      = $true
+        task         = $task
+        taskFull     = $taskFull
+        taskBytes    = $taskBytes
+        promptFull   = $promptFull
+        promptBytes  = $promptBytes
+        workspace    = $workspace
+        runRoot      = $runRoot
+        taskRoot     = $taskRoot
+        writePaths   = $writePaths
+        dependencies = $dependencies
+        askMode      = -not $WriteMode.IsPresent
+        mode         = $(if ($WriteMode) { 'write' } else { 'ask' })
+    }
+}
+
+function Get-AttemptDirectory {
+    param($Context, [string]$Identifier)
+    if (-not (Test-StableId $Identifier)) { return $null }
+    $attemptsRoot = Join-Path $Context.taskRoot 'attempts'
+    $directory = Get-FullDirectory (Join-Path $attemptsRoot $Identifier)
+    $prefix = (Get-FullDirectory $attemptsRoot) + [System.IO.Path]::DirectorySeparatorChar
+    if (-not $directory.StartsWith($prefix, [System.StringComparison]::OrdinalIgnoreCase)) { return $null }
+    return $directory
+}
+
+function Read-AttemptMeta {
+    param([string]$Directory)
+    $path = Join-Path $Directory 'attempt.json'
+    if (-not (Test-Path -LiteralPath $path -PathType Leaf)) { return $null }
+    return Read-JsonFile -Path $path
+}
+
+function Get-StoredAttemptIds {
+    param($TaskDocument)
+    $ids = New-Object System.Collections.Generic.List[string]
+    if ((Test-Property $TaskDocument 'attempts') -and (Test-IsList $TaskDocument.attempts)) {
+        foreach ($entry in @($TaskDocument.attempts)) {
+            $ids.Add([string]$entry)
+        }
+    }
+    return ,$ids.ToArray()
+}
+
+function Update-StaleAttempt {
+    param([string]$Directory)
+    $meta = Read-AttemptMeta -Directory $Directory
+    if ($null -eq $meta) { return 'unknown' }
+    $stored = [string]$meta.lifecycle
+    if ($stored -ne 'running') { return $stored }
+    $ownerAlive = Get-OwnerAlive $meta
+    $cliAlive = Get-CliAlive $meta
+    if ($ownerAlive -or $cliAlive) { return 'running' }
+    $hasOwnerStamp = (Test-Property $meta 'pid') -and $null -ne $meta.pid -and (Test-Property $meta 'processStartTime') -and -not [string]::IsNullOrWhiteSpace([string]$meta.processStartTime)
+    $observed = $(if ($hasOwnerStamp) { 'interrupted' } else { 'unknown' })
+    $map = [ordered]@{}
+    foreach ($property in $meta.PSObject.Properties) {
+        $map[$property.Name] = $property.Value
+    }
+    $map['lifecycle'] = $observed
+    if ([string]::IsNullOrWhiteSpace([string]$map['endedAt'])) {
+        $map['endedAt'] = [DateTime]::UtcNow.ToString('o')
+    }
+    $map['blocker'] = "原进程已不在或启动时间不符，状态记为 $observed。这不是完成。需要人工对账后才能 Resume。"
+    Write-AtomicJson -Path (Join-Path $Directory 'attempt.json') -Object $map
+    return $observed
+}
+
+function Parse-WorkReport {
+    param([string]$Text)
+    $pattern = '<<<CURSOR_TASK_REPORT>>>(?<body>.*?)<<<END_CURSOR_TASK_REPORT>>>'
+    $found = [regex]::Matches($Text, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
+    if ($found.Count -eq 0) {
+        return [ordered]@{ reportStatus = 'missing'; workStatus = $null }
+    }
+    if ($found.Count -ne 1) {
+        return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = '最终回答里有多段报告标记。' }
+    }
+    $body = $found[0].Groups['body'].Value.Trim()
+    try {
+        $report = $body | ConvertFrom-Json
+    }
+    catch {
+        return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = '报告标记内不是合法 JSON。' }
+    }
+    $required = @('workStatus', 'summary', 'changedFiles', 'checks', 'notRun', 'writesSettled', 'blocker', 'nextAction')
+    foreach ($name in $required) {
+        if (-not (Test-Property $report $name)) {
+            return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = "报告缺少 $name。" }
+        }
+    }
+    $status = [string]$report.workStatus
+    if ($status -notin @('reported_done', 'blocked', 'needs_input', 'failed')) {
+        return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = 'workStatus 不在允许集合内。' }
+    }
+    if ($report.summary -isnot [string] -or $report.nextAction -isnot [string]) {
+        return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = 'summary 和 nextAction 必须是字符串。' }
+    }
+    $blockerValue = $null
+    if ($null -eq $report.blocker) {
+        $blockerValue = $null
+    }
+    elseif ($report.blocker -is [string]) {
+        $blockerValue = [string]$report.blocker
+    }
+    else {
+        return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = 'blocker 必须是字符串或 null。' }
+    }
+    if (-not (Test-IsList $report.changedFiles) -or -not (Test-IsList $report.checks) -or -not (Test-IsList $report.notRun)) {
+        return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = 'changedFiles、checks、notRun 必须是数组。' }
+    }
+    if ($report.writesSettled -isnot [bool]) {
+        return [ordered]@{ reportStatus = 'invalid'; workStatus = $null; blocker = 'writesSettled 必须是布尔值。' }
+    }
+    return [ordered]@{
+        reportStatus   = 'valid'
+        workStatus     = $status
+        summary        = [string]$report.summary
+        changedFiles   = ConvertTo-StringArray $report.changedFiles
+        checks         = ConvertTo-StringArray $report.checks
+        notRun         = ConvertTo-StringArray $report.notRun
+        writesSettled  = [bool]$report.writesSettled
+        blocker        = $blockerValue
+        nextAction     = [string]$report.nextAction
+    }
+}
+
+function Read-StreamOutcome {
+    param([string]$StdoutPath, [string]$StderrPath, [string]$SessionId, [string]$EventsPath, [string]$ResultEventsPath, [string]$ParseErrorPath)
+    $notes = New-Object System.Collections.Generic.List[string]
+    $text = ''
+    try {
+        $text = Read-Utf8Text -Path $StdoutPath -Strict
+    }
+    catch {
+        $notes.Add('stdout 不是合法 UTF-8。')
+        $text = ''
+    }
+    $stderrText = ''
+    try {
+        $stderrText = Read-Utf8Text -Path $StderrPath -Strict
+    }
+    catch {
+        $notes.Add('stderr 不是合法 UTF-8。')
+    }
+    $reportedModel = $null
+    $eventLines = New-Object System.Collections.Generic.List[string]
+    $resultLines = New-Object System.Collections.Generic.List[string]
+    $results = New-Object System.Collections.Generic.List[object]
+    $errorBits = New-Object System.Collections.Generic.List[string]
+    $parseErrors = New-Object System.Collections.Generic.List[string]
+    foreach ($rawLine in ($text -split "`n")) {
+        $line = $rawLine.TrimEnd("`r")
+        if ([string]::IsNullOrWhiteSpace($line)) { continue }
+        try {
+            $event = $line | ConvertFrom-Json
+        }
+        catch {
+            $parseErrors.Add($line)
+            $notes.Add('stdout 含有无法解析的事件行。')
+            continue
+        }
+        $eventLines.Add($line)
+        $type = ''
+        if (Test-Property $event 'type') { $type = [string]$event.type }
+        if ($type -eq 'result') {
+            $results.Add($event)
+            $resultLines.Add($line)
+        }
+        elseif ($type -eq 'system' -and (Test-Property $event 'subtype') -and [string]$event.subtype -eq 'init') {
+            if ((Test-Property $event 'model') -and -not [string]::IsNullOrWhiteSpace([string]$event.model)) {
+                $reportedModel = [string]$event.model
+                if (-not (Test-FixedModelLabel $reportedModel)) {
+                    $notes.Add("模型与固定值不符: $reportedModel")
+                }
+            }
+            if ((Test-Property $event 'session_id') -and -not [string]::IsNullOrWhiteSpace([string]$event.session_id) -and [string]$event.session_id -ne $SessionId) {
+                $notes.Add('init 会话与 --resume 不一致。')
+            }
+        }
+        elseif ($type -eq 'error') {
+            $errorBits.Add($line)
+        }
+    }
+    Write-AtomicUtf8 -Path $EventsPath -Content (($eventLines -join "`n") + $(if ($eventLines.Count -gt 0) { "`n" } else { '' }))
+    Write-AtomicUtf8 -Path $ResultEventsPath -Content (($resultLines -join "`n") + $(if ($resultLines.Count -gt 0) { "`n" } else { '' }))
+    Write-AtomicUtf8 -Path $ParseErrorPath -Content (($parseErrors -join "`n") + $(if ($parseErrors.Count -gt 0) { "`n" } else { '' }))
+    if ($results.Count -gt 1) {
+        $notes.Add('出现多条 result，不能选取其中一条当作成功。')
+    }
+    $resultText = $null
+    $isError = $null
+    if ($results.Count -eq 1) {
+        $only = $results[0]
+        if (-not (Test-Property $only 'session_id') -or [string]$only.session_id -ne $SessionId) {
+            $notes.Add('result 会话与 --resume 不一致。')
+        }
+        if (-not (Test-Property $only 'is_error') -or $only.is_error -isnot [bool]) {
+            $notes.Add('result 缺少布尔 is_error。')
+        }
+        else {
+            $isError = [bool]$only.is_error
+        }
+        if (-not (Test-Property $only 'result') -or $only.result -isnot [string]) {
+            $notes.Add('result 正文不是字符串。')
+        }
+        else {
+            $resultText = [string]$only.result
+        }
+    }
+    return [ordered]@{
+        notes         = $notes.ToArray()
+        reportedModel = $reportedModel
+        resultText    = $resultText
+        isError     = $isError
+        resultCount = $results.Count
+        stderrText  = $stderrText
+        errorBits   = $errorBits.ToArray()
+    }
+}
+
+function New-AttemptMeta {
+    param($Context, [string]$Identifier, [string]$SessionId, [string]$InputHash, [string]$TaskHash, [string]$PromptHash)
+    $directory = Get-AttemptDirectory -Context $Context -Identifier $Identifier
+    return [ordered]@{
+        batchId              = [string]$Context.task.batchId
+        taskId               = [string]$Context.task.taskId
+        attemptId            = $Identifier
+        sessionId            = $SessionId
+        model                = $FixedModel
+        requestedModel       = $FixedModel
+        reportedModel        = $null
+        workspace            = $Context.workspace
+        mode                 = $Context.mode
+        stage                = [string]$Context.task.stage
+        operation            = [string]$Context.task.operation
+        startedAt            = [DateTime]::UtcNow.ToString('o')
+        endedAt              = $null
+        pid                  = $PID
+        processStartTime     = Get-ProcessStartIso -ProcessId $PID
+        cliPid               = $null
+        cliProcessStartTime  = $null
+        exitCode             = $null
+        isError              = $null
+        inputHash            = $InputHash
+        taskHash             = $TaskHash
+        promptHash           = $PromptHash
+        receiptPath          = Join-Path $directory 'receipt.json'
+        resultPath           = Join-Path $directory 'result.txt'
+        stdoutPath           = Join-Path $directory 'stdout.log'
+        stderrPath           = Join-Path $directory 'stderr.log'
+        lifecycle            = 'running'
+        workStatus           = $null
+        reportStatus         = 'pending'
+        pendingCompile       = $false
+        resumeReason         = $(if ($Action -eq 'Resume') { $ResumeReason } else { $null })
+        authorization        = [string]$Context.task.authorization
+        inputVersion         = [string]$Context.task.inputVersion
+        recordPath           = [string]$Context.task.recordPath
+        writePaths           = $Context.writePaths
+        dependencies         = $Context.dependencies
+        resultEventCount     = 0
+        blocker              = $null
+        accepted             = $false
+        quotaChanged         = $false
+    }
+}
+
+function Invoke-StartOrResume {
+    $loaded = Get-TaskContext -RequirePrompt
+    if (-not ($loaded -is [System.Collections.IDictionary] -and $loaded.Contains('context'))) { return $loaded }
+    $agent = Resolve-CursorAgentPath
+    if (-not ($agent -is [System.Collections.IDictionary] -and $agent.Contains('path'))) { return $agent }
+
+    $taskJsonPath = Join-Path $loaded.taskRoot 'task.json'
+    $taskLockPath = Join-Path $loaded.taskRoot 'task.lock'
+    $script:TaskLock = Open-ExclusiveFile -Path $taskLockPath
+    if ($null -eq $script:TaskLock) {
+        return New-Response -Ok $false -Code 'lock_conflict' -ExitCode 3 -Message '同一任务正在执行。已拒绝并发，没有终止对方进程，也没有删除锁。' -NextAction '等当前进程结束，或在人工对账后使用 Resume。'
+    }
+    Write-LockText -Stream $script:TaskLock -Text ("pid=$PID; started=$(Get-ProcessStartIso -ProcessId $PID); action=$Action`n")
+
+    $taskExists = Test-Path -LiteralPath $taskJsonPath -PathType Leaf
+    $attemptsRoot = Join-Path $loaded.taskRoot 'attempts'
+    $orphan = Get-OrphanState $loaded
+    if ($null -ne $orphan) {
+        return New-RecoveryResponse -Orphan $orphan
+    }
+    if ($Action -eq 'Start' -and $taskExists) {
+        return New-Response -Ok $false -Code 'task_exists' -ExitCode 2 -Message '该任务已有记录。Start 不会覆盖旧终态。' -NextAction '核对身份、工作区和会话后，使用 -Action Resume -ResumeReason 显式接续。'
+    }
+
+    $storedTask = $null
+    $sessionId = $null
+    if ($Action -eq 'Resume') {
+        if (-not $taskExists) {
+            return New-Response -Ok $false -Code 'task_missing' -ExitCode 2 -Message '没有可 Resume 的任务。' -NextAction '首次执行使用 Start。Start 才会 create-chat。'
+        }
+        $storedTask = Read-JsonFile -Path $taskJsonPath
+        foreach ($name in @('batchId', 'taskId', 'workspace', 'sessionId')) {
+            if (-not (Test-Property $storedTask $name)) {
+                return New-Response -Ok $false -Code 'identity_mismatch' -ExitCode 2 -Message "已存任务缺少 $name。"
+            }
+        }
+        $sameIdentity = ([string]$storedTask.batchId -eq [string]$loaded.task.batchId) -and ([string]$storedTask.taskId -eq [string]$loaded.task.taskId) -and ((Get-FullDirectory ([string]$storedTask.workspace)) -eq $loaded.workspace)
+        if (-not $sameIdentity) {
+            return New-Response -Ok $false -Code 'identity_mismatch' -ExitCode 2 -Message 'Resume 的 batchId、taskId 或 workspace 与已存任务不一致。' -NextAction '不要换会话重开。核对 TaskFile 后再接续。额度不会因此重置。'
+        }
+        $sessionId = [string]$storedTask.sessionId
+        if ($sessionId -notmatch '^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$') {
+            return New-Response -Ok $false -Code 'session_missing' -ExitCode 2 -Message '已存会话不是有效 UUID。Resume 不能新建会话。'
+        }
+        foreach ($previous in (Get-StoredAttemptIds $storedTask)) {
+            $previousDirectory = Get-AttemptDirectory -Context $loaded -Identifier $previous
+            if ($null -eq $previousDirectory) { continue }
+            $observed = Update-StaleAttempt -Directory $previousDirectory
+            if ($observed -eq 'running') {
+                return New-Response -Ok $false -Code 'still_running' -ExitCode 3 -Message '原进程仍在运行。拒绝重复启动，没有终止该进程。' -SessionId $sessionId -NextAction '等它结束，或确认进程消失后再 Resume。'
+            }
+        }
+    }
+
+    if ($Action -eq 'Start') {
+        $createDirectory = Join-Path $loaded.taskRoot 'create-chat'
+        if (-not (Test-Path -LiteralPath $createDirectory)) {
+            [void][System.IO.Directory]::CreateDirectory($createDirectory)
+        }
+        $createOut = Join-Path $createDirectory 'stdout.log'
+        $createErr = Join-Path $createDirectory 'stderr.log'
+        $plan = Get-LaunchPlan -AgentPath $agent.path -AgentArguments @('create-chat')
+        try {
+            $created = Invoke-CapturedProcess -FilePath $plan.fileName -WorkingDirectory $loaded.workspace -Arguments $plan.arguments -StdoutPath $createOut -StderrPath $createErr
+        }
+        catch {
+            return New-Response -Ok $false -Code 'create_chat_failed' -ExitCode 4 -Message ('create-chat 没有启动: ' + $_.Exception.Message) -NextAction '任务尚未建立，可以修正 CLI 后重新 Start。'
+        }
+        $createText = ''
+        try { $createText = (Read-Utf8Text -Path $createOut).Trim() } catch { $createText = '' }
+        $lines = @($createText -split "`r?`n" | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
+        $uuidPattern = '^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$'
+        if ($created.exitCode -ne 0 -or $lines.Count -ne 1 -or $lines[0] -notmatch $uuidPattern) {
+            $detail = $createText
+            if ([string]::IsNullOrWhiteSpace($detail)) {
+                try { $detail = (Read-Utf8Text -Path $createErr).Trim() } catch { $detail = '' }
+            }
+            $failure = [ordered]@{
+                at       = [DateTime]::UtcNow.ToString('o')
+                exitCode = $created.exitCode
+                output   = $detail
+            }
+            Write-AtomicJson -Path (Join-Path $loaded.taskRoot ('start-failure-' + [DateTime]::UtcNow.ToString('yyyyMMddHHmmssfff') + '.json')) -Object $failure
+            return New-Response -Ok $false -Code 'create_chat_failed' -ExitCode 4 -Message ('create-chat 没有返回唯一 UUID，任务未建立。' + $detail) -NextAction '查看 start-failure 记录。不要猜会话，修正后重新 Start。'
+        }
+        $sessionId = $lines[0]
+        Write-AtomicUtf8 -Path (Join-Path $loaded.taskRoot 'session-create.txt') -Content $sessionId
+    }
+
+    $sessionLockPath = Join-Path (Join-Path $loaded.runRoot '_sessions') ($sessionId + '.lock')
+    $script:SessionLock = Open-ExclusiveFile -Path $sessionLockPath
+    if ($null -eq $script:SessionLock) {
+        return New-Response -Ok $false -Code 'lock_conflict' -ExitCode 3 -Message '同一会话正在执行。已拒绝并发，没有终止对方进程，也没有删除锁。' -SessionId $sessionId -NextAction '等该会话结束后再 Resume。'
+    }
+    Write-LockText -Stream $script:SessionLock -Text ("pid=$PID; session=$sessionId; action=$Action`n")
+
+    if (-not (Test-Path -LiteralPath $attemptsRoot)) {
+        [void][System.IO.Directory]::CreateDirectory($attemptsRoot)
+    }
+    $identifier = New-AttemptIdentifier -AttemptsDirectory $attemptsRoot
+    $attemptDirectory = Get-AttemptDirectory -Context $loaded -Identifier $identifier
+    [void][System.IO.Directory]::CreateDirectory($attemptDirectory)
+    [System.IO.File]::WriteAllBytes((Join-Path $attemptDirectory 'task.json'), $loaded.taskBytes)
+    [System.IO.File]::WriteAllBytes((Join-Path $attemptDirectory 'prompt.md'), $loaded.promptBytes)
+    $taskHash = Get-Sha256Bytes -Bytes $loaded.taskBytes
+    $promptHash = Get-Sha256Bytes -Bytes $loaded.promptBytes
+    $combined = New-Object byte[] ($loaded.taskBytes.Length + 1 + $loaded.promptBytes.Length)
+    [System.Array]::Copy($loaded.taskBytes, 0, $combined, 0, $loaded.taskBytes.Length)
+    $combined[$loaded.taskBytes.Length] = 0
+    [System.Array]::Copy($loaded.promptBytes, 0, $combined, $loaded.taskBytes.Length + 1, $loaded.promptBytes.Length)
+    $inputHash = Get-Sha256Bytes -Bytes $combined
+    $meta = New-AttemptMeta -Context $loaded -Identifier $identifier -SessionId $sessionId -InputHash $inputHash -TaskHash $taskHash -PromptHash $promptHash
+    Write-AtomicJson -Path (Join-Path $attemptDirectory 'attempt.json') -Object $meta
+
+    $attemptIds = New-Object System.Collections.Generic.List[string]
+    if ($null -ne $storedTask) {
+        foreach ($previous in (Get-StoredAttemptIds $storedTask)) { $attemptIds.Add($previous) }
+    }
+    $attemptIds.Add($identifier)
+    $taskDocument = [ordered]@{
+        batchId         = [string]$loaded.task.batchId
+        taskId          = [string]$loaded.task.taskId
+        workspace       = $loaded.workspace
+        sessionId       = $sessionId
+        model           = $FixedModel
+        createdAt       = $(if ($storedTask -and (Test-Property $storedTask 'createdAt')) { [string]$storedTask.createdAt } else { [DateTime]::UtcNow.ToString('o') })
+        latestAttemptId = $identifier
+        attempts        = $attemptIds.ToArray()
+    }
+    Write-AtomicJson -Path $taskJsonPath -Object $taskDocument
+
+    $prompt = New-CliPrompt -TaskPath $loaded.taskFull -PromptPath $loaded.promptFull
+    Write-AtomicUtf8 -Path (Join-Path $attemptDirectory 'cli-prompt.txt') -Content $prompt
+    $agentArguments = New-AgentArguments -Workspace $loaded.workspace -SessionId $sessionId -AskMode $loaded.askMode -Prompt $prompt
+    $plan = Get-LaunchPlan -AgentPath $agent.path -AgentArguments $agentArguments
+    $stdoutPath = [string]$meta.stdoutPath
+    $stderrPath = [string]$meta.stderrPath
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = $plan.fileName
+    $startInfo.WorkingDirectory = $loaded.workspace
+    $startInfo.UseShellExecute = $false
+    $startInfo.RedirectStandardOutput = $true
+    $startInfo.RedirectStandardError = $true
+    $startInfo.CreateNoWindow = $true
+    foreach ($argument in $plan.arguments) {
+        if ($argument -match '[%]|[\u0000-\u001F]') {
+            $meta.lifecycle = 'failed'
+            $meta.endedAt = [DateTime]::UtcNow.ToString('o')
+            $meta.blocker = 'CLI 参数含有 % 或控制字符，已拒绝执行。'
+            $meta.reportStatus = 'unparsed'
+            Write-AtomicJson -Path (Join-Path $attemptDirectory 'attempt.json') -Object $meta
+            return New-Response -Ok $false -Code 'unsafe_argument' -ExitCode 2 -Message $meta.blocker -Lifecycle 'failed' -Meta $meta -AttemptDir $attemptDirectory -SessionId $sessionId -Attempt $identifier
+        }
+    }
+    Add-ProcessArguments -StartInfo $startInfo -Arguments $plan.arguments
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    [void]$process.Start()
+    $meta.cliPid = $process.Id
+    try { $meta.cliProcessStartTime = $process.StartTime.ToUniversalTime().ToString('o') } catch { $meta.cliProcessStartTime = $null }
+    $stdoutStream = [System.IO.File]::Create($stdoutPath)
+    $stderrStream = [System.IO.File]::Create($stderrPath)
+    $stdoutCopy = $null
+    $stderrCopy = $null
+    $exitCode = -1
+    try {
+        $stdoutCopy = $process.StandardOutput.BaseStream.CopyToAsync($stdoutStream)
+        $stderrCopy = $process.StandardError.BaseStream.CopyToAsync($stderrStream)
+        Write-AtomicJson -Path (Join-Path $attemptDirectory 'attempt.json') -Object $meta
+        $process.WaitForExit()
+        $stdoutCopy.Wait()
+        $stderrCopy.Wait()
+        $exitCode = $process.ExitCode
+    }
+    finally {
+        try {
+            if (-not $process.HasExited) { $process.WaitForExit() }
+            if ($null -ne $stdoutCopy) { $stdoutCopy.Wait() }
+            if ($null -ne $stderrCopy) { $stderrCopy.Wait() }
+        }
+        catch { }
+        $stdoutStream.Dispose()
+        $stderrStream.Dispose()
+        $process.Dispose()
+    }
+
+    $outcome = Read-StreamOutcome -StdoutPath $stdoutPath -StderrPath $stderrPath -SessionId $sessionId -EventsPath (Join-Path $attemptDirectory 'events.jsonl') -ResultEventsPath (Join-Path $attemptDirectory 'result-events.jsonl') -ParseErrorPath (Join-Path $attemptDirectory 'parse-errors.log')
+    $meta.resultEventCount = $outcome.resultCount
+    $meta.requestedModel = $FixedModel
+    $meta.reportedModel = $outcome.reportedModel
+    $meta.exitCode = $exitCode
+    $meta.isError = $outcome.isError
+    $meta.endedAt = [DateTime]::UtcNow.ToString('o')
+    $protocol = @($outcome.notes)
+    $feedback = $null
+    $report = [ordered]@{ reportStatus = 'unparsed'; workStatus = $null; blocker = $null; summary = $null; changedFiles = @(); checks = @(); notRun = @(); writesSettled = $null; nextAction = $null }
+    if ($protocol.Count -gt 0) {
+        $meta.lifecycle = 'protocol_error'
+        $meta.blocker = ($protocol -join ' ')
+        $meta.reportStatus = 'unparsed'
+        $meta.workStatus = $null
+    }
+    elseif ($exitCode -ne 0 -or $outcome.isError -eq $true) {
+        $meta.lifecycle = 'failed'
+        if ($null -ne $outcome.resultText) {
+            $feedback = $outcome.resultText
+            [System.IO.File]::WriteAllText([string]$meta.resultPath, $feedback, $Utf8)
+            $report = Parse-WorkReport -Text $feedback
+        }
+        $meta.reportStatus = [string]$report.reportStatus
+        $meta.workStatus = $report.workStatus
+        $stderrTrim = ([string]$outcome.stderrText).Trim()
+        if (-not [string]::IsNullOrWhiteSpace([string]$report.blocker)) {
+            $meta.blocker = [string]$report.blocker
+        }
+        elseif (-not [string]::IsNullOrWhiteSpace($stderrTrim)) {
+            $meta.blocker = $stderrTrim.Substring(0, [Math]::Min(2000, $stderrTrim.Length))
+        }
+        elseif ($outcome.errorBits.Count -gt 0) {
+            $meta.blocker = [string]$outcome.errorBits[0]
+        }
+        else {
+            $meta.blocker = "CLI 失败，exit=$exitCode is_error=$($outcome.isError)。没有自动重试，也没有改为请求批准。"
+        }
+    }
+    elseif ($outcome.resultCount -ne 1 -or $null -eq $outcome.resultText) {
+        $meta.lifecycle = 'missing_result'
+        $meta.reportStatus = 'missing'
+        $meta.workStatus = $null
+        $meta.blocker = '退出码为 0，但没有唯一且完整的 result 终态。'
+    }
+    else {
+        $meta.lifecycle = 'reported'
+        $feedback = $outcome.resultText
+        [System.IO.File]::WriteAllText([string]$meta.resultPath, $feedback, $Utf8)
+        $report = Parse-WorkReport -Text $feedback
+        $meta.reportStatus = [string]$report.reportStatus
+        $meta.workStatus = $report.workStatus
+        $meta.blocker = $report.blocker
+    }
+    $pending = $false
+    if ($meta.lifecycle -eq 'reported' -and $meta.reportStatus -eq 'valid' -and $meta.workStatus -eq 'reported_done' -and [string]$loaded.task.operation -eq 'implement') {
+        $pending = $true
+    }
+    $meta.pendingCompile = $pending
+    $receipt = [ordered]@{
+        reportStatus   = $meta.reportStatus
+        workStatus     = $meta.workStatus
+        summary        = $report.summary
+        changedFiles   = $report.changedFiles
+        checks         = $report.checks
+        notRun         = $report.notRun
+        writesSettled  = $report.writesSettled
+        blocker        = $meta.blocker
+        nextAction     = $report.nextAction
+        pendingCompile = $pending
+        accepted       = $false
+        quotaChanged   = $false
+        note           = 'lifecycle=reported 只表示 CLI 已结束且终态匹配。报告缺失或无效不是完成。implement 的 reported_done 仍待编译。本工具不编译、不复审、不迁表、不验收，也不改额度。'
+    }
+    Write-AtomicJson -Path ([string]$meta.receiptPath) -Object $receipt
+    Write-AtomicJson -Path (Join-Path $attemptDirectory 'attempt.json') -Object $meta
+    $ok = $meta.lifecycle -eq 'reported'
+    $exit = $(if ($ok) { 0 } else { 4 })
+    $message = switch ($meta.lifecycle) {
+        'reported' { 'CLI 已结束并收到匹配终态。这是 reported，不是验收完成。' }
+        'failed' { 'CLI 失败（退出码非 0 或 is_error=true）。自报状态不能把它改成成功。' }
+        'missing_result' { '退出码为 0，但缺少完整终态。' }
+        'protocol_error' { '协议异常，没有把某一条结果当成成功。' }
+        default { [string]$meta.lifecycle }
+    }
+    return New-Response -Ok $ok -Code $meta.lifecycle -ExitCode $exit -Message $message -Lifecycle $meta.lifecycle -Meta $meta -WorkStatus $meta.workStatus -ReportStatus $meta.reportStatus -Feedback $feedback -Receipt $receipt -AttemptDir $attemptDirectory -SessionId $sessionId -Attempt $identifier -PendingCompile $pending -NextAction $receipt.nextAction
+}
+
+function Invoke-Status {
+    $loaded = Get-TaskContext
+    if (-not ($loaded -is [System.Collections.IDictionary] -and $loaded.Contains('context'))) { return $loaded }
+    $batchId = [string]$loaded.task.batchId
+    $taskId = [string]$loaded.task.taskId
+    $orphan = Get-OrphanState $loaded
+    if ($null -ne $orphan) {
+        return New-StatusResponse -Ok $false -Code 'recovery_required' -ExitCode 2 -Lifecycle 'unknown' `
+            -BatchId $batchId -TaskId $taskId -Model $FixedModel -RequestedModel $FixedModel `
+            -ProcessAlive $false -NeedsHuman $true -Paths $orphan `
+            -Message '初始化中断，task.json 尚未落盘。' `
+            -NextAction '人工对账 paths。不要改走 Start 或 Resume 来自动补上。'
+    }
+    $taskJsonPath = Join-Path $loaded.taskRoot 'task.json'
+    if (-not (Test-Path -LiteralPath $taskJsonPath -PathType Leaf)) {
+        return New-StatusResponse -Ok $false -Code 'task_missing' -ExitCode 2 -Lifecycle $null `
+            -BatchId $batchId -TaskId $taskId -Model $FixedModel -RequestedModel $FixedModel `
+            -ProcessAlive $false -NeedsHuman $false `
+            -Message '没有任务记录。' -NextAction '首次执行使用 Start。'
+    }
+    $storedTask = Read-JsonFile -Path $taskJsonPath
+    $ids = Get-StoredAttemptIds $storedTask
+    $sessionId = [string]$storedTask.sessionId
+    if ($ids.Count -eq 0) {
+        return New-StatusResponse -Ok $true -Code 'no_attempt' -ExitCode 0 -Lifecycle 'unknown' `
+            -BatchId $batchId -TaskId $taskId -SessionId $sessionId -Model $FixedModel -RequestedModel $FixedModel `
+            -ProcessAlive $false -NeedsHuman $false `
+            -Message '会话已建立，还没有 attempt。' -NextAction '使用 Resume 做第一次执行。'
+    }
+    $latest = [string]$ids[$ids.Count - 1]
+    if ((Test-Property $storedTask 'latestAttemptId') -and -not [string]::IsNullOrWhiteSpace([string]$storedTask.latestAttemptId)) {
+        $latest = [string]$storedTask.latestAttemptId
+    }
+    $directory = Get-AttemptDirectory -Context $loaded -Identifier $latest
+    $meta = Read-AttemptMeta -Directory $directory
+    if ($null -eq $meta) {
+        return New-StatusResponse -Ok $false -Code 'unknown' -ExitCode 0 -Lifecycle 'unknown' `
+            -BatchId $batchId -TaskId $taskId -Attempt $latest -SessionId $sessionId -Model $FixedModel -RequestedModel $FixedModel `
+            -ProcessAlive $false -NeedsHuman $true `
+            -Message '最新 attempt 没有元数据。' -NextAction '人工对账 attempt 目录。不能当成完成。'
+    }
+    $lifecycle = [string]$meta.lifecycle
+    $processAlive = $false
+    if ($lifecycle -eq 'running') {
+        $taskLockPath = Join-Path $loaded.taskRoot 'task.lock'
+        $probe = Open-ExclusiveFile -Path $taskLockPath
+        if ($null -eq $probe) {
+            $lifecycle = 'running'
+            $processAlive = $true
+        }
+        else {
+            $script:TaskLock = $probe
+            try {
+                $lifecycle = Update-StaleAttempt -Directory $directory
+                $meta = Read-AttemptMeta -Directory $directory
+                $processAlive = $lifecycle -eq 'running'
+            }
+            finally {
+                Close-OwnedLocks
+            }
+        }
+    }
+    $work = $null
+    $reportStatus = $null
+    $reportedModel = $null
+    $requestedModel = $FixedModel
+    $model = $FixedModel
+    if ($null -ne $meta) {
+        if (Test-Property $meta 'workStatus') { $work = $meta.workStatus }
+        if (Test-Property $meta 'reportStatus') { $reportStatus = [string]$meta.reportStatus }
+        if ((Test-Property $meta 'model') -and -not [string]::IsNullOrWhiteSpace([string]$meta.model)) { $model = [string]$meta.model }
+        if ((Test-Property $meta 'requestedModel') -and -not [string]::IsNullOrWhiteSpace([string]$meta.requestedModel)) { $requestedModel = [string]$meta.requestedModel }
+        if (Test-Property $meta 'reportedModel') { $reportedModel = $meta.reportedModel }
+        if ((Test-Property $meta 'sessionId') -and -not [string]::IsNullOrWhiteSpace([string]$meta.sessionId)) { $sessionId = [string]$meta.sessionId }
+    }
+    $needsHuman = $true
+    if ($lifecycle -eq 'running' -or ($lifecycle -eq 'reported' -and $reportStatus -eq 'valid')) { $needsHuman = $false }
+    $next = '查看 Result 取回执。这不是验收。'
+    $note = '终态来自元数据。'
+    if ($lifecycle -eq 'running') {
+        $note = '仍在运行。'
+        $next = '等待结束。不要另起 Start。'
+    }
+    elseif ($lifecycle -eq 'interrupted' -or $lifecycle -eq 'unknown') {
+        $note = '没有可靠终态。'
+        $next = '人工对账后再决定是否 Resume。不能当成完成。'
+    }
+    elseif ($lifecycle -eq 'failed') {
+        $note = 'CLI 失败。'
+        $next = '查看 Result。不能当成完成。'
+    }
+    elseif ($lifecycle -eq 'missing_result' -or $lifecycle -eq 'protocol_error') {
+        $note = '终态不可用。'
+        $next = '查看 Result。不能当成完成。'
+    }
+    elseif ($reportStatus -ne 'valid') {
+        $note = '自报不完整。'
+        $next = '查看 Result。缺报告不是完成。'
+    }
+    return New-StatusResponse -Ok $true -Code $lifecycle -ExitCode 0 -Message $note -Lifecycle $lifecycle `
+        -BatchId $batchId -TaskId $taskId -Attempt $latest -SessionId $sessionId -Model $model `
+        -RequestedModel $requestedModel -ReportedModel $reportedModel -WorkStatus $work -ReportStatus $reportStatus `
+        -ProcessAlive $processAlive -NeedsHuman $needsHuman -NextAction $next
+}
+
+function Invoke-ResultQuery {
+    $loaded = Get-TaskContext
+    if (-not ($loaded -is [System.Collections.IDictionary] -and $loaded.Contains('context'))) { return $loaded }
+    $orphan = Get-OrphanState $loaded
+    if ($null -ne $orphan) {
+        return New-RecoveryResponse -Orphan $orphan
+    }
+    $taskJsonPath = Join-Path $loaded.taskRoot 'task.json'
+    if (-not (Test-Path -LiteralPath $taskJsonPath -PathType Leaf)) {
+        return New-Response -Ok $false -Code 'task_missing' -ExitCode 2 -Message '没有任务记录。' -NextAction '首次执行使用 Start。'
+    }
+    $storedTask = Read-JsonFile -Path $taskJsonPath
+    $ids = Get-StoredAttemptIds $storedTask
+    $selected = $null
+    if (-not [string]::IsNullOrWhiteSpace($AttemptId)) {
+        if (-not (Test-StableId $AttemptId)) {
+            return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message 'AttemptId 非法。'
+        }
+        $selected = $AttemptId
+        if ($ids -notcontains $selected) {
+            return New-Response -Ok $false -Code 'attempt_missing' -ExitCode 2 -Message "没有这个 attempt: $selected"
+        }
+    }
+    elseif ($ids.Count -gt 0) {
+        $selected = [string]$ids[$ids.Count - 1]
+        if ((Test-Property $storedTask 'latestAttemptId') -and -not [string]::IsNullOrWhiteSpace([string]$storedTask.latestAttemptId)) {
+            $selected = [string]$storedTask.latestAttemptId
+        }
+    }
+    if ([string]::IsNullOrWhiteSpace($selected)) {
+        return New-Response -Ok $false -Code 'no_attempt' -ExitCode 2 -Message '还没有可展示的 attempt。' -SessionId ([string]$storedTask.sessionId)
+    }
+    $directory = Get-AttemptDirectory -Context $loaded -Identifier $selected
+    if ($null -eq $directory) {
+        return New-Response -Ok $false -Code 'invalid_args' -ExitCode 2 -Message 'AttemptId 越出了任务目录。'
+    }
+    $meta = Read-AttemptMeta -Directory $directory
+    if ($null -eq $meta) {
+        return New-Response -Ok $false -Code 'unknown' -ExitCode 0 -Message 'attempt 元数据缺失。' -Lifecycle 'unknown' -Attempt $selected -AttemptDir $directory
+    }
+    $feedback = $null
+    if ((Test-Property $meta 'resultPath') -and (Test-Path -LiteralPath ([string]$meta.resultPath) -PathType Leaf) -and [string]$meta.lifecycle -ne 'protocol_error') {
+        $feedback = Read-Utf8Text -Path ([string]$meta.resultPath)
+    }
+    $receipt = $null
+    if ((Test-Property $meta 'receiptPath') -and (Test-Path -LiteralPath ([string]$meta.receiptPath) -PathType Leaf)) {
+        $receipt = Read-JsonFile -Path ([string]$meta.receiptPath)
+    }
+    $work = $null
+    $reportStatus = $null
+    $pending = $false
+    if (Test-Property $meta 'workStatus') { $work = $meta.workStatus }
+    if (Test-Property $meta 'reportStatus') { $reportStatus = [string]$meta.reportStatus }
+    if (Test-Property $meta 'pendingCompile') { $pending = [bool]$meta.pendingCompile }
+    return New-Response -Ok $true -Code ([string]$meta.lifecycle) -ExitCode 0 -Message '以下是已保存的最终反馈和回执。没有重新解析运行中的原始流。' -Lifecycle ([string]$meta.lifecycle) -Meta $meta -WorkStatus $work -ReportStatus $reportStatus -Feedback $feedback -Receipt $receipt -AttemptDir $directory -SessionId ([string]$meta.sessionId) -Attempt $selected -PendingCompile $pending -AttemptIds $ids
+}
+
+$response = $null
+try {
+    if ($Action -eq 'Start' -or $Action -eq 'Resume') {
+        $response = Invoke-StartOrResume
+    }
+    elseif ($Action -eq 'Status') {
+        $response = Invoke-Status
+    }
+    else {
+        $response = Invoke-ResultQuery
+    }
+}
+catch {
+    $script:ExitCode = 4
+    $response = [ordered]@{
+        ok           = $false
+        code         = 'internal_error'
+        action       = $Action
+        message      = $_.Exception.Message
+        detail       = $_.ScriptStackTrace
+        accepted     = $false
+        quotaChanged = $false
+        complete     = $false
+        lifecycle    = $null
+    }
+}
+finally {
+    Close-OwnedLocks
+}
+
+if ($null -eq $response) {
+    $response = [ordered]@{ ok = $false; code = 'internal_error'; action = $Action; message = '没有产生结果。'; accepted = $false; quotaChanged = $false; complete = $false }
+    $script:ExitCode = 4
+}
+[Console]::OutputEncoding = $Utf8
+[Console]::Out.WriteLine(($response | ConvertTo-Json -Depth 30))
+exit $script:ExitCode

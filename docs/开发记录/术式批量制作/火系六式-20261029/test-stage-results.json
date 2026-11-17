@@ -1,0 +1,104 @@
+{
+  "purpose": "测试阶段执行结果。不是正式测试复审，不迁移制作表。",
+  "formalCheck": "0/2",
+  "designQuota": "2/2",
+  "implementationQuota": "2/2",
+  "session": "b2d5b359-42e3-4a90-9d24-b26acec6d5f8",
+  "stopWrite": "用户原话：修改已结束，当前没有其他源码写入。覆盖 FireHurtMixinPlugin 与 release/fire 包的 FireHurtBoundary。",
+  "productionChangedDuringTest": false,
+  "preHash": "docs/开发记录/术式批量制作/火系六式-20261029/test-stage-pre-sources.txt",
+  "preHashAt": "2026-10-29T10:48:53.5100907+08:00",
+  "postHashAt": "2026-10-29T10:51:18.7505973+08:00",
+  "postDiff": 0,
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "javaHome": "C:/Program Files/Java/jdk-17",
+    "gradleUserHome": "C:/Users/baishang/.gradle",
+    "start": "2026-10-29T10:48:53.8536979+08:00",
+    "end": "2026-10-29T10:49:07.6793155+08:00",
+    "exitCode": 0,
+    "compileJava": "UP-TO-DATE",
+    "log": "docs/开发记录/术式批量制作/火系六式-20261029/test-stage-gradle.log",
+    "classDir": "build/classes/java/main",
+    "pluginClassMtime": "2026-10-29T09:09:18.1064663+08:00",
+    "boundaryClassMtime": "2026-10-29T09:09:19.7999759+08:00"
+  },
+  "nameGate": {
+    "exitCode": 1,
+    "newViolations": 0,
+    "unchanged": [
+      "OriginalHumanoid.java:165 i",
+      "OriginalHumanoid.java:202 to"
+    ]
+  },
+  "addedTest": {
+    "path": "src/test/java/com/bslx/XueXiMod/status/fire/seed/SixFireFunctionalCheck.java",
+    "sha256": "C5D3F14B735DE6CB2FB9D8127A291533A341762B1619C70CB73D44F32EC915B9",
+    "mtime": "2026-10-29T10:51:00.6095160+08:00",
+    "bytes": 22301
+  },
+  "productionDefectsFound": [],
+  "retainedUnreviewed": [
+    "R2/R3 返修未追加实现复审",
+    "燎原可见解释未追加正式复审",
+    "炉心失败恢复与扣费顺序有作者反馈但未追加复审",
+    "第一人称裁切、侧面厚度、燃烧快照约40tick、进入前对账、属性只向下钳生命仍是作者列出的限度"
+  ],
+  "cases": [
+    {
+      "name": "SixFireFunctionalCheck",
+      "kind": "功能",
+      "entries": ["ReleaseDefinitions.registerAll", "FireSeedAccount", "FireConsumerPlans", "FireLayer.combine", "BurnLedger", "FurnaceMath"],
+      "firstExitCode": 1,
+      "firstAt": "2026-10-29T10:50:22.0337006+08:00",
+      "firstNote": "测试误把 advanceOnline 的经过拍数当成一次爬完，不是生产缺陷",
+      "exitCode": 0,
+      "start": "2026-10-29T10:51:15.4692105+08:00",
+      "end": "2026-10-29T10:51:15.8044691+08:00"
+    },
+    {"name": "FireSeedCheck", "kind": "功能", "exitCode": 0, "actual": "断言 244 失败 0"},
+    {"name": "SixFireLogicCheck", "kind": "混合", "exitCode": 0, "actual": "six fire logic check passed"},
+    {"name": "LiaoliV6LayoutCheck", "kind": "混合", "exitCode": 0, "actual": "liaoli v6 layout check passed"},
+    {"name": "FireVisualLayoutCheck", "kind": "混合", "exitCode": 0, "actual": "fire visual layout check passed"},
+    {"name": "KnownLimitsCheck", "kind": "混合", "exitCode": 0, "actual": "known limits check passed"},
+    {"name": "FurnaceAtomicCheck", "kind": "混合", "exitCode": 0, "actual": "furnace atomic check passed"},
+    {"name": "FurnaceMathCheck", "kind": "功能", "exitCode": 0, "actual": "断言 50 失败 0"},
+    {"name": "FurnaceRepairCheck", "kind": "混合", "exitCode": 0, "actual": "断言 15 失败 0"},
+    {"name": "FurnaceStructureCheck", "kind": "源码文本", "exitCode": 0, "actual": "断言 19 失败 0"},
+    {"name": "FireReleaseStructureCheck", "kind": "源码文本", "exitCode": 0, "actual": "断言 41 失败 0"},
+    {"name": "BurnLedgerCheck", "kind": "功能", "exitCode": 0, "actual": "断言 121 失败 0"},
+    {"name": "BurnDispatchCheck", "kind": "功能", "exitCode": 0, "actual": "断言 16 失败 0"},
+    {"name": "FireLayerCheck", "kind": "功能", "exitCode": 0, "actual": "断言 45 失败 0"},
+    {"name": "ElementHurtLifecycleCheck", "kind": "功能", "exitCode": 0, "actual": "断言 16 失败 0"},
+    {"name": "FireCooldownCheck", "kind": "混合", "exitCode": 0, "actual": "断言 16 失败 0"},
+    {"name": "FireHurtBytecodeCheck", "kind": "功能", "exitCode": 0, "actual": "断言 26 失败 0"}
+  ],
+  "ids": {
+    "fire_liaoyuan": {"status": "部分覆盖", "normalPlaySeed": "无生产授予入口"},
+    "fire_liaoli": {"status": "部分覆盖", "normalPlaySeed": "无生产授予入口"},
+    "fire_fentian": {"status": "部分覆盖", "normalPlaySeed": "无生产授予入口"},
+    "fire_heat_up": {"status": "部分覆盖", "playerTransaction": "未执行"},
+    "fire_burn": {"status": "部分覆盖", "playerTransaction": "未执行"},
+    "fire_cool": {"status": "部分覆盖", "playerTransaction": "未执行"}
+  },
+  "notExecuted": [
+    "ServerPlayer 上的 FurnaceService 与 SelfStatusCommit",
+    "ReleaseBatch.fireContext 与一分为三、双重复制份",
+    "SkillSegmentMath.mixedChainRefusal",
+    "实体地火 tick、物理刺击、焚天选实体",
+    "游戏内 Mixin、视觉、击退、存档、牛奶、护甲和抗性"
+  ],
+  "userPlaytest": [
+    "游戏内 Mixin",
+    "4tick 火伤与无敌帧",
+    "护甲、抗火、保护、牛奶",
+    "登出与跨维度",
+    "蒸汽击退",
+    "第一人称、侧面厚度、贴图、燃烧快照",
+    "实体地火与刺击",
+    "手持剑、装配、魔力",
+    "关系过滤",
+    "炉心属性与效果写入",
+    "一分为三和双重释放的共享火种账"
+  ]
+}

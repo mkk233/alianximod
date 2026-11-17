@@ -1,0 +1,53 @@
+{
+  "attempt": "art-v1-bb-finish-20261116",
+  "approvalBasis": "2026-11-16 direct parent resumed task reports user approval of original-art usage swap; blue palette candidate is still unconfirmed",
+  "runtimeSwapOwner": "Sartre / 01a1e246-a7e1-7861-acdf-2569d7b9ecee",
+  "runtimeSwapIndependentlyVerified": false,
+  "pixelVerification": "Read-only System.Drawing Format32bppArgb LockBits; hashes are decoded BGRA bytes, not PNG file hashes",
+  "mappings": [
+    {
+      "candidateId": "fentian_conflagration",
+      "latestUse": "引燃_承接焚天_v4",
+      "approvedOriginal": "D:/alianximod/docs/资源库/特效/火焰/引燃_承接焚天_v4/kindle_v4-strip.png",
+      "approvedOriginalSha256": "3AE6A95E41D92991B828EDC7491CBB40A18D503CDCF700281A50D901D6AA6A76",
+      "candidateOriginalReference": "references/fentian_conflagration_original.png",
+      "candidateOriginalReferenceSha256": "DC8EFB28B6B6CC8AB0BA51DF82384343D5DD5D8E29591E87191B832255CC5A0B",
+      "decodedBgraSha256Both": "906AAE0EBB0358D58DD1B30FA47FEF4C11FEBB2EED7875F0F87D93D5EA0D6354",
+      "decodedPixelsMatch": true,
+      "atlas": [128, 7488],
+      "frame": [128, 144],
+      "frames": 52,
+      "candidateSource": "source/fentian_conflagration_blue.aseprite",
+      "candidateBlue": "textures/fentian_conflagration_blue.png",
+      "blockbenchMode": "KINDLEV4"
+    },
+    {
+      "candidateId": "kindle_v3_screenshot",
+      "latestUse": "焚天_全身烈焰_v3",
+      "approvedOriginal": "D:/alianximod/docs/资源库/特效/火焰/焚天_全身烈焰_v3/fentian_v3-strip.png",
+      "approvedOriginalSha256": "EF3476EB01225D2E7478F9BBA5430F28BCF2E1D12198F3F482A634C155A04070",
+      "candidateOriginalReference": "references/kindle_v3_screenshot_original.png",
+      "candidateOriginalReferenceSha256": "EF3476EB01225D2E7478F9BBA5430F28BCF2E1D12198F3F482A634C155A04070",
+      "decodedBgraSha256Both": "082BE13003C993FABB6647AED44C3920DE3F4732AA5F6A01E42A0513FB06388B",
+      "decodedPixelsMatch": true,
+      "atlas": [48, 1216],
+      "frame": [48, 64],
+      "frames": 19,
+      "candidateSource": "source/kindle_v3_screenshot_blue.aseprite",
+      "candidateBlue": "textures/kindle_v3_screenshot_blue.png",
+      "blockbenchMode": "V3"
+    }
+  ],
+  "sharedGuiResolution": {
+    "basis": "Direct parent provided completed/status notLoaded wait_threads(timeoutMs:0) result and Planck final; not independently polled by this art author",
+    "thread": "01a1e08a-817e-7b60-b465-7a8baaca1f4b",
+    "turn": "01a1e245-c927-7bc3-8db5-d5b39a531364",
+    "reportedState": "completed/status notLoaded",
+    "reportedFinal": "收到并发提醒后没有再操作实例，无下属，写入已收束",
+    "savedProject": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel",
+    "parentAssignedSoleGuiAuthor": true,
+    "resumedCapabilityActiveProject": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+    "resumedCapabilityVersion": "Blockbench 5.2.2 desktop / plugin 1.10.1",
+    "state": "resolved_before_resumed_gui_work"
+  }
+}

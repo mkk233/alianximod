@@ -1,0 +1,50 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"project\": {\n    \"name\": \"陨岩_烧蚀凹坑_v3_待确认\",\n    \"uuid\": \"3fce4444-48fd-8252-e799-644881ff4169\",\n    \"save_path\": \"\"\n  },\n  \"format\": {\n    \"id\": \"free\",\n    \"name\": \"通用模型\"\n  },\n  \"resolution\": {\n    \"texture_width\": 16,\n    \"texture_height\": 16\n  },\n  \"counts\": {\n    \"cubes\": 3,\n    \"meshes\": 0,\n    \"groups\": 2,\n    \"textures\": 3,\n    \"outliner_elements\": 3\n  },\n  \"root_groups\": [\n    {\n      \"name\": \"meteorite_v3_material\",\n      \"uuid\": \"1faf2149-0c4f-2b86-ea47-2eb6dd08bd39\",\n      \"children\": 1\n    },\n    {\n      \"name\": \"示意辅助_对照与地面\",\n      \"uuid\": \"9ffa4a44-6600-1ce4-3fb3-f6dfb65d6d15\",\n      \"children\": 2\n    }\n  ]\n}"
+    },
+    {
+      "name": "陨岩_烧蚀凹坑_v3_待确认.bbmodel",
+      "title": "陨岩_烧蚀凹坑_v3_待确认 project file",
+      "uri": "blockbench://project/3fce4444-48fd-8252-e799-644881ff4169.bbmodel",
+      "description": "Live Blockbench project file, including unsaved edits and embedded textures. Readable while this project is active; select it again if unavailable.",
+      "mimeType": "application/json",
+      "type": "resource_link"
+    }
+  ],
+  "structuredContent": {
+    "project": {
+      "name": "陨岩_烧蚀凹坑_v3_待确认",
+      "uuid": "3fce4444-48fd-8252-e799-644881ff4169",
+      "save_path": ""
+    },
+    "format": {
+      "id": "free",
+      "name": "通用模型"
+    },
+    "resolution": {
+      "texture_width": 16,
+      "texture_height": 16
+    },
+    "counts": {
+      "cubes": 3,
+      "meshes": 0,
+      "groups": 2,
+      "textures": 3,
+      "outliner_elements": 3
+    },
+    "root_groups": [
+      {
+        "name": "meteorite_v3_material",
+        "uuid": "1faf2149-0c4f-2b86-ea47-2eb6dd08bd39",
+        "children": 1
+      },
+      {
+        "name": "示意辅助_对照与地面",
+        "uuid": "9ffa4a44-6600-1ce4-3fb3-f6dfb65d6d15",
+        "children": 2
+      }
+    ]
+  }
+}

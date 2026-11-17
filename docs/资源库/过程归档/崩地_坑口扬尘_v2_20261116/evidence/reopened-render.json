@@ -1,0 +1,41 @@
+{
+  "project": "3eaaca81-4233-01ff-c351-cb6d780f81b3",
+  "path": "D:/alianximod/docs/资源库/过程归档/崩地_坑口扬尘_v2_20261116/source/earth_break_ground_v2_preview.bbmodel",
+  "saved": true,
+  "counts": {
+    "elements": 367,
+    "groups": 192,
+    "textures": 2,
+    "animations": 1
+  },
+  "textureErrors": [
+    {
+      "name": "ground_dust_v2-atlas",
+      "error": 0,
+      "width": 96,
+      "height": 512
+    },
+    {
+      "name": "AUX_ONLY_ground_scale_palette",
+      "error": 0,
+      "width": 64,
+      "height": 16
+    }
+  ],
+  "timeline": 0.65,
+  "viewport": "main",
+  "renderedAfterNativeReopen": true,
+  "finalCamera": {
+    "position": [
+      94.99999999999999,
+      180,
+      109.99999999999999
+    ],
+    "target": [
+      0,
+      -8,
+      0
+    ],
+    "fov": 36
+  }
+}

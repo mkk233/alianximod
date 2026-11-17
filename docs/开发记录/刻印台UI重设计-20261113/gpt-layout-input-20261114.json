@@ -1,0 +1,924 @@
+[
+  {
+    "id": "sword_thrust",
+    "name": "刺击",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "sword_horizontal_slash",
+    "name": "横劈",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "sword_vertical_slash",
+    "name": "竖劈",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "movement_dash",
+    "name": "冲刺",
+    "attribute": "NONE",
+    "type": "MOVEMENT",
+    "parents": [],
+    "role": "ACTION",
+    "energy": 1
+  },
+  {
+    "id": "movement_leap",
+    "name": "跳跃",
+    "attribute": "NONE",
+    "type": "MOVEMENT",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "magic_arcane_missile",
+    "name": "灵符",
+    "attribute": "NONE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "magic_ignite",
+    "name": "点火",
+    "attribute": "FIRE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "magic_create_water",
+    "name": "生成水",
+    "attribute": "NONE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "test_sustained",
+    "name": "持续试射",
+    "attribute": "NONE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "heat_beam",
+    "name": "热光束",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "universal_lock_target",
+    "name": "锁定实体",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "SEEK_ENTITY",
+    "energy": 1
+  },
+  {
+    "id": "rule_dual_release",
+    "name": "双重释放",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "RULE_DUAL",
+    "energy": 1
+  },
+  {
+    "id": "rule_triple_release",
+    "name": "三重释放",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_dual_release"
+      ]
+    ],
+    "role": "RULE_DUAL",
+    "energy": 1
+  },
+  {
+    "id": "rule_quadruple_release",
+    "name": "四重释放",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_triple_release"
+      ]
+    ],
+    "role": "RULE_DUAL",
+    "energy": 1
+  },
+  {
+    "id": "rule_octuple_release",
+    "name": "八重释放",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_quadruple_release"
+      ]
+    ],
+    "role": "RULE_DUAL",
+    "energy": 1
+  },
+  {
+    "id": "rule_sixteen_release",
+    "name": "十六重释放",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_octuple_release"
+      ]
+    ],
+    "role": "RULE_DUAL",
+    "energy": 1
+  },
+  {
+    "id": "rule_exhaustive_release",
+    "name": "穷尽释放",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_sixteen_release"
+      ]
+    ],
+    "role": "RULE_DUAL",
+    "energy": 1
+  },
+  {
+    "id": "trajectory_drop",
+    "name": "垂落术式",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "TRAJECTORY_DROP",
+    "energy": 1
+  },
+  {
+    "id": "space_cut",
+    "name": "空间切割",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "rule_cast_anchor",
+    "name": "落点指定",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "SEEK_SPACE",
+    "energy": 1
+  },
+  {
+    "id": "rule_triple_cast",
+    "name": "一分为三",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_double_cast"
+      ]
+    ],
+    "role": "RULE_TRIPLE",
+    "energy": 1
+  },
+  {
+    "id": "rule_double_cast",
+    "name": "一分为二",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "RULE_TRIPLE",
+    "energy": 1
+  },
+  {
+    "id": "rule_quintuple_cast",
+    "name": "一分为五",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_triple_cast"
+      ]
+    ],
+    "role": "RULE_TRIPLE",
+    "energy": 1
+  },
+  {
+    "id": "rule_octuple_cast",
+    "name": "一分为八",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_quintuple_cast"
+      ]
+    ],
+    "role": "RULE_TRIPLE",
+    "energy": 1
+  },
+  {
+    "id": "rule_domain_bind",
+    "name": "领域绑定",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "RULE_DOMAIN_BIND",
+    "energy": 1
+  },
+  {
+    "id": "rule_gather_energy",
+    "name": "聚能",
+    "attribute": "NONE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 2
+  },
+  {
+    "id": "trajectory_3d_interleave",
+    "name": "三维交错",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_cast_anchor"
+      ]
+    ],
+    "role": "TRAJECTORY_SCATTER",
+    "energy": 1
+  },
+  {
+    "id": "vine_mark",
+    "name": "缠枝",
+    "attribute": "WOOD",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "parasite_seed",
+    "name": "寄生种子",
+    "attribute": "WOOD",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "tide_mark",
+    "name": "潮印",
+    "attribute": "WATER",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "tide_sever",
+    "name": "薄水切",
+    "attribute": "WATER",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_phantom",
+    "name": "水幻形",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "sinking_edge",
+    "name": "沉锋",
+    "attribute": "EARTH",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "stone_hammer",
+    "name": "岩槌",
+    "attribute": "EARTH",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "keen_mark",
+    "name": "锐锋印",
+    "attribute": "METAL",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "metal_needle",
+    "name": "金针",
+    "attribute": "METAL",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_orb",
+    "name": "火球",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_burst",
+    "name": "爆燃",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_heat_up",
+    "name": "升温",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_burn",
+    "name": "燃烧",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "fire_heat_up"
+      ],
+      [
+        "fire_detonate"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_cool",
+    "name": "冷却",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "fire_heat_up"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_liaoyuan",
+    "name": "燎原",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "fire_heat_up"
+      ],
+      [
+        "fire_scorch_field"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_scorch_field",
+    "name": "灼地",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "fire_seed_sow",
+        "fire_kindle"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_liaoli",
+    "name": "燎里",
+    "attribute": "FIRE",
+    "type": "SWORD",
+    "parents": [
+      [
+        "fire_pick_lamp"
+      ],
+      [
+        "fire_detonate"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_fentian",
+    "name": "焚天",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "fire_heat_up"
+      ],
+      [
+        "fire_scorch_field"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "trajectory_tracking",
+    "name": "追踪弹道",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "trajectory_parallel",
+        "trajectory_drop"
+      ]
+    ],
+    "role": "TRAJECTORY_TRACKING",
+    "energy": 1
+  },
+  {
+    "id": "trajectory_storm",
+    "name": "风暴轨迹",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "trajectory_parallel",
+        "trajectory_drop"
+      ]
+    ],
+    "role": "TRAJECTORY_DROP",
+    "energy": 1
+  },
+  {
+    "id": "water_yielding_ribbon",
+    "name": "断潮",
+    "attribute": "WATER",
+    "type": "SWORD",
+    "parents": [
+      [
+        "water_blade",
+        "tide_sever"
+      ],
+      [
+        "water_curtain",
+        "water_ring"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_weeping_arc",
+    "name": "垂丝",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_meteorite",
+    "name": "陨岩",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_shock_ring",
+    "name": "热波",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_spark",
+    "name": "火苗",
+    "attribute": "FIRE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "rule_surface_anchor",
+    "name": "地表定位",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "rule_cast_anchor"
+      ]
+    ],
+    "role": "SEEK_SURFACE",
+    "energy": 1
+  },
+  {
+    "id": "fire_upwell",
+    "name": "喷涌",
+    "attribute": "FIRE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "TRAJECTORY_UPWELL",
+    "energy": 1
+  },
+  {
+    "id": "rule_stagger",
+    "name": "错时",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "RULE_STAGGER",
+    "energy": 1
+  },
+  {
+    "id": "rule_hit_continue",
+    "name": "命中接续",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "RULE_HIT_CONTINUE",
+    "energy": 1
+  },
+  {
+    "id": "fire_flame_trail",
+    "name": "留焰",
+    "attribute": "FIRE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_seed_sow",
+    "name": "种火",
+    "attribute": "FIRE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_kindle",
+    "name": "引燃",
+    "attribute": "FIRE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_detonate",
+    "name": "引爆",
+    "attribute": "FIRE",
+    "type": "UNIVERSAL",
+    "parents": [
+      [
+        "fire_seed_sow",
+        "fire_kindle"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_nether_gloom",
+    "name": "幽冥",
+    "attribute": "FIRE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "earth_break_ground",
+    "name": "崩地",
+    "attribute": "EARTH",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "phantom_sword",
+    "name": "幻剑术",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "sword_come",
+    "name": "剑来",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [
+      [
+        "phantom_sword"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "sword_return_all",
+    "name": "万剑归宗",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [
+      [
+        "sword_array"
+      ],
+      [
+        "phantom_sword_surge"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "fire_pick_lamp",
+    "name": "挑灯",
+    "attribute": "FIRE",
+    "type": "SWORD",
+    "parents": [
+      [
+        "fire_seed_sow",
+        "fire_kindle"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "trajectory_parallel",
+    "name": "平行",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "TRAJECTORY_PARALLEL",
+    "energy": 1
+  },
+  {
+    "id": "water_wave",
+    "name": "浪",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_disperse",
+    "name": "排澜",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "tide_mark",
+        "water_wave"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "phantom_sword_surge",
+    "name": "幻剑纵横",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [
+      [
+        "sword_array"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "sword_guard",
+    "name": "架剑",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [],
+    "role": "EVENT_RESPONSE",
+    "energy": 1
+  },
+  {
+    "id": "sword_array",
+    "name": "列剑",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [
+      [
+        "phantom_sword"
+      ]
+    ],
+    "role": "TRAJECTORY_MANIPULATION",
+    "energy": 1
+  },
+  {
+    "id": "sword_flight",
+    "name": "御剑",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [
+      [
+        "phantom_sword"
+      ]
+    ],
+    "role": "TRAJECTORY_MANIPULATION",
+    "energy": 1
+  },
+  {
+    "id": "water_blade",
+    "name": "缺月",
+    "attribute": "WATER",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_curtain",
+    "name": "水幕",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_mist",
+    "name": "雾雨",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "water_vortex"
+      ],
+      [
+        "water_bubble_column"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_ring",
+    "name": "水环",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_deep_pressure",
+    "name": "深海重压",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "water_vortex"
+      ],
+      [
+        "water_bubble_column"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_vortex",
+    "name": "水流旋涡",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_bubble_column",
+    "name": "气泡水柱",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "water_vortex"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "water_prison",
+    "name": "水牢",
+    "attribute": "WATER",
+    "type": "MAGIC",
+    "parents": [
+      [
+        "tide_mark",
+        "water_wave"
+      ]
+    ],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "clone_body",
+    "name": "普通分身",
+    "attribute": "NONE",
+    "type": "MAGIC",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "sword_oblique_slash",
+    "name": "斩击",
+    "attribute": "NONE",
+    "type": "SWORD",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "movement_spin",
+    "name": "回旋",
+    "attribute": "NONE",
+    "type": "MOVEMENT",
+    "parents": [],
+    "role": "ATTACK",
+    "energy": 1
+  },
+  {
+    "id": "rule_cooperative",
+    "name": "协同",
+    "attribute": "NONE",
+    "type": "UNIVERSAL",
+    "parents": [],
+    "role": "RULE_COOPERATIVE",
+    "energy": 1
+  }
+]

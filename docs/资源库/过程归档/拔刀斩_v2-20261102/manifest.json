@@ -1,0 +1,99 @@
+{
+  "version": "iaido-single-v2",
+  "status": "preview_pending_user_confirmation",
+  "date": "2026-11-02",
+  "parent": "../拔刀斩_v1-20261102",
+  "request": "抽刀到挥刀的动作不够连贯再调整一下看看",
+  "animation": {
+    "name": "animation.iaido_single_v2",
+    "duration": 1.6,
+    "loop": "once",
+    "keyInterval": 0.01,
+    "animatedBones": 10
+  },
+  "preview": {
+    "source": "Real native Blockbench viewport",
+    "size": [
+      960,
+      720
+    ],
+    "frames": 81,
+    "sampleInterval": 0.02,
+    "gifDuration": 2.38,
+    "firstFrame": 0.2,
+    "lastFrame": 0.6,
+    "slowExcerpt": {
+      "sourceTimes": [
+        0.32,
+        0.68
+      ],
+      "speed": 0.25
+    }
+  },
+  "artDiagnostics": {
+    "maxArmReach": 11.220443412824487,
+    "armLength": 12,
+    "frames": 161,
+    "duration": 1.6,
+    "oneSword": true
+  },
+  "review": {
+    "designRoundsUsed": 2,
+    "designRoundLimit": 2,
+    "userVisualConfirmation": false
+  },
+  "runtime": {
+    "integrated": false,
+    "compiled": false
+  },
+  "files": {
+    "iaido-atlas.aseprite": {
+      "bytes": 1818,
+      "sha256": "0757e8946d148771c9827e46a1caa61724f8ea0e6de02d70dd04551023eb01dd"
+    },
+    "iaido-atlas.png": {
+      "bytes": 961,
+      "sha256": "12c0dd4e4d2735f18136c548a35e7695a00eae52e3cd5389ff5d4747b8bc6405"
+    },
+    "atlas-preview.png": {
+      "bytes": 3417,
+      "sha256": "e0c8437359ac802c4bef4231091471d5fbc77ce9ae9f3d7e8959213c4c835c6c"
+    },
+    "iaido-single-v2.bbmodel": {
+      "bytes": 384702,
+      "sha256": "78084d2f00f68754bdf370fff83cab2686d5edd0d5e50a8ea7ec0427c85d12e2"
+    },
+    "iaido-front-preview.gif": {
+      "bytes": 584318,
+      "sha256": "76875f446d4c6d99be42251916e6242a998f5cec8a1577cdd0cb7c1942f56ae3"
+    },
+    "iaido-side-preview.gif": {
+      "bytes": 387298,
+      "sha256": "88ddeeea6baa246f04298c35de3f8387d759759f006dddc3a9b0cfaaa268ebc4"
+    },
+    "iaido-transition-slow.gif": {
+      "bytes": 155652,
+      "sha256": "b81a3dea603bb243d008e8f82ad9ea719439c97743dc0014d1df8474fb81524a"
+    },
+    "iaido-front-preview.aseprite": {
+      "bytes": 1038454,
+      "sha256": "be44a4e452a4fcc28435b4ecae70c171e8848dccbb42f8dd87389fa6210477dc"
+    },
+    "iaido-side-preview.aseprite": {
+      "bytes": 857665,
+      "sha256": "66e077685718b843645daf9d589a87a7d8939f35de900bc0b4818147486a1502"
+    },
+    "solve-iaido-keys.js": {
+      "bytes": 4097,
+      "sha256": "c7680fcd70d0a8be1d90d2a7ece80eeb6dcaf92330e34d2e1cefcd3e52c4895a"
+    },
+    "animation-keyframes.json": {
+      "bytes": 242813,
+      "sha256": "6374e7a09b2c9b126f59ec884cf2e15a83806698b7bd06d16383c5dc156832a2"
+    },
+    "assemble-previews.lua": {
+      "bytes": 1577,
+      "sha256": "530a496c85e7d3faa5461d8e70abd484d2392e0e675aaa347583d7d819065ce9"
+    }
+  }
+}

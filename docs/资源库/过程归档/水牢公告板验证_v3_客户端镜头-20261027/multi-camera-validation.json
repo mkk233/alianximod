@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "view": "mcp_offscreen_water_prison_preview",
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "dot": 0.9999999999999997
+    },
+    {
+      "view": "main",
+      "camera": "EA30221D-45AC-4735-B471-6A8F00FB9834",
+      "dot": 1
+    },
+    {
+      "view": "mcp_offscreen_water_prison_preview",
+      "camera": "42EB5759-E526-42FE-AD8C-1F08AD2B8995",
+      "dot": 0.9999999999999997
+    }
+  ],
+  "passed": true,
+  "multiplayerGameTest": false
+}

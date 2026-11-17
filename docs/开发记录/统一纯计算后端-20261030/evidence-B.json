@@ -1,0 +1,87 @@
+{
+  "released": true,
+  "write_ownership_released": true,
+  "role": "author-B",
+  "stage": "implement-c",
+  "abi_version": 1,
+  "capability_bits": 63,
+  "checks_completed_at": "2026-10-30T16:21:01+08:00",
+  "report_written_at": "2026-10-30T16:21:46+08:00",
+  "review_added": false,
+  "cmake_configure_executed": false,
+  "c_compile_executed": false,
+  "dll_present": false,
+  "build_command": "powershell -NoProfile -File D:\\alianximod\\native\\compute\\build-windows.ps1",
+  "expected_windows_dll": "D:/alianximod/native/compute/build/xueximod_compute.dll",
+  "exports": [
+    "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_handshake",
+    "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_trajectoryBatch",
+    "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_turnBatch",
+    "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_trackingStepBatch",
+    "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorOverlapsBatch",
+    "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorContactBatch",
+    "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorBlockedBatch"
+  ],
+  "files": [
+    {
+      "path": "D:/alianximod/native/compute/src/xueximod_compute.c",
+      "bytes": 44883,
+      "written_at": "2026-10-30T16:20:44+08:00",
+      "change": "created"
+    },
+    {
+      "path": "D:/alianximod/native/compute/CMakeLists.txt",
+      "bytes": 5578,
+      "written_at": "2026-10-30T16:19:17+08:00",
+      "change": "updated"
+    },
+    {
+      "path": "D:/alianximod/native/compute/build-windows.ps1",
+      "bytes": 15452,
+      "written_at": "2026-10-30T16:19:19+08:00",
+      "change": "updated"
+    },
+    {
+      "path": "D:/alianximod/native/compute/build-unix.sh",
+      "bytes": 6825,
+      "written_at": "2026-10-30T16:19:21+08:00",
+      "change": "updated"
+    },
+    {
+      "path": "D:/alianximod/native/compute/README.md",
+      "bytes": 4597,
+      "written_at": "2026-10-30T16:20:09+08:00",
+      "change": "updated"
+    },
+    {
+      "path": "D:/alianximod/native/compute/build-windows.cmd",
+      "bytes": 172,
+      "written_at": "2026-10-30T15:51:43+08:00",
+      "change": "unchanged"
+    },
+    {
+      "path": "D:/alianximod/native/compute/.gitignore",
+      "bytes": 263,
+      "written_at": "2026-10-30T15:51:42+08:00",
+      "change": "unchanged"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/统一纯计算后端-20261030/implementation-B-final.md",
+      "bytes": 6902,
+      "written_at": "2026-10-30T16:21:46+08:00",
+      "change": "created"
+    }
+  ],
+  "backup": "D:/alianximod/docs/开发记录/统一纯计算后端-20261030/backup-B/native/compute/",
+  "platforms_verified": {
+    "windows_compile": false,
+    "linux": false,
+    "macos": false
+  },
+  "checks": {
+    "powershell_parse_errors": 0,
+    "unix_bash_n_exit": 0,
+    "unix_bash_n_program": "D:/Program Files/Git/bin/bash.exe",
+    "jni_export_count_each": 1
+  }
+}

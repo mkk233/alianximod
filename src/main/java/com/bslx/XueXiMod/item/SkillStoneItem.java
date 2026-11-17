@@ -100,8 +100,8 @@ public class SkillStoneItem extends Item {
         tooltip.add(Component.literal(ElementReaction.of(
                 embryo != null ? embryo : ShuAttribute.NONE,
                 spell != null ? spell : ShuAttribute.NONE).describe()));
-        tooltip.add(Component.literal("§7伤害: §c" + format(data.getDamage())
-                + " §7冷却: §b" + data.getCooldown() + "t"));
+        tooltip.add(Component.literal("§7伤害: §c" + format(data.displayedDamage())
+                + " §7冷却: §b" + data.displayedCooldown() + "t"));
         tooltip.add(Component.translatable("tooltip.xueximod.skill_stone.unused"));
         super.appendHoverText(stack, level, tooltip, flag);
     }
@@ -109,7 +109,7 @@ public class SkillStoneItem extends Item {
     private static String typeName(TechniqueType type) {
         return switch (type) {
             case SWORD -> "§c剑术";
-            case MAGIC -> "§9法术";
+            case MAGIC -> "§9术法";
             case MOVEMENT -> "§a动作";
             case UNIVERSAL -> "§e通用";
         };

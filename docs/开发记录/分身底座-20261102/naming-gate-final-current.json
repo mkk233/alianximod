@@ -1,0 +1,10 @@
+{
+  "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+  "workingDirectory": "D:/alianximod",
+  "startedAt": "2026-11-02T06:02:33.1695043+08:00",
+  "endedAt": "2026-11-02T06:02:35.7145324+08:00",
+  "exitCode": 0,
+  "log": "docs/开发记录/分身底座-20261102/naming-gate-final-current.log",
+  "findingCount": 0,
+  "sourceModified": false
+}

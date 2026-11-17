@@ -1,0 +1,42 @@
+Forge 1.20.1-47.3.33 parchment recomp
+jar: C:\Users\baishang\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.3.33_mapped_parchment_2023.06.26-1.20.1\forge-1.20.1-47.3.33_mapped_parchment_2023.06.26-1.20.1-recomp.jar
+javap: C:\Program Files\Java\jdk-17\bin\javap.exe
+只保留 actuallyHurt / hurt 调用点。完整类反汇编已删除。
+
+LivingEntity.hurt(DamageSource, float)Z
+  两条分支互斥，都是 invokevirtual #1588
+  #1588 = Methodref #13.#1589 // net/minecraft/world/entity/LivingEntity.actuallyHurt:(Lnet/minecraft/world/damagesource/DamageSource;F)V
+  偏移 289：差额分支
+  偏移 317：冷却结束分支
+  方法内没有第三条 actuallyHurt。
+
+LivingEntity.actuallyHurt(DamageSource, float)V
+  偏移 121：ForgeHooks.onLivingDamage，仍在 setHealth 之前
+  偏移 128：返回值 == 0 则跳到 167，不调用 setHealth
+  偏移 147：invokevirtual #109 // setHealth:(F)V
+  #109 = Methodref #13.#110 // net/minecraft/world/entity/LivingEntity.setHealth:(F)V
+  偏移 157：setAbsorptionAmount，仍在 gameEvent 之前
+  偏移 164：gameEvent(ENTITY_DAMAGE)
+  偏移 167：return
+  本方法只有这一处 setHealth。没有 invokespecial Player.actuallyHurt，也没有 super.actuallyHurt。
+
+Player.hurt(DamageSource, float)Z
+  偏移 150：invokespecial LivingEntity.hurt。玩家因此仍经过上面的 actuallyHurt 包装。
+
+Player.actuallyHurt(DamageSource, float)V
+  不调用 LivingEntity.actuallyHurt。
+  偏移 62：ForgeHooks.onLivingDamage，仍在 setHealth 之前
+  偏移 106：返回值 == 0 则跳到 166，不调用 setHealth
+  偏移 133：invokevirtual #1548 // setHealth:(F)V
+  #1548 = Methodref #19.#1549 // net/minecraft/world/entity/player/Player.setHealth:(F)V
+  偏移 156：awardStat(DAMAGE_TAKEN)，仍在 gameEvent 之前
+  偏移 163：gameEvent(ENTITY_DAMAGE)
+  偏移 166：return
+  本方法只有这一处 setHealth。
+
+ServerPlayer 没有 actuallyHurt。ServerPlayer.hurt 的偏移 149 是 invokespecial Player.hurt。
+
+LivingEntity.setHealth(float)V
+  偏移 19：SynchedEntityData.set
+  偏移 22：return
+  方法声明在 LivingEntity。Player 没有覆盖 setHealth，但 Player.actuallyHurt 的调用 owner 仍是 Player。

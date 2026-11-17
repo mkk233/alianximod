@@ -1,0 +1,11 @@
+在 D:/alianximod 用用户已明确授权的 Cursor grok-4.7-high-fast 实现，先读同目录 brain-decision.md。无需再次问模型。只修改本项，禁止打包、游戏测试、提交推送。
+
+用户最终要求：垂丝无聚能时维持最细样子且持续向下流动；有聚能从出现起直接采用已计算的聚能宽度，同时向下流动。不播放从细到宽的charge演示。渲染宽度只读entity.width，不能重复乘聚能、不按术式id另接组合规则。保留现有起流、供水、排空、地面截断、普通/重水与一分为三和伤害逻辑。
+
+PS已补充固定12px窄态 waterfall_thin.png（64x2048，16个64x128帧）及正式接入分件 waterfall_runtime_left/middle/right.png（每份4x2048，16个4x128帧）。均位于 docs/资源库/特效/水流/垂丝聚能瀑布_v1。采用runtime分件，勿用旧8px左右边或waterfall_charge。左右各4px固定厚度，中部4px周期重复或裁剪，最细由4+4+4组成12px；接缝均为#199ED2不透明。runtime分件为PS新补绘，不与旧thin逐像素相同，thin仅窄态风格参考及异常窄宽回退，正常宽度统一runtime方案。所有分件每2tick一帧同步向下，width不得随动画时间变化。按裁决纵向切段裁帧，避免贴图动态纵向拉伸或跨帧采样。
+
+渲染改动仅相关客户端路径及必要小辅助类，游戏资源原样复制PS导出的PNG，禁止你生成/改像素。材质白色顶点、NO_OVERLAY、COLOR_WRITE、LEQUAL、NO_CULL、静态缓存。可仅保留主面双面显示并说明变化，不更改碰撞厚度。现有未提交修改很多，改前将涉及文件按相对路径备份到本任务baseline，重新读共享文件再做局部修改，禁止整文件覆盖或恢复无关改动。
+
+实施完成写implementation-result.md，记录文件行号、几何宽度/帧序/素材哈希验证、编译结果与限制；更新资源库索引及素材README采用状态，说明charge仅演示不游戏使用。
+
+由你编译：.\gradlew.bat -g C:\Users\baishang\AppData\Local\Temp\cursor-sandbox-cache\a6dd7201ae0ea39bc33e5d675cf9f1cf\gradle compileJava --offline --no-daemon --console=plain 。不要build/jar，不改无关命名告警。不启动/操控游戏。实现后做必要几何/时间验证：0.5基础宽与多档聚能实际宽从首帧就是目标，任意时间宽不变，frame15->0连续；小高度/大高度UV帧内裁剪；远坐标先减相机再float；没有重复生成或聚能二次应用。

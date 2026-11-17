@@ -1,0 +1,32 @@
+{
+  "status": "compile_succeeded",
+  "session_id": "14dc9491-4e97-4a66-a10f-b7a91f9ff90a",
+  "model": "grok-4.7-high-fast",
+  "attempt": 2,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "working_directory": "D:/alianximod",
+  "java_home": "C:\\Program Files\\Java\\jdk-17",
+  "gradle_user_home": "C:\\Users\\baishang\\.gradle",
+  "started_at": "2026-11-01T21:37:58.9101183+08:00",
+  "ended_at": "2026-11-01T21:38:35.9135652+08:00",
+  "exit_code": 0,
+  "result": "BUILD SUCCESSFUL in 35s",
+  "javac_started": true,
+  "tasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "warning_count": 40,
+  "error_count": 0,
+  "gradle_properties_unchanged": true,
+  "source_hashes_unchanged_during_compile": true,
+  "archive_compile_status_updated": true,
+  "game_unverified": true,
+  "attempt_1_preserved": [
+    "docs/开发记录/燃烧空间挂载接入-20261101/compile-attempt-1-report.md",
+    "docs/开发记录/燃烧空间挂载接入-20261101/compile-attempt-1-result.json",
+    "docs/开发记录/燃烧空间挂载接入-20261101/compile-attempt-1.log"
+  ],
+  "log_path": "docs/开发记录/燃烧空间挂载接入-20261101/compileJava-offline-2.log",
+  "stderr_path": "docs/开发记录/燃烧空间挂载接入-20261101/compileJava-offline-2.stderr.utf8.log",
+  "needs_compile": false,
+  "source_writes_closed": true,
+  "blockers": []
+}

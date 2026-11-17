@@ -1,0 +1,20 @@
+{
+  "batchId": "wood-secondary-base-20261109",
+  "taskId": "author-effects",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "repair-server-stop-clear-review1",
+  "authorization": "用户授权通用回蓝和防反接口供其他属性术式使用，本单按架构裁决实现通用效果，不制作术式。",
+  "inputVersion": "wood-secondary-base-architecture-r1-death-clear-20261109",
+  "recordPath": "D:/alianximod/docs/开发记录/木属性二级底座-20261109/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/combat/counter/",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/player/MagicPool.java",
+    "D:/alianximod/src/main/resources/data/xueximod/damage_type/counterattack.json",
+    "D:/alianximod/tools/wood-base-checks/effects/",
+    "D:/alianximod/docs/开发记录/木属性二级底座-20261109/通用效果作者交付.md"
+  ],
+  "dependencies": [
+    "inspect-effects"
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "batchId": "heat-burn-20261031",
+    "taskId": "heat-burn-sheet-writer",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a202611090918451065802",
+    "writesSettled": true,
+    "endedAt": "2026-11-09T09:28:32.9470184Z"
+  },
+  {
+    "batchId": "release-variants-20261109",
+    "taskId": "sheet-record",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a202611090931258219653",
+    "writesSettled": true,
+    "endedAt": "2026-11-09T09:45:55.8466713Z"
+  },
+  {
+    "batchId": "water-name-alignment-20261103",
+    "taskId": "sheet-owner",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a202611030922021565b61",
+    "writesSettled": true,
+    "endedAt": "2026-11-03T09:28:30.7447947Z"
+  },
+  {
+    "batchId": "water-vortex-20261103",
+    "taskId": "sheet-owner",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a202611091055105169776",
+    "writesSettled": true,
+    "endedAt": "2026-11-09T10:59:18.0748197Z"
+  }
+]

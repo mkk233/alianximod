@@ -1,0 +1,5 @@
+先读本轮任务和修复提示，按写明的范围改。最后一份复核只指向接触门。我先把报告里的调用点和合同条款对上，再改这一处。后续接触被第一次发布槽占住，目标也没有进到命中实体。接下来给每次接触单独的结算和份额，并让命中实体读这个目标。一次冲刺里的后续接触现在会各自生成斩击。每次合法接触使用自己的账本、发布槽和攻击份额，接触点、方向和目标进入这一次体积；命中实体会按同一套窄判定结算该目标。动作费和协同费不会按接触重收，同一个目标也不会再打出第一下的玩家体积。命名门禁已通过。没有编译，没有进游戏。本阶段额度已用完，这次返修没有追加复审。
+
+<<<CURSOR_TASK_REPORT>>>
+{"workStatus":"reported_done","summary":"每次合法接触单独生成子执行，使用自己的账本、发布槽和攻击份额，并把该次点、方向、目标送进体积；命中实体读取接触目标后走同一套窄判定结算。同一接触只提交一次攻击份额，不重复第一下的玩家体积，也不重收动作费或协同费。本阶段额度已用完，返修结果未追加复审。","changedFiles":["D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java","D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/FamilyExecutionService.java","D:/alianximod/docs/开发记录/协同回旋斩击-20261103/integration-delivery.md","D:/alianximod/docs/开发记录/协同回旋斩击-20261103/游戏实测说明.md","D:/alianximod/docs/开发记录/协同回旋斩击-20261103/integration-repair-round3-delivery.md"],"checks":["powershell -NoProfile -File tools/check-name-gate.ps1 退出码 0"],"notRun":["未统一编译","未游戏验证","本阶段额度已用完，返修结果未追加复审"],"writesSettled":true,"blocker":null,"nextAction":"主会话仅整理转达作者结果，确认写入收束后派固定Cursor统一编译，不追加复审"}
+<<<END_CURSOR_TASK_REPORT>>>

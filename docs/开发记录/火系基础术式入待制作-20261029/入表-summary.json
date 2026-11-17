@@ -1,0 +1,28 @@
+{
+  "submitted": false,
+  "baselineSha256": "50877EAF6C0D34DAAA49465DE447F8600073BE19348D3C90B96B2F0A1D4985E7",
+  "backup": "D:\\alianximod\\docs\\开发记录\\火系基础术式入待制作-20261029\\备份\\入表-术式制作表-20261029-230754-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\火系基础术式入待制作-20261029\\入表-candidate-preserved.xlsx",
+  "candidateSha256": "FEFBC4B30087C08C6E8B9B6C482FEEEBC8DB6F6F3E65F6B88117E4D3D630C070",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 2
+  },
+  "rows": {
+    "fire_flame_flow": 3,
+    "fire_scorch_field": 4,
+    "fire_meteorite": 5,
+    "fire_shock_ring": 6,
+    "fire_surface_anchor": 7,
+    "fire_upwell": 8,
+    "fire_stagger": 9,
+    "fire_hit_continue": 10,
+    "fire_seed_sow": 11,
+    "fire_kindle": 12,
+    "fire_detonate": 13,
+    "fire_nether_gloom": 14,
+    "fire_break_ground": 15
+  }
+}

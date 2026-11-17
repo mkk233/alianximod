@@ -1,0 +1,19 @@
+{
+  "attempt": "art-v1-bb-finish-20261116",
+  "baselineManifestVersion": "art-v1-20261116",
+  "baselineStatus": "partial_blocked_shared_blockbench",
+  "checkedSections": ["source/", "textures/", "references/", "previews/ excluding bb_*"],
+  "checkedFiles": 89,
+  "changedFiles": [],
+  "twoDimensionalFilesUnchanged": true,
+  "approvedSourcesWereReadOnly": true,
+  "approvedSourceDecodedPixelChecks": "evidence/approved-source-remap.json",
+  "blockbenchModelSha256": "E98E82EFED2B227B3957FDBC757D5AAD69B4A4E61769D78685464FA6FDB522E0",
+  "blueTextureSha256": {
+    "fentian_conflagration": "B4690B7972F22F3BEAF4237F72E38607AEC9A9DA4249CA7DEF83461E8CCEB77B",
+    "kindle_v3_screenshot": "165857578C6EC44E9D4016A0AC598037269EF7C6F228BC9275FEBD40FAD1A9B2"
+  },
+  "compile": "not_run_art_only",
+  "gameValidation": "not_run",
+  "candidateIntegration": "not_started"
+}

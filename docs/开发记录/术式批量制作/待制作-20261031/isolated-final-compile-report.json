@@ -1,0 +1,87 @@
+{
+  "batch": "待制作-20261031",
+  "stage": "隔离项目副本的必要编译",
+  "formalReview": "设计 2/2，实现 3/3。未追加正确性复审。",
+  "result": "isolated_compile_not_started",
+  "reason": "src/main 相对 12:54 收束快照有 2 个未说明内容变化，不能当作最终版本。",
+  "previousReportsKept": [
+    "final-compile-report.md",
+    "compile-after-client-close-report.md",
+    "recompile-after-diagnostics-report.md"
+  ],
+  "recompileAfterDiagnosticsWasNotSuccess": true,
+  "sheetMigrated": false,
+  "sourceModifiedByThisTask": false,
+  "tempDirectoryCreated": false,
+  "compileExecuted": false,
+  "stopped": true,
+  "handoff": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/item/StaffSkills.java",
+      "sha256": "24571ba13e7d3f44353ad4b725f2074960f0f09f0b5d22e0923ff1e69842087c",
+      "diskMatches": true
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+      "sha256": "7659032a12d77dd578caa9355290959d367fc8c49222e252f42235791f411552",
+      "diskMatches": true
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+      "sha256": "ed91e0dfaa79690378aaa1c77e23d88f3351a15624124d390570c590366f993a",
+      "diskMatches": true
+    }
+  ],
+  "baseline": "recompile-after-diagnostics-src-before.json",
+  "baselineTakenAt": "2026-10-31T12:54:51.149+08:00",
+  "checkedAt": "2026-10-31T13:07:39.618+08:00",
+  "unexplainedChanges": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/command/ModCommands.java",
+      "baselineBytes": 1024,
+      "baselineMtime": "2026-10-30T04:16:35.667+08:00",
+      "baselineSha256": "f3049296125ffc5e9327045884933742a005c07dc8696d55570b4e6fe2d47220",
+      "currentBytes": 1105,
+      "currentMtime": "2026-10-31T13:03:04.078+08:00",
+      "currentSha256": "8d06a17320ae6e1e266b8b2af525733e0223d33ed2bd21b4cb0d563a6961bdec",
+      "stableOnRecheck": true,
+      "inAuthorOwnershipJson": false
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/command/ShuCommands.java",
+      "baselineBytes": 28843,
+      "baselineMtime": "2026-10-30T02:39:23.105+08:00",
+      "baselineSha256": "4cb68b00808606871a5435f3269d39bdf6e4d9902e1489b540671edec643ebf8",
+      "currentBytes": 31368,
+      "currentMtime": "2026-10-31T13:03:06.984+08:00",
+      "currentSha256": "09192a6b122f9eeec9249f83f8a12772ee8a89f3e259fef0d77db70a33cf43af",
+      "stableOnRecheck": true,
+      "inAuthorOwnershipJson": false
+    }
+  ],
+  "generatedResourceDiffs": 0,
+  "buildOutputCheck": {
+    "absoluteBuildDirAssignment": false,
+    "hardcodedAlianximodPathInBuildOrSettings": false,
+    "usesLayoutBuildDirectory": true,
+    "isolationBlockedByBuildPath": false,
+    "isolationBlockedByUnexplainedSource": true
+  },
+  "environmentReadyButUnused": {
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "javaVersion": "17.0.6+9-LTS-190",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "userTempParent": "C:\\Users\\baishang\\AppData\\Local\\Temp"
+  },
+  "compileJava": {
+    "executed": false,
+    "cwd": null,
+    "start": null,
+    "end": null,
+    "exitCode": null,
+    "log": null
+  },
+  "notRun": ["copy", "compileJava", "nameGate", "build", "jar", "reobf", "datagen", "runClient", "game", "package", "sheet migration", "formal review"],
+  "userProcessesEnded": false,
+  "gameVerified": false
+}

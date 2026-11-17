@@ -1,0 +1,1458 @@
+{
+  "baselineSha256": "204CE85DB0092B25C7818C014391A1A9E6FA441689178FE553B8E7BA1BA7D69D",
+  "columnCount": 144,
+  "rows": {
+    "fire_shock_ring": {
+      "sheet": "待验收",
+      "row": 8,
+      "cells": [
+        {
+          "column": "A",
+          "header": "名称",
+          "text": "热波"
+        },
+        {
+          "column": "B",
+          "header": "编号",
+          "text": "fire_shock_ring"
+        },
+        {
+          "column": "C",
+          "header": "类型",
+          "text": "法术"
+        },
+        {
+          "column": "D",
+          "header": "属性",
+          "text": "火"
+        },
+        {
+          "column": "E",
+          "header": "基础伤害",
+          "text": "4"
+        },
+        {
+          "column": "F",
+          "header": "基础冷却tick",
+          "text": "16"
+        },
+        {
+          "column": "G",
+          "header": "等级上限",
+          "text": "20"
+        },
+        {
+          "column": "H",
+          "header": "复杂度",
+          "text": "2"
+        },
+        {
+          "column": "I",
+          "header": "登记弹速",
+          "text": null
+        },
+        {
+          "column": "J",
+          "header": "附魔",
+          "text": "否"
+        },
+        {
+          "column": "K",
+          "header": "装配消耗",
+          "text": "1"
+        },
+        {
+          "column": "L",
+          "header": "登记魔力",
+          "text": "8"
+        },
+        {
+          "column": "M",
+          "header": "可接受附魔",
+          "text": "是"
+        },
+        {
+          "column": "N",
+          "header": "功能描述",
+          "text": "在锚点周围产生一次环形冲击，中心留空，只结算一次。"
+        },
+        {
+          "column": "O",
+          "header": "特效",
+          "text": "热波_水平正圆_v2 / heat-circle-v2\n正式源：docs/资源库/特效/火焰/热波_水平正圆_v2/\n运行贴图：textures/effect/shock_ring_v1/shock_ring.png（文件名兼容旧引用，内容为 heat-circle-v2）"
+        },
+        {
+          "column": "P",
+          "header": "释放种类",
+          "text": "命中体"
+        },
+        {
+          "column": "Q",
+          "header": "释放标签",
+          "text": "触发"
+        },
+        {
+          "column": "R",
+          "header": "弹道",
+          "text": null
+        },
+        {
+          "column": "S",
+          "header": "链上角色",
+          "text": "攻击"
+        },
+        {
+          "column": "T",
+          "header": "移动中的命中体",
+          "text": null
+        },
+        {
+          "column": "U",
+          "header": "命中体存活tick",
+          "text": null
+        },
+        {
+          "column": "V",
+          "header": "飞行速度",
+          "text": null
+        },
+        {
+          "column": "W",
+          "header": "厚度",
+          "text": null
+        },
+        {
+          "column": "X",
+          "header": "双重释放再拉段数",
+          "text": null
+        },
+        {
+          "column": "Y",
+          "header": "接受持续索敌",
+          "text": null
+        },
+        {
+          "column": "Z",
+          "header": "接受出手初瞄",
+          "text": null
+        },
+        {
+          "column": "AA",
+          "header": "出手后不再跟随",
+          "text": null
+        },
+        {
+          "column": "AB",
+          "header": "必须手持剑",
+          "text": "否"
+        },
+        {
+          "column": "AC",
+          "header": "整组提交",
+          "text": null
+        },
+        {
+          "column": "AD",
+          "header": "使用弧带",
+          "text": null
+        },
+        {
+          "column": "AE",
+          "header": "推进拍号",
+          "text": null
+        },
+        {
+          "column": "AF",
+          "header": "弧带半径",
+          "text": null
+        },
+        {
+          "column": "AG",
+          "header": "弧带半宽",
+          "text": null
+        },
+        {
+          "column": "AH",
+          "header": "接受弹道改写",
+          "text": null
+        },
+        {
+          "column": "AI",
+          "header": "为下一段指定目标",
+          "text": null
+        },
+        {
+          "column": "AJ",
+          "header": "为下一段改为垂落",
+          "text": null
+        },
+        {
+          "column": "AK",
+          "header": "弹道可被修改",
+          "text": null
+        },
+        {
+          "column": "AL",
+          "header": "操纵世界剑",
+          "text": null
+        },
+        {
+          "column": "AM",
+          "header": "拒绝与其他段同链",
+          "text": null
+        },
+        {
+          "column": "AN",
+          "header": "自身能量倍率",
+          "text": null
+        },
+        {
+          "column": "AO",
+          "header": "挂到后续的能量倍率",
+          "text": null
+        },
+        {
+          "column": "AP",
+          "header": "显式魔力",
+          "text": null
+        },
+        {
+          "column": "AQ",
+          "header": "蓄力tick",
+          "text": null
+        },
+        {
+          "column": "AR",
+          "header": "旧档·出手先扣水势",
+          "text": null
+        },
+        {
+          "column": "AS",
+          "header": "场地半径",
+          "text": null
+        },
+        {
+          "column": "AT",
+          "header": "治疗量",
+          "text": null
+        },
+        {
+          "column": "AU",
+          "header": "治疗打在施法者",
+          "text": null
+        },
+        {
+          "column": "AV",
+          "header": "牵引强度",
+          "text": null
+        },
+        {
+          "column": "AW",
+          "header": "旧档·命中附加潮湿",
+          "text": null
+        },
+        {
+          "column": "AX",
+          "header": "命中灭火",
+          "text": null
+        },
+        {
+          "column": "AY",
+          "header": "挡住移动",
+          "text": null
+        },
+        {
+          "column": "AZ",
+          "header": "压力脉冲",
+          "text": null
+        },
+        {
+          "column": "BA",
+          "header": "侵蚀脉冲",
+          "text": null
+        },
+        {
+          "column": "BB",
+          "header": "水平击退",
+          "text": null
+        },
+        {
+          "column": "BC",
+          "header": "向上抛",
+          "text": null
+        },
+        {
+          "column": "BD",
+          "header": "卸力比例",
+          "text": null
+        },
+        {
+          "column": "BE",
+          "header": "减速时长tick",
+          "text": null
+        },
+        {
+          "column": "BF",
+          "header": "到期爆发伤害",
+          "text": null
+        },
+        {
+          "column": "BG",
+          "header": "外观编号",
+          "text": null
+        },
+        {
+          "column": "BH",
+          "header": "曲线函数",
+          "text": null
+        },
+        {
+          "column": "BI",
+          "header": "外形",
+          "text": null
+        },
+        {
+          "column": "BJ",
+          "header": "宽度倍数",
+          "text": null
+        },
+        {
+          "column": "BK",
+          "header": "长度倍数",
+          "text": null
+        },
+        {
+          "column": "BL",
+          "header": "能量放大长度",
+          "text": null
+        },
+        {
+          "column": "BM",
+          "header": "能量放大宽度",
+          "text": null
+        },
+        {
+          "column": "BN",
+          "header": "能量放大高度",
+          "text": null
+        },
+        {
+          "column": "BO",
+          "header": "能量放大模型",
+          "text": null
+        },
+        {
+          "column": "BP",
+          "header": "同锚点分道显示",
+          "text": null
+        },
+        {
+          "column": "BQ",
+          "header": "旧档·每份预留重水",
+          "text": null
+        },
+        {
+          "column": "BR",
+          "header": "旧档·重压潮湿门槛",
+          "text": null
+        },
+        {
+          "column": "BS",
+          "header": "承接来袭弹",
+          "text": null
+        },
+        {
+          "column": "BT",
+          "header": "场地生成消耗",
+          "text": null
+        },
+        {
+          "column": "BU",
+          "header": "场地维持消耗",
+          "text": null
+        },
+        {
+          "column": "BV",
+          "header": "场地维持周期",
+          "text": null
+        },
+        {
+          "column": "BW",
+          "header": "场地寿命tick",
+          "text": null
+        },
+        {
+          "column": "BX",
+          "header": "护体类型键",
+          "text": null
+        },
+        {
+          "column": "BY",
+          "header": "护体寿命tick",
+          "text": null
+        },
+        {
+          "column": "BZ",
+          "header": "护体生成消耗",
+          "text": null
+        },
+        {
+          "column": "CA",
+          "header": "护体维持消耗",
+          "text": null
+        },
+        {
+          "column": "CB",
+          "header": "护体维持周期",
+          "text": null
+        },
+        {
+          "column": "CC",
+          "header": "护体卸力",
+          "text": null
+        },
+        {
+          "column": "CD",
+          "header": "护体半径",
+          "text": null
+        },
+        {
+          "column": "CE",
+          "header": "护体带宽",
+          "text": null
+        },
+        {
+          "column": "CF",
+          "header": "护体身体高度",
+          "text": null
+        },
+        {
+          "column": "CG",
+          "header": "护体基础倾角",
+          "text": null
+        },
+        {
+          "column": "CH",
+          "header": "屏障宽",
+          "text": null
+        },
+        {
+          "column": "CI",
+          "header": "屏障高",
+          "text": null
+        },
+        {
+          "column": "CJ",
+          "header": "屏障厚",
+          "text": null
+        },
+        {
+          "column": "CK",
+          "header": "屏障前移",
+          "text": null
+        },
+        {
+          "column": "CL",
+          "header": "屏障寿命tick",
+          "text": null
+        },
+        {
+          "column": "CM",
+          "header": "屏障生成消耗",
+          "text": null
+        },
+        {
+          "column": "CN",
+          "header": "屏障维持消耗",
+          "text": null
+        },
+        {
+          "column": "CO",
+          "header": "屏障维持周期",
+          "text": null
+        },
+        {
+          "column": "CP",
+          "header": "屏障衰减",
+          "text": null
+        },
+        {
+          "column": "CQ",
+          "header": "屏障承接来袭弹",
+          "text": null
+        },
+        {
+          "column": "CR",
+          "header": "领域宽",
+          "text": null
+        },
+        {
+          "column": "CS",
+          "header": "领域深",
+          "text": null
+        },
+        {
+          "column": "CT",
+          "header": "领域高",
+          "text": null
+        },
+        {
+          "column": "CU",
+          "header": "领域初始消耗",
+          "text": null
+        },
+        {
+          "column": "CV",
+          "header": "领域维持消耗",
+          "text": null
+        },
+        {
+          "column": "CW",
+          "header": "领域维持周期",
+          "text": null
+        },
+        {
+          "column": "CX",
+          "header": "领域寿命tick",
+          "text": null
+        },
+        {
+          "column": "CY",
+          "header": "领域边界",
+          "text": null
+        },
+        {
+          "column": "CZ",
+          "header": "领域外观",
+          "text": null
+        },
+        {
+          "column": "DA",
+          "header": "达级自动学会",
+          "text": null
+        },
+        {
+          "column": "DB",
+          "header": "领域效果键",
+          "text": null
+        },
+        {
+          "column": "DC",
+          "header": "旧档·潮湿周期tick",
+          "text": null
+        },
+        {
+          "column": "DD",
+          "header": "旧档·潮湿每次加点",
+          "text": null
+        },
+        {
+          "column": "DE",
+          "header": "旧档·潮湿延迟tick",
+          "text": null
+        },
+        {
+          "column": "DF",
+          "header": "旧档·水势周期tick",
+          "text": null
+        },
+        {
+          "column": "DG",
+          "header": "旧档·水势每次加点",
+          "text": null
+        },
+        {
+          "column": "DH",
+          "header": "旧档·水势延迟tick",
+          "text": null
+        },
+        {
+          "column": "DI",
+          "header": "旧档·减速等级",
+          "text": null
+        },
+        {
+          "column": "DJ",
+          "header": "旧档·领域减速时长tick",
+          "text": null
+        },
+        {
+          "column": "DK",
+          "header": "旧档·减速周期tick",
+          "text": null
+        },
+        {
+          "column": "DL",
+          "header": "旧档·减速延迟tick",
+          "text": null
+        },
+        {
+          "column": "DM",
+          "header": "耗氧倍率",
+          "text": null
+        },
+        {
+          "column": "DN",
+          "header": "附魔效果键",
+          "text": null
+        },
+        {
+          "column": "DO",
+          "header": "附魔初始层数",
+          "text": null
+        },
+        {
+          "column": "DP",
+          "header": "附魔半径基数",
+          "text": null
+        },
+        {
+          "column": "DQ",
+          "header": "附魔时长基数",
+          "text": null
+        },
+        {
+          "column": "DR",
+          "header": "附魔半径倍率",
+          "text": null
+        },
+        {
+          "column": "DS",
+          "header": "附魔时长倍率",
+          "text": null
+        },
+        {
+          "column": "DT",
+          "header": "附魔伤害倍率",
+          "text": null
+        },
+        {
+          "column": "DU",
+          "header": "附魔速度倍率",
+          "text": null
+        },
+        {
+          "column": "DV",
+          "header": "备注",
+          "text": "击退未定，不填写击退数值。不把热波当成免费视觉附件。不内置火种消费。本次录入2026-10-29。来源docs/火属性基础术式与组合设计.md，并按用户最新决定替换魂焰、采用共享燃料。只进入待制作，尚未领取，不开始实现。基础冷却16tick。魔力、复杂度、装配消耗、等级上限和等级成长未定，对应数值格留空，不用0代替。\n[设计反馈 2026-10-31] 已领取。首版数值和链上角色仍有待定，正在核对底座，视觉待预览确认。具体未定项参照本项原文。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[设计反馈 2026-10-31] 已采用首版参数。见 docs/开发记录/术式批量制作/待制作-20261031/approved-v1.md。用户暂用二维原话：先保留这个版本，额度不够用了暂时，之后再重置，暂时直接按照这个版本执行。这不是新的正式复审，设计仍为2/2，实现仍为0/3，也不是游戏实测通过。单术战斗成长为0，没有成长专列。基础法杖保持6槽；32槽测试法杖是公共物品，不在本行。魔力8，冷却16，复杂度2，装配消耗1，等级上限20。物理4，无运动弹道，不填直线。内半径1.5、外半径5、总高3，这些不是场地半径。无击退，视觉12tick，判定一次。资源：docs/资源库/特效/火焰/热波_v1/shock_ring-strip.png，建议运行时 assets/xueximod/textures/effect/shock_ring_v1/shock_ring.png。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[阶段 2026-10-31] 实现与确认v1资源已接入。正式复审累计设计2/2、实现3/3，额度已用完，不能自动再审。待统一编译：本仓开发客户端和runClient仍占用Gradle，GradleDaemon PID 12896，Forge客户端 PID 45212。compileJava没有执行。这不是编译器报错，也不是编译通过。关闭该开发客户端并结束对应runClient后，重新核对源码再编译；编译成功后才按规则迁待验收。证据 docs/开发记录/术式批量制作/待制作-20261031/final-compile-report.md。记录 docs/开发记录/术式批量制作/待制作-20261031/记录.md。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n2026-11-01 用户批准 heat-circle-v2：“按这版接入，同时把范围扩展到这个特效范围”；最终选择“保留中心1.5格空区，只确保外缘对齐”。外半径 5 格，内半径 1.5 格，一次结算。运行贴图已替换。.\\gradlew.bat compileJava --offline --no-daemon 于 2026-11-01 23:42:11–23:42:27 退出码 0，compileJava 为 UP-TO-DATE。上文 2026-10-31 待统一编译及客户端占用是被本次结果覆盖的历史，不是当前阻塞。本阶段额度已用完，返修结果未追加复审。游戏待用户实测。\n待验收 | 热波正圆精修-20261101 | docs/开发记录/热波正圆精修-20261101/调度记录.md"
+        },
+        {
+          "column": "DW",
+          "header": "配置启用",
+          "text": null
+        },
+        {
+          "column": "DX",
+          "header": "资源",
+          "text": null
+        },
+        {
+          "column": "DY",
+          "header": "状态",
+          "text": null
+        },
+        {
+          "column": "DZ",
+          "header": "操作",
+          "text": null
+        },
+        {
+          "column": "EA",
+          "header": "作用对象",
+          "text": null
+        },
+        {
+          "column": "EB",
+          "header": "触发时机",
+          "text": null
+        },
+        {
+          "column": "EC",
+          "header": "数值",
+          "text": null
+        },
+        {
+          "column": "ED",
+          "header": "状态amplifier",
+          "text": null
+        },
+        {
+          "column": "EE",
+          "header": "寿命策略",
+          "text": null
+        },
+        {
+          "column": "EF",
+          "header": "寿命tick",
+          "text": null
+        },
+        {
+          "column": "EG",
+          "header": "周期tick",
+          "text": null
+        },
+        {
+          "column": "EH",
+          "header": "首次延迟tick",
+          "text": null
+        },
+        {
+          "column": "EI",
+          "header": "计量单位",
+          "text": null
+        },
+        {
+          "column": "EJ",
+          "header": "生效条件",
+          "text": null
+        },
+        {
+          "column": "EK",
+          "header": "结算约束",
+          "text": null
+        },
+        {
+          "column": "EL",
+          "header": "迁移来源",
+          "text": null
+        },
+        {
+          "column": "EM",
+          "header": "关联说明",
+          "text": null
+        },
+        {
+          "column": "EN",
+          "header": "附加明细键",
+          "text": null
+        }
+      ]
+    },
+    "fire_meteorite": {
+      "sheet": "待验收",
+      "row": 9,
+      "cells": [
+        {
+          "column": "A",
+          "header": "名称",
+          "text": "陨岩"
+        },
+        {
+          "column": "B",
+          "header": "编号",
+          "text": "fire_meteorite"
+        },
+        {
+          "column": "C",
+          "header": "类型",
+          "text": "法术"
+        },
+        {
+          "column": "D",
+          "header": "属性",
+          "text": "火"
+        },
+        {
+          "column": "E",
+          "header": "基础伤害",
+          "text": "24"
+        },
+        {
+          "column": "F",
+          "header": "基础冷却tick",
+          "text": "40"
+        },
+        {
+          "column": "G",
+          "header": "等级上限",
+          "text": "20"
+        },
+        {
+          "column": "H",
+          "header": "复杂度",
+          "text": "6"
+        },
+        {
+          "column": "I",
+          "header": "登记弹速",
+          "text": "0.8"
+        },
+        {
+          "column": "J",
+          "header": "附魔",
+          "text": "否"
+        },
+        {
+          "column": "K",
+          "header": "装配消耗",
+          "text": "1"
+        },
+        {
+          "column": "L",
+          "header": "登记魔力",
+          "text": "48"
+        },
+        {
+          "column": "M",
+          "header": "可接受附魔",
+          "text": "是"
+        },
+        {
+          "column": "N",
+          "header": "功能描述",
+          "text": "撞到实体后沿当前弹道继续飞行，触地才变成陨石方块。"
+        },
+        {
+          "column": "O",
+          "header": "特效",
+          "text": "陨岩·熔岩岩壳v5 / meteor-magma-crust-v5\n正式目录：docs/资源库/材质/方块/陨岩_熔岩岩壳_v5/\n运行贴图：textures/block/meteorite_v1.png（内容为 meteor-magma-crust-v5）\n模型：minecraft:block/cube_all"
+        },
+        {
+          "column": "P",
+          "header": "释放种类",
+          "text": "命中体"
+        },
+        {
+          "column": "Q",
+          "header": "释放标签",
+          "text": "触发"
+        },
+        {
+          "column": "R",
+          "header": "弹道",
+          "text": "抛物线"
+        },
+        {
+          "column": "S",
+          "header": "链上角色",
+          "text": "攻击"
+        },
+        {
+          "column": "T",
+          "header": "移动中的命中体",
+          "text": "是"
+        },
+        {
+          "column": "U",
+          "header": "命中体存活tick",
+          "text": "100"
+        },
+        {
+          "column": "V",
+          "header": "飞行速度",
+          "text": "0.8"
+        },
+        {
+          "column": "W",
+          "header": "厚度",
+          "text": null
+        },
+        {
+          "column": "X",
+          "header": "双重释放再拉段数",
+          "text": null
+        },
+        {
+          "column": "Y",
+          "header": "接受持续索敌",
+          "text": null
+        },
+        {
+          "column": "Z",
+          "header": "接受出手初瞄",
+          "text": null
+        },
+        {
+          "column": "AA",
+          "header": "出手后不再跟随",
+          "text": null
+        },
+        {
+          "column": "AB",
+          "header": "必须手持剑",
+          "text": "否"
+        },
+        {
+          "column": "AC",
+          "header": "整组提交",
+          "text": null
+        },
+        {
+          "column": "AD",
+          "header": "使用弧带",
+          "text": null
+        },
+        {
+          "column": "AE",
+          "header": "推进拍号",
+          "text": null
+        },
+        {
+          "column": "AF",
+          "header": "弧带半径",
+          "text": null
+        },
+        {
+          "column": "AG",
+          "header": "弧带半宽",
+          "text": null
+        },
+        {
+          "column": "AH",
+          "header": "接受弹道改写",
+          "text": "是"
+        },
+        {
+          "column": "AI",
+          "header": "为下一段指定目标",
+          "text": null
+        },
+        {
+          "column": "AJ",
+          "header": "为下一段改为垂落",
+          "text": null
+        },
+        {
+          "column": "AK",
+          "header": "弹道可被修改",
+          "text": "是"
+        },
+        {
+          "column": "AL",
+          "header": "操纵世界剑",
+          "text": null
+        },
+        {
+          "column": "AM",
+          "header": "拒绝与其他段同链",
+          "text": null
+        },
+        {
+          "column": "AN",
+          "header": "自身能量倍率",
+          "text": null
+        },
+        {
+          "column": "AO",
+          "header": "挂到后续的能量倍率",
+          "text": null
+        },
+        {
+          "column": "AP",
+          "header": "显式魔力",
+          "text": null
+        },
+        {
+          "column": "AQ",
+          "header": "蓄力tick",
+          "text": null
+        },
+        {
+          "column": "AR",
+          "header": "旧档·出手先扣水势",
+          "text": null
+        },
+        {
+          "column": "AS",
+          "header": "场地半径",
+          "text": null
+        },
+        {
+          "column": "AT",
+          "header": "治疗量",
+          "text": null
+        },
+        {
+          "column": "AU",
+          "header": "治疗打在施法者",
+          "text": null
+        },
+        {
+          "column": "AV",
+          "header": "牵引强度",
+          "text": null
+        },
+        {
+          "column": "AW",
+          "header": "旧档·命中附加潮湿",
+          "text": null
+        },
+        {
+          "column": "AX",
+          "header": "命中灭火",
+          "text": null
+        },
+        {
+          "column": "AY",
+          "header": "挡住移动",
+          "text": null
+        },
+        {
+          "column": "AZ",
+          "header": "压力脉冲",
+          "text": null
+        },
+        {
+          "column": "BA",
+          "header": "侵蚀脉冲",
+          "text": null
+        },
+        {
+          "column": "BB",
+          "header": "水平击退",
+          "text": null
+        },
+        {
+          "column": "BC",
+          "header": "向上抛",
+          "text": null
+        },
+        {
+          "column": "BD",
+          "header": "卸力比例",
+          "text": null
+        },
+        {
+          "column": "BE",
+          "header": "减速时长tick",
+          "text": null
+        },
+        {
+          "column": "BF",
+          "header": "到期爆发伤害",
+          "text": null
+        },
+        {
+          "column": "BG",
+          "header": "外观编号",
+          "text": null
+        },
+        {
+          "column": "BH",
+          "header": "曲线函数",
+          "text": null
+        },
+        {
+          "column": "BI",
+          "header": "外形",
+          "text": null
+        },
+        {
+          "column": "BJ",
+          "header": "宽度倍数",
+          "text": null
+        },
+        {
+          "column": "BK",
+          "header": "长度倍数",
+          "text": null
+        },
+        {
+          "column": "BL",
+          "header": "能量放大长度",
+          "text": null
+        },
+        {
+          "column": "BM",
+          "header": "能量放大宽度",
+          "text": null
+        },
+        {
+          "column": "BN",
+          "header": "能量放大高度",
+          "text": null
+        },
+        {
+          "column": "BO",
+          "header": "能量放大模型",
+          "text": null
+        },
+        {
+          "column": "BP",
+          "header": "同锚点分道显示",
+          "text": null
+        },
+        {
+          "column": "BQ",
+          "header": "旧档·每份预留重水",
+          "text": null
+        },
+        {
+          "column": "BR",
+          "header": "旧档·重压潮湿门槛",
+          "text": null
+        },
+        {
+          "column": "BS",
+          "header": "承接来袭弹",
+          "text": null
+        },
+        {
+          "column": "BT",
+          "header": "场地生成消耗",
+          "text": null
+        },
+        {
+          "column": "BU",
+          "header": "场地维持消耗",
+          "text": null
+        },
+        {
+          "column": "BV",
+          "header": "场地维持周期",
+          "text": null
+        },
+        {
+          "column": "BW",
+          "header": "场地寿命tick",
+          "text": null
+        },
+        {
+          "column": "BX",
+          "header": "护体类型键",
+          "text": null
+        },
+        {
+          "column": "BY",
+          "header": "护体寿命tick",
+          "text": null
+        },
+        {
+          "column": "BZ",
+          "header": "护体生成消耗",
+          "text": null
+        },
+        {
+          "column": "CA",
+          "header": "护体维持消耗",
+          "text": null
+        },
+        {
+          "column": "CB",
+          "header": "护体维持周期",
+          "text": null
+        },
+        {
+          "column": "CC",
+          "header": "护体卸力",
+          "text": null
+        },
+        {
+          "column": "CD",
+          "header": "护体半径",
+          "text": null
+        },
+        {
+          "column": "CE",
+          "header": "护体带宽",
+          "text": null
+        },
+        {
+          "column": "CF",
+          "header": "护体身体高度",
+          "text": null
+        },
+        {
+          "column": "CG",
+          "header": "护体基础倾角",
+          "text": null
+        },
+        {
+          "column": "CH",
+          "header": "屏障宽",
+          "text": null
+        },
+        {
+          "column": "CI",
+          "header": "屏障高",
+          "text": null
+        },
+        {
+          "column": "CJ",
+          "header": "屏障厚",
+          "text": null
+        },
+        {
+          "column": "CK",
+          "header": "屏障前移",
+          "text": null
+        },
+        {
+          "column": "CL",
+          "header": "屏障寿命tick",
+          "text": null
+        },
+        {
+          "column": "CM",
+          "header": "屏障生成消耗",
+          "text": null
+        },
+        {
+          "column": "CN",
+          "header": "屏障维持消耗",
+          "text": null
+        },
+        {
+          "column": "CO",
+          "header": "屏障维持周期",
+          "text": null
+        },
+        {
+          "column": "CP",
+          "header": "屏障衰减",
+          "text": null
+        },
+        {
+          "column": "CQ",
+          "header": "屏障承接来袭弹",
+          "text": null
+        },
+        {
+          "column": "CR",
+          "header": "领域宽",
+          "text": null
+        },
+        {
+          "column": "CS",
+          "header": "领域深",
+          "text": null
+        },
+        {
+          "column": "CT",
+          "header": "领域高",
+          "text": null
+        },
+        {
+          "column": "CU",
+          "header": "领域初始消耗",
+          "text": null
+        },
+        {
+          "column": "CV",
+          "header": "领域维持消耗",
+          "text": null
+        },
+        {
+          "column": "CW",
+          "header": "领域维持周期",
+          "text": null
+        },
+        {
+          "column": "CX",
+          "header": "领域寿命tick",
+          "text": null
+        },
+        {
+          "column": "CY",
+          "header": "领域边界",
+          "text": null
+        },
+        {
+          "column": "CZ",
+          "header": "领域外观",
+          "text": null
+        },
+        {
+          "column": "DA",
+          "header": "达级自动学会",
+          "text": null
+        },
+        {
+          "column": "DB",
+          "header": "领域效果键",
+          "text": null
+        },
+        {
+          "column": "DC",
+          "header": "旧档·潮湿周期tick",
+          "text": null
+        },
+        {
+          "column": "DD",
+          "header": "旧档·潮湿每次加点",
+          "text": null
+        },
+        {
+          "column": "DE",
+          "header": "旧档·潮湿延迟tick",
+          "text": null
+        },
+        {
+          "column": "DF",
+          "header": "旧档·水势周期tick",
+          "text": null
+        },
+        {
+          "column": "DG",
+          "header": "旧档·水势每次加点",
+          "text": null
+        },
+        {
+          "column": "DH",
+          "header": "旧档·水势延迟tick",
+          "text": null
+        },
+        {
+          "column": "DI",
+          "header": "旧档·减速等级",
+          "text": null
+        },
+        {
+          "column": "DJ",
+          "header": "旧档·领域减速时长tick",
+          "text": null
+        },
+        {
+          "column": "DK",
+          "header": "旧档·减速周期tick",
+          "text": null
+        },
+        {
+          "column": "DL",
+          "header": "旧档·减速延迟tick",
+          "text": null
+        },
+        {
+          "column": "DM",
+          "header": "耗氧倍率",
+          "text": null
+        },
+        {
+          "column": "DN",
+          "header": "附魔效果键",
+          "text": null
+        },
+        {
+          "column": "DO",
+          "header": "附魔初始层数",
+          "text": null
+        },
+        {
+          "column": "DP",
+          "header": "附魔半径基数",
+          "text": null
+        },
+        {
+          "column": "DQ",
+          "header": "附魔时长基数",
+          "text": null
+        },
+        {
+          "column": "DR",
+          "header": "附魔半径倍率",
+          "text": null
+        },
+        {
+          "column": "DS",
+          "header": "附魔时长倍率",
+          "text": null
+        },
+        {
+          "column": "DT",
+          "header": "附魔伤害倍率",
+          "text": null
+        },
+        {
+          "column": "DU",
+          "header": "附魔速度倍率",
+          "text": null
+        },
+        {
+          "column": "DV",
+          "header": "备注",
+          "text": "默认抛射速度未定，弹道格留空，不填成直线或垂落。方块硬度、采掘工具、掉落物、用途和空位搜索边界待定。不沿用旧稿环带总32点或引燃14段28点。连续多组陨石雨需要真实的后续释放和费用，费用未定。本次录入2026-10-29。来源docs/火属性基础术式与组合设计.md，并按用户最新决定替换魂焰、采用共享燃料。只进入待制作，尚未领取，不开始实现。基础冷却40tick。魔力、复杂度、装配消耗、等级上限和等级成长未定，对应数值格留空，不用0代替。\n[设计反馈 2026-10-31] 已领取。首版数值和链上角色仍有待定，正在核对底座，视觉待预览确认。具体未定项参照本项原文。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[设计反馈 2026-10-31] 已采用首版参数。见 docs/开发记录/术式批量制作/待制作-20261031/approved-v1.md。用户暂用二维原话：先保留这个版本，额度不够用了暂时，之后再重置，暂时直接按照这个版本执行。这不是新的正式复审，设计仍为2/2，实现仍为0/3，也不是游戏实测通过。单术战斗成长为0，没有成长专列。基础法杖保持6槽；32槽测试法杖是公共物品，不在本行。魔力48，冷却40，复杂度6，装配消耗1，等级上限20。物理24，弹道抛物线，速度0.8，仰角15度，重力0.08，有伤飞行100tick，碰撞1立方。硬度3、抗爆6、石镐及以上掉自身。六面只用32×32的 meteorite-block-texture.png；64×64条带只是外观预览。资源：docs/资源库/材质/方块/陨岩_v1/。建议运行时 assets/xueximod/textures/block/meteorite_v1.png。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[阶段 2026-10-31] 实现与确认v1资源已接入。正式复审累计设计2/2、实现3/3，额度已用完，不能自动再审。待统一编译：本仓开发客户端和runClient仍占用Gradle，GradleDaemon PID 12896，Forge客户端 PID 45212。compileJava没有执行。这不是编译器报错，也不是编译通过。关闭该开发客户端并结束对应runClient后，重新核对源码再编译；编译成功后才按规则迁待验收。证据 docs/开发记录/术式批量制作/待制作-20261031/final-compile-report.md。记录 docs/开发记录/术式批量制作/待制作-20261031/记录.md。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n2026-11-02 用户授权返修：撞到实体后按当前弹道继续移动，直到触地才变成方块。该决定替代旧的“命中实体后立即转方块式残骸直坠”。首次结算仍只发生一次，续飞和触地不重复伤害、热波或接续。实现已收束。.\\gradlew.bat compileJava --offline --no-daemon 于 2026-11-02 00:22:13–00:22:49 退出码 0，compileJava 实际执行，BUILD SUCCESSFUL。上文 2026-10-31 待统一编译及客户端占用是被本次结果覆盖的历史，不是当前阻塞。本阶段额度已用完，返修结果未追加复审。游戏待用户实测。\n待验收 | 陨岩实体命中续飞-20261101 | docs/开发记录/陨岩实体命中续飞-20261101/调度记录.md\n2026-11-02 用户确认采用 meteor-magma-crust-v5。原话“采用这个版本”；此前“火焰纹理太少了要更像岩浆块”。本轮仅换材质，命中实体后沿当前弹道续飞直到触地的功能不改。历史 compileJava 通过不能代表本次编译。编译待当前运行客户端退出，且材质接入完成后再进行。\n制作中 | 陨岩岩浆材质接入-20261102 | docs/开发记录/陨岩岩浆材质接入-20261102/调度记录.md\n2026-11-02 用户原话“采用这个版本”；此前“火焰纹理太少了要更像岩浆块”。已采用 meteor-magma-crust-v5 并接入。正式目录 docs/资源库/材质/方块/陨岩_熔岩岩壳_v5/。运行贴图 textures/block/meteorite_v1.png，内容为 v5；模型继续 minecraft:block/cube_all。上文陨岩_v1 素材信息是已被 v5 替代的历史。.\\gradlew.bat compileJava --offline --no-daemon 于 2026-11-02 02:22:26–02:22:41 退出码 0，compileJava 为 UP-TO-DATE，没有重新 javac。本阶段额度已用完，返修结果未追加复审。游戏待用户实测。\n待验收 | 陨岩岩浆材质接入-20261102 | docs/开发记录/陨岩岩浆材质接入-20261102/调度记录.md\n2026-11-02 用户实测：“一分为三+陨石会在同一个地点生成三个陨岩，并且这个链条上我还装配了落点指定,并且刚释放时没有正确出现三个陨石一起落下，落地后才能看出来三个陨岩”。截图 C:/Users/baishang/AppData/Local/Temp/codex-clipboard-73c3459d-b583-44c6-9fd1-d7255cb60508.png。此处只记录观察。没有新的间距或落点设计。返修进行中。本阶段额度已用完，返修结果未追加复审。本次退回未编译。\n制作中 | 陨岩三分落点返修-20261102 | docs/开发记录/陨岩三分落点返修-20261102/调度记录.md\n2026-11-02 用户补充原话“装了垂落”；“原底座上落点指定的空间位置就是可以被垂落基层的才对看看是底座问题还是术式问题”。“基层”是错别字，正确含义是垂落继承落点指定选定的位置。不是新增陨岩强制天降，也不是新散布设计。\n作者报告：三份父攻击存在，取样用的 copyIndex 全是 0，生成与垂落轨迹重叠，落地空位后备形成竖列。已在几何取样前把 BirthLayout 的份序号 0/1/2 传入落点及垂落，每次仍提交 1 份。旧路径没有 BirthLayout 时保持原帧。安放搜索未改。狭窄地形仍可能把残留块补到附近同列，这次改动不保证任何地形三块不共列。\n.\\gradlew.bat compileJava --offline --no-daemon 于 2026-11-02 02:56:32–02:57:01 退出码 0，compileJava 实际执行。源文件前后哈希保持 827a767db942ce2e58dd9fade5dc77694e217e37df55cb63a6e594d4b4fb488c。本阶段额度已用完，返修结果未追加复审。游戏待用户实测。\n待验收 | 陨岩三分落点返修-20261102 | docs/开发记录/陨岩三分落点返修-20261102/调度记录.md"
+        },
+        {
+          "column": "DW",
+          "header": "配置启用",
+          "text": null
+        },
+        {
+          "column": "DX",
+          "header": "资源",
+          "text": null
+        },
+        {
+          "column": "DY",
+          "header": "状态",
+          "text": null
+        },
+        {
+          "column": "DZ",
+          "header": "操作",
+          "text": null
+        },
+        {
+          "column": "EA",
+          "header": "作用对象",
+          "text": null
+        },
+        {
+          "column": "EB",
+          "header": "触发时机",
+          "text": null
+        },
+        {
+          "column": "EC",
+          "header": "数值",
+          "text": null
+        },
+        {
+          "column": "ED",
+          "header": "状态amplifier",
+          "text": null
+        },
+        {
+          "column": "EE",
+          "header": "寿命策略",
+          "text": null
+        },
+        {
+          "column": "EF",
+          "header": "寿命tick",
+          "text": null
+        },
+        {
+          "column": "EG",
+          "header": "周期tick",
+          "text": null
+        },
+        {
+          "column": "EH",
+          "header": "首次延迟tick",
+          "text": null
+        },
+        {
+          "column": "EI",
+          "header": "计量单位",
+          "text": null
+        },
+        {
+          "column": "EJ",
+          "header": "生效条件",
+          "text": null
+        },
+        {
+          "column": "EK",
+          "header": "结算约束",
+          "text": null
+        },
+        {
+          "column": "EL",
+          "header": "迁移来源",
+          "text": null
+        },
+        {
+          "column": "EM",
+          "header": "关联说明",
+          "text": null
+        },
+        {
+          "column": "EN",
+          "header": "附加明细键",
+          "text": null
+        }
+      ]
+    }
+  }
+}

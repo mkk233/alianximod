@@ -1,0 +1,174 @@
+{
+  "sha256": "1DB010BA1E3500562B816EF793A77F8669CE0AD20A35AFC9BE9AFB633F4103A3",
+  "mtime": "2026-10-30T11:13:07.792+08:00",
+  "bytes": 170896,
+  "F": "基础冷却tick",
+  "D": "属性",
+  "C": "类型",
+  "rows": [
+    {
+      "row": 3,
+      "A": "留焰",
+      "B": "fire_flame_trail",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 4,
+      "A": "灼地",
+      "B": "fire_scorch_field",
+      "C": "法术",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 5,
+      "A": "陨岩",
+      "B": "fire_meteorite",
+      "C": "法术",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 6,
+      "A": "震环",
+      "B": "fire_shock_ring",
+      "C": "法术",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 7,
+      "A": "地表定位",
+      "B": "fire_surface_anchor",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 8,
+      "A": "喷涌",
+      "B": "fire_upwell",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 9,
+      "A": "错时",
+      "B": "fire_stagger",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 10,
+      "A": "命中接续",
+      "B": "fire_hit_continue",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 11,
+      "A": "种火",
+      "B": "fire_seed_sow",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 12,
+      "A": "引燃",
+      "B": "fire_kindle",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 13,
+      "A": "引爆",
+      "B": "fire_detonate",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 14,
+      "A": "幽冥",
+      "B": "fire_nether_gloom",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    },
+    {
+      "row": 15,
+      "A": "崩地",
+      "B": "fire_break_ground",
+      "C": "通用",
+      "D": "火",
+      "F": null
+    }
+  ],
+  "attrs": [
+    {
+      "row": 2,
+      "U": "属性",
+      "V": null,
+      "W": null
+    },
+    {
+      "row": 3,
+      "U": "名称",
+      "V": "代码",
+      "W": "说明"
+    },
+    {
+      "row": 4,
+      "U": "无",
+      "V": "NONE",
+      "W": "没有元素"
+    },
+    {
+      "row": 5,
+      "U": "木",
+      "V": "WOOD",
+      "W": null
+    },
+    {
+      "row": 6,
+      "U": "火",
+      "V": "FIRE",
+      "W": null
+    },
+    {
+      "row": 7,
+      "U": "水",
+      "V": "WATER",
+      "W": null
+    },
+    {
+      "row": 8,
+      "U": "土",
+      "V": "EARTH",
+      "W": null
+    },
+    {
+      "row": 9,
+      "U": "金",
+      "V": "METAL",
+      "W": null
+    }
+  ],
+  "comments": [
+    "xl/comments/comment1.xml",
+    "xl/drawings/commentsDrawing1.vml",
+    "xl/comments/comment2.xml",
+    "xl/drawings/commentsDrawing2.vml",
+    "xl/comments/comment3.xml",
+    "xl/drawings/commentsDrawing3.vml",
+    "xl/comments/comment4.xml",
+    "xl/drawings/commentsDrawing4.vml"
+  ]
+}

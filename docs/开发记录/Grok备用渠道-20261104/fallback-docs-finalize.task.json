@@ -1,0 +1,19 @@
+{
+  "batchId": "workflow-grok-fallback-20261104",
+  "taskId": "fallback-docs-finalize",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "docs-finalize",
+  "authorization": "用户已授权备用流程接入、账户级复用与精确high配置。原native作者已最终停写，主会话将剩余两文档的唯一写权限交接本统一入口收口任务，只修第2轮发现的两处旧文案。不得改代码、技能、配置或其他文件，不做正式复审/测试。",
+  "inputVersion": "20261104-review2-two-doc-findings",
+  "recordPath": "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/记录.md",
+  "writePaths": [
+    "D:/alianximod/docs/统一开发与术式批量制作流程.md",
+    "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/实现交付.md"
+  ],
+  "dependencies": [
+    "fallback-adapter",
+    "fallback-skill",
+    "fallback-readonly-review"
+  ]
+}

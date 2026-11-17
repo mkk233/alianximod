@@ -1,0 +1,38 @@
+{
+  "tableSync": "完成",
+  "testReviewRound": "1/2",
+  "thisWritebackIsAnotherReview": false,
+  "designQuota": "2/2",
+  "implementationQuota": "2/2",
+  "submitted": true,
+  "migrationTime": "2026-10-29T11:20:30.807+08:00",
+  "before": {
+    "sha256": "CE0AF918E0A99DC586232E76B156465B12AEDF8A5C0047CAD8268BEF6A3D899D",
+    "lastWriteTime": "2026-10-29T04:32:26.244+08:00",
+    "bytes": 79045
+  },
+  "after": {
+    "sha256": "8B2CE30DA8263C3FCBB1AFD4E162EE953D7141EFF5FE433B9AB4995511B61054",
+    "lastWriteTime": "2026-10-29T11:20:30.807+08:00",
+    "bytes": 80584
+  },
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/test-stage-writeback-术式制作表-20261029-112003-1.xlsx",
+  "conversionSnapshot": "docs/开发记录/术式批量制作/火系六式-20261029/test-stage-transition-snapshot.json",
+  "conversionApplied": false,
+  "nAndOKept": true,
+  "priorDvKept": true,
+  "reopen": {
+    "changedParts": ["xl/worksheets/sheet3.xml"],
+    "counts": {"已完成": 40, "待制作": 0, "制作中": 6, "待验收": 0},
+    "uniqueIds": 46,
+    "additionsPresent": true
+  },
+  "items": [
+    {"id": "fire_liaoyuan", "from": "制作中", "fromRow": 3, "to": "制作中", "toRow": 3, "result": "留原页", "reason": "缺适用正式实现复核通过记录；R2/R3返修未追加复审；可见地表解释只有作者反馈。功能子集已通过。"},
+    {"id": "fire_liaoli", "from": "制作中", "fromRow": 4, "to": "制作中", "toRow": 4, "result": "留原页", "reason": "缺适用正式实现复核通过记录；R2/R3返修未追加复审。刺击生命周期和复制份未覆盖。功能子集已通过。"},
+    {"id": "fire_fentian", "from": "制作中", "fromRow": 5, "to": "制作中", "toRow": 5, "result": "留原页", "reason": "缺适用正式实现复核通过记录；R2/R3返修未追加复审。真实范围和伤害节拍未覆盖。功能子集已通过。"},
+    {"id": "fire_heat_up", "from": "制作中", "fromRow": 6, "to": "制作中", "toRow": 6, "result": "留原页", "reason": "缺适用正式实现复核通过记录；扣费和失败恢复未追加复审。玩家事务未覆盖。不因火种入口未迁。"},
+    {"id": "fire_burn", "from": "制作中", "fromRow": 7, "to": "制作中", "toRow": 7, "result": "留原页", "reason": "缺适用正式实现复核通过记录；炉心原子返修未追加复审。升级失败回滚未覆盖。不因火种入口未迁。"},
+    {"id": "fire_cool", "from": "制作中", "fromRow": 8, "to": "制作中", "toRow": 8, "result": "留原页", "reason": "缺适用正式实现复核通过记录；伤害与炉心事务返修未追加复审。一次蒸汽和恢复事务未覆盖。不因火种入口未迁。"}
+  ]
+}

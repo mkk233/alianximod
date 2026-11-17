@@ -1,0 +1,108 @@
+{
+  "version": "iaido-single-v4-side",
+  "status": "preview_pending_user_confirmation",
+  "parent": "../拔刀斩_v3-20261102",
+  "date": "2026-11-02",
+  "request": "身侧佩刀，刀尖朝玩家背后",
+  "animation": {
+    "name": "animation.iaido_single_v4_side",
+    "duration": 1.6,
+    "loop": "once",
+    "keyInterval": 0.01,
+    "animatedBones": 9
+  },
+  "preview": {
+    "source": "Native Blockbench viewport",
+    "frames": 81,
+    "sampleInterval": 0.02,
+    "gifDuration": 2.38
+  },
+  "artDiagnostics": {
+    "maxArmReach": 11.21021988072108,
+    "armLength": 12,
+    "frames": 161,
+    "duration": 1.6,
+    "oneSword": true,
+    "scabbard": false,
+    "waistStart": [
+      -6.8,
+      14.7,
+      -3.6
+    ],
+    "tipDirectionAtStart": [
+      0,
+      0,
+      1
+    ],
+    "mountSide": "right",
+    "v2TimingPreserved": true
+  },
+  "review": {
+    "designRoundsUsed": 2,
+    "designRoundLimit": 2,
+    "additionalReviewPerformed": false,
+    "note": "按用户明确方向纠正执行美术，未追加正式复审。"
+  },
+  "runtime": {
+    "integrated": false,
+    "compiled": false
+  },
+  "files": {
+    "iaido-atlas.aseprite": {
+      "bytes": 1818,
+      "sha256": "0757e8946d148771c9827e46a1caa61724f8ea0e6de02d70dd04551023eb01dd"
+    },
+    "iaido-atlas.png": {
+      "bytes": 961,
+      "sha256": "12c0dd4e4d2735f18136c548a35e7695a00eae52e3cd5389ff5d4747b8bc6405"
+    },
+    "atlas-preview.png": {
+      "bytes": 3417,
+      "sha256": "e0c8437359ac802c4bef4231091471d5fbc77ce9ae9f3d7e8959213c4c835c6c"
+    },
+    "iaido-single-v4-side.bbmodel": {
+      "bytes": 352265,
+      "sha256": "56a7944e69709bcca097d156c1116fd7c6e53ca9f0d1969c2bca6f96bd5de9f2"
+    },
+    "side-waist-start.png": {
+      "bytes": 26485,
+      "sha256": "299ee48afccc0faded85e18ecb6abd4d1efc0181fdbe840f959795fed930bfa4"
+    },
+    "front-waist-start.png": {
+      "bytes": 34781,
+      "sha256": "2235a30da61f351eb252e770a9f4861ab8961ab54dfa641a78e2108b4834ecdc"
+    },
+    "iaido-front-preview.gif": {
+      "bytes": 446764,
+      "sha256": "f19e9ff4edaf9fb5f5091f8899ea23ba00bf12e9a36399c4c8625165aaafe6ad"
+    },
+    "iaido-side-preview.gif": {
+      "bytes": 365034,
+      "sha256": "74e2345f13be9198986030dde0f9aa52cb5fd77f154597419c455326a8988233"
+    },
+    "iaido-transition-slow.gif": {
+      "bytes": 114547,
+      "sha256": "f99b130522655ef5475b724638ad2b7de8fe2413ac557faea1f4003682d839a9"
+    },
+    "iaido-front-preview.aseprite": {
+      "bytes": 1103474,
+      "sha256": "bb0701ef29484f4db37446d5f4234995b594aded527b99f8273907012912fda9"
+    },
+    "iaido-side-preview.aseprite": {
+      "bytes": 894091,
+      "sha256": "1bd85f10e25f4eca7b2cefeb09c0644258a58a32ffdcf85e4e32ad685293d798"
+    },
+    "solve-iaido-keys.js": {
+      "bytes": 4153,
+      "sha256": "7e669e596adf6454c284ee8b872a1ecae9bb232ea69c7e776cd626c42b31c578"
+    },
+    "animation-keyframes.json": {
+      "bytes": 221940,
+      "sha256": "38f37cfe7c839183e09c06bc3b444432e555c0d989d7b0c4ec9a905490ed7989"
+    },
+    "assemble-previews.lua": {
+      "bytes": 1577,
+      "sha256": "05e9a7a88a71033a1d6114ec8865625c459e8d83b3ea8498f0358e08b0453e8a"
+    }
+  }
+}

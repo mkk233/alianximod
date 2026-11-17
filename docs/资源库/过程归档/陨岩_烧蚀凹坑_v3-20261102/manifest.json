@@ -1,0 +1,61 @@
+{
+  "version": "meteor-ablation-v3",
+  "date": "2026-11-02",
+  "status": "rejected-by-user",
+  "feedback": {
+    "date": "2026-11-02",
+    "text": "这个太丑了坑坑洼洼的",
+    "nextDraft": "D:/alianximod/docs/资源库/过程归档/陨岩_致密熔壳_v4-20261102"
+  },
+  "design": "黑褐烧蚀壳、大小凹坑、剥落流痕，两处破口余热；取消分叉金色矿脉",
+  "source": {
+    "width": 32,
+    "height": 32,
+    "frames": 1,
+    "layers": 5
+  },
+  "texture": {
+    "width": 32,
+    "height": 32,
+    "opaque": true,
+    "static": true,
+    "hotPixels": 8
+  },
+  "blockbench": {
+    "version": "5.2.2",
+    "pluginVersion": "1.10.1",
+    "projectUUID": "3fce4444-48fd-8252-e799-644881ff4169",
+    "embeddedTextureMatches": true,
+    "unitsPerBlock": 16,
+    "cubeFrom": [
+      0,
+      0,
+      0
+    ],
+    "cubeTo": [
+      16,
+      16,
+      16
+    ],
+    "faceUV": [
+      0,
+      0,
+      32,
+      32
+    ]
+  },
+  "runtimeModified": false,
+  "codeModified": false,
+  "workbookModified": false,
+  "compiled": false,
+  "hashes": {
+    "meteorite-ablation-v3.aseprite": "1d6e83db74e7aadffd6a26ea976503a225c4474a0ce6a08d81d874e7a7a51ecb",
+    "meteorite-ablation-v3.png": "06f22f3a56acdb9ae4f8350a4d8b384843d90deb2985850cfa856f9ee68dcc74",
+    "texture-preview.png": "cc846d5a68c855e2d1184cf53f63b8c18c9f427a0aea9bbc3a293d0f890ec7fe",
+    "meteorite-ablation-v3.bbmodel": "812d35e9e2667842efc3e8f9fbc34ba8ad1ea5c03634041ee12200a1e90137bf",
+    "bb-hero.png": "4de52ac9e8936b9a588bcec22305bea8728023fa2979ad7e2845b659116514bb",
+    "bb-reverse.png": "c96f7aee682d666278e2b4c24dbf17c142821cfcfd334537a24c021056a24de5",
+    "bb-v2-left-v3-right.png": "a81b111e59b11f97288989e87810bb954d8083cb8361f97989fde52691b2c23f",
+    "blockbench-active-view.png": "2a2f06e93546641bcec8863a2abfc41ed4d5f4327fb9e44870e6a473848a4439"
+  }
+}

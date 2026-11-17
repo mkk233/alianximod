@@ -18,20 +18,20 @@ public final class DebugLogCommands {
     @SubscribeEvent
     public static void register(RegisterClientCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("shulog")
-                .executes(ctx -> open())
-                .then(Commands.literal("on").executes(ctx -> {
+                .executes(commandContext -> open())
+                .then(Commands.literal("on").executes(commandContext -> {
                     DebugLog.setEnabled(true);
                     DebugLog.log("调试日志已打开");
                     return open();
                 }))
-                .then(Commands.literal("off").executes(ctx -> {
+                .then(Commands.literal("off").executes(commandContext -> {
                     DebugLog.setEnabled(false);
                     if (Minecraft.getInstance().player != null) {
                         Minecraft.getInstance().player.displayClientMessage(Component.literal("调试日志已关闭"), false);
                     }
                     return 1;
                 }))
-                .then(Commands.literal("clear").executes(ctx -> {
+                .then(Commands.literal("clear").executes(commandContext -> {
                     DebugLog.clear();
                     return open();
                 })));

@@ -11,18 +11,18 @@ public enum ShuAttribute {
     EARTH("earth"),
     METAL("metal");
 
-    private final String id;
+    private final String identifier;
 
-    ShuAttribute(String id) {
-        this.id = id;
+    ShuAttribute(String identifier) {
+        this.identifier = identifier;
     }
 
     public String getId() {
-        return id;
+        return identifier;
     }
 
     public String getTranslationKey() {
-        return "shu.attribute." + id;
+        return "shu.attribute." + identifier;
     }
 
     /** Item model predicate: none=0, wood=0.1, fire=0.2, water=0.3, earth=0.4, metal=0.5 */
@@ -30,10 +30,10 @@ public enum ShuAttribute {
         return ordinal() * 0.1f;
     }
 
-    public static ShuAttribute fromId(String id) {
-        if (id == null || id.isEmpty()) return NONE;
+    public static ShuAttribute fromId(String identifier) {
+        if (identifier == null || identifier.isEmpty()) return NONE;
         for (ShuAttribute attribute : values()) {
-            if (attribute.id.equals(id)) return attribute;
+            if (attribute.identifier.equals(identifier)) return attribute;
         }
         return NONE;
     }

@@ -1,0 +1,23 @@
+{
+  "model": {
+    "format_version": "5.0",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "meshFaces": 32,
+  "meshVertices": 64,
+  "fixedFrames": 16,
+  "uniqueFixedFrames": 16,
+  "water": [
+    {
+      "width": 128,
+      "height": 256,
+      "uv_width": 128,
+      "uv_height": 16,
+      "fps": 10,
+      "render_sides": "double",
+      "embedded": true
+    }
+  ],
+  "adoption": "pending-user-visual-review"
+}

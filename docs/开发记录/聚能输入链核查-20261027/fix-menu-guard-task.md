@@ -1,0 +1,5 @@
+B单文件小修，独立Grok审查已给出明确可复现路径和修法，不需要重新通读。只改src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyMenu.java；A正在改SkillChainPlan/RouteReleaseInputCheck，不碰这些文件。
+问题：打开剑技菜单时staff固定false，但rejectReason和writeGear在非法杖分支用当前主手SkillCarrier.allowsMagic判断MAGIC能否入剑技。界面打开后快捷栏可换为法杖，staff仍false、当前手allowsMagictrue，于是MAGIC聚能被写入SWORD槽。释放工厂虽BASE兜住，装配约束仍被绕过。
+明确修法：剑技会话staff==false直接拒绝TechniqueType.MAGIC。rejectReason和writeGear这两处不要再按当前主手allowsMagic放行。staff==true正常法杖分支、UNIVERSAL/MOVEMENT等其它兼容不改。不要按聚能id写特判，不封快捷栏、不重做菜单，不加无关公共helper。
+before/如果缺该文件，修改前保存，存在不得覆盖。之前before-eligibility/也有副本仅供对照。修改后核对两处分支位置确实只在stafffalse路径，写menu-guard-report.md说明触发与改动、实际UI没有启动验证。两行明确分支修正不为其写镜像断言，不伪造菜单实测。
+此阶段绝不跑Gradle（A可能编译）、不打包、不启动游戏，不提交。完工立即停给主控，后面统一再核对编译是否包含本文件。

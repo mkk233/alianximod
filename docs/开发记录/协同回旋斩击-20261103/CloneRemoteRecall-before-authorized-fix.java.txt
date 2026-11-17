@@ -1,0 +1,432 @@
+package com.bslx.XueXiMod.shu.technique.release.clone.core;
+
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.AcceptedRemoteRecall;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.CancelReason;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.CooperativeStructureLimits;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.RecallAttempt;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.RecallKind;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.RecallRoute;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.RejectedRecall;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.RemoteCheckPhase;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.RemoteRecallMeter;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.api.RemoteSpaceGrant;
+import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.Mth;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.border.WorldBorder;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+
+/**
+ * 大于 8 格的瞬时归位。通道检查和搬移在同一次调用里完成，不缓存“上一刻仍然安全”。
+ * 格子和实体都先记进 {@link RemoteRecallMeter}，超限直接拒绝，不把没查完的尾部当成安全。
+ */
+final class CloneRemoteRecall {
+    private static final double SAMPLE_EDGE = 1.0E-7D;
+
+    private CloneRemoteRecall() {
+    }
+
+    static RecallAttempt move(ServerLevel level, CloneHandle handle, Vec3 destination, double frozenMoveLimit) {
+        if (level == null || handle == null || !level.getServer().isSameThread() || !finite(destination)) {
+            return new RejectedRecall(CancelReason.VALIDATION_FAILED);
+        }
+        CloneRuntime runtime = CloneRuntime.get(level.getServer());
+        CancelReason eligibility = ineligible(runtime, level, handle);
+        if (eligibility != null) {
+            return new RejectedRecall(eligibility);
+        }
+        CloneRuntimeState state = runtime.find(handle.actorId());
+        CloneEntity actor = state.actor;
+        double travel = actor.position().distanceTo(destination);
+        if (RecallRoute.kindFor(travel, frozenMoveLimit) != RecallKind.REMOTE_RECALL) {
+            return new RejectedRecall(CancelReason.ACTOR_TOO_FAR);
+        }
+        double halfWidth = actor.getBbWidth() * 0.5D;
+        double halfHeight = actor.getBbHeight() * 0.5D;
+        if (halfWidth < 0.0D || halfHeight < 0.0D || halfWidth > 3.0D || halfHeight > 3.0D) {
+            return new RejectedRecall(CancelReason.VALIDATION_FAILED);
+        }
+        if (!runtime.trySpendWork()) {
+            return new RejectedRecall(CancelReason.BUDGET_EXHAUSTED);
+        }
+        Vec3 originFeet = actor.position();
+        ChannelLedger ledger = new ChannelLedger(runtime.tick(), originFeet, destination, halfWidth, halfHeight);
+        CancelReason source = CloneBodySweep.endpointProblem(level, actor, originFeet);
+        CancelReason target = source == null ? CloneBodySweep.endpointProblem(level, actor, destination) : source;
+        ledger.seed(actor, originFeet);
+        ledger.seed(actor, destination);
+        if (target != null) {
+            return ledger.reject(target);
+        }
+        CancelReason channel = ledger.walk(level);
+        if (channel != null) {
+            return ledger.reject(channel);
+        }
+        CancelReason crowded = ledger.scanEntities(level, actor);
+        if (crowded != null) {
+            return ledger.reject(crowded);
+        }
+        Optional<RemoteSpaceGrant> grant = ledger.grant();
+        if (grant.isEmpty() || grant.get().phase() != RemoteCheckPhase.CHANNEL) {
+            return new RejectedRecall(CancelReason.BUDGET_EXHAUSTED);
+        }
+        if (ineligible(runtime, level, handle) != null || !runtime.trySpendWork()) {
+            return new RejectedRecall(CancelReason.BUDGET_EXHAUSTED);
+        }
+        actor.snapToFeet(destination);
+        return new AcceptedRemoteRecall(UUID.randomUUID(), state.handle(runtime.sessionToken()), destination,
+                travel, frozenMoveLimit, grant.get());
+    }
+
+    @Nullable
+    private static CancelReason ineligible(@Nullable CloneRuntime runtime, ServerLevel level, CloneHandle handle) {
+        if (runtime == null || !runtime.accepting() || runtime.sessionToken() != handle.sessionToken()
+                || !level.dimension().equals(handle.dimension())) {
+            return CancelReason.VALIDATION_FAILED;
+        }
+        CloneRuntimeState state = runtime.find(handle.actorId());
+        if (state == null || state.actorGeneration != handle.actorGeneration() || state.actor == null) {
+            return CancelReason.VALIDATION_FAILED;
+        }
+        if (!CloneBodySweep.movableOrdinary(state) || state.spec.budget() != CloneSpec.ResponseBudget.REPEAT) {
+            return CancelReason.VALIDATION_FAILED;
+        }
+        if (state.response != CloneResponseState.READY || state.pending != null || state.cooperationHold != null
+                || state.budgetSpent || state.executing || state.commitLine) {
+            return CancelReason.ACTOR_BLOCKED;
+        }
+        CloneEntity actor = state.actor;
+        if (!actor.isAlive() || actor.isRemoved()) {
+            return CancelReason.ACTOR_DEATH;
+        }
+        if (actor.level() != level) {
+            return CancelReason.REGION_UNLOADED;
+        }
+        return null;
+    }
+
+    private static boolean finite(@Nullable Vec3 point) {
+        return point != null && Double.isFinite(point.x) && Double.isFinite(point.y) && Double.isFinite(point.z);
+    }
+
+    private static boolean segmentMeets(Vec3 start, Vec3 end, AABB box) {
+        double[] window = new double[]{0.0D, 1.0D};
+        if (!clip(start.x, end.x - start.x, box.minX, box.maxX, window)) {
+            return false;
+        }
+        if (!clip(start.y, end.y - start.y, box.minY, box.maxY, window)) {
+            return false;
+        }
+        return clip(start.z, end.z - start.z, box.minZ, box.maxZ, window);
+    }
+
+    private static boolean clip(double origin, double span, double lower, double upper, double[] window) {
+        if (Math.abs(span) <= SAMPLE_EDGE) {
+            return origin >= lower && origin <= upper;
+        }
+        double first = (lower - origin) / span;
+        double second = (upper - origin) / span;
+        double near = Math.min(first, second);
+        double far = Math.max(first, second);
+        double entered = Math.max(window[0], near);
+        double exited = Math.min(window[1], far);
+        if (entered > exited) {
+            return false;
+        }
+        window[0] = entered;
+        window[1] = exited;
+        return true;
+    }
+
+    private static final class ChannelLedger {
+        private final long serverTick;
+        private final Vec3 originCenter;
+        private final Vec3 targetCenter;
+        private final double halfWidth;
+        private final double halfHeight;
+        private final double padWidth;
+        private final double padHeight;
+        private final HashSet<Long> cells = new HashSet<>();
+        private final HashSet<Long> chunks = new HashSet<>();
+        private final HashMap<Long, Integer> columnLow = new HashMap<>();
+        private final HashMap<Long, Integer> columnHigh = new HashMap<>();
+        private int advances;
+        private int entities;
+        private boolean overflow;
+
+        private ChannelLedger(long serverTick, Vec3 originFeet, Vec3 targetFeet, double halfWidth, double halfHeight) {
+            this.serverTick = serverTick;
+            this.halfWidth = halfWidth;
+            this.halfHeight = halfHeight;
+            this.padWidth = Math.max(0.0D, halfWidth - SAMPLE_EDGE);
+            this.padHeight = Math.max(0.0D, halfHeight - SAMPLE_EDGE);
+            this.originCenter = new Vec3(originFeet.x, originFeet.y + halfHeight, originFeet.z);
+            this.targetCenter = new Vec3(targetFeet.x, targetFeet.y + halfHeight, targetFeet.z);
+        }
+
+        private void seed(CloneEntity actor, Vec3 feet) {
+            AABB box = actor.getBoundingBox().move(feet.x - actor.getX(), feet.y - actor.getY(), feet.z - actor.getZ());
+            int west = Mth.floor(box.minX + SAMPLE_EDGE);
+            int east = Mth.floor(box.maxX - SAMPLE_EDGE);
+            int bottom = Mth.floor(box.minY + SAMPLE_EDGE);
+            int crown = Mth.floor(box.maxY - SAMPLE_EDGE);
+            int north = Mth.floor(box.minZ + SAMPLE_EDGE);
+            int south = Mth.floor(box.maxZ - SAMPLE_EDGE);
+            if (east - west > 8 || crown - bottom > 8 || south - north > 8) {
+                this.overflow = true;
+                return;
+            }
+            for (int cursorX = west; cursorX <= east; cursorX++) {
+                for (int cursorY = bottom; cursorY <= crown; cursorY++) {
+                    for (int cursorZ = north; cursorZ <= south; cursorZ++) {
+                        this.remember(cursorX, cursorY, cursorZ);
+                    }
+                }
+            }
+            BlockPos ground = BlockPos.containing(feet.x, feet.y - 1.0E-3D, feet.z);
+            this.remember(ground.getX(), ground.getY(), ground.getZ());
+        }
+
+        @Nullable
+        private CancelReason walk(ServerLevel level) {
+            if (this.overflow) {
+                return CancelReason.BUDGET_EXHAUSTED;
+            }
+            int gridX = Mth.floor(this.originCenter.x);
+            int gridY = Mth.floor(this.originCenter.y);
+            int gridZ = Mth.floor(this.originCenter.z);
+            int endX = Mth.floor(this.targetCenter.x);
+            int endY = Mth.floor(this.targetCenter.y);
+            int endZ = Mth.floor(this.targetCenter.z);
+            double spanX = this.targetCenter.x - this.originCenter.x;
+            double spanY = this.targetCenter.y - this.originCenter.y;
+            double spanZ = this.targetCenter.z - this.originCenter.z;
+            int stepX = spanX > 0.0D ? 1 : spanX < 0.0D ? -1 : 0;
+            int stepY = spanY > 0.0D ? 1 : spanY < 0.0D ? -1 : 0;
+            int stepZ = spanZ > 0.0D ? 1 : spanZ < 0.0D ? -1 : 0;
+            double timeDeltaX = stepX == 0 ? Double.POSITIVE_INFINITY : Math.abs(1.0D / spanX);
+            double timeDeltaY = stepY == 0 ? Double.POSITIVE_INFINITY : Math.abs(1.0D / spanY);
+            double timeDeltaZ = stepZ == 0 ? Double.POSITIVE_INFINITY : Math.abs(1.0D / spanZ);
+            double timeBoundX = stepX == 0 ? Double.POSITIVE_INFINITY
+                    : (stepX > 0 ? (gridX + 1.0D - this.originCenter.x) : (this.originCenter.x - gridX)) * timeDeltaX;
+            double timeBoundY = stepY == 0 ? Double.POSITIVE_INFINITY
+                    : (stepY > 0 ? (gridY + 1.0D - this.originCenter.y) : (this.originCenter.y - gridY)) * timeDeltaY;
+            double timeBoundZ = stepZ == 0 ? Double.POSITIVE_INFINITY
+                    : (stepZ > 0 ? (gridZ + 1.0D - this.originCenter.z) : (this.originCenter.z - gridZ)) * timeDeltaZ;
+            int reachHorizontal = Mth.ceil(this.halfWidth - SAMPLE_EDGE);
+            int reachVertical = Mth.ceil(this.halfHeight - SAMPLE_EDGE);
+            if (reachHorizontal < 0) {
+                reachHorizontal = 0;
+            }
+            if (reachVertical < 0) {
+                reachVertical = 0;
+            }
+            int guard = CooperativeStructureLimits.REMOTE_CHANNEL_STEP_CAP;
+            while (this.advances <= guard) {
+                CancelReason visited = this.visit(level, gridX, gridY, gridZ, reachHorizontal, reachVertical);
+                if (visited != null) {
+                    return visited;
+                }
+                if (gridX == endX && gridY == endY && gridZ == endZ) {
+                    return null;
+                }
+                if (this.advances == guard) {
+                    break;
+                }
+                int previousX = gridX;
+                int previousY = gridY;
+                int previousZ = gridZ;
+                if (timeBoundX < timeBoundY) {
+                    if (timeBoundX < timeBoundZ) {
+                        gridX += stepX;
+                        timeBoundX += timeDeltaX;
+                    } else {
+                        gridZ += stepZ;
+                        timeBoundZ += timeDeltaZ;
+                    }
+                } else if (timeBoundY < timeBoundZ) {
+                    gridY += stepY;
+                    timeBoundY += timeDeltaY;
+                } else {
+                    gridZ += stepZ;
+                    timeBoundZ += timeDeltaZ;
+                }
+                if (gridX == previousX && gridY == previousY && gridZ == previousZ) {
+                    return CancelReason.BUDGET_EXHAUSTED;
+                }
+                this.advances++;
+            }
+            return CancelReason.BUDGET_EXHAUSTED;
+        }
+
+        @Nullable
+        private CancelReason visit(ServerLevel level, int centerX, int centerY, int centerZ,
+                                   int reachHorizontal, int reachVertical) {
+            for (int offsetX = -reachHorizontal; offsetX <= reachHorizontal; offsetX++) {
+                for (int offsetY = -reachVertical; offsetY <= reachVertical; offsetY++) {
+                    for (int offsetZ = -reachHorizontal; offsetZ <= reachHorizontal; offsetZ++) {
+                        CancelReason problem = this.inspect(level, centerX + offsetX, centerY + offsetY, centerZ + offsetZ);
+                        if (problem != null) {
+                            return problem;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
+        @Nullable
+        private CancelReason inspect(ServerLevel level, int cellX, int cellY, int cellZ) {
+            AABB cellBox = new AABB(cellX, cellY, cellZ, cellX + 1.0D, cellY + 1.0D, cellZ + 1.0D);
+            AABB grown = cellBox.inflate(this.padWidth, this.padHeight, this.padWidth);
+            if (!segmentMeets(this.originCenter, this.targetCenter, grown)) {
+                return null;
+            }
+            if (!this.remember(cellX, cellY, cellZ)) {
+                return this.overflow ? CancelReason.BUDGET_EXHAUSTED : null;
+            }
+            BlockPos cell = new BlockPos(cellX, cellY, cellZ);
+            if (!level.hasChunkAt(cell)) {
+                return CancelReason.REGION_UNLOADED;
+            }
+            if (!level.isInWorldBounds(cell)) {
+                return CancelReason.UNSAFE_STANCE;
+            }
+            WorldBorder border = level.getWorldBorder();
+            if (!border.isWithinBounds(cell)) {
+                return CancelReason.UNSAFE_STANCE;
+            }
+            BlockState state = level.getBlockState(cell);
+            if (CloneBodySweep.hazardousBlock(state)) {
+                return CancelReason.UNSAFE_STANCE;
+            }
+            VoxelShape shape = state.getCollisionShape(level, cell);
+            if (shape.isEmpty()) {
+                return null;
+            }
+            for (AABB part : shape.toAabbs()) {
+                if (segmentMeets(this.originCenter, this.targetCenter,
+                        part.inflate(this.padWidth, this.padHeight, this.padWidth))) {
+                    return CancelReason.ACTOR_BLOCKED;
+                }
+            }
+            return null;
+        }
+
+        private boolean remember(int cellX, int cellY, int cellZ) {
+            long packed = BlockPos.asLong(cellX, cellY, cellZ);
+            if (this.cells.contains(packed)) {
+                return false;
+            }
+            if (this.cells.size() >= CooperativeStructureLimits.REMOTE_CHANNEL_CELL_CAP) {
+                this.overflow = true;
+                return false;
+            }
+            this.cells.add(packed);
+            long chunkKey = BlockPos.asLong(cellX >> 4, 0, cellZ >> 4);
+            if (!this.chunks.contains(chunkKey)) {
+                if (this.chunks.size() >= CooperativeStructureLimits.REMOTE_CHANNEL_CHUNK_CAP) {
+                    this.overflow = true;
+                    return false;
+                }
+                this.chunks.add(chunkKey);
+                this.columnLow.put(chunkKey, cellY);
+                this.columnHigh.put(chunkKey, cellY);
+            } else {
+                Integer low = this.columnLow.get(chunkKey);
+                Integer high = this.columnHigh.get(chunkKey);
+                if (low == null || cellY < low) {
+                    this.columnLow.put(chunkKey, cellY);
+                }
+                if (high == null || cellY > high) {
+                    this.columnHigh.put(chunkKey, cellY);
+                }
+            }
+            return true;
+        }
+
+        @Nullable
+        private CancelReason scanEntities(ServerLevel level, CloneEntity actor) {
+            if (this.overflow) {
+                return CancelReason.BUDGET_EXHAUSTED;
+            }
+            int considered = 0;
+            for (long chunkKey : this.chunks) {
+                int packedX = BlockPos.getX(chunkKey);
+                int packedZ = BlockPos.getZ(chunkKey);
+                Integer low = this.columnLow.get(chunkKey);
+                Integer high = this.columnHigh.get(chunkKey);
+                if (low == null || high == null) {
+                    return CancelReason.VALIDATION_FAILED;
+                }
+                AABB slice = new AABB(packedX << 4, low, packedZ << 4,
+                        (packedX << 4) + 16.0D, high + 1.0D, (packedZ << 4) + 16.0D);
+                int[] seen = new int[1];
+                List<Entity> blocking = level.getEntities(actor, slice, other -> {
+                    if (!CloneBodySweep.crowdsBody(actor, other)) {
+                        return false;
+                    }
+                    seen[0]++;
+                    if (considered + seen[0] > CooperativeStructureLimits.REMOTE_CHANNEL_ENTITY_CAP) {
+                        return false;
+                    }
+                    return meetsBody(other);
+                });
+                considered += seen[0];
+                this.entities = considered;
+                if (considered > CooperativeStructureLimits.REMOTE_CHANNEL_ENTITY_CAP) {
+                    return CancelReason.BUDGET_EXHAUSTED;
+                }
+                if (!blocking.isEmpty()) {
+                    return CancelReason.ACTOR_BLOCKED;
+                }
+            }
+            return null;
+        }
+
+        private boolean meetsBody(Entity other) {
+            if (other == null) {
+                return false;
+            }
+            return segmentMeets(this.originCenter, this.targetCenter,
+                    other.getBoundingBox().inflate(this.padWidth, this.padHeight, this.padWidth));
+        }
+
+        private RecallAttempt reject(CancelReason reason) {
+            this.consume(false);
+            return new RejectedRecall(reason);
+        }
+
+        private Optional<RemoteSpaceGrant> grant() {
+            return this.consume(true);
+        }
+
+        private Optional<RemoteSpaceGrant> consume(boolean accept) {
+            boolean within = !this.cells.isEmpty()
+                    && this.cells.size() <= CooperativeStructureLimits.REMOTE_CHANNEL_CELL_CAP
+                    && this.chunks.size() <= CooperativeStructureLimits.REMOTE_CHANNEL_CHUNK_CAP
+                    && this.advances <= CooperativeStructureLimits.REMOTE_CHANNEL_STEP_CAP
+                    && this.entities <= CooperativeStructureLimits.REMOTE_CHANNEL_ENTITY_CAP;
+            if (!within) {
+                return Optional.empty();
+            }
+            Optional<RemoteSpaceGrant> taken = RemoteRecallMeter.take(this.serverTick, RemoteCheckPhase.CHANNEL,
+                    this.cells.size(), this.advances, this.entities, this.chunks.size());
+            if (!accept || this.overflow) {
+                return Optional.empty();
+            }
+            return taken;
+        }
+    }
+}

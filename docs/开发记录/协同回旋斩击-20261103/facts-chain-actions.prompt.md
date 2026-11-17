@@ -1,0 +1,3 @@
+工作区 D:/alianximod。当前固定 Cursor CLI --model grok-4.7-high-fast，由统一启动器明确resume；不得换模型/降档/spawn。读取AGENTS.md与新流程；本次只收集已存在事实，不是正式正确性审查，不给PASS或作方案裁决、不改批次额度/启动器/运行记录。用户需求完整快照在本批记录.md。不要通读整仓，只查本任务列出的相关路径/直接调用链。保留已有未提交改动。禁止gradlew/build/jar/reobf/runClient、游戏操作、改配置、网络下载。
+最终回答给可用事实、文件绝对路径/行号、调用签名、已有边界与必须交Astra决定的问题；不写长篇脑内推理。末尾按启动器要求输出唯一<<<CURSOR_TASK_REPORT>>> JSON，包含workStatus/summary/changedFiles/checks/notRun/writesSettled/blocker/nextAction。没有源码写入，清楚报告未编译/未游戏验证。
+事实任务A：现有攻击/动作/链结算接口。只读。优先查当前横劈对应ReleaseDefinitions、SkillUsePacket/runSegment及Action接口、动作调度/动画客户端；包括近期空间切割拔刀动作的实际最终接口。找清：独立攻击最小登记、动作带出后续攻击的时序与姿态数据、角色/载体/附魔/一分为三/双重的通用链结算、trajectoryMutable=false的生成点/方向处理、配置声明消费和性能预算。沿实际符号定向读必要文件。不替用户或Astra选新架构。输出A事实及候选最小扩展点、同文件所有权冲突建议；说明“回旋可复用”“独立斩击”“协同不自带伤害”分别有哪些现成能力，哪些没有。不要修改源码或文件。

@@ -39,11 +39,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
     public static final RegistryObject<Block> IMPRINT_DESK = registerBlock("imprint_desk",
             () -> new ImprintDeskBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> METEORITE = registerBlock("meteorite", MeteoriteBlock::new);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> blockObj = BLOCKS.register(name, block);
-        registerBlockItem(name, blockObj);
-        return blockObj;
+        RegistryObject<T> registeredBlock = BLOCKS.register(name, block);
+        registerBlockItem(name, registeredBlock);
+        return registeredBlock;
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {

@@ -1,0 +1,59 @@
+我先读完这份后续任务说明，再按里面的范围核对。后续只补三处事实：非攻击术式登记、平衡键工厂，以及魔力扣费退款。我按符号核对源码。最小非攻击动作实例是 `fire_cool`。它是正式 `Technique`，会进总表并走普通装配和按键释放。没有「只给服务或命令、装配看不见」的现成入口。`maxHealth`、`minHealth` 不在结构禁键里。魔力退款回到原池和原法杖，超出上限的部分丢掉。
+
+## 1. 非攻击 ACTION 登记
+
+`ModTechniques` 里最小的独立非攻击动作是冷却：
+
+```189:192:src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java
+public static final Technique FIRE_COOL = new Technique(
+        "fire_cool", "冷却", TechniqueType.MAGIC,
+        0f, 0, 20, "主动冷却炉心，并放出一次蒸汽", 0, ShuAttribute.FIRE, 0f
+);
+```
+
+实际用的是 10 参数构造：`Technique(String, String, TechniqueType, float baseDamage, int baseCooldown, int levelCap, String, int complexity, ShuAttribute, float projectileSpeed)`。这里伤害 0、冷却 0、复杂度 0。`registerAll` 依次做三件事：`TechniqueManager.register(FIRE_COOL)`（315 行），`TechniqueEffectRegistry.register("fire_cool", (player, technique, weapon, cast) -> {})`（369 行），以及 `ReleaseDefinitions.registerAll()` 里的 `SelfStatusDefinition.registerAll()`。
+
+```23:26:src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/SelfStatusDefinition.java
+public static void registerAll() {
+    ReleaseRegistry.register(new SelfStatusDefinition("fire_heat_up", 20, FurnaceMath.Action.ENTER_NORMAL));
+    ReleaseRegistry.register(new SelfStatusDefinition("fire_burn", 20, FurnaceMath.Action.ENTER_OVERDRIVE));
+    ReleaseRegistry.register(new SelfStatusDefinition("fire_cool", 0, FurnaceMath.Action.COOL));
+}
+```
+
+构造是私有的。`role()` 返回 `ChainRole.ACTION`，`kind()` 是 `SELF_STATUS`，`explicitManaCost()` 为 0，`explicitAssemblyCost()` 为 1，`refusesMixedChain()` 为 true。效果 lambda 是空的。真正提交在 `SkillUsePacket` 501–502 行：`SkillSegmentMath.isSelfStatus(action)` 为真时调用 `SelfStatusCommit.attempt(ServerPlayer, ReleaseDefinition)`。费用取 `explicitManaCost()`，再 `SpecialBalance.mana(id, "manaCost", rawCost)`。
+
+`NOT_APPLICABLE` 的现成入口是附魔，不是这条动作：`ListedRelease.enchant(String releaseId, ReleaseTag tag)`（`ListedRelease.java` 110–112 行）固定 `ReleaseKind.RULE` 和 `ChainRole.NOT_APPLICABLE`。
+
+原始标准值仍由 `Technique.getBaseCooldown()`、`Technique.manaCost()` 返回。`manaCost()` 在显式费用不小于 0 时用它，所以 `fire_cool` 的原始单价是 0。封存默认值读这两个方法（`BalanceCatalog` 144–157 行）。玩法报价不直接拿原始数去扣：`SkillSegmentMath.quotedMana` 先 `manaCostOf`，再 `BalanceDisplay.mana`，最终 `BalanceService.manaCost`（285–293 行）。冷却是 `configuredBaseCooldown`（135–139 行）到 `BalanceService.cooldownTicks`。领域、屏障、护环另有生成费，宿主占位 0 不读进这一笔。`Skill.getTotalBaseCooldown()` 仍用未配置的原始冷却乘反应，说明和链间隔走的是配置后的值。
+
+登记进 `TechniqueManager` 后没有隐藏方法。`/shu`、术管理、印台都遍历 `getAll()`。复杂度 0 的术式登录时自动学会（`PlayerConnectionHandler` 20–23 行）。`UNIVERSAL` 和 `MOVEMENT` 的 `isUnlocked` 恒真；法术要求法术等级不小于复杂度。装配只按类型、已学、已解锁和装配额度拦，不按 id 隐藏。因此可以登记真实术式，但它会进入上述列表；现有代码没有「只给专用服务或命令」的开关。
+
+## 2. 平衡键工厂
+
+自定义键走 builder，键名是普通字符串：
+
+```70:77:src/main/java/com/bslx/XueXiMod/shu/balance/TechniqueBalanceSpec.java
+public Builder numberParameter(String parameterKey, RawDefault rawDefault, BalanceBound bound,
+                               BalanceUnit unit, String description)
+public Builder integerParameter(String parameterKey, RawDefault rawDefault, BalanceBound bound,
+                                BalanceUnit unit, String description)
+```
+
+底层是 `BalanceParameter.of(BalanceValueKind, String, RawDefault, BalanceBound, BalanceUnit, String)`。`BalanceKeys.checkDeclarable` 要求 3–48 位、小写字母开头、其余为字母或数字。禁键是 `STRUCTURAL_KEYS`（48–66 行），含 `entityCount`、`copyCount`、`manaMultiplier`、`cooldownMultiplier` 等。`maxHealth`、`minHealth` 不在其中，拼写合法就可以声明。目录不检查有没有消费者。
+
+个数、正刻、正尺寸：
+
+- `BalanceBound.count(double lowerInclusive, double upperInclusive)` 就是闭区间，不套 `COUNT_UPPER`（10000）。个数要配 `BalanceUnit.COUNT`，例如 `integerParameter(..., BalanceBound.count(0.0d, FireLimits.SEED_CAP), BalanceUnit.COUNT, 说明)`。
+- `BalanceBound.positiveTicks()` 是闭区间 `[1, 1200000]`。
+- `BalanceBound.positiveSize()`、`positiveSpeed()` 下端排除 0，上端 512 和 64。没有通用的 `positiveNumber()`。其他正数用 `BalanceBound.inclusive(lower, upper)`。
+
+## 3. 魔力扣费与退款
+
+`MagicPool` 公开方法：`trySpend(ServerPlayer, int)`、`trySpend(ServerPlayer, int, boolean tellPlayer)`、`canAfford`、`trySpendTracked`、`spendInto(ManaPaymentReceipt, ServerPlayer, int)`、`lastReceipt(UUID)`、`restore(ServerPlayer, int)`、`showBalance`、`tickRegen`、`forget`。
+
+`cost <= 0` 时 `trySpendTracked` 记一张 0 收据并返回 true。付不起返回 false，池和法杖不变；`tellPlayer` 为真时发「魔力不足」。扣款先用法杖存量，再扣玩家池。`spendInto` 追加到已有收据，失败两边都不改，也不写 `LAST_RECEIPT`。
+
+原金额退款在收据上：`ManaPaymentReceipt.charge(player, cost, tellPlayer)` 失败返回 null；`refund(player)` 把剩余全部退回；`refundShare(player, share)` 只退未提交份额。玩家池退回不超过 `getMagicMax()`，法杖退回原身份那一把且不超过 `maxManaBonus()`。法杖已经不在身上时，法杖份额不改退进玩家池。`MagicPool.restore` 只加玩家池，同样封顶，不退法杖。
+
+新档默认魔力 100、上限 100。`setMagic` 只保证不小于 0，不截上限。读档也只把负数改成 0。`setMagicMax` 会把当前魔力改成新上限。每 20 tick 回复，基础 5，先填玩家池到上限，再填法杖到加成上限。登出 `forget` 只删回复计数，不清余额，也不清 `LAST_RECEIPT`。余额在玩家 NBT 里。

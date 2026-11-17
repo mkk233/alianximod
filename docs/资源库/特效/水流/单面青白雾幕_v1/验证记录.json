@@ -1,0 +1,18 @@
+{
+  "frames": 32,
+  "frameSize": "128x64",
+  "stripSize": "128x2048",
+  "alphaValues": [
+    0,
+    8,
+    18,
+    26,
+    36
+  ],
+  "nonTransparentEdgePixels": 0,
+  "horizontalRepeatMismatches": 0,
+  "pinkColorPixels": 0,
+  "stripMismatches": 0,
+  "gameIntegrated": false,
+  "gameTested": false
+}

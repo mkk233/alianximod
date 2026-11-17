@@ -1,0 +1,128 @@
+[
+  {
+    "batchId": "heat-burn-20261031",
+    "taskId": "burn-spatial-implementation",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a202611090931499170bd6",
+    "endedAt": "2026-11-09T09:33:56.7360865Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/compile-report.md",
+      "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/编译证据"
+    ]
+  },
+  {
+    "batchId": "release-variants-20261109",
+    "taskId": "author-adapters",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a20261109094809639c603",
+    "endedAt": "2026-11-09T10:04:07.2409965Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/CooperativeChainCompiler.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/BatchReleaseCompiler.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/MulticastCompileAdapter.java",
+      "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/适配作者交付.md"
+    ]
+  },
+  {
+    "batchId": "release-variants-20261109",
+    "taskId": "author-core",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a2026110910215283366a6",
+    "endedAt": "2026-11-09T10:23:32.773477Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/resources/assets/xueximod/lang/zh_cn.json",
+      "D:/alianximod/src/main/resources/assets/xueximod/lang/en_us.json",
+      "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/核心作者交付.md"
+    ]
+  },
+  {
+    "batchId": "water-vortex-20261103",
+    "taskId": "source-owner",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a20261109101211882f34f",
+    "endedAt": "2026-11-09T10:19:24.7616221Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/DomainFlowRenderer.java",
+      "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/接入报告.md",
+      "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/证据"
+    ]
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-effects",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a20261109100522753b9cf",
+    "endedAt": "2026-11-09T10:08:22.4515739Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/combat/counter/",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/player/MagicPool.java",
+      "D:/alianximod/src/main/resources/data/xueximod/damage_type/counterattack.json",
+      "D:/alianximod/tools/wood-base-checks/effects/",
+      "D:/alianximod/docs/开发记录/木属性二级底座-20261109/通用效果作者交付.md"
+    ]
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-integration",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a202611091021582225293",
+    "endedAt": "2026-11-09T10:25:43.8186594Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "D:/alianximod/tools/wood-base-checks/selfstatus/",
+      "D:/alianximod/docs/开发记录/木属性二级底座-20261109/状态入口作者交付.md",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireHurtBoundary.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/combat/event/CounterRuntimeEvents.java",
+      "D:/alianximod/tools/wood-base-checks/integration/",
+      "D:/alianximod/docs/开发记录/木属性二级底座-20261109/迎击整合交付.md",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/combat/event/",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/wood/WoodResourceRuntimeEvents.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/wood/client/WoodResourceClientEvents.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/SuihuaSyncPacket.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/ModNetwork.java",
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/ResourceStatuses.java",
+      "D:/alianximod/src/main/resources/assets/xueximod/lang/zh_cn.json",
+      "D:/alianximod/src/main/resources/assets/xueximod/lang/en_us.json",
+      "D:/alianximod/docs/开发记录/木属性二级底座-20261109/整合交付.md",
+      "D:/alianximod/src/test/java/com/bslx/XueXiMod/network/GuardSyncWireCheck.java",
+      "D:/alianximod/src/test/java/com/bslx/XueXiMod/shu/technique/release/fire/FireHurtBytecodeCheck.java",
+      "D:/alianximod/src/test/java/com/bslx/XueXiMod/shu/technique/release/firecast/KnownLimitsCheck.java",
+      "D:/alianximod/src/test/java/com/bslx/XueXiMod/visual/fire/FireVisualLayoutCheck.java"
+    ]
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-resources",
+    "processAlive": false,
+    "lifecycle": "reported",
+    "attemptId": "a202611090913301145ceb",
+    "endedAt": "2026-11-09T09:45:43.6054202Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/wood/resource/",
+      "D:/alianximod/tools/wood-base-checks/resources/",
+      "D:/alianximod/docs/开发记录/木属性二级底座-20261109/资源作者交付.md"
+    ]
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "verify-delivery",
+    "processAlive": true,
+    "lifecycle": "running",
+    "attemptId": "a20261109102610151c7a4"
+  }
+]

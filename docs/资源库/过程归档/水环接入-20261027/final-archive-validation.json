@@ -1,0 +1,143 @@
+{
+  "verified_on": "2026-10-27",
+  "status": "已接入游戏，编译通过，待用户游戏内验证",
+  "game_integrated": true,
+  "compiled": true,
+  "in_game_tested": false,
+  "manifest_path": "docs/资源库/特效/水流/周身水环_细碎毛边_v8/asset_manifest.json",
+  "manifest_bytes": 9248,
+  "manifest_sha256": "df03e953757646e974e4801d72fb149ad00a023857f6a25f9187b6bdbd7b3f47",
+  "note": "archive-result.md 里的旧 manifest 哈希是归档当时快照，不是本文件。",
+  "file_count": 16,
+  "mismatch_count": 0,
+  "files": [
+    {
+      "path": "ragged_splash_outer.aseprite",
+      "bytes": 27051,
+      "sha256": "b6567cec1fe8a9ecda25a97224d04ae2ff0a69090feb945a388070ea4e3f76e9",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "ragged_splash_outer.png",
+      "bytes": 19590,
+      "sha256": "dab618cc2ee3700ed24b6e1f49a74a1918af3a9aab05f5074bf61d9a39ff4544",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "ragged_splash_inner.aseprite",
+      "bytes": 25193,
+      "sha256": "f56653dd2377dce92dbdbebbbbf312055e24f3b83f31bee47fd6e4a563fbd175",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "ragged_splash_inner.png",
+      "bytes": 18078,
+      "sha256": "3f2d2db08ea8bc5bd31dcb320799496f9db1d98c9ea648bbf38d1b5473f39207",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "broken_saw_flow.aseprite",
+      "bytes": 13582,
+      "sha256": "4d846bd3e2094c7b71cdc14e74d0b9044c66dd644f57d59f545c9cc6c7dbe821",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "broken_saw_flow.png",
+      "bytes": 6820,
+      "sha256": "3548e0a1cc42b7cd037b8cb161a4c21af6d1b381a47fc965e7edd1e35db931f0",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "周身水环_细碎水膜毛边_v8.bbmodel",
+      "bytes": 317460,
+      "sha256": "efe2b6a13259584dc3d57d966606159146cc4e6ffc42ffa2be475d9cbc4a5c4b",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "water_ragged_fixed.gif",
+      "bytes": 1243259,
+      "sha256": "90ba548e2748ed80a5db6e887e51ad885fb55b6692c73d0390562937544ece7c",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "water_ragged_top.gif",
+      "bytes": 3536024,
+      "sha256": "d85dcea8680a3cb1f7f5d09f47ef0e2e87166185281f69e03ddd556d324b7eef",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "water_ragged_preview.png",
+      "bytes": 29304,
+      "sha256": "910dd9b9aff195307e245ef8e45d97b797f198c706e14b36407ceb82e601b908",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "ragged_outer_preview.gif",
+      "bytes": 63963,
+      "sha256": "ef41ac26f8ad6eeb57f56a788b26c3ee36592a4700028847feb968abe81d0fe1",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "ragged_inner_preview.gif",
+      "bytes": 57372,
+      "sha256": "7287adead02f44557c7dc682c519faee78d98086fa6d861ea14e3f07d22897e1",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    },
+    {
+      "path": "runtime/water_ring_v8.png",
+      "bytes": 46970,
+      "sha256": "67a0c18fb9048a8597807015ced446908a9787559f001c1a48ad50e0b6e19708",
+      "listed_match": true,
+      "game_path": "assets/xueximod/textures/entity/xueximod/water_ring_v8.png",
+      "game_match": true
+    },
+    {
+      "path": "runtime/water_ring_v8.png.mcmeta",
+      "bytes": 61,
+      "sha256": "b7e0a427205bfd66824f6fc35ab059aebf29c58517515251ae534e283546ab61",
+      "listed_match": true,
+      "game_path": "assets/xueximod/textures/entity/xueximod/water_ring_v8.png.mcmeta",
+      "game_match": true
+    },
+    {
+      "path": "runtime/water_ring_v8_mesh.json",
+      "bytes": 230848,
+      "sha256": "0943752fc3d5704a5cd54d656104abae0d1ec288416a6b837129559d718f2ea9",
+      "listed_match": true,
+      "game_path": "assets/xueximod/waterring/water_ring_v8_mesh.json",
+      "game_match": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 3403,
+      "sha256": "9577ddf66cbe6b8bf52d28d2dc5848ab4af8a74b43c9af1d8616146ff4bc8a56",
+      "listed_match": true,
+      "game_path": null,
+      "game_match": null
+    }
+  ]
+}

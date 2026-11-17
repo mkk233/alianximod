@@ -1,0 +1,22 @@
+{
+  "status": "located",
+  "session_id": "c944df97-5698-4cb3-ae72-8adf3edc9b0a",
+  "model": "grok-4.7-high-fast",
+  "formal_review": "本阶段额度已用完，返修结果未追加复审",
+  "bodies": 3,
+  "offsets_lost_at_sample": true,
+  "same_server_origin": true,
+  "client_first_packet_matches_server_origin": true,
+  "vertical_stack_is_placement_after_same_impact": true,
+  "root": "BatchCastSession.spawn 固定按 1 份提交，CastFrame.copyIndex 始终为 0。落点立方和垂落斜线都读这个序号。BirthLayout.copyOrdinal 只写入 settleCopyIndex，没有进入取样。",
+  "minimal_files": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java"
+  ],
+  "do_not_change": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/BatchCastSession.java 的份数参数不能从 1 改成 3",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/terrain/TerrainMutationService.java"
+  ],
+  "design_choice_unconfirmed": "只装落点指定时不抬高 8 格。用户若要求不装垂落也从空中分开落下，现有规则没有规定。",
+  "writes_stopped": true,
+  "blockers": []
+}

@@ -1,0 +1,4 @@
+源码命名可读性检查失败:
+D:\alianximod\src\main\java\com\bslx\XueXiMod\animation\runtime\OriginalHumanoid.java:165:18 i: 变量名不得少于 3 个字符
+D:\alianximod\src\main\java\com\bslx\XueXiMod\animation\runtime\OriginalHumanoid.java:202:17 to: 变量名不得少于 3 个字符
+共 2 处

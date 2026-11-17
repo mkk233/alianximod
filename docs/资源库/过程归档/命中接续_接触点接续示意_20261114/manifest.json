@@ -1,0 +1,253 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "rule_hit_continue_motion_preview",
+  "attemptId": "20261114-art-hit-continue-02",
+  "previousAttemptHandoff": {
+    "attemptId": "20261114-art-hit-continue-01",
+    "agentId": "01a1d6f2-aa8a-7d21-955b-b0b75cb07a20",
+    "handoffNote": "前序代理已在 Blockbench Desktop 5.2.2 中完成独立工程 rule-hit-continue-contact-handoff-preview（UUID 74fc7861-6425-be9a-c6b8-3d1b9eefe0a5，344 cubes、16 groups、18 textures）搭建与空目录创建，返回 completed: null 并经 close_agent 收束后，由本次 20261114-art-hit-continue-02 完成核验、.bbmodel 与 4 视角真实视口无损 PNG 导出、view_image 逐张自检及交接文档归档。"
+  },
+  "techniqueId": "rule_hit_continue",
+  "techniqueName": "命中接续",
+  "version": "v1-contact-handoff-preview-20261114",
+  "status": "candidate_pending_user_confirmation_stay_in_progress",
+  "date": "2026-11-14",
+  "inputWorkbook": {
+    "path": "D:/alianximod/docs/术式制作表.xlsx",
+    "sha256": "AB344CCAAFBE723AD0ED6C6DD0834EB3B264EC5184227F655FAE9FC1B0F12C26",
+    "sheet": "制作中",
+    "row": 6
+  },
+  "motionOnlyBoundary": {
+    "isContactHandoffDiagramOnly": true,
+    "noNewProjectileTexture": true,
+    "noNewParticleOrBatchCarrierVisual": true,
+    "doesNotDuplicateParentAttack": true,
+    "parentSettlesBeforeChildSpawn": true,
+    "spawnsFromFixedContactPoint": true,
+    "inheritsDirectionOwnerAndCastContext": true,
+    "noReReadPlayerCrosshair": true,
+    "entityAndTerrainShareSingleOpportunity": true,
+    "oneParentToAtMostOneChildNoTripleReMultiply": true,
+    "timeoutWithoutValidHitDoesNotTrigger": true,
+    "runtimeAssetsAdded": false,
+    "terrainHookCodeNote": "BatchCarrierBootstrap.java:28 为 pass-through，docs/资源库/README.md:37 明确无新素材；当前源码地形续发钩子 BatchFlightBook.intercept(TERRAIN) 仅登记了陨岩记录，普通非陨岩弹体的触地/撞墙代码覆盖现状交开发记录核对，不伪称 Forge 已对所有弹体证实。"
+  },
+  "blockbench": {
+    "version": "5.2.2",
+    "environment": "desktop",
+    "platform": "win32",
+    "pluginVersion": "1.10.1",
+    "projectName": "rule-hit-continue-contact-handoff-preview",
+    "projectUuid": "74fc7861-6425-be9a-c6b8-3d1b9eefe0a5",
+    "formatId": "free",
+    "counts": {
+      "cubes": 344,
+      "meshes": 0,
+      "groups": 16,
+      "textures": 18,
+      "outlinerElements": 344
+    },
+    "viewport": "1706x1215 lossless PNG (main viewport active; no remaining offscreen views)"
+  },
+  "protectedOpenProjects": [
+    {
+      "name": "cool-v4.3-equal-width-steam-ground-wave-preview",
+      "uuid": "fe1b1c81-3962-2fbb-bc94-6a37e1b6e5ef",
+      "saved": true,
+      "elements": 29,
+      "groups": 2,
+      "textures": 11,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v1-spatial-draft-20261112",
+      "uuid": "e380502f-05e4-5cab-c7a2-4ff5f7e3c7c5",
+      "saved": true,
+      "elements": 514,
+      "groups": 8,
+      "textures": 71,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v2-projectile-composite-draft-20261112",
+      "uuid": "8a58e270-0fce-3a38-f8c5-528d850c4a39",
+      "saved": true,
+      "elements": 109,
+      "groups": 4,
+      "textures": 98,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v3-projectile-composite",
+      "uuid": "8cdb8be1-7355-a034-3a20-7ae41a0e5af1",
+      "saved": true,
+      "elements": 80,
+      "groups": 5,
+      "textures": 21,
+      "untouched": true
+    },
+    {
+      "name": "fire-spark-v3-1-crossed-launch-preview",
+      "uuid": "3cc70eec-3c0d-db2e-731f-2581790ce09d",
+      "saved": false,
+      "elements": 51,
+      "groups": 5,
+      "textures": 6,
+      "untouched": true
+    },
+    {
+      "name": "fire-upwell-parabolic-motion-preview",
+      "uuid": "6cfd19e7-972f-1e54-9c0f-bd74cd037ea9",
+      "saved": false,
+      "elements": 153,
+      "groups": 9,
+      "textures": 11,
+      "untouched": true
+    },
+    {
+      "name": "surface-anchor-v2-inverted-triangle-preview",
+      "uuid": "19a21c6d-556d-a2cf-167b-83abca62ed0a",
+      "saved": false,
+      "elements": 40,
+      "groups": 5,
+      "textures": 11,
+      "untouched": true
+    },
+    {
+      "name": "rule-stagger-wave-timing-preview",
+      "uuid": "3d79dbaa-5e99-e81f-8116-db817cd0cee2",
+      "saved": false,
+      "elements": 253,
+      "groups": 11,
+      "textures": 12,
+      "untouched": true
+    }
+  ],
+  "scaleAndSpatialSpec": {
+    "modelUnitsPerBlock": 16.0,
+    "groundTopY": 0.0,
+    "casterGhostAtT0": {
+      "positionModelUnits": [-24.0, 0.0, 0.0],
+      "positionBlocks": [-1.5, 0.0, 0.0],
+      "heightModelUnits": 28.8,
+      "heightBlocks": 1.8,
+      "eyeHeightModelUnits": 25.92,
+      "eyeHeightBlocks": 1.62
+    },
+    "movedPlayerDummyAtContact": {
+      "positionModelUnits": [-60.0, 0.0, -28.0],
+      "positionBlocks": [-3.75, 0.0, -1.75],
+      "yawDeg": 38.0,
+      "heightModelUnits": 28.8,
+      "heightBlocks": 1.8,
+      "eyeHeightModelUnits": 25.92,
+      "eyeHeightBlocks": 1.62
+    },
+    "laneAEntityContactHandoff": {
+      "laneZModelUnits": 0.0,
+      "launchOriginModelUnits": [0.0, 22.0, 0.0],
+      "parentProjectileSpanX": [108.4, 124.0],
+      "parentSettleRingX": 123.6,
+      "entityContactPointModelUnits": [124.0, 22.0, 0.0],
+      "entityContactPointBlocks": [7.75, 1.375, 0.0],
+      "primaryTargetDummyModelUnits": [128.0, 0.0, 0.0],
+      "childLanceBeamSpanX": [124.6, 202.4],
+      "inheritedDirection": [1.0, 0.0, 0.0],
+      "secondaryTargetDummyModelUnits": [206.0, 0.0, 0.0],
+      "postHitTerrainWallNoRetriggerCenter": [161.5, 10.4, 0.0]
+    },
+    "laneBTerrainTripleOneToOne": {
+      "contactPointsModelUnits": [
+        [36.0, 0.0, 48.0],
+        [68.0, 0.0, 72.0],
+        [100.0, 0.0, 96.0]
+      ],
+      "contactPointsBlocks": [
+        [2.25, 0.0, 3.0],
+        [4.25, 0.0, 4.5],
+        [6.25, 0.0, 6.0]
+      ],
+      "parentMeteorCount": 3,
+      "childHeatwaveCount": 3,
+      "cancelledExtraNineRingsCentersModelUnits": [
+        [36.0, 0.75, 78.0],
+        [36.0, 0.75, 104.0]
+      ]
+    },
+    "laneCTimeoutNoHitControl": {
+      "laneZModelUnits": -64.0,
+      "laneZBlocks": -4.0,
+      "launchOriginModelUnits": [0.0, 36.0, -64.0],
+      "timeoutBoxCenterModelUnits": [224.0, 36.0, -64.0],
+      "timeoutBoxCenterBlocks": [14.0, 2.25, -4.0],
+      "childSpawned": false
+    }
+  },
+  "deliverables": [
+    {
+      "file": "rule-hit-continue-contact-handoff-preview.bbmodel",
+      "role": "editable_blockbench_scene",
+      "bytes": 222200,
+      "sha256": "920150ED7F4B742A1BFCE85B3B76B8C07511FAF9C8572E11888AEA3E47635540"
+    },
+    {
+      "file": "rule-hit-continue-01-side-handoff-view.png",
+      "role": "viewport_preview_orthographic_side",
+      "camera": {
+        "projection": "orthographic",
+        "zoom": 0.09,
+        "position": [96.0, 21.0, 420.0],
+        "target": [96.0, 21.0, 0.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 59343,
+      "sha256": "A614E9CB8E84F055E2D50639B66505535DD82F2D3506D3AA898A2A8E08339000"
+    },
+    {
+      "file": "rule-hit-continue-02-top-lanes-comparison.png",
+      "role": "viewport_preview_orthographic_top",
+      "camera": {
+        "projection": "orthographic",
+        "zoom": 0.09,
+        "position": [96.0, 420.0, 16.4],
+        "target": [96.0, 0.0, 16.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 84867,
+      "sha256": "3E345330AD2047EE06534BCDB1307A465EEA95EAA98F6FCFB8C4610C4A6EB180"
+    },
+    {
+      "file": "rule-hit-continue-03-closeup-contact-point.png",
+      "role": "viewport_preview_perspective_closeup",
+      "camera": {
+        "projection": "perspective",
+        "fov": 45,
+        "position": [84.0, 50.0, 72.0],
+        "target": [152.0, 18.0, 0.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 263891,
+      "sha256": "248AE863B70F12972F985894D544EA0C6F226EB7AD404F1E40E109E8017AC324"
+    },
+    {
+      "file": "rule-hit-continue-04-hero-3quarter.png",
+      "role": "viewport_preview_perspective_hero_3quarter",
+      "camera": {
+        "projection": "perspective",
+        "fov": 42,
+        "position": [-168.0, 168.0, 248.0],
+        "target": [96.0, 16.0, 12.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 298250,
+      "sha256": "BAB7806870818FFE8ECA4D82C976DECA34F8C16B9191340586CE1B7F01FA04D4"
+    },
+    {
+      "file": "visual-handoff.md",
+      "role": "visual_handoff_spec",
+      "bytes": 16077,
+      "sha256": "3E6C142312A98F50A3A7B66E2FB11C92C9A7975AF95329AF89BA602FE9BEC6E3"
+    }
+  ]
+}

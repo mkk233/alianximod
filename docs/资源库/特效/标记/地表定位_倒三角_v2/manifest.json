@@ -1,0 +1,180 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "rule_surface_anchor_art_v2",
+  "attemptId": "20261114-art-surface-anchor-v2-archive-01",
+  "sourceAttemptId": "20261114-art-surface-anchor-v2-01",
+  "stage": "delivery",
+  "role": "art",
+  "technique": {
+    "name": "地表定位",
+    "id": "rule_surface_anchor",
+    "category": "通用",
+    "element": "无",
+    "chainRole": "规则 / 触发 / 地表定位"
+  },
+  "version": "v2",
+  "archiveDir": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2",
+  "sourceProcessArchiveDir": "D:/alianximod/docs/资源库/过程归档/地表定位_倒三角_v2_20261114",
+  "status": "confirmed_adopted_archived",
+  "userConfirmation": {
+    "date": "2026-11-14",
+    "verbatimQuote": "你先继续，我忘了地面定位之前你给出的版本我还没说采用，之前那个版本的效果可以接入",
+    "confirmedSurfaces": [
+      "surface_anchor_v2_sheet.png",
+      "surface_anchor_v2.gif",
+      "surface-anchor-v2-3d-01-player-aim-view.png",
+      "surface-anchor-v2-3d-02-hero-3quarter.png",
+      "surface-anchor-v2-3d-03-side-elevation.png",
+      "surface-anchor-v2-3d-04-azimuth-angles.png"
+    ]
+  },
+  "spatialAndRuntimeSpec": {
+    "modelUnitsPerBlock": 16.0,
+    "cameraFacingTag": "NONE",
+    "geometryType": "orthogonal_diagonal_vertical_crossed_double_sided_quads_plus_minus_45deg",
+    "quadSizeModelUnits": [
+      12.8,
+      12.8
+    ],
+    "quadSizeBlocks": [
+      0.8,
+      0.8
+    ],
+    "halfSpanBlocks": 0.4,
+    "yBottomBlocks": 0.04,
+    "yTopBlocks": 0.84,
+    "yBottomModelUnits": 0.64,
+    "yTopModelUnits": 13.44,
+    "diagonalHalfOffsetBlocks": 0.2828427,
+    "stripDimensions": "64x1024",
+    "frameDimensions": "64x64",
+    "frameCount": 16,
+    "previewFrameDurationMs": 50,
+    "runtimeLifetimeTicks": 16,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "nonBinaryAlphaPixelCount": 0,
+    "totalOpaquePixels": 16086,
+    "embeddedTextureMatchesStripSha256": true,
+    "flameDomainTint": false,
+    "lightLevel": "LightTexture.FULL_BRIGHT",
+    "runtimeTexturePath": "assets/xueximod/textures/effect/surface_anchor_v2/surface_anchor.png",
+    "runtimeTextureWorkspacePath": "src/main/resources/assets/xueximod/textures/effect/surface_anchor_v2/surface_anchor.png",
+    "runtimeTextureExpectedSha256": "4434BDC7B0311E863277E9BD23761139E77489AD6B548FBB48AC202C4FB35A20",
+    "runtimeMcmetaWorkspacePath": "src/main/resources/assets/xueximod/textures/effect/surface_anchor_v2/surface_anchor.png.mcmeta",
+    "runtimeMcmetaSpec": {
+      "blur": false,
+      "clamp": true
+    }
+  },
+  "preservedSourceDirectories": [
+    "D:/alianximod/docs/资源库/特效/标记/地表定位_v1",
+    "D:/alianximod/docs/资源库/过程归档/地表定位_倒三角_v2_20261114"
+  ],
+  "files": [
+    {
+      "file": "surface_anchor_v2.aseprite",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface_anchor_v2.aseprite",
+      "role": "2d_editable_source",
+      "dimensions": "64x64x16f",
+      "bytes": 15885,
+      "sha256": "6EF4C6D35ED70916B1CC1BABEA0B56384EF6019B064C9757DBF9464527FFD335"
+    },
+    {
+      "file": "surface_anchor_v2_strip.png",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface_anchor_v2_strip.png",
+      "role": "confirmed_2d_strip_export",
+      "dimensions": "64x1024",
+      "bytes": 4741,
+      "sha256": "4434BDC7B0311E863277E9BD23761139E77489AD6B548FBB48AC202C4FB35A20"
+    },
+    {
+      "file": "surface_anchor_v2.gif",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface_anchor_v2.gif",
+      "role": "confirmed_2d_nearest_neighbor_loop_preview",
+      "dimensions": "256x256",
+      "bytes": 31730,
+      "sha256": "E71D3E77DBD1AC58D9B86F563A5013F66170467DD465530045314B1DE0695393"
+    },
+    {
+      "file": "surface_anchor_v2_sheet.png",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface_anchor_v2_sheet.png",
+      "role": "confirmed_2d_frame_and_contrast_review_sheet",
+      "dimensions": "1160x740",
+      "bytes": 22178,
+      "sha256": "07C3D55DCEE8CEAD082CC3437FAF6EC48F2A61286E0CA92B7A22FE529B57C020"
+    },
+    {
+      "file": "surface-anchor-v2-inverted-triangle-preview.bbmodel",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface-anchor-v2-inverted-triangle-preview.bbmodel",
+      "role": "editable_blockbench_scene_non_runtime",
+      "dimensions": "40_cubes_5_groups",
+      "bytes": 40507,
+      "sha256": "6425325F4C775CCA61BF5460500063A7DED30EF5DCB8F5C0C2010BA48E2AFF56"
+    },
+    {
+      "file": "surface-anchor-v2-3d-01-player-aim-view.png",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface-anchor-v2-3d-01-player-aim-view.png",
+      "role": "viewport_preview_player_aim",
+      "dimensions": "1152x816",
+      "bytes": 83690,
+      "sha256": "9C28454F62A2FAAA85594465C2610DE85A21829B642211A840C045DF73F22DF4"
+    },
+    {
+      "file": "surface-anchor-v2-3d-02-hero-3quarter.png",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface-anchor-v2-3d-02-hero-3quarter.png",
+      "role": "viewport_preview_hero_3quarter",
+      "dimensions": "1152x816",
+      "bytes": 150873,
+      "sha256": "CB1A19A7477BB6C863750C96D41A429BE2D4FA11FD8E54EAC177BD37E219080C"
+    },
+    {
+      "file": "surface-anchor-v2-3d-03-side-elevation.png",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface-anchor-v2-3d-03-side-elevation.png",
+      "role": "viewport_preview_orthographic_side",
+      "dimensions": "1152x816",
+      "bytes": 26324,
+      "sha256": "609D4D59ADED6B377112B65A13A698B312181BE993C57B560ED206BC19564C7A"
+    },
+    {
+      "file": "surface-anchor-v2-3d-04-azimuth-angles.png",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/surface-anchor-v2-3d-04-azimuth-angles.png",
+      "role": "viewport_preview_oblique_azimuth",
+      "dimensions": "1152x816",
+      "bytes": 207534,
+      "sha256": "FD272E7CC0B050D169406D888B5C5E31A541FAA0E67C44E67D5D8DC0D063607A"
+    },
+    {
+      "file": "visual-handoff.md",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/visual-handoff.md",
+      "role": "visual_handoff_spec",
+      "dimensions": "UTF-8_Markdown",
+      "bytes": 12192,
+      "sha256": "1BA3B21214D2CA2AE7DCAF9E28BAA31A778C1DBFEAE66C6F127DFBEDCCB2C749"
+    },
+    {
+      "file": "README.md",
+      "path": "D:/alianximod/docs/资源库/特效/标记/地表定位_倒三角_v2/README.md",
+      "role": "archive_readme",
+      "dimensions": "UTF-8_Markdown",
+      "bytes": 5142,
+      "sha256": "7FBA4F2AAB7413BB414E8FCE2B0E4BEA7212DB64C573041CC6FEF234E74FA8AC"
+    }
+  ],
+  "nonRuntimeHelpers": [
+    "surface-anchor-v2-inverted-triangle-preview.bbmodel",
+    "示意辅助",
+    "示意辅助_选中目标方块_顶面Y0",
+    "示意辅助_地面参照网格_顶面Y0",
+    "示意辅助_施法玩家假人_28_8高",
+    "helper_grass_top",
+    "helper_grass_side",
+    "helper_floor_stone_a",
+    "helper_floor_stone_b",
+    "helper_dummy_body",
+    "helper_dummy_head",
+    "helper_dummy_eye"
+  ]
+}

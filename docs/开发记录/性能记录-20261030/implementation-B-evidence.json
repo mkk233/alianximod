@@ -1,0 +1,204 @@
+{
+  "author": "B",
+  "model": "grok-4.7-high-fast",
+  "stage": "implementation",
+  "designRoundsUsed": "1/2",
+  "implementationReviewRoundsUsed": "0/3",
+  "ownershipReleased": true,
+  "writeComplete": true,
+  "compiled": false,
+  "gameTested": false,
+  "gradleInvoked": false,
+  "publicApiCreated": false,
+  "api": {
+    "package": "com.bslx.XueXiMod.debug.performance",
+    "type": "PerformanceRecorder",
+    "methods": ["isRecording()", "begin()", "end(PerfMetric, long)", "add(PerfCounter, long)"]
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "originalLastWriteUtc": "2026-10-28T18:59:04.3123427Z",
+      "originalSha256": "3BF4BC544CA3F3F5D27F32118DBFA34CBE7F3095798D995BF953F645137C07D3",
+      "originalLength": 59385,
+      "finalLastWriteUtc": "2026-10-29T20:03:53.8140816Z",
+      "finalSha256": "CD687E039956C02BE1142949844E5D6B8B0C34F33BA6EF9BC7149DFB47317EB2",
+      "finalLength": 59764,
+      "sites": [
+        {"metric": "RELEASE_REQUEST", "beginLine": 104, "endLine": 122, "range": "103-124"}
+      ]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/chain/TechniqueChain.java",
+      "originalLastWriteUtc": "2026-10-23T16:11:15.3382922Z",
+      "originalSha256": "BA04C8FE248B8F07F661B5273D310DB7BE94E2A582EE4D9C7D9C86D287FEF0C5",
+      "originalLength": 3381,
+      "finalLastWriteUtc": "2026-10-29T20:03:55.0664489Z",
+      "finalSha256": "F152C5089B4B197E1434C665A60A5EAF01D0B5BFAD06CC73B304CEDF580D962F",
+      "finalLength": 3744,
+      "sites": [
+        {"metric": "CHAIN_SPLIT", "beginLine": 21, "endLine": 44, "range": "20-46"}
+      ]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/chain/ChainScheduler.java",
+      "originalLastWriteUtc": "2026-09-27T08:04:09.8529151Z",
+      "originalSha256": "A01AD8E30A671D203B47767A4290675C8DEDCA57E2C83B8790852670023E8578",
+      "originalLength": 1705,
+      "finalLastWriteUtc": "2026-10-29T20:03:57.5618710Z",
+      "finalSha256": "2CF06EDEEF34A8B486AA019F71895FEFF9F763BC5AB366EE649686A0488AD309",
+      "finalLength": 2270,
+      "sites": [
+        {"metric": "SCHEDULED_ACTION", "beginLine": 22, "endLine": 26, "range": "21-28", "note": "immediate action.run"},
+        {"metric": "SCHEDULED_ACTION", "beginLine": 49, "endLine": 53, "range": "48-57", "note": "tick action.run inside original catch"}
+      ]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LockTargetService.java",
+      "originalLastWriteUtc": "2026-10-19T17:49:55.0421652Z",
+      "originalSha256": "9DBE37B9C4E026B6C17FC3FB6107D0C544365A49F613F30B3513A55874AC780C",
+      "originalLength": 3355,
+      "finalLastWriteUtc": "2026-10-29T20:04:00.8239153Z",
+      "finalSha256": "7517E05245488AB1271B6F263DDBA88BCAB3DBAEFA4C1EA31FFBFC7EA49FB027",
+      "finalLength": 4026,
+      "sites": [
+        {"metric": "TARGET_QUERY", "beginLine": 59, "endLine": 87, "range": "58-89"},
+        {"counter": "TARGET_QUERY_CALLS", "line": 68},
+        {"counter": "TARGET_CANDIDATES", "line": 69}
+      ]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java",
+      "originalLastWriteUtc": "2026-10-29T04:46:13.5316186Z",
+      "originalSha256": "382015A6071CA0204BF3CF343D230E7AD374A5C150FE371D9472203869C316A7",
+      "originalLength": 12289,
+      "finalLastWriteUtc": "2026-10-29T20:04:20.4469837Z",
+      "finalSha256": "6DAA8141C265012DB58F7AB76ED7CB40B3BA4869020862E7F2DD03E02881F1FD",
+      "finalLength": 13831,
+      "sites": [
+        {"metric": "TARGET_QUERY", "beginLine": 108, "endLine": 131, "range": "104-133", "note": "crosshairCenter clip plus entity search"},
+        {"counter": "TARGET_QUERY_CALLS", "line": 117},
+        {"counter": "TARGET_CANDIDATES", "line": 118},
+        {"metric": "TARGET_QUERY", "beginLine": 145, "endLine": 167, "range": "145-167", "note": "resolveAnchor first entity search only"},
+        {"counter": "TARGET_QUERY_CALLS", "line": 152},
+        {"counter": "TARGET_CANDIDATES", "line": 153},
+        {"metric": "TALLY_RECORD", "beginLine": 203, "endLine": 231, "range": "201-233"},
+        {"metric": "TALLY_FLUSH", "beginLine": 244, "endLine": 284, "range": "243-286"}
+      ]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java",
+      "originalLastWriteUtc": "2026-10-29T04:45:16.0972745Z",
+      "originalSha256": "F7C60E01EC9295F3C0EE24B31029A614AB5F80ECD3468A81366B81E2B6FC0C53",
+      "originalLength": 12623,
+      "finalLastWriteUtc": "2026-10-29T20:04:23.8162227Z",
+      "finalSha256": "58C587F4E7530B3510CB66028BB72000E89353E2498D327F22BCCE5E17CBF8FB",
+      "finalLength": 13327,
+      "sites": [
+        {"metric": "GEOMETRY", "beginLine": 94, "endLine": 118, "range": "90-120", "note": "forAttack; overlaps nested volumePoint and aimFor"},
+        {"metric": "GEOMETRY", "beginLine": 204, "endLine": 215, "range": "203-217", "note": "volumePoint"},
+        {"metric": "GEOMETRY", "beginLine": 220, "endLine": 230, "range": "219-231", "note": "aimFor"}
+      ]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java",
+      "originalLastWriteUtc": "2026-10-29T04:45:16.5475473Z",
+      "originalSha256": "C555BF9C6DD5082F51CA6C8BC56B95C453E4DEEB273598F9A5052BD75F211EB6",
+      "originalLength": 40285,
+      "finalLastWriteUtc": "2026-10-29T20:04:33.7144074Z",
+      "finalSha256": "334F936B45C2D44DC628C574CFEB5A5B0D8E1C000B7C89B0AB096E447DE8AA27",
+      "finalLength": 40886,
+      "sites": [
+        {"metric": "SEGMENT_EXECUTE", "beginLine": 373, "endLine": 615, "range": "365-617"},
+        {"metric": "CHAIN_ROLE_SCAN", "beginLine": 444, "endLine": 472, "range": "444-473", "note": "nested inside SEGMENT_EXECUTE"}
+      ]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+      "originalLastWriteUtc": "2026-10-29T14:05:35.0242919Z",
+      "originalSha256": "A0771E42AFCACA617A7B6F9699306E0B1C2AF35546A2C0F9313D53A1174BB152",
+      "originalLength": 4385,
+      "finalLastWriteUtc": "2026-10-29T20:05:43.0251843Z",
+      "finalSha256": "A3DDC72B68EAB6A711D19C198E34C4789F449F22BB991A193C70EAC0975E6309",
+      "finalLength": 5343,
+      "sites": [
+        {"metric": "CONTACT_ENCHANT_TICK", "beginLine": 55, "endLine": 75, "range": "54-77"},
+        {"metric": "ENTITY_QUERY", "beginLine": 98, "endLine": 102, "range": "98-102"},
+        {"counter": "ENTITY_QUERY_CALLS", "line": 105},
+        {"counter": "ENTITY_CANDIDATES", "line": 106}
+      ]
+    }
+  ],
+  "metricsCovered": [
+    "RELEASE_REQUEST",
+    "CHAIN_SPLIT",
+    "CHAIN_ROLE_SCAN",
+    "SCHEDULED_ACTION",
+    "SEGMENT_EXECUTE",
+    "TARGET_QUERY",
+    "GEOMETRY",
+    "CONTACT_ENCHANT_TICK",
+    "ENTITY_QUERY",
+    "TALLY_RECORD",
+    "TALLY_FLUSH"
+  ],
+  "countersCovered": [
+    "TARGET_QUERY_CALLS",
+    "TARGET_CANDIDATES",
+    "ENTITY_QUERY_CALLS",
+    "ENTITY_CANDIDATES"
+  ],
+  "getEntitiesOfClassSites": 4,
+  "actionRunSitesTimed": 2,
+  "nesting": [
+    "CHAIN_ROLE_SCAN inside SEGMENT_EXECUTE",
+    "ENTITY_QUERY inside CONTACT_ENCHANT_TICK on the non-domain even-tick scan",
+    "volumePoint and aimFor GEOMETRY inside forAttack GEOMETRY when projectileGeometry calls them",
+    "SCHEDULED_ACTION and SEGMENT_EXECUTE nest when a scheduled action runs a segment, or when a segment schedules an already-due action",
+    "TALLY_FLUSH runs later inside SCHEDULED_ACTION; FLUSH_DELAY is 6 so record does not inline flush"
+  ],
+  "preserved": [
+    "query predicates and single evaluation",
+    "random draws",
+    "resource spend and scheduler timing",
+    "original finally order for batch restore, cast frame unbind, contact settlePending, and scheduler catch",
+    "anchor cache return and non-anchor fallback untimed",
+    "tally record and flush separated",
+    "dual-release interval constants unchanged"
+  ],
+  "notCoveredByDesign": [
+    "HIT_ENTITY_UPDATE",
+    "SWORD_UPDATE",
+    "MOTION",
+    "SWORD_OWNED_SCAN",
+    "NARROW_PHASE",
+    "BLOCK_CLIP",
+    "HIT_SPAWN",
+    "PHANTOM_SWORD_SPAWN",
+    "HIT_SETTLE",
+    "DAMAGE_APPLY",
+    "EXPLICIT_SEND",
+    "hold-repeat offer outside enqueueWork",
+    "gapBefore",
+    "CastExecutionSession and SkillChainPlan",
+    "resolve mark/clear and glow",
+    "getMarkedTarget",
+    "resolveAnchor cache hit and non-query fallback",
+    "DomainContactBilling.collect queries outside this file",
+    "vortexPhase as its own metric",
+    "three Tally.record forwarding overloads as separate samples"
+  ],
+  "blockers": [],
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "violationsInAuthoredFiles": [],
+    "preexistingUntouched": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ],
+    "renamedUntouched": false
+  },
+  "backup": "docs/开发记录/性能记录-20261030/before-B/",
+  "report": "docs/开发记录/性能记录-20261030/implementation-B-final.md"
+}

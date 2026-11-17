@@ -1,0 +1,20 @@
+{
+  "tool": "mcp__magpie.aseprite__run_lua",
+  "backend": "batch",
+  "save": false,
+  "mutates": false,
+  "source": "source/ground_airborne_v2r2.aseprite",
+  "actualResult": {
+    "reopened": true,
+    "width": 144,
+    "height": 48,
+    "frames": 24,
+    "durationSeconds": 1.2,
+    "layers": [
+      "01_thin_detached_dust",
+      "02_irregular_soil_clusters",
+      "03_flying_pixel_grit"
+    ]
+  },
+  "note": "Transcribed actual MCP return; on-disk source inspected separately."
+}

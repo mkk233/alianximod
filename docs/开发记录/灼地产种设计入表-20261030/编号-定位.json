@@ -1,0 +1,110 @@
+{
+  "sha256": "38649FA8068C42576D675D0EBF203D75EBF843B385CFC3092D769EF2E47798D3",
+  "mtime": "2026-10-30T11:35:37.806+08:00",
+  "bytes": 170988,
+  "prefixes": {
+    "sword": 5,
+    "space": 1,
+    "tide": 2,
+    "stone": 1,
+    "water": 7,
+    "phantom": 1,
+    "movement": 2,
+    "magic": 3,
+    "test": 1,
+    "heat": 1,
+    "parasite": 1,
+    "metal": 1,
+    "fire": 21,
+    "universal": 1,
+    "rule": 4,
+    "trajectory": 4,
+    "vine": 1,
+    "sinking": 1,
+    "keen": 1
+  },
+  "mismatches": [
+    {
+      "sheet": "待制作",
+      "row": 7,
+      "A": "地表定位",
+      "B": "fire_surface_anchor",
+      "C": "通用",
+      "D": "无"
+    },
+    {
+      "sheet": "待制作",
+      "row": 9,
+      "A": "错时",
+      "B": "fire_stagger",
+      "C": "通用",
+      "D": "无"
+    },
+    {
+      "sheet": "待制作",
+      "row": 10,
+      "A": "命中接续",
+      "B": "fire_hit_continue",
+      "C": "通用",
+      "D": "无"
+    },
+    {
+      "sheet": "待制作",
+      "row": 15,
+      "A": "崩地",
+      "B": "fire_break_ground",
+      "C": "通用",
+      "D": "土"
+    }
+  ],
+  "idHits": [
+    {
+      "sheet": "待制作",
+      "row": 7,
+      "column": "B",
+      "id": "fire_surface_anchor",
+      "count": {
+        "fire_surface_anchor": 1
+      }
+    },
+    {
+      "sheet": "待制作",
+      "row": 9,
+      "column": "B",
+      "id": "fire_stagger",
+      "count": {
+        "fire_stagger": 1
+      }
+    },
+    {
+      "sheet": "待制作",
+      "row": 10,
+      "column": "B",
+      "id": "fire_hit_continue",
+      "count": {
+        "fire_hit_continue": 1
+      }
+    },
+    {
+      "sheet": "待制作",
+      "row": 15,
+      "column": "B",
+      "id": "fire_break_ground",
+      "count": {
+        "fire_break_ground": 1
+      }
+    }
+  ],
+  "sheet5Hits": {
+    "fire_surface_anchor": 0,
+    "fire_stagger": 0,
+    "fire_hit_continue": 0,
+    "fire_break_ground": 0
+  },
+  "sheet7Hits": {
+    "fire_surface_anchor": 0,
+    "fire_stagger": 0,
+    "fire_hit_continue": 0,
+    "fire_break_ground": 0
+  }
+}

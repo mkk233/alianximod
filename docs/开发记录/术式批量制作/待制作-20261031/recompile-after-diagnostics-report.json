@@ -1,0 +1,101 @@
+{
+  "batch": "待制作-20261031",
+  "stage": "诊断返修后的机械重编",
+  "formalReview": "设计 2/2，实现 3/3。返修结果未追加正式复审。",
+  "result": "compile_not_started",
+  "reason": "本仓库 Forge 客户端仍在运行，父进程是新的 Gradle 守护进程。",
+  "previousReportsKept": [
+    "final-compile-report.md",
+    "final-compile-report.json",
+    "compile-after-client-close-report.md",
+    "compile-after-client-close-report.json"
+  ],
+  "sheetMigrated": false,
+  "sourceModifiedByThisTask": false,
+  "stopped": true,
+  "authorHandoff": {
+    "gaps": [],
+    "crossAuthorRequestsOpen": false,
+    "A": {
+      "stopWrite": true,
+      "file": "src/main/java/com/bslx/XueXiMod/item/StaffSkills.java",
+      "sha256": "24571ba13e7d3f44353ad4b725f2074960f0f09f0b5d22e0923ff1e69842087c",
+      "mtime": "2026-10-31T12:48:22.120+08:00",
+      "diskMatches": true
+    },
+    "B": {
+      "stoppedWriting": true,
+      "crossAuthorRequests": [],
+      "files": [
+        {
+          "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+          "sha256": "7659032a12d77dd578caa9355290959d367fc8c49222e252f42235791f411552",
+          "mtime": "2026-10-31T12:48:21.455+08:00",
+          "diskMatches": true
+        },
+        {
+          "path": "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+          "sha256": "ed91e0dfaa79690378aaa1c77e23d88f3351a15624124d390570c590366f993a",
+          "mtime": "2026-10-31T12:48:22.122+08:00",
+          "diskMatches": true
+        }
+      ],
+      "declaredUnchangedAndMatched": [
+        "src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java",
+        "src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantLoad.java"
+      ]
+    }
+  },
+  "processCheck": {
+    "checkedAt": "2026-10-31T12:54:49.243+08:00",
+    "recheckedStillAlive": true,
+    "daemon12896": "gone",
+    "daemon52040": {
+      "pid": 52040,
+      "parentPid": 48468,
+      "started": "2026-10-31T12:52:02",
+      "role": "Gradle daemon, parent of the live client"
+    },
+    "client16920": {
+      "pid": 16920,
+      "parentPid": 52040,
+      "started": "2026-10-31T12:52:37",
+      "projectPath": true,
+      "forgeClient": true
+    },
+    "processesEndedByThisTask": false
+  },
+  "changeset": {
+    "baseline": "compile-after-client-close-src-after.json",
+    "evidence": "recompile-after-diagnostics-changeset.txt",
+    "beforeInventory": "recompile-after-diagnostics-src-before.json",
+    "beforeTakenAt": "2026-10-31T12:54:51.149+08:00",
+    "afterInventory": null,
+    "srcMain": {"fileCount": 955, "totalBytes": 10696940, "unexpectedContentDiffs": 0},
+    "generatedResources": {"fileCount": 65, "totalBytes": 26708, "unexpectedContentDiffs": 0},
+    "expectedFiles": 3
+  },
+  "nameGate": {
+    "executed": false,
+    "reason": "客户端挡住编译序列；门禁会写 build/namegate，而客户端正在使用本仓库构建输出。"
+  },
+  "resourcesRechecked": false,
+  "resourcesCitedBecauseUnchanged": [
+    "final-compile-report.md",
+    "compile-after-client-close-report.md"
+  ],
+  "compileJava": {
+    "executed": false,
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "workingDirectory": "D:\\alianximod",
+    "start": null,
+    "end": null,
+    "exitCode": null,
+    "log": null,
+    "intendedJavaHome": "C:\\Program Files\\Java\\jdk-17",
+    "intendedJavaVersion": "17.0.6+9-LTS-190",
+    "intendedGradleUserHome": "C:\\Users\\baishang\\.gradle"
+  },
+  "notRun": ["compileJava", "nameGate", "build", "jar", "reobf", "datagen", "runClient", "game", "package", "publish", "git commit", "sheet migration", "formal review"],
+  "gameVerified": false
+}

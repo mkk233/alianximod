@@ -1,0 +1,42 @@
+{
+  "repair": "fix-game-visual-04b",
+  "fixed": true,
+  "awaitingCompile": true,
+  "playtested": false,
+  "bufferSourceExecutedInJvm": false,
+  "cause": "getBuffer(skin) then getBuffer(flake) before any vertex ends the empty skin batch; skin vertices are drawn with water_flakes.png",
+  "source": "MultiBufferSource.BufferSource.getBuffer/endBatch in forge-1.20.1-47.3.33 mapped sources",
+  "flakeTexture": {
+    "file": "textures/entity/xueximod/water_flakes.png",
+    "size": [32, 32],
+    "opaqueTexels": 660
+  },
+  "flakeSamplesAtSkinTexelCenters": {
+    "armPxOpaque": 0,
+    "armPxClear": 571,
+    "armNxOpaque": 437,
+    "armNxClear": 134,
+    "legPxLight186_235_255": 562,
+    "legNxMid46_178_214": 563
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/SteveWaterLineVisual.java",
+      "lines": "72-75"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/SteveWaterLineMesh.java",
+      "lines": "87-135"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/CloneRenderer.java",
+      "lines": "52-60"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/WaterPhantomVisualDiagnostics.java",
+      "action": "deleted"
+    }
+  ],
+  "nameGate": "tools/check-name-gate.ps1 exit 0",
+  "quota": "本阶段额度已用完，返修结果未追加复审"
+}

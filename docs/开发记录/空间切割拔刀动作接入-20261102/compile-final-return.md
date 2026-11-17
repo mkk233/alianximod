@@ -1,0 +1,7 @@
+先读完整的最终编译说明，再按其中授权的范围执行。编译前先核对作者已停写、分身任务没有人在改源码，并确认这条 Gradle 可以独占工作区。源码哈希与返修报告一致，工作区里只有空闲 daemon。开始这一次离线编译，并记下进程自己的退出码。通过。`.\gradlew.bat compileJava --offline --no-daemon` 的进程退出码是 **0**。`:compileJava` 实际执行，不是 UP-TO-DATE。日志是 `BUILD SUCCESSFUL in 24s`，`4 actionable tasks: 2 executed, 2 up-to-date`。41 个警告，没有错误。游戏未验证。没有改源码。
+
+开始 2026-11-02T05:55:18，结束 2026-11-02T05:55:43。这次进程使用 `JAVA_HOME=C:\Program Files\Java\jdk-17` 和 `GRADLE_USER_HOME=C:\Users\baishang\.gradle`。日志里的 Java 是 17.0.6。
+
+编译前作者和分身任务都已停写，工作区里只有空闲的 Gradle 8.8 daemon。`SpaceCutBodyPose.java` 与 `SpaceCutItemMount.java` 的哈希和返修报告一致。`src` 前后都是 1200 个文件，差异是 0。
+
+报告在 `docs/开发记录/空间切割拔刀动作接入-20261102/compile-report.md`、`compile-evidence.json`、`compile-gradle.log`，以及 `compile-final-source-before.json`、`compile-final-source-after.json`。停止。

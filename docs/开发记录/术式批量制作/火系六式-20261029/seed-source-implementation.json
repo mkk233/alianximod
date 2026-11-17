@@ -1,0 +1,37 @@
+{
+  "task": "seed-source-implement",
+  "authorSession": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+  "reviewAdded": false,
+  "gradleRun": false,
+  "sourceWriteStopped": true,
+  "compileStatus": "待统一编译",
+  "amounts": {
+    "heat_beam": 1,
+    "fire_orb": 3,
+    "magic_igniteExtra": 2,
+    "heatBeamWithIgnite": 3,
+    "fireOrbWithIgnite": 5,
+    "productionMultiplier": 1
+  },
+  "entries": {
+    "heat_beam": "HeatBeamEffect sets spec.seedPoints = 1; granted once after accepted hurt",
+    "fire_orb": "FireOrbEffect sets spec.seedPoints = 3 per hitOnce target; projectile unchanged",
+    "magic_ignite": "EnchantBonus and EnchantmentSnapshot add 2; weapon tag SeedPoints; MagicIgniteEffect look box unchanged"
+  },
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "log": "docs/开发记录/术式批量制作/火系六式-20261029/seed-source-implementation-name-gate.txt",
+    "newViolations": 0,
+    "preexisting": [
+      "OriginalHumanoid.java:165 i",
+      "OriginalHumanoid.java:202 to"
+    ]
+  },
+  "unchangedContracts": [
+    "FireSeedAccount grant and consume dedup",
+    "FireCastContext one production per object and target",
+    "FireSeedMath.UPPER_BOUND 100",
+    "damage, burn seconds, invulnerability, friendly-fire filters"
+  ]
+}

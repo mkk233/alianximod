@@ -1,0 +1,715 @@
+{
+  "prior_manifest_sha256": "DD378114EC0C99F9F2A2DD0D7D3C48F92ED9FB389EABA797D1772B73EF8FC779",
+  "prior_artifact_count_unchanged": 130,
+  "prior_artifacts": [
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\01-domain-overview.png",
+      "sha256": "2C0AF4489091588ADEDA6B962BFF08158E742F964DA60452D0988686459CBAF5",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\02-eye-height-1p62.png",
+      "sha256": "C3980322D2693258873750C8CBAD43041948ED1A009F2535378124CE49242DBB",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\03-side-anchor-plus0p15.png",
+      "sha256": "F5F4616FDD0767159EF86EB001E17BB97FA98B85AB1918D12FA15E736C812D28",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\04-single-stage-1-frame00.png",
+      "sha256": "90F79ADFE867AC6B42417586102136EC6366FA25116577C290ACAEE02890FF2D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\04-single-stage-2-frame04.png",
+      "sha256": "EA8D9ED6302015C7A88C59A6C0EB6E10C179AA772A27BE616417CE8830B671D8",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\04-single-stage-3-frame08.png",
+      "sha256": "E730DABD74CA7FA45A00B29FCD3D74D3A01AA63E5B574E2A17BBB26DCFC3D72F",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\04-single-stage-4-frame12.png",
+      "sha256": "01A0ECC7BDCABD885921D242D470EF58552D6572BC33D4B92525A5409455EA51",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\domain-animation-4p8s.gif",
+      "sha256": "2CE10A628E87540DB1A694DE09F9C5573D8275A575D7A05FB77254E418C39A19",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\animation-capture.json",
+      "sha256": "92CEBB647DF0E4216267DF4414F22633ECCFC9B6F27014459AD373277016EBC2",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\aseprite-live-save.txt",
+      "sha256": "34ECEA9FFD7018C4264BE302F295A0E7C8ED2FDE078F274003774869415304C5",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\aseprite-pixel-verification.json",
+      "sha256": "60547E59FD30C0FFC86D8EBD0C10B1D57627848BC46C51921F125F887A666AB1",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\build-scene.native.js",
+      "sha256": "611811D44FDAF813DB974FAD6EBCD6197252D2C31F2E255C04FC1348211F6CA0",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\capture-animation.native.js",
+      "sha256": "52A8AA77F00BFF4216D2773275CAF744973E799F38F7442C4B1E08A2AB03DB52",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\capture-views.native.js",
+      "sha256": "57BACCA8E9690DF8A584B2333AB7D73C6D6758F54D0D54DFEE5A78FEAD39708F",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\encode-gif.py",
+      "sha256": "DE2DAF46C619781AE8AAB541108F51E576D239A3B00CFBA909E67FB04195A3B0",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\final-reopen-viewport.png",
+      "sha256": "EBFFAEEF082D1326421566F48DA9275EF835F87AF01242D60E91EE03144D6E60",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\final-reopen.json",
+      "sha256": "32D505340616627D462674BADFDE9EDB550E36F92D821C37FEAED68056C60B9C",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\gif-encoding.json",
+      "sha256": "1855B3B01EFEDA6E9AC796DBF752830C553897CC45D1DC1F0D92C3BFFFCA65CB",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\input-hashes.json",
+      "sha256": "EA6FE81B8532F4094CF78CA8CE89FAD2FF1932B616B6588D7DB8FDAF9FB37847",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\input-preservation-final.json",
+      "sha256": "2ADC64C5CFC3986F32A27B8EFD5E8F6453A186B400F824775C847CA4C0D9FFF4",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\native-reopen.json",
+      "sha256": "5BB581A82385827984A0694FFE89FC2ADDDF0C02FF7DCB48BD8B0759DDE6FB04",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\scene-parameters.json",
+      "sha256": "2FF38C98D8F6118EA59BCCD7F67276E519123B103B0BB93354489BA1EA005586",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\tool-evidence.json",
+      "sha256": "2995F02BD35350F521BA1F403F841E2B4046143176A981E3EBA0E4E817630087",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\evidence\\view-cameras.json",
+      "sha256": "B7BD50054EBBD5C72C8A71CA5B4A1EDBECC8B5FBABF417C7F807BFAEDEA939C3",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_000.png",
+      "sha256": "8111F263E2E05C1A236C1674EE292012BED4E6A34F3EB58593060BFD6F71BCEB",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_001.png",
+      "sha256": "9C21464627DBD71953C73A9CC2C9B6590C4639D7E9A5A10987793F3FFF90B11D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_002.png",
+      "sha256": "A8CAE3DF88DC64E21C5DA4D30863453A82D1C7FA79B0A82BF92967EFD5F97149",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_003.png",
+      "sha256": "CD943A447BFCAB92E1FD63C393E4BABEE2AD4DE14BE4C9FEFED377916DFFA661",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_004.png",
+      "sha256": "FC5A5895BFE2E440B138FBC4C203086DE56422350701A7B2DF556CDAB197957F",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_005.png",
+      "sha256": "962DFA3FFEF8816AB3817DD3F650EEE7BEFA1B3893B8205948503FAF93C96A29",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_006.png",
+      "sha256": "1209DF5F82C0CE41F03FBFDE3B0CC22B391FCB62FD869DFBF3DAB5FD7530269C",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_007.png",
+      "sha256": "D8A25F545FFFA979765FE806945CD825D1902D8B1D8317ED89603A6F34AC430A",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_008.png",
+      "sha256": "7FBDD648C835A20A20873E7CFFD14C7EEC72D92B5288B69B45EE287CCCE8A72E",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_009.png",
+      "sha256": "60294210DAF75C3BADBFDDC441A0F3CBAE7BD6BD257A9141A56A4B4A07EDCFBA",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_010.png",
+      "sha256": "E4E6E9B023CE53DF75AA09E87A8560151A1F828CCE05CC58571A43F3AFE7C553",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_011.png",
+      "sha256": "8E9E32171299099F8C0950872A6D83072581CBB07EA298EB536F2A06EC21871B",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_012.png",
+      "sha256": "F1A1610845CCE61DD883D4CDFE16C5D738D0FC45A00E86B9AD48C05E8C9517BA",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_013.png",
+      "sha256": "263A4776210BFC63688647D758CEB408603DB595A1EC695539E74609563FECF2",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_014.png",
+      "sha256": "17E6DFEDD8C24A271C5F3AC4D2169DB7D69BB30983DAAB38FDFBD1287C207842",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_015.png",
+      "sha256": "00E770915DDA966615B66DDC6A90589075251B1521765431FE21C04F481FAA5F",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_016.png",
+      "sha256": "664A0448A7C4838C15BCF38EE4B4AD820FEEA077EA3F4659A7AB906FD32A3863",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_017.png",
+      "sha256": "17291216B74B9FB657144814EE56A63C2ACF2E807A9F259627E438B73AD416ED",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_018.png",
+      "sha256": "8829ACEF1BF1240C179C56E1059C562B38DB17E58F2D50AB9478760C4D99B10D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_019.png",
+      "sha256": "710B9934CBBFD501772FAAE9957C78A34F8B85A3BB51CEDFAB21E3BB0B667C10",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_020.png",
+      "sha256": "C3E4063FEE5A569D8E933A66B9F0C487C809966EFB21CA3644908155A7631731",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_021.png",
+      "sha256": "BE239AE9F64CEB4505E1706CE774A5FBDE81DC1A4899AE9882E8E23CAC96C6E5",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_022.png",
+      "sha256": "19D3134B0910694A13A1F6F4F085138E10D1731F06E497D177E35D37C4B0FD9B",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_023.png",
+      "sha256": "33E382A5B80A1F86102274D2B9FC56B9138B54D2A9BA7E20692A1D971810FCF7",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_024.png",
+      "sha256": "A439E9C7ACA6DC32A60A0312155EA270F192619CFF0D05E9AF99FC1095E62851",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_025.png",
+      "sha256": "414DBBDEB9F2FFC8CF8CCE6983B8B33AA42689A4BAA5F199C6B18E32B790F49C",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_026.png",
+      "sha256": "D2922CF65673E5E6B7452421CD56DB9458A129DCB3FCF2A80DDBA57F4D58B413",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_027.png",
+      "sha256": "2A70665FF6E8E34E3A873A7068ED1CE6845C88985B48C326E78E428DA56C1824",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_028.png",
+      "sha256": "AC8404F39A05EA27CB3B7B7ED567546B4CE61729868635EDA998B29AC6188BE1",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_029.png",
+      "sha256": "145EA68EB889D208974FD569165A771ADC9C3850E3E5104C83D4C4A9804068D4",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_030.png",
+      "sha256": "8E41CE02674FC1B143C7C1F46481C615E02CDF4982F07C3BD1B8498804CB4EAB",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_031.png",
+      "sha256": "F0134BDE004EA8A78C14EA1E2A867F6E872C24E601B2715B3596E608742489A4",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_032.png",
+      "sha256": "1D1CA0E0D4D09D9E74B902D1F42C54549E1EB1C9A7503C17AD1FA50A8A2F7BDD",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_033.png",
+      "sha256": "6064B056AFE5721F77763862DA58A9C3D65E6C39431E7552D85A24DB205C2C91",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_034.png",
+      "sha256": "407A46879AE40D5970FE4BA7D75AD8FE8992827850118D4571540DBC1664F325",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_035.png",
+      "sha256": "FF909D9F819CC6FCE6A0B795FE5A9A60C5A51396A69C763DA1E3C747CFD233F1",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_036.png",
+      "sha256": "B35B3FD2B7B04C2D390E6D6ED68D8E16A3E5D29A7076139326746626209FC766",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_037.png",
+      "sha256": "413D42067B546AFAE198369D6022538C41C0369D660621B027EC880404F54AEB",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_038.png",
+      "sha256": "1099C1F04224739E4DFDB2972D702EFCC1923B465EEB558457E1DCD456EEA07F",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_039.png",
+      "sha256": "1CB0FAD48A786553D86EA6C47FE25E0273F392F438AD3DDA282A736DBFF85856",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_040.png",
+      "sha256": "915A3204C8986E7738F7FE6E4B3C8341156BEF2A20DCE3F9185F1A9DB6335176",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_041.png",
+      "sha256": "6BE876219E2C1F9704784FC24EAE110CDCA687AEE6A681E4A2FBDE2B3BDA3C96",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_042.png",
+      "sha256": "3AAB961F9A94D1D746D7DE412E83B0909262D85F87E173963C9823BBA4D01E0D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_043.png",
+      "sha256": "D88A93D615942EDA4863A467B04E564BC4C93380D1B968A48D1ED5ABEDF6BAA4",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_044.png",
+      "sha256": "BB8B7BEC01313E9841D74FDB214C004B643C47DCF1AFFA727226C1E64DE0608D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_045.png",
+      "sha256": "6DD5680BB3ADCD2F6CBEBD62FEAAFD1A1C6A138E1F31D15819969BF33A8B607D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_046.png",
+      "sha256": "F838416F4EAD869FD44B64BE0D5E53FB7049B1307E226D8638D7B947EA9AB9DE",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_047.png",
+      "sha256": "63A92E20068EA76676EBE9493328E92A79BFD16F6A0EC78FD8FDB68CF98B91C5",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_048.png",
+      "sha256": "CBB16C1702DCD53633492D7DC6A335EDC9279286D302AC26C09F94636F34ECDD",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_049.png",
+      "sha256": "FA4334DF5118AB3C2B19A372B17CEF9DAEC01096D2DECFE0BA6E6B18352FEBCF",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_050.png",
+      "sha256": "E8D4B4967938087FA629D5119F217FB9F79D8D9EEB3AFA9B53D74BE74FE54D95",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_051.png",
+      "sha256": "6651591092A7788283D7634AE3BF3C98D9C29B3E78D1330CA078F4F2CF02A503",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_052.png",
+      "sha256": "EC0B1B31038744BE4A924A52BD4E4A03D565F55C2091F9D1FCF7F685DB90E531",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_053.png",
+      "sha256": "27B7C9411ED9B1DD5D671C5B02F90CB270CE12CD50AEF1293B5AA44857CFCDAC",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_054.png",
+      "sha256": "A3D3C0AE40280AC6A1E89F26C454C1AE3C8FDD38E45BA0409B9203716685EFB7",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_055.png",
+      "sha256": "A5E8F0F56A5CBD0E30599B9EFBEB592C6B87F0C9E3E99D8DC051FCE38E5CBFB1",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_056.png",
+      "sha256": "23887A82620EF195926C5B85FAC4C88174E456DC904F288918AC1229ADD60A75",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_057.png",
+      "sha256": "6DBB29DF53D89D9D37C0B779F5A9B56D8FADB89402C1405B1BDE9013A88B6555",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_058.png",
+      "sha256": "E3FB189FD1875B6772E15FEAAE71D2E7DFEE73DFE07F5BB6B2D3BBE30FAEFF05",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_059.png",
+      "sha256": "62E0F7FFCCEEC127FB81DD40CFCE5655E6404B80B1CCA7777C52EC139152EFC0",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_060.png",
+      "sha256": "7F97BDBA6FB6DE66086AEBAE6FDA5415809445AEC399B648444AF7477486C7E6",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_061.png",
+      "sha256": "58D879185D639049F71ED045F6B0948CEB338EAA20547BA97AA1A17B3BEC7A63",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_062.png",
+      "sha256": "3AFE9854B9A44219D34A3E453C0D21846100650F03E2D32D71D1A200F3B3E5E8",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_063.png",
+      "sha256": "69097D47DC790EEB05C84A7DC32CAD58C70C78E489C1692EEDB632F48511DCB4",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_064.png",
+      "sha256": "C7FCABBC0E6CE4C90F11BF7BD2789E43072ADAA2D59C9ED80EEF0612EEBF8BFC",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_065.png",
+      "sha256": "C88B3C20A0372B1582BBFC6C590797ABC3F1A74EA50F95A9264F6B14C4597DDC",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_066.png",
+      "sha256": "DF960439B3F04B66F34AEB053A9E2633DA0BC66A5F9E28C91888244655B4BDC3",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_067.png",
+      "sha256": "F80AA99EF38121FC0BF0FA2EE9E5949A2A936127164912A894481A93A90033E5",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_068.png",
+      "sha256": "50289CA5CD594FDFC73EA7A4EF7B9A24845405466E4D78B0C45FDC660340F749",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_069.png",
+      "sha256": "26B426A2F08E4D54DFC3201DBC0A7AC460E6B2735C3B98934F3701C7582BF28D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_070.png",
+      "sha256": "01CD03E8AFCBBC3F17AE7DFEB62443BFC865A7FF89B473B6D91F12090ADAE17A",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_071.png",
+      "sha256": "284A1B22A664214816A3FBBE712343869615E490EE1876AA990C83B65EF3E7B6",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_072.png",
+      "sha256": "74AD73DA85D7506AADE97F90F112D825C7C33E0C7AFD8DBBB5C5034D64A69280",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_073.png",
+      "sha256": "C64847FE6263E5116079219947879A18EA1CE1A69E49A410DE7AFE7AE70CC6F7",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_074.png",
+      "sha256": "8E67B341D71FE68DE086DF1FFD58FC03A11224A969F340C56EFFDAE2741C3163",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_075.png",
+      "sha256": "2C74DE7278F6228064C9E5CD4D394D7BE235D60D2951B89C59D3E29E9627FACF",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_076.png",
+      "sha256": "B57386C411B25B1025396FDF0E8975DD715554B75FDA54C04EA6F8DF105EC580",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_077.png",
+      "sha256": "D99B9D0FF59E5FF702AAD6B1EF1EFC56775006C3AE972106A5557AA875CF53B0",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_078.png",
+      "sha256": "59E30873F7895F30B0CBF1740040D9E49333DF8EEEB4A150939D10FE06E8F802",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_079.png",
+      "sha256": "A557EC8C28E22417FBAD997C181244193076CCC8903EA837FDEE69BECE2B6895",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_080.png",
+      "sha256": "36FA7B9EBCF6493D983AE3B2A3560F076841F8906053540FE3ED4E3D795D6574",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_081.png",
+      "sha256": "EB6F3FCE89BF0819E89F80CB9A051DF476DDCCC2702AFD833116B7B21E58707A",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_082.png",
+      "sha256": "A25224EF08C4946B4923881A2F840878FAD094B2D2BE3972CE8E73EAAA21DF57",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_083.png",
+      "sha256": "C41BCBD7A125E2585F50D6EDEE12EC5285E61484752F3C70FB3F8C1C7810171D",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_084.png",
+      "sha256": "12BB77E385B99FB5B1DDB349C0A4CF959C8F6749726E63E2540479AD654D7908",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_085.png",
+      "sha256": "BE0A4B7412AC807BEB5E806136E1617A6C4A062A850F869D4EDB52C34F6975F0",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_086.png",
+      "sha256": "E3E273929AFCBC35449BBC13F9670A721F100D8D7F60B5E38309649D6E5279AC",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_087.png",
+      "sha256": "D2F07CA8928EC15E303EA13E0B56747CAF0711C65F47D04DBF6C23F24AAB7E94",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_088.png",
+      "sha256": "75E8C22240E86C14BA4AC54962867B335A2D44A0334DFB17C719CC0D71FE8BB8",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_089.png",
+      "sha256": "072C1AFA575B60A9A29A86F849C00BF163699F300EA3F64224A6231950C2F0CE",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_090.png",
+      "sha256": "4A765841A0CA6AED5F1A68C45D4153172E57DDA5412B82C388B00AF2ED8D74EF",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_091.png",
+      "sha256": "27A03D25D0CBD52768C4F886653DA3844C55B4D36CAEF2345AEF329C2DFDBE99",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_092.png",
+      "sha256": "D82A87BADCCACBD0F83CA837CE69E92FF727F79E7793AA2868CCDAE417E48A5A",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_093.png",
+      "sha256": "C856382BBB3548A02EC58C5B12828799D8572AAA6408AA4A47ACF84625C44708",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_094.png",
+      "sha256": "0480C8E83B5848F094FDBE27BF773713B69D4BC967880CE5CFBCB88B6DBE4C8E",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\frames\\domain_095.png",
+      "sha256": "FB8B971B1957B521861EE9D51828957BAAE3E2B11AB9786E36942F8E8006F6B6",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\textures\\aseprite-export.json",
+      "sha256": "C48268E641BC01D4E44C518237B7BF25535DBE079A4BC6AA37D1FE0598D60236",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\textures\\nether_gloom_v2_aseprite_export.png",
+      "sha256": "23B965534374CC874B263633D68892178ED56BE9F96C50DA9D9B8BEF36679AF0",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\textures\\nether_gloom_v2_runtime.png",
+      "sha256": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\textures\\v2_preview_alpha210.png",
+      "sha256": "F7B8B1D3F1F9388CF878E274F0C53411D54F794138606BFB06CDCC16EC2008E8",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\v2-2d-100ms.gif",
+      "sha256": "FAD2835C348BBB670D2C43C5E7260B011264D5CD3AA3D176FD5D3EED21C9DC53",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\visual-handoff.md",
+      "sha256": "8C1B240BDAC510A11DF7B452EC0BDCEE8E82055239FA99E04B4770B05EA48512",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\youming-v2-domain-current-49.bbmodel",
+      "sha256": "DB3F4335002E3AA5D8A58EA1EECD88CCFF58504EA3C1F62B894AD549D348A2E2",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\youming_cyan_soul_v2_100ms.aseprite",
+      "sha256": "2F74A7F38AF7D00B57D09F918B7403AD4A4FE726CF31C47F503594BD8DAF6B90",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\youming_cyan_soul_v2_original.aseprite",
+      "sha256": "456E6AD5E194C1E1F5F9DECD1CE3C0CE6D8EDD8B7B4DD2B11E54827A06D02D56",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域定稿预览_20261116\\需求快照-row10.json",
+      "sha256": "F93E841BC6C336DB3F2D06D522C76AAD00F30856DDC88EE67BE67D8D9160C8C5",
+      "unchanged": true
+    }
+  ],
+  "comparison_basis": "Previous attempt final hashes, not this attempt start. Workbook and shared README differ; this art attempt did not write either. External change author/time not investigated.",
+  "protected": [
+    {
+      "path": "D:\\alianximod\\docs\\术式制作表.xlsx",
+      "previous_attempt_sha256": "3A744629AC2BAB1CB6740F7BAD2BAA4A716BDE4B708ABBF008D5C65B212E4BCA",
+      "sha256": "698EA06F90F4EDDAB7A395A6F0D21EB19699E9406B8CC6AFD398BA2ADDB9601A",
+      "unchanged_since_previous_attempt": false,
+      "written_by_this_attempt": false
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\nether_gloom_v2\\nether_gloom.png",
+      "previous_attempt_sha256": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+      "sha256": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+      "unchanged_since_previous_attempt": true,
+      "written_by_this_attempt": false
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\NetherDomainWisps.java",
+      "previous_attempt_sha256": "5435DD96C5E9126726AC7E23B2D42C110BB53EBC3D4E1723648F9FC26CCE4791",
+      "sha256": "5435DD96C5E9126726AC7E23B2D42C110BB53EBC3D4E1723648F9FC26CCE4791",
+      "unchanged_since_previous_attempt": true,
+      "written_by_this_attempt": false
+    },
+    {
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainDefinition.java",
+      "previous_attempt_sha256": "93379888C0E2C3CF21E866001BD4B78509DBF954B20C9122F0380BA32F3911D6",
+      "sha256": "93379888C0E2C3CF21E866001BD4B78509DBF954B20C9122F0380BA32F3911D6",
+      "unchanged_since_previous_attempt": true,
+      "written_by_this_attempt": false
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\README.md",
+      "previous_attempt_sha256": "70D59EE377E408D56BC2DB6A8C432F14C58FE9F272C336B77263B3049ABF977B",
+      "sha256": "AA2EABAE4D2FEA007E768742230AA11074B7D842482BF91462E208937C1545C5",
+      "unchanged_since_previous_attempt": false,
+      "written_by_this_attempt": false
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_青色魂火_v2-20261111\\youming_cyan_soul_v2.aseprite",
+      "previous_attempt_sha256": "456E6AD5E194C1E1F5F9DECD1CE3C0CE6D8EDD8B7B4DD2B11E54827A06D02D56",
+      "sha256": "456E6AD5E194C1E1F5F9DECD1CE3C0CE6D8EDD8B7B4DD2B11E54827A06D02D56",
+      "unchanged_since_previous_attempt": true,
+      "written_by_this_attempt": false
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_青色魂火_v2-20261111\\youming_cyan_soul_v2_strip.png",
+      "previous_attempt_sha256": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+      "sha256": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+      "unchanged_since_previous_attempt": true,
+      "written_by_this_attempt": false
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域预览-20261111\\youming-v2-domain-preview.bbmodel",
+      "previous_attempt_sha256": "F9617F107CC55B077B22BFDAA4D0C6EFCB68410E952998D95737CB198451C638",
+      "sha256": "F9617F107CC55B077B22BFDAA4D0C6EFCB68410E952998D95737CB198451C638",
+      "unchanged_since_previous_attempt": true,
+      "written_by_this_attempt": false
+    }
+  ]
+}

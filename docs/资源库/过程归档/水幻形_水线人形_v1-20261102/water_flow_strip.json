@@ -1,0 +1,147 @@
+{ "frames": {
+   "water_flow 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 1.aseprite": {
+    "frame": { "x": 0, "y": 16, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 2.aseprite": {
+    "frame": { "x": 0, "y": 32, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 3.aseprite": {
+    "frame": { "x": 0, "y": 48, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 4.aseprite": {
+    "frame": { "x": 0, "y": 64, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 5.aseprite": {
+    "frame": { "x": 0, "y": 80, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 6.aseprite": {
+    "frame": { "x": 0, "y": 96, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 7.aseprite": {
+    "frame": { "x": 0, "y": 112, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 8.aseprite": {
+    "frame": { "x": 0, "y": 128, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 9.aseprite": {
+    "frame": { "x": 0, "y": 144, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 10.aseprite": {
+    "frame": { "x": 0, "y": 160, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 11.aseprite": {
+    "frame": { "x": 0, "y": 176, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 12.aseprite": {
+    "frame": { "x": 0, "y": 192, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 13.aseprite": {
+    "frame": { "x": 0, "y": 208, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 14.aseprite": {
+    "frame": { "x": 0, "y": 224, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   },
+   "water_flow 15.aseprite": {
+    "frame": { "x": 0, "y": 240, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 80
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.17-x64",
+  "image": "water_flow_strip.png",
+  "format": "RGBA8888",
+  "size": { "w": 16, "h": 256 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "flow", "from": 0, "to": 15, "direction": "forward", "color": "#000000ff" }
+  ],
+  "layers": [
+   { "name": "flowing_water_ribbon", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

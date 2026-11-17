@@ -1,0 +1,810 @@
+{
+  "captures": [
+    {
+      "file": "gui_01_burst_threequarter.png",
+      "frame_one_based": 5,
+      "start_ms": 200,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_01.png",
+      "frame_one_based": 1,
+      "start_ms": 0,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_02.png",
+      "frame_one_based": 2,
+      "start_ms": 50,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_03.png",
+      "frame_one_based": 3,
+      "start_ms": 100,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_04.png",
+      "frame_one_based": 4,
+      "start_ms": 150,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_05.png",
+      "frame_one_based": 5,
+      "start_ms": 200,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_06.png",
+      "frame_one_based": 6,
+      "start_ms": 250,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_07.png",
+      "frame_one_based": 7,
+      "start_ms": 300,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_08.png",
+      "frame_one_based": 8,
+      "start_ms": 350,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_09.png",
+      "frame_one_based": 9,
+      "start_ms": 400,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_10.png",
+      "frame_one_based": 10,
+      "start_ms": 450,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_11.png",
+      "frame_one_based": 11,
+      "start_ms": 500,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_12.png",
+      "frame_one_based": 12,
+      "start_ms": 550,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_13.png",
+      "frame_one_based": 13,
+      "start_ms": 600,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_14.png",
+      "frame_one_based": 14,
+      "start_ms": 650,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_15.png",
+      "frame_one_based": 15,
+      "start_ms": 700,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_frames/frame_16.png",
+      "frame_one_based": 16,
+      "start_ms": 750,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_03_dissipation_threequarter.png",
+      "frame_one_based": 11,
+      "start_ms": 500,
+      "mode": "main",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        57.99999999999999,
+        44.00000000000001,
+        165
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.32,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_04_strength_comparison.png",
+      "frame_one_based": 5,
+      "start_ms": 200,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        40,
+        199.99999999999991
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_01.png",
+      "frame_one_based": 1,
+      "start_ms": 0,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_02.png",
+      "frame_one_based": 2,
+      "start_ms": 50,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_03.png",
+      "frame_one_based": 3,
+      "start_ms": 100,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_04.png",
+      "frame_one_based": 4,
+      "start_ms": 150,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_05.png",
+      "frame_one_based": 5,
+      "start_ms": 200,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_06.png",
+      "frame_one_based": 6,
+      "start_ms": 250,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_07.png",
+      "frame_one_based": 7,
+      "start_ms": 300,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_08.png",
+      "frame_one_based": 8,
+      "start_ms": 350,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_09.png",
+      "frame_one_based": 9,
+      "start_ms": 400,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_10.png",
+      "frame_one_based": 10,
+      "start_ms": 450,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_11.png",
+      "frame_one_based": 11,
+      "start_ms": 500,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_12.png",
+      "frame_one_based": 12,
+      "start_ms": 550,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_13.png",
+      "frame_one_based": 13,
+      "start_ms": 600,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_14.png",
+      "frame_one_based": 14,
+      "start_ms": 650,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_15.png",
+      "frame_one_based": 15,
+      "start_ms": 700,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "strength_frames/frame_16.png",
+      "frame_one_based": 16,
+      "start_ms": 750,
+      "mode": "strength",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        0,
+        39.99999999999999,
+        199.9999999999999
+      ],
+      "camera_target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.2,
+      "document_visibility": "hidden",
+      "plane_camera_facing": true,
+      "camera_bias_blocks": 0.2
+    },
+    {
+      "file": "gui_02_frozen_side_depth.png",
+      "frame_one_based": 5,
+      "start_ms": 200,
+      "mode": "depth",
+      "project_uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "source": "native desktop Preview.selected.screenshot WebGL",
+      "camera_position": [
+        68,
+        38.99999999999999,
+        45
+      ],
+      "camera_target": [
+        -20,
+        16,
+        1.8
+      ],
+      "zoom": 0.4,
+      "document_visibility": "hidden",
+      "plane_camera_facing": false,
+      "camera_bias_blocks": 0.2
+    }
+  ],
+  "frame_duration_ms": 50,
+  "frame_count": 16,
+  "effect_duration_ms": 800,
+  "preview_pause_ms": 600,
+  "material": {
+    "SHADE": false,
+    "EMISSIVE": false,
+    "depthWrite": false,
+    "depthTest": true,
+    "transparent": true,
+    "renderOrder": 10
+  },
+  "saved_frame_one_based": 5,
+  "candidate_only": true
+}

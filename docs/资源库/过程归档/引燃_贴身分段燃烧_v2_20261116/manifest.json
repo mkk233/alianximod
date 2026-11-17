@@ -1,0 +1,583 @@
+{
+  "schema_version": 1,
+  "status": "candidate_pending_user_confirmation",
+  "version": "fire_kindle_v2_20261116",
+  "batchId": "待制作-20261031",
+  "taskId": "fire_kindle_v2_art",
+  "attemptId": "20261116-art-kindle-01",
+  "attribution_correction": {
+    "attemptId": "20261116-art-kindle-attribution-02",
+    "taskId": "fire_kindle_v2_art",
+    "scope": "Documentation attribution only: main-session dispatch constraints summarize prior user decisions and are not verbatim user words or new-version approval",
+    "media_parameters_snapshot_status_unchanged": true,
+    "formal_review": false
+  },
+  "author_observed_id": "01a1e08a-817e-7b60-b465-7a8baaca1f4b",
+  "author_id_source": "CODEX_THREAD_ID",
+  "parent": "Current multi_agent_v1 dispatching main conversation; UUID not exposed",
+  "requested_art_model": "gpt-6-astra",
+  "requested_reasoning_effort": "max",
+  "served_model": "not independently exposed",
+  "fallback_basis": "D:/alianximod/docs/开发记录/术式批量制作/待制作-20261031/记录.md:408; prior Carbon and Argon Unknown model, task authorized reuse",
+  "completed_on_Asia_Shanghai": "2026-11-16",
+  "review_budget": {
+    "design": "2/2",
+    "implementation": "3/3",
+    "statement": "本阶段额度已用完，返修结果未追加复审"
+  },
+  "workbook": {
+    "path": "D:/alianximod/docs/术式制作表.xlsx",
+    "bytes": 180549,
+    "sheet": "制作中",
+    "row": 8,
+    "cells": [
+      "B8",
+      "N8",
+      "O8",
+      "DV8"
+    ],
+    "sha256_before": "1906BAABEBC490567AD9CDBAC250B17D2472264C2FB9E22BE97E264EF9175E54",
+    "sha256_after": "1906BAABEBC490567AD9CDBAC250B17D2472264C2FB9E22BE97E264EF9175E54",
+    "modified": false,
+    "recalculated": false
+  },
+  "approved_runtime_v1_untouched": {
+    "sha256": "2490F9E2D5A8914D9A1B7080E40DD4FB0FB9188C8AA64951A88F34389F853E73",
+    "paths": [
+      "D:/alianximod/docs/资源库/特效/火焰/引燃_v1/kindle-strip.png",
+      "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/kindle_v1/kindle.png"
+    ]
+  },
+  "visual_contract": {
+    "camera_facing": "CAMERA_PLANE",
+    "combined_hit_visible": true,
+    "texture_size": [
+      48,
+      1216
+    ],
+    "frame_size": [
+      48,
+      64
+    ],
+    "frame_count": 19,
+    "frame_ms": 50,
+    "source_layers": 5,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "groups_1based": {
+      "sustain": [
+        1,
+        10
+      ],
+      "pulse": [
+        11,
+        13
+      ],
+      "extinguish": [
+        14,
+        19
+      ]
+    },
+    "demo_ms": 2300,
+    "demo_is_gameplay_duration": false,
+    "gameplay_pulse_default_ticks": 10,
+    "plane_blocks": [
+      1.35,
+      1.8
+    ],
+    "model_units_per_block": 16,
+    "bbox_blocks": [
+      0.6,
+      1.8,
+      0.6
+    ],
+    "front_plane_z_units": 5.44,
+    "bbox_front_z_units": 4.8,
+    "bbox_clearance_blocks": 0.04,
+    "normal_vertex_rgb": [
+      255,
+      255,
+      255
+    ],
+    "gloom_vertex_rgb": [
+      90,
+      160,
+      255
+    ],
+    "gloom_mode": "same colored texture multiplied by existing tint; no palette substitution",
+    "runtime_candidate_texture": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_strip.png",
+    "diagnostic_only_texture": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_luminance_strip.png"
+  },
+  "tools": {
+    "aseprite": {
+      "version": "1.3.17",
+      "backend": "MCP batch",
+      "live_connected": false
+    },
+    "blockbench": {
+      "version": "5.2.2",
+      "plugin_version": "1.10.1",
+      "environment": "desktop",
+      "original_project": "41e5bed5-092c-5649-685e-72cee9618239",
+      "reopened_project": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "native_reopen": true,
+      "geometry_count": 22,
+      "groups": 3,
+      "textures": 2,
+      "view_source": "main connected native viewport, immediate WebGL render via Preview.selected.screenshot",
+      "document_visibility": "hidden",
+      "stale_app_screenshot_used": false,
+      "headless": false,
+      "desktop_control": false,
+      "continuous_3d_animation_recorded": false,
+      "real_3d_keyframe_sequence": true
+    }
+  },
+  "embedded_texture_verification": [
+    {
+      "name": "aux_mannequin_palette.png",
+      "path": null,
+      "width": 8,
+      "height": 8,
+      "embedded_sha256": "6C4405D145A63A4594794917263CF92ACEE5EA84E65B12C7FDA871902A543264",
+      "embedded_bytes": 144,
+      "embedded_rgba_sha256": "551A70C67FF734FE3605AA30A13A6DC93AAA11C2ED08829F6302C1826813BCA1",
+      "export_rgba_sha256": "551A70C67FF734FE3605AA30A13A6DC93AAA11C2ED08829F6302C1826813BCA1",
+      "same_rgba_pixels": true
+    },
+    {
+      "name": "kindle_v2_strip.png",
+      "path": null,
+      "width": 48,
+      "height": 1216,
+      "embedded_sha256": "EC2089774ECB0DC6E0888991DF6BEDD6D998C8F72E505FC028C17ADCC7AD0989",
+      "embedded_bytes": 15874,
+      "embedded_rgba_sha256": "B32068B721B32EEE10543F12A54132BE9CAAD26DD2018E108F4685C51CE85D17",
+      "export_rgba_sha256": "B32068B721B32EEE10543F12A54132BE9CAAD26DD2018E108F4685C51CE85D17",
+      "same_rgba_pixels": true
+    }
+  ],
+  "completion": {
+    "art_candidate_prepared": true,
+    "user_confirmation": false,
+    "forge_integration": false,
+    "compiled": false,
+    "game_started": false,
+    "game_tested": false,
+    "spreadsheet_written": false,
+    "shared_records_written": false,
+    "subagents_spawned": 0,
+    "writes_closed_on_final": true
+  },
+  "receipt": {
+    "path": "D:/alianximod/docs/开发记录/术式批量制作/待制作-20261031/kindle-v2-art-preview-20261116.md",
+    "bytes": 8085,
+    "sha256": "29646CFAFF3DFA14B8E631084CC933B7E1B950A2532946CE7628E33C46880024",
+    "status": "candidate_pending_user_confirmation"
+  },
+  "files": [
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/blockbench/fire_kindle_v2_candidate_preview.bbmodel",
+      "bytes": 36478,
+      "sha256": "FB2662BF19B839E7578DBE9CFAEA8796C54EF35F239F9C468540D53395BD9A68",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/evidence/gui-captures.json",
+      "bytes": 4844,
+      "sha256": "01C42C185CB519610EA5EB0DF0F0B075E7B346C818D640F57D52FBDD8D0AC868",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/evidence/reopen.json",
+      "bytes": 1037,
+      "sha256": "77344B17478CAAB065F0643DF37C0810D46E81248CF59A8B10FF923471A47B72",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_front_extinguish_F16.png",
+      "bytes": 18132,
+      "sha256": "BF182066C34B2DADC2C75D03BB78B3550C059470E279C8A9D89A0F5771645745",
+      "width": 900,
+      "height": 700,
+      "frames": 1,
+      "alpha_binary": false,
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_front_off_F19.png",
+      "bytes": 15867,
+      "sha256": "9801A890C63AEDF1F42FCE915A2EB87C94591C41A5290AFD285DA19FF2FB007F",
+      "width": 900,
+      "height": 700,
+      "frames": 1,
+      "alpha_binary": false,
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_front_pulse.png",
+      "bytes": 20875,
+      "sha256": "82E461126F2FAB76778403C85910B207279C4F779D5FC330D261D36E2DDEEAAD",
+      "width": 900,
+      "height": 700,
+      "frames": 1,
+      "alpha_binary": false,
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_oblique_sustain.png",
+      "bytes": 46961,
+      "sha256": "389DF864B69DF780831AC79C0C072B18A74BD915A9570E2BDFE46D8EE6D961AD",
+      "width": 900,
+      "height": 700,
+      "frames": 1,
+      "alpha_binary": false,
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_reopened_front.png",
+      "bytes": 20875,
+      "sha256": "82E461126F2FAB76778403C85910B207279C4F779D5FC330D261D36E2DDEEAAD",
+      "width": 900,
+      "height": 700,
+      "frames": 1,
+      "alpha_binary": false,
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/gui_side_distance_frozen_plane.png",
+      "bytes": 36496,
+      "sha256": "F8483B710EACFF535EE3B2EF2AF3AAD35DBA7CEBECF163B6D6DB8CDC0257484E",
+      "width": 900,
+      "height": 700,
+      "frames": 1,
+      "alpha_binary": false,
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/kindle_v2_keyframes.png",
+      "bytes": 12971,
+      "sha256": "A67AD6C615CC2BC84CBD648E2756690F0652102C2D35F000FE1C3A68E0F1E3CB",
+      "width": 960,
+      "height": 648,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/kindle_v2_target_demo.gif",
+      "bytes": 130728,
+      "sha256": "B7BC1E27EA225F15A65B48B0C528215B48EA34DFCD9C07F20C82517536D65E0A",
+      "width": 640,
+      "height": 400,
+      "frames": 46,
+      "durations_ms": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "total_duration_ms": 2300,
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/kindle_v2_target_pulse.png",
+      "bytes": 4415,
+      "sha256": "4A229A56FD8301289A4A131E8667B1A1DCC828A21E688222FC6324E606668285",
+      "width": 480,
+      "height": 516,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/kindle_v2_target_sustain.png",
+      "bytes": 4314,
+      "sha256": "2299B83AEAFE03F69A1580C6F3C187A208C45EF0BD07D514A947D5DDAAD74A6B",
+      "width": 480,
+      "height": 516,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/previews/kindle_v2_tint_comparison.png",
+      "bytes": 5819,
+      "sha256": "528F46E873AC8D102D814367A96D57D9026AB7CD5ED70F52E8B38CB60FEC0546",
+      "width": 640,
+      "height": 400,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/request-addendum.md",
+      "bytes": 1791,
+      "sha256": "2A329D894C3CF40356879778325CF8342F9263C94EFBCCB11CC2EE828D3954F8",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/requirements-snapshot.json",
+      "bytes": 4509,
+      "sha256": "98F6D3F7EDB6D53BF524F75E38098C95DEFA7926B354BBAB4DDB587965D39020",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/scripts/build_scene.js",
+      "bytes": 3548,
+      "sha256": "5B9B326DBBCE612F0360D8714F3A3BA178505742AF107C582B4FA404E94127AC",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/scripts/create_kindle.lua",
+      "bytes": 9168,
+      "sha256": "DC6560AB75A4DCED719D96525376647399CB408617DF8CF64F68D037E3684125",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/scripts/extract_requirements.py",
+      "bytes": 2515,
+      "sha256": "BC1525A14318A8783A06110EFFCF33078E02B100CFC4B347BB9990734DCEDBD6",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/scripts/inspect_assets.py",
+      "bytes": 2222,
+      "sha256": "F2166EC13A0C18247C87965836F2FF620C9428D3DCF8C2D99CF4038122F6A1C5",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/scripts/render_gui.js",
+      "bytes": 3549,
+      "sha256": "99E8D8776445983CF4E551A942F90640795BFADE384A64055BD478687516E200",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/source/kindle_v2.aseprite",
+      "bytes": 16205,
+      "sha256": "DFC94355529B24120105BF093166EC22EC560B9E6C59B404127A971DDF1EBC05",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/source/kindle_v2_target_review.aseprite",
+      "bytes": 55178,
+      "sha256": "A18E78014EE6E017D26D99432C65495545380FFEA6B5E160D1782550773C5C48",
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/aux_mannequin_palette.png",
+      "bytes": 105,
+      "sha256": "A90C6E31330B02ACBC50C2C26AB85EB1BF2A443B6810A4171450DE6511600F8B",
+      "width": 8,
+      "height": 8,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_01.png",
+      "bytes": 795,
+      "sha256": "FE8D6C70CD9F42960A8D1980BEA56F458E0772AD139AA82529DB363F7B32A05B",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_06.png",
+      "bytes": 874,
+      "sha256": "189D758573DE12D1C3BE991AF2D88885009CA12A71209704E4BAD1693A714C8A",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_11.png",
+      "bytes": 962,
+      "sha256": "98D241CA8E43748D32DBF44269C19873A44E89AF9FAF1D21F348495E0A759A7B",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_13.png",
+      "bytes": 1007,
+      "sha256": "094A9B09F8F58FB52C3ABC5FEFD298B779723BF519D76604F246714512DEFD71",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_14.png",
+      "bytes": 737,
+      "sha256": "C6C6CCF3AEA65D9D42CF63BB8CD4768EEDEC5FCDC4A0123F44711AD8599EEFAA",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_16.png",
+      "bytes": 376,
+      "sha256": "FE39AD732C74064E8179DCCAD7BBA8394732E3B97DFF4E789949C97A653C7A3F",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_18.png",
+      "bytes": 147,
+      "sha256": "A729CA191992374CEAFF1AC1E8770C130898AEB96F7CC1911AA89F46F9CEEA36",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_frame_19.png",
+      "bytes": 91,
+      "sha256": "05E6C9A63DD318AE7B1444774BB175EE666390D40A2401FB0EEA02650CD4CA50",
+      "width": 48,
+      "height": 64,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_luminance_strip.png",
+      "bytes": 7683,
+      "sha256": "DA3AB03340FDEBCDA3EDA39DB0B0B85FB9FCC2BCB42BE4AEF98AFC124658EA3A",
+      "width": 48,
+      "height": 1216,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/textures/kindle_v2_strip.png",
+      "bytes": 7610,
+      "sha256": "662675B80EF5A676C37D93DEA9DC618783D05FC8F32E006800BC0B2E2D1A1A97",
+      "width": 48,
+      "height": 1216,
+      "frames": 1,
+      "alpha_binary": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "candidate_pending_user_confirmation"
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/visual-handoff.md",
+      "bytes": 11550,
+      "sha256": "145316DD0B2486C764708F8A33B7CEFBF66C9B3C5D9175C0DD20B52E1FA5DE8C",
+      "status": "candidate_pending_user_confirmation"
+    }
+  ],
+  "hash_scope": "SHA256 over file bytes. This manifest excludes its own hash. Blockbench re-encodes embedded PNG; decoded RGBA equality verified separately."
+}

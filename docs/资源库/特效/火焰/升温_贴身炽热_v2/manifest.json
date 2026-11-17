@@ -1,0 +1,38 @@
+[
+  {
+    "file": "heat_up-v2.aseprite",
+    "source": "D:/alianximod/docs/资源库/过程归档/炉心升温燃烧_重设计_v2-20261031/heat_up-v2.aseprite",
+    "sha256": "8ffc2ac64e39150e763d34051418f915574fd38af00dfc6fd5e611062cc6d501",
+    "bytes": 34503
+  },
+  {
+    "file": "heat_up-v2-strip.png",
+    "source": "D:/alianximod/docs/资源库/过程归档/炉心升温燃烧_重设计_v2-20261031/heat_up-v2-strip.png",
+    "sha256": "47a977095c1254f74af064e73c016549c3051a69d99099139358aa6ed8c23242",
+    "bytes": 26019
+  },
+  {
+    "file": "heat_up-v2-back-strip.png",
+    "source": "D:/alianximod/docs/资源库/过程归档/炉心升温燃烧_重设计_v2-20261031/heat_up-v2-back-strip.png",
+    "sha256": "ea4b6f94c3ab09dba7492d89b656f709511e3374bb1ad05b1daef1322d159c78",
+    "bytes": 17994
+  },
+  {
+    "file": "heat_up-v2-front-strip.png",
+    "source": "D:/alianximod/docs/资源库/过程归档/炉心升温燃烧_重设计_v2-20261031/heat_up-v2-front-strip.png",
+    "sha256": "31164440b0c2b9e8a20a3b8a9b4cf1886a91fc32fb1db2ef4eab965daab15bb7",
+    "bytes": 10407
+  },
+  {
+    "file": "heat_up-v2-entry.aseprite",
+    "source": "D:/alianximod/docs/资源库/过程归档/炉心升温燃烧_重设计_v2-20261031/heat_up-v2-entry.aseprite",
+    "sha256": "aa5f52787c2a2e151f7d0452b80d341181deef61045f2593b8a7a987cba6a91b",
+    "bytes": 12044
+  },
+  {
+    "file": "heat_up-v2-entry-strip.png",
+    "source": "D:/alianximod/docs/资源库/过程归档/炉心升温燃烧_重设计_v2-20261031/heat_up-v2-entry-strip.png",
+    "sha256": "e47153020b021fd04dcd4ba6e7753cade6a13771185cf80a7edf0685ec877619",
+    "bytes": 8752
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "submitted": false,
+  "baselineSha256": "EB3E24375BC4198F11C122E99523431C8B79BB9E32849E414C5913116AC2A7CA",
+  "baselineMtime": "2026-10-30T01:02:30.653+08:00",
+  "baselineBytes": 165870,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\liaoli-hit-seed-术式制作表-20261030-012916-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\liaoli-hit-seed-candidate-preserved.xlsx",
+  "candidateSha256": "ECE5C0FAFAF440A70481463AC790F0E03BF83B33433AFF2A2495E78108EF78D3",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 2
+  },
+  "from": {
+    "sheet": "待验收",
+    "row": 5
+  },
+  "to": {
+    "sheet": "制作中",
+    "row": 6
+  }
+}

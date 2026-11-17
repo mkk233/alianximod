@@ -1,0 +1,31 @@
+{
+  "liveEqualsCandidate": true,
+  "sha256": "2F354F20D8F3A001F95908DAB4F83856C2E76E5056ACA411DD1ACFDDFDC2E6E4",
+  "bytes": 181771,
+  "mtime": "2026-10-30T20:10:55.444+08:00",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 3
+  },
+  "unique": 60,
+  "total": 60,
+  "name": "灼地",
+  "id": "fire_scorch_field",
+  "levelCap": "20",
+  "complexity": "0",
+  "damage": "1",
+  "cooldown": "30",
+  "costEmpty": true,
+  "dvKept": true,
+  "archiveLevelEmpty": true,
+  "archiveUntouched": true,
+  "otherSheetsUntouched": true,
+  "makingOrder": [
+    "fire_heat_up",
+    "fire_burn",
+    "fire_cool",
+    "fire_scorch_field"
+  ]
+}

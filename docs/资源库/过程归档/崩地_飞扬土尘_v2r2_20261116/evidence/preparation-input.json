@@ -1,0 +1,191 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "earth_break_ground_v2_art_preview",
+  "attemptId": "20261116-record-ground-v2-preparation-01",
+  "capturedOn": "2026-11-16",
+  "parentSession": "01a1ce06-b681-7c90-b11d-260d3c169911",
+  "recorder": "01a1e08b-09e0-7bb3-b2ce-d5e430f241ac",
+  "workbook": {
+    "path": "docs/术式制作表.xlsx",
+    "sha256": "87F22C7DCE22FD0AB83F219C1D18938AF381D2286C106A62CEBCA1A6A56E9C75",
+    "bytes": 190802,
+    "mtime": "2026-11-16 21:22:44.657",
+    "exclusiveReadLockFree": true,
+    "zipEntries": 27,
+    "countsBySheetFile": {
+      "sheet1": 37,
+      "sheet2": 0,
+      "sheet3": 21,
+      "sheet4": 20
+    },
+    "statusCounts": {
+      "已完成": 37,
+      "待制作": 0,
+      "制作中": 21,
+      "待验收": 20
+    },
+    "total": 78,
+    "uniqueB": 78
+  },
+  "location": {
+    "sheetFile": "sheet3",
+    "sheet": "制作中",
+    "row": 11,
+    "migrated": false
+  },
+  "fields": [
+    {
+      "column": "A",
+      "group": "术式",
+      "header": "名称",
+      "value": "崩地"
+    },
+    {
+      "column": "B",
+      "group": "",
+      "header": "编号",
+      "value": "earth_break_ground"
+    },
+    {
+      "column": "C",
+      "group": "",
+      "header": "类型",
+      "value": "附魔"
+    },
+    {
+      "column": "D",
+      "group": "",
+      "header": "属性",
+      "value": "土"
+    },
+    {
+      "column": "F",
+      "group": "",
+      "header": "基础冷却tick",
+      "value": "5"
+    },
+    {
+      "column": "G",
+      "group": "",
+      "header": "等级上限",
+      "value": "20"
+    },
+    {
+      "column": "H",
+      "group": "",
+      "header": "复杂度",
+      "value": "3"
+    },
+    {
+      "column": "J",
+      "group": "",
+      "header": "附魔",
+      "value": "是"
+    },
+    {
+      "column": "K",
+      "group": "",
+      "header": "装配消耗",
+      "value": "2"
+    },
+    {
+      "column": "L",
+      "group": "",
+      "header": "登记魔力",
+      "value": "2"
+    },
+    {
+      "column": "N",
+      "group": "",
+      "header": "功能描述",
+      "value": "让适用攻击在有效地形碰撞时执行一次方块破坏，形成撞击坑。不额外生成生物伤害，不通过世界爆炸再补一轮伤害。遵守服务器统一的术式地形破坏开关和不可破坏方块规则。附在陨岩上时，每颗实际陨岩只执行一次；先撞空中实体的残骸，等真正接地后再执行。没有装崩地的陨岩仍有中心攻击和方块残留，但不挖坑。关闭统一开关后停止破坏已有方块，不关闭陨岩本体、命中接续、伤害或陨石残留。开关首版默认开启。两轮生物判定不在挖坑之后扩大到原本被挡住的目标。地形修改是土属性效果，其他属性术式仍可拼接使用。"
+    },
+    {
+      "column": "O",
+      "group": "",
+      "header": "特效",
+      "value": "撞击处出现一次坑，不另起爆炸，也不额外打出一轮伤害。"
+    },
+    {
+      "column": "P",
+      "group": "释放",
+      "header": "释放种类",
+      "value": "规则"
+    },
+    {
+      "column": "Q",
+      "group": "",
+      "header": "释放标签",
+      "value": "触发"
+    },
+    {
+      "column": "R",
+      "group": "",
+      "header": "弹道",
+      "value": ""
+    },
+    {
+      "column": "S",
+      "group": "",
+      "header": "链上角色",
+      "value": ""
+    },
+    {
+      "column": "AB",
+      "group": "",
+      "header": "必须手持剑",
+      "value": "否"
+    },
+    {
+      "column": "DV",
+      "group": "备注",
+      "header": "备注",
+      "value": "坑形、基础半径、深度，以及和通用体积增幅的关系都未定，数值格留空。统一开关以后要核对既有术式是否都接入，本行不假装已经接通所有旧术式。本次录入2026-10-29。来源docs/火属性基础术式与组合设计.md，并按用户最新决定替换魂焰、采用共享燃料。只进入待制作，尚未领取，不开始实现。魔力、冷却、复杂度、装配消耗、等级上限和等级成长未定，对应数值格留空，不用0代替。\n[设计反馈 2026-10-31] 已领取。首版数值和链上角色仍有待定，正在核对底座，视觉待预览确认。具体未定项参照本项原文。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[设计反馈 2026-10-31] 已采用首版参数。见 docs/开发记录/术式批量制作/待制作-20261031/approved-v1.md。用户暂用二维原话：先保留这个版本，额度不够用了暂时，之后再重置，暂时直接按照这个版本执行。这不是新的正式复审，设计仍为2/2，实现仍为0/3，也不是游戏实测通过。单术战斗成长为0，没有成长专列。基础法杖保持6槽；32槽测试法杖是公共物品，不在本行。魔力2，冷却5，复杂度3，装配消耗2，等级上限20。浅碗半径2、深度2、最多32块。链上角色不适用：附魔按所属段绑定。只有土尘，没有坑形贴图。资源：docs/资源库/特效/大地/崩地_v1/ground_dust-strip.png，建议运行时 assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[阶段 2026-10-31] 实现与确认v1资源已接入。正式复审累计设计2/2、实现3/3，额度已用完，不能自动再审。待统一编译：本仓开发客户端和runClient仍占用Gradle，GradleDaemon PID 12896，Forge客户端 PID 45212。compileJava没有执行。这不是编译器报错，也不是编译通过。关闭该开发客户端并结束对应runClient后，重新核对源码再编译；编译成功后才按规则迁待验收。证据 docs/开发记录/术式批量制作/待制作-20261031/final-compile-report.md。记录 docs/开发记录/术式批量制作/待制作-20261031/记录.md。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md"
+    },
+    {
+      "column": "EK",
+      "group": "",
+      "header": "结算约束",
+      "value": ""
+    }
+  ],
+  "n": "让适用攻击在有效地形碰撞时执行一次方块破坏，形成撞击坑。不额外生成生物伤害，不通过世界爆炸再补一轮伤害。遵守服务器统一的术式地形破坏开关和不可破坏方块规则。附在陨岩上时，每颗实际陨岩只执行一次；先撞空中实体的残骸，等真正接地后再执行。没有装崩地的陨岩仍有中心攻击和方块残留，但不挖坑。关闭统一开关后停止破坏已有方块，不关闭陨岩本体、命中接续、伤害或陨石残留。开关首版默认开启。两轮生物判定不在挖坑之后扩大到原本被挡住的目标。地形修改是土属性效果，其他属性术式仍可拼接使用。",
+  "o": "撞击处出现一次坑，不另起爆炸，也不额外打出一轮伤害。",
+  "dv": "坑形、基础半径、深度，以及和通用体积增幅的关系都未定，数值格留空。统一开关以后要核对既有术式是否都接入，本行不假装已经接通所有旧术式。本次录入2026-10-29。来源docs/火属性基础术式与组合设计.md，并按用户最新决定替换魂焰、采用共享燃料。只进入待制作，尚未领取，不开始实现。魔力、冷却、复杂度、装配消耗、等级上限和等级成长未定，对应数值格留空，不用0代替。\n[设计反馈 2026-10-31] 已领取。首版数值和链上角色仍有待定，正在核对底座，视觉待预览确认。具体未定项参照本项原文。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[设计反馈 2026-10-31] 已采用首版参数。见 docs/开发记录/术式批量制作/待制作-20261031/approved-v1.md。用户暂用二维原话：先保留这个版本，额度不够用了暂时，之后再重置，暂时直接按照这个版本执行。这不是新的正式复审，设计仍为2/2，实现仍为0/3，也不是游戏实测通过。单术战斗成长为0，没有成长专列。基础法杖保持6槽；32槽测试法杖是公共物品，不在本行。魔力2，冷却5，复杂度3，装配消耗2，等级上限20。浅碗半径2、深度2、最多32块。链上角色不适用：附魔按所属段绑定。只有土尘，没有坑形贴图。资源：docs/资源库/特效/大地/崩地_v1/ground_dust-strip.png，建议运行时 assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[阶段 2026-10-31] 实现与确认v1资源已接入。正式复审累计设计2/2、实现3/3，额度已用完，不能自动再审。待统一编译：本仓开发客户端和runClient仍占用Gradle，GradleDaemon PID 12896，Forge客户端 PID 45212。compileJava没有执行。这不是编译器报错，也不是编译通过。关闭该开发客户端并结束对应runClient后，重新核对源码再编译；编译成功后才按规则迁待验收。证据 docs/开发记录/术式批量制作/待制作-20261031/final-compile-report.md。记录 docs/开发记录/术式批量制作/待制作-20261031/记录.md。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md",
+  "text": {
+    "nChars": 236,
+    "nSha256": "47A9078AF2E686E9BC4C653C85CE3A9A39EF6D7ED18704FCE2A64F463B6F1176",
+    "oChars": 26,
+    "oSha256": "EBB5A0CF0E676AB7BB49439342079CA6BFCF8CB5EDE142CF9C1B5419B624CD37",
+    "dvChars": 1116,
+    "dvSha256": "15D06C6A8539A721F2EA28D75146009674B670A96B05954A7F1E2979DE567894"
+  },
+  "verbatimBoundary": "n、o、dv 与 fields 是现行单元格原文。receivedFacts 是父方已接收的只读事实，不是用户原话，也不替代 N/O/DV。",
+  "resourceDetailRows": [],
+  "receivedFacts": {
+    "userWordsThisRound": "下一个术式",
+    "reader": {
+      "agent": "Anscombe",
+      "id": "01a1e493-caad-7b40-b580-604e101a1815",
+      "closed": true,
+      "writes": 0
+    },
+    "notThisRound": ["薄水切", "断潮"],
+    "runtimeV1": {
+      "archive": "docs/资源库/特效/大地/崩地_v1/ground_dust-strip.png",
+      "runtime": "assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png",
+      "sameSha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+      "blockbench": false,
+      "runtimeTicks": 16,
+      "runtimeSeconds": 0.8,
+      "aseprite": "16x80ms=1.28s",
+      "halfSpan": 1.25,
+      "anchor": "方块中心",
+      "facing": "DUST CAMERA_PLANE",
+      "lighting": "世界光照"
+    },
+    "shapeObservation": "BreakGroundShape(r²≤4、d0..2、2d≤4-r²)实际23块，cap32；半径2，向下偏移2，含撞击层共3层。这是现状登记，不是设计改动。",
+    "playbackGap": "当前仅 BatchMeteorLanding 50-58、MeteoriteWreckageEntity 256-266 在 breakExistingOnce EXECUTED 后播放。未找到普通攻击碰撞通路。只登记缺口，不作为新的正确性复审，也不修功能。",
+    "indexNote": "资源库总 README 对崩地仍写尚未复制，已过时。本轮不改共享索引，等候选收尾再同步。"
+  }
+}

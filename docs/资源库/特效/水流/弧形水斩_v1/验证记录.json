@@ -1,0 +1,49 @@
+{
+  "Strip": "64x1024",
+  "Frame": "64x64",
+  "UniqueFrames": 16,
+  "AlphaValues": [
+    0,
+    255
+  ],
+  "ActionDurationMs": 800,
+  "PreviewDurationMs": 1200,
+  "OpaquePixelsPerFrame": [
+    6,
+    15,
+    37,
+    106,
+    226,
+    376,
+    483,
+    406,
+    343,
+    275,
+    156,
+    94,
+    60,
+    25,
+    10,
+    0
+  ],
+  "FrameEdgePixels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "FinalFrameTransparent": true,
+  "GameTested": false
+}

@@ -1,0 +1,27 @@
+{
+  "submitted": true,
+  "from": {"sheet": "制作中", "row": 6, "id": "fire_liaoyuan", "name": "燎原"},
+  "to": {"sheet": "待验收", "row": 5, "id": "fire_liaoyuan", "name": "燎原"},
+  "baselineSha256": "FEFBC4B30087C08C6E8B9B6C482FEEEBC8DB6F6F3E65F6B88117E4D3D630C070",
+  "baselineMtime": "2026-10-29 23:09:37.059",
+  "baselineBytes": 167294,
+  "sha256": "FF2D4227625B4C1E19ADD49BC34BFCFD6B9CA98F0C8D221FF6AA98AB0B75E0E8",
+  "mtime": "2026-10-29 23:31:50.212",
+  "bytes": 164515,
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoyuan-visual-writeback-resume-术式制作表-20261029-233150-1.xlsx",
+  "candidate": "docs/开发记录/术式批量制作/火系六式-20261029/liaoyuan-visual-writeback-candidate-preserved.xlsx",
+  "reopen": {
+    "counts": {"已完成": 40, "待制作": 13, "制作中": 3, "待验收": 3},
+    "unique": 59,
+    "duplicates": [],
+    "makingHasLiaoyuan": false,
+    "pendingQueuedKept": true,
+    "nMatchesSnapshot": true,
+    "oMatchesSnapshot": true,
+    "dvPrefixKept": true,
+    "differentParts": ["xl/worksheets/sheet3.xml", "xl/worksheets/sheet4.xml"]
+  },
+  "movedToCompleted": false,
+  "playtestPassed": false,
+  "quota": "设计2/2、实现3/3承接。本阶段额度已用完，返修结果未追加复审。"
+}

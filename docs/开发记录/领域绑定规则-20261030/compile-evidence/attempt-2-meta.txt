@@ -1,0 +1,14 @@
+index=2
+launched=true
+start=2026-10-30T13:49:55.4584153+08:00
+cwd=D:\alianximod
+command=.\gradlew.bat compileJava --offline --no-daemon
+JAVA_HOME=C:\Program Files\Java\jdk-17
+GRADLE_USER_HOME=C:\Users\baishang\.gradle
+java_on_path=C:\Program Files\Common Files\Oracle\Java\javapath\java.exe
+end=2026-10-30T13:50:23.5243287+08:00
+gradle_exit=0
+build_successful=True
+build_failed=False
+compileJava_up_to_date=False
+compileJava_task_line=True

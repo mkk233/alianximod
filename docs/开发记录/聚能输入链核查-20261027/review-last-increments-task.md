@@ -1,0 +1,5 @@
+继续独立Grok4.7增量复核，仅审最后两个明确补丁。前轮资格工厂已经通过逻辑审查，唯菜单换手绕过未通过；现在已修。源代码写入阶段全部结束。
+1. 菜单：读取menu-guard-report.md，对照before/src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyMenu.java与当前，只应在staff==false会话的rejectReason/writeGear直接拒绝/跳过MAGIC，不再依赖当前手allowsMagic。验证换主手不能绕过，staff法杖分支及其他类型兼容未变。无需再通读物品canonical getter，前轮已确认按id读新注册类型。
+2. chainEnergyBefore：读取boundary-report.md，对照before-boundary/下SkillChainPlan和RouteReleaseInputCheck与当前。GPT-6-astra裁决旧正伤边界会让聚能跨过零伤领域/护体，必须按非附魔+定义HIT_VOLUME+role ATTACK为释放边界；sharesDualRelease例外保留continue，否则break。资格和边界分开，NONE/剑术本身不能消费但必须挡住更后元素，RULE聚能源和ACTION宿主不误截断；不扩改其他扫描器/份数/附魔。
+已运行真实生产RouteReleaseInputCheck 68断言0失败（check-route-boundary.log），覆盖零伤水环→雾雨2/1、正伤→雾雨2/1、NONE和SWORD挡后续、分别聚能2/2、两条聚能4、动作宿主穿过、双重两名共享2且组外不继承。核实断言确实验证生产语义、没有造假正伤容器。源码已离线编译过，菜单补丁后另组还会最后统一编译；没有游戏/菜单实际运行，不能说实测通过。
+只输出PASS或真实可复现缺陷路径行号/触发/最小修正。不要重做其他已通过模块审查，不运行Gradle/游戏，不写代码，不调度其他代理。无属性资格按原用户只对元素口径已确定不纳入，不存在待回答阻塞。

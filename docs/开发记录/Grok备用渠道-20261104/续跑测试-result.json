@@ -1,0 +1,28 @@
+{
+  "text": "只读打开指定文档，核对第一行标题。RESUME_OK | # 已核实输入 | GROK_FALLBACK_CONNECTION_OK",
+  "stopReason": "end_turn",
+  "sessionId": "4ef76331-d1d2-4b5f-aea8-8a575106d7d2",
+  "requestId": "54a1b3aa-b73f-4c04-9ad4-c8328fec94a3",
+  "cwd": "D:\\alianximod",
+  "usage": {
+    "input_tokens": 907,
+    "cache_read_input_tokens": 20224,
+    "cache_creation_input_tokens": 0,
+    "output_tokens": 225,
+    "reasoning_tokens": 155,
+    "total_tokens": 21356
+  },
+  "num_turns": 2,
+  "total_cost_usd": 0.00902768,
+  "total_cost_usd_ticks": 90276800,
+  "modelUsage": {
+    "grok-4.7-build-fast": {
+      "inputTokens": 907,
+      "outputTokens": 225,
+      "cacheReadInputTokens": 20224,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 2,
+      "costUSD": 0.00902768
+    }
+  }
+}

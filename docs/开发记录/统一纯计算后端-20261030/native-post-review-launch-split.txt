@@ -1,0 +1,15 @@
+entry=powershell -NoProfile -File D:\alianximod\native\compute\build-windows.ps1 -JdkHome 'C:\Program Files\Java\jdk-17'
+cwd=D:\alianximod
+clean=false
+buildDir=existing native/compute/build
+startUtc=2026-10-30T09:30:17.4915008Z
+endUtc=2026-10-30T09:30:17.8978056Z
+exitCode=4
+dllBeforeUtc=2026-10-30T08:40:59.0017107Z
+dllBeforeLength=26112
+--- stdout ---
+[xueximod_compute] Offline Windows x64 build. No download, no PATH/JAVA_HOME change, no copy into the game.
+[xueximod_compute] ERROR 4: VsInstall does not exist: Files\Java\jdk-17
+
+--- stderr ---
+

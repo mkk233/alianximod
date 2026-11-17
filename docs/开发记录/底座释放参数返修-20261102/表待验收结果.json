@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "movedToPendingAcceptance": true,
+  "movedToCompleted": false,
+  "gameTested": false,
+  "formalReview": "本阶段额度已用完，返修结果未追加复审",
+  "writesStopped": true,
+  "liveSha256": "06A616FBF4484B38D101BE875D6F6D0293676052F0F65747E74893AD79C3B179",
+  "liveMtime": "2026-11-02T04:02:52.136+08:00",
+  "baselineSha256": "B3D518CFC659F77F8F4F28C12EF569AC99FC01CE804D0B3B7501B2BEBF4741C3",
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 13, "待验收": 7},
+  "uniqueIds": 60,
+  "moves": {
+    "fire_shock_ring": {"from": "制作中第16行", "to": "待验收第8行"},
+    "fire_meteorite": {"from": "制作中第17行", "to": "待验收第9行"}
+  },
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "startedAt": "2026-11-02T03:55:41.3293566+08:00",
+    "endedAt": "2026-11-02T03:56:10.1974142+08:00",
+    "exitCode": 0,
+    "compileJavaOutcome": "EXECUTED"
+  },
+  "beforeSnapshot": "docs/开发记录/底座释放参数返修-20261102/快照/待验收前-NODV-20261102-040245-1.json",
+  "fullColumnsSnapshot": "docs/开发记录/底座释放参数返修-20261102/快照/变更前-AEN-20261102-040245-1.json"
+}

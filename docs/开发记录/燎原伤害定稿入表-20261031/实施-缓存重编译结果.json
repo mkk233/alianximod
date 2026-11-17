@@ -1,0 +1,70 @@
+{
+  "role": "继续唯一编译会话",
+  "session": "92511917-765e-496c-8406-4dc2af4c4e0f",
+  "model": "grok-4.7-high-fast",
+  "formalReview": false,
+  "extraReview": false,
+  "gameTested": false,
+  "sheetWriteback": false,
+  "packaged": false,
+  "productionSourceModified": false,
+  "runtimeResourcesModified": false,
+  "gradleConfigModified": false,
+  "globalEnvironmentModified": false,
+  "result": "BUILD_SUCCESSFUL",
+  "exitCode": 0,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "startedAt": "2026-10-31 02:40:32.528",
+  "endedAt": "2026-10-31 02:40:58.358",
+  "elapsedSeconds": 25.831,
+  "gradleReported": "BUILD SUCCESSFUL in 25s",
+  "tasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "compileJava": "executed",
+  "javaCompileErrors": 0,
+  "removalDiagnostics": 34,
+  "processEnvironment": {
+    "inheritedGradleUserHome": "C:\\Users\\baishang\\AppData\\Local\\Temp\\cursor-sandbox-cache\\278a4f1df5c025fcfd4e31d57877b017\\gradle",
+    "inheritedGradleUserHomeExisted": false,
+    "effectiveGradleUserHome": "C:\\Users\\baishang\\.gradle",
+    "effectiveJavaHome": "C:\\Program Files\\Java\\jdk-17",
+    "javaVersion": "17.0.6+9-LTS-190",
+    "userProfile": "C:\\Users\\baishang",
+    "homeChanged": false,
+    "codexHomeChanged": false
+  },
+  "cacheEvidence": {
+    "distribution": "C:\\Users\\baishang\\.gradle\\wrapper\\dists\\gradle-8.8-bin\\dl7vupf4psengwqhwktix4v1\\gradle-8.8",
+    "distributionMarker": "C:\\Users\\baishang\\.gradle\\wrapper\\dists\\gradle-8.8-bin\\dl7vupf4psengwqhwktix4v1\\gradle-8.8-bin.zip.ok",
+    "pluginMarkerPom": "C:\\Users\\baishang\\.gradle\\caches\\modules-2\\files-2.1\\org.gradle.toolchains.foojay-resolver-convention\\org.gradle.toolchains.foojay-resolver-convention.gradle.plugin\\0.7.0\\8d0ef3ad49c56fe1a87be9bccf2bd27d204dcb70\\org.gradle.toolchains.foojay-resolver-convention.gradle.plugin-0.7.0.pom",
+    "pluginMarkerBytes": 715,
+    "implementationJar": "C:\\Users\\baishang\\.gradle\\caches\\modules-2\\files-2.1\\org.gradle.toolchains\\foojay-resolver\\0.7.0\\ed9c0364d25418b68e5b9af7a21f0aceca693fa\\foojay-resolver-0.7.0.jar",
+    "implementationJarBytes": 42276
+  },
+  "logs": {
+    "stdout": "docs/开发记录/燎原伤害定稿入表-20261031/实施-缓存重编译-gradle.stdout.log",
+    "stderr": "docs/开发记录/燎原伤害定稿入表-20261031/实施-缓存重编译-gradle.stderr.log"
+  },
+  "priorFailureReportKept": "docs/开发记录/燎原伤害定稿入表-20261031/实施-编译报告.md",
+  "freeze": {
+    "citedReport": "docs/开发记录/燎原伤害定稿入表-20261031/实施-编译报告.md",
+    "ownershipUnchangedSha256": "F5D4ABCF0973C3AE6ADF97B5471465EC44505609081EB15104CE9D98AD5C3237",
+    "coordinationUnchangedSha256": "1E5388C532B971EA01BBC3D7E125191403B9628F45409F0D934F661BC512A69D",
+    "checkedAt": "2026-10-31 02:40:32",
+    "newestSrc": "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+    "newestSrcWrite": "2026-10-31 02:27:19"
+  },
+  "srcMain": {
+    "preInventory": "docs/开发记录/燎原伤害定稿入表-20261031/实施-缓存重编译前src-main.json",
+    "postInventory": "docs/开发记录/燎原伤害定稿入表-20261031/实施-缓存重编译后src-main.json",
+    "preCapturedAt": "2026-10-31 02:40:32",
+    "postCapturedAt": "2026-10-31 02:41:14",
+    "preCount": 842,
+    "postCount": 842,
+    "added": 0,
+    "removed": 0,
+    "changed": 0,
+    "identical": true,
+    "coversLastRelatedWrites": true
+  }
+}

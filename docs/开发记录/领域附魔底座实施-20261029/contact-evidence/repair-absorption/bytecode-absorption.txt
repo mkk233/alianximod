@@ -1,0 +1,17 @@
+Forge 1.20.1-47.3.33 parchment recomp。只记录吸收写入，不改 setHealth 钩子。
+
+LivingEntity.actuallyHurt
+  偏移 56：invokevirtual #1066 LivingEntity.setAbsorptionAmount(F)V
+  这是 setHealth（偏移 147）和 onLivingDamage（偏移 121）之前的那一次。
+  偏移 157：同一 Methodref 的第二次，位于 setHealth 返回之后。
+  setAbsorptionAmount 本体：负数钳到 0，putfield absorptionAmount，随后 return。没有同步回调。
+
+Player.actuallyHurt
+  不调用 LivingEntity.actuallyHurt。
+  偏移 56：invokevirtual #1515 Player.setAbsorptionAmount(F)V
+  这是 onLivingDamage（偏移 62）和 setHealth（偏移 133）之前的唯一一次。
+  setAbsorptionAmount 本体：负数钳到 0，再 SynchedEntityData.set，随后 return。
+  getAbsorptionAmount 读的是 DATA_PLAYER_ABSORPTION_ID。
+
+比较发生在每一次 setAbsorptionAmount 返回之后，使用该次调用前刚读到的值。
+等值或变大不记。调用没有返回则没有 AFTER，不记。

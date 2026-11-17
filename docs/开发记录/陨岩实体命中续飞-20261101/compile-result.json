@@ -1,0 +1,59 @@
+{
+  "status": "compile_successful",
+  "session_id": "c944df97-5698-4cb3-ae72-8adf3edc9b0a",
+  "model": "grok-4.7-high-fast",
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "working_directory": "D:\\alianximod",
+  "environment": {
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "java_version": "17.0.6",
+    "gradle_jvmargs": "-Xmx3G",
+    "gradle_daemon": false,
+    "environment_persisted": false,
+    "empty_cache_used": false,
+    "build_files_changed": false
+  },
+  "gradle_busy_before": 0,
+  "compile_start": "2026-11-02T00:22:13.1682455+08:00",
+  "compile_end": "2026-11-02T00:22:49.4527498+08:00",
+  "exit_code": 0,
+  "build_successful": true,
+  "javac_executed": true,
+  "compileJava_up_to_date": false,
+  "tasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "executed_tasks": [":downloadMcpConfig", ":compileJava"],
+  "up_to_date_tasks": [":extractSrg", ":createMcpToSrg"],
+  "error_count": 0,
+  "warning_count": 40,
+  "warning_note": "40 条是既有弃用警告，控制台中文诊断乱码。没有来自本次陨岩改动文件的 error。",
+  "name_gate": {
+    "previous_shell_feedback": "Rejected:",
+    "previous_rejection_type": null,
+    "previous_rejection_reason": null,
+    "previous_commands": [
+      "powershell -NoProfile -File tools/check-name-gate.ps1",
+      "powershell -NoProfile -File tools/check-name-gate.ps1",
+      "echo name-gate-start",
+      "java -version",
+      "powershell -NoProfile -File tools/check-name-gate.ps1"
+    ],
+    "script_parameters": [],
+    "this_command": "& .\\tools\\check-name-gate.ps1",
+    "this_exit_code": 1,
+    "new_violations_in_changed_files": [],
+    "preexisting_untouched": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ],
+    "source_changed_for_gate": false
+  },
+  "untested": [
+    "游戏内命中实体后续飞",
+    "再次重叠不重复结算",
+    "直接撞地和未命中超时",
+    "撞块安放失败后的残骸重试",
+    "外观连续与区块卸载"
+  ],
+  "formal_review": "本次编译不是新增正式复审通过。原批设计 2/2、实现 3/3 仍耗尽。"
+}

@@ -1,0 +1,248 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "flame_trail_art_preview",
+  "attemptId": "20261113-v3-gemini-carbon",
+  "techniqueB": "fire_flame_trail",
+  "version": "v3",
+  "date": "2026-11-13",
+  "status": "draft_pending_user_confirmation",
+  "tools": {
+    "aseprite": "D:/Aseprite/Aseprite.exe v1.3.17 (native batch mode via mcp__magpie__aseprite__run_lua & aseprite__cli, non-GUI)",
+    "blockbench": "Blockbench desktop 5.2.2 / plugin 1.10.1 (live active viewport via mcp__magpie__blockbench, project UUID 8cdb8be1-7355-a034-3a20-7ae41a0e5af1)"
+  },
+  "readonlyReference": {
+    "carrierStripPath": "D:/alianximod/docs/资源库/特效/火焰/火苗_飞行火舌_v3/fire_spark_v3_strip.png",
+    "carrierStripSha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E"
+  },
+  "totalFiles": 38,
+  "files": [
+    {
+      "relativePath": "flame_trail_v3_grid_4x4.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame_trail_v3_grid_4x4.png",
+      "bytes": 4893,
+      "sha256": "5B02474D568E799CB3D42721BBFA8F56787C45478155657F0172817D71A3D6C4"
+    },
+    {
+      "relativePath": "flame_trail_v3_single.gif",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame_trail_v3_single.gif",
+      "bytes": 10375,
+      "sha256": "8F8EFCEB9094E551619AC4CA2ED023035ABE94ECA3C9FF8A1C66C2CABD1C8217"
+    },
+    {
+      "relativePath": "flame_trail_v3_strip.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame_trail_v3_strip.png",
+      "bytes": 3718,
+      "sha256": "50946B75FBBEFDA2F4A34FC337FD8A665A18F0428638F574CB2880CA88B06D1D"
+    },
+    {
+      "relativePath": "flame_trail_v3.aseprite",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame_trail_v3.aseprite",
+      "bytes": 5259,
+      "sha256": "63E13A9356846D981AB111DFE2A774ED50827E741EB8654E9385293E77DDFD9E"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage0-launch-t03.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-2d-stage0-launch-t03.png",
+      "bytes": 3378,
+      "sha256": "E9108FC52EE2E5584F6A45E6F5C198ECED4538413451242E9CDEA2BAE1DA0098"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage1-dash-t08.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-2d-stage1-dash-t08.png",
+      "bytes": 4073,
+      "sha256": "1666042D4892ED4290634E25C394C223F20F687130661F6122D67650DEBCEB7B"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage2-full-wake-t14.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-2d-stage2-full-wake-t14.png",
+      "bytes": 4725,
+      "sha256": "21A3B7E311F154D5B1FC535C3E6CBEE0732EFA02418E4D57D10FDD659CC59106"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage3-linger-rise-t24.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-2d-stage3-linger-rise-t24.png",
+      "bytes": 4503,
+      "sha256": "CA15F0214139F336AC56A3496DEF4C65AA97AAD51B1F5C10C7621FC720F88D72"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage4-breakup-embers-t36.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-2d-stage4-breakup-embers-t36.png",
+      "bytes": 3552,
+      "sha256": "2C86E2281378D57D22C8049701933E47F54C5768A10885B05A3EA97EF49ACC5E"
+    },
+    {
+      "relativePath": "flame-trail-v3-2d-stage5-fadeout-t48.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-2d-stage5-fadeout-t48.png",
+      "bytes": 2651,
+      "sha256": "5889648709ADF863A47A90337563E2C895F58368469BBD210C29180F8F18231E"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-hero-closeup.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-3d-hero-closeup.png",
+      "bytes": 102042,
+      "sha256": "971A4D712280FE532EA627527FEA64C057D8382DB6141E895A4C9E0361ACB377"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-side-view.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-3d-side-view.png",
+      "bytes": 63633,
+      "sha256": "6578840919FBE79E9415C81F7C5186D6C69BA1403441127A77C44A716024DC1B"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage1-launch-t03.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-3d-stage1-launch-t03.png",
+      "bytes": 62143,
+      "sha256": "9EFF891C5CEB834BA1850E128B51B3DEE6EBE8ABBB3439FC5D1EAD4B7EA6B8A7"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage2-dash-t08.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-3d-stage2-dash-t08.png",
+      "bytes": 66244,
+      "sha256": "EEE351B9D1BF4DDB7020E5FCB02964383B4D35C731C531A9CB146770117933F9"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage3-full-wake-t14.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-3d-stage3-full-wake-t14.png",
+      "bytes": 70414,
+      "sha256": "1F876758949F26CDD57651197BB5DEFC2C75B6FFCD8B7B513BA7938F105D7A74"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage4-linger-rise-t24.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-3d-stage4-linger-rise-t24.png",
+      "bytes": 68013,
+      "sha256": "3C0DDE4900A6FF661F4488FE22F29A5D917762D6277FC13BCC7626A7687549C4"
+    },
+    {
+      "relativePath": "flame-trail-v3-3d-stage5-breakup-embers-t38.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-3d-stage5-breakup-embers-t38.png",
+      "bytes": 63498,
+      "sha256": "BA1BBE06A522A7526C6DEFE9A45193014F12909AC0F02CB52410BF70D3B1FB28"
+    },
+    {
+      "relativePath": "flame-trail-v3-complete-effect.gif",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-complete-effect.gif",
+      "bytes": 111390,
+      "sha256": "C1ACF6A69E6DC464C158F1A7EFD96942A3C54A5C9E51F9AE9F4CDC773110BF44"
+    },
+    {
+      "relativePath": "flame-trail-v3-projectile-composite.bbmodel",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-projectile-composite.bbmodel",
+      "bytes": 70103,
+      "sha256": "365064F04B05A9816CDCE2E37B77B09F2944A34A4EF31D82B968C9F2701CD85F"
+    },
+    {
+      "relativePath": "flame-trail-v3-scene.aseprite",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/flame-trail-v3-scene.aseprite",
+      "bytes": 104367,
+      "sha256": "21EFDFE97C317CF36DB57164A8BE0874434FBE64426FABB96FB40A591B04EC49"
+    },
+    {
+      "relativePath": "frames/fire_spark_v3_f00_ref.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/fire_spark_v3_f00_ref.png",
+      "bytes": 659,
+      "sha256": "8D0EE58211301E2D0595161592391050C099DBE27DBE31429E7F8643A9D05B92"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f00.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f00.png",
+      "bytes": 550,
+      "sha256": "7F00CC2227287B97F201DA000AF572A837AD95C684ABEDF853146EB962C8D2FA"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f01.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f01.png",
+      "bytes": 603,
+      "sha256": "D389B8888564A1C1E4E79E2E379D631A108C73E0A197897AF7331FF629520BF9"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f02.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f02.png",
+      "bytes": 618,
+      "sha256": "108BE2FE20A2007269D1EBCC1D07F19BA65EB2BEDB981ABFCF77E3A54792382C"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f03.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f03.png",
+      "bytes": 590,
+      "sha256": "87B2582F04F0F346A6E964F2104B016FA73246E315680D8A6995361E3BE15513"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f04.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f04.png",
+      "bytes": 541,
+      "sha256": "BF355313499ADD2FFC9C2A4C441EF61C639BC9B72AE393377D4EF7D06CC7F72F"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f05.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f05.png",
+      "bytes": 553,
+      "sha256": "DC3180855020EDA05086FF87573578433831C886F37559BEF151C1669783653B"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f06.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f06.png",
+      "bytes": 384,
+      "sha256": "91371D20972ABDED89BAFB244EB7E1FF2ECBD49138B4C57833DDDB4A926BDB51"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f07.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f07.png",
+      "bytes": 386,
+      "sha256": "F91FFAF09285DE98160B13A6AC708A3C65938968905D2B99111063076315E359"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f08.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f08.png",
+      "bytes": 355,
+      "sha256": "6C41C9FD525427A4624975BB1CB28A9554A8E2471FCC8B5D760893D0A0E29D10"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f09.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f09.png",
+      "bytes": 369,
+      "sha256": "365C415B1DFE58F7C22D3E14A745488E2D8840D8E2DBD709536AC8CBF624AAEF"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f10.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f10.png",
+      "bytes": 335,
+      "sha256": "91D86CA2E36310D6925DB6F85A5403948526CB0054BE72B8384CAD809A9EB183"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f11.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f11.png",
+      "bytes": 310,
+      "sha256": "731FCFE048167AEB0B5A65DA8C7B00F636FEB9ACDCCB9E68A0B97701932041EC"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f12.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f12.png",
+      "bytes": 280,
+      "sha256": "5CECA7F23D78B67A91E8C5A715C1636A1EB7D8C605C923E8E60C810C26D5E7EF"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f13.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f13.png",
+      "bytes": 239,
+      "sha256": "256E13CB0008C8BD4AAF6E629A28BC0E2B094A9D686501EA3A542223A8A03BAC"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f14.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f14.png",
+      "bytes": 217,
+      "sha256": "9CE222B0BB52867738063E6A4A07DA9F2FD566E3A05AD5C4E764588A092B9DC3"
+    },
+    {
+      "relativePath": "frames/flame_trail_v3_f15.png",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/frames/flame_trail_v3_f15.png",
+      "bytes": 171,
+      "sha256": "BB598C97C7882CB3CE872506034C8556D6B85E64B8C3FE1D914723B9DA926D63"
+    },
+    {
+      "relativePath": "visual-handoff.md",
+      "absolutePath": "D:/alianximod/docs/资源库/过程归档/留焰_v3_真实留焰翻腾尾迹_20261113/visual-handoff.md",
+      "bytes": 12219,
+      "sha256": "E96BE6291AF8F5546082E120B1AA0921F707FD1BE4361558C07AB59CCF59C5BE"
+    }
+  ]
+}

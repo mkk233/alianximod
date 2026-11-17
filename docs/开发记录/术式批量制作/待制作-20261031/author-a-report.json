@@ -1,0 +1,62 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "kind": "implementation-delivery",
+  "formalReview": false,
+  "stopWrite": true,
+  "compile": "未运行，待统一编译",
+  "game": "未启动",
+  "basicStaff": {
+    "id": "basic_staff",
+    "restored": false,
+    "reason": "中断前未改注册，无需恢复扩容",
+    "data": "StaffData(6, 0.20, 0.10, 100, null)"
+  },
+  "testStaff": {
+    "id": "test_staff",
+    "displayZh": "测试法杖",
+    "displayEn": "Test Staff",
+    "data": "StaffData(32, 15.0, 0.50, 1000, null)",
+    "regen": "REGEN_AMOUNT 5 * (1.0 + 15.0) = 80 = 16 * 5。效率用 15.0，不用 16.0。",
+    "cooldownReduction": 0.50,
+    "creativeTab": "basic_staff 之后",
+    "model": "item/handheld + minecraft:item/blaze_rod",
+    "recipe": false,
+    "give": "/give xueximod:test_staff"
+  },
+  "ui": {
+    "entry": "SpellAssemblyMenu/SpellAssemblyScreen",
+    "basic": "6 槽一行",
+    "test": "32 槽一条链，8 列 x 4 行",
+    "cellPixels": 18,
+    "scroll": "窗口不够时整面板纵向滚动，格子不缩小",
+    "skillAssemblyScreen": "同样索引，不是 32 格长条"
+  },
+  "techniquesRegisteredThisRound": false,
+  "secondCastEngine": false,
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "touchedFilesClean": true,
+    "preexisting": [
+      "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\animation\\runtime\\OriginalHumanoid.java:165 i",
+      "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\animation\\runtime\\OriginalHumanoid.java:202 to"
+    ]
+  },
+  "blockers": [
+    "待统一编译，本报告不声称编译通过",
+    "13 个术式未登记，没有 TechniqueEffect，不能释放",
+    "ImprintTreeView 对新角色仍是 default -1",
+    "RootSeedLedger.release 由 B 在最后一份效果结束时调用",
+    "水的放置和分开没有新地形开关",
+    "OriginalHumanoid.java 的两处旧命名违规未改"
+  ],
+  "ownership": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\author-a-ownership.json",
+  "interface": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\author-a-interface.md",
+  "deliveryHashes": {
+    "author-a-interface.md": "f434382fc8760e7b856680108caa12cf64ae8696def02a1775f4b0cdce9d3817",
+    "author-a-ownership.json": "112420628e634f3f15db4ca32792d4fe6fbaaf75e53767b24d8324f3fafd727a"
+  },
+  "implementationFileCount": 46,
+  "implementationFiles": "见 author-a-ownership.json 的 files"
+}

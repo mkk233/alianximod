@@ -1,0 +1,59 @@
+{
+  "writer": "heat-burn-sheet-writer",
+  "model": "grok-4.7-high-fast",
+  "submitted": true,
+  "movedToPendingAcceptance": true,
+  "markedComplete": false,
+  "compileExitCode": 0,
+  "gameVerification": "pending_user",
+  "codexReview": "not_done",
+  "item": {
+    "id": "fire_burn",
+    "from": {"sheet": "制作中", "row": 4},
+    "to": {"sheet": "待验收", "row": 7}
+  },
+  "unchangedNeighbors": [
+    {"id": "fire_heat_up", "sheet": "制作中", "row": 3, "contentChanged": false},
+    {"id": "fire_cool", "sheet": "制作中", "row": 4, "contentChanged": false, "note": "row shifted after deletion only"}
+  ],
+  "countsBefore": {"已完成": 40, "待制作": 0, "制作中": 16, "待验收": 4},
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 15, "待验收": 5, "unique": 60},
+  "changedColumns": ["N", "O", "DV"],
+  "detailRowsAdded": 0,
+  "detailSheetUnchanged": true,
+  "archivePreserved": true,
+  "mappingLocation": "待验收 O 与快照；未新增第二条炉心明细",
+  "baselineSha256": "53B44FAF93B0DCA7BD278F3A509406A6BCF5859C0DD073170C772BE14D45170E",
+  "committedSha256": "CF99A04E797B741718267388A8CB7CDB94323C011093755007D2BD9B7AEE9B11",
+  "backup": "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/备份/术式制作表-20261101-214704-1.xlsx",
+  "candidate": "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/候选/术式制作表-候选-20261101-214704-1.xlsx",
+  "snapshots": {
+    "aen": "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/快照/变更前-AEN-20261101-214704-1.json",
+    "nodv": "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/快照/变更前-NODV-20261101-214704-1.json",
+    "mapping": "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/快照/批准要求与资源映射-20261101-214704-1.md"
+  },
+  "differentParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/workbook.xml"
+  ],
+  "index": {
+    "beforeSha256": "469776228E78C68F1F92076A40799A0B29399769626736DEAE977D7576B86113",
+    "afterSha256": "9ABD0EDE8C25E4E04739F5246DC61E2E0F1E7D62BE540D8B52B730C8FC54BEE4",
+    "added": "燃烧_空间挂载_v1",
+    "v3KeptAsSource": true,
+    "compileStatus": "exit 0 on 2026-11-01 21:37:58-21:38:35",
+    "gameVerified": false
+  },
+  "formalStatus": {
+    "readmeAndManifestStatusUpdated": true,
+    "sourceArtHashesMatchManifest": true
+  },
+  "safety": {
+    "exclusiveLock": true,
+    "baselineMatchedInsideLock": true,
+    "reopenMatchesCandidate": true,
+    "validationsUnchanged": true,
+    "sharedStringsUnchanged": true
+  }
+}

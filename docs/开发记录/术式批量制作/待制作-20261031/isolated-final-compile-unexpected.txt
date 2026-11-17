@@ -1,0 +1,2 @@
+CHANGED src/main/java/com/bslx/XueXiMod/command/ModCommands.java now=8d06a17320ae6e1e266b8b2af525733e0223d33ed2bd21b4cb0d563a6961bdec
+CHANGED src/main/java/com/bslx/XueXiMod/command/ShuCommands.java now=09192a6b122f9eeec9249f83f8a12772ee8a89f3e259fef0d77db70a33cf43af

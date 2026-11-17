@@ -1,0 +1,110 @@
+[
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\water_flow_v3.aseprite",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\water_flow_v3_1.aseprite",
+    "sourceSha256": "DC22F6A9B734C7CDCF9A4E1576AC7BD7E1F8D6F9343B5E54B6C313AA728B7CEC",
+    "targetSha256": "DC22F6A9B734C7CDCF9A4E1576AC7BD7E1F8D6F9343B5E54B6C313AA728B7CEC"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\water_flow_v3.png",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\water_flow_v3_1.png",
+    "sourceSha256": "D91EA9441D1CF55B048D370E9C45A0349DAD5F8CA41AAB35931418054DAB1CCB",
+    "targetSha256": "D91EA9441D1CF55B048D370E9C45A0349DAD5F8CA41AAB35931418054DAB1CCB"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\bubble_v3.aseprite",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\bubble_v3_1.aseprite",
+    "sourceSha256": "58BF28790B8043D6432EBC39F5D8773666531D7621957A9188848BB43F8E9CC2",
+    "targetSha256": "58BF28790B8043D6432EBC39F5D8773666531D7621957A9188848BB43F8E9CC2"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\bubble_v3.png",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\bubble_v3_1.png",
+    "sourceSha256": "A4718E3E51F9CE19CB2D95D8E0E2A1AB2BCF007F98C12569A379FE069836EAC2",
+    "targetSha256": "A4718E3E51F9CE19CB2D95D8E0E2A1AB2BCF007F98C12569A379FE069836EAC2"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\water_vortex_v3.bbmodel",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\water_vortex_v3.bbmodel",
+    "sourceSha256": "EAEECE3F49FDCAD970DE8FE39D52061DA0340A9C430276391CB1481E13A9E05B",
+    "targetSha256": "EAEECE3F49FDCAD970DE8FE39D52061DA0340A9C430276391CB1481E13A9E05B"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\actual_viewport_animation_v3.gif",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\actual_viewport_animation_v3.gif",
+    "sourceSha256": "44D317C86DEE30370D0DD4108216F25E073B03EAAFA1B8C49FD17EBF243AD464",
+    "targetSha256": "44D317C86DEE30370D0DD4108216F25E073B03EAAFA1B8C49FD17EBF243AD464"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\actual_viewport_animation_v3.aseprite",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\actual_viewport_animation_v3.aseprite",
+    "sourceSha256": "A3950527EA7EAE561048FA01DC9F8616D3B9F6E815274DA5ACFC547894AF0594",
+    "targetSha256": "A3950527EA7EAE561048FA01DC9F8616D3B9F6E815274DA5ACFC547894AF0594"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\funnel_front_v3.jpg",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\funnel_front_v3.jpg",
+    "sourceSha256": "C2726D1662CE7A4DCD70A3646CC7D049B5BCAF245CAECD840F9B21F581B8FEC6",
+    "targetSha256": "C2726D1662CE7A4DCD70A3646CC7D049B5BCAF245CAECD840F9B21F581B8FEC6"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\funnel_side_v3.jpg",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\funnel_side_v3.jpg",
+    "sourceSha256": "FA20D18B9047D2DBF1DF060771F7B0B98C5FF71436BE43033DCE9AEDFDE1E6A1",
+    "targetSha256": "FA20D18B9047D2DBF1DF060771F7B0B98C5FF71436BE43033DCE9AEDFDE1E6A1"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\submerged_v3.jpg",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\submerged_v3.jpg",
+    "sourceSha256": "7BE0A38CDE31C6F946E727E4B98DADEE814A7CDCFE4A1F3B0061DD37DE452835",
+    "targetSha256": "7BE0A38CDE31C6F946E727E4B98DADEE814A7CDCFE4A1F3B0061DD37DE452835"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3-20261103\\视觉交接.md",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\视觉交接.md",
+    "sourceSha256": "ADF0EA8B840F950C15EBE4DA88BF63E8D3738ABE1D34061323C18F6888356ADC",
+    "targetSha256": "41C78BCE56E0792366E296CD974EB3634C38ADD55E3AEDB47F82B953C34F8FF6"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3_1-20261103\\water_vortex_v3_1.bbmodel",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\water_vortex_v3_1.bbmodel",
+    "sourceSha256": "19E81D4A5C4EDEEC82BDC13972BE617A427122B4B150E06E65455F343C987EEE",
+    "targetSha256": "19E81D4A5C4EDEEC82BDC13972BE617A427122B4B150E06E65455F343C987EEE"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3_1-20261103\\local_carry_rise_v3_1.gif",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\local_carry_rise_v3_1.gif",
+    "sourceSha256": "6D32A43FE4A9A687A7DC9BA89F0A5306B97EAA63420EA6F0D646E5D84A14DA62",
+    "targetSha256": "6D32A43FE4A9A687A7DC9BA89F0A5306B97EAA63420EA6F0D646E5D84A14DA62"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3_1-20261103\\local_carry_rise_v3_1.aseprite",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\local_carry_rise_v3_1.aseprite",
+    "sourceSha256": "70C5184179D4696F3142460680047219FBAF94638F80E59B50A07FE5A4A0677F",
+    "targetSha256": "70C5184179D4696F3142460680047219FBAF94638F80E59B50A07FE5A4A0677F"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3_1-20261103\\wide_and_crowded_front_v3_1.jpg",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\wide_and_crowded_front_v3_1.jpg",
+    "sourceSha256": "FC820CED7ADBE35EEE76D54D312DDCB9BDCD37E41D06AEE43A2056BDB122F9BE",
+    "targetSha256": "FC820CED7ADBE35EEE76D54D312DDCB9BDCD37E41D06AEE43A2056BDB122F9BE"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3_1-20261103\\wide_and_crowded_close_v3_1.jpg",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\wide_and_crowded_close_v3_1.jpg",
+    "sourceSha256": "1ED3000D6FF79BE81AC5541D3A2D9306FB0ECBA943F88DC004459A5EE3AD3BBF",
+    "targetSha256": "1ED3000D6FF79BE81AC5541D3A2D9306FB0ECBA943F88DC004459A5EE3AD3BBF"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v3_1-20261103\\视觉交接补充.md",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\视觉交接补充.md",
+    "sourceSha256": "70F9E0A2A4EDA4DCD70B7249216CDD34D07ACA549A0E6ABAC32F39663D698AF4",
+    "targetSha256": "3007F5CB0665A754B68D16BFC5466B63C217DE7C2189591E87353E311DE945E3"
+  },
+  {
+    "source": "D:\\alianximod\\docs\\资源库\\过程归档\\水流组合_v2-20261103\\dry_swirl_v2.jpg",
+    "target": "D:\\alianximod\\docs\\资源库\\特效\\水流\\旋流与水龙卷_v3_1\\dry_swirl_v3_1.jpg",
+    "sourceSha256": "74BB48C2C4472201F1FCADF6884AE800F5E238C2F3389D4399C16D3F58E48590",
+    "targetSha256": "74BB48C2C4472201F1FCADF6884AE800F5E238C2F3389D4399C16D3F58E48590"
+  }
+]

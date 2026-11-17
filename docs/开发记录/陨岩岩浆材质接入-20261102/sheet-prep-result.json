@@ -1,0 +1,26 @@
+{
+  "status": "returned_to_in_progress",
+  "id": "fire_meteorite",
+  "from": {"sheet": "待验收", "row": 9},
+  "to": {"sheet": "制作中", "row": 16},
+  "countsBefore": {"已完成": 40, "待制作": 0, "制作中": 13, "待验收": 7},
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 14, "待验收": 6},
+  "baselineSha256": "FE75EF6B099EDE5F3F4B27F11514550834C6FAC9429C94F0650038B946CDF301",
+  "afterSha256": "CF8F75500E4EBDFD9288EDA51475E072A34B2AA2AF9DBACAAF99CBCE5323606E",
+  "backup": "docs/开发记录/陨岩岩浆材质接入-20261102/备份/术式制作表-20261102-021439-1.xlsx",
+  "unusedEarlierBackup": "docs/开发记录/陨岩岩浆材质接入-20261102/备份/术式制作表-20261102-021423-1.xlsx",
+  "snapshots": {
+    "aen": "docs/开发记录/陨岩岩浆材质接入-20261102/快照/变更前-AEN-20261102-021439-1.json",
+    "nodv": "docs/开发记录/陨岩岩浆材质接入-20261102/快照/变更前-NODV-20261102-021439-1.json",
+    "revised": "docs/开发记录/陨岩岩浆材质接入-20261102/快照/修订需求-20261102-021439-1.md"
+  },
+  "approvedVersion": "meteor-magma-crust-v5",
+  "pngSha256": "a0f7027b8b39c4f9f3aaabb9e05713c42e5b0e86697c89d9294848a9b228e1d8",
+  "functionPreserved": "命中实体后沿当前弹道继续飞行，直到触地才落块",
+  "integrated": false,
+  "compiled": false,
+  "writesClosed": true,
+  "blockers": [],
+  "verifyOk": true,
+  "formalReviewAdded": false
+}

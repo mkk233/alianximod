@@ -1,0 +1,3226 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "task": "nether-blue-visual",
+  "attempt": "art-coverage-02",
+  "status": "complete_candidate_pending_user_confirmation",
+  "userConfirmation": false,
+  "runtimeIntegration": false,
+  "parentThread": "01a1c9b3-ca26-7a33-91d2-71c2e32bb69b",
+  "writeRoot": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage",
+  "writesClosed": true,
+  "guiWorkStopped": true,
+  "subagents": [],
+  "batches": [
+    "领域附魔底座实施-20261029",
+    "火系六式-20261029"
+  ],
+  "reviewCounters": {
+    "design": "2/2",
+    "additionalReview": false,
+    "implementation": "3/3",
+    "unchanged": true
+  },
+  "fallback": {
+    "reason": "Parent reported actual Carbon and Argon Unknown model failures",
+    "authorRole": "Astra max art fallback",
+    "reprobed": false
+  },
+  "flashFacts": {
+    "agentId": null,
+    "idNote": "Not supplied in received final facts; not fabricated",
+    "received": true,
+    "parentConfirmedFinalAndClosed": true
+  },
+  "counts": {
+    "exclusions": 8,
+    "animatedComparisons": 5,
+    "actualBlockbenchScreenshots": 8,
+    "editableBlueSources": 45,
+    "nativeSoulReuse": 3,
+    "existingV1FilesPreserved": 122,
+    "newBlueAtlases": 45
+  },
+  "tools": {
+    "liveConnected": false,
+    "blockbench": "Blockbench Desktop 5.2.2 plugin 1.10.1",
+    "nativeSaveAndReopen": true,
+    "aseprite": "Official magpie batch Lua; Aseprite 1.3.17"
+  },
+  "colorMode": {
+    "legacyRgb": [
+      90,
+      160,
+      255
+    ],
+    "multiplyBlueAgain": false,
+    "palette": "unchanged v1 piecewise luminance palette",
+    "handoff": "visual-handoff.md",
+    "proposal": "SOUL_PALETTE_TEXTURE",
+    "vertexRgb": [
+      255,
+      255,
+      255
+    ]
+  },
+  "inputNetherBaseline": {
+    "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/nether_gloom_v2/nether_gloom.png",
+    "bytes": 6671,
+    "sha256": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F"
+  },
+  "overview": "previews/coverage_overview.png",
+  "receipt": "receipt.md",
+  "handoff": "visual-handoff.md",
+  "blockbench": {
+    "nativeReopenEvidence": "evidence/blockbench-reopen-verification.json",
+    "elements": 438,
+    "meshes": 177,
+    "model": {
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/blockbench/nether_blue_coverage_02.bbmodel",
+      "bytes": 2779160,
+      "sha256": "6711CA4889F014C2A92004E81C3D73158DC5074ADF0A628EACD5B8B89C537E97"
+    },
+    "textures": 128,
+    "sourceModels": [
+      {
+        "path": "D:/alianximod/docs/资源库/特效/火焰/升温_贴身炽热_v3.1/spatial/heat_up_v3_1_spatial.bbmodel",
+        "bytes": 94810,
+        "sha256": "D0AF5ED3CFC8112150FC80C12348F92D84715E86D5FBC6B54E84D71129BFCBA1"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/特效/火焰/燃烧_空间挂载_v1/燃烧v3_空间挂载示意_v1.bbmodel",
+        "bytes": 205310,
+        "sha256": "C1B437820058ECA7C579F5E52D10E84BBE1F7FB9D258C7611579710E5DD41890"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/特效/火焰/燎里_剑阵姿态_v7/liaoli-dive-leg-array-forward.bbmodel",
+        "bytes": 116023,
+        "sha256": "E55146011A0AF3C3C8AF5A696B7995FE9E5BF10196E40AB409884BBC94767CF9"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_burn_blue_side_F06.png",
+        "bytes": 57001,
+        "sha256": "FBC319D4BD3076BFFA444A7E0C8AB3C0DD97535017840E77E1250557F17C1B4C"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_burn_loop_overall_F06.png",
+        "bytes": 57350,
+        "sha256": "FF05E83DDEE7683AA24F7B4B5F2EA736D3355662B36AF918DEA446A8A5202A2C"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_furnace_blue_side_F06.png",
+        "bytes": 58240,
+        "sha256": "5F1F2E876DE687738556E822D94FBF9E78D9FA9FA1416F637AA8C0D8F6D3ED5C"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_furnace_loop_overall_F06.png",
+        "bytes": 46755,
+        "sha256": "D34928C43CBD5FA3F69FBCFE155027FEAE277EFBD68336568353808C960B216C"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_liaoli_blue_thrust_side_F10.png",
+        "bytes": 97905,
+        "sha256": "A0726BB29DB69A6FAB26D5E9583D7A2FB87CAA65E60FE524E644B22568B7407F"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_liaoli_flame_overall_F06.png",
+        "bytes": 89579,
+        "sha256": "A2ED8594990C0461F60952017F8375905F0F12A1EBF1F826E410B401A3C7E25E"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_native_soul_blue_side_F06.png",
+        "bytes": 52240,
+        "sha256": "3E856288CCAA4F8CA6B58D01A59C16DFC721072DBF8C579DD735DE408BEFB2B5"
+      },
+      {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/previews/bb_native_soul_overall_F06.png",
+        "bytes": 48670,
+        "sha256": "14BB13E680E8D49E8CDAF0F2BAA3C7CF05F5DDBB85FC416E39B5ACF37F34CAE5"
+      }
+    ],
+    "preexistingProjectsUnchanged": 8
+  },
+  "verification": {
+    "baselinePreserved": true,
+    "excludedPixelDifferences": 0,
+    "currentInputDifferences": 0,
+    "silhouetteDifferences": 0,
+    "sourceExportDifferences": 0,
+    "alphaDifferences": 0
+  },
+  "exclusions": [
+    {
+      "id": "sword_unlit",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoli_v6/sword_unlit.png",
+        "bytes": 339,
+        "sha256": "2FB695A061875B6C88C102716F36E5B3791288F1EF9734E5EC7D847EFF7119B8"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_sword_unlit.png",
+        "bytes": 352,
+        "sha256": "8FF92103A9B9BBF488510A06AC365B35369199BB3BAEA5B131314AA9249352A4"
+      },
+      "reason": "physical sword and hilt; preserve every pixel",
+      "pixelDifferences": 0
+    },
+    {
+      "id": "sword_hot",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoli_v6/sword_hot.png",
+        "bytes": 275,
+        "sha256": "155FA83DFA7FD54F4F7040C3A2684F0DF622E17BE6DB76BB74FD328BAEAA42D6"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_sword_hot.png",
+        "bytes": 288,
+        "sha256": "24E59D7EC586DEF5FF42B91F961B8724B6FF99E2FEB7A76DF59EB61C31B7EB4E"
+      },
+      "reason": "all 338 visible pixels overlap unlit physical sword; no separate external halo; preserve every pixel",
+      "pixelDifferences": 0
+    },
+    {
+      "id": "ground_ash",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash.png",
+        "bytes": 620,
+        "sha256": "3A27AB77AB560BDAA10B91D1FA0BBEE9EEA2E7A2539D96B38EAF5D34E035A391"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_ground_ash.png",
+        "bytes": 633,
+        "sha256": "CB0BD18619EACAE2CAA7D2378A5BFFA6256563482D687953DCAD8215C9819670"
+      },
+      "reason": "neutral ash; remove old runtime tint rather than recolor",
+      "pixelDifferences": 0
+    },
+    {
+      "id": "ground_ash_b",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash_b.png",
+        "bytes": 623,
+        "sha256": "FDA27E3FE5AF8D2BF24F7C640F6FB029261ED1E60249C598B3D2E1BD92CD9650"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_ground_ash_b.png",
+        "bytes": 636,
+        "sha256": "5C1510E72EB354FB2321C350C5EB3A6F43F594B59C3617EB94E1B6505B86AECA"
+      },
+      "reason": "neutral ash; preserve",
+      "pixelDifferences": 0
+    },
+    {
+      "id": "ground_ash_c",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash_c.png",
+        "bytes": 593,
+        "sha256": "E238680FE3196C8BDA7F23E18F3E864D6AA64EB9F82CB09182F29B8A308623A6"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_ground_ash_c.png",
+        "bytes": 606,
+        "sha256": "F8C265BCBFE631AB45C20C3E5D53D4600A53DB6D2E56977607E8D78350E726D9"
+      },
+      "reason": "neutral ash; preserve",
+      "pixelDifferences": 0
+    },
+    {
+      "id": "ground_ash_d",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_ash_d.png",
+        "bytes": 588,
+        "sha256": "45DA398493CB87E0E5E5D74EA32272B6888A51ADEBC94FB9646467CF76C2E7FA"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_ground_ash_d.png",
+        "bytes": 601,
+        "sha256": "6D2C6A60434DB7CF14C289381D7D9A62D2EC094BB1E74B8EA80C5FB53C7946DE"
+      },
+      "reason": "neutral ash; preserve",
+      "pixelDifferences": 0
+    },
+    {
+      "id": "surface_anchor",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/surface_anchor_v2/surface_anchor.png",
+        "bytes": 4741,
+        "sha256": "4434BDC7B0311E863277E9BD23761139E77489AD6B548FBB48AC202C4FB35A20"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_surface_anchor.png",
+        "bytes": 4741,
+        "sha256": "4434BDC7B0311E863277E9BD23761139E77489AD6B548FBB48AC202C4FB35A20"
+      },
+      "reason": "golden triangular anchor marker, not fire; preserve",
+      "pixelDifferences": 0
+    },
+    {
+      "id": "ground_dust",
+      "input": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png",
+        "bytes": 6678,
+        "sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A"
+      },
+      "reference": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/preserve_ground_dust.png",
+        "bytes": 6691,
+        "sha256": "12BD1AFEE06B33AB18063AA4DA2C5A54B39F401022CB30FF0937E148A28DD0BF"
+      },
+      "reason": "brown soil/dust, not flame; preserve",
+      "pixelDifferences": 0
+    }
+  ],
+  "nativeReuse": [
+    {
+      "id": "native_particle",
+      "resource": "minecraft:particle/soul_fire_flame",
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/particle_flame.png",
+        "bytes": 124,
+        "sha256": "2F2EFACAC134CE943D142D3A40E43F87E80E1E32D7137645BB1268618505E4A7"
+      },
+      "nativeSoul": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/particle_soul_fire_flame.png",
+        "bytes": 127,
+        "sha256": "E5EB0F6508ED5DEE56DF19DA63ACE387B43ABD118FFF33E92EC3C94DFF0FBD72"
+      },
+      "sameAlphaRecolor": false,
+      "note": "Reuse native soul art, NOT same-alpha recolor; original soul mcmeta is preserved"
+    },
+    {
+      "id": "native_fire_0",
+      "resource": "minecraft:block/soul_fire_0",
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/block_fire_0.png",
+        "bytes": 12500,
+        "sha256": "C7A342A5F8016507A39FF50004437E55A52206C441B993612529DE7A3B33CDF2"
+      },
+      "nativeSoul": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/block_soul_fire_0.png",
+        "bytes": 8841,
+        "sha256": "7AD4A4A0BE94AE53F05958C6B968D46DBD927DDF20C093D4D4F6916A883D6D6D"
+      },
+      "sameAlphaRecolor": false,
+      "note": "Reuse native soul art, NOT same-alpha recolor; original soul mcmeta is preserved"
+    },
+    {
+      "id": "native_fire_1",
+      "resource": "minecraft:block/soul_fire_1",
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/block_fire_1.png",
+        "bytes": 13255,
+        "sha256": "BB0EDF37C52D25EBCBBEB40CD96A6CD956181E2D25D37E5DF4B644ADC91592FD"
+      },
+      "nativeSoul": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/block_soul_fire_1.png",
+        "bytes": 8522,
+        "sha256": "292BBFCFC1CA45644A5F49BDB61D6EBF47AFA9AF4A95B327D5889D3E72606AF0"
+      },
+      "sameAlphaRecolor": false,
+      "note": "Reuse native soul art, NOT same-alpha recolor; original soul mcmeta is preserved"
+    }
+  ],
+  "entries": [
+    {
+      "id": "furnace_entry_warmth",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/entry_warmth.png",
+        "bytes": 820,
+        "sha256": "1DFE5791A28CD74960F68B876057AF6DDC690968C5165A443B24005197F041F4"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_warmth_blue.png",
+        "bytes": 815,
+        "sha256": "CD1ECA6489D9643DCF12CAE795FBF8D329F68A0FA3604A68297766708F6B01C7"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_entry_warmth_blue.aseprite",
+        "bytes": 5061,
+        "sha256": "0DF501A1BA239CC1CC455DEC5D6DECDCC04D345489D627072685994818FA1F18"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_entry_warmth_original.png",
+        "bytes": 833,
+        "sha256": "4A9F6B0BF9DF6100C43ACF8F886334C64941FD682951EDA329BAC136D85B89F5"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_warmth_legacy.png",
+        "bytes": 821,
+        "sha256": "5E55ED9C6CE3FE68D4FB19F89C617DBD2992B6F209A04AF34242003EAE93812B"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 1200,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_entry_hand_rear",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/entry_hand_rear.png",
+        "bytes": 1662,
+        "sha256": "BD70F5C35588AA5BA0F03DFBBA57599DB44EA694D04E70E11DB4EFE9CB47EDA8"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_hand_rear_blue.png",
+        "bytes": 1652,
+        "sha256": "5B7141984FA0BEAAD001A667B4FFB4BCCD27C51A88A2417939324573C79AA166"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_entry_hand_rear_blue.aseprite",
+        "bytes": 6831,
+        "sha256": "A4A9CDD6D5C153060115DD55618BAE77CEA0AC891F54787CE2DF53EBF4068068"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_entry_hand_rear_original.png",
+        "bytes": 1675,
+        "sha256": "D778466455A48DF6FE0382A9A8C08CF24A7761C4F8BD1E9D804635F6E02C12AA"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_hand_rear_legacy.png",
+        "bytes": 1722,
+        "sha256": "7A733A582C761CD2D08CBE18A70772D03233DD1C9FF4B8F8DB2EE47BA498F27E"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 652,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_entry_leg_rear",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/entry_leg_rear.png",
+        "bytes": 2078,
+        "sha256": "3F748DC5070F8A776E954E6163934F9D07969DBB41C123C0B8E09A2D69034632"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_leg_rear_blue.png",
+        "bytes": 2086,
+        "sha256": "8C78C65C0BAD1EBCD0075C97356A237E5936E0B20E8FD44DD845DD5052845A19"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_entry_leg_rear_blue.aseprite",
+        "bytes": 7916,
+        "sha256": "D2610F2973ED113F62A10C0AD1C8980DAA64E532EC79CA5AB282000F8631D450"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_entry_leg_rear_original.png",
+        "bytes": 2091,
+        "sha256": "F8C3C33B017712DA931740F65AF38244B6C54253F3EDE11550D6580572E18524"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_leg_rear_legacy.png",
+        "bytes": 2071,
+        "sha256": "C231C22C441B551E21718E0E469374C44659DA903C27A5FA11B96563A4895606"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 1407,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_entry_torso",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/entry_torso.png",
+        "bytes": 1320,
+        "sha256": "C13079460F369267CC2179B88106D5FECC558956C463E372846D347FC8CA03B3"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_torso_blue.png",
+        "bytes": 1308,
+        "sha256": "0EE2A5A278E5B6AE902B055789DBEA8E11FA34EC73521FB98F12AC784FE54B76"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_entry_torso_blue.aseprite",
+        "bytes": 5678,
+        "sha256": "F3F93E6DB7B0F98401086B0F574D773301790309D65C54EEEEC0A5736C7D97C0"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_entry_torso_original.png",
+        "bytes": 1333,
+        "sha256": "FCF447BC8AEFD7992833301F2A2CC07FF7F14BF543A7658898B713D5F5DC2156"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_torso_legacy.png",
+        "bytes": 1334,
+        "sha256": "1426B6C3D87AA62FD7E22C120927A06DD32FB3DAF66BAA526FD61941A7C049A6"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 303,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_entry_hand_front",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/entry_hand_front.png",
+        "bytes": 1035,
+        "sha256": "89755CFA8EA4D838505D16EC70342711F55ADFD503970C012B87A3535C0B332F"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_hand_front_blue.png",
+        "bytes": 1046,
+        "sha256": "9428D08CBD2AA57A2F30200EB3F0AC507D963EE9B293A47E52E531AC110BBA81"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_entry_hand_front_blue.aseprite",
+        "bytes": 5350,
+        "sha256": "73203E45EDB141E685F698B1A91949FE80F46AEC3554E0D9ACE7A0F23843576B"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_entry_hand_front_original.png",
+        "bytes": 1048,
+        "sha256": "8993A9BF511B7E1CC945A052E7DBCB6C827CD16843CBDD1B9B9FA5393F7E8B8D"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_hand_front_legacy.png",
+        "bytes": 1030,
+        "sha256": "79BAC155ED5E9A6FD5C24669A1492504D1713589DFF1B53D213BC81C4CAEC729"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 218,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_entry_leg_front",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/entry_leg_front.png",
+        "bytes": 1547,
+        "sha256": "CA9B5D9D17A0837B23F9A5A2265757A1FAFB3870587B4CC03C3138314DBFF0E1"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_leg_front_blue.png",
+        "bytes": 1550,
+        "sha256": "BFF5335CA80BA5CA815802575FACE9F7684D95E4644A42B0DB169A04BE1F0F87"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_entry_leg_front_blue.aseprite",
+        "bytes": 6342,
+        "sha256": "1B32E031BFD941401589637DCF61AE4960E1BAC4C5FF8E83B0E3422B55E26577"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_entry_leg_front_original.png",
+        "bytes": 1560,
+        "sha256": "3647E6D118612E2AF5D904747AB3AE5596A5261192C02A2FF9561477BF721AA6"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_leg_front_legacy.png",
+        "bytes": 1536,
+        "sha256": "47EEF7A2D101CE9451D6CB9DDAB39306451443B80509A50EF0C93E3A05D156B4"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 592,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_entry_embers",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/entry_embers.png",
+        "bytes": 616,
+        "sha256": "5197B8FC47216C96E8AEC59B7BADCAE2B20F65C33D8BD258573997FD56B967E5"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_embers_blue.png",
+        "bytes": 630,
+        "sha256": "43A9103BB1EAA3C4E54E705D9F4511F95A78A9FB53B63AB70A42BF2115129F39"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_entry_embers_blue.aseprite",
+        "bytes": 4199,
+        "sha256": "14AAFE9A87746181D7655BA675280D7599E42829BAA94FEFFEFB20A5B911168E"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_entry_embers_original.png",
+        "bytes": 629,
+        "sha256": "9EE89F82B5FDD3AF3F68CF65C087F64D6D40E82C7AC7E710BA607A1EBD79DE13"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_entry_embers_legacy.png",
+        "bytes": 617,
+        "sha256": "9874EFE31F5633E7CD354ACD3F2CA7BBF9BAC59DFB05F9CACC809B71F13BE230"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 24,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_cape",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/cape.png",
+        "bytes": 7106,
+        "sha256": "6F8C9A67C30F0AC296B7CC6F5C408E44FD10B28B745EAFE5CB8F23CC15E8981D"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_cape_blue.png",
+        "bytes": 7150,
+        "sha256": "58DA6E129B85C94BD3339AA90178B8C414C8A44F2F465788A3644FE7384B42F3"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_cape_blue.aseprite",
+        "bytes": 17220,
+        "sha256": "537F402B39F8CE941FB5EC5EC27160CAA65AA6E9C77E46E8BFE889388BA2BC7B"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_cape_original.png",
+        "bytes": 7055,
+        "sha256": "DA4E72A9D22F494EAA580E17579069616A6AF056E464AFDF3672F00313BF0207"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_cape_legacy.png",
+        "bytes": 7106,
+        "sha256": "4485E6F78FC3CA43B88079CCAC72F756A3540BB55147F5C6E4EBCBC8FFA52570"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 10122,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_rear",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/rear.png",
+        "bytes": 2351,
+        "sha256": "3E7C207CA587435E11F00AA9BD1B4B99F97CC445C47410073EED46EFB9AFAF8B"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_rear_blue.png",
+        "bytes": 2431,
+        "sha256": "0AC6D602E561E00F73F4A54BC7B78121A69375205384D64DD9EE32302E4A1475"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_rear_blue.aseprite",
+        "bytes": 7304,
+        "sha256": "DAD0F8C305F310EBBBAC70E681041F3920B019555BB4DFD1F6B28E82B1400D18"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_rear_original.png",
+        "bytes": 2359,
+        "sha256": "6D5EAC6E38C025ADE657EB572CB813F84A9F50546D9D66C477F3191F3031B52D"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_rear_legacy.png",
+        "bytes": 2408,
+        "sha256": "47F17DB05A084DD01310215633B7522AC808ECDCCC2052708E203FFDCDF09935"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 644,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_shoulder_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/shoulder_right.png",
+        "bytes": 1179,
+        "sha256": "DFB5C69C89BBEDAA4FC0E07172CEFA8726BA17BFA14528FDA15AD18BDA36C1B3"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shoulder_right_blue.png",
+        "bytes": 1218,
+        "sha256": "2741C8D37585B1E73633B11517DC6DD5E2351A437215F1E235E6762945F1BCE8"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_shoulder_right_blue.aseprite",
+        "bytes": 5407,
+        "sha256": "8A0187222FA580FB2CCDEC4D79ED26C8338AAF23D0C1E7988F6080A5D9D6CB58"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_shoulder_right_original.png",
+        "bytes": 1192,
+        "sha256": "E10C4DAF710BD4592FD73A327C2D3975E05F5018A1404B766E8C4DDA35744175"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shoulder_right_legacy.png",
+        "bytes": 1215,
+        "sha256": "BC6B7B6C7C6D051C19371BBB292CAEF8AE41B7631D00A80711E7BA0935296BC7"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 231,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_shoulder_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/shoulder_left.png",
+        "bytes": 1155,
+        "sha256": "DD9C8A9E875CCF82E535BDA38B238AFDB48476535805A03A7A856E78A0D5832D"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shoulder_left_blue.png",
+        "bytes": 1168,
+        "sha256": "D3D6FC2B85229B680531DA730F904F7C7E14B7F9B168856F39B78AD8B41452CA"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_shoulder_left_blue.aseprite",
+        "bytes": 5172,
+        "sha256": "0A3788E1DB54420DD8A208CF19DFFF987BACD4509EA5317E9D9B782955CAF30F"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_shoulder_left_original.png",
+        "bytes": 1167,
+        "sha256": "B27B78E1A4CB17ADD6C7CC11EC5349EA38AF2588DFD597BC4C6229884B64BEA8"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shoulder_left_legacy.png",
+        "bytes": 1164,
+        "sha256": "C7452BA2FB0514B08A03DD38A5CA70E12FD83459FD7698ECC094DD046460655A"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 154,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_abdomen_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/abdomen_right.png",
+        "bytes": 1673,
+        "sha256": "530CE729F94010B2DC9D36AA11F3F891AEE7B73BCD5E41C4D4BA803A4FB6886B"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_abdomen_right_blue.png",
+        "bytes": 1698,
+        "sha256": "5568CF216D939820F56D714D1CF0BBDEA77E9704A4C533C55F2AD3EC5E09D4A4"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_abdomen_right_blue.aseprite",
+        "bytes": 6016,
+        "sha256": "4C542EA12D3381684AC9E91A71534FA573392D5CAE80F420256346B4E777ED9D"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_abdomen_right_original.png",
+        "bytes": 1675,
+        "sha256": "F2FA0D8E730EBB4BBD00C88BE29B9E8193BC216A73781FD66E9D0AA38C2AC959"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_abdomen_right_legacy.png",
+        "bytes": 1668,
+        "sha256": "DC2CA2FF0EADEE082589EAD5A47E3AE30DBA379C55351F712152F096015FB577"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 392,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_abdomen_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/abdomen_left.png",
+        "bytes": 1417,
+        "sha256": "AD8D3AF5EA14017D17D694E2E87E07E6444C5197F19331B888EDBC3088DE6CE0"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_abdomen_left_blue.png",
+        "bytes": 1484,
+        "sha256": "31EE6147465D832FB0833114FD6835426977632B1F48ECEF64EB5D5C999D3F40"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_abdomen_left_blue.aseprite",
+        "bytes": 5850,
+        "sha256": "47F9AA0CD88691BFE1C95C3828DDFD7DBFD2139528BF699EBA866622D88B8083"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_abdomen_left_original.png",
+        "bytes": 1425,
+        "sha256": "6726BA28B28B7237EF8FB96897667E4CBE41D05A24421B1DB766531B7F928E48"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_abdomen_left_legacy.png",
+        "bytes": 1408,
+        "sha256": "D756350D7C776DCF1ED6F6DF6C9B4D2CB0357CC9AD69834536847185613CA486"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 350,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_hip_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/hip_left.png",
+        "bytes": 1219,
+        "sha256": "459DC5368B289AB1050747D02C2A35A44638D1EE5CFC841D590ECE442AF59289"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hip_left_blue.png",
+        "bytes": 1220,
+        "sha256": "94E5B6C37519E992B7CB2A5235A102833947DDFC6A127F41ACB58D2EAE33E554"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_hip_left_blue.aseprite",
+        "bytes": 5322,
+        "sha256": "39EEED89AF89C6D6853A8EC1302B6F11A963166E7C8EFB7AAFA3A91094628D8F"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_hip_left_original.png",
+        "bytes": 1229,
+        "sha256": "ED895641572409D41AF9308C462923C637710EF17BEAEF4404CD898F78D01B2E"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hip_left_legacy.png",
+        "bytes": 1288,
+        "sha256": "00F5A79BE3A674470FC4ACFC9746260EF1007D315677A75858BE84CB785EE348"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 217,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_shin_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/shin_right.png",
+        "bytes": 1677,
+        "sha256": "5196FB1AD6E671B1D164409869DAAFFB744B84BE45A1AFE2876CFD48B677DFFE"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shin_right_blue.png",
+        "bytes": 1570,
+        "sha256": "E8B289D20F54FE7A8041EF43687B95A2AA663A07DC70A67D3550F3C47BE7EA0D"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_shin_right_blue.aseprite",
+        "bytes": 5939,
+        "sha256": "7F28CEA0F152AC041B570448D44826515AD33A3F879256271498AE861B95DDE1"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_shin_right_original.png",
+        "bytes": 1688,
+        "sha256": "42A8BB0DBCE2391742EC828304117CF85CF5B01626675BE020D530964E80EABE"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shin_right_legacy.png",
+        "bytes": 1648,
+        "sha256": "60B367A17160B2C428CBDEFE250B3363FF546E11CFDDA74FC6B721D810628402"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 392,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_shin_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/shin_left.png",
+        "bytes": 1390,
+        "sha256": "AFC8EE2619B22F1AB0DF90DC4F31AC0C5EAC2EE46790C85420B8344FEB671FF4"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shin_left_blue.png",
+        "bytes": 1402,
+        "sha256": "1AA50B4369C466FFD5C5CBA650B6CE2697BC8C2376976C9D4A01F48822554329"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_shin_left_blue.aseprite",
+        "bytes": 5708,
+        "sha256": "F3AD1569F9A7B3DA1FC3AACB15E81A63C84CAD79F77BA2E022A3312B82CAEC0F"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_shin_left_original.png",
+        "bytes": 1395,
+        "sha256": "CA0DD73EBECA0A8EB2B21E7E785CEC2E7BDA6560A56B3F2C0A1A232AF3C55247"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_shin_left_legacy.png",
+        "bytes": 1430,
+        "sha256": "A4845B1E0684A50DC49EC912B67AEFDE65B1385292D7BE4A1C99166927E1AECE"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 308,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_hand",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/hand.png",
+        "bytes": 6410,
+        "sha256": "FF14F811BB14F54D0B749E15F59059C7290C006EF398952674B44B60353B3B2A"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hand_blue.png",
+        "bytes": 6523,
+        "sha256": "11CA1B33113DA7443D6AA3310A0E2260B3D3A6AB49B909B0EE087EA0520F4519"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_hand_blue.aseprite",
+        "bytes": 15233,
+        "sha256": "942EC3413D9F3F5B23F8A111A25187179D0D0ADEDEFB89908E77F03E0C47ED8D"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_hand_original.png",
+        "bytes": 6392,
+        "sha256": "C8E5DF321D28691C4A0A110B57B5DEFD7E428F2581633FF5C150B40A6CBE7704"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hand_legacy.png",
+        "bytes": 6497,
+        "sha256": "60E3D08B077A783BC2581D39BDF2BDE0697F8817D77EDF7F08CA1A0AEEB0F495"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 3591,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_hand_embers_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/hand_embers_right.png",
+        "bytes": 765,
+        "sha256": "886555A2BF88ACE5717A9FE4A18DFB4B041E562B8ED22DF99654BE83E6923224"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hand_embers_right_blue.png",
+        "bytes": 786,
+        "sha256": "D2EF187BD4BB89B7F50D61D1FC6D37CA057E36949B31A6DD2D982886776C784B"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_hand_embers_right_blue.aseprite",
+        "bytes": 4696,
+        "sha256": "AC5245AC51EC87DDC0828140B5ECE9D5D3719A40E1E0EDC4FAF81AF7D3B19D64"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_hand_embers_right_original.png",
+        "bytes": 773,
+        "sha256": "57DD87D6E1EFF384D7C36CF96691AEE90B736FA47AC2AFBBB419E23E65BEB666"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hand_embers_right_legacy.png",
+        "bytes": 778,
+        "sha256": "F134CA9E55B5E80BEF8BC7AFD89430122C91E53D78004C7559B37C76AC070DF8"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 67,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_hand_embers_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/hand_embers_left.png",
+        "bytes": 869,
+        "sha256": "CD6B3FE8420056D87E872E750DB5D4FB22308884FA38BEBFC4B98463E4C35A02"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hand_embers_left_blue.png",
+        "bytes": 889,
+        "sha256": "DC5CD7383CCF7B8FF3AEC1E8DBFA7477B51450729923562DCA791956F3F9620A"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_hand_embers_left_blue.aseprite",
+        "bytes": 4874,
+        "sha256": "901FB65D4585B82ABAC67BCA81263AEC2B0BD0696F11CF91A506AC63AC63B04F"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_hand_embers_left_original.png",
+        "bytes": 875,
+        "sha256": "1D115FF6E1F2CCAC929DDC54B24B6396962326BC019B50D05D38635A1E01B0CE"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_hand_embers_left_legacy.png",
+        "bytes": 858,
+        "sha256": "6827303995511745D9ED3D9BEBE37CFADF244C69494CA6B4EE52707DAF6CDCAA"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 69,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_entry_body_embers",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/body_embers.png",
+        "bytes": 2208,
+        "sha256": "9FC51C4D6DA8FA3F665C7A82FDCB31849A2F0B9377EF9F7600DD009AAB6FA2AF"
+      },
+      "width": 96,
+      "height": 896,
+      "frameHeight": 112,
+      "frames": 8,
+      "previewMs": 60,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_body_embers_blue.png",
+        "bytes": 2231,
+        "sha256": "D153D6C927D0106363F119BC688CB65698A6828532D6B92CE7FD716B060C3F26"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_entry_body_embers_blue.aseprite",
+        "bytes": 8438,
+        "sha256": "0EFD38816115EBA08C754A3EEFD9DFB2578E3181FA863148B369669C3C8B3E9B"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_entry_body_embers_original.png",
+        "bytes": 2215,
+        "sha256": "35855C8176D0AF860166CC87B74464AA724444513D5EE52CCC3DA7A466041723"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_entry_body_embers_legacy.png",
+        "bytes": 2280,
+        "sha256": "B10A5C177B43C0745CD76121773BEBEDFABF43CBDAF39C09491DE48F4E5D5CF5"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 439,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_loop_warmth",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/loop_warmth.png",
+        "bytes": 1808,
+        "sha256": "1E81DC23F43BC2C32CB0BD9C94129D22B1EE2396755E820E18939A49D22FA345"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_warmth_blue.png",
+        "bytes": 1800,
+        "sha256": "F04A45190C3A767E9C24F103BDD1AE71623892AA1280746C1324AC490004122E"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_loop_warmth_blue.aseprite",
+        "bytes": 10791,
+        "sha256": "94BF40D1535A8B855142CBCDE797EC5291906910D2E310D977983178281D5E1E"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_loop_warmth_original.png",
+        "bytes": 1821,
+        "sha256": "382A63669BEF1DCFEA1B9EF5F92CA3F6B66302DE1058188151D26943730EBA56"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_warmth_legacy.png",
+        "bytes": 1807,
+        "sha256": "20702CBCB9F4DF3D63438525F3D89DFF58E347134366F48C2DAD6382D9C3B4AC"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 3000,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_loop_hand_rear",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/loop_hand_rear.png",
+        "bytes": 4638,
+        "sha256": "DD12107EF74732DC55D8ACB0C96FA843110CDFB65633BB5CF01C3C06107F5A6C"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_hand_rear_blue.png",
+        "bytes": 4670,
+        "sha256": "FA756C55F8B37B03474F3021A9F5F8F45C95685D1F3EE311B45C030E607038B8"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_loop_hand_rear_blue.aseprite",
+        "bytes": 17686,
+        "sha256": "BAC25DA0B94A77A586E39834B0FB1DB75A0FDC0A18642B2856006FB260997055"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_loop_hand_rear_original.png",
+        "bytes": 4651,
+        "sha256": "946F02B4E59654EFEF9837941449B18153D998A019485A1BA6148B63023C0922"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_hand_rear_legacy.png",
+        "bytes": 4662,
+        "sha256": "E94766A66131739BC13D745A9585CC9D228A0D13C8282782E41B0C864D96C6DC"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 2627,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_loop_leg_rear",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/loop_leg_rear.png",
+        "bytes": 6325,
+        "sha256": "D996B489A133D49BF314E22161371FB0B4DAC0BEDCC6517441F676DDA9A94A69"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_leg_rear_blue.png",
+        "bytes": 6332,
+        "sha256": "6F58B9D33EB04DD9CAFDADD72916B34DF74FB69D2A99330A929FD0A513312781"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_loop_leg_rear_blue.aseprite",
+        "bytes": 22032,
+        "sha256": "49942144D77DBCF61515C5E366DED84A54794164869A2DCA5FC5037C8AE07E4A"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_loop_leg_rear_original.png",
+        "bytes": 6338,
+        "sha256": "3A40564307F69FC7898578F890E1334A7BB9ED9A4DBC3C23DB117838656B5730"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_leg_rear_legacy.png",
+        "bytes": 6330,
+        "sha256": "FCAC7FB9A1A4290B11035D1116212600BD2B90AC8BC1A102F50B2B260BCF21AF"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 6053,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_loop_torso",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/loop_torso.png",
+        "bytes": 4101,
+        "sha256": "E1432DBC637B19E7EA502B2409E0C127D0A8B4F1CB1EEBF6EEEA1DCB1A4C0B91"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_torso_blue.png",
+        "bytes": 4082,
+        "sha256": "14867F8A28E526A7F16541DA8C0C05392E3A55ECC2A84784B74501361D454AF6"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_loop_torso_blue.aseprite",
+        "bytes": 14421,
+        "sha256": "7C04F909DCF442AA1BE0C06E031F01D2AD54BBB7CF6270A49D3F8280FF1E49A5"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_loop_torso_original.png",
+        "bytes": 4114,
+        "sha256": "AE2779B52E2F5B5C0CBBE0EF2CED0016ECD51BE89D11BF429CFA1456C3B7F6EF"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_torso_legacy.png",
+        "bytes": 4119,
+        "sha256": "9AE00B48223CECD4A0CCDA5DEB8581CA130F4CC64CE3C61D6BD36C2E3C7B6418"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 1253,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_loop_hand_front",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/loop_hand_front.png",
+        "bytes": 2840,
+        "sha256": "DEFD1A669ECF08F1C3E0352E4B90DDF40A55CAF7A55A489AC521AC352DA04D9C"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_hand_front_blue.png",
+        "bytes": 2877,
+        "sha256": "DC41DC4DE47999E6C1D580A8AAFC60C782D48936992A178980844C52E1EB9DD5"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_loop_hand_front_blue.aseprite",
+        "bytes": 13208,
+        "sha256": "4AFEE08192DA6D1FDF305D8B9C85E448D75090647862CD696FC6250520ED937C"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_loop_hand_front_original.png",
+        "bytes": 2853,
+        "sha256": "4272C6B4DECCE507BBCC78513048CF8112AE83B764BBA31A248500FCA8AC77BF"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_hand_front_legacy.png",
+        "bytes": 2825,
+        "sha256": "E85F63BCF83A71BFEBFE39E27526A90B86A5566A631B733E47D916DEC3855F78"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 944,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_loop_leg_front",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/loop_leg_front.png",
+        "bytes": 4675,
+        "sha256": "DBC1EDB648604946097DE12203C6892B2D2A7776D6F4509350B467B7EEA19FC4"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_leg_front_blue.png",
+        "bytes": 4688,
+        "sha256": "8A08460E85175AEDCC81859F76683CF75DB561CB5F03DB42E83360034C81ACF5"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_loop_leg_front_blue.aseprite",
+        "bytes": 16363,
+        "sha256": "3DA08312F497E0332E75A94D137E28E5706674FAE39CC82693C3B513E1C6C0AE"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_loop_leg_front_original.png",
+        "bytes": 4688,
+        "sha256": "5938BA5D3E7F5D93E8C89F6F071607AE6988A7D56A51507D36AD18DF221644F8"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_leg_front_legacy.png",
+        "bytes": 4653,
+        "sha256": "289316DF3CEA9926EF783A17FCB34F953756C974FE9C3DD4C5F48835439E5616"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 2436,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "furnace_loop_embers",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/furnace_v3/loop_embers.png",
+        "bytes": 1752,
+        "sha256": "5187983B7C9C6487D4D5D2F729DBAFC2D699DC9D912AFCEF3598A227F94CC244"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_embers_blue.png",
+        "bytes": 1805,
+        "sha256": "3CB94E72D33875E17A614A93472C1AA5BBC01D2F3A66456BFA8A281CE6EFD2FC"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/furnace_loop_embers_blue.aseprite",
+        "bytes": 10072,
+        "sha256": "2C2448D73CC2FA02BC3FAB4BD591FBAC4F27E7A91085279ABB210491E54A37E2"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/furnace_loop_embers_original.png",
+        "bytes": 1765,
+        "sha256": "99DE0736ED2197845C50ACF87A1EC293702F1684AB6CCD392C53028C4A37F05C"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/furnace_loop_embers_legacy.png",
+        "bytes": 1755,
+        "sha256": "04C4B585AB3683C9916CD002FD91537064E8D191EA44DBF97FC76AE4450CCE6B"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 111,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_cape",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/cape.png",
+        "bytes": 26746,
+        "sha256": "25E3874BEA203EFE95AF001AA9589D27C223006D21819317E17B57FDD4CD8897"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_cape_blue.png",
+        "bytes": 26954,
+        "sha256": "2DED8B15C3EE1AFA6D0F1345FD6CBC9DD258DE2B246B1A90EFCB4EF4AF28D680"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_cape_blue.aseprite",
+        "bytes": 61110,
+        "sha256": "E195B1E30C3659B7F10EE70D185BC68D8938D56E985035C0482FB1C196D321EC"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_cape_original.png",
+        "bytes": 26717,
+        "sha256": "C3C3FBC5EFC963A8452F6930F7BDF563A77F96A1188DAC393506A84CC2555957"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_cape_legacy.png",
+        "bytes": 26572,
+        "sha256": "CEBE8C6DC6A7132D34BCC5DF31F0084D1969146418F68066E8D4BA21D9F8FDBE"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 38429,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_rear",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/rear.png",
+        "bytes": 5600,
+        "sha256": "4682F608D55B630764FE3CA800A6BF1222255F87074B799A65D4FAC2D0B08EE4"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_rear_blue.png",
+        "bytes": 5615,
+        "sha256": "34F4F5899C235206075C2A888E2DA7CE83887A114A19EDDF11147005D35FCF76"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_rear_blue.aseprite",
+        "bytes": 16778,
+        "sha256": "162C87B03AD6403CB8AA48F2E68BE45D1A83BBED3C07A35D2E0F192E6971559F"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_rear_original.png",
+        "bytes": 5565,
+        "sha256": "0D6345D7B2C7B8756D19632366B321F5B3C9F87F4ABB75D455B8AA980E1AB5DA"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_rear_legacy.png",
+        "bytes": 5849,
+        "sha256": "23A160273618CC742E29BE026EF531CE585B88FDD941E5CA61C6EB37CFE0650E"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 1850,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_shoulder_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/shoulder_right.png",
+        "bytes": 2958,
+        "sha256": "BD4D6AD3D3D32AE2ADF4705B47DB8368F0DE6B4BE3E386540BA98C73D9ACDAD5"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shoulder_right_blue.png",
+        "bytes": 3003,
+        "sha256": "0F8C553FCE9621B4938D5F868B97775C88D21C6C2E07B3CB4A4F18C2CDA7E847"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_shoulder_right_blue.aseprite",
+        "bytes": 12377,
+        "sha256": "5EF714995EED4672DE417A8CFD4DEACA70BD006E82D570C9A0E5FB72FEA17862"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_shoulder_right_original.png",
+        "bytes": 2962,
+        "sha256": "87A0922E910233E6B2B8811D62FBB3CAEE9F12C69D4B8EA36D9D58DE4DBDC45C"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shoulder_right_legacy.png",
+        "bytes": 3138,
+        "sha256": "739FFE4565AC761DF9FD4D93CC3911AB0C50A18BCA6CFF65403004A01287D494"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 595,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_shoulder_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/shoulder_left.png",
+        "bytes": 2754,
+        "sha256": "F65DA5E3C1BC538A784A18604F224BD35D8C52A5BB2D4250148EF3A1D00C651F"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shoulder_left_blue.png",
+        "bytes": 2724,
+        "sha256": "244DE2A5969F8C5AE2E70F6990CD765A2EEBBD0954EA4D9F3C31E76786B6DBDB"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_shoulder_left_blue.aseprite",
+        "bytes": 11838,
+        "sha256": "3EACD48CED46C33E770C851DF1F7BBBBB6F9F9A0794336E5B8E3B6ACDBD7EDA6"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_shoulder_left_original.png",
+        "bytes": 2766,
+        "sha256": "91C2D6E5FD2A2B882BE388413BBFAF3F0B1FF88C37143762B7207AAAAC74F027"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shoulder_left_legacy.png",
+        "bytes": 2905,
+        "sha256": "0E564574E64F92243062B84958D44C4629D9CC3B3ED624A7AD62C4919A133755"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 495,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_abdomen_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/abdomen_right.png",
+        "bytes": 4203,
+        "sha256": "F289556C6850AD54A642DF52D23D11019F9EC21CDA683B808E7AC5D1A2287C5F"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_abdomen_right_blue.png",
+        "bytes": 4209,
+        "sha256": "93EB8F6B9F3E03FEC78F059306DD3CB6588EC30121FACDC11EB495FD493B6D34"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_abdomen_right_blue.aseprite",
+        "bytes": 14195,
+        "sha256": "86FE030043552B16515AFFCC9CF079BF65F35445D187B427FF36D1EBDB9C7633"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_abdomen_right_original.png",
+        "bytes": 4200,
+        "sha256": "BA77B0AE180D65B719D50152DCCAC54C063731366F4487C3D7504949F1BCEF5F"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_abdomen_right_legacy.png",
+        "bytes": 4327,
+        "sha256": "F65469D6568F71D42B3C66A2BCA478975045A3BF8B44CB088D4DB2D8DE618184"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 1149,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_abdomen_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/abdomen_left.png",
+        "bytes": 3940,
+        "sha256": "F7456159217DEC05BBC46A59AD199C2BFC011BD6272A4A25A88ECB87938CBDCD"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_abdomen_left_blue.png",
+        "bytes": 3983,
+        "sha256": "0A79E19EDCAF73FB518BB202C07559F77922DB9F9970F19F82287DA1DC23A68E"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_abdomen_left_blue.aseprite",
+        "bytes": 13745,
+        "sha256": "80A078D1B77F0CE6A7BEE7042E7130A4DB2890B168F9DDCC2BF92818ECF6DC98"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_abdomen_left_original.png",
+        "bytes": 3942,
+        "sha256": "078E2A78B08C021AC2F9624C6DE37315EA3899088F1B33002E8D2E4D04D6210F"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_abdomen_left_legacy.png",
+        "bytes": 4038,
+        "sha256": "72B506A61671A69B6D9CFDDF91047EBE01B355EE531EB220628AC8C72A831698"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 1047,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_hip_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/hip_left.png",
+        "bytes": 3199,
+        "sha256": "140A14358234EEB785D605DFB2F11F27DAABC391D0942D59E39ABE87F1CB3B85"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hip_left_blue.png",
+        "bytes": 3206,
+        "sha256": "5CB0031DDF8FC7FAB9F2EB66C4DBDD4F73B43212105A3219957A19415F4FAAE1"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_hip_left_blue.aseprite",
+        "bytes": 12741,
+        "sha256": "C70DB6D35AC5BBC5B07B0EDD994546D20DE230644D78172FFDA3852E76C1C24A"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_hip_left_original.png",
+        "bytes": 3208,
+        "sha256": "2CD230C9DD099F890696AFD043030995ED6FA8CD73C038933731DA59BAD01A50"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hip_left_legacy.png",
+        "bytes": 3333,
+        "sha256": "82592676A5B902FC5DEFBC40326303422F15F78ADFF2601FE39FB7532A7A1AA7"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 699,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_shin_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/shin_right.png",
+        "bytes": 3888,
+        "sha256": "4D6A3D5206C069C6EBA1959E55901D82B9C54D6CE4410848E84EED665E19B7AD"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shin_right_blue.png",
+        "bytes": 3868,
+        "sha256": "F15DC89F44059F7B9D47672CAE5AFC162B8E52B9C46AD4582783B747607C28BF"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_shin_right_blue.aseprite",
+        "bytes": 13866,
+        "sha256": "567B325B2AEB5010AA1320BE8F3F40ECADE71B730144BA8C66881892C765BB04"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_shin_right_original.png",
+        "bytes": 3888,
+        "sha256": "BF099A36C2EE08CE6F212719E0BCE14FEB6FFB9C83E9521F6931778D59F55A10"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shin_right_legacy.png",
+        "bytes": 4000,
+        "sha256": "F023A332BE395EABA0B2E77DDC27B683914600C225BBC33BC1D66C10DB36B81C"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 1044,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_shin_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/shin_left.png",
+        "bytes": 3497,
+        "sha256": "6303ED8FFB736A8FF766A3AE00CA0198B7558E04B8BC6444824E78FF09C75D49"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shin_left_blue.png",
+        "bytes": 3472,
+        "sha256": "EDEDA9270B3597E6DAE45E442556B3CFE79BEC3CA61F8996361B1D7AC34928C8"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_shin_left_blue.aseprite",
+        "bytes": 13322,
+        "sha256": "213CDCD38C5D3EA1EC1B310851E2BBA594FD4EB59ED0C9C187FA8184F7D7A7B7"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_shin_left_original.png",
+        "bytes": 3500,
+        "sha256": "AF4EAF1E7EE64FB468A96741C6FCF758773DAB97315EC359B62DF5D5FAB94A37"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_shin_left_legacy.png",
+        "bytes": 3626,
+        "sha256": "332103AA9C34BF0A52725D986691DFD8B1A10A4726606C40E531F48ADB3A44D4"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 943,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_hand",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/hand.png",
+        "bytes": 16496,
+        "sha256": "2F16BD11ABD0D516BD51ABD0730A03F2D797F4C477486F5981393DAAF992CA6D"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hand_blue.png",
+        "bytes": 16884,
+        "sha256": "089A1E87E36434FFCF98B3B5834C611B293D04B8458B923D426C8F5285E1CB99"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_hand_blue.aseprite",
+        "bytes": 36130,
+        "sha256": "4D343F32FE40B0B4A6ABE1C4632C3AF67440BF500945774FEC6B5EC9C0DF5687"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_hand_original.png",
+        "bytes": 16455,
+        "sha256": "CB268EB147380164754D554B99EACA126227FF1A5880F36280CAB1BA0D652538"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hand_legacy.png",
+        "bytes": 16569,
+        "sha256": "00252CC949FA8342DC18047F5FB850DCB608C2B0A6A8C0EDE4226672776255F7"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 10036,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_hand_embers_right",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/hand_embers_right.png",
+        "bytes": 1788,
+        "sha256": "31802C769B28B435E8620B78E2585A28B035DFF874BA9B8BCB3F0B32F0048861"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hand_embers_right_blue.png",
+        "bytes": 1784,
+        "sha256": "DC07C5DC8B6750D5FB0B7AFCDB2166795A04335AE579D49C9D39C1B6E1230FA1"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_hand_embers_right_blue.aseprite",
+        "bytes": 9929,
+        "sha256": "FF129A26E67390CED861317E1C0A76B7351E199BD516D5409B9BC9D7EF0FC278"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_hand_embers_right_original.png",
+        "bytes": 1798,
+        "sha256": "0DC9243862D01B83BC19434614815653E1B32B828EE652B33153114032D041A4"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hand_embers_right_legacy.png",
+        "bytes": 1886,
+        "sha256": "3AF62033107FE1143BF07391321C03A8340E9EBC9F3E4F92285D0FBACFF9473F"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 167,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_hand_embers_left",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/hand_embers_left.png",
+        "bytes": 1713,
+        "sha256": "021A5AC6CC9F4F13367C50BDA9E17F5BB9EAF800E459E875D1ACBAF837016454"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hand_embers_left_blue.png",
+        "bytes": 1718,
+        "sha256": "C31B3677C00F99E24443EAF93601DEEDD262145E201B906AFD1EC7F429FE7A34"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_hand_embers_left_blue.aseprite",
+        "bytes": 9700,
+        "sha256": "1000129A2CFE24790625546C7E31645E71EB27FF6389C1EB51706D42C2CF2553"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_hand_embers_left_original.png",
+        "bytes": 1722,
+        "sha256": "ED25EE2FAB3E9E4865AE1536125E0CAE243DD2911E5E14FCBB87C336606D79B8"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_hand_embers_left_legacy.png",
+        "bytes": 1806,
+        "sha256": "F6999CA2CDB7A70CF818C64265588FBE5E97D1E87646775C49C387F2F46C114B"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 154,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "burn_loop_body_embers",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/body_embers.png",
+        "bytes": 4547,
+        "sha256": "64F84CFD2BF67E2FBB572DECB234849DCD251AFE00A07777F5DFDF32E6BA84A4"
+      },
+      "width": 96,
+      "height": 2240,
+      "frameHeight": 112,
+      "frames": 20,
+      "previewMs": 80,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_body_embers_blue.png",
+        "bytes": 4550,
+        "sha256": "CC85A850F9D1E30631B88CB62EEE9D4CA162384C5E1A9145FC1DFCB39B4C4C91"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/burn_loop_body_embers_blue.aseprite",
+        "bytes": 17483,
+        "sha256": "E1452A12EEA0CD1D6F149DE03699CEB0B34E5E4FA9E0E01C044B1F11D050B617"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/burn_loop_body_embers_original.png",
+        "bytes": 4541,
+        "sha256": "170C05FA9280A9F7D1CADB1E95CF81A1AAC2DE582E0BC4A681EB7D7513407915"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/burn_loop_body_embers_legacy.png",
+        "bytes": 4892,
+        "sha256": "108A7F3ABF60245EB5906BFBD477F6515EFA1AAA640FE3899BECE55ED302B623"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 960,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "liaoli_back_ignite",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoli_v6/back_ignite.png",
+        "bytes": 4180,
+        "sha256": "A83D034983C36F4EEB1B492CB6B269937BBCBFFD0DEB4FB0729E1E031E250CB2"
+      },
+      "width": 128,
+      "height": 576,
+      "frameHeight": 48,
+      "frames": 12,
+      "previewMs": 50,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_back_ignite_blue.png",
+        "bytes": 4271,
+        "sha256": "0CFF62F63E1894DA3FFF06115DD04E2F82029512D8EC9934F42A45DB51362A88"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/liaoli_back_ignite_blue.aseprite",
+        "bytes": 15037,
+        "sha256": "8E1846DD6B57C877D5E8A59669F11B473394581333E3ADD62547D775BAB651F9"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/liaoli_back_ignite_original.png",
+        "bytes": 4193,
+        "sha256": "63FDDF26F61E8CEEF74BB1F94FAFE263AD20A93A798FEBB322D8EA4F8B1767FA"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_back_ignite_legacy.png",
+        "bytes": 4298,
+        "sha256": "6CCB2C58ABB4F548D261EDC87030474CB05C3084C05227C0551AC343D41F9A92"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 11719,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "liaoli_back_flow",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoli_v6/back_flow.png",
+        "bytes": 12310,
+        "sha256": "254E8F1F63BE6F13017AC192FD4AF496B3ADB960133E55F65535A802B95FA6E0"
+      },
+      "width": 128,
+      "height": 1152,
+      "frameHeight": 48,
+      "frames": 24,
+      "previewMs": 50,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_back_flow_blue.png",
+        "bytes": 12309,
+        "sha256": "09CED3337F88FB674E0AABCFE29461BE6D53D4AA28773044FE12EAE13F35EF81"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/liaoli_back_flow_blue.aseprite",
+        "bytes": 46881,
+        "sha256": "AF66CDD013641F97FDBE69BFDEAD323956FCFC3AA98DBF68E8DFFF15DD099CDA"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/liaoli_back_flow_original.png",
+        "bytes": 12323,
+        "sha256": "DFEDDE79748E4DBA2E43CE3F6483BCB3A9D1619EB53451F3A52E535888B0D2BD"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_back_flow_legacy.png",
+        "bytes": 12424,
+        "sha256": "ECC12ADAA0863D86CEB3C595C6427B43BEEAA074AC9932BAC656FC166EA5CA5B"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 52170,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "liaoli_thrust_backflow",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoli_v6/thrust_backflow.png",
+        "bytes": 12612,
+        "sha256": "2D57C54F8D99AC3E451B35A70009D99B2885B924242349A6C1B6BFE120BD329F"
+      },
+      "width": 128,
+      "height": 1536,
+      "frameHeight": 64,
+      "frames": 24,
+      "previewMs": 50,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_thrust_backflow_blue.png",
+        "bytes": 12600,
+        "sha256": "1E6B2AA800D9EF33FEB9E63689216BB3D9AF6203BD38B21EDC6F4500BF788D59"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/liaoli_thrust_backflow_blue.aseprite",
+        "bytes": 43299,
+        "sha256": "6C074192F50566F49424FE4A316A965EE4381A7F3B636F79F0B7643F75D282F1"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/liaoli_thrust_backflow_original.png",
+        "bytes": 12625,
+        "sha256": "C69538E42A15AAE543D25445DB596E83E6B4D2B0BF7700465968A72007EF16E5"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_thrust_backflow_legacy.png",
+        "bytes": 13444,
+        "sha256": "923C1C3258FA3F2B509A0564ACCDAD8052AFC3AD0592638BCC056F955E9B12F7"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 54984,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "liaoli_rear_ring",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoli_v6/rear_ring.png",
+        "bytes": 30035,
+        "sha256": "857C37C052D082548A93B0E00868375C973D33B2CDB2C0B477C46C384A1A0CDE"
+      },
+      "width": 96,
+      "height": 2304,
+      "frameHeight": 96,
+      "frames": 24,
+      "previewMs": 50,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_rear_ring_blue.png",
+        "bytes": 31904,
+        "sha256": "B1A5481E374F0E685E05E8A19066368467888FCEFA9EBD0F174A95F3BAE674AD"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/liaoli_rear_ring_blue.aseprite",
+        "bytes": 69390,
+        "sha256": "E4C2B555ECA2FABE1175181EDBE49632C13C63B190E106FC79330C4EA0FFB107"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/liaoli_rear_ring_original.png",
+        "bytes": 30048,
+        "sha256": "80B023ED4E79388E95A33E8017A58E963A692D94AFCDA0314430A52FD005E498"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoli_rear_ring_legacy.png",
+        "bytes": 30141,
+        "sha256": "F24D00D254C016B377D425F67F3BDE7A229612A3DA23554D6DE446AB06C09C2C"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 35232,
+      "preservedVisiblePixels": 0
+    },
+    {
+      "id": "liaoyuan_v3_ground_embers",
+      "runtimeInput": {
+        "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/liaoyuan_v3/ground_embers.png",
+        "bytes": 336,
+        "sha256": "B8642145B0665A179A5C89C6A0CE0A270A5118254F2686E6BD16618A5B2C8F0F"
+      },
+      "width": 16,
+      "height": 384,
+      "frameHeight": 16,
+      "frames": 24,
+      "previewMs": 50,
+      "blue": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoyuan_v3_ground_embers_blue.png",
+        "bytes": 332,
+        "sha256": "B21E1BE541E23548B5EA52D030149D380864CE8D31B9EB0D41C352F48E6DAE58"
+      },
+      "editable": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/source/liaoyuan_v3_ground_embers_blue.aseprite",
+        "bytes": 5893,
+        "sha256": "B76CD7AF33DB39E99E25C2800D00DB02C4AC54CC8D359FEA040F4C6A0C1AE3CF"
+      },
+      "original": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/references/liaoyuan_v3_ground_embers_original.png",
+        "bytes": 349,
+        "sha256": "2EC9AD1D3D2E524F24252E33D6652781DF3DC44C8FD0FE5A437D7A0A6DCE744D"
+      },
+      "legacyComparator": {
+        "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/textures/liaoyuan_v3_ground_embers_legacy.png",
+        "bytes": 322,
+        "sha256": "0CFA1BF944612E6765FB83CC0622C617FE422961C56C5413F28364B045057D3A"
+      },
+      "alphaDifferences": 0,
+      "silhouetteDifferences": 0,
+      "changedVisiblePixels": 65,
+      "preservedVisiblePixels": 0
+    }
+  ],
+  "approvedOriginalUsageMapping": [
+    {
+      "previousCandidateId": "fentian_conflagration",
+      "currentUse": "引燃_承接焚天_v4",
+      "input": {
+        "path": "D:/alianximod/docs/资源库/特效/火焰/引燃_承接焚天_v4/kindle_v4-strip.png",
+        "bytes": 83272,
+        "sha256": "3AE6A95E41D92991B828EDC7491CBB40A18D503CDCF700281A50D901D6AA6A76"
+      }
+    },
+    {
+      "previousCandidateId": "kindle_v3_screenshot",
+      "currentUse": "焚天_全身烈焰_v3",
+      "input": {
+        "path": "D:/alianximod/docs/资源库/特效/火焰/焚天_全身烈焰_v3/fentian_v3-strip.png",
+        "bytes": 12139,
+        "sha256": "EF3476EB01225D2E7478F9BBA5430F28BCF2E1D12198F3F482A634C155A04070"
+      }
+    }
+  ],
+  "limitations": [
+    "BB is actual desktop spatial art preview, not in-game verification",
+    "Thrust side F10 is a texture keyframe on a standing sword mount, not a diving pose",
+    "Native soul reuse retains native shapes/alpha rather than matching ordinary fire",
+    "Legacy comparator does not assert every added runtime path previously applied that tint",
+    "No Java/runtime resources/workbooks/shared indexes/compile/game/review/integration performed"
+  ],
+  "files": [
+    {
+      "path": "blockbench/nether_blue_coverage_02.bbmodel",
+      "bytes": 2779160,
+      "sha256": "6711CA4889F014C2A92004E81C3D73158DC5074ADF0A628EACD5B8B89C537E97"
+    },
+    {
+      "path": "evidence/aseprite-production.json",
+      "bytes": 15021,
+      "sha256": "580EA436B3C3BE31EFA934516E0818D8FA81026F8611004FAFC3B64999287C40"
+    },
+    {
+      "path": "evidence/aseprite-verification.json",
+      "bytes": 9257,
+      "sha256": "2E1E807AFC796E518B904BF8CDA4D3CECA27FE2E92CAB5B9461769069B02ADC0"
+    },
+    {
+      "path": "evidence/baseline-preservation.json",
+      "bytes": 22438,
+      "sha256": "D2AB5573996ACAFA91B36B920B88E6B5E79B41415B828F7BA2AB4B07C2FA16C9"
+    },
+    {
+      "path": "evidence/blockbench-before.json",
+      "bytes": 3293,
+      "sha256": "0726861E03AB3A8FFACF06175EDA01BDF4C713CAFC5B5C0C4E860C14BFCE429A"
+    },
+    {
+      "path": "evidence/blockbench-build.json",
+      "bytes": 428675,
+      "sha256": "8FB9462409CC26B5A0195C73FC3C9F83D0C922B4296AC8102E20D6FF65B64FA4"
+    },
+    {
+      "path": "evidence/blockbench-captures.json",
+      "bytes": 4059,
+      "sha256": "68BB46F6D2E2D181EA5EECD92F3B717408B60038C40067EEBD9DD206CE71D01E"
+    },
+    {
+      "path": "evidence/blockbench-reopen-verification.json",
+      "bytes": 2578,
+      "sha256": "0854D583F09643FAD0A2F776B54B3681E35A65F70EC61DAAA4B2E7A89821B5E3"
+    },
+    {
+      "path": "evidence/source-material-inspection.json",
+      "bytes": 4542,
+      "sha256": "563E8B8455B022178358F4C2DF952FFAB167A293AAA568BF1E52248086B94E63"
+    },
+    {
+      "path": "previews/bb_burn_blue_side_F06.png",
+      "bytes": 57001,
+      "sha256": "FBC319D4BD3076BFFA444A7E0C8AB3C0DD97535017840E77E1250557F17C1B4C"
+    },
+    {
+      "path": "previews/bb_burn_loop_overall_F06.png",
+      "bytes": 57350,
+      "sha256": "FF05E83DDEE7683AA24F7B4B5F2EA736D3355662B36AF918DEA446A8A5202A2C"
+    },
+    {
+      "path": "previews/bb_furnace_blue_side_F06.png",
+      "bytes": 58240,
+      "sha256": "5F1F2E876DE687738556E822D94FBF9E78D9FA9FA1416F637AA8C0D8F6D3ED5C"
+    },
+    {
+      "path": "previews/bb_furnace_loop_overall_F06.png",
+      "bytes": 46755,
+      "sha256": "D34928C43CBD5FA3F69FBCFE155027FEAE277EFBD68336568353808C960B216C"
+    },
+    {
+      "path": "previews/bb_liaoli_blue_thrust_side_F10.png",
+      "bytes": 97905,
+      "sha256": "A0726BB29DB69A6FAB26D5E9583D7A2FB87CAA65E60FE524E644B22568B7407F"
+    },
+    {
+      "path": "previews/bb_liaoli_flame_overall_F06.png",
+      "bytes": 89579,
+      "sha256": "A2ED8594990C0461F60952017F8375905F0F12A1EBF1F826E410B401A3C7E25E"
+    },
+    {
+      "path": "previews/bb_native_soul_blue_side_F06.png",
+      "bytes": 52240,
+      "sha256": "3E856288CCAA4F8CA6B58D01A59C16DFC721072DBF8C579DD735DE408BEFB2B5"
+    },
+    {
+      "path": "previews/bb_native_soul_overall_F06.png",
+      "bytes": 48670,
+      "sha256": "14BB13E680E8D49E8CDAF0F2BAA3C7CF05F5DDBB85FC416E39B5ACF37F34CAE5"
+    },
+    {
+      "path": "previews/burn_entry_comparison.gif",
+      "bytes": 96812,
+      "sha256": "F13151FEC42C3161DB4F7356E2998017330B29718FE85F7CC33A7CFD278BA31B"
+    },
+    {
+      "path": "previews/burn_loop_comparison.gif",
+      "bytes": 245123,
+      "sha256": "51C837E33249160BFD5A14A3688619FDF5BD7552C79B1C02F8FD73DF3F4BC582"
+    },
+    {
+      "path": "previews/coverage_overview_native.png",
+      "bytes": 39145,
+      "sha256": "E6CF0F6B5A62C36DC840DC335D46DEEAC746856FB0E925EF6F078CA41241EE89"
+    },
+    {
+      "path": "previews/coverage_overview.png",
+      "bytes": 52139,
+      "sha256": "AF440C69C38305ACCE2A59D09FA260968425E05FC6993AEDAA49F11EB3A69D3E"
+    },
+    {
+      "path": "previews/furnace_entry_comparison.gif",
+      "bytes": 24818,
+      "sha256": "17D07B7817F7C4EAF45C0F90DC379F87A1BC8F3995EECC0C7D67853DF16BC998"
+    },
+    {
+      "path": "previews/furnace_loop_comparison.gif",
+      "bytes": 43039,
+      "sha256": "3E43805B5D81627294D4DFA8C8A046281962324AF2B7F3A2B211E188FB683512"
+    },
+    {
+      "path": "previews/liaoli_fire_comparison.gif",
+      "bytes": 141030,
+      "sha256": "2EC53E25460A8DEA4D84A0461CF786A8BD783A0B04996BF5FCF6606E277BE232"
+    },
+    {
+      "path": "receipt.md",
+      "bytes": 4083,
+      "sha256": "CA6664DDD8FEA672E67CC558D3017B7802608538214337E9E449FA026214AF9F"
+    },
+    {
+      "path": "references/block_fire_0.png",
+      "bytes": 12500,
+      "sha256": "C7A342A5F8016507A39FF50004437E55A52206C441B993612529DE7A3B33CDF2"
+    },
+    {
+      "path": "references/block_fire_0.png.mcmeta",
+      "bytes": 356,
+      "sha256": "658D67C1B3206E23A401D04EC196512B72702B7B8C6FA0200C6C66250529BBBB"
+    },
+    {
+      "path": "references/block_fire_1.png",
+      "bytes": 13255,
+      "sha256": "BB0EDF37C52D25EBCBBEB40CD96A6CD956181E2D25D37E5DF4B644ADC91592FD"
+    },
+    {
+      "path": "references/block_fire_1.png.mcmeta",
+      "bytes": 21,
+      "sha256": "802ACDB8F55F30146D5ED18414B21BA35650D4E550F81825EA104131C12DC4FC"
+    },
+    {
+      "path": "references/block_soul_fire_0.png",
+      "bytes": 8841,
+      "sha256": "7AD4A4A0BE94AE53F05958C6B968D46DBD927DDF20C093D4D4F6916A883D6D6D"
+    },
+    {
+      "path": "references/block_soul_fire_0.png.mcmeta",
+      "bytes": 356,
+      "sha256": "658D67C1B3206E23A401D04EC196512B72702B7B8C6FA0200C6C66250529BBBB"
+    },
+    {
+      "path": "references/block_soul_fire_1.png",
+      "bytes": 8522,
+      "sha256": "292BBFCFC1CA45644A5F49BDB61D6EBF47AFA9AF4A95B327D5889D3E72606AF0"
+    },
+    {
+      "path": "references/block_soul_fire_1.png.mcmeta",
+      "bytes": 21,
+      "sha256": "802ACDB8F55F30146D5ED18414B21BA35650D4E550F81825EA104131C12DC4FC"
+    },
+    {
+      "path": "references/burn_entry_abdomen_left_original.png",
+      "bytes": 1425,
+      "sha256": "6726BA28B28B7237EF8FB96897667E4CBE41D05A24421B1DB766531B7F928E48"
+    },
+    {
+      "path": "references/burn_entry_abdomen_right_original.png",
+      "bytes": 1675,
+      "sha256": "F2FA0D8E730EBB4BBD00C88BE29B9E8193BC216A73781FD66E9D0AA38C2AC959"
+    },
+    {
+      "path": "references/burn_entry_body_embers_original.png",
+      "bytes": 2215,
+      "sha256": "35855C8176D0AF860166CC87B74464AA724444513D5EE52CCC3DA7A466041723"
+    },
+    {
+      "path": "references/burn_entry_cape_original.png",
+      "bytes": 7055,
+      "sha256": "DA4E72A9D22F494EAA580E17579069616A6AF056E464AFDF3672F00313BF0207"
+    },
+    {
+      "path": "references/burn_entry_hand_embers_left_original.png",
+      "bytes": 875,
+      "sha256": "1D115FF6E1F2CCAC929DDC54B24B6396962326BC019B50D05D38635A1E01B0CE"
+    },
+    {
+      "path": "references/burn_entry_hand_embers_right_original.png",
+      "bytes": 773,
+      "sha256": "57DD87D6E1EFF384D7C36CF96691AEE90B736FA47AC2AFBBB419E23E65BEB666"
+    },
+    {
+      "path": "references/burn_entry_hand_original.png",
+      "bytes": 6392,
+      "sha256": "C8E5DF321D28691C4A0A110B57B5DEFD7E428F2581633FF5C150B40A6CBE7704"
+    },
+    {
+      "path": "references/burn_entry_hip_left_original.png",
+      "bytes": 1229,
+      "sha256": "ED895641572409D41AF9308C462923C637710EF17BEAEF4404CD898F78D01B2E"
+    },
+    {
+      "path": "references/burn_entry_rear_original.png",
+      "bytes": 2359,
+      "sha256": "6D5EAC6E38C025ADE657EB572CB813F84A9F50546D9D66C477F3191F3031B52D"
+    },
+    {
+      "path": "references/burn_entry_shin_left_original.png",
+      "bytes": 1395,
+      "sha256": "CA0DD73EBECA0A8EB2B21E7E785CEC2E7BDA6560A56B3F2C0A1A232AF3C55247"
+    },
+    {
+      "path": "references/burn_entry_shin_right_original.png",
+      "bytes": 1688,
+      "sha256": "42A8BB0DBCE2391742EC828304117CF85CF5B01626675BE020D530964E80EABE"
+    },
+    {
+      "path": "references/burn_entry_shoulder_left_original.png",
+      "bytes": 1167,
+      "sha256": "B27B78E1A4CB17ADD6C7CC11EC5349EA38AF2588DFD597BC4C6229884B64BEA8"
+    },
+    {
+      "path": "references/burn_entry_shoulder_right_original.png",
+      "bytes": 1192,
+      "sha256": "E10C4DAF710BD4592FD73A327C2D3975E05F5018A1404B766E8C4DDA35744175"
+    },
+    {
+      "path": "references/burn_loop_abdomen_left_original.png",
+      "bytes": 3942,
+      "sha256": "078E2A78B08C021AC2F9624C6DE37315EA3899088F1B33002E8D2E4D04D6210F"
+    },
+    {
+      "path": "references/burn_loop_abdomen_right_original.png",
+      "bytes": 4200,
+      "sha256": "BA77B0AE180D65B719D50152DCCAC54C063731366F4487C3D7504949F1BCEF5F"
+    },
+    {
+      "path": "references/burn_loop_body_embers_original.png",
+      "bytes": 4541,
+      "sha256": "170C05FA9280A9F7D1CADB1E95CF81A1AAC2DE582E0BC4A681EB7D7513407915"
+    },
+    {
+      "path": "references/burn_loop_cape_original.png",
+      "bytes": 26717,
+      "sha256": "C3C3FBC5EFC963A8452F6930F7BDF563A77F96A1188DAC393506A84CC2555957"
+    },
+    {
+      "path": "references/burn_loop_hand_embers_left_original.png",
+      "bytes": 1722,
+      "sha256": "ED25EE2FAB3E9E4865AE1536125E0CAE243DD2911E5E14FCBB87C336606D79B8"
+    },
+    {
+      "path": "references/burn_loop_hand_embers_right_original.png",
+      "bytes": 1798,
+      "sha256": "0DC9243862D01B83BC19434614815653E1B32B828EE652B33153114032D041A4"
+    },
+    {
+      "path": "references/burn_loop_hand_original.png",
+      "bytes": 16455,
+      "sha256": "CB268EB147380164754D554B99EACA126227FF1A5880F36280CAB1BA0D652538"
+    },
+    {
+      "path": "references/burn_loop_hip_left_original.png",
+      "bytes": 3208,
+      "sha256": "2CD230C9DD099F890696AFD043030995ED6FA8CD73C038933731DA59BAD01A50"
+    },
+    {
+      "path": "references/burn_loop_rear_original.png",
+      "bytes": 5565,
+      "sha256": "0D6345D7B2C7B8756D19632366B321F5B3C9F87F4ABB75D455B8AA980E1AB5DA"
+    },
+    {
+      "path": "references/burn_loop_shin_left_original.png",
+      "bytes": 3500,
+      "sha256": "AF4EAF1E7EE64FB468A96741C6FCF758773DAB97315EC359B62DF5D5FAB94A37"
+    },
+    {
+      "path": "references/burn_loop_shin_right_original.png",
+      "bytes": 3888,
+      "sha256": "BF099A36C2EE08CE6F212719E0BCE14FEB6FFB9C83E9521F6931778D59F55A10"
+    },
+    {
+      "path": "references/burn_loop_shoulder_left_original.png",
+      "bytes": 2766,
+      "sha256": "91C2D6E5FD2A2B882BE388413BBFAF3F0B1FF88C37143762B7207AAAAC74F027"
+    },
+    {
+      "path": "references/burn_loop_shoulder_right_original.png",
+      "bytes": 2962,
+      "sha256": "87A0922E910233E6B2B8811D62FBB3CAEE9F12C69D4B8EA36D9D58DE4DBDC45C"
+    },
+    {
+      "path": "references/furnace_entry_embers_original.png",
+      "bytes": 629,
+      "sha256": "9EE89F82B5FDD3AF3F68CF65C087F64D6D40E82C7AC7E710BA607A1EBD79DE13"
+    },
+    {
+      "path": "references/furnace_entry_hand_front_original.png",
+      "bytes": 1048,
+      "sha256": "8993A9BF511B7E1CC945A052E7DBCB6C827CD16843CBDD1B9B9FA5393F7E8B8D"
+    },
+    {
+      "path": "references/furnace_entry_hand_rear_original.png",
+      "bytes": 1675,
+      "sha256": "D778466455A48DF6FE0382A9A8C08CF24A7761C4F8BD1E9D804635F6E02C12AA"
+    },
+    {
+      "path": "references/furnace_entry_leg_front_original.png",
+      "bytes": 1560,
+      "sha256": "3647E6D118612E2AF5D904747AB3AE5596A5261192C02A2FF9561477BF721AA6"
+    },
+    {
+      "path": "references/furnace_entry_leg_rear_original.png",
+      "bytes": 2091,
+      "sha256": "F8C3C33B017712DA931740F65AF38244B6C54253F3EDE11550D6580572E18524"
+    },
+    {
+      "path": "references/furnace_entry_torso_original.png",
+      "bytes": 1333,
+      "sha256": "FCF447BC8AEFD7992833301F2A2CC07FF7F14BF543A7658898B713D5F5DC2156"
+    },
+    {
+      "path": "references/furnace_entry_warmth_original.png",
+      "bytes": 833,
+      "sha256": "4A9F6B0BF9DF6100C43ACF8F886334C64941FD682951EDA329BAC136D85B89F5"
+    },
+    {
+      "path": "references/furnace_loop_embers_original.png",
+      "bytes": 1765,
+      "sha256": "99DE0736ED2197845C50ACF87A1EC293702F1684AB6CCD392C53028C4A37F05C"
+    },
+    {
+      "path": "references/furnace_loop_hand_front_original.png",
+      "bytes": 2853,
+      "sha256": "4272C6B4DECCE507BBCC78513048CF8112AE83B764BBA31A248500FCA8AC77BF"
+    },
+    {
+      "path": "references/furnace_loop_hand_rear_original.png",
+      "bytes": 4651,
+      "sha256": "946F02B4E59654EFEF9837941449B18153D998A019485A1BA6148B63023C0922"
+    },
+    {
+      "path": "references/furnace_loop_leg_front_original.png",
+      "bytes": 4688,
+      "sha256": "5938BA5D3E7F5D93E8C89F6F071607AE6988A7D56A51507D36AD18DF221644F8"
+    },
+    {
+      "path": "references/furnace_loop_leg_rear_original.png",
+      "bytes": 6338,
+      "sha256": "3A40564307F69FC7898578F890E1334A7BB9ED9A4DBC3C23DB117838656B5730"
+    },
+    {
+      "path": "references/furnace_loop_torso_original.png",
+      "bytes": 4114,
+      "sha256": "AE2779B52E2F5B5C0CBBE0EF2CED0016ECD51BE89D11BF429CFA1456C3B7F6EF"
+    },
+    {
+      "path": "references/furnace_loop_warmth_original.png",
+      "bytes": 1821,
+      "sha256": "382A63669BEF1DCFEA1B9EF5F92CA3F6B66302DE1058188151D26943730EBA56"
+    },
+    {
+      "path": "references/liaoli_back_flow_original.png",
+      "bytes": 12323,
+      "sha256": "DFEDDE79748E4DBA2E43CE3F6483BCB3A9D1619EB53451F3A52E535888B0D2BD"
+    },
+    {
+      "path": "references/liaoli_back_ignite_original.png",
+      "bytes": 4193,
+      "sha256": "63FDDF26F61E8CEEF74BB1F94FAFE263AD20A93A798FEBB322D8EA4F8B1767FA"
+    },
+    {
+      "path": "references/liaoli_rear_ring_original.png",
+      "bytes": 30048,
+      "sha256": "80B023ED4E79388E95A33E8017A58E963A692D94AFCDA0314430A52FD005E498"
+    },
+    {
+      "path": "references/liaoli_thrust_backflow_original.png",
+      "bytes": 12625,
+      "sha256": "C69538E42A15AAE543D25445DB596E83E6B4D2B0BF7700465968A72007EF16E5"
+    },
+    {
+      "path": "references/liaoyuan_v3_ground_embers_original.png",
+      "bytes": 349,
+      "sha256": "2EC9AD1D3D2E524F24252E33D6652781DF3DC44C8FD0FE5A437D7A0A6DCE744D"
+    },
+    {
+      "path": "references/native_fire_0_legacy.png",
+      "bytes": 16067,
+      "sha256": "29CCE20A8A4C607A77757593AB53F0A347FD4B964F7687B56DBDF69480FA4E46"
+    },
+    {
+      "path": "references/native_fire_1_legacy.png",
+      "bytes": 16877,
+      "sha256": "42D87B56185A096396A9F543170892CC1CFA849BADDB2C8F8C9C672522DC198C"
+    },
+    {
+      "path": "references/native_particle_legacy.png",
+      "bytes": 127,
+      "sha256": "1BF7C493FDE6556B06E106585B071E5F9C3309358FBC2736D6AE745D8DC6884F"
+    },
+    {
+      "path": "references/particle_flame.png",
+      "bytes": 124,
+      "sha256": "2F2EFACAC134CE943D142D3A40E43F87E80E1E32D7137645BB1268618505E4A7"
+    },
+    {
+      "path": "references/particle_soul_fire_flame.png",
+      "bytes": 127,
+      "sha256": "E5EB0F6508ED5DEE56DF19DA63ACE387B43ABD118FFF33E92EC3C94DFF0FBD72"
+    },
+    {
+      "path": "references/preserve_ground_ash_b.png",
+      "bytes": 636,
+      "sha256": "5C1510E72EB354FB2321C350C5EB3A6F43F594B59C3617EB94E1B6505B86AECA"
+    },
+    {
+      "path": "references/preserve_ground_ash_c.png",
+      "bytes": 606,
+      "sha256": "F8C265BCBFE631AB45C20C3E5D53D4600A53DB6D2E56977607E8D78350E726D9"
+    },
+    {
+      "path": "references/preserve_ground_ash_d.png",
+      "bytes": 601,
+      "sha256": "6D2C6A60434DB7CF14C289381D7D9A62D2EC094BB1E74B8EA80C5FB53C7946DE"
+    },
+    {
+      "path": "references/preserve_ground_ash_legacy_comparator.png",
+      "bytes": 577,
+      "sha256": "143CCE779346F449930EEE78183262EE2CEEBDFD005DD976FE1E904E9A92C450"
+    },
+    {
+      "path": "references/preserve_ground_ash.png",
+      "bytes": 633,
+      "sha256": "CB0BD18619EACAE2CAA7D2378A5BFFA6256563482D687953DCAD8215C9819670"
+    },
+    {
+      "path": "references/preserve_ground_dust.png",
+      "bytes": 6691,
+      "sha256": "12BD1AFEE06B33AB18063AA4DA2C5A54B39F401022CB30FF0937E148A28DD0BF"
+    },
+    {
+      "path": "references/preserve_surface_anchor.png",
+      "bytes": 4741,
+      "sha256": "4434BDC7B0311E863277E9BD23761139E77489AD6B548FBB48AC202C4FB35A20"
+    },
+    {
+      "path": "references/preserve_sword_hot.png",
+      "bytes": 288,
+      "sha256": "24E59D7EC586DEF5FF42B91F961B8724B6FF99E2FEB7A76DF59EB61C31B7EB4E"
+    },
+    {
+      "path": "references/preserve_sword_unlit.png",
+      "bytes": 352,
+      "sha256": "8FF92103A9B9BBF488510A06AC365B35369199BB3BAEA5B131314AA9249352A4"
+    },
+    {
+      "path": "references/source_material_inspection.png",
+      "bytes": 12721,
+      "sha256": "9CBA42CDB54F64E5A21AB25774CB7B997811780DEB902F5DC270B21B2907BD70"
+    },
+    {
+      "path": "scripts/build_coverage_bb.js",
+      "bytes": 11570,
+      "sha256": "909738B8C18539EDCDCDFD87530C52978B6576C48DE5DCB4943F3F606368480C"
+    },
+    {
+      "path": "scripts/capture_coverage_bb.js",
+      "bytes": 5130,
+      "sha256": "C3C45F4954699689F2A65CB0ACD711D92084077C5A730416E1AC061F179C6B5D"
+    },
+    {
+      "path": "scripts/inspect_sources.lua",
+      "bytes": 2796,
+      "sha256": "AF1891A868207F366A60F9AD3FE9351A8AD8AAD1F176D20D623ECA4F3CE10B66"
+    },
+    {
+      "path": "scripts/produce_coverage.lua",
+      "bytes": 15287,
+      "sha256": "A08431120BFC2D770FF79E59CF221F79732437A8CA292C47401AE0A7EF04F5CE"
+    },
+    {
+      "path": "scripts/seal_coverage_bb.js",
+      "bytes": 4317,
+      "sha256": "3ADC3C819EECD9B5F600384F89F1D28E992300A8A128701D3BDF41D4B6F8BC7E"
+    },
+    {
+      "path": "scripts/seal_manifest.ps1",
+      "bytes": 8935,
+      "sha256": "ED37C930F8BF5FCE316718D2A1566F33B4C1F9A6CAED7FC1BE544E5069CD30BA"
+    },
+    {
+      "path": "scripts/verify_coverage.lua",
+      "bytes": 3827,
+      "sha256": "A352C555D0BAB1558AF6DD40BE1BFFA98CD3EF140679D051CC380D336CBCDE2B"
+    },
+    {
+      "path": "source/burn_entry_abdomen_left_blue.aseprite",
+      "bytes": 5850,
+      "sha256": "47F9AA0CD88691BFE1C95C3828DDFD7DBFD2139528BF699EBA866622D88B8083"
+    },
+    {
+      "path": "source/burn_entry_abdomen_right_blue.aseprite",
+      "bytes": 6016,
+      "sha256": "4C542EA12D3381684AC9E91A71534FA573392D5CAE80F420256346B4E777ED9D"
+    },
+    {
+      "path": "source/burn_entry_body_embers_blue.aseprite",
+      "bytes": 8438,
+      "sha256": "0EFD38816115EBA08C754A3EEFD9DFB2578E3181FA863148B369669C3C8B3E9B"
+    },
+    {
+      "path": "source/burn_entry_cape_blue.aseprite",
+      "bytes": 17220,
+      "sha256": "537F402B39F8CE941FB5EC5EC27160CAA65AA6E9C77E46E8BFE889388BA2BC7B"
+    },
+    {
+      "path": "source/burn_entry_hand_blue.aseprite",
+      "bytes": 15233,
+      "sha256": "942EC3413D9F3F5B23F8A111A25187179D0D0ADEDEFB89908E77F03E0C47ED8D"
+    },
+    {
+      "path": "source/burn_entry_hand_embers_left_blue.aseprite",
+      "bytes": 4874,
+      "sha256": "901FB65D4585B82ABAC67BCA81263AEC2B0BD0696F11CF91A506AC63AC63B04F"
+    },
+    {
+      "path": "source/burn_entry_hand_embers_right_blue.aseprite",
+      "bytes": 4696,
+      "sha256": "AC5245AC51EC87DDC0828140B5ECE9D5D3719A40E1E0EDC4FAF81AF7D3B19D64"
+    },
+    {
+      "path": "source/burn_entry_hip_left_blue.aseprite",
+      "bytes": 5322,
+      "sha256": "39EEED89AF89C6D6853A8EC1302B6F11A963166E7C8EFB7AAFA3A91094628D8F"
+    },
+    {
+      "path": "source/burn_entry_rear_blue.aseprite",
+      "bytes": 7304,
+      "sha256": "DAD0F8C305F310EBBBAC70E681041F3920B019555BB4DFD1F6B28E82B1400D18"
+    },
+    {
+      "path": "source/burn_entry_shin_left_blue.aseprite",
+      "bytes": 5708,
+      "sha256": "F3AD1569F9A7B3DA1FC3AACB15E81A63C84CAD79F77BA2E022A3312B82CAEC0F"
+    },
+    {
+      "path": "source/burn_entry_shin_right_blue.aseprite",
+      "bytes": 5939,
+      "sha256": "7F28CEA0F152AC041B570448D44826515AD33A3F879256271498AE861B95DDE1"
+    },
+    {
+      "path": "source/burn_entry_shoulder_left_blue.aseprite",
+      "bytes": 5172,
+      "sha256": "0A3788E1DB54420DD8A208CF19DFFF987BACD4509EA5317E9D9B782955CAF30F"
+    },
+    {
+      "path": "source/burn_entry_shoulder_right_blue.aseprite",
+      "bytes": 5407,
+      "sha256": "8A0187222FA580FB2CCDEC4D79ED26C8338AAF23D0C1E7988F6080A5D9D6CB58"
+    },
+    {
+      "path": "source/burn_loop_abdomen_left_blue.aseprite",
+      "bytes": 13745,
+      "sha256": "80A078D1B77F0CE6A7BEE7042E7130A4DB2890B168F9DDCC2BF92818ECF6DC98"
+    },
+    {
+      "path": "source/burn_loop_abdomen_right_blue.aseprite",
+      "bytes": 14195,
+      "sha256": "86FE030043552B16515AFFCC9CF079BF65F35445D187B427FF36D1EBDB9C7633"
+    },
+    {
+      "path": "source/burn_loop_body_embers_blue.aseprite",
+      "bytes": 17483,
+      "sha256": "E1452A12EEA0CD1D6F149DE03699CEB0B34E5E4FA9E0E01C044B1F11D050B617"
+    },
+    {
+      "path": "source/burn_loop_cape_blue.aseprite",
+      "bytes": 61110,
+      "sha256": "E195B1E30C3659B7F10EE70D185BC68D8938D56E985035C0482FB1C196D321EC"
+    },
+    {
+      "path": "source/burn_loop_hand_blue.aseprite",
+      "bytes": 36130,
+      "sha256": "4D343F32FE40B0B4A6ABE1C4632C3AF67440BF500945774FEC6B5EC9C0DF5687"
+    },
+    {
+      "path": "source/burn_loop_hand_embers_left_blue.aseprite",
+      "bytes": 9700,
+      "sha256": "1000129A2CFE24790625546C7E31645E71EB27FF6389C1EB51706D42C2CF2553"
+    },
+    {
+      "path": "source/burn_loop_hand_embers_right_blue.aseprite",
+      "bytes": 9929,
+      "sha256": "FF129A26E67390CED861317E1C0A76B7351E199BD516D5409B9BC9D7EF0FC278"
+    },
+    {
+      "path": "source/burn_loop_hip_left_blue.aseprite",
+      "bytes": 12741,
+      "sha256": "C70DB6D35AC5BBC5B07B0EDD994546D20DE230644D78172FFDA3852E76C1C24A"
+    },
+    {
+      "path": "source/burn_loop_rear_blue.aseprite",
+      "bytes": 16778,
+      "sha256": "162C87B03AD6403CB8AA48F2E68BE45D1A83BBED3C07A35D2E0F192E6971559F"
+    },
+    {
+      "path": "source/burn_loop_shin_left_blue.aseprite",
+      "bytes": 13322,
+      "sha256": "213CDCD38C5D3EA1EC1B310851E2BBA594FD4EB59ED0C9C187FA8184F7D7A7B7"
+    },
+    {
+      "path": "source/burn_loop_shin_right_blue.aseprite",
+      "bytes": 13866,
+      "sha256": "567B325B2AEB5010AA1320BE8F3F40ECADE71B730144BA8C66881892C765BB04"
+    },
+    {
+      "path": "source/burn_loop_shoulder_left_blue.aseprite",
+      "bytes": 11838,
+      "sha256": "3EACD48CED46C33E770C851DF1F7BBBBB6F9F9A0794336E5B8E3B6ACDBD7EDA6"
+    },
+    {
+      "path": "source/burn_loop_shoulder_right_blue.aseprite",
+      "bytes": 12377,
+      "sha256": "5EF714995EED4672DE417A8CFD4DEACA70BD006E82D570C9A0E5FB72FEA17862"
+    },
+    {
+      "path": "source/furnace_entry_embers_blue.aseprite",
+      "bytes": 4199,
+      "sha256": "14AAFE9A87746181D7655BA675280D7599E42829BAA94FEFFEFB20A5B911168E"
+    },
+    {
+      "path": "source/furnace_entry_hand_front_blue.aseprite",
+      "bytes": 5350,
+      "sha256": "73203E45EDB141E685F698B1A91949FE80F46AEC3554E0D9ACE7A0F23843576B"
+    },
+    {
+      "path": "source/furnace_entry_hand_rear_blue.aseprite",
+      "bytes": 6831,
+      "sha256": "A4A9CDD6D5C153060115DD55618BAE77CEA0AC891F54787CE2DF53EBF4068068"
+    },
+    {
+      "path": "source/furnace_entry_leg_front_blue.aseprite",
+      "bytes": 6342,
+      "sha256": "1B32E031BFD941401589637DCF61AE4960E1BAC4C5FF8E83B0E3422B55E26577"
+    },
+    {
+      "path": "source/furnace_entry_leg_rear_blue.aseprite",
+      "bytes": 7916,
+      "sha256": "D2610F2973ED113F62A10C0AD1C8980DAA64E532EC79CA5AB282000F8631D450"
+    },
+    {
+      "path": "source/furnace_entry_torso_blue.aseprite",
+      "bytes": 5678,
+      "sha256": "F3F93E6DB7B0F98401086B0F574D773301790309D65C54EEEEC0A5736C7D97C0"
+    },
+    {
+      "path": "source/furnace_entry_warmth_blue.aseprite",
+      "bytes": 5061,
+      "sha256": "0DF501A1BA239CC1CC455DEC5D6DECDCC04D345489D627072685994818FA1F18"
+    },
+    {
+      "path": "source/furnace_loop_embers_blue.aseprite",
+      "bytes": 10072,
+      "sha256": "2C2448D73CC2FA02BC3FAB4BD591FBAC4F27E7A91085279ABB210491E54A37E2"
+    },
+    {
+      "path": "source/furnace_loop_hand_front_blue.aseprite",
+      "bytes": 13208,
+      "sha256": "4AFEE08192DA6D1FDF305D8B9C85E448D75090647862CD696FC6250520ED937C"
+    },
+    {
+      "path": "source/furnace_loop_hand_rear_blue.aseprite",
+      "bytes": 17686,
+      "sha256": "BAC25DA0B94A77A586E39834B0FB1DB75A0FDC0A18642B2856006FB260997055"
+    },
+    {
+      "path": "source/furnace_loop_leg_front_blue.aseprite",
+      "bytes": 16363,
+      "sha256": "3DA08312F497E0332E75A94D137E28E5706674FAE39CC82693C3B513E1C6C0AE"
+    },
+    {
+      "path": "source/furnace_loop_leg_rear_blue.aseprite",
+      "bytes": 22032,
+      "sha256": "49942144D77DBCF61515C5E366DED84A54794164869A2DCA5FC5037C8AE07E4A"
+    },
+    {
+      "path": "source/furnace_loop_torso_blue.aseprite",
+      "bytes": 14421,
+      "sha256": "7C04F909DCF442AA1BE0C06E031F01D2AD54BBB7CF6270A49D3F8280FF1E49A5"
+    },
+    {
+      "path": "source/furnace_loop_warmth_blue.aseprite",
+      "bytes": 10791,
+      "sha256": "94BF40D1535A8B855142CBCDE797EC5291906910D2E310D977983178281D5E1E"
+    },
+    {
+      "path": "source/liaoli_back_flow_blue.aseprite",
+      "bytes": 46881,
+      "sha256": "AF66CDD013641F97FDBE69BFDEAD323956FCFC3AA98DBF68E8DFFF15DD099CDA"
+    },
+    {
+      "path": "source/liaoli_back_ignite_blue.aseprite",
+      "bytes": 15037,
+      "sha256": "8E1846DD6B57C877D5E8A59669F11B473394581333E3ADD62547D775BAB651F9"
+    },
+    {
+      "path": "source/liaoli_rear_ring_blue.aseprite",
+      "bytes": 69390,
+      "sha256": "E4C2B555ECA2FABE1175181EDBE49632C13C63B190E106FC79330C4EA0FFB107"
+    },
+    {
+      "path": "source/liaoli_thrust_backflow_blue.aseprite",
+      "bytes": 43299,
+      "sha256": "6C074192F50566F49424FE4A316A965EE4381A7F3B636F79F0B7643F75D282F1"
+    },
+    {
+      "path": "source/liaoyuan_v3_ground_embers_blue.aseprite",
+      "bytes": 5893,
+      "sha256": "B76CD7AF33DB39E99E25C2800D00DB02C4AC54CC8D359FEA040F4C6A0C1AE3CF"
+    },
+    {
+      "path": "source/review_burn_entry.aseprite",
+      "bytes": 55830,
+      "sha256": "1176E9FA3E9744F172CF74340FDBA81B983B64A6E61A7049D3E019E1D1E2300E"
+    },
+    {
+      "path": "source/review_burn_loop.aseprite",
+      "bytes": 155596,
+      "sha256": "D00B99C01062D72921CB7B92F3F4B976FF5FB8C5A3D24C903DEA12ABB4687F0E"
+    },
+    {
+      "path": "source/review_furnace_entry.aseprite",
+      "bytes": 24533,
+      "sha256": "5016DE49595A8011F66BD80FCA6F5B98624242B019FABB2B833A40D9779CFCDE"
+    },
+    {
+      "path": "source/review_furnace_loop.aseprite",
+      "bytes": 69863,
+      "sha256": "7CD1B014C215A55DBBE79EA4C39FACED7D055F664FAB622A08F4A2785E02B89B"
+    },
+    {
+      "path": "source/review_liaoli.aseprite",
+      "bytes": 94472,
+      "sha256": "554FC62009ECCFB93FC3A9FD882C488C06754F11BCA2986B42053BD5BD45BA5E"
+    },
+    {
+      "path": "textures/burn_entry_abdomen_left_blue.png",
+      "bytes": 1484,
+      "sha256": "31EE6147465D832FB0833114FD6835426977632B1F48ECEF64EB5D5C999D3F40"
+    },
+    {
+      "path": "textures/burn_entry_abdomen_left_legacy.png",
+      "bytes": 1408,
+      "sha256": "D756350D7C776DCF1ED6F6DF6C9B4D2CB0357CC9AD69834536847185613CA486"
+    },
+    {
+      "path": "textures/burn_entry_abdomen_right_blue.png",
+      "bytes": 1698,
+      "sha256": "5568CF216D939820F56D714D1CF0BBDEA77E9704A4C533C55F2AD3EC5E09D4A4"
+    },
+    {
+      "path": "textures/burn_entry_abdomen_right_legacy.png",
+      "bytes": 1668,
+      "sha256": "DC2CA2FF0EADEE082589EAD5A47E3AE30DBA379C55351F712152F096015FB577"
+    },
+    {
+      "path": "textures/burn_entry_body_embers_blue.png",
+      "bytes": 2231,
+      "sha256": "D153D6C927D0106363F119BC688CB65698A6828532D6B92CE7FD716B060C3F26"
+    },
+    {
+      "path": "textures/burn_entry_body_embers_legacy.png",
+      "bytes": 2280,
+      "sha256": "B10A5C177B43C0745CD76121773BEBEDFABF43CBDAF39C09491DE48F4E5D5CF5"
+    },
+    {
+      "path": "textures/burn_entry_cape_blue.png",
+      "bytes": 7150,
+      "sha256": "58DA6E129B85C94BD3339AA90178B8C414C8A44F2F465788A3644FE7384B42F3"
+    },
+    {
+      "path": "textures/burn_entry_cape_legacy.png",
+      "bytes": 7106,
+      "sha256": "4485E6F78FC3CA43B88079CCAC72F756A3540BB55147F5C6E4EBCBC8FFA52570"
+    },
+    {
+      "path": "textures/burn_entry_hand_blue.png",
+      "bytes": 6523,
+      "sha256": "11CA1B33113DA7443D6AA3310A0E2260B3D3A6AB49B909B0EE087EA0520F4519"
+    },
+    {
+      "path": "textures/burn_entry_hand_embers_left_blue.png",
+      "bytes": 889,
+      "sha256": "DC5CD7383CCF7B8FF3AEC1E8DBFA7477B51450729923562DCA791956F3F9620A"
+    },
+    {
+      "path": "textures/burn_entry_hand_embers_left_legacy.png",
+      "bytes": 858,
+      "sha256": "6827303995511745D9ED3D9BEBE37CFADF244C69494CA6B4EE52707DAF6CDCAA"
+    },
+    {
+      "path": "textures/burn_entry_hand_embers_right_blue.png",
+      "bytes": 786,
+      "sha256": "D2EF187BD4BB89B7F50D61D1FC6D37CA057E36949B31A6DD2D982886776C784B"
+    },
+    {
+      "path": "textures/burn_entry_hand_embers_right_legacy.png",
+      "bytes": 778,
+      "sha256": "F134CA9E55B5E80BEF8BC7AFD89430122C91E53D78004C7559B37C76AC070DF8"
+    },
+    {
+      "path": "textures/burn_entry_hand_legacy.png",
+      "bytes": 6497,
+      "sha256": "60E3D08B077A783BC2581D39BDF2BDE0697F8817D77EDF7F08CA1A0AEEB0F495"
+    },
+    {
+      "path": "textures/burn_entry_hip_left_blue.png",
+      "bytes": 1220,
+      "sha256": "94E5B6C37519E992B7CB2A5235A102833947DDFC6A127F41ACB58D2EAE33E554"
+    },
+    {
+      "path": "textures/burn_entry_hip_left_legacy.png",
+      "bytes": 1288,
+      "sha256": "00F5A79BE3A674470FC4ACFC9746260EF1007D315677A75858BE84CB785EE348"
+    },
+    {
+      "path": "textures/burn_entry_rear_blue.png",
+      "bytes": 2431,
+      "sha256": "0AC6D602E561E00F73F4A54BC7B78121A69375205384D64DD9EE32302E4A1475"
+    },
+    {
+      "path": "textures/burn_entry_rear_legacy.png",
+      "bytes": 2408,
+      "sha256": "47F17DB05A084DD01310215633B7522AC808ECDCCC2052708E203FFDCDF09935"
+    },
+    {
+      "path": "textures/burn_entry_shin_left_blue.png",
+      "bytes": 1402,
+      "sha256": "1AA50B4369C466FFD5C5CBA650B6CE2697BC8C2376976C9D4A01F48822554329"
+    },
+    {
+      "path": "textures/burn_entry_shin_left_legacy.png",
+      "bytes": 1430,
+      "sha256": "A4845B1E0684A50DC49EC912B67AEFDE65B1385292D7BE4A1C99166927E1AECE"
+    },
+    {
+      "path": "textures/burn_entry_shin_right_blue.png",
+      "bytes": 1570,
+      "sha256": "E8B289D20F54FE7A8041EF43687B95A2AA663A07DC70A67D3550F3C47BE7EA0D"
+    },
+    {
+      "path": "textures/burn_entry_shin_right_legacy.png",
+      "bytes": 1648,
+      "sha256": "60B367A17160B2C428CBDEFE250B3363FF546E11CFDDA74FC6B721D810628402"
+    },
+    {
+      "path": "textures/burn_entry_shoulder_left_blue.png",
+      "bytes": 1168,
+      "sha256": "D3D6FC2B85229B680531DA730F904F7C7E14B7F9B168856F39B78AD8B41452CA"
+    },
+    {
+      "path": "textures/burn_entry_shoulder_left_legacy.png",
+      "bytes": 1164,
+      "sha256": "C7452BA2FB0514B08A03DD38A5CA70E12FD83459FD7698ECC094DD046460655A"
+    },
+    {
+      "path": "textures/burn_entry_shoulder_right_blue.png",
+      "bytes": 1218,
+      "sha256": "2741C8D37585B1E73633B11517DC6DD5E2351A437215F1E235E6762945F1BCE8"
+    },
+    {
+      "path": "textures/burn_entry_shoulder_right_legacy.png",
+      "bytes": 1215,
+      "sha256": "BC6B7B6C7C6D051C19371BBB292CAEF8AE41B7631D00A80711E7BA0935296BC7"
+    },
+    {
+      "path": "textures/burn_loop_abdomen_left_blue.png",
+      "bytes": 3983,
+      "sha256": "0A79E19EDCAF73FB518BB202C07559F77922DB9F9970F19F82287DA1DC23A68E"
+    },
+    {
+      "path": "textures/burn_loop_abdomen_left_legacy.png",
+      "bytes": 4038,
+      "sha256": "72B506A61671A69B6D9CFDDF91047EBE01B355EE531EB220628AC8C72A831698"
+    },
+    {
+      "path": "textures/burn_loop_abdomen_right_blue.png",
+      "bytes": 4209,
+      "sha256": "93EB8F6B9F3E03FEC78F059306DD3CB6588EC30121FACDC11EB495FD493B6D34"
+    },
+    {
+      "path": "textures/burn_loop_abdomen_right_legacy.png",
+      "bytes": 4327,
+      "sha256": "F65469D6568F71D42B3C66A2BCA478975045A3BF8B44CB088D4DB2D8DE618184"
+    },
+    {
+      "path": "textures/burn_loop_body_embers_blue.png",
+      "bytes": 4550,
+      "sha256": "CC85A850F9D1E30631B88CB62EEE9D4CA162384C5E1A9145FC1DFCB39B4C4C91"
+    },
+    {
+      "path": "textures/burn_loop_body_embers_legacy.png",
+      "bytes": 4892,
+      "sha256": "108A7F3ABF60245EB5906BFBD477F6515EFA1AAA640FE3899BECE55ED302B623"
+    },
+    {
+      "path": "textures/burn_loop_cape_blue.png",
+      "bytes": 26954,
+      "sha256": "2DED8B15C3EE1AFA6D0F1345FD6CBC9DD258DE2B246B1A90EFCB4EF4AF28D680"
+    },
+    {
+      "path": "textures/burn_loop_cape_legacy.png",
+      "bytes": 26572,
+      "sha256": "CEBE8C6DC6A7132D34BCC5DF31F0084D1969146418F68066E8D4BA21D9F8FDBE"
+    },
+    {
+      "path": "textures/burn_loop_hand_blue.png",
+      "bytes": 16884,
+      "sha256": "089A1E87E36434FFCF98B3B5834C611B293D04B8458B923D426C8F5285E1CB99"
+    },
+    {
+      "path": "textures/burn_loop_hand_embers_left_blue.png",
+      "bytes": 1718,
+      "sha256": "C31B3677C00F99E24443EAF93601DEEDD262145E201B906AFD1EC7F429FE7A34"
+    },
+    {
+      "path": "textures/burn_loop_hand_embers_left_legacy.png",
+      "bytes": 1806,
+      "sha256": "F6999CA2CDB7A70CF818C64265588FBE5E97D1E87646775C49C387F2F46C114B"
+    },
+    {
+      "path": "textures/burn_loop_hand_embers_right_blue.png",
+      "bytes": 1784,
+      "sha256": "DC07C5DC8B6750D5FB0B7AFCDB2166795A04335AE579D49C9D39C1B6E1230FA1"
+    },
+    {
+      "path": "textures/burn_loop_hand_embers_right_legacy.png",
+      "bytes": 1886,
+      "sha256": "3AF62033107FE1143BF07391321C03A8340E9EBC9F3E4F92285D0FBACFF9473F"
+    },
+    {
+      "path": "textures/burn_loop_hand_legacy.png",
+      "bytes": 16569,
+      "sha256": "00252CC949FA8342DC18047F5FB850DCB608C2B0A6A8C0EDE4226672776255F7"
+    },
+    {
+      "path": "textures/burn_loop_hip_left_blue.png",
+      "bytes": 3206,
+      "sha256": "5CB0031DDF8FC7FAB9F2EB66C4DBDD4F73B43212105A3219957A19415F4FAAE1"
+    },
+    {
+      "path": "textures/burn_loop_hip_left_legacy.png",
+      "bytes": 3333,
+      "sha256": "82592676A5B902FC5DEFBC40326303422F15F78ADFF2601FE39FB7532A7A1AA7"
+    },
+    {
+      "path": "textures/burn_loop_rear_blue.png",
+      "bytes": 5615,
+      "sha256": "34F4F5899C235206075C2A888E2DA7CE83887A114A19EDDF11147005D35FCF76"
+    },
+    {
+      "path": "textures/burn_loop_rear_legacy.png",
+      "bytes": 5849,
+      "sha256": "23A160273618CC742E29BE026EF531CE585B88FDD941E5CA61C6EB37CFE0650E"
+    },
+    {
+      "path": "textures/burn_loop_shin_left_blue.png",
+      "bytes": 3472,
+      "sha256": "EDEDA9270B3597E6DAE45E442556B3CFE79BEC3CA61F8996361B1D7AC34928C8"
+    },
+    {
+      "path": "textures/burn_loop_shin_left_legacy.png",
+      "bytes": 3626,
+      "sha256": "332103AA9C34BF0A52725D986691DFD8B1A10A4726606C40E531F48ADB3A44D4"
+    },
+    {
+      "path": "textures/burn_loop_shin_right_blue.png",
+      "bytes": 3868,
+      "sha256": "F15DC89F44059F7B9D47672CAE5AFC162B8E52B9C46AD4582783B747607C28BF"
+    },
+    {
+      "path": "textures/burn_loop_shin_right_legacy.png",
+      "bytes": 4000,
+      "sha256": "F023A332BE395EABA0B2E77DDC27B683914600C225BBC33BC1D66C10DB36B81C"
+    },
+    {
+      "path": "textures/burn_loop_shoulder_left_blue.png",
+      "bytes": 2724,
+      "sha256": "244DE2A5969F8C5AE2E70F6990CD765A2EEBBD0954EA4D9F3C31E76786B6DBDB"
+    },
+    {
+      "path": "textures/burn_loop_shoulder_left_legacy.png",
+      "bytes": 2905,
+      "sha256": "0E564574E64F92243062B84958D44C4629D9CC3B3ED624A7AD62C4919A133755"
+    },
+    {
+      "path": "textures/burn_loop_shoulder_right_blue.png",
+      "bytes": 3003,
+      "sha256": "0F8C553FCE9621B4938D5F868B97775C88D21C6C2E07B3CB4A4F18C2CDA7E847"
+    },
+    {
+      "path": "textures/burn_loop_shoulder_right_legacy.png",
+      "bytes": 3138,
+      "sha256": "739FFE4565AC761DF9FD4D93CC3911AB0C50A18BCA6CFF65403004A01287D494"
+    },
+    {
+      "path": "textures/furnace_entry_embers_blue.png",
+      "bytes": 630,
+      "sha256": "43A9103BB1EAA3C4E54E705D9F4511F95A78A9FB53B63AB70A42BF2115129F39"
+    },
+    {
+      "path": "textures/furnace_entry_embers_legacy.png",
+      "bytes": 617,
+      "sha256": "9874EFE31F5633E7CD354ACD3F2CA7BBF9BAC59DFB05F9CACC809B71F13BE230"
+    },
+    {
+      "path": "textures/furnace_entry_hand_front_blue.png",
+      "bytes": 1046,
+      "sha256": "9428D08CBD2AA57A2F30200EB3F0AC507D963EE9B293A47E52E531AC110BBA81"
+    },
+    {
+      "path": "textures/furnace_entry_hand_front_legacy.png",
+      "bytes": 1030,
+      "sha256": "79BAC155ED5E9A6FD5C24669A1492504D1713589DFF1B53D213BC81C4CAEC729"
+    },
+    {
+      "path": "textures/furnace_entry_hand_rear_blue.png",
+      "bytes": 1652,
+      "sha256": "5B7141984FA0BEAAD001A667B4FFB4BCCD27C51A88A2417939324573C79AA166"
+    },
+    {
+      "path": "textures/furnace_entry_hand_rear_legacy.png",
+      "bytes": 1722,
+      "sha256": "7A733A582C761CD2D08CBE18A70772D03233DD1C9FF4B8F8DB2EE47BA498F27E"
+    },
+    {
+      "path": "textures/furnace_entry_leg_front_blue.png",
+      "bytes": 1550,
+      "sha256": "BFF5335CA80BA5CA815802575FACE9F7684D95E4644A42B0DB169A04BE1F0F87"
+    },
+    {
+      "path": "textures/furnace_entry_leg_front_legacy.png",
+      "bytes": 1536,
+      "sha256": "47EEF7A2D101CE9451D6CB9DDAB39306451443B80509A50EF0C93E3A05D156B4"
+    },
+    {
+      "path": "textures/furnace_entry_leg_rear_blue.png",
+      "bytes": 2086,
+      "sha256": "8C78C65C0BAD1EBCD0075C97356A237E5936E0B20E8FD44DD845DD5052845A19"
+    },
+    {
+      "path": "textures/furnace_entry_leg_rear_legacy.png",
+      "bytes": 2071,
+      "sha256": "C231C22C441B551E21718E0E469374C44659DA903C27A5FA11B96563A4895606"
+    },
+    {
+      "path": "textures/furnace_entry_torso_blue.png",
+      "bytes": 1308,
+      "sha256": "0EE2A5A278E5B6AE902B055789DBEA8E11FA34EC73521FB98F12AC784FE54B76"
+    },
+    {
+      "path": "textures/furnace_entry_torso_legacy.png",
+      "bytes": 1334,
+      "sha256": "1426B6C3D87AA62FD7E22C120927A06DD32FB3DAF66BAA526FD61941A7C049A6"
+    },
+    {
+      "path": "textures/furnace_entry_warmth_blue.png",
+      "bytes": 815,
+      "sha256": "CD1ECA6489D9643DCF12CAE795FBF8D329F68A0FA3604A68297766708F6B01C7"
+    },
+    {
+      "path": "textures/furnace_entry_warmth_legacy.png",
+      "bytes": 821,
+      "sha256": "5E55ED9C6CE3FE68D4FB19F89C617DBD2992B6F209A04AF34242003EAE93812B"
+    },
+    {
+      "path": "textures/furnace_loop_embers_blue.png",
+      "bytes": 1805,
+      "sha256": "3CB94E72D33875E17A614A93472C1AA5BBC01D2F3A66456BFA8A281CE6EFD2FC"
+    },
+    {
+      "path": "textures/furnace_loop_embers_legacy.png",
+      "bytes": 1755,
+      "sha256": "04C4B585AB3683C9916CD002FD91537064E8D191EA44DBF97FC76AE4450CCE6B"
+    },
+    {
+      "path": "textures/furnace_loop_hand_front_blue.png",
+      "bytes": 2877,
+      "sha256": "DC41DC4DE47999E6C1D580A8AAFC60C782D48936992A178980844C52E1EB9DD5"
+    },
+    {
+      "path": "textures/furnace_loop_hand_front_legacy.png",
+      "bytes": 2825,
+      "sha256": "E85F63BCF83A71BFEBFE39E27526A90B86A5566A631B733E47D916DEC3855F78"
+    },
+    {
+      "path": "textures/furnace_loop_hand_rear_blue.png",
+      "bytes": 4670,
+      "sha256": "FA756C55F8B37B03474F3021A9F5F8F45C95685D1F3EE311B45C030E607038B8"
+    },
+    {
+      "path": "textures/furnace_loop_hand_rear_legacy.png",
+      "bytes": 4662,
+      "sha256": "E94766A66131739BC13D745A9585CC9D228A0D13C8282782E41B0C864D96C6DC"
+    },
+    {
+      "path": "textures/furnace_loop_leg_front_blue.png",
+      "bytes": 4688,
+      "sha256": "8A08460E85175AEDCC81859F76683CF75DB561CB5F03DB42E83360034C81ACF5"
+    },
+    {
+      "path": "textures/furnace_loop_leg_front_legacy.png",
+      "bytes": 4653,
+      "sha256": "289316DF3CEA9926EF783A17FCB34F953756C974FE9C3DD4C5F48835439E5616"
+    },
+    {
+      "path": "textures/furnace_loop_leg_rear_blue.png",
+      "bytes": 6332,
+      "sha256": "6F58B9D33EB04DD9CAFDADD72916B34DF74FB69D2A99330A929FD0A513312781"
+    },
+    {
+      "path": "textures/furnace_loop_leg_rear_legacy.png",
+      "bytes": 6330,
+      "sha256": "FCAC7FB9A1A4290B11035D1116212600BD2B90AC8BC1A102F50B2B260BCF21AF"
+    },
+    {
+      "path": "textures/furnace_loop_torso_blue.png",
+      "bytes": 4082,
+      "sha256": "14867F8A28E526A7F16541DA8C0C05392E3A55ECC2A84784B74501361D454AF6"
+    },
+    {
+      "path": "textures/furnace_loop_torso_legacy.png",
+      "bytes": 4119,
+      "sha256": "9AE00B48223CECD4A0CCDA5DEB8581CA130F4CC64CE3C61D6BD36C2E3C7B6418"
+    },
+    {
+      "path": "textures/furnace_loop_warmth_blue.png",
+      "bytes": 1800,
+      "sha256": "F04A45190C3A767E9C24F103BDD1AE71623892AA1280746C1324AC490004122E"
+    },
+    {
+      "path": "textures/furnace_loop_warmth_legacy.png",
+      "bytes": 1807,
+      "sha256": "20702CBCB9F4DF3D63438525F3D89DFF58E347134366F48C2DAD6382D9C3B4AC"
+    },
+    {
+      "path": "textures/liaoli_back_flow_blue.png",
+      "bytes": 12309,
+      "sha256": "09CED3337F88FB674E0AABCFE29461BE6D53D4AA28773044FE12EAE13F35EF81"
+    },
+    {
+      "path": "textures/liaoli_back_flow_legacy.png",
+      "bytes": 12424,
+      "sha256": "ECC12ADAA0863D86CEB3C595C6427B43BEEAA074AC9932BAC656FC166EA5CA5B"
+    },
+    {
+      "path": "textures/liaoli_back_ignite_blue.png",
+      "bytes": 4271,
+      "sha256": "0CFF62F63E1894DA3FFF06115DD04E2F82029512D8EC9934F42A45DB51362A88"
+    },
+    {
+      "path": "textures/liaoli_back_ignite_legacy.png",
+      "bytes": 4298,
+      "sha256": "6CCB2C58ABB4F548D261EDC87030474CB05C3084C05227C0551AC343D41F9A92"
+    },
+    {
+      "path": "textures/liaoli_rear_ring_blue.png",
+      "bytes": 31904,
+      "sha256": "B1A5481E374F0E685E05E8A19066368467888FCEFA9EBD0F174A95F3BAE674AD"
+    },
+    {
+      "path": "textures/liaoli_rear_ring_legacy.png",
+      "bytes": 30141,
+      "sha256": "F24D00D254C016B377D425F67F3BDE7A229612A3DA23554D6DE446AB06C09C2C"
+    },
+    {
+      "path": "textures/liaoli_thrust_backflow_blue.png",
+      "bytes": 12600,
+      "sha256": "1E6B2AA800D9EF33FEB9E63689216BB3D9AF6203BD38B21EDC6F4500BF788D59"
+    },
+    {
+      "path": "textures/liaoli_thrust_backflow_legacy.png",
+      "bytes": 13444,
+      "sha256": "923C1C3258FA3F2B509A0564ACCDAD8052AFC3AD0592638BCC056F955E9B12F7"
+    },
+    {
+      "path": "textures/liaoyuan_v3_ground_embers_blue.png",
+      "bytes": 332,
+      "sha256": "B21E1BE541E23548B5EA52D030149D380864CE8D31B9EB0D41C352F48E6DAE58"
+    },
+    {
+      "path": "textures/liaoyuan_v3_ground_embers_legacy.png",
+      "bytes": 322,
+      "sha256": "0CFA1BF944612E6765FB83CC0622C617FE422961C56C5413F28364B045057D3A"
+    },
+    {
+      "path": "visual-handoff.md",
+      "bytes": 6179,
+      "sha256": "56AD65057CC9643A81ADDF2442DCCCB829F71B7FAFBBC17B7DAAD994CFF992E9"
+    }
+  ]
+}

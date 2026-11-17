@@ -1,0 +1,28 @@
+{
+  "author": "C",
+  "model": "grok-4.7-high-fast",
+  "phase": "cancel-handoff",
+  "writeStopped": true,
+  "compileRan": false,
+  "compileStatus": "待统一编译",
+  "gameRan": false,
+  "nameGateExitCode": 1,
+  "nameGateNote": "仅 OriginalHumanoid.java:165 i 与 :202 to。本段文件没有新的失败。",
+  "formalReview": "设计 2/2，实现正式复审 0/3。取消接触自查不是正式复审。",
+  "knownRequestSolved": true,
+  "signatureUnchanged": "MeteorContactResult BatchCarrierHooks.intercept(TechniqueHitEntity, ServerLevel, Vec3, LivingEntity, MeteorContactKind)",
+  "extraInterfaceRequest": null,
+  "entityCancel": "notHandled。不扩圈、不提交、不生成残骸、不写 expanded/followSent/contacted/landed、不占命中钟。",
+  "pending": "onResolved 直接返回，不设 strikeConfirmed，不扩圈。",
+  "immunity": "ESTABLISHED_NO_DAMAGE。A 结算完成后再扩圈并接续。",
+  "accepted": "DAMAGE_ACCEPTED。A 结算完成后再扩圈并接续。圈内跳过已结算目标和 declinedStrikes。",
+  "files": [
+    {"sha256": "395A6A6623D8591578F295F472E78D94E5AF337A82CDDEC16A7B1084204F1B47", "mtime": "2026-10-31 05:14:48", "path": "src/main/java/com/bslx/XueXiMod/carrier/BatchFlightBook.java"},
+    {"sha256": "4969E841D332AE565FB55F65870E3776D1093EE3991BCD897C4135539FD9BD9A", "mtime": "2026-10-31 05:14:45", "path": "src/main/java/com/bslx/XueXiMod/carrier/BatchFlightRecord.java"},
+    {"sha256": "27993313ECD2BDA81ABC89B6A568FA28BCDCFCB9E676F0FCE42C094F33E6E99D", "mtime": "2026-10-31 05:12:12", "path": "src/main/java/com/bslx/XueXiMod/carrier/BatchCarrierHooks.java"},
+    {"sha256": "2EA294D42C8B77EB4AD62189115D2A8FB13F9AB66039614ADEDDBA97CBE75ECE", "mtime": "2026-10-31 05:12:13", "path": "src/main/java/com/bslx/XueXiMod/carrier/MeteorContactResult.java"},
+    {"sha256": "E3FB28E7066B370EA2CEB5884470F3D96BD21909E04D734887B06AC3A068A7E2", "mtime": "2026-10-31 05:15:35", "path": "docs/开发记录/术式批量制作/待制作-20261031/author-c-interface-final.md"},
+    {"sha256": "5A9C07809C4FBE9F355D0F2B3A97B2D1582A7EF51CBBEA978B4C404DBD6F1AA4", "mtime": "2026-10-31 05:15:41", "path": "docs/开发记录/术式批量制作/待制作-20261031/author-c-ownership.json"},
+    {"sha256": "47C7495807697F2FF1C6F3C2ED8C2778701F4528B52D2AAD99F0FA63BB5A3121", "mtime": "2026-10-31 05:15:52", "path": "docs/开发记录/术式批量制作/待制作-20261031/author-c-cancel-handoff-report.md"}
+  ]
+}

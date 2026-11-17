@@ -1,0 +1,19 @@
+{
+  "batchId": "art-preview-skill",
+  "taskId": "discovery-recovery-docs",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "apply-user-approved-mcp-recovery-flow",
+  "authorization": "用户2026-11-09明确要求按刚完成的诊断把正确流程写入，允许更新个人美术SKILL.md及项目入口；承接旧额度已用尽状态，不新增正式复审",
+  "inputVersion": "Blockbench发现恢复-20261109/prompt.md；本轮用户确认的诊断与恢复流程",
+  "recordPath": "D:/alianximod/docs/开发记录/Blockbench发现恢复-20261109/记录.md",
+  "writePaths": [
+    "C:/Users/baishang/.codex/skills/xueximod-art-preview/SKILL.md",
+    "D:/alianximod/AGENTS.md",
+    "D:/alianximod/.grok/skills/max-dispatch/SKILL.md",
+    "D:/alianximod/docs/统一开发与术式批量制作流程.md",
+    "D:/alianximod/docs/开发记录/Blockbench发现恢复-20261109/作者结果.md",
+    "D:/alianximod/docs/开发记录/Blockbench发现恢复-20261109/before"
+  ],
+  "dependencies": []
+}

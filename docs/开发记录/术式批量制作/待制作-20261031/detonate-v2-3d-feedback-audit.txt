@@ -1,0 +1,39 @@
+live 187970 16927898C86981D6F2CE7FA5E5C2D91678A6F8A9690BD6C1B042B8E99203C2BD
+live zip 27 shared False
+live done 37
+live todo 0
+live making 22
+MAKING 4:fire_upwell,5:rule_stagger,6:rule_hit_continue,9:fire_detonate,10:fire_nether_gloom,11:earth_break_ground,12:tide_sever,13:water_yielding_ribbon,15:fire_burn,16:rule_triple_release,17:rule_quadruple_release,18:rule_octuple_release,19:rule_sixteen_release,20:rule_exhaustive_release,21:rule_double_cast,22:rule_quintuple_cast,23:rule_octuple_cast,24:fire_flame_trail,25:sword_guard,26:sword_array,27:sword_flight,28:fire_fentian
+TARGET [('fire_detonate', 9)]
+live N 337 461AE1A12693676FF94273A432ADD5BA9307F0C93C483E7F9E2F672008A7D329
+live O 38 34AF39A9173DD98D1DB200DB61E47E2337863414A640ACBAAA55B9146937C66F
+live EK 47 7906DC17393C35A03B66D7B3D72E0603F60B9F73E4CE9AB4290D90FC79207F48
+live DV 1271 AF59A2B4D8943EE79A245EE9C0930BE585BA62A090C939E852F4B362709E4D51
+live accept 19
+live total 78 unique 78
+backup 187970 16927898C86981D6F2CE7FA5E5C2D91678A6F8A9690BD6C1B042B8E99203C2BD
+backup zip 27 shared False
+backup done 37
+backup todo 0
+backup making 22
+MAKING 4:fire_upwell,5:rule_stagger,6:rule_hit_continue,9:fire_detonate,10:fire_nether_gloom,11:earth_break_ground,12:tide_sever,13:water_yielding_ribbon,15:fire_burn,16:rule_triple_release,17:rule_quadruple_release,18:rule_octuple_release,19:rule_sixteen_release,20:rule_exhaustive_release,21:rule_double_cast,22:rule_quintuple_cast,23:rule_octuple_cast,24:fire_flame_trail,25:sword_guard,26:sword_array,27:sword_flight,28:fire_fentian
+TARGET [('fire_detonate', 9)]
+backup N 337 461AE1A12693676FF94273A432ADD5BA9307F0C93C483E7F9E2F672008A7D329
+backup O 38 34AF39A9173DD98D1DB200DB61E47E2337863414A640ACBAAA55B9146937C66F
+backup EK 47 7906DC17393C35A03B66D7B3D72E0603F60B9F73E4CE9AB4290D90FC79207F48
+backup DV 1271 AF59A2B4D8943EE79A245EE9C0930BE585BA62A090C939E852F4B362709E4D51
+backup accept 19
+backup total 78 unique 78
+candidate 188165 2596AC4DD0F01B14A96A5C37AAC6EC658958B1772CDC47214B0C703447112E94
+candidate zip 27 shared False
+candidate done 37
+candidate todo 0
+candidate making 22
+MAKING 4:fire_upwell,5:rule_stagger,6:rule_hit_continue,9:fire_detonate,10:fire_nether_gloom,11:earth_break_ground,12:tide_sever,13:water_yielding_ribbon,15:fire_burn,16:rule_triple_release,17:rule_quadruple_release,18:rule_octuple_release,19:rule_sixteen_release,20:rule_exhaustive_release,21:rule_double_cast,22:rule_quintuple_cast,23:rule_octuple_cast,24:fire_flame_trail,25:sword_guard,26:sword_array,27:sword_flight,28:fire_fentian
+TARGET [('fire_detonate', 9)]
+candidate N 337 461AE1A12693676FF94273A432ADD5BA9307F0C93C483E7F9E2F672008A7D329
+candidate O 38 34AF39A9173DD98D1DB200DB61E47E2337863414A640ACBAAA55B9146937C66F
+candidate EK 47 7906DC17393C35A03B66D7B3D72E0603F60B9F73E4CE9AB4290D90FC79207F48
+candidate DV 1512 A47BEC489642B56919446D9696FF73591A30928D7F4D7A98EAB822BD070B7F39
+candidate accept 19
+candidate total 78 unique 78

@@ -1,0 +1,53 @@
+{
+  "released": true,
+  "author": "A",
+  "sha256": "not-required",
+  "note": "本单只接显式 native 的 count=1 分发。未编译，未改 ABI，未改公式。",
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/compute/ComputeCalls.java",
+      "bytes": 22909,
+      "modifiedUtc": "2026-10-30T08:15:59.284Z"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/compute/ComputeSelection.java",
+      "bytes": 8783,
+      "modifiedUtc": "2026-10-30T08:15:39.391Z"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/compute/ComputeLiveDispatch.java",
+      "bytes": 16481,
+      "modifiedUtc": "2026-10-30T08:15:20.843Z"
+    },
+    {
+      "path": "docs/纯计算后端使用说明.md",
+      "bytes": 3412,
+      "modifiedUtc": "2026-10-30T08:16:43.325Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/implementation-A-live-native-final.md",
+      "bytes": 4688,
+      "modifiedUtc": "2026-10-30T08:17:43.662Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/evidence-A-live-native.json",
+      "bytes": 1851,
+      "modifiedUtc": "2026-10-30T08:19:12.335Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/backup-A-live-native/src/main/java/com/bslx/XueXiMod/shu/compute/ComputeCalls.java",
+      "bytes": 14733,
+      "modifiedUtc": "2026-10-30T08:04:41.591Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/backup-A-live-native/src/main/java/com/bslx/XueXiMod/shu/compute/ComputeSelection.java",
+      "bytes": 8194,
+      "modifiedUtc": "2026-10-30T08:04:07.080Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/backup-A-live-native/docs/纯计算后端使用说明.md",
+      "bytes": 2821,
+      "modifiedUtc": "2026-10-30T08:06:08.120Z"
+    }
+  ]
+}

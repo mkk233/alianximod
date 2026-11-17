@@ -1,0 +1,7 @@
+先读任务文件和这次玩法收口提示，只按它们写明的范围做。远距核心已经收束。我先核对声明、现有消费者和指定世界里的两个距离键，再只改授权范围内的内容。声明仍是 8 和 4，指定世界里还没有这两个键。编译器已经在读取它们，执行族也只走一次预约，所以这次只改声明、文档和这一份世界配置。协同的选择半径和归位上限已经按 24 格、32 格声明，编译器原本就会读这两个键并冻结，执行族仍然只预约一次。
+
+「新的世界」里原先没有 `rule_cooperative`。备份之后只补上了这两个键，其余字段保持原样。重开该世界后才会用到 24 和 32。这次 Java 改动需要重新启动开发客户端，只按 F3+T 不会加载。
+
+<<<CURSOR_TASK_REPORT>>>
+{"workStatus":"reported_done","summary":"rule_cooperative 的 selectionRadius 默认改为 24、范围 0 到 48，moveLimit 默认改为 32、范围 0 到 64，sideOffset 未改。编译器已消费这两个键，执行族仍只 tryReserve，未再接线。指定世界原无该对象，备份后只新增 24 与 32，其余字段语义一致。命名门禁通过。未编译、未进游戏。","changedFiles":["src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/CooperativeContent.java","docs/配置平衡指南.md","docs/开发记录/协同回旋斩击-20261103/游戏实测说明.md","docs/开发记录/协同回旋斩击-20261103/integration-delivery.md","docs/开发记录/协同回旋斩击-20261103/integration-gameplay-final-20261104-delivery.md","docs/开发记录/协同回旋斩击-20261103/world-config-backup/xueximod-balance-20261104-024625.json","run/saves/新的世界/serverconfig/xueximod-balance.json"],"checks":["powershell -NoProfile -File tools/check-name-gate.ps1 退出码 0","世界文件改前 SHA-256 E9B4B2F451B083368AAB915552A986958C42C1B2859616B549C9D0C47F915FC0，与备份一致","改后 SHA-256 29D2AD0A240CF784FD7E340590739426FF7CBED4D424C22EBE5E1407C071D9EF","非目标字段重新解析差异数 0"],"notRun":["未统一编译","未打包","未进游戏","未正式复审","未写回制作表","未改其他世界或全局模板","未改 FamilyExecutionService 与 CooperativeChainCompiler"],"writesSettled":true,"blocker":null,"nextAction":"写入已收束，由原指定编译执行统一编译。用户需重启开发客户端后进入新的世界；只按 F3+T 不会加载本次 Java 变更。本回执不是游戏验收。"}
+<<<END_CURSOR_TASK_REPORT>>>

@@ -1,0 +1,124 @@
+{
+  "task": "implement-c",
+  "title": "领域移动空结果",
+  "implementer": "Cursor CLI grok-4.7-high-fast",
+  "stage": "implementation",
+  "formalReview": false,
+  "designRoundsRecorded": "1/2",
+  "implementationRoundsRecordedByThisReport": "0/3",
+  "sourceWriteStopped": true,
+  "occupancyReleased": true,
+  "compileRun": false,
+  "gameVerified": false,
+  "fpsEstimated": false,
+  "testsCreatedOrRun": false,
+  "committed": false,
+  "filesModified": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/DomainClientState.java",
+      "changedLines": [11, 16, "25-43"],
+      "before": {
+        "sha256": "177ECEB2281AC0034DF30D56FD1F8BBB615476DAC152B87A1EBC632F67CCD3F4",
+        "bytes": 2584,
+        "lastWriteTime": "2026-10-23 17:26:15.797"
+      },
+      "after": {
+        "sha256": "355D612C449FD7E4981A3FC2C24B05F336749615416BF97A632C03BBAC7E319D",
+        "bytes": 2832,
+        "lastWriteTime": "2026-10-30 01:46:03.809"
+      },
+      "backup": {
+        "path": "docs/开发记录/空闲与复活性能优化-20261030/before-c/com/bslx/XueXiMod/client/DomainClientState.java",
+        "sha256": "177ECEB2281AC0034DF30D56FD1F8BBB615476DAC152B87A1EBC632F67CCD3F4",
+        "bytes": 2584,
+        "lastWriteTime": "2026-10-23 17:26:15.797",
+        "matchesBefore": true
+      }
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainMotion.java",
+      "changedLines": [15, "106-121"],
+      "clipAndFinishLineShift": 1,
+      "before": {
+        "sha256": "BF7FEDB0B5A1C2C539C78D865902675A7D7DD6A1ED35991B4DEBAB326E342359",
+        "bytes": 3837,
+        "lastWriteTime": "2026-10-27 03:59:41.607"
+      },
+      "after": {
+        "sha256": "4B74D8D1F87298217AEF6FC1ED8F0BADB3599088E3314476CF960C19F94C2AE5",
+        "bytes": 4028,
+        "lastWriteTime": "2026-10-30 01:46:01.417"
+      },
+      "backup": {
+        "path": "docs/开发记录/空闲与复活性能优化-20261030/before-c/com/bslx/XueXiMod/shu/technique/release/domain/DomainMotion.java",
+        "sha256": "BF7FEDB0B5A1C2C539C78D865902675A7D7DD6A1ED35991B4DEBAB326E342359",
+        "bytes": 3837,
+        "lastWriteTime": "2026-10-27 03:59:41.607",
+        "matchesBefore": true
+      }
+    }
+  ],
+  "filesReadOnlyUnchanged": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainClientBridge.java",
+      "sha256": "CACABD091FC44A61A729E3DB3B2D887FECD6007B854E7186022F47DDCA376476",
+      "bytes": 649,
+      "lastWriteTime": "2026-10-23 14:14:07.510",
+      "reason": "只转发 source.targets，默认源已是 List.of()。空短路和免复制在 DomainClientState 与 DomainMotion。"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/EntityMoveMixin.java",
+      "reason": "move 头部调用 DomainMotion.clip，返回时调用 DomainMotion.finish。未改。"
+    }
+  ],
+  "listMutation": {
+    "directReturnAllowed": true,
+    "bridgeTargetsCallSites": [
+      "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainMotion.java:108"
+    ],
+    "clientBranchMutatesBridgeList": false,
+    "clientBranchBehavior": "isEmpty 时返回 SHARED_EMPTY；非空时返回桥接列表引用，无 add/addAll/remove/clear/set。",
+    "relevantConsumers": [
+      {
+        "site": "DomainMotion.clip:27-44",
+        "operations": ["isEmpty", "enhanced-for"],
+        "mutatesList": false
+      },
+      {
+        "site": "DomainMotion.finish:62-69",
+        "operations": ["enhanced-for"],
+        "mutatesList": false,
+        "guard": "ALLOWED.remove 为空时在第 55-58 行返回，空预测路径不会再次取列表。"
+      }
+    ],
+    "serverAddSite": "DomainMotion.java:117 只写入服务器分支新建的 ArrayList，不别名桥接列表。",
+    "nonEmptyListCachedAcrossTicks": false,
+    "sharedEmpty": "List.of()，不可变共享空列表。调用方只做空判断和迭代。"
+  },
+  "preserved": {
+    "serverPath": "DomainMotion.relevant 第 114-120 行仍每次新建 ArrayList，并只收 DomainService.active() 中活动且同世界的领域。",
+    "axisClip": "clip 第 35-44 行的开启边界、通行、fits、fullyContains、clipInside 未改。",
+    "localPredictionCondition": "DomainClientState.targets 第 27-32 行：玩家缺失、移动者为空，或移动者不是本地玩家且根载具不同，则不预测。",
+    "movePairing": "clip 仅在 held 时 ALLOWED.put；finish 先 ALLOWED.remove，有记录才再次 relevant，逃出才 setPos。",
+    "enterLeaveImmediate": "每次 targets 读取 DomainSightStore.all() 的当前视图；有内容的列表不放入静态字段。",
+    "sameDimensionRespawn": "未改 ModEvents、DomainSightStore.clear 或复活克隆路径。"
+  },
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "log": "docs/开发记录/空闲与复活性能优化-20261030/name-gate-c.log",
+    "exitCode": 1,
+    "violationsInFilesTouchedByThisTask": [],
+    "historicalViolationsLeftUnchanged": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ]
+  },
+  "unfinished": [
+    "统一编译未运行",
+    "游戏内未验证",
+    "不估计 FPS",
+    "DomainClientBridge 未改",
+    "历史命名违规未改",
+    "未创建或运行测试"
+  ]
+}

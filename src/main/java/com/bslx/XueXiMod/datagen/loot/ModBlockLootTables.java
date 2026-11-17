@@ -34,6 +34,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.shu_block.get()); // shu方块掉落自身
         this.dropSelf(ModBlocks.zhu_block.get()); // zhu方块掉落自身
         this.dropSelf(ModBlocks.IMPRINT_DESK.get()); // 技法刻印桌掉落自身
+        this.dropSelf(ModBlocks.METEORITE.get());
         // 为矿石设置特殊掉落规则
         this.add(ModBlocks.ars_ore.get(), // 地表矿石
                 block -> createCopperLikeOreDrops(block, ModItems.shu_raw.get()));

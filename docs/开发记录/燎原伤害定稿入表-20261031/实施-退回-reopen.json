@@ -1,0 +1,34 @@
+{
+  "sha256": "3905785BD053899D1CA429E07E4942E10F0B205AA2403013762C44B566D8A183",
+  "bytes": 187598,
+  "mtime": 1793382951.8955345,
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 3
+  },
+  "unique": 60,
+  "total": 60,
+  "located": [
+    {
+      "sheet": "制作中",
+      "row": 6,
+      "name": "燎原",
+      "E": "8",
+      "AS": "10",
+      "BV": "10",
+      "EH": "0",
+      "EG": "20",
+      "EC": "10",
+      "nHasRadius": true,
+      "nHasEight": true,
+      "oHasAsh": true,
+      "oIsPath": false,
+      "authorized": true,
+      "notUndecided": true
+    }
+  ],
+  "pendingHasId": false,
+  "detailHasId": false
+}

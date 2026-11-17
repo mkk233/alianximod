@@ -1,0 +1,92 @@
+{
+  "phase": "final Windows x64 native compile",
+  "attempt": 2,
+  "success": true,
+  "countedAsThisVersionBuild": true,
+  "nativeCompileOwnershipReleased": true,
+  "noFurtherFormalReview": true,
+  "designRoundsUsed": 2,
+  "implementationRoundsUsed": 3,
+  "gradleRan": false,
+  "dllExecuted": false,
+  "jniLoaded": false,
+  "numericComparison": false,
+  "gameTested": false,
+  "performanceTested": false,
+  "nonWindowsVerified": false,
+  "sourceModified": false,
+  "buildDirectoryCleaned": false,
+  "approvalRejected": false,
+  "entry": "powershell -NoProfile -File D:\\alianximod\\native\\compute\\build-windows.ps1 -JdkHome 'C:\\Program Files\\Java\\jdk-17'",
+  "cwd": "D:\\alianximod",
+  "clean": false,
+  "buildDir": "D:\\alianximod\\native\\compute\\build",
+  "reusedExistingBuildDir": true,
+  "startUtc": "2026-10-30T08:40:37.4330131Z",
+  "endUtc": "2026-10-30T08:40:59.0574180Z",
+  "exitCode": 0,
+  "configureExecuted": true,
+  "compileExecuted": true,
+  "linkExecuted": true,
+  "freezeCapturedUtc": "2026-10-30T08:38:32.6782275Z",
+  "nativeFreezeMatchBefore": true,
+  "nativeFreezeMatchAfter": true,
+  "nativeFreezeCount": 12,
+  "compileFreezeMatchBefore": true,
+  "compileFreezeMatchAfter": true,
+  "compileFreezeCount": 712,
+  "freezeEvidence": "path/length/UTC ticks only; no independent SHA256",
+  "compiler": {
+    "path": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+    "dumpbinVersion": "14.35.32216.1",
+    "hostTarget": "Hostx64\\x64",
+    "visualStudio": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+    "developerPrompt": "Visual Studio 2022 Developer Command Prompt v17.5.3",
+    "vcvars64": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat"
+  },
+  "jdkHome": "C:\\Program Files\\Java\\jdk-17",
+  "cmake": {
+    "path": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe",
+    "version": "3.25.1-msvc1",
+    "generator": "Ninja",
+    "configuration": "Release",
+    "ninja": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.exe",
+    "pointerWidthRecord": "CMakeCCompiler.cmake=8"
+  },
+  "architecture": {
+    "dumpbinMachine": "8664 machine (x64)",
+    "linkFlags": "/machine:x64 /INCREMENTAL:NO"
+  },
+  "dll": {
+    "path": "D:\\alianximod\\native\\compute\\build\\xueximod_compute.dll",
+    "length": 26112,
+    "lastWriteTimeUtc": "2026-10-30T08:40:59.0017107Z",
+    "lastWriteTimeUtcTicks": 639289464590017107,
+    "existedBeforeThisCommand": false
+  },
+  "exports": {
+    "numberOfFunctions": 7,
+    "numberOfNames": 7,
+    "names": [
+      "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorBlockedBatch",
+      "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorContactBatch",
+      "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorOverlapsBatch",
+      "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_handshake",
+      "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_trackingStepBatch",
+      "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_trajectoryBatch",
+      "Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_turnBatch"
+    ]
+  },
+  "executedCommands": {
+    "configure": "call \"D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat\" && \"D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe\" -S \"D:\\alianximod\\native\\compute\" -B \"D:\\alianximod\\native\\compute\\build\" -G Ninja -DCMAKE_MAKE_PROGRAM=\"D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.exe\" -DCMAKE_BUILD_TYPE=Release -DJDK_HOME=\"C:\\Program Files\\Java\\jdk-17\"",
+    "build": "call \"D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat\" && \"D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe\" --build \"D:\\alianximod\\native\\compute\\build\""
+  },
+  "log": "D:\\alianximod\\docs\\开发记录\\统一纯计算后端-20261030\\native-attempt-2.log",
+  "dumpbin": "D:\\alianximod\\docs\\开发记录\\统一纯计算后端-20261030\\native-attempt-2-dumpbin.txt",
+  "preservedAttempt1": [
+    "native-compile.log",
+    "native-compile-results.json",
+    "native-compile-final.md",
+    "native-compile-diagnosis.md"
+  ]
+}

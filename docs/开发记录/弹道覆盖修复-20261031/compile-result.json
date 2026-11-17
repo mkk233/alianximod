@@ -1,0 +1,91 @@
+{
+  "task": "弹道覆盖修复-20261031",
+  "stage": "修复源码交回后的唯一机械编译",
+  "formalReview": "未做。旧底座实现复审额度已用完，本次不追加正确性复审。",
+  "result": "compile_succeeded",
+  "compileMode": "origin",
+  "whyOrigin": "编译前原 runClient 进程 16680 已不存在。IDEA 父进程 6140 所属 Gradle 守护进程 37744 于 2026-10-31T23:26:03 结束 D:\\alianximod 的构建并标为 idle，之后只有守护进程注册表心跳，没有子进程，也没有 gradlew。因此在原项目根编译，没有新建隔离副本，没有结束 37744 或 IDEA。",
+  "successMeansGameAcceptance": false,
+  "sheetMigrated": false,
+  "sourceModifiedByThisTask": false,
+  "originBuildUpdated": true,
+  "runningClientUpdated": false,
+  "clientRunningDuringCompile": false,
+  "gameVerified": false,
+  "packagingRan": false,
+  "stopped": true,
+  "inputs": {
+    "before": "compile-src-before.json",
+    "beforeTakenAt": "2026-10-31T23:40:48.699+08:00",
+    "after": "compile-src-after.json",
+    "afterTakenAt": "2026-10-31T23:41:23.354+08:00",
+    "files": 1027,
+    "srcMainFiles": 955,
+    "srcMainBytes": 10705677,
+    "generatedFiles": 65,
+    "generatedBytes": 26708,
+    "configFiles": 7,
+    "configPaths": [
+      "gradlew.bat",
+      "gradlew",
+      "gradle/wrapper/gradle-wrapper.jar",
+      "gradle/wrapper/gradle-wrapper.properties",
+      "settings.gradle",
+      "build.gradle",
+      "gradle.properties"
+    ],
+    "fingerprint": "7b4b5c31677d0984e88b24559906c8d2b1f1e0a90f96c705dc0fabba10b8970d",
+    "inputDiffsDuringCompile": 0
+  },
+  "repairedSources": {
+    "BatchReleaseCompiler.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/network/BatchReleaseCompiler.java",
+      "mtime": "2026-10-31T23:34:00.507+08:00",
+      "sha256": "64a36b42b2b5171a482bec3a77636d2aafe7ae7b6f140cdcd70fbda4ab6f516d",
+      "gloomCompileSha256": "10599f046c00aa3b27d3d9c39cc22f2a23b5c1d69545600fffbbc023f776f10d",
+      "differsFromGloomCompile": true
+    },
+    "TechniqueHitEntity.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+      "mtime": "2026-10-31T23:34:23.030+08:00",
+      "sha256": "8b4c04db9a85b16751b183f1eb16f00dae0af9e9b52daff82ab00cbb55410f1d"
+    }
+  },
+  "command": {
+    "line": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "cwd": "D:\\alianximod",
+    "gradlew": "D:\\alianximod\\gradlew.bat",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "javaVersion": "17.0.6+9-LTS-190",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "jvmargs": "-Xmx3G",
+    "daemonProperty": false,
+    "start": "2026-10-31T23:40:50.216+08:00",
+    "end": "2026-10-31T23:41:23.341+08:00",
+    "exitCode": 0,
+    "buildResult": "BUILD SUCCESSFUL in 32s",
+    "actionableTasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+    "compileJava": "executed",
+    "compileJavaUpToDate": false,
+    "errors": 0,
+    "removalWarnings": 38,
+    "log": "compile.log",
+    "logNote": "日志里的中文诊断在采集时被按 UTF-8 误读了 GBK，中文句不可直接阅读。路径、行号、[removal] 和末尾警告计数仍在。按 [removal] 计 38 条，没有 error: 行。"
+  },
+  "classes": {
+    "XueXiMod.classBefore": "2026-10-31T13:03:41.675+08:00",
+    "XueXiMod.classAfter": "2026-10-31T23:41:22.245+08:00",
+    "BatchReleaseCompiler.class": "2026-10-31T23:41:19.198+08:00",
+    "TechniqueHitEntity.class": "2026-10-31T23:41:14.950+08:00"
+  },
+  "occupy": {
+    "clientPid16680": "dead before compile",
+    "idleDaemonPid": 37744,
+    "idleDaemonParentPid": 6140,
+    "processesEndedByThisTask": false,
+    "gradlewLeftRunning": false
+  },
+  "nameGateRerun": false,
+  "notRun": ["build", "jar", "reobf", "datagen", "runClient", "game", "package", "sheet migration", "formal review", "source edit", "isolate copy"],
+  "writeReleased": ["compile.log", "compile-src-before.json", "compile-src-after.json", "compile-result.json", "编译结果.md"]
+}

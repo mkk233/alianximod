@@ -73,6 +73,13 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
     private int selectedTech = -1;
     private int detailMode = 0;
     private int listScroll = 0;
+    private int detailY = DETAIL_Y;
+    private int panelScroll;
+    private int staffButtonOffset = BUTTON_Y;
+    private Button putButton;
+    private Button takeButton;
+    private Button leftButton;
+    private Button rightButton;
 
     public SkillAssemblyScreen(SkillAssemblyMenu menu, Inventory inv, Component title) {
         super(menu, inv, title);
@@ -83,37 +90,48 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
     @Override
     protected void init() {
         this.slotCount = computeSlotCount();
-        if (this.slotCount > 4) {
-            this.imageHeight = 200;
-        }
+        int buttonY = BUTTON_Y;
         if (isStaffMode()) {
-            this.imageWidth = Math.max(256, STAFF_GRID_X + this.slotCount * (CELL + CELL_GAP) + STAFF_GRID_MARGIN);
+            int columns = staffColumns();
+            int rows = staffRows();
+            int gridBottom = GRID_Y + rows * (CELL + CELL_GAP);
+            this.detailY = gridBottom + 8;
+            buttonY = this.detailY + 40;
+            this.imageWidth = Math.max(256, STAFF_GRID_X + columns * (CELL + CELL_GAP) + STAFF_GRID_MARGIN);
+            this.imageHeight = buttonY + 28;
+            this.staffButtonOffset = buttonY;
+        } else if (this.slotCount > 4) {
+            this.imageHeight = 200;
+            buttonY = 174;
         }
         super.init();
-        int x = leftPos;
-        int y = topPos;
-        int buttonY = this.slotCount > 4 ? 174 : BUTTON_Y;
-        addRenderableWidget(Button.builder(Component.literal("放入当前槽"), b -> put())
-                .pos(x + 6, y + buttonY).size(70, 20).build());
-        addRenderableWidget(Button.builder(Component.literal("取出"), b -> remove())
-                .pos(x + 81, y + buttonY).size(40, 20).build());
-        addRenderableWidget(Button.builder(Component.literal("左移"), b -> moveLeft())
-                .pos(x + 126, y + buttonY).size(40, 20).build());
-        addRenderableWidget(Button.builder(Component.literal("右移"), b -> moveRight())
-                .pos(x + 171, y + buttonY).size(40, 20).build());
+        int screenX = leftPos;
+        int screenY = topPos;
+        this.putButton = Button.builder(Component.literal("放入当前槽"), ignored -> put())
+                .pos(screenX + 6, screenY + buttonY).size(70, 20).build();
+        this.takeButton = Button.builder(Component.literal("取出"), ignored -> remove())
+                .pos(screenX + 81, screenY + buttonY).size(40, 20).build();
+        this.leftButton = Button.builder(Component.literal("左移"), ignored -> moveLeft())
+                .pos(screenX + 126, screenY + buttonY).size(40, 20).build();
+        this.rightButton = Button.builder(Component.literal("右移"), ignored -> moveRight())
+                .pos(screenX + 171, screenY + buttonY).size(40, 20).build();
+        addRenderableWidget(this.putButton);
+        addRenderableWidget(this.takeButton);
+        addRenderableWidget(this.leftButton);
+        addRenderableWidget(this.rightButton);
     }
 
     private List<SkillStorageData.Entry> storageEntries() {
-        Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null) return List.of();
-        ItemStack storage = SkillStorageItem.find(mc.player);
+        Minecraft minecraft = Minecraft.getInstance();
+        if (minecraft.player == null) return List.of();
+        ItemStack storage = SkillStorageItem.find(minecraft.player);
         if (storage.isEmpty()) return List.of();
         return SkillStorageData.entries(storage);
     }
 
     private ItemStack mainHandItem() {
-        Minecraft mc = Minecraft.getInstance();
-        return mc.player == null ? ItemStack.EMPTY : mc.player.getMainHandItem();
+        Minecraft minecraft = Minecraft.getInstance();
+        return minecraft.player == null ? ItemStack.EMPTY : minecraft.player.getMainHandItem();
     }
 
     private int computeSlotCount() {
@@ -135,28 +153,43 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
     private Technique staffSlotTechnique(int index) {
         List<StaffSkills.Entry> entries = staffEntries();
         if (index < 0 || index >= entries.size()) return null;
-        StaffSkills.Entry e = entries.get(index);
-        if (e == null) return null;
-        return TechniqueManager.getById(e.techniqueId);
+        StaffSkills.Entry entry = entries.get(index);
+        if (entry == null) return null;
+        return TechniqueManager.getById(entry.techniqueId);
     }
 
-    private void renderStaffSlots(GuiGraphics g) {
+    private int staffColumns() {
+        if (slotCount <= 8) {
+            return Math.max(1, slotCount);
+        }
+        return 8;
+    }
+
+    private int staffRows() {
+        return Math.max(1, (slotCount + staffColumns() - 1) / staffColumns());
+    }
+
+    private void renderStaffSlots(GuiGraphics graphics) {
         List<StaffSkills.Entry> entries = staffEntries();
-        for (int i = 0; i < slotCount; i++) {
-            int cx = STAFF_GRID_X + i * (CELL + CELL_GAP);
-            int cy = GRID_Y;
-            Technique t = null;
-            if (i < entries.size() && entries.get(i) != null) {
-                t = TechniqueManager.getById(entries.get(i).techniqueId);
+        int columns = staffColumns();
+        for (int slotIndex = 0; slotIndex < slotCount; slotIndex++) {
+            int column = slotIndex % columns;
+            int row = slotIndex / columns;
+            int cellX = STAFF_GRID_X + column * (CELL + CELL_GAP);
+            int cellY = GRID_Y + row * (CELL + CELL_GAP);
+            Technique technique = null;
+            if (slotIndex < entries.size() && entries.get(slotIndex) != null) {
+                technique = TechniqueManager.getById(entries.get(slotIndex).techniqueId);
             }
-            if (i == currentSlot) {
-                g.fill(cx - 1, cy - 1, cx + CELL + 1, cy + CELL + 1, CYAN);
+            if (slotIndex == currentSlot) {
+                graphics.fill(cellX - 1, cellY - 1, cellX + CELL + 1, cellY + CELL + 1, CYAN);
             }
-            if (t != null) {
-                blitTechniqueIcon(g, t, cx, cy, CELL);
+            if (technique != null) {
+                blitTechniqueIcon(graphics, technique, cellX, cellY, CELL);
             } else {
-                g.fill(cx, cy, cx + CELL, cy + CELL, 0xFF2A2A2A);
+                graphics.fill(cellX, cellY, cellX + CELL, cellY + CELL, 0xFF2A2A2A);
             }
+            graphics.drawString(font, Integer.toString(slotIndex + 1), cellX, cellY - 8, 0xFFCC88, false);
         }
     }
 
@@ -172,8 +205,8 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
         Skill skill = slotSkill(slot);
         if (skill == null) return 0;
         int sum = 0;
-        for (Technique t : skill.getTechniques()) {
-            sum += t.assemblyCost();
+        for (Technique technique : skill.getTechniques()) {
+            sum += technique.assemblyCost();
         }
         return sum;
     }
@@ -205,7 +238,7 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
         return switch (type) {
             case SWORD -> "剑术";
             case MOVEMENT -> "动作";
-            case MAGIC -> "法术";
+            case MAGIC -> "术法";
             case UNIVERSAL -> "通用";
         };
     }
@@ -224,12 +257,12 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
     private static ResourceLocation techniqueIcon(Technique technique) {
         String kind = technique.getType() == TechniqueType.SWORD ? "attack" : "other";
         ShuAttribute attr = technique.getAttribute();
-        String id = attr == null ? "none" : attr.getId();
-        return ResourceLocation.fromNamespaceAndPath(XueXiMod.MOD_ID, "textures/gui/technique/" + kind + "_" + id + ".png");
+        String textureKey = attr == null ? "none" : attr.getId();
+        return ResourceLocation.fromNamespaceAndPath(XueXiMod.MOD_ID, "textures/gui/technique/" + kind + "_" + textureKey + ".png");
     }
 
-    private static void blitTechniqueIcon(GuiGraphics g, Technique technique, int x, int y, int size) {
-        g.blit(techniqueIcon(technique), x, y, size, size, 0.0F, 0.0F, 32, 32, 32, 32);
+    private static void blitTechniqueIcon(GuiGraphics graphics, Technique technique, int drawX, int drawY, int size) {
+        graphics.blit(techniqueIcon(technique), drawX, drawY, size, size, 0.0F, 0.0F, 32, 32, 32, 32);
     }
 
     private int visibleListRows() {
@@ -245,113 +278,113 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
     }
 
     private void clampListScroll(int size) {
-        int max = Math.max(0, size - visibleListRows());
+        int upperBound = Math.max(0, size - visibleListRows());
         if (listScroll < 0) listScroll = 0;
-        if (listScroll > max) listScroll = max;
+        if (listScroll > upperBound) listScroll = upperBound;
     }
 
     @Override
-    protected void renderBg(GuiGraphics g, float partialTick, int mouseX, int mouseY) {
-        g.fill(leftPos, topPos, leftPos + imageWidth, topPos + imageHeight, PANEL);
-        g.fill(leftPos + LEFT_X, topPos + COLUMN_TOP, leftPos + LEFT_X + LEFT_W, topPos + COLUMN_BOTTOM, LEFT_BG);
+    protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
+        graphics.fill(leftPos, topPos, leftPos + imageWidth, topPos + imageHeight, PANEL);
+        graphics.fill(leftPos + LEFT_X, topPos + COLUMN_TOP, leftPos + LEFT_X + LEFT_W, topPos + COLUMN_BOTTOM, LEFT_BG);
     }
 
     @Override
-    protected void renderLabels(GuiGraphics g, int mouseX, int mouseY) {
-        g.drawCenteredString(font, isStaffMode() ? "法杖装配" : "剑技装配", imageWidth / 2, TITLE_Y, 0xFFFFFF);
-        g.drawString(font, "×", CLOSE_X + 4, CLOSE_Y + 1, 0xFFFFFF, false);
+    protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {
+        graphics.drawCenteredString(font, isStaffMode() ? "伞的装配" : "剑技装配", imageWidth / 2, TITLE_Y, 0xFFFFFF);
+        graphics.drawString(font, "×", CLOSE_X + 4, CLOSE_Y + 1, 0xFFFFFF, false);
 
         List<SkillStorageData.Entry> entries = storageEntries();
         clampListScroll(entries.size());
-        g.drawString(font, "匣子成品", LEFT_X, LIST_HEADER_Y, 0xFFFF55, false);
+        graphics.drawString(font, "匣子成品", LEFT_X, LIST_HEADER_Y, 0xFFFF55, false);
         if (entries.isEmpty()) {
-            g.drawString(font, "（空）", LEFT_X, LIST_ROWS_Y, 0xAAAAAA, false);
+            graphics.drawString(font, "（空）", LEFT_X, LIST_ROWS_Y, 0xAAAAAA, false);
         } else {
-            for (int i = 0; i < visibleListRows(); i++) {
-                int index = listScroll + i;
+            for (int rowIndex = 0; rowIndex < visibleListRows(); rowIndex++) {
+                int index = listScroll + rowIndex;
                 if (index >= entries.size()) break;
-                int y = LIST_ROWS_Y + i * ROW_H;
-                SkillStorageData.Entry e = entries.get(index);
-                Technique t = TechniqueManager.getById(e.spellId());
-                String name = t != null ? t.getName() : e.spellId();
-                if (t != null) {
-                    blitTechniqueIcon(g, t, LEFT_X + 1, y + 1, 10);
+                int rowY = LIST_ROWS_Y + rowIndex * ROW_H;
+                SkillStorageData.Entry entry = entries.get(index);
+                Technique technique = TechniqueManager.getById(entry.spellId());
+                String name = technique != null ? technique.getName() : entry.spellId();
+                if (technique != null) {
+                    blitTechniqueIcon(graphics, technique, LEFT_X + 1, rowY + 1, 10);
                 } else {
-                    g.fill(LEFT_X + 2, y + 2, LEFT_X + 10, y + 10, 0xFF888888);
+                    graphics.fill(LEFT_X + 2, rowY + 2, LEFT_X + 10, rowY + 10, 0xFF888888);
                 }
-                g.drawString(font, name, LEFT_X + 13, y, index == selectedStorage ? CYAN : 0xFFFFFF, false);
+                graphics.drawString(font, name, LEFT_X + 13, rowY, index == selectedStorage ? CYAN : 0xFFFFFF, false);
             }
         }
 
         if (isStaffMode()) {
-            renderStaffSlots(g);
+            renderStaffSlots(graphics);
         } else {
-            for (int s = 0; s < slotCount; s++) {
-                int ry = COLUMN_TOP + s * MID_ROW_STEP;
-                if (s == currentSlot) {
-                    g.fill(MID_X, ry, MID_X + MID_W, ry + MID_ROW_H, CYAN_SEMI);
+            for (int slotIndex = 0; slotIndex < slotCount; slotIndex++) {
+                int slotY = COLUMN_TOP + slotIndex * MID_ROW_STEP;
+                if (slotIndex == currentSlot) {
+                    graphics.fill(MID_X, slotY, MID_X + MID_W, slotY + MID_ROW_H, CYAN_SEMI);
                 }
-                String hint = s < SLOT_HINTS.length ? SLOT_HINTS[s] : "未绑定";
-                g.drawString(font, "槽" + (s + 1) + " " + hint, MID_X + 3, ry + 6,
-                        s == currentSlot ? CYAN : 0xFFFFFF, false);
+                String hint = slotIndex < SLOT_HINTS.length ? SLOT_HINTS[slotIndex] : "未绑定";
+                graphics.drawString(font, "槽" + (slotIndex + 1) + " " + hint, MID_X + 3, slotY + 6,
+                        slotIndex == currentSlot ? CYAN : 0xFFFFFF, false);
             }
 
-            g.drawString(font, "已用复杂度：" + usedCost(currentSlot) + "/" + capacity(), RIGHT_X, COLUMN_TOP, CYAN, false);
+            graphics.drawString(font, "已用复杂度：" + usedCost(currentSlot) + "/" + capacity(), RIGHT_X, COLUMN_TOP, CYAN, false);
             Skill skill = slotSkill(currentSlot);
             List<Technique> techs = (skill == null) ? List.of() : skill.getTechniques();
-            for (int i = 0; i < gridRows() * cellsPerRow(); i++) {
-                int col = i % cellsPerRow();
-                int row = i / cellsPerRow();
-                int cx = RIGHT_X + col * (CELL + CELL_GAP);
-                int cy = GRID_Y + row * (CELL + CELL_GAP);
-                boolean hasTech = i < techs.size();
-                boolean sel = detailMode == 2 && hasTech && i == selectedTech;
+            for (int cellIndex = 0; cellIndex < gridRows() * cellsPerRow(); cellIndex++) {
+                int col = cellIndex % cellsPerRow();
+                int row = cellIndex / cellsPerRow();
+                int cellX = RIGHT_X + col * (CELL + CELL_GAP);
+                int cellY = GRID_Y + row * (CELL + CELL_GAP);
+                boolean hasTech = cellIndex < techs.size();
+                boolean sel = detailMode == 2 && hasTech && cellIndex == selectedTech;
                 if (sel) {
-                    g.fill(cx - 1, cy - 1, cx + CELL + 1, cy + CELL + 1, CYAN);
+                    graphics.fill(cellX - 1, cellY - 1, cellX + CELL + 1, cellY + CELL + 1, CYAN);
                 }
                 if (hasTech) {
-                    blitTechniqueIcon(g, techs.get(i), cx, cy, CELL);
+                    blitTechniqueIcon(graphics, techs.get(cellIndex), cellX, cellY, CELL);
                 } else {
-                    g.fill(cx, cy, cx + CELL, cy + CELL, 0xFF2A2A2A);
+                    graphics.fill(cellX, cellY, cellX + CELL, cellY + CELL, 0xFF2A2A2A);
                 }
             }
         }
 
         Technique detail = detailTechnique();
         if (detail == null) {
-            g.drawString(font, "未选择术式", LEFT_X, DETAIL_Y, 0xAAAAAA, false);
+            graphics.drawString(font, "未选择术式", LEFT_X, detailY, 0xAAAAAA, false);
         } else {
-            String typeVal = typeName(detail.getType());
-            String attrVal = attributeName(detail.getAttribute());
-            g.drawString(font, "类型：", LEFT_X, DETAIL_Y, 0xFFFFFF, false);
-            g.drawString(font, typeVal, LEFT_X + font.width("类型："), DETAIL_Y, CYAN, false);
-            int ax = LEFT_X + font.width("类型：" + typeVal) + 10;
-            g.drawString(font, "属性：", ax, DETAIL_Y, 0xFFFFFF, false);
-            g.drawString(font, attrVal, ax + font.width("属性："), DETAIL_Y, CYAN, false);
+            String typeText = typeName(detail.getType());
+            String attrText = attributeName(detail.getAttribute());
+            graphics.drawString(font, "类型：", LEFT_X, detailY, 0xFFFFFF, false);
+            graphics.drawString(font, typeText, LEFT_X + font.width("类型："), detailY, CYAN, false);
+            int attributeX = LEFT_X + font.width("类型：" + typeText) + 10;
+            graphics.drawString(font, "属性：", attributeX, detailY, 0xFFFFFF, false);
+            graphics.drawString(font, attrText, attributeX + font.width("属性："), DETAIL_Y, CYAN, false);
 
-            g.drawString(font, "描述：", LEFT_X, DETAIL_Y + 12, 0xFFFFFF, false);
-            g.drawString(font, detail.getDescription(), LEFT_X + font.width("描述："), DETAIL_Y + 12, CYAN, false);
+            graphics.drawString(font, "描述：", LEFT_X, detailY + 12, 0xFFFFFF, false);
+            graphics.drawString(font, detail.getDescription(), LEFT_X + font.width("描述："), detailY + 12, CYAN, false);
 
-            g.drawString(font, "装配复杂度：", LEFT_X, DETAIL_Y + 24, 0xFFFFFF, false);
-            g.drawString(font, String.valueOf(detail.assemblyCost()),
-                    LEFT_X + font.width("装配复杂度："), DETAIL_Y + 24, CYAN, false);
+            graphics.drawString(font, "装配复杂度：", LEFT_X, detailY + 24, 0xFFFFFF, false);
+            graphics.drawString(font, String.valueOf(detail.assemblyCost()),
+                    LEFT_X + font.width("装配复杂度："), detailY + 24, CYAN, false);
         }
     }
 
     @Override
     public boolean mouseClicked(double mouseX, double mouseY, int button) {
-        int gx = (int) mouseX - leftPos;
-        int gy = (int) mouseY - topPos;
+        int panelX = (int) mouseX - leftPos;
+        int panelY = (int) mouseY - topPos;
 
         if (button == 0) {
-            if (gx >= CLOSE_X && gx < CLOSE_X + CLOSE_W && gy >= CLOSE_Y && gy < CLOSE_Y + CLOSE_H) {
+            if (panelX >= CLOSE_X && panelX < CLOSE_X + CLOSE_W && panelY >= CLOSE_Y && panelY < CLOSE_Y + CLOSE_H) {
                 onClose();
                 return true;
             }
 
             List<SkillStorageData.Entry> entries = storageEntries();
-            if (gx >= LEFT_X && gx < LEFT_X + LEFT_W && gy >= LIST_ROWS_Y && gy < COLUMN_BOTTOM) {
-                int row = (gy - LIST_ROWS_Y) / ROW_H;
+            if (panelX >= LEFT_X && panelX < LEFT_X + LEFT_W && panelY >= LIST_ROWS_Y && panelY < COLUMN_BOTTOM) {
+                int row = (panelY - LIST_ROWS_Y) / ROW_H;
                 int index = listScroll + row;
                 if (index >= 0 && index < entries.size()) {
                     selectedStorage = index;
@@ -362,25 +395,30 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
             }
 
             if (isStaffMode()) {
-                if (gx >= STAFF_GRID_X && gy >= GRID_Y && gy < GRID_Y + CELL) {
-                    int i = (gx - STAFF_GRID_X) / (CELL + CELL_GAP);
-                    if (i >= 0 && i < slotCount) {
-                        if (staffSlotTechnique(i) != null) {
-                            currentSlot = i;
+                int columns = staffColumns();
+                int rows = staffRows();
+                if (panelX >= STAFF_GRID_X && panelY >= GRID_Y
+                        && panelY < GRID_Y + rows * (CELL + CELL_GAP)) {
+                    int column = (panelX - STAFF_GRID_X) / (CELL + CELL_GAP);
+                    int row = (panelY - GRID_Y) / (CELL + CELL_GAP);
+                    int slotIndex = row * columns + column;
+                    if (column >= 0 && column < columns && slotIndex >= 0 && slotIndex < slotCount) {
+                        if (staffSlotTechnique(slotIndex) != null) {
+                            currentSlot = slotIndex;
                             detailMode = 2;
                             selectedTech = 0;
                         } else if (selectedStorage >= 0) {
-                            currentSlot = i;
+                            currentSlot = slotIndex;
                             put();
                         }
                         return true;
                     }
                 }
             } else {
-                if (gx >= MID_X && gx < MID_X + MID_W && gy >= COLUMN_TOP && gy < COLUMN_TOP + slotCount * MID_ROW_STEP) {
-                    int s = (gy - COLUMN_TOP) / MID_ROW_STEP;
-                    if (s >= 0 && s < slotCount) {
-                        currentSlot = s;
+                if (panelX >= MID_X && panelX < MID_X + MID_W && panelY >= COLUMN_TOP && panelY < COLUMN_TOP + slotCount * MID_ROW_STEP) {
+                    int slotIndex = (panelY - COLUMN_TOP) / MID_ROW_STEP;
+                    if (slotIndex >= 0 && slotIndex < slotCount) {
+                        currentSlot = slotIndex;
                         if (detailMode == 2) {
                             detailMode = 0;
                             selectedTech = -1;
@@ -391,10 +429,10 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
 
                 Skill skill = slotSkill(currentSlot);
                 List<Technique> techs = (skill == null) ? List.of() : skill.getTechniques();
-                if (gx >= RIGHT_X && gx < RIGHT_X + RIGHT_W
-                        && gy >= GRID_Y && gy < GRID_Y + gridRows() * (CELL + CELL_GAP)) {
-                    int col = (gx - RIGHT_X) / (CELL + CELL_GAP);
-                    int row = (gy - GRID_Y) / (CELL + CELL_GAP);
+                if (panelX >= RIGHT_X && panelX < RIGHT_X + RIGHT_W
+                        && panelY >= GRID_Y && panelY < GRID_Y + gridRows() * (CELL + CELL_GAP)) {
+                    int col = (panelX - RIGHT_X) / (CELL + CELL_GAP);
+                    int row = (panelY - GRID_Y) / (CELL + CELL_GAP);
                     if (col >= 0 && col < cellsPerRow() && row >= 0 && row < gridRows()) {
                         int index = row * cellsPerRow() + col;
                         if (index < techs.size()) {
@@ -412,11 +450,49 @@ public class SkillAssemblyScreen extends AbstractContainerScreen<SkillAssemblyMe
     }
 
     @Override
+    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+        alignStaffPanel();
+        super.render(graphics, mouseX, mouseY, partialTick);
+    }
+
+    private void alignStaffPanel() {
+        if (!isStaffMode() || this.putButton == null) {
+            return;
+        }
+        this.leftPos = (this.width - this.imageWidth) / 2;
+        int overflow = this.imageHeight - (this.height - 8);
+        if (overflow <= 0) {
+            this.panelScroll = 0;
+            this.topPos = (this.height - this.imageHeight) / 2;
+        } else {
+            this.panelScroll = Math.max(0, Math.min(overflow, this.panelScroll));
+            this.topPos = 4 - this.panelScroll;
+        }
+        this.putButton.setX(this.leftPos + 6);
+        this.takeButton.setX(this.leftPos + 81);
+        this.leftButton.setX(this.leftPos + 126);
+        this.rightButton.setX(this.leftPos + 171);
+        int buttonTop = this.topPos + this.staffButtonOffset;
+        this.putButton.setY(buttonTop);
+        this.takeButton.setY(buttonTop);
+        this.leftButton.setY(buttonTop);
+        this.rightButton.setY(buttonTop);
+    }
+
+    @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double delta) {
+        if (isStaffMode()) {
+            int overflow = this.imageHeight - (this.height - 8);
+            if (overflow > 0) {
+                int step = (int) Math.signum(delta) * 12;
+                this.panelScroll = Math.max(0, Math.min(overflow, this.panelScroll - step));
+                return true;
+            }
+        }
         List<SkillStorageData.Entry> entries = storageEntries();
         if (entries.size() > visibleListRows()) {
-            int max = Math.max(0, entries.size() - visibleListRows());
-            listScroll = Math.max(0, Math.min(max, listScroll - (int) Math.signum(delta)));
+            int upperBound = Math.max(0, entries.size() - visibleListRows());
+            listScroll = Math.max(0, Math.min(upperBound, listScroll - (int) Math.signum(delta)));
             return true;
         }
         return super.mouseScrolled(mouseX, mouseY, delta);

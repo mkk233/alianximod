@@ -1,0 +1,41 @@
+{
+  "phase": "post-review Windows x64 native script",
+  "success": true,
+  "countedAsNewDllCompile": false,
+  "scriptExitCode": 0,
+  "scriptStartedUtc": "2026-10-30T09:30:49.6977346Z",
+  "scriptEndedUtc": "2026-10-30T09:30:58.4170380Z",
+  "entry": "powershell -NoProfile -File \"D:\\alianximod\\native\\compute\\build-windows.ps1\" -JdkHome \"C:\\Program Files\\Java\\jdk-17\"",
+  "cwd": "D:\\alianximod",
+  "clean": false,
+  "ninjaResult": "no work to do",
+  "configureExecuted": true,
+  "compileExecutedThisRun": false,
+  "linkExecutedThisRun": false,
+  "dll": {
+    "path": "D:\\alianximod\\native\\compute\\build\\xueximod_compute.dll",
+    "length": 26112,
+    "lastWriteTimeUtc": "2026-10-30T08:40:59.0017107Z",
+    "origin": "native-attempt-2 actual compile and link",
+    "unchangedThisRun": true
+  },
+  "dumpbinMachine": "8664 machine (x64)",
+  "exportCount": 7,
+  "unchangedInputs": [
+    "native/compute/src/xueximod_compute.c",
+    "native/compute/CMakeLists.txt",
+    "XuexiComputeNative.java"
+  ],
+  "changedInput": "native/compute/build-windows.ps1",
+  "chinesePathBuildVerified": false,
+  "misparsedLaunch": {
+    "exitCode": 4,
+    "reason": "Start-Process split the JDK path; VsInstall received Files\\Java\\jdk-17",
+    "log": "native-post-review-launch-split.txt",
+    "dllUnchanged": true
+  },
+  "freezeMatchBefore": true,
+  "freezeMatchAfter": true,
+  "nativeFreezeCount": 12,
+  "compileFreezeCount": 712
+}

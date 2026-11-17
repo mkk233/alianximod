@@ -1,0 +1,23 @@
+{
+  "submitted": false,
+  "baselineSha256": "ECE5C0FAFAF440A70481463AC790F0E03BF83B33433AFF2A2495E78108EF78D3",
+  "baselineMtime": "2026-10-30T01:29:38.543+08:00",
+  "baselineBytes": 169869,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\liaoli-hit-seed-writeback-术式制作表-20261030-022002-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\liaoli-hit-seed-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "798D366A9B901B9F9145891FAC3B2108ABFC16F0386303C5511458179B1B8CFC",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "from": {
+    "sheet": "制作中",
+    "row": 6
+  },
+  "to": {
+    "sheet": "待验收",
+    "row": 5
+  }
+}

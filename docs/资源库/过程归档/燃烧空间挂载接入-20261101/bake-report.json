@@ -1,0 +1,192 @@
+{
+  "skipped_helpers": [
+    "示意辅助_head",
+    "示意辅助_body",
+    "示意辅助_right_arm",
+    "示意辅助_left_arm",
+    "示意辅助_right_leg",
+    "示意辅助_left_leg",
+    "示意辅助_持物杆_不进游戏"
+  ],
+  "textures": [
+    "abdomen_left",
+    "abdomen_right",
+    "body_embers",
+    "cape",
+    "hand",
+    "hand_embers_left",
+    "hand_embers_right",
+    "hip_left",
+    "rear",
+    "shin_left",
+    "shin_right",
+    "shoulder_left",
+    "shoulder_right"
+  ],
+  "bounds": {
+    "body": {
+      "meshes": [
+        "fx_cape_curved",
+        "fx_shoulder_right",
+        "fx_shoulder_left",
+        "fx_abdomen_right",
+        "fx_abdomen_left",
+        "fx_rear_right",
+        "fx_rear_left",
+        "fx_body_embers_front"
+      ],
+      "faces": 88,
+      "min": [
+        -11.6,
+        -6.4,
+        -3.4
+      ],
+      "max": [
+        12.8,
+        24.12,
+        9.21251
+      ]
+    },
+    "right_arm": {
+      "meshes": [
+        "fx_hand_right_front_shell",
+        "fx_hand_right_back_shell",
+        "fx_right_fist_core",
+        "fx_hand_embers_right"
+      ],
+      "faces": 62,
+      "min": [
+        -5.0,
+        -7.2,
+        -3.98012
+      ],
+      "max": [
+        3.4,
+        11.6,
+        3.98012
+      ]
+    },
+    "left_arm": {
+      "meshes": [
+        "fx_hand_left_front_shell",
+        "fx_hand_left_back_shell",
+        "fx_left_fist_core",
+        "fx_hand_embers_left"
+      ],
+      "faces": 62,
+      "min": [
+        -3.0,
+        -7.2,
+        -3.98012
+      ],
+      "max": [
+        5.4,
+        11.6,
+        3.98012
+      ]
+    },
+    "right_leg": {
+      "meshes": [
+        "fx_shin_right"
+      ],
+      "faces": 9,
+      "min": [
+        -3.3,
+        2.4,
+        -2.57965
+      ],
+      "max": [
+        0.3,
+        10.4,
+        -2.04361
+      ]
+    },
+    "left_leg": {
+      "meshes": [
+        "fx_hip_left",
+        "fx_shin_left"
+      ],
+      "faces": 18,
+      "min": [
+        -1.1,
+        -3.6,
+        -2.59152
+      ],
+      "max": [
+        3.3,
+        10.4,
+        -2.03977
+      ]
+    }
+  },
+  "anchors": {
+    "right_arm": [
+      -1.0,
+      8.8,
+      -0.0
+    ],
+    "left_arm": [
+      1.0,
+      8.8,
+      -0.0
+    ]
+  },
+  "loop_textures": {
+    "cape": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\cape.png",
+    "rear": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\rear.png",
+    "hand": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\hand.png",
+    "shoulder_right": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\shoulder_right.png",
+    "shoulder_left": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\shoulder_left.png",
+    "abdomen_right": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\abdomen_right.png",
+    "abdomen_left": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\abdomen_left.png",
+    "hip_left": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\hip_left.png",
+    "shin_right": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\shin_right.png",
+    "shin_left": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\shin_left.png",
+    "hand_embers_right": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\hand_embers_right.png",
+    "hand_embers_left": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\hand_embers_left.png",
+    "body_embers": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\burn_spatial_v1\\loop\\body_embers.png"
+  },
+  "entry": {
+    "full": {
+      "cape": {
+        "source": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\furnace_v2\\burn_entry_cape.png",
+        "sha256": "6f8c9a67c30f0ac296b7cc6f5c408e44fd10b28b745eafe5cb8f23cc15e8981d"
+      },
+      "rear": {
+        "source": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\furnace_v2\\burn_entry_rear_fire.png",
+        "sha256": "3e7c207ca587435e11f00aa9bd1b4b99f97cc445c47410073eed46efb9afaf8b"
+      },
+      "hand": {
+        "source": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\furnace_v2\\burn_entry_hand_fire.png",
+        "sha256": "ff14f811bb14f54d0b749e15f59059c7290c006ef398952674b44b60353b3b2a"
+      }
+    },
+    "body": {
+      "source": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\furnace_v2\\burn_entry_body_fire.png",
+      "assigned": {
+        "shoulder_right": 231,
+        "shoulder_left": 154,
+        "abdomen_right": 392,
+        "abdomen_left": 350,
+        "hip_left": 217,
+        "shin_right": 392,
+        "shin_left": 308
+      },
+      "unmatched_copied_by_nearest_root": 0,
+      "union_overlap_pixels": 6
+    },
+    "embers": {
+      "source": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\furnace_v2\\burn_entry_embers.png",
+      "assigned": {
+        "hand_embers_right": 67,
+        "hand_embers_left": 69,
+        "body_embers": 439
+      },
+      "unmatched_copied_by_nearest_root": 95,
+      "union_overlap_pixels": 77,
+      "basis": "循环分件并集遮罩逐像素拷贝原入场 RGBA；遮罩外像素不改色，按原稿火舌根部就近归入已有分件"
+    }
+  },
+  "mount_sha256": "89ce0be19ad74eeb818b5c04e8f566930631bfe32ec1d10ca0b7eb521b16c0ab",
+  "mount_bytes": 35635
+}

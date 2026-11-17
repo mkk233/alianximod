@@ -1,0 +1,19 @@
+﻿{
+    "command":  ".\\gradlew.bat compileJava --offline --no-daemon",
+    "workingDirectory":  "D:\\alianximod",
+    "javaHome":  "C:\\Program Files\\Java\\jdk-17",
+    "gradleUserHome":  "C:\\Users\\baishang\\.gradle",
+    "startedAtUtc":  "2026-11-09T11:08:43.1054187Z",
+    "endedAtUtc":  "2026-11-09T11:09:07.3457742Z",
+    "exitCode":  0,
+    "freezeCount":  1334,
+    "freezeMaxWriteUtc":  "2026-11-09T10:55:22.1930639Z",
+    "freezeMaxWritePath":  "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\en_us.json",
+    "beforeMaxWriteUtc":  "2026-11-09T10:55:22.1930639Z",
+    "beforeMaxWritePath":  "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\en_us.json",
+    "afterMaxWriteUtc":  "2026-11-09T10:55:22.1930639Z",
+    "afterHashMismatchVsFreeze":  0,
+    "afterTimeMismatchVsFreeze":  0,
+    "sourceBytesChangedDuringCompile":  0,
+    "startAfterFinalSourceWrite":  true
+}

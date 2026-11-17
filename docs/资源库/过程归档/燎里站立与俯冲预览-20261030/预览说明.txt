@@ -1,0 +1,5 @@
+当前方向依据（2026-10-30）：站立时八柄背剑的剑尖朝下，剑柄更靠近玩家；角色横过来俯冲时，剑阵与身体整体旋转。
+模型：liaoli-standing-and-dive.bbmodel，Blockbench MCP 制作与导出。
+动画 animation.liaoli_standing_to_dive：0—1秒站立，1—2秒翻转，2—3秒横身俯冲。BodyPose 同时带动 Player 与 BackFan。
+standing-side.png：站立侧面，玩家面朝右。dive-side.png：横身俯冲侧面，头朝右。standing-rear.png：站立背面镜像排列。
+这是方向沟通预览，没有改游戏源码、运行时资源或术式制作表。

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "actual_viewport_animation_v3.aseprite",
+    "sha256": "A3950527EA7EAE561048FA01DC9F8616D3B9F6E815274DA5ACFC547894AF0594",
+    "bytes": 2039048
+  },
+  {
+    "name": "actual_viewport_animation_v3.gif",
+    "sha256": "44D317C86DEE30370D0DD4108216F25E073B03EAAFA1B8C49FD17EBF243AD464",
+    "bytes": 426339
+  },
+  {
+    "name": "bubble_v3.aseprite",
+    "sha256": "58BF28790B8043D6432EBC39F5D8773666531D7621957A9188848BB43F8E9CC2",
+    "bytes": 1082
+  },
+  {
+    "name": "bubble_v3.png",
+    "sha256": "A4718E3E51F9CE19CB2D95D8E0E2A1AB2BCF007F98C12569A379FE069836EAC2",
+    "bytes": 195
+  },
+  {
+    "name": "funnel_front_v3.jpg",
+    "sha256": "C2726D1662CE7A4DCD70A3646CC7D049B5BCAF245CAECD840F9B21F581B8FEC6",
+    "bytes": 23580
+  },
+  {
+    "name": "funnel_side_v3.jpg",
+    "sha256": "FA20D18B9047D2DBF1DF060771F7B0B98C5FF71436BE43033DCE9AEDFDE1E6A1",
+    "bytes": 22170
+  },
+  {
+    "name": "submerged_v3.jpg",
+    "sha256": "7BE0A38CDE31C6F946E727E4B98DADEE814A7CDCFE4A1F3B0061DD37DE452835",
+    "bytes": 23404
+  },
+  {
+    "name": "water_flow_v3.aseprite",
+    "sha256": "DC22F6A9B734C7CDCF9A4E1576AC7BD7E1F8D6F9343B5E54B6C313AA728B7CEC",
+    "bytes": 2026
+  },
+  {
+    "name": "water_flow_v3.png",
+    "sha256": "D91EA9441D1CF55B048D370E9C45A0349DAD5F8CA41AAB35931418054DAB1CCB",
+    "bytes": 1207
+  },
+  {
+    "name": "water_vortex_v3.bbmodel",
+    "sha256": "EAEECE3F49FDCAD970DE8FE39D52061DA0340A9C430276391CB1481E13A9E05B",
+    "bytes": 306969
+  }
+]

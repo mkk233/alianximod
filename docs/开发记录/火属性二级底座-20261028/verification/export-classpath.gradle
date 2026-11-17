@@ -1,0 +1,24 @@
+gradle.allprojects { project ->
+    project.afterEvaluate {
+        if (project != project.rootProject) {
+            return
+        }
+        def outDir = System.getenv('FIRE_CHECK_OUT')
+        if (outDir == null || outDir.isEmpty()) {
+            throw new GradleException('FIRE_CHECK_OUT is required')
+        }
+        project.tasks.register('exportFireCheckClasspath') {
+            doLast {
+                def dest = new File(outDir.toString())
+                dest.mkdirs()
+                def lines = []
+                project.sourceSets.test.runtimeClasspath.files.each { entry ->
+                    lines.add(entry.absolutePath)
+                }
+                def classpathFile = new File(dest, 'test-runtime-classpath.txt')
+                classpathFile.setText(lines.join(System.lineSeparator()) + System.lineSeparator(), 'UTF-8')
+                println "EXPORTED ${lines.size()} entries"
+            }
+        }
+    }
+}

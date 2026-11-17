@@ -1,0 +1,75 @@
+{
+  "capturedAtUtc": "2026-11-03T19:01:00.0359511Z",
+  "sourceDiff": {
+    "before": 1424,
+    "after": 1424,
+    "added": [],
+    "deleted": [],
+    "changed": []
+  },
+  "resources": [
+    {
+      "path": "assets/xueximod/textures/entity/xueximod/oblique_slash_v1.png",
+      "sourceSha256": "58E741C8BED808EB4E8CC6DC77FA71FD009A9AAB0B7FEBC104ACCB68E655BFD7",
+      "outputSha256": "58E741C8BED808EB4E8CC6DC77FA71FD009A9AAB0B7FEBC104ACCB68E655BFD7",
+      "equal": true
+    },
+    {
+      "path": "assets/xueximod/actions/cooperative_v1/oblique_slash.json",
+      "sourceSha256": "47AC044586A5A936CD73F477278EC2CBEC11CC711669350C262C177C6204077E",
+      "outputSha256": "47AC044586A5A936CD73F477278EC2CBEC11CC711669350C262C177C6204077E",
+      "equal": true
+    },
+    {
+      "path": "assets/xueximod/actions/cooperative_v1/spin.json",
+      "sourceSha256": "9FFCC156AE8F334F9B71D78401E3DDDAE75FBDC1D096739955FC0E4EF2C93DE5",
+      "outputSha256": "9FFCC156AE8F334F9B71D78401E3DDDAE75FBDC1D096739955FC0E4EF2C93DE5",
+      "equal": true
+    },
+    {
+      "path": "assets/xueximod/models/effect/cooperative_v1/slash_plane_v1.json",
+      "sourceSha256": "9946EBEB2321730FD9012B63456A62D7ACE4C7852CA2D4D3F5090D37998D9C5C",
+      "outputSha256": "9946EBEB2321730FD9012B63456A62D7ACE4C7852CA2D4D3F5090D37998D9C5C",
+      "equal": true
+    },
+    {
+      "path": "assets/xueximod/lang/zh_cn.json",
+      "sourceSha256": "E939A57CACB703858A9AE743AAFE18D78B46207246C39D4DC9CAAB1F16959802",
+      "outputSha256": "E939A57CACB703858A9AE743AAFE18D78B46207246C39D4DC9CAAB1F16959802",
+      "equal": true
+    },
+    {
+      "path": "assets/xueximod/lang/en_us.json",
+      "sourceSha256": "4E94DFFEECF4F03FEEA4B5EDEC5AD4CB63240C514DE6ACEE3881870A850EDEDE",
+      "outputSha256": "4E94DFFEECF4F03FEEA4B5EDEC5AD4CB63240C514DE6ACEE3881870A850EDEDE",
+      "equal": true
+    }
+  ],
+  "pngMatchesApproved": true,
+  "waterSources": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/DomainFlowRenderer.java",
+      "expectedSha256": "C3011803A7B9FF562F59C2203120AA6F6A3E9631694A8B01813C9D9A7CA4337A",
+      "actualSha256": "C3011803A7B9FF562F59C2203120AA6F6A3E9631694A8B01813C9D9A7CA4337A",
+      "equal": true
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/motion/StillWaterLease.java",
+      "expectedSha256": "5110FD69A653EE38182CE7800E6EE7D024592C0CA16E1703CF55A6278E50044E",
+      "actualSha256": "5110FD69A653EE38182CE7800E6EE7D024592C0CA16E1703CF55A6278E50044E",
+      "equal": true
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/motion/VolumeMotionRuntime.java",
+      "expectedSha256": "9428229F0274F6C409F2ABA4D4BD59D8792635384E9E816FB1B151C3266E9E6D",
+      "actualSha256": "9428229F0274F6C409F2ABA4D4BD59D8792635384E9E816FB1B151C3266E9E6D",
+      "equal": true
+    }
+  ],
+  "worldConfig": {
+    "path": "run/saves/新的世界/serverconfig/xueximod-balance.json",
+    "sha256": "29D2AD0A240CF784FD7E340590739426FF7CBED4D424C22EBE5E1407C071D9EF",
+    "selectionRadius": 24.0,
+    "moveLimit": 32.0
+  }
+}

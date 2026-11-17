@@ -1,0 +1,6 @@
+  public float getAbsorptionAmount();
+    Code:
+       0: aload_0
+       1: getfield      #3304               // Field absorptionAmount:F
+       4: freturn
+

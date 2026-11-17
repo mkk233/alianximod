@@ -1,0 +1,5 @@
+0535c71309b2acced2d6520df7789443240a91e9e6a7ac0e3d496b500fd5178a  D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\ModTechniques.java  2026-11-03T15:33:34.665+08:00  24478
+9d674aa42f203cfffb8786b10a518da2706a3cb76fa850716a9822f3fb16eb0a  D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\capture\ActorCaptureTexts.java  2026-11-03T15:33:32.673+08:00  1999
+7e593e2cb16a9a671fddb000c1d95a202ea9d25ce3da275ab9860181d86d31eb  D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\clone\capture\TideSeverActorAdapter.java  2026-11-03T15:33:33.221+08:00  9475
+0de02d9b67c8756d6ab244ac92b48a9dfefd337d190b98066259e72e5eff0b7e  D:\alianximod\src\main\resources\assets\xueximod\lang\zh_cn.json  2026-11-03T15:33:33.801+08:00  8940
+0fa028a84d54c1fc675864fdfa3855e9c946a6858065d3089a97df424dbaa98e  D:\alianximod\src\main\resources\assets\xueximod\lang\en_us.json  2026-11-03T15:33:34.559+08:00  6860

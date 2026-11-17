@@ -1,0 +1,72 @@
+{
+  "version": "meteor-dark-gold-v2",
+  "status": "rejected-by-user",
+  "direction": "深色岩壳＋少量熔金裂隙",
+  "createdDate": "2026-11-02",
+  "aseprite": {
+    "size": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "layers": 5
+  },
+  "texture": {
+    "size": [
+      32,
+      32
+    ],
+    "opaque": true,
+    "static": true,
+    "brightHotPixels": 35,
+    "brightHotFraction": 0.0341796875
+  },
+  "blockbench": {
+    "version": "5.2.2",
+    "pluginVersion": "1.10.1",
+    "projectUUID": "a4aeb36c-dd37-cb64-4add-022dcda3aea3",
+    "format": "free",
+    "embeddedTextureMatches": true,
+    "unitsPerBlock": 16,
+    "materialCubeFrom": [
+      0,
+      0,
+      0
+    ],
+    "materialCubeTo": [
+      16,
+      16,
+      16
+    ],
+    "fullFaceUV": [
+      0,
+      0,
+      32,
+      32
+    ]
+  },
+  "runtime": {
+    "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/block/meteorite_v1.png",
+    "modified": false,
+    "currentSha256": "e8ca06d343a6e6a60082c542869fda9be4b9de040904eef59baf52d28cbc1d3a",
+    "candidateSha256": "aa9d1513b67608ae2013a540ef744e91e087728d2bab57a44e17bb3b390e165b"
+  },
+  "workbookChanged": false,
+  "codeChanged": false,
+  "compiled": false,
+  "hashes": {
+    "meteorite-dark-gold.aseprite": "af8c93146e66617bf3680f8da3af539c894dc957ba95b657cf98526bd5bb0df9",
+    "meteorite-dark-gold.png": "aa9d1513b67608ae2013a540ef744e91e087728d2bab57a44e17bb3b390e165b",
+    "texture-preview-16x.png": "330f5dd0871ee7f4e2e57f5a305a3d095d515e375ed248520e1df1025a183dc4",
+    "meteorite-dark-gold-v2.bbmodel": "8a79abf276f5453dd4804a17948944113c51358e7d6ed8cef813b0e44d657c2a",
+    "bb-hero.png": "bb0b9ecf8e994eb57f7abdd01d05cf23fd4ebd52067fe49865e95b148df2182f",
+    "bb-reverse.png": "6f804b1ddf1e056d762ea6d89d09913dfa2bec8badfc87bddfc8746e75117eb5",
+    "bb-old-left-new-right.png": "859418631e99d06c3354527100dc8ea6917787d9ffa7b791de76dec6c3000971",
+    "blockbench-active-view.png": "8d1c2d42a55b0178582241e9f5e779682fa3776d48490b7a94424b106a1caaa8"
+  },
+  "feedback": {
+    "date": "2026-11-02",
+    "text": "这个表现太像矿石了不像是陨石",
+    "nextDraft": "D:/alianximod/docs/资源库/过程归档/陨岩_烧蚀凹坑_v3-20261102"
+  }
+}

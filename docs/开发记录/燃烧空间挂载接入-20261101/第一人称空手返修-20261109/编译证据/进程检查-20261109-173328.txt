@@ -1,0 +1,23 @@
+检查时间：2026-11-09 17:33:28 +08:00
+工作区：D:\alianximod
+结论：未启动 compileJava。没有 java.exe、javaw.exe、gradlew 或 runClient。
+
+仍在运行并允许写 Java：
+- author-resources（wood-secondary-base-20261109）
+  写入范围含 src/main/java/com/bslx/XueXiMod/status/wood/resource/
+  进程：pwsh 45816、pwsh 35816、cmd 43532、powershell 47368、node 22712
+
+较早扫描仍在、17:33:28 复查已不在列表：
+- author-effects
+  写入范围含 src/main/java/com/bslx/XueXiMod/combat/counter/ 与 player/MagicPool.java
+  早前进程：pwsh 56092、pwsh 31380、cmd 44004、powershell 55328、node 53340
+
+同时在运行但不写 Java：
+- sheet-record，写 docs/术式制作表.xlsx 及相关表回执
+  进程：pwsh 1828、pwsh 35828、cmd 24316、powershell 15888、node 34032
+
+本编译任务自己的启动器进程不计入 Gradle：
+- pwsh 52020、pwsh 49944，命令是 Invoke-CursorTask.ps1 Resume compile.prompt.md
+
+BurnFirstPersonPose.java SHA-256 仍为
+413801BED36F6B620B317CE00BB3A4F9D5E8569B4860D78BA2276D3F0A66D017

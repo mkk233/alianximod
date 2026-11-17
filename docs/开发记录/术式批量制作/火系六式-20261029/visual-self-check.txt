@@ -1,0 +1,3 @@
+javac-exit=0
+liaoli v6 layout check passed
+java-exit=0

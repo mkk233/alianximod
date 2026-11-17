@@ -1,0 +1,55 @@
+{
+  "repair": "fix-game-visual-04",
+  "status": "缺臂尚未修复",
+  "fixed": false,
+  "sourceChanged": false,
+  "diagnosticRemoved": false,
+  "compiled": false,
+  "playtested": false,
+  "log": "run/logs/latest.log",
+  "marker": "WATER_PHANTOM_VISUAL_DIAG_03B",
+  "captures": 4,
+  "entity": "3680bac5-dc8b-40ef-9492-e42301c13358",
+  "meshSha256": "26ef5093f3fc9cad03272f7bdfad06df771953e161b69310b2ff7e37b89f9025",
+  "skinSha256": "9e7e5b01a7e09c393d3ffa1800468bd61ae919f68cf628152b00d9c347793da5",
+  "submitted": {
+    "scale": [1, 1, 1],
+    "rotationDegrees": [0, 0, 0],
+    "positionChannel": [0, 0, 0],
+    "armQuadCount": 571,
+    "legQuadCount": 571,
+    "blockRay": "miss"
+  },
+  "capture3": {
+    "phaseSeconds": 0.886,
+    "alignBodyYawDegrees": -144.84375,
+    "cameraYawDegrees": 19.62668,
+    "cameraPitchDegrees": 31.05038,
+    "armNxViewX": [-0.462, -0.154],
+    "bodyViewX": [-0.221, 0.327],
+    "armPxViewX": [0.260, 0.568],
+    "outsideBodyFraction": 0.78
+  },
+  "capture0": {
+    "note": "camera shares entity xz and sits 1.62 blocks above the feet; upper-body ndc explodes",
+    "cameraPitchDegrees": 42.45043,
+    "headViewZCenter": 0.09
+  },
+  "binKeys": {
+    "rotationNonZeroBefore196": false,
+    "scaleBefore112": [1, 1, 1],
+    "scaleAt112": [0.001, 0.001, 0.001]
+  },
+  "textureOpaqueDark22_81_115": {
+    "armNx": 296,
+    "armPx": 296,
+    "legNx": 296,
+    "legPx": 296
+  },
+  "textureNearWhite232_247_255": {
+    "legNx": 25,
+    "legPx": 69
+  },
+  "missingFact": "one screenshot frame that still has a single outer arm edge, together with that same frame's submitted view bounds",
+  "quota": "本阶段额度已用完，返修结果未追加复审"
+}

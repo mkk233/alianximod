@@ -1,0 +1,10 @@
+command: javac --release 17 -encoding UTF-8 -d furnace-atomic-check-classes FurnaceMath.java FurnaceInstall.java FurnaceAtomicCheck.java FurnaceStructureCheck.java
+javac exit: 0
+command: java -Dfile.encoding=UTF-8 -cp furnace-atomic-check-classes com.bslx.XueXiMod.status.fire.furnace.FurnaceAtomicCheck
+java exit: 0
+furnace atomic check passed
+command: java -Dfile.encoding=UTF-8 -cp furnace-atomic-check-classes com.bslx.XueXiMod.status.fire.furnace.FurnaceStructureCheck
+java exit: 0
+断言 19 失败 0
+未运行：Mixin 转换、奶桶实喝、命令清除、保护附魔结算、跨维存档。
+gradle: not run

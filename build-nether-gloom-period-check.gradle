@@ -1,0 +1,4 @@
+// Retired after the 2026-11-13 gloom period check. Loading it fails on purpose.
+gradle.projectsLoaded {
+    throw new GradleException("nether gloom period check init script is retired")
+}

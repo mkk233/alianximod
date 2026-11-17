@@ -1,0 +1,28 @@
+{
+  "submitted": true,
+  "moved": true,
+  "from": {"sheet": "待验收", "row": 3, "id": "fire_liaoli"},
+  "to": {"sheet": "制作中", "row": 6, "id": "fire_liaoli"},
+  "baselineSha256": "0D72B6D07C7E604943AC8DC71AA6EEB783F686EC0DAE1CEB1F69A13ED30FA6E7",
+  "baselineMtime": "2026-10-29 23:45:56.971",
+  "baselineBytes": 165071,
+  "sha256": "69FD9B9BCC47885D0449CB135F84523894F48962745AA41BAED4FD1F05400C02",
+  "mtime": "2026-10-30 00:35:59.566",
+  "bytes": 168699,
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoli-pose-return-resume-术式制作表-20261030-003559-1.xlsx",
+  "candidate": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-pose-return-candidate-preserved.xlsx",
+  "reopen": {
+    "counts": {"已完成": 40, "待制作": 13, "制作中": 4, "待验收": 2},
+    "unique": 59,
+    "differentParts": ["xl/worksheets/sheet3.xml", "xl/worksheets/sheet4.xml"],
+    "makingRow": 6
+  },
+  "sourceFiles": [
+    "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java",
+    "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java"
+  ],
+  "sourceAuthor": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+  "prepareReport": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-pose-prepare-report.md",
+  "archive": "docs/资源库/特效/火焰/燎里_剑阵姿态_v7/",
+  "compileDispatched": false
+}

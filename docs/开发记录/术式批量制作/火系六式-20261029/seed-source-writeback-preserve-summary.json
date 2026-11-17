@@ -1,0 +1,23 @@
+{
+  "submitted": false,
+  "baselineSha256": "5F8B37C4A45673CF320F4885EB5BDBF1961960013151EE082EF2C6DFF7FADA28",
+  "baselineMtime": "2026-10-29T12:10:57.383+08:00",
+  "baselineBytes": 152881,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\seed-source-writeback-术式制作表-20261029-131231-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\seed-source-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "8F9ED61F2EBBB7C1EEE389412249793825FCE1B76EB96D30737D18FB125FF0D4",
+  "rows": {
+    "magic_ignite": 29,
+    "heat_beam": 19,
+    "fire_orb": 22
+  },
+  "changedParts": [
+    "xl/worksheets/sheet1.xml"
+  ],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 6,
+    "待验收": 0
+  }
+}

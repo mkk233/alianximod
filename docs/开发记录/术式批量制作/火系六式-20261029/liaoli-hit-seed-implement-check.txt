@@ -1,0 +1,11 @@
+powershell -NoProfile -File tools/check-name-gate.ps1
+工作目录: D:\alianximod
+退出码: 1
+
+源码命名可读性检查失败:
+D:\alianximod\src\main\java\com\bslx\XueXiMod\animation\runtime\OriginalHumanoid.java:165:18 i: 变量名不得少于 3 个字符
+D:\alianximod\src\main\java\com\bslx\XueXiMod\animation\runtime\OriginalHumanoid.java:202:17 to: 变量名不得少于 3 个字符
+共 2 处
+
+本次改过的 Java 没有新的命名问题。OriginalHumanoid.java 的 i/to 是已知旧问题，本单没有改那个文件。
+没有运行 Gradle，没有打包，没有启动游戏，没有跑测试。

@@ -1,0 +1,17 @@
+{
+  "historicalResultReadExit": 0,
+  "historicalLifecycle": "failed",
+  "historicalProvider": "cursor",
+  "historicalWorkStatus": "",
+  "grokStartSession": "70e5fae7-35f0-4596-98cc-b206d6a9e98f",
+  "grokResumeSession": "70e5fae7-35f0-4596-98cc-b206d6a9e98f",
+  "sameSession": true,
+  "requestedModel": "grok-4.7",
+  "reportedModel": "grok-4.7-build-fast",
+  "reasoningEffort": "high",
+  "permissionMode": "auto",
+  "readOnly": true,
+  "modelAssurance": "matched",
+  "attemptIdsIsArray": true,
+  "historicalCount": 3
+}

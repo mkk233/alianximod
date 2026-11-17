@@ -1,0 +1,255 @@
+{
+  "batchId": "hud-bars-20261110",
+  "taskId": "hud_bars_v3_art_preview",
+  "attemptId": "20261113-v3-candidates-gemini-carbon",
+  "version": "resource-bars-lowkey-v3-candidate",
+  "status": "candidate_pending_user_selection",
+  "generatedDate": "2026-11-13",
+  "tool": "Aseprite v1.3.17 (batch via mcp__magpie__aseprite__cli)",
+  "animation": {
+    "frames": 16,
+    "frameDurationMs": 90,
+    "loopDurationMs": 1440,
+    "loopMode": "forward_seamless"
+  },
+  "files": [
+    {
+      "path": "export/components_overview_sheet.png",
+      "bytes": 3225,
+      "width": 244,
+      "height": 96,
+      "sha256": "43a734b2c09aed043464f341f2f2495f3af5e2e1545694c81212b8017cdcfff0"
+    },
+    {
+      "path": "export/mana_a_fill_full_strip.png",
+      "bytes": 739,
+      "width": 88,
+      "height": 64,
+      "sha256": "ff62348cf39ab2e60d5bb5931e46d7f4223b29fbdc8c1d0ed788d38da157e293"
+    },
+    {
+      "path": "export/mana_a_fill_low.png",
+      "bytes": 115,
+      "width": 88,
+      "height": 4,
+      "sha256": "3a7f01df746d271627fac66aaa1528ca22cc9d7ab5997c1194058ad6163e56c4"
+    },
+    {
+      "path": "export/mana_a_fill_strip.png",
+      "bytes": 558,
+      "width": 88,
+      "height": 64,
+      "sha256": "bc5e2c6ad2ec206c8275f34afe9a8556e9cc4ec3832c13af6eac00e406c2aa04"
+    },
+    {
+      "path": "export/mana_a_icon_full.png",
+      "bytes": 330,
+      "width": 12,
+      "height": 12,
+      "sha256": "e6833aa1c570af534f696f376a7b0422c1f8823838b751a2e8a1106ba1f69beb"
+    },
+    {
+      "path": "export/mana_a_icon_idle.png",
+      "bytes": 319,
+      "width": 12,
+      "height": 12,
+      "sha256": "158fde710f00858a6a3b03db75645f92448c6896debe744c0b4ca024b81521c7"
+    },
+    {
+      "path": "export/mana_a_icon.png",
+      "bytes": 334,
+      "width": 12,
+      "height": 12,
+      "sha256": "e4a7d01ef013db1e560310a2ce8a50ab0018dc4b885a36945118a5c1ddc92249"
+    },
+    {
+      "path": "export/mana_a_track.png",
+      "bytes": 185,
+      "width": 93,
+      "height": 6,
+      "sha256": "cdd18a36d80e30b00b6fbb12b0f50ec2c2500b9d34935e4d290163b0c24d977a"
+    },
+    {
+      "path": "export/mana_b_fill_full_strip.png",
+      "bytes": 720,
+      "width": 88,
+      "height": 64,
+      "sha256": "c9e8612850c3439e3f57c5492e19bf9341a1ccec0d6a441597cfb1fd8dd50b16"
+    },
+    {
+      "path": "export/mana_b_fill_low.png",
+      "bytes": 115,
+      "width": 88,
+      "height": 4,
+      "sha256": "4aebd157aa058435d35501ea20bd5f966255036a913630dc68bf58e85f188e38"
+    },
+    {
+      "path": "export/mana_b_fill_strip.png",
+      "bytes": 556,
+      "width": 88,
+      "height": 64,
+      "sha256": "1857f86a357399f7b088ad9bb5986282bc75f0895a3ff0e2268ae9f42f1b37dc"
+    },
+    {
+      "path": "export/mana_b_icon_full.png",
+      "bytes": 343,
+      "width": 12,
+      "height": 12,
+      "sha256": "29d7fd68740fa40cdd13d36ad7a7140fc28b00d8051dbbca07d52cb368728b7f"
+    },
+    {
+      "path": "export/mana_b_icon_idle.png",
+      "bytes": 322,
+      "width": 12,
+      "height": 12,
+      "sha256": "ca812b2eb52937ab93b32b5255afd1ffe3516e5023660a6b808090ccc6e8df6d"
+    },
+    {
+      "path": "export/mana_b_icon.png",
+      "bytes": 351,
+      "width": 12,
+      "height": 12,
+      "sha256": "e84a0e1d0b268ec66c7eb55227fb50105f436fc2bb01118e88e1c7763990c3b0"
+    },
+    {
+      "path": "export/mana_b_track.png",
+      "bytes": 180,
+      "width": 93,
+      "height": 6,
+      "sha256": "4f9d46a3d4bed4655756fd4453b9e19e9a4a132ffcb25f9c1ffbdc64854d7167"
+    },
+    {
+      "path": "export/water_fill_tier1_trickle_strip.png",
+      "bytes": 469,
+      "width": 88,
+      "height": 64,
+      "sha256": "09662748ff8f420558989094d160403f973c1124533f2b8c48fd1fe9d747fe0a"
+    },
+    {
+      "path": "export/water_fill_tier2_stream_strip.png",
+      "bytes": 582,
+      "width": 88,
+      "height": 64,
+      "sha256": "70bed07d6aa0c8a5663988e62fdbb4d67fdee438c28bd36b34aed1d34f9a940a"
+    },
+    {
+      "path": "export/water_fill_tier3_torrent_strip.png",
+      "bytes": 577,
+      "width": 88,
+      "height": 64,
+      "sha256": "82f1919a69b1cf69a60e93d702d9d0f2dfd0f3291c8181d1975813862df578b1"
+    },
+    {
+      "path": "export/water_icon_idle.png",
+      "bytes": 247,
+      "width": 12,
+      "height": 12,
+      "sha256": "5029d2c167ebf0cad12a7c8dae88a6d1a0006e91d971213646244db69e298269"
+    },
+    {
+      "path": "export/water_icon_surge.png",
+      "bytes": 250,
+      "width": 12,
+      "height": 12,
+      "sha256": "2798c17c1d13841640d923534fd7ebe2637c3f0d6af9d6911e039c73b806295b"
+    },
+    {
+      "path": "export/water_icon.png",
+      "bytes": 248,
+      "width": 12,
+      "height": 12,
+      "sha256": "a1a8e37677f28d1526963b9df3449cb073f1ebc7fb124f4eae62070dad025a1f"
+    },
+    {
+      "path": "export/water_track_states.png",
+      "bytes": 422,
+      "width": 93,
+      "height": 24,
+      "sha256": "8a4b52e00da2557700fcf2503b95c75816fb7b0d465fc9e21b443f4a90446962"
+    },
+    {
+      "path": "export/water_track.png",
+      "bytes": 277,
+      "width": 93,
+      "height": 8,
+      "sha256": "69725227b56e0e71013977b6771b4f185c1a752170719d130e840371a76bd014"
+    },
+    {
+      "path": "preview/compare_ab_hud_context_4x.png",
+      "bytes": 51034,
+      "width": 1800,
+      "height": 1288,
+      "sha256": "075110565089a5922f10c88a2eabc3728285d6bc72705c3ac59e0b521a851426"
+    },
+    {
+      "path": "preview/icons_closeup_8x.png",
+      "bytes": 25696,
+      "width": 1824,
+      "height": 1124,
+      "sha256": "51fcc50868c0d3825c5f03646b3181846259ae0eef27b98984a6d106ee6f5056"
+    },
+    {
+      "path": "preview/lowkey_flow_preview_4x.gif",
+      "bytes": 82888,
+      "width": 1472,
+      "height": 432,
+      "sha256": "87fc5327230dce19f31e957ba8c1402197dc048469938480ca2a529ccf839f14"
+    },
+    {
+      "path": "preview/states_progression_4x.png",
+      "bytes": 28153,
+      "width": 1680,
+      "height": 952,
+      "sha256": "70576574b0f63832b0de4ee1e2dea47ca2b6f0c60f65c5a516857eeea037f4d7"
+    },
+    {
+      "path": "src/build_hud_bars_v3.lua",
+      "bytes": 55686,
+      "width": null,
+      "height": null,
+      "sha256": "b19c2133507a59367b9151fb0086c547652fa05ff40f1ecdc5ac116bc14b3032"
+    },
+    {
+      "path": "src/compare_ab_hud_context.aseprite",
+      "bytes": 12309,
+      "width": null,
+      "height": null,
+      "sha256": "51b29eeb871e3a6ec5e1f1da2744faee7d65e22de93b24c095de6fc58c08b4b1"
+    },
+    {
+      "path": "src/hud_bars_v3_components.aseprite",
+      "bytes": 53829,
+      "width": null,
+      "height": null,
+      "sha256": "2dff19522e21d6222c541b6b03d563b83b479c6e1a623195eda60e1ea41474d4"
+    },
+    {
+      "path": "src/icons_closeup.aseprite",
+      "bytes": 4566,
+      "width": null,
+      "height": null,
+      "sha256": "c67faa93a713e759ecedff14194c6d8c2d38883d8d7b70611c415e10c2b39c43"
+    },
+    {
+      "path": "src/lowkey_flow_preview.aseprite",
+      "bytes": 60037,
+      "width": null,
+      "height": null,
+      "sha256": "f9a0fd1d89927bd1f95271e8262c5735a9ed741292d766667fbd7b2dabe95ab6"
+    },
+    {
+      "path": "src/states_progression.aseprite",
+      "bytes": 10316,
+      "width": null,
+      "height": null,
+      "sha256": "6e76122bccf1c41bf1661450f5a5e8b6a4958fb982806ace00c3ac3b563d6372"
+    },
+    {
+      "path": "visual-handoff-candidate.md",
+      "bytes": 11279,
+      "width": null,
+      "height": null,
+      "sha256": "7539b9adde941f922b9d53a055606f8d52f05b028f71abe91b3ea978be7b7e85"
+    }
+  ]
+}

@@ -1,0 +1,4031 @@
+{
+  "templates": {
+    "rule_dual_release": {
+      "row": 29,
+      "cells": [
+        {
+          "col": "A",
+          "header": "名称",
+          "type": "s",
+          "value": "双重释放",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "B",
+          "header": "编号",
+          "type": "s",
+          "value": "rule_dual_release",
+          "formula": null,
+          "style": "9"
+        },
+        {
+          "col": "C",
+          "header": "类型",
+          "type": "s",
+          "value": "通用",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "D",
+          "header": "属性",
+          "type": "s",
+          "value": "无",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "E",
+          "header": "基础伤害",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "F",
+          "header": "基础冷却tick",
+          "type": "n",
+          "value": "20",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "G",
+          "header": "等级上限",
+          "type": "n",
+          "value": "20",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "H",
+          "header": "复杂度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "I",
+          "header": "登记弹速",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "J",
+          "header": "附魔",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "K",
+          "header": "装配消耗",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "L",
+          "header": "登记魔力",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "M",
+          "header": "可接受附魔",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "N",
+          "header": "功能描述",
+          "type": "s",
+          "value": "按顺序释放下一个术式，再隔 10 tick 带上后面两个",
+          "formula": null,
+          "style": "9"
+        },
+        {
+          "col": "O",
+          "header": "特效",
+          "type": "s",
+          "value": "空效果",
+          "formula": null,
+          "style": "9"
+        },
+        {
+          "col": "P",
+          "header": "释放种类",
+          "type": "s",
+          "value": "规则",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "Q",
+          "header": "释放标签",
+          "type": "s",
+          "value": "触发",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "R",
+          "header": "弹道",
+          "type": "s",
+          "value": "直线",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "S",
+          "header": "链上角色",
+          "type": "s",
+          "value": "双重释放",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "T",
+          "header": "移动中的命中体",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "U",
+          "header": "命中体存活tick",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "V",
+          "header": "飞行速度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "W",
+          "header": "厚度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "X",
+          "header": "双重释放再拉段数",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "Y",
+          "header": "接受持续索敌",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "Z",
+          "header": "接受出手初瞄",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AA",
+          "header": "出手后不再跟随",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AB",
+          "header": "必须手持剑",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AC",
+          "header": "整组提交",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AD",
+          "header": "使用弧带",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AE",
+          "header": "推进拍号",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AF",
+          "header": "弧带半径",
+          "type": "n",
+          "value": "2.4",
+          "formula": null,
+          "style": "10"
+        },
+        {
+          "col": "AG",
+          "header": "弧带半宽",
+          "type": "n",
+          "value": "0.16",
+          "formula": null,
+          "style": "10"
+        },
+        {
+          "col": "AH",
+          "header": "接受弹道改写",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AI",
+          "header": "为下一段指定目标",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AJ",
+          "header": "为下一段改为垂落",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AK",
+          "header": "弹道可被修改",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AL",
+          "header": "操纵世界剑",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AM",
+          "header": "拒绝与其他段同链",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AN",
+          "header": "自身能量倍率",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AO",
+          "header": "挂到后续的能量倍率",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AP",
+          "header": "显式魔力",
+          "type": "n",
+          "value": "-1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AQ",
+          "header": "蓄力tick",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AR",
+          "header": "旧档·出手先扣水势",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AS",
+          "header": "场地半径",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AT",
+          "header": "治疗量",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AU",
+          "header": "治疗打在施法者",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AV",
+          "header": "牵引强度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AW",
+          "header": "旧档·命中附加潮湿",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AX",
+          "header": "命中灭火",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AY",
+          "header": "挡住移动",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AZ",
+          "header": "压力脉冲",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BA",
+          "header": "侵蚀脉冲",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BB",
+          "header": "水平击退",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BC",
+          "header": "向上抛",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BD",
+          "header": "卸力比例",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BE",
+          "header": "减速时长tick",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BF",
+          "header": "到期爆发伤害",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BG",
+          "header": "外观编号",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BH",
+          "header": "曲线函数",
+          "type": "s",
+          "value": "方盒",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BJ",
+          "header": "宽度倍数",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BK",
+          "header": "长度倍数",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BL",
+          "header": "能量放大长度",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BM",
+          "header": "能量放大宽度",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BN",
+          "header": "能量放大高度",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BO",
+          "header": "能量放大模型",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BP",
+          "header": "同锚点分道显示",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BQ",
+          "header": "旧档·每份预留重水",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BR",
+          "header": "旧档·重压潮湿门槛",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BS",
+          "header": "承接来袭弹",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BT",
+          "header": "场地生成消耗",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BU",
+          "header": "场地维持消耗",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BV",
+          "header": "场地维持周期",
+          "type": "n",
+          "value": "20",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BW",
+          "header": "场地寿命tick",
+          "type": "n",
+          "value": "200",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BX",
+          "header": "护体类型键",
+          "type": "s",
+          "value": "功能描述是登记原文。再拉段数以这一列的 1 为准",
+          "formula": null,
+          "style": "8"
+        }
+      ]
+    },
+    "rule_triple_cast": {
+      "row": 32,
+      "cells": [
+        {
+          "col": "A",
+          "header": "名称",
+          "type": "s",
+          "value": "一分为三",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "B",
+          "header": "编号",
+          "type": "s",
+          "value": "rule_triple_cast",
+          "formula": null,
+          "style": "9"
+        },
+        {
+          "col": "C",
+          "header": "类型",
+          "type": "s",
+          "value": "通用",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "D",
+          "header": "属性",
+          "type": "s",
+          "value": "无",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "E",
+          "header": "基础伤害",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "F",
+          "header": "基础冷却tick",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "G",
+          "header": "等级上限",
+          "type": "n",
+          "value": "20",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "H",
+          "header": "复杂度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "I",
+          "header": "登记弹速",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "J",
+          "header": "附魔",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "K",
+          "header": "装配消耗",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "L",
+          "header": "登记魔力",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "M",
+          "header": "可接受附魔",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "N",
+          "header": "功能描述",
+          "type": "s",
+          "value": "复制后面第一个攻击术式三份并汇总伤害",
+          "formula": null,
+          "style": "9"
+        },
+        {
+          "col": "O",
+          "header": "特效",
+          "type": "s",
+          "value": "TripleCastEffect",
+          "formula": null,
+          "style": "9"
+        },
+        {
+          "col": "P",
+          "header": "释放种类",
+          "type": "s",
+          "value": "规则",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "Q",
+          "header": "释放标签",
+          "type": "s",
+          "value": "触发",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "R",
+          "header": "弹道",
+          "type": "s",
+          "value": "直线",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "S",
+          "header": "链上角色",
+          "type": "s",
+          "value": "一分为三",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "T",
+          "header": "移动中的命中体",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "U",
+          "header": "命中体存活tick",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "V",
+          "header": "飞行速度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "W",
+          "header": "厚度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "X",
+          "header": "双重释放再拉段数",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "Y",
+          "header": "接受持续索敌",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "Z",
+          "header": "接受出手初瞄",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AA",
+          "header": "出手后不再跟随",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AB",
+          "header": "必须手持剑",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AC",
+          "header": "整组提交",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AD",
+          "header": "使用弧带",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AE",
+          "header": "推进拍号",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AF",
+          "header": "弧带半径",
+          "type": "n",
+          "value": "2.4",
+          "formula": null,
+          "style": "10"
+        },
+        {
+          "col": "AG",
+          "header": "弧带半宽",
+          "type": "n",
+          "value": "0.16",
+          "formula": null,
+          "style": "10"
+        },
+        {
+          "col": "AH",
+          "header": "接受弹道改写",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AI",
+          "header": "为下一段指定目标",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AJ",
+          "header": "为下一段改为垂落",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AK",
+          "header": "弹道可被修改",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AL",
+          "header": "操纵世界剑",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AM",
+          "header": "拒绝与其他段同链",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AN",
+          "header": "自身能量倍率",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AO",
+          "header": "挂到后续的能量倍率",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AP",
+          "header": "显式魔力",
+          "type": "n",
+          "value": "-1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AQ",
+          "header": "蓄力tick",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AR",
+          "header": "旧档·出手先扣水势",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AS",
+          "header": "场地半径",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AT",
+          "header": "治疗量",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AU",
+          "header": "治疗打在施法者",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AV",
+          "header": "牵引强度",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AW",
+          "header": "旧档·命中附加潮湿",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AX",
+          "header": "命中灭火",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AY",
+          "header": "挡住移动",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "AZ",
+          "header": "压力脉冲",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BA",
+          "header": "侵蚀脉冲",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BB",
+          "header": "水平击退",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BC",
+          "header": "向上抛",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BD",
+          "header": "卸力比例",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BE",
+          "header": "减速时长tick",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BF",
+          "header": "到期爆发伤害",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BG",
+          "header": "外观编号",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BH",
+          "header": "曲线函数",
+          "type": "s",
+          "value": "方盒",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BJ",
+          "header": "宽度倍数",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BK",
+          "header": "长度倍数",
+          "type": "n",
+          "value": "1",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BL",
+          "header": "能量放大长度",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BM",
+          "header": "能量放大宽度",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BN",
+          "header": "能量放大高度",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BO",
+          "header": "能量放大模型",
+          "type": "s",
+          "value": "是",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BP",
+          "header": "同锚点分道显示",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BQ",
+          "header": "旧档·每份预留重水",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BR",
+          "header": "旧档·重压潮湿门槛",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BS",
+          "header": "承接来袭弹",
+          "type": "s",
+          "value": "否",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BT",
+          "header": "场地生成消耗",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BU",
+          "header": "场地维持消耗",
+          "type": "n",
+          "value": "0",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BV",
+          "header": "场地维持周期",
+          "type": "n",
+          "value": "20",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BW",
+          "header": "场地寿命tick",
+          "type": "n",
+          "value": "200",
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BX",
+          "header": "护体类型键",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BY",
+          "header": "护体寿命tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "BZ",
+          "header": "护体生成消耗",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CA",
+          "header": "护体维持消耗",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CB",
+          "header": "护体维持周期",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CC",
+          "header": "护体卸力",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CD",
+          "header": "护体半径",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CE",
+          "header": "护体带宽",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CF",
+          "header": "护体身体高度",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CG",
+          "header": "护体基础倾角",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CH",
+          "header": "屏障宽",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CI",
+          "header": "屏障高",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CJ",
+          "header": "屏障厚",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CK",
+          "header": "屏障前移",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CL",
+          "header": "屏障寿命tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CM",
+          "header": "屏障生成消耗",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CN",
+          "header": "屏障维持消耗",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CO",
+          "header": "屏障维持周期",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CP",
+          "header": "屏障衰减",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CQ",
+          "header": "屏障承接来袭弹",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CR",
+          "header": "领域宽",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CS",
+          "header": "领域深",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CT",
+          "header": "领域高",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CU",
+          "header": "领域初始消耗",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CV",
+          "header": "领域维持消耗",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CW",
+          "header": "领域维持周期",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CX",
+          "header": "领域寿命tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CY",
+          "header": "领域边界",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "CZ",
+          "header": "领域外观",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DA",
+          "header": "达级自动学会",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DB",
+          "header": "领域效果键",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DC",
+          "header": "旧档·潮湿周期tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DD",
+          "header": "旧档·潮湿每次加点",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DE",
+          "header": "旧档·潮湿延迟tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DF",
+          "header": "旧档·水势周期tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DG",
+          "header": "旧档·水势每次加点",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DH",
+          "header": "旧档·水势延迟tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DI",
+          "header": "旧档·减速等级",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DJ",
+          "header": "旧档·领域减速时长tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DK",
+          "header": "旧档·减速周期tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DL",
+          "header": "旧档·减速延迟tick",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DM",
+          "header": "耗氧倍率",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DN",
+          "header": "附魔效果键",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DO",
+          "header": "附魔初始层数",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DP",
+          "header": "附魔半径基数",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DQ",
+          "header": "附魔时长基数",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DR",
+          "header": "附魔半径倍率",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DS",
+          "header": "附魔时长倍率",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DT",
+          "header": "附魔伤害倍率",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DU",
+          "header": "附魔速度倍率",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "8"
+        },
+        {
+          "col": "DV",
+          "header": "备注",
+          "type": "n",
+          "value": null,
+          "formula": null,
+          "style": "9"
+        }
+      ]
+    }
+  },
+  "rolesSample": [
+    {
+      "row": 2,
+      "values": {
+        "A": "弹道",
+        "E": "链上角色",
+        "I": "释放种类",
+        "M": "释放标签",
+        "Q": "术式类型",
+        "U": "属性",
+        "Y": "外形",
+        "AC": "是否",
+        "AG": "领域边界",
+        "AK": "领域外观",
+        "AO": "曲线函数",
+        "AS": "附魔效果键",
+        "AW": "本体字典",
+        "BJ": "操作",
+        "BL": "作用对象",
+        "BN": "触发时机",
+        "BP": "寿命策略",
+        "BR": "计量单位",
+        "BT": "资源",
+        "BV": "状态"
+      }
+    },
+    {
+      "row": 4,
+      "values": {
+        "A": "直线",
+        "B": "STRAIGHT",
+        "C": "沿出手方向直行",
+        "E": "攻击",
+        "F": "ATTACK",
+        "G": "结算顺序里的攻击段",
+        "I": "动作",
+        "J": "ACTION",
+        "K": "位移，不走命中体",
+        "M": "触发",
+        "N": "TRIGGER",
+        "O": "出手一次",
+        "Q": "剑术",
+        "R": "SWORD",
+        "S": "剑术书。熟练等级不低于复杂度才解锁",
+        "U": "无",
+        "V": "NONE",
+        "W": "没有元素",
+        "Y": "方盒",
+        "Z": "BOX",
+        "AA": "默认形状。结算仍走原来的命中体",
+        "AC": "是",
+        "AD": "封闭",
+        "AH": "SEAL",
+        "AI": "完整进入的敌人出不去",
+        "AK": "体积",
+        "AL": "VOLUME",
+        "AM": "按体积画",
+        "AO": "water_weeping",
+        "AP": "water_weeping",
+        "AQ": "垂丝水帘。由垂丝效果写入，释放定义上的曲线编号仍是空",
+        "AS": "fire",
+        "AT": "magic_ignite",
+        "AU": "点火",
+        "AW": "水势",
+        "AX": "资源",
+        "AY": "water_momentum",
+        "AZ": "PlayerShuData.WaterMomentum / WaterMomentum",
+        "BA": "已实现",
+        "BB": "施术者",
+        "BC": "浮点",
+        "BD": "0—100",
+        "BE": "不适用",
+        "BG": "增加、消费、设置、读取",
+        "BH": "无ResourceLocation。表内字典键不是已注册的游戏ID。",
+        "BJ": "增加",
+        "BL": "施术者",
+        "BN": "成功施放",
+        "BP": "不适用",
+        "BR": "每次触发",
+        "BT": "水势",
+        "BV": "潮湿"
+      }
+    },
+    {
+      "row": 6,
+      "values": {
+        "A": "跟随准星",
+        "B": "FOLLOW_LOOK",
+        "C": "持续跟着准星转向",
+        "E": "落点指定",
+        "F": "SEEK_SPACE",
+        "G": "只决定落点",
+        "I": "规则",
+        "J": "RULE",
+        "K": "本身不打伤害，改后面的释放",
+        "Q": "法术",
+        "R": "MAGIC",
+        "S": "法术书。熟练等级不低于复杂度才解锁",
+        "U": "火",
+        "V": "FIRE",
+        "W": "water",
+        "AT": "tide_mark",
+        "AU": "潮印",
+        "AW": "潮湿",
+        "AX": "状态",
+        "AY": "wetness",
+        "AZ": "xueximod:wetness / xueximod_attribute_states.wetness",
+        "BA": "已实现",
+        "BB": "命中目标、领域内敌对活物",
+        "BC": "整数",
+        "BD": "0—100",
+        "BE": "固定刷新",
+        "BF": "1000",
+        "BG": "增加、移除、读取",
+        "BH": "增加时刷新1000tick。档位由数值派生。",
+        "BJ": "设置",
+        "BL": "选定目标",
+        "BN": "命中成功",
+        "BP": "固定施加",
+        "BR": "每目标每次施法",
+        "BV": "缓慢"
+      }
+    },
+    {
+      "row": 7,
+      "values": {
+        "A": "曲线函数",
+        "B": "FUNCTION",
+        "C": "走已登记的曲线编号",
+        "E": "锁定实体",
+        "F": "SEEK_ENTITY",
+        "G": "锁定准星附近的实体",
+        "I": "自身状态",
+        "K": "自身状态，不生成弹道或命中体",
+        "Q": "通用",
+        "R": "UNIVERSAL",
+        "S": "两本书都能写。默认可用",
+        "U": "水",
+        "V": "WATER",
+        "W": "earth",
+        "AT": "sinking_edge",
+        "AU": "沉锋",
+        "AW": "炉心",
+        "AX": "状态",
+        "AY": "furnace_core",
+        "BA": "仅设计",
+        "BB": "施术者",
+        "BC": "等级",
+        "BD": "amp0普通、amp1过载",
+        "BE": "无限",
+        "BG": "施加、移除",
+        "BH": "设计标识mod:furnace_core，未注册。不是资源。另有运行态。默认寿命无限，tick留空。",
+        "BJ": "施加",
+        "BL": "领域内敌对活物",
+        "BN": "潮印命中成功",
+        "BP": "继承剩余"
+      }
+    },
+    {
+      "row": 9,
+      "values": {
+        "A": "抛物线",
+        "B": "PARABOLA",
+        "C": "按初速、仰角和重力飞行，不是垂落",
+        "E": "垂落改写",
+        "F": "TRAJECTORY_DROP",
+        "G": "把下一段改成垂落。风暴轨迹也登记成这个角色，弹道另用龙卷",
+        "Q": "附魔",
+        "U": "金",
+        "V": "METAL",
+        "W": "魔力",
+        "AX": "费用",
+        "AZ": "PlayerShuData.Magic",
+        "BA": "已实现",
+        "BB": "施术者",
+        "BC": "整数",
+        "BD": "既有费用列",
+        "BE": "不适用",
+        "BH": "不进入资源下拉。不得用通用资源操作重复扣费。",
+        "BJ": "读取",
+        "BL": "领域内有效目标",
+        "BN": "首次带资源接触",
+        "BP": "未定"
+      }
+    },
+    {
+      "row": 10,
+      "values": {
+        "A": "喷涌",
+        "B": "UPWELL",
+        "C": "从锚点向上喷出，不是直线或垂落",
+        "E": "三维交错",
+        "F": "TRAJECTORY_SCATTER",
+        "G": "每一份在落点周围错开",
+        "Q": "范围选取"
+      }
+    },
+    {
+      "row": 11,
+      "values": {
+        "E": "一分为三",
+        "F": "RULE_TRIPLE",
+        "G": "复制后面第一个攻击，伤害汇总",
+        "BN": "主动结束"
+      }
+    },
+    {
+      "row": 12,
+      "values": {
+        "E": "双重释放",
+        "F": "RULE_DUAL",
+        "G": "再拉后面若干段，段数看「双重释放再拉段数」",
+        "BN": "燃烧结算"
+      }
+    },
+    {
+      "row": 15,
+      "values": {
+        "E": "错时",
+        "F": "RULE_STAGGER",
+        "G": "第i份在组开始后延迟10i tick出生"
+      }
+    },
+    {
+      "row": 16,
+      "values": {
+        "E": "命中接续",
+        "F": "RULE_HIT_CONTINUE",
+        "G": "父段成立后接一段子效果"
+      }
+    }
+  ],
+  "archive": {
+    "dataRows": 22,
+    "maxRow": 25,
+    "dimension": "A1:FS25",
+    "header2": {
+      "A": "名称",
+      "B": "编号",
+      "C": "类型",
+      "D": "属性",
+      "E": "基础伤害",
+      "F": "基础冷却tick",
+      "G": "等级上限",
+      "H": "复杂度",
+      "I": "登记弹速",
+      "J": "附魔",
+      "K": "装配消耗",
+      "L": "登记魔力",
+      "M": "可接受附魔",
+      "N": "功能描述",
+      "O": "特效",
+      "P": "释放种类",
+      "Q": "释放标签",
+      "R": "弹道",
+      "S": "链上角色",
+      "T": "移动中的命中体",
+      "U": "命中体存活tick",
+      "V": "飞行速度",
+      "W": "厚度",
+      "X": "双重释放再拉段数",
+      "Y": "接受持续索敌",
+      "Z": "接受出手初瞄",
+      "AA": "出手后不再跟随",
+      "AB": "必须手持剑",
+      "AC": "整组提交",
+      "AD": "使用弧带",
+      "AE": "推进拍号",
+      "AF": "弧带半径",
+      "AG": "弧带半宽",
+      "AH": "接受弹道改写",
+      "AI": "为下一段指定目标",
+      "AJ": "为下一段改为垂落",
+      "AK": "弹道可被修改",
+      "AL": "操纵世界剑",
+      "AM": "拒绝与其他段同链",
+      "AN": "自身能量倍率",
+      "AO": "挂到后续的能量倍率",
+      "AP": "显式魔力",
+      "AQ": "蓄力tick",
+      "AR": "旧档·出手先扣水势",
+      "AS": "场地半径",
+      "AT": "治疗量",
+      "AU": "治疗打在施法者",
+      "AV": "牵引强度",
+      "AW": "旧档·命中附加潮湿",
+      "AX": "命中灭火",
+      "AY": "挡住移动",
+      "AZ": "压力脉冲",
+      "BA": "侵蚀脉冲",
+      "BB": "水平击退",
+      "BC": "向上抛",
+      "BD": "卸力比例",
+      "BE": "减速时长tick",
+      "BF": "到期爆发伤害",
+      "BG": "外观编号",
+      "BH": "曲线函数",
+      "BI": "外形",
+      "BJ": "宽度倍数",
+      "BK": "长度倍数",
+      "BL": "能量放大长度",
+      "BM": "能量放大宽度",
+      "BN": "能量放大高度",
+      "BO": "能量放大模型",
+      "BP": "同锚点分道显示",
+      "BQ": "旧档·每份预留重水",
+      "BR": "旧档·重压潮湿门槛",
+      "BS": "承接来袭弹",
+      "BT": "场地生成消耗",
+      "BU": "场地维持消耗",
+      "BV": "场地维持周期",
+      "BW": "场地寿命tick",
+      "BX": "护体类型键",
+      "BY": "护体寿命tick",
+      "BZ": "护体生成消耗",
+      "CA": "护体维持消耗",
+      "CB": "护体维持周期",
+      "CC": "护体卸力",
+      "CD": "护体半径",
+      "CE": "护体带宽",
+      "CF": "护体身体高度",
+      "CG": "护体基础倾角",
+      "CH": "屏障宽",
+      "CI": "屏障高",
+      "CJ": "屏障厚",
+      "CK": "屏障前移",
+      "CL": "屏障寿命tick",
+      "CM": "屏障生成消耗",
+      "CN": "屏障维持消耗",
+      "CO": "屏障维持周期",
+      "CP": "屏障衰减",
+      "CQ": "屏障承接来袭弹",
+      "CR": "领域宽",
+      "CS": "领域深",
+      "CT": "领域高",
+      "CU": "领域初始消耗",
+      "CV": "领域维持消耗",
+      "CW": "领域维持周期",
+      "CX": "领域寿命tick",
+      "CY": "领域边界",
+      "CZ": "领域外观",
+      "DA": "达级自动学会",
+      "DB": "领域效果键",
+      "DC": "旧档·潮湿周期tick",
+      "DD": "旧档·潮湿每次加点",
+      "DE": "旧档·潮湿延迟tick",
+      "DF": "旧档·水势周期tick",
+      "DG": "旧档·水势每次加点",
+      "DH": "旧档·水势延迟tick",
+      "DI": "旧档·减速等级",
+      "DJ": "旧档·领域减速时长tick",
+      "DK": "旧档·减速周期tick",
+      "DL": "旧档·减速延迟tick",
+      "DM": "耗氧倍率",
+      "DN": "附魔效果键",
+      "DO": "附魔初始层数",
+      "DP": "附魔半径基数",
+      "DQ": "附魔时长基数",
+      "DR": "附魔半径倍率",
+      "DS": "附魔时长倍率",
+      "DT": "附魔伤害倍率",
+      "DU": "附魔速度倍率",
+      "DV": "备注",
+      "DW": "配置启用",
+      "DX": "资源",
+      "DY": "状态",
+      "DZ": "操作",
+      "EA": "作用对象",
+      "EB": "触发时机",
+      "EC": "数值",
+      "ED": "状态amplifier",
+      "EE": "寿命策略",
+      "EF": "寿命tick",
+      "EG": "周期tick",
+      "EH": "首次延迟tick",
+      "EI": "计量单位",
+      "EJ": "生效条件",
+      "EK": "结算约束",
+      "EL": "迁移来源",
+      "EM": "关联说明",
+      "EN": "附加明细键",
+      "EP": "来源文件",
+      "EQ": "来源页",
+      "ER": "来源行",
+      "ES": "备份时间",
+      "ET": "采集时间",
+      "EU": "源哈希",
+      "EV": "快照说明",
+      "EX": "关联资源状态明细",
+      "EY": "资源列来源文件",
+      "EZ": "资源列来源行",
+      "FA": "资源列来源哈希",
+      "FB": "首次资源列原值·配置启用",
+      "FC": "首次资源列原值·资源",
+      "FD": "首次资源列原值·状态",
+      "FE": "首次资源列原值·操作",
+      "FF": "首次资源列原值·作用对象",
+      "FG": "首次资源列原值·触发时机",
+      "FH": "首次资源列原值·数值",
+      "FI": "首次资源列原值·状态amplifier",
+      "FJ": "首次资源列原值·寿命策略",
+      "FK": "首次资源列原值·寿命tick",
+      "FL": "首次资源列原值·周期tick",
+      "FM": "首次资源列原值·首次延迟tick",
+      "FN": "首次资源列原值·计量单位",
+      "FO": "首次资源列原值·生效条件",
+      "FP": "首次资源列原值·结算约束",
+      "FQ": "首次资源列原值·迁移来源",
+      "FR": "首次资源列原值·关联说明",
+      "FS": "首次资源列原值·附加明细键"
+    },
+    "sample": [
+      {
+        "row": 3,
+        "id": "fire_liaoyuan",
+        "name": "燎原"
+      },
+      {
+        "row": 4,
+        "id": "fire_liaoli",
+        "name": "燎里"
+      },
+      {
+        "row": 5,
+        "id": "fire_fentian",
+        "name": "焚天"
+      },
+      {
+        "row": 24,
+        "id": "water_vortex",
+        "name": "旋流"
+      },
+      {
+        "row": 25,
+        "id": "water_bubble_column",
+        "name": "气泡柱"
+      }
+    ],
+    "duplicateCheckReady": true
+  },
+  "resourceIdCount": 5,
+  "resourceHasTargets": [],
+  "summary": [
+    {
+      "name": "已完成",
+      "dimension": "A1:EN40",
+      "dataRows": 37,
+      "maxRow": 40,
+      "nonemptyWithoutB": [],
+      "validationCount": 20
+    },
+    {
+      "name": "待制作",
+      "dimension": "A1:EN2",
+      "dataRows": 0,
+      "maxRow": 2,
+      "nonemptyWithoutB": [],
+      "validationCount": 20
+    },
+    {
+      "name": "制作中",
+      "dimension": "A1:EN19",
+      "dataRows": 17,
+      "maxRow": 19,
+      "nonemptyWithoutB": [],
+      "validationCount": 20
+    },
+    {
+      "name": "待验收",
+      "dimension": "A1:EN12",
+      "dataRows": 8,
+      "maxRow": 12,
+      "nonemptyWithoutB": [],
+      "validationCount": 20
+    },
+    {
+      "name": "数据表",
+      "dimension": "A1:BV16",
+      "dataRows": 8,
+      "maxRow": 16,
+      "nonemptyWithoutB": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "validationCount": 0
+    },
+    {
+      "name": "资源状态明细",
+      "dimension": "A1:T7",
+      "dataRows": 5,
+      "maxRow": 7,
+      "nonemptyWithoutB": [],
+      "validationCount": 8
+    },
+    {
+      "name": "待制作原始数据",
+      "dimension": "A1:FS25",
+      "dataRows": 22,
+      "maxRow": 25,
+      "nonemptyWithoutB": [
+        10
+      ],
+      "validationCount": 0
+    }
+  ],
+  "hits": {
+    "rule_triple_release": [],
+    "rule_quadruple_release": [],
+    "rule_octuple_release": [],
+    "rule_sixteen_release": [],
+    "rule_exhaustive_release": [],
+    "rule_double_cast": [],
+    "rule_quintuple_cast": [],
+    "rule_octuple_cast": [],
+    "rule_dual_release": [
+      {
+        "sheet": "已完成",
+        "row": 29
+      }
+    ],
+    "rule_triple_cast": [
+      {
+        "sheet": "已完成",
+        "row": 32
+      }
+    ],
+    "fire_burn": [
+      {
+        "sheet": "制作中",
+        "row": 19
+      },
+      {
+        "sheet": "待制作原始数据",
+        "row": 7
+      }
+    ]
+  },
+  "comments": [
+    {
+      "part": "xl/comments1.xml",
+      "refs": 8,
+      "sample": [
+        "L2",
+        "AA2",
+        "AP2",
+        "BH2",
+        "BQ2",
+        "BR2",
+        "BW2",
+        "DI2"
+      ]
+    },
+    {
+      "part": "xl/comments2.xml",
+      "refs": 8,
+      "sample": [
+        "L2",
+        "AA2",
+        "AP2",
+        "BH2",
+        "BQ2",
+        "BR2",
+        "BW2",
+        "DI2"
+      ]
+    },
+    {
+      "part": "xl/comments3.xml",
+      "refs": 8,
+      "sample": [
+        "L2",
+        "AA2",
+        "AP2",
+        "BH2",
+        "BQ2",
+        "BR2",
+        "BW2",
+        "DI2"
+      ]
+    },
+    {
+      "part": "xl/comments4.xml",
+      "refs": 8,
+      "sample": [
+        "L2",
+        "AA2",
+        "AP2",
+        "BH2",
+        "BQ2",
+        "BR2",
+        "BW2",
+        "DI2"
+      ]
+    }
+  ],
+  "definedNames": [
+    {
+      "name": "_xlnm._FilterDatabase",
+      "text": "待验收!$A$2:$EN$2",
+      "localSheetId": "3"
+    },
+    {
+      "name": "_xlnm._FilterDatabase",
+      "text": "待制作!$A$2:$EN$2",
+      "localSheetId": "1"
+    },
+    {
+      "name": "_xlnm._FilterDatabase",
+      "text": "已完成!$A$2:$EN$40",
+      "localSheetId": "0"
+    },
+    {
+      "name": "_xlnm._FilterDatabase",
+      "text": "制作中!$A$2:$EN$19",
+      "localSheetId": "2"
+    },
+    {
+      "name": "_xlnm._FilterDatabase",
+      "text": "资源状态明细!$A$2:$T$6",
+      "localSheetId": "5"
+    },
+    {
+      "name": "操作列表",
+      "text": "数据表!$BJ$4:INDEX(数据表!$BJ$4:$BJ$1000,COUNTA(数据表!$BJ$4:$BJ$1000))",
+      "localSheetId": null
+    },
+    {
+      "name": "触发时机列表",
+      "text": "数据表!$BN$4:INDEX(数据表!$BN$4:$BN$1000,COUNTA(数据表!$BN$4:$BN$1000))",
+      "localSheetId": null
+    },
+    {
+      "name": "弹道",
+      "text": "数据表!$A$4:$A$10",
+      "localSheetId": null
+    },
+    {
+      "name": "附魔效果键",
+      "text": "数据表!$AS$4:$AS$8",
+      "localSheetId": null
+    },
+    {
+      "name": "计量单位列表",
+      "text": "数据表!$BR$4:INDEX(数据表!$BR$4:$BR$1000,COUNTA(数据表!$BR$4:$BR$1000))",
+      "localSheetId": null
+    },
+    {
+      "name": "链上角色",
+      "text": "数据表!$E$4:$E$16",
+      "localSheetId": null
+    },
+    {
+      "name": "领域边界",
+      "text": "数据表!$AG$4:$AG$5",
+      "localSheetId": null
+    },
+    {
+      "name": "领域外观",
+      "text": "数据表!$AK$4:$AK$5",
+      "localSheetId": null
+    },
+    {
+      "name": "曲线函数",
+      "text": "数据表!$AO$4:$AO$4",
+      "localSheetId": null
+    },
+    {
+      "name": "是否",
+      "text": "数据表!$AC$4:$AC$5",
+      "localSheetId": null
+    },
+    {
+      "name": "释放标签",
+      "text": "数据表!$M$4:$M$5",
+      "localSheetId": null
+    },
+    {
+      "name": "释放种类",
+      "text": "数据表!$I$4:$I$7",
+      "localSheetId": null
+    },
+    {
+      "name": "寿命策略列表",
+      "text": "数据表!$BP$4:INDEX(数据表!$BP$4:$BP$1000,COUNTA(数据表!$BP$4:$BP$1000))",
+      "localSheetId": null
+    },
+    {
+      "name": "属性",
+      "text": "数据表!$U$4:$U$9",
+      "localSheetId": null
+    },
+    {
+      "name": "术式类型",
+      "text": "数据表!$Q$4:$Q$9",
+      "localSheetId": null
+    },
+    {
+      "name": "外形",
+      "text": "数据表!$Y$4:$Y$5",
+      "localSheetId": null
+    },
+    {
+      "name": "状态列表",
+      "text": "数据表!$BV$4:INDEX(数据表!$BV$4:$BV$1000,COUNTA(数据表!$BV$4:$BV$1000))",
+      "localSheetId": null
+    },
+    {
+      "name": "资源列表",
+      "text": "数据表!$BT$4:INDEX(数据表!$BT$4:$BT$1000,COUNTA(数据表!$BT$4:$BT$1000))",
+      "localSheetId": null
+    },
+    {
+      "name": "作用对象列表",
+      "text": "数据表!$BL$4:INDEX(数据表!$BL$4:$BL$1000,COUNTA(数据表!$BL$4:$BL$1000))",
+      "localSheetId": null
+    }
+  ],
+  "validations": [
+    {
+      "sheet": "已完成",
+      "count": 20,
+      "items": [
+        {
+          "sqref": "C3:C80",
+          "type": "list",
+          "formula1": "术式类型"
+        },
+        {
+          "sqref": "D3:D80",
+          "type": "list",
+          "formula1": "属性"
+        },
+        {
+          "sqref": "J3:J80 DA3:DA80 CQ3:CQ80 BS3:BS80 BL3:BP80 AX3:AY80 AU3:AU80 AH3:AM80 Y3:AE80 T3:T80 M3:M80",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "P3:P80",
+          "type": "list",
+          "formula1": "释放种类"
+        },
+        {
+          "sqref": "Q3:Q80",
+          "type": "list",
+          "formula1": "释放标签"
+        },
+        {
+          "sqref": "R3:R80",
+          "type": "list",
+          "formula1": "弹道"
+        },
+        {
+          "sqref": "S3:S80",
+          "type": "list",
+          "formula1": "链上角色"
+        },
+        {
+          "sqref": "BH3:BH80",
+          "type": "list",
+          "formula1": "曲线函数"
+        },
+        {
+          "sqref": "BI3:BI80",
+          "type": "list",
+          "formula1": "外形"
+        },
+        {
+          "sqref": "CY3:CY80",
+          "type": "list",
+          "formula1": "领域边界"
+        },
+        {
+          "sqref": "CZ3:CZ80",
+          "type": "list",
+          "formula1": "领域外观"
+        },
+        {
+          "sqref": "DN3:DN80",
+          "type": "list",
+          "formula1": "附魔效果键"
+        },
+        {
+          "sqref": "DW3:DW1000",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "DX3:DX1000",
+          "type": "list",
+          "formula1": "资源列表"
+        },
+        {
+          "sqref": "DY3:DY1000",
+          "type": "list",
+          "formula1": "状态列表"
+        },
+        {
+          "sqref": "DZ3:DZ1000",
+          "type": "list",
+          "formula1": "操作列表"
+        },
+        {
+          "sqref": "EA3:EA1000",
+          "type": "list",
+          "formula1": "作用对象列表"
+        },
+        {
+          "sqref": "EB3:EB1000",
+          "type": "list",
+          "formula1": "触发时机列表"
+        },
+        {
+          "sqref": "EE3:EE1000",
+          "type": "list",
+          "formula1": "寿命策略列表"
+        },
+        {
+          "sqref": "EI3:EI1000",
+          "type": "list",
+          "formula1": "计量单位列表"
+        }
+      ]
+    },
+    {
+      "sheet": "待制作",
+      "count": 20,
+      "items": [
+        {
+          "sqref": "C3:C80",
+          "type": "list",
+          "formula1": "术式类型"
+        },
+        {
+          "sqref": "D3:D80",
+          "type": "list",
+          "formula1": "属性"
+        },
+        {
+          "sqref": "J3:J80 DA3:DA80 CQ3:CQ80 BS3:BS80 BL3:BP80 AX3:AY80 AU3:AU80 AH3:AM80 Y3:AE80 T3:T80 M3:M80",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "P3:P80",
+          "type": "list",
+          "formula1": "释放种类"
+        },
+        {
+          "sqref": "Q3:Q80",
+          "type": "list",
+          "formula1": "释放标签"
+        },
+        {
+          "sqref": "R3:R80",
+          "type": "list",
+          "formula1": "弹道"
+        },
+        {
+          "sqref": "S3:S80",
+          "type": "list",
+          "formula1": "链上角色"
+        },
+        {
+          "sqref": "BH3:BH80",
+          "type": "list",
+          "formula1": "曲线函数"
+        },
+        {
+          "sqref": "BI3:BI80",
+          "type": "list",
+          "formula1": "外形"
+        },
+        {
+          "sqref": "CY3:CY80",
+          "type": "list",
+          "formula1": "领域边界"
+        },
+        {
+          "sqref": "CZ3:CZ80",
+          "type": "list",
+          "formula1": "领域外观"
+        },
+        {
+          "sqref": "DN3:DN80",
+          "type": "list",
+          "formula1": "附魔效果键"
+        },
+        {
+          "sqref": "DW3:DW1000",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "DX3:DX1000",
+          "type": "list",
+          "formula1": "资源列表"
+        },
+        {
+          "sqref": "DY3:DY1000",
+          "type": "list",
+          "formula1": "状态列表"
+        },
+        {
+          "sqref": "DZ3:DZ1000",
+          "type": "list",
+          "formula1": "操作列表"
+        },
+        {
+          "sqref": "EA3:EA1000",
+          "type": "list",
+          "formula1": "作用对象列表"
+        },
+        {
+          "sqref": "EB3:EB1000",
+          "type": "list",
+          "formula1": "触发时机列表"
+        },
+        {
+          "sqref": "EE3:EE1000",
+          "type": "list",
+          "formula1": "寿命策略列表"
+        },
+        {
+          "sqref": "EI3:EI1000",
+          "type": "list",
+          "formula1": "计量单位列表"
+        }
+      ]
+    },
+    {
+      "sheet": "制作中",
+      "count": 20,
+      "items": [
+        {
+          "sqref": "C3:C80",
+          "type": "list",
+          "formula1": "术式类型"
+        },
+        {
+          "sqref": "D3:D80",
+          "type": "list",
+          "formula1": "属性"
+        },
+        {
+          "sqref": "J3:J80 DA3:DA80 CQ3:CQ80 BS3:BS80 BL3:BP80 AX3:AY80 AU3:AU80 AH3:AM80 Y3:AE80 T3:T80 M3:M80",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "P3:P80",
+          "type": "list",
+          "formula1": "释放种类"
+        },
+        {
+          "sqref": "Q3:Q80",
+          "type": "list",
+          "formula1": "释放标签"
+        },
+        {
+          "sqref": "R3:R80",
+          "type": "list",
+          "formula1": "弹道"
+        },
+        {
+          "sqref": "S3:S80",
+          "type": "list",
+          "formula1": "链上角色"
+        },
+        {
+          "sqref": "BH3:BH80",
+          "type": "list",
+          "formula1": "曲线函数"
+        },
+        {
+          "sqref": "BI3:BI80",
+          "type": "list",
+          "formula1": "外形"
+        },
+        {
+          "sqref": "CY3:CY80",
+          "type": "list",
+          "formula1": "领域边界"
+        },
+        {
+          "sqref": "CZ3:CZ80",
+          "type": "list",
+          "formula1": "领域外观"
+        },
+        {
+          "sqref": "DN3:DN80",
+          "type": "list",
+          "formula1": "附魔效果键"
+        },
+        {
+          "sqref": "DW3:DW1000",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "DX3:DX1000",
+          "type": "list",
+          "formula1": "资源列表"
+        },
+        {
+          "sqref": "DY3:DY1000",
+          "type": "list",
+          "formula1": "状态列表"
+        },
+        {
+          "sqref": "DZ3:DZ1000",
+          "type": "list",
+          "formula1": "操作列表"
+        },
+        {
+          "sqref": "EA3:EA1000",
+          "type": "list",
+          "formula1": "作用对象列表"
+        },
+        {
+          "sqref": "EB3:EB1000",
+          "type": "list",
+          "formula1": "触发时机列表"
+        },
+        {
+          "sqref": "EE3:EE1000",
+          "type": "list",
+          "formula1": "寿命策略列表"
+        },
+        {
+          "sqref": "EI3:EI1000",
+          "type": "list",
+          "formula1": "计量单位列表"
+        }
+      ]
+    },
+    {
+      "sheet": "待验收",
+      "count": 20,
+      "items": [
+        {
+          "sqref": "C3:C80",
+          "type": "list",
+          "formula1": "术式类型"
+        },
+        {
+          "sqref": "D3:D80",
+          "type": "list",
+          "formula1": "属性"
+        },
+        {
+          "sqref": "J3:J80 DA3:DA80 CQ3:CQ80 BS3:BS80 BL3:BP80 AX3:AY80 AU3:AU80 AH3:AM80 Y3:AE80 T3:T80 M3:M80",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "P3:P80",
+          "type": "list",
+          "formula1": "释放种类"
+        },
+        {
+          "sqref": "Q3:Q80",
+          "type": "list",
+          "formula1": "释放标签"
+        },
+        {
+          "sqref": "R3:R80",
+          "type": "list",
+          "formula1": "弹道"
+        },
+        {
+          "sqref": "S3:S80",
+          "type": "list",
+          "formula1": "链上角色"
+        },
+        {
+          "sqref": "BH3:BH80",
+          "type": "list",
+          "formula1": "曲线函数"
+        },
+        {
+          "sqref": "BI3:BI80",
+          "type": "list",
+          "formula1": "外形"
+        },
+        {
+          "sqref": "CY3:CY80",
+          "type": "list",
+          "formula1": "领域边界"
+        },
+        {
+          "sqref": "CZ3:CZ80",
+          "type": "list",
+          "formula1": "领域外观"
+        },
+        {
+          "sqref": "DN3:DN80",
+          "type": "list",
+          "formula1": "附魔效果键"
+        },
+        {
+          "sqref": "DW3:DW1000",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "DX3:DX1000",
+          "type": "list",
+          "formula1": "资源列表"
+        },
+        {
+          "sqref": "DY3:DY1000",
+          "type": "list",
+          "formula1": "状态列表"
+        },
+        {
+          "sqref": "DZ3:DZ1000",
+          "type": "list",
+          "formula1": "操作列表"
+        },
+        {
+          "sqref": "EA3:EA1000",
+          "type": "list",
+          "formula1": "作用对象列表"
+        },
+        {
+          "sqref": "EB3:EB1000",
+          "type": "list",
+          "formula1": "触发时机列表"
+        },
+        {
+          "sqref": "EE3:EE1000",
+          "type": "list",
+          "formula1": "寿命策略列表"
+        },
+        {
+          "sqref": "EI3:EI1000",
+          "type": "list",
+          "formula1": "计量单位列表"
+        }
+      ]
+    },
+    {
+      "sheet": "数据表",
+      "count": 0,
+      "items": []
+    },
+    {
+      "sheet": "资源状态明细",
+      "count": 8,
+      "items": [
+        {
+          "sqref": "C3:C1000",
+          "type": "list",
+          "formula1": "是否"
+        },
+        {
+          "sqref": "D3:D1000",
+          "type": "list",
+          "formula1": "资源列表"
+        },
+        {
+          "sqref": "E3:E1000",
+          "type": "list",
+          "formula1": "状态列表"
+        },
+        {
+          "sqref": "F3:F1000",
+          "type": "list",
+          "formula1": "操作列表"
+        },
+        {
+          "sqref": "G3:G1000",
+          "type": "list",
+          "formula1": "作用对象列表"
+        },
+        {
+          "sqref": "H3:H1000",
+          "type": "list",
+          "formula1": "触发时机列表"
+        },
+        {
+          "sqref": "K3:K1000",
+          "type": "list",
+          "formula1": "寿命策略列表"
+        },
+        {
+          "sqref": "O3:O1000",
+          "type": "list",
+          "formula1": "计量单位列表"
+        }
+      ]
+    },
+    {
+      "sheet": "待制作原始数据",
+      "count": 0,
+      "items": []
+    }
+  ],
+  "header2BySheet": {
+    "已完成": {
+      "A": "名称",
+      "B": "编号",
+      "C": "类型",
+      "D": "属性",
+      "E": "基础伤害",
+      "F": "基础冷却tick",
+      "G": "等级上限",
+      "H": "复杂度",
+      "I": "登记弹速",
+      "J": "附魔",
+      "K": "装配消耗",
+      "L": "登记魔力",
+      "M": "可接受附魔",
+      "N": "功能描述",
+      "O": "特效",
+      "P": "释放种类",
+      "Q": "释放标签",
+      "R": "弹道",
+      "S": "链上角色",
+      "T": "移动中的命中体",
+      "U": "命中体存活tick",
+      "V": "飞行速度",
+      "W": "厚度",
+      "X": "双重释放再拉段数",
+      "Y": "接受持续索敌",
+      "Z": "接受出手初瞄",
+      "AA": "出手后不再跟随",
+      "AB": "必须手持剑",
+      "AC": "整组提交",
+      "AD": "使用弧带",
+      "AE": "推进拍号",
+      "AF": "弧带半径",
+      "AG": "弧带半宽",
+      "AH": "接受弹道改写",
+      "AI": "为下一段指定目标",
+      "AJ": "为下一段改为垂落",
+      "AK": "弹道可被修改",
+      "AL": "操纵世界剑",
+      "AM": "拒绝与其他段同链",
+      "AN": "自身能量倍率",
+      "AO": "挂到后续的能量倍率",
+      "AP": "显式魔力",
+      "AQ": "蓄力tick",
+      "AR": "旧档·出手先扣水势",
+      "AS": "场地半径",
+      "AT": "治疗量",
+      "AU": "治疗打在施法者",
+      "AV": "牵引强度",
+      "AW": "旧档·命中附加潮湿",
+      "AX": "命中灭火",
+      "AY": "挡住移动",
+      "AZ": "压力脉冲",
+      "BA": "侵蚀脉冲",
+      "BB": "水平击退",
+      "BC": "向上抛",
+      "BD": "卸力比例",
+      "BE": "减速时长tick",
+      "BF": "到期爆发伤害",
+      "BG": "外观编号",
+      "BH": "曲线函数",
+      "BI": "外形",
+      "BJ": "宽度倍数",
+      "BK": "长度倍数",
+      "BL": "能量放大长度",
+      "BM": "能量放大宽度",
+      "BN": "能量放大高度",
+      "BO": "能量放大模型",
+      "BP": "同锚点分道显示",
+      "BQ": "旧档·每份预留重水",
+      "BR": "旧档·重压潮湿门槛",
+      "BS": "承接来袭弹",
+      "BT": "场地生成消耗",
+      "BU": "场地维持消耗",
+      "BV": "场地维持周期",
+      "BW": "场地寿命tick",
+      "BX": "护体类型键",
+      "BY": "护体寿命tick",
+      "BZ": "护体生成消耗",
+      "CA": "护体维持消耗",
+      "CB": "护体维持周期",
+      "CC": "护体卸力",
+      "CD": "护体半径",
+      "CE": "护体带宽",
+      "CF": "护体身体高度",
+      "CG": "护体基础倾角",
+      "CH": "屏障宽",
+      "CI": "屏障高",
+      "CJ": "屏障厚",
+      "CK": "屏障前移",
+      "CL": "屏障寿命tick",
+      "CM": "屏障生成消耗",
+      "CN": "屏障维持消耗",
+      "CO": "屏障维持周期",
+      "CP": "屏障衰减",
+      "CQ": "屏障承接来袭弹",
+      "CR": "领域宽",
+      "CS": "领域深",
+      "CT": "领域高",
+      "CU": "领域初始消耗",
+      "CV": "领域维持消耗",
+      "CW": "领域维持周期",
+      "CX": "领域寿命tick",
+      "CY": "领域边界",
+      "CZ": "领域外观",
+      "DA": "达级自动学会",
+      "DB": "领域效果键",
+      "DC": "旧档·潮湿周期tick",
+      "DD": "旧档·潮湿每次加点",
+      "DE": "旧档·潮湿延迟tick",
+      "DF": "旧档·水势周期tick",
+      "DG": "旧档·水势每次加点",
+      "DH": "旧档·水势延迟tick",
+      "DI": "旧档·减速等级",
+      "DJ": "旧档·领域减速时长tick",
+      "DK": "旧档·减速周期tick",
+      "DL": "旧档·减速延迟tick",
+      "DM": "耗氧倍率",
+      "DN": "附魔效果键",
+      "DO": "附魔初始层数",
+      "DP": "附魔半径基数",
+      "DQ": "附魔时长基数",
+      "DR": "附魔半径倍率",
+      "DS": "附魔时长倍率",
+      "DT": "附魔伤害倍率",
+      "DU": "附魔速度倍率",
+      "DV": "备注",
+      "DW": "配置启用",
+      "DX": "资源",
+      "DY": "状态",
+      "DZ": "操作",
+      "EA": "作用对象",
+      "EB": "触发时机",
+      "EC": "数值",
+      "ED": "状态amplifier",
+      "EE": "寿命策略",
+      "EF": "寿命tick",
+      "EG": "周期tick",
+      "EH": "首次延迟tick",
+      "EI": "计量单位",
+      "EJ": "生效条件",
+      "EK": "结算约束",
+      "EL": "迁移来源",
+      "EM": "关联说明",
+      "EN": "附加明细键"
+    },
+    "待制作": {
+      "A": "名称",
+      "B": "编号",
+      "C": "类型",
+      "D": "属性",
+      "E": "基础伤害",
+      "F": "基础冷却tick",
+      "G": "等级上限",
+      "H": "复杂度",
+      "I": "登记弹速",
+      "J": "附魔",
+      "K": "装配消耗",
+      "L": "登记魔力",
+      "M": "可接受附魔",
+      "N": "功能描述",
+      "O": "特效",
+      "P": "释放种类",
+      "Q": "释放标签",
+      "R": "弹道",
+      "S": "链上角色",
+      "T": "移动中的命中体",
+      "U": "命中体存活tick",
+      "V": "飞行速度",
+      "W": "厚度",
+      "X": "双重释放再拉段数",
+      "Y": "接受持续索敌",
+      "Z": "接受出手初瞄",
+      "AA": "出手后不再跟随",
+      "AB": "必须手持剑",
+      "AC": "整组提交",
+      "AD": "使用弧带",
+      "AE": "推进拍号",
+      "AF": "弧带半径",
+      "AG": "弧带半宽",
+      "AH": "接受弹道改写",
+      "AI": "为下一段指定目标",
+      "AJ": "为下一段改为垂落",
+      "AK": "弹道可被修改",
+      "AL": "操纵世界剑",
+      "AM": "拒绝与其他段同链",
+      "AN": "自身能量倍率",
+      "AO": "挂到后续的能量倍率",
+      "AP": "显式魔力",
+      "AQ": "蓄力tick",
+      "AR": "旧档·出手先扣水势",
+      "AS": "场地半径",
+      "AT": "治疗量",
+      "AU": "治疗打在施法者",
+      "AV": "牵引强度",
+      "AW": "旧档·命中附加潮湿",
+      "AX": "命中灭火",
+      "AY": "挡住移动",
+      "AZ": "压力脉冲",
+      "BA": "侵蚀脉冲",
+      "BB": "水平击退",
+      "BC": "向上抛",
+      "BD": "卸力比例",
+      "BE": "减速时长tick",
+      "BF": "到期爆发伤害",
+      "BG": "外观编号",
+      "BH": "曲线函数",
+      "BI": "外形",
+      "BJ": "宽度倍数",
+      "BK": "长度倍数",
+      "BL": "能量放大长度",
+      "BM": "能量放大宽度",
+      "BN": "能量放大高度",
+      "BO": "能量放大模型",
+      "BP": "同锚点分道显示",
+      "BQ": "旧档·每份预留重水",
+      "BR": "旧档·重压潮湿门槛",
+      "BS": "承接来袭弹",
+      "BT": "场地生成消耗",
+      "BU": "场地维持消耗",
+      "BV": "场地维持周期",
+      "BW": "场地寿命tick",
+      "BX": "护体类型键",
+      "BY": "护体寿命tick",
+      "BZ": "护体生成消耗",
+      "CA": "护体维持消耗",
+      "CB": "护体维持周期",
+      "CC": "护体卸力",
+      "CD": "护体半径",
+      "CE": "护体带宽",
+      "CF": "护体身体高度",
+      "CG": "护体基础倾角",
+      "CH": "屏障宽",
+      "CI": "屏障高",
+      "CJ": "屏障厚",
+      "CK": "屏障前移",
+      "CL": "屏障寿命tick",
+      "CM": "屏障生成消耗",
+      "CN": "屏障维持消耗",
+      "CO": "屏障维持周期",
+      "CP": "屏障衰减",
+      "CQ": "屏障承接来袭弹",
+      "CR": "领域宽",
+      "CS": "领域深",
+      "CT": "领域高",
+      "CU": "领域初始消耗",
+      "CV": "领域维持消耗",
+      "CW": "领域维持周期",
+      "CX": "领域寿命tick",
+      "CY": "领域边界",
+      "CZ": "领域外观",
+      "DA": "达级自动学会",
+      "DB": "领域效果键",
+      "DC": "旧档·潮湿周期tick",
+      "DD": "旧档·潮湿每次加点",
+      "DE": "旧档·潮湿延迟tick",
+      "DF": "旧档·水势周期tick",
+      "DG": "旧档·水势每次加点",
+      "DH": "旧档·水势延迟tick",
+      "DI": "旧档·减速等级",
+      "DJ": "旧档·领域减速时长tick",
+      "DK": "旧档·减速周期tick",
+      "DL": "旧档·减速延迟tick",
+      "DM": "耗氧倍率",
+      "DN": "附魔效果键",
+      "DO": "附魔初始层数",
+      "DP": "附魔半径基数",
+      "DQ": "附魔时长基数",
+      "DR": "附魔半径倍率",
+      "DS": "附魔时长倍率",
+      "DT": "附魔伤害倍率",
+      "DU": "附魔速度倍率",
+      "DV": "备注",
+      "DW": "配置启用",
+      "DX": "资源",
+      "DY": "状态",
+      "DZ": "操作",
+      "EA": "作用对象",
+      "EB": "触发时机",
+      "EC": "数值",
+      "ED": "状态amplifier",
+      "EE": "寿命策略",
+      "EF": "寿命tick",
+      "EG": "周期tick",
+      "EH": "首次延迟tick",
+      "EI": "计量单位",
+      "EJ": "生效条件",
+      "EK": "结算约束",
+      "EL": "迁移来源",
+      "EM": "关联说明",
+      "EN": "附加明细键"
+    },
+    "制作中": {
+      "A": "名称",
+      "B": "编号",
+      "C": "类型",
+      "D": "属性",
+      "E": "基础伤害",
+      "F": "基础冷却tick",
+      "G": "等级上限",
+      "H": "复杂度",
+      "I": "登记弹速",
+      "J": "附魔",
+      "K": "装配消耗",
+      "L": "登记魔力",
+      "M": "可接受附魔",
+      "N": "功能描述",
+      "O": "特效",
+      "P": "释放种类",
+      "Q": "释放标签",
+      "R": "弹道",
+      "S": "链上角色",
+      "T": "移动中的命中体",
+      "U": "命中体存活tick",
+      "V": "飞行速度",
+      "W": "厚度",
+      "X": "双重释放再拉段数",
+      "Y": "接受持续索敌",
+      "Z": "接受出手初瞄",
+      "AA": "出手后不再跟随",
+      "AB": "必须手持剑",
+      "AC": "整组提交",
+      "AD": "使用弧带",
+      "AE": "推进拍号",
+      "AF": "弧带半径",
+      "AG": "弧带半宽",
+      "AH": "接受弹道改写",
+      "AI": "为下一段指定目标",
+      "AJ": "为下一段改为垂落",
+      "AK": "弹道可被修改",
+      "AL": "操纵世界剑",
+      "AM": "拒绝与其他段同链",
+      "AN": "自身能量倍率",
+      "AO": "挂到后续的能量倍率",
+      "AP": "显式魔力",
+      "AQ": "蓄力tick",
+      "AR": "旧档·出手先扣水势",
+      "AS": "场地半径",
+      "AT": "治疗量",
+      "AU": "治疗打在施法者",
+      "AV": "牵引强度",
+      "AW": "旧档·命中附加潮湿",
+      "AX": "命中灭火",
+      "AY": "挡住移动",
+      "AZ": "压力脉冲",
+      "BA": "侵蚀脉冲",
+      "BB": "水平击退",
+      "BC": "向上抛",
+      "BD": "卸力比例",
+      "BE": "减速时长tick",
+      "BF": "到期爆发伤害",
+      "BG": "外观编号",
+      "BH": "曲线函数",
+      "BI": "外形",
+      "BJ": "宽度倍数",
+      "BK": "长度倍数",
+      "BL": "能量放大长度",
+      "BM": "能量放大宽度",
+      "BN": "能量放大高度",
+      "BO": "能量放大模型",
+      "BP": "同锚点分道显示",
+      "BQ": "旧档·每份预留重水",
+      "BR": "旧档·重压潮湿门槛",
+      "BS": "承接来袭弹",
+      "BT": "场地生成消耗",
+      "BU": "场地维持消耗",
+      "BV": "场地维持周期",
+      "BW": "场地寿命tick",
+      "BX": "护体类型键",
+      "BY": "护体寿命tick",
+      "BZ": "护体生成消耗",
+      "CA": "护体维持消耗",
+      "CB": "护体维持周期",
+      "CC": "护体卸力",
+      "CD": "护体半径",
+      "CE": "护体带宽",
+      "CF": "护体身体高度",
+      "CG": "护体基础倾角",
+      "CH": "屏障宽",
+      "CI": "屏障高",
+      "CJ": "屏障厚",
+      "CK": "屏障前移",
+      "CL": "屏障寿命tick",
+      "CM": "屏障生成消耗",
+      "CN": "屏障维持消耗",
+      "CO": "屏障维持周期",
+      "CP": "屏障衰减",
+      "CQ": "屏障承接来袭弹",
+      "CR": "领域宽",
+      "CS": "领域深",
+      "CT": "领域高",
+      "CU": "领域初始消耗",
+      "CV": "领域维持消耗",
+      "CW": "领域维持周期",
+      "CX": "领域寿命tick",
+      "CY": "领域边界",
+      "CZ": "领域外观",
+      "DA": "达级自动学会",
+      "DB": "领域效果键",
+      "DC": "旧档·潮湿周期tick",
+      "DD": "旧档·潮湿每次加点",
+      "DE": "旧档·潮湿延迟tick",
+      "DF": "旧档·水势周期tick",
+      "DG": "旧档·水势每次加点",
+      "DH": "旧档·水势延迟tick",
+      "DI": "旧档·减速等级",
+      "DJ": "旧档·领域减速时长tick",
+      "DK": "旧档·减速周期tick",
+      "DL": "旧档·减速延迟tick",
+      "DM": "耗氧倍率",
+      "DN": "附魔效果键",
+      "DO": "附魔初始层数",
+      "DP": "附魔半径基数",
+      "DQ": "附魔时长基数",
+      "DR": "附魔半径倍率",
+      "DS": "附魔时长倍率",
+      "DT": "附魔伤害倍率",
+      "DU": "附魔速度倍率",
+      "DV": "备注",
+      "DW": "配置启用",
+      "DX": "资源",
+      "DY": "状态",
+      "DZ": "操作",
+      "EA": "作用对象",
+      "EB": "触发时机",
+      "EC": "数值",
+      "ED": "状态amplifier",
+      "EE": "寿命策略",
+      "EF": "寿命tick",
+      "EG": "周期tick",
+      "EH": "首次延迟tick",
+      "EI": "计量单位",
+      "EJ": "生效条件",
+      "EK": "结算约束",
+      "EL": "迁移来源",
+      "EM": "关联说明",
+      "EN": "附加明细键"
+    },
+    "待验收": {
+      "A": "名称",
+      "B": "编号",
+      "C": "类型",
+      "D": "属性",
+      "E": "基础伤害",
+      "F": "基础冷却tick",
+      "G": "等级上限",
+      "H": "复杂度",
+      "I": "登记弹速",
+      "J": "附魔",
+      "K": "装配消耗",
+      "L": "登记魔力",
+      "M": "可接受附魔",
+      "N": "功能描述",
+      "O": "特效",
+      "P": "释放种类",
+      "Q": "释放标签",
+      "R": "弹道",
+      "S": "链上角色",
+      "T": "移动中的命中体",
+      "U": "命中体存活tick",
+      "V": "飞行速度",
+      "W": "厚度",
+      "X": "双重释放再拉段数",
+      "Y": "接受持续索敌",
+      "Z": "接受出手初瞄",
+      "AA": "出手后不再跟随",
+      "AB": "必须手持剑",
+      "AC": "整组提交",
+      "AD": "使用弧带",
+      "AE": "推进拍号",
+      "AF": "弧带半径",
+      "AG": "弧带半宽",
+      "AH": "接受弹道改写",
+      "AI": "为下一段指定目标",
+      "AJ": "为下一段改为垂落",
+      "AK": "弹道可被修改",
+      "AL": "操纵世界剑",
+      "AM": "拒绝与其他段同链",
+      "AN": "自身能量倍率",
+      "AO": "挂到后续的能量倍率",
+      "AP": "显式魔力",
+      "AQ": "蓄力tick",
+      "AR": "旧档·出手先扣水势",
+      "AS": "场地半径",
+      "AT": "治疗量",
+      "AU": "治疗打在施法者",
+      "AV": "牵引强度",
+      "AW": "旧档·命中附加潮湿",
+      "AX": "命中灭火",
+      "AY": "挡住移动",
+      "AZ": "压力脉冲",
+      "BA": "侵蚀脉冲",
+      "BB": "水平击退",
+      "BC": "向上抛",
+      "BD": "卸力比例",
+      "BE": "减速时长tick",
+      "BF": "到期爆发伤害",
+      "BG": "外观编号",
+      "BH": "曲线函数",
+      "BI": "外形",
+      "BJ": "宽度倍数",
+      "BK": "长度倍数",
+      "BL": "能量放大长度",
+      "BM": "能量放大宽度",
+      "BN": "能量放大高度",
+      "BO": "能量放大模型",
+      "BP": "同锚点分道显示",
+      "BQ": "旧档·每份预留重水",
+      "BR": "旧档·重压潮湿门槛",
+      "BS": "承接来袭弹",
+      "BT": "场地生成消耗",
+      "BU": "场地维持消耗",
+      "BV": "场地维持周期",
+      "BW": "场地寿命tick",
+      "BX": "护体类型键",
+      "BY": "护体寿命tick",
+      "BZ": "护体生成消耗",
+      "CA": "护体维持消耗",
+      "CB": "护体维持周期",
+      "CC": "护体卸力",
+      "CD": "护体半径",
+      "CE": "护体带宽",
+      "CF": "护体身体高度",
+      "CG": "护体基础倾角",
+      "CH": "屏障宽",
+      "CI": "屏障高",
+      "CJ": "屏障厚",
+      "CK": "屏障前移",
+      "CL": "屏障寿命tick",
+      "CM": "屏障生成消耗",
+      "CN": "屏障维持消耗",
+      "CO": "屏障维持周期",
+      "CP": "屏障衰减",
+      "CQ": "屏障承接来袭弹",
+      "CR": "领域宽",
+      "CS": "领域深",
+      "CT": "领域高",
+      "CU": "领域初始消耗",
+      "CV": "领域维持消耗",
+      "CW": "领域维持周期",
+      "CX": "领域寿命tick",
+      "CY": "领域边界",
+      "CZ": "领域外观",
+      "DA": "达级自动学会",
+      "DB": "领域效果键",
+      "DC": "旧档·潮湿周期tick",
+      "DD": "旧档·潮湿每次加点",
+      "DE": "旧档·潮湿延迟tick",
+      "DF": "旧档·水势周期tick",
+      "DG": "旧档·水势每次加点",
+      "DH": "旧档·水势延迟tick",
+      "DI": "旧档·减速等级",
+      "DJ": "旧档·领域减速时长tick",
+      "DK": "旧档·减速周期tick",
+      "DL": "旧档·减速延迟tick",
+      "DM": "耗氧倍率",
+      "DN": "附魔效果键",
+      "DO": "附魔初始层数",
+      "DP": "附魔半径基数",
+      "DQ": "附魔时长基数",
+      "DR": "附魔半径倍率",
+      "DS": "附魔时长倍率",
+      "DT": "附魔伤害倍率",
+      "DU": "附魔速度倍率",
+      "DV": "备注",
+      "DW": "配置启用",
+      "DX": "资源",
+      "DY": "状态",
+      "DZ": "操作",
+      "EA": "作用对象",
+      "EB": "触发时机",
+      "EC": "数值",
+      "ED": "状态amplifier",
+      "EE": "寿命策略",
+      "EF": "寿命tick",
+      "EG": "周期tick",
+      "EH": "首次延迟tick",
+      "EI": "计量单位",
+      "EJ": "生效条件",
+      "EK": "结算约束",
+      "EL": "迁移来源",
+      "EM": "关联说明",
+      "EN": "附加明细键"
+    },
+    "资源状态明细": {
+      "A": "术式编号",
+      "B": "配置序号",
+      "C": "配置启用",
+      "D": "资源",
+      "E": "状态",
+      "F": "操作",
+      "G": "作用对象",
+      "H": "触发时机",
+      "I": "数值",
+      "J": "状态amplifier",
+      "K": "寿命策略",
+      "L": "寿命tick",
+      "M": "周期tick",
+      "N": "首次延迟tick",
+      "O": "计量单位",
+      "P": "生效条件",
+      "Q": "结算约束",
+      "R": "迁移来源",
+      "S": "关联说明",
+      "T": "附加明细键"
+    },
+    "待制作原始数据": {
+      "A": "名称",
+      "B": "编号",
+      "C": "类型",
+      "D": "属性",
+      "E": "基础伤害",
+      "F": "基础冷却tick",
+      "G": "等级上限",
+      "H": "复杂度",
+      "I": "登记弹速",
+      "J": "附魔",
+      "K": "装配消耗",
+      "L": "登记魔力",
+      "M": "可接受附魔",
+      "N": "功能描述",
+      "O": "特效",
+      "P": "释放种类",
+      "Q": "释放标签",
+      "R": "弹道",
+      "S": "链上角色",
+      "T": "移动中的命中体",
+      "U": "命中体存活tick",
+      "V": "飞行速度",
+      "W": "厚度",
+      "X": "双重释放再拉段数",
+      "Y": "接受持续索敌",
+      "Z": "接受出手初瞄",
+      "AA": "出手后不再跟随",
+      "AB": "必须手持剑",
+      "AC": "整组提交",
+      "AD": "使用弧带",
+      "AE": "推进拍号",
+      "AF": "弧带半径",
+      "AG": "弧带半宽",
+      "AH": "接受弹道改写",
+      "AI": "为下一段指定目标",
+      "AJ": "为下一段改为垂落",
+      "AK": "弹道可被修改",
+      "AL": "操纵世界剑",
+      "AM": "拒绝与其他段同链",
+      "AN": "自身能量倍率",
+      "AO": "挂到后续的能量倍率",
+      "AP": "显式魔力",
+      "AQ": "蓄力tick",
+      "AR": "旧档·出手先扣水势",
+      "AS": "场地半径",
+      "AT": "治疗量",
+      "AU": "治疗打在施法者",
+      "AV": "牵引强度",
+      "AW": "旧档·命中附加潮湿",
+      "AX": "命中灭火",
+      "AY": "挡住移动",
+      "AZ": "压力脉冲",
+      "BA": "侵蚀脉冲",
+      "BB": "水平击退",
+      "BC": "向上抛",
+      "BD": "卸力比例",
+      "BE": "减速时长tick",
+      "BF": "到期爆发伤害",
+      "BG": "外观编号",
+      "BH": "曲线函数",
+      "BI": "外形",
+      "BJ": "宽度倍数",
+      "BK": "长度倍数",
+      "BL": "能量放大长度",
+      "BM": "能量放大宽度",
+      "BN": "能量放大高度",
+      "BO": "能量放大模型",
+      "BP": "同锚点分道显示",
+      "BQ": "旧档·每份预留重水",
+      "BR": "旧档·重压潮湿门槛",
+      "BS": "承接来袭弹",
+      "BT": "场地生成消耗",
+      "BU": "场地维持消耗",
+      "BV": "场地维持周期",
+      "BW": "场地寿命tick",
+      "BX": "护体类型键",
+      "BY": "护体寿命tick",
+      "BZ": "护体生成消耗",
+      "CA": "护体维持消耗",
+      "CB": "护体维持周期",
+      "CC": "护体卸力",
+      "CD": "护体半径",
+      "CE": "护体带宽",
+      "CF": "护体身体高度",
+      "CG": "护体基础倾角",
+      "CH": "屏障宽",
+      "CI": "屏障高",
+      "CJ": "屏障厚",
+      "CK": "屏障前移",
+      "CL": "屏障寿命tick",
+      "CM": "屏障生成消耗",
+      "CN": "屏障维持消耗",
+      "CO": "屏障维持周期",
+      "CP": "屏障衰减",
+      "CQ": "屏障承接来袭弹",
+      "CR": "领域宽",
+      "CS": "领域深",
+      "CT": "领域高",
+      "CU": "领域初始消耗",
+      "CV": "领域维持消耗",
+      "CW": "领域维持周期",
+      "CX": "领域寿命tick",
+      "CY": "领域边界",
+      "CZ": "领域外观",
+      "DA": "达级自动学会",
+      "DB": "领域效果键",
+      "DC": "旧档·潮湿周期tick",
+      "DD": "旧档·潮湿每次加点",
+      "DE": "旧档·潮湿延迟tick",
+      "DF": "旧档·水势周期tick",
+      "DG": "旧档·水势每次加点",
+      "DH": "旧档·水势延迟tick",
+      "DI": "旧档·减速等级",
+      "DJ": "旧档·领域减速时长tick",
+      "DK": "旧档·减速周期tick",
+      "DL": "旧档·减速延迟tick",
+      "DM": "耗氧倍率",
+      "DN": "附魔效果键",
+      "DO": "附魔初始层数",
+      "DP": "附魔半径基数",
+      "DQ": "附魔时长基数",
+      "DR": "附魔半径倍率",
+      "DS": "附魔时长倍率",
+      "DT": "附魔伤害倍率",
+      "DU": "附魔速度倍率",
+      "DV": "备注",
+      "DW": "配置启用",
+      "DX": "资源",
+      "DY": "状态",
+      "DZ": "操作",
+      "EA": "作用对象",
+      "EB": "触发时机",
+      "EC": "数值",
+      "ED": "状态amplifier",
+      "EE": "寿命策略",
+      "EF": "寿命tick",
+      "EG": "周期tick",
+      "EH": "首次延迟tick",
+      "EI": "计量单位",
+      "EJ": "生效条件",
+      "EK": "结算约束",
+      "EL": "迁移来源",
+      "EM": "关联说明",
+      "EN": "附加明细键",
+      "EP": "来源文件",
+      "EQ": "来源页",
+      "ER": "来源行",
+      "ES": "备份时间",
+      "ET": "采集时间",
+      "EU": "源哈希",
+      "EV": "快照说明",
+      "EX": "关联资源状态明细",
+      "EY": "资源列来源文件",
+      "EZ": "资源列来源行",
+      "FA": "资源列来源哈希",
+      "FB": "首次资源列原值·配置启用",
+      "FC": "首次资源列原值·资源",
+      "FD": "首次资源列原值·状态",
+      "FE": "首次资源列原值·操作",
+      "FF": "首次资源列原值·作用对象",
+      "FG": "首次资源列原值·触发时机",
+      "FH": "首次资源列原值·数值",
+      "FI": "首次资源列原值·状态amplifier",
+      "FJ": "首次资源列原值·寿命策略",
+      "FK": "首次资源列原值·寿命tick",
+      "FL": "首次资源列原值·周期tick",
+      "FM": "首次资源列原值·首次延迟tick",
+      "FN": "首次资源列原值·计量单位",
+      "FO": "首次资源列原值·生效条件",
+      "FP": "首次资源列原值·结算约束",
+      "FQ": "首次资源列原值·迁移来源",
+      "FR": "首次资源列原值·关联说明",
+      "FS": "首次资源列原值·附加明细键"
+    }
+  },
+  "ids": {
+    "已完成": [
+      {
+        "row": 3,
+        "id": "sword_thrust",
+        "name": "刺击"
+      },
+      {
+        "row": 4,
+        "id": "sword_horizontal_slash",
+        "name": "横劈"
+      },
+      {
+        "row": 5,
+        "id": "sword_vertical_slash",
+        "name": "竖劈"
+      },
+      {
+        "row": 6,
+        "id": "space_cut",
+        "name": "空间切割"
+      },
+      {
+        "row": 7,
+        "id": "stone_hammer",
+        "name": "岩槌"
+      },
+      {
+        "row": 8,
+        "id": "phantom_sword",
+        "name": "幻剑术"
+      },
+      {
+        "row": 9,
+        "id": "sword_come",
+        "name": "剑来"
+      },
+      {
+        "row": 10,
+        "id": "sword_return_all",
+        "name": "万剑归宗"
+      },
+      {
+        "row": 11,
+        "id": "water_blade",
+        "name": "缺月"
+      },
+      {
+        "row": 12,
+        "id": "movement_dash",
+        "name": "冲刺"
+      },
+      {
+        "row": 13,
+        "id": "movement_leap",
+        "name": "跳跃"
+      },
+      {
+        "row": 14,
+        "id": "magic_arcane_missile",
+        "name": "奥术飞弹"
+      },
+      {
+        "row": 15,
+        "id": "magic_create_water",
+        "name": "生成水"
+      },
+      {
+        "row": 16,
+        "id": "test_sustained",
+        "name": "持续试射"
+      },
+      {
+        "row": 17,
+        "id": "heat_beam",
+        "name": "热光束"
+      },
+      {
+        "row": 18,
+        "id": "parasite_seed",
+        "name": "寄生种子"
+      },
+      {
+        "row": 19,
+        "id": "metal_needle",
+        "name": "金针"
+      },
+      {
+        "row": 20,
+        "id": "fire_orb",
+        "name": "火球"
+      },
+      {
+        "row": 21,
+        "id": "fire_burst",
+        "name": "爆燃"
+      },
+      {
+        "row": 22,
+        "id": "water_weeping_arc",
+        "name": "垂丝"
+      },
+      {
+        "row": 23,
+        "id": "water_curtain",
+        "name": "水幕"
+      },
+      {
+        "row": 24,
+        "id": "water_mist",
+        "name": "雾雨"
+      },
+      {
+        "row": 25,
+        "id": "water_ring",
+        "name": "水环"
+      },
+      {
+        "row": 27,
+        "id": "magic_ignite",
+        "name": "点火"
+      },
+      {
+        "row": 28,
+        "id": "universal_lock_target",
+        "name": "锁定实体"
+      },
+      {
+        "row": 29,
+        "id": "rule_dual_release",
+        "name": "双重释放"
+      },
+      {
+        "row": 30,
+        "id": "trajectory_drop",
+        "name": "垂落术式"
+      },
+      {
+        "row": 31,
+        "id": "rule_cast_anchor",
+        "name": "落点指定"
+      },
+      {
+        "row": 32,
+        "id": "rule_triple_cast",
+        "name": "一分为三"
+      },
+      {
+        "row": 33,
+        "id": "rule_gather_energy",
+        "name": "聚能"
+      },
+      {
+        "row": 34,
+        "id": "trajectory_3d_interleave",
+        "name": "三维交错"
+      },
+      {
+        "row": 35,
+        "id": "vine_mark",
+        "name": "缠枝"
+      },
+      {
+        "row": 36,
+        "id": "tide_mark",
+        "name": "潮印"
+      },
+      {
+        "row": 37,
+        "id": "sinking_edge",
+        "name": "沉锋"
+      },
+      {
+        "row": 38,
+        "id": "keen_mark",
+        "name": "锐锋印"
+      },
+      {
+        "row": 39,
+        "id": "trajectory_tracking",
+        "name": "追踪弹道"
+      },
+      {
+        "row": 40,
+        "id": "trajectory_storm",
+        "name": "风暴轨迹"
+      }
+    ],
+    "待制作": [],
+    "制作中": [
+      {
+        "row": 3,
+        "id": "fire_heat_up",
+        "name": "升温"
+      },
+      {
+        "row": 4,
+        "id": "fire_cool",
+        "name": "冷却"
+      },
+      {
+        "row": 5,
+        "id": "fire_flame_trail",
+        "name": "留焰"
+      },
+      {
+        "row": 6,
+        "id": "rule_surface_anchor",
+        "name": "地表定位"
+      },
+      {
+        "row": 7,
+        "id": "fire_upwell",
+        "name": "喷涌"
+      },
+      {
+        "row": 8,
+        "id": "rule_stagger",
+        "name": "错时"
+      },
+      {
+        "row": 9,
+        "id": "rule_hit_continue",
+        "name": "命中接续"
+      },
+      {
+        "row": 10,
+        "id": "fire_seed_sow",
+        "name": "种火"
+      },
+      {
+        "row": 11,
+        "id": "fire_kindle",
+        "name": "引燃"
+      },
+      {
+        "row": 12,
+        "id": "fire_detonate",
+        "name": "引爆"
+      },
+      {
+        "row": 13,
+        "id": "fire_nether_gloom",
+        "name": "幽冥"
+      },
+      {
+        "row": 14,
+        "id": "earth_break_ground",
+        "name": "崩地"
+      },
+      {
+        "row": 15,
+        "id": "fire_spark",
+        "name": "火苗"
+      },
+      {
+        "row": 16,
+        "id": "tide_sever",
+        "name": null
+      },
+      {
+        "row": 17,
+        "id": "water_yielding_ribbon",
+        "name": null
+      },
+      {
+        "row": 18,
+        "id": "water_vortex",
+        "name": "旋流"
+      },
+      {
+        "row": 19,
+        "id": "fire_burn",
+        "name": "燃烧"
+      }
+    ],
+    "待验收": [
+      {
+        "row": 3,
+        "id": "fire_fentian",
+        "name": "焚天"
+      },
+      {
+        "row": 4,
+        "id": "fire_liaoli",
+        "name": "燎里"
+      },
+      {
+        "row": 5,
+        "id": "fire_scorch_field",
+        "name": "灼地"
+      },
+      {
+        "row": 6,
+        "id": "fire_liaoyuan",
+        "name": "燎原"
+      },
+      {
+        "row": 8,
+        "id": "fire_shock_ring",
+        "name": "热波"
+      },
+      {
+        "row": 9,
+        "id": "fire_meteorite",
+        "name": "陨岩"
+      },
+      {
+        "row": 11,
+        "id": "water_bubble_column",
+        "name": "气泡柱"
+      },
+      {
+        "row": 12,
+        "id": "water_deep_pressure",
+        "name": "深海重压"
+      }
+    ],
+    "待制作原始数据": [
+      {
+        "row": 3,
+        "id": "fire_liaoyuan",
+        "name": "燎原"
+      },
+      {
+        "row": 4,
+        "id": "fire_liaoli",
+        "name": "燎里"
+      },
+      {
+        "row": 5,
+        "id": "fire_fentian",
+        "name": "焚天"
+      },
+      {
+        "row": 6,
+        "id": "fire_heat_up",
+        "name": "升温"
+      },
+      {
+        "row": 7,
+        "id": "fire_burn",
+        "name": "燃烧"
+      },
+      {
+        "row": 8,
+        "id": "fire_cool",
+        "name": "冷却"
+      },
+      {
+        "row": 9,
+        "id": "fire_scorch_field",
+        "name": "灼地"
+      },
+      {
+        "row": 11,
+        "id": "fire_flame_trail",
+        "name": "留焰"
+      },
+      {
+        "row": 12,
+        "id": "fire_meteorite",
+        "name": "陨岩"
+      },
+      {
+        "row": 13,
+        "id": "fire_shock_ring",
+        "name": "热波"
+      },
+      {
+        "row": 14,
+        "id": "rule_surface_anchor",
+        "name": "地表定位"
+      },
+      {
+        "row": 15,
+        "id": "fire_upwell",
+        "name": "喷涌"
+      },
+      {
+        "row": 16,
+        "id": "rule_stagger",
+        "name": "错时"
+      },
+      {
+        "row": 17,
+        "id": "rule_hit_continue",
+        "name": "命中接续"
+      },
+      {
+        "row": 18,
+        "id": "fire_seed_sow",
+        "name": "种火"
+      },
+      {
+        "row": 19,
+        "id": "fire_kindle",
+        "name": "引燃"
+      },
+      {
+        "row": 20,
+        "id": "fire_detonate",
+        "name": "引爆"
+      },
+      {
+        "row": 21,
+        "id": "fire_nether_gloom",
+        "name": "幽冥"
+      },
+      {
+        "row": 22,
+        "id": "earth_break_ground",
+        "name": "崩地"
+      },
+      {
+        "row": 23,
+        "id": "fire_spark",
+        "name": "火苗"
+      },
+      {
+        "row": 24,
+        "id": "water_vortex",
+        "name": "旋流"
+      },
+      {
+        "row": 25,
+        "id": "water_bubble_column",
+        "name": "气泡柱"
+      }
+    ]
+  }
+}

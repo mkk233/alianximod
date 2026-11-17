@@ -1,0 +1,15 @@
+{
+  "submitted": false,
+  "baselineSha256": "FEA0ECD9D4FB2EC4B7F98424968BA34EF1BEDDA192B8E51E4F57E9742ED46992",
+  "backup": "D:\\alianximod\\docs\\开发记录\\燎原伤害定稿入表-20261031\\备份\\燎原伤害-术式制作表-20261031-013039-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\燎原伤害定稿入表-20261031\\candidate-preserved.xlsx",
+  "candidateSha256": "8484FF0E762FA8BD8C2C3382BEF2718959F2613097D4BABB4FFAC9D110E7D92D",
+  "sheet": "待验收",
+  "row": 4,
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 4
+  }
+}

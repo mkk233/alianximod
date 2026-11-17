@@ -1,0 +1,49 @@
+我先完整读取这份任务说明，确认授权范围和要做的事，再按说明执行。任务是只读事实采集：查 Technique 的显示、获取、装配和施术过滤，以及学习、发放、列表、术式石、装配校验和施术入口。我按符号定位，不改文件、不派代理。`Technique` 没有显示、可获取、可装配或可施放的通用过滤。只要 `TechniqueManager.register` 登记，就会进入 `getAll()`，并在内容阶段被 `BalanceCatalog` 收成配置合同。现有「已移除术式」只认两个固定编号，而且这两个编号当前已不在注册表里，不能当作「已登记但普通路径不可用」的开关。
+
+## 登记与平衡
+
+`Technique`（`Technique.java` 16–75 行）只有编号、名称、类型、伤害、冷却、等级上限、说明、复杂度、属性、弹速、是否附魔。`getUnlockLevel()`（71–72 行）只是复杂度的旧别名。`TechniqueType`（`TechniqueType.java` 10–28 行）只区分剑术、动作、法术、通用，以及能否进剑技或法技。
+
+`TechniqueManager.getAll()`（`TechniqueManager.java` 25–27 行）返回全部已登记术式，没有第二份玩家目录。`XueXiMod` 在内容注册后调用 `BalanceCatalog.noteBuiltins(TechniqueManager.getAll())`，再 `sealAfterContent()`。`declareStandards`（`BalanceCatalog.java` 94–112 行）按编号补 `cooldownTicks`、`manaCost`；伤害倍率只对 `DAMAGE_HOSTS`，或对快照之后才出现且基础伤害大于 0 的术式补上。已有键不覆盖（114–141 行）。默认值来自该术式自己的 `getBaseCooldown()` 和 `manaCost()`（144–157 行）。因此新编号不会改写其他术式的已有覆盖值。
+
+复杂度为 0 会在登录时被自动学会。`PlayerConnectionHandler.onPlayerLogin`（20–23 行）对 `getUnlockLevel()==0` 且尚未学会的术式调用 `learnTechnique`。`PlayerShuData.isUnlocked`（198–207 行）对通用、动作直接为真；剑术、法术用熟练等级对复杂度；`hasDomainPermit` 直接放行。`learnTechnique`（98–100 行）不检查是否已登记。
+
+## 各入口实际检查
+
+权限 2 只包住 `/shu` 整棵命令树：`ShuCommands.register` 第 54 行 `.requires(source -> source.hasPermission(2))`。下面这些子命令都遍历 `getAll()`，未知编号只靠 `getById==null` 拒绝：
+
+| 入口 | 位置 | 服务端是否再拦「未学、未解锁、不可装配」 |
+|---|---|---|
+| `/shu list` | 96–107 行 | 不拦，列出全部 |
+| `/shu learn <id>` | 112–136 行 | 不拦，直接学会 |
+| `/shu learn all` | `learnAllRequired` 487–505 行 | 只跳过复杂度 ≤0 |
+| `/shu reset` | 150–152 行 | 全部学会 |
+| `/shu stone` | 70–90 行 | 直接发术式石 |
+| `/shu book write` | `writeBook` 336 行起 | 只要求编号已登记 |
+
+术式石刻印的玩家路径在 `ImprintActions.imprint`（16–36 行）：服务端要求 `hasLearned` 且 `isUnlocked`。`ImprintDeskMenu.getLearnedTechniques`（75–94 行）同样按已学且已解锁列出；客户端在学习缓存为空时会把复杂度 0 也显示出来。`ShuManagementMenu.getTechniquesInCategory`（82–89 行）按类型显示全部已登记术式。
+
+装配有两条服务端写入：
+
+- 法杖：`SkillAssemblyPacket.put` 118–129 行、`SpellAssemblyMenu.rejectReason` 338–356 行，都要求已学且已解锁，并拒绝剑术。
+- 剑技：`SkillAssemblyPacket.put` 135–158 行和 `rejectReason` 359–379 行只查类型、容量、链长和混链，不查已学或已解锁。`mayPlace`（586–590 行）走同一个 `rejectReason`。
+
+收纳匣 `SkillStorageData.entries`（33–40 行）只保存 `spell_id` 字符串。
+
+## 存档直接塞入后，收费前能拒绝的位置
+
+`Skill.fromNbt`（`Skill.java` 126–167 行）只丢掉未登记编号；已登记编号会原样进入链。`PlayerBoundSkills.get`（10–18 行）读 `xueximod_bound_skills` 后直接交给施放。`PlayerShuData.load`（329–339 行）原样恢复已学列表。
+
+施放入口是 `SkillUsePacket.offerNow`（150 行）→ `executeSkill`（237 行）。法杖在扣费前有 `StaffSkills.castRefusal`（90–114 行）：未知、剑术、未学或未解锁都会拒绝。剑技没有对应的总检查。
+
+扣费点有三处，都在各自校验之后：
+
+1. 批量链：`executeSkill` 241–247 行编过计划后，`BatchCastSession.open` 第 100 行 `GroupBudget.reserve`（`GroupBudget.java` 21–23 行）收费。这条路径不到后面的领域解锁循环。
+2. 纯附魔链：`executeSkill` 354–355 行转入 `imprintEnchantChain`，1241 行 `MagicPool.trySpend`。它在领域解锁循环之前返回。
+3. 普通链：领域只在 371–376 行用 `isUnlocked` 拒绝；`pressCommitCost` 之后 415 行才 `trySpend`。双重释放在 392 行进入 `CastExecutionSession.open`，动作领头在 `startAction` 第 160 行收费。
+
+`SkillSegmentMath.isRemovedRule`（122–124 行）和 `MulticastParser.removedRule`（395–400 行）只判断 `rule_interleave`、`rule_damage_tally`。普通链里遇到它们是在 415 行扣费之后才跳过并提示（477–484 行）。领域绑定扫描会在扣费前报「链里有已移除的术式」（`BindingStructureCompiler` 122–123、155–156 行）。全链都不可放时，357–360 行在扣费前拒绝。这两个编号现在没有 `TechniqueManager.register`；未登记编号在 `fromNbt` 时已经被丢掉，所以上述判断碰不到「已登记但应对玩家隐藏」的术式。
+
+`DomainService.releaseWave`（135–137 行）在领域落点前再查一次 `isUnlocked`。法杖持续、护盾、领域追加扣费都在各自会话已经开张之后，不能代替这次入口拒绝。
+
+客户端列表、刻印台缓存和装配界面都不是安全边界。剑技存档、术式石 NBT 和收纳匣可以绕过它们；法杖施放是目前唯一在第一笔扣费前同时检查「已登记、已学、已解锁」的入口。

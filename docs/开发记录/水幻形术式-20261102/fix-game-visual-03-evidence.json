@@ -1,0 +1,54 @@
+{
+  "repair": "fix-game-visual-03",
+  "sourceChanged": false,
+  "fixed": false,
+  "compiled": false,
+  "playtested": false,
+  "linesBinSha256": "26EF5093F3FC9CAD03272F7BDFAD06DF771953E161B69310B2FF7E37B89F9025",
+  "skinSha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5",
+  "client": {
+    "log": "run/logs/latest.log",
+    "launch": "2026-11-02 23:39:52 forgeclientuserdev",
+    "classWrite": "2026-11-02 22:42:32 SteveWaterLineMesh.class",
+    "sourceWrite": "2026-11-02 21:44:48 SteveWaterLineMesh.java",
+    "resourceHashMatchesSource": true,
+    "expansionPresentInClass": true
+  },
+  "screenshot": {
+    "image": "user-game-visual-03.png",
+    "cyanBounds": [1133, 423, 1339, 837],
+    "headSpanY428": [1155, 1290],
+    "rightArmReachesX": 1338,
+    "leftSideDoesNotPass": 1158,
+    "leftLegWaterColors": ["b9eafe", "b0deee", "b2e0ef"],
+    "rightLegAlsoHas": ["2fafd1", "43b9da"],
+    "leftLegDarkStroke": false,
+    "rightLegDarkStroke": true
+  },
+  "submittedVertices": {
+    "armNxWorld": { "x": [-0.5, -0.25], "y": [0.0, 0.75] },
+    "armPxWorld": { "x": [0.25, 0.5], "y": [0.0, 0.75] },
+    "legNxWorld": { "x": [-0.25, 0.0], "y": [0.75, 1.5] },
+    "legPxWorld": { "x": [0.0, 0.25], "y": [0.75, 1.5] },
+    "frontOutsideBody": { "armNx": 0.729, "armPx": 0.734 },
+    "frontOnEitherLeg": { "armNx": 0.016, "armPx": 0.016 },
+    "steepSideExample": {
+      "orbit": 80,
+      "pitch": 60,
+      "distance": 3.5,
+      "outsideBody": { "armNx": 0.163, "armPx": 0.196 },
+      "onEitherLeg": { "armNx": 0.014, "armPx": 0.536 }
+    }
+  },
+  "drawPath": {
+    "vertexTransform": "VertexConsumer.vertex(Matrix4f) copies the transformed position before the next piece",
+    "pose": "push, translate pivot, rotate, scale, draw, pop",
+    "hiddenRule": "all three scales under 0.015",
+    "residenceScale": [1.0, 1.0, 1.0],
+    "depthWrite": false,
+    "cull": false,
+    "textureAlpha": 255
+  },
+  "hypothesis": "Hand vertices are not stored on the leg. A steep side view can project one arm onto a leg, but that view also pulls both arms inside the body width. This picture keeps one full arm outside the body, so that projection does not explain it.",
+  "missingFact": "This frame's body yaw, camera yaw, camera pitch, and whether the missing arm's fragments failed the depth test against the wall beside the figure."
+}

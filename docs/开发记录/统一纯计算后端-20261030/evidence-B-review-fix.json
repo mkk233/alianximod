@@ -1,0 +1,74 @@
+{
+  "released": true,
+  "write_ownership_released": true,
+  "role": "author-B",
+  "stage": "repair-review-B",
+  "item": "R3",
+  "extra_review_round": true,
+  "implementation_review_rounds_cumulative": 4,
+  "re_reviewed_after_fix": false,
+  "unicode_path_build_executed": false,
+  "cmake_configure_executed": false,
+  "c_compile_executed": false,
+  "build_script_executed": false,
+  "build_directory_deleted": false,
+  "dll_present": true,
+  "dll_produced_by_this_session": false,
+  "stale_helper_left_in_place": true,
+  "c_source_modified": false,
+  "cmake_lists_modified": false,
+  "abi_modified": false,
+  "float_flags_modified": false,
+  "build_windows_cmd_modified": false,
+  "java_modified": false,
+  "approval_rejected": false,
+  "method": "vcvars64 runs in a child; its environment is read back with cmd /d /u as UTF-16; cmake.exe is started directly with that environment. Paths are not written into a batch file.",
+  "files_before": [
+    {
+      "path": "D:/alianximod/native/compute/build-windows.ps1",
+      "bytes": 16585,
+      "utc": "2026-10-30T08:36:15.9459820Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/README.md",
+      "bytes": 5316,
+      "utc": "2026-10-30T08:56:37.1089887Z"
+    }
+  ],
+  "files_after": [
+    {
+      "path": "D:/alianximod/native/compute/build-windows.ps1",
+      "bytes": 21632,
+      "utc": "2026-10-30T09:25:31.7987271Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/README.md",
+      "bytes": 5839,
+      "utc": "2026-10-30T09:19:30.9790228Z"
+    }
+  ],
+  "unchanged": [
+    {
+      "path": "D:/alianximod/native/compute/build-windows.cmd",
+      "bytes": 172,
+      "utc": "2026-10-30T07:51:43.2419211Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/CMakeLists.txt",
+      "bytes": 5578,
+      "utc": "2026-10-30T08:19:17.3762850Z"
+    },
+    {
+      "path": "D:/alianximod/native/compute/src/xueximod_compute.c",
+      "bytes": 44883,
+      "utc": "2026-10-30T08:20:44.3571677Z"
+    }
+  ],
+  "backup": "D:/alianximod/docs/开发记录/统一纯计算后端-20261030/backup-B-review-fix/",
+  "checks": {
+    "powershell_parse_errors": 0,
+    "encoding_ascii_hits": 0,
+    "unicode_environment_roundtrip": true,
+    "unicode_roundtrip_is_not_a_build": true
+  }
+}

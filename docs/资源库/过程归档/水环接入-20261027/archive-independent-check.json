@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "file": "ragged_splash_outer.aseprite",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "ragged_splash_outer.png",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "ragged_splash_inner.aseprite",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "ragged_splash_inner.png",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "broken_saw_flow.aseprite",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "broken_saw_flow.png",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "周身水环_细碎水膜毛边_v8.bbmodel",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "water_ragged_fixed.gif",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "water_ragged_top.gif",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "water_ragged_preview.png",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "ragged_outer_preview.gif",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "ragged_inner_preview.gif",
+      "bytesMatch": true,
+      "shaMatch": true
+    },
+    {
+      "file": "README.md",
+      "bytesMatch": true,
+      "shaMatch": true
+    }
+  ],
+  "modelOnlyTexturePathsChanged": true
+}

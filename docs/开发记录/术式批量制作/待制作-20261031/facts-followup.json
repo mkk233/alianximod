@@ -1,0 +1,126 @@
+{
+  "stage": "设计后五项事实补充",
+  "countsAsReview": false,
+  "designRounds": "1/2",
+  "implementationRounds": "0/3",
+  "formalVerdict": false,
+  "acceptanceClaimed": false,
+  "sourceModified": false,
+  "sheetWritten": false,
+  "compileRun": false,
+  "writingStopped": true,
+  "chainLimit": {
+    "gameplayConstant": "Skill.CHAIN_LIMIT = 8",
+    "file": "src/main/java/com/bslx/XueXiMod/skill/Skill.java",
+    "line": 20,
+    "meaning": "一条剑技的术式段数，不是法杖槽数",
+    "serverAssembly": "SkillAssemblyPacket.put 第127-148行：剑槽0-3，达到8段拒绝；法杖用 StaffData.slotCount",
+    "serverMenu": "SpellAssemblyMenu 第67行非法杖 gearSlots=32；第228-230行超过8段的剑技记 preservedChain 且不改写",
+    "client": "SkillAssemblyScreen.computeSlotCount 第119-124行：法杖读物品槽数，剑为4；大于4时拉宽",
+    "save": {
+      "sword": "PlayerBoundSkills BoundSkill_0..3，fromNbt 不按8截断",
+      "staff": "物品NBT xueximod_staff_skills/Techniques。add 在达到 slotCount 时拒绝。已写入的列表读取时不截断。旧 SlotN 只在迁移时按当时 slotCount 截断"
+    },
+    "network": {
+      "swordSync": "BoundSkillSyncPacket 固定4槽，写完整NBT，不按8段裁",
+      "staff": "随物品NBT同步",
+      "byteCapInThisRepo": false,
+      "cacheCount": "CastPlanCache.CHAIN_LIMIT=64 只跳过计划缓存，不拒绝释放"
+    },
+    "castCheck": "SkillUsePacket.offerNow 第156-165行：法杖只接受槽0，剑槽0-3，不再检查8段"
+  },
+  "staff12": {
+    "constructorAllows": "StaffData 第10-14行，slotCount>=0 即可",
+    "readersUseItemSlotCount": ["StaffSkills.add", "SkillAssemblyPacket", "SpellAssemblyMenu", "SkillAssemblyScreen"],
+    "registered": "ModItems.basic_staff = StaffData(6, 0.20, 0.10, 100, null)，第24-25行",
+    "acquisition": "创造栏只有 basic_staff。没有第二件法杖、配方或战利品",
+    "canObtain12Today": false,
+    "oldStacks": "槽数在物品类型上。保持 basic_staff 为6则旧堆叠仍是6。改 basic_staff 自身的 StaffData 会让全部已有基础法杖变成新槽数。剑技四槽和 CHAIN_LIMIT=8 独立，不因新法杖改变"
+  },
+  "furnaceF": {
+    "api": "FurnaceService.fireBonus",
+    "lines": "FurnaceService.java 第17-19行",
+    "meaning": "有档位时的热量 bonus；无档位为0。不是种火倍率",
+    "range": {
+      "unit": 0.001,
+      "normalCeiling": 0.3,
+      "overdriveCeiling": 0.6,
+      "normalRatePerTick": 0.002,
+      "overdriveRatePerTick": 0.003,
+      "absentOrInvalid": 0
+    },
+    "damageFormula": {
+      "layer": "FireLayer.combine：B*(1+A+F)，FireLayer.java 第3-9行。A为0时才是B*(1+F)",
+      "caller": "FireConsumption.casterBonus 第121-130行传入 fireBonus",
+      "unsettledHurt": "ElementAdjustment.fireAmount 加上 fireBase*F，同一帧只一次。FireRuntimeEvents 第35-39行"
+    },
+    "seedMultiplierApi": {
+      "name": "FurnaceService.seedMultiplier -> FurnaceMath.seedMultiplier",
+      "lines": "FurnaceService.java 第22-24行；FurnaceMath.java 第211-225行",
+      "values": "无档位1.0；普通1.12到1.60；过载2.2",
+      "usedBy": "FireSeedProduction.produce 的 floor(基数×倍率)",
+      "notF": true
+    },
+    "valueForBaseTimesOnePlusF": "FurnaceService.fireBonus 的热量。不要用 seedMultiplier"
+  },
+  "tally": {
+    "completionCallback": false,
+    "flushVisibility": "ReleaseBatch.Tally.flush 私有，约第293行。公开的是 record 与 flushTick",
+    "delayTicks": 6,
+    "delayConstant": "FlowRoundLedger.FLUSH_DELAY",
+    "branches": [
+      "目标无效：retireSeeds false，不打伤害",
+      "有 FlowSuccessPayload：hurtConfirmed + RESPECT_INVULNERABILITY，只有返回真才施加载荷并发种子",
+      "无流量载荷：hurtRoot，种子布尔值等于 hurt 结果"
+    ],
+    "cancelBranch": "hurtConfirmed 经 TideMarkDamageScope.finish：事件取消或最终伤害<=0 返回 false。没有单独的取消回调",
+    "immuneButHitEstablished": false,
+    "zeroDamage": "TechniqueHits.hurt 在 amount<=0 时返回 false，不调用 LivingEntity.hurt",
+    "rootIgnoresInvulnerability": "hurtRoot 使用 BYPASS_INVULNERABILITY",
+    "geometricHitSeparate": "TechniqueHitSettle.tryHit 先记 hitOnce 并 settle，再 HitListener.onHit。onHit 不表示伤害已被接受。onExpire 不是结算完成"
+  },
+  "blockProtection": {
+    "subscribedBlockEvents": false,
+    "gameruleOrClaimSeam": false,
+    "compileDependency": "net.minecraftforge:forge:1.20.1-47.3.33",
+    "jade": "runtimeOnly，不参与编译，不是保护接口",
+    "existingMutations": [
+      "MagicCreateWaterEffect 第22-24行，空位 setBlock 水，标志3",
+      "WaterPartingService.writeWater 第297行 setBlock 空气，失败则回滚。这是分海租约，不是统一开关"
+    ],
+    "unifiedTerrainSwitch": false,
+    "existingWaterDoesNotFollowANewSwitch": true
+  },
+  "mana": {
+    "perTechnique": "Technique.manaCost 第97-116行",
+    "enchantMana": "magicDamage(NONE,NONE)，至少1；定义缺失为1。普通火附魔在倍率1下为2。潮印 magicDamage 固定2。原胚反应不进入这笔魔力",
+    "ruleMana": "种类为规则且无显式魔力时为0",
+    "otherMana": "领域用开域费；否则 ceil(基础伤害*2)。explicitManaCost>=0 优先",
+    "segmentScope": "segmentManaCost = 宿主 manaCostOf + 该段 enchantIndexes 的 manaCostOf。不是整条链",
+    "carriedDamageNotMana": "segmentMagicDamage 按原胚反应累加，只用于携带伤害",
+    "copies": {
+      "ordinary": "段费用×份数",
+      "positiveUnitConditional": "只收附魔费，不乘份数",
+      "domainBarrierGuard": "段费用一次，开域或生成费×份数",
+      "coalescedConditional": "不乘份数",
+      "fieldSpawn": "生成费>0 时再×份数",
+      "unownedRuleIndexes": "各收一次",
+      "overflow": "int 溢出则整份报价拒绝"
+    },
+    "enchantOnlyImmediateSpend": "imprintEnchantChain 把每件 manaCost 加总后 trySpend。调用条件含 segments 为空。普通切段不会把纯附魔链切成空列表，所以这不是普通附魔链的扣款路径",
+    "assemblyCost": {
+      "algorithm": "Technique.assemblyCost：显式值优先；否则附魔2，动作0，基础伤害>0为1，其余0",
+      "doesNotSpendMana": true,
+      "swordScope": "同一剑槽相加，容量 10+(max(剑术等级,1)-1)*5",
+      "staffScope": "不累加装配消耗，只受 slotCount 限制"
+    },
+    "reserveAndRefund": {
+      "present": true,
+      "types": ["GroupBudget.reserve/commit/settle", "ManaPaymentReceipt.charge/retainShare/refundShare"],
+      "refundTarget": "原玩家池和扣款时那根法杖",
+      "groupUse": "CastExecutionSession 第248行预约，约第626行 actionReceipt.refund",
+      "imprintDoesNotUseReceipt": true,
+      "waterMomentumSeparate": "WaterMomentum.reserve 不是魔力退款"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "photoshop_get_preview",
+  "arguments": {
+    "max_dimension_px": 1024,
+    "document_id": 2501,
+    "quality": 10
+  }
+}

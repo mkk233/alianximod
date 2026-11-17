@@ -1,0 +1,140 @@
+{
+  "status": "approved_for_recipient_integration",
+  "blockbench": "5.2.2",
+  "plugin": "1.10.1",
+  "captures": [
+    {
+      "name": "gui_front",
+      "backgroundFrame": 5,
+      "foregroundFrame": 11,
+      "position": [
+        0,
+        16,
+        90
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "follow": true,
+      "phase": "sustain, real segment pulse sample",
+      "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/previews/gui_front.png",
+      "project": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "foreground_offset_units": 5.44,
+      "rotation_deg": [
+        -4.523455546970335e-15,
+        0,
+        0
+      ],
+      "document_visibility": "hidden",
+      "source": "native desktop main Preview.selected.screenshot immediate WebGL",
+      "depthTest": true,
+      "depthWrite": false,
+      "drawOrder": [
+        "background",
+        "foreground"
+      ]
+    },
+    {
+      "name": "gui_oblique",
+      "backgroundFrame": 8,
+      "foregroundFrame": 8,
+      "position": [
+        42,
+        30,
+        86
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "follow": true,
+      "phase": "sustain between segment pulses",
+      "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/previews/gui_oblique.png",
+      "project": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "foreground_offset_units": 9.21176393285641,
+      "rotation_deg": [
+        -8.907329936358433,
+        26.029592191513448,
+        4.4244792751771683e-16
+      ],
+      "document_visibility": "hidden",
+      "source": "native desktop main Preview.selected.screenshot immediate WebGL",
+      "depthTest": true,
+      "depthWrite": false,
+      "drawOrder": [
+        "background",
+        "foreground"
+      ]
+    },
+    {
+      "name": "gui_frozen_side_distance",
+      "backgroundFrame": 5,
+      "foregroundFrame": 11,
+      "position": [
+        84,
+        26,
+        18
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "follow": false,
+      "phase": "front planes frozen for spacing only",
+      "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/previews/gui_frozen_side_distance.png",
+      "project": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "foreground_offset_units": 5.44,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "document_visibility": "hidden",
+      "source": "native desktop main Preview.selected.screenshot immediate WebGL",
+      "depthTest": true,
+      "depthWrite": false,
+      "drawOrder": [
+        "background",
+        "foreground"
+      ]
+    },
+    {
+      "name": "gui_ending",
+      "backgroundFrame": 46,
+      "foregroundFrame": 16,
+      "position": [
+        0,
+        16,
+        90
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "follow": true,
+      "phase": "natural end tick offset 5: background45; foreground15",
+      "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/previews/gui_ending.png",
+      "project": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "foreground_offset_units": 5.44,
+      "rotation_deg": [
+        -4.523455546970335e-15,
+        0,
+        0
+      ],
+      "document_visibility": "hidden",
+      "source": "native desktop main Preview.selected.screenshot immediate WebGL",
+      "depthTest": true,
+      "depthWrite": false,
+      "drawOrder": [
+        "background",
+        "foreground"
+      ]
+    }
+  ],
+  "preview_only_material_settings": "per-plane fullbright, depthWrite=false, depthTest retained, renderOrder background then foreground; not new runtime parameters"
+}

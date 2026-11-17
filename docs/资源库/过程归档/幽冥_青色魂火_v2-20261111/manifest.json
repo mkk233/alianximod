@@ -1,0 +1,53 @@
+{
+  "version": "youming-cyan-soul-v2",
+  "status": "二维草稿，未确认，Blockbench真实空间预览阻塞",
+  "technique": "fire_nether_gloom",
+  "batchId": "待制作-20261031",
+  "width": 64,
+  "height": 64,
+  "logicalPixelSize": 2,
+  "frames": 16,
+  "frameDurationMs": 80,
+  "loopDurationMs": 1280,
+  "loop": true,
+  "palette": [
+    "#0b3843",
+    "#085c66",
+    "#0795a2",
+    "#0ec4cc",
+    "#44ede7",
+    "#a7fff0",
+    "#e2fff4"
+  ],
+  "author": "/root via Aseprite MCP batch",
+  "files": {
+    "youming_cyan_soul_v2.aseprite": {
+      "bytes": 15525,
+      "sha256": "456e6ad5e194c1e1f5f9decd1ce3c0ce6d8edd8b7b4dd2b11e54827a06d02d56"
+    },
+    "youming_cyan_soul_v2_strip.png": {
+      "bytes": 6671,
+      "sha256": "c4fa3b1b82bb29e8bd5040fde4527bc9dbd8451083608dbb619c2ae02c9cb66f"
+    },
+    "youming_cyan_soul_v2_frame01.png": {
+      "bytes": 768,
+      "sha256": "dc69318a2c3b70418474654948bf5904c1a97aa81109d04041786a6fab4a61ee"
+    },
+    "youming_cyan_soul_v2.gif": {
+      "bytes": 47434,
+      "sha256": "ab2bb8e61f879105302ddfbf4d6d035a853808bc0fefd1ecd7ebf949eae3816e"
+    },
+    "youming_cyan_soul_v2_preview.aseprite": {
+      "bytes": 22415,
+      "sha256": "ecbe24c5c07a858eb82d340e7f3e54ccab78c7fe306b11a329c26df35266c318"
+    },
+    "youming_cyan_soul_v2_preview.gif": {
+      "bytes": 43061,
+      "sha256": "fe2a93dd5b6d11684eeb6ce3ea0704acbda9ab795df0f54070b2b51c4e5fc001"
+    },
+    "youming_cyan_soul_v2_preview.png": {
+      "bytes": 3180,
+      "sha256": "aeb5991bd0f21576ab62d96bd12d7015ee72679b020ca973ccce91021e4ae7af"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "batch": "分身底座-20261102",
+  "author": "C",
+  "task": "author-C-apply",
+  "stage": "implementation",
+  "designRound": "1/2",
+  "implementationReviewRound": "0/3",
+  "formalReview": false,
+  "compile": "待统一编译",
+  "game": "游戏未测",
+  "compiledThisSession": false,
+  "stoppedWriting": true,
+  "writeLockReleased": true,
+  "shell": "Rejected before process start. sha256, mtime, before-apply bytes, gradle process probe, and name gate were not executed.",
+  "beforeApplyDirectory": "not-created",
+  "beforeSnapshot": "docs/开发记录/分身底座-20261102/before-C remains the earlier byte snapshot. Immediately before editing, the 20 modify targets had the same line counts as before-C and did not yet contain this batch's clone markers.",
+  "nameGate": "not-run. See naming-gate.log. Not claimed as a pass.",
+  "cloneCommandsDelta": "Formal CloneCommands calls CloneService.handleFor and refuses with 不在本人索引 when it returns null. The candidate session-0 generation-1 indexedHandle was not applied.",
+  "handoff": {
+    "entityGeneration": "A CloneEntity.generation exists and ClonePositionPolicy reads it. B ClonePulseAction only rejects actorFrame.actorGeneration < 1. A CloneService.request rechecks state.actorGeneration against the real handle.",
+    "cancelBusy": "B uses RejectReason.BUSY with text 这次响应已经取消. Enum was not expanded.",
+    "range": "No PreparedAction range getter. B judges range inside prepare from readPulse rangeBlocks."
+  }
+}

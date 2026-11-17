@@ -1,0 +1,22 @@
+{
+  "submitted": true,
+  "moved": true,
+  "from": {"sheet": "制作中", "row": 6, "id": "fire_liaoli", "name": "燎里"},
+  "to": {"sheet": "待验收", "row": 5, "id": "fire_liaoli", "name": "燎里"},
+  "baselineSha256": "ECE5C0FAFAF440A70481463AC790F0E03BF83B33433AFF2A2495E78108EF78D3",
+  "baselineMtime": "2026-10-30 01:29:38.543",
+  "baselineBytes": 169869,
+  "sha256": "798D366A9B901B9F9145891FAC3B2108ABFC16F0386303C5511458179B1B8CFC",
+  "mtime": "2026-10-30 02:20:22.945",
+  "bytes": 166983,
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoli-hit-seed-writeback-submit-术式制作表-20261030-022022-1.xlsx",
+  "reopen": {
+    "counts": {"已完成": 40, "待制作": 13, "制作中": 3, "待验收": 3},
+    "unique": 59,
+    "differentParts": ["xl/worksheets/sheet3.xml", "xl/worksheets/sheet4.xml"]
+  },
+  "movedToCompleted": false,
+  "gameVerified": false,
+  "sourceAuthor": "23ef4660-da4b-47a8-9341-8ec236ec5cc3",
+  "quota": "设计2/2、实现3/3承接。本阶段额度已用完，返修结果未追加复审。"
+}

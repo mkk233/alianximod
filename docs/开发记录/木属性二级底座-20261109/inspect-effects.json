@@ -1,0 +1,12 @@
+{
+  "batchId": "wood-secondary-base-20261109",
+  "taskId": "inspect-effects",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "read-only-facts-handed-off",
+  "authorization": "用户授权通用回蓝和防反接口供其他属性术式使用，本单按架构裁决实现通用效果，不制作术式。",
+  "inputVersion": "wood-secondary-base-architecture-r1-death-clear-20261109",
+  "recordPath": "D:/alianximod/docs/开发记录/木属性二级底座-20261109/记录.md",
+  "writePaths": [],
+  "dependencies": []
+}

@@ -1,0 +1,20 @@
+{
+  "batchId": "release-variants-20261109",
+  "taskId": "author-adapters",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "implement",
+  "authorization": "用户2026-11-09授权八个同底座仅数值不同的多重与分裂术式；按批次记录设计2/2最终契约实施。仅本单互斥路径；禁止编译、表格和未授权底座扩展。",
+  "inputVersion": "user-release-variants-20261109-v1 + 设计2/2最终接入契约 + 领取写回回执",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/CooperativeChainCompiler.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/BatchReleaseCompiler.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/MulticastCompileAdapter.java",
+    "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/适配作者交付.md"
+  ],
+  "dependencies": [
+    "sheet-record",
+    "inspect-base"
+  ]
+}

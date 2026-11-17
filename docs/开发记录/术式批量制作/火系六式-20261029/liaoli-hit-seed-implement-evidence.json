@@ -1,0 +1,44 @@
+{
+  "task": "liaoli-hit-seed-implement",
+  "sourceAuthor": "23ef4660-da4b-47a8-9341-8ec236ec5cc3",
+  "model": "grok-4.7-high-fast",
+  "sheet": {"id": "fire_liaoli", "sheet": "制作中", "row": 6, "writtenByThisAuthor": false},
+  "compiled": false,
+  "gameTested": false,
+  "formalReview": false,
+  "quota": "设计2/2、实现3/3已用完。本阶段额度已用完，返修结果未追加复审。",
+  "writesStopped": true,
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "remaining": [
+      "OriginalHumanoid.java:165 i",
+      "OriginalHumanoid.java:202 to"
+    ],
+    "touchedFilesClean": true,
+    "log": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-hit-seed-implement-check.txt"
+  },
+  "sourcesAfter": [
+    {"path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java", "sha256": "7AF3E679E944679B4F503090F0EC924A28171FCA1CA127405125C7E0A0688A02", "bytes": 18557, "lastWriteTime": "2026-10-30 01:46:50.2298008"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java", "sha256": "F30E7267C724E8C6A47601C5542681718B171C72F2AF28DCCBA8087AE0DC675E", "bytes": 4989, "lastWriteTime": "2026-10-30 01:46:40.6588343"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java", "sha256": "4B817CB956FF283D5024FFEF0886C20654B2308736B58C3DA98106FAC7D4A6F2", "bytes": 36586, "lastWriteTime": "2026-10-30 01:46:34.4555018"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedState.java", "sha256": "4F751ACE9355F5185B632A9E8FC3BA9A87956CEBE1DCA708E843E6F77733F230", "bytes": 6199, "lastWriteTime": "2026-10-30 01:47:54.2186654"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedVisualRelay.java", "sha256": "42946CF97C5CDD65E0BFB9ECDE3AC8485269480AC8591344349A96176A1F7A18", "bytes": 2789, "lastWriteTime": "2026-10-30 01:49:17.4081153"},
+    {"path": "src/main/java/com/bslx/XueXiMod/client/FireSeedFlameClient.java", "sha256": "657D3A2662C592DF00987A60E91DA5A7F016A128B4C180F8363A435765DB1B5E", "bytes": 9932, "lastWriteTime": "2026-10-30 01:48:18.8441063"},
+    {"path": "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java", "sha256": "6EB0BE5C21A8EDBD97351EDDD767F383B77D3FA239836690506F6F2B66368DAF", "bytes": 28674, "lastWriteTime": "2026-10-30 01:47:53.5939711"},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/FireSeedVisualPacket.java", "sha256": "A81D9B74C15745D6C994CBDBFD13A9C35E5AEB6A3E557A2E23C3984C35AB634F", "bytes": 1871, "lastWriteTime": "2026-10-30 01:48:00.9906426"},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/FireSeedVisualBridge.java", "sha256": "B0D03396F3ADB06C249AF5B96690CD808272080152F048D5961E9DB3C6092BBD", "bytes": 566, "lastWriteTime": "2026-10-30 01:47:58.5675820"},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/ModNetwork.java", "sha256": "B30CBAD533958DEF8FF18473293B6CCDC08971E03814AE44CD69C9B31C258D25", "bytes": 1842, "lastWriteTime": "2026-10-30 01:47:53.5939711"},
+    {"path": "src/main/resources/assets/xueximod/textures/effect/fire_seed/fire_seed_flame.png", "sha256": "106DD7C62A1E360C859FB598B320EBCF10A40568555C763465023380E5DE800B", "bytes": 1080, "lastWriteTime": "2026-10-30 01:26:29.1386861"}
+  ],
+  "unchanged": [
+    {"path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java", "sha256": "98169A38537D34EA19B95DC9482A863D7A85E95562A2BC44AF2C49D599394C35", "lastWriteTime": "2026-10-30 00:46:47.1639184"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/ClientTrack.java", "sha256": "1C9F36BFA6C03F2C0F40F1C385AF0D31E05A89EEC0513169D2FA1026F58AA029", "lastWriteTime": "2026-10-20 01:42:50.3034957"},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/FollowCasterMotion.java", "sha256": "A8687BF126E0AE2A41C360D862B79670A57074189A1EF35C9938A2019C6362B3", "lastWriteTime": "2026-10-20 01:50:21.6913587"},
+    {"path": "src/main/java/com/bslx/XueXiMod/status/AttributeStateData.java", "sha256": "A70A3496B3D0574E37ED8A771237837E184F732B3F3793B3A99AF71A31FB460F", "lastWriteTime": "2026-10-21 23:33:46.2615055"}
+  ],
+  "documents": [
+    {"path": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-hit-seed-implement-report.md", "sha256": "076284AAA9E246F580BE4C84EFA50C43E91C3F378AB9B310C68C2CAAA228A9A4", "bytes": 14741, "lastWriteTime": "2026-10-30 01:52:56.6147159"},
+    {"path": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-hit-seed-implement-check.txt", "sha256": "6FD9811D9DE9DBC562254989806312C41A161AC2FADA19704B0FAAB8C8E32D73", "bytes": 611, "lastWriteTime": "2026-10-30 01:51:37.6006056"}
+  ]
+}

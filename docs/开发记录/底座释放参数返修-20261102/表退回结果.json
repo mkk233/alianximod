@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "implemented": false,
+  "passed": false,
+  "extraReview": false,
+  "quotaNote": "上一轮追加实现检查 1 轮已完成，累计实现 4 轮。此次返修不追加正式复审。",
+  "writesStopped": true,
+  "liveSha256": "B3D518CFC659F77F8F4F28C12EF569AC99FC01CE804D0B3B7501B2BEBF4741C3",
+  "liveMtime": "2026-11-02T03:45:07.796+08:00",
+  "baselineSha256": "204CE85DB0092B25C7818C014391A1A9E6FA441689178FE553B8E7BA1BA7D69D",
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 15, "待验收": 5},
+  "uniqueIds": 60,
+  "moves": {
+    "fire_shock_ring": {"from": "待验收第8行", "to": "制作中第16行"},
+    "fire_meteorite": {"from": "待验收第9行", "to": "制作中第17行"}
+  },
+  "authorSnapshot": "docs/开发记录/底座释放参数返修-20261102/快照/返修需求-20261102-034454-1.md",
+  "beforeSnapshot": "docs/开发记录/底座释放参数返修-20261102/快照/变更前-AEN-20261102-034454-1.json",
+  "rootCause": "docs/开发记录/底座释放同类排查-20261102/Cursor检查报告.md"
+}

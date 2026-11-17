@@ -1,0 +1,31 @@
+{
+  "purpose": "燎里剑阵姿态的 compileJava。不是复审，没有运行布局检查。",
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "javaHome": "C:/Program Files/Java/jdk-17",
+  "gradleUserHome": "C:/Users/baishang/.gradle",
+  "start": "2026-10-30T00:56:57.0754540+08:00",
+  "end": "2026-10-30T00:57:38.5669724+08:00",
+  "exitCode": 0,
+  "compileJava": "executed",
+  "buildResult": "BUILD SUCCESSFUL in 40s",
+  "warnings": 32,
+  "errors": 0,
+  "log": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-pose-gradle.log",
+  "laterThanLastSourceWrite": true,
+  "lastProductionWrite": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java 2026-10-30 00:47:36.0356603",
+  "lastCheckWrite": "src/test/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6LayoutCheck.java 2026-10-30 00:53:56.3400226",
+  "preHashAt": "2026-10-30T00:56:48.1734792+08:00",
+  "listedDiff": 0,
+  "srcMainFiles": 769,
+  "srcMainLineDiff": 0,
+  "layoutCheckExecuted": false,
+  "production": [
+    {"path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java", "sha256": "98169A38537D34EA19B95DC9482A863D7A85E95562A2BC44AF2C49D599394C35"},
+    {"path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java", "sha256": "ABB8B26D9696672275CE319F4B55E01050FD7CFCBCFEE3C3E1D9B236C3DC99AA"}
+  ],
+  "texturesUnchanged": true,
+  "review": {"design": "2/2", "implementation": "3/3", "thisRepairReviewed": false},
+  "gameVerified": false,
+  "notRun": ["LiaoliV6LayoutCheck", "build", "jar", "reobf", "runClient", "game", "nameGate"]
+}

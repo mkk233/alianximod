@@ -1,0 +1,121 @@
+{
+  "formula": "r^2<=4; d=0..2; 2d<=4-r^2; cap32",
+  "count": 23,
+  "offsets": [
+    {
+      "east": -2,
+      "down": 0,
+      "south": 0
+    },
+    {
+      "east": -1,
+      "down": 0,
+      "south": -1
+    },
+    {
+      "east": -1,
+      "down": 1,
+      "south": -1
+    },
+    {
+      "east": -1,
+      "down": 0,
+      "south": 0
+    },
+    {
+      "east": -1,
+      "down": 1,
+      "south": 0
+    },
+    {
+      "east": -1,
+      "down": 0,
+      "south": 1
+    },
+    {
+      "east": -1,
+      "down": 1,
+      "south": 1
+    },
+    {
+      "east": 0,
+      "down": 0,
+      "south": -2
+    },
+    {
+      "east": 0,
+      "down": 0,
+      "south": -1
+    },
+    {
+      "east": 0,
+      "down": 1,
+      "south": -1
+    },
+    {
+      "east": 0,
+      "down": 0,
+      "south": 0
+    },
+    {
+      "east": 0,
+      "down": 1,
+      "south": 0
+    },
+    {
+      "east": 0,
+      "down": 2,
+      "south": 0
+    },
+    {
+      "east": 0,
+      "down": 0,
+      "south": 1
+    },
+    {
+      "east": 0,
+      "down": 1,
+      "south": 1
+    },
+    {
+      "east": 0,
+      "down": 0,
+      "south": 2
+    },
+    {
+      "east": 1,
+      "down": 0,
+      "south": -1
+    },
+    {
+      "east": 1,
+      "down": 1,
+      "south": -1
+    },
+    {
+      "east": 1,
+      "down": 0,
+      "south": 0
+    },
+    {
+      "east": 1,
+      "down": 1,
+      "south": 0
+    },
+    {
+      "east": 1,
+      "down": 0,
+      "south": 1
+    },
+    {
+      "east": 1,
+      "down": 1,
+      "south": 1
+    },
+    {
+      "east": 2,
+      "down": 0,
+      "south": 0
+    }
+  ]
+}

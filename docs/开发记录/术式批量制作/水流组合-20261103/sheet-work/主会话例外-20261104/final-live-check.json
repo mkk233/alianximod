@@ -1,0 +1,28 @@
+{
+  "verifiedAt": "2026-11-03T19:13:24.771Z",
+  "hash": "314BD5EF7367DF1192093467F51F5BCBA2070F2FBC32BCC99F18300950CFC3C5",
+  "counts": {
+    "已完成": 37,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 10
+  },
+  "uniqueIds": 62,
+  "rows": [
+    {
+      "id": "water_vortex",
+      "row": 10
+    },
+    {
+      "id": "water_bubble_column",
+      "row": 11
+    },
+    {
+      "id": "water_deep_pressure",
+      "row": 12
+    }
+  ],
+  "sourceReopened": true,
+  "gameVerified": false,
+  "additionalReview": false
+}

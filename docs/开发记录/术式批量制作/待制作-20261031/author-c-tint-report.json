@@ -1,0 +1,44 @@
+{
+  "author": "C",
+  "model": "grok-4.7-high-fast",
+  "phase": "tint",
+  "writeStopped": true,
+  "compileRan": false,
+  "gameRan": false,
+  "nameGateExitCode": 1,
+  "nameGateNote": "仅 OriginalHumanoid.java:165 i 与 :202 to。本段渲染文件没有新的失败。",
+  "formalReview": "设计 2/2，实现正式复审 0/3。色调自查不是正式复审。",
+  "query": "NetherDomainTint.sample(Level, worldX, worldY, worldZ)",
+  "callSite": "BatchCarrierVisualRenderer.flameChannels",
+  "samplePoint": "插值后的实体世界坐标；热波环 worldY 再加 0.05",
+  "insideDomain": {"red": 90, "green": 160, "blue": 255},
+  "outsideDomain": {"red": 255, "green": 255, "blue": 255},
+  "alpha": 255,
+  "frameUvUnchanged": true,
+  "storedTintUsed": false,
+  "flameTextures": ["SPARK", "TRAIL", "SHOCK", "SEED", "KINDLE", "DETONATE"],
+  "untinted": ["DUST", "SURFACE", "METEOR_BLOCK", "MeteoriteWreckageRenderer"],
+  "remainingForA": [
+    "MeteoriteWreckageTypes.register",
+    "BatchCarrierTypes.register",
+    "BatchTerrainBreakSwitch 配置 spec",
+    "BatchCarrierBootstrap.install",
+    "EntityRenderersEvent：残骸与 BatchCarrierVisualRenderer",
+    "语言键 block.xueximod.meteorite、entity.xueximod.meteorite_wreckage、entity.xueximod.batch_carrier_visual",
+    "TechniqueHitSettle.sweepEarliest 调用 BatchCarrierHooks.intercept",
+    "FireOrbEffect.publishedHook 调用 BatchFlameTrail.attach",
+    "按 D 的清单登记 NetherDomainSync，否则客户端色调查询没有领域盒子"
+  ],
+  "notThisRound": [
+    "普通武器火径",
+    "剑实体留焰",
+    "武器陨岩"
+  ],
+  "files": [
+    {"sha256": "1CDDF3A9E2B76847C93C9D6E8C3012891123504FF86619252A5690BF3913738A", "mtime": "2026-10-31 04:49:39", "path": "src/main/java/com/bslx/XueXiMod/client/BatchCarrierVisualRenderer.java"},
+    {"sha256": "5BE67FF91E7C1ED3A239C61109D0B8BD775C292C92A02AD0F04BEB33092D4BD7", "mtime": "2026-10-31 04:49:58", "path": "docs/开发记录/术式批量制作/待制作-20261031/author-c-registration.md"},
+    {"sha256": "4E3FBFDA37315811B536096C3C285E156584CA1AFADAF50E6DD2655533CB0695", "mtime": "2026-10-31 04:50:14", "path": "docs/开发记录/术式批量制作/待制作-20261031/author-c-ownership.json"},
+    {"sha256": "759411D828E0241876A6F8BA55982D17EE15C13FEEC6FB9B17B24A5A0ED8F6F2", "mtime": "2026-10-31 04:50:28", "path": "docs/开发记录/术式批量制作/待制作-20261031/author-c-interface-final.md"},
+    {"sha256": "43BA1839480620F1BE890C30975F0A432597496615FE22A1A491EF59251D7B78", "mtime": "2026-10-31 04:50:35", "path": "docs/开发记录/术式批量制作/待制作-20261031/author-c-tint-report.md"}
+  ]
+}

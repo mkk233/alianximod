@@ -1,0 +1,154 @@
+{
+  "id": "resource-bars-lotus-overflow-water-fullflow-v6-candidate",
+  "title": "左上角生存资源条（法力青莲花内溢雾+三层环花流云 + 水势 8 号未满静态/100满势流波 + 双阶梯回纹槽 + v4.1 流云/三档水流填充）v6 精修候选稿",
+  "batchId": "hud-bars-20261110",
+  "taskId": "hud_bars_v3_art_preview",
+  "attemptId": "20261113-v6-lotus-overflow-water-fullflow",
+  "basedOnVersion": "resource-bars-lotus-mist-stream8-v5-candidate",
+  "status": "candidate_pending_user_confirmation",
+  "integratedIntoGame": false,
+  "blockbenchApplicable": false,
+  "blockbenchReason": "左上角生存资源条仅在二维平面 HUD 界面显示，无三维空间形状、朝向、厚度、遮挡、环绕、挂载或三维运动姿态关系。",
+  "createdAt": "2026-11-13",
+  "tool": "Aseprite v1.3.17 (Lua batch + multi-layer RGB .aseprite)",
+  "renderScaleSpec": {
+    "hudPoseScale": 0.5,
+    "manaIconNative": "68x58",
+    "manaIconLogical": "34x29",
+    "manaIconPos2x": [8, 3],
+    "manaTrackPos2x": [62, 18],
+    "manaFillPos2x": [80, 23],
+    "waterIconNative": "48x40",
+    "waterIconLogical": "24x20",
+    "waterIconPos2x": [16, 62],
+    "waterTrackPos2x": [62, 72],
+    "waterFillPos2x": [80, 77],
+    "waterUpperBound": 100,
+    "waterIconStateRule": {
+      "balance_le_0": "export/water_icon_idle.png (static 48x40)",
+      "balance_1_to_99": "export/water_icon.png (static 48x40, never animated while <100)",
+      "balance_ge_100": "export/water_icon_full_strip.png (animated 16-frame strip 48x640 @ 90ms)"
+    },
+    "trackNative": "204x20",
+    "trackLogical": "102x10",
+    "fillNative": "180x10",
+    "fillLogical": "90x5",
+    "fillOffsetInTrackNative": [18, 5],
+    "waterThresholdClaspsNativeTx": {
+      "20": 53,
+      "50": 107
+    },
+    "animationFrames": 16,
+    "frameDurationMs": 90
+  },
+  "references": [
+    {
+      "path": "ref/crop_ref_D_lotus.png",
+      "size": "426x257",
+      "bytes": 171299,
+      "sha256": "8d558063d688b4d8f7f166127e50c6e51aaad89ea86aa27cd60ca4841a59c907"
+    },
+    {
+      "path": "ref/crop_ref_8_water.png",
+      "size": "302x373",
+      "bytes": 150671,
+      "sha256": "78233d54c9e22fb40ff2f120932a2b3ff5556d8a792b88f148a4ad18ea17d38c"
+    },
+    {
+      "path": "ref/ref_sheet2_eastern_BD.png",
+      "size": "1774x887",
+      "bytes": 1591053,
+      "sha256": "1fd9377bee3dae50bf00c2e8d3acb1c8cf4b6cf073ff7dfc636739c2f4e66b76"
+    },
+    {
+      "path": "ref/ref_sheet3_icons_6_8_11.png",
+      "size": "1774x887",
+      "bytes": 1506425,
+      "sha256": "4db3d016fb8778ac79bffbb85582195baf901b2fd9f2555a85b7163e0b1b1aa1"
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/build_hud_bars_v6.lua",
+      "bytes": 120869,
+      "sha256": "48f2206019b85851f32fb800733e6e3ca82559e66c1bc3a63c09d40ce9b7e951"
+    },
+    {
+      "path": "src/mana_lotus_icon_v6.aseprite",
+      "size": "68x58",
+      "frames": 16,
+      "layers": 6,
+      "frameDurationMs": 90,
+      "bytes": 134627,
+      "sha256": "e516b03496f6bd5198c6f6cc94306b1d9328adf9ce7dae4a7eeb5051fc84a6c8"
+    },
+    {
+      "path": "src/water_stream8_icon_v6.aseprite",
+      "size": "48x40",
+      "frames": 16,
+      "layers": 3,
+      "frameDurationMs": 90,
+      "bytes": 36883,
+      "sha256": "25ddd4adecc9c33ff411ad7e2804a091d8878653f873830c5ceb931bec03e840"
+    },
+    {
+      "path": "src/hud_bars_v6_components.aseprite",
+      "size": "576x268",
+      "frames": 16,
+      "layers": 4,
+      "frameDurationMs": 90,
+      "bytes": 565036,
+      "sha256": "c15d224ad8a909cd1a61d00f5c7ddc877ea12a564f45bdd0d932da897d508c67"
+    },
+    {
+      "path": "src/hud_context_day_night.aseprite",
+      "size": "1092x570",
+      "frames": 1,
+      "bytes": 70959,
+      "sha256": "e74ab2c25ab76889ea5bb2c0e5a437642efe91d609728e6cb8255eecbcea2eb0"
+    },
+    {
+      "path": "src/states_progression.aseprite",
+      "size": "980x628",
+      "frames": 1,
+      "bytes": 77646,
+      "sha256": "7246e9c0b427015126fe9180a3f2c0c86102db361939ec5ac9b42a15f8b4303b"
+    },
+    {
+      "path": "src/lowkey_flow_preview.aseprite",
+      "size": "716x360",
+      "frames": 16,
+      "frameDurationMs": 90,
+      "bytes": 651447,
+      "sha256": "3bff8cbcfdcc94096c1c11e4276c33bb141d8e8b119c551c5f4facffca5bcd80"
+    }
+  ],
+  "exports": [
+    {"path": "export/mana_icon_empty.png", "size": "68x58", "bytes": 3107, "sha256": "0d79a4f78dd770ea8a5899b24a1f2b31d33818e7609ae30b9e6bd88d74d8a294"},
+    {"path": "export/mana_icon.png", "size": "68x58", "bytes": 5313, "sha256": "fe7db559c4e39cdf8c77db83f0a3f8d845596f28e3d71b048622638b3b1a55d2"},
+    {"path": "export/mana_icon_strip.png", "size": "68x928", "frames": 16, "bytes": 49381, "sha256": "3af0f3a265e9676c483113ff41d115f498601ff9cdad9db3c7465870cd27e686"},
+    {"path": "export/mana_icon_full.png", "size": "68x58", "bytes": 5350, "sha256": "17ea9de0abd84cb6254d15c32bb8b5b4be5eb35196af5abdef33dc2786fefea2"},
+    {"path": "export/mana_icon_full_strip.png", "size": "68x928", "frames": 16, "bytes": 51614, "sha256": "60547a9ff4d98631c1dea4a9cdd4b9044fc7de0b608488eecd23a26533eafab0"},
+    {"path": "export/mana_track.png", "size": "204x20", "bytes": 782, "sha256": "d794835224c9a31711f9ee6c1ce1f74c19e13de526ec7f4d573c0d8543fa73ba"},
+    {"path": "export/mana_fill_low.png", "size": "180x10", "bytes": 1954, "sha256": "d2740621236f816b633d8417455f10cc39bda72c6ba819ec9ae5c2b83209a3e4"},
+    {"path": "export/mana_fill_strip.png", "size": "180x160", "frames": 16, "bytes": 31816, "sha256": "e970363797aff324c054de7e1d3edc9e353c03bfd963687e4ff59dc6c17ddf06"},
+    {"path": "export/mana_fill_full_strip.png", "size": "180x160", "frames": 16, "bytes": 30239, "sha256": "95c3b5f5fb918e4b6332eefb7a5f4a1db65af5f329595bf8ef95f76720ea652d"},
+    {"path": "export/water_icon_idle.png", "size": "48x40", "bytes": 1183, "sha256": "ee5ebdc5228ebc5aec99089106afa9c08b11c71b4c0faf01ab0f9eafbb1d363f"},
+    {"path": "export/water_icon.png", "size": "48x40", "bytes": 1622, "sha256": "24d3ee075265497383281324c676bec2b5d176a7b16a815f620b70d1ad23b0d8"},
+    {"path": "export/water_icon_full.png", "size": "48x40", "bytes": 2062, "sha256": "2f1e6b15d15935f2162cb646b82a0a88e3a09ca1a7f2aecbaf4d73592bc7dbf5"},
+    {"path": "export/water_icon_full_strip.png", "size": "48x640", "frames": 16, "bytes": 27270, "sha256": "643b760fe43e93597dbe5ed40eaf53e76f89a87ec63c1ceae53bbf4c517db91b"},
+    {"path": "export/water_track.png", "size": "204x20", "bytes": 1019, "sha256": "3961ab13336acbbbbbe9f92981618085ba9b47edbe56ea2a59cd34925f0cbc11"},
+    {"path": "export/water_track_states.png", "size": "204x60", "states": 3, "bytes": 1597, "sha256": "5e52a96274dd4a636643d72251c664d35a8fb324ec59ea3a78f8df9939a06878"},
+    {"path": "export/water_fill_tier1_trickle_strip.png", "size": "180x160", "frames": 16, "bytes": 4255, "sha256": "3974afbac4fb85b7bb56602fe651a1de5d37dd31a52981a5dfae7cb0ccc949ed"},
+    {"path": "export/water_fill_tier2_stream_strip.png", "size": "180x160", "frames": 16, "bytes": 31261, "sha256": "ecd0d6d35bdc5905b112cb8a26f3fe705856bef6b5c4fd1e5d70feeb1039f0c1"},
+    {"path": "export/water_fill_tier3_torrent_strip.png", "size": "180x160", "frames": 16, "bytes": 28186, "sha256": "d3272643309f9f44b5c5e13a717883931d71eb36906f507445276e76b23d80c4"},
+    {"path": "export/components_overview_sheet.png", "size": "576x268", "bytes": 37494, "sha256": "59c89d1e9cbed49cb4bba49380092216c943582fdc6422fc35742c3bfac79a87"}
+  ],
+  "previews": [
+    {"path": "preview/ref_vs_v6_gate.png", "size": "1680x1080", "bytes": 357057, "sha256": "3eadff0f87e8c9fb15e539b2a739aac3e9907168f68ee1cebef6d90dbba17347"},
+    {"path": "preview/anim_frames_audit.png", "size": "1680x1160", "bytes": 86877, "sha256": "7661bfc5b90723f8bfe6b131e8221e7fd99de13ba8964268b5b00d0de164c7e8"},
+    {"path": "preview/hud_context_day_night_4x.png", "size": "2184x1396", "bytes": 160062, "sha256": "e681f0a2de194545ecb62f406dded08ee584abebfbf5e69105747aeaa95a7ccc"},
+    {"path": "preview/states_progression_4x.png", "size": "1960x1256", "bytes": 122312, "sha256": "d17d556a0bcffa049c583d4e9a18b1cf74969675a402be5af10288014cb728dc"},
+    {"path": "preview/lowkey_flow_preview_4x.gif", "size": "1432x720", "frames": 16, "frameDurationMs": 90, "bytes": 423982, "sha256": "68236b9b16ced7307caaa6ee49cce302c1abbd31269bcc8cdb280159effa93f2"}
+  ]
+}

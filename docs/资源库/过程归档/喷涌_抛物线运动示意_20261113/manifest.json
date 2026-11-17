@@ -1,0 +1,184 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "fire_upwell_motion_preview",
+  "attemptId": "20261113-art-upwell-01",
+  "techniqueId": "fire_upwell",
+  "techniqueName": "喷涌",
+  "version": "v1-motion-preview-20261113",
+  "status": "candidate_pending_user_confirmation",
+  "date": "2026-11-13",
+  "motionOnlyBoundary": {
+    "isMotionTrajectoryDiagramOnly": true,
+    "noNewProjectileTexture": true,
+    "noExtraAttackCopyCount": true,
+    "noAutoSpawnedProjectile": true,
+    "noFirePillar": true,
+    "noExplosionOrLandingFireField": true,
+    "runtimeAssetsAdded": false,
+    "note": "仅示意喷涌对已有可改弹道攻击实体的三维抛物线运动控制（1 条单份竖直上抛再落回 + 3 条在向上 25° 锥形内分散上抛再受重力落回），不增加攻击份数，不生成火柱或免费攻击特效。"
+  },
+  "blockbench": {
+    "version": "5.2.2",
+    "environment": "desktop",
+    "platform": "win32",
+    "pluginVersion": "1.10.1",
+    "projectName": "fire-upwell-parabolic-motion-preview",
+    "projectUuid": "6cfd19e7-972f-1e54-9c0f-bd74cd037ea9",
+    "formatId": "free",
+    "counts": {
+      "cubes": 95,
+      "meshes": 58,
+      "groups": 9,
+      "textures": 11,
+      "outlinerElements": 153
+    },
+    "viewport": "main (1706x1215 lossless PNG)"
+  },
+  "protectedOpenProjects": [
+    {
+      "name": "cool-v4.3-equal-width-steam-ground-wave-preview",
+      "uuid": "fe1b1c81-3962-2fbb-bc94-6a37e1b6e5ef",
+      "saved": true,
+      "elements": 29,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v1-spatial-draft-20261112",
+      "uuid": "e380502f-05e4-5cab-c7a2-4ff5f7e3c7c5",
+      "saved": true,
+      "elements": 514,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v2-projectile-composite-draft-20261112",
+      "uuid": "8a58e270-0fce-3a38-f8c5-528d850c4a39",
+      "saved": true,
+      "elements": 109,
+      "untouched": true
+    },
+    {
+      "name": "flame-trail-v3-projectile-composite",
+      "uuid": "8cdb8be1-7355-a034-3a20-7ae41a0e5af1",
+      "saved": true,
+      "elements": 80,
+      "untouched": true
+    },
+    {
+      "name": "fire-spark-v3-1-crossed-launch-preview",
+      "uuid": "3cc70eec-3c0d-db2e-731f-2581790ce09d",
+      "saved": false,
+      "elements": 51,
+      "untouched": true
+    }
+  ],
+  "scaleAndPhysicsSpec": {
+    "modelUnitsPerBlock": 16.0,
+    "groundTopY": 0.0,
+    "casterDummy": {
+      "positionModelUnits": [-40.0, 0.0, 0.0],
+      "positionBlocks": [-2.5, 0.0, 0.0],
+      "heightModelUnits": 28.8,
+      "heightBlocks": 1.8,
+      "eyeHeightModelUnits": 25.92,
+      "eyeHeightBlocks": 1.62
+    },
+    "launchOriginDemo": {
+      "positionModelUnits": [0.0, 16.0, 0.0],
+      "positionBlocks": [0.0, 1.0, 0.0]
+    },
+    "ballisticParameters": {
+      "initialSpeedBlocksPerTick": 1.0,
+      "initialSpeedModelUnitsPerTick": 16.0,
+      "gravityBlocksPerTickSq": 0.08,
+      "gravityModelUnitsPerTickSq": 1.28,
+      "upwardConeAxis": [0.0, 1.0, 0.0],
+      "coneHalfAngleDeg": 25.0,
+      "singleVerticalArc": {
+        "apexTick": 12.5,
+        "apexYModelUnits": 116.0,
+        "apexYBlocks": 7.25,
+        "netRiseBlocks": 6.25,
+        "landingTick": 25.963,
+        "landingPositionModelUnits": [0.0, 0.0, 0.0]
+      },
+      "dispersedConeArcs": {
+        "demoBranchAzimuthsDeg": [0.0, 120.0, 240.0],
+        "apexTick": 11.329,
+        "apexRadiusModelUnits": 76.604,
+        "apexRadiusBlocks": 4.788,
+        "apexYModelUnits": 98.139,
+        "apexYBlocks": 6.134,
+        "netRiseBlocks": 5.134,
+        "landingTick": 23.712,
+        "landingRadiusModelUnits": 160.338,
+        "landingRadiusBlocks": 10.021
+      }
+    }
+  },
+  "deliverables": [
+    {
+      "file": "fire-upwell-parabolic-motion-preview.bbmodel",
+      "role": "editable_blockbench_scene",
+      "bytes": 138198,
+      "sha256": "DA9ECA3F9603FCFEFCA1E4D4EA3503D3AE5B15DBA8B90AB267F89D52EB9B25AF"
+    },
+    {
+      "file": "fire-upwell-motion-01-side-view.png",
+      "role": "viewport_preview_orthographic_side",
+      "camera": {
+        "projection": "orthographic",
+        "zoom": 0.128,
+        "position": [38.0, 56.0, 380.0],
+        "target": [38.0, 56.0, 0.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 60009,
+      "sha256": "FB15D33EFA77FDA515AEDB0F25D5AFF703F5BE7FF50986E05D2743AD2BE9936D"
+    },
+    {
+      "file": "fire-upwell-motion-02-top-cone-distribution.png",
+      "role": "viewport_preview_orthographic_top_cone",
+      "camera": {
+        "projection": "orthographic",
+        "zoom": 0.083,
+        "position": [32.0, 380.0, 0.38],
+        "target": [32.0, 0.0, 0.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 78470,
+      "sha256": "A1C79BD1672F1B6CBD0C9479877F6E89F76141C669351C59E97F8DB356C0633A"
+    },
+    {
+      "file": "fire-upwell-motion-03-closeup-cone-and-single.png",
+      "role": "viewport_preview_perspective_closeup",
+      "camera": {
+        "projection": "perspective",
+        "fov": 46,
+        "position": [-168.0, 86.0, 82.0],
+        "target": [-10.0, 48.0, 0.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 129472,
+      "sha256": "68F46BD9EABF47B737C47EF7C010A95E32532C54C4C253FD52EA6ACE837BDA00"
+    },
+    {
+      "file": "fire-upwell-motion-04-hero-3quarter.png",
+      "role": "viewport_preview_perspective_hero_3quarter",
+      "camera": {
+        "projection": "perspective",
+        "fov": 44,
+        "position": [-310.0, 226.0, 134.0],
+        "target": [20.0, 36.0, 5.0]
+      },
+      "resolution": "1706x1215",
+      "bytes": 116976,
+      "sha256": "7169AAF7DE37825DAD16B1DFA56ADD2C851317925D024ABB0D9ECA9CB453789E"
+    },
+    {
+      "file": "visual-handoff.md",
+      "role": "visual_handoff_spec",
+      "bytes": 10363,
+      "sha256": "5AA84FCAD966FE6C7DF8396A8B39B0698F4E59DBC3806BA1F2479F02F507B8A5"
+    }
+  ]
+}

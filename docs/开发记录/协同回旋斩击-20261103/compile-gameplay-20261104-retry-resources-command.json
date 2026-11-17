@@ -1,0 +1,7 @@
+{
+  "command": ".\\gradlew.bat processResources --offline --no-daemon",
+  "startedAtUtc": "2026-11-03T19:00:18.4970975Z",
+  "endedAtUtc": "2026-11-03T19:00:31.5454314Z",
+  "exitCode": 0,
+  "executor": "Codex main; one-time explicit user authorization for two-place fix, recompile and resource synchronization"
+}

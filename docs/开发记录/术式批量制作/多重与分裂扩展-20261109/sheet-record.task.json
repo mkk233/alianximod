@@ -1,0 +1,19 @@
+{
+  "batchId": "release-variants-20261109",
+  "taskId": "sheet-record",
+  "workspace": "D:/alianximod",
+  "stage": "delivery",
+  "operation": "sheet-write-pending-acceptance",
+  "authorization": "用户八项新术式及v3载具限制已实现，正式实现3/3末轮通过且最终compileJava退出0；本批唯一表作者沿原会话保存完整快照、保留他批新改动，将八项制作中迁待验收，不迁已完成。",
+  "inputVersion": "user-release-variants-20261109-v3-carrier-limits + 实现第3轮通过 + compile-final a202611091103551553f8d退出0 + 实时表对账",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md",
+  "writePaths": [
+    "D:/alianximod/docs/术式制作表.xlsx",
+    "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md",
+    "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/sheet-work",
+    "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/待验收写回回执.md"
+  ],
+  "dependencies": [
+    "compile-final"
+  ]
+}

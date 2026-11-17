@@ -1,0 +1,395 @@
+{
+  "batchId": "imprint-desk-ui-20261113",
+  "taskId": "imprint_desk_ui_art_preview",
+  "attemptId": "20261113-v1-altar-tree-preview",
+  "version": "v1",
+  "date": "2026-11-13",
+  "status": "pending_user_confirmation",
+  "asepriteEngine": "D:/Aseprite/Aseprite.exe v1.3.17 (API v39 via mcp__magpie__aseprite__cli)",
+  "blockbenchApplicable": false,
+  "blockbenchReason": "术式刻印台界面（ImprintDeskScreen）属于纯二维屏幕容器 GUI 界面；中央黑曜紫晶祭坛虽采用 2.5D 等轴像素插画表现立体厚度，但运行时完全通过二维 GuiGraphics 平面贴图与九宫格/帧条切图绘制，不涉及游戏世界内的三维模型、空间朝向、厚度遮挡、实体挂载或三维姿态运动。",
+  "layoutSpec": {
+    "logicalScreen": {
+      "width": 480,
+      "height": 270,
+      "previewScale": 4
+    },
+    "altarHub": {
+      "width": 184,
+      "height": 192,
+      "centerAnchor": [
+        92,
+        96
+      ],
+      "glowStripFrames": 8,
+      "glowFrameDurationMs": 120,
+      "titlePlaqueRect": [
+        53,
+        59,
+        78,
+        12
+      ],
+      "leftSlot18Rect": [
+        63,
+        73,
+        18,
+        18
+      ],
+      "leftSlot16Pos": [
+        64,
+        74
+      ],
+      "leftSlot16OffsetFromCenter": [
+        -28,
+        -22
+      ],
+      "connectorBridgeRect": [
+        81,
+        73,
+        22,
+        18
+      ],
+      "rightSlot18Rect": [
+        103,
+        73,
+        18,
+        18
+      ],
+      "rightSlot16Pos": [
+        104,
+        74
+      ],
+      "rightSlot16OffsetFromCenter": [
+        12,
+        -22
+      ],
+      "confirmButtonSocketRect": [
+        62,
+        96,
+        60,
+        20
+      ],
+      "confirmButtonOffsetFromCenter": [
+        -30,
+        0
+      ]
+    },
+    "inventoryDrawer": {
+      "width": 178,
+      "height": 104,
+      "mainGrid3x9Origin18": [
+        8,
+        14
+      ],
+      "mainGrid3x9Origin16": [
+        9,
+        15
+      ],
+      "dividerBeamRect": [
+        8,
+        68,
+        162,
+        4
+      ],
+      "hotbar1x9Origin18": [
+        8,
+        72
+      ],
+      "hotbar1x9Origin16": [
+        9,
+        73
+      ],
+      "slotStride": 18,
+      "responsiveAltarShiftXWhenOpenNarrow": -32
+    },
+    "buttons": {
+      "confirmStates": {
+        "width": 60,
+        "height": 60,
+        "frameHeight": 20,
+        "states": [
+          "normal",
+          "hover",
+          "disabled"
+        ]
+      },
+      "cornerStates": {
+        "width": 52,
+        "height": 54,
+        "frameHeight": 18,
+        "states": [
+          "normal",
+          "hover",
+          "active_open"
+        ]
+      }
+    },
+    "treeNodesSheet": {
+      "width": 192,
+      "height": 56,
+      "tileSize": [
+        22,
+        22
+      ],
+      "tileStrideX": 24,
+      "tilesRow0": [
+        "WOOD",
+        "FIRE",
+        "WATER",
+        "EARTH",
+        "METAL",
+        "NONE",
+        "RULE",
+        "LOCKED"
+      ],
+      "selectedFrameRect": [
+        0,
+        26,
+        26,
+        26
+      ],
+      "studyableFrameRect": [
+        28,
+        26,
+        26,
+        26
+      ],
+      "hoverFrameRect": [
+        56,
+        26,
+        26,
+        26
+      ],
+      "studyScrollBadgeRect": [
+        88,
+        26,
+        10,
+        10
+      ],
+      "lockBadgeRect": [
+        102,
+        26,
+        8,
+        9
+      ],
+      "nodePipRect": [
+        114,
+        26,
+        8,
+        8
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "visual-handoff-candidate.md",
+      "category": "doc",
+      "bytes": 17390,
+      "sha256": "b7bb498a019a9e3452e9376917a91525c691b858ee98210e9e8749b3cecdc49f"
+    },
+    {
+      "path": "export/altar_hub.png",
+      "category": "export",
+      "bytes": 26859,
+      "sha256": "9a74f052a8c8d72587b9c99df7d0c345e733c23ad731717778ec1baefa975550",
+      "width": 184,
+      "height": 192,
+      "frames": 1
+    },
+    {
+      "path": "export/altar_hub_glow_strip.png",
+      "category": "export",
+      "bytes": 224744,
+      "sha256": "1f6a251c81e570e04a3814f48154ccfe2af1acb3858f064824eb75f656b95630",
+      "width": 184,
+      "height": 1536,
+      "frames": 1
+    },
+    {
+      "path": "export/altar_widgets.png",
+      "category": "export",
+      "bytes": 1074,
+      "sha256": "10e4c074eaafb9534f22cef58e3e8732f6f6c59aa2cc31eef63955fcda388d13",
+      "width": 64,
+      "height": 32,
+      "frames": 1
+    },
+    {
+      "path": "export/confirm_button_states.png",
+      "category": "export",
+      "bytes": 2161,
+      "sha256": "fb8e248de9aca6bf781b5100aa05d834dcbf241163a6132572fea0bc402bfded",
+      "width": 60,
+      "height": 60,
+      "frames": 1
+    },
+    {
+      "path": "export/corner_button_states.png",
+      "category": "export",
+      "bytes": 1278,
+      "sha256": "ae63fa8408ba0c719346acfe2b39477ab8303d34184175c06264b555055502a2",
+      "width": 52,
+      "height": 54,
+      "frames": 1
+    },
+    {
+      "path": "export/inventory_drawer.png",
+      "category": "export",
+      "bytes": 1706,
+      "sha256": "dc9b9ae2025e8cf3c1e161366d005c1b115fdcedad026704464c341d06abd193",
+      "width": 178,
+      "height": 104,
+      "frames": 1
+    },
+    {
+      "path": "export/screen_border_9slice.png",
+      "category": "export",
+      "bytes": 318,
+      "sha256": "7175b9dd90d2f6bf88003bda470495aaf02d1cd98fcf491193e3180613cf1375",
+      "width": 24,
+      "height": 24,
+      "frames": 1
+    },
+    {
+      "path": "export/slip_mortal_icon.png",
+      "category": "export",
+      "bytes": 364,
+      "sha256": "b49e3d2662f7c405919b01868f4b94cb3ac9820d3a92f22b7c8eb119cc528e38",
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "path": "export/slip_mystic_icon.png",
+      "category": "export",
+      "bytes": 475,
+      "sha256": "84f2869bc79bec40015388c7c5fca2d90b0c1ce57bc1b07e380e746f5f89bc82",
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "path": "export/slip_transcendent_icon.png",
+      "category": "export",
+      "bytes": 315,
+      "sha256": "0ac64dd82492812a89b9c0bd28afedd0ba1db48562f173cdde1553ae550af088",
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "path": "export/tooltip_frame_9slice.png",
+      "category": "export",
+      "bytes": 252,
+      "sha256": "45a3619aa9eb071e8bf69e8350584d073b7694800c7b5a3b1f59f2e552cc79b9",
+      "width": 24,
+      "height": 24,
+      "frames": 1
+    },
+    {
+      "path": "export/tree_nodes_sheet.png",
+      "category": "export",
+      "bytes": 2235,
+      "sha256": "2220e8c24d6c47d30acb189d9e2074b271f4127c0ea01ffc6803e28f1802d709",
+      "width": 192,
+      "height": 56,
+      "frames": 1
+    },
+    {
+      "path": "preview/altar_subtle_glow_3x.gif",
+      "category": "preview",
+      "bytes": 906322,
+      "sha256": "325da32bda321e4c111254fcb816e0fbe8f279bccd2a017b7ea8662c775da495",
+      "width": 840,
+      "height": 708,
+      "frames": 8
+    },
+    {
+      "path": "preview/preview_imprint_open_inv_4x.png",
+      "category": "preview",
+      "bytes": 133304,
+      "sha256": "863b9c7dd6d0c7406d31634ec3f04404217fd8f89f6aea498b194193c9ffef4f",
+      "width": 1920,
+      "height": 1080,
+      "frames": 1
+    },
+    {
+      "path": "preview/preview_study_collapsed_4x.png",
+      "category": "preview",
+      "bytes": 125356,
+      "sha256": "305b2e14f4e6be185a993379d7a829b99bba8255e757d8b1c45a29445d395f6c",
+      "width": 1920,
+      "height": 1080,
+      "frames": 1
+    },
+    {
+      "path": "preview/ref_vs_v1_altar_gate.png",
+      "category": "preview",
+      "bytes": 1014975,
+      "sha256": "f77f4f669d7ad5e86dddef0ded0842971da08a473a9fd9c99fb207433927c6a3",
+      "width": 1920,
+      "height": 1080,
+      "frames": 1
+    },
+    {
+      "path": "scripts/build_previews.py",
+      "category": "scripts",
+      "bytes": 36988,
+      "sha256": "2ddbbb54eff97a644dd94b5c4e8abf7b73a1e83e57d63bf0872049fc753c41bc"
+    },
+    {
+      "path": "scripts/gen_aseprite_assets.lua",
+      "category": "scripts",
+      "bytes": 55582,
+      "sha256": "e0cae75cb0c0da9fe8bcf72fbf92d738caaa5826935a5269a00e80447ec50c36"
+    },
+    {
+      "path": "src/imprint_altar_hub_v1.aseprite",
+      "category": "src",
+      "bytes": 254768,
+      "sha256": "1d8e5e679080937128f7d9870c9a79b28fb5882cfff828b2324f77bfb65927e6"
+    },
+    {
+      "path": "src/imprint_altar_widgets_v1.aseprite",
+      "category": "src",
+      "bytes": 1967,
+      "sha256": "e18ed328d7bb007ddeef27018b2c78a07b91a5751ba5b8ce72237f18e56de3d7"
+    },
+    {
+      "path": "src/imprint_buttons_v1.aseprite",
+      "category": "src",
+      "bytes": 3516,
+      "sha256": "cec6195afb4177d5c18e53780dd2a6f41c4be6b935cae3fee5b7cebc83b5319d"
+    },
+    {
+      "path": "src/imprint_corner_buttons_v1.aseprite",
+      "category": "src",
+      "bytes": 1970,
+      "sha256": "60b1bf28c675b89d2c3d1d8954c07105738f2e8d79a950ad5e861d5cf531ac97"
+    },
+    {
+      "path": "src/imprint_screen_border_v1.aseprite",
+      "category": "src",
+      "bytes": 1415,
+      "sha256": "5d9cdc4f8568a9a846a6316937fb0c13781a369e2c45ff7f09f4740a1b7a81e3"
+    },
+    {
+      "path": "src/imprint_study_slips_v1.aseprite",
+      "category": "src",
+      "bytes": 2061,
+      "sha256": "f08e677c17b47b11e3acf6cc62a6d5c6caa236c04c43791556d43950efb3a3ce"
+    },
+    {
+      "path": "src/imprint_tree_nodes_v1.aseprite",
+      "category": "src",
+      "bytes": 3680,
+      "sha256": "d8babecb4a2f4b4e61f4f94d877a32431e9f6bfcd397c04a255fd4ccb69f8b01"
+    },
+    {
+      "path": "src/imprint_widgets_and_drawer_v1.aseprite",
+      "category": "src",
+      "bytes": 4126,
+      "sha256": "f4e5cb456f17e1f8ed0f4823ca2814e86674b21b2bf5ac90b3c361c992fd65af"
+    }
+  ]
+}

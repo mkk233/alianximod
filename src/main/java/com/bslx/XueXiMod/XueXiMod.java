@@ -1,9 +1,16 @@
 package com.bslx.XueXiMod;
 
+import com.bslx.XueXiMod.animation.runtime.ActionBootstrap;
+import com.bslx.XueXiMod.api.RegisterXueXiContentEvent;
 import com.bslx.XueXiMod.block.ModBlockEntities;
 import com.bslx.XueXiMod.block.ModBlocks;
+import com.bslx.XueXiMod.block.StillDomainFluids;
+import com.bslx.XueXiMod.carrier.BatchCarrierBootstrap;
+import com.bslx.XueXiMod.carrier.BatchCarrierTypes;
+import com.bslx.XueXiMod.client.BatchCarrierVisualRenderer;
 import com.bslx.XueXiMod.gui.ModMenuTypes;
 import com.bslx.XueXiMod.gui.ImprintDeskScreen;
+import com.bslx.XueXiMod.gui.DaozhangScreen;
 import com.bslx.XueXiMod.gui.ShuManagementScreen;
 import com.bslx.XueXiMod.gui.SkillAssemblyScreen;
 import com.bslx.XueXiMod.gui.SpellAssemblyScreen;
@@ -12,21 +19,54 @@ import com.bslx.XueXiMod.item.ModItems;
 import com.bslx.XueXiMod.item.ShuEmbryoItem;
 import com.bslx.XueXiMod.item.SkillStoneItem;
 import com.bslx.XueXiMod.item.ModCreativeModTabs;
+import com.bslx.XueXiMod.client.CloneAfterimagePlayback;
+import com.bslx.XueXiMod.client.CloneRenderer;
+import com.bslx.XueXiMod.client.DaozhangRenderer;
+import com.bslx.XueXiMod.client.DaozhangSpellRenderer;
+import com.bslx.XueXiMod.client.DomainClientState;
+import com.bslx.XueXiMod.client.FireVisualClient;
 import com.bslx.XueXiMod.client.MagicHudOverlay;
+import com.bslx.XueXiMod.client.MeteoriteWreckageRenderer;
+import com.bslx.XueXiMod.client.StillDomainWaterClient;
+import com.bslx.XueXiMod.client.WaterMomentumOverlay;
+import com.bslx.XueXiMod.client.action.ActionClientPlayback;
 import com.bslx.XueXiMod.keybind.ModKeyBindings;
+import com.bslx.XueXiMod.network.ClonePresentationS2CPacket;
 import com.bslx.XueXiMod.network.ModNetwork;
+import com.bslx.XueXiMod.player.ModLootModifiers;
+import com.bslx.XueXiMod.player.ModVillagers;
 import com.bslx.XueXiMod.shu.ModTechniques;
+import com.bslx.XueXiMod.shu.TechniqueManager;
+import com.bslx.XueXiMod.shu.TechniqueType;
+import com.bslx.XueXiMod.shu.balance.BalanceCatalog;
+import com.bslx.XueXiMod.shu.balance.BalanceLifecycle;
+import com.bslx.XueXiMod.registry.ModMobEffects;
+import com.bslx.XueXiMod.shu.technique.release.clone.CloneEntityTypes;
+import com.bslx.XueXiMod.shu.technique.release.clone.core.CloneEntity;
+import com.bslx.XueXiMod.npc.daozhang.DaozhangConfig;
+import com.bslx.XueXiMod.npc.daozhang.DaozhangEntity;
+import com.bslx.XueXiMod.npc.daozhang.DaozhangTypes;
+import com.bslx.XueXiMod.shu.technique.release.cooperative.CooperativeRuntime;
 import com.bslx.XueXiMod.shu.technique.release.entity.ReleaseEntities;
+import com.bslx.XueXiMod.terrain.BatchTerrainBreakSwitch;
+import com.bslx.XueXiMod.terrain.MeteoriteWreckageTypes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.event.server.ServerStoppedEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -56,9 +96,10 @@ public class XueXiMod {
     public static final String MOD_ID = "xueximod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+    private final IEventBus modEventBus;
 
     public XueXiMod(FMLJavaModLoadingContext context) {
-        IEventBus modEventBus = context.getModEventBus();
+        modEventBus = context.getModEventBus();
 
         registerContent(modEventBus);
 
@@ -69,11 +110,17 @@ public class XueXiMod {
         modEventBus.addListener(this::addCreative);
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        context.registerConfig(ModConfig.Type.COMMON,
+                BatchTerrainBreakSwitch.SPEC,
+                BatchTerrainBreakSwitch.CONFIG_FILE);
+        context.registerConfig(ModConfig.Type.COMMON, DaozhangConfig.SPEC, "xueximod-daozhang.toml");
     }
 
     private void registerContent(IEventBus modEventBus) {
         //通过EventBus添加物品
         ModItems.register(modEventBus);
+        // 流体注册表要先挂上，静水方块再跟其他方块一起登记，并且不带物品。
+        StillDomainFluids.register(modEventBus);
         //通过EventBus添加方块
         ModBlocks.register(modEventBus);
         //通过EventBus添加方块实体
@@ -84,14 +131,37 @@ public class XueXiMod {
         ModCreativeModTabs.register(modEventBus);
         //通过EventBus添加释放实体
         ReleaseEntities.register(modEventBus);
+        CloneEntityTypes.register(modEventBus);
+        modEventBus.addListener(XueXiMod::onCreateCloneAttributes);
+        MeteoriteWreckageTypes.register(modEventBus);
+        BatchCarrierTypes.register(modEventBus);
+        DaozhangTypes.register(modEventBus);
+        modEventBus.addListener(XueXiMod::onCreateDaozhangAttributes);
+        ModMobEffects.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+        ModVillagers.register(modEventBus);
+    }
+
+    private static void onCreateCloneAttributes(EntityAttributeCreationEvent event) {
+        event.put(CloneEntityTypes.cloneType(), CloneEntity.createAttributes().build());
+    }
+
+    private static void onCreateDaozhangAttributes(EntityAttributeCreationEvent event) {
+        event.put(DaozhangTypes.DAOZHANG.get(), DaozhangEntity.createAttributes().build());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // 注册网络
         ModNetwork.register();
-        // 注册所有术
+        ClonePresentationS2CPacket.installSink();
+        ActionBootstrap.load();
         ModTechniques.registerAll();
-        LOGGER.info("术系统初始化完成，共注册 {} 个术", com.bslx.XueXiMod.shu.TechniqueManager.getAll().size());
+        CooperativeRuntime.install();
+        BatchCarrierBootstrap.install();
+        BalanceCatalog.noteBuiltins(TechniqueManager.getAll());
+        modEventBus.post(new RegisterXueXiContentEvent());
+        BalanceCatalog.sealAfterContent();
+        LOGGER.info("术系统初始化完成，共注册 {} 个术", TechniqueManager.getAll().size());
     }
     //添加内容给创造模式
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -105,6 +175,19 @@ public class XueXiMod {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
+        BalanceLifecycle.loadWorld(event.getServer());
+    }
+
+    @SubscribeEvent
+    public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
+        if (event.getEntity() instanceof ServerPlayer player) {
+            BalanceLifecycle.sendTo(player);
+        }
+    }
+
+    @SubscribeEvent
+    public void onServerStopped(ServerStoppedEvent event) {
+        BalanceLifecycle.unloadWorld();
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -118,28 +201,43 @@ public class XueXiMod {
             MenuScreens.register(ModMenuTypes.SKILL_ASSEMBLY.get(), SkillAssemblyScreen::new);
             MenuScreens.register(ModMenuTypes.SPELL_STORAGE.get(), SpellStorageScreen::new);
             MenuScreens.register(ModMenuTypes.SPELL_ASSEMBLY.get(), SpellAssemblyScreen::new);
+            MenuScreens.register(ModMenuTypes.DAOZHANG.get(), DaozhangScreen::new);
+            DomainClientState.bind();
+            event.enqueueWork(StillDomainWaterClient::renderLayers);
+            ActionClientPlayback.bindIngress();
+            FireVisualClient.bind();
+            CloneAfterimagePlayback.bind();
             event.enqueueWork(() -> {
-                net.minecraft.client.renderer.item.ItemProperties.register(
+                ItemProperties.register(
                         ModItems.shu_embryo.get(),
-                        net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(MOD_ID, "shu_attribute"),
+                        ResourceLocation.fromNamespaceAndPath(MOD_ID, "shu_attribute"),
                         (stack, level, entity, seed) -> ShuEmbryoItem.getAttribute(stack).getPredicateValue());
-                net.minecraft.client.renderer.item.ItemProperties.register(
+                ItemProperties.register(
                         ModItems.skill_stone.get(),
-                        net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(MOD_ID, "shu_attribute"),
+                        ResourceLocation.fromNamespaceAndPath(MOD_ID, "shu_attribute"),
                         (stack, level, entity, seed) -> {
                             var data = SkillStoneItem.getData(stack);
                             return data == null ? 0f : data.getEmbryoAttribute().getPredicateValue();
                         });
-                net.minecraft.client.renderer.item.ItemProperties.register(
+                ItemProperties.register(
                         ModItems.skill_stone.get(),
-                        net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(MOD_ID, "skill_attack"),
+                        ResourceLocation.fromNamespaceAndPath(MOD_ID, "skill_attack"),
                         (stack, level, entity, seed) -> {
                             var data = SkillStoneItem.getData(stack);
                             if (data == null) return 0f;
                             var technique = data.getTechnique();
-                            return (technique != null && technique.getType() == com.bslx.XueXiMod.shu.TechniqueType.SWORD) ? 1f : 0f;
+                            return (technique != null && technique.getType() == TechniqueType.SWORD) ? 1f : 0f;
                         });
             });
+        }
+
+        @SubscribeEvent
+        public static void onRegisterEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerEntityRenderer(MeteoriteWreckageTypes.WRECKAGE.get(), MeteoriteWreckageRenderer::new);
+            event.registerEntityRenderer(BatchCarrierTypes.VISUAL.get(), BatchCarrierVisualRenderer::new);
+            event.registerEntityRenderer(CloneEntityTypes.cloneType(), CloneRenderer::new);
+            event.registerEntityRenderer(DaozhangTypes.DAOZHANG.get(), DaozhangRenderer::new);
+            event.registerEntityRenderer(DaozhangTypes.SPELL.get(), DaozhangSpellRenderer::new);
         }
 
         @SubscribeEvent
@@ -150,6 +248,7 @@ public class XueXiMod {
         @SubscribeEvent
         public static void onRegisterGuiOverlays(RegisterGuiOverlaysEvent event) {
             event.registerAbove(VanillaGuiOverlay.HOTBAR.id(), "magic", MagicHudOverlay::render);
+            event.registerAbove(VanillaGuiOverlay.HOTBAR.id(), "water_momentum", WaterMomentumOverlay::render);
         }
     }
 }

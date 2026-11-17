@@ -1,0 +1,38 @@
+{
+  "ready": true,
+  "submitted": false,
+  "baselineSha256": "7EE23F670605C912A393457C9DEE61663BDE69BBF06996CA7DA78ACF04275FE5",
+  "baselineBytes": 122456,
+  "baselineMtime": "2026-11-09T10:34:50.758+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\第一人称空手返修-20261109\\表格\\备份\\术式制作表-20261109-172642-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\第一人称空手返修-20261109\\表格\\候选\\术式制作表-候选-20261109-172642-1.xlsx",
+  "candidateSha256": "137F6BC91F1AA2F61A5D28A051F316348DB84E8C845BFDA8D2BF3FFC6F411145",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\第一人称空手返修-20261109\\表格\\快照\\变更前-AEN-20261109-172642-1.json",
+    "nodv": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\第一人称空手返修-20261109\\表格\\快照\\迁回前-NODV-20261109-172642-1.json",
+    "approved": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\快照\\变更前-NODV-20261101-214704-1.json"
+  },
+  "from": {
+    "sheet": "待验收",
+    "row": 7
+  },
+  "to": {
+    "sheet": "制作中",
+    "row": 19
+  },
+  "countsBefore": {
+    "已完成": 37,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 9
+  },
+  "countsAfter": {
+    "已完成": 37,
+    "待制作": 0,
+    "制作中": 17,
+    "待验收": 8
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "detailRowsMoved": 0,
+  "archiveUntouched": true
+}

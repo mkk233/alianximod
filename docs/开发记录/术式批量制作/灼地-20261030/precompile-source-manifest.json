@@ -1,0 +1,310 @@
+{
+  "snapshot": "compile-fix-write",
+  "batch": "灼地-20261030",
+  "techniqueId": "fire_scorch_field",
+  "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+  "collectedAt": "2026-10-30T22:40:30.008+08:00",
+  "supersedes": "repair-2-final-write collectedAt 2026-10-30T21:45:55.412+08:00",
+  "fileCount": 28,
+  "latestPath": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseDefinitions.java",
+  "latestLastWriteTime": "2026-10-30T22:36:31.732+08:00",
+  "note": "编译参数修复停写后的现行源码清单。只含路径、最后写入时间和 SHA256，不含源码审查。返修2清单已被这次源码写入失效，旧事实留在记录。重编前还要再确认没有新写入。这次修复尚未编译通过。",
+  "files": [
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "A"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\firecast\\ScorchSeedLedger.java",
+      "lastWriteTime": "2026-10-30T20:24:12.130+08:00",
+      "bytes": 8254,
+      "sha256": "83E20C8A4C5890E68B7538B2BBAB8F19A4B2179ED07415EAD9DB3C79A6F9399A"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "A"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\status\\fire\\seed\\FireSeedProduction.java",
+      "lastWriteTime": "2026-10-30T20:23:59.550+08:00",
+      "bytes": 1126,
+      "sha256": "72919771F6D9971751A679C22614EC2FF0B3844FCCD3220E106210CF7E8C61BA"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\HostView.java",
+      "lastWriteTime": "2026-10-30T21:18:58.900+08:00",
+      "bytes": 1203,
+      "sha256": "5E6E421FADD80840E7F647FA0AC3DE79B4689D018B9BCD756002024BC64AD9C3"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\BoundHostBridge.java",
+      "lastWriteTime": "2026-10-30T20:44:56.994+08:00",
+      "bytes": 1222,
+      "sha256": "817343ACF96B1F9552598C60865892F51FDEE8F7852A9DD67C26730287D75A31"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\firecast\\SurfaceContactField.java",
+      "lastWriteTime": "2026-10-30T21:18:57.964+08:00",
+      "bytes": 12162,
+      "sha256": "62888406F5E9D6BB557C34DCF267474030249310F4C9673A0DE80C4E212D31E6"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\firecast\\SurfacePatchGeometry.java",
+      "lastWriteTime": "2026-10-30T20:45:20.459+08:00",
+      "bytes": 4459,
+      "sha256": "1F9980DDEC6BFD81864E799962C07EE9D049553617FD3A315DE2AB2320E2017F"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\effects\\ScorchEffect.java",
+      "lastWriteTime": "2026-10-30T21:19:31.667+08:00",
+      "bytes": 1704,
+      "sha256": "D68FD1BA3F3F4855A6874E544B8E51C0701AD65879449A08D8BAFD402D14D5EA"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\ExplicitHostOffers.java",
+      "lastWriteTime": "2026-10-30T21:19:21.207+08:00",
+      "bytes": 1946,
+      "sha256": "4035ADD06BF53A1C0FE8F006B3E3F5117512897CC31C147C5576409967CFD204"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainGeometry.java",
+      "lastWriteTime": "2026-10-30T20:46:12.486+08:00",
+      "bytes": 1223,
+      "sha256": "7DAC7A8690F625003CB538C543058E83778FCFD988A4FC2BD01A353F1F22BB54"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainInstance.java",
+      "lastWriteTime": "2026-10-30T20:46:17.160+08:00",
+      "bytes": 8136,
+      "sha256": "A886F6E4278B8B553A2476737DE0EDFCBC78AEAB617E05428F21B2CE81639DE1"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainBindingRuntime.java",
+      "lastWriteTime": "2026-10-30T21:19:01.743+08:00",
+      "bytes": 13768,
+      "sha256": "68A46F7E998D5947CDDA6F744B06516C3371148BAAC42981260587189D85CCE7"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseDefinition.java",
+      "lastWriteTime": "2026-10-30T20:46:36.247+08:00",
+      "bytes": 12931,
+      "sha256": "C7AF6D0A34823F43DD00ACA64563981B1518AF5D8F1F4EFFA71F1497501A90C7"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\BindingStructureCompiler.java",
+      "lastWriteTime": "2026-10-30T20:46:38.547+08:00",
+      "bytes": 21729,
+      "sha256": "338754675E12E752A56C397AEE8C5006628CD2D8AF1BBE5499F138DFFA1A1834"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseBatch.java",
+      "lastWriteTime": "2026-10-30T21:19:38.132+08:00",
+      "bytes": 15710,
+      "sha256": "50F13ED4440E1B13B92A587860B6382A449823D7D2E4D0214504EE4E88D0B58B"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillUsePacket.java",
+      "lastWriteTime": "2026-10-30T21:19:21.797+08:00",
+      "bytes": 64909,
+      "sha256": "8997A2076FD4E115C935DA75EC3AC7C17D27A227F97129B4B8ABEBEE07F95710"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\CastExecutionSession.java",
+      "lastWriteTime": "2026-10-30T21:19:22.592+08:00",
+      "bytes": 36143,
+      "sha256": "414C37657B825506936AEC56E55B938C83CC981FEF22A8986FEFE534B11F9312"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\ModTechniques.java",
+      "lastWriteTime": "2026-10-30T20:46:58.578+08:00",
+      "bytes": 18823,
+      "sha256": "E9BAE931A97724CF016FD4AB0AC0E3360758488E7EF7B93AD3B7BD6A19FA4694"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "compileFix"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseDefinitions.java",
+      "lastWriteTime": "2026-10-30T22:36:31.732+08:00",
+      "bytes": 21050,
+      "sha256": "AA7066898DA2D95CFE9905C44D13F5AC71A71812D4287B63C3ECACA9A77DDEFD"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1",
+        "repair2"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\FireVisualPacket.java",
+      "lastWriteTime": "2026-10-30T21:41:16.647+08:00",
+      "bytes": 10838,
+      "sha256": "427C7B5C9FD2EF86E55C84F608596CE129E5EDF579E26291B5393DD468A6FA31"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1",
+        "repair2"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\FireVisualClient.java",
+      "lastWriteTime": "2026-10-30T21:41:16.145+08:00",
+      "bytes": 38270,
+      "sha256": "AA4F8386427F5B632361DF7C39F1E1F82D18BCA4EA429539A1DE34D2D2DCFE06"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\zh_cn.json",
+      "lastWriteTime": "2026-10-30T20:48:00.109+08:00",
+      "bytes": 5011,
+      "sha256": "4C12AC2488A14828C4F92EED6DB86D0FD3BF05BA63DE1C082275360F962F8822"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B"
+      ],
+      "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\en_us.json",
+      "lastWriteTime": "2026-10-30T20:48:01.022+08:00",
+      "bytes": 2535,
+      "sha256": "63AB09D8E70C5546C73BAE5DC2BCDEA96019F71534EFC4333796E30279C08F67"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "B",
+        "repair1",
+        "repair2"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\firecast\\SurfaceFireHosts.java",
+      "lastWriteTime": "2026-10-30T21:41:17.513+08:00",
+      "bytes": 22880,
+      "sha256": "0F7D73596C8FC1A5EC1EA2AD05AC16326B92CFB9DCBD260EAC46E9663100856A"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\firecast\\SurfaceSnapshotFrames.java",
+      "lastWriteTime": "2026-10-30T21:22:37.497+08:00",
+      "bytes": 1772,
+      "sha256": "E67362537FCDD60A3C25DF8BE7B8477D52CC1ED5140E63BB31D1C51CDD182BA4"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "repair1",
+        "repair2"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\SurfaceSnapshotAssembly.java",
+      "lastWriteTime": "2026-10-30T21:40:59.857+08:00",
+      "bytes": 13739,
+      "sha256": "C1F2582EEECA69471E64ABF4992B562D431A0069691D49D1AA6D9072C9797384"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\ContactCast.java",
+      "lastWriteTime": "2026-10-30T21:19:03.495+08:00",
+      "bytes": 4959,
+      "sha256": "177C0FA003F8000AFF50E80B74AD587160AF885DEC8FE88D8327D2A5EEF2A5F2"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\DomainOpening.java",
+      "lastWriteTime": "2026-10-30T21:19:16.221+08:00",
+      "bytes": 1459,
+      "sha256": "7D63F448009D9B898E56BFF44C9118A710624F919FAB829210A422EC07D66B34"
+    },
+    {
+      "author": "37a43a5b-51ec-48a1-b0f6-1677b4b87501",
+      "stages": [
+        "repair1"
+      ],
+      "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillSegmentRunner.java",
+      "lastWriteTime": "2026-10-30T21:19:25.724+08:00",
+      "bytes": 56531,
+      "sha256": "93C954BB1143B14DD75A55F0C13412A4E19874DFA2BECC6ED9C79E53DCA16C15"
+    }
+  ]
+}

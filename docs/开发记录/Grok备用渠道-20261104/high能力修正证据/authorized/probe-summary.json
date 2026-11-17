@@ -1,0 +1,19 @@
+{
+  "exitCode": 0,
+  "timedOut": false,
+  "stopReason": "end_turn",
+  "text": "HIGH_EFFORT_AUTHORIZED_OK",
+  "sessionId": "a7996df1-1506-4af4-a32f-726e09f05f13",
+  "modelUsageNames": [
+    "grok-4.7-build-fast"
+  ],
+  "ignoreHighWarning": false,
+  "permissionMode": "auto",
+  "modelAlias": "grok-4.7",
+  "reasoningRequested": "high",
+  "noToolsRequested": true,
+  "configBeforeSha": "7fc61172e16610daa1b6a54e2cdc50683f077fab46f41f62e8d8ae8383aaab45",
+  "configAfterSha": "459b9c2f3183eb893bc81a29642970991fd350f54079654894ecbfa7e403a0ec",
+  "restUnchanged": true,
+  "internalReasoningStrengthProven": false
+}

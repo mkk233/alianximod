@@ -1,0 +1,23 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "stage": "review1-repair",
+  "review": "不是新的正式复审。设计 2/2，实现正式复审按派发累计 2/3，本单不宣称通过。",
+  "compile": "未运行，待统一编译",
+  "stopWrite": true,
+  "kindle": "未改。n 仍按余额最多 10，不封到 8。",
+  "staffKept": "basic_staff 6 槽原属性；test_staff 32/1000/效率 15.0/冷却 0.50",
+  "fixes": [
+    "共享 HitClock：occupied 先查，成立后才 tryMark",
+    "父闩锁在 spawn 前加一，同步接续不重复加，失败回滚",
+    "净空分开水平半径和竖向半高",
+    "非法杖保存服务端槽签名，变化走现有 cancel"
+  ],
+  "remaining": {
+    "B": "无",
+    "C": "BatchFlameTrail.sweep 先分类，continues() 之后再 tryMark",
+    "D": "无"
+  },
+  "nameGate": "退出码 1。本轮文件无新增违规。OriginalHumanoid.java:165 i，:202 to。",
+  "ownershipFileCount": 63
+}

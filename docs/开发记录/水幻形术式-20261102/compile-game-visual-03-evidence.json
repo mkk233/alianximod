@@ -1,0 +1,139 @@
+{
+  "batch": "水幻形术式-20261102",
+  "stage": "game-visual-03-compile",
+  "kind": "diagnostic-03b",
+  "missingArmFixed": false,
+  "diagnosticCompilePassed": false,
+  "attemptArchive": null,
+  "priorReportExisted": false,
+  "result": "failed",
+  "compilePassed": false,
+  "gameVerified": false,
+  "gameEffectMatchesConfirmation": false,
+  "extraReviewAdded": false,
+  "designRounds": "2/2",
+  "implementationRounds": "3/3",
+  "packaged": false,
+  "recompiled": false,
+  "sourceChangedDuringCompile": false,
+  "coversFrozenSource": true,
+  "processResourcesRun": false,
+  "resourceOutputBehind": false,
+  "clientReloadIssued": false,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "process": "cmd.exe /d /c .\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "startedAt": "2026-11-03T00:14:47.6318431+08:00",
+  "endedAt": "2026-11-03T00:15:09.2353586+08:00",
+  "exitCode": 1,
+  "exitCodeSource": "Process.ExitCode of cmd.exe /c gradlew.bat",
+  "java": "17.0.6+9-LTS-190",
+  "javaReportedByGradle": "17.0.6, JVM: 17.0.6+9-LTS-190 (Oracle Corporation), Arch: amd64",
+  "env": {
+    "JAVA_HOME": "C:/Program Files/Java/jdk-17",
+    "GRADLE_USER_HOME": "C:/Users/baishang/.gradle",
+    "pathPrefix": "C:/Program Files/Java/jdk-17/bin",
+    "jvmargs": "-Xmx3G",
+    "daemonProperty": false,
+    "offline": true,
+    "noDaemon": true,
+    "gradlePropertiesModified": false
+  },
+  "preflight": {
+    "compileProcessBeforeStart": false,
+    "idleIdeaGradleDaemonPid": 50884,
+    "idleDaemonKilled": false,
+    "gameCommandLineRead": false,
+    "environmentBlocked": false,
+    "authorsStoppedPerDispatch": true,
+    "fixReport": "docs/开发记录/水幻形术式-20261102/fix-game-visual-03b-report.md",
+    "fixFinal": "docs/开发记录/水幻形术式-20261102/fix-game-visual-03b-final.md"
+  },
+  "gradleLog": "docs/开发记录/水幻形术式-20261102/compile-game-visual-03.log",
+  "gradleLogBytes": 1899,
+  "gradleLogEncoding": "cp936",
+  "gradleLogUtf8": "docs/开发记录/水幻形术式-20261102/compile-game-visual-03-log-utf8.txt",
+  "buildResult": "BUILD FAILED in 20s",
+  "tasks": {
+    "downloadMcpConfig": "executed",
+    "extractSrg": "UP-TO-DATE",
+    "createMcpToSrg": "UP-TO-DATE",
+    "compileJava": "executed-FAILED"
+  },
+  "actionableTasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "warnings": null,
+  "warningSummaryPresent": false,
+  "errors": 1,
+  "errorSites": [
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/client/WaterPhantomVisualDiagnostics.java",
+      "line": 11,
+      "message": "找不到符号",
+      "symbol": "类 Util",
+      "location": "程序包 net.minecraft.util",
+      "snippet": "import net.minecraft.util.Util;"
+    }
+  ],
+  "diagnosticClass": {
+    "path": "build/classes/java/main/com/bslx/XueXiMod/client/WaterPhantomVisualDiagnostics.class",
+    "present": false
+  },
+  "diagnosticMarker": "WATER_PHANTOM_VISUAL_DIAG_03B",
+  "diagnosticLogPath": "D:/alianximod/run/logs/latest.log",
+  "diagnosticLogPathExists": true,
+  "diagnosticReadyToCollect": false,
+  "loadMethod": "not-ready-compile-failed",
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "log": "docs/开发记录/水幻形术式-20261102/compile-game-visual-03-name-gate.log",
+    "startedAt": "2026-11-03T00:14:34.5689272+08:00",
+    "endedAt": "2026-11-03T00:14:38.4968150+08:00",
+    "exitCode": 0,
+    "summary": "源码命名可读性检查通过：未发现单字母变量或禁止缩写",
+    "sourceEdited": false
+  },
+  "source": {
+    "scope": "src",
+    "before": "docs/开发记录/水幻形术式-20261102/compile-game-visual-03-before.json",
+    "after": "docs/开发记录/水幻形术式-20261102/compile-game-visual-03-after.json",
+    "beforeCapturedAt": "2026-11-03T00:14:27.6433103+08:00",
+    "afterCapturedAt": "2026-11-03T00:15:34.9900745+08:00",
+    "countBefore": 1264,
+    "countAfter": 1264,
+    "diffCount": 0,
+    "latestWritePath": "src/main/java/com/bslx/XueXiMod/client/WaterPhantomVisualDiagnostics.java",
+    "latestWriteTime": "2026-11-03T00:10:30.9327496+08:00",
+    "compileStartedAfterLatestWrite": true
+  },
+  "resources": [
+    {
+      "relative": "assets/xueximod/textures/entity/xueximod/steve_water_lines.png",
+      "size": 2687,
+      "sha256": "9e7e5b01a7e09c393d3ffa1800468bd61ae919f68cf628152b00d9c347793da5",
+      "srcMtime": "2026-11-02T15:56:44.923",
+      "outputMtime": "2026-11-02T23:39:49.027",
+      "sameHash": true,
+      "outputBehind": false
+    },
+    {
+      "relative": "assets/xueximod/textures/entity/xueximod/water_flakes.png",
+      "size": 608,
+      "sha256": "cefdee9e3e3fb7f701e19fc9cb3438c586c4841d3a50e3f8c9399a635bd4d70c",
+      "srcMtime": "2026-11-02T15:56:44.924",
+      "outputMtime": "2026-11-02T23:39:49.039",
+      "sameHash": true,
+      "outputBehind": false
+    },
+    {
+      "relative": "assets/xueximod/models/effect/water_phantom_steve_v21/lines.bin",
+      "size": 60666,
+      "sha256": "26ef5093f3fc9cad03272f7bdfad06df771953e161b69310b2ff7e37b89f9025",
+      "srcMtime": "2026-11-02T15:56:44.922",
+      "outputMtime": "2026-11-02T23:39:48.823",
+      "sameHash": true,
+      "outputBehind": false
+    }
+  ],
+  "deliveryNote": "docs/开发记录/水幻形术式-20261102/交付与实测.md",
+  "notRun": ["processResources", "build", "jar", "reobf", "publish", "runClient", "game", "hot-reload", "repair", "extra-review"]
+}

@@ -1,0 +1,231 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"blockbench\":{\"version\":\"5.2.2\",\"environment\":\"desktop\",\"platform\":\"win32\",\"is_mobile\":false},\"plugin\":{\"version\":\"1.10.1\",\"build_id\":\"a66e717ad742a552424659f33c9b6149dafef4901888c66a956832d1d7e68062\",\"build_mode\":\"production\"},\"project\":{\"uuid\":\"bd0ab5c3-e2ff-a2d3-b619-3ba215a682d2\",\"name\":\"youming-v2-fixed-root-sway-candidate\",\"format_id\":\"free\",\"counts\":{\"elements\":273,\"meshes\":0,\"cubes\":273,\"groups\":65,\"textures\":19,\"animations\":1}},\"format\":{\"id\":\"free\",\"name\":\"通用模型\",\"features\":{\"meshes\":true,\"bone_rig\":true,\"edit_mode\":true,\"paint_mode\":true,\"image_editor\":false,\"animation_mode\":true,\"animation_files\":false,\"animation_controllers\":false,\"display_mode\":false,\"box_uv\":false,\"optional_box_uv\":true,\"single_texture\":false,\"per_texture_uv_size\":true,\"per_group_texture\":false,\"uv_rotation\":true,\"box_uv_float_size\":false,\"integer_size\":false,\"armature_rig\":true,\"stretch_cubes\":false,\"quaternion_interpolation\":false,\"animation_loop_wrapping\":false,\"pbr\":true,\"rotate_cubes\":true,\"rotation_limit\":false,\"texture_meshes\":false,\"locators\":true,\"molang\":true,\"java_cube_shade_direction_override\":false},\"remember_files\":[],\"animation_grouping\":\"custom\"},\"formats\":[{\"id\":\"bedrock\",\"name\":\"Bedrock 版实体\",\"supported_features\":[\"bone_rig\",\"edit_mode\",\"paint_mode\",\"animation_mode\",\"animation_files\",\"animation_controllers\",\"box_uv\",\"optional_box_uv\",\"single_texture\",\"uv_rotation\",\"pbr\",\"rotate_cubes\",\"texture_meshes\",\"locators\",\"molang\"]},{\"id\":\"bedrock_block\",\"name\":\"Bedrock 版方块\",\"supported_features\":[\"bone_rig\",\"edit_mode\",\"paint_mode\",\"display_mode\",\"optional_box_uv\",\"uv_rotation\",\"pbr\",\"rotate_cubes\",\"texture_meshes\",\"molang\"]},{\"id\":\"bedrock_old\",\"name\":\"Bedrock 版旧版实体\",\"supported_features\":[\"bone_rig\",\"edit_mode\",\"paint_mode\",\"animation_mode\",\"animation_files\",\"animation_controllers\",\"box_uv\",\"single_texture\",\"pbr\",\"locators\",\"molang\"]},{\"id\":\"free\",\"name\":\"通用模型\",\"supported_features\":[\"meshes\",\"bone_rig\",\"edit_mode\",\"paint_mode\",\"animation_mode\",\"optional_box_uv\",\"per_texture_uv_size\",\"uv_rotation\",\"armature_rig\",\"pbr\",\"rotate_cubes\",\"locators\",\"molang\"]},{\"id\":\"image\",\"name\":\"图像\",\"supported_features\":[\"paint_mode\",\"image_editor\",\"single_texture\",\"per_texture_uv_size\",\"molang\"]},{\"id\":\"java_block\",\"name\":\"Java 版方块/物品\",\"supported_features\":[\"edit_mode\",\"paint_mode\",\"display_mode\",\"optional_box_uv\",\"uv_rotation\",\"pbr\",\"rotate_cubes\",\"java_cube_shade_direction_override\"]},{\"id\":\"modded_entity\",\"name\":\"模组版实体\",\"supported_features\":[\"bone_rig\",\"edit_mode\",\"paint_mode\",\"animation_mode\",\"box_uv\",\"single_texture\",\"box_uv_float_size\",\"integer_size\",\"pbr\",\"rotate_cubes\",\"molang\"]},{\"id\":\"optifine_entity\",\"name\":\"OptiFine 实体\",\"supported_features\":[\"bone_rig\",\"edit_mode\",\"paint_mode\",\"box_uv\",\"optional_box_uv\",\"per_texture_uv_size\",\"per_group_texture\",\"pbr\"]},{\"id\":\"optifine_part\",\"name\":\"OptiFine Part\",\"supported_features\":[\"bone_rig\",\"edit_mode\",\"paint_mode\",\"box_uv\",\"optional_box_uv\",\"per_texture_uv_size\",\"per_group_texture\",\"pbr\"]},{\"id\":\"skin\",\"name\":\"Minecraft 皮肤\",\"supported_features\":[\"bone_rig\",\"paint_mode\",\"box_uv\",\"single_texture\",\"integer_size\",\"molang\"]}],\"notes\":[\"Format features are host declarations, not guarantees of MCP tool compatibility. Null or unknown_features means the host did not declare a boolean value; supported_features lists true flags.\",\"Tool enabled state reflects native editor conditions. Use list_modes and set_mode to change editor tabs, then refresh tools/list. Calls still validate individual arguments.\"]}"
+    }
+  ],
+  "structuredContent": {
+    "blockbench": {
+      "version": "5.2.2",
+      "environment": "desktop",
+      "platform": "win32",
+      "is_mobile": false
+    },
+    "plugin": {
+      "version": "1.10.1",
+      "build_id": "a66e717ad742a552424659f33c9b6149dafef4901888c66a956832d1d7e68062",
+      "build_mode": "production"
+    },
+    "project": {
+      "uuid": "bd0ab5c3-e2ff-a2d3-b619-3ba215a682d2",
+      "name": "youming-v2-fixed-root-sway-candidate",
+      "format_id": "free",
+      "counts": {
+        "elements": 273,
+        "meshes": 0,
+        "cubes": 273,
+        "groups": 65,
+        "textures": 19,
+        "animations": 1
+      }
+    },
+    "format": {
+      "id": "free",
+      "name": "通用模型",
+      "features": {
+        "meshes": true,
+        "bone_rig": true,
+        "edit_mode": true,
+        "paint_mode": true,
+        "image_editor": false,
+        "animation_mode": true,
+        "animation_files": false,
+        "animation_controllers": false,
+        "display_mode": false,
+        "box_uv": false,
+        "optional_box_uv": true,
+        "single_texture": false,
+        "per_texture_uv_size": true,
+        "per_group_texture": false,
+        "uv_rotation": true,
+        "box_uv_float_size": false,
+        "integer_size": false,
+        "armature_rig": true,
+        "stretch_cubes": false,
+        "quaternion_interpolation": false,
+        "animation_loop_wrapping": false,
+        "pbr": true,
+        "rotate_cubes": true,
+        "rotation_limit": false,
+        "texture_meshes": false,
+        "locators": true,
+        "molang": true,
+        "java_cube_shade_direction_override": false
+      },
+      "remember_files": [],
+      "animation_grouping": "custom"
+    },
+    "formats": [
+      {
+        "id": "bedrock",
+        "name": "Bedrock 版实体",
+        "supported_features": [
+          "bone_rig",
+          "edit_mode",
+          "paint_mode",
+          "animation_mode",
+          "animation_files",
+          "animation_controllers",
+          "box_uv",
+          "optional_box_uv",
+          "single_texture",
+          "uv_rotation",
+          "pbr",
+          "rotate_cubes",
+          "texture_meshes",
+          "locators",
+          "molang"
+        ]
+      },
+      {
+        "id": "bedrock_block",
+        "name": "Bedrock 版方块",
+        "supported_features": [
+          "bone_rig",
+          "edit_mode",
+          "paint_mode",
+          "display_mode",
+          "optional_box_uv",
+          "uv_rotation",
+          "pbr",
+          "rotate_cubes",
+          "texture_meshes",
+          "molang"
+        ]
+      },
+      {
+        "id": "bedrock_old",
+        "name": "Bedrock 版旧版实体",
+        "supported_features": [
+          "bone_rig",
+          "edit_mode",
+          "paint_mode",
+          "animation_mode",
+          "animation_files",
+          "animation_controllers",
+          "box_uv",
+          "single_texture",
+          "pbr",
+          "locators",
+          "molang"
+        ]
+      },
+      {
+        "id": "free",
+        "name": "通用模型",
+        "supported_features": [
+          "meshes",
+          "bone_rig",
+          "edit_mode",
+          "paint_mode",
+          "animation_mode",
+          "optional_box_uv",
+          "per_texture_uv_size",
+          "uv_rotation",
+          "armature_rig",
+          "pbr",
+          "rotate_cubes",
+          "locators",
+          "molang"
+        ]
+      },
+      {
+        "id": "image",
+        "name": "图像",
+        "supported_features": [
+          "paint_mode",
+          "image_editor",
+          "single_texture",
+          "per_texture_uv_size",
+          "molang"
+        ]
+      },
+      {
+        "id": "java_block",
+        "name": "Java 版方块/物品",
+        "supported_features": [
+          "edit_mode",
+          "paint_mode",
+          "display_mode",
+          "optional_box_uv",
+          "uv_rotation",
+          "pbr",
+          "rotate_cubes",
+          "java_cube_shade_direction_override"
+        ]
+      },
+      {
+        "id": "modded_entity",
+        "name": "模组版实体",
+        "supported_features": [
+          "bone_rig",
+          "edit_mode",
+          "paint_mode",
+          "animation_mode",
+          "box_uv",
+          "single_texture",
+          "box_uv_float_size",
+          "integer_size",
+          "pbr",
+          "rotate_cubes",
+          "molang"
+        ]
+      },
+      {
+        "id": "optifine_entity",
+        "name": "OptiFine 实体",
+        "supported_features": [
+          "bone_rig",
+          "edit_mode",
+          "paint_mode",
+          "box_uv",
+          "optional_box_uv",
+          "per_texture_uv_size",
+          "per_group_texture",
+          "pbr"
+        ]
+      },
+      {
+        "id": "optifine_part",
+        "name": "OptiFine Part",
+        "supported_features": [
+          "bone_rig",
+          "edit_mode",
+          "paint_mode",
+          "box_uv",
+          "optional_box_uv",
+          "per_texture_uv_size",
+          "per_group_texture",
+          "pbr"
+        ]
+      },
+      {
+        "id": "skin",
+        "name": "Minecraft 皮肤",
+        "supported_features": [
+          "bone_rig",
+          "paint_mode",
+          "box_uv",
+          "single_texture",
+          "integer_size",
+          "molang"
+        ]
+      }
+    ],
+    "notes": [
+      "Format features are host declarations, not guarantees of MCP tool compatibility. Null or unknown_features means the host did not declare a boolean value; supported_features lists true flags.",
+      "Tool enabled state reflects native editor conditions. Use list_modes and set_mode to change editor tabs, then refresh tools/list. Calls still validate individual arguments."
+    ]
+  }
+}

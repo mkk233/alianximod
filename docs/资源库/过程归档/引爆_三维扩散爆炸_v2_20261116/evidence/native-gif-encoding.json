@@ -1,0 +1,42 @@
+{
+  "main": {
+    "source": "actual native GUI PNG frames",
+    "fixed_pixel_crop_all_frames": [
+      0,
+      67,
+      1200,
+      814
+    ],
+    "repaint": false
+  },
+  "side": {
+    "source": "actual native GUI PNG frames",
+    "fixed_pixel_crop_all_frames": [
+      24,
+      172,
+      1176,
+      888
+    ],
+    "repaint": false
+  },
+  "strength": {
+    "source": "actual native GUI PNG frames",
+    "fixed_pixel_crop_all_frames": [
+      273,
+      230,
+      1327,
+      538
+    ],
+    "repaint": false
+  },
+  "soul": {
+    "source": "actual native GUI PNG frames",
+    "fixed_pixel_crop_all_frames": [
+      0,
+      67,
+      1200,
+      814
+    ],
+    "repaint": false
+  }
+}

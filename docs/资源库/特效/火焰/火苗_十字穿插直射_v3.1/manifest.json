@@ -1,0 +1,158 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "fire_spark_crossed_launch_preview",
+  "attemptId": "20261113-art-spark-cross-archive-01",
+  "sourceAttemptId": "20261113-art-spark-cross-01",
+  "techniqueId": "fire_spark",
+  "techniqueName": "火苗",
+  "version": "v3.1",
+  "archiveDir": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1",
+  "status": "confirmed_adopted_archived",
+  "userConfirmation": {
+    "date": "2026-11-13",
+    "verbatimQuote": "采用",
+    "2dConfirmedDate": "2026-11-11",
+    "2dVerbatimQuote": "这版可以接入"
+  },
+  "spatialAndRuntimeSpec": {
+    "modelUnitsPerBlock": 16.0,
+    "sparkQuadSizeModelUnits": [12.8, 12.8],
+    "sparkQuadSizeBlocks": [0.8, 0.8],
+    "sparkHalfSpanBlocks": 0.4,
+    "cameraFacingTag": "NONE",
+    "crossedFinAnglesDegAroundForwardAxis": [45.0, -45.0],
+    "forwardUvMapping": "U=1.0 at +half*tangent (flame head forward), U=0.0 at -half*tangent (tapered tail & sparks backward)",
+    "firstPersonVisualDropAlongMinusUpAxisBlocks": 0.245,
+    "firstPersonVisualDropConstant": "BatchCarrierVisualRenderer.SPARK_FIRST_PERSON_DROP = 0.245D",
+    "runtimeTexturePath": "assets/xueximod/textures/effect/fire_spark_v3/fire_spark.png",
+    "runtimeTextureWorkspacePath": "src/main/resources/assets/xueximod/textures/effect/fire_spark_v3/fire_spark.png",
+    "runtimeTextureExpectedSha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E",
+    "runtimeMcmetaPath": "assets/xueximod/textures/effect/fire_spark_v3/fire_spark.png.mcmeta",
+    "runtimeMcmetaSpec": {
+      "blur": false,
+      "clamp": true
+    }
+  },
+  "integrationReceipt": {
+    "attemptId": "20261113-integrate-spark-cross-01",
+    "date": "2026-11-13",
+    "status": "runtime_integrated_pending_unified_compile_and_playtest",
+    "runtimeTexture": {
+      "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/fire_spark_v3/fire_spark.png",
+      "assetPath": "assets/xueximod/textures/effect/fire_spark_v3/fire_spark.png",
+      "bytes": 5005,
+      "sha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E",
+      "matchesConfirmedExport": true
+    },
+    "runtimeMcmeta": {
+      "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/fire_spark_v3/fire_spark.png.mcmeta",
+      "assetPath": "assets/xueximod/textures/effect/fire_spark_v3/fire_spark.png.mcmeta",
+      "blur": false,
+      "clamp": true,
+      "encoding": "UTF-8 no BOM",
+      "bytes": 64,
+      "sha256": "B2CAA414505E1C556CF68460294471D97198A50F3D69ED1FD9B717510C0D6F4A",
+      "byteIdenticalTo": "src/main/resources/assets/xueximod/textures/effect/flame_trail_v3/flame_trail.png.mcmeta"
+    },
+    "preservedV1Texture": "src/main/resources/assets/xueximod/textures/effect/fire_spark_v1/fire_spark.png",
+    "javaSourcesRewritten": false,
+    "report": "D:/alianximod/docs/开发记录/术式批量制作/待制作-20261031/spark-crossed-v31-integration-report-20261113.md",
+    "compile": "pending_unified_compileJava"
+  },
+  "preservedSourceDirectories": [
+    "D:/alianximod/docs/资源库/特效/火焰/火苗_飞行火舌_v3",
+    "D:/alianximod/docs/资源库/特效/火焰/火苗_v1",
+    "D:/alianximod/docs/资源库/过程归档/火苗_v3.1_十字穿插直射示意_20261113"
+  ],
+  "files": [
+    {
+      "file": "fire_spark_v3.aseprite",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire_spark_v3.aseprite",
+      "role": "editable_2d_source",
+      "bytes": 10644,
+      "sha256": "710957E6C13AB8D8CC0C9EA5BD6CFD424041EE5C8F9BE8231CF75D4EB15C8FCA"
+    },
+    {
+      "file": "fire_spark_v3_strip.png",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire_spark_v3_strip.png",
+      "role": "confirmed_2d_strip_export",
+      "bytes": 5005,
+      "sha256": "672DA9132E7E91A83636836A62ADE4778781D51592A541041C511653238DEC5E"
+    },
+    {
+      "file": "fire_spark_v3.gif",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire_spark_v3.gif",
+      "role": "confirmed_2d_preview_gif",
+      "bytes": 26426,
+      "sha256": "A3EA8EB30C557859FCE0D04E21EE0B7E1BFD5E6ED6A155DA456E8F8EE12AB0AE"
+    },
+    {
+      "file": "fire-spark-v3-1-crossed-launch-preview.bbmodel",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire-spark-v3-1-crossed-launch-preview.bbmodel",
+      "role": "editable_blockbench_scene_non_runtime",
+      "bytes": 42052,
+      "sha256": "8E676075011EC74FC596BC0E1F046D7CAC62DACEE87A0CF3B9C79A3567B4C47B"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-01-first-person-launch.png",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire-spark-v3-1-3d-01-first-person-launch.png",
+      "role": "viewport_preview_first_person_launch",
+      "bytes": 50738,
+      "sha256": "A25A668C6ED21C136467E74039802B61F2B8E2FED3AD1C4634F9C86EC3FAF68D"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-02-hero-3quarter.png",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire-spark-v3-1-3d-02-hero-3quarter.png",
+      "role": "viewport_preview_hero_3quarter",
+      "bytes": 107329,
+      "sha256": "B06516E2AB4197529B23851463050E3F5B00525EB4879FEBC47EAEB1190ACA06"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-03-axial-cross-section.png",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire-spark-v3-1-3d-03-axial-cross-section.png",
+      "role": "viewport_preview_axial_cross_section",
+      "bytes": 91082,
+      "sha256": "F4C48F8A7B95B38D1E98BA06F74CB6D930AC686ADB139A2E6F43C6D49CA46F07"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-04-side-view.png",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire-spark-v3-1-3d-04-side-view.png",
+      "role": "viewport_preview_orthographic_side",
+      "bytes": 31892,
+      "sha256": "0039AC3FB33439C300909DDBB4A9F09BB47FF67AE72327155784144783EF52A8"
+    },
+    {
+      "file": "fire-spark-v3-1-3d-05-ray-two-stages.png",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/fire-spark-v3-1-3d-05-ray-two-stages.png",
+      "role": "viewport_preview_two_stage_coaxial_launch",
+      "bytes": 71835,
+      "sha256": "7280F8D7ACFFB13D50881AC04340E8F119DA275D6F006218FA3CC4312844C689"
+    },
+    {
+      "file": "visual-handoff.md",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/visual-handoff.md",
+      "role": "visual_handoff_spec",
+      "bytes": 13554,
+      "sha256": "42BE461D36BFA43588A6B533C37913E53C4DD2A01C7A46C4EBCDBA0645A9C22A"
+    },
+    {
+      "file": "README.md",
+      "path": "D:/alianximod/docs/资源库/特效/火焰/火苗_十字穿插直射_v3.1/README.md",
+      "role": "archive_readme",
+      "bytes": 5954,
+      "sha256": "5CAC1D1B49B95AF8EC2A05950C694E49E54209AFD8B9A8B848C6D93098DB2C1F"
+    }
+  ],
+  "nonRuntimeHelpers": [
+    "fire-spark-v3-1-crossed-launch-preview.bbmodel",
+    "示意辅助",
+    "示意辅助_地面1格刻度网格",
+    "示意辅助_施法玩家假人_28.8高",
+    "示意辅助_中段直射对照_x56",
+    "helper_floor_dark",
+    "helper_floor_light",
+    "helper_dummy_body",
+    "helper_dummy_head",
+    "helper_dummy_eye"
+  ]
+}

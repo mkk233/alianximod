@@ -1,0 +1,64 @@
+{
+  "sha256": "B116CFA34B556D0BC0E7BD69DBE7BB15F19E6264F84B5444CAEFEC7421960E2A",
+  "bytes": 170991,
+  "mtime": "2026-10-30T11:22:55.708+08:00",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "unique": 59,
+  "cells": {
+    "4": {
+      "id": "fire_scorch_field",
+      "C": "法术",
+      "D": "火",
+      "F": "30"
+    },
+    "5": {
+      "id": "fire_meteorite",
+      "C": "法术",
+      "D": "火",
+      "F": "40"
+    },
+    "6": {
+      "id": "fire_shock_ring",
+      "C": "法术",
+      "D": "火",
+      "F": "16"
+    },
+    "9": {
+      "id": "fire_stagger",
+      "C": "通用",
+      "D": "无",
+      "F": null
+    },
+    "10": {
+      "id": "fire_hit_continue",
+      "C": "通用",
+      "D": "无",
+      "F": null
+    },
+    "11": {
+      "id": "fire_seed_sow",
+      "C": "通用",
+      "D": "火",
+      "F": "5"
+    },
+    "15": {
+      "id": "fire_break_ground",
+      "C": "通用",
+      "D": "土",
+      "F": null
+    }
+  },
+  "scorchDamage": "1",
+  "scorchFirst": "20",
+  "scorchLife": "100",
+  "scorchPeriodGone": true,
+  "scorchNHasSeed": true,
+  "earthSentence": true,
+  "detailAmount": "15",
+  "detailPeriod": "20"
+}

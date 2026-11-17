@@ -8,6 +8,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.config.ModConfigEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import com.bslx.XueXiMod.status.WetnessFlightExempt;
+
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -46,21 +48,40 @@ public class Config
             .comment("A list of items to log on common setup.")
             .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), Config::validateItemName);
 
+    private static final ForgeConfigSpec.ConfigValue<List<? extends String>> FLIGHT_EXEMPT_ENTITY_IDS = defineFlightExempt();
+
     static final ForgeConfigSpec SPEC = BUILDER.build();
+
+    static {
+        WetnessFlightExempt.ensureDefault();
+    }
 
     public static boolean logDirtBlock;
     public static int magicNumber;
     public static String magicNumberIntroduction;
     public static Set<Item> items;
 
-    private static boolean validateItemName(final Object obj)
+    private static boolean validateItemName(final Object candidate)
     {
-        return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(ResourceLocation.parse(itemName));
+        return candidate instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(ResourceLocation.parse(itemName));
+    }
+
+    private static ForgeConfigSpec.ConfigValue<List<? extends String>> defineFlightExempt()
+    {
+        BUILDER.push("wetness");
+        ForgeConfigSpec.ConfigValue<List<? extends String>> defined = BUILDER
+                .comment("Registry ids whose entities skip wetness descent only. Other wetness effects still apply. An empty list exempts nobody and does not restore the default.")
+                .defineListAllowEmpty("flightExemptEntityIds", List.of("minecraft:ender_dragon"), WetnessFlightExempt::validSyntax);
+        BUILDER.pop();
+        return defined;
     }
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
+        if (event.getConfig().getSpec() != SPEC) {
+            return;
+        }
         logDirtBlock = LOG_DIRT_BLOCK.get();
         magicNumber = MAGIC_NUMBER.get();
         magicNumberIntroduction = MAGIC_NUMBER_INTRODUCTION.get();
@@ -69,5 +90,6 @@ public class Config
         items = ITEM_STRINGS.get().stream()
                 .map(itemName -> ForgeRegistries.ITEMS.getValue(ResourceLocation.parse(itemName)))
                 .collect(Collectors.toSet());
+        WetnessFlightExempt.replace(FLIGHT_EXEMPT_ENTITY_IDS.get());
     }
 }

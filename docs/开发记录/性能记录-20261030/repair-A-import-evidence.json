@@ -1,0 +1,40 @@
+{
+  "task": "repair-A-import",
+  "author": "A",
+  "model": "grok-4.7-high-fast",
+  "formal_review_opened": false,
+  "rounds_added": 0,
+  "compile": "not_run",
+  "game_test": "not_run",
+  "ownership_released": true,
+  "backup_utc": "2026-10-29T20:58:22.709Z",
+  "diff_utc": "2026-10-29T20:58:36.848Z",
+  "report_hashed_utc": "2026-10-29T20:58:54.049Z",
+  "change": {
+    "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java",
+    "line": 5,
+    "before": "import java.io.FileAlreadyExistsException;",
+    "after": "import java.nio.file.FileAlreadyExistsException;",
+    "diff_line_count": 1,
+    "line_count": 796
+  },
+  "files": [
+    {
+      "path": "docs/开发记录/性能记录-20261030/before-A-import-repair/PerformanceRecorder.java",
+      "bytes": 34455,
+      "sha256": "897A55048AE9C1AAA6CF8FE8D47E8FE8A53C9C73240421555D79244082473065"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java",
+      "bytes": 34461,
+      "sha256": "375D26B74F181922F4BAC10FB47364880A62C811ECB903881035DD8105D430DA",
+      "before_sha256": "897A55048AE9C1AAA6CF8FE8D47E8FE8A53C9C73240421555D79244082473065"
+    },
+    {
+      "path": "docs/开发记录/性能记录-20261030/repair-A-import-final.md",
+      "bytes": 2184,
+      "sha256": "C22EB62CD18BD352B524A5DE415111134DDB1DDE091097FED26FB2E36692536D"
+    }
+  ],
+  "evidence_note": "本 json 不写入自身 sha256。"
+}

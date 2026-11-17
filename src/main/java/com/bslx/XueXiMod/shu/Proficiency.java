@@ -12,7 +12,7 @@ package com.bslx.XueXiMod.shu;
  * 16-20   | 1130-1810   | x1.80-2.00 | x0.68-0.60 | 16%-20%
  */
 public class Proficiency {
-    public static final int MAX_LEVEL = 20;
+    public static final int LEVEL_UPPER_BOUND = 20;
 
     // 每级所需累计使用次数
     private static final int[] USAGE_THRESHOLDS = {
@@ -26,8 +26,8 @@ public class Proficiency {
      * 根据使用次数获取等级
      */
     public static int getLevel(int usageCount) {
-        for (int i = MAX_LEVEL; i >= 0; i--) {
-            if (usageCount >= USAGE_THRESHOLDS[i]) return i;
+        for (int level = LEVEL_UPPER_BOUND; level >= 0; level--) {
+            if (usageCount >= USAGE_THRESHOLDS[level]) return level;
         }
         return 0;
     }
@@ -58,7 +58,7 @@ public class Proficiency {
      */
     public static int getUsageToNextLevel(int currentUsage) {
         int currentLevel = getLevel(currentUsage);
-        if (currentLevel >= MAX_LEVEL) return -1; // 已满级
+        if (currentLevel >= LEVEL_UPPER_BOUND) return -1; // 已满级
         return USAGE_THRESHOLDS[currentLevel + 1] - currentUsage;
     }
 
@@ -68,8 +68,8 @@ public class Proficiency {
      */
     public static int getXpCost(int fromLevel, int toLevel) {
         int cost = 0;
-        for (int i = fromLevel + 1; i <= toLevel; i++) {
-            cost += 10 * i;
+        for (int level = fromLevel + 1; level <= toLevel; level++) {
+            cost += 10 * level;
         }
         return cost;
     }

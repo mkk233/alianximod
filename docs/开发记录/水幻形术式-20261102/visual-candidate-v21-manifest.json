@@ -1,0 +1,62 @@
+{
+  "version": "Steve v2.1 smooth scatter",
+  "shapeMaterialApproval": "accepted user feedback",
+  "animationApproval": "pending",
+  "runtimeIntegrated": false,
+  "files": [
+    {
+      "name": "water_phantom_steve_v2_1.bbmodel",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\water_phantom_steve_v2_1.bbmodel",
+      "bytes": 281867,
+      "sha256": "4ADFCC75ED1E06E62ECE5FD05E6B109787FB1AC46B29CBFC5A8AF8C5425695F7"
+    },
+    {
+      "name": "steve_water_lines.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\steve_water_lines.png",
+      "bytes": 2687,
+      "sha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5"
+    },
+    {
+      "name": "water_flakes.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\water_flakes.png",
+      "bytes": 608,
+      "sha256": "CEFDEE9E3E3FB7F701E19FC9CB3438C586C4841D3A50E3F8C9399A635BD4D70C"
+    },
+    {
+      "name": "bb_preview_50fps.gif",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\bb_preview_50fps.gif",
+      "bytes": 1921027,
+      "sha256": "AB9EE8399F3C321ADECFBB3CCAE179653AF5242283FCC1DD8AF96F29A5414901"
+    },
+    {
+      "name": "bb_hold_three_quarter.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\bb_hold_three_quarter.png",
+      "bytes": 34507,
+      "sha256": "0C214615F19ADBAF7F2E9CF85DAE3125DE6D9002EF59585CBD6A395E036A3D8B"
+    },
+    {
+      "name": "bb_break_mid.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\bb_break_mid.png",
+      "bytes": 58170,
+      "sha256": "057F1898C14BE758AB01845ADEC135D7C4B06EBCFC7762564DCD8282F0CE852D"
+    },
+    {
+      "name": "bb_ground_drops.png",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\bb_ground_drops.png",
+      "bytes": 58119,
+      "sha256": "D0116B3D97ED65EB4524FB88B138A7D6E5BE72B4E0958E0555D3E7DA0A5B0AF6"
+    },
+    {
+      "name": "visual-handoff-candidate.md",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\visual-handoff-candidate.md",
+      "bytes": 5580,
+      "sha256": "1FD3C62B3CAA1899A25FFC1A1CDD06AE9BA170AC2D7E3632ADCEB4F073600C2E"
+    },
+    {
+      "name": "bb-preview-evidence.json",
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\水幻形_Steve水线_v2_1_流畅散水-20261102\\bb-preview-evidence.json",
+      "bytes": 3948,
+      "sha256": "CF93E6537EDC7398067022937C5B0F76DA6B2BF1786EE9240E9BFFD629AAF12E"
+    }
+  ]
+}

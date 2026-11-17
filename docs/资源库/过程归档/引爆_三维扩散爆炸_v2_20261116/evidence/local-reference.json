@@ -1,0 +1,83 @@
+{
+  "archive": "C:\\Users\\baishang\\.gradle\\caches\\forge_gradle\\bundeled_repo\\net\\minecraft\\client\\1.20.1\\client-1.20.1-extra.jar",
+  "sources": "C:\\Users\\baishang\\.gradle\\caches\\forge_gradle\\minecraft_user_repo\\net\\minecraftforge\\forge\\1.20.1-47.3.33_mapped_parchment_2023.06.26-1.20.1\\forge-1.20.1-47.3.33_mapped_parchment_2023.06.26-1.20.1-sources.jar",
+  "entries": [
+    {
+      "entry": "assets/minecraft/particles/explosion.json",
+      "sha256": "02e11b7ccd699217f92c4db0e271dc83925ac22d0d1b99987d64880f71751b15"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_0.png",
+      "sha256": "14329e0d11d644f07d52698fe1116f5a26864a721f0d77e72d5b1f54a1c572b0"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_1.png",
+      "sha256": "2eb32dfc320b85621a91cb6261cf10cce4d5d755a5b041240f525929d5f703db"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_10.png",
+      "sha256": "e166b8ab4d3821dae540daaa8cfb073b44966a87383e26c64a8ca9750301468d"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_11.png",
+      "sha256": "4be5b0241d6091fd8da22221173251811e9765813d55c39283ec65ffb5a512b4"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_12.png",
+      "sha256": "1d4e5b567603e98f6770353fda86e4dad6eaeda60d9e6076fe9ac6927653d7d0"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_13.png",
+      "sha256": "fa825b8fde64d40d5f64138f52468ce6369ee42870c1ea18f64bde74b5c3e273"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_14.png",
+      "sha256": "89ab701df00d106141803f9f839a463d0023bf3aa9998ab4f74eaebecef9b6c8"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_15.png",
+      "sha256": "94d0bbc38b84298316831ea5da745747699036261a57d354cefd9fe755289a19"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_2.png",
+      "sha256": "d42e0e6a94af9411a401b31c9597e4c153e2946c46c97f30f9adec2718743e99"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_3.png",
+      "sha256": "ee43ab4b41bd6846dae98cdaa8d5a2d922c67ac21d73b3395ae170019abaa440"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_4.png",
+      "sha256": "2f2c74554f0b53f8a55af8503a58f74de671001799e6c06a20dd22f0f71c8bb5"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_5.png",
+      "sha256": "d1884c413fdde7805d179edaf9c597a89afeb7603c6ba4e225361e129be2dd80"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_6.png",
+      "sha256": "b6a40db64a88e925c10f3e36b38bbe40c06a1370ee3d09258455fa8c9af28b6c"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_7.png",
+      "sha256": "b49d29f5234cf45891aa06a3323f62ef2b1df789c7648a8555bd2f900eaf0b78"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_8.png",
+      "sha256": "88736321f6f3eb3a9bceb666d2bd41f764a276fec5ac16c38c480cf558b6989a"
+    },
+    {
+      "entry": "assets/minecraft/textures/particle/explosion_9.png",
+      "sha256": "02df87565418792b91a4e93539870d4fa6c2d8f3a2d15b0caf79c216501f21c2"
+    },
+    {
+      "entry": "net/minecraft/client/particle/HugeExplosionParticle.java",
+      "sha256": "ceaeeec9d3a5f97c54ba2a1290ce5d4d4beca5d46fd0c98cd6d057cf1fea48ae"
+    },
+    {
+      "entry": "net/minecraft/client/particle/HugeExplosionSeedParticle.java",
+      "sha256": "e83e0c238b5af8d7440efe0e8801806f172d16447d38a858725f7fa3a256fcbb"
+    }
+  ],
+  "purpose": "read-only local Minecraft 1.20.1 visual reference; not runtime candidate assets"
+}

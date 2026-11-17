@@ -1,0 +1,9 @@
+{
+  "root": "C:\\Users\\baishang\\AppData\\Local\\Temp\\xueximod-grok-wrapper-smoke-20261104-b6edf9ef",
+  "workspace": "C:\\Users\\baishang\\AppData\\Local\\Temp\\xueximod-grok-wrapper-smoke-20261104-b6edf9ef\\workspace",
+  "taskFile": "C:\\Users\\baishang\\AppData\\Local\\Temp\\xueximod-grok-wrapper-smoke-20261104-b6edf9ef\\task.json",
+  "promptFile": "C:\\Users\\baishang\\AppData\\Local\\Temp\\xueximod-grok-wrapper-smoke-20261104-b6edf9ef\\prompt.md",
+  "cursorFixture": "C:\\Users\\baishang\\AppData\\Local\\Temp\\xueximod-grok-wrapper-smoke-20261104-b6edf9ef\\cursor-fixture.ps1",
+  "quotaSource": "simulated author-written fixture",
+  "grokSource": "real installed CLI and user-selected relay"
+}

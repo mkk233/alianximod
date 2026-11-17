@@ -1,0 +1,192 @@
+{
+  "nodes": 85,
+  "learningEdges": 48,
+  "backwardEdges": 0,
+  "sectorNodeCornerViolations": 0,
+  "sectorRouteViolations": 0,
+  "zooms": [
+    {
+      "zoom": 0.75,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 0.8,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 0.85,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 0.9,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 0.95,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.0,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.05,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.1,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.15,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.2,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.25,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.3,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.35,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.4,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.45,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.5,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.55,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.6,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.65,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.7,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.75,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.8,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.85,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.9,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 1.95,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    },
+    {
+      "zoom": 2.0,
+      "nodeOverlaps": 0,
+      "altarHits": 0,
+      "nodeHits": 0,
+      "properCrossings": 0
+    }
+  ],
+  "geometryClass": "file:/D:/alianximod/build/classes/java/main/"
+}

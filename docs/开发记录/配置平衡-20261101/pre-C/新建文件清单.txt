@@ -1,0 +1,4 @@
+作者 C 阶段 C2。以下路径在本阶段开始时不存在，没有可备份的旧字节。
+清单相对工作区 D:/alianximod。
+
+src/main/java/com/bslx/XueXiMod/shu/technique/enchant/SpecialBalance.java

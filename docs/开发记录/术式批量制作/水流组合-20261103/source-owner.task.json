@@ -1,0 +1,19 @@
+{
+  "batchId": "water-vortex-20261103",
+  "taskId": "source-owner",
+  "workspace": "D:/alianximod",
+  "stage": "delivery",
+  "operation": "final-compile-standalone-vortex-v4",
+  "authorization": "源码接入已收束，用户原授权含项目规定串行最终编译；当前无活跃源码/Gradle，唯一编译执行者source-owner，不改源码",
+  "inputVersion": "独立旋流立体返修-20261109-统一编译.md+接入报告a20261109101211882f34f+共享最新作者收束a20261109104456858c833",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/build/",
+    "D:/alianximod/.gradle/",
+    "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/编译报告.md",
+    "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/证据"
+  ],
+  "dependencies": [
+    "sheet-owner"
+  ]
+}

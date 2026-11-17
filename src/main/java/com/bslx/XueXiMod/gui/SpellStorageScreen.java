@@ -18,10 +18,10 @@ public class SpellStorageScreen extends AbstractContainerScreen<SpellStorageMenu
 
     @Override
     protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
-        int x = this.leftPos;
-        int y = this.topPos;
-        graphics.blit(TEXTURE, x, y, 0, 0, this.imageWidth, 71);
-        graphics.blit(TEXTURE, x, y + 71, 0, 126, this.imageWidth, 96);
+        int pointX = this.leftPos;
+        int pointY = this.topPos;
+        graphics.blit(TEXTURE, pointX, pointY, 0, 0, this.imageWidth, 71);
+        graphics.blit(TEXTURE, pointX, pointY + 71, 0, 126, this.imageWidth, 96);
     }
 
     @Override

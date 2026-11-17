@@ -1,0 +1,8 @@
+最新方向要求（2026-10-30）：站立时剑尖朝下、剑柄靠近玩家；横身俯冲时，八柄剑阵整体移动到腿部。
+模型：liaoli-dive-leg-array.bbmodel，使用 Blockbench MCP 调整与导出。
+动画 animation.liaoli_standing_to_dive：0—1秒站立，1—2秒翻转并向腿部平移，2—3秒横身俯冲且剑阵位于腿部。
+BackFan 的 position 在站立段是 [0,0,0]，俯冲段是 [0,-14,0]，使用 BodyPose 的局部坐标，因此角色横置后整组剑阵朝腿部移动。八剑相对位置与方向未变。
+图片 dive-leg-side.png 为横置侧面，角色头在右、腿在左。
+此处只调整预览，未改游戏源码、运行时资源或术式制作表。
+
+最新微调：用户要求“往前一点点”，俯冲段 BackFan.position 从 [0,-14,0] 改为 [0,-12,0]，即朝头部前移 2 个模型单位；站立段和剑的角度排列保持原样。最新模型 liaoli-dive-leg-array-forward.bbmodel，图片 dive-leg-forward-side.png。

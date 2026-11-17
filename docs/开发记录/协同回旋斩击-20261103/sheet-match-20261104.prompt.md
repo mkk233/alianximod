@@ -1,0 +1,3 @@
+原sheet-record task/session续跑，仅事实收集，Cursor CLI --model grok-4.7-high-fast。无正式复审，无编译，无表迁移，无源码写权限。原批次设计1/2（第2轮新设计进行中）实现3/3，不能另开校验额度。
+当前用户直接返修协同/回旋/斩击与普通分身，前次工作簿无匹配编号。但如今docs/术式制作表.xlsx SHA256=5CD41F680C9E0E98EF8A3BB191B6F2E29BE85F7D9FFE49882BF1224591F83305，发生变化。只读当前四页和已有sheet-match-report.md，按名称/稳定ID及实际详细需求匹配本范围，不能只抓同名词；不从已完成领取、不自动改状态、不臆造编号。保持原表完全不写。若当前有人写表，采前后哈希只报告观察版本与不稳定，不覆盖。
+输出到唯一允许的sheet-match-20261104.md：时间、哈希、mtime、四页各数量、本范围匹配或无匹配、如有明确匹配则B/当前页/NODV原文/现有快照路径可追溯性。不要审核其它条目或评判实现正确性。最终完整CURSOR_TASK_REPORT reported_done/blocked/needs_input/failed，writesSettled，changedFiles仅报告文档，checks/notRun等。无需使用大型表创作工具或修改文件。

@@ -1,0 +1,25 @@
+{
+  "sourceEditor": "Aseprite batch Lua MCP",
+  "sourceFrameCount": 16,
+  "sourceDurationSeconds": 1.6,
+  "rotation": "CCW from above",
+  "rotationDurationSeconds": 2.4,
+  "combinedLoopSeconds": 4.8,
+  "outerClusters": 20,
+  "innerClusters": 16,
+  "sharedRotationParent": "a738413f-61fe-e1ed-6b73-11ddba7a6884",
+  "loopStateEqual": true,
+  "frameChecks": {
+    "fixed": {
+      "count": 96,
+      "unique": 96
+    },
+    "top": {
+      "count": 96,
+      "unique": 96
+    }
+  },
+  "allTexturesEmbedded": true,
+  "nativeRenderErrors": [],
+  "gameIntegrated": false
+}

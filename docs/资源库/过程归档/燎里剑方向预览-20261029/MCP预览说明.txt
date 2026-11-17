@@ -1,0 +1,6 @@
+当前可查看模型：liaoli-direction-mcp-preview.bbmodel
+此文件由 Blockbench MCP 导出，已将 32 个剑网格从绝对顶点坐标转换为相对各自 origin 的局部坐标。
+side-final.png 为侧面：玩家面朝右，红柄近背，金色尖端向左后方远离玩家。
+rear-final.png 为背面：八柄剑左右镜像。
+仅方向沟通草稿，未改游戏代码、运行时资源或制作表。
+早期 liaoli-hilt-near-tip-far.bbmodel 是离散立方体草稿；liaoli-hilt-near-tip-far-continuous.bbmodel 是尚未校正局部顶点的中间稿，请使用上面的 MCP 导出版。

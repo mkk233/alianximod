@@ -1,0 +1,25 @@
+{
+  "submitted": false,
+  "reason": "独占打开失败：术式制作表.xlsx 被其他进程占用。候选保留，现表未覆盖。",
+  "from": {"sheet": "制作中", "row": 6, "id": "fire_liaoyuan"},
+  "intendedTo": {"sheet": "待验收", "row": 5, "id": "fire_liaoyuan"},
+  "actual": {"sheet": "制作中", "row": 6, "id": "fire_liaoyuan"},
+  "baselineSha256": "FEFBC4B30087C08C6E8B9B6C482FEEEBC8DB6F6F3E65F6B88117E4D3D630C070",
+  "baselineMtime": "2026-10-29 23:09:37.059",
+  "baselineBytes": 167294,
+  "liveAfterFailedSubmit": {
+    "bytes": 167294,
+    "mtime": "2026-10-29 23:09:37.059",
+    "sha256": "未重算。独占失败后共享读取也被占用，大小和时间仍是基线。"
+  },
+  "historicalBaselineNotUsed": "50877EAF6C0D34DAAA49465DE447F8600073BE19348D3C90B96B2F0A1D4985E7",
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoyuan-visual-writeback-术式制作表-20261029-232409-1.xlsx",
+  "candidate": "docs/开发记录/术式批量制作/火系六式-20261029/liaoyuan-visual-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "FF2D4227625B4C1E19ADD49BC34BFCFD6B9CA98F0C8D221FF6AA98AB0B75E0E8",
+  "candidateCounts": {"已完成": 40, "待制作": 13, "制作中": 3, "待验收": 3, "unique": 59},
+  "liveCountsUnchanged": {"已完成": 40, "待制作": 13, "制作中": 4, "待验收": 2, "unique": 59},
+  "deliveryComplete": true,
+  "moved": false,
+  "playtestPassed": false,
+  "quota": "设计2/2、实现3/3承接。本阶段额度已用完，返修结果未追加复审。"
+}

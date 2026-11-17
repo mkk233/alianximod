@@ -1,0 +1,39 @@
+{
+  "status": "moved_to_pending_acceptance",
+  "id": "fire_meteorite",
+  "from": {"sheet": "制作中", "row": 16},
+  "to": {"sheet": "待验收", "row": 9},
+  "countsBefore": {"已完成": 40, "待制作": 0, "制作中": 14, "待验收": 6},
+  "countsAfter": {"已完成": 40, "待制作": 0, "制作中": 13, "待验收": 7},
+  "uniqueIds": 60,
+  "rowCountConserved": true,
+  "baselineSha256": "D2F7D3F0DCDFFDF370D3083A9CBFF22B30AA94A67CC206B7BE7502D112748242",
+  "baselineMtime": "2026-11-02T02:42:54.519+08:00",
+  "afterSha256": "204CE85DB0092B25C7818C014391A1A9E6FA441689178FE553B8E7BA1BA7D69D",
+  "afterMtime": "2026-11-02T03:02:22.570+08:00",
+  "backup": "docs/开发记录/陨岩三分落点返修-20261102/备份/术式制作表-20261102-030207-1.xlsx",
+  "requirementSnapshot": "docs/开发记录/陨岩三分落点返修-20261102/快照/待验收需求-20261102-030207-1.md",
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "started": "2026-11-02T02:56:32.9068567+08:00",
+    "ended": "2026-11-02T02:57:01.8956800+08:00",
+    "exitCode": 0,
+    "compileJava": "EXECUTED",
+    "javacExecuted": true,
+    "sourceUnchanged": true,
+    "sourceSha256": "827a767db942ce2e58dd9fade5dc77694e217e37df55cb63a6e594d4b4fb488c"
+  },
+  "textureSha256": "a0f7027b8b39c4f9f3aaabb9e05713c42e5b0e86697c89d9294848a9b228e1d8",
+  "gameTested": false,
+  "formalReviewAdded": false,
+  "writesStopped": true,
+  "blockers": [],
+  "verifyOk": true,
+  "playtest": {
+    "idAndName": "fire_meteorite / 陨岩（一分为三＋落点指定＋垂落组合）",
+    "precondition": "载入本次修复；装配上述完整链条，先选开阔平地，随后再看凹坑或墙边。",
+    "steps": "准星指定地面施放，观察生成和下落是否能分辨三份，确认实际数量只有3；再观察实体命中后续飞和触地残留。",
+    "expected": "三份使用各自的落点取样和垂落路径，垂落继承指定位置，飞行不再因索引恒0而全部重合；实体命中仍续飞至触地、首命中不重复，残留仍按合法空位放置。狭窄地形补位可能同列，游戏效果待用户实测。",
+    "userFeedback": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "submitted": false,
+  "baselineSha256": "B116CFA34B556D0BC0E7BD69DBE7BB15F19E6264F84B5444CAEFEC7421960E2A",
+  "backup": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\备份\\热波-术式制作表-20261030-113505-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\热波-candidate-preserved.xlsx",
+  "candidateSha256": "38649FA8068C42576D675D0EBF203D75EBF843B385CFC3092D769EF2E47798D3",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "archiveNameHits": {
+    "xl/worksheets/sheet5.xml": 0,
+    "xl/worksheets/sheet7.xml": 0
+  }
+}

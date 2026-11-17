@@ -1,0 +1,14 @@
+{
+  "batchId": "cooperative-slash-20261103",
+  "taskId": "sheet-record",
+  "workspace": "D:/alianximod",
+  "stage": "delivery",
+  "operation": "collect_existing_facts",
+  "authorization": "用户2026-11-04同范围游戏返修，制作表哈希已变化，本单仅收集当前四页匹配事实，不迁表、不改源码、不做复审",
+  "inputVersion": "gameplay-feedback-20261104",
+  "recordPath": "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/sheet-match-20261104.md"
+  ],
+  "dependencies": []
+}

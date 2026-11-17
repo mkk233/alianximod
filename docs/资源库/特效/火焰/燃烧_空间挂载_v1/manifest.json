@@ -1,0 +1,168 @@
+{
+  "version": "burn-v3-spatial-v1",
+  "date": "2026-11-01",
+  "status": "用户已确认，已接入源码，compileJava 已通过，制作表已迁待验收，待用户游戏实测",
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "java_home": "C:\\Program Files\\Java\\jdk-17",
+    "gradle_user_home": "C:\\Users\\baishang\\.gradle",
+    "started_at": "2026-11-01T21:37:58.9101183+08:00",
+    "ended_at": "2026-11-01T21:38:35.9135652+08:00",
+    "exit_code": 0,
+    "result": "BUILD SUCCESSFUL in 35s",
+    "javac_started": true,
+    "game_unverified": true
+  },
+  "approval": "可以就这版接入",
+  "arm_direction": "整团火焰随手臂一起转动",
+  "source_directory": "D:\\alianximod\\docs\\资源库\\过程归档\\燃烧v3_Blockbench挂载示意-20261101",
+  "files": [
+    {
+      "file": "burn-v3-spatial-parts.aseprite",
+      "bytes": 90299,
+      "sha256": "5dfe88d2d34393cd3e9c517cf77af04747d00e7afb1877c8f556223514df4603"
+    },
+    {
+      "file": "燃烧v3_空间挂载示意_v1.bbmodel",
+      "bytes": 205310,
+      "sha256": "c1b437820058eca7c579f5e52d10e84bbe1f7fb9d258c7611579710e5dd41890"
+    },
+    {
+      "file": "native-mount-parameters.json",
+      "bytes": 6291,
+      "sha256": "d718ac6d0f9375ce2deafb372bf25a08c57f9f29cd4b4a5f6cdb46628c02a6eb"
+    },
+    {
+      "file": "视觉交接_待确认.md",
+      "bytes": 5711,
+      "sha256": "0f88ad9534826ef1c8840b5b092c85664eb5314472c7d902a48f84be246b6188"
+    },
+    {
+      "file": "burn-v3-cape-strip.png",
+      "bytes": 26704,
+      "sha256": "86d239c18d17e9bc28e3281994e87df927148d87af5caf34859126e8dc7fd446"
+    },
+    {
+      "file": "burn-v3-rear_right-strip.png",
+      "bytes": 3310,
+      "sha256": "b0ee58455929537b267c6a47a3eb381f356a12e99baa86239128a8412e865953"
+    },
+    {
+      "file": "burn-v3-rear_left-strip.png",
+      "bytes": 3794,
+      "sha256": "c4d8a91f9096cb1828f3092028235c214da1fbb443759117b6a5b5b0e0b44403"
+    },
+    {
+      "file": "burn-v3-shoulder_right-strip.png",
+      "bytes": 2949,
+      "sha256": "b9bf733919bfd1c1fd19a792a9225998d03a79c9b1ba5f1a689880f505324873"
+    },
+    {
+      "file": "burn-v3-shoulder_left-strip.png",
+      "bytes": 2753,
+      "sha256": "cd745b952319f145a3518336279f1bedf20619f8dac91cb472725ed4329e264a"
+    },
+    {
+      "file": "burn-v3-abdomen_right-strip.png",
+      "bytes": 4187,
+      "sha256": "97448a9fadf0a6f95ba5bceb0f96ed65569280ec936709f6eae2e4a1f85a9b4d"
+    },
+    {
+      "file": "burn-v3-abdomen_left-strip.png",
+      "bytes": 3929,
+      "sha256": "7e01d643b2720b9a9c22d52de4733e06b11d6ccba20e6e01565b257b323d89ef"
+    },
+    {
+      "file": "burn-v3-hip_left-strip.png",
+      "bytes": 3195,
+      "sha256": "256da0c0993433bf015b9db43e13d636ec704c55e808ba54d310fa23a1e5297d"
+    },
+    {
+      "file": "burn-v3-shin_right-strip.png",
+      "bytes": 3875,
+      "sha256": "41a6db7f2f1ee58ab7ea352ff676d1a1a0f18c82415d91b002ff89ab3b5dfaa0"
+    },
+    {
+      "file": "burn-v3-shin_left-strip.png",
+      "bytes": 3487,
+      "sha256": "b0d91da6c1ee7d45fe0e9e14a926aeea4b0bd8e35892e7ad6b387fa776dae2ec"
+    },
+    {
+      "file": "burn-v3-hand_right-strip.png",
+      "bytes": 10536,
+      "sha256": "8840258d0692978f2820d4d48392ac00fcc1ea6d14190d18e3e5dcd4069afd40"
+    },
+    {
+      "file": "burn-v3-hand_left-strip.png",
+      "bytes": 10390,
+      "sha256": "bf362acad8f184e27574e2fb9c0ce5b18fd65eeda980ca752d27278d4b38c9f5"
+    },
+    {
+      "file": "burn-v3-hand_embers_right-strip.png",
+      "bytes": 1785,
+      "sha256": "1425d19f791ee2beb590df8444a1aca0246e163608beff6824f26cd27d6f062f"
+    },
+    {
+      "file": "burn-v3-hand_embers_left-strip.png",
+      "bytes": 1709,
+      "sha256": "b410bac8441a9fd0980f23f037127552a3466bb4362d1f0dd29e142cbf34fc6c"
+    },
+    {
+      "file": "burn-v3-body_embers-strip.png",
+      "bytes": 4528,
+      "sha256": "8199646c831cd9bc252998bf85f8c07f0a1f6964fdc5812b127d2cf16bb091a7"
+    },
+    {
+      "file": "burn-v3-embers-strip.png",
+      "bytes": 6217,
+      "sha256": "3c09e9c9969327f0c2cf5ddbadc1810d871318053355be9571e41e54362f4295"
+    },
+    {
+      "file": "bb-front-animation.gif",
+      "bytes": 320690,
+      "sha256": "9ed0035b7c9dc3ee53cb6bf760ac630494f4df44ac81b82d379dab643000c281"
+    },
+    {
+      "file": "bb-back-animation.gif",
+      "bytes": 370530,
+      "sha256": "94453b21750d3e2a22f1de56e7184d15cecf713a4631117ca6ba12487e19b0a0"
+    },
+    {
+      "file": "bb-side-depth.png",
+      "bytes": 28758,
+      "sha256": "2d48d31d5fd1e5539e30a6b63f77649321ea093881be11a9cff49a5e99f95eda"
+    },
+    {
+      "file": "bb-hand-held-detail.png",
+      "bytes": 50228,
+      "sha256": "0864c857259d0fab66c8da6a2b5e889c251f97cb5c9730ac8dc8f341e6c24040"
+    },
+    {
+      "file": "blockbench-app-proof.png",
+      "bytes": 213714,
+      "sha256": "a9dee3acd3c24d4d107223a9012a59889fc6e415211d3f2b917847edc990e0f3"
+    }
+  ],
+  "runtime": {
+    "mesh": "src/main/resources/assets/xueximod/models/effect/burn_spatial_v1/mount.json",
+    "loop": "src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/loop/",
+    "entry": "src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/entry/",
+    "helpers_excluded": [
+      "示意辅助_玩家",
+      "示意辅助_head",
+      "示意辅助_body",
+      "示意辅助_right_arm",
+      "示意辅助_left_arm",
+      "示意辅助_right_leg",
+      "示意辅助_left_leg",
+      "示意辅助_持物杆_不进游戏",
+      "示意辅助_第一人称持物"
+    ],
+    "timing": {
+      "loop": "20x80ms",
+      "entry": "8x60ms"
+    },
+    "two_dimension_source": "docs/资源库/特效/火焰/燃烧_双手附焰与火焰披风_v3/",
+    "entry_split": "循环分件并集遮罩逐像素拷贝 furnace_v2 入场整层，不改色。身体遮罩外 0 像素；火星遮罩外 95 像素按火舌根部就近归件。"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "project": "0d65d0f5-9590-698b-4313-bc901925bd9c",
+  "unitsPerBlock": 16,
+  "impactCenterModel": [
+    0,
+    0,
+    0
+  ],
+  "groundTopY": 8,
+  "rootHeightAboveGroundBlocks": 0.03,
+  "previewTriggerTime": 0.4,
+  "dustDuration": 0.8,
+  "clearTail": [
+    1.2,
+    2
+  ],
+  "removedCells": 23,
+  "emitters": [
+    {
+      "id": "01",
+      "variant": "a",
+      "rootOffsetFromImpactCenter": [
+        -1.52,
+        0.53,
+        -0.22
+      ],
+      "cardSizeBlocks": [
+        1.15,
+        1.15
+      ],
+      "driftBlocks": [
+        -0.58,
+        0.2375,
+        -0.1
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "02",
+      "variant": "b",
+      "rootOffsetFromImpactCenter": [
+        -1.05,
+        0.53,
+        1.05
+      ],
+      "cardSizeBlocks": [
+        1.22,
+        1.22
+      ],
+      "driftBlocks": [
+        -0.4,
+        0.2375,
+        0.43
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "03",
+      "variant": "c",
+      "rootOffsetFromImpactCenter": [
+        0.15,
+        0.53,
+        1.62
+      ],
+      "cardSizeBlocks": [
+        1.12,
+        1.12
+      ],
+      "driftBlocks": [
+        0.04,
+        0.2375,
+        0.6
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "04",
+      "variant": "a",
+      "rootOffsetFromImpactCenter": [
+        1.2,
+        0.53,
+        0.92
+      ],
+      "cardSizeBlocks": [
+        1.3,
+        1.3
+      ],
+      "driftBlocks": [
+        0.44,
+        0.2375,
+        0.36
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "05",
+      "variant": "c",
+      "rootOffsetFromImpactCenter": [
+        1.62,
+        0.53,
+        -0.3
+      ],
+      "cardSizeBlocks": [
+        1.17,
+        1.17
+      ],
+      "driftBlocks": [
+        0.62,
+        0.2375,
+        -0.15
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "06",
+      "variant": "b",
+      "rootOffsetFromImpactCenter": [
+        0.88,
+        0.53,
+        -1.27
+      ],
+      "cardSizeBlocks": [
+        1.28,
+        1.28
+      ],
+      "driftBlocks": [
+        0.36,
+        0.2375,
+        -0.5
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "07",
+      "variant": "a",
+      "rootOffsetFromImpactCenter": [
+        -0.36,
+        0.53,
+        -1.62
+      ],
+      "cardSizeBlocks": [
+        1.16,
+        1.16
+      ],
+      "driftBlocks": [
+        -0.13,
+        0.2375,
+        -0.64
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "08",
+      "variant": "c",
+      "rootOffsetFromImpactCenter": [
+        -1.28,
+        0.53,
+        -1.12
+      ],
+      "cardSizeBlocks": [
+        1.08,
+        1.08
+      ],
+      "driftBlocks": [
+        -0.47,
+        0.2375,
+        -0.43
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "09",
+      "variant": "b",
+      "rootOffsetFromImpactCenter": [
+        -0.42,
+        0.53,
+        0.2
+      ],
+      "cardSizeBlocks": [
+        1.25,
+        1.25
+      ],
+      "driftBlocks": [
+        -0.3,
+        0.2375,
+        0.14
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "10",
+      "variant": "a",
+      "rootOffsetFromImpactCenter": [
+        0.48,
+        0.53,
+        0.28
+      ],
+      "cardSizeBlocks": [
+        1.19,
+        1.19
+      ],
+      "driftBlocks": [
+        0.35,
+        0.2375,
+        0.22
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    },
+    {
+      "id": "11",
+      "variant": "c",
+      "rootOffsetFromImpactCenter": [
+        0.1,
+        0.53,
+        -0.52
+      ],
+      "cardSizeBlocks": [
+        1.12,
+        1.12
+      ],
+      "driftBlocks": [
+        0.06,
+        0.2375,
+        -0.4
+      ],
+      "durationMs": 800,
+      "animationFrameMs": 50,
+      "textureAnchorPx": [
+        16,
+        28
+      ]
+    }
+  ],
+  "anchorMeaning": "Pixel (16,28) at mouth +0.03 blocks; lower 4 transparent texels lie below root, not colored dust"
+}

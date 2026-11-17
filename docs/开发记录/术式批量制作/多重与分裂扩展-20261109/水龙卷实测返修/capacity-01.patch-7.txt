@@ -1,0 +1,11 @@
+*** Begin Patch
+*** Update File: src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/motion/VolumeMotionRuntime.java
+@@
+     private static String occupancyText(ReleaseMotionLedger ledger, DomainInstance host) {
+-        double limit = SpecialBalance.number(host.definition().balanceId(), BalanceKeys.OCCUPIED_VOLUME_LIMIT, 12.0D);
++        double limit = occupiedVolumeLimit(host);
+         ServerLevel level = host.hostLevel();
+         double occupied = level == null || ledger == null ? 0.0D : heldVolume(ledger, host, level);
+         return "已占=" + occupied + " 上限=" + limit;
+     }
+*** End Patch

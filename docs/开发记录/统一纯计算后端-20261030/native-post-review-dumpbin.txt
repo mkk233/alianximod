@@ -1,0 +1,209 @@
+dumpbin=D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\dumpbin.exe
+dll=D:\alianximod\native\compute\build\xueximod_compute.dll
+dllLength=26112
+dllLastWriteUtc=2026-10-30T08:40:59.0017107Z
+--- dumpbin /headers ---
+Microsoft (R) COFF/PE Dumper Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file D:\alianximod\native\compute\build\xueximod_compute.dll
+
+PE signature found
+
+File Type: DLL
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               6 number of sections
+        6AE4581A time date stamp Fri Oct 30 16:40:58 2026
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+            2022 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+                   DLL
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.35 linker version
+            4000 size of code
+            2200 size of initialized data
+               0 size of uninitialized data
+            4598 entry point (0000000180004598)
+            1000 base of code
+       180000000 image base (0000000180000000 to 000000018000AFFF)
+            1000 section alignment
+             200 file alignment
+            6.00 operating system version
+            0.00 image version
+            6.00 subsystem version
+               0 Win32 version
+            B000 size of image
+             400 size of headers
+            B187 checksum
+               2 subsystem (Windows GUI)
+             160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+            5D70 [     274] RVA [size] of Export Directory
+            5FE4 [      64] RVA [size] of Import Directory
+            9000 [     1B4] RVA [size] of Resource Directory
+            8000 [     420] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+            A000 [      28] RVA [size] of Base Relocation Directory
+            5410 [      1C] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+            52D0 [     140] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+            5000 [     110] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+    3EF8 virtual size
+    1000 virtual address (0000000180001000 to 0000000180004EF7)
+    4000 size of raw data
+     400 file pointer to raw data (00000400 to 000043FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+    140E virtual size
+    5000 virtual address (0000000180005000 to 000000018000640D)
+    1600 size of raw data
+    4400 file pointer to raw data (00004400 to 000059FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    6AE4581A coffgrp      230 000054D0     48D0
+
+SECTION HEADER #3
+   .data name
+      C8 virtual size
+    7000 virtual address (0000000180007000 to 00000001800070C7)
+     200 size of raw data
+    5A00 file pointer to raw data (00005A00 to 00005BFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+     420 virtual size
+    8000 virtual address (0000000180008000 to 000000018000841F)
+     600 size of raw data
+    5C00 file pointer to raw data (00005C00 to 000061FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+   .rsrc name
+     1B4 virtual size
+    9000 virtual address (0000000180009000 to 00000001800091B3)
+     200 size of raw data
+    6200 file pointer to raw data (00006200 to 000063FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #6
+  .reloc name
+      28 virtual size
+    A000 virtual address (000000018000A000 to 000000018000A027)
+     200 size of raw data
+    6400 file pointer to raw data (00006400 to 000065FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+--- dumpbin /exports ---
+Microsoft (R) COFF/PE Dumper Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file D:\alianximod\native\compute\build\xueximod_compute.dll
+
+File Type: DLL
+
+  Section contains the following exports for xueximod_compute.dll
+
+    00000000 characteristics
+    FFFFFFFF time date stamp
+        0.00 version
+           1 ordinal base
+           7 number of functions
+           7 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001000 Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorBlockedBatch
+          2    1 00001400 Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorContactBatch
+          3    2 000017D0 Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_corridorOverlapsBatch
+          4    3 000019F0 Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_handshake
+          5    4 00001AC0 Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_trackingStepBatch
+          6    5 00001D70 Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_trajectoryBatch
+          7    6 000020D0 Java_com_bslx_XueXiMod_shu_compute_XuexiComputeNative_turnBatch
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

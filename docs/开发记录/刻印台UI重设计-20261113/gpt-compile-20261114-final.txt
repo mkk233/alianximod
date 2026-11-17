@@ -1,0 +1,190 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 17.0.6, JVM: 17.0.6+9-LTS-190 (Oracle Corporation), Arch: amd64
+
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createMcpToSrg UP-TO-DATE
+
+> Task :compileJava
+ע: SpongePowered MIXIN Annotation Processor Version=0.8.5
+ע: Supported obfuscation types: ObfuscationServiceMCP supports [notch] ObfuscationServiceFG3 supports [searge]
+ע: Loading searge mappings from D:\alianximod\build\createMcpToSrg\output.tsrg
+ע: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+ע: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+ע: Writing searge composite mappings to D:\alianximod\build\tmp\compileJava\compileJava-mappings.tsrg
+ע: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+ע: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+ע: Writing searge composite mappings to D:\alianximod\build\tmp\compileJava\compileJava-mappings.tsrg
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\cooperative\api\WeaponDisplaySnapshot.java:18: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation("minecraft", "air"), 0, null, true);
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\action\spacecut\SpaceCutSampler.java:34: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation TRACKS = new ResourceLocation(
+                                                   ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainFlowRenderer.java:27: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation FLOW = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/water_flow_v3_1.png");
+                                                 ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainFlowRenderer.java:28: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation BUBBLE = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/water_bubble_v3_1.png");
+                                                   ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainMistRainRenderer.java:17: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation TEXTURE = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/mist_rain_80.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainMistRingRenderer.java:13: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation TEXTURE = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/mist_panel.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainMistShaders.java:18: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, "rendertype_entity_translucent_mist");
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainPressureRenderer.java:17: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation BANDS = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/deep_pressure_bands.png");
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainPressureRenderer.java:18: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation ARCS = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/deep_pressure_arcs.png");
+                                                 ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainWorldRenderer.java:23: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/block/water_still.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:27: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation HIT_ID = new ResourceLocation(XueXiMod.MOD_ID, "technique_hit");
+                                                   ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:28: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation SWORD_ID = new ResourceLocation(XueXiMod.MOD_ID, "sword_entity");
+                                                     ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:29: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation BARRIER_ID = new ResourceLocation(XueXiMod.MOD_ID, "barrier_body");
+                                                       ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:31: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, MeteoriteWreckageTypes.ENTITY_ID);
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:33: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, BatchCarrierTypes.ENTITY_ID);
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\FireSeedFlameClient.java:49: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, "textures/effect/fire_seed/fire_seed_flame.png");
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\FireVisualClient.java:705: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        return new ResourceLocation(XueXiMod.MOD_ID, path);
+               ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\furnace\FurnaceBodyVisual.java:260: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        return new ResourceLocation(XueXiMod.MOD_ID, path);
+               ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\furnace\BurnSpatialMount.java:39: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation MOUNT = new ResourceLocation(
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\furnace\BurnSpatialMount.java:208: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        return new ResourceLocation(XueXiMod.MOD_ID,
+               ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\furnace\HeatUpSpatialMount.java:241: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        return new ResourceLocation(XueXiMod.MOD_ID, "textures/effect/furnace_v3/" + fileName);
+               ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\LiaoliRingTrail.java:88: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                new ResourceLocation(XueXiMod.MOD_ID, LiaoliV6Layout.REAR_RING));
+                ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\LiaoliV6Renderer.java:25: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation SWORD_UNLIT = new ResourceLocation(XueXiMod.MOD_ID, LiaoliV6Layout.SWORD_UNLIT);
+                                                        ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\LiaoliV6Renderer.java:26: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation SWORD_HOT = new ResourceLocation(XueXiMod.MOD_ID, LiaoliV6Layout.SWORD_HOT);
+                                                      ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\LiaoliV6Renderer.java:27: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation BACK_IGNITE = new ResourceLocation(XueXiMod.MOD_ID, LiaoliV6Layout.BACK_IGNITE);
+                                                        ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\LiaoliV6Renderer.java:28: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation BACK_FLOW = new ResourceLocation(XueXiMod.MOD_ID, LiaoliV6Layout.BACK_FLOW);
+                                                      ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\LiaoliV6Renderer.java:29: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation THRUST_STREAM = new ResourceLocation(XueXiMod.MOD_ID, LiaoliV6Layout.THRUST_STREAM);
+                                                          ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\LiaoliV6Renderer.java:30: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation REAR_RING = new ResourceLocation(XueXiMod.MOD_ID, LiaoliV6Layout.REAR_RING);
+                                                      ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\NetherDomainWisps.java:33: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    public static final ResourceLocation SHEET = new ResourceLocation(XueXiMod.MOD_ID,
+                                                 ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\network\prison\PrisonSyncPacket.java:243: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        ResourceLocation dimensionId = view.dimension() == null ? new ResourceLocation("minecraft", "overworld")
+                                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\PrisonShellRenderer.java:35: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation TEXTURE = new ResourceLocation(
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\StillDomainWaterClient.java:14: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation STILL = new ResourceLocation("minecraft", "block/water_still");
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\StillDomainWaterClient.java:15: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation FLOWING = new ResourceLocation("minecraft", "block/water_flow");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\StillDomainWaterClient.java:16: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation OVERLAY = new ResourceLocation("minecraft", "block/water_overlay");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\StillDomainWaterClient.java:50: ����: [removal] ItemBlockRenderTypes �е� setRenderLayer(Block,RenderType) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        ItemBlockRenderTypes.setRenderLayer(StillDomainFluids.BLOCK.get(), RenderType.translucent());
+                            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\SwordEntityRenderer.java:82: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        return new ResourceLocation("minecraft", "textures/misc/white.png");
+               ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\TechniqueHitRenderer.java:31: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation TEXTURE = new ResourceLocation("textures/entity/shulker/spark.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\TechniqueHitRenderer.java:32: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation BEAM_TEXTURE = new ResourceLocation("textures/entity/beacon_beam.png");
+                                                         ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\WaterBarrierRenderer.java:22: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/block/water_still.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\WaterPartingRenderer.java:19: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation SPARK = new ResourceLocation("textures/entity/shulker/spark.png");
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\WaterRibbonRenderer.java:24: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation SPARK = new ResourceLocation("textures/entity/shulker/spark.png");
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\combat\counter\CounterDamage.java:17: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, "counterattack"));
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\conditional\WaterPrisonEffect.java:40: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    public static final ResourceLocation WETNESS = new ResourceLocation(XueXiMod.MOD_ID, "wetness");
+                                                   ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\cooperative\api\CooperativeActionIds.java:8: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    public static final ResourceLocation OBLIQUE_SLASH = new ResourceLocation(XueXiMod.MOD_ID, "oblique_slash");
+                                                         ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\cooperative\api\CooperativeActionIds.java:9: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    public static final ResourceLocation SPIN = new ResourceLocation(XueXiMod.MOD_ID, "spin");
+                                                ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\cooperative\attack\HorizontalSlashActorAdapter.java:34: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, CooperativeTechniqueIds.HORIZONTAL_SLASH);
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\fire\FireDamage.java:26: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, FireChannels.FIRE_PATH));
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\fire\SteamBurst.java:31: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, FireChannels.STEAM_PATH));
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\HitVolumes.java:219: ����: [removal] ProjectileImpactEvent �е� setCanceled(boolean) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                event.setCanceled(true);
+                     ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\prison\PrisonPressure.java:23: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new ResourceLocation(XueXiMod.MOD_ID, "water_prison_pressure"));
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\statusquery\ResourceStatuses.java:16: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    public static final ResourceLocation WETNESS = new ResourceLocation("xueximod", "wetness");
+                                                   ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\status\fire\seed\FireSeedState.java:19: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    public static final ResourceLocation IDENTIFIER = new ResourceLocation("xueximod", "fire_seed");
+                                                      ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\status\WetnessFlightExempt.java:13: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation DEFAULT_DRAGON = new ResourceLocation("minecraft", "ender_dragon");
+                                                           ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\status\wood\resource\SuihuaStatus.java:15: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    public static final ResourceLocation IDENTIFIER = new ResourceLocation("xueximod", "suihua");
+                                                      ^
+ע: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+54 ������
+
+BUILD SUCCESSFUL in 24s
+4 actionable tasks: 2 executed, 2 up-to-date
+
+START=2026-11-14T02:58:31.2292005+08:00 END=2026-11-14T02:58:56.1773756+08:00 EXIT=0

@@ -1,0 +1,59 @@
+{
+  "version": "meteor-magma-crust-v5",
+  "date": "2026-11-02",
+  "status": "user-confirmed-archived-runtime-replaced-pending-compile",
+  "userConfirmation": "采用这个版本",
+  "confirmedOn": "2026-11-02",
+  "formalDirectory": "docs/资源库/材质/方块/陨岩_熔岩岩壳_v5/",
+  "runtimePath": "src/main/resources/assets/xueximod/textures/block/meteorite_v1.png",
+  "feedback": "火焰纹理太少了要更像岩浆块",
+  "design": "平整暗色岩壳之间增加成片橙红熔岩，局部亮黄，不规则分布，无孔洞",
+  "source": {
+    "width": 32,
+    "height": 32,
+    "frames": 1,
+    "layers": 5
+  },
+  "texture": {
+    "opaque": true,
+    "static": true,
+    "hotPixels": 350,
+    "hotFraction": 0.341796875
+  },
+  "blockbench": {
+    "version": "5.2.2",
+    "pluginVersion": "1.10.1",
+    "projectUUID": "78785cc2-7705-352b-40b4-690c2d3984e1",
+    "embeddedTextureMatches": true,
+    "unitsPerBlock": 16,
+    "from": [
+      0,
+      0,
+      0
+    ],
+    "to": [
+      16,
+      16,
+      16
+    ],
+    "faceUV": [
+      0,
+      0,
+      32,
+      32
+    ]
+  },
+  "runtimeModified": true,
+  "codeModified": false,
+  "workbookModified": false,
+  "compiled": false,
+  "hashes": {
+    "meteorite-magma-v5.aseprite": "2f6dca5d3dde69b0901f6da7392fa94aa67ace8adec6203df410a9f38d7634a7",
+    "meteorite-magma-v5.png": "a0f7027b8b39c4f9f3aaabb9e05713c42e5b0e86697c89d9294848a9b228e1d8",
+    "texture-preview.png": "33d31464e665e6934f4cb7aaa245c5ce7b1e3a99edce1ba0659afdb543ce7d0f",
+    "meteorite-magma-v5.bbmodel": "fbd11fd97791f43d95d0a36b37bc95511c34ae26108f99e0de054ed86843fd33",
+    "bb-hero.png": "a4dab13dfdacb09bc623fd00470c1b58c205cc5ee28d95147ddbc77d0bb6b06f",
+    "bb-reverse.png": "8841da5bb40e3af1f9c41428c4f043429d2512411f762c31b273c190d7223632",
+    "blockbench-active-view.png": "b526f0572bbbd7703ea91232fe4e8514fa6cc56e89a656ca01f102db578e48af"
+  }
+}

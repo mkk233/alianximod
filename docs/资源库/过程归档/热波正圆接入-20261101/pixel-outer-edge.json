@@ -1,0 +1,428 @@
+{
+  "session_id": "5173e9de-7c0f-4280-bad3-d5ea78293aa6",
+  "source_strip": "D:\\alianximod\\docs\\资源库\\过程归档\\热波_水平正圆_v2-20261101\\shock_ring_circle-strip.png",
+  "runtime_png": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\shock_ring_v1\\shock_ring.png",
+  "runtime_sha256_before": "3cf9f5728c0b70eee2cc09e61b4f6182e6254516cc7b955939907755c654bbc4",
+  "runtime_sha256_after": "5959d47d14ea8a69394559b13f504686c620230a35505a765731cbb76bda6d0f",
+  "strip_sha256": "5959d47d14ea8a69394559b13f504686c620230a35505a765731cbb76bda6d0f",
+  "runtime_matches_confirmed_strip": true,
+  "runtime_size": [
+    64,
+    1024
+  ],
+  "mapping": {
+    "half_span_blocks": 5,
+    "carrier_square_side_blocks": 10,
+    "note": "halfSpan 是外半径。载体是边长 2*radius 的水平正方形，默认 10x10 格，不是半径 10。",
+    "pixels_across_frame": 64,
+    "blocks_per_pixel": 0.15625,
+    "texture_center": [
+      31.5,
+      31.5
+    ],
+    "designed_last_frame_body_radius_px": 27.5,
+    "designed_glow_outer_radius_px": 31.5,
+    "designed_glow_outer_world_blocks": 4.921875
+  },
+  "rgba_mirror_mismatch_pixel_count_all_frames": 1088,
+  "frames": [
+    {
+      "frame_index": 0,
+      "opaque_pixels": 252,
+      "bbox_inclusive": [
+        23,
+        23,
+        40,
+        40
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 8.86,
+      "min_opaque_pixel_center_radius_px": 1.5811,
+      "max_texel_corner_radius_px": 9.4868,
+      "axis_outer_edge_px": 9,
+      "world_pixel_center_blocks_at_radius_5": 1.384379,
+      "world_texel_corner_blocks_at_radius_5": 1.482318,
+      "world_axis_outer_edge_blocks_at_radius_5": 1.40625
+    },
+    {
+      "frame_index": 1,
+      "opaque_pixels": 316,
+      "bbox_inclusive": [
+        22,
+        22,
+        41,
+        41
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 10.1242,
+      "min_opaque_pixel_center_radius_px": 2.5495,
+      "max_texel_corner_radius_px": 10.8167,
+      "axis_outer_edge_px": 10,
+      "world_pixel_center_blocks_at_radius_5": 1.581911,
+      "world_texel_corner_blocks_at_radius_5": 1.690102,
+      "world_axis_outer_edge_blocks_at_radius_5": 1.5625
+    },
+    {
+      "frame_index": 2,
+      "opaque_pixels": 396,
+      "bbox_inclusive": [
+        20,
+        20,
+        43,
+        43
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 11.8533,
+      "min_opaque_pixel_center_radius_px": 4.3012,
+      "max_texel_corner_radius_px": 12.53,
+      "axis_outer_edge_px": 12,
+      "world_pixel_center_blocks_at_radius_5": 1.852073,
+      "world_texel_corner_blocks_at_radius_5": 1.957807,
+      "world_axis_outer_edge_blocks_at_radius_5": 1.875
+    },
+    {
+      "frame_index": 3,
+      "opaque_pixels": 472,
+      "bbox_inclusive": [
+        19,
+        19,
+        44,
+        44
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 13.435,
+      "min_opaque_pixel_center_radius_px": 5.5227,
+      "max_texel_corner_radius_px": 14.1421,
+      "axis_outer_edge_px": 13,
+      "world_pixel_center_blocks_at_radius_5": 2.099223,
+      "world_texel_corner_blocks_at_radius_5": 2.209709,
+      "world_axis_outer_edge_blocks_at_radius_5": 2.03125
+    },
+    {
+      "frame_index": 4,
+      "opaque_pixels": 560,
+      "bbox_inclusive": [
+        17,
+        17,
+        46,
+        46
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 14.9833,
+      "min_opaque_pixel_center_radius_px": 7.1063,
+      "max_texel_corner_radius_px": 15.6525,
+      "axis_outer_edge_px": 15,
+      "world_pixel_center_blocks_at_radius_5": 2.341144,
+      "world_texel_corner_blocks_at_radius_5": 2.445699,
+      "world_axis_outer_edge_blocks_at_radius_5": 2.34375
+    },
+    {
+      "frame_index": 5,
+      "opaque_pixels": 632,
+      "bbox_inclusive": [
+        16,
+        16,
+        47,
+        47
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 16.4469,
+      "min_opaque_pixel_center_radius_px": 8.5147,
+      "max_texel_corner_radius_px": 17.088,
+      "axis_outer_edge_px": 16,
+      "world_pixel_center_blocks_at_radius_5": 2.569826,
+      "world_texel_corner_blocks_at_radius_5": 2.670001,
+      "world_axis_outer_edge_blocks_at_radius_5": 2.5
+    },
+    {
+      "frame_index": 6,
+      "opaque_pixels": 704,
+      "bbox_inclusive": [
+        14,
+        14,
+        49,
+        49
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 17.9025,
+      "min_opaque_pixel_center_radius_px": 10.1242,
+      "max_texel_corner_radius_px": 18.6011,
+      "axis_outer_edge_px": 18,
+      "world_pixel_center_blocks_at_radius_5": 2.797268,
+      "world_texel_corner_blocks_at_radius_5": 2.906418,
+      "world_axis_outer_edge_blocks_at_radius_5": 2.8125
+    },
+    {
+      "frame_index": 7,
+      "opaque_pixels": 776,
+      "bbox_inclusive": [
+        13,
+        13,
+        50,
+        50
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 19.4551,
+      "min_opaque_pixel_center_radius_px": 11.5109,
+      "max_texel_corner_radius_px": 20.1246,
+      "axis_outer_edge_px": 19,
+      "world_pixel_center_blocks_at_radius_5": 3.039856,
+      "world_texel_corner_blocks_at_radius_5": 3.144471,
+      "world_axis_outer_edge_blocks_at_radius_5": 2.96875
+    },
+    {
+      "frame_index": 8,
+      "opaque_pixels": 856,
+      "bbox_inclusive": [
+        11,
+        11,
+        52,
+        52
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 20.9881,
+      "min_opaque_pixel_center_radius_px": 13.2098,
+      "max_texel_corner_radius_px": 21.6333,
+      "axis_outer_edge_px": 21,
+      "world_pixel_center_blocks_at_radius_5": 3.279389,
+      "world_texel_corner_blocks_at_radius_5": 3.380204,
+      "world_axis_outer_edge_blocks_at_radius_5": 3.28125
+    },
+    {
+      "frame_index": 9,
+      "opaque_pixels": 928,
+      "bbox_inclusive": [
+        10,
+        10,
+        53,
+        53
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 22.4611,
+      "min_opaque_pixel_center_radius_px": 14.5086,
+      "max_texel_corner_radius_px": 23.0868,
+      "axis_outer_edge_px": 22,
+      "world_pixel_center_blocks_at_radius_5": 3.509543,
+      "world_texel_corner_blocks_at_radius_5": 3.607311,
+      "world_axis_outer_edge_blocks_at_radius_5": 3.4375
+    },
+    {
+      "frame_index": 10,
+      "opaque_pixels": 992,
+      "bbox_inclusive": [
+        8,
+        8,
+        55,
+        55
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 23.927,
+      "min_opaque_pixel_center_radius_px": 16.14,
+      "max_texel_corner_radius_px": 24.5967,
+      "axis_outer_edge_px": 24,
+      "world_pixel_center_blocks_at_radius_5": 3.738589,
+      "world_texel_corner_blocks_at_radius_5": 3.843242,
+      "world_axis_outer_edge_blocks_at_radius_5": 3.75
+    },
+    {
+      "frame_index": 11,
+      "opaque_pixels": 1080,
+      "bbox_inclusive": [
+        7,
+        7,
+        56,
+        56
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 25.4657,
+      "min_opaque_pixel_center_radius_px": 17.5071,
+      "max_texel_corner_radius_px": 26.1725,
+      "axis_outer_edge_px": 25,
+      "world_pixel_center_blocks_at_radius_5": 3.97901,
+      "world_texel_corner_blocks_at_radius_5": 4.089454,
+      "world_axis_outer_edge_blocks_at_radius_5": 3.90625
+    },
+    {
+      "frame_index": 12,
+      "opaque_pixels": 1168,
+      "bbox_inclusive": [
+        5,
+        5,
+        58,
+        58
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 26.9537,
+      "min_opaque_pixel_center_radius_px": 19.0394,
+      "max_texel_corner_radius_px": 27.6586,
+      "axis_outer_edge_px": 27,
+      "world_pixel_center_blocks_at_radius_5": 4.21151,
+      "world_texel_corner_blocks_at_radius_5": 4.321661,
+      "world_axis_outer_edge_blocks_at_radius_5": 4.21875
+    },
+    {
+      "frame_index": 13,
+      "opaque_pixels": 1232,
+      "bbox_inclusive": [
+        4,
+        4,
+        59,
+        59
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 28.4693,
+      "min_opaque_pixel_center_radius_px": 20.5061,
+      "max_texel_corner_radius_px": 29.1548,
+      "axis_outer_edge_px": 28,
+      "world_pixel_center_blocks_at_radius_5": 4.448325,
+      "world_texel_corner_blocks_at_radius_5": 4.555431,
+      "world_axis_outer_edge_blocks_at_radius_5": 4.375
+    },
+    {
+      "frame_index": 14,
+      "opaque_pixels": 1300,
+      "bbox_inclusive": [
+        2,
+        2,
+        61,
+        61
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 29.9082,
+      "min_opaque_pixel_center_radius_px": 22.102,
+      "max_texel_corner_radius_px": 30.6105,
+      "axis_outer_edge_px": 30,
+      "world_pixel_center_blocks_at_radius_5": 4.673155,
+      "world_texel_corner_blocks_at_radius_5": 4.782884,
+      "world_axis_outer_edge_blocks_at_radius_5": 4.6875
+    },
+    {
+      "frame_index": 15,
+      "opaque_pixels": 1380,
+      "bbox_inclusive": [
+        1,
+        1,
+        62,
+        62
+      ],
+      "bbox_centered_on_31_5": true,
+      "bbox_square": true,
+      "center_pixel_31_31_alpha": 0,
+      "center_pixel_32_32_alpha": 0,
+      "max_pixel_center_radius_px": 31.4086,
+      "min_opaque_pixel_center_radius_px": 23.5053,
+      "max_texel_corner_radius_px": 32.0156,
+      "axis_outer_edge_px": 31,
+      "world_pixel_center_blocks_at_radius_5": 4.907593,
+      "world_texel_corner_blocks_at_radius_5": 5.002441,
+      "world_axis_outer_edge_blocks_at_radius_5": 4.84375
+    }
+  ],
+  "archive_copies": [
+    {
+      "file": "shock_ring_circle.aseprite",
+      "bytes": 11687,
+      "sha256": "cd7d21582a1020c211ac199d2fed5ec23895a6ae6fd7bbb35aba11767648dcf8",
+      "identical_to_process": true
+    },
+    {
+      "file": "shock_ring_circle-strip.png",
+      "bytes": 10596,
+      "sha256": "5959d47d14ea8a69394559b13f504686c620230a35505a765731cbb76bda6d0f",
+      "identical_to_process": true
+    },
+    {
+      "file": "shock_ring_circle-frame10.png",
+      "bytes": 789,
+      "sha256": "dabcfa7c5afdcf0f0a78938e72af6bc00d7806a85e18beb8d42bd500163243c0",
+      "identical_to_process": true
+    },
+    {
+      "file": "circle-2d-preview.gif",
+      "bytes": 65707,
+      "sha256": "62c815409f6ff4431f3c91c53448457a9d3eceab2c03e5f396070023dc04776d",
+      "identical_to_process": true
+    },
+    {
+      "file": "热波_水平正圆_v2.bbmodel",
+      "bytes": 37263,
+      "sha256": "ef2f16cb9e4c2a11b763129966b39779f480610f04d5a93bcc90301a7bcd5b4d",
+      "identical_to_process": true
+    },
+    {
+      "file": "bb-top-animation.gif",
+      "bytes": 103597,
+      "sha256": "6ffddae6444382d2afc8f892af41c5cdd355e0a09c0cc983169536f918be3ef0",
+      "identical_to_process": true
+    },
+    {
+      "file": "bb-oblique-animation.gif",
+      "bytes": 70203,
+      "sha256": "6a8eceb6b59b04baa0fabbaffb3ef40c1f1feacf02738c4d7bf33f6431663b8b",
+      "identical_to_process": true
+    },
+    {
+      "file": "bb-top-still.png",
+      "bytes": 21724,
+      "sha256": "646e4553c5ec40e038a03d5b16f788711d49a7ebd0635e438275bf75cc4339b4",
+      "identical_to_process": true
+    },
+    {
+      "file": "bb-oblique-still.png",
+      "bytes": 59833,
+      "sha256": "855a5e73ed8774b672c09080761730653fcd7aa769f790ce17d51872dd274a9e",
+      "identical_to_process": true
+    },
+    {
+      "file": "blockbench-app-proof.png",
+      "bytes": 206914,
+      "sha256": "9702a987a2af8cd9faaa5ac10698386b781a89a85c10fe881f4d0a893b266056",
+      "identical_to_process": true
+    }
+  ]
+}

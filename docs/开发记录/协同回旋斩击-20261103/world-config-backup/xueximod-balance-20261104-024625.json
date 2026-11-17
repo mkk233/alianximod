@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "global": {
+    "damageMultiplier": 1.0,
+    "manaMultiplier": 1.0,
+    "cooldownMultiplier": 1.0
+  },
+  "techniques": {
+    "sword_thrust": {
+      "cooldownTicks": 15,
+      "manaCost": 12,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 4,
+      "beamLength": 3.0,
+      "hitSize": 1.0
+    },
+    "sword_horizontal_slash": {
+      "cooldownTicks": 20,
+      "manaCost": 8,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 4,
+      "boxDepth": 3.0,
+      "boxWidth": 5.0
+    },
+    "sword_vertical_slash": {
+      "cooldownTicks": 25,
+      "manaCost": 16,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 4,
+      "beamLength": 1.5,
+      "boxWidth": 1.6,
+      "boxHeight": 2.0
+    },
+    "movement_dash": {
+      "cooldownTicks": 30,
+      "manaCost": 4,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 10,
+      "motionSpeed": 2.0,
+      "hitSize": 0.5
+    },
+    "movement_leap": {
+      "cooldownTicks": 40,
+      "manaCost": 0
+    },
+    "magic_arcane_missile": {
+      "cooldownTicks": 20,
+      "manaCost": 10,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 40,
+      "motionSpeed": 1.5,
+      "hitSize": 0.3
+    },
+    "magic_ignite": {
+      "cooldownTicks": 40,
+      "manaCost": 2,
+      "damageMultiplier": 1.0,
+      "burnSeconds": 5
+    },
+    "magic_create_water": {
+      "cooldownTicks": 60,
+      "manaCost": 0
+    },
+    "test_sustained": {
+      "cooldownTicks": 10,
+      "manaCost": 2,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 20,
+      "motionSpeed": 0.4000000059604645,
+      "hitSize": 0.3
+    },
+    "heat_beam": {
+      "cooldownTicks": 20,
+      "manaCost": 6,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 40,
+      "thickness": 1.0,
+      "hitIntervalTicks": 10,
+      "beamLength": 6.0
+    },
+    "universal_lock_target": {
+      "cooldownTicks": 50,
+      "manaCost": 0,
+      "searchRange": 20.0,
+      "scanRange": 8.0
+    },
+    "rule_dual_release": {
+      "cooldownTicks": 20,
+      "manaCost": 0
+    },
+    "trajectory_drop": {
+      "cooldownTicks": 20,
+      "manaCost": 0
+    },
+    "space_cut": {
+      "cooldownTicks": 20,
+      "manaCost": 8,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 10,
+      "boxDepth": 3.0,
+      "boxWidth": 5.0
+    },
+    "rule_cast_anchor": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "rule_triple_cast": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "rule_domain_bind": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "rule_gather_energy": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "trajectory_3d_interleave": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "vine_mark": {
+      "cooldownTicks": 40,
+      "manaCost": 2,
+      "damageMultiplier": 1.0,
+      "controlTicks": 40
+    },
+    "parasite_seed": {
+      "cooldownTicks": 20,
+      "manaCost": 8,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 160,
+      "thickness": 0.5,
+      "spreadRange": 1.2
+    },
+    "tide_mark": {
+      "cooldownTicks": 40,
+      "manaCost": 2,
+      "damageMultiplier": 1.0
+    },
+    "tide_sever": {
+      "cooldownTicks": 20,
+      "manaCost": 12,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 6,
+      "thickness": 0.4000000059604645,
+      "beamLength": 5.0,
+      "boxHeight": 3.0
+    },
+    "sinking_edge": {
+      "cooldownTicks": 40,
+      "manaCost": 2,
+      "damageMultiplier": 1.0
+    },
+    "stone_hammer": {
+      "cooldownTicks": 25,
+      "manaCost": 16,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 10,
+      "hitSize": 2.0
+    },
+    "keen_mark": {
+      "cooldownTicks": 40,
+      "manaCost": 2,
+      "damageMultiplier": 1.0
+    },
+    "metal_needle": {
+      "cooldownTicks": 20,
+      "manaCost": 10,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 15,
+      "motionSpeed": 1.5,
+      "thickness": 0.20000000298023224,
+      "beamLength": 0.4
+    },
+    "fire_orb": {
+      "cooldownTicks": 20,
+      "manaCost": 10,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 40,
+      "motionSpeed": 1.2000000476837158,
+      "hitSize": 0.45
+    },
+    "fire_burst": {
+      "cooldownTicks": 40,
+      "manaCost": 16,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 40,
+      "motionSpeed": 0.6000000238418579,
+      "thickness": 0.800000011920929,
+      "radius": 3.0
+    },
+    "fire_heat_up": {
+      "cooldownTicks": 500,
+      "manaCost": 20
+    },
+    "fire_burn": {
+      "cooldownTicks": 500,
+      "manaCost": 20
+    },
+    "fire_cool": {
+      "cooldownTicks": 0,
+      "manaCost": 0,
+      "damageMultiplier": 1.0,
+      "radius": 3.0
+    },
+    "fire_liaoyuan": {
+      "cooldownTicks": 600,
+      "manaCost": 60,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 200,
+      "radius": 10.0
+    },
+    "fire_scorch_field": {
+      "cooldownTicks": 30,
+      "manaCost": 2,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 100,
+      "halfExtent": 2.0
+    },
+    "fire_liaoli": {
+      "cooldownTicks": 300,
+      "manaCost": 40,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 40,
+      "thickness": 0.6000000238418579,
+      "beamLength": 3.0
+    },
+    "fire_fentian": {
+      "cooldownTicks": 1200,
+      "manaCost": 100,
+      "damageMultiplier": 1.0,
+      "radius": 8.0
+    },
+    "trajectory_tracking": {
+      "cooldownTicks": 20,
+      "manaCost": 0
+    },
+    "trajectory_storm": {
+      "cooldownTicks": 20,
+      "manaCost": 0
+    },
+    "water_yielding_ribbon": {
+      "cooldownTicks": 600,
+      "manaCost": 80,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 32,
+      "boxDepth": 7.0,
+      "boxWidth": 0.7,
+      "boxHeight": 3.2
+    },
+    "water_weeping_arc": {
+      "cooldownTicks": 20,
+      "manaCost": 10,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 40,
+      "thickness": 0.3499999940395355,
+      "hitSize": 0.5,
+      "hitIntervalTicks": 10
+    },
+    "fire_meteorite": {
+      "cooldownTicks": 40,
+      "manaCost": 48,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 100,
+      "motionSpeed": 0.800000011920929,
+      "thickness": 1.0,
+      "birthRadius": 0.5
+    },
+    "fire_shock_ring": {
+      "cooldownTicks": 16,
+      "manaCost": 8,
+      "damageMultiplier": 1.0,
+      "radius": 5.0,
+      "lifetimeTicks": 12,
+      "innerRadius": 1.5,
+      "boxHeight": 3.0
+    },
+    "fire_spark": {
+      "cooldownTicks": 5,
+      "manaCost": 2,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 30,
+      "motionSpeed": 0.800000011920929,
+      "thickness": 0.25,
+      "birthRadius": 0.125,
+      "seedCount": 2
+    },
+    "rule_surface_anchor": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "fire_upwell": {
+      "cooldownTicks": 0,
+      "manaCost": 0,
+      "motionSpeed": 1.0,
+      "durationTicks": 100,
+      "spreadRange": 32.0
+    },
+    "rule_stagger": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "rule_hit_continue": {
+      "cooldownTicks": 0,
+      "manaCost": 0
+    },
+    "fire_flame_trail": {
+      "cooldownTicks": 5,
+      "manaCost": 2
+    },
+    "fire_seed_sow": {
+      "cooldownTicks": 5,
+      "manaCost": 2,
+      "seedCount": 10
+    },
+    "fire_kindle": {
+      "cooldownTicks": 5,
+      "manaCost": 2,
+      "damageMultiplier": 1.0,
+      "segmentDamage": 2.0,
+      "intervalTicks": 10,
+      "flatTicks": 40,
+      "tierTicks": 10
+    },
+    "fire_detonate": {
+      "cooldownTicks": 5,
+      "manaCost": 2,
+      "damageMultiplier": 1.0
+    },
+    "fire_nether_gloom": {
+      "cooldownTicks": 5,
+      "manaCost": 2,
+      "boxWidth": 7.0,
+      "boxDepth": 7.0,
+      "boxHeight": 8.0,
+      "lifetimeTicks": 200,
+      "contactManaCost": 1,
+      "seedCount": 5,
+      "periodTicks": 20
+    },
+    "earth_break_ground": {
+      "cooldownTicks": 5,
+      "manaCost": 2
+    },
+    "phantom_sword": {
+      "cooldownTicks": 40,
+      "manaCost": 4,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 80,
+      "motionSpeed": 2.5
+    },
+    "sword_come": {
+      "cooldownTicks": 20,
+      "manaCost": 0,
+      "searchRange": 20.0,
+      "motionSpeed": 1.5,
+      "hitSize": 1.2
+    },
+    "sword_return_all": {
+      "cooldownTicks": 200,
+      "manaCost": 16,
+      "motionSpeed": 1.2000000476837158,
+      "radius": 4.0
+    },
+    "water_blade": {
+      "cooldownTicks": 14,
+      "manaCost": 14,
+      "damageMultiplier": 1.0,
+      "lifetimeTicks": 10,
+      "motionSpeed": 1.2999999523162842,
+      "thickness": 0.3499999940395355
+    },
+    "water_curtain": {
+      "cooldownTicks": 40,
+      "manaCost": 0,
+      "boxWidth": 3.2,
+      "boxHeight": 2.8,
+      "thickness": 0.25,
+      "lifetimeTicks": 80,
+      "upkeepIntervalTicks": 20,
+      "spawnManaCost": 8,
+      "upkeepManaCost": 2,
+      "speedDecay": 0.5
+    },
+    "water_mist": {
+      "cooldownTicks": 80,
+      "manaCost": 40,
+      "boxWidth": 7.0,
+      "boxDepth": 7.0,
+      "boxHeight": 8.0,
+      "lifetimeTicks": 200,
+      "contactManaCost": 1,
+      "wetPeriodTicks": 10,
+      "momentumPeriodTicks": 20
+    },
+    "water_ring": {
+      "cooldownTicks": 40,
+      "manaCost": 0,
+      "radius": 0.9,
+      "thickness": 0.12,
+      "boxHeight": 0.55,
+      "lifetimeTicks": 200,
+      "upkeepIntervalTicks": 20,
+      "spawnManaCost": 8,
+      "upkeepManaCost": 2,
+      "damageReduction": 0.20000000298023224
+    },
+    "water_deep_pressure": {
+      "cooldownTicks": 80,
+      "manaCost": 40,
+      "boxWidth": 7.0,
+      "boxDepth": 7.0,
+      "boxHeight": 3.0,
+      "lifetimeTicks": 200,
+      "contactManaCost": 1,
+      "wetPeriodTicks": 10,
+      "slowPeriodTicks": 10,
+      "breathMultiplier": 2.0
+    },
+    "water_prison": {
+      "cooldownTicks": 400,
+      "manaCost": 40,
+      "damageMultiplier": 1.0,
+      "scanRange": 12.0,
+      "prisonDurationTicks": 20,
+      "durationTicks": 100,
+      "pressureIntervalTicks": 20
+    }
+  }
+}

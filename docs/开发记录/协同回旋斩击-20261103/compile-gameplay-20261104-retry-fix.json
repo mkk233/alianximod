@@ -1,0 +1,11 @@
+{
+  "authorizedBy": "用户：允许，仅修这两处并重新编译、同步资源",
+  "appliedAtUtc": "2026-11-03T18:59:24.3318343Z",
+  "executor": "Codex main; one-time explicit user exception",
+  "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneRemoteRecall.java",
+  "beforeSha256": "8657ECF373467A3472984FDCDFC9D8B335DA15F775554EFE8B87F47DC9A3BFB5",
+  "afterSha256": "EB87FB466809972F5E16A7F12B2F755FADB157D807B208FD4B1B0E96AFDE6015",
+  "exactTwoReplacements": true,
+  "lineEndingsPreserved": true,
+  "otherJavaChangesAuthorized": false
+}

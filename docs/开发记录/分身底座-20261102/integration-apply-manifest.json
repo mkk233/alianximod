@@ -1,0 +1,197 @@
+{
+  "batch": "分身底座-20261102",
+  "author": "C",
+  "applied": false,
+  "instruction": "真实应用前必须重核原目标 sha256 仍等于 originalSha256。变了只定向合并本次增量，不能整文件覆盖。当前不要执行应用。",
+  "entries": [
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/XueXiMod.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/XueXiMod.java",
+      "kind": "modify",
+      "originalSha256": "a38f84b3f93259f63c8d6ff61c1db3cb21eba541d6933ed962e95fb020374e07",
+      "candidateSha256": "876e6eabcce1995f4694e7eb713d2719b16a854a2176986b2dde70d9040637b2"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/Technique.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/Technique.java",
+      "kind": "modify",
+      "originalSha256": "e05ac47e3268390690abf8f2548c50cd68ea9fa738d887abd047e3fe9157e90d",
+      "candidateSha256": "c078df2ae7235ed9ae12ee88b6f0c44c398344587f2c8f63099cca79c03999c5"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/TechniqueManager.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/TechniqueManager.java",
+      "kind": "modify",
+      "originalSha256": "eaa6b09b84628b3d81f455a5ff795db329c383491a1b863768975649836539a6",
+      "candidateSha256": "0a5ba1aa117d81af526774a9a3ba3db274304e619a3e9da0e18b9655dae6f37a"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+      "kind": "modify",
+      "originalSha256": "70ddee665ab2f7484f8fbd91a20b03a67ed0575d7fde012af2a3e637504cf7bf",
+      "candidateSha256": "a69e59d327fe59a6ee53faa07b863babe4da50a112935fdaadbc6ab103931a02"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/balance/BalanceCatalog.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/balance/BalanceCatalog.java",
+      "kind": "modify",
+      "originalSha256": "b4a9e89200910e7f7e2d31ed4dd0e25438a1ecc015ac2918d89483682f61afa4",
+      "candidateSha256": "db41d15899e6671a6d203215f517f211f4b29f980707dfa5eef85f51eccdd99d"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java",
+      "kind": "modify",
+      "originalSha256": "ffe8967da91f1c1a1d870b4d77f8337437cdeec7fae6e471259bccd3b6d5f628",
+      "candidateSha256": "32720a243f9fe50d96b377f0e748f65ef1926e4cff4a66b3a2414bd4a2f758b4"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/command/ShuCommands.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/command/ShuCommands.java",
+      "kind": "modify",
+      "originalSha256": "22c112540aaac7510143b4c1e4b4c41dca24ffd72c83c2786b9df21a564b5565",
+      "candidateSha256": "e6c04cfb79e757c8ecc99bc3764ef3f2338745962ff7e27a854b390029950824"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/event/PlayerConnectionHandler.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/event/PlayerConnectionHandler.java",
+      "kind": "modify",
+      "originalSha256": "3cb559ac6c24e853131fe989cf21189beed88bcced73707241a4e94202c24e07",
+      "candidateSha256": "45fa547af1ff75abd0116c5fe0d8ea4a6f8c994d59e4d4e7493f2d71b7ac6e84"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/gui/ImprintActions.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/gui/ImprintActions.java",
+      "kind": "modify",
+      "originalSha256": "56796e4429e0d9d247ec9bd4585e9c21b9f8fc8fef4f7bbd0c8be13f2682ec08",
+      "candidateSha256": "07aaa1a177393adf5ff64c0f7d52d0928e1ddd4ee80a140edcdb9d3e403f20e1"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/gui/ImprintDeskMenu.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/gui/ImprintDeskMenu.java",
+      "kind": "modify",
+      "originalSha256": "54ee62ea6df969e81c6894d904038eaf80e565ba79259b15facd857122dd5f78",
+      "candidateSha256": "71d010488fae44da09d247bf4648e64fef8bd82c823125b2f4d2af1529797b47"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/gui/ShuManagementMenu.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/gui/ShuManagementMenu.java",
+      "kind": "modify",
+      "originalSha256": "a010527313c55aaf7138ff1ac771dc3394c0eebb4f2f83e02ab9ca89233e7231",
+      "candidateSha256": "53324f6f88afa0ec75aad85975d43369f4c759731546757dc4d9e76990fd1f4a"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyMenu.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyMenu.java",
+      "kind": "modify",
+      "originalSha256": "d56420ce6130e045afcc72d7546bf4d8122c6010c3f8cb896b325d52f559c089",
+      "candidateSha256": "8a695fa4925548f47807be88654ce71cc95c22661909533f0aa4b5e633abfdc6"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/network/SkillAssemblyPacket.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/network/SkillAssemblyPacket.java",
+      "kind": "modify",
+      "originalSha256": "4b535ef922b497f1403b78f2e9483427af24f52fed0fd7ae67d9f63fb0828ae5",
+      "candidateSha256": "41262f7b5b8b8af0f430fea0362da493a13631012b389c1803c4493d101a3d7d"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "kind": "modify",
+      "originalSha256": "c7e9d9a76457176193173447eca3b4f375dfea8174a2d64751b7c7a905a19dc3",
+      "candidateSha256": "dcdb4f0914464b76cf83b4da9251761d36934c2dbc2fd1849bdc1cf7cb888979"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/item/StaffSkills.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/item/StaffSkills.java",
+      "kind": "modify",
+      "originalSha256": "24571ba13e7d3f44353ad4b725f2074960f0f09f0b5d22e0923ff1e69842087c",
+      "candidateSha256": "aa1f2d9756afb95b1da63c04385afd02fde4079443cc2815942ccadd6d23ca96"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java",
+      "kind": "modify",
+      "originalSha256": "ddb2d771f0275e9505503054310d71f28c43350e2e521dee1c43aa389429f683",
+      "candidateSha256": "ce708b8dfee5549fc753edc3e0707d37e30d536e8da54f4a1ac6a0ea2fcf55eb"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/debug/performance/PerfCounter.java",
+      "kind": "modify",
+      "originalSha256": "79b362757bcab61f310b62e6cf6f71a7b7cc12b8375d4e0797cceeef88aeebc1",
+      "candidateSha256": "f65f28dd31fd0cfc78db62531fad482168491e36585ab401c0a203627bb9b9a8"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/player/PlayerShuData.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/player/PlayerShuData.java",
+      "kind": "modify",
+      "originalSha256": "b97e916c769c0e3e5442b7050fccededb7971922c73fe62707bcb1164ec34ea7",
+      "candidateSha256": "01a3f4db389c95333418079f5d5adb125dd611805843f4b0ff9681033a7cd42c"
+    },
+    {
+      "target": "src/main/resources/assets/xueximod/lang/zh_cn.json",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/resources/assets/xueximod/lang/zh_cn.json",
+      "kind": "modify",
+      "originalSha256": "a8b03aea26804a8863c780f4e72c537713776a5510e7960371bf8e8e4d768d1e",
+      "candidateSha256": "d00d72520ea2dc7a6cb5b7c4cc6bdcf4870296524ce6fe6a92c8c652246353df"
+    },
+    {
+      "target": "src/main/resources/assets/xueximod/lang/en_us.json",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/resources/assets/xueximod/lang/en_us.json",
+      "kind": "modify",
+      "originalSha256": "fba0df0fad97dc26bd154713b853dc39e6059176792a897cbafcf4c055328815",
+      "candidateSha256": "d527c203588d27e1524818be68b14d03cc787b233523bf0514455a91d8bd4fc8"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/TechniqueAvailability.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/TechniqueAvailability.java",
+      "kind": "new",
+      "originalSha256": "missing",
+      "candidateSha256": "96d879bcf3e6bbbb4c03c970aa9d1a3279af2ac4deffebdcaddf6bfc41406ffa"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/TechniqueAccess.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/TechniqueAccess.java",
+      "kind": "new",
+      "originalSha256": "missing",
+      "candidateSha256": "c518ec1ebf9b9914a5dbb4e264fc5c3863dbb55c393f5d16d43f043dda3b05fa"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneTechniqueRegistry.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneTechniqueRegistry.java",
+      "kind": "new",
+      "originalSha256": "missing",
+      "candidateSha256": "21e016432abfc1b320ff181618db2fe8902d76a97b39db092e1da69f8f78f39c"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneReleaseDefinition.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneReleaseDefinition.java",
+      "kind": "new",
+      "originalSha256": "missing",
+      "candidateSha256": "5d55e9b1623e1ec5f15e4c326ed5e20c2b2f07f137ce400e531032df21605ec0"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneEntityTypes.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneEntityTypes.java",
+      "kind": "new",
+      "originalSha256": "missing",
+      "candidateSha256": "8089d37c091b2222e5586746f37dfbfb0f75f45632eaba24c339d049cf96d473"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/command/CloneCommands.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/command/CloneCommands.java",
+      "kind": "new",
+      "originalSha256": "missing",
+      "candidateSha256": "79bb34aa9799591c760669e754285431157f0a37592227a2c5524c11b1bd1581"
+    },
+    {
+      "target": "src/main/java/com/bslx/XueXiMod/client/CloneRenderer.java",
+      "candidate": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/client/CloneRenderer.java",
+      "kind": "new",
+      "originalSha256": "missing",
+      "candidateSha256": "74238fff33f4afdcb52e6f5dcac1dd6a9cd5557271f50ed8934fd4627d7f95d0"
+    }
+  ]
+}

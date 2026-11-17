@@ -1,0 +1,18 @@
+{
+  "batchId": "wood-secondary-base-20261109",
+  "taskId": "author-resources",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "repair-record-factory-compile-error",
+  "authorization": "用户授权开发花瓣及岁华底座，并已选择死亡清空两者；本单按架构裁决实现资源侧，不制作术式。",
+  "inputVersion": "wood-secondary-base-architecture-r1-death-clear-20261109",
+  "recordPath": "D:/alianximod/docs/开发记录/木属性二级底座-20261109/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/wood/resource/",
+    "D:/alianximod/tools/wood-base-checks/resources/",
+    "D:/alianximod/docs/开发记录/木属性二级底座-20261109/资源作者交付.md"
+  ],
+  "dependencies": [
+    "inspect-resources"
+  ]
+}

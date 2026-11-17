@@ -1,0 +1,7 @@
+attempt=1
+gradle_exit=1
+reason=GRADLE_USER_HOME was the empty cursor sandbox cache, so --offline could not resolve settings.gradle:13 foojay-resolver-convention 0.7.0
+sandbox_home=C:\Users\baishang\AppData\Local\Temp\cursor-sandbox-cache\1a210a4963f2f4a7285290cf943aeaef\gradle
+real_home_has_plugin=true
+not_a_javac_failure=true
+not_final_compile=true

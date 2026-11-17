@@ -1,0 +1,409 @@
+{
+  "version": "fire_detonate_v2_3d_candidate_20261116",
+  "status": "approved_for_adoption",
+  "implementationStatus": "integration_in_progress",
+  "batchId": "待制作-20261031",
+  "taskId": "fire_detonate_v2_art",
+  "attemptId": "20261116-art-detonate-3d-archive-02",
+  "parentId": "01a1ce06-b681-7c90-b11d-260d3c169911",
+  "authorAgentId": null,
+  "requestedModel": "gpt-6-astra",
+  "requestedEffort": "max",
+  "actualBackendModel": null,
+  "confirmation": {
+    "userWords": "可以先采用这一版",
+    "date": "2026-11-16",
+    "timezone": "Asia/Shanghai",
+    "preciseTimestamp": null,
+    "relayedByParent": "01a1ce06-b681-7c90-b11d-260d3c169911",
+    "boundVersion": "fire_detonate_v2_3d_candidate_20261116",
+    "boundPreviews": [
+      {
+        "path": "previews/detonate_v2_3d_main.gif",
+        "bytes": 892149,
+        "sha256": "054C4B5F8363DA115F0A9472DCADE60F9E7220E869974CE8BBDCED3DEB80E98B",
+        "width": 1200,
+        "height": 747,
+        "frames": 19
+      },
+      {
+        "path": "previews/detonate_v2_3d_side.gif",
+        "bytes": 852277,
+        "sha256": "179EF78C79B65A637CEF58251EBD3C7273BDB553A4099D84DA7B939251B1B971",
+        "width": 1152,
+        "height": 716,
+        "frames": 19
+      }
+    ]
+  },
+  "candidateOrigin": {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116",
+    "manifestSHA256": "E5CB8F5FADA414121FB03DC812B56DB26704035F420ECF5CB413A0EF8245FA23",
+    "historicalManifestCopy": "provenance/candidate-manifest.json",
+    "historyUnmodified": true
+  },
+  "integrator": {
+    "name": "Harvey",
+    "agentId": "01a1e377-93fa-7cc3-ac7f-4bd275c32916",
+    "scope": "src; final runtime byte comparison remains integrator responsibility"
+  },
+  "reviewBudget": {
+    "design": "2/2",
+    "implementation": "3/3",
+    "statement": "本阶段额度已用完，返修结果未追加复审"
+  },
+  "userConfirmed": true,
+  "integrated": false,
+  "integrationCompletionVerified": false,
+  "compiled": false,
+  "forgeVerified": false,
+  "mechanicsChanged": false,
+  "spatialParametersChanged": false,
+  "mcpStartedThisAttempt": false,
+  "writeScopeClosed": true,
+  "input": {
+    "path": "provenance/input-snapshot-used.json",
+    "bytes": 5668,
+    "sha256": "0229D3A6C5E064E12ED6E144982658D2F9E25B6195AE2D2DF4B5A629C7FA0033"
+  },
+  "handoff": "visual-handoff.md",
+  "readme": "README.md",
+  "archiveVerification": "provenance/archive-verification.json",
+  "independentReceipt": {
+    "path": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\detonate-v2-3d-art-approved-archive-20261116.md",
+    "bytes": 4314,
+    "sha256": "B47B1994DC57AB0B2B7366AE39EBD8CCA8062767D6FDB26E1E40AE9ADBC298BE"
+  },
+  "copiedAssetCount": 15,
+  "copiedHistoricalEvidenceCount": 6,
+  "allCopiedFilesByteIdentical": true,
+  "historicalCandidateNamesPreservedForByteIdentity": true,
+  "processLinks": {
+    "scripts": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\scripts",
+    "pixelFrames": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\frames",
+    "guiFramesRoot": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\previews",
+    "captureEvidenceRoot": "D:\\alianximod\\docs\\资源库\\过程归档\\引爆_三维扩散爆炸_v2_20261116\\evidence"
+  },
+  "units": {
+    "modelUnitsPerBlock": 16,
+    "targetHeightUnits": 28.8,
+    "targetHeightBlocks": 1.8,
+    "groundGridUnits": 16
+  },
+  "axes": {
+    "+X": "target right",
+    "+Y": "up",
+    "+Z": "target front"
+  },
+  "anchor": {
+    "previewRelativeToFeet": [
+      0,
+      16,
+      1.8
+    ],
+    "runtimeProposal": "actual world-space carrier hit point, frozen during one shot",
+    "extraYOffset": 0,
+    "cameraBias": 0
+  },
+  "geometry": {
+    "kind": "26 independent world-positioned camera-facing puff planes",
+    "outerPuffs": 24,
+    "centerPuffs": 2,
+    "singlePlaneThickness": 0,
+    "wholeEffectCameraPlane": false,
+    "seedFile": "provenance/particle-seeds.json"
+  },
+  "texture": {
+    "framePixels": [
+      32,
+      32
+    ],
+    "stripPixels": [
+      32,
+      512
+    ],
+    "frameCount": 16,
+    "sourceFrameMs": 50,
+    "sourceLayers": 2,
+    "layout": "vertical top to bottom",
+    "filter": "nearest",
+    "alpha": "0 or 255",
+    "lastFrameTransparent": true
+  },
+  "timing": {
+    "effectTicks": 20,
+    "effectMs": 1000,
+    "nativeFramesPerSequence": 20,
+    "nativeFrameMs": 50,
+    "previewHoldMs": 650,
+    "loopInGame": false,
+    "loopInPreview": true,
+    "encodedGifFrames": 19,
+    "encodedGifMs": 1650,
+    "localAgeToAtlasFrame": "floor(clamp(age/(lifetime-1),0,1)*15)"
+  },
+  "material": {
+    "nativeShade": false,
+    "nativeEmissive": false,
+    "alphaPreserved": true,
+    "transparent": true,
+    "depthTest": true,
+    "depthWrite": false,
+    "sort": "each puff back to front every frame",
+    "runtimeProposal": "lit particle material preserving alpha, nearest, FULL_BRIGHT; not yet implemented"
+  },
+  "strength": {
+    "spent0": "no extra particles",
+    "samples": [
+      {
+        "spent": 10,
+        "scale": 0.65
+      },
+      {
+        "spent": 50,
+        "scale": 1.0
+      },
+      {
+        "spent": 100,
+        "scale": 1.35
+      }
+    ],
+    "scalesAffect": [
+      "world displacement",
+      "individual puff face dimensions"
+    ],
+    "damageRadius": false,
+    "values1to9": "nonzero visual scale proposed",
+    "above100": "not previewed; mapping requires confirmation"
+  },
+  "variants": {
+    "orange": "textures/explosion_puff_orange-strip.png",
+    "soul": "textures/explosion_puff_soul-strip.png",
+    "sameAlpha": true,
+    "sameGeometryAndTiming": true,
+    "vertexColor": "white"
+  },
+  "model": {
+    "path": "blockbench/fire_detonate_v2_3d_candidate.bbmodel",
+    "sourceUuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+    "reopenedUuid": "e9eebb72-fed6-5b89-ab9e-3991002b637d",
+    "savedGlobalFrame": 7,
+    "nativeAnimationTracks": false,
+    "dynamicMethod": "native GUI pose/UV update then capture; scripts and poses archived",
+    "auxiliaryObjectsExcludedFromRuntime": true
+  },
+  "previews": {
+    "preferred": "previews/detonate_v2_3d_main.gif",
+    "side": "previews/detonate_v2_3d_side.gif",
+    "strength": "previews/detonate_v2_3d_strength.gif",
+    "soul": "previews/detonate_v2_3d_soul.gif",
+    "nativeSource": "actual Desktop Blockbench main viewport",
+    "encoding": "fixed crop per sequence of native captures; no repaint",
+    "cropRecord": "provenance/native-gif-encoding.json"
+  },
+  "files": [
+    {
+      "path": "blockbench/fire_detonate_v2_3d_candidate.bbmodel",
+      "bytes": 329624,
+      "sha256": "000F4370871D97886DAF2BB8411AAAB417847A62D3807E6CAD9786C4D0C26E0E",
+      "candidateSource": "blockbench/fire_detonate_v2_3d_candidate.bbmodel",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "previews/detonate_v2_3d_main.gif",
+      "bytes": 892149,
+      "sha256": "054C4B5F8363DA115F0A9472DCADE60F9E7220E869974CE8BBDCED3DEB80E98B",
+      "candidateSource": "previews/detonate_v2_3d_main.gif",
+      "byteIdenticalToCandidate": true,
+      "width": 1200,
+      "height": 747,
+      "frames": 19
+    },
+    {
+      "path": "previews/detonate_v2_3d_side.gif",
+      "bytes": 852277,
+      "sha256": "179EF78C79B65A637CEF58251EBD3C7273BDB553A4099D84DA7B939251B1B971",
+      "candidateSource": "previews/detonate_v2_3d_side.gif",
+      "byteIdenticalToCandidate": true,
+      "width": 1152,
+      "height": 716,
+      "frames": 19
+    },
+    {
+      "path": "previews/detonate_v2_3d_soul.gif",
+      "bytes": 888849,
+      "sha256": "A65EE62D5D740947C9153DD6890A8514247C58D7466398497B21A1C3F8AABFB3",
+      "candidateSource": "previews/detonate_v2_3d_soul.gif",
+      "byteIdenticalToCandidate": true,
+      "width": 1200,
+      "height": 747,
+      "frames": 19
+    },
+    {
+      "path": "previews/detonate_v2_3d_strength.gif",
+      "bytes": 471762,
+      "sha256": "91A893F0D26E9DABD2A369E25E2D5C18BD9B75C10598E446DA213C5587EAF729",
+      "candidateSource": "previews/detonate_v2_3d_strength.gif",
+      "byteIdenticalToCandidate": true,
+      "width": 1054,
+      "height": 308,
+      "frames": 19
+    },
+    {
+      "path": "previews/gui_breakup_threequarter.png",
+      "bytes": 196547,
+      "sha256": "0CB43322955BBC1BDE0B9C2E0434257A5E497C7A7215BF5E917865F43831748C",
+      "candidateSource": "previews/gui_breakup_threequarter.png",
+      "byteIdenticalToCandidate": true,
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/gui_peak_side_top.png",
+      "bytes": 159168,
+      "sha256": "B98678BF0F33252565AFCA47CAD9F53113320A9D3AC9593245B520A6BFCAC3B1",
+      "candidateSource": "previews/gui_peak_side_top.png",
+      "byteIdenticalToCandidate": true,
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/gui_peak_soul.png",
+      "bytes": 183374,
+      "sha256": "D0746803F04971042E261DD290C2719354C277C5E4F5A475AA273E4847668BA3",
+      "candidateSource": "previews/gui_peak_soul.png",
+      "byteIdenticalToCandidate": true,
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/gui_peak_threequarter.png",
+      "bytes": 182846,
+      "sha256": "B92FCF0BA83FDEFCF1EA28B4A3B240B12DF8382FEC37347FD31CCC16EC60F9C2",
+      "candidateSource": "previews/gui_peak_threequarter.png",
+      "byteIdenticalToCandidate": true,
+      "width": 1200,
+      "height": 920,
+      "frames": 1
+    },
+    {
+      "path": "previews/puff_keyframes.png",
+      "bytes": 21250,
+      "sha256": "0CC01CBC4E573F4724723ED08863903AEE28026A18F0B758C5AC5D3E6C1304F3",
+      "candidateSource": "previews/puff_keyframes.png",
+      "byteIdenticalToCandidate": true,
+      "width": 1280,
+      "height": 364,
+      "frames": 1
+    },
+    {
+      "path": "previews/strength_comparison_detail.png",
+      "bytes": 58488,
+      "sha256": "6463FD63200FE86527BEFEC13467E365BF2204A7A889F30A6A84F1C37D51549D",
+      "candidateSource": "previews/strength_comparison_detail.png",
+      "byteIdenticalToCandidate": true,
+      "width": 1054,
+      "height": 308,
+      "frames": 1
+    },
+    {
+      "path": "provenance/archive-verification.json",
+      "bytes": 10252,
+      "sha256": "56D717AF5780EB70EE804FF8A82913A66CE5387218A6EE9AC04FEFF224F03A4C"
+    },
+    {
+      "path": "provenance/archive_assets.py",
+      "bytes": 7785,
+      "sha256": "334B44AEE21F55C437363AF0B74753075CE3574AF605A3BE2AE1534EB395A813"
+    },
+    {
+      "path": "provenance/asset-verification.json",
+      "bytes": 4711,
+      "sha256": "F4AA1C7E8E8ED5D8D2EB57226439AFC64BE385BA14D864B32EE7E58CCB9753FA",
+      "candidateSource": "evidence/asset-verification.json",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "provenance/candidate-manifest.json",
+      "bytes": 49517,
+      "sha256": "E5CB8F5FADA414121FB03DC812B56DB26704035F420ECF5CB413A0EF8245FA23",
+      "candidateSource": "manifest.json",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "provenance/input-snapshot-used.json",
+      "bytes": 5668,
+      "sha256": "0229D3A6C5E064E12ED6E144982658D2F9E25B6195AE2D2DF4B5A629C7FA0033",
+      "candidateSource": "evidence/input-snapshot-used.json",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "provenance/native-gif-encoding.json",
+      "bytes": 728,
+      "sha256": "385505634DBE1E1B2BC0387F7FB2326D708FF4CB172FAF733C637E18012F38B4",
+      "candidateSource": "evidence/native-gif-encoding.json",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "provenance/particle-seeds.json",
+      "bytes": 6122,
+      "sha256": "B844EF6B3DD5414AE043C1FF22C091A2FADACE86BBAEB5B73600C213BCB4C86C",
+      "candidateSource": "evidence/particle-seeds.json",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "provenance/reopen-validation.json",
+      "bytes": 1142,
+      "sha256": "23DD1A04D91DC3301130C627C29E5D29A824A5A27C6E8D07A78CC4301F096A04",
+      "candidateSource": "evidence/reopen-validation.json",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 4323,
+      "sha256": "55134B21E122DF44E9A394B59E54DA4608CABF0588052E26CEC50CB90D71340F"
+    },
+    {
+      "path": "source/explosion_puff_orange.aseprite",
+      "bytes": 4614,
+      "sha256": "0C3EC19FE36D420F9D909B57AEFBB059D29739E9883D9ED77795B9EF657DBC86",
+      "candidateSource": "source/explosion_puff_orange.aseprite",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "source/explosion_puff_soul.aseprite",
+      "bytes": 4630,
+      "sha256": "EADC6C6DD861261C65A54A0A09C678C2F36C55DF79F5E9E4ECA8B93F4A8C4F73",
+      "candidateSource": "source/explosion_puff_soul.aseprite",
+      "byteIdenticalToCandidate": true
+    },
+    {
+      "path": "textures/explosion_puff_orange-strip.png",
+      "bytes": 2179,
+      "sha256": "28666B39C8A80E0A18EB04DDAE7F7422A546B179307DB0990F7F8109ADF8D0F7",
+      "candidateSource": "textures/explosion_puff_orange-strip.png",
+      "byteIdenticalToCandidate": true,
+      "width": 32,
+      "height": 512,
+      "frames": 1
+    },
+    {
+      "path": "textures/explosion_puff_soul-strip.png",
+      "bytes": 2193,
+      "sha256": "C4B656B506B6CB721BCEF39CFED9BA99AA0AE21F2EDED7839057FC3573835856",
+      "candidateSource": "textures/explosion_puff_soul-strip.png",
+      "byteIdenticalToCandidate": true,
+      "width": 32,
+      "height": 512,
+      "frames": 1
+    },
+    {
+      "path": "visual-handoff.md",
+      "bytes": 9901,
+      "sha256": "A71029FCD80A11E130B47B31EE8FF319B2FEA92D03D17B16F88A93F9C6A85A70"
+    }
+  ]
+}

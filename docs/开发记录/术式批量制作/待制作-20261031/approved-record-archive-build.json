@@ -1,0 +1,186 @@
+{
+  "baselineSha256": "019494902D2EE20A30E6F8DDA382020E5BD911153C68D6EE4151A7D941E251EA",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\approved-record-candidate-preserved.xlsx",
+  "candidateSha256": "5F702287B96EDEB0A87AA132C6585397DFE728B05FC6F3347C7CBF3C5B4443C0",
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\备份\\术式制作表-archive-record-20261031-033624-1.xlsx",
+  "changes": [
+    {
+      "id": "fire_flame_trail",
+      "row": 6,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_meteorite",
+      "row": 7,
+      "actions": [
+        "G:inserted",
+        "H:inserted",
+        "I:inserted",
+        "K:inserted",
+        "L:inserted",
+        "U:inserted",
+        "V:inserted",
+        "R:inserted",
+        "T:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_shock_ring",
+      "row": 8,
+      "actions": [
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "rule_surface_anchor",
+      "row": 9,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "P:forced",
+        "S:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_upwell",
+      "row": 10,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "P:forced",
+        "R:inserted",
+        "S:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "rule_stagger",
+      "row": 11,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "S:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "rule_hit_continue",
+      "row": 12,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "S:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_seed_sow",
+      "row": 13,
+      "actions": [
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_kindle",
+      "row": 14,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "EH:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_detonate",
+      "row": 15,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_nether_gloom",
+      "row": 16,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "EC:inserted",
+        "EG:inserted",
+        "EH:inserted",
+        "EK:forced",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "earth_break_ground",
+      "row": 17,
+      "actions": [
+        "F:inserted",
+        "G:inserted",
+        "H:inserted",
+        "K:inserted",
+        "L:inserted",
+        "DV:forced"
+      ]
+    },
+    {
+      "id": "fire_spark",
+      "row": 18,
+      "actions": [
+        "G:inserted",
+        "H:inserted",
+        "I:inserted",
+        "K:inserted",
+        "L:inserted",
+        "U:inserted",
+        "V:inserted",
+        "DV:forced"
+      ]
+    }
+  ],
+  "definedNames": {
+    "数据表!$A$4:$A$8": "数据表!$A$4:$A$10",
+    "数据表!$E$4:$E$12": "数据表!$E$4:$E$16",
+    "'制作中'!$A$2:$EN$8": "'制作中'!$A$2:$EN$18"
+  },
+  "submitted": false
+}

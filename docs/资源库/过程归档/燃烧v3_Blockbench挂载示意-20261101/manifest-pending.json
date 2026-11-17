@@ -1,0 +1,54 @@
+{
+  "version": "burn-v3-spatial-v1",
+  "date": "2026-11-01",
+  "status": "pending_user_3d_confirmation",
+  "nativeBlockbench": true,
+  "userConfirmedArmDirection": "整团火焰随手臂一起转动",
+  "files": [
+    {
+      "file": "burn-v3-spatial-parts.aseprite",
+      "bytes": 90299,
+      "sha256": "5dfe88d2d34393cd3e9c517cf77af04747d00e7afb1877c8f556223514df4603"
+    },
+    {
+      "file": "燃烧v3_空间挂载示意_v1.bbmodel",
+      "bytes": 205310,
+      "sha256": "c1b437820058eca7c579f5e52d10e84bbe1f7fb9d258c7611579710e5dd41890"
+    },
+    {
+      "file": "bb-front-animation.gif",
+      "bytes": 320690,
+      "sha256": "9ed0035b7c9dc3ee53cb6bf760ac630494f4df44ac81b82d379dab643000c281"
+    },
+    {
+      "file": "bb-back-animation.gif",
+      "bytes": 370530,
+      "sha256": "94453b21750d3e2a22f1de56e7184d15cecf713a4631117ca6ba12487e19b0a0"
+    },
+    {
+      "file": "bb-side-depth.png",
+      "bytes": 28758,
+      "sha256": "2d48d31d5fd1e5539e30a6b63f77649321ea093881be11a9cff49a5e99f95eda"
+    },
+    {
+      "file": "bb-hand-held-detail.png",
+      "bytes": 50228,
+      "sha256": "0864c857259d0fab66c8da6a2b5e889c251f97cb5c9730ac8dc8f341e6c24040"
+    },
+    {
+      "file": "native-mount-parameters.json",
+      "bytes": 6291,
+      "sha256": "d718ac6d0f9375ce2deafb372bf25a08c57f9f29cd4b4a5f6cdb46628c02a6eb"
+    },
+    {
+      "file": "视觉交接_待确认.md",
+      "bytes": 5711,
+      "sha256": "0f88ad9534826ef1c8840b5b092c85664eb5314472c7d902a48f84be246b6188"
+    },
+    {
+      "file": "blockbench-app-proof.png",
+      "bytes": 213714,
+      "sha256": "a9dee3acd3c24d4d107223a9012a59889fc6e415211d3f2b917847edc990e0f3"
+    }
+  ]
+}

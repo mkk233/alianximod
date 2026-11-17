@@ -1,0 +1,63 @@
+{
+  "purpose": "测试核对第1轮的补充执行。不是正式结论，不另计轮次。",
+  "formalCheck": "1/2",
+  "designQuota": "2/2",
+  "implementationQuota": "2/2",
+  "session": "b2d5b359-42e3-4a90-9d24-b26acec6d5f8",
+  "productionDiff": 0,
+  "hashComparedAt": "2026-10-29T11:03:45.9595863+08:00",
+  "postDiff": 0,
+  "mainClasses": "10:49 compileJava UP-TO-DATE exit 0",
+  "testFile": {
+    "path": "src/test/java/com/bslx/XueXiMod/network/SixFireChainSupplementCheck.java",
+    "sha256": "2E0563261992F2B92A48E9CCFEC9C50AC0BFA7E843E3C308205A8F33CDF1191D",
+    "bytes": 7819,
+    "mtime": "2026-10-29T11:05:58.8334100+08:00",
+    "modified": true
+  },
+  "nameGateNewViolations": 0,
+  "javacExit": 0,
+  "classpathRecord": "C:/Users/baishang/AppData/Local/CursorAgentCodex/status-targeting-prison-implementation-20261028/qa2/compile-classpath.txt",
+  "groups": [
+    {
+      "id": "mixedChainRefusal",
+      "status": "已执行",
+      "entry": "SkillSegmentMath.mixedChainRefusal",
+      "exitCode": 0,
+      "start": "2026-10-29T11:05:38.7232449+08:00",
+      "end": "2026-10-29T11:05:38.9885076+08:00",
+      "log": "test-stage-supplement-run-mixed.log",
+      "actual": "三自身状态单式返回空；与燎原、一分为三或双重释放返回自身状态不能和其他术式装配；规则加攻击返回空"
+    },
+    {
+      "id": "releaseBatchFireContext",
+      "status": "未执行复制份",
+      "entry": "ReleaseBatch.open / fireContext",
+      "exitCode": 0,
+      "end": "2026-10-29T11:06:10.9642588+08:00",
+      "log": "test-stage-supplement-run-batch.log",
+      "attempt": "open(null, null) 成功；fireContext 抛 NullPointerException，this.player 为空",
+      "classInit": "ServerPlayer ExceptionInInitializerError: Not bootstrapped，ResourceKey.createRegistryKey；FakePlayer 随之 NoClassDefFoundError",
+      "fixture": "src/test 无 ServerPlayer 或 FakePlayer 夹具",
+      "plannerOnly": "SkillChainPlan.collectModifiers：一分为三 copies=3；双重释放 released=2 且 copies=1。不是按份执行，也没有消费火种"
+    },
+    {
+      "id": "selfStatusCommit",
+      "status": "只执行了空玩家拒绝",
+      "entry": "SelfStatusCommit.attempt",
+      "exitCode": 0,
+      "start": "2026-10-29T11:05:40.9572348+08:00",
+      "end": "2026-10-29T11:05:42.5582616+08:00",
+      "log": "test-stage-supplement-run-commit.log",
+      "actual": "空玩家升温与燎原都是 REJECTED",
+      "notRun": "预检成功、扣费失败、安装失败退款。需要已 bootstrap 的 ServerPlayer、level、服务端线程、PlayerShuData、forceAddEffect",
+      "notSubstituted": ["SelfStatusOrder.decide", "FurnaceInstall.plan"]
+    }
+  ],
+  "implementationReviewRecord": {
+    "sixTechniquesFormalPass": false,
+    "baseRound2": "review-round2.md 结论不通过，R2/R3 须返修",
+    "repairFeedback": "repair-final-final.md 有作者返修，compile-postfix-final.md 有编译和检查",
+    "stillUnreviewed": "底座记录与底层规格仍写返修结果未追加复审；六式记录写未追加正式实现复审"
+  }
+}

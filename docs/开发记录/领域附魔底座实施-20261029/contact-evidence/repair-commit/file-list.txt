@@ -1,0 +1,24 @@
+repair-commit 清单。未覆盖 contact-evidence/before 与 repair-1/before。
+
+返修前快照（复制时长度已核对）：
+- before/src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java
+- before/src/main/resources/xueximod.mixins.json
+DomainContactBilling 本次没有改判定，因此没有为它另存快照。
+
+静态依据：
+- bytecode-actuallyHurt.txt
+
+本次写入：
+- src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java
+  去掉 VanillaGameEvent 监听。setHealth 返回后的 mixin 才把 healthApplied 记为真。
+- src/main/java/com/bslx/XueXiMod/mixin/LivingDomainDamageCommitMixin.java
+  新文件。hurt 的两处 actuallyHurt 用 try/finally 包住，原方法调用一次。
+  LivingEntity.actuallyHurt 的 LivingEntity.setHealth 返回后记录。
+- src/main/java/com/bslx/XueXiMod/mixin/PlayerDomainDamageCommitMixin.java
+  新文件。Player.actuallyHurt 的 Player.setHealth 返回后记录。
+- src/main/resources/xueximod.mixins.json
+  只在 mixins 数组末尾追加上述两个类名。plugin、client 与其余条目未改。
+
+未改：
+- DomainContactBilling.java。异常路径仍按 outcome.healthApplied 决定 retainShare 或 refund。
+- 其它 mixin、TideMarkDamageScope、MagicPool、ManaPaymentReceipt、伤害公式。

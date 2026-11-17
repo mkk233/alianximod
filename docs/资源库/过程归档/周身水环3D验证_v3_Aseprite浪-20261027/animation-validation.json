@@ -1,0 +1,18 @@
+{
+  "waveSource": "curl_wave.aseprite",
+  "waveFrames": 16,
+  "waveLayers": 4,
+  "loopSeconds": 1.6,
+  "geometryLoopMaxDelta": 3.1086244689504383e-15,
+  "textureFramesAtStart": [
+    0,
+    5,
+    10
+  ],
+  "textureFramesAtEnd": [
+    0,
+    5,
+    10
+  ],
+  "adopted": false
+}

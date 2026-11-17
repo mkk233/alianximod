@@ -1,0 +1,22 @@
+{
+  "batchId": "release-variants-20261109",
+  "taskId": "compile-final",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "final-compile-evidence-and-documentation",
+  "authorization": "本批指定编译证据执行者；先核对共享verify-delivery规定compileJava对最终字节的结果，完整且通过则复用不重复编译。仅证据不足或源码后变且共享槽已空时允许执行本批一次必要离线compileJava。可更新指南及本批回执，禁止源码和表格。",
+  "inputVersion": "user-release-variants-20261109-v3-carrier-limits + 实现第3/3轮通过 + 用户v3全源码与资源冻结指纹",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md",
+  "writePaths": [
+    "D:/alianximod/build/",
+    "D:/alianximod/.gradle/",
+    "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/compile-evidence",
+    "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/编译回执.md",
+    "D:/alianximod/docs/多重释放底座与扩展指南.md"
+  ],
+  "dependencies": [
+    "author-core",
+    "author-adapters",
+    "implementation-review"
+  ]
+}

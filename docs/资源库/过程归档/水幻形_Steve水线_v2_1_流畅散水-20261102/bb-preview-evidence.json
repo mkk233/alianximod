@@ -1,0 +1,84 @@
+{
+  "version": "水幻形 Steve 水线 v2.1 流畅散水候选",
+  "adopted": false,
+  "confirm_only": "散水动画",
+  "project_uuid": "14aa37f5-ace2-b389-1849-312f5fea6a29",
+  "project_name": "water_phantom_steve_v2_1",
+  "format": "free",
+  "source_v2_uuid": "20e6cc04-1d69-c38a-3030-5a2bacdaf4f4",
+  "source_v2_bbmodel_sha256": "E7ADAFD118CC91518DE03A55B613451302AF9E26706454A9172BCDFD37B5997A",
+  "source_v2_unchanged": true,
+  "geometry_height_model_units": 32,
+  "do_not_claim_32_units_equal_1_8_blocks": true,
+  "textures_match_v2": true,
+  "steve_water_lines_sha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5",
+  "water_flakes_sha256": "CEFDEE9E3E3FB7F701E19FC9CB3438C586C4841D3A50E3F8C9399A635BD4D70C",
+  "bbmodel_sha256": "4ADFCC75ED1E06E62ECE5FD05E6B109787FB1AC46B29CBFC5A8AF8C5425695F7",
+  "bbmodel_bytes": 281867,
+  "animation": {
+    "name": "water_phantom_steve_scatter_v21",
+    "uuid": "a803dba9-5bc0-772a-eff7-ae6a599ac82f",
+    "length": 1.96,
+    "loop": "once",
+    "keyframes": 1080,
+    "position_step_keys": 66,
+    "position_linear_keys": 380,
+    "root_scale": [1, 1, 1],
+    "response_time": 1.12,
+    "scatter_end": 1.96,
+    "scatter_seconds": 0.84,
+    "flake_fall_seconds": [0.5, 0.58],
+    "main_drop_fall_seconds": [0.48, 0.58],
+    "main_drop_from_response_seconds": [0.5, 0.65],
+    "fall_curve": "linear keys at 35%, 65%, 100% of the fall, displacement fraction = time fraction squared",
+    "hide_show_may_step": true,
+    "motion_after_response_is_continuous": true,
+    "fade_is_scale": true
+  },
+  "v2_diagnosis": {
+    "method": "Timeline.setTime every 0.08s on the live v2 project, read group.mesh.position.y",
+    "flake_00_y": {"1.20": 28, "1.76": 13.9, "2.24": 0.53},
+    "note": "about 1.04s nearly constant speed, then a 17-frame 160ms GIF"
+  },
+  "v21_mesh_samples": {
+    "flake_00_y": {"1.12": 28, "1.20": 26.46, "1.28": 24.92, "1.36": 21.06, "1.44": 16.67, "1.52": 9.6, "1.60": 2.34, "1.68": 0.53},
+    "drop_08_y": {"1.14": 27, "1.26": 25.12, "1.38": 22.17, "1.50": 16.81, "1.62": 8.45, "1.74": 1.08}
+  },
+  "screenshot": {
+    "method": "Blockbench private offscreen view, preview.canvas.toDataURL, Blockbench.writeFile",
+    "view_id": "steve_v21",
+    "preview_id": "mcp_offscreen_steve_v21",
+    "size": [960, 720],
+    "user_camera_left_at": [-40, 32, -40],
+    "shots": [
+      {"file": "bb_hold_three_quarter.png", "time": 0.5, "position": [-24, 22, -72], "target": [12, 14, 0], "fov": 32, "sha256": "0C214615F19ADBAF7F2E9CF85DAE3125DE6D9002EF59585CBD6A395E036A3D8B"},
+      {"file": "bb_break_mid.png", "time": 1.4, "position": [-26, 20, -56], "target": [0, 16, 0], "fov": 32, "sha256": "057F1898C14BE758AB01845ADEC135D7C4B06EBCFC7762564DCD8282F0CE852D"},
+      {"file": "bb_ground_drops.png", "time": 1.78, "position": [-20, 12, -38], "target": [0, 3, 0], "fov": 32, "sha256": "D0116B3D97ED65EB4524FB88B138A7D6E5BE72B4E0958E0555D3E7DA0A5B0AF6"}
+    ]
+  },
+  "gif": {
+    "file": "bb_preview_50fps.gif",
+    "sha256": "AB9EE8399F3C321ADECFBB3CCAE179653AF5242283FCC1DD8AF96F29A5414901",
+    "bytes": 1921027,
+    "size": [960, 720],
+    "frame_count": 99,
+    "frame_duration_ms": 20,
+    "playback_seconds": 1.98,
+    "times": "0, 0.02, ... 1.96",
+    "unique_hashes": 72,
+    "scatter_from_index": 56,
+    "scatter_frames": 43,
+    "scatter_unique_hashes": 43,
+    "hold_unique_hashes": 29,
+    "old_preview": "17 frames, 160ms, 6.25fps, 2.72s playback",
+    "not_a_respeed_of_the_old_gif": true
+  },
+  "mp4": {
+    "produced": false,
+    "encoder": "C:\\Program Files\\Topaz Labs LLC\\Topaz Video AI\\ffmpeg.exe",
+    "check": "ffmpeg -version exited -1073741819",
+    "installed_anything": false
+  },
+  "runtime_sampling": "Client preview only. Runtime should interpolate continuous phase with partialTick. Do not sync the GIF frame table and do not raise server tick, collision, or damage rate.",
+  "offscreen_close_error": "onContextMenu is not defined"
+}

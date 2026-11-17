@@ -1,0 +1,100 @@
+{
+  "writesSettled": true,
+  "needs_compile": true,
+  "blockers": null,
+  "summary": "只改显示名：water_yielding_ribbon 现为断潮，tide_sever 现为薄水切。两项保持玩家可用，水幻形仍只适配 tide_sever。未编译。",
+  "nameOnly": true,
+  "compatibility": {
+    "stableIdsUnchanged": ["water_yielding_ribbon", "tide_sever"],
+    "availability": "两项仍走构造默认 PLAYER，没有改成 DEVELOPMENT_ONLY",
+    "waterPhantomPayload": "tide_sever",
+    "heavySlashAdaptedToWaterPhantom": false,
+    "skillNameMigrated": false,
+    "saveOrConfigMigrated": false
+  },
+  "checks": {
+    "nameGate": {
+      "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+      "exitCode": 0,
+      "output": "源码命名可读性检查通过：未发现单字母变量或禁止缩写"
+    },
+    "langJsonParse": {
+      "zh_cn": "ok",
+      "en_us": "ok"
+    },
+    "compileJava": "not_run"
+  },
+  "boundary": "TideSeverActorAdapter.java 第25行和第30行注释仍写断潮，不是玩家可见提示，本次未改。平衡说明和其它源码注释不在本单写入路径。",
+  "files": [
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+      "lines": [146, 152, 229],
+      "bytes": 24478,
+      "mtime": "2026-11-03T15:33:34.665+08:00",
+      "sha256": "0535c71309b2acced2d6520df7789443240a91e9e6a7ac0e3d496b500fd5178a"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/capture/ActorCaptureTexts.java",
+      "lines": [7],
+      "bytes": 1999,
+      "mtime": "2026-11-03T15:33:32.673+08:00",
+      "sha256": "9d674aa42f203cfffb8786b10a518da2706a3cb76fa850716a9822f3fb16eb0a"
+    },
+    {
+      "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/capture/TideSeverActorAdapter.java",
+      "lines": [33, 34, 35, 36],
+      "bytes": 9475,
+      "mtime": "2026-11-03T15:33:33.221+08:00",
+      "sha256": "7e593e2cb16a9a671fddb000c1d95a202ea9d25ce3da275ab9860181d86d31eb"
+    },
+    {
+      "path": "D:/alianximod/src/main/resources/assets/xueximod/lang/zh_cn.json",
+      "lines": [128],
+      "bytes": 8940,
+      "mtime": "2026-11-03T15:33:33.801+08:00",
+      "sha256": "0de02d9b67c8756d6ab244ac92b48a9dfefd337d190b98066259e72e5eff0b7e"
+    },
+    {
+      "path": "D:/alianximod/src/main/resources/assets/xueximod/lang/en_us.json",
+      "lines": [71],
+      "bytes": 6860,
+      "mtime": "2026-11-03T15:33:34.559+08:00",
+      "sha256": "0fa028a84d54c1fc675864fdfa3855e9c946a6858065d3089a97df424dbaa98e"
+    },
+    {
+      "path": "D:/alianximod/docs/水属性术式.md",
+      "lines": [3, 7, 16, 17, 44, 45, 49, 50],
+      "bytes": 5163,
+      "mtime": "2026-11-03T15:33:38.220+08:00",
+      "sha256": "a093d124bac6887a8a90fc87aedcb1ccea4d4ff4bbd36a7013536355e7bfecfe"
+    },
+    {
+      "path": "D:/alianximod/docs/让锋真实分水修改与实现指导-2026-10-26.md",
+      "lines": [3],
+      "bytes": 24019,
+      "mtime": "2026-11-03T15:33:38.919+08:00",
+      "sha256": "756670bf4c575e1fbaa1574de8ffb6b18a442d9c40e5603edb0f39bb921cd41f"
+    },
+    {
+      "path": "D:/alianximod/docs/水幻形术式设计与实现指导.md",
+      "lines": [5],
+      "bytes": 54044,
+      "mtime": "2026-11-03T15:33:40.937+08:00",
+      "sha256": "e44495d9f9a788bbec14831be462c33297d80b185f69c945fd76791ada98b833"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/实施准备.md",
+      "lines": [3, 7],
+      "bytes": 12952,
+      "mtime": "2026-11-03T15:33:45.480+08:00",
+      "sha256": "9b95b42d3ec8598a6f5461246af6152f8f6375cd9983c330327b7a4e17461135"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/implementation-report.md",
+      "lines": [],
+      "bytes": 5919,
+      "mtime": "2026-11-03T15:34:41.087+08:00",
+      "sha256": "a071d75b413486591d3fae8b9d033743d49235eab26e001140079e65950ca9b8"
+    }
+  ]
+}

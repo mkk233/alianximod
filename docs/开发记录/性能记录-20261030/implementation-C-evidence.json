@@ -1,0 +1,97 @@
+{
+  "author": "C",
+  "model": "grok-4.7-high-fast",
+  "stage": "implementation",
+  "designRounds": "1/2",
+  "implementationReviews": "0/3",
+  "filesReleased": true,
+  "compileRan": false,
+  "gameTested": false,
+  "gitUsed": false,
+  "backupDirectory": "D:/alianximod/docs/开发记录/性能记录-20261030/before-C",
+  "sources": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+      "backupSha256": "d04258755b7f2137efd18fc314c6c5ddc1354872b6a00b481172a0f7db68ca23",
+      "backupBytes": 36773,
+      "sha256": "098f595b9be573905eb930fe37061e09719b422cacd5cc703887576cd534d994",
+      "bytes": 40698,
+      "lastWriteUtc": "2026-10-29T20:12:19Z",
+      "metrics": ["HIT_ENTITY_UPDATE", "MOTION", "ENTITY_QUERY", "NARROW_PHASE", "BLOCK_CLIP"],
+      "counters": ["HIT_ENTITY_UPDATES", "ENTITY_QUERY_CALLS", "ENTITY_CANDIDATES", "NARROW_PHASE_TESTS", "NARROW_PHASE_PASSED"]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java",
+      "backupSha256": "59a69caa5879eb6290bffc9b734c234203abdc17e8d6a63560c4f9d43d4b3e90",
+      "backupBytes": 19796,
+      "sha256": "3a49c611c5aac4ce2a1eaf20d29ceaba0e48f94b7b014e9df8375265a9c3113e",
+      "bytes": 21793,
+      "lastWriteUtc": "2026-10-29T20:12:22Z",
+      "metrics": ["SWORD_OWNED_SCAN", "SWORD_UPDATE", "MOTION"],
+      "counters": ["SWORD_OWNED_SCAN_CALLS", "SWORD_OWNED_SCANNED", "SWORD_UPDATES"]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java",
+      "backupSha256": "052242cef481905ef05d73ae8daae68fe9d4312af86702db9bf2d4d25b7e1d8a",
+      "backupBytes": 13561,
+      "sha256": "569623b1af9a99289faa8f7d1de71a0cfd9e6551130599091643692dede3feb8",
+      "bytes": 15712,
+      "lastWriteUtc": "2026-10-29T20:10:17Z",
+      "metrics": ["ENTITY_QUERY", "NARROW_PHASE", "DAMAGE_APPLY", "MOTION", "BLOCK_CLIP"],
+      "counters": ["ENTITY_QUERY_CALLS", "ENTITY_CANDIDATES", "NARROW_PHASE_TESTS", "NARROW_PHASE_PASSED", "DAMAGE_ATTEMPTS", "DAMAGE_ACCEPTED"]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java",
+      "backupSha256": "eb9d28579813ed27a7ef9db08a01d27c00a7f2f2d6fe3377feb8d7382225d0a2",
+      "backupBytes": 10216,
+      "sha256": "c59d191555420e0f4a807d896d6307f5667f3c1385dbd2aae3fb481c8d34374e",
+      "bytes": 12350,
+      "lastWriteUtc": "2026-10-29T20:10:22Z",
+      "metrics": ["HIT_SETTLE", "EXPLICIT_SEND", "ENTITY_QUERY"],
+      "counters": ["EXPLICIT_SEND_CALLS", "ENTITY_QUERY_CALLS", "ENTITY_CANDIDATES"]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+      "backupSha256": "f3e6d4c4233f5b7624fd85cb9bf1f1de58d0790da3d6102c09d7070a9cdd9868",
+      "backupBytes": 21777,
+      "sha256": "4d70193a86de7034b65c996679682189a834d498053bab82bc38cef6869ae4b9",
+      "bytes": 22685,
+      "lastWriteUtc": "2026-10-29T20:11:16Z",
+      "metrics": ["HIT_SPAWN"],
+      "counters": ["HIT_SPAWN_REQUESTED", "HIT_SPAWN_CONSTRUCTED", "HIT_SPAWN_ACCEPTED"]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java",
+      "backupSha256": "10dd680b45c91e83150465b785634c4df04ce6fc7e1f5ec3ee0d60b82ce80f9a",
+      "backupBytes": 13279,
+      "sha256": "6c594e3df8bb09e53cc79031afa2387314f40a89ac64d35f4bb394d7e9efbc9e",
+      "bytes": 14434,
+      "lastWriteUtc": "2026-10-29T20:10:25Z",
+      "metrics": ["DAMAGE_APPLY"],
+      "counters": ["DAMAGE_ATTEMPTS", "DAMAGE_ACCEPTED"]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java",
+      "backupSha256": "aa5198ef79b05adbbf4640d62a65fbf5fd305eab769b474443bbb46a29e4ba08",
+      "backupBytes": 2531,
+      "sha256": "0127ef6e59840c75162afb4a69f75d4c57966703bc321d998e8d6ef50154bdfb",
+      "bytes": 3572,
+      "lastWriteUtc": "2026-10-29T20:11:15Z",
+      "metrics": ["PHANTOM_SWORD_SPAWN"],
+      "counters": ["SWORD_SPAWN_REQUESTED", "SWORD_SPAWN_CONSTRUCTED", "SWORD_SPAWN_ACCEPTED"]
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/HitVolumes.java",
+      "backupSha256": "d5441b07096cee46cfc85b3cb59895a06ad9a61affb79e9f05c933a7adcefcee",
+      "backupBytes": 14918,
+      "sha256": "18bc0232bcc0fc2c7e2da2900ff3cb4b7a13f97dd54577b675f87b8ce2f2b71c",
+      "bytes": 16089,
+      "lastWriteUtc": "2026-10-29T20:10:28Z",
+      "metrics": ["ENTITY_QUERY"],
+      "counters": ["ENTITY_QUERY_CALLS", "ENTITY_CANDIDATES"]
+    }
+  ],
+  "callCountUnchangedVersusBackup": ["target.hurt", "addFreshEntity", "getEntitiesOfClass", "level.clip"],
+  "nameGate": "tools/check-name-gate.ps1 blocked twice because this stage forbids compilation; new locals were self-checked, gate not claimed passed",
+  "blocking": "PerformanceRecorder, PerfMetric and PerfCounter are referenced but not created by C; unified compile waits until A lands those types"
+}

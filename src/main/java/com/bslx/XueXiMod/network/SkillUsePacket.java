@@ -1,19 +1,22 @@
 package com.bslx.XueXiMod.network;
 
 import com.bslx.XueXiMod.debug.DebugLog;
+import com.bslx.XueXiMod.debug.performance.PerfMetric;
+import com.bslx.XueXiMod.debug.performance.PerformanceRecorder;
 import com.bslx.XueXiMod.item.SkillCarrier;
 import com.bslx.XueXiMod.item.StaffData;
 import com.bslx.XueXiMod.item.StaffItem;
 import com.bslx.XueXiMod.item.StaffSkills;
 import com.bslx.XueXiMod.player.MagicPool;
+import com.bslx.XueXiMod.player.ManaPaymentReceipt;
 import com.bslx.XueXiMod.player.PlayerBoundSkills;
 import com.bslx.XueXiMod.player.PlayerShuData;
-import com.bslx.XueXiMod.shu.ElementReaction;
 import com.bslx.XueXiMod.shu.Technique;
+import com.bslx.XueXiMod.skill.SkillType;
+import com.bslx.XueXiMod.status.wood.vine.VineMarkActions;
+import com.bslx.XueXiMod.status.wood.vine.VineMarkRuntime;
+import com.bslx.XueXiMod.shu.TechniqueAccess;
 import com.bslx.XueXiMod.shu.TechniqueType;
-import com.bslx.XueXiMod.shu.technique.EnchantmentAccumulator;
-import com.bslx.XueXiMod.shu.technique.EnchantmentDefinition;
-import com.bslx.XueXiMod.shu.technique.EnchantmentRegistry;
 import com.bslx.XueXiMod.shu.technique.EnchantmentResolution;
 import com.bslx.XueXiMod.shu.technique.TechniqueCastContext;
 import com.bslx.XueXiMod.shu.technique.TechniqueEffect;
@@ -21,244 +24,999 @@ import com.bslx.XueXiMod.shu.technique.TechniqueEffectRegistry;
 import com.bslx.XueXiMod.shu.technique.chain.ChainScheduler;
 import com.bslx.XueXiMod.shu.technique.chain.ChainSegment;
 import com.bslx.XueXiMod.shu.technique.chain.TechniqueChain;
-import com.bslx.XueXiMod.shu.technique.effects.LockTargetService;
 import com.bslx.XueXiMod.shu.technique.enchant.EnchantBonus;
-import com.bslx.XueXiMod.shu.technique.enchant.WeaponEnchant;
-import com.bslx.XueXiMod.shu.technique.release.CastFrame;
+import com.bslx.XueXiMod.shu.technique.enchant.EnchantmentSnapshot;
 import com.bslx.XueXiMod.shu.technique.release.ChainRole;
-import com.bslx.XueXiMod.shu.technique.release.ReleaseDefinition;
-import com.bslx.XueXiMod.shu.technique.release.ReleaseKind;
 import com.bslx.XueXiMod.shu.technique.release.ReleaseBatch;
+import com.bslx.XueXiMod.shu.technique.release.ReleaseDefinition;
+import com.bslx.XueXiMod.shu.technique.release.ReleaseInput;
+import com.bslx.XueXiMod.shu.technique.release.ReleaseKind;
 import com.bslx.XueXiMod.shu.technique.release.ReleaseRegistry;
-import com.bslx.XueXiMod.shu.technique.sword.SwordEntity;
-import com.bslx.XueXiMod.shu.technique.release.ReleaseTag;
+import com.bslx.XueXiMod.shu.technique.release.TrajectoryRulePreview;
+import com.bslx.XueXiMod.shu.technique.release.barrier.BarrierService;
+import com.bslx.XueXiMod.shu.technique.release.bind.BindingLayout;
+import com.bslx.XueXiMod.shu.technique.release.bind.BoundReleasePlan;
+import com.bslx.XueXiMod.shu.technique.release.bind.BoundReleases;
+import com.bslx.XueXiMod.shu.technique.release.bind.StructureFault;
+import com.bslx.XueXiMod.shu.technique.release.capture.ActorCaptureCarrierGate;
+import com.bslx.XueXiMod.shu.technique.release.capture.ActorCaptureCompiler;
+import com.bslx.XueXiMod.shu.technique.release.capture.ActorCaptureDispatcher;
+import com.bslx.XueXiMod.shu.technique.release.capture.ActorCaptureInspection;
+import com.bslx.XueXiMod.shu.technique.release.capture.ActorCaptureStatus;
+import com.bslx.XueXiMod.shu.technique.release.capture.ActorCaptureTexts;
+import com.bslx.XueXiMod.shu.technique.release.capture.CaptureCarrierCheck;
+import com.bslx.XueXiMod.shu.technique.release.capture.CaptureCarrierDecision;
+import com.bslx.XueXiMod.shu.technique.release.capture.CaptureDispatchResult;
+import com.bslx.XueXiMod.shu.technique.release.capture.CapturedInput;
+import com.bslx.XueXiMod.shu.technique.release.conditional.ConditionalIntent;
+import com.bslx.XueXiMod.shu.technique.release.domain.DomainSpawnInheritance;
+import com.bslx.XueXiMod.shu.technique.release.domain.motion.DomainCastContext;
+import com.bslx.XueXiMod.shu.technique.release.entity.HostCast;
+import com.bslx.XueXiMod.shu.technique.release.entity.HostGroupCommit;
+import com.bslx.XueXiMod.shu.technique.release.field.FieldSpawner;
+import com.bslx.XueXiMod.shu.technique.release.field.FieldZones;
+import com.bslx.XueXiMod.shu.technique.release.guard.GuardStates;
+import com.bslx.XueXiMod.shu.technique.release.momentum.ChargeGate;
+import com.bslx.XueXiMod.shu.technique.release.momentum.WaterMomentum;
+import com.bslx.XueXiMod.shu.technique.release.selfstatus.SelfStatusCommit;
+import com.bslx.XueXiMod.shu.technique.release.water.CastSource;
+import com.bslx.XueXiMod.shu.technique.release.water.WaterBeatBridge;
 import com.bslx.XueXiMod.skill.Skill;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.network.simple.SimpleChannel;
 
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-import java.util.function.Consumer;
+import java.util.Set;
+import java.util.UUID;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Supplier;
 
 public class SkillUsePacket {
+    public static final int GESTURE_ONCE = 0;
+    public static final int GESTURE_HOLD = 1;
+    public static final int GESTURE_DROP = 2;
+
+    private static final ThreadLocal<Boolean> ANNOUNCE = ThreadLocal.withInitial(() -> Boolean.TRUE);
+
     private final int slotIndex;
+    private final int holdGesture;
 
-    private static final java.util.Map<java.util.UUID, int[]> SKILL_BUSY_UNTIL = new java.util.concurrent.ConcurrentHashMap<>();
-
-    public SkillUsePacket(int slotIndex) {
+    public SkillUsePacket(int slotIndex, int holdGesture) {
         this.slotIndex = slotIndex;
+        this.holdGesture = holdGesture;
     }
 
     public void encode(FriendlyByteBuf buf) {
         buf.writeInt(slotIndex);
+        buf.writeByte(holdGesture);
     }
 
     public static SkillUsePacket decode(FriendlyByteBuf buf) {
-        return new SkillUsePacket(buf.readInt());
+        return new SkillUsePacket(buf.readInt(), buf.readByte());
     }
 
-    public void handle(Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> {
-            ServerPlayer player = ctx.get().getSender();
-            if (player == null) return;
-
-            ItemStack mainHand = player.getItemInHand(InteractionHand.MAIN_HAND);
-            boolean staff = StaffItem.holds(mainHand);
-            double cooldownReduction = 0.0;
-            Double attributeDamageBonus = null;
-            if (staff) {
-                if (slotIndex != 0) return;
-                StaffData data = ((StaffItem) mainHand.getItem()).data();
-                cooldownReduction = data.cooldownReduction();
-                attributeDamageBonus = data.attributeDamageBonus();
-            } else {
-                if (slotIndex < 0 || slotIndex > 3) return;
-                if (!SkillCarrier.canRelease(mainHand)) {
-                    Skill peek = PlayerBoundSkills.get(player, slotIndex);
-                    if (peek == null || !allowsEmptyHandSwordCast(player, peek)) {
-                        return;
-                    }
+    public void handle(Supplier<NetworkEvent.Context> context) {
+        context.get().enqueueWork(() -> {
+            long releaseStart = PerformanceRecorder.begin();
+            try {
+                ServerPlayer player = context.get().getSender();
+                if (player == null) {
+                    return;
                 }
-            }
-
-            Skill skill = staff ? StaffSkills.asSkill(mainHand) : PlayerBoundSkills.get(player, slotIndex);
-            if (skill == null) {
-                player.sendSystemMessage(Component.literal("§c这个槽位还没有装配剑技"));
-                return;
-            }
-
-            if (isBusy(player, slotIndex)) {
-                DebugLog.log("释放中断：槽" + (slotIndex + 1) + " 链条尚未结束");
-                return;
-            }
-            DebugLog.log("释放槽" + (slotIndex + 1) + " " + skill.getName());
-
-            int lastStartTick = executeSkill(player, skill, mainHand, slotIndex, cooldownReduction, attributeDamageBonus);
-            if (lastStartTick == -2) {
-                return;
-            }
-            if (lastStartTick >= 0) {
-                markBusy(player, slotIndex, lastStartTick + 1);
-            }
-
-            PlayerShuData data = PlayerShuData.get(player);
-            boolean leveledUp = false;
-            for (var t : skill.getTechniques()) {
-                data.incrementUsage(t.getId());
-                if (data.addUsageAndTryLevelUp(t.getType(), player)) {
-                    leveledUp = true;
+                if (holdGesture == GESTURE_DROP) {
+                    HoldRepeat.drop(player, slotIndex);
+                    return;
                 }
-            }
-            PlayerShuData.save(player, data);
-
-            if (leveledUp) {
-                com.bslx.XueXiMod.network.ModNetwork.sendToPlayer(
-                    player, new com.bslx.XueXiMod.network.ShuSyncPacket(data));
+                if (holdGesture == GESTURE_HOLD) {
+                    HoldRepeat.arm(player, slotIndex);
+                }
+                boolean keep = offer(player, slotIndex, true);
+                if (holdGesture == GESTURE_HOLD && !keep) {
+                    HoldRepeat.drop(player, slotIndex);
+                }
+            } finally {
+                PerformanceRecorder.end(PerfMetric.RELEASE_REQUEST, releaseStart);
             }
         });
-        ctx.get().setPacketHandled(true);
+        context.get().setPacketHandled(true);
     }
 
-    private boolean isBusy(ServerPlayer player, int slot) {
-        int[] busy = SKILL_BUSY_UNTIL.get(player.getUUID());
-        if (busy == null) return false;
-        if (slot < 0 || slot >= busy.length) return false;
-        return player.getServer().getTickCount() < busy[slot];
-    }
-
-    private void markBusy(ServerPlayer player, int slot, int untilTick) {
-        if (slot < 0 || slot >= 4) return;
-        int[] busy = SKILL_BUSY_UNTIL.computeIfAbsent(player.getUUID(), k -> new int[4]);
-        if (untilTick > busy[slot]) {
-            busy[slot] = untilTick;
+    /** 尝试放当前这一发。冷却中或魔力不够时仍保持按住；装配不合法时松开。 */
+    static boolean offer(ServerPlayer player, int slotIndex, boolean announce) {
+        boolean previous = ANNOUNCE.get();
+        ANNOUNCE.set(announce);
+        try {
+            return new SkillUsePacket(slotIndex, GESTURE_ONCE).offerNow(player);
+        } finally {
+            ANNOUNCE.set(previous);
         }
     }
 
-    private int executeSkill(ServerPlayer player, Skill skill, ItemStack weapon, int slot,
-                             double cooldownReduction, Double attributeDamageBonus) {
-        double weaponDamage = player.getAttribute(Attributes.ATTACK_DAMAGE).getValue();
-        float weaponBonus = (float) Math.max(0, weaponDamage - 1.0);
+    private static void tell(ServerPlayer player, String text) {
+        if (!Boolean.TRUE.equals(ANNOUNCE.get()) || player == null || text == null) {
+            return;
+        }
+        player.sendSystemMessage(Component.literal(text));
+    }
 
-        List<Technique> techniques = skill.getTechniques();
-        List<ChainSegment> segments = TechniqueChain.split(skill);
-
-        boolean hasDamageTechnique = false;
-        for (ChainSegment segment : segments) {
-            if (techniques.get(segment.actionIndex()).getBaseDamage() > 0) {
-                hasDamageTechnique = true;
-                break;
+    private boolean offerNow(ServerPlayer player) {
+        ItemStack mainHand = player.getItemInHand(InteractionHand.MAIN_HAND);
+        boolean staff = StaffItem.holds(mainHand);
+        double cooldownReduction = 0.0;
+        Double attributeDamageBonus = null;
+        if (staff) {
+            if (slotIndex != 0) {
+                return false;
+            }
+            String staffRefusal = StaffSkills.castRefusal(player, mainHand);
+            if (staffRefusal != null) {
+                player.displayClientMessage(Component.translatable(staffRefusal), true);
+                return false;
+            }
+            StaffData data = ((StaffItem) mainHand.getItem()).data();
+            cooldownReduction = data.cooldownReduction();
+            attributeDamageBonus = data.attributeDamageBonus();
+        } else {
+            if (slotIndex < 0 || slotIndex > 3) {
+                return false;
+            }
+            if (!SkillCarrier.canRelease(mainHand)) {
+                Skill peek = PlayerBoundSkills.get(player, slotIndex);
+                if (peek == null || !SkillSegmentMath.allowsEmptyHandSwordCast(player, peek)) {
+                    return false;
+                }
             }
         }
-        boolean hasSwordManip = hasSwordManipulation(techniques);
-        if (!hasDamageTechnique && !hasSwordManip) {
-            player.sendSystemMessage(Component.literal("§c当前剑技没有可释放的伤害术式"));
-            return -1;
+
+        Skill skill = staff ? StaffSkills.asSkill(mainHand) : PlayerBoundSkills.get(player, slotIndex);
+        if (skill == null) {
+            tell(player, "§c这个槽位还没有装配剑技");
+            return false;
+        }
+        if (!TechniqueAccess.skillAllowed(skill)) {
+            tell(player, TechniqueAccess.DENIAL_TEXT);
+            return false;
+        }
+        String heldSwordRefusal = HeldSwordGate.refusal(mainHand, skill.getTechniques());
+        if (heldSwordRefusal != null) {
+            if (Boolean.TRUE.equals(ANNOUNCE.get())) {
+                HeldSwordGate.tellLimited(player, heldSwordRefusal);
+            }
+            return false;
+        }
+        if (staff) {
+            CaptureCarrierCheck checked = ActorCaptureCarrierGate.inspect(skill, true, false);
+            if (checked.decision() == CaptureCarrierDecision.REFUSED
+                    || checked.decision() == CaptureCarrierDecision.DRAFT) {
+                tell(player, checked.playerText());
+                return false;
+            }
+            List<Technique> listedChain = skill.getTechniques();
+            for (int techniqueIndex = 0; techniqueIndex < listedChain.size(); techniqueIndex++) {
+                Technique listed = listedChain.get(techniqueIndex);
+                if (listed == null || listed.getType() != TechniqueType.SWORD) {
+                    continue;
+                }
+                if (checked.decision() == CaptureCarrierDecision.READY
+                        && ActorCaptureCarrierGate.permitsCapturedType(checked, techniqueIndex, listed)) {
+                    continue;
+                }
+                tell(player, "§c剑术不能由法杖释放");
+                return false;
+            }
+        }
+
+        if (CastCooldown.busy(player, mainHand, slotIndex)) {
+            if (Boolean.TRUE.equals(ANNOUNCE.get())) {
+                DebugLog.log("释放中断：槽" + (slotIndex + 1) + " 链条尚未结束");
+            }
+            return true;
+        }
+        DebugLog.log("释放槽" + (slotIndex + 1) + " " + skill.getName());
+
+        if (skill.getType() == SkillType.SWORD) {
+            VineMarkActions.armSword(player);
+        }
+        try {
+        CastTiming timing = executeSkill(player, skill, mainHand, slotIndex, cooldownReduction, attributeDamageBonus);
+        if (!timing.accepted()) {
+            return timing.lacksMana();
+        }
+        if (!timing.settlesLater()) {
+            CastCooldown.mark(player, mainHand, slotIndex, timing.replayTick());
+            DebugLog.log("释放时刻 开始=" + timing.startedTick() + " 末段=" + timing.finishedTick() + " 重放=" + timing.replayTick());
+        } else {
+            DebugLog.log("双重释放已接受，冷却等到这一发结束");
+        }
+
+        PlayerShuData data = PlayerShuData.get(player);
+        boolean leveledUp = false;
+        for (Technique technique : timing.fired()) {
+            data.incrementUsage(technique.getId());
+            if (data.addUsageAndTryLevelUp(technique.getType(), player)) {
+                leveledUp = true;
+            }
+        }
+        PlayerShuData.save(player, data);
+
+        if (leveledUp) {
+            ModNetwork.sendToPlayer(player, new ShuSyncPacket(data));
+        }
+        return true;
+        } finally {
+            VineMarkActions.disarmSword();
+        }
+    }
+
+    /**
+     * 捕获整链在批量编译之前结束。普通链返回 null，继续原来的释放。
+     * 计划或拒绝都不再回到主人循环。
+     */
+    private CastTiming routeCapture(ServerPlayer player, Skill skill, ItemStack weapon, int slot,
+                                    double cooldownReduction, Double attributeDamageBonus, float weaponBonus) {
+        boolean staffCarrier = StaffItem.holds(weapon) && slot == 0;
+        if (StaffItem.holds(weapon)) {
+            String rawFault = StaffSkills.rawEntryFault(weapon);
+            if (rawFault != null || !StaffSkills.matchesSkill(weapon, skill)) {
+                HoldRepeat.drop(player, slot);
+                tell(player, rawFault != null ? rawFault : ActorCaptureTexts.CHAIN_MISMATCH);
+                return CastTiming.rejected();
+            }
+        }
+        Vec3 rawLook = player.getLookAngle();
+        Vec3 lookUnit = rawLook;
+        double lookLength = rawLook.length();
+        if (Double.isFinite(lookLength) && lookLength > 1.0E-6D) {
+            lookUnit = rawLook.scale(1.0D / lookLength);
+        }
+        int serverGameTick = player.getServer() == null ? 0 : player.getServer().getTickCount();
+        CapturedInput input = new CapturedInput(
+                player.isShiftKeyDown(),
+                player.position(),
+                player.getEyePosition(),
+                lookUnit,
+                weaponBonus,
+                attributeDamageBonus,
+                cooldownReduction,
+                weapon.copy(),
+                slot,
+                staffCarrier,
+                serverGameTick);
+        ActorCaptureInspection inspection = ActorCaptureCompiler.inspect(skill);
+        if (inspection.status() == ActorCaptureStatus.NOT_APPLICABLE) {
+            return null;
+        }
+        HoldRepeat.drop(player, slot);
+        if (inspection.status() != ActorCaptureStatus.PLAN || inspection.plan() == null) {
+            tell(player, inspection.playerText());
+            return CastTiming.rejected();
+        }
+        CaptureDispatchResult result = ActorCaptureDispatcher.tryExecute(player, skill, inspection.plan(), input);
+        if (!result.accepted()) {
+            if (result.lacksMana()) {
+                return CastTiming.insufficient();
+            }
+            tell(player, result.playerText());
+            return CastTiming.rejected();
+        }
+        int scaledTicks = SkillSegmentMath.scaleCooldown(result.unscaledCooldownTicks(), cooldownReduction);
+        int nowTick = player.getServer().getTickCount();
+        int replayTick = scaledTicks <= 0 ? nowTick : nowTick + scaledTicks;
+        Technique fired = result.captureTechnique();
+        if (fired == null) {
+            tell(player, ActorCaptureTexts.CHAIN_MISMATCH);
+            return CastTiming.rejected();
+        }
+        return CastTiming.accepted(nowTick, nowTick, replayTick, List.of(fired));
+    }
+
+
+    /**
+     * 单独的弹道规则走有限视觉预览。
+     * 组合、普通规则和未知装配返回空，继续原来的拒绝。
+     */
+    private static CastTiming routeStandaloneTrajectoryPreview(ServerPlayer player, Skill skill, int slot,
+                                                               double cooldownReduction) {
+        if (!TrajectoryRulePreview.isStandalone(skill)) {
+            return null;
+        }
+        HoldRepeat.drop(player, slot);
+        Technique technique = skill.getTechniques().get(0);
+        int quotedCost = SkillSegmentMath.quotedMana(technique);
+        if (!TrajectoryRulePreview.play(player, technique, quotedCost)) {
+            return CastTiming.insufficient();
+        }
+        int nowTick = player.getServer().getTickCount();
+        int scaledTicks = SkillSegmentMath.scaleCooldown(
+                SkillSegmentMath.configuredBaseCooldown(technique), cooldownReduction);
+        int replayTick = scaledTicks <= 0 ? nowTick : nowTick + scaledTicks;
+        return CastTiming.accepted(nowTick, nowTick, replayTick, List.of(technique));
+    }
+
+    private CastTiming executeSkill(ServerPlayer player, Skill skill, ItemStack weapon, int slot,
+                             double cooldownReduction, Double attributeDamageBonus) {
+        if (!TechniqueAccess.skillAllowed(skill)) {
+            tell(player, TechniqueAccess.DENIAL_TEXT);
+            return CastTiming.rejected();
+        }
+        String mixedRefusal = ChainAdmission.refusal(skill.getTechniques());
+        if (mixedRefusal != null) {
+            String shownRefusal = mixedRefusal.startsWith("自身") ? mixedRefusal : "这个" + mixedRefusal;
+            tell(player, "§c" + shownRefusal);
+            return CastTiming.rejected();
+        }
+        CastTiming cooperativeTiming = CooperativeCastRouter.route(player, skill, weapon, slot, cooldownReduction);
+        if (cooperativeTiming != null) {
+            return cooperativeTiming;
+        }
+        CastTiming trajectoryPreview = routeStandaloneTrajectoryPreview(player, skill, slot, cooldownReduction);
+        if (trajectoryPreview != null) {
+            return trajectoryPreview;
+        }
+        double weaponDamage = player.getAttribute(Attributes.ATTACK_DAMAGE).getValue();
+        float weaponBonus = (float) Math.max(0, weaponDamage - 1.0);
+        CastTiming captureTiming = routeCapture(player, skill, weapon, slot, cooldownReduction, attributeDamageBonus, weaponBonus);
+        if (captureTiming != null) {
+            return captureTiming;
+        }
+        BatchReleasePlan batchPlan = BatchReleaseCompiler.compile(skill, cooldownReduction);
+        if (batchPlan != null) {
+            if (batchPlan.refusalKey() != null) {
+                player.displayClientMessage(Component.translatable(batchPlan.refusalKey()), true);
+                return CastTiming.rejected();
+            }
+            return BatchCastSession.open(player, weapon, slot, skill, batchPlan, weaponBonus, attributeDamageBonus);
+        }
+        BindingLayout bindingLayout = BindingLayout.compile(skill);
+        if (bindingLayout.failed()) {
+            List<StructureFault> layoutFaults = bindingLayout.faults();
+            String faultText = layoutFaults.isEmpty() ? "领域绑定后面没有可绑定的攻击" : layoutFaults.get(0).message();
+            tell(player, "§c" + faultText);
+            return CastTiming.rejected();
+        }
+        skill = bindingLayout.projectedSkill();
+
+        List<Technique> assembled = skill.getTechniques();
+        String heldSwordRefusal = HeldSwordGate.refusal(weapon, assembled);
+        if (heldSwordRefusal != null) {
+            if (Boolean.TRUE.equals(ANNOUNCE.get())) {
+                HeldSwordGate.tellLimited(player, heldSwordRefusal);
+            }
+            return CastTiming.rejected();
+        }
+        CastSource castSource = WaterBeatBridge.capture(player, slot);
+
+        Skill offeredSkill = skill;
+        CompiledCastPlan castPlan = CastPlanCache.lookup(player.getServer(), offeredSkill);
+        boolean plannedStepped = false;
+        int plannedCooldown = 0;
+        String plannedSignature = "";
+        int plannedCount = 0;
+        Skill plannedSkill = offeredSkill;
+        CompiledCastPlan.Slice selectedSlice = null;
+        List<Integer> chosenStepIndexes = null;
+        if (castPlan != null && castPlan.stepCount() > 0) {
+            String signatureText = castPlan.progressSignature();
+            int availableSteps = castPlan.stepCount();
+            int cursor = ChainProgress.current(player, weapon, slot, signatureText, availableSteps);
+            CompiledCastPlan.Slice candidate = castPlan.slice(cursor);
+            if (candidate != null) {
+                List<Integer> selectedIndexes = castPlan.stepIndexes(cursor);
+                chosenStepIndexes = selectedIndexes;
+                selectedSlice = candidate;
+                plannedStepped = true;
+                plannedCount = availableSteps;
+                plannedSignature = signatureText;
+                plannedCooldown = ChainSteps.cooldown(offeredSkill, selectedIndexes, cooldownReduction);
+                plannedSkill = castPlan.sliceSkill(offeredSkill, cursor);
+            }
+        } else if (castPlan != null) {
+            selectedSlice = castPlan.slice(-1);
+        }
+        final boolean stepped;
+        final int stepCooldown;
+        final String stepSignature;
+        final int stepCount;
+        final CastPlanContext planContext;
+        if (selectedSlice == null) {
+            List<List<Integer>> chainSteps = ChainSteps.list(offeredSkill);
+            boolean fallbackStepped = !chainSteps.isEmpty();
+            int fallbackCount = chainSteps.size();
+            String fallbackSignature = "";
+            int fallbackCooldown = 0;
+            Skill fallbackSkill = offeredSkill;
+            if (fallbackStepped) {
+                fallbackSignature = ChainSteps.signature(fallbackSkill);
+                int cursor = ChainProgress.current(player, weapon, slot, fallbackSignature, fallbackCount);
+                List<Integer> selectedIndexes = chainSteps.get(cursor);
+                chosenStepIndexes = selectedIndexes;
+                fallbackCooldown = ChainSteps.cooldown(fallbackSkill, selectedIndexes, cooldownReduction);
+                fallbackSkill = ChainSteps.slice(fallbackSkill, selectedIndexes);
+            }
+            skill = fallbackSkill;
+            stepped = fallbackStepped;
+            stepCount = fallbackCount;
+            stepSignature = fallbackSignature;
+            stepCooldown = fallbackCooldown;
+            planContext = null;
+        } else {
+            skill = plannedSkill;
+            stepped = plannedStepped;
+            stepCount = plannedCount;
+            stepSignature = plannedSignature;
+            stepCooldown = plannedCooldown;
+            planContext = new CastPlanContext(skill, selectedSlice);
+        }
+        if (chosenStepIndexes == null) {
+            chosenStepIndexes = identityIndexes(offeredSkill.getTechniques().size());
+        }
+        final DomainOpening domainOpening = new DomainOpening(bindingLayout, chosenStepIndexes, UUID.randomUUID());
+        final int frozenStepCooldown = stepCooldown;
+
+        List<Technique> techniques = skill.getTechniques();
+        final Skill replaySkill = skill;
+        List<ChainSegment> segments = planContext != null ? planContext.segments() : TechniqueChain.split(skill);
+
+        boolean hasPlayable = false;
+        for (ChainSegment segment : segments) {
+            Technique listed = techniques.get(segment.actionIndex());
+            if (SkillSegmentMath.isRemovedRule(listed.getId()) || SkillSegmentMath.isChainModifier(listed)) {
+                continue;
+            }
+            hasPlayable = true;
+            break;
+        }
+        if (!stepped && segments.isEmpty() && legalEnchantChain(techniques)) {
+            return imprintEnchantChain(player, skill, techniques, cooldownReduction);
+        }
+        boolean hasSwordManip = SkillSegmentMath.hasSwordManipulation(techniques);
+        if (!hasPlayable) {
+            tell(player, "§c当前剑技没有可释放的伤害术式");
+            return CastTiming.rejected();
         }
         if (hasSwordManip) {
             boolean holdingSword = weapon.getItem() instanceof SwordItem;
-            boolean worldSword = hasPlantedWorldSword(player);
+            boolean worldSword = SkillSegmentMath.hasPlantedWorldSword(player);
             if (!holdingSword && !worldSword) {
-                player.sendSystemMessage(Component.literal("§c需要手持剑"));
-                return -1;
+                tell(player, "§c需要手持剑");
+                return CastTiming.rejected();
+            }
+        }
+        PlayerShuData casterData = PlayerShuData.get(player);
+        for (Technique listed : techniques) {
+            ReleaseDefinition listedDefinition = ReleaseRegistry.get(listed.getId());
+            if (listedDefinition != null && listedDefinition.domain() != null && !casterData.isUnlocked(listed)) {
+                tell(player, "§c还没有学会释放" + listed.getName());
+                return CastTiming.rejected();
             }
         }
 
-        int cost = pressCommitCost(techniques, segments);
-        if (!MagicPool.trySpend(player, cost)) {
-            return -2;
+        CompiledReleaseStep dualPlan = CompiledReleaseStep.compile(skill, techniques, segments, cooldownReduction, planContext);
+        if (dualPlan != null) {
+            if (dualPlan.chargeRefusal != null) {
+                tell(player, "§c" + dualPlan.chargeRefusal);
+                return CastTiming.rejected();
+            }
+            String memberRefusal = dualPlan.multicast()
+                    ? ContactCast.refusal(skill, techniques, segments, dualPlan)
+                    : ContactCast.refusal(skill, segments);
+            if (memberRefusal != null) {
+                tell(player, "§c" + memberRefusal);
+                return CastTiming.rejected();
+            }
+            return CastExecutionSession.open(player, weapon, slot, castSource, skill, techniques, segments, dualPlan, weaponBonus,
+                    stepSignature, stepCount, planContext, domainOpening);
         }
+
+        String contactRefusal = ContactCast.refusal(skill, segments);
+        if (contactRefusal != null) {
+            tell(player, "§c" + contactRefusal);
+            return CastTiming.rejected();
+        }
+
+        final boolean conditionalChain = chainHasConditional(techniques, segments);
+        final String conditionalLockKey = conditionalChain ? CastCooldown.carrierKey(player, weapon, slot) : null;
+        final AtomicBoolean conditionalLockReleased = new AtomicBoolean(!conditionalChain);
+        if (conditionalChain && !CastCooldown.acquire(conditionalLockKey)) {
+            return CastTiming.rejected();
+        }
+
+        Integer cost = SkillChainPlan.pressCommitCost(techniques, segments, planContext);
+        if (cost == null) {
+            releaseConditionalLock(conditionalLockKey, conditionalLockReleased);
+            player.displayClientMessage(Component.translatable("gui.xueximod.batch.quote_overflow"), true);
+            return CastTiming.rejected();
+        }
+        if (!MagicPool.trySpend(player, cost)) {
+            releaseConditionalLock(conditionalLockKey, conditionalLockReleased);
+            return CastTiming.insufficient();
+        }
+        ManaPaymentReceipt pressReceipt = MagicPool.lastReceipt(player.getUUID());
         if (cost > 0) {
             MagicPool.showBalance(player);
         }
+        boolean roseArmed = skill.getTechniques().stream()
+                .anyMatch(technique -> technique != null && "vine_mark".equals(technique.getId()));
+        if (roseArmed) {
+            com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.armPending(player,
+                    pressReceipt == null ? null : pressReceipt.receiptId());
+        }
 
-        ReleaseBatch.open(player, skill);
+        final HostCast conditionalCast;
         try {
-        int startTick = player.getServer().getTickCount();
-        int lastStartTick = startTick;
+            conditionalCast = openConditionalCast(player, techniques, segments, castSource);
+        } catch (RuntimeException failure) {
+            if (roseArmed) {
+                com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.clearPending(player);
+            }
+            releaseConditionalLock(conditionalLockKey, conditionalLockReleased);
+            throw failure;
+        }
+        final AtomicInteger pendingConditional = new AtomicInteger();
+        final AtomicInteger conditionalCommitted = new AtomicInteger();
+        final AtomicBoolean conditionalFailed = new AtomicBoolean();
+        final AtomicBoolean conditionalAborted = new AtomicBoolean();
+        final AtomicBoolean handedOff = new AtomicBoolean();
+        final AtomicBoolean parentSettled = new AtomicBoolean();
+        final AtomicInteger succeededConditionalScaled = new AtomicInteger();
+        final AtomicInteger capturedLastStart = new AtomicInteger();
+        final AtomicReference<Technique> capturedTail = new AtomicReference<>();
+        final AtomicBoolean enchantApplied = new AtomicBoolean();
+        final Set<String> recordedUsage = new HashSet<>();
+        final Set<String> succeededConditionalIds = new HashSet<>();
+        final List<Technique> ordinarySucceeded = new ArrayList<>();
+        final List<UncommittedShare> conditionalClaims = new ArrayList<>();
+        final String frozenSignature = stepSignature;
+        final int openedTick = player.getServer().getTickCount();
+        int lastStartTick = openedTick;
+        Technique tailTechnique = null;
+        int failedFromIndex = -1;
+        try {
+        ReleaseBatch.open(player, skill);
+        if (ReleaseBatch.current() != null) {
+            ReleaseBatch.current().bindSustainSlot(slot);
+            ExplicitHostOffers.capture(ReleaseBatch.current(), skill, techniques, segments, domainOpening, player,
+                    "chain:" + domainOpening.laneToken());
+        }
+        int startTick = openedTick;
+        lastStartTick = startTick;
         ChainSegment previous = null;
         boolean removedRuleWarned = false;
+        boolean enchantImprinted = false;
+        boolean stepFailed = false;
 
-        int i = 0;
-        while (i < segments.size()) {
-            ChainSegment segment = segments.get(i);
+        int segmentIndex = 0;
+        while (segmentIndex < segments.size()) {
+            ChainSegment segment = segments.get(segmentIndex);
             Technique action = techniques.get(segment.actionIndex());
 
             int gap = 0;
-            if (previous != null) {
-                gap = scaleCooldown(TechniqueChain.gapBefore(segment, previous, skill), cooldownReduction);
+            if (previous != null && !stepped) {
+                gap = SkillSegmentMath.scaleCooldown(TechniqueChain.gapBefore(segment, previous, skill), cooldownReduction);
                 startTick += gap;
             }
             lastStartTick = startTick;
+            tailTechnique = action;
 
-            if (isRemovedRule(action.getId())) {
+            if (SkillSegmentMath.isRemovedRule(action.getId())) {
                 if (!removedRuleWarned) {
                     removedRuleWarned = true;
-                    player.sendSystemMessage(Component.literal("§c链里有已移除的术式，请重新装配"));
+                    tell(player, "§c链里有已移除的术式，请重新装配");
                 }
-                i += 1;
+                segmentIndex += 1;
                 previous = segment;
                 continue;
             }
 
-            ChainRole role = roleOf(action);
             ReleaseDefinition actionDef = ReleaseRegistry.get(action.getId());
-            if (actionDef != null && actionDef.manipulatesSwordEntities()) {
+            if (action.isEnchantment() && (actionDef == null || actionDef.domain() == null)) {
+                if (!enchantImprinted) {
+                    SkillChainPlan.imprintEnchant(player, skill, techniques, 1);
+                    enchantImprinted = true;
+                    enchantApplied.set(true);
+                    if (roseArmed && pressReceipt != null) {
+                        pressReceipt.retainShare(Math.max(0, cost));
+                        com.bslx.XueXiMod.status.wood.vine.VineMarkRuntime.afterShareCommitted(pressReceipt);
+                    }
+                }
+                tailTechnique = action;
+                segmentIndex += 1;
+                previous = segment;
+                continue;
+            }
+
+            ChainRole role = SkillSegmentMath.roleOf(action);
+            if (SkillSegmentMath.commitsSelfState(action)) {
+                if (actionDef == null || actionDef.kind() != ReleaseKind.SELF_STATUS || actionDef.selfStatus() == null) {
+                    tell(player, SelfStatusCommit.playerText());
+                    if (roseArmed) {
+                        com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.clearPending(player);
+                    }
+                    return CastTiming.rejected();
+                }
+                SelfStatusCommit.Result statusResult = SelfStatusCommit.attempt(player, actionDef);
+                if (statusResult == SelfStatusCommit.Result.NOT_APPLICABLE) {
+                    if (cost > 0 && pressReceipt != null) {
+                        pressReceipt.refund(player);
+                    }
+                    if (roseArmed) {
+                        com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.clearPending(player);
+                    }
+                    if (stepped && stepCount > 1) {
+                        ChainProgress.advance(player, weapon, slot, stepSignature, stepCount);
+                        tell(player, "§c这段当前不适用，松开后重新按");
+                    } else {
+                        tell(player, SelfStatusCommit.playerText());
+                    }
+                    return CastTiming.rejected();
+                }
+                if (statusResult == SelfStatusCommit.Result.INSUFFICIENT) {
+                    tell(player, SelfStatusCommit.playerText());
+                    if (roseArmed) {
+                        com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.clearPending(player);
+                    }
+                    return CastTiming.insufficient();
+                }
+                if (statusResult != SelfStatusCommit.Result.COMMITTED) {
+                    tell(player, SelfStatusCommit.playerText());
+                    if (roseArmed) {
+                        com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.clearPending(player);
+                    }
+                    return CastTiming.rejected();
+                }
+                if (stepped) {
+                    ChainProgress.advance(player, weapon, slot, stepSignature, stepCount);
+                }
+                if (roseArmed && pressReceipt != null) {
+                    pressReceipt.retainShare(Math.max(0, cost));
+                    com.bslx.XueXiMod.status.wood.vine.VineMarkRuntime.afterShareCommitted(pressReceipt);
+                }
+                int nowTick = player.getServer().getTickCount();
+                int scaledCooldown = SkillSegmentMath.scaleCooldown(
+                        SkillSegmentMath.configuredBaseCooldown(action), cooldownReduction);
+                int replayTick = scaledCooldown <= 0 ? nowTick : nowTick + scaledCooldown;
+                return CastTiming.accepted(nowTick, nowTick, replayTick, List.of(action));
+            }
+            if (SkillSegmentMath.isOperationHost(role) || (actionDef != null && actionDef.manipulatesSwordEntities())) {
+                ReleaseInput chainInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
                 ChainScheduler.schedule(player.getServer(), startTick,
-                        buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, 0f, false,
-                                EnchantmentResolution.empty(), null, false, false));
-                i += 1;
+                        SkillSegmentRunner.buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, 0f, false,
+                                EnchantmentResolution.empty(), null, false, false, null, 0, 1, ReleaseBatch.current(),
+                                EnchantBonus.NONE, 0, null, chainInput, planContext));
+                if (conditionalChain) {
+                    rememberOrdinarySuccess(ordinarySucceeded, action);
+                }
+                tailTechnique = action;
+                segmentIndex += 1;
                 previous = segment;
                 continue;
             }
             if (role == ChainRole.ACTION) {
-                ModifierPlan plan = collectModifiers(segments, techniques, i + 1);
+                SkillChainPlan.ModifierPlan plan = SkillChainPlan.collectModifiers(skill, segments, techniques, segmentIndex + 1, planContext);
                 if (plan.attackSegment >= 0) {
-                    ModifierPlan captured = plan;
-                    ChainScheduler.schedule(player.getServer(), startTick,
-                            buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, 0f, false,
-                                    EnchantmentResolution.empty(), pos -> firePlan(player, skill, techniques, segments, captured, weaponBonus),
-                                    false, false));
-                    i = plan.resume;
+                    SkillChainPlan.ModifierPlan captured = plan;
+                    ServerLevel castLevel = player.serverLevel();
+                    int castEpoch = ChargeGate.epoch(player.getUUID());
+                    final Skill castSkill = skill;
+                    if (captured.dualRuleSegment < 0) {
+                        Integer attackShare = SkillSegmentMath.segmentManaCost(techniques, segments.get(captured.attackSegment));
+                        if (attackShare == null) {
+                            stepFailed = true;
+                            failedFromIndex = segmentIndex;
+                            break;
+                        }
+                        int memberCount = Math.max(0, captured.volleys) * Math.max(0, captured.copies);
+                        UncommittedShare.Pool reservedShares = UncommittedShare.reserve(pressReceipt, attackShare, memberCount);
+                        AttackBudgetWindow window = AttackBudgetWindow.open(player, castLevel, castEpoch, reservedShares,
+                                castSkill, techniques, segments, captured, weaponBonus, castSource, planContext);
+                        ReleaseInput actionInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                        ChainScheduler.schedule(player.getServer(), startTick, () -> {
+                            if (!window.ownerPresent() || !HeldSwordGate.allows(action, player.getMainHandItem())) {
+                                window.finish();
+                                return;
+                            }
+                            if (!SkillSegmentRunner.playAction(player, action, techniques, segment.actionIndex(), weapon, window, actionInput, planContext)) {
+                                window.finish();
+                            }
+                        });
+                    } else {
+                        ReleaseInput actionInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                        ChainScheduler.schedule(player.getServer(), startTick,
+                                SkillSegmentRunner.buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, 0f, false,
+                                        EnchantmentResolution.empty(), position -> {
+                                            if (!player.isAlive() || player.level() != castLevel
+                                                    || !ChargeGate.same(player.getUUID(), castEpoch)) {
+                                                return;
+                                            }
+                                            SkillChainPlan.firePlan(player, castSkill, techniques, segments, captured, weaponBonus,
+                                                    player.getServer().getTickCount(), pressReceipt, castSource, planContext);
+                                        },
+                                        false, false, null, 0, 1, ReleaseBatch.current(), EnchantBonus.NONE, 0, null, actionInput, planContext));
+                    }
+                    if (conditionalChain) {
+                        rememberOrdinarySuccess(ordinarySucceeded, action);
+                    }
+                    tailTechnique = action;
+                    segmentIndex = plan.resume;
                     previous = segment;
                     continue;
                 }
             }
-            if (isChainModifier(role)) {
-                ModifierPlan plan = collectModifiers(segments, techniques, i);
+            if (SkillSegmentMath.isChainModifier(action)) {
+                SkillChainPlan.ModifierPlan plan = SkillChainPlan.collectModifiers(skill, segments, techniques, segmentIndex, planContext);
                 if (plan.attackSegment < 0) {
-                    imprintEnchant(player, skill, techniques, plan.copies);
-                    i = Math.max(plan.resume, i + 1);
+                    if (plan.dualRuleSegment >= 0) {
+                        int firedUntil = SkillChainPlan.fireDualSequence(player, skill, techniques, segments, plan, weaponBonus, startTick, castSource, planContext, domainOpening);
+                        if (firedUntil < 0) {
+                            stepFailed = true;
+                            failedFromIndex = segmentIndex;
+                            break;
+                        }
+                        if (firedUntil > lastStartTick) {
+                            lastStartTick = firedUntil;
+                        }
+                    } else if (!ContactCast.keptForContact(techniques, segments, segmentIndex)) {
+                        SkillChainPlan.imprintEnchant(player, skill, techniques, plan.copies);
+                        enchantImprinted = true;
+                        enchantApplied.set(true);
+                        if (roseArmed && pressReceipt != null) {
+                            pressReceipt.retainShare(Math.max(0, cost));
+                            com.bslx.XueXiMod.status.wood.vine.VineMarkRuntime.afterShareCommitted(pressReceipt);
+                        }
+                    }
+                    segmentIndex = Math.max(plan.resume, segmentIndex + 1);
                     previous = segment;
                     continue;
                 }
-                firePlan(player, skill, techniques, segments, plan, weaponBonus);
-                i = plan.resume;
+                    int firedUntil = SkillChainPlan.firePlan(player, skill, techniques, segments, plan, weaponBonus, startTick, pressReceipt, castSource, planContext);
+                if (firedUntil < 0) {
+                    stepFailed = true;
+                    failedFromIndex = segmentIndex;
+                    break;
+                }
+                if (firedUntil > lastStartTick) {
+                    lastStartTick = firedUntil;
+                }
+                Technique closing = SkillChainPlan.closingAttack(techniques, segments, plan, planContext);
+                if (closing != null) {
+                    tailTechnique = closing;
+                    if (conditionalChain) {
+                        rememberOrdinarySuccess(ordinarySucceeded, closing);
+                    }
+                }
+                segmentIndex = plan.resume;
                 previous = segments.get(plan.attackSegment);
                 continue;
             }
 
-            EnchantmentResolution enchantments = resolveSegmentEnchantments(skill, segment);
-            int magicDamage = segmentMagicDamage(skill, segment);
-            EnchantBonus bonus = EnchantBonus.resolve(skill, segment.enchantIndexes(), action.getBaseDamage(), 1);
+            if (actionDef != null && actionDef.domain() != null && action.getBaseDamage() <= 0) {
+                int domainCopies = SkillChainPlan.copiesBefore(segments, techniques, segmentIndex, planContext);
+                EnchantmentSnapshot domainSnapshot = ContactCast.snapshot(skill, segment, player);
+                ReleaseInput chainInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                BoundReleasePlan boundPlan = domainOpening.planFor(segment.actionIndex());
+                String boundClaim = domainOpening.claimFor(boundPlan);
+                DomainWave.Held domainHeld = DomainWave.hold(player, skill, action, segment.enchantIndexes());
+                boolean domainPlaced;
+                DomainCastContext domainContext = SkillSegmentRunner.domainSpace(player, techniques,
+                        segment.actionIndex(), domainOpening.releaseIdentity(), false, null, null);
+                try {
+                    domainPlaced = DomainWave.open(player, action, actionDef.domain(), domainCopies, domainSnapshot,
+                            chainInput, boundPlan, boundClaim, domainHeld, domainContext);
+                } finally {
+                    DomainWave.release(domainHeld);
+                }
+                if (!domainPlaced) {
+                    stepFailed = true;
+                    failedFromIndex = segmentIndex;
+                    break;
+                }
+                if (conditionalChain) {
+                    rememberOrdinarySuccess(ordinarySucceeded, action);
+                }
+                tailTechnique = action;
+                segmentIndex += 1;
+                previous = segment;
+                continue;
+            }
 
-            final boolean carries = action.getBaseDamage() > 0 && !segment.enchantIndexes().isEmpty();
-            final float finalDamage = segment.enchantIndexes().isEmpty()
-                    ? segmentDamage(action, segment, weaponBonus, magicDamage, attributeDamageBonus)
-                    : bonus.attackDamage + bonus.addedDamage + weaponBonus;
+            if (actionDef != null && actionDef.barrier() != null && action.getBaseDamage() <= 0) {
+                int barrierCopies = SkillChainPlan.copiesBefore(segments, techniques, segmentIndex, planContext);
+                EnchantmentSnapshot barrierSnapshot = ContactCast.snapshot(skill, segment, player);
+                ReleaseInput chainInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                if (!BarrierService.tryPlace(
+                        player, actionDef.barrier(), barrierCopies, barrierSnapshot, chainInput)) {
+                    stepFailed = true;
+                    failedFromIndex = segmentIndex;
+                    break;
+                }
+                if (conditionalChain) {
+                    rememberOrdinarySuccess(ordinarySucceeded, action);
+                }
+                tailTechnique = action;
+                segmentIndex += 1;
+                previous = segment;
+                continue;
+            }
+
+            if (actionDef != null && actionDef.guard() != null && action.getBaseDamage() <= 0) {
+                long waveKey = ((long) openedTick << 8) + segmentIndex;
+                ReleaseInput chainInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                if (!GuardStates.schedule(player, actionDef.guard(), startTick, waveKey, chainInput)) {
+                    stepFailed = true;
+                    failedFromIndex = segmentIndex;
+                    break;
+                }
+                if (conditionalChain) {
+                    rememberOrdinarySuccess(ordinarySucceeded, action);
+                }
+                EnchantmentSnapshot guardSnapshot = ContactCast.snapshot(skill, segment, player);
+                if (guardSnapshot != null) {
+                    GuardStates.bindContact(player, guardSnapshot);
+                }
+                tailTechnique = action;
+                segmentIndex += 1;
+                previous = segment;
+                continue;
+            }
+
+            if (actionDef != null && action.getBaseDamage() <= 0f && actionDef.conditionalEffect() != null) {
+                Integer segmentShare = SkillSegmentMath.settledSegmentCost(techniques, segment);
+                if (segmentShare == null) {
+                    stepFailed = true;
+                    failedFromIndex = segmentIndex;
+                    break;
+                }
+                EnchantmentSnapshot conditionalSnapshot = ContactCast.snapshot(skill, segment, player);
+                UUID operationId = conditionalCast == null
+                        ? null
+                        : ConditionalIntent.operationId(conditionalCast.tokenId(), segmentIndex, 0, null);
+                UncommittedShare claim = UncommittedShare.open(pressReceipt, segmentShare);
+                conditionalClaims.add(claim);
+                ReleaseInput chainInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                final int scaledCooldown = SkillSegmentMath.scaleCooldown(
+                        SkillSegmentMath.configuredBaseCooldown(action), cooldownReduction);
+                if (startTick <= openedTick) {
+                    ReleaseOutcome outcome = SkillSegmentRunner.commitConditional(player, actionDef, operationId, conditionalSnapshot, chainInput, pressReceipt);
+                    if (!outcome.committed()) {
+                        claim.cancel(player);
+                        Integer laterCost = SkillChainPlan.pressCommitCost(techniques, segments, segmentIndex + 1, planContext);
+                        if (pressReceipt != null && laterCost == null) {
+                            pressReceipt.refund(player);
+                        } else if (laterCost != null && laterCost > 0 && pressReceipt != null) {
+                            pressReceipt.refundShare(player, laterCost);
+                        }
+                        if (!outcome.reason().isEmpty()) {
+                            tell(player, "§c" + outcome.reason());
+                        }
+                        conditionalFailed.set(true);
+                        break;
+                    }
+                    claim.commitRetained();
+                    conditionalCommitted.incrementAndGet();
+                    succeededConditionalIds.add(action.getId());
+                    succeededConditionalScaled.updateAndGet(alreadyScaled -> Math.max(alreadyScaled, scaledCooldown));
+                } else {
+                    pendingConditional.incrementAndGet();
+                    if (conditionalCast != null) {
+                        conditionalCast.hold();
+                    }
+                    ServerLevel conditionalLevel = player.serverLevel();
+                    int conditionalEpoch = ChargeGate.epoch(player.getUUID());
+                    ReleaseDefinition scheduledDefinition = actionDef;
+                    Technique scheduledTechnique = action;
+                    AtomicBoolean entered = new AtomicBoolean();
+                    ChainScheduler.schedule(player.getServer(), startTick, () -> {
+                        if (!entered.compareAndSet(false, true)) {
+                            return;
+                        }
+                        boolean committedNow = false;
+                        try {
+                            if (conditionalAborted.get() || conditionalFailed.get() || !player.isAlive()
+                                    || player.level() != conditionalLevel || !ChargeGate.same(player.getUUID(), conditionalEpoch)) {
+                                if (!claim.kept()) {
+                                    claim.cancel(player);
+                                }
+                                return;
+                            }
+                            ReleaseOutcome outcome = SkillSegmentRunner.commitConditional(
+                                    player, scheduledDefinition, operationId, conditionalSnapshot, chainInput, pressReceipt);
+                            if (outcome.committed()) {
+                                claim.commitRetained();
+                                committedNow = true;
+                                conditionalCommitted.incrementAndGet();
+                                succeededConditionalIds.add(scheduledTechnique.getId());
+                                succeededConditionalScaled.updateAndGet(alreadyScaled -> Math.max(alreadyScaled, scaledCooldown));
+                            } else {
+                                claim.cancel(player);
+                                conditionalFailed.set(true);
+                                if (!outcome.reason().isEmpty()) {
+                                    tell(player, "§c" + outcome.reason());
+                                }
+                            }
+                        } catch (RuntimeException failure) {
+                            if (!committedNow && !claim.kept()) {
+                                claim.cancel(player);
+                                conditionalFailed.set(true);
+                            }
+                            DebugLog.log("条件释放失败：" + failure);
+                        } finally {
+                            try {
+                                if (pendingConditional.decrementAndGet() == 0) {
+                                    settleConditionalParent(player, weapon, slot, stepped, openedTick, frozenStepCooldown,
+                                            capturedLastStart.get(), capturedTail.get(), cooldownReduction, replaySkill, techniques,
+                                            frozenSignature, stepCount, conditionalCommitted, succeededConditionalScaled,
+                                            ordinarySucceeded, succeededConditionalIds, enchantApplied, recordedUsage, parentSettled, true);
+                                }
+                            } finally {
+                                if (pendingConditional.get() <= 0) {
+                                    releaseConditionalLock(conditionalLockKey, conditionalLockReleased);
+                                }
+                                if (conditionalCast != null) {
+                                    conditionalCast.release();
+                                }
+                            }
+                        }
+                    });
+                }
+                tailTechnique = action;
+                segmentIndex += 1;
+                previous = segment;
+                continue;
+            }
+
+            if (actionDef != null && actionDef.fieldRadius() > 0f && action.getBaseDamage() <= 0) {
+                int fieldCopies = SkillChainPlan.copiesBefore(segments, techniques, segmentIndex, planContext);
+                int epoch = ChargeGate.epoch(player.getUUID());
+                WaterMomentum.Hold hold = WaterMomentum.reserve(player, actionDef.momentumSpend());
+                int fireTick = startTick + Math.max(0, actionDef.chargeTicks());
+                EnchantmentSnapshot fieldSnapshot = ContactCast.snapshot(skill, segment, player);
+                ReleaseInput chainInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                ChainScheduler.schedule(player.getServer(), fireTick, () -> {
+                    if (!ChargeGate.same(player.getUUID(), epoch) || !player.isAlive()) {
+                        WaterMomentum.release(hold);
+                        return;
+                    }
+                    WaterMomentum.commit(player, hold);
+                    int createdTick = player.getServer().getTickCount();
+                    FieldSpawner.releaseFromChain(player, techniques, segment.actionIndex(), actionDef, fieldCopies, chainInput);
+                    if (fieldSnapshot != null) {
+                        FieldZones.bindBorn(player.getUUID(), fieldSnapshot, createdTick);
+                    }
+                    TechniqueEffect fieldEffect = TechniqueEffectRegistry.get(action.getId());
+                    if (fieldEffect != null) {
+                        fieldEffect.execute(player, action, weapon, new TechniqueCastContext(0f, player.getLookAngle(), player.position()));
+                    }
+                });
+                if (conditionalChain) {
+                    rememberOrdinarySuccess(ordinarySucceeded, action);
+                }
+                segmentIndex += 1;
+                previous = segment;
+                continue;
+            }
+
+            EnchantmentResolution enchantments = SkillSegmentMath.resolveSegmentEnchantments(skill, segment);
+            int magicDamage = SkillSegmentMath.segmentMagicDamage(skill, segment);
+            final EnchantBonus bonus = DomainSpawnInheritance.finish(player, action, skill, segment.enchantIndexes(),
+                    EnchantBonus.resolve(skill, segment.enchantIndexes(), action.getBaseDamage(), 1));
+
+            final boolean carries = action.getBaseDamage() > 0 && (!segment.enchantIndexes().isEmpty()
+                    || (bonus.resourceLoad != null && !bonus.resourceLoad.empty()));
+            final float finalDamage = SkillSegmentMath.configuredSegmentDamage(action, segment, weaponBonus,
+                    magicDamage, attributeDamageBonus, bonus);
             if (!segment.enchantIndexes().isEmpty() && bonus.cooldownMultiplier > 0f && bonus.cooldownMultiplier < 0.999f && gap > 0) {
                 int adjusted = Math.max(1, Math.round(gap * bonus.cooldownMultiplier));
                 startTick += adjusted - gap;
@@ -268,787 +1026,478 @@ public class SkillUsePacket {
 
             final int currentTick = startTick;
 
-            ChainSegment nextSegment = (i + 1 < segments.size()) ? segments.get(i + 1) : null;
+            ChainSegment nextSegment = (segmentIndex + 1 < segments.size()) ? segments.get(segmentIndex + 1) : null;
             boolean chainedToTrigger = nextSegment != null
-                    && releaseKind(action.getId()) == ReleaseKind.ACTION
-                    && releaseKind(techniques.get(nextSegment.actionIndex()).getId()) != ReleaseKind.RULE
-                    && isTriggerRelease(techniques.get(nextSegment.actionIndex()).getId())
-                    && !manipulatesSwordEntities(techniques.get(nextSegment.actionIndex()).getId());
+                    && SkillSegmentMath.releaseKind(action.getId()) == ReleaseKind.ACTION
+                    && SkillSegmentMath.releaseKind(techniques.get(nextSegment.actionIndex()).getId()) != ReleaseKind.RULE
+                    && SkillSegmentMath.isTriggerRelease(techniques.get(nextSegment.actionIndex()).getId())
+                    && !SkillSegmentMath.manipulatesSwordEntities(techniques.get(nextSegment.actionIndex()).getId())
+                    && !SkillSegmentMath.isConditionalRelease(techniques.get(nextSegment.actionIndex()));
 
             if (chainedToTrigger) {
                 Technique nextAction = techniques.get(nextSegment.actionIndex());
-                EnchantmentResolution nextEnchantments = resolveSegmentEnchantments(skill, nextSegment);
-                int nextMagicDamage = segmentMagicDamage(skill, nextSegment);
-                boolean nextCarries = nextAction.getBaseDamage() > 0 && !nextSegment.enchantIndexes().isEmpty();
-                float nextDamage = segmentDamage(nextAction, nextSegment, weaponBonus, nextMagicDamage, attributeDamageBonus);
+                EnchantmentResolution nextEnchantments = SkillSegmentMath.resolveSegmentEnchantments(skill, nextSegment);
+                int nextMagicDamage = SkillSegmentMath.segmentMagicDamage(skill, nextSegment);
+                final EnchantBonus nextBonus = DomainSpawnInheritance.finish(player, nextAction, skill, nextSegment.enchantIndexes(),
+                        EnchantBonus.resolve(skill, nextSegment.enchantIndexes(), nextAction.getBaseDamage(), 1));
+                boolean nextCarries = nextAction.getBaseDamage() > 0 && (!nextSegment.enchantIndexes().isEmpty()
+                        || (nextBonus.resourceLoad != null && !nextBonus.resourceLoad.empty()));
+                float nextDamage = SkillSegmentMath.configuredSegmentDamage(nextAction, nextSegment, weaponBonus,
+                        nextMagicDamage, attributeDamageBonus, nextBonus);
                 DebugLog.log("链段 " + nextAction.getId() + " 由冲刺命中触发");
+                ReleaseInput actionInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                ReleaseInput nextInput = SkillChainPlan.frozenChainInput(skill, techniques, nextSegment.actionIndex(), planContext);
                 Runnable runNext = () -> {
-                    int nextCost = segmentManaCost(techniques, nextSegment);
-                    if (!MagicPool.trySpend(player, nextCost)) {
+                    if (!HeldSwordGate.allows(nextAction, player.getMainHandItem())) {
+                        return;
+                    }
+                    Integer nextCost = SkillSegmentMath.segmentManaCost(techniques, nextSegment);
+                    if (nextCost == null || !MagicPool.trySpend(player, nextCost)) {
                         return;
                     }
                     if (nextCost > 0) {
                         MagicPool.showBalance(player);
                     }
-                    buildSegmentRunner(player, nextAction, techniques, nextSegment.actionIndex(), weapon, nextDamage, nextCarries, nextEnchantments, null,
-                            lockThisCast(techniques, nextSegment.actionIndex()), dropThisCast(techniques, segments, nextSegment.actionIndex())).run();
+                    SkillSegmentRunner.buildSegmentRunner(player, nextAction, techniques, nextSegment.actionIndex(), weapon, nextDamage, nextCarries, nextEnchantments, null,
+                            SkillChainPlan.lockThisCast(techniques, nextSegment.actionIndex(), planContext), SkillChainPlan.dropThisCast(techniques, segments, nextSegment.actionIndex(), planContext),
+                            null, 0, 1, ReleaseBatch.current(), nextBonus, 0, castSource, nextInput, planContext).run();
                 };
                 ChainScheduler.schedule(player.getServer(), currentTick,
-                        buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, finalDamage, carries, enchantments, pos -> runNext.run(),
-                                lockThisCast(techniques, segment.actionIndex()), dropThisCast(techniques, segments, segment.actionIndex())));
-                i += 2;
+                        SkillSegmentRunner.buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, finalDamage, carries, enchantments, position -> runNext.run(),
+                                SkillChainPlan.lockThisCast(techniques, segment.actionIndex(), planContext), SkillChainPlan.dropThisCast(techniques, segments, segment.actionIndex(), planContext),
+                                null, 0, 1, ReleaseBatch.current(), bonus, 0, null, actionInput, planContext));
+                tailTechnique = action;
+                segmentIndex += 2;
             } else {
-                ChainScheduler.schedule(player.getServer(), currentTick,
-                        buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, finalDamage, carries, enchantments, null,
-                                lockThisCast(techniques, segment.actionIndex()), dropThisCast(techniques, segments, segment.actionIndex()),
-                                null, 0, 1, ReleaseBatch.current(), bonus, 0));
-                i += 1;
+                Integer segmentShare = SkillSegmentMath.segmentManaCost(techniques, segment);
+                if (segmentShare == null) {
+                    stepFailed = true;
+                    failedFromIndex = segmentIndex;
+                    break;
+                }
+                ReleaseDefinition segmentDefinition = ReleaseRegistry.get(action.getId());
+                ReleaseInput chainInput = SkillChainPlan.frozenChainInput(skill, techniques, segment.actionIndex(), planContext);
+                if (segmentDefinition != null && segmentDefinition.submitsHostGroup()) {
+                    ServerLevel castLevel = player.serverLevel();
+                    int castEpoch = ChargeGate.epoch(player.getUUID());
+                    HostCast hostCast = HostCast.open(player.getUUID(), castSource);
+                    hostCast.hold();
+                    UUID hostGroup = hostCast.hostId(0, 0);
+                    UncommittedShare claim = UncommittedShare.open(pressReceipt, segmentShare);
+                    AtomicBoolean once = new AtomicBoolean(false);
+                    AtomicBoolean released = new AtomicBoolean(false);
+                    Runnable releaseCast = () -> {
+                        if (released.compareAndSet(false, true)) {
+                            hostCast.release();
+                        }
+                    };
+                    try {
+                        ChainScheduler.schedule(player.getServer(), currentTick, () -> {
+                            if (!once.compareAndSet(false, true)) {
+                                return;
+                            }
+                            try {
+                                int nowTick = player.getServer() == null ? currentTick : player.getServer().getTickCount();
+                                if (!player.isAlive() || player.level() != castLevel || !ChargeGate.same(player.getUUID(), castEpoch)
+                                        || !HeldSwordGate.allows(action, player.getMainHandItem())) {
+                                    HostGroupCommit.cancel(hostCast, hostGroup, nowTick, "施法已经中断");
+                                    claim.cancel(player);
+                                    return;
+                                }
+                                ReleaseOutcome outcome = SkillSegmentRunner.commitHostGroup(player, action, techniques, segment.actionIndex(), weapon,
+                                        finalDamage, carries, enchantments,
+                                        SkillChainPlan.lockThisCast(techniques, segment.actionIndex(), planContext),
+                                        SkillChainPlan.dropThisCast(techniques, segments, segment.actionIndex(), planContext),
+                                        null, 1, ReleaseBatch.current(), bonus, 0, null, null, null, null, hostCast, hostGroup, null,
+                                        chainInput, planContext);
+                                if (outcome.committed()) {
+                                    if (conditionalChain) {
+                                        claim.commitRetained();
+                                        rememberOrdinarySuccess(ordinarySucceeded, action);
+                                    } else {
+                                        claim.commit();
+                                    }
+                                } else {
+                                    claim.cancel(player);
+                                }
+                            } finally {
+                                releaseCast.run();
+                            }
+                        });
+                    } catch (RuntimeException failure) {
+                        releaseCast.run();
+                        throw failure;
+                    }
+                } else {
+                    Runnable keptHook = conditionalChain
+                            ? () -> rememberOrdinarySuccess(ordinarySucceeded, action)
+                            : null;
+                    UUID vineActionId = skill.getType() == SkillType.SWORD
+                            ? new UUID(player.getUUID().getMostSignificantBits() ^ (long) currentTick,
+                            player.getUUID().getLeastSignificantBits() ^ (long) segmentIndex)
+                            : null;
+                    boolean vineSpectrum = VineMarkActions.swordSpectrum();
+                    if (vineActionId != null) {
+                        VineMarkRuntime.rememberAction(vineActionId, player, vineSpectrum);
+                    }
+                    ChainScheduler.schedule(player.getServer(), currentTick, () -> {
+                        VineMarkActions.Action previousAction = VineMarkActions.current();
+                        if (vineActionId != null) {
+                            VineMarkActions.open(new VineMarkActions.Action(
+                                    player.getUUID(), vineActionId, VineMarkActions.Source.SWORD, vineSpectrum));
+                        }
+                        try {
+                            refundIfBlocked(player, action, pressReceipt, segmentShare,
+                                    SkillSegmentRunner.buildSegmentRunner(player, action, techniques, segment.actionIndex(), weapon, finalDamage, carries, enchantments, null,
+                                            SkillChainPlan.lockThisCast(techniques, segment.actionIndex(), planContext), SkillChainPlan.dropThisCast(techniques, segments, segment.actionIndex(), planContext),
+                                            null, 0, 1, ReleaseBatch.current(), bonus, 0, castSource, chainInput, planContext), keptHook).run();
+                        } finally {
+                            VineMarkActions.open(previousAction);
+                        }
+                    });
+                }
+                tailTechnique = action;
+                segmentIndex += 1;
             }
 
             previous = segment;
         }
 
-        return lastStartTick;
+        if (stepFailed && !conditionalChain) {
+            if (pressReceipt != null) {
+                pressReceipt.refund(player);
+            }
+            if (roseArmed) {
+                com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.clearPending(player);
+            }
+            return CastTiming.insufficient();
+        }
+        if (stepFailed) {
+            conditionalAborted.set(true);
+            cancelUnkept(conditionalClaims, player);
+            if (pressReceipt != null && failedFromIndex >= 0) {
+                Integer tailCost = SkillChainPlan.pressCommitCost(techniques, segments, failedFromIndex, planContext);
+                if (tailCost == null) {
+                    pressReceipt.refund(player);
+                } else if (tailCost > 0) {
+                    pressReceipt.refundShare(player, tailCost);
+                }
+            }
+        }
+
+        capturedLastStart.set(lastStartTick);
+        capturedTail.set(tailTechnique);
+        if (conditionalChain) {
+            if (pendingConditional.get() > 0) {
+                handedOff.set(true);
+                return CastTiming.deferred(openedTick, List.of());
+            }
+            int settledReplay = settleConditionalParent(player, weapon, slot, stepped, openedTick, frozenStepCooldown,
+                    lastStartTick, tailTechnique, cooldownReduction, replaySkill, techniques, frozenSignature, stepCount,
+                    conditionalCommitted, succeededConditionalScaled, ordinarySucceeded, succeededConditionalIds,
+                    enchantApplied, recordedUsage, parentSettled, false);
+            if (settledReplay < 0) {
+                return CastTiming.insufficient();
+            }
+            return CastTiming.accepted(openedTick, lastStartTick, settledReplay, List.of());
+        }
+
+        int replayTick = conditionalReplayTick(stepped, openedTick, stepCooldown, lastStartTick, tailTechnique, cooldownReduction);
+        if (stepped) {
+            ChainProgress.advance(player, weapon, slot, stepSignature, stepCount);
+        }
+        return CastTiming.accepted(openedTick, lastStartTick, replayTick, techniques);
+        } catch (RuntimeException failure) {
+            conditionalAborted.set(true);
+            cancelUnkept(conditionalClaims, player);
+            if (roseArmed && !enchantApplied.get()) {
+                com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.clearPending(player);
+            }
+            capturedLastStart.set(lastStartTick);
+            capturedTail.set(tailTechnique);
+            if (pendingConditional.get() > 0) {
+                handedOff.set(true);
+            } else {
+                settleConditionalParent(player, weapon, slot, stepped, openedTick, frozenStepCooldown,
+                        lastStartTick, tailTechnique, cooldownReduction, replaySkill, techniques, frozenSignature, stepCount,
+                        conditionalCommitted, succeededConditionalScaled, ordinarySucceeded, succeededConditionalIds,
+                        enchantApplied, recordedUsage, parentSettled, true);
+            }
+            throw failure;
         } finally {
             ReleaseBatch.unbind();
-        }
-    }
-
-    private int pressCommitCost(List<Technique> techniques, List<ChainSegment> segments) {
-        int cost = 0;
-        int i = 0;
-        while (i < segments.size()) {
-            ChainSegment segment = segments.get(i);
-            Technique action = techniques.get(segment.actionIndex());
-
-            if (isRemovedRule(action.getId())) {
-                i += 1;
-                continue;
+            if (conditionalCast != null) {
+                conditionalCast.release();
             }
-            ChainRole role = roleOf(action);
-            if (role == ChainRole.ACTION) {
-                ModifierPlan plan = collectModifiers(segments, techniques, i + 1);
-                cost += segmentManaCost(techniques, segment);
-                if (plan.attackSegment >= 0) {
-                    cost += segmentManaCost(techniques, segments.get(plan.attackSegment));
-                    i = plan.resume;
-                } else {
-                    i += 1;
-                }
-                continue;
-            }
-            if (isChainModifier(role)) {
-                ModifierPlan plan = collectModifiers(segments, techniques, i);
-                if (plan.attackSegment >= 0) {
-                    cost += segmentManaCost(techniques, segments.get(plan.attackSegment));
-                }
-                i = Math.max(plan.resume, i + 1);
-                continue;
-            }
-
-            ChainSegment nextSegment = (i + 1 < segments.size()) ? segments.get(i + 1) : null;
-            boolean chainedToTrigger = nextSegment != null
-                    && releaseKind(action.getId()) == ReleaseKind.ACTION
-                    && releaseKind(techniques.get(nextSegment.actionIndex()).getId()) != ReleaseKind.RULE
-                    && isTriggerRelease(techniques.get(nextSegment.actionIndex()).getId())
-                    && !manipulatesSwordEntities(techniques.get(nextSegment.actionIndex()).getId());
-
-            if (chainedToTrigger) {
-                cost += segmentManaCost(techniques, segment);
-                i += 2;
-                continue;
-            }
-
-            cost += segmentManaCost(techniques, segment);
-            i += 1;
-        }
-        return cost;
-    }
-
-    private Runnable buildSegmentRunner(ServerPlayer player, Technique action, List<Technique> techniques,
-                                        int actionIndex, ItemStack weapon, float finalDamage, boolean carries,
-                                        EnchantmentResolution enchantments, Consumer<Vec3> onFirstTrigger,
-                                        boolean lockThisCast, boolean dropThisCast) {
-        return buildSegmentRunner(player, action, techniques, actionIndex, weapon, finalDamage, carries, enchantments,
-                onFirstTrigger, lockThisCast, dropThisCast, null, 0, 1, ReleaseBatch.current(), EnchantBonus.NONE, 0);
-    }
-
-    private Runnable buildSegmentRunner(ServerPlayer player, Technique action, List<Technique> techniques,
-                                        int actionIndex, ItemStack weapon, float finalDamage, boolean carries,
-                                        EnchantmentResolution enchantments, Consumer<Vec3> onFirstTrigger,
-                                        boolean lockThisCast, boolean dropThisCast, ReleaseBatch batch) {
-        return buildSegmentRunner(player, action, techniques, actionIndex, weapon, finalDamage, carries, enchantments,
-                onFirstTrigger, lockThisCast, dropThisCast, null, 0, 1, batch, EnchantBonus.NONE, 0);
-    }
-
-    private Runnable buildSegmentRunner(ServerPlayer player, Technique action, List<Technique> techniques,
-                                        int actionIndex, ItemStack weapon, float finalDamage, boolean carries,
-                                        EnchantmentResolution enchantments, Consumer<Vec3> onFirstTrigger,
-                                        boolean lockThisCast, boolean dropThisCast,
-                                        ReleaseBatch.Tally tally, int copyIndex, int copyCount, ReleaseBatch batch,
-                                        EnchantBonus bonus, int volley) {
-        return () -> {
-            if (!player.isAlive()) {
-                return;
-            }
-            Vec3 lookVec = player.getLookAngle();
-            Vec3 pos = player.position();
-            if (action.getType() == TechniqueType.SWORD) {
-                player.swing(InteractionHand.MAIN_HAND, true);
-            }
-            runSegment(player, action, techniques, actionIndex, weapon, finalDamage, carries, enchantments,
-                    onFirstTrigger, lockThisCast, dropThisCast, tally, copyIndex, copyCount, batch, lookVec, pos,
-                    bonus, volley);
-        };
-    }
-
-    private Runnable buildSegmentRunnerAt(ServerPlayer player, Technique action, List<Technique> techniques,
-                                          int actionIndex, ItemStack weapon, float finalDamage, boolean carries,
-                                          EnchantmentResolution enchantments, Consumer<Vec3> onFirstTrigger,
-                                          Vec3 lookVec, Vec3 pos, boolean lockThisCast, boolean dropThisCast) {
-        return buildSegmentRunnerAt(player, action, techniques, actionIndex, weapon, finalDamage, carries, enchantments,
-                onFirstTrigger, lookVec, pos, lockThisCast, dropThisCast, null, 0, 1, ReleaseBatch.current(), EnchantBonus.NONE, 0);
-    }
-
-    private Runnable buildSegmentRunnerAt(ServerPlayer player, Technique action, List<Technique> techniques,
-                                          int actionIndex, ItemStack weapon, float finalDamage, boolean carries,
-                                          EnchantmentResolution enchantments, Consumer<Vec3> onFirstTrigger,
-                                          Vec3 lookVec, Vec3 pos, boolean lockThisCast, boolean dropThisCast,
-                                          ReleaseBatch batch) {
-        return buildSegmentRunnerAt(player, action, techniques, actionIndex, weapon, finalDamage, carries, enchantments,
-                onFirstTrigger, lookVec, pos, lockThisCast, dropThisCast, null, 0, 1, batch, EnchantBonus.NONE, 0);
-    }
-
-    private Runnable buildSegmentRunnerAt(ServerPlayer player, Technique action, List<Technique> techniques,
-                                          int actionIndex, ItemStack weapon, float finalDamage, boolean carries,
-                                          EnchantmentResolution enchantments, Consumer<Vec3> onFirstTrigger,
-                                          Vec3 lookVec, Vec3 pos, boolean lockThisCast, boolean dropThisCast,
-                                          ReleaseBatch.Tally tally, int copyIndex, int copyCount, ReleaseBatch batch,
-                                          EnchantBonus bonus, int volley) {
-        return () -> {
-            if (!player.isAlive()) {
-                return;
-            }
-            if (action.getType() == TechniqueType.SWORD) {
-                player.swing(InteractionHand.MAIN_HAND, true);
-            }
-            runSegment(player, action, techniques, actionIndex, weapon, finalDamage, carries, enchantments,
-                    onFirstTrigger, lockThisCast, dropThisCast, tally, copyIndex, copyCount, batch, lookVec, pos,
-                    bonus, volley);
-        };
-    }
-
-    private void runSegment(ServerPlayer player, Technique action, List<Technique> techniques, int actionIndex,
-                            ItemStack weapon, float finalDamage, boolean carries,
-                            EnchantmentResolution enchantments, Consumer<Vec3> onFirstTrigger,
-                            boolean lockThisCast, boolean dropThisCast,
-                            ReleaseBatch.Tally tally, int copyIndex, int copyCount,
-                            ReleaseBatch batch, Vec3 lookVec, Vec3 pos,
-                            EnchantBonus bonus, int volley) {
-        TechniqueEffect effect = TechniqueEffectRegistry.get(action.getId());
-        if (effect == null) {
-            return;
-        }
-        ReleaseBatch outer = ReleaseBatch.current();
-        if (batch != null) {
-            ReleaseBatch.bind(batch);
-        }
-        try {
-            EnchantmentResolution applied = carries ? enchantments : EnchantmentResolution.empty();
-            boolean spaceLock = false;
-            boolean entityLock = false;
-            boolean scatter = false;
-            boolean drop = false;
-            for (int j = actionIndex - 1; j >= 0; j--) {
-                Technique earlier = techniques.get(j);
-                if (earlier.getBaseDamage() > 0 && !earlier.isEnchantment()) {
-                    break;
-                }
-                switch (roleOf(earlier)) {
-                    case SEEK_SPACE -> spaceLock = true;
-                    case SEEK_ENTITY -> entityLock = true;
-                    case TRAJECTORY_SCATTER -> scatter = true;
-                    case TRAJECTORY_DROP -> drop = true;
-                    default -> {
-                    }
-                }
-            }
-            if (entityLock) {
-                LivingEntity locked = LockTargetService.resolve(player);
-                if (locked != null) {
-                    locked.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 0));
-                }
-            }
-            ReleaseDefinition attackDefinition = ReleaseRegistry.get(action.getId());
-            boolean mutable = attackDefinition != null && attackDefinition.trajectoryMutable();
-            boolean frameLock = entityLock && mutable ? true : lockThisCast;
-            if (spaceLock) {
-                frameLock = entityLock && mutable;
-            }
-            Vec3 center = spaceLock && batch != null
-                    ? batch.resolveAnchor(player)
-                    : player.getEyePosition();
-            long seed = player.getUUID().getLeastSignificantBits()
-                    ^ player.level().getGameTime()
-                    ^ action.getId().hashCode()
-                    ^ ((long) volley << 16);
-            CastFrame frame = CastFrame.forAttack(finalDamage, applied, tally, copyIndex, copyCount,
-                    center, lookVec, spaceLock, scatter, drop, mutable, seed);
-            frame.radiusMultiplier = bonus.radiusMultiplier;
-            frame.burnSeconds = bonus.burnSeconds;
-            frame.controlTicks = bonus.controlTicks;
-            frame.extinguish = bonus.extinguish;
-            frame.knockback = bonus.knockback;
-            frame.speedMultiplier = bonus.speedMultiplier;
-            CastFrame.bind(frame);
-            try {
-                TechniqueCastContext ctx = new TechniqueCastContext(finalDamage, lookVec, pos, applied,
-                        onFirstTrigger, frameLock, dropThisCast);
-                effect.execute(player, action, weapon, ctx);
-            } finally {
-                CastFrame.unbind();
-            }
-        } finally {
-            if (batch != null) {
-                ReleaseBatch.bind(outer);
+            if (!handedOff.get()) {
+                releaseConditionalLock(conditionalLockKey, conditionalLockReleased);
             }
         }
     }
 
-
-    /** 装配链是否含「操纵世界剑实体」类术式（由 ReleaseDefinition 登记，不写死 id）。 */
-    private static boolean hasSwordManipulation(List<Technique> techniques) {
-        for (Technique technique : techniques) {
-            ReleaseDefinition definition = ReleaseRegistry.get(technique.getId());
-            if (definition != null && definition.manipulatesSwordEntities()) {
-                return true;
+    private static HostCast openConditionalCast(ServerPlayer player, List<Technique> techniques,
+                                                List<ChainSegment> segments, CastSource castSource) {
+        for (ChainSegment listedSegment : segments) {
+            Technique listedTechnique = techniques.get(listedSegment.actionIndex());
+            ReleaseDefinition listedDefinition = ReleaseRegistry.get(listedTechnique.getId());
+            if (listedTechnique.getBaseDamage() <= 0f && listedDefinition != null
+                    && listedDefinition.conditionalEffect() != null) {
+                HostCast opened = HostCast.open(player.getUUID(), castSource);
+                opened.hold();
+                return opened;
             }
-        }
-        return false;
-    }
-
-    private static boolean hasPlantedWorldSword(ServerPlayer player) {
-        if (!(player.level() instanceof ServerLevel level)) {
-            return false;
-        }
-        return SwordEntity.anyOwnedBy(level, player.getUUID());
-    }
-
-    /** 空手可放：链上有操纵类术式，且维度里存在该玩家拥有的存活剑实体。 */
-    private static boolean allowsEmptyHandSwordCast(ServerPlayer player, Skill skill) {
-        return skill != null
-                && hasSwordManipulation(skill.getTechniques())
-                && hasPlantedWorldSword(player);
-    }
-
-    private ChainRole roleOf(Technique technique) {
-        ReleaseDefinition definition = ReleaseRegistry.get(technique.getId());
-        if (definition == null) {
-            return ChainRole.ATTACK;
-        }
-        return definition.role();
-    }
-
-    private boolean isChainModifier(ChainRole role) {
-        return role == ChainRole.SEEK_SPACE
-                || role == ChainRole.SEEK_ENTITY
-                || role == ChainRole.TRAJECTORY_DROP
-                || role == ChainRole.TRAJECTORY_SCATTER
-                || role == ChainRole.RULE_TRIPLE
-                || role == ChainRole.RULE_DUAL;
-    }
-
-    private ModifierPlan collectModifiers(List<ChainSegment> segments, List<Technique> techniques, int from) {
-        ModifierPlan plan = new ModifierPlan();
-        int j = from;
-        while (j < segments.size()) {
-            Technique technique = techniques.get(segments.get(j).actionIndex());
-            if (isRemovedRule(technique.getId())) {
-                j++;
-                continue;
-            }
-            ChainRole role = roleOf(technique);
-            if (technique.getBaseDamage() > 0 && !technique.isEnchantment()) {
-                plan.attackSegment = j;
-                j++;
-                break;
-            }
-            if (!isChainModifier(role)) {
-                break;
-            }
-            switch (role) {
-                case SEEK_SPACE -> plan.spaceLock = true;
-                case SEEK_ENTITY -> plan.entityLock = true;
-                case TRAJECTORY_DROP -> plan.drop = true;
-                case TRAJECTORY_SCATTER -> plan.scatter = true;
-                case RULE_TRIPLE -> plan.copies *= 3;
-                case RULE_DUAL -> plan.volleys *= 2;
-                default -> {
-                }
-            }
-            j++;
-        }
-        plan.resume = j;
-        return plan;
-    }
-
-    private void firePlan(ServerPlayer player, Skill skill, List<Technique> techniques, List<ChainSegment> segments,
-                          ModifierPlan plan, float weaponBonus) {
-        ChainSegment attackSeg = segments.get(plan.attackSegment);
-        Technique attack = techniques.get(attackSeg.actionIndex());
-        EnchantmentResolution enchantments = resolveSegmentEnchantments(skill, attackSeg);
-        EnchantBonus bonus = EnchantBonus.resolve(skill, attackSeg.enchantIndexes(), attack.getBaseDamage(), 1);
-        float damage = attackSeg.enchantIndexes().isEmpty()
-                ? segmentDamage(attack, attackSeg, weaponBonus, segmentMagicDamage(skill, attackSeg), null)
-                : bonus.attackDamage + bonus.addedDamage + weaponBonus;
-        boolean carries = !attackSeg.enchantIndexes().isEmpty();
-        ReleaseDefinition definition = ReleaseRegistry.get(attack.getId());
-        boolean mutable = definition != null && definition.trajectoryMutable();
-        ReleaseBatch batch = ReleaseBatch.current();
-        int now = player.getServer().getTickCount();
-        ItemStack weapon = player.getMainHandItem();
-        for (int volley = 0; volley < plan.volleys; volley++) {
-            ReleaseBatch.Tally tally = plan.copies > 1 && batch != null ? batch.openGroupTally() : null;
-            int tick = now + volley * 10;
-            for (int copy = 0; copy < plan.copies; copy++) {
-                int copyIndex = copy;
-                int volleyIndex = volley;
-                Runnable runner = buildSegmentRunner(player, attack, techniques, attackSeg.actionIndex(), weapon,
-                        damage, carries, enchantments, null,
-                        plan.entityLock && mutable, plan.drop && mutable,
-                        tally, copyIndex, plan.copies, batch,
-                        bonus, volleyIndex);
-                ChainScheduler.schedule(player.getServer(), tick, runner);
-            }
-        }
-    }
-
-    private void imprintEnchant(ServerPlayer player, Skill skill, List<Technique> techniques, int layers) {
-        java.util.ArrayList<Integer> indexes = new java.util.ArrayList<>();
-        for (int i = 0; i < techniques.size(); i++) {
-            if (techniques.get(i).isEnchantment()) {
-                indexes.add(i);
-            }
-        }
-        if (indexes.isEmpty()) {
-            return;
-        }
-        float weaponAttack = (float) player.getAttribute(Attributes.ATTACK_DAMAGE).getValue();
-        EnchantBonus bonus = EnchantBonus.resolve(skill, indexes, weaponAttack, Math.max(1, layers));
-        WeaponEnchant.imprint(player, player.getMainHandItem(), bonus);
-    }
-
-    private static final class ModifierPlan {
-        boolean spaceLock;
-        boolean entityLock;
-        boolean drop;
-        boolean scatter;
-        int copies = 1;
-        int volleys = 1;
-        int attackSegment = -1;
-        int resume;
-    }
-
-    private boolean isRemovedRule(String id) {
-        return "rule_interleave".equals(id) || "rule_damage_tally".equals(id);
-    }
-
-    private int findTripleAttack(List<ChainSegment> segments, int ruleIndex, List<Technique> techniques) {
-        for (int j = ruleIndex + 1; j < segments.size(); j++) {
-            ChainSegment seg = segments.get(j);
-            Technique action = techniques.get(seg.actionIndex());
-            if (releaseKind(action.getId()) == ReleaseKind.RULE) {
-                DebugLog.log("rule_triple_cast 先遇到其它规则术式，停止");
-                return -1;
-            }
-            if (action.getBaseDamage() > 0 && !action.isEnchantment()) {
-                return j;
-            }
-        }
-        return -1;
-    }
-
-    private boolean lockThisCast(List<Technique> techniques, int actionIndex) {
-        ReleaseDefinition definition = ReleaseRegistry.get(techniques.get(actionIndex).getId());
-        if (definition == null || !definition.acceptsTargetOverride()) {
-            return false;
-        }
-        for (int i = actionIndex - 1; i >= 0; i--) {
-            ReleaseDefinition earlier = ReleaseRegistry.get(techniques.get(i).getId());
-            if (earlier == null) {
-                continue;
-            }
-            if (earlier.setsTargetForNextDirectional()) {
-                return true;
-            }
-            if (earlier.acceptsTargetOverride()) {
-                return false;
-            }
-        }
-        return false;
-    }
-
-    private boolean dropThisCast(List<Technique> techniques, List<ChainSegment> segments, int actionIndex) {
-        ReleaseDefinition definition = ReleaseRegistry.get(techniques.get(actionIndex).getId());
-        if (definition == null || !definition.acceptsPathOverride()) {
-            return false;
-        }
-        List<Integer> sameRelease = sameReleaseGroup(segments, actionIndex, techniques);
-        for (int i = actionIndex - 1; i >= 0; i--) {
-            ReleaseDefinition earlier = ReleaseRegistry.get(techniques.get(i).getId());
-            if (earlier == null) {
-                continue;
-            }
-            if (earlier.setsDropForNextDirectional()) {
-                return true;
-            }
-            if (earlier.acceptsPathOverride()) {
-                if (sameRelease != null && sameRelease.contains(i)) {
-                    continue;
-                }
-                return false;
-            }
-        }
-        return false;
-    }
-
-    private List<Integer> sameReleaseGroup(List<ChainSegment> segments, int actionIndex, List<Technique> techniques) {
-        for (int ruleIndex = 0; ruleIndex < segments.size(); ruleIndex++) {
-            ChainSegment ruleSegment = segments.get(ruleIndex);
-            if (releaseKind(techniques.get(ruleSegment.actionIndex()).getId()) != ReleaseKind.RULE) {
-                continue;
-            }
-            List<ChainSegment> released = releasedSegments(segments, ruleIndex, techniques);
-            boolean found = false;
-            for (ChainSegment seg : released) {
-                if (seg.actionIndex() == actionIndex) {
-                    found = true;
-                    break;
-                }
-            }
-            if (!found) {
-                continue;
-            }
-            List<Integer> group = new ArrayList<>();
-            for (ChainSegment seg : released) {
-                group.add(seg.actionIndex());
-            }
-            return group;
         }
         return null;
     }
 
-    private Consumer<Vec3> buildRuleTrigger(ServerPlayer player, Skill skill,
-                                            List<Technique> techniques, ItemStack weapon,
-                                            List<ChainSegment> segments, int ruleIndex, float weaponBonus, int slot,
-                                            double cooldownReduction, Double attributeDamageBonus) {
-        ReleaseBatch pressed = ReleaseBatch.current();
-        List<ChainSegment> released = releasedSegments(segments, ruleIndex, techniques);
-        if (released.isEmpty()) {
-            return pos -> {};
+    private static int conditionalReplayTick(boolean stepped, int openedTick, int stepCooldown, int lastStartTick,
+                                             Technique tailTechnique, double cooldownReduction) {
+        if (stepped) {
+            return openedTick + Math.max(stepCooldown, 1);
         }
-        ChainSegment aSegment = released.get(0);
-        List<ChainSegment> follow = released.subList(1, released.size());
+        return lastStartTick + Math.max(tailCooldownOf(tailTechnique, cooldownReduction), 1);
+    }
 
-        Technique aAction = techniques.get(aSegment.actionIndex());
-        EnchantmentResolution aEnchantments = resolveSegmentEnchantments(skill, aSegment);
-        int aMagicDamage = segmentMagicDamage(skill, aSegment);
-        boolean aCarries = aAction.getBaseDamage() > 0 && !aSegment.enchantIndexes().isEmpty();
-        float aDamage = segmentDamage(aAction, aSegment, weaponBonus, aMagicDamage, attributeDamageBonus);
-        int totalCooldown = scaleCooldown(baseCooldownSum(released, techniques), cooldownReduction);
-
-        if (releaseKind(aAction.getId()) == ReleaseKind.ACTION) {
-            Consumer<Vec3> followTrigger = buildFollowTrigger(player, skill, techniques, weapon, segments, follow, weaponBonus, slot, aAction, cooldownReduction, attributeDamageBonus);
-            Runnable aRunner = buildSegmentRunner(player, aAction, techniques, aSegment.actionIndex(), weapon, aDamage, aCarries, aEnchantments, followTrigger,
-                    lockThisCast(techniques, aSegment.actionIndex()), dropThisCast(techniques, segments, aSegment.actionIndex()));
-            return parentPos -> ChainScheduler.schedule(player.getServer(), player.getServer().getTickCount(), aRunner);
+    private static int tailCooldownOf(Technique tailTechnique, double cooldownReduction) {
+        if (tailTechnique == null) {
+            return 0;
         }
+        ReleaseDefinition tailDefinition = ReleaseRegistry.get(tailTechnique.getId());
+        boolean conditionalTail = tailTechnique.getBaseDamage() <= 0f
+                && tailDefinition != null && tailDefinition.conditionalEffect() != null;
+        if (tailTechnique.getBaseDamage() > 0f || conditionalTail) {
+            return SkillSegmentMath.scaleCooldown(
+                    SkillSegmentMath.configuredBaseCooldown(tailTechnique), cooldownReduction);
+        }
+        return 0;
+    }
 
-        return parentPos -> {
-            Vec3 parent = parentPos != null ? parentPos : player.position();
-            buildSegmentRunnerAt(player, aAction, techniques, aSegment.actionIndex(), weapon, aDamage, aCarries, aEnchantments, null,
-                    player.getLookAngle(), parent, lockThisCast(techniques, aSegment.actionIndex()), dropThisCast(techniques, segments, aSegment.actionIndex()), pressed).run();
-
-            int lastTriggerIndex = -1;
-            for (int k = 0; k < follow.size(); k++) {
-                if (isTriggerRelease(techniques.get(follow.get(k).actionIndex()).getId())) {
-                    lastTriggerIndex = k;
-                }
+    private static Runnable refundIfBlocked(ServerPlayer player, Technique action, ManaPaymentReceipt receipt, int share,
+                                            Runnable body, Runnable keptHook) {
+        ServerLevel castLevel = player.serverLevel();
+        int castEpoch = ChargeGate.epoch(player.getUUID());
+        UncommittedShare claim = UncommittedShare.open(receipt, share);
+        AtomicBoolean once = new AtomicBoolean(false);
+        return () -> {
+            if (!once.compareAndSet(false, true)) {
+                return;
             }
-
-            int tick = player.getServer().getTickCount();
-            for (int k = 0; k < follow.size(); k++) {
-                ChainSegment seg = follow.get(k);
-                Technique tech = techniques.get(seg.actionIndex());
-                EnchantmentResolution enchantments = resolveSegmentEnchantments(skill, seg);
-                int magicDamage = segmentMagicDamage(skill, seg);
-                boolean carries = tech.getBaseDamage() > 0 && !seg.enchantIndexes().isEmpty();
-                float damage = segmentDamage(tech, seg, weaponBonus, magicDamage, attributeDamageBonus);
-
-                Runnable runner;
-                if (k == lastTriggerIndex) {
-                    runner = () -> {
-                        Vec3 look = player.getLookAngle();
-                        Vec3 pos = player.position();
-                        buildSegmentRunnerAt(player, tech, techniques, seg.actionIndex(), weapon, damage, carries, enchantments, null, look, pos,
-                                lockThisCast(techniques, seg.actionIndex()), dropThisCast(techniques, segments, seg.actionIndex()), pressed).run();
-                    };
-                } else {
-                    runner = () -> {
-                        Vec3 look = player.getLookAngle();
-                        buildSegmentRunnerAt(player, tech, techniques, seg.actionIndex(), weapon, damage, carries, enchantments, null, look, parent,
-                                lockThisCast(techniques, seg.actionIndex()), dropThisCast(techniques, segments, seg.actionIndex()), pressed).run();
-                    };
-                }
-                ChainScheduler.schedule(player.getServer(), tick, runner);
+            if (!player.isAlive() || player.level() != castLevel || !ChargeGate.same(player.getUUID(), castEpoch)
+                    || !HeldSwordGate.allows(action, player.getMainHandItem())) {
+                claim.cancel(player);
+                return;
             }
-
-            markBusy(player, slot, tick + totalCooldown);
+            body.run();
+            if (keptHook == null) {
+                claim.commit();
+                return;
+            }
+            claim.commitRetained();
+            keptHook.run();
         };
     }
 
-    private Consumer<Vec3> buildFollowTrigger(ServerPlayer player, Skill skill,
-                                              List<Technique> techniques, ItemStack weapon,
-                                              List<ChainSegment> segments, List<ChainSegment> follow,
-                                              float weaponBonus, int slot, Technique action,
-                                              double cooldownReduction, Double attributeDamageBonus) {
-        ReleaseBatch pressed = ReleaseBatch.current();
-        List<ChainSegment> triggerSegments = new ArrayList<>();
-        List<Technique> triggerActions = new ArrayList<>();
-        List<Float> triggerDamages = new ArrayList<>();
-        List<Boolean> triggerCarries = new ArrayList<>();
-        List<EnchantmentResolution> triggerEnchantments = new ArrayList<>();
+    static void recordTechniqueUse(ServerPlayer player, Technique technique, Set<String> recorded) {
+        if (player == null || technique == null || recorded == null || technique.getId() == null) {
+            return;
+        }
+        if (!recorded.add(technique.getId())) {
+            return;
+        }
+        PlayerShuData data = PlayerShuData.get(player);
+        data.incrementUsage(technique.getId());
+        boolean leveledUp = data.addUsageAndTryLevelUp(technique.getType(), player);
+        PlayerShuData.save(player, data);
+        if (leveledUp) {
+            ModNetwork.sendToPlayer(player, new ShuSyncPacket(data));
+        }
+    }
 
-        List<ChainSegment> sustainedSegments = new ArrayList<>();
-        List<Technique> sustainedActions = new ArrayList<>();
-        List<Float> sustainedDamages = new ArrayList<>();
-        List<Boolean> sustainedCarries = new ArrayList<>();
-        List<EnchantmentResolution> sustainedEnchantments = new ArrayList<>();
-
-        for (ChainSegment seg : follow) {
-            Technique t = techniques.get(seg.actionIndex());
-            ReleaseDefinition definition = ReleaseRegistry.get(t.getId());
-            if (definition == null) {
-                continue;
-            }
-            EnchantmentResolution enchantments = resolveSegmentEnchantments(skill, seg);
-            int magicDamage = segmentMagicDamage(skill, seg);
-            boolean carries = t.getBaseDamage() > 0 && !seg.enchantIndexes().isEmpty();
-            float damage = segmentDamage(t, seg, weaponBonus, magicDamage, attributeDamageBonus);
-            if (definition.tag() == ReleaseTag.TRIGGER) {
-                triggerSegments.add(seg);
-                triggerActions.add(t);
-                triggerDamages.add(damage);
-                triggerCarries.add(carries);
-                triggerEnchantments.add(enchantments);
-            } else if (definition.tag() == ReleaseTag.SUSTAINED) {
-                sustainedSegments.add(seg);
-                sustainedActions.add(t);
-                sustainedDamages.add(damage);
-                sustainedCarries.add(carries);
-                sustainedEnchantments.add(enchantments);
+    private static void rememberOrdinarySuccess(List<Technique> succeeded, Technique technique) {
+        if (technique == null || technique.getId() == null) {
+            return;
+        }
+        for (Technique existing : succeeded) {
+            if (technique.getId().equals(existing.getId())) {
+                return;
             }
         }
+        succeeded.add(technique);
+    }
 
-        int triggerManaCostSum = 0;
-        for (ChainSegment seg : triggerSegments) {
-            triggerManaCostSum += segmentManaCost(techniques, seg);
-        }
-        int sustainedManaCostSum = 0;
-        for (ChainSegment seg : sustainedSegments) {
-            sustainedManaCostSum += segmentManaCost(techniques, seg);
-        }
-        final int triggerMana = triggerManaCostSum;
-        final int sustainedMana = sustainedManaCostSum;
-
-        int triggerCooldown = scaleCooldown(baseCooldownSum(triggerSegments, techniques), cooldownReduction);
-        int sustainedCooldown = baseCooldownSum(sustainedSegments, techniques);
-        int interval = scaleCooldown(Math.max(1, action.getBaseCooldown() + sustainedCooldown), cooldownReduction);
-        ReleaseDefinition actionDefinition = ReleaseRegistry.get(action.getId());
-        int lifetime = actionDefinition != null ? actionDefinition.lifetimeTicks() : 10;
-
-        return pos -> {
-            int tick = player.getServer().getTickCount();
-
-            int firstCost = triggerMana + sustainedMana;
-            boolean firstPaid = MagicPool.trySpend(player, firstCost);
-            if (firstPaid && firstCost > 0) {
-                MagicPool.showBalance(player);
+    private static void cancelUnkept(List<UncommittedShare> claims, ServerPlayer player) {
+        for (UncommittedShare claim : claims) {
+            if (!claim.kept()) {
+                claim.cancel(player);
             }
+        }
+    }
 
-            if (firstPaid && !triggerSegments.isEmpty()) {
-                Vec3 hitPos = pos != null ? pos : player.position();
-                Vec3 look = player.getLookAngle();
-                for (int k = 0; k < triggerSegments.size(); k++) {
-                    Technique t = triggerActions.get(k);
-                    float damage = triggerDamages.get(k);
-                    boolean carries = triggerCarries.get(k);
-                    EnchantmentResolution enchantments = triggerEnchantments.get(k);
-                    final int index = k;
-                    Runnable runner = () -> buildSegmentRunnerAt(player, t, techniques, triggerSegments.get(index).actionIndex(), weapon, damage, carries, enchantments, null,
-                            look, hitPos,
-                            lockThisCast(techniques, triggerSegments.get(index).actionIndex()),
-                            dropThisCast(techniques, segments, triggerSegments.get(index).actionIndex()), pressed).run();
-                    if (k == 0) {
-                        runner.run();
-                    } else {
-                        ChainScheduler.schedule(player.getServer(), tick, runner);
-                    }
-                }
-                markBusy(player, slot, tick + triggerCooldown);
+    private static void releaseConditionalLock(String carrierKey, AtomicBoolean released) {
+        if (carrierKey == null || released == null) {
+            return;
+        }
+        if (released.compareAndSet(false, true)) {
+            CastCooldown.release(carrierKey);
+        }
+    }
+
+    private static boolean isZeroDamageConditional(Technique technique) {
+        if (technique == null || technique.getBaseDamage() > 0f) {
+            return false;
+        }
+        ReleaseDefinition definition = ReleaseRegistry.get(technique.getId());
+        return definition != null && definition.conditionalEffect() != null;
+    }
+
+    private static boolean chainHasConditional(List<Technique> techniques, List<ChainSegment> segments) {
+        for (ChainSegment listedSegment : segments) {
+            if (isZeroDamageConditional(techniques.get(listedSegment.actionIndex()))) {
+                return true;
             }
+        }
+        return false;
+    }
 
-            if (!sustainedActions.isEmpty()) {
-                Runnable round = () -> {
-                    for (int k = 0; k < sustainedActions.size(); k++) {
-                        buildSegmentRunner(player, sustainedActions.get(k), techniques, sustainedSegments.get(k).actionIndex(), weapon,
-                                sustainedDamages.get(k), sustainedCarries.get(k),
-                                sustainedEnchantments.get(k), null,
-                                lockThisCast(techniques, sustainedSegments.get(k).actionIndex()), dropThisCast(techniques, segments, sustainedSegments.get(k).actionIndex()), pressed).run();
-                    }
-                };
-                if (firstPaid) {
-                    round.run();
-                }
-                int elapsed = interval;
-                while (elapsed < lifetime) {
-                    int delay = elapsed;
-                    ChainScheduler.schedule(player.getServer(), tick + delay, () -> {
-                        int pulseCost = sustainedMana;
-                        if (!MagicPool.trySpend(player, pulseCost)) {
-                            return;
-                        }
-                        if (pulseCost > 0) {
-                            MagicPool.showBalance(player);
-                        }
-                        round.run();
-                    });
-                    elapsed += interval;
+    private static int settleConditionalParent(ServerPlayer player, ItemStack weapon, int slot, boolean stepped,
+                                               int openedTick, int frozenStepCooldown, int lastStartTick,
+                                               Technique tailTechnique, double cooldownReduction, Skill replaySkill,
+                                               List<Technique> techniques, String stepSignature, int stepCount,
+                                               AtomicInteger conditionalCommitted, AtomicInteger succeededConditionalScaled,
+                                               List<Technique> ordinarySucceeded, Set<String> succeededConditionalIds,
+                                               AtomicBoolean enchantApplied, Set<String> recordedUsage,
+                                               AtomicBoolean parentSettled, boolean markCooldown) {
+        if (!parentSettled.compareAndSet(false, true)) {
+            return -1;
+        }
+        boolean conditionalSuccess = conditionalCommitted.get() > 0;
+        boolean ordinarySuccess = !ordinarySucceeded.isEmpty();
+        if (!conditionalSuccess && !ordinarySuccess) {
+            return -1;
+        }
+        for (Technique technique : ordinarySucceeded) {
+            recordTechniqueUse(player, technique, recordedUsage);
+        }
+        if (enchantApplied.get()) {
+            for (Technique technique : techniques) {
+                if (technique.isEnchantment()) {
+                    recordTechniqueUse(player, technique, recordedUsage);
                 }
             }
-        };
-    }
-
-    private int ruleConsumedCount(List<ChainSegment> segments, int ruleIndex, List<Technique> techniques) {
-        int count = 1;
-        if (ruleIndex + 1 >= segments.size()) {
-            return count;
         }
-        count += 1;
-        ReleaseDefinition rule = ReleaseRegistry.get(techniques.get(segments.get(ruleIndex).actionIndex()).getId());
-        int pullAfterA = rule != null ? rule.pullAfterA() : 0;
-        count += pulledCount(pullAfterA, segments, ruleIndex);
-        return count;
-    }
-
-    private int pulledCount(int pullAfterA, List<ChainSegment> segments, int ruleIndex) {
-        int available = Math.max(0, segments.size() - (ruleIndex + 2));
-        return pullAfterA < 0 ? available : Math.min(pullAfterA, available);
-    }
-
-    private List<ChainSegment> releasedSegments(List<ChainSegment> segments, int ruleIndex, List<Technique> techniques) {
-        List<ChainSegment> released = new ArrayList<>();
-        if (ruleIndex + 1 >= segments.size()) {
-            return released;
-        }
-        released.add(segments.get(ruleIndex + 1));
-        ReleaseDefinition rule = ReleaseRegistry.get(techniques.get(segments.get(ruleIndex).actionIndex()).getId());
-        int pullAfterA = rule != null ? rule.pullAfterA() : 0;
-        int followCount = pulledCount(pullAfterA, segments, ruleIndex);
-        int aIndex = ruleIndex + 1;
-        for (int f = aIndex + 1; f < aIndex + 1 + followCount && f < segments.size(); f++) {
-            released.add(segments.get(f));
-        }
-        return released;
-    }
-
-    private int baseCooldownSum(List<ChainSegment> segments, List<Technique> techniques) {
-        int sum = 0;
-        for (ChainSegment segment : segments) {
-            sum += techniques.get(segment.actionIndex()).getBaseCooldown();
-        }
-        return sum;
-    }
-
-    private float segmentDamage(Technique action, ChainSegment segment, float weaponBonus, int magicDamage, Double attributeDamageBonus) {
-        float base = scaledBaseDamage(action.getBaseDamage(), attributeDamageBonus);
-        return action.getBaseDamage() > 0
-                ? base + weaponBonus + magicDamage
-                : base + weaponBonus;
-    }
-
-    private float scaledBaseDamage(float baseDamage, Double attributeDamageBonus) {
-        if (attributeDamageBonus == null || baseDamage <= 0) return baseDamage;
-        return (float) Math.max(0, baseDamage * (1 + attributeDamageBonus));
-    }
-
-    private int scaleCooldown(int ticks, double cooldownReduction) {
-        if (ticks <= 0) return ticks;
-        return Math.max(1, (int) Math.round(ticks * (1 - cooldownReduction)));
-    }
-
-    private ReleaseKind releaseKind(String techniqueId) {
-        ReleaseDefinition definition = ReleaseRegistry.get(techniqueId);
-        return definition != null ? definition.kind() : null;
-    }
-
-    private boolean isTriggerRelease(String techniqueId) {
-        ReleaseDefinition definition = ReleaseRegistry.get(techniqueId);
-        return definition != null && definition.tag() == ReleaseTag.TRIGGER;
-    }
-
-    private boolean manipulatesSwordEntities(String techniqueId) {
-        ReleaseDefinition definition = ReleaseRegistry.get(techniqueId);
-        return definition != null && definition.manipulatesSwordEntities();
-    }
-
-    private EnchantmentResolution resolveSegmentEnchantments(Skill skill, ChainSegment segment) {
-        EnchantmentResolution resolution = EnchantmentResolution.empty();
-        List<Technique> techniques = skill.getTechniques();
-        for (int index : segment.enchantIndexes()) {
-            Technique technique = techniques.get(index);
-            EnchantmentDefinition definition = EnchantmentRegistry.get(technique.getId());
-            if (definition == null) {
-                DebugLog.log("附魔未登记：" + technique.getId());
-                continue;
+        if (conditionalSuccess) {
+            for (Technique technique : techniques) {
+                if (isZeroDamageConditional(technique) && succeededConditionalIds.contains(technique.getId())) {
+                    recordTechniqueUse(player, technique, recordedUsage);
+                }
             }
-            ElementReaction reaction = ElementReaction.of(skill.getEmbryo(index), definition.element());
-            DebugLog.log("附魔 " + technique.getId() + " 原胚=" + skill.getEmbryo(index).getId()
-                    + " " + reaction.describe());
-            EnchantmentAccumulator current = resolution.effect(definition.createAccumulator().effectId());
-            resolution = resolution.with(definition.fold(reaction, current));
         }
-        return resolution;
+        int replayTick = conditionalParentReplay(stepped, openedTick, frozenStepCooldown, lastStartTick, tailTechnique,
+                cooldownReduction, replaySkill, techniques, conditionalCommitted.get(), succeededConditionalScaled.get());
+        if (markCooldown) {
+            CastCooldown.mark(player, weapon, slot, replayTick);
+        }
+        if (stepped) {
+            ChainProgress.advance(player, weapon, slot, stepSignature, stepCount);
+        }
+        return replayTick;
     }
 
-    private int segmentMagicDamage(Skill skill, ChainSegment segment) {
-        int total = 0;
-        List<Technique> techniques = skill.getTechniques();
-        for (int index : segment.enchantIndexes()) {
-            Technique technique = techniques.get(index);
-            EnchantmentDefinition definition = EnchantmentRegistry.get(technique.getId());
-            if (definition == null) {
-                continue;
+    private static int conditionalParentReplay(boolean stepped, int openedTick, int frozenStepCooldown, int lastStartTick,
+                                               Technique tailTechnique, double cooldownReduction, Skill replaySkill,
+                                               List<Technique> techniques, int conditionalCommittedCount,
+                                               int succeededConditionalScaled) {
+        if (stepped) {
+            int cooldown = frozenStepCooldown;
+            if (conditionalCommittedCount <= 0) {
+                cooldown = steppedReplayCooldown(replaySkill, techniques, cooldownReduction);
             }
-            ElementReaction reaction = ElementReaction.of(skill.getEmbryo(index), definition.element());
-            total += definition.magicDamage(reaction);
+            return openedTick + Math.max(cooldown, 1);
         }
-        return total;
+        int tailPart = tailCooldownOf(tailTechnique, cooldownReduction);
+        if (conditionalCommittedCount <= 0 && isZeroDamageConditional(tailTechnique)) {
+            tailPart = 0;
+        }
+        int conditionalPart = conditionalCommittedCount > 0 ? succeededConditionalScaled : 0;
+        int piece = Math.max(tailPart, conditionalPart);
+        return lastStartTick + Math.max(piece, 1);
     }
 
-    private int segmentManaCost(List<Technique> techniques, ChainSegment segment) {
-        int cost = techniques.get(segment.actionIndex()).manaCost();
-        for (int index : segment.enchantIndexes()) {
-            cost += techniques.get(index).manaCost();
+    private static int steppedReplayCooldown(Skill replaySkill, List<Technique> techniques, double cooldownReduction) {
+        List<Integer> keptIndexes = new ArrayList<>();
+        for (int techniqueIndex = 0; techniqueIndex < techniques.size(); techniqueIndex++) {
+            if (!isZeroDamageConditional(techniques.get(techniqueIndex))) {
+                keptIndexes.add(techniqueIndex);
+            }
         }
-        return cost;
+        if (keptIndexes.isEmpty()) {
+            return 0;
+        }
+        return ChainSteps.cooldown(replaySkill, keptIndexes, cooldownReduction);
     }
 
-    public static void register(SimpleChannel channel, int id) {
-        channel.registerMessage(id,
+    private CastTiming imprintEnchantChain(ServerPlayer player, Skill skill, List<Technique> techniques, double cooldownReduction) {
+        Integer enchantCost = 0;
+        int cooldownSum = 0;
+        for (Technique technique : techniques) {
+            enchantCost = SkillSegmentMath.exactAdd(enchantCost, SkillSegmentMath.quotedMana(technique));
+            if (enchantCost == null) {
+                player.displayClientMessage(Component.translatable("gui.xueximod.batch.quote_overflow"), true);
+                return CastTiming.rejected();
+            }
+            cooldownSum += SkillSegmentMath.scaleCooldown(
+                    SkillSegmentMath.configuredBaseCooldown(technique), cooldownReduction);
+        }
+        if (!MagicPool.trySpend(player, enchantCost)) {
+            return CastTiming.insufficient();
+        }
+        if (enchantCost > 0) {
+            MagicPool.showBalance(player);
+        }
+        SkillChainPlan.imprintEnchant(player, skill, techniques, 1);
+        if (techniques.stream().anyMatch(technique -> technique != null && "vine_mark".equals(technique.getId()))) {
+            com.bslx.XueXiMod.player.ManaPaymentReceipt roseReceipt =
+                    com.bslx.XueXiMod.player.MagicPool.lastReceipt(player.getUUID());
+            com.bslx.XueXiMod.status.wood.vine.VineMarkSpectrum.armPending(player,
+                    roseReceipt == null ? null : roseReceipt.receiptId());
+            com.bslx.XueXiMod.status.wood.vine.VineMarkRuntime.afterShareCommitted(MagicPool.lastReceipt(player.getUUID()));
+        }
+        int nowTick = player.getServer().getTickCount();
+        return CastTiming.accepted(nowTick, nowTick, nowTick + Math.max(cooldownSum, 1), techniques);
+    }
+
+    private static boolean legalEnchantChain(List<Technique> techniques) {
+        if (techniques.isEmpty()) {
+            return false;
+        }
+        for (Technique technique : techniques) {
+            if (!technique.isEnchantment()) {
+                return false;
+            }
+            ReleaseDefinition definition = ReleaseRegistry.get(technique.getId());
+            if (definition != null && definition.fieldRadius() > 0f) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void register(SimpleChannel channel, int messageId) {
+        BindingLayout.installCompiler(BindingStructureCompiler.compiler());
+        BoundReleases.install(AutomaticRound.executor());
+        channel.registerMessage(messageId,
                 SkillUsePacket.class,
                 SkillUsePacket::encode,
                 SkillUsePacket::decode,
                 SkillUsePacket::handle);
     }
+
+    private static List<Integer> identityIndexes(int techniqueCount) {
+        List<Integer> indexes = new ArrayList<>(Math.max(0, techniqueCount));
+        for (int techniqueIndex = 0; techniqueIndex < techniqueCount; techniqueIndex++) {
+            indexes.add(techniqueIndex);
+        }
+        return indexes;
+    }
+
 }

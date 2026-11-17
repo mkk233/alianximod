@@ -1,0 +1,41 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 17.0.6, JVM: 17.0.6+9-LTS-190 (Oracle Corporation), Arch: amd64
+
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createMcpToSrg UP-TO-DATE
+
+> Task :compileJava
+注: SpongePowered MIXIN Annotation Processor Version=0.8.5
+注: Supported obfuscation types: ObfuscationServiceMCP supports [notch] ObfuscationServiceFG3 supports [searge]
+注: Loading searge mappings from D:\alianximod\build\createMcpToSrg\output.tsrg
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing searge composite mappings to D:\alianximod\build\tmp\compileJava\compileJava-mappings.tsrg
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\WaterPhantomVisualDiagnostics.java:11: 错误: 找不到符号
+import net.minecraft.util.Util;
+                         ^
+  符号:   类 Util
+  位置: 程序包 net.minecraft.util
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing searge composite mappings to D:\alianximod\build\tmp\compileJava\compileJava-mappings.tsrg
+1 个错误
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 20s
+4 actionable tasks: 2 executed, 2 up-to-date

@@ -1,0 +1,83 @@
+{
+  "ready": true,
+  "submitted": false,
+  "baselineSha256": "CF99A04E797B741718267388A8CB7CDB94323C011093755007D2BD9B7AEE9B11",
+  "baselineBytes": 107349,
+  "baselineMtime": "2026-11-01T21:47:58.818+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\备份\\术式制作表-20261101-234901-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\候选\\术式制作表-候选-20261101-234901-1.xlsx",
+  "candidateSha256": "01A7C04D5C3B04E92851E23E8AE86CC9B29C76B47031D494DD756FF770F82B94",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\快照\\变更前-AEN-20261101-234901-1.json",
+    "nodv": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\快照\\变更前-NODV-20261101-234901-1.json",
+    "mapping": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\快照\\批准要求与资源映射-20261101-234901-1.md"
+  },
+  "from": {
+    "sheet": "制作中",
+    "row": 7
+  },
+  "to": {
+    "sheet": "待验收",
+    "row": 8
+  },
+  "countsBefore": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 5
+  },
+  "countsAfter": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 14,
+    "待验收": 6
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "readme": "D:\\alianximod\\docs\\资源库\\README.md",
+  "readmeSha256": "9ABD0EDE8C25E4E04739F5246DC61E2E0F1E7D62BE540D8B52B730C8FC54BEE4",
+  "readmeCandidate": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\候选\\资源库-README-候选.md",
+  "readmeCandidateSha256": "A3A688CCF1D0D1ADB39B72F92B3CC084618D0582FE19691AACF5DB746D67DC47",
+  "v1Readme": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\热波_v1\\README.md",
+  "v1ReadmeSha256": "FD9D36F3F3ECF22B3554C736B98C3859453DE01324F4C760E992337A98A4A859",
+  "v1Candidate": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\候选\\热波v1-README-候选.md",
+  "v1CandidateSha256": "F617E8AF8E4AD18DF4BA232DF5CE15A0347BF632C517576E1087614588F0A957",
+  "v2Readme": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\热波_水平正圆_v2\\README.md",
+  "v2ReadmeSha256": "7B8B9BDC3EFC6EE8DC38AEAFBE4E03D360E69C965BE4F9AD7312277469AAFB59",
+  "v2ReadmeCandidate": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\候选\\热波v2-README-候选.md",
+  "v2ReadmeCandidateSha256": "ACAFE07AA97303C6CFCA52B05CC9731DEEDB1ECE42A009941E8E2F90BC12601F",
+  "v2Manifest": "D:\\alianximod\\docs\\资源库\\特效\\火焰\\热波_水平正圆_v2\\manifest.json",
+  "v2ManifestSha256": "9AB54C2B906886434D303D70EF9F9BB4FF5552434620AB448EC7AB7C0D03328E",
+  "v2ManifestCandidate": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\候选\\热波v2-manifest-候选.json",
+  "v2ManifestCandidateSha256": "676BF182B71A4EE97E878AE5728CB29854899D5764573FCBA2F10878E8662340",
+  "v1ArtSha256": {
+    "docs/资源库/特效/火焰/热波_v1/review-board.aseprite": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5",
+    "docs/资源库/特效/火焰/热波_v1/review-board.gif": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9",
+    "docs/资源库/特效/火焰/热波_v1/review-board.png": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+    "docs/资源库/特效/火焰/热波_v1/shock_ring-strip.png": "3CF9F5728C0B70EEE2CC09E61B4F6182E6254516CC7B955939907755C654BBC4",
+    "docs/资源库/特效/火焰/热波_v1/shock_ring.aseprite": "ABEE4DB17D60D584F774789BFFC5C2079E2BA6E9A3A2F21160114193FED60BBC"
+  },
+  "v2ArtSha256": {
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/bb-oblique-animation.gif": "6A8ECEB6B59B04BAA0FABBAFFB3EF40C1F1FEACF02738C4D7BF33F6431663B8B",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/bb-oblique-still.png": "855A5E73ED8774B672C09080761730653FCD7AA769F790CE17D51872DD274A9E",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/bb-top-animation.gif": "6FFDDAE6444382D2AFC8F892AF41C5CDD355E0A09C0CC983169536F918BE3EF0",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/bb-top-still.png": "646E4553C5EC40E038A03D5B16F788711D49A7EBD0635E438275BF75CC4339B4",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/blockbench-app-proof.png": "9702A987A2AF8CD9FAAA5AC10698386B781A89A85C10FE881F4D0A893B266056",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/circle-2d-preview.gif": "62C815409F6FF4431F3C91C53448457A9D3ECEAB2C03E5F396070023DC04776D",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/shock_ring_circle-frame10.png": "DABCFA7C5AFDCF0F0A78938E72AF6BC00D7806A85E18BEB8D42BD500163243C0",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/shock_ring_circle-strip.png": "5959D47D14EA8A69394559B13F504686C620230A35505A765731CBB76BDA6D0F",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/shock_ring_circle.aseprite": "CD7D21582A1020C211AC199D2FED5EC23895A6AE6FD7BBB35ABA11767648DCF8",
+    "docs/资源库/特效/火焰/热波_水平正圆_v2/热波_水平正圆_v2.bbmodel": "EF2F16CB9E4C2A11B763129966B39779F480610F04D5A93BCC90301A7BCD5B4D"
+  },
+  "manifestArtSha256": {
+    "bb-oblique-animation.gif": "6a8eceb6b59b04baa0fabbaffb3ef40c1f1feacf02738c4d7bf33f6431663b8b",
+    "bb-oblique-still.png": "855a5e73ed8774b672c09080761730653fcd7aa769f790ce17d51872dd274a9e",
+    "bb-top-animation.gif": "6ffddae6444382d2afc8f892af41c5cdd355e0a09c0cc983169536f918be3ef0",
+    "bb-top-still.png": "646e4553c5ec40e038a03d5b16f788711d49a7ebd0635e438275bf75cc4339b4",
+    "blockbench-app-proof.png": "9702a987a2af8cd9faaa5ac10698386b781a89a85c10fe881f4d0a893b266056",
+    "circle-2d-preview.gif": "62c815409f6ff4431f3c91c53448457a9d3eceab2c03e5f396070023dc04776d",
+    "shock_ring_circle-frame10.png": "dabcfa7c5afdcf0f0a78938e72af6bc00d7806a85e18beb8d42bd500163243c0",
+    "shock_ring_circle-strip.png": "5959d47d14ea8a69394559b13f504686c620230a35505a765731cbb76bda6d0f",
+    "shock_ring_circle.aseprite": "cd7d21582a1020c211ac199d2fed5ec23895a6ae6fd7bbb35aba11767648dcf8",
+    "热波_水平正圆_v2.bbmodel": "ef2f16cb9e4c2a11b763129966b39779f480610f04d5a93bcc90301a7bcd5b4d"
+  }
+}

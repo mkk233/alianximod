@@ -1,0 +1,280 @@
+*** Begin Patch
+*** Update File: src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/motion/VolumeMotionRuntime.java
+@@
+ import com.bslx.XueXiMod.network.DomainSyncPacket;
++import com.bslx.XueXiMod.debug.DebugLog;
+ import com.bslx.XueXiMod.player.PlayerShuData;
+@@
+         if (!(PlayerShuData.get(owner).getWaterMomentum() > 0F)) {
++            noteCollapse(host, "水势库存耗尽", owner, null, "候选尚未入卷");
+             DomainService.closeInstance(host);
+             return;
+         }
+@@
+         float price = ProjectileStandardCost.deflectPrice(projectile, fallback);
+         if (!(price > 0F)) {
+             return false;
+         }
++        float storedMomentum = PlayerShuData.get(owner).getWaterMomentum();
++        float availableMomentum = WaterMomentum.available(owner);
+         WaterMomentum.Settlement settlement = WaterMomentum.settle(owner, price, 0F);
+         if (!settlement.paid()) {
++            noteCollapse(host, "弹体支付失败", owner, projectile,
++                    paymentText(storedMomentum, availableMomentum, price, 0F, settlement.after()));
+             DomainService.closeInstance(host);
+             return true;
+         }
+         if (!ProjectileStandardCost.deflect(projectile)) {
+             WaterMomentum.settle(owner, 0F, price);
+             return false;
+         }
+         ledger.markDeflected(projectile.getUUID());
+         if (!(settlement.after() > 0F)) {
++            noteCollapse(host, "弹体结算耗尽", owner, projectile,
++                    paymentText(storedMomentum, availableMomentum, price, 0F, settlement.after()));
+             DomainService.closeInstance(host);
+             return true;
+         }
+@@
+         if (!clearLine(root, axisX, axisZ)) {
+             if (held && inside && !blocksClear(root, union)) {
++                noteCollapse(host, "已控身体受阻", owner, root,
++                        groupText(bodyRadius, column, union, members) + " " + occupancyText(ledger, host));
+                 DomainService.closeInstance(host);
+                 return true;
+             }
+             return false;
+         }
+         if (touching && !fits(union, bodyRadius, column)) {
++            noteCollapse(host, "接触但身体放不下", owner, root,
++                    groupText(bodyRadius, column, union, members) + " " + occupancyText(ledger, host));
+             DomainService.closeInstance(host);
+             return true;
+         }
+@@
+         AABB column = host.geometry().bounds();
+         if (!fits(union, bodyRadius, column)) {
++            noteCollapse(host, "入卷身体放不下", owner, rootOf(members),
++                    groupText(bodyRadius, column, union, members) + " " + occupancyText(ledger, host));
+             return false;
+         }
+@@
+         double limit = SpecialBalance.number(host.definition().balanceId(), BalanceKeys.OCCUPIED_VOLUME_LIMIT, 12.0D);
+-        if (heldVolume(ledger, host, host.hostLevel()) + incoming > limit) {
++        double occupied = heldVolume(ledger, host, host.hostLevel());
++        if (occupied + incoming > limit) {
++            noteCollapse(host, "占用超限", owner, rootOf(members),
++                    "已占=" + occupied + " 新增=" + incoming + " 上限=" + limit
++                            + " 收费=" + charge + " 返还=" + refund + " 成员=" + membersText(members));
+             return false;
+         }
+@@
+         if (seat == null) {
++            noteCollapse(host, "没有合法座位", owner, rootOf(members),
++                    occupancyText(ledger, host) + " 并集=" + boxText(union) + " 成员=" + membersText(members));
+             return false;
+         }
+         if (!newcomers.isEmpty() && (charge > 0F || refund > 0F)) {
+             if (!Float.isFinite(charge) || !Float.isFinite(refund) || charge < 0F) {
++                noteCollapse(host, "费用无效", owner, rootOf(members),
++                        "收费=" + charge + " 返还=" + refund + " 成员=" + membersText(members));
+                 return false;
+             }
++            float storedMomentum = PlayerShuData.get(owner).getWaterMomentum();
++            float availableMomentum = WaterMomentum.available(owner);
+             WaterMomentum.Settlement settlement = WaterMomentum.settle(owner, charge, refund);
+             if (!settlement.paid()) {
++                noteCollapse(host, "入卷支付失败", owner, rootOf(members),
++                        paymentText(storedMomentum, availableMomentum, charge, refund, settlement.after())
++                                + " " + occupancyText(ledger, host) + " 成员=" + membersText(members));
+                 return false;
+             }
+             if (!(settlement.after() > 0F)) {
+                 for (Entity member : newcomers) {
+                     ledger.markSettled(member.getUUID());
+                 }
++                noteCollapse(host, "入卷结算耗尽", owner, rootOf(members),
++                        paymentText(storedMomentum, availableMomentum, charge, refund, settlement.after())
++                                + " " + occupancyText(ledger, host) + " 成员=" + membersText(members));
+                 return false;
+             }
+         }
+@@
+     private static boolean baseWater(DomainInstance domain) {
++        if (domain == null || domain.hostLevel() == null || domain.geometry() == null) {
++            return false;
++        }
+         ServerLevel level = domain.hostLevel();
+         AABB bounds = domain.geometry().bounds();
+         double axisX = (bounds.minX + bounds.maxX) * 0.5D;
+         double axisZ = (bounds.minZ + bounds.maxZ) * 0.5D;
+         double radius = cylinderRadius(domain);
+-        int sampleY = (int) Math.floor(bounds.minY);
++        int[] layers = supportLayers(bounds.minY, bounds.maxY);
+         int firstX = (int) Math.floor(axisX - radius);
+         int lastX = (int) Math.ceil(axisX + radius);
+         int firstZ = (int) Math.floor(axisZ - radius);
+         int lastZ = (int) Math.ceil(axisZ + radius);
+         for (int blockX = firstX; blockX <= lastX; blockX++) {
+             for (int blockZ = firstZ; blockZ <= lastZ; blockZ++) {
+                 double gapX = blockX + 0.5D - axisX;
+                 double gapZ = blockZ + 0.5D - axisZ;
+                 if (gapX * gapX + gapZ * gapZ > radius * radius) {
+                     continue;
+                 }
+-                if (waterCell(level, new BlockPos(blockX, sampleY, blockZ))
+-                        || waterCell(level, new BlockPos(blockX, sampleY - 1, blockZ))) {
++                if (supportedCell(level, blockX, blockZ, layers)) {
+                     return true;
+                 }
+             }
+         }
+         return false;
+     }
+@@
+-        return waterShared(bubble.hostLevel(), bubbleBox.minY, hostX, hostZ, hostRadius, bubbleX, bubbleZ, bubbleRadius);
++        return waterShared(bubble.hostLevel(), bubbleBox.minY, bubbleBox.maxY, hostX, hostZ, hostRadius,
++                bubbleX, bubbleZ, bubbleRadius);
+@@
+-    private static boolean waterShared(ServerLevel level, double bubbleBottom, double hostX, double hostZ,
+-                                      double hostRadius, double bubbleX, double bubbleZ, double bubbleRadius) {
+-        int sampleY = (int) Math.floor(bubbleBottom);
++    private static boolean waterShared(ServerLevel level, double bubbleBottom, double bubbleTop, double hostX,
++                                      double hostZ, double hostRadius, double bubbleX, double bubbleZ,
++                                      double bubbleRadius) {
++        if (level == null) {
++            return false;
++        }
++        int[] layers = supportLayers(bubbleBottom, bubbleTop);
+         int firstX = (int) Math.floor(bubbleX - bubbleRadius);
+         int lastX = (int) Math.ceil(bubbleX + bubbleRadius);
+         int firstZ = (int) Math.floor(bubbleZ - bubbleRadius);
+         int lastZ = (int) Math.ceil(bubbleZ + bubbleRadius);
+         for (int blockX = firstX; blockX <= lastX; blockX++) {
+             for (int blockZ = firstZ; blockZ <= lastZ; blockZ++) {
+                 double bubbleGapX = blockX + 0.5D - bubbleX;
+                 double bubbleGapZ = blockZ + 0.5D - bubbleZ;
+                 if (bubbleGapX * bubbleGapX + bubbleGapZ * bubbleGapZ > bubbleRadius * bubbleRadius) {
+                     continue;
+                 }
+                 double hostGapX = blockX + 0.5D - hostX;
+                 double hostGapZ = blockZ + 0.5D - hostZ;
+                 if (hostGapX * hostGapX + hostGapZ * hostGapZ > hostRadius * hostRadius) {
+                     continue;
+                 }
+-                if (waterCell(level, new BlockPos(blockX, sampleY, blockZ))
+-                        || waterCell(level, new BlockPos(blockX, sampleY - 1, blockZ))) {
++                if (supportedCell(level, blockX, blockZ, layers)) {
+                     return true;
+                 }
+             }
+         }
+         return false;
+     }
++
++    private static int[] supportLayers(double bottom, double top) {
++        int belowLayer = (int) Math.floor(bottom) - 1;
++        int cutLayer = (int) Math.floor(bottom);
++        int containedLayer = (int) Math.ceil(bottom - 1.0E-6D);
++        boolean containedFits = containedLayer >= bottom - 1.0E-6D && containedLayer + 1.0D <= top + 1.0E-6D;
++        if (!containedFits || containedLayer == cutLayer || containedLayer == belowLayer) {
++            return new int[] {cutLayer, belowLayer};
++        }
++        return new int[] {containedLayer, cutLayer, belowLayer};
++    }
++
++    private static boolean supportedCell(ServerLevel level, int blockX, int blockZ, int[] layers) {
++        for (int layer : layers) {
++            if (waterCell(level, new BlockPos(blockX, layer, blockZ))) {
++                return true;
++            }
++        }
++        return false;
++    }
++
++    private static void noteCollapse(DomainInstance host, String reason, ServerPlayer owner, Entity subject, String detail) {
++        DebugLog.log("旋流溃败 原因=" + reason + " " + hostText(host) + " " + momentumText(owner)
++                + " 主体=" + entityText(subject)
++                + (detail == null || detail.isEmpty() ? "" : " " + detail));
++    }
++
++    private static String hostText(DomainInstance host) {
++        if (host == null) {
++            return "实例=无";
++        }
++        String balanceId = host.definition() == null ? "" : host.definition().balanceId();
++        int tick = -1;
++        if (host.hostLevel() != null && host.hostLevel().getServer() != null) {
++            tick = host.hostLevel().getServer().getTickCount();
++        }
++        return "时刻=" + tick
++                + " 术式=" + balanceId
++                + " 实例=" + host.instanceId()
++                + " 释放组=" + host.releaseGroup()
++                + " 声明槽=" + host.declarationSlot()
++                + " 抬升=" + host.liftedColumn()
++                + " 挂载=" + host.mountedProvider()
++                + " 组合=" + combination(host)
++                + " 范围=" + boxText(host.geometry() == null ? null : host.geometry().bounds());
++    }
++
++    private static String momentumText(ServerPlayer owner) {
++        if (owner == null) {
++            return "水势=无主人";
++        }
++        return "库存=" + PlayerShuData.get(owner).getWaterMomentum()
++                + " 可用=" + WaterMomentum.available(owner);
++    }
++
++    private static String paymentText(float storedMomentum, float availableMomentum, float charge, float refund,
++                                      float afterMomentum) {
++        return "结算前=" + storedMomentum + " 可用=" + availableMomentum + " 收费=" + charge
++                + " 返还=" + refund + " 结算后=" + afterMomentum;
++    }
++
++    private static String occupancyText(ReleaseMotionLedger ledger, DomainInstance host) {
++        double limit = SpecialBalance.number(host.definition().balanceId(), BalanceKeys.OCCUPIED_VOLUME_LIMIT, 12.0D);
++        ServerLevel level = host.hostLevel();
++        double occupied = level == null || ledger == null ? 0.0D : heldVolume(ledger, host, level);
++        return "已占=" + occupied + " 上限=" + limit;
++    }
++
++    private static String groupText(double bodyRadius, AABB column, AABB union, List<Entity> members) {
++        return "半径=" + bodyRadius + " 柱=" + boxText(column) + " 并集=" + boxText(union)
++                + " 成员=" + membersText(members);
++    }
++
++    private static String membersText(List<Entity> members) {
++        if (members == null || members.isEmpty()) {
++            return "无";
++        }
++        StringBuilder builder = new StringBuilder();
++        for (Entity member : members) {
++            if (builder.length() > 0) {
++                builder.append(';');
++            }
++            builder.append(entityText(member));
++            builder.append("/体积").append(volumeOf(member.getBoundingBox()));
++        }
++        return builder.toString();
++    }
++
++    private static String entityText(Entity entity) {
++        if (entity == null) {
++            return "无";
++        }
++        String wetness = "";
++        if (entity instanceof LivingEntity living) {
++            wetness = " 湿档=" + WetnessTiers.of(living).tier();
++        }
++        return entity.getUUID() + "/" + entity.getClass().getSimpleName() + wetness + " " + boxText(entity.getBoundingBox());
++    }
++
++    private static String boxText(AABB box) {
++        if (box == null) {
++            return "无盒";
++        }
++        return "[" + box.minX + "," + box.minY + "," + box.minZ + " -> "
++                + box.maxX + "," + box.maxY + "," + box.maxZ + "]";
++    }
+*** End Patch

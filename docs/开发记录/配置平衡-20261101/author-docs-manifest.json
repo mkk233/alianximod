@@ -1,0 +1,143 @@
+{
+  "task": "docs-final",
+  "status": "源码作者已交回。文档已按交付对齐。待统一编译。游戏未测。本文件不是实现复审。",
+  "sources": [
+    "记录.md",
+    "架构裁决.md",
+    "接口衔接.md",
+    "API合同.md",
+    "author-A2-final.md",
+    "author-A3-final.md",
+    "author-B2-write-final.md",
+    "author-C2-write-final.md",
+    "本人键-消费者清单.md",
+    "author-A-manifest.json",
+    "author-B-manifest.json",
+    "author-C-manifest.json"
+  ],
+  "publicApiChecked": [
+    "shu/balance/BalanceSchema.java",
+    "shu/balance/BalanceDocuments.java",
+    "shu/balance/BalanceCatalog.java",
+    "shu/balance/BalanceKeys.java",
+    "shu/balance/BalanceRegistry.java",
+    "shu/balance/BalanceService.java",
+    "shu/balance/RawDamage.java",
+    "api/RegisterXueXiContentEvent.java",
+    "XueXiMod.java commonSetup",
+    "network/ModNetwork.java",
+    "shu/ModTechniques.java declareSpecialBalances",
+    "shu/technique/EnchantmentDefinitions.java declareBalance"
+  ],
+  "wrote": [
+    "docs/配置平衡指南.md",
+    "docs/底座功能点.md",
+    "docs/README.md",
+    "AGENTS.md",
+    "docs/统一开发与术式批量制作流程.md",
+    ".cursor/rules/balance-config.mdc",
+    "docs/开发记录/配置平衡-20261101/author-docs-manifest.json"
+  ],
+  "preDocsAdded": [
+    "pre-docs/docs/配置平衡指南.md",
+    "pre-docs/docs/底座功能点.md",
+    "pre-docs/docs/README.md"
+  ],
+  "preDocsLeftUntouched": [
+    "pre-docs/AGENTS.md",
+    "pre-docs/docs/统一开发与术式批量制作流程.md",
+    "pre-docs/.cursor/rules/balance-config.mdc"
+  ],
+  "notDone": [
+    "compileJava",
+    "游戏实测",
+    "实现复审"
+  ],
+  "repair1": {
+    "task": "repair-1-docs",
+    "status": "源码返修已交回。指南已去掉 ContactCast/FireLayer 仍拒绝合法 0 的旧缺口。待第二轮复核。待统一编译。游戏未测。不是复核通过。",
+    "sources": [
+      "review-1-final.md 问题4",
+      "repair-1-A-final.md",
+      "repair-1-B-final.md",
+      "repair-1-C-final.md"
+    ],
+    "wrote": [
+      "docs/配置平衡指南.md",
+      "docs/开发记录/配置平衡-20261101/author-docs-manifest.json"
+    ],
+    "preRepair1": [
+      "pre-repair-1/docs/配置平衡指南.md"
+    ],
+    "notEdited": [
+      "docs/底座功能点.md"
+    ],
+    "notDone": [
+      "第二轮复核",
+      "compileJava",
+      "游戏实测",
+      "零伤布尔可接续与正伤落地的调用方耦合"
+    ]
+  },
+  "repair2": {
+    "task": "repair-2-docs",
+    "status": "返修2源码已交回。指南已改报价与命中裁决表述。待第3轮集中复核。待统一编译。游戏未测。不是复核通过。",
+    "sources": [
+      "review-2-final.md",
+      "repair-2-A-final.md",
+      "repair-2-B-final.md",
+      "repair-2-B-tracking-final.md",
+      "本批命中裁决接口.md"
+    ],
+    "wrote": [
+      "docs/配置平衡指南.md",
+      "docs/底座功能点.md",
+      "docs/开发记录/配置平衡-20261101/author-docs-manifest.json"
+    ],
+    "preRepair2": [
+      "pre-repair-2/docs/配置平衡指南.md",
+      "pre-repair-2/docs/底座功能点.md"
+    ],
+    "notDone": [
+      "第3轮集中复核",
+      "compileJava",
+      "游戏实测"
+    ]
+  },
+  "finalStatus": {
+    "task": "docs-status",
+    "status": "第3轮发现项已由作者返修交回。实现复核3/3已用尽，返修后未追加正式复核。compile-2 BUILD SUCCESSFUL。游戏未测。不是复核通过。",
+    "sources": [
+      "记录.md",
+      "review-3-final.md",
+      "repair-3-A-final.md",
+      "repair-3-B-final.md",
+      "compile-final.md",
+      "compile-fix-C-final.md",
+      "compile-2-final.md"
+    ],
+    "wrote": [
+      "docs/配置平衡指南.md",
+      "docs/底座功能点.md",
+      "docs/README.md",
+      "docs/开发记录/配置平衡-20261101/author-docs-manifest.json"
+    ],
+    "preFinalStatus": [
+      "pre-final-status/docs/配置平衡指南.md",
+      "pre-final-status/docs/底座功能点.md",
+      "pre-final-status/docs/README.md"
+    ],
+    "compile": {
+      "history": "compile-final.md BUILD FAILED 2026-11-01T17:26:59+08:00",
+      "final": "compile-2-final.md BUILD SUCCESSFUL in 23s 2026-11-01T17:32:44+08:00",
+      "command": ".\\gradlew.bat compileJava --offline --no-daemon"
+    },
+    "notDone": [
+      "返修后正式复核",
+      "单元测试",
+      "未封存目录测试",
+      "游戏实测",
+      "OriginalHumanoid两处既有命名门禁"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "batchId": "cooperative-slash-20261103",
+  "taskId": "impl-integration",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "interfaces_then_integration",
+  "authorization": "用户2026-11-05实测指挥分身在一只分身与足够空间时频繁报展开预算，授权定向定位修复。延续原I作者同task/session、原batch设计2/2实现3/3，不新增复审；只写三个原I源码和本次报告。runClient运行中，本单禁止编译/改存档/视觉/表。",
+  "inputVersion": "user-command-clone-budget-20261105-screenshot-698fc7b2",
+  "recordPath": "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/CooperativeChainCompiler.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/FamilyExecutionService.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/CooperativeContent.java",
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/integration-budget-20261105-delivery.md"
+  ],
+  "dependencies": [
+    "impl-clone",
+    "impl-visual"
+  ]
+}

@@ -1,0 +1,9 @@
+Aseprite native validation
+96 x 96 RGBA; 6 editable layers; 16 frames x 100ms
+16 unique frames: 16
+Fixed alpha silhouette across all frames: true
+Transparent corners: true
+Center alpha per frame: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
+Preview GIF: 896 x 448, 16 frames
+No game integration; approval draft only.
+Preserved from v2: layers 1,2,3,5 pixel bytes and cel positions match in all 16 frames.

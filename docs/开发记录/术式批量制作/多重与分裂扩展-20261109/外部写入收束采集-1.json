@@ -1,0 +1,90 @@
+[
+  {
+    "batchId": "heat-burn-20261031",
+    "taskId": "burn-spatial-implementation",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "endedAt": "2026-11-09T09:33:56.7360865Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/compile-report.md",
+      "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/编译证据"
+    ],
+    "changedFiles": [
+      "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/compile-report.md",
+      "D:/alianximod/docs/开发记录/燃烧空间挂载接入-20261101/第一人称空手返修-20261109/编译证据/进程检查-20261109-173328.txt"
+    ],
+    "blocker": "共享工作区 author-resources 仍可写 src/main/java/com/bslx/XueXiMod/status/wood/resource/，compileJava 会编进未收束源码"
+  },
+  {
+    "batchId": "water-vortex-20261103",
+    "taskId": "source-owner",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "endedAt": "2026-11-09T09:29:33.2553458Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/DomainFlowRenderer.java",
+      "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/接入报告.md",
+      "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/证据"
+    ],
+    "changedFiles": [],
+    "blocker": "本轮系统提醒原文为 Ask mode is still active，禁止任何编辑和非只读工具，并写明该限制压过其他写入指令。写工具 Write、StrReplace、Shell 都在本轮工具列表中，没有缺失。本轮没有发出写入请求，没有工具原始拒绝短文。限制来自本轮系统提醒，不是写入审批拒绝。"
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-effects",
+    "lifecycle": "running",
+    "processAlive": true
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-integration",
+    "lifecycle": "running",
+    "processAlive": true
+  },
+  {
+    "batchId": "wood-secondary-base-20261109",
+    "taskId": "author-resources",
+    "lifecycle": "reported",
+    "processAlive": false,
+    "endedAt": "2026-11-09T09:45:43.6054202Z",
+    "writesSettled": true,
+    "writePaths": [
+      "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/wood/resource/",
+      "D:/alianximod/tools/wood-base-checks/resources/",
+      "D:/alianximod/docs/开发记录/木属性二级底座-20261109/资源作者交付.md"
+    ],
+    "changedFiles": [
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/WoodLimits.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/FlowerKind.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/ResourceOrigin.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/RemovalReason.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/WoodReject.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/WoodInterval.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/SuihuaSnapshot.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/ProductionTicket.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/FragmentHandle.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/FragmentTake.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/GroundLotSpec.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/GroundFragmentView.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/GroundPieceTake.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/GroundConsumePreview.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/GroundConsumeReceipt.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/GroundQueryResult.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/CreateResult.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/SplitResult.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/RemoveResult.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/SuihuaBalanceSink.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/WoodLedger.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/WoodResourceSavedData.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/WoodResourceService.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/SuihuaStatus.java",
+      "src/main/java/com/bslx/XueXiMod/status/wood/resource/client/SuihuaClientCache.java",
+      "tools/wood-base-checks/resources/WoodResourceLedgerCheck.java",
+      "tools/wood-base-checks/resources/run-resource-checks.ps1",
+      "docs/开发记录/木属性二级底座-20261109/资源作者交付.md"
+    ],
+    "blocker": null
+  }
+]

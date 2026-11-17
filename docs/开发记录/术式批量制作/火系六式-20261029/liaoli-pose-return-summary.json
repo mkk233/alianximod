@@ -1,0 +1,23 @@
+{
+  "submitted": false,
+  "baselineSha256": "0D72B6D07C7E604943AC8DC71AA6EEB783F686EC0DAE1CEB1F69A13ED30FA6E7",
+  "baselineMtime": "2026-10-29T23:45:56.971+08:00",
+  "baselineBytes": 165071,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\liaoli-pose-return-术式制作表-20261030-002954-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\liaoli-pose-return-candidate-preserved.xlsx",
+  "candidateSha256": "69FD9B9BCC47885D0449CB135F84523894F48962745AA41BAED4FD1F05400C02",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 2
+  },
+  "from": {
+    "sheet": "待验收",
+    "row": 3
+  },
+  "to": {
+    "sheet": "制作中",
+    "row": 6
+  }
+}

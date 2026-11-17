@@ -1,0 +1,257 @@
+package com.bslx.XueXiMod.shu.technique.release;
+
+public final class ReleaseDefinitions {
+    private ReleaseDefinitions() {}
+
+    public static void registerAll() {
+        ReleaseRegistry.register(define("movement_dash", ReleaseKind.ACTION, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 10, 2f, 0f, 0, false, false, false, false, ChainRole.ACTION, false, false));
+        ReleaseRegistry.register(cohortSword("sword_horizontal_slash", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 4, 0f, 0.5f, 0, false, false, false, false, ChainRole.ATTACK, false, false));
+        ReleaseRegistry.register(cohortSword("sword_vertical_slash", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 4, 0f, 0.5f, 0, false, false, false, false, ChainRole.ATTACK, false, false));
+        ReleaseRegistry.register(cohortSword("sword_thrust", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 4, 0f, 0.5f, 0, false, false, false, false, ChainRole.ATTACK, false, false));
+        ReleaseRegistry.register(define("magic_arcane_missile", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, true, 40, 1.5f, 0.1f, 0, true, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(define("test_sustained", ReleaseKind.HIT_VOLUME, ReleaseTag.SUSTAINED, Trajectory.DROP, true, 20, 0.4f, 0.1f, 0, false, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(define("heat_beam", ReleaseKind.HIT_VOLUME, ReleaseTag.SUSTAINED, Trajectory.FOLLOW_LOOK, false, 40, 0f, 1f, 0, true, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(define("universal_lock_target", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 1, 0f, 0f, 0, false, false, true, false, ChainRole.SEEK_ENTITY, false, false));
+        ReleaseRegistry.register(define("rule_dual_release", ReleaseKind.RULE, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 1, 0f, 0f, 1, false, false, false, false, ChainRole.RULE_DUAL, false, false));
+        ReleaseRegistry.register(define("trajectory_drop", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.DROP, false, 1, 0f, 0f, 0, false, false, false, true, ChainRole.TRAJECTORY_DROP, false, false));
+        ReleaseRegistry.register(define("trajectory_tracking", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 1, 0f, 0f, 0, false, false, false, false, ChainRole.TRAJECTORY_TRACKING, false, false));
+        ReleaseRegistry.register(define("trajectory_storm", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.VORTEX, false, 1, 0f, 0f, 0, false, false, false, false, ChainRole.TRAJECTORY_DROP, false, false));
+        ReleaseRegistry.register(define("fire_orb", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, true, 40, 1.2f, 0.4f, 0, true, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(define("fire_burst", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, true, 40, 0.6f, 0.8f, 0, true, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(cohortSword("water_yielding_ribbon", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 32, 0f, 0.55f, 0, false, false, false, false, ChainRole.ATTACK, false, false));
+        ReleaseRegistry.register(define("water_weeping_arc", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.FUNCTION, true, WeepingSettings.LIFETIME, 0f, 0.35f, 0, true, true, false, false, ChainRole.ATTACK, false, false, false, 1f, 1f, true, true, false, false, 0f, 0, WeepingSettings.WETNESS, false, true, true, WeepingSettings.RETAINED_MANA));
+        ReleaseRegistry.register(cohortSword("space_cut", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 10, 0f, 0f, 0, false, false, false, false, ChainRole.ATTACK, false, false));
+        ReleaseRegistry.register(define("rule_cast_anchor", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 1, 0f, 0f, 0, false, false, true, false, ChainRole.SEEK_SPACE, false, false));
+        ReleaseRegistry.register(define("rule_triple_cast", ReleaseKind.RULE, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 1, 0f, 0f, 0, false, false, false, false, ChainRole.RULE_TRIPLE, false, false));
+        ReleaseRegistry.register(define("rule_gather_energy", ReleaseKind.RULE, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 1, 0f, 0f, 0, false, false, false, false, ChainRole.ATTACK, false, false, false, 1f, 2f));
+        ReleaseRegistry.register(define("trajectory_3d_interleave", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 1, 0f, 0f, 0, false, false, false, false, ChainRole.TRAJECTORY_SCATTER, false, false));
+        ReleaseRegistry.register(define("parasite_seed", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.DROP, true, 160, 0f, 0.5f, 0, false, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(cohortSword("tide_sever", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 6, 0f, 0.4f, 0, false, false, false, false, ChainRole.ATTACK, false, false));
+        ReleaseRegistry.register(cohortSword("stone_hammer", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 10, 0f, 1f, 0, false, false, false, false, ChainRole.ATTACK, false, false));
+        ReleaseRegistry.register(define("metal_needle", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, true, 15, 1.5f, 0.2f, 0, true, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(define("phantom_sword", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, true, 80, 2.5f, 0.5f, 0, true, true, false, false, ChainRole.ATTACK, true, false));
+        ReleaseRegistry.register(define("sword_come", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 20, 0f, 0.5f, 0, false, false, false, false, ChainRole.ATTACK, false, true, true));
+        ReleaseRegistry.register(define("sword_return_all", ReleaseKind.HIT_VOLUME, ReleaseTag.TRIGGER, Trajectory.STRAIGHT, false, 40, 0f, 0.5f, 0, false, false, false, false, ChainRole.ATTACK, false, true, true));
+    }
+
+    /** 命中实体上的剑术斩面、水弧或水带。幻剑和召回不走这里。 */
+    private static ReleaseDefinition cohortSword(String releaseId, ReleaseKind kind, ReleaseTag tag, Trajectory trajectory,
+                                                  boolean moving, int lifetimeTicks, float speed, float thickness, int pullAfterA,
+                                                  boolean acceptsTargetOverride, boolean acceptsPathOverride,
+                                                  boolean setsTargetForNextDirectional, boolean setsDropForNextDirectional,
+                                                  ChainRole role, boolean trajectoryMutable, boolean manipulatesSwordEntities) {
+        return define(releaseId, kind, tag, trajectory, moving, lifetimeTicks, speed, thickness, pullAfterA,
+                acceptsTargetOverride, acceptsPathOverride, setsTargetForNextDirectional, setsDropForNextDirectional,
+                role, trajectoryMutable, manipulatesSwordEntities, false, 1f, 1f,
+                true, true, true, true, 0f, 0, 0, true, false, false, -1);
+    }
+
+    private static ReleaseDefinition define(String releaseId, ReleaseKind kind, ReleaseTag tag, Trajectory trajectory,
+                                            boolean moving, int lifetimeTicks, float speed, float thickness, int pullAfterA,
+                                            boolean acceptsTargetOverride, boolean acceptsPathOverride,
+                                            boolean setsTargetForNextDirectional, boolean setsDropForNextDirectional,
+                                            ChainRole role, boolean trajectoryMutable, boolean manipulatesSwordEntities) {
+        return define(releaseId, kind, tag, trajectory, moving, lifetimeTicks, speed, thickness, pullAfterA,
+                acceptsTargetOverride, acceptsPathOverride, setsTargetForNextDirectional, setsDropForNextDirectional,
+                role, trajectoryMutable, manipulatesSwordEntities, false, 1f);
+    }
+
+    private static ReleaseDefinition define(String releaseId, ReleaseKind kind, ReleaseTag tag, Trajectory trajectory,
+                                            boolean moving, int lifetimeTicks, float speed, float thickness, int pullAfterA,
+                                            boolean acceptsTargetOverride, boolean acceptsPathOverride,
+                                            boolean setsTargetForNextDirectional, boolean setsDropForNextDirectional,
+                                            ChainRole role, boolean trajectoryMutable, boolean manipulatesSwordEntities,
+                                            boolean refusesMixedChain) {
+        return define(releaseId, kind, tag, trajectory, moving, lifetimeTicks, speed, thickness, pullAfterA,
+                acceptsTargetOverride, acceptsPathOverride, setsTargetForNextDirectional, setsDropForNextDirectional,
+                role, trajectoryMutable, manipulatesSwordEntities, refusesMixedChain, 1f, 1f,
+                true, true, true, true, 0f, 0, 0, false, false, false, -1);
+    }
+
+    private static ReleaseDefinition define(String releaseId, ReleaseKind kind, ReleaseTag tag, Trajectory trajectory,
+                                            boolean moving, int lifetimeTicks, float speed, float thickness, int pullAfterA,
+                                            boolean acceptsTargetOverride, boolean acceptsPathOverride,
+                                            boolean setsTargetForNextDirectional, boolean setsDropForNextDirectional,
+                                            ChainRole role, boolean trajectoryMutable, boolean manipulatesSwordEntities,
+                                            boolean refusesMixedChain, float energyScale) {
+        return define(releaseId, kind, tag, trajectory, moving, lifetimeTicks, speed, thickness, pullAfterA,
+                acceptsTargetOverride, acceptsPathOverride, setsTargetForNextDirectional, setsDropForNextDirectional,
+                role, trajectoryMutable, manipulatesSwordEntities, refusesMixedChain, energyScale, 1f,
+                true, true, true, true, 0f, 0, 0, false, false, false, -1);
+    }
+
+    private static ReleaseDefinition define(String releaseId, ReleaseKind kind, ReleaseTag tag, Trajectory trajectory,
+                                            boolean moving, int lifetimeTicks, float speed, float thickness, int pullAfterA,
+                                            boolean acceptsTargetOverride, boolean acceptsPathOverride,
+                                            boolean setsTargetForNextDirectional, boolean setsDropForNextDirectional,
+                                            ChainRole role, boolean trajectoryMutable, boolean manipulatesSwordEntities,
+                                            boolean refusesMixedChain, float energyScale, float chainEnergyScale) {
+        return define(releaseId, kind, tag, trajectory, moving, lifetimeTicks, speed, thickness, pullAfterA,
+                acceptsTargetOverride, acceptsPathOverride, setsTargetForNextDirectional, setsDropForNextDirectional,
+                role, trajectoryMutable, manipulatesSwordEntities, refusesMixedChain, energyScale, chainEnergyScale,
+                true, true, true, true, 0f, 0, 0, false, false, false, -1);
+    }
+
+    private static ReleaseDefinition define(String releaseId, ReleaseKind kind, ReleaseTag tag, Trajectory trajectory,
+                                            boolean moving, int lifetimeTicks, float speed, float thickness, int pullAfterA,
+                                            boolean acceptsTargetOverride, boolean acceptsPathOverride,
+                                            boolean setsTargetForNextDirectional, boolean setsDropForNextDirectional,
+                                            ChainRole role, boolean trajectoryMutable, boolean manipulatesSwordEntities,
+                                            boolean refusesMixedChain, float energyScale, float chainEnergyScale,
+                                            boolean scaleLength, boolean scaleWidth, boolean scaleHeight, boolean scaleModel,
+                                            float heavyPerCopy, int pressureMinimum, int wetnessAdded,
+                                            boolean cohortVisual, boolean persistentFlow, boolean deflectIncoming,
+                                            int explicitCost) {
+        return new ReleaseDefinition() {
+            @Override
+            public String id() {
+                return releaseId;
+            }
+
+            @Override
+            public ReleaseKind kind() {
+                return kind;
+            }
+
+            @Override
+            public ReleaseTag tag() {
+                return tag;
+            }
+
+            @Override
+            public Trajectory trajectory() {
+                return trajectory;
+            }
+
+            @Override
+            public boolean moving() {
+                return moving;
+            }
+
+            @Override
+            public int lifetimeTicks() {
+                return lifetimeTicks;
+            }
+
+            @Override
+            public float speed() {
+                return speed;
+            }
+
+            @Override
+            public float thickness() {
+                return thickness;
+            }
+
+            @Override
+            public int pullAfterA() {
+                return pullAfterA;
+            }
+
+            @Override
+            public boolean acceptsTargetOverride() {
+                return acceptsTargetOverride;
+            }
+
+            @Override
+            public boolean acceptsPathOverride() {
+                return acceptsPathOverride;
+            }
+
+            @Override
+            public boolean setsTargetForNextDirectional() {
+                return setsTargetForNextDirectional;
+            }
+
+            @Override
+            public boolean setsDropForNextDirectional() {
+                return setsDropForNextDirectional;
+            }
+
+            @Override
+            public ChainRole role() {
+                return role;
+            }
+
+            @Override
+            public boolean trajectoryMutable() {
+                return trajectoryMutable;
+            }
+
+            @Override
+            public boolean manipulatesSwordEntities() {
+                return manipulatesSwordEntities;
+            }
+
+            @Override
+            public boolean refusesMixedChain() {
+                return refusesMixedChain;
+            }
+
+            @Override
+            public float energyScale() {
+                return energyScale;
+            }
+
+            @Override
+            public float chainEnergyScale() {
+                return chainEnergyScale;
+            }
+
+            @Override
+            public boolean energyScalesLength() {
+                return scaleLength;
+            }
+
+            @Override
+            public boolean energyScalesWidth() {
+                return scaleWidth;
+            }
+
+            @Override
+            public boolean energyScalesHeight() {
+                return scaleHeight;
+            }
+
+            @Override
+            public boolean energyScalesModel() {
+                return scaleModel;
+            }
+
+            @Override
+            public float heavyMomentumPerCopy() {
+                return heavyPerCopy;
+            }
+
+            @Override
+            public int pressureWetnessMinimum() {
+                return pressureMinimum;
+            }
+
+            @Override
+            public int wetnessGrant() {
+                return wetnessAdded;
+            }
+
+            @Override
+            public boolean separatesCohortVisuals() {
+                return cohortVisual;
+            }
+
+            @Override
+            public boolean persistentFlowSettlement() {
+                return persistentFlow;
+            }
+
+            @Override
+            public boolean deflectsProjectiles() {
+                return deflectIncoming;
+            }
+
+            @Override
+            public int explicitManaCost() {
+                return explicitCost;
+            }
+        };
+    }
+}

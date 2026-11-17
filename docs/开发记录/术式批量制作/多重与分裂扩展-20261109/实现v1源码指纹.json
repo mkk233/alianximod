@@ -1,0 +1,38 @@
+[
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\ModTechniques.java",
+    "sha256": "68744F6815CDB5BBB776D3D3CA55AE6BC18C4E76860888715F0060E7B865B5CD",
+    "lastWriteTimeUtc": "2026-11-09T09:53:00.0118246Z",
+    "length": 27708
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseDefinitions.java",
+    "sha256": "A85A78B8C4E65C829069E026DAEB31DA6BF20231A587B61D469401ECFB004B4E",
+    "lastWriteTimeUtc": "2026-11-09T09:53:03.6522580Z",
+    "length": 29662
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillChainPlan.java",
+    "sha256": "C4338CE2E0A3A61FB5AE7B25D112B78E330A11089584579809EE94CC9E3B44CF",
+    "lastWriteTimeUtc": "2026-11-09T09:53:07.8993962Z",
+    "length": 64415
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\CooperativeChainCompiler.java",
+    "sha256": "14AA74516A794390C21EC6AE8A043260F10305E6A085AC945CB7E2BF726422EE",
+    "lastWriteTimeUtc": "2026-11-09T10:00:45.8736979Z",
+    "length": 40386
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\BatchReleaseCompiler.java",
+    "sha256": "99B8A5D4DAA59CBDE6912722D057F389D941F00C89F75E679E144391372100E9",
+    "lastWriteTimeUtc": "2026-11-09T10:01:08.4967897Z",
+    "length": 32640
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\MulticastCompileAdapter.java",
+    "sha256": "BA3CC268D243216D7C755F696C725C3D9AF485B97E5B35FD22407C6E067EB848",
+    "lastWriteTimeUtc": "2026-11-09T10:00:12.1415232Z",
+    "length": 4919
+  }
+]

@@ -1,0 +1,38 @@
+# 补充 2 证据
+
+只列这次打开的行段。正文在 `运动接口事实补充-2.md`。未改 Java，未跑 Gradle，未启动游戏。
+
+原版包：`forge-1.20.1-47.3.33_mapped_parchment_2023.06.26-1.20.1-sources.jar`
+
+- `ServerGamePacketListenerImpl.java`：257–341，402–473，860–966，982–1002
+- `PacketUtils.java`：22–54
+- `Connection.java`：285–290
+- `MinecraftServer.java`：662–683，752–753，840–865
+- `ServerPlayer.java`：449–489，968–983
+- `Player.java`：217–289
+- `LivingEntity.java`：287–321，2399–2441
+- `LocalPlayer.java`：227–308，398–399
+- `ClientPacketListener.java`：644–715，1958–1964
+- `ItemEntity.java`：108–190
+- `AbstractMinecart.java`：318–341，410–430，432–591，601–609，928–933
+- `Entity.java`：211，256，1161–1166
+- `ForgeHooks.java`：264–266
+- `ForgeEventFactory.java`：913–930
+- `TickEvent.java`：37–105
+
+本模组：
+
+- `EntityMoveMixin.java`：14–24
+- `DomainMotion.java`：20–121
+- `xueximod.mixins.json`：全文无 priority
+- `PrisonConnectionMixin.java`：19–61
+- `LocalPlayerPrisonMixin.java`：17–32
+- `ClientPlayPrisonMixin.java`：22–47
+- `ModNetwork.java`：18–53
+- `DomainSyncPacket.java`：25–98，184–197
+- `DomainInstance.java`：30，287–301，334–336
+- `DomainSightStore.java`：18–31
+- `DomainMotionPreview.java`：17–39
+- `WetnessLivingMixin.java`：13–23
+
+`DomainMotionPreview.frame` 和 `controlledRoots` 没有其他 Java 调用点。客户端 `handleMoveVehicle` 没有本模组 mixin。

@@ -1,0 +1,74 @@
+{
+  "attempt": "art-coverage-02",
+  "application": "Blockbench Desktop 5.2.2 plugin 1.10.1",
+  "savedProject": "97d2ac09-d5a8-c46f-1f79-8a8b4e5a7840",
+  "reopenedProject": "e7791755-13e6-d20d-306a-2a39c483a95b",
+  "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/blockbench/nether_blue_coverage_02.bbmodel",
+  "elements": 438,
+  "meshes": 177,
+  "groups": 126,
+  "textures": 128,
+  "textureErrors": [],
+  "missingFaceTextures": [],
+  "protectedProjects": [
+    {
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "name": "fire_kindle_v2_candidate_preview",
+      "saved": true,
+      "contentHash": "61f9da7c33b0c7e0002f96866dcb3116d8037e58f3628e5939325ecc8d326426",
+      "unchanged": true
+    },
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate",
+      "saved": false,
+      "contentHash": "fabfaae49af9e0eeada1b7fa3ff48beb81d76ec40694016112ae81d7f8c28b65",
+      "unchanged": true
+    },
+    {
+      "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "contentHash": "1c179442cab72fb0a40096414853785894168bc9ced6cadb19246d72ee38cd28",
+      "unchanged": true
+    },
+    {
+      "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "saved": true,
+      "contentHash": "e7db0ff99164a1955658657b45c379e3ac1edd496094abb8f54d1660b251f24d",
+      "unchanged": true
+    },
+    {
+      "uuid": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "name": "nether_blue_palette_art_v1",
+      "saved": true,
+      "contentHash": "6677fee8a1dc87bd3862165b099efc7f8b5d913eb536c98d923959545c78cd63",
+      "unchanged": true
+    },
+    {
+      "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "contentHash": "bc8155e5b94d448f95ba21ce0f5003da202e708686bab7a418e2180fd9fe94d5",
+      "unchanged": true
+    },
+    {
+      "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+      "name": "kindle_fentian_approved_swap",
+      "saved": true,
+      "contentHash": "a252b32ffd58278ad2258195b6a6afccd7729c93993216b5b03c1b66ab633778",
+      "unchanged": true
+    },
+    {
+      "uuid": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+      "name": "nether_blue_palette_art_v1",
+      "saved": true,
+      "contentHash": "767f508073becd4cd41bebce0bac678c07699593289a538421be8e48ec32a605",
+      "unchanged": true
+    }
+  ],
+  "allProtectedUnchanged": true,
+  "nativeReopen": true,
+  "guiWorkStopped": true
+}

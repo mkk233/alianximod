@@ -1,0 +1,56 @@
+{
+  "ready": true,
+  "baselineSha256": "204CE85DB0092B25C7818C014391A1A9E6FA441689178FE553B8E7BA1BA7D69D",
+  "baselineMtime": "2026-11-02T03:02:22.570+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\备份\\术式制作表-20261102-034454-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\候选\\术式制作表-候选-20261102-034454-1.xlsx",
+  "candidateSha256": "B3D518CFC659F77F8F4F28C12EF569AC99FC01CE804D0B3B7501B2BEBF4741C3",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\快照\\变更前-AEN-20261102-034454-1.json",
+    "current": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\快照\\返修需求-20261102-034454-1.md"
+  },
+  "moves": {
+    "fire_shock_ring": {
+      "from": {
+        "sheet": "待验收",
+        "row": 8
+      },
+      "to": {
+        "sheet": "制作中",
+        "row": 16
+      }
+    },
+    "fire_meteorite": {
+      "from": {
+        "sheet": "待验收",
+        "row": 9
+      },
+      "to": {
+        "sheet": "制作中",
+        "row": 17
+      }
+    }
+  },
+  "countsBefore": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 13,
+    "待验收": 7
+  },
+  "countsAfter": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 5
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "affectedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/workbook.xml"
+  ],
+  "requirementSources": {
+    "fire_shock_ring": "D:\\alianximod\\docs\\开发记录\\热波正圆精修-20261101\\快照\\变更前-NODV-20261101-234901-1.json",
+    "fire_meteorite": "D:\\alianximod\\docs\\开发记录\\陨岩三分落点返修-20261102\\快照\\待验收需求-20261102-030207-1.md"
+  }
+}

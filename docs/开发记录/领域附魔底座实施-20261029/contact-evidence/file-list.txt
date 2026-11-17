@@ -1,0 +1,21 @@
+领域接触计费作者文件清单。2026-10-29。
+
+基线备份（修改前原文，相对路径在 before/ 下）：
+- src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java
+- src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java
+- src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantmentSnapshot.java
+
+本次修改：
+- DomainInstance.java：去掉 nextUpkeepAt / setNextUpkeepAt 及构造里的维护时钟。寿命、close、接触登记保持。
+- ContactEnchantState.java：仅 DomainInstance 改走领域事件队列；其他宿主仍用 TechniqueHits.hurt。
+- EnchantmentSnapshot.java：另存不同基础附魔标识。damageOf 与效果读取未改。
+
+本次新增：
+- src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactCharge.java
+- src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactBilling.java
+
+未改：TechniqueHits.java、ContactPolicy.java、ContactCarrier.java、MagicPool.java、ManaPaymentReceipt.java、DomainDefinition.java、DomainService.java、WaterReleaseDefinition.java、Config.java。
+
+费用：种类数 × DomainContactCharge.MANA_PER_BASIC_ENCHANTMENT（当前 1）。种类是冻结快照里 EnchantmentDefinition.id() 的不同值，同一标识只计一次。
+预留：ManaPaymentReceipt.charge(主人, 费用, false)。成功正伤 retainShare；否则 receipt.refund。缺魔不调用伤害，不关领域。
+排序：主人 UUID、领域实例 UUID、目标 UUID。同一实例对同一目标只结算一次。不同实例不去重。

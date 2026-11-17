@@ -44,15 +44,15 @@ public class DebugLogScreen extends Screen {
         int top = 36;
         int bottom = height - 36;
         int visible = Math.max(1, (bottom - top) / LINE_HEIGHT);
-        int maxScroll = Math.max(0, lines.size() - visible);
-        if (scroll > maxScroll) {
-            scroll = maxScroll;
+        int upperBound = Math.max(0, lines.size() - visible);
+        if (scroll > upperBound) {
+            scroll = upperBound;
         }
         int start = Math.max(0, lines.size() - visible - scroll);
-        int y = top;
-        for (int i = start; i < lines.size() && y + LINE_HEIGHT <= bottom; i++) {
-            graphics.drawString(font, lines.get(i), 12, y, 0xE0E0E0, false);
-            y += LINE_HEIGHT;
+        int drawY = top;
+        for (int lineIndex = start; lineIndex < lines.size() && drawY + LINE_HEIGHT <= bottom; lineIndex++) {
+            graphics.drawString(font, lines.get(lineIndex), 12, drawY, 0xE0E0E0, false);
+            drawY += LINE_HEIGHT;
         }
         if (lines.isEmpty()) {
             graphics.drawCenteredString(font, "还没有调试记录", width / 2, height / 2, 0x808080);
@@ -63,9 +63,9 @@ public class DebugLogScreen extends Screen {
     @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double delta) {
         int visible = Math.max(1, (height - 72) / LINE_HEIGHT);
-        int maxScroll = Math.max(0, DebugLog.lines().size() - visible);
+        int upperBound = Math.max(0, DebugLog.lines().size() - visible);
         if (delta > 0) {
-            scroll = Math.min(maxScroll, scroll + 1);
+            scroll = Math.min(upperBound, scroll + 1);
         } else if (delta < 0) {
             scroll = Math.max(0, scroll - 1);
         }

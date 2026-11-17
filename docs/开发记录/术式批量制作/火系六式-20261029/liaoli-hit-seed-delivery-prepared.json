@@ -1,0 +1,28 @@
+{
+  "preparedOnly": true,
+  "workbookWritten": false,
+  "moved": false,
+  "sheet": "制作中",
+  "row": 6,
+  "id": "fire_liaoli",
+  "liveSha256": "ECE5C0FAFAF440A70481463AC790F0E03BF83B33433AFF2A2495E78108EF78D3",
+  "snapshot": "docs/开发记录/术式批量制作/火系六式-20261029/liaoli-hit-seed-delivery-snapshot.json",
+  "proposedDisplayN": "持剑向前刺击。命中时花掉当时剩余的火种，并打一刀物理",
+  "authorDisplayNRejected": true,
+  "ownership": {
+    "sourceWrote": "23ef4660-da4b-47a8-9341-8ec236ec5cc3",
+    "sourceReadOnlyStopped": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+    "workbookAndRecord": "d6f84d0b-4ea1-4368-a576-8acc20cc2afd",
+    "archiveAndIndex": "主会话",
+    "compiler": "b2d5b359-42e3-4a90-9d24-b26acec6d5f8",
+    "compilerDispatched": false,
+    "writesStopped": true,
+    "evidenceLastWrite": "2026-10-30 01:53:06.1970426"
+  },
+  "changedFileCount": {"java": 10, "png": 1},
+  "gameTested": false,
+  "compiled": false,
+  "userFeedback": null,
+  "quota": "设计2/2、实现3/3不变。本阶段额度已用完，返修结果未追加复审。",
+  "compileWait": "等性能优化批次三名作者和检查收束，再由本聊天指定编译者统一 compileJava。对方不另开 Gradle。本单不等待该通知。"
+}

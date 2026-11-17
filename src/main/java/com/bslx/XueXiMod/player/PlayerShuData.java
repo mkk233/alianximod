@@ -1,6 +1,8 @@
 package com.bslx.XueXiMod.player;
 
 import com.bslx.XueXiMod.shu.Technique;
+import com.bslx.XueXiMod.shu.TechniqueAvailability;
+import com.bslx.XueXiMod.shu.TechniqueIds;
 import com.bslx.XueXiMod.shu.TechniqueManager;
 import com.bslx.XueXiMod.shu.TechniqueType;
 import net.minecraft.nbt.CompoundTag;
@@ -12,9 +14,9 @@ import net.minecraft.world.entity.player.Player;
 import java.util.*;
 
 /**
- * 玩家术数据
- * 存储已学术、熟练度、剑术等级、法术等级
- * 使用 PersistentData 持久化
+ * 玩家术数据。存在玩家持久数据的 {@code xueximod_shu_data}。
+ * 存储已学术、熟练度、剑术等级、法术等级、魔力池和水势。
+ * 魔力由 {@link MagicPool} 扣、补和回复；水势由水势账预留、提交和入账。这里只保存两边的当前值。
  *
  * 等级系统：
  * - 剑术等级(swordLevel)：通过使用剑术+消耗经验提升，控制剑术解锁
@@ -26,6 +28,8 @@ public class PlayerShuData {
 
     // 已学术集合
     private final Set<String> learnedTechniques = new HashSet<>();
+    private final Set<String> domainPermits = new HashSet<>();
+    private int domainMigrateVersion;
     // 术使用次数 <techniqueId, usageCount>
     private final Map<String, Integer> usageCounts = new HashMap<>();
 
@@ -37,13 +41,16 @@ public class PlayerShuData {
 
     // 魔力池
     private int magic = 100;
-    private int magicMax = 100;
+    private int magicUpperBound = 100;
+
+    /** 水势。和魔力分开，上限 100，超出丢掉。 */
+    private float waterMomentum;
 
     // 等级提升所需使用次数（每级需要 10*level 次使用）
     private static final int USAGE_PER_LEVEL = 10;
     // 等级提升所需经验（每级需要 10*level 经验值）
     private static final int XP_PER_LEVEL = 10;
-    public static final int MAX_TYPE_LEVEL = 20;
+    public static final int TYPE_LEVEL_UPPER_BOUND = 20;
 
     /**
      * 获取玩家的术数据
@@ -67,37 +74,71 @@ public class PlayerShuData {
 
     // === 学术 ===
 
+    /** 这门术有没有领域许可。有许可时解锁不再看等级。 */
+    public boolean hasDomainPermit(String techniqueId) {
+        return domainPermits.contains(TechniqueIds.canonicalId(techniqueId));
+    }
+
+    /** 记下领域许可。空编号不记。 */
+    public void grantDomainPermit(String techniqueId) {
+        if (techniqueId != null && !techniqueId.isEmpty()) {
+            domainPermits.add(TechniqueIds.canonicalId(techniqueId));
+        }
+    }
+
+    /** 领域许可迁移到了哪一版。 */
+    public int domainMigrateVersion() {
+        return domainMigrateVersion;
+    }
+
+    /** 写入领域许可迁移版本。 */
+    public void setDomainMigrateVersion(int version) {
+        domainMigrateVersion = version;
+    }
+
+    /** 只看已学术集合，不看等级解锁。 */
     public boolean hasLearned(String techniqueId) {
-        return learnedTechniques.contains(techniqueId);
+        return learnedTechniques.contains(TechniqueIds.canonicalId(techniqueId));
     }
 
+    /** 记入已学术。登记为仅开发的术式不记。 */
     public void learnTechnique(String techniqueId) {
-        learnedTechniques.add(techniqueId);
+        String canonicalId = TechniqueIds.canonicalId(techniqueId);
+        Technique registered = TechniqueManager.getById(canonicalId);
+        if (registered != null && registered.availability() == TechniqueAvailability.DEVELOPMENT_ONLY) {
+            return;
+        }
+        learnedTechniques.add(canonicalId);
     }
 
+    /** 已学术的正式编号。 */
     public Set<String> getLearnedTechniqueIds() {
         return Collections.unmodifiableSet(learnedTechniques);
     }
 
+    /** 已学术且当前还能从术式表查到的术式。 */
     public List<Technique> getLearnedTechniques() {
         List<Technique> result = new ArrayList<>();
-        for (String id : learnedTechniques) {
-            Technique t = TechniqueManager.getById(id);
-            if (t != null) result.add(t);
+        for (String techniqueId : learnedTechniques) {
+            Technique technique = TechniqueManager.getById(techniqueId);
+            if (technique != null) result.add(technique);
         }
         return result;
     }
 
     // === 熟练度 ===
 
+    /** 这一门术自己累计用过几次。 */
     public int getUsageCount(String techniqueId) {
-        return usageCounts.getOrDefault(techniqueId, 0);
+        return usageCounts.getOrDefault(TechniqueIds.canonicalId(techniqueId), 0);
     }
 
+    /** 这一门术的使用次数加一。 */
     public void incrementUsage(String techniqueId) {
-        usageCounts.merge(techniqueId, 1, Integer::sum);
+        usageCounts.merge(TechniqueIds.canonicalId(techniqueId), 1, Integer::sum);
     }
 
+    /** 各术式自己的使用次数。 */
     public Map<String, Integer> getAllUsageCounts() {
         return Collections.unmodifiableMap(usageCounts);
     }
@@ -109,11 +150,51 @@ public class PlayerShuData {
     public int getSwordUsage() { return swordUsage; }
     public int getMagicUsage() { return magicUsage; }
 
+    /** 直接改这一系的熟练等级和熟练点。等级不超过上限。 */
+    public void setTypeRank(TechniqueType type, int level, int points) {
+        int boundedLevel = Math.min(TYPE_LEVEL_UPPER_BOUND, Math.max(0, level));
+        int boundedPoints = Math.max(0, points);
+        if (type == TechniqueType.SWORD) {
+            swordLevel = boundedLevel;
+            swordUsage = boundedPoints;
+            return;
+        }
+        if (type == TechniqueType.MAGIC) {
+            magicLevel = boundedLevel;
+            magicUsage = boundedPoints;
+        }
+    }
+
+    /** 刚到达该等级时的熟练点。下一级仍要再攒一轮。 */
+    public static int pointsAtLevel(int level) {
+        int boundedLevel = Math.min(TYPE_LEVEL_UPPER_BOUND, Math.max(0, level));
+        return USAGE_PER_LEVEL * boundedLevel;
+    }
+
     public int getMagic() { return magic; }
-    public int getMagicMax() { return magicMax; }
+    public int getMagicMax() { return magicUpperBound; }
 
     public void setMagic(int value) {
         magic = Math.max(0, value);
+    }
+
+    /** 改魔力上限，并把当前魔力设成新上限。 */
+    public void setMagicMax(int upperBound) {
+        magicUpperBound = Math.max(1, upperBound);
+        magic = magicUpperBound;
+    }
+
+    public float getWaterMomentum() {
+        return waterMomentum;
+    }
+
+    /** 非有限或非正数记 0，超过 100 记 100。 */
+    public void setWaterMomentum(float amount) {
+        if (!Float.isFinite(amount) || amount <= 0f) {
+            waterMomentum = 0f;
+            return;
+        }
+        waterMomentum = amount > 100f ? 100f : amount;
     }
 
     /**
@@ -134,6 +215,9 @@ public class PlayerShuData {
      * - 法术：magicLevel >= 复杂度
      */
     public boolean isUnlocked(Technique technique) {
+        if (hasDomainPermit(technique.getId())) {
+            return true;
+        }
         if (technique.getType() == TechniqueType.UNIVERSAL
                 || technique.getType() == TechniqueType.MOVEMENT) {
             return true;
@@ -160,7 +244,7 @@ public class PlayerShuData {
 
         // 检查是否可以升级
         int currentLevel = getTypeLevel(type);
-        if (currentLevel >= MAX_TYPE_LEVEL) return false;
+        if (currentLevel >= TYPE_LEVEL_UPPER_BOUND) return false;
 
         int requiredUsage = USAGE_PER_LEVEL * (currentLevel + 1);
         int requiredXp = XP_PER_LEVEL * (currentLevel + 1);
@@ -186,7 +270,7 @@ public class PlayerShuData {
      */
     public int getUsageToNextLevel(TechniqueType type) {
         int currentLevel = getTypeLevel(type);
-        if (currentLevel >= MAX_TYPE_LEVEL) return -1;
+        if (currentLevel >= TYPE_LEVEL_UPPER_BOUND) return -1;
         int requiredUsage = USAGE_PER_LEVEL * (currentLevel + 1);
         int currentUsage = (type == TechniqueType.SWORD) ? swordUsage : magicUsage;
         return Math.max(0, requiredUsage - currentUsage);
@@ -197,7 +281,7 @@ public class PlayerShuData {
      */
     public int getXpToNextLevel(TechniqueType type) {
         int currentLevel = getTypeLevel(type);
-        if (currentLevel >= MAX_TYPE_LEVEL) return -1;
+        if (currentLevel >= TYPE_LEVEL_UPPER_BOUND) return -1;
         return XP_PER_LEVEL * (currentLevel + 1);
     }
 
@@ -206,7 +290,7 @@ public class PlayerShuData {
      */
     public float getTypeLevelProgress(TechniqueType type) {
         int currentLevel = getTypeLevel(type);
-        if (currentLevel >= MAX_TYPE_LEVEL) return 1.0f;
+        if (currentLevel >= TYPE_LEVEL_UPPER_BOUND) return 1.0f;
         int requiredUsage = USAGE_PER_LEVEL * (currentLevel + 1);
         int currentUsage = (type == TechniqueType.SWORD) ? swordUsage : magicUsage;
         return Math.min(1.0f, (float) currentUsage / requiredUsage);
@@ -214,19 +298,37 @@ public class PlayerShuData {
 
     // === 序列化 ===
 
-    private CompoundTag save() {
+    CompoundTag save() {
         CompoundTag tag = new CompoundTag();
 
         // 保存已学术
         ListTag learnedList = new ListTag();
-        for (String id : learnedTechniques) {
-            learnedList.add(StringTag.valueOf(id));
+        Set<String> learnedKeys = new HashSet<>();
+        for (String techniqueId : learnedTechniques) {
+            String canonicalKey = TechniqueIds.canonicalId(techniqueId);
+            if (learnedKeys.add(canonicalKey)) {
+                learnedList.add(StringTag.valueOf(canonicalKey));
+            }
         }
         tag.put("Learned", learnedList);
+        ListTag permitList = new ListTag();
+        Set<String> permitKeys = new HashSet<>();
+        for (String techniqueId : domainPermits) {
+            String canonicalKey = TechniqueIds.canonicalId(techniqueId);
+            if (permitKeys.add(canonicalKey)) {
+                permitList.add(StringTag.valueOf(canonicalKey));
+            }
+        }
+        tag.put("DomainPermits", permitList);
+        tag.putInt("DomainMigrateVersion", domainMigrateVersion);
 
         // 保存使用次数
         CompoundTag usageTag = new CompoundTag();
+        Map<String, Integer> usageKeys = new HashMap<>();
         for (Map.Entry<String, Integer> entry : usageCounts.entrySet()) {
+            usageKeys.merge(TechniqueIds.canonicalId(entry.getKey()), entry.getValue(), PlayerShuData::saturatingSum);
+        }
+        for (Map.Entry<String, Integer> entry : usageKeys.entrySet()) {
             usageTag.putInt(entry.getKey(), entry.getValue());
         }
         tag.put("Usage", usageTag);
@@ -237,28 +339,39 @@ public class PlayerShuData {
         tag.putInt("SwordUsage", swordUsage);
         tag.putInt("MagicUsage", magicUsage);
         tag.putInt("Magic", magic);
-        tag.putInt("MagicMax", magicMax);
+        tag.putInt("MagicMax", magicUpperBound);
+        tag.putFloat("WaterMomentum", waterMomentum);
 
         return tag;
     }
 
-    private void load(CompoundTag tag) {
+    void load(CompoundTag tag) {
         learnedTechniques.clear();
+        domainPermits.clear();
         usageCounts.clear();
 
         // 加载已学术
         if (tag.contains("Learned")) {
             ListTag learnedList = tag.getList("Learned", 8);
-            for (int i = 0; i < learnedList.size(); i++) {
-                learnedTechniques.add(learnedList.getString(i));
+            for (int entryIndex = 0; entryIndex < learnedList.size(); entryIndex++) {
+                learnedTechniques.add(TechniqueIds.canonicalId(learnedList.getString(entryIndex)));
             }
+        }
+        if (tag.contains("DomainPermits")) {
+            ListTag permitList = tag.getList("DomainPermits", 8);
+            for (int entryIndex = 0; entryIndex < permitList.size(); entryIndex++) {
+                domainPermits.add(TechniqueIds.canonicalId(permitList.getString(entryIndex)));
+            }
+        }
+        if (tag.contains("DomainMigrateVersion")) {
+            domainMigrateVersion = tag.getInt("DomainMigrateVersion");
         }
 
         // 加载使用次数
         if (tag.contains("Usage")) {
             CompoundTag usageTag = tag.getCompound("Usage");
-            for (String key : usageTag.getAllKeys()) {
-                usageCounts.put(key, usageTag.getInt(key));
+            for (String storedKey : usageTag.getAllKeys()) {
+                usageCounts.merge(TechniqueIds.canonicalId(storedKey), usageTag.getInt(storedKey), PlayerShuData::saturatingSum);
             }
         }
 
@@ -269,12 +382,26 @@ public class PlayerShuData {
         magicUsage = tag.getInt("MagicUsage");
 
         if (tag.contains("MagicMax")) {
-            magicMax = tag.getInt("MagicMax");
+            magicUpperBound = tag.getInt("MagicMax");
         }
-        if (magicMax < 1) magicMax = 100;
+        if (magicUpperBound < 1) magicUpperBound = 100;
         if (tag.contains("Magic")) {
             magic = tag.getInt("Magic");
         }
         if (magic < 0) magic = 0;
+        if (tag.contains("WaterMomentum")) {
+            setWaterMomentum(tag.getFloat("WaterMomentum"));
+        }
+    }
+
+    private static int saturatingSum(int leftCount, int rightCount) {
+        long combined = (long) leftCount + (long) rightCount;
+        if (combined > Integer.MAX_VALUE) {
+            return Integer.MAX_VALUE;
+        }
+        if (combined < Integer.MIN_VALUE) {
+            return Integer.MIN_VALUE;
+        }
+        return (int) combined;
     }
 }

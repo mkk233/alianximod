@@ -1,0 +1,34 @@
+{
+  "attempt": "sheet-acceptance-01",
+  "baselineSha256": "BD92D6AB57731DCA6D15656FD47AF6022AB8397A5EBCFBB1E746BC9A79EDFA2D",
+  "baselineMtime": "2026-11-12T15:11:06.742",
+  "baselineBytes": 181761,
+  "source": {
+    "sheet": "制作中",
+    "row": 25
+  },
+  "target": {
+    "sheet": "待验收",
+    "row": 22
+  },
+  "countsCandidate": {
+    "已完成": 37,
+    "待制作": 3,
+    "制作中": 21,
+    "待验收": 17
+  },
+  "e": "4",
+  "nBeforeLength": 1390,
+  "oBeforeLength": 281,
+  "nAfter": "铺开半径10格的贴地火场，展开前沿即可命中。本体基础4点、每10刻一次并受一次炉心加成；有火种时足额段为4×(1+0.1n+F)，每段请求10点火种",
+  "oAfter": "xueximod:textures/effect/liaoyuan_v3/ground_ash.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_b.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_c.png\nxueximod:textures/effect/liaoyuan_v3/ground_ash_d.png\nxueximod:textures/effect/liaoyuan_v3/ground_embers.png\nxueximod:textures/effect/liaoyuan_v2/spread_wave.png\nxueximod:textures/effect/liaoyuan_v2/ground_flame.png\nxueximod:textures/effect/liaoyuan_v2/ground_embers.png",
+  "dvAddition": "[设计反馈 2026-11-12] 本体基础已按用户要求合并为每10tick 4点。火种附着段仍是4×(1+0.1n+F)、每段请求10点、周期20tick、首次延迟0；火场寿命200tick，半径10，焚天不变。N改为与technique.xueximod.fire_liaoyuan.desc一致的游戏内文案，O改为当前运行贴图。compileJava --offline --no-daemon于2026-11-12 14:42:41.448至14:43:04.937退出0，BUILD SUCCESSFUL in 22s；src/main共1373个文件，编译前后差异0。本阶段额度已用完，返修结果未追加复审。未启动游戏，未游戏实测，不迁已完成。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n待验收 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md",
+  "backup": "D:\\alianximod\\docs\\开发记录\\燎原本体伤害-20261112\\备份\\术式制作表-20261112-151804-3.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\燎原本体伤害-20261112\\术式制作表-待验收候选.xlsx",
+  "candidateSha256": "9A5960132434A5F6AE5322C32EDF27EE5B25E2A56CE5FF3F5B712B32AF8147B7",
+  "changedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml"
+  ],
+  "submitted": false
+}

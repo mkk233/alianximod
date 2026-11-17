@@ -1,0 +1,128 @@
+{
+  "version": "iaido-single-v5-left-waist",
+  "status": "preview_pending_user_confirmation",
+  "date": "2026-11-02",
+  "parent": "../拔刀斩_v4-20261102",
+  "request": "刀应该在左手侧用右手拔出完成挥砍",
+  "animation": {
+    "name": "animation.iaido_single_v5_left_waist",
+    "duration": 1.6,
+    "loop": "once",
+    "keyInterval": 0.01,
+    "animatedBones": 9
+  },
+  "preview": {
+    "source": "Native Blockbench viewport",
+    "frames": 81,
+    "sampleInterval": 0.02,
+    "gifDuration": 2.38
+  },
+  "artDiagnostics": {
+    "maxArmReach": 11.480419046920819,
+    "armLength": 12,
+    "frames": 161,
+    "duration": 1.6,
+    "oneSword": true,
+    "scabbard": false,
+    "waistStart": [
+      5.3,
+      15.5,
+      -3.6
+    ],
+    "tipDirectionAtStart": [
+      0,
+      0,
+      1
+    ],
+    "mountSide": "left",
+    "drawHand": "right",
+    "targetSpace": "ActorRoot",
+    "upperBodyTwistAtStart": -50
+  },
+  "nativeMount": {
+    "swordBone": "SwordHand",
+    "parent": "ForearmRight",
+    "palm": [
+      5.299999806437048,
+      15.50000000280916,
+      -3.600000328255805
+    ],
+    "bladeDirection": [
+      -1.2550674532985084e-7,
+      -6.969404373058374e-8,
+      0.9999999999999898
+    ]
+  },
+  "review": {
+    "designRoundsUsed": 2,
+    "designRoundLimit": 2,
+    "additionalReviewPerformed": false,
+    "note": "按用户明确的左右侧与持刀手要求修订美术，未追加正式复审。"
+  },
+  "runtime": {
+    "integrated": false,
+    "compiled": false
+  },
+  "files": {
+    "iaido-atlas.aseprite": {
+      "bytes": 1818,
+      "sha256": "0757e8946d148771c9827e46a1caa61724f8ea0e6de02d70dd04551023eb01dd"
+    },
+    "iaido-atlas.png": {
+      "bytes": 961,
+      "sha256": "12c0dd4e4d2735f18136c548a35e7695a00eae52e3cd5389ff5d4747b8bc6405"
+    },
+    "atlas-preview.png": {
+      "bytes": 3417,
+      "sha256": "e0c8437359ac802c4bef4231091471d5fbc77ce9ae9f3d7e8959213c4c835c6c"
+    },
+    "iaido-single-v5-left-waist.bbmodel": {
+      "bytes": 354939,
+      "sha256": "9a9a53dcbcb17f615fb34fe506ee5501a26b6ae7e560271f2ea2a54d0ee39519"
+    },
+    "left-waist-start.png": {
+      "bytes": 32640,
+      "sha256": "597ca6d63e179fb803d4ea556e51dd30947d27379ce7934db23bf8922fabc6bc"
+    },
+    "side-waist-start.png": {
+      "bytes": 30611,
+      "sha256": "b306c8c692d8e5f67d944c60e8a9c7ba173292adb32bdc0a932aaab6f1163b8a"
+    },
+    "iaido-front-preview.gif": {
+      "bytes": 491456,
+      "sha256": "10cd9760469e9625e78fd34b4545df6d5395ea952a280ebe93f3e1550458e915"
+    },
+    "iaido-side-preview.gif": {
+      "bytes": 421766,
+      "sha256": "e1d60de806f96354ab389a36d8bb7ede01f9af14520b93523835d49d3e55fec6"
+    },
+    "iaido-transition-slow.gif": {
+      "bytes": 139959,
+      "sha256": "f95aa2bb132743775df68fc36082306db743de84f423d9ff2e2c3803362d9d68"
+    },
+    "iaido-front-preview.aseprite": {
+      "bytes": 979772,
+      "sha256": "8cbe599bf230dab39fc43a7555964a0fa7830e306f2cf7ff40aa09ceb39d78e2"
+    },
+    "iaido-side-preview.aseprite": {
+      "bytes": 876092,
+      "sha256": "d10eb39fa184582e098315c4a9c116f5db2a8ddb9cf4d841c30873e2cc27920b"
+    },
+    "solve-iaido-keys.js": {
+      "bytes": 4658,
+      "sha256": "ad62d529c4d238ce72c2b915ecfeae49a634e89b730f56bb4ad0972005d1bf93"
+    },
+    "animation-keyframes.json": {
+      "bytes": 300460,
+      "sha256": "59b09c2d97b9f0e8745b2d286e35bb4c567854f2d036edb6b5f25519944fdf27"
+    },
+    "assemble-previews.lua": {
+      "bytes": 1577,
+      "sha256": "d33beefbb5dc882677b051810a52fa101d7c1737eee3a3eefe4d105252db79b4"
+    },
+    "native-mount.json": {
+      "bytes": 250,
+      "sha256": "9c95a805c9b28281bf66a8111799c3406e5d32d56eeacf77b62b17d5df482f88"
+    }
+  }
+}

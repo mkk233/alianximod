@@ -1,0 +1,18 @@
+{
+  "batchId": "cooperative-slash-20261103",
+  "taskId": "impl-effects",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "implement",
+  "authorization": "用户已授权按独立攻击+可复用动作+协同规则制作，Astra设计第1轮定稿；仅在I接口回执完成停写后派发，本单不编译",
+  "inputVersion": "cooperative-contract-round1-20261103",
+  "recordPath": "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/attack/",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/action/",
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/effects-delivery.md"
+  ],
+  "dependencies": [
+    "impl-integration"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "status": "candidate_pending_user_confirmation",
+  "attempt": "art-v1-bb-finish-20261116",
+  "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+  "captures": [
+    {
+      "name": "bb_v3_overall_F06",
+      "mode": "V3",
+      "frame": 6,
+      "position": [
+        24,
+        48,
+        170
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_v3_overall_F06.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 8.684455575099825
+    },
+    {
+      "name": "bb_v3_front_F11",
+      "mode": "V3",
+      "frame": 11,
+      "position": [
+        0,
+        16,
+        180
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_v3_front_F11.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 5.44
+    },
+    {
+      "name": "bb_v3_side_frozen_plane",
+      "mode": "V3",
+      "frame": 6,
+      "position": [
+        100,
+        28,
+        50
+      ],
+      "target": [
+        18,
+        14.4,
+        1
+      ],
+      "zoom": 0.54,
+      "follow": false,
+      "focusNew": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_v3_side_frozen_plane.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 5.44
+    },
+    {
+      "name": "bb_kindle_v4_overall_F06",
+      "mode": "KINDLEV4",
+      "frame": 6,
+      "position": [
+        24,
+        48,
+        170
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_kindle_v4_overall_F06.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 8.684455575099825
+    },
+    {
+      "name": "bb_kindle_v4_side_frozen_plane",
+      "mode": "KINDLEV4",
+      "frame": 6,
+      "position": [
+        100,
+        28,
+        50
+      ],
+      "target": [
+        18,
+        14.4,
+        1
+      ],
+      "zoom": 0.54,
+      "follow": false,
+      "focusNew": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_kindle_v4_side_frozen_plane.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 5.44
+    },
+    {
+      "name": "bb_kindle_v4_gather_F02",
+      "mode": "KINDLEV4",
+      "frame": 2,
+      "position": [
+        0,
+        16,
+        180
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_kindle_v4_gather_F02.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 5.44
+    },
+    {
+      "name": "bb_kindle_v4_embers_F46",
+      "mode": "KINDLEV4",
+      "frame": 46,
+      "position": [
+        0,
+        16,
+        180
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_kindle_v4_embers_F46.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 5.44
+    },
+    {
+      "name": "bb_runtime_kindle_overall_F06",
+      "mode": "RUNTIME",
+      "frame": 6,
+      "position": [
+        18,
+        42,
+        170
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_runtime_kindle_overall_F06.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 8.10059309778256
+    },
+    {
+      "name": "bb_fire_seed_attached_overall_F06",
+      "mode": "SEED",
+      "frame": 6,
+      "position": [
+        18,
+        42,
+        170
+      ],
+      "target": [
+        0,
+        17,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_fire_seed_attached_overall_F06.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 7.946881982465019
+    },
+    {
+      "name": "bb_actual_target_flame_overall_F06",
+      "mode": "ATTACHED",
+      "frame": 6,
+      "position": [
+        18,
+        42,
+        170
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_actual_target_flame_overall_F06.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 8.10059309778256
+    },
+    {
+      "name": "bb_v3_extinguish_F16",
+      "mode": "V3",
+      "frame": 16,
+      "position": [
+        0,
+        16,
+        180
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_v3_extinguish_F16.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 5.44
+    },
+    {
+      "name": "bb_v3_off_F19",
+      "mode": "V3",
+      "frame": 19,
+      "position": [
+        0,
+        16,
+        180
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "zoom": 0.21,
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/previews/bb_v3_off_F19.png",
+      "project": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "source": "real connected Blockbench Desktop main Preview.screenshot",
+      "visibility": "hidden",
+      "planeOffset": 5.44
+    }
+  ]
+}

@@ -1,0 +1,695 @@
+{
+  "version": "3.1",
+  "source": "../升温_躯干少量热纹_v3.1-20261111/heat_up_v3_1.aseprite",
+  "pixelToModel": 0.3333333333333333,
+  "textureOriginPixel": [
+    48,
+    104
+  ],
+  "frontDirection": "+Z",
+  "mannequinHeightModel": 32,
+  "modelUnitToBlock": "not calibrated by a game test",
+  "loopFrameMs": 80,
+  "entryFrameMs": 60,
+  "rearTorso": "Back preview reuses the approved torso layer; no separately drawn back texture.",
+  "cards": [
+    {
+      "name": "right_arm_后短焰",
+      "layer": "hand_rear",
+      "bone": "right_arm",
+      "axis": "z",
+      "depth": -2.18,
+      "rect": [
+        20,
+        46,
+        38,
+        73
+      ],
+      "from": [
+        -9.333333333333334,
+        10,
+        -2.18
+      ],
+      "to": [
+        -3,
+        19.333333333333332,
+        -2.18
+      ],
+      "face": "north"
+    },
+    {
+      "name": "right_arm_前掌焰",
+      "layer": "hand_front",
+      "bone": "right_arm",
+      "axis": "z",
+      "depth": 2.18,
+      "rect": [
+        20,
+        46,
+        38,
+        73
+      ],
+      "from": [
+        -9.333333333333334,
+        10,
+        2.18
+      ],
+      "to": [
+        -3,
+        19.333333333333332,
+        2.18
+      ],
+      "face": "south"
+    },
+    {
+      "name": "right_arm_外侧短焰",
+      "layer": "hand_rear",
+      "bone": "right_arm",
+      "axis": "x",
+      "depth": -8.16,
+      "rect": [
+        20,
+        46,
+        29,
+        73
+      ],
+      "anchor": 24,
+      "from": [
+        -8.16,
+        10,
+        -1.3333333333333333
+      ],
+      "to": [
+        -8.16,
+        19.333333333333332,
+        2
+      ],
+      "face": "west"
+    },
+    {
+      "name": "right_arm_掌后暖边",
+      "layer": "warmth",
+      "bone": "right_arm",
+      "axis": "z",
+      "depth": -2.12,
+      "rect": [
+        20,
+        46,
+        38,
+        73
+      ],
+      "from": [
+        -9.333333333333334,
+        10,
+        -2.12
+      ],
+      "to": [
+        -3,
+        19.333333333333332,
+        -2.12
+      ],
+      "face": "north"
+    },
+    {
+      "name": "right_arm_前余烬",
+      "layer": "embers",
+      "bone": "right_arm",
+      "axis": "z",
+      "depth": 2.42,
+      "rect": [
+        18,
+        40,
+        30,
+        75
+      ],
+      "from": [
+        -10,
+        9.333333333333334,
+        2.42
+      ],
+      "to": [
+        -5.666666666666667,
+        21.333333333333332,
+        2.42
+      ],
+      "face": "south"
+    },
+    {
+      "name": "right_arm_后余烬",
+      "layer": "embers",
+      "bone": "right_arm",
+      "axis": "z",
+      "depth": -2.42,
+      "rect": [
+        18,
+        40,
+        30,
+        75
+      ],
+      "from": [
+        -10,
+        9.333333333333334,
+        -2.42
+      ],
+      "to": [
+        -5.666666666666667,
+        21.333333333333332,
+        -2.42
+      ],
+      "face": "north"
+    },
+    {
+      "name": "left_arm_后短焰",
+      "layer": "hand_rear",
+      "bone": "left_arm",
+      "axis": "z",
+      "depth": -2.18,
+      "rect": [
+        57,
+        46,
+        76,
+        73
+      ],
+      "from": [
+        3,
+        10,
+        -2.18
+      ],
+      "to": [
+        9.666666666666666,
+        19.333333333333332,
+        -2.18
+      ],
+      "face": "north"
+    },
+    {
+      "name": "left_arm_前掌焰",
+      "layer": "hand_front",
+      "bone": "left_arm",
+      "axis": "z",
+      "depth": 2.18,
+      "rect": [
+        57,
+        46,
+        76,
+        73
+      ],
+      "from": [
+        3,
+        10,
+        2.18
+      ],
+      "to": [
+        9.666666666666666,
+        19.333333333333332,
+        2.18
+      ],
+      "face": "south"
+    },
+    {
+      "name": "left_arm_外侧短焰",
+      "layer": "hand_rear",
+      "bone": "left_arm",
+      "axis": "x",
+      "depth": 8.16,
+      "rect": [
+        66,
+        46,
+        75,
+        73
+      ],
+      "anchor": 71,
+      "from": [
+        8.16,
+        10,
+        -1.6666666666666667
+      ],
+      "to": [
+        8.16,
+        19.333333333333332,
+        1.6666666666666667
+      ],
+      "face": "east"
+    },
+    {
+      "name": "left_arm_掌后暖边",
+      "layer": "warmth",
+      "bone": "left_arm",
+      "axis": "z",
+      "depth": -2.12,
+      "rect": [
+        57,
+        46,
+        76,
+        73
+      ],
+      "from": [
+        3,
+        10,
+        -2.12
+      ],
+      "to": [
+        9.666666666666666,
+        19.333333333333332,
+        -2.12
+      ],
+      "face": "north"
+    },
+    {
+      "name": "left_arm_前余烬",
+      "layer": "embers",
+      "bone": "left_arm",
+      "axis": "z",
+      "depth": 2.42,
+      "rect": [
+        66,
+        40,
+        80,
+        75
+      ],
+      "from": [
+        6,
+        9.333333333333334,
+        2.42
+      ],
+      "to": [
+        11,
+        21.333333333333332,
+        2.42
+      ],
+      "face": "south"
+    },
+    {
+      "name": "left_arm_后余烬",
+      "layer": "embers",
+      "bone": "left_arm",
+      "axis": "z",
+      "depth": -2.42,
+      "rect": [
+        66,
+        40,
+        80,
+        75
+      ],
+      "from": [
+        6,
+        9.333333333333334,
+        -2.42
+      ],
+      "to": [
+        11,
+        21.333333333333332,
+        -2.42
+      ],
+      "face": "north"
+    },
+    {
+      "name": "right_leg_后长焰",
+      "layer": "leg_rear",
+      "bone": "right_leg",
+      "axis": "z",
+      "depth": -2.18,
+      "rect": [
+        30,
+        69,
+        47,
+        107
+      ],
+      "from": [
+        -6,
+        -1.3333333333333333,
+        -2.18
+      ],
+      "to": [
+        0,
+        11.666666666666666,
+        -2.18
+      ],
+      "face": "north"
+    },
+    {
+      "name": "right_leg_前长焰",
+      "layer": "leg_front",
+      "bone": "right_leg",
+      "axis": "z",
+      "depth": 2.18,
+      "rect": [
+        30,
+        69,
+        47,
+        107
+      ],
+      "from": [
+        -6,
+        -1.3333333333333333,
+        2.18
+      ],
+      "to": [
+        0,
+        11.666666666666666,
+        2.18
+      ],
+      "face": "south"
+    },
+    {
+      "name": "right_leg_外侧长焰",
+      "layer": "leg_rear",
+      "bone": "right_leg",
+      "axis": "x",
+      "depth": -4.16,
+      "rect": [
+        30,
+        69,
+        38,
+        107
+      ],
+      "anchor": 34,
+      "from": [
+        -4.16,
+        -1.3333333333333333,
+        -1.3333333333333333
+      ],
+      "to": [
+        -4.16,
+        11.666666666666666,
+        1.6666666666666667
+      ],
+      "face": "west"
+    },
+    {
+      "name": "right_leg_足后暖边",
+      "layer": "warmth",
+      "bone": "right_leg",
+      "axis": "z",
+      "depth": -2.12,
+      "rect": [
+        30,
+        69,
+        47,
+        107
+      ],
+      "from": [
+        -6,
+        -1.3333333333333333,
+        -2.12
+      ],
+      "to": [
+        0,
+        11.666666666666666,
+        -2.12
+      ],
+      "face": "north"
+    },
+    {
+      "name": "right_leg_前余烬",
+      "layer": "embers",
+      "bone": "right_leg",
+      "axis": "z",
+      "depth": 2.42,
+      "rect": [
+        29,
+        68,
+        44,
+        108
+      ],
+      "from": [
+        -6.333333333333333,
+        -1.6666666666666667,
+        2.42
+      ],
+      "to": [
+        -1,
+        12,
+        2.42
+      ],
+      "face": "south"
+    },
+    {
+      "name": "right_leg_后余烬",
+      "layer": "embers",
+      "bone": "right_leg",
+      "axis": "z",
+      "depth": -2.42,
+      "rect": [
+        29,
+        68,
+        44,
+        108
+      ],
+      "from": [
+        -6.333333333333333,
+        -1.6666666666666667,
+        -2.42
+      ],
+      "to": [
+        -1,
+        12,
+        -2.42
+      ],
+      "face": "north"
+    },
+    {
+      "name": "left_leg_后长焰",
+      "layer": "leg_rear",
+      "bone": "left_leg",
+      "axis": "z",
+      "depth": -2.18,
+      "rect": [
+        48,
+        69,
+        65,
+        107
+      ],
+      "from": [
+        0,
+        -1.3333333333333333,
+        -2.18
+      ],
+      "to": [
+        6,
+        11.666666666666666,
+        -2.18
+      ],
+      "face": "north"
+    },
+    {
+      "name": "left_leg_前长焰",
+      "layer": "leg_front",
+      "bone": "left_leg",
+      "axis": "z",
+      "depth": 2.18,
+      "rect": [
+        48,
+        69,
+        65,
+        107
+      ],
+      "from": [
+        0,
+        -1.3333333333333333,
+        2.18
+      ],
+      "to": [
+        6,
+        11.666666666666666,
+        2.18
+      ],
+      "face": "south"
+    },
+    {
+      "name": "left_leg_外侧长焰",
+      "layer": "leg_rear",
+      "bone": "left_leg",
+      "axis": "x",
+      "depth": 4.16,
+      "rect": [
+        57,
+        69,
+        65,
+        107
+      ],
+      "anchor": 61,
+      "from": [
+        4.16,
+        -1.3333333333333333,
+        -1.3333333333333333
+      ],
+      "to": [
+        4.16,
+        11.666666666666666,
+        1.6666666666666667
+      ],
+      "face": "east"
+    },
+    {
+      "name": "left_leg_足后暖边",
+      "layer": "warmth",
+      "bone": "left_leg",
+      "axis": "z",
+      "depth": -2.12,
+      "rect": [
+        48,
+        69,
+        65,
+        107
+      ],
+      "from": [
+        0,
+        -1.3333333333333333,
+        -2.12
+      ],
+      "to": [
+        6,
+        11.666666666666666,
+        -2.12
+      ],
+      "face": "north"
+    },
+    {
+      "name": "left_leg_前余烬",
+      "layer": "embers",
+      "bone": "left_leg",
+      "axis": "z",
+      "depth": 2.42,
+      "rect": [
+        51,
+        68,
+        67,
+        108
+      ],
+      "from": [
+        1,
+        -1.6666666666666667,
+        2.42
+      ],
+      "to": [
+        6.666666666666667,
+        12,
+        2.42
+      ],
+      "face": "south"
+    },
+    {
+      "name": "left_leg_后余烬",
+      "layer": "embers",
+      "bone": "left_leg",
+      "axis": "z",
+      "depth": -2.42,
+      "rect": [
+        51,
+        68,
+        67,
+        108
+      ],
+      "from": [
+        1,
+        -1.6666666666666667,
+        -2.42
+      ],
+      "to": [
+        6.666666666666667,
+        12,
+        -2.42
+      ],
+      "face": "north"
+    },
+    {
+      "name": "胸腹_少量热纹",
+      "layer": "torso",
+      "bone": "body",
+      "axis": "z",
+      "depth": 2.16,
+      "rect": [
+        36,
+        40,
+        59,
+        69
+      ],
+      "from": [
+        -4,
+        11.333333333333334,
+        2.16
+      ],
+      "to": [
+        4,
+        21.333333333333332,
+        2.16
+      ],
+      "face": "south"
+    },
+    {
+      "name": "背部_同源少量热纹",
+      "layer": "torso",
+      "bone": "body",
+      "axis": "z",
+      "depth": -2.16,
+      "rect": [
+        36,
+        40,
+        59,
+        69
+      ],
+      "from": [
+        -4,
+        11.333333333333334,
+        -2.16
+      ],
+      "to": [
+        4,
+        21.333333333333332,
+        -2.16
+      ],
+      "face": "north"
+    },
+    {
+      "name": "右肋_腰侧热纹",
+      "layer": "torso",
+      "bone": "body",
+      "axis": "x",
+      "depth": -4.1,
+      "rect": [
+        35,
+        55,
+        39,
+        69
+      ],
+      "anchor": 37,
+      "from": [
+        -4.1,
+        11.333333333333334,
+        -0.6666666666666666
+      ],
+      "to": [
+        -4.1,
+        16.333333333333332,
+        1
+      ],
+      "face": "west"
+    },
+    {
+      "name": "左肋_腰侧热纹",
+      "layer": "torso",
+      "bone": "body",
+      "axis": "x",
+      "depth": 4.1,
+      "rect": [
+        56,
+        55,
+        60,
+        69
+      ],
+      "anchor": 58,
+      "from": [
+        4.1,
+        11.333333333333334,
+        -0.6666666666666666
+      ],
+      "to": [
+        4.1,
+        16.333333333333332,
+        1
+      ],
+      "face": "east"
+    }
+  ]
+}

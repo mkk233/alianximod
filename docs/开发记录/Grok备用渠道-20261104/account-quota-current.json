@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "kind": "cursor_account_quota",
+  "accountScope": "cursor-local-baishang-20261104",
+  "currentLoginScope": "cursor-local-baishang-20261104",
+  "loginScopeNote": "同一本机baishang当前Cursor登录范围；本会话未变更登录。2026-11-05原impl-integration会话真实返回Weekly usage limit reached，原错误回执保留。启动器不自动证明登录身份，换号或恢复须作废。",
+  "sourceKind": "verified_attempt",
+  "sourceLocator": "D:/alianximod/.grok/runs/cooperative-slash-20261103/impl-integration/attempts/a202611041652108622a2c",
+  "confirmedAt": "2026-11-04T16:53:09.1006147+00:00",
+  "validUntil": "2026-11-05T16:53:09.1006147+00:00",
+  "invalidated": false,
+  "invalidReason": null
+}

@@ -1,0 +1,4 @@
+模型：Cursor CLI --model grok-4.7-high-fast。本阶段只读事实采集，不是正式设计/代码复审。不要递归派发代理/CLI，不写任何文件，不编译/测试/运行游戏/提交，不读写制作表。主会话已读 AGENTS 和 max-dispatch；本单是其派发任务，直接完成指定只读工作。
+工作区 D:/alianximod。允许读：AGENTS.md、.grok/skills/max-dispatch/SKILL.md、docs/底座功能点.md、docs/统一开发与术式批量制作流程.md、.cursor/rules/name-gate.mdc、src/main/java/com/bslx/XueXiMod/Config.java、XueXiMod.java，以及 shu/ 下 Technique、ModTechniques、TechniqueManager、release 注册定义/接口及相关参数定义。可 rg 定位相关类后有针对性读取，不通读无关仓库。git 命令附 -c safe.directory=D:/alianximod，禁止改全局git配置。
+用户已批准：底座统一解析配置；每个术式按稳定ID提供自身有意义的平衡数值；少量全局伤害/魔力倍率；默认行为保持；不开放 ChainRole、结算顺序、命中去重等结构机制；后续新术式必须沿用同一接入方案。
+只采集事实：1现有Forge配置类别、注册顺序、配置文件/同步/重载的实际实现；2术式与release定义注册方式及数值字段、默认值是否在静态初始化时捕获；3可复用的参数/定义扩展入口、已有配置键兼容约束；4现有新术式开发文档入口；5给出适合分文件交给作者的依赖图事实（不正式裁决方案）。报告涉及路径/行号、关键数据流和准确数字/字段名，尽量紧凑完整，指出证据缺口。返回最终报告到stdout，不在磁盘写报告。

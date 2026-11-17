@@ -1,0 +1,53 @@
+{
+  "repair": "fix-game-visual-02b",
+  "sourceChanged": false,
+  "fixed": false,
+  "compiled": false,
+  "playtested": false,
+  "linesBinChanged": false,
+  "linesBinSha256": "26EF5093F3FC9CAD03272F7BDFAD06DF771953E161B69310B2FF7E37B89F9025",
+  "skinSha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5",
+  "nearFigureOnly": "user-game-visual-02.png",
+  "screenLeftPiece": {
+    "binIndex": 0,
+    "model": "steve_arm_nx_cube",
+    "characterSide": "right arm",
+    "storedModelX": "negative",
+    "whyScreenLeft": "Figure faces the camera: bodyYaw 180, camera yaw 0. alignVanillaSteve applies RotY(180-bodyYaw), then scale(-1,-1,1), then translate(0,-1.501,0). After that, arm_nx screen x is negative and arm_px is positive."
+  },
+  "submittedArmNx": {
+    "texelQuads": 571,
+    "faces": 6,
+    "handCapTexels": 54,
+    "handStoredY": 0.75,
+    "residenceScale": [1.0, 1.0, 1.0],
+    "hidden": false,
+    "frontScreenX": [-0.136, -0.061],
+    "frontHandScreenX": [-0.128, -0.064],
+    "frontBodyScreenX": [-0.068, 0.068],
+    "handBesideBody": true
+  },
+  "screenshotNearFigure": {
+    "leftOuterStrokeY520": [820, 842],
+    "nextBrightAfterGapY520": 932,
+    "hipBarJoinsLeftStroke": 584,
+    "hipBarSpanY584": [835, 979],
+    "leftDimPixelsGoneBy": 748,
+    "headWidest": { "y": 445, "x": [779, 1077], "span": 298 },
+    "shoulderWidest": { "y": 480, "x": [808, 1080], "span": 272 },
+    "headRow420Span": 211,
+    "shoulderRow520Span": 266,
+    "contour": "Outer stroke from the shoulder reaches a horizontal bar at the hip and joins the torso. No second vertical stroke sits in the gap. The stroke does not continue to the feet."
+  },
+  "renderPathChecked": {
+    "scaleHidesPiece": "only when all three axes are under 0.015; residence holds 1",
+    "cull": "disabled",
+    "depthWrite": false,
+    "bufferVerticesPerEntity": 14728,
+    "bufferCapacity": 65536,
+    "sortDropsQuads": false
+  },
+  "offlineDiagnostic": "docs/开发记录/水幻形术式-20261102/fix-game-visual-02b-offline-front.png",
+  "reproducibleScript": "docs/开发记录/水幻形术式-20261102/fix-game-visual-02b-project.py",
+  "missingObservation": "Pixel width from that arm's outer edge to the torso in the front view the user already took. The existing image is the three-quarter shot."
+}

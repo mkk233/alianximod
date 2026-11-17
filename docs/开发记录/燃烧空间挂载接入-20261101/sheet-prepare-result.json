@@ -1,0 +1,40 @@
+{
+  "ready": true,
+  "submitted": false,
+  "baselineSha256": "53B44FAF93B0DCA7BD278F3A509406A6BCF5859C0DD073170C772BE14D45170E",
+  "baselineBytes": 104420,
+  "baselineMtime": "2026-11-01T01:33:57.042+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\备份\\术式制作表-20261101-214704-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\候选\\术式制作表-候选-20261101-214704-1.xlsx",
+  "candidateSha256": "CF99A04E797B741718267388A8CB7CDB94323C011093755007D2BD9B7AEE9B11",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\快照\\变更前-AEN-20261101-214704-1.json",
+    "nodv": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\快照\\变更前-NODV-20261101-214704-1.json",
+    "mapping": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\快照\\批准要求与资源映射-20261101-214704-1.md"
+  },
+  "from": {
+    "sheet": "制作中",
+    "row": 4
+  },
+  "to": {
+    "sheet": "待验收",
+    "row": 7
+  },
+  "countsBefore": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "countsAfter": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 5
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "readme": "D:\\alianximod\\docs\\资源库\\README.md",
+  "readmeSha256": "469776228E78C68F1F92076A40799A0B29399769626736DEAE977D7576B86113",
+  "readmeCandidate": "D:\\alianximod\\docs\\开发记录\\燃烧空间挂载接入-20261101\\index-candidate.md",
+  "readmeCandidateSha256": "9ABD0EDE8C25E4E04739F5246DC61E2E0F1E7D62BE540D8B52B730C8FC54BEE4"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "D:/alianximod/docs/术式制作表.xlsx",
+    "expected_sha256": "87F22C7DCE22FD0AB83F219C1D18938AF381D2286C106A62CEBCA1A6A56E9C75",
+    "sha256": "87F22C7DCE22FD0AB83F219C1D18938AF381D2286C106A62CEBCA1A6A56E9C75",
+    "unchanged": true
+  },
+  {
+    "path": "D:/alianximod/docs/资源库/特效/大地/崩地_v1/ground_dust.aseprite",
+    "expected_sha256": "3B518E0FD4D3272D05C4A377987D018EA7F9E37AB603ED798AFDFE5B507F0C07",
+    "sha256": "3B518E0FD4D3272D05C4A377987D018EA7F9E37AB603ED798AFDFE5B507F0C07",
+    "unchanged": true
+  },
+  {
+    "path": "D:/alianximod/docs/资源库/特效/大地/崩地_v1/ground_dust-strip.png",
+    "expected_sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+    "sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+    "unchanged": true
+  },
+  {
+    "path": "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png",
+    "expected_sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+    "sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+    "unchanged": true
+  }
+]

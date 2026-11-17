@@ -1,0 +1,22 @@
+{
+  "submitted": false,
+  "baselineSha256": "1DB010BA1E3500562B816EF793A77F8669CE0AD20A35AFC9BE9AFB633F4103A3",
+  "backup": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\备份\\批注-术式制作表-20261030-112218-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\灼地产种设计入表-20261030\\批注-candidate-preserved.xlsx",
+  "candidateSha256": "B116CFA34B556D0BC0E7BD69DBE7BB15F19E6264F84B5444CAEFEC7421960E2A",
+  "rows": {
+    "fire_scorch_field": 4,
+    "fire_meteorite": 5,
+    "fire_shock_ring": 6,
+    "fire_stagger": 9,
+    "fire_hit_continue": 10,
+    "fire_seed_sow": 11,
+    "fire_break_ground": 15
+  },
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  }
+}

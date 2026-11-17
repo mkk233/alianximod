@@ -1,0 +1,11 @@
+{
+  "released": true,
+  "scope": "A",
+  "hashes": null,
+  "hashReason": "未取得文件散列。命名门与复制命令均被 CLI 允许列表拒绝，未换壳重试，也不伪造散列或修改时间。",
+  "nameGate": "未跑",
+  "compile": "未跑",
+  "backupA": "未写入",
+  "unifiedCompilePending": true,
+  "featureVerified": false
+}

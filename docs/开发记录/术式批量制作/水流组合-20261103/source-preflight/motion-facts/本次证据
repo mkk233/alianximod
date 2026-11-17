@@ -1,0 +1,36 @@
+# 本次证据
+
+只列打开过的文件和行段。事实正文在上一级 `运动接口事实补充.md`。未把原版源码复制进仓库。
+
+原版包：
+
+`forge-1.20.1-47.3.33_mapped_parchment_2023.06.26-1.20.1-sources.jar`
+
+- `Entity.java`：439–504，616–782，934–961，1155–1209，1552–1572，2027–2044，3282–3296，3520–3534
+- `LivingEntity.java`：1484–1496，2150–2350，2399–2441，2641–2752，1587–1611
+- `Player.java`：1489–1513
+- `FlyingMob.java`：13–46
+- `Vex.java`：72–84
+- `EnderDragon.java`：177 附近的 `move` / `setDeltaMovement` 调用行 271、287、289、294
+- `ItemEntity.java`：108–175
+- `Boat.java`：284–321，608–645
+- `AbstractMinecart.java`：291–341，410–427
+- `ServerLevel.java`：273–360，694–733
+- `MinecraftServer.java`：840–865，903–939
+- `ForgeEventFactory.java`：943–950
+- `PlayerList.java`：512–516
+- `ServerGamePacketListenerImpl.java`：402–469，860–966
+- `ServerEntity.java`：198–205
+
+本批：
+
+- `VolumeMotionRuntime.java`：55–125，272–275，377–381，486–495，544–621，638–646，1031–1059
+- `ReleaseMotionLedger.java`：16–26，54–66，149–177
+- `DomainService.java`：256–286
+- `ReleaseBaseEvents.java`：173–181
+- `DomainDefinition.java`：201–224
+- `DomainMotion.java`：13–73
+- `TechniqueMotion.java`：6–7
+- `EntityMoveMixin.java`、`WetnessLivingMixin.java`、`WetnessFlyingMixin.java`、`WetnessAllayMixin.java`、`WetnessVexMixin.java`、`WetnessDragonMixin.java` 的注入目标
+
+`ENTITY_GRAVITY` 的注册默认值未打开。`connection.tick` 内部除上述两个移动包处理方法外，没有继续往下读。

@@ -1,0 +1,2804 @@
+{
+  "nodes": [
+    {
+      "id": "sword_thrust",
+      "name": "刺击",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -360.0,
+      "y": -176.0,
+      "depth": 0
+    },
+    {
+      "id": "sword_horizontal_slash",
+      "name": "横劈",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -440.0,
+      "y": -176.0,
+      "depth": 0
+    },
+    {
+      "id": "sword_vertical_slash",
+      "name": "竖劈",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -440.0,
+      "y": -248.0,
+      "depth": 0
+    },
+    {
+      "id": "movement_dash",
+      "name": "冲刺",
+      "attribute": "NONE",
+      "type": "MOVEMENT",
+      "parents": [],
+      "role": "ACTION",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -360.0,
+      "y": 40.0,
+      "depth": 0
+    },
+    {
+      "id": "movement_leap",
+      "name": "跳跃",
+      "attribute": "NONE",
+      "type": "MOVEMENT",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -440.0,
+      "y": 40.0,
+      "depth": 0
+    },
+    {
+      "id": "magic_arcane_missile",
+      "name": "灵符",
+      "attribute": "NONE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -440.0,
+      "y": -104.0,
+      "depth": 0
+    },
+    {
+      "id": "magic_ignite",
+      "name": "点火",
+      "attribute": "FIRE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 16.0,
+      "y": -176.0,
+      "depth": 0
+    },
+    {
+      "id": "magic_create_water",
+      "name": "生成水",
+      "attribute": "NONE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 27,
+      "group": 5,
+      "x": -520.0,
+      "y": -144.0,
+      "depth": 0
+    },
+    {
+      "id": "test_sustained",
+      "name": "持续试射",
+      "attribute": "NONE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -320.0,
+      "y": 224.0,
+      "depth": 0
+    },
+    {
+      "id": "heat_beam",
+      "name": "热光束",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 27,
+      "group": 1,
+      "x": 400.0,
+      "y": -192.0,
+      "depth": 0
+    },
+    {
+      "id": "universal_lock_target",
+      "name": "锁定实体",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "SEEK_ENTITY",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -216.0,
+      "y": 360.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_dual_release",
+      "name": "双重释放",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "RULE_DUAL",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -188.0,
+      "y": 88.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_triple_release",
+      "name": "三重释放",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_dual_release"
+        ]
+      ],
+      "role": "RULE_DUAL",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -260.0,
+      "y": 120.0,
+      "depth": 1
+    },
+    {
+      "id": "rule_quadruple_release",
+      "name": "四重释放",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_triple_release"
+        ]
+      ],
+      "role": "RULE_DUAL",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -332.0,
+      "y": 156.0,
+      "depth": 2
+    },
+    {
+      "id": "rule_octuple_release",
+      "name": "八重释放",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_quadruple_release"
+        ]
+      ],
+      "role": "RULE_DUAL",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -408.0,
+      "y": 188.0,
+      "depth": 3
+    },
+    {
+      "id": "rule_sixteen_release",
+      "name": "十六重释放",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_octuple_release"
+        ]
+      ],
+      "role": "RULE_DUAL",
+      "energy": 1,
+      "width": 45,
+      "group": 6,
+      "x": -480.0,
+      "y": 224.0,
+      "depth": 4
+    },
+    {
+      "id": "rule_exhaustive_release",
+      "name": "穷尽释放",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_sixteen_release"
+        ]
+      ],
+      "role": "RULE_DUAL",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -552.0,
+      "y": 256.0,
+      "depth": 5
+    },
+    {
+      "id": "trajectory_drop",
+      "name": "垂落术式",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "TRAJECTORY_DROP",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -536.0,
+      "y": 328.0,
+      "depth": 0
+    },
+    {
+      "id": "space_cut",
+      "name": "空间切割",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 5,
+      "x": -360.0,
+      "y": -104.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_cast_anchor",
+      "name": "落点指定",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "SEEK_SPACE",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -264.0,
+      "y": 432.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_triple_cast",
+      "name": "一分为三",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_double_cast"
+        ]
+      ],
+      "role": "RULE_TRIPLE",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -312.0,
+      "y": 352.0,
+      "depth": 1
+    },
+    {
+      "id": "rule_double_cast",
+      "name": "一分为二",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "RULE_TRIPLE",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -240.0,
+      "y": 280.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_quintuple_cast",
+      "name": "一分为五",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_triple_cast"
+        ]
+      ],
+      "role": "RULE_TRIPLE",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -384.0,
+      "y": 424.0,
+      "depth": 2
+    },
+    {
+      "id": "rule_octuple_cast",
+      "name": "一分为八",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_quintuple_cast"
+        ]
+      ],
+      "role": "RULE_TRIPLE",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -456.0,
+      "y": 496.0,
+      "depth": 3
+    },
+    {
+      "id": "rule_domain_bind",
+      "name": "领域绑定",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "RULE_DOMAIN_BIND",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -320.0,
+      "y": 288.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_gather_energy",
+      "name": "聚能",
+      "attribute": "NONE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 2,
+      "width": 18,
+      "group": 6,
+      "x": -160.0,
+      "y": 176.0,
+      "depth": 0
+    },
+    {
+      "id": "trajectory_3d_interleave",
+      "name": "三维交错",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_cast_anchor"
+        ]
+      ],
+      "role": "TRAJECTORY_SCATTER",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -376.0,
+      "y": 560.0,
+      "depth": 1
+    },
+    {
+      "id": "vine_mark",
+      "name": "缠枝",
+      "attribute": "WOOD",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 0,
+      "x": -104.0,
+      "y": -192.0,
+      "depth": 0
+    },
+    {
+      "id": "parasite_seed",
+      "name": "寄生种子",
+      "attribute": "WOOD",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 0,
+      "x": -152.0,
+      "y": -272.0,
+      "depth": 0
+    },
+    {
+      "id": "tide_mark",
+      "name": "潮印",
+      "attribute": "WATER",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 176.0,
+      "y": 16.0,
+      "depth": 0
+    },
+    {
+      "id": "tide_sever",
+      "name": "薄水切",
+      "attribute": "WATER",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 27,
+      "group": 2,
+      "x": 400.0,
+      "y": 96.0,
+      "depth": 0
+    },
+    {
+      "id": "water_phantom",
+      "name": "水幻形",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 27,
+      "group": 2,
+      "x": 400.0,
+      "y": -64.0,
+      "depth": 0
+    },
+    {
+      "id": "sinking_edge",
+      "name": "沉锋",
+      "attribute": "EARTH",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 3,
+      "x": -56.0,
+      "y": 272.0,
+      "depth": 0
+    },
+    {
+      "id": "stone_hammer",
+      "name": "岩槌",
+      "attribute": "EARTH",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 3,
+      "x": -24.0,
+      "y": 192.0,
+      "depth": 0
+    },
+    {
+      "id": "keen_mark",
+      "name": "锐锋印",
+      "attribute": "METAL",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 27,
+      "group": 4,
+      "x": 112.0,
+      "y": 208.0,
+      "depth": 0
+    },
+    {
+      "id": "metal_needle",
+      "name": "金针",
+      "attribute": "METAL",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 4,
+      "x": 160.0,
+      "y": 288.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_orb",
+      "name": "火球",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 240.0,
+      "y": -128.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_burst",
+      "name": "爆燃",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 320.0,
+      "y": -160.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_heat_up",
+      "name": "升温",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 296.0,
+      "y": -280.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_burn",
+      "name": "燃烧",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "fire_heat_up"
+        ],
+        [
+          "fire_detonate"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 200.0,
+      "y": -360.0,
+      "depth": 2
+    },
+    {
+      "id": "fire_cool",
+      "name": "冷却",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "fire_heat_up"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 296.0,
+      "y": -360.0,
+      "depth": 1
+    },
+    {
+      "id": "fire_liaoyuan",
+      "name": "燎原",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "fire_heat_up"
+        ],
+        [
+          "fire_scorch_field"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 376.0,
+      "y": -280.0,
+      "depth": 2
+    },
+    {
+      "id": "fire_scorch_field",
+      "name": "灼地",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "fire_seed_sow",
+          "fire_kindle"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 248.0,
+      "y": -216.0,
+      "depth": 1
+    },
+    {
+      "id": "fire_liaoli",
+      "name": "燎里",
+      "attribute": "FIRE",
+      "type": "SWORD",
+      "parents": [
+        [
+          "fire_pick_lamp"
+        ],
+        [
+          "fire_detonate"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 72.0,
+      "y": -360.0,
+      "depth": 2
+    },
+    {
+      "id": "fire_fentian",
+      "name": "焚天",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "fire_heat_up"
+        ],
+        [
+          "fire_scorch_field"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 336.0,
+      "y": -440.0,
+      "depth": 2
+    },
+    {
+      "id": "trajectory_tracking",
+      "name": "追踪弹道",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "trajectory_parallel",
+          "trajectory_drop"
+        ]
+      ],
+      "role": "TRAJECTORY_TRACKING",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -468.0,
+      "y": 420.0,
+      "depth": 1
+    },
+    {
+      "id": "trajectory_storm",
+      "name": "风暴轨迹",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "trajectory_parallel",
+          "trajectory_drop"
+        ]
+      ],
+      "role": "TRAJECTORY_DROP",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -536.0,
+      "y": 408.0,
+      "depth": 1
+    },
+    {
+      "id": "water_yielding_ribbon",
+      "name": "断潮",
+      "attribute": "WATER",
+      "type": "SWORD",
+      "parents": [
+        [
+          "water_blade",
+          "tide_sever"
+        ],
+        [
+          "water_curtain",
+          "water_ring"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 568.0,
+      "y": 56.0,
+      "depth": 1
+    },
+    {
+      "id": "water_weeping_arc",
+      "name": "垂丝",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 320.0,
+      "y": -40.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_meteorite",
+      "name": "陨岩",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 456.0,
+      "y": -264.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_shock_ring",
+      "name": "热波",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 456.0,
+      "y": -336.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_spark",
+      "name": "火苗",
+      "attribute": "FIRE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 160.0,
+      "y": -96.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_surface_anchor",
+      "name": "地表定位",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "rule_cast_anchor"
+        ]
+      ],
+      "role": "SEEK_SURFACE",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -296.0,
+      "y": 512.0,
+      "depth": 1
+    },
+    {
+      "id": "fire_upwell",
+      "name": "喷涌",
+      "attribute": "FIRE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "TRAJECTORY_UPWELL",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 16.0,
+      "y": -320.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_stagger",
+      "name": "错时",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "RULE_STAGGER",
+      "energy": 1,
+      "width": 18,
+      "group": 6,
+      "x": -240.0,
+      "y": 192.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_hit_continue",
+      "name": "命中接续",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "RULE_HIT_CONTINUE",
+      "energy": 1,
+      "width": 36,
+      "group": 6,
+      "x": -384.0,
+      "y": 288.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_flame_trail",
+      "name": "留焰",
+      "attribute": "FIRE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 16.0,
+      "y": -248.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_seed_sow",
+      "name": "种火",
+      "attribute": "FIRE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 96.0,
+      "y": -176.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_kindle",
+      "name": "引燃",
+      "attribute": "FIRE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 176.0,
+      "y": -176.0,
+      "depth": 0
+    },
+    {
+      "id": "fire_detonate",
+      "name": "引爆",
+      "attribute": "FIRE",
+      "type": "UNIVERSAL",
+      "parents": [
+        [
+          "fire_seed_sow",
+          "fire_kindle"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 136.0,
+      "y": -280.0,
+      "depth": 1
+    },
+    {
+      "id": "fire_nether_gloom",
+      "name": "幽冥",
+      "attribute": "FIRE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 16.0,
+      "y": -392.0,
+      "depth": 0
+    },
+    {
+      "id": "earth_break_ground",
+      "name": "崩地",
+      "attribute": "EARTH",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 3,
+      "x": 32.0,
+      "y": 288.0,
+      "depth": 0
+    },
+    {
+      "id": "phantom_sword",
+      "name": "幻剑术",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 27,
+      "group": 5,
+      "x": -200.0,
+      "y": -32.0,
+      "depth": 0
+    },
+    {
+      "id": "sword_come",
+      "name": "剑来",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [
+        [
+          "phantom_sword"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -280.0,
+      "y": -104.0,
+      "depth": 1
+    },
+    {
+      "id": "sword_return_all",
+      "name": "万剑归宗",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [
+        [
+          "sword_array"
+        ],
+        [
+          "phantom_sword_surge"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 5,
+      "x": -440.0,
+      "y": -32.0,
+      "depth": 3
+    },
+    {
+      "id": "fire_pick_lamp",
+      "name": "挑灯",
+      "attribute": "FIRE",
+      "type": "SWORD",
+      "parents": [
+        [
+          "fire_seed_sow",
+          "fire_kindle"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 1,
+      "x": 72.0,
+      "y": -280.0,
+      "depth": 1
+    },
+    {
+      "id": "trajectory_parallel",
+      "name": "平行",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "TRAJECTORY_PARALLEL",
+      "energy": 1,
+      "width": 18,
+      "group": 6,
+      "x": -456.0,
+      "y": 328.0,
+      "depth": 0
+    },
+    {
+      "id": "water_wave",
+      "name": "浪",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 9,
+      "group": 2,
+      "x": 192.0,
+      "y": 88.0,
+      "depth": 0
+    },
+    {
+      "id": "water_disperse",
+      "name": "排澜",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "tide_mark",
+          "water_wave"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 288.0,
+      "y": 88.0,
+      "depth": 1
+    },
+    {
+      "id": "phantom_sword_surge",
+      "name": "幻剑纵横",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [
+        [
+          "sword_array"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 5,
+      "x": -360.0,
+      "y": -32.0,
+      "depth": 2
+    },
+    {
+      "id": "sword_guard",
+      "name": "架剑",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [],
+      "role": "EVENT_RESPONSE",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -520.0,
+      "y": -288.0,
+      "depth": 0
+    },
+    {
+      "id": "sword_array",
+      "name": "列剑",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [
+        [
+          "phantom_sword"
+        ]
+      ],
+      "role": "TRAJECTORY_MANIPULATION",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -280.0,
+      "y": -32.0,
+      "depth": 1
+    },
+    {
+      "id": "sword_flight",
+      "name": "御剑",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [
+        [
+          "phantom_sword"
+        ]
+      ],
+      "role": "TRAJECTORY_MANIPULATION",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -280.0,
+      "y": 32.0,
+      "depth": 1
+    },
+    {
+      "id": "water_blade",
+      "name": "缺月",
+      "attribute": "WATER",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 400.0,
+      "y": 16.0,
+      "depth": 0
+    },
+    {
+      "id": "water_curtain",
+      "name": "水幕",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 480.0,
+      "y": 16.0,
+      "depth": 0
+    },
+    {
+      "id": "water_mist",
+      "name": "雾雨",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "water_vortex"
+        ],
+        [
+          "water_bubble_column"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 452.0,
+      "y": 160.0,
+      "depth": 2
+    },
+    {
+      "id": "water_ring",
+      "name": "水环",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 480.0,
+      "y": 96.0,
+      "depth": 0
+    },
+    {
+      "id": "water_deep_pressure",
+      "name": "深海重压",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "water_vortex"
+        ],
+        [
+          "water_bubble_column"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 2,
+      "x": 448.0,
+      "y": 240.0,
+      "depth": 2
+    },
+    {
+      "id": "water_vortex",
+      "name": "水流旋涡",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 2,
+      "x": 264.0,
+      "y": 160.0,
+      "depth": 0
+    },
+    {
+      "id": "water_bubble_column",
+      "name": "气泡水柱",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "water_vortex"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 2,
+      "x": 320.0,
+      "y": 232.0,
+      "depth": 1
+    },
+    {
+      "id": "water_prison",
+      "name": "水牢",
+      "attribute": "WATER",
+      "type": "MAGIC",
+      "parents": [
+        [
+          "tide_mark",
+          "water_wave"
+        ]
+      ],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 2,
+      "x": 280.0,
+      "y": 24.0,
+      "depth": 1
+    },
+    {
+      "id": "clone_body",
+      "name": "普通分身",
+      "attribute": "NONE",
+      "type": "MAGIC",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 36,
+      "group": 5,
+      "x": -520.0,
+      "y": 0.0,
+      "depth": 0
+    },
+    {
+      "id": "sword_oblique_slash",
+      "name": "斩击",
+      "attribute": "NONE",
+      "type": "SWORD",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -520.0,
+      "y": -216.0,
+      "depth": 0
+    },
+    {
+      "id": "movement_spin",
+      "name": "回旋",
+      "attribute": "NONE",
+      "type": "MOVEMENT",
+      "parents": [],
+      "role": "ATTACK",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -520.0,
+      "y": 72.0,
+      "depth": 0
+    },
+    {
+      "id": "rule_cooperative",
+      "name": "协同",
+      "attribute": "NONE",
+      "type": "UNIVERSAL",
+      "parents": [],
+      "role": "RULE_COOPERATIVE",
+      "energy": 1,
+      "width": 18,
+      "group": 5,
+      "x": -520.0,
+      "y": -72.0,
+      "depth": 0
+    }
+  ],
+  "routes": [
+    {
+      "parent": 11,
+      "child": 12,
+      "group": 6,
+      "x": [
+        -188.0,
+        -260.0
+      ],
+      "y": [
+        88.0,
+        120.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 15,
+      "child": 16,
+      "group": 6,
+      "x": [
+        -480.0,
+        -552.0
+      ],
+      "y": [
+        224.0,
+        256.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 38,
+      "child": 40,
+      "group": 1,
+      "x": [
+        296.0,
+        296.0
+      ],
+      "y": [
+        -280.0,
+        -360.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 38,
+      "child": 41,
+      "group": 1,
+      "x": [
+        296.0,
+        336.0,
+        376.0
+      ],
+      "y": [
+        -280.0,
+        -248.0,
+        -280.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 65,
+      "child": 43,
+      "group": 1,
+      "x": [
+        72.0,
+        104.0,
+        72.0
+      ],
+      "y": [
+        -280.0,
+        -320.0,
+        -360.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 17,
+      "child": 46,
+      "group": 6,
+      "x": [
+        -536.0,
+        -496.0,
+        -536.0
+      ],
+      "y": [
+        328.0,
+        368.0,
+        408.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 69,
+      "child": 64,
+      "group": 5,
+      "x": [
+        -360.0,
+        -440.0
+      ],
+      "y": [
+        -32.0,
+        -32.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 71,
+      "child": 69,
+      "group": 5,
+      "x": [
+        -280.0,
+        -360.0
+      ],
+      "y": [
+        -32.0,
+        -32.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 62,
+      "child": 71,
+      "group": 5,
+      "x": [
+        -200.0,
+        -280.0
+      ],
+      "y": [
+        -32.0,
+        -32.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 12,
+      "child": 13,
+      "group": 6,
+      "x": [
+        -260.0,
+        -332.0
+      ],
+      "y": [
+        120.0,
+        156.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 14,
+      "child": 15,
+      "group": 6,
+      "x": [
+        -408.0,
+        -480.0
+      ],
+      "y": [
+        188.0,
+        224.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 58,
+      "child": 42,
+      "group": 1,
+      "x": [
+        176.0,
+        136.0,
+        248.0
+      ],
+      "y": [
+        -176.0,
+        -216.0,
+        -216.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 13,
+      "child": 14,
+      "group": 6,
+      "x": [
+        -332.0,
+        -408.0
+      ],
+      "y": [
+        156.0,
+        188.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 19,
+      "child": 52,
+      "group": 6,
+      "x": [
+        -264.0,
+        -296.0
+      ],
+      "y": [
+        432.0,
+        512.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 78,
+      "child": 79,
+      "group": 2,
+      "x": [
+        264.0,
+        320.0
+      ],
+      "y": [
+        160.0,
+        232.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 66,
+      "child": 45,
+      "group": 6,
+      "x": [
+        -456.0,
+        -496.0,
+        -468.0
+      ],
+      "y": [
+        328.0,
+        368.0,
+        420.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 67,
+      "child": 68,
+      "group": 2,
+      "x": [
+        192.0,
+        232.0,
+        288.0
+      ],
+      "y": [
+        88.0,
+        52.0,
+        88.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 74,
+      "child": 47,
+      "group": 2,
+      "x": [
+        480.0,
+        440.0,
+        568.0
+      ],
+      "y": [
+        16.0,
+        56.0,
+        56.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 76,
+      "child": 47,
+      "group": 2,
+      "x": [
+        480.0,
+        440.0,
+        568.0
+      ],
+      "y": [
+        96.0,
+        56.0,
+        56.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 21,
+      "child": 20,
+      "group": 6,
+      "x": [
+        -240.0,
+        -312.0
+      ],
+      "y": [
+        280.0,
+        352.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 20,
+      "child": 22,
+      "group": 6,
+      "x": [
+        -312.0,
+        -384.0
+      ],
+      "y": [
+        352.0,
+        424.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 22,
+      "child": 23,
+      "group": 6,
+      "x": [
+        -384.0,
+        -456.0
+      ],
+      "y": [
+        424.0,
+        496.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 59,
+      "child": 39,
+      "group": 1,
+      "x": [
+        136.0,
+        216.0,
+        200.0
+      ],
+      "y": [
+        -280.0,
+        -320.0,
+        -360.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 59,
+      "child": 43,
+      "group": 1,
+      "x": [
+        136.0,
+        104.0,
+        72.0
+      ],
+      "y": [
+        -280.0,
+        -320.0,
+        -360.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 62,
+      "child": 72,
+      "group": 5,
+      "x": [
+        -200.0,
+        -280.0
+      ],
+      "y": [
+        -32.0,
+        32.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 29,
+      "child": 80,
+      "group": 2,
+      "x": [
+        176.0,
+        232.0,
+        280.0
+      ],
+      "y": [
+        16.0,
+        52.0,
+        24.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 57,
+      "child": 65,
+      "group": 1,
+      "x": [
+        96.0,
+        136.0,
+        72.0
+      ],
+      "y": [
+        -176.0,
+        -216.0,
+        -280.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 62,
+      "child": 63,
+      "group": 5,
+      "x": [
+        -200.0,
+        -280.0
+      ],
+      "y": [
+        -32.0,
+        -104.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 67,
+      "child": 80,
+      "group": 2,
+      "x": [
+        192.0,
+        232.0,
+        280.0
+      ],
+      "y": [
+        88.0,
+        52.0,
+        24.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 57,
+      "child": 59,
+      "group": 1,
+      "x": [
+        96.0,
+        136.0,
+        136.0
+      ],
+      "y": [
+        -176.0,
+        -216.0,
+        -280.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 58,
+      "child": 59,
+      "group": 1,
+      "x": [
+        176.0,
+        136.0,
+        136.0
+      ],
+      "y": [
+        -176.0,
+        -216.0,
+        -280.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 66,
+      "child": 46,
+      "group": 6,
+      "x": [
+        -456.0,
+        -496.0,
+        -536.0
+      ],
+      "y": [
+        328.0,
+        368.0,
+        408.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 17,
+      "child": 45,
+      "group": 6,
+      "x": [
+        -536.0,
+        -496.0,
+        -468.0
+      ],
+      "y": [
+        328.0,
+        368.0,
+        420.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 38,
+      "child": 39,
+      "group": 1,
+      "x": [
+        296.0,
+        216.0,
+        200.0
+      ],
+      "y": [
+        -280.0,
+        -320.0,
+        -360.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 79,
+      "child": 77,
+      "group": 2,
+      "x": [
+        320.0,
+        360.0,
+        448.0
+      ],
+      "y": [
+        232.0,
+        196.0,
+        240.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 29,
+      "child": 68,
+      "group": 2,
+      "x": [
+        176.0,
+        232.0,
+        288.0
+      ],
+      "y": [
+        16.0,
+        52.0,
+        88.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 42,
+      "child": 41,
+      "group": 1,
+      "x": [
+        248.0,
+        336.0,
+        376.0
+      ],
+      "y": [
+        -216.0,
+        -248.0,
+        -280.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 58,
+      "child": 65,
+      "group": 1,
+      "x": [
+        176.0,
+        136.0,
+        72.0
+      ],
+      "y": [
+        -176.0,
+        -216.0,
+        -280.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 79,
+      "child": 75,
+      "group": 2,
+      "x": [
+        320.0,
+        360.0,
+        452.0
+      ],
+      "y": [
+        232.0,
+        196.0,
+        160.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 57,
+      "child": 42,
+      "group": 1,
+      "x": [
+        96.0,
+        136.0,
+        248.0
+      ],
+      "y": [
+        -176.0,
+        -216.0,
+        -216.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 71,
+      "child": 64,
+      "group": 5,
+      "x": [
+        -280.0,
+        -280.0,
+        -440.0,
+        -440.0
+      ],
+      "y": [
+        -32.0,
+        -64.0,
+        -64.0,
+        -32.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 38,
+      "child": 44,
+      "group": 1,
+      "x": [
+        296.0,
+        336.0,
+        336.0
+      ],
+      "y": [
+        -280.0,
+        -248.0,
+        -440.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 19,
+      "child": 26,
+      "group": 6,
+      "x": [
+        -264.0,
+        -336.0,
+        -336.0,
+        -376.0
+      ],
+      "y": [
+        432.0,
+        432.0,
+        560.0,
+        560.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 73,
+      "child": 47,
+      "group": 2,
+      "x": [
+        400.0,
+        440.0,
+        568.0
+      ],
+      "y": [
+        16.0,
+        56.0,
+        56.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 30,
+      "child": 47,
+      "group": 2,
+      "x": [
+        400.0,
+        440.0,
+        568.0
+      ],
+      "y": [
+        96.0,
+        56.0,
+        56.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 78,
+      "child": 75,
+      "group": 2,
+      "x": [
+        264.0,
+        360.0,
+        452.0
+      ],
+      "y": [
+        160.0,
+        196.0,
+        160.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 78,
+      "child": 77,
+      "group": 2,
+      "x": [
+        264.0,
+        360.0,
+        448.0
+      ],
+      "y": [
+        160.0,
+        196.0,
+        240.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": 42,
+      "child": 44,
+      "group": 1,
+      "x": [
+        248.0,
+        336.0,
+        336.0
+      ],
+      "y": [
+        -216.0,
+        -248.0,
+        -440.0
+      ],
+      "trunk": false
+    },
+    {
+      "parent": -1,
+      "child": 27,
+      "group": 0,
+      "x": [
+        -56.0,
+        -104.0
+      ],
+      "y": [
+        -88.0,
+        -192.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 27,
+      "child": 28,
+      "group": 0,
+      "x": [
+        -104.0,
+        -152.0
+      ],
+      "y": [
+        -192.0,
+        -272.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -1,
+      "child": 6,
+      "group": 1,
+      "x": [
+        56.0,
+        16.0
+      ],
+      "y": [
+        -88.0,
+        -176.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 6,
+      "child": 56,
+      "group": 1,
+      "x": [
+        16.0,
+        16.0
+      ],
+      "y": [
+        -176.0,
+        -248.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 56,
+      "child": 53,
+      "group": 1,
+      "x": [
+        16.0,
+        16.0
+      ],
+      "y": [
+        -248.0,
+        -320.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 53,
+      "child": 60,
+      "group": 1,
+      "x": [
+        16.0,
+        16.0
+      ],
+      "y": [
+        -320.0,
+        -392.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 6,
+      "child": 57,
+      "group": 1,
+      "x": [
+        16.0,
+        96.0
+      ],
+      "y": [
+        -176.0,
+        -176.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 58,
+      "child": 36,
+      "group": 1,
+      "x": [
+        176.0,
+        240.0
+      ],
+      "y": [
+        -176.0,
+        -128.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 58,
+      "child": 51,
+      "group": 1,
+      "x": [
+        176.0,
+        160.0
+      ],
+      "y": [
+        -176.0,
+        -96.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 41,
+      "child": 49,
+      "group": 1,
+      "x": [
+        376.0,
+        456.0
+      ],
+      "y": [
+        -280.0,
+        -264.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 49,
+      "child": 50,
+      "group": 1,
+      "x": [
+        456.0,
+        456.0
+      ],
+      "y": [
+        -264.0,
+        -336.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -2,
+      "child": 9,
+      "group": 1,
+      "x": [
+        336.0,
+        400.0
+      ],
+      "y": [
+        -248.0,
+        -192.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 36,
+      "child": 37,
+      "group": 1,
+      "x": [
+        240.0,
+        320.0
+      ],
+      "y": [
+        -128.0,
+        -160.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -1,
+      "child": 29,
+      "group": 2,
+      "x": [
+        84.0,
+        176.0
+      ],
+      "y": [
+        -28.0,
+        16.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 80,
+      "child": 48,
+      "group": 2,
+      "x": [
+        280.0,
+        320.0
+      ],
+      "y": [
+        24.0,
+        -40.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 68,
+      "child": 78,
+      "group": 2,
+      "x": [
+        288.0,
+        264.0
+      ],
+      "y": [
+        88.0,
+        160.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 75,
+      "child": 76,
+      "group": 2,
+      "x": [
+        452.0,
+        480.0
+      ],
+      "y": [
+        160.0,
+        96.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 73,
+      "child": 31,
+      "group": 2,
+      "x": [
+        400.0,
+        400.0
+      ],
+      "y": [
+        16.0,
+        -64.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -1,
+      "child": 33,
+      "group": 3,
+      "x": [
+        -32.0,
+        -24.0
+      ],
+      "y": [
+        92.0,
+        192.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 33,
+      "child": 32,
+      "group": 3,
+      "x": [
+        -24.0,
+        -56.0
+      ],
+      "y": [
+        192.0,
+        272.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 32,
+      "child": 61,
+      "group": 3,
+      "x": [
+        -56.0,
+        32.0
+      ],
+      "y": [
+        272.0,
+        288.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -1,
+      "child": 34,
+      "group": 4,
+      "x": [
+        32.0,
+        112.0
+      ],
+      "y": [
+        88.0,
+        208.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 34,
+      "child": 35,
+      "group": 4,
+      "x": [
+        112.0,
+        160.0
+      ],
+      "y": [
+        208.0,
+        288.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -1,
+      "child": 62,
+      "group": 5,
+      "x": [
+        -84.0,
+        -200.0
+      ],
+      "y": [
+        -36.0,
+        -32.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -2,
+      "child": 5,
+      "group": 5,
+      "x": [
+        -440.0,
+        -440.0
+      ],
+      "y": [
+        -64.0,
+        -104.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 69,
+      "child": 3,
+      "group": 5,
+      "x": [
+        -360.0,
+        -360.0
+      ],
+      "y": [
+        -32.0,
+        40.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 64,
+      "child": 4,
+      "group": 5,
+      "x": [
+        -440.0,
+        -440.0
+      ],
+      "y": [
+        -32.0,
+        40.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 5,
+      "child": 1,
+      "group": 5,
+      "x": [
+        -440.0,
+        -440.0
+      ],
+      "y": [
+        -104.0,
+        -176.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 1,
+      "child": 2,
+      "group": 5,
+      "x": [
+        -440.0,
+        -440.0
+      ],
+      "y": [
+        -176.0,
+        -248.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 63,
+      "child": 18,
+      "group": 5,
+      "x": [
+        -280.0,
+        -360.0
+      ],
+      "y": [
+        -104.0,
+        -104.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 18,
+      "child": 0,
+      "group": 5,
+      "x": [
+        -360.0,
+        -360.0
+      ],
+      "y": [
+        -104.0,
+        -176.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -2,
+      "child": 84,
+      "group": 5,
+      "x": [
+        -440.0,
+        -520.0
+      ],
+      "y": [
+        -64.0,
+        -72.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 84,
+      "child": 81,
+      "group": 5,
+      "x": [
+        -520.0,
+        -520.0
+      ],
+      "y": [
+        -72.0,
+        0.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 81,
+      "child": 83,
+      "group": 5,
+      "x": [
+        -520.0,
+        -520.0
+      ],
+      "y": [
+        0.0,
+        72.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 84,
+      "child": 7,
+      "group": 5,
+      "x": [
+        -520.0,
+        -520.0
+      ],
+      "y": [
+        -72.0,
+        -144.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 7,
+      "child": 82,
+      "group": 5,
+      "x": [
+        -520.0,
+        -520.0
+      ],
+      "y": [
+        -144.0,
+        -216.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 82,
+      "child": 70,
+      "group": 5,
+      "x": [
+        -520.0,
+        -520.0
+      ],
+      "y": [
+        -216.0,
+        -288.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": -1,
+      "child": 11,
+      "group": 6,
+      "x": [
+        -76.0,
+        -188.0
+      ],
+      "y": [
+        48.0,
+        88.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 13,
+      "child": 8,
+      "group": 6,
+      "x": [
+        -332.0,
+        -320.0
+      ],
+      "y": [
+        156.0,
+        224.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 8,
+      "child": 24,
+      "group": 6,
+      "x": [
+        -320.0,
+        -320.0
+      ],
+      "y": [
+        224.0,
+        288.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 24,
+      "child": 55,
+      "group": 6,
+      "x": [
+        -320.0,
+        -384.0
+      ],
+      "y": [
+        288.0,
+        288.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 16,
+      "child": 17,
+      "group": 6,
+      "x": [
+        -552.0,
+        -536.0
+      ],
+      "y": [
+        256.0,
+        328.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 12,
+      "child": 54,
+      "group": 6,
+      "x": [
+        -260.0,
+        -240.0
+      ],
+      "y": [
+        120.0,
+        192.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 24,
+      "child": 21,
+      "group": 6,
+      "x": [
+        -320.0,
+        -240.0
+      ],
+      "y": [
+        288.0,
+        280.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 54,
+      "child": 25,
+      "group": 6,
+      "x": [
+        -240.0,
+        -160.0
+      ],
+      "y": [
+        192.0,
+        176.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 21,
+      "child": 10,
+      "group": 6,
+      "x": [
+        -240.0,
+        -216.0
+      ],
+      "y": [
+        280.0,
+        360.0
+      ],
+      "trunk": true
+    },
+    {
+      "parent": 10,
+      "child": 19,
+      "group": 6,
+      "x": [
+        -216.0,
+        -264.0
+      ],
+      "y": [
+        360.0,
+        432.0
+      ],
+      "trunk": true
+    }
+  ],
+  "anchors": [
+    [
+      -42,
+      -66
+    ],
+    [
+      42,
+      -66
+    ],
+    [
+      64,
+      -20
+    ],
+    [
+      -24,
+      68
+    ],
+    [
+      24,
+      66
+    ],
+    [
+      -64,
+      -26
+    ],
+    [
+      -56,
+      36
+    ]
+  ],
+  "sectorStart": [
+    215.0,
+    265.0,
+    345.0,
+    75.0,
+    45.0,
+    165.0,
+    115.0
+  ],
+  "sectorEnd": [
+    265.0,
+    345.0,
+    405.0,
+    115.0,
+    75.0,
+    215.0,
+    165.0
+  ],
+  "audit": "nodes\u003d85 groups\u003d[2, 21, 15, 3, 2, 19, 23] maxRadius\u003d674.5190879434028 rawEdges\u003d48 uniqueEdges\u003d48 routes\u003d95 minZoom\u003d0.75 maxZoom\u003d2.0 overlaps\u003d0 altar\u003d0 nodeHits\u003d0 crossings\u003d0",
+  "layoutMillis": 166.1338,
+  "catalog": "73 compiled ModTechniques instances verified against source extraction; 12 helper registrations statically enumerated; all prerequisite groups read from compiled LearningGraph",
+  "geometryClass": "file:/D:/alianximod/build/classes/java/main/",
+  "font": "Production Font.width with vanilla UnihexProvider.Glyph and cached CJK size overrides; no live resource-pack snapshot"
+}

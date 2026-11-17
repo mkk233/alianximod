@@ -1,0 +1,175 @@
+{
+  "project": "1aa7c01f-c3a9-2d54-e824-b3331f4094e9",
+  "name": "earth_ground_airborne_v2r2_preview",
+  "saved": true,
+  "animationLength": 2.3,
+  "time": 0.85,
+  "textures": [
+    {
+      "name": "CANDIDATE_airborne_3x24_frames",
+      "error": 0
+    },
+    {
+      "name": "CANDIDATE_visual_grit_alpha",
+      "error": 0
+    },
+    {
+      "name": "AUX_ONLY_ground_and_human",
+      "error": 0
+    }
+  ],
+  "projects": [
+    {
+      "name": "fire_kindle_v2_candidate_preview",
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "saved": true
+    },
+    {
+      "name": "daozhang_v1_candidate",
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "saved": false
+    },
+    {
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+      "saved": true
+    },
+    {
+      "name": "fire_kindle_v3_redraw_candidate_preview",
+      "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+      "saved": true
+    },
+    {
+      "name": "nether_blue_palette_art_v1",
+      "uuid": "803970b1-7113-95b6-9e54-ee1415c7edff",
+      "saved": true
+    },
+    {
+      "name": "kindle_fentian_approved_swap",
+      "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "saved": true
+    },
+    {
+      "name": "kindle_fentian_approved_swap",
+      "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+      "saved": true
+    },
+    {
+      "name": "nether_blue_palette_art_v1",
+      "uuid": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+      "saved": true
+    },
+    {
+      "name": "nether_blue_coverage_02",
+      "uuid": "97d2ac09-d5a8-c46f-1f79-8a8b4e5a7840",
+      "saved": true
+    },
+    {
+      "name": "nether_blue_coverage_02",
+      "uuid": "e7791755-13e6-d20d-306a-2a39c483a95b",
+      "saved": true
+    },
+    {
+      "name": "fentian_dual_layer_v4",
+      "uuid": "349751a0-a77d-026b-4ead-bc3a553fd738",
+      "saved": true
+    },
+    {
+      "name": "fentian_dual_layer_v4",
+      "uuid": "fe507dca-652f-f434-b477-f92726a559a7",
+      "saved": true
+    },
+    {
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "uuid": "d9c43eb2-d302-684c-1927-59016d61f4f9",
+      "saved": true
+    },
+    {
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "uuid": "7fa628fc-3a07-adca-a574-ce45af530859",
+      "saved": true
+    },
+    {
+      "name": "fentian_dual_layer_burnout_v4_1",
+      "uuid": "2ddaf358-56ef-cd78-263a-4e6afb143ef0",
+      "saved": true
+    },
+    {
+      "name": "fire_detonate_v2_candidate",
+      "uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+      "saved": true
+    },
+    {
+      "name": "fire_detonate_v2_candidate",
+      "uuid": "e0d306f9-0f12-bc19-9636-0c56f9f1ce88",
+      "saved": false
+    },
+    {
+      "name": "fire_detonate_v2_3d_candidate",
+      "uuid": "5f702182-73a6-cd40-964d-2ad6a7c2a361",
+      "saved": true
+    },
+    {
+      "name": "fire_detonate_v2_3d_candidate",
+      "uuid": "e9eebb72-fed6-5b89-ab9e-3991002b637d",
+      "saved": false
+    },
+    {
+      "name": "youming-v2-domain-current-49",
+      "uuid": "dfc5c52c-afcb-951b-9625-7c632d2e16d3",
+      "saved": true
+    },
+    {
+      "name": "youming-v2-domain-current-49",
+      "uuid": "97317922-6479-beec-c78f-a74da81002d2",
+      "saved": true
+    },
+    {
+      "name": "youming-v2-domain-current-49",
+      "uuid": "0ff57af5-a0c2-9110-a30c-aa29bf43c939",
+      "saved": true
+    },
+    {
+      "name": "youming-v2-soulvalley-danger-candidate",
+      "uuid": "de80cb3f-d9bf-e9be-d20d-95c24ad180c9",
+      "saved": true
+    },
+    {
+      "name": "youming-v2-soulvalley-danger-candidate",
+      "uuid": "0160f5df-5ae4-58e0-f638-74fa0e1dcca0",
+      "saved": true
+    },
+    {
+      "name": "youming-v2-fixed-root-sway-candidate",
+      "uuid": "e88e38bc-306f-4e1c-b4de-8a15f93dadd2",
+      "saved": true
+    },
+    {
+      "name": "youming-v2-fixed-root-sway-candidate",
+      "uuid": "bd0ab5c3-e2ff-a2d3-b619-3ba215a682d2",
+      "saved": true
+    },
+    {
+      "name": "earth_break_ground_v2_preview",
+      "uuid": "0d65d0f5-9590-698b-4313-bc901925bd9c",
+      "saved": true
+    },
+    {
+      "name": "earth_break_ground_v2_preview",
+      "uuid": "3eaaca81-4233-01ff-c351-cb6d780f81b3",
+      "saved": true
+    },
+    {
+      "name": "earth_ground_airborne_v2r2_preview",
+      "uuid": "937be075-0517-53f5-6aa9-c7f18ce35ab8",
+      "saved": true
+    },
+    {
+      "name": "earth_ground_airborne_v2r2_preview",
+      "uuid": "1aa7c01f-c3a9-2d54-e824-b3331f4094e9",
+      "saved": true
+    }
+  ],
+  "elements": 445,
+  "groups": 279
+}

@@ -1,0 +1,26 @@
+{
+  "sha256": "1DB010BA1E3500562B816EF793A77F8669CE0AD20A35AFC9BE9AFB633F4103A3",
+  "bytes": 170896,
+  "mtime": "2026-10-30T11:13:07.792+08:00",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "unique": 59,
+  "row": 4,
+  "id": "fire_scorch_field",
+  "damage": "1",
+  "radius": "2",
+  "life": "100",
+  "periodGone": true,
+  "triggerGone": true,
+  "firstAmount": "20",
+  "resource": "火种",
+  "detailAmount": "15",
+  "detailPeriod": "20",
+  "detailTriggerGone": true,
+  "detailCount": 1,
+  "oldSentenceGone": true
+}

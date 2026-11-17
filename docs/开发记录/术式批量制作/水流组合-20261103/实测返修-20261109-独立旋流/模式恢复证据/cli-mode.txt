@@ -1,0 +1,9 @@
+Installed CLI: C:\Users\baishang\AppData\Local\CursorAgentCodex\2026.10.22-27dcf5f\dist-package\cursor-agent.cmd
+Source read only from that package's index.js option text. The binary was not launched, and no credential, chat, or config file was read.
+
+--mode <mode>: Start in the given execution mode. plan: read-only/planning (analyze, propose plans, no edits). ask: Q&A style for explanations and questions (read-only).
+choices: ["plan","ask"]
+--plan: shorthand for --mode=plan.
+create-chat: Create a new empty chat and return its ID.
+No switch-mode, clear-mode, or mode=agent option was present.
+Hidden --new-session-id was not used. Recovery calls the existing create-chat command and reads its returned UUID.

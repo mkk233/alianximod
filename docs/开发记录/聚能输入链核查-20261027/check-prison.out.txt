@@ -1,0 +1,5 @@
+2026-10-27 05:10:52,565 main WARN Advanced terminal features are not available in this environment
+EXECUTED prison-duration-shell-input-wet-support
+未执行 prepare 会话表和 commit 湿润生物：需要玩家和世界
+静态核对 未执行：commit 里 replaceExact 的真实药水、onWetRemoved 直接编辑保护、牛奶等外部清除即时拆牢、预约第二次 commit 不再进入运行时。这些要实体和效果回调，不能当成已经集成通过。
+断言 56 失败 0

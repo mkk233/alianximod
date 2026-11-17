@@ -1,0 +1,113 @@
+{
+  "task": "implement-B",
+  "author": "B",
+  "model": "grok-4.7-high-fast",
+  "stage": "implementation",
+  "designReview": "2/2",
+  "implementationReview": "0/3",
+  "released": true,
+  "compile": "not-run",
+  "nameGate": "not-run",
+  "shell": "rejected",
+  "tests": "not-run",
+  "game": "not-run",
+  "sheet": "not-touched",
+  "hashNote": "复制与命名门的 Shell 均立即 Rejected，没有退出码。SHA-256 与 mtime 不填猜测值。",
+  "backupRoot": "docs/开发记录/领域绑定规则-20261030/backup-B",
+  "backupGap": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordVortex.java"
+  ],
+  "files": [
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/aim/LaunchAim.java",
+      "backup": null,
+      "change": "新增。六参数保存 TargetCheck；五参数不能用于自动来源。",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java",
+      "backup": null,
+      "change": "execution、launchAim；volumePoint 自动钳制",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+      "backup": null,
+      "change": "自动来源字段、生成前令牌、二次源点钳制",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+      "backup": null,
+      "change": "持有 LaunchAim；自动持续绕过松手和换手",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/ProjectileMotion.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/ProjectileMotion.java",
+      "change": "自动锁定只用局部目标",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/FollowCasterMotion.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/FollowCasterMotion.java",
+      "change": "自动跟随改为该次源点与局部目标",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingSupport.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingSupport.java",
+      "change": "保留近距查询；自动拍只重验局部目标",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SpaceCutEffect.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/effects/SpaceCutEffect.java",
+      "change": "自动路径不读准星锚点",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java",
+      "backup": null,
+      "change": "出手检查当前主手；自动令牌无效不生成",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B/src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java",
+      "change": "当前主手资格加副本数值；源点钳制",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java",
+      "backup": null,
+      "change": "悬停局部瞄准；风暴使用显式锚点",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordVortex.java",
+      "backup": null,
+      "change": "局部方向与控制锚点；不跨域重选",
+      "sha256": null,
+      "mtimeUtc": null
+    }
+  ],
+  "stillAimMotion": "unchanged",
+  "pendingCompile": true
+}

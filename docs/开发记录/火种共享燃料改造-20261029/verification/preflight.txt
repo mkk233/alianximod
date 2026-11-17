@@ -1,0 +1,26 @@
+preflight 2026-10-29T21:29:14.9959090+08:00
+JAVA_HOME=C:\Program Files\Java\jdk-17
+GRADLE_USER_HOME=C:\Users\baishang\.gradle
+java_exe_exists=True
+java_version:
+java version "17.0.6" 2023-01-17 LTS
+Java(TM) SE Runtime Environment (build 17.0.6+9-LTS-190)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.6+9-LTS-190, mixed mode, sharing)
+gradle-wrapper.properties:
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.8-bin.zip
+networkTimeout=10000
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+gradle.properties head:
+# Sets default memory used for gradle commands. Can be overridden by user or command line properties.
+# This is required to provide enough memory for the Minecraft decompilation process.
+org.gradle.jvmargs=-Xmx3G
+org.gradle.daemon=false
+java_like_count=0
+relevant_count=0
+files=25
+hash_mismatch=0
+later_mtime=24
+missing=0

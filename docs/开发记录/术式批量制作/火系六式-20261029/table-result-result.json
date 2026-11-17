@@ -1,0 +1,117 @@
+{
+  "submitted": true,
+  "baselineSha256": "01819BBEA99BB4CD6A9F9E398C9779E39D09962140A372E84FFDD9B8A874DF0C",
+  "baselineMtime": "2026-10-29 03:23:58.136",
+  "baselineBytes": 78137,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\table-result-术式制作表-20261029-043043-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\table-result-candidate-preserved.xlsx",
+  "candidateSha256": "CE0AF918E0A99DC586232E76B156465B12AEDF8A5C0047CAD8268BEF6A3D899D",
+  "submittedSha256": "CE0AF918E0A99DC586232E76B156465B12AEDF8A5C0047CAD8268BEF6A3D899D",
+  "submittedMtime": "2026-10-29 04:32:26.244",
+  "submittedBytes": 79045,
+  "changedParts": [
+    "xl/worksheets/sheet3.xml"
+  ],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 6,
+    "待验收": 0
+  },
+  "total": 46,
+  "unique": 46,
+  "snapshotReconcile": [
+    {
+      "id": "fire_liaoyuan",
+      "snapshotRow": 3,
+      "currentRow": 3,
+      "n": true,
+      "o": true,
+      "dvPrefix": true
+    },
+    {
+      "id": "fire_liaoli",
+      "snapshotRow": 4,
+      "currentRow": 4,
+      "n": true,
+      "o": true,
+      "dvPrefix": true
+    },
+    {
+      "id": "fire_fentian",
+      "snapshotRow": 5,
+      "currentRow": 5,
+      "n": true,
+      "o": true,
+      "dvPrefix": true
+    },
+    {
+      "id": "fire_heat_up",
+      "snapshotRow": 6,
+      "currentRow": 6,
+      "n": true,
+      "o": true,
+      "dvPrefix": true
+    },
+    {
+      "id": "fire_burn",
+      "snapshotRow": 7,
+      "currentRow": 7,
+      "n": true,
+      "o": true,
+      "dvPrefix": true
+    },
+    {
+      "id": "fire_cool",
+      "snapshotRow": 8,
+      "currentRow": 8,
+      "n": true,
+      "o": true,
+      "dvPrefix": true
+    }
+  ],
+  "rows": [
+    {
+      "id": "fire_liaoyuan",
+      "name": "燎原",
+      "sheet": "制作中",
+      "row": 3,
+      "seedFeedback": true
+    },
+    {
+      "id": "fire_liaoli",
+      "name": "燎里",
+      "sheet": "制作中",
+      "row": 4,
+      "seedFeedback": true
+    },
+    {
+      "id": "fire_fentian",
+      "name": "焚天",
+      "sheet": "制作中",
+      "row": 5,
+      "seedFeedback": true
+    },
+    {
+      "id": "fire_heat_up",
+      "name": "升温",
+      "sheet": "制作中",
+      "row": 6,
+      "seedFeedback": false
+    },
+    {
+      "id": "fire_burn",
+      "name": "燃烧",
+      "sheet": "制作中",
+      "row": 7,
+      "seedFeedback": false
+    },
+    {
+      "id": "fire_cool",
+      "name": "冷却",
+      "sheet": "制作中",
+      "row": 8,
+      "seedFeedback": false
+    }
+  ]
+}

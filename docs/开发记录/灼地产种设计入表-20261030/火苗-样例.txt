@@ -1,0 +1,17 @@
+## completed 16 奥术飞弹 magic_arcane_missile
+A=奥术飞弹 B=magic_arcane_missile C=法术 D=无 E=5 F=20 G=20 H=0 I=1 J=否 K=1 L=10 M=是 P=命中体 Q=触发 R=直线 S=攻击 T=是 U=40 V=1.5 W=0.1 X=0 Y=是 Z=是 AA=否 AB=否 AC=否 AD=否 AE=否 AF=2.4 AG=0.16 AH=是 AI=否 AJ=否 AK=是 AL=否 AM=否 AN=1 AO=1 AP=-1 AQ=0 AR=0 AS=0 AT=0 AU=否 AV=0 AW=0 AX=否 AY=否 AZ=0 BA=0 BB=0 BC=0 BD=0 BE=0 BF=0 BG=0 BI=方盒 BJ=1 BK=1 BL=是 BM=是 BN=是 BO=是 BP=否 BQ=0 BR=0 BS=否 BT=0 BU=0 BV=20 BW=200
+N=发射追踪弹幕
+O=MagicArcaneMissileEffect
+
+## completed 22 火球 fire_orb
+A=火球 B=fire_orb C=法术 D=火 E=5 F=20 G=20 H=0 I=1.2 J=否 K=1 L=10 M=是 P=命中体 Q=触发 R=直线 S=攻击 T=是 U=40 V=1.2 W=0.4 X=0 Y=是 Z=是 AA=否 AB=否 AC=否 AD=否 AE=否 AF=2.4 AG=0.16 AH=是 AI=否 AJ=否 AK=是 AL=否 AM=否 AN=1 AO=1 AP=-1 AQ=0 AR=0 AS=0 AT=0 AU=否 AV=0 AW=0 AX=否 AY=否 AZ=0 BA=0 BB=0 BC=0 BD=0 BE=0 BF=0 BG=0 BI=方盒 BJ=1 BK=1 BL=是 BM=是 BN=是 BO=是 BP=否 BQ=0 BR=0 BS=否 BT=0 BU=0 BV=20 BW=200
+N=飞出火球，命中造成伤害并点燃。弹道可被改写
+O=FireOrbEffect
+
+## completed 29 点火 magic_ignite
+A=点火 B=magic_ignite C=通用 D=火 E=0 F=40 G=20 H=0 I=1 J=是 K=2 L=2 M=否 DN=fire DO=0 DP=0.5 DQ=5 DR=1 DS=1 DT=1 DU=1
+N=点燃目标/方块
+O=MagicIgniteEffect
+
+ROW15 OPEN <row r="15" ht="225" customHeight="1"><c r="A15" s="15" t="str"><v>崩地</v></c><c r="B15" s="16" t="str"><v>earth_break_ground</v></c><c r="C15" s="15" t="str"><v>通用</v></c><c r="D15
+VALS DW3:DW1000 | DX3:DX1000 | DY3:DY1000 | DZ3:DZ1000 | EA3:EA1000 | EB3:EB1000 | EE3:EE1000 | EI3:EI1000

@@ -1,0 +1,19 @@
+D:/alianximod/docs/资源库/特效/火焰/升温_贴身炽热_v2/heat_up-v2.aseprite
+size 96x112 frames 20 durations 0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000,0.08000
+layer 1 01 rear heat -> heat_rear.png
+layer 2 02 rear tongues -> heat_rear_tongues.png
+layer 3 03 front tongues -> heat_front_tongues.png
+layer 4 04 rising embers -> heat_embers.png
+D:/alianximod/docs/资源库/特效/火焰/升温_贴身炽热_v2/heat_up-v2-entry.aseprite
+size 96x112 frames 8 durations 0.06000,0.06000,0.06000,0.06000,0.06000,0.06000,0.06000,0.06000
+layer 1 01 rear heat -> heat_entry_rear.png
+layer 2 02 rear tongues -> heat_entry_rear_tongues.png
+layer 3 03 front tongues -> heat_entry_front_tongues.png
+layer 4 04 rising embers -> heat_entry_embers.png
+D:/alianximod/docs/资源库/特效/火焰/燃烧_双手附焰与火焰披风_v3/overdrive-v3-entry.aseprite
+size 96x112 frames 8 durations 0.06000,0.06000,0.06000,0.06000,0.06000,0.06000,0.06000,0.06000
+layer 1 01 fire cape -> burn_entry_cape.png
+layer 2 02 rear body fire -> burn_entry_rear_fire.png
+layer 3 03 attached body fire -> burn_entry_body_fire.png
+layer 4 04 attached hand fire -> burn_entry_hand_fire.png
+layer 5 05 embers -> burn_entry_embers.png

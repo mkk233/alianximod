@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"executable\":\"D:/Aseprite/Aseprite.exe\",\"batch\":{\"apiVersion\":39,\"mode\":\"batch\",\"os\":\"Windows NT 10.0.26100\",\"runtime\":\"0.1.1\",\"sprites\":0,\"ui\":false,\"version\":\"1.3.17\"},\"live\":{\"port\":41235,\"listening\":true,\"connected\":false},\"extensionInstalled\":true,\"workDir\":\"C:\\\\Users\\\\baishang\"}"
+    }
+  ]
+}

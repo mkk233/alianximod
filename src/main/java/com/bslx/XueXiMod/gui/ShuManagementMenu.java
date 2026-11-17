@@ -81,9 +81,9 @@ public class ShuManagementMenu extends AbstractContainerMenu {
      */
     public List<Technique> getTechniquesInCategory() {
         List<Technique> result = new ArrayList<>();
-        for (Technique t : TechniqueManager.getAll()) {
-            if (t.getType() == selectedCategory) {
-                result.add(t);
+        for (Technique technique : TechniqueManager.playerCatalog()) {
+            if (technique.getType() == selectedCategory) {
+                result.add(technique);
             }
         }
         return result;
@@ -103,16 +103,16 @@ public class ShuManagementMenu extends AbstractContainerMenu {
     public float getTechniqueProgress(String techniqueId) {
         int usage = ShuSyncPacket.ClientShuCache.getUsageCount(techniqueId);
         int level = com.bslx.XueXiMod.shu.Proficiency.getLevel(usage);
-        if (level >= com.bslx.XueXiMod.shu.Proficiency.MAX_LEVEL) return 1.0f;
+        if (level >= com.bslx.XueXiMod.shu.Proficiency.LEVEL_UPPER_BOUND) return 1.0f;
         int nextThreshold = com.bslx.XueXiMod.shu.Proficiency.getUsageToNextLevel(usage) + usage;
         int prevThreshold = 0;
         // 找到当前等级的阈值
-        for (int i = level; i >= 0; i--) {
+        for (int levelIndex = level; levelIndex >= 0; levelIndex--) {
             // 简化计算：使用 Proficiency 的方法
             break;
         }
         // 简单进度计算
-        if (level >= com.bslx.XueXiMod.shu.Proficiency.MAX_LEVEL) return 1.0f;
+        if (level >= com.bslx.XueXiMod.shu.Proficiency.LEVEL_UPPER_BOUND) return 1.0f;
         int needed = com.bslx.XueXiMod.shu.Proficiency.getUsageToNextLevel(usage);
         if (needed <= 0) return 1.0f;
         return Math.min(1.0f, (float) usage / (usage + needed));
@@ -151,7 +151,7 @@ public class ShuManagementMenu extends AbstractContainerMenu {
      */
     public float getTypeLevelProgress(TechniqueType type) {
         int level = (type == TechniqueType.SWORD) ? getSwordLevel() : getMagicLevel();
-        if (level >= PlayerShuData.MAX_TYPE_LEVEL) return 1.0f;
+        if (level >= PlayerShuData.TYPE_LEVEL_UPPER_BOUND) return 1.0f;
         int usage = (type == TechniqueType.SWORD)
                 ? ShuSyncPacket.ClientShuCache.getSwordUsage()
                 : ShuSyncPacket.ClientShuCache.getMagicUsage();

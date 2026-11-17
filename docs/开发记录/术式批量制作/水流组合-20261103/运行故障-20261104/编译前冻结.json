@@ -1,0 +1,392 @@
+[
+  {
+    "path": "D:\\alianximod\\docs\\配置平衡指南.md",
+    "lastWrite": "2026-11-03T21:44:32.9287383+08:00",
+    "bytes": 34772,
+    "sha256": "00CB924EF972D01D7D98BDE2FB7BF16D5768FA0DB10F821C93C61550C7832F8D"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\XueXiMod.java",
+    "lastWrite": "2026-11-03T22:06:27.9033303+08:00",
+    "bytes": 10973,
+    "sha256": "DBFD9C58FCE054CFA47279027DCEED66903EEC9BA3E11AFD736102A0B230DEBC"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\block\\StillDomainFluid.java",
+    "lastWrite": "2026-11-03T22:55:32.9480615+08:00",
+    "bytes": 3115,
+    "sha256": "EBD218C8CA87F2EAD15D52F4D953140826FE5D5A76361D9BA2BDEC6202C5ACA5"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\block\\StillDomainFluids.java",
+    "lastWrite": "2026-11-03T22:55:34.6337793+08:00",
+    "bytes": 6341,
+    "sha256": "D242E098C31D490058783E4C80BCB5202A0503DC46385CF3DFAEFF7379F70AD7"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\DomainClientState.java",
+    "lastWrite": "2026-11-03T21:44:03.0872536+08:00",
+    "bytes": 2865,
+    "sha256": "C7A95E77DD10B220B69B685F747621424E367F9CA13B11821737791F58F494D1"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\DomainFlowRenderer.java",
+    "lastWrite": "2026-11-03T21:55:13.9376355+08:00",
+    "bytes": 12047,
+    "sha256": "9D2F972A2AF63CE05776C97877C4692789BE8FC914AED018AC85DA9E69EA47C0"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\DomainWorldRenderer.java",
+    "lastWrite": "2026-11-03T22:27:29.0201604+08:00",
+    "bytes": 6213,
+    "sha256": "C8A0B03F70124ED177CF07F0984AAC8A10E7CC5A3E626B4FCDCFCDD5922EF9D0"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\FlowClientMotion.java",
+    "lastWrite": "2026-11-03T21:45:18.8970905+08:00",
+    "bytes": 11039,
+    "sha256": "206FEC44FD366D521D80AE4B14E58B838398A71996BC4FC1D06C7C5DDDBE1504"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\StillDomainWaterClient.java",
+    "lastWrite": "2026-11-03T22:55:35.6165831+08:00",
+    "bytes": 2183,
+    "sha256": "0F7D83D913A4E9AFEB935B7D04DD6D9E56BD328B36E555E0C7E2ACF3A7392453"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\FlowGravityMixin.java",
+    "lastWrite": "2026-11-03T21:38:19.9319227+08:00",
+    "bytes": 955,
+    "sha256": "A0A2F806C0C129036EC330C1A37B69FD35DCBD7912D8831D29216CFD1EEB4463"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\FlowMinecartMixin.java",
+    "lastWrite": "2026-11-03T21:42:40.0633117+08:00",
+    "bytes": 1336,
+    "sha256": "741E32B90299E1C955EF7E1D67D161903C005343E8FB49B96654B55EDBB24485"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\FlowPlayerMoveMixin.java",
+    "lastWrite": "2026-11-03T21:38:15.8326038+08:00",
+    "bytes": 4051,
+    "sha256": "5AB2D703815656E6AAE9C8EF99B3791CBDFE5CFA13D79245E6AE3432227FCDDF"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\FlowStepMixin.java",
+    "lastWrite": "2026-11-03T21:38:17.0488485+08:00",
+    "bytes": 940,
+    "sha256": "44440367E32E2393F993D1F2910145E1039332CC1E212936DB5F39AB550DECA5"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\client\\FlowClientTickMixin.java",
+    "lastWrite": "2026-11-03T21:45:59.2009962+08:00",
+    "bytes": 1100,
+    "sha256": "055267FE8ECFA3C07FC50AD00DDF0AC755E427ADA175570F8CEA95FA33FD0734"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\client\\FlowLocalMoveMixin.java",
+    "lastWrite": "2026-11-03T21:43:15.3201921+08:00",
+    "bytes": 1035,
+    "sha256": "04D962047005B8E2C286ADAB0F5242097744063A6A08B61C84F20F7A6CC935FA"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\client\\LocalPlayerAnchorAccess.java",
+    "lastWrite": "2026-11-03T21:43:34.3259886+08:00",
+    "bytes": 725,
+    "sha256": "408ABA0E0147F5D8AC06D59B76F2854A568D655D80800CDADA7E5ABA7F2DA79B"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\CastExecutionSession.java",
+    "lastWrite": "2026-11-03T19:53:20.7718868+08:00",
+    "bytes": 36825,
+    "sha256": "D48E8293773401E99BB96B09FD54EB72642D0C8B0DA7167B0D4F7A55D4F82F29"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\DomainOpening.java",
+    "lastWrite": "2026-11-03T19:53:16.3045744+08:00",
+    "bytes": 1527,
+    "sha256": "BB2C518AC0DCE3F54C91989E304A54F25D81491614E0734F7C758F495FB61417"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\DomainSyncPacket.java",
+    "lastWrite": "2026-11-03T21:54:58.5707257+08:00",
+    "bytes": 11154,
+    "sha256": "4C2BC45CF209CE0F713AE4F5B223554B5D41FF3BD2948D561E7CE990657A167D"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\DomainWave.java",
+    "lastWrite": "2026-11-03T19:53:15.6812246+08:00",
+    "bytes": 5268,
+    "sha256": "774AE3D038FF2634B3FE144E16D90172D1DE79AD7B2B24615B6B22C8CD0FA674"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\FlowCorrectionAckC2SPacket.java",
+    "lastWrite": "2026-11-03T21:37:27.0611676+08:00",
+    "bytes": 1710,
+    "sha256": "15889B1506F6BF9CBB98F0BD7C5E5AB7C279B64CC86E9340E2304FCEB6E9702F"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\FlowCorrectionS2CPacket.java",
+    "lastWrite": "2026-11-03T21:37:25.1352194+08:00",
+    "bytes": 2921,
+    "sha256": "FFC8FDE859BC20DE6537A14E58CD86CDE8BAFFBA4543BBA05644433017C0B235"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\FlowIntentS2CPacket.java",
+    "lastWrite": "2026-11-03T21:41:35.8620871+08:00",
+    "bytes": 4540,
+    "sha256": "5933BA4EE3AD2CCBC2E0A0040F4FC9B359F722BA0A46D26000D7E1983D11D8F3"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\FlowMoveC2SPacket.java",
+    "lastWrite": "2026-11-03T21:45:16.5010405+08:00",
+    "bytes": 5757,
+    "sha256": "3D1A50F7A66EDC2A7698BAE1FF1D49947BA3C753AC271033091EA70E491602FE"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\FlowPlayerBridge.java",
+    "lastWrite": "2026-11-03T21:36:45.4699335+08:00",
+    "bytes": 10423,
+    "sha256": "DDE0259A79AC63BDD4F588ED115293F2470BB98615F4BE8BB95C2DE36FAFC8D8"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\ModNetwork.java",
+    "lastWrite": "2026-11-03T21:44:02.6846720+08:00",
+    "bytes": 2372,
+    "sha256": "A2E04CF88C81ED55CB850D658CDC6C9C7E8EFEF97C18F4D0D3830BA633DC93AA"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillChainPlan.java",
+    "lastWrite": "2026-11-03T19:54:43.2588977+08:00",
+    "bytes": 63608,
+    "sha256": "CFD9AA151B6071412ED86BAECD36AB6A7C8D65E1DDB1C59C89487FEBE36EF845"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillSegmentRunner.java",
+    "lastWrite": "2026-11-03T19:53:48.1853975+08:00",
+    "bytes": 58553,
+    "sha256": "956BBE92EE65DB5E39A6245C1091C0936855E62891F16CD64052E39A3E847581"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillUsePacket.java",
+    "lastWrite": "2026-11-03T19:53:19.4015829+08:00",
+    "bytes": 72895,
+    "sha256": "30D1BC2004F0425BA4B9F150A47466D52933FA776A4605DD1B88C570A46F7CA7"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\WaterTechniques.java",
+    "lastWrite": "2026-11-03T21:55:14.5606073+08:00",
+    "bytes": 7320,
+    "sha256": "86DA22E99528E70854A18117F8F746D251A3484E03E870DDB95B22E352E5A05F"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\balance\\BalanceBound.java",
+    "lastWrite": "2026-11-03T19:44:42.0418395+08:00",
+    "bytes": 5192,
+    "sha256": "8D03EC746B5815009EE6D7AB675DF25543AE64710493573F11111E6A7486580D"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\balance\\BalanceKeys.java",
+    "lastWrite": "2026-11-03T19:44:43.8605735+08:00",
+    "bytes": 5647,
+    "sha256": "491B4027E84BF5852AC5FE80E2204807F148ED76BFAB7FE13C26C3675162493F"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\balance\\BalanceUnit.java",
+    "lastWrite": "2026-11-03T19:44:41.1051044+08:00",
+    "bytes": 528,
+    "sha256": "003697E7BB3B9C7F08EB7CF68E00BF966A8E06AAB8039441DF6B83311EA503C0"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseBatch.java",
+    "lastWrite": "2026-11-03T19:44:45.5059729+08:00",
+    "bytes": 24209,
+    "sha256": "A6D5F1FB1B122B6C6D43AC567596522CC69BAFC4A354F0DEBB57F5285E951D6C"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\deflection\\projectile\\ArrowBook.java",
+    "lastWrite": "2026-11-03T19:45:16.0100523+08:00",
+    "bytes": 10929,
+    "sha256": "AC04CF442F5072DBD15D10EC848461CDEAA1E2EFE0457E679AC9901B5CF12799"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\deflection\\projectile\\ProjectileStandardCost.java",
+    "lastWrite": "2026-11-03T22:27:31.4544681+08:00",
+    "bytes": 4737,
+    "sha256": "E0A0FD557CFDC38D3C63091E1EC0AE508F2B751AD4BF36091E09FE8F4478BD1F"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainDefinition.java",
+    "lastWrite": "2026-11-03T19:51:34.2396089+08:00",
+    "bytes": 18842,
+    "sha256": "C3154A1D371FA44B46710ABE982306A7DAED1F7D339AB117C7238D52B0656CD0"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainInstance.java",
+    "lastWrite": "2026-11-03T20:04:37.1267247+08:00",
+    "bytes": 10973,
+    "sha256": "7095049E4E17A065A8F316FD7EE8B7D0DEFCFAB12F3F13A9DF8B0D3286A83A32"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainMotion.java",
+    "lastWrite": "2026-11-03T21:38:59.0852810+08:00",
+    "bytes": 4296,
+    "sha256": "21B9CB870DC3123DCA72CB67BED20653EB4BE65E35EDA0297BF206C4B29C86B3"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainService.java",
+    "lastWrite": "2026-11-03T19:51:55.1129278+08:00",
+    "bytes": 18491,
+    "sha256": "A70C9CD03D04D9F7954590A3232B93C2F0F89BB0FC91C14209C4939879AB9636"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainSightStore.java",
+    "lastWrite": "2026-11-03T19:53:24.1589388+08:00",
+    "bytes": 3508,
+    "sha256": "30145547B5BE53389232FFD1C0848E06ADFE9568C9081C0E965F72E7082C6B17"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\DomainCastContext.java",
+    "lastWrite": "2026-11-03T19:44:56.7222171+08:00",
+    "bytes": 2320,
+    "sha256": "45F88A099C4C54560D5189356C6A03D40040E684B118FF4F226A128AF793AC7D"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\DomainMotionPreview.java",
+    "lastWrite": "2026-11-03T21:55:10.6826650+08:00",
+    "bytes": 2025,
+    "sha256": "968E83A6B3C342857263A480A7DDCAFE05E3EC864C23377E73B0E284B3C6DAEF"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\FlowClientBridge.java",
+    "lastWrite": "2026-11-03T21:38:33.6590278+08:00",
+    "bytes": 3990,
+    "sha256": "18280A4462BAEBBE850966EB4CEC413A00CA98D362814BB06A61EB1BE9074D3A"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\FlowMotionEvents.java",
+    "lastWrite": "2026-11-03T21:38:48.3182535+08:00",
+    "bytes": 1620,
+    "sha256": "9CF27A6BC53942B6B3A43EE9A39B662267518208A265AE6EFA6E565C8E9DDD17"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\FlowMotionIntents.java",
+    "lastWrite": "2026-11-03T22:06:25.2781845+08:00",
+    "bytes": 12901,
+    "sha256": "51D874DB506DD1D86ED11DC59D35DA945EB963DE66D334DFBEF2CA956E075354"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\FlowRole.java",
+    "lastWrite": "2026-11-03T21:35:56.8132637+08:00",
+    "bytes": 198,
+    "sha256": "5B910FD67ECB5C54EDDE8E52E85F575C0CF35CF869B1730A0F9D143187D0B40D"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\FunnelOutline.java",
+    "lastWrite": "2026-11-03T20:04:20.9423180+08:00",
+    "bytes": 960,
+    "sha256": "BA9D80FD612BEA54505E202747507A8D77886039E034C461194FFF8FF3636E46"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\MotionFrame.java",
+    "lastWrite": "2026-11-03T20:04:23.7346750+08:00",
+    "bytes": 1785,
+    "sha256": "CD18242B190F22463D2BEC50DC4D51CE82AA8B5F6C2B6C1151F548DE24F64040"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\ReleaseMotionLedger.java",
+    "lastWrite": "2026-11-03T21:39:10.1300183+08:00",
+    "bytes": 6395,
+    "sha256": "559046938AC428165DF7A0F485D24CF20F5020214E29F5758BEC37FE1F6ED3CC"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\StillWaterLease.java",
+    "lastWrite": "2026-11-04T01:12:25.5241879+08:00",
+    "bytes": 13878,
+    "sha256": "0EE55C8996A874399971CD5DA0B4BC373147BA0358798E1F8DFD3DBAB3D34DC5"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\VolumeMotionKind.java",
+    "lastWrite": "2026-11-03T19:44:53.2193487+08:00",
+    "bytes": 225,
+    "sha256": "48BDE9712C46EC14AFEA76AFE8F42158B7FFADB03A8043F7B96B3A99D30DADB2"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\motion\\VolumeMotionRuntime.java",
+    "lastWrite": "2026-11-03T22:27:32.1232510+08:00",
+    "bytes": 48309,
+    "sha256": "10A336E2A83E0175756CE8FA697C84ABE7C0A29EEE1D31627C5C20EA73A4D66D"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\momentum\\ReleaseBaseEvents.java",
+    "lastWrite": "2026-11-03T19:53:24.3868381+08:00",
+    "bytes": 8991,
+    "sha256": "C5ED2E3605C8F2FB8C97DD987FB63C6D131B09301A65B64463031F67EABC6A3A"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\momentum\\WaterMomentum.java",
+    "lastWrite": "2026-11-03T19:52:57.4601993+08:00",
+    "bytes": 7315,
+    "sha256": "9845FAB00F685C2439190004CFB81CCE2BE6AA9009E2898D29C055BA9C9D7A03"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\status\\WetnessFlight.java",
+    "lastWrite": "2026-11-03T21:40:56.5061881+08:00",
+    "bytes": 9086,
+    "sha256": "FBE3B286EA8C593F8343E5315008F6A09263F4196D995C6ACE77A7CE6466D7B8"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\blockstates\\still_domain_water.json",
+    "lastWrite": "2026-11-03T19:54:00.2416991+08:00",
+    "bytes": 79,
+    "sha256": "590E1D52B50DB0647A36C74BC9AB03B608F80F2E06B7CE0795D6939DA0384611"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\en_us.json",
+    "lastWrite": "2026-11-03T19:54:02.1083942+08:00",
+    "bytes": 6988,
+    "sha256": "4E94DFFEECF4F03FEEA4B5EDEC5AD4CB63240C514DE6ACEE3881870A850EDEDE"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\zh_cn.json",
+    "lastWrite": "2026-11-03T19:54:01.4477820+08:00",
+    "bytes": 9050,
+    "sha256": "E939A57CACB703858A9AE743AAFE18D78B46207246C39D4DC9CAAB1F16959802"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\domain\\water_bubble_v3_1.png",
+    "lastWrite": "2026-11-03T18:50:52.6983083+08:00",
+    "bytes": 195,
+    "sha256": "A4718E3E51F9CE19CB2D95D8E0E2A1AB2BCF007F98C12569A379FE069836EAC2"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\domain\\water_flow_v3_1.png",
+    "lastWrite": "2026-11-03T19:05:22.2740158+08:00",
+    "bytes": 1207,
+    "sha256": "D91EA9441D1CF55B048D370E9C45A0349DAD5F8CA41AAB35931418054DAB1CCB"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\data\\forge\\tags\\fluid_types\\water.json",
+    "lastWrite": "2026-11-03T19:54:01.1687691+08:00",
+    "bytes": 76,
+    "sha256": "D4D649EE95164FE6DF86B432402E08CE11DBFCD25E0BB8364732DFC971C1443C"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\data\\minecraft\\tags\\blocks\\water.json",
+    "lastWrite": "2026-11-03T19:54:00.7713502+08:00",
+    "bytes": 76,
+    "sha256": "D4D649EE95164FE6DF86B432402E08CE11DBFCD25E0BB8364732DFC971C1443C"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\data\\minecraft\\tags\\fluids\\water.json",
+    "lastWrite": "2026-11-03T22:55:35.6165831+08:00",
+    "bytes": 119,
+    "sha256": "E565F7113B1647AB0F5BCEA0690E5ACE5FDCE30D93CC3E98ECC50ACE0300D1C3"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\xueximod.mixins.json",
+    "lastWrite": "2026-11-03T21:44:30.3248207+08:00",
+    "bytes": 2058,
+    "sha256": "7B9D60B44A983F69601366846BA60D966FE5F09546455AD39C940E1470ADA8BA"
+  }
+]

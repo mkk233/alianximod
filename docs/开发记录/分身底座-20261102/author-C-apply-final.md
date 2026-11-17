@@ -1,0 +1,14 @@
+我先完整读这份接入任务，再按其中的授权范围执行。任务是把已收束的 A/B/C 候选接入正式源码，并改用 A 提供的 `handleFor`。我先核对三方最终报告和现行文件哈希，确认没有别人还在写。正式目标里还没有这批分身文件。先把已核对过的新文件写入 `src/main`，修改类文件等快照后再覆盖。剩下两份核心运行文件比较长，按候选原文写入正式源码。分身底座这一批已经写入正式 `src/main`。这是候选接入，不是正式复审。**待统一编译。游戏未测。** C 停止写入，并释放写锁。
+
+A 的 20 个 core 文件、B 的 6 个 action 文件和 `CloneBalance.java` 已按最终完成清单进入正式源码，C 没有改它们的逻辑。C 自己的新增文件、20 个既有文件增量和中英语言键也已接上。`/shu clone respond` 先调用 `CloneService.handleFor`；找不到本人句柄时回「不在本人索引」，不再使用 session 0、代次 1 的占位句柄。
+
+配置接线是：`CloneTechniqueRegistry.registerAll` 在释放定义之前调用一次，`CloneBalance.declareSpecials` 在专项声明里调用一次，`DAMAGE_HOSTS` 只加入脉冲 ID。伤害倍率只走现有的一次结算。世界配置下次开世界生效，命令回执里的实扣由 A 的生成结果给出。
+
+留给后续复核、本次没有改 A/B 的衔接：
+
+- A 的 `CloneEntity.generation()` 已存在，组帧时会读它。B 的准备仍只拒绝帧上代次小于 1。A 的 `request` 会用真实句柄再验代次和 session。
+- 取消时 B 使用 `BUSY`，文字是「这次响应已经取消」。没有扩展枚举。
+- 没有准备结果上的射程读取口。射程由 B 在同一次准备里用已读取的脉冲射程判断。
+- 渲染器使用 `HumanoidModel` 加原版僵尸层和原版僵尸贴图。客户端注册只在 `ClientModEvents` 内。
+
+`tools/check-name-gate.ps1` 没有跑起来，shell 在进程启动前被拒绝。没有禁用门禁，也没有把未跑写成通过。记录在 `docs/开发记录/分身底座-20261102/naming-gate.log`。接入前哈希沿用清单和作者证据；接入后的 sha256 与 mtime 没有重算，`before-apply/` 没有写成原始字节。明细在同目录的 `author-C-apply-report.md`、`author-C-apply-evidence.json` 和 `final-source-manifest.json`。两份核心文件已经落盘。我先核对结尾是否和候选一致，再决定要不要改。[Copy two core Java files](3d03dca5-5057-49df-8682-195d677ef536) 写入的 `CloneRuntime.java` 和 `CloneService.java` 结尾与候选一致，分别停在 `OwnerRecord` 和 `Attempt.refundOnce` 的闭合括号。没有需要再改的内容。

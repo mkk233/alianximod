@@ -1,0 +1,92 @@
+{
+  "copied": 25,
+  "visible_strips": 15,
+  "comparisons": [
+    {
+      "label": "loop cape vs part strip",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "loop cape vs old furnace sheet",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "loop rear vs old furnace sheet",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "loop hand vs old furnace sheet",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "shoulder right",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "shoulder left",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "abdomen right",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "abdomen left",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "hip left",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "shin right",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "shin left",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "hand embers right",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "hand embers left",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "body embers",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "entry cape",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "entry rear",
+      "matched": true,
+      "detail": 0
+    },
+    {
+      "label": "entry hand",
+      "matched": true,
+      "detail": 0
+    }
+  ],
+  "mount_has_helper": false
+}

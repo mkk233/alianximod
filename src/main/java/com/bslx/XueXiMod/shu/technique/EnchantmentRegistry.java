@@ -12,10 +12,11 @@ public final class EnchantmentRegistry {
 
     public static void register(EnchantmentDefinition definition) {
         DEFINITIONS.put(definition.id(), definition);
+        ChainStructureEpoch.changed();
     }
 
     @Nullable
-    public static EnchantmentDefinition get(String id) {
-        return DEFINITIONS.get(id);
+    public static EnchantmentDefinition get(String enchantmentId) {
+        return DEFINITIONS.get(enchantmentId);
     }
 }

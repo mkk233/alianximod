@@ -1,0 +1,25 @@
+{
+  "batchId": "cooperative-slash-20261103",
+  "taskId": "impl-integration",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "interfaces_then_integration",
+  "authorization": "用户2026-11-04四项返修及指定新的世界距离调整；C远距核心最终已收束，I原作者完成距离声明/必要整合/配置文档及指定世界仅两键备份修改。V/C停写，火聊天三文件释放，禁止编译与额外复审",
+  "inputVersion": "design-round-2+clone-range-final+user-world-path-20261104",
+  "recordPath": "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/CooperativeContent.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/FamilyExecutionService.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/CooperativeChainCompiler.java",
+    "D:/alianximod/docs/配置平衡指南.md",
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/游戏实测说明.md",
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/integration-delivery.md",
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/integration-gameplay-final-20261104-delivery.md",
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/world-config-backup/",
+    "D:/alianximod/run/saves/新的世界/serverconfig/xueximod-balance.json"
+  ],
+  "dependencies": [
+    "impl-clone",
+    "impl-visual"
+  ]
+}

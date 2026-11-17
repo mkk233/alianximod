@@ -1,0 +1,3 @@
+nodes=85 groups=[2, 21, 15, 3, 2, 19, 23] maxRadius=674.5190879434028 rawEdges=48 uniqueEdges=48 routes=95 minZoom=0.75 maxZoom=2.0 overlaps=0 altar=0 nodeHits=0 crossings=0
+layoutMillis=166.1338
+Production Font.width with vanilla UnihexProvider.Glyph and cached CJK size overrides; no live resource-pack snapshot

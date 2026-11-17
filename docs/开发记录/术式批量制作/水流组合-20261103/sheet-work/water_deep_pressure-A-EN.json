@@ -1,0 +1,874 @@
+{
+  "sheet": "已完成",
+  "row": 26,
+  "range": "A:EN",
+  "columnCount": 144,
+  "B": "water_deep_pressure",
+  "A": "深海重压",
+  "cells": [
+    {
+      "col": "A",
+      "header1": "术式",
+      "header2": "名称",
+      "value": "深海重压"
+    },
+    {
+      "col": "B",
+      "header1": "",
+      "header2": "编号",
+      "value": "water_deep_pressure"
+    },
+    {
+      "col": "C",
+      "header1": "",
+      "header2": "类型",
+      "value": "领域附魔"
+    },
+    {
+      "col": "D",
+      "header1": "",
+      "header2": "属性",
+      "value": "水"
+    },
+    {
+      "col": "E",
+      "header1": "",
+      "header2": "基础伤害",
+      "value": "0"
+    },
+    {
+      "col": "F",
+      "header1": "",
+      "header2": "基础冷却tick",
+      "value": "80"
+    },
+    {
+      "col": "G",
+      "header1": "",
+      "header2": "等级上限",
+      "value": "20"
+    },
+    {
+      "col": "H",
+      "header1": "",
+      "header2": "复杂度",
+      "value": "10"
+    },
+    {
+      "col": "I",
+      "header1": "",
+      "header2": "登记弹速",
+      "value": "0"
+    },
+    {
+      "col": "J",
+      "header1": "",
+      "header2": "附魔",
+      "value": "否"
+    },
+    {
+      "col": "K",
+      "header1": "",
+      "header2": "装配消耗",
+      "value": "0"
+    },
+    {
+      "col": "L",
+      "header1": "",
+      "header2": "登记魔力",
+      "value": "40"
+    },
+    {
+      "col": "M",
+      "header1": "",
+      "header2": "可接受附魔",
+      "value": "是"
+    },
+    {
+      "col": "N",
+      "header1": "",
+      "header2": "功能描述",
+      "value": "低矮的重压领域。里面的人变慢、变潮湿，氧气消耗加快"
+    },
+    {
+      "col": "O",
+      "header1": "",
+      "header2": "特效",
+      "value": "WaterFormEffect"
+    },
+    {
+      "col": "P",
+      "header1": "释放",
+      "header2": "释放种类",
+      "value": "命中体"
+    },
+    {
+      "col": "Q",
+      "header1": "",
+      "header2": "释放标签",
+      "value": "触发"
+    },
+    {
+      "col": "R",
+      "header1": "",
+      "header2": "弹道",
+      "value": "直线"
+    },
+    {
+      "col": "S",
+      "header1": "",
+      "header2": "链上角色",
+      "value": "攻击"
+    },
+    {
+      "col": "T",
+      "header1": "",
+      "header2": "移动中的命中体",
+      "value": "否"
+    },
+    {
+      "col": "U",
+      "header1": "",
+      "header2": "命中体存活tick",
+      "value": "200"
+    },
+    {
+      "col": "V",
+      "header1": "",
+      "header2": "飞行速度",
+      "value": "0"
+    },
+    {
+      "col": "W",
+      "header1": "",
+      "header2": "厚度",
+      "value": "0"
+    },
+    {
+      "col": "X",
+      "header1": "",
+      "header2": "双重释放再拉段数",
+      "value": "0"
+    },
+    {
+      "col": "Y",
+      "header1": "",
+      "header2": "接受持续索敌",
+      "value": "否"
+    },
+    {
+      "col": "Z",
+      "header1": "",
+      "header2": "接受出手初瞄",
+      "value": "否"
+    },
+    {
+      "col": "AA",
+      "header1": "",
+      "header2": "出手后不再跟随",
+      "value": "否"
+    },
+    {
+      "col": "AB",
+      "header1": "",
+      "header2": "必须手持剑",
+      "value": "否"
+    },
+    {
+      "col": "AC",
+      "header1": "",
+      "header2": "整组提交",
+      "value": "否"
+    },
+    {
+      "col": "AD",
+      "header1": "",
+      "header2": "使用弧带",
+      "value": "否"
+    },
+    {
+      "col": "AE",
+      "header1": "",
+      "header2": "推进拍号",
+      "value": "否"
+    },
+    {
+      "col": "AF",
+      "header1": "",
+      "header2": "弧带半径",
+      "value": "2.4"
+    },
+    {
+      "col": "AG",
+      "header1": "",
+      "header2": "弧带半宽",
+      "value": "0.16"
+    },
+    {
+      "col": "AH",
+      "header1": "",
+      "header2": "接受弹道改写",
+      "value": "否"
+    },
+    {
+      "col": "AI",
+      "header1": "",
+      "header2": "为下一段指定目标",
+      "value": "否"
+    },
+    {
+      "col": "AJ",
+      "header1": "",
+      "header2": "为下一段改为垂落",
+      "value": "否"
+    },
+    {
+      "col": "AK",
+      "header1": "",
+      "header2": "弹道可被修改",
+      "value": "否"
+    },
+    {
+      "col": "AL",
+      "header1": "",
+      "header2": "操纵世界剑",
+      "value": "否"
+    },
+    {
+      "col": "AM",
+      "header1": "",
+      "header2": "拒绝与其他段同链",
+      "value": "否"
+    },
+    {
+      "col": "AN",
+      "header1": "",
+      "header2": "自身能量倍率",
+      "value": "1"
+    },
+    {
+      "col": "AO",
+      "header1": "",
+      "header2": "挂到后续的能量倍率",
+      "value": "1"
+    },
+    {
+      "col": "AP",
+      "header1": "",
+      "header2": "显式魔力",
+      "value": "0"
+    },
+    {
+      "col": "AQ",
+      "header1": "",
+      "header2": "蓄力tick",
+      "value": "0"
+    },
+    {
+      "col": "AR",
+      "header1": "",
+      "header2": "旧档·出手先扣水势",
+      "value": "0"
+    },
+    {
+      "col": "AS",
+      "header1": "",
+      "header2": "场地半径",
+      "value": "0"
+    },
+    {
+      "col": "AT",
+      "header1": "",
+      "header2": "治疗量",
+      "value": "0"
+    },
+    {
+      "col": "AU",
+      "header1": "",
+      "header2": "治疗打在施法者",
+      "value": "否"
+    },
+    {
+      "col": "AV",
+      "header1": "",
+      "header2": "牵引强度",
+      "value": "0"
+    },
+    {
+      "col": "AW",
+      "header1": "",
+      "header2": "旧档·命中附加潮湿",
+      "value": "0"
+    },
+    {
+      "col": "AX",
+      "header1": "",
+      "header2": "命中灭火",
+      "value": "否"
+    },
+    {
+      "col": "AY",
+      "header1": "",
+      "header2": "挡住移动",
+      "value": "否"
+    },
+    {
+      "col": "AZ",
+      "header1": "",
+      "header2": "压力脉冲",
+      "value": "0"
+    },
+    {
+      "col": "BA",
+      "header1": "",
+      "header2": "侵蚀脉冲",
+      "value": "0"
+    },
+    {
+      "col": "BB",
+      "header1": "",
+      "header2": "水平击退",
+      "value": "0"
+    },
+    {
+      "col": "BC",
+      "header1": "",
+      "header2": "向上抛",
+      "value": "0"
+    },
+    {
+      "col": "BD",
+      "header1": "",
+      "header2": "卸力比例",
+      "value": "0"
+    },
+    {
+      "col": "BE",
+      "header1": "",
+      "header2": "减速时长tick",
+      "value": "0"
+    },
+    {
+      "col": "BF",
+      "header1": "",
+      "header2": "到期爆发伤害",
+      "value": "0"
+    },
+    {
+      "col": "BG",
+      "header1": "",
+      "header2": "外观编号",
+      "value": "5"
+    },
+    {
+      "col": "BH",
+      "header1": "",
+      "header2": "曲线函数",
+      "value": ""
+    },
+    {
+      "col": "BI",
+      "header1": "",
+      "header2": "外形",
+      "value": "方盒"
+    },
+    {
+      "col": "BJ",
+      "header1": "",
+      "header2": "宽度倍数",
+      "value": "1"
+    },
+    {
+      "col": "BK",
+      "header1": "",
+      "header2": "长度倍数",
+      "value": "1"
+    },
+    {
+      "col": "BL",
+      "header1": "",
+      "header2": "能量放大长度",
+      "value": "是"
+    },
+    {
+      "col": "BM",
+      "header1": "",
+      "header2": "能量放大宽度",
+      "value": "是"
+    },
+    {
+      "col": "BN",
+      "header1": "",
+      "header2": "能量放大高度",
+      "value": "是"
+    },
+    {
+      "col": "BO",
+      "header1": "",
+      "header2": "能量放大模型",
+      "value": "是"
+    },
+    {
+      "col": "BP",
+      "header1": "",
+      "header2": "同锚点分道显示",
+      "value": "否"
+    },
+    {
+      "col": "BQ",
+      "header1": "",
+      "header2": "旧档·每份预留重水",
+      "value": "0"
+    },
+    {
+      "col": "BR",
+      "header1": "",
+      "header2": "旧档·重压潮湿门槛",
+      "value": "0"
+    },
+    {
+      "col": "BS",
+      "header1": "",
+      "header2": "承接来袭弹",
+      "value": "否"
+    },
+    {
+      "col": "BT",
+      "header1": "",
+      "header2": "场地生成消耗",
+      "value": "0"
+    },
+    {
+      "col": "BU",
+      "header1": "",
+      "header2": "场地维持消耗",
+      "value": "8"
+    },
+    {
+      "col": "BV",
+      "header1": "",
+      "header2": "场地维持周期",
+      "value": "20"
+    },
+    {
+      "col": "BW",
+      "header1": "",
+      "header2": "场地寿命tick",
+      "value": "200"
+    },
+    {
+      "col": "BX",
+      "header1": "护体",
+      "header2": "护体类型键",
+      "value": ""
+    },
+    {
+      "col": "BY",
+      "header1": "",
+      "header2": "护体寿命tick",
+      "value": ""
+    },
+    {
+      "col": "BZ",
+      "header1": "",
+      "header2": "护体生成消耗",
+      "value": ""
+    },
+    {
+      "col": "CA",
+      "header1": "",
+      "header2": "护体维持消耗",
+      "value": ""
+    },
+    {
+      "col": "CB",
+      "header1": "",
+      "header2": "护体维持周期",
+      "value": ""
+    },
+    {
+      "col": "CC",
+      "header1": "",
+      "header2": "护体卸力",
+      "value": ""
+    },
+    {
+      "col": "CD",
+      "header1": "",
+      "header2": "护体半径",
+      "value": ""
+    },
+    {
+      "col": "CE",
+      "header1": "",
+      "header2": "护体带宽",
+      "value": ""
+    },
+    {
+      "col": "CF",
+      "header1": "",
+      "header2": "护体身体高度",
+      "value": ""
+    },
+    {
+      "col": "CG",
+      "header1": "",
+      "header2": "护体基础倾角",
+      "value": ""
+    },
+    {
+      "col": "CH",
+      "header1": "屏障",
+      "header2": "屏障宽",
+      "value": ""
+    },
+    {
+      "col": "CI",
+      "header1": "",
+      "header2": "屏障高",
+      "value": ""
+    },
+    {
+      "col": "CJ",
+      "header1": "",
+      "header2": "屏障厚",
+      "value": ""
+    },
+    {
+      "col": "CK",
+      "header1": "",
+      "header2": "屏障前移",
+      "value": ""
+    },
+    {
+      "col": "CL",
+      "header1": "",
+      "header2": "屏障寿命tick",
+      "value": ""
+    },
+    {
+      "col": "CM",
+      "header1": "",
+      "header2": "屏障生成消耗",
+      "value": ""
+    },
+    {
+      "col": "CN",
+      "header1": "",
+      "header2": "屏障维持消耗",
+      "value": ""
+    },
+    {
+      "col": "CO",
+      "header1": "",
+      "header2": "屏障维持周期",
+      "value": ""
+    },
+    {
+      "col": "CP",
+      "header1": "",
+      "header2": "屏障衰减",
+      "value": ""
+    },
+    {
+      "col": "CQ",
+      "header1": "",
+      "header2": "屏障承接来袭弹",
+      "value": ""
+    },
+    {
+      "col": "CR",
+      "header1": "领域",
+      "header2": "领域宽",
+      "value": "7"
+    },
+    {
+      "col": "CS",
+      "header1": "",
+      "header2": "领域深",
+      "value": "7"
+    },
+    {
+      "col": "CT",
+      "header1": "",
+      "header2": "领域高",
+      "value": "3"
+    },
+    {
+      "col": "CU",
+      "header1": "",
+      "header2": "领域初始消耗",
+      "value": "40"
+    },
+    {
+      "col": "CV",
+      "header1": "",
+      "header2": "领域维持消耗",
+      "value": "8"
+    },
+    {
+      "col": "CW",
+      "header1": "",
+      "header2": "领域维持周期",
+      "value": "20"
+    },
+    {
+      "col": "CX",
+      "header1": "",
+      "header2": "领域寿命tick",
+      "value": "200"
+    },
+    {
+      "col": "CY",
+      "header1": "",
+      "header2": "领域边界",
+      "value": "开放"
+    },
+    {
+      "col": "CZ",
+      "header1": "",
+      "header2": "领域外观",
+      "value": "重压"
+    },
+    {
+      "col": "DA",
+      "header1": "",
+      "header2": "达级自动学会",
+      "value": "是"
+    },
+    {
+      "col": "DB",
+      "header1": "",
+      "header2": "领域效果键",
+      "value": "deep_pressure"
+    },
+    {
+      "col": "DC",
+      "header1": "",
+      "header2": "旧档·潮湿周期tick",
+      "value": "10"
+    },
+    {
+      "col": "DD",
+      "header1": "",
+      "header2": "旧档·潮湿每次加点",
+      "value": "4"
+    },
+    {
+      "col": "DE",
+      "header1": "",
+      "header2": "旧档·潮湿延迟tick",
+      "value": "10"
+    },
+    {
+      "col": "DF",
+      "header1": "",
+      "header2": "旧档·水势周期tick",
+      "value": "20"
+    },
+    {
+      "col": "DG",
+      "header1": "",
+      "header2": "旧档·水势每次加点",
+      "value": "0"
+    },
+    {
+      "col": "DH",
+      "header1": "",
+      "header2": "旧档·水势延迟tick",
+      "value": "20"
+    },
+    {
+      "col": "DI",
+      "header1": "",
+      "header2": "旧档·减速等级",
+      "value": "0"
+    },
+    {
+      "col": "DJ",
+      "header1": "",
+      "header2": "旧档·领域减速时长tick",
+      "value": "20"
+    },
+    {
+      "col": "DK",
+      "header1": "",
+      "header2": "旧档·减速周期tick",
+      "value": "10"
+    },
+    {
+      "col": "DL",
+      "header1": "",
+      "header2": "旧档·减速延迟tick",
+      "value": "10"
+    },
+    {
+      "col": "DM",
+      "header1": "",
+      "header2": "耗氧倍率",
+      "value": "2"
+    },
+    {
+      "col": "DN",
+      "header1": "附魔累积",
+      "header2": "附魔效果键",
+      "value": ""
+    },
+    {
+      "col": "DO",
+      "header1": "",
+      "header2": "附魔初始层数",
+      "value": ""
+    },
+    {
+      "col": "DP",
+      "header1": "",
+      "header2": "附魔半径基数",
+      "value": ""
+    },
+    {
+      "col": "DQ",
+      "header1": "",
+      "header2": "附魔时长基数",
+      "value": ""
+    },
+    {
+      "col": "DR",
+      "header1": "",
+      "header2": "附魔半径倍率",
+      "value": ""
+    },
+    {
+      "col": "DS",
+      "header1": "",
+      "header2": "附魔时长倍率",
+      "value": ""
+    },
+    {
+      "col": "DT",
+      "header1": "",
+      "header2": "附魔伤害倍率",
+      "value": ""
+    },
+    {
+      "col": "DU",
+      "header1": "",
+      "header2": "附魔速度倍率",
+      "value": ""
+    },
+    {
+      "col": "DV",
+      "header1": "备注",
+      "header2": "备注",
+      "value": ""
+    },
+    {
+      "col": "DW",
+      "header1": "资源与状态",
+      "header2": "配置启用",
+      "value": "是"
+    },
+    {
+      "col": "DX",
+      "header1": "",
+      "header2": "资源",
+      "value": ""
+    },
+    {
+      "col": "DY",
+      "header1": "",
+      "header2": "状态",
+      "value": "潮湿"
+    },
+    {
+      "col": "DZ",
+      "header1": "",
+      "header2": "操作",
+      "value": "增加"
+    },
+    {
+      "col": "EA",
+      "header1": "",
+      "header2": "作用对象",
+      "value": "领域内敌对活物"
+    },
+    {
+      "col": "EB",
+      "header1": "",
+      "header2": "触发时机",
+      "value": "领域周期"
+    },
+    {
+      "col": "EC",
+      "header1": "",
+      "header2": "数值",
+      "value": "4"
+    },
+    {
+      "col": "ED",
+      "header1": "",
+      "header2": "状态amplifier",
+      "value": ""
+    },
+    {
+      "col": "EE",
+      "header1": "",
+      "header2": "寿命策略",
+      "value": "固定刷新"
+    },
+    {
+      "col": "EF",
+      "header1": "",
+      "header2": "寿命tick",
+      "value": "1000"
+    },
+    {
+      "col": "EG",
+      "header1": "",
+      "header2": "周期tick",
+      "value": "10"
+    },
+    {
+      "col": "EH",
+      "header1": "",
+      "header2": "首次延迟tick",
+      "value": "10"
+    },
+    {
+      "col": "EI",
+      "header1": "",
+      "header2": "计量单位",
+      "value": "每次触发"
+    },
+    {
+      "col": "EJ",
+      "header1": "",
+      "header2": "生效条件",
+      "value": ""
+    },
+    {
+      "col": "EK",
+      "header1": "",
+      "header2": "结算约束",
+      "value": ""
+    },
+    {
+      "col": "EL",
+      "header1": "",
+      "header2": "迁移来源",
+      "value": "DC:DE"
+    },
+    {
+      "col": "EM",
+      "header1": "",
+      "header2": "关联说明",
+      "value": ""
+    },
+    {
+      "col": "EN",
+      "header1": "",
+      "header2": "附加明细键",
+      "value": "water_deep_pressure"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "writesSettled": true,
+  "exitCode": 0,
+  "compileJava": "executed",
+  "upToDateTasks": ["extractSrg", "createMcpToSrg"],
+  "executedTasks": ["downloadMcpConfig", "compileJava"],
+  "actionableTasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "startedAt": "2026-11-03T15:39:43.983+08:00",
+  "endedAt": "2026-11-03T15:40:12.387+08:00",
+  "lastSourceWrite": "2026-11-03T15:33:34.665+08:00",
+  "inputStable": true,
+  "srcMainFileCount": 1238,
+  "srcMainManifestSha256": "3d497b904911a587421384dddde3b6616f1d223d5886567a8a83d7aa39dc9724",
+  "nameFilesManifestSha256": "106b6bfafaeea17ae6ae955436c85b44a47dce11a2cb70cfe116045c0a57686f",
+  "warnings": {
+    "count": 45,
+    "kind": "deprecation",
+    "summary": "ResourceLocation 构造器待删除，以及 HitVolumes 的 ProjectileImpactEvent.setCanceled 待删除。不在本次改名的三个 Java 文件里。",
+    "fixed": false
+  },
+  "blockers": null,
+  "gameAcceptance": false,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "javaHome": "C:/Program Files/Java/jdk-17",
+  "gradleUserHome": "C:/Users/baishang/.gradle",
+  "files": [
+    {
+      "path": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/compile-gradle.log",
+      "bytes": 17377,
+      "mtime": "2026-11-03T15:40:12.339+08:00",
+      "sha256": "0e538f684ab4643e258576f8094378a2eeddeec8c8cbf6d7b0c0a116f3aaa5b6"
+    },
+    {
+      "path": "D:/alianximod/docs/开发记录/让锋断潮名称整合-20261103/compile-report.md",
+      "bytes": 3941,
+      "mtime": "2026-11-03T15:41:09.555+08:00",
+      "sha256": "018f77d03fc85a0fee5c64dc246dd1e8906054a5db698d097511baa71749080a"
+    }
+  ]
+}

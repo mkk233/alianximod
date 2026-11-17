@@ -1,0 +1,37 @@
+我先完整读取这份后续任务说明，再按其中的只读范围核对伤害与跟随事实。任务是补伤害入口的事实。我只核对 `TechniqueHits`、`DamagePermission` 和伤害来源实体这几处签名与副作用。只读补充。未改文件。`ConfiguredDamage` 本身不造成伤害，三条分类方法也都不会打开 `ReleaseBatch.Tally`。
+
+## 签名与方法体
+
+`DamagePermission.allows(ServerPlayer caster, LivingEntity target)`（`DamagePermission.java` 12–25）在进入 `hurt` 之前过滤：空、死亡、旁观、已移除为假；`target == caster` 或 UUID 相同为假；`target.isInvulnerable()` 为假。这是实体无敌标记，不是受伤后的 `invulnerableTime`。目标是 `Player` 时返回 `caster.canHarmPlayer(playerTarget)`，否则为真。这里不调用 `hurt`，不改无敌帧，不产生领域、潮印或火种。
+
+`ConfiguredDamage`（`ConfiguredDamage.java` 10–60）只有 `amount()`、`plus`、`timesHitCount`。注释写明倍率已经各乘过一次。它没有伤害方法，也没有施法者字段。
+
+`TechniqueHits` 的布尔包装只返回 `HitVerdict.grantsSeeds()`，也就是只有 `DAMAGE_ACCEPTED` 为真（`HitVerdict.java` 21–22）。
+
+`classifyRoot(LivingEntity, ServerPlayer, float)`（109–110）固定潮印为 `NONE`。四参版本（113–116）先 `DomainAuraResolver.merge(amount, player, Kind.ROOT_TECHNIQUE)`，再 `classifyHit(..., Landing.BYPASS_INVULNERABILITY, tide)`。`merge`（`DomainAuraResolver.java` 13–21）在攻击者仍处于允许的领域内时，把一份最大领域附加加进金额。
+
+`classifyHit(..., Landing, TideMarkSuccess)`（63–105）：非有限或负数直接无效。恰好 0 走 `finiteZeroVerdict`，那里才调用 `DamagePermission.allows`（230–234），通过则 `ESTABLISHED_NO_DAMAGE`，不调用 `hurt`。正数不查 `DamagePermission`，也不拒绝自己。`Landing.RESPECT_INVULNERABILITY` 直接 `hurt`；其他值先把 `invulnerableTime` 置 0，打完再取 `max(原值, 当前值)`，原值大于 10 时还抬高 `lastHurt`。潮印用 `TideMarkDamageScope.open`：条数不大于 0 时不建帧（19–21）。
+
+`classifyRespecting(LivingEntity, ServerPlayer, float, TideMarkSuccess)`（123–150）：空、死亡、已移除、旁观，或与 `player` UUID 相同，返回无效。恰好 0 同样走权限。正数不清 `invulnerableTime`，直接 `playerAttack`。潮印用 `watch`：即使 `NONE` 也建帧（32–39）。`finishReading` 在伤害事件被取消时返回无效；正伤才 `DAMAGE_ACCEPTED`。`finish` 只有条数大于 0 且事件最终正伤时才 `contribution.grant`（91–119，`TideMarkSuccess.grant` 54–72）：潮湿和水势。`NONE` 的 `grant` 立即返回。
+
+`classifyConfirmed(LivingEntity, ServerPlayer, float, Landing, TideMarkSuccess)`（163–187）：`blockedConfirmation`（238–248）要求金额有限非负；恰好 0 走权限；`landing` 不是 `RESPECT_INVULNERABILITY` 则无效且不打。正数不查权限、不拒绝自己、不清无敌帧，然后 `watch` 加 `playerAttack`。另一个带 `ConfirmedDamage` 的重载（194–223）只多做扣血跟踪，伤害路径相同。注释写明领域附加由调用方合并，本方法不调用 `merge`。
+
+## 只传 `amount()` 时现成入口能满足什么
+
+三条方法都不读写 `Tally`，也不调用 `FireSeedGrant`。`grantsSeeds()` 只是裁决标记，火种要调用方另存。
+
+同时满足「只用这个金额、正常无敌帧、不混账本」的是：
+
+- `classifyRespecting(target, player, configured.amount(), TideMarkSuccess.NONE)`。副作用是原版 `hurt`，以及一条零潮印监视。正数不走 `DamagePermission`；自己被 UUID 拒绝；友方不在这里用 `canHarmPlayer` 拒绝。
+- `classifyConfirmed(target, player, configured.amount(), Landing.RESPECT_INVULNERABILITY, TideMarkSuccess.NONE)`。同样不清无敌帧、不加领域、不进账本。正数也不走 `DamagePermission`，并且不拒绝自己。`landing` 传错会直接无效。
+- `classifyHit(..., Landing.RESPECT_INVULNERABILITY, TideMarkSuccess.NONE)` 也不清帧、不加领域、不进账本。`NONE` 时 `open` 不建潮印帧。正数仍不走权限，也不拒绝自己。默认重载是 `BYPASS_INVULNERABILITY`。
+
+`classifyRoot` 不满足：它加领域附加，并且绕过无敌帧。`LiaoliEffect` 128–138 行先 `allows` 再 `hurtRoot`，所以权限有了，无敌帧和领域条件仍不满足。
+
+正数要既有权限，调用点自己先 `DamagePermission.allows`，再进上面三条之一。权限通过后，`hurt` 仍会发原版受击和 Forge `LivingHurtEvent`。模组里 `FireRuntimeEvents.onHurt` 只在已经打开的元素帧里改数额；`ReleaseBaseEvents.onHurt` 只在受害者本人是 `ServerPlayer` 时做场地或守护减伤。这两处都不放新术式，也不写账本。
+
+## 伤害来源与拒绝
+
+这些分类方法都调用 `target.level().damageSources().playerAttack(player)`（80、87、139、176 行）。参数只有这一名 `ServerPlayer`，没有单独的直接实体或分身实体。仓库内没有再包 `DamageSource`。1.20.1 的 `playerAttack(Player)` 使用 `PLAYER_ATTACK`，单实体构造把 `getDirectEntity()` 和 `getEntity()` 都设成这名玩家；本仓库未附带该类源文件。因此直接实体和致伤实体当前都是主人玩家，不是另一个 actor。
+
+拒绝分层：`allows` 拒绝自己、旁观、死亡、移除、`isInvulnerable()`，以及 `canHarmPlayer` 为假的玩家。`canHarmPlayer` 是原版队伍友好火规则，非玩家目标不查它。`classifyRespecting` 只额外拒绝相同 UUID，不调用 `canHarmPlayer`。`classifyHit` 与 `classifyConfirmed` 的正数路径连自己都不拒绝。创造模式等原版 `hurt` 拒绝发生在 `playerAttack` 进入 `LivingEntity.hurt` 之后，不在这几个方法体里。

@@ -1,0 +1,1 @@
+继续原A任务。你已读过足够上下文，立即只实现原implement-contract-task.md两文件及shared-contract.md规定的3个expiry helper；不要再读其他模块来找代码风格。资格/路由仍等用户，无需现在实现。record不符合命名门禁时用最小不可变final类保持同API即可，不能因此扩改。不要Gradle，写contract-report.md后结束。

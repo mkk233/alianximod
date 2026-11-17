@@ -1,0 +1,87 @@
+[
+  {
+    "name": "side-west-dust",
+    "time": 0.65,
+    "camera": [
+      -182,
+      83,
+      0
+    ],
+    "target": [
+      0,
+      -8,
+      0
+    ],
+    "fov": 38,
+    "realViewport": "main",
+    "cameraPlaneUpdated": true
+  },
+  {
+    "name": "side-west-clear",
+    "time": 1.4,
+    "camera": [
+      -182,
+      83,
+      0
+    ],
+    "target": [
+      0,
+      -8,
+      0
+    ],
+    "fov": 38,
+    "realViewport": "main",
+    "cameraPlaneUpdated": true
+  },
+  {
+    "name": "top-dust",
+    "time": 0.65,
+    "camera": [
+      0.1,
+      232,
+      0.05
+    ],
+    "target": [
+      0,
+      -8,
+      0
+    ],
+    "fov": 33,
+    "realViewport": "main",
+    "cameraPlaneUpdated": true
+  },
+  {
+    "name": "top-clear",
+    "time": 1.4,
+    "camera": [
+      0.1,
+      232,
+      0.05
+    ],
+    "target": [
+      0,
+      -8,
+      0
+    ],
+    "fov": 33,
+    "realViewport": "main",
+    "cameraPlaneUpdated": true
+  },
+  {
+    "name": "overall-final",
+    "time": 0.65,
+    "camera": [
+      95,
+      180,
+      110
+    ],
+    "target": [
+      0,
+      -8,
+      0
+    ],
+    "fov": 36,
+    "realViewport": "main",
+    "cameraPlaneUpdated": true
+  }
+]

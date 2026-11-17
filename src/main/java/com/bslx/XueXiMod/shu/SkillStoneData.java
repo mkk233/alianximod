@@ -1,5 +1,6 @@
 package com.bslx.XueXiMod.shu;
 
+import com.bslx.XueXiMod.shu.balance.BalanceDisplay;
 import net.minecraft.nbt.CompoundTag;
 import org.jetbrains.annotations.Nullable;
 
@@ -19,7 +20,7 @@ public class SkillStoneData {
 
     public SkillStoneData(String spellId, ShuAttribute embryoAttribute,
                           float damage, int cooldown, float projectileSpeed) {
-        this.spellId = spellId;
+        this.spellId = TechniqueIds.canonicalId(spellId);
         this.embryoAttribute = embryoAttribute;
         this.damage = damage;
         this.cooldown = cooldown;
@@ -39,6 +40,27 @@ public class SkillStoneData {
     public int getCooldown() { return cooldown; }
     public float getProjectileSpeed() { return projectileSpeed; }
 
+    /** 当前说明。术式还在时按现快照重算；编号已经不在时沿用刻印存档。 */
+    public float displayedDamage() {
+        Technique technique = getTechnique();
+        if (technique == null) {
+            return damage;
+        }
+        ElementReaction reaction = ElementReaction.of(embryoAttribute, technique.getAttribute());
+        float structural = technique.getBaseDamage() * reaction.damageMultiplier();
+        return BalanceDisplay.shownStructuralDamage(technique.getId(), structural);
+    }
+
+    public int displayedCooldown() {
+        Technique technique = getTechnique();
+        if (technique == null) {
+            return cooldown;
+        }
+        ElementReaction reaction = ElementReaction.of(embryoAttribute, technique.getAttribute());
+        int configured = BalanceDisplay.cooldown(technique.getId(), technique.getBaseCooldown());
+        return Math.max(1, Math.round(configured * reaction.cooldownMultiplier()));
+    }
+
     @Nullable
     public Technique getTechnique() {
         return TechniqueManager.getById(spellId);
@@ -49,8 +71,8 @@ public class SkillStoneData {
         return technique != null && isSameAttribute(technique.getAttribute(), embryoAttribute);
     }
 
-    private static boolean isSameAttribute(ShuAttribute a, ShuAttribute b) {
-        return a != null && a != ShuAttribute.NONE && a == b;
+    private static boolean isSameAttribute(ShuAttribute firstAttribute, ShuAttribute secondAttribute) {
+        return firstAttribute != null && firstAttribute != ShuAttribute.NONE && firstAttribute == secondAttribute;
     }
 
     public CompoundTag toNbt() {

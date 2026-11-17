@@ -1,0 +1,109 @@
+{
+  "baselineSha256": "D6865FF326C5D6B0A024D9E727FEA375E6F61AD9E19138452F66D0A4C0F1F8A3",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\blocked-compile-candidate-preserved.xlsx",
+  "candidateSha256": "F2B0C68637BEB17EE92A5CB71734D47D86316E0DF549C8DEB1A7E9506F884E98",
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\备份\\术式制作表-blocked-compile-20261031-060521-1.xlsx",
+  "beforeCounts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "beforeUnique": 60,
+  "archiveCount": 20,
+  "changes": [
+    {
+      "id": "fire_flame_trail",
+      "row": 6,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_meteorite",
+      "row": 7,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_shock_ring",
+      "row": 8,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "rule_surface_anchor",
+      "row": 9,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_upwell",
+      "row": 10,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "rule_stagger",
+      "row": 11,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "rule_hit_continue",
+      "row": 12,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_seed_sow",
+      "row": 13,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_kindle",
+      "row": 14,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_detonate",
+      "row": 15,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_nether_gloom",
+      "row": 16,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "earth_break_ground",
+      "row": 17,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    },
+    {
+      "id": "fire_spark",
+      "row": 18,
+      "from": "制作中",
+      "to": "制作中",
+      "dv": "forced"
+    }
+  ],
+  "userEdits": [],
+  "submitted": false
+}

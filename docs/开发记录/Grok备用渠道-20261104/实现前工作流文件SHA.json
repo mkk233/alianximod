@@ -1,0 +1,32 @@
+[
+  {
+    "path": "AGENTS.md",
+    "sha256": "2CAA9FB8907E8B50E830D9A5BC668ECE7DC6D1B0C6104AD75812566392F657AE",
+    "length": 14085,
+    "lastWriteTimeUtc": "2026-11-02T17:01:56.8467241Z"
+  },
+  {
+    "path": ".grok/scripts/Invoke-CursorTask.ps1",
+    "sha256": "D25FE8528F9B56619BAD709DC74E4E61CC7D0F1236025A45304DE8A49693F762",
+    "length": 63463,
+    "lastWriteTimeUtc": "2026-11-03T02:51:17.3121523Z"
+  },
+  {
+    "path": ".grok/scripts/Test-CursorTask.ps1",
+    "sha256": "09D274D543825254885ECE98BCC3EDD968D5D3FA2957EE33DEEF727A8B0703A5",
+    "length": 50051,
+    "lastWriteTimeUtc": "2026-11-02T17:23:31.5356949Z"
+  },
+  {
+    "path": ".grok/skills/max-dispatch/SKILL.md",
+    "sha256": "014E68EC7A460222F502A037FEA4B4DEA89F0B48A96BB034858C9A08EC280EA7",
+    "length": 19730,
+    "lastWriteTimeUtc": "2026-11-02T17:02:01.8409060Z"
+  },
+  {
+    "path": "docs/统一开发与术式批量制作流程.md",
+    "sha256": "EE3677EC95EB184DC7CCC8FD674E44B382401C7DBEA50876785D52194F10BD79",
+    "length": 61506,
+    "lastWriteTimeUtc": "2026-11-02T17:04:14.2235292Z"
+  }
+]

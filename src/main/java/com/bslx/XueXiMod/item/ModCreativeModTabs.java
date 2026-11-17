@@ -49,12 +49,21 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.nether_ars_ore.get());
                 pOutput.accept(ModItems.ore_sousuo.get());
                 pOutput.accept(ModItems.basic_staff.get());
+                pOutput.accept(ModItems.test_staff.get());
                 pOutput.accept(ModBlocks.zhu_block.get());
                 pOutput.accept(ModItems.shu_canzha.get());
                 pOutput.accept(ModBlocks.IMPRINT_DESK.get());
                 pOutput.accept(ModItems.shu_food.get());
                 pOutput.accept(ModItems.SKILL_BOOK_SWORD.get());
                 pOutput.accept(ModItems.SKILL_BOOK_MAGIC.get());
+                pOutput.accept(ModItems.STUDY_SLIP_MORTAL.get());
+                pOutput.accept(ModItems.STUDY_SLIP_MYSTIC.get());
+                pOutput.accept(ModItems.STUDY_SLIP_TRANSCENDENT.get());
+                pOutput.accept(ModItems.STUDY_SCROLL_SWORD.get());
+                pOutput.accept(ModItems.STUDY_SCROLL_WATER.get());
+                pOutput.accept(ModItems.STUDY_SCROLL_FIRE.get());
+                pOutput.accept(ModItems.DAOZHANG_SPAWN_EGG.get());
+                pOutput.accept(ModBlocks.METEORITE.get());
             })
             .build());
     //存入bus

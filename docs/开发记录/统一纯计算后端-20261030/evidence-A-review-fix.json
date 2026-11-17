@@ -1,0 +1,58 @@
+{
+  "released": true,
+  "author": "A",
+  "sha256": "not-required",
+  "note": "只修 R1 非法路径回退和 R2 涡旋停驻空位置。未改 ABI 数值和 C 源。修后未再审。",
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/compute/ComputeSelection.java",
+      "bytes": 9122,
+      "modifiedUtc": "2026-10-30T09:16:07.011Z"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/compute/ComputeCalls.java",
+      "bytes": 23770,
+      "modifiedUtc": "2026-10-30T09:16:08.428Z"
+    },
+    {
+      "path": "docs/纯计算后端使用说明.md",
+      "bytes": 5217,
+      "modifiedUtc": "2026-10-30T09:16:29.041Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/abi-contract.md",
+      "bytes": 15536,
+      "modifiedUtc": "2026-10-30T09:16:33.823Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/repair-review-A-final.md",
+      "bytes": 2963,
+      "modifiedUtc": "2026-10-30T09:16:56.941Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/evidence-A-review-fix.json",
+      "bytes": 2083,
+      "modifiedUtc": "2026-10-30T09:17:25.846Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/backup-A-review-fix/src/main/java/com/bslx/XueXiMod/shu/compute/ComputeSelection.java",
+      "bytes": 8783,
+      "modifiedUtc": "2026-10-30T08:15:39.391Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/backup-A-review-fix/src/main/java/com/bslx/XueXiMod/shu/compute/ComputeCalls.java",
+      "bytes": 22909,
+      "modifiedUtc": "2026-10-30T08:15:59.284Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/backup-A-review-fix/docs/纯计算后端使用说明.md",
+      "bytes": 4635,
+      "modifiedUtc": "2026-10-30T08:56:35.771Z"
+    },
+    {
+      "path": "docs/开发记录/统一纯计算后端-20261030/backup-A-review-fix/docs/开发记录/统一纯计算后端-20261030/abi-contract.md",
+      "bytes": 14859,
+      "modifiedUtc": "2026-10-30T08:24:08.245Z"
+    }
+  ]
+}

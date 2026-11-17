@@ -1,0 +1,2 @@
+{'木': 14, '土': 11, '金': 7}
+Template: 6 CJK characters, 54px Font.width; frame+badge+name padded envelope at zoom=.75; slots are illustrative, not added techniques.

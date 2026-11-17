@@ -1,0 +1,40 @@
+{
+  "startedUtc": "2026-10-30T04:21:00Z",
+  "endedUtc": "2026-10-30T04:21:00Z",
+  "clockNote": "命令时钟被拒绝。startedUtc 取自任务消息 12:21 UTC+8。endedUtc 没有独立读到，不代表文件 mtime。",
+  "released": true,
+  "author": "B",
+  "model": "grok-4.7-high-fast",
+  "compileRan": false,
+  "finalHashMeasured": false,
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java",
+      "kind": "modified",
+      "beforeSha256": "dcefb7fd6e9aa59ebeacdaf91838881dca268627e80f7f972decdc2c346a5c04",
+      "beforeMtimeUtc": "2026-10-30T03:56:55.403Z",
+      "sha256": null,
+      "mtimeUtc": null,
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-B-stat-notes/src/main/java/com/bslx/XueXiMod/debug/performance/PerfMetric.java"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java",
+      "kind": "modified",
+      "beforeSha256": "e4feead9103572e3b29885220a577f3434d2a9df6751f9e681ad85bf4192de30",
+      "beforeMtimeUtc": "2026-10-30T03:57:27.074Z",
+      "sha256": null,
+      "mtimeUtc": null,
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-B-stat-notes/PerformanceRecorder-note-before.txt",
+      "backupNote": "整文件字节复制被拒绝。备份文件只保存修改前的第 576 行。"
+    },
+    {
+      "path": "docs/性能记录使用说明.md",
+      "kind": "modified",
+      "beforeSha256": "f9b705eca48ab00de131ba08b7020b164001e6a1eb4aa8dbced59f732f12b476",
+      "beforeMtimeUtc": "2026-10-30T03:57:06.785Z",
+      "sha256": null,
+      "mtimeUtc": null,
+      "backup": "docs/开发记录/候选查询复用-20261030/backup-B-stat-notes/docs/性能记录使用说明.md"
+    }
+  ]
+}

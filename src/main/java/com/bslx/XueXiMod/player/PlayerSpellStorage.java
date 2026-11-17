@@ -25,8 +25,8 @@ public final class PlayerSpellStorage {
         SimpleContainer container = new SimpleContainer(SIZE);
         CompoundTag root = player.getPersistentData().getCompound(KEY);
         ListTag list = root.getList("Items", Tag.TAG_COMPOUND);
-        for (int i = 0; i < list.size(); i++) {
-            CompoundTag entry = list.getCompound(i);
+        for (int segmentIndex = 0; segmentIndex < list.size(); segmentIndex++) {
+            CompoundTag entry = list.getCompound(segmentIndex);
             int slot = entry.getByte("Slot") & 255;
             if (slot >= 0 && slot < SIZE) {
                 container.setItem(slot, ItemStack.of(entry));
@@ -37,13 +37,13 @@ public final class PlayerSpellStorage {
 
     public static void save(Player player, SimpleContainer container) {
         ListTag list = new ListTag();
-        for (int i = 0; i < SIZE; i++) {
-            ItemStack stack = container.getItem(i);
+        for (int segmentIndex = 0; segmentIndex < SIZE; segmentIndex++) {
+            ItemStack stack = container.getItem(segmentIndex);
             if (stack.isEmpty()) {
                 continue;
             }
             CompoundTag entry = new CompoundTag();
-            entry.putByte("Slot", (byte) i);
+            entry.putByte("Slot", (byte) segmentIndex);
             stack.save(entry);
             list.add(entry);
         }
@@ -72,11 +72,11 @@ public final class PlayerSpellStorage {
             return;
         }
         ListTag list = tag.getList(SkillStorageData.ITEMS_KEY, Tag.TAG_COMPOUND);
-        for (int i = list.size() - 1; i >= 0; i--) {
-            CompoundTag entry = list.getCompound(i);
+        for (int segmentIndex = list.size() - 1; segmentIndex >= 0; segmentIndex--) {
+            CompoundTag entry = list.getCompound(segmentIndex);
             String spellId = entry.getString("spell_id");
             if (spellId.isEmpty()) {
-                list.remove(i);
+                list.remove(segmentIndex);
                 continue;
             }
             String embryoId = entry.getString("embryo");
@@ -99,7 +99,7 @@ public final class PlayerSpellStorage {
                 moved += accepted;
             }
             if (moved >= count) {
-                list.remove(i);
+                list.remove(segmentIndex);
             } else {
                 entry.putInt("count", count - moved);
             }
@@ -114,6 +114,7 @@ public final class PlayerSpellStorage {
     public static boolean insertOne(Player player, ItemStack stone) {
         SimpleContainer container = load(player);
         migrate(player, container);
+        save(player, container);
         ItemStack one = stone.copy();
         one.setCount(1);
         ItemStack leftover = container.addItem(one);

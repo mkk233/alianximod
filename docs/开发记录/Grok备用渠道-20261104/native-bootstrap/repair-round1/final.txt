@@ -1,0 +1,17 @@
+先读第 1 轮复核和那次真实回执，按其中的触发条件逐项核对，再改误判和 high 未生效的问题。复核里的 1–5 项和真实 stderr 对得上。我按这些触发条件改判断，并先用进程级推理档位配置试 high，不再重复已经失败的 overlay。离线测试已经通过。接下来用 `reasoning_efforts` 做一次进程级探针，不再试已经失败的 `supports_reasoning_effort` 覆盖。进程级 `reasoning_efforts` 覆盖没有去掉忽略警告。接下来只在用户配置的 `grok-4.7` 小节补上推理档位，其余字节不动。第 1–5 项已按复核里的触发条件修好，工具白名单误判也已收窄。`high` 仍不能写成已经生效：进程级 `reasoning_efforts` 覆盖之后，CLI 还是提示忽略 high；改用户 `config.toml` 被执行环境拒绝，所以没有持久修改，也没有降档。
+
+已完成的修复：
+
+- 审批拒绝会同时查看结果正文和 stderr。账户证据路径和同任务周额度路径都会挡住它，包括额度句子和 `Auto-review` 同时出现的情况。
+- `canceled by user` 保持原失败，不会换成 Grok。
+- Grok 审批拒绝即使退出码是 0，也记成 `approval_rejected`，不再当成 `reported_done`。
+- 尚未真正启动的预留 Grok UUID 会用原来的 `--session-id` 重试。可执行文件在写任务状态之前检查。
+- `AGENTS.md` 和 `max-dispatch` 开头已改成与第 11 节相同的两个入口。
+- `unknown tool prefix: Skill` 不再触发 `tool_contract`。真正的 `--tools` 未知工具名仍然失败关闭。
+- 忽略 high 的警告记为 `reasoning_contract`，`reasoningRequested=high`，`reasoningAssurance=ignored`。
+
+`Test-CursorTask.ps1` 最终结果是 `PASS`。第 6 项个人技能没有改。旧回执没有改成成功。`--deny MCPTool` 只拒绝 MCP 工具调用，不表示 CLI 不会初始化 MCP。
+
+<<<CURSOR_TASK_REPORT>>>
+{"workStatus":"blocked","summary":"复核第1–5项和工具白名单误判已修，离线测试通过。进程级 reasoning_efforts 覆盖后 CLI 仍忽略 high；写入用户 config.toml 的 [model.\"grok-4.7\"] 被执行环境拒绝，因此没有持久修改，也不把 high 标成已生效。","changedFiles":["D:/alianximod/.grok/scripts/Invoke-CursorTask.ps1","D:/alianximod/.grok/scripts/Test-CursorTask.ps1","D:/alianximod/AGENTS.md","D:/alianximod/.grok/skills/max-dispatch/SKILL.md","D:/alianximod/docs/统一开发与术式批量制作流程.md","D:/alianximod/docs/开发记录/Grok备用渠道-20261104/实现交付.md","D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/meta.json","D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/probe-prompt.txt","D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/probe-stdout.json","D:/alianximod/docs/开发记录/Grok备用渠道-20261104/high能力修正证据/probe-stderr.log"],"checks":["pwsh -NoProfile -File D:/alianximod/.grok/scripts/Test-CursorTask.ps1 PASS","进程级 reasoning_efforts 探针 exit 0、stopReason end_turn、正文 HIGH_EFFORT_MARKER，stderr 仍忽略 high"],"notRun":["用户 config.toml 未改，故没有改后探针","未重复 supports_reasoning_effort=true 覆盖","无 Gradle、打包、游戏或正式复审","未改个人技能目录","未改旧回执"],"writesSettled":true,"blocker":"CLI 仍报告 grok-4.7-build-fast 没有推理档位并忽略 high。进程级 reasoning_efforts 覆盖无效，执行环境拒绝写入 C:/Users/baishang/.grok/config.toml。","nextAction":"主会话若要让 CLI 接受 high，需在本机 [model.\"grok-4.7\"] 增补 reasoning_efforts 后再做一次无工具探针。个人技能第6项由另一作者修。两作者都停写后做实现第2/3轮。"}
+<<<END_CURSOR_TASK_REPORT>>>

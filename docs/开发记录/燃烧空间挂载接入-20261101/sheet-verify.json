@@ -1,0 +1,42 @@
+{
+  "liveSha256": "CF99A04E797B741718267388A8CB7CDB94323C011093755007D2BD9B7AEE9B11",
+  "matchesCandidate": true,
+  "differentParts": [
+    "xl/workbook.xml",
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml"
+  ],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 5
+  },
+  "unique": true,
+  "fireBurn": [
+    [
+      "fire_burn",
+      7
+    ]
+  ],
+  "fireHeat": [
+    [
+      "fire_heat_up",
+      3
+    ]
+  ],
+  "fireCool": [
+    [
+      "fire_cool",
+      4
+    ]
+  ],
+  "n": true,
+  "oHasMount": true,
+  "dvKept": true,
+  "archiveSame": true,
+  "detailSame": true,
+  "sharedSame": true,
+  "mtime": "2026-11-01T21:47:58.818+08:00",
+  "ok": true
+}

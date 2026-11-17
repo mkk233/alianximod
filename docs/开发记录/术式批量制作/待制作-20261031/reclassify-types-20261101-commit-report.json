@@ -1,0 +1,111 @@
+{
+  "submitted": true,
+  "changed": [
+    {
+      "sheet": "制作中",
+      "row": 6,
+      "id": "fire_flame_trail",
+      "new": "附魔"
+    },
+    {
+      "sheet": "制作中",
+      "row": 14,
+      "id": "fire_kindle",
+      "new": "附魔"
+    },
+    {
+      "sheet": "制作中",
+      "row": 15,
+      "id": "fire_detonate",
+      "new": "附魔"
+    },
+    {
+      "sheet": "制作中",
+      "row": 17,
+      "id": "earth_break_ground",
+      "new": "附魔"
+    }
+  ],
+  "changedCount": 4,
+  "preservedUserValues": [
+    {
+      "sheet": "已完成",
+      "row": 26,
+      "id": "water_mist",
+      "type": "领域附魔"
+    },
+    {
+      "sheet": "已完成",
+      "row": 28,
+      "id": "water_deep_pressure",
+      "type": "领域附魔"
+    },
+    {
+      "sheet": "已完成",
+      "row": 29,
+      "id": "magic_ignite",
+      "type": "附魔"
+    },
+    {
+      "sheet": "已完成",
+      "row": 37,
+      "id": "vine_mark",
+      "type": "附魔"
+    },
+    {
+      "sheet": "已完成",
+      "row": 38,
+      "id": "tide_mark",
+      "type": "附魔"
+    },
+    {
+      "sheet": "已完成",
+      "row": 39,
+      "id": "sinking_edge",
+      "type": "附魔"
+    },
+    {
+      "sheet": "已完成",
+      "row": 40,
+      "id": "keen_mark",
+      "type": "附魔"
+    },
+    {
+      "sheet": "制作中",
+      "row": 13,
+      "id": "fire_seed_sow",
+      "type": "附魔"
+    },
+    {
+      "sheet": "制作中",
+      "row": 16,
+      "id": "fire_nether_gloom",
+      "type": "领域附魔"
+    }
+  ],
+  "enum": [
+    "剑术",
+    "动作",
+    "法术",
+    "通用",
+    "领域附魔",
+    "附魔"
+  ],
+  "definedName": "数据表!$Q$4:$Q$9",
+  "invalidRemaining": [],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "checked": 60,
+  "baselineSha256": "B2DA801BC9CF03413754040267CA49829859169D4766D54B0FCF62BF255C282D",
+  "liveSha256": "53B44FAF93B0DCA7BD278F3A509406A6BCF5859C0DD073170C772BE14D45170E",
+  "bytes": 104420,
+  "mtime": "2026-11-01 01:33:57.042",
+  "reopenMatches": true,
+  "archiveUntouched": true,
+  "previousUnsubmitted": true,
+  "userOverride": "已完成 water_mist、water_deep_pressure 被用户从法术改为领域附魔，本次没有改回。"
+}

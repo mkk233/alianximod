@@ -1,0 +1,117 @@
+我先完整读取这份任务说明，再按其中的授权范围执行。任务是只读事实定位。我先读调度技能，再按施术链、实体登记和高风险专属路径查代码。技能已读。接下来按施术入口、实体登记和专属路径核对真实签名与调用点。只读事实报告。未改文件，未编译，未启动游戏，未改表。范围是施术链、实体登记和火种、潮印、附魔、真剑、幻剑。没有做最终方案。
+
+## 1. 施术入口只认在线 `ServerPlayer`
+
+`SkillUsePacket.handle`（`SkillUsePacket.java` 106–129）从网络上下文取 `getSender()`。空发送者直接返回。`GESTURE_DROP` / `GESTURE_HOLD` 交给 `HoldRepeat`，然后 `offer(player, slotIndex, true)`。
+
+`offerNow`（150–235）读的是当时主手 `player.getItemInHand(MAIN_HAND)`：
+
+- 法杖：`StaffItem.holds` 为真时槽位必须是 0。`StaffSkills.castRefusal` 拒绝则中止。冷却缩减和属性伤害加成来自 `StaffData`。技能来自 `StaffSkills.asSkill(mainHand)`。链上任一 `TechniqueType.SWORD` 直接拒绝，文案是「剑术不能由法杖释放」。
+- 非法杖：槽位 0–3。`SkillCarrier.canRelease` 失败时，只有 `SkillSegmentMath.allowsEmptyHandSwordCast(player, peek)` 放行。技能来自 `PlayerBoundSkills.get(player, slotIndex)`。
+- 两边都过 `HeldSwordGate.refusal`。`CastCooldown.busy` 为真时返回 `true`，按住状态保留，不新开一发。
+- 成功后 `executeSkill`。用法和升级写 `PlayerShuData`，升级时 `DomainLearning.offerReady`。
+
+`executeSkill`（237–248）在按下时取 `player.getAttribute(ATTACK_DAMAGE)`，`weaponBonus = max(0, 该值 - 1)`。传入的 `ItemStack weapon` 是主手活引用，这里没有 `copy()`。
+
+其后分支：
+
+1. `BatchReleaseCompiler.compile(skill, cooldownReduction)` 非空则 `BatchCastSession.open(...)`（242–247）。这条会话内部没有逐行核对原点。
+2. 否则 `BindingLayout.compile`，失败或 `mixedChainRefusal` 则拒绝。
+3. `CastPlanCache.lookup(player.getServer(), skill)`（275）。命中则按游标切片；未命中走 `ChainSteps`（306–326）。
+4. `CompiledReleaseStep.compile(...)` 非空则 `CastExecutionSession.open(...)`（379–393），冷却延后。`CastExecutionSession.java` 167 行仍调用 `SkillSegmentRunner.playAction(owner, ...)`，`owner` 是玩家。
+5. 否则 `SkillChainPlan.pressCommitCost`，`MagicPool.trySpend(player, cost)`（409–421）。然后 `ReleaseBatch.open(player, skill)`（451）并逐段调度。
+
+`ChainRole`（`ChainRole.java` 6–26）现有值：`ATTACK`、`ACTION`、`SEEK_SPACE`、`SEEK_ENTITY`、`TRAJECTORY_TRACKING`、`TRAJECTORY_DROP`、`TRAJECTORY_SCATTER`、`RULE_TRIPLE`、`RULE_DUAL`、`RULE_DOMAIN_BIND`、`SEEK_SURFACE`、`TRAJECTORY_UPWELL`、`RULE_STAGGER`、`RULE_HIT_CONTINUE`、`NOT_APPLICABLE`。登记在 `ReleaseDefinitions` 与 `ListedRelease`。`ReleaseDefinition.manipulatesSwordEntities()` 默认 false；为 true 时 `executeSkill` 517–529 行不走命中体，只调度一段伤害为 0 的 runner。
+
+计划缓存 `CastPlanCache.lookup`（61–96）只在已绑定的服务器线程上工作。结构纪元变化会清空。链长、条目、单元上限是 64、64、16384。键是技能结构，不含位置、朝向或武器实例。编译产物是 `CompiledCastPlan.compile(Skill, structureEpoch)`。缓存未绑定、超限或编译失败时返回 null，释放改走 `ChainSteps`。`CompiledReleaseStep.compile` 是双重释放和多重释放的另一次编译，不进这张缓存。
+
+网络登记：`ModNetwork.java` 36 行，通道 id 0，`SkillUsePacket.register`（1268–1275）。包体只有槽位和手势，没有坐标。
+
+## 2. 原点能传入的位置，以及仍读主人的位置
+
+`TechniqueEffect.execute` 的签名固定为 `(ServerPlayer player, Technique technique, ItemStack weapon, TechniqueCastContext cast)`（`TechniqueEffect.java` 8）。上下文里的 `look` 和 `position` 与玩家实体是分开的字段（`TechniqueCastContext.java` 8–41）。
+
+`SkillSegmentRunner` 有三条不同的几何入口：
+
+- `buildSegmentRunner`（131–158）在执行当拍读 `player.getLookAngle()` 和 `player.position()`，再以 `contactOrigin = null`、`contactLook = null` 进入 `runSegment`。
+- `buildSegmentRunnerAt`（201–227）使用调用方给的 look 和 position，接触原点仍然是 null。`SkillFollowCast` 56–58 行把父位置塞进这个 position。`runSegment` 658–670 行仍会按下面的规则重算 `center`，所以这个 position 进的是 `TechniqueCastContext`，不是斩击或弹丸的生成中心。
+- `commitNow`（277–279）把同一对向量同时作为 `contactOrigin` 和 `contactLook`。`runSegment` 510–515 行会改写 position 和 look；716–728 行再把 `frame.overrideGeometry`、`frame.origin`、`frame.anchor`、`frame.look` 写成这对向量。这是现成的几何覆盖口。
+
+`runSegment`（494–774）在接触原点之外，仍从玩家读取：
+
+- 存活、主手 `HeldSwordGate`、`ChargeGate.epoch(player.getUUID())`、`WaterMomentum`。
+- `FieldZones.influence(player)` 改伤害、追踪、锁定和路径。
+- 实体锁且没有冻结视线、也不是领域自动轮时，`LockTargetService.resolve(player)`（42–49，73–80）。眼睛和视线都是玩家的，距离常量 20 与 8，再经 `SpecialBalance` 的 `universal_lock_target`。
+- 生成中心（658–670）：领域自动轮用 `automaticContext.origin()`；可变弹道且落点或漩涡用 `batch.crosshairCenter(player)`；可变且交错且未锁实体用 `player.position()` 加半个身高；落点锚用 `batch.resolveAnchor(player)`；其余用 `player.getEyePosition()`。
+- `crosshairCenter` / `resolveAnchor`（`ReleaseBatch.java` 155–209）先看 `automaticOrigin()`。没有自动原点时从 `caster.getEyePosition()` 和 `getLookAngle()` 做射线。
+- 种子混入 `player.getUUID()`。潮印是 `bonus.tideSuccess(player.getUUID())`。拉力锚默认 `player.position()`。
+- `HitPayloads.applyCaster`（80–84）在 `healCaster` 时治疗这个 `ServerPlayer`。
+- 最后 `effect.execute(player, action, weapon, castContext)`。
+
+领域自动轮是另一条已存在的原点通道。`ReleaseExecutionContext.automatic`（84–96）要求世界、主人、标识、原点、方向、体积、目标检查、武器和令牌齐全，并 `weaponCopy.copy()`。模式是 `DOMAIN_AUTOMATIC`。`owner()` 仍是 `ServerPlayer`。`AutomaticRound` 318–323 行绑定该上下文后再跑段。`ReleaseBatch.automaticOrigin`（213–218）只在这个模式下返回 `origin()`，不写手动锚点缓存。`applyDomainFrame`（916–931）把帧原点和锚点钳进体积。
+
+因此：接触原点和领域自动轮可以改生成几何；调度时传入的普通 position 不能。费用、主手门、属性、冷却、魔力、领域解锁、场地影响、默认索敌、伤害归属和自疗仍读这名玩家。
+
+动作路径 `playAction`（435–442）当场取玩家视线和位置，接触原点为空，再 `runSegment`。`MovementDashEffect.execute`（44–58）用上下文的 look 做速度，但 `player.setDeltaMovement` 移动的是这名玩家。冲刺扫描也用 `player.position()` 和 `player.getBoundingBox()`。
+
+## 3. 命中体、账本和延迟结算
+
+`TechniqueHitSpec.spawn(ServerLevel, ServerPlayer, TechniqueHitSpec)`（191–196）把当前 `CastFrame` 的伤害、附魔、`Tally`、复制序号、火种、燃烧、控制和潮印抄进规格。`TechniqueHitEntity.applySpec`（511–519）保存 `caster.getUUID()`。`getCaster()`（740–748）再用玩家列表查回 `ServerPlayer`；不在列表中则为 null。
+
+`TechniqueHitSettle.tryHit`（38–92）去重后，有 `settleTally` 时 `record(...)`（125–131），不在命中当拍打出玩家伤害。`ReleaseBatch.Tally` 是 `ReleaseBatch` 的内部类，闭包里的 `player` 是 `open(ServerPlayer, Skill)` 时的那名玩家（124–125，225）。`record` 用 `ChainScheduler` 排到 `FlowRoundLedger.FLUSH_DELAY` 之后 `flush`（380–428）。`flush` 用这名玩家做 `TideMarkSuccess.of(marks, player.getUUID())`、`DomainAuraResolver.merge` 和 `TechniqueHits.classifyRoot` / `classifyRespecting` / `classifyConfirmed`。这三条都是 `target.hurt(..., damageSources().playerAttack(player), amount)`（`TechniqueHits.java` 80、87、139、176）。击退方向用 `getCaster().position()`，不是命中体坐标（`TechniqueHitSettle.java` 119–123）。
+
+`ReleaseBatch.fireContext()`（56–60）是 `FireCastContext(新 UUID, player.getUUID())`。资源附魔在 `Tally.notifyCopies` 里用同一名玩家提交。
+
+宿主组 `HostCast.open(UUID ownerId, CastSource)`（36–39）只登记主人 UUID。`commitHostGroup`（336–403）仍把 `ServerPlayer` 传进每次 `runSegment`。松散宿主 `commitLooseHost`（780–808）也是 `HostCast.open(player.getUUID(), castSource)`。
+
+## 4. 实体登记：没有人形分身
+
+`src/main/java` 里没有业务类继承 `LivingEntity`、`Mob` 或 `Player`。`WetnessDragonMixin` 只是原版龙的 mixin。
+
+已登记实体都继承 `Entity`：
+
+| 类型 | 登记 | 尺寸与存档 | 渲染 |
+|---|---|---|---|
+| `technique_hit` | `ReleaseEntities.java` 17–24 | 0.1，`noSave`，追踪 8 | `TechniqueHitRenderer` |
+| `barrier_body` | 26–33 | 0.25×2.8，`noSave` | `WaterBarrierRenderer` |
+| `sword_entity` | 35–41 | 0.5，存档 | `SwordEntityRenderer` |
+| 批量载体视觉 | `BatchCarrierTypes` | `BatchCarrierVisual extends Entity` | `XueXiMod.java` 185–187 |
+| 陨石残骸 | `MeteoriteWreckageTypes` | `MeteoriteWreckageEntity extends Entity` | 182–184 |
+
+没有 `LivingEntityRenderer` 或玩家皮肤渲染器。剑的 NBT 在 `SwordEntity.readAdditionalSaveData`（576 起）：`Owner`、`Phantom`、`State`、悬停、飞行、插地、伤害、燃烧、火种、控制、熄灭。命中体和屏障不存档。
+
+命令：`ShuCommands` 的 `/shu` 含 give、learn、mana、rank、`entities`（只改 `SkillEntityCount`）、book、cd。`ActionCommands` 的 `/xuexi action` 播动作。`PerformanceCommands` 的 `/shuperf`。没有生成分身的命令。
+
+`shu.technique.release.phantom` 有四个类型，仓库内无其他引用。`PhantomSpec` 只有 `origin()`、`aim()`、`lifetimeTicks()`。`PhantomFactory.spawn`（12–17）调用 `TechniqueHitSpec.spawn` 后返回 `Dormant`，`active()` 恒为 false，`end` 为空。类注释写明这轮没有分身智能，也不代理伤害。`PhantomEndReason` 为 `EXPIRE`、`DISMISS`、`OWNER_LOST`。
+
+`SwordEntity` 的 `DATA_PHANTOM` 是飞剑标记，不是身体分身。`phantom(...)`（130–160）把主人 UUID、武器副本和玩家的 yaw/pitch 写上剑。`real(...)`（163–176）出生在 `player.getEyePosition()`，方向是 `player.getLookAngle()`。
+
+## 5. 高风险专属路径
+
+火种。`FireSeedGrant.deposit(LivingEntity, ServerPlayer, int)`（18–23）先过 `DamagePermission.allows(caster, target)`，再 `FireCastContext(随机 UUID, caster.getUUID())`。剑命中在主人仍是在线 `ServerPlayer` 时走这条（`SwordEntityMotion.java` 114–123）。主人不在线时改 `damageSources().magic()`，潮印范围的玩家参数为 null（125–132），不存火种。`FireSeedState.retainLivingClone`（138–146）只在原版存活克隆或转化时抄火种整数。`PlayerEvent.Clone` 的处理方有 `FireRuntimeEvents`、`FurnaceEvents`、`FireSeedLifecycle`、`PrisonLifecycle`、`HostCastEvents`（死亡时清节拍）、`PlayerConnectionHandler`。这些回调都不调用 `SkillUsePacket.offer`。
+
+潮印。`TideMarkSuccess.of(int marks, UUID casterId)`（26–30）只保存条数和施术者 UUID。帧上的值来自 `bonus.tideSuccess(player.getUUID())`。结算进 `TechniqueHits` 的 `TideMarkDamageScope`。剑上另有 `SpecialBalance.contributed("tide_mark", marks * 2)`。`WeaponEnchant.captureSwing`（146–159）只接受攻击者是 `ServerPlayer`，从主手印记读 `Tide`。
+
+附魔。无攻击段时 `SkillChainPlan.imprintEnchant` → `imprintSelection`（816–844）用玩家攻击属性结算，再 `WeaponEnchant.imprint(player, player.getMainHandItem(), bonus)`。键是 `xueximod_weapon_enchant`（`WeaponEnchant.java` 44、54）。`AttackEntityEvent`（163–208）在下一次这名玩家的原版攻击上消耗；`Tide > 0` 或带 `ResourceIds` 时不走这段普通消耗。印记写在活的主手堆上。领域自动轮的武器副本不改变这个写入目标。
+
+真剑与剑来。`manipulatesSwordEntities()` 为 true 的段绕过命中体。`SwordComeEffect.execute`（33–37）以 `player.getEyePosition()` 为圆心、平衡键 `sword_come` 的搜索半径（默认 20）召回，`startReturning(spot)` 的点是眼睛，不是 `TechniqueCastContext` 的 position。回收位移和命中在 `SwordEntity` 与 `SwordEntityMotion.hurtAlong`，伤害归属仍是主人 UUID 对应的在线玩家。
+
+幻剑。`PhantomSwordEffect.execute`（30–36、59–100）要求传入武器和当前主手都通过 `SkillCarrier.acceptsSwordSkill` 与 `HeldSwordGate`。默认出生点是 `behind(player)`：眼睛后方，朝向用 `player.getLookAngle()`。只有 `frame.overrideGeometry`、自动轮或垂落才改用帧原点。生成后伤害仍回到主人玩家的 `classifyRoot`。
+
+`MovementDashEffect`、剑来和幻剑默认几何都会动到或读到真实玩家身体。场地减伤 `ReleaseBaseEvents.onHurt`（63–70）只在受害者本身是 `ServerPlayer` 时取 `FieldZones.unloadRatio(player)` 和 `GuardStates.unloadRatio(player)`。
+
+## 6. `FakePlayer` 与递归
+
+源码里没有 `new FakePlayer`。`BatchFlameTrail`、`BatchOwners`、`TerrainMutationService` 在主人为 `FakePlayer` 时拒绝继续。施术包发送者、`TechniqueEffect`、命中结算和剑命中都要求 `ServerPlayer` 或能从 UUID 查回的在线玩家。
+
+会再次进入释放入口的现成路径是 `HoldRepeat`（73 行）对同一名玩家、已按住的槽调用 `SkillUsePacket.offer`。`CastCooldown.busy` 时跳过。`LivingHurtEvent` 现有两处：`FireRuntimeEvents.onHurt` 只在已打开的元素伤害帧里改数额；`ReleaseBaseEvents.onHurt` 只给作为受害者的玩家减伤并交给 `GuardMitigation`。两处都不调用 `offer` 或 `TechniqueEffect.execute`。`WeaponEnchant.onAttack` 会再 `hurt` 一次，那是同一次原版攻击的附加伤害，不打开新技能链。效果包内没有 `SkillUsePacket.offer` 或 `PhantomFactory`。`TechniqueHitSpec` 的 `onHit` 回调存在；抽查 `BatchFlightBook` 的实现为空。没有把每个 `onHit` 方法体逐行读完。
+
+`PlayerEvent.Clone` 是玩家死亡或维度复制，不是战斗分身。它不调度新的释放。
+
+## 7. 文件边界与未决
+
+已能携带原点、但主人仍是玩家的入口：`commitNow` 的接触原点，`ReleaseExecutionContext.automatic` 的原点、方向和武器副本，`CastFrame.origin` / `look` / `overrideGeometry`，`TechniqueCastContext` 的 look 与 position。段执行、费用、主手、账本和 `playerAttack` 都还要这名 `ServerPlayer`。
+
+实体扩展没有现成的 `LivingEntity` 子类、玩家渲染器或分身命令。`phantom` 包只生成命中体并返回休眠句柄。幻剑和真剑是 `sword_entity`，主人 UUID 决定伤害。
+
+本次没有逐行核对的部分：`BatchCastSession` 内部是否另读玩家坐标；全部 `onHit` 实现；每个具体效果是否在 `execute` 里再次调用 `getEyePosition`。已确认会这样做的有冲刺、剑来和幻剑的默认 `behind(player)`。结算顺序「索敌、弹道、规则、攻击」没有在这次定位里重新证明唯一代码路径；角色收集可见于 `SkillSegmentRunner.resolveRoles` 与 `SkillChainPlan.collectModifiers`。

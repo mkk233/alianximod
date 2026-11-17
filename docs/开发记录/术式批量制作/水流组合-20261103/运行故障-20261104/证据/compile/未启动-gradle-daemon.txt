@@ -1,0 +1,12 @@
+compileJava 未启动。发现仍在运行的 Gradle，按本单不并发编译、不结束进程。
+
+检查时间：2026-11-04T01:17 后、写本文件时。
+java.exe 仅 1 个：
+- PID 12596
+- 父进程 57868 idea64.exe（D:\IDE\IntelliJ IDEA 2024.3\bin\idea64.exe，参数 D:\alianximod，创建于 2026-11-02 02:06:22）
+- 创建时间 2026-11-03 22:46:56
+- 命令行含 org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.8，-Xmx3G
+- 采样时 CPU 约 108.48 秒，工作集约 1096007680 字节
+未见 Minecraft / runClient 的 java 进程。
+编译前冻结.json 含 65 条路径。StillWaterLease.java 冻结 SHA256 0EE55C8996A874399971CD5DA0B4BC373147BA0358798E1F8DFD3DBAB3D34DC5，字节 13878，与修复后文件一致。
+未执行 .\gradlew.bat compileJava --offline --no-daemon。无退出码。未改源码、Gradle 配置、依赖、制作表。未覆盖 11 月 3 日编译回执和三份线程现场。

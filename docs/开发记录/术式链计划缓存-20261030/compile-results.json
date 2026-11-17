@@ -1,0 +1,91 @@
+{
+  "task": "术式链计划缓存最终统一编译",
+  "attempt": 2,
+  "compiler": "Cursor CLI grok-4.7-high-fast",
+  "delegated": false,
+  "workspace": "D:/alianximod",
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "environment": {
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "gradleCacheExists": true,
+    "javaVersion": "17.0.6+9-LTS-190",
+    "jvmargs": "-Xmx3G",
+    "daemonProperty": "org.gradle.daemon=false",
+    "commandNoDaemon": true,
+    "setInsideGradleProcess": true
+  },
+  "compileStartUtc": "2026-10-30T03:25:57.4303944Z",
+  "compileEndUtc": "2026-10-30T03:26:24.4929296Z",
+  "exitCode": 0,
+  "historicalAttempt1ExitCode": 1,
+  "finalVersionPassed": true,
+  "reason": "本次退出码为 0，且编译覆盖的冻结主源码在开始后未改变。第一次失败的退出码 1 只保留在 compile-attempt-1，不是本次结果。",
+  "gradleSummary": "BUILD SUCCESSFUL in 26s",
+  "compilerSummary": "0 errors, 34 warnings",
+  "sourceFreeze": {
+    "file": "compile-source-freeze.json",
+    "javaCount": 665,
+    "scope": "src/main/java",
+    "lastSourceWriteUtc": "2026-10-30T03:21:34.5179789Z",
+    "compileStartedAfterLastWrite": true,
+    "changedFile": {
+      "path": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java",
+      "sha256": "472AA960083F1AC2A09644F58089BEAF64CB523C28075DA7BC16C86D6955FD6D",
+      "length": 49159,
+      "lastWriteUtc": "2026-10-30T03:21:34.5179789Z"
+    },
+    "precheck": {
+      "missing": 0,
+      "hashMismatch": 0,
+      "lengthMismatch": 0,
+      "timeMismatch": 0,
+      "timeCompare": "raw ISO string parsed to UTC ticks",
+      "list": "attempt2-precheck.txt"
+    },
+    "postcheck": {
+      "missing": 0,
+      "hashMismatch": 0,
+      "lengthMismatch": 0,
+      "timeMismatch": 0,
+      "writesAtOrAfterCompileStart": 0,
+      "maxWriteUtc": "2026-10-30T03:21:34.5179789Z",
+      "list": "attempt2-postcheck.txt"
+    }
+  },
+  "gradleOccupancy": {
+    "before": "no java/javaw Gradle or GradleDaemon process",
+    "after": "java process count 0",
+    "note": "--no-daemon forked a single-use daemon and stopped it at the end of this build"
+  },
+  "errors": [],
+  "notRun": [
+    "correctness review",
+    "independent tests",
+    "name gate",
+    "jar",
+    "reobf",
+    "build",
+    "runClient",
+    "game launch",
+    "sheet writeback",
+    "git commit"
+  ],
+  "sourceOrConfigChanged": false,
+  "attempt1Archive": "docs/开发记录/术式链计划缓存-20261030/compile-attempt-1",
+  "logs": [
+    "docs/开发记录/术式链计划缓存-20261030/compile.log",
+    "docs/开发记录/术式链计划缓存-20261030/attempt2-env.txt",
+    "docs/开发记录/术式链计划缓存-20261030/attempt2-times.txt",
+    "docs/开发记录/术式链计划缓存-20261030/attempt2-gradle-stdout.txt",
+    "docs/开发记录/术式链计划缓存-20261030/attempt2-gradle-stderr.txt",
+    "docs/开发记录/术式链计划缓存-20261030/attempt2-precheck.txt",
+    "docs/开发记录/术式链计划缓存-20261030/attempt2-postcheck.txt"
+  ],
+  "staleRootStreams": [
+    "docs/开发记录/术式链计划缓存-20261030/compile-gradle-stdout.txt",
+    "docs/开发记录/术式链计划缓存-20261030/compile-gradle-stderr.txt"
+  ],
+  "staleRootStreamsNote": "这两个根目录分流文件仍是第一次失败的副本，也已留在 compile-attempt-1。本次输出以 compile.log 和 attempt2-gradle-*.txt 为准。",
+  "ownershipReleased": true
+}

@@ -1,0 +1,40 @@
+branch isSword(player.getMainHandItem()): kept
+branch isSword(player.getOffhandItem()): kept
+branch sourceHand != hand: kept
+branch sourceArm != arm: kept
+branch rightSide && sourceHand != null: kept
+branch ItemDisplayContext.FIRST_PERSON_RIGHT_HAND: kept
+branch ItemDisplayContext.THIRD_PERSON_RIGHT_HAND: kept
+branch player.getMainArm().getOpposite(): kept
+
+third display X (0.0, 0.81915204, 0.57357644) Y (0.0, 0.57357644, -0.81915204) scale 0.85
+third t=0.00 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+third t=0.00 open blade 0.000000 normal 0.000000 center 4.031129px axis 3.563396px
+third t=0.00 old blade 70.792520 normal 125.000000 center 4.031129px axis 3.563396px
+third t=0.48 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+third t=0.48 open blade 0.000000 normal 0.000000 center 4.031129px axis 3.563396px
+third t=0.48 old blade 70.792520 normal 125.000000 center 4.031129px axis 3.563396px
+third t=0.60 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+third t=0.60 open blade 0.000000 normal 0.000000 center 4.031129px axis 3.563396px
+third t=0.60 old blade 70.792520 normal 125.000000 center 4.031129px axis 3.563396px
+third t=1.60 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+third t=1.60 open blade 0.000000 normal 0.000000 center 4.031129px axis 3.563396px
+third t=1.60 old blade 70.792520 normal 125.000000 center 4.031129px axis 3.563396px
+first display X (-0.0, 0.42261826, 0.90630779) Y (0.0, 0.90630779, -0.42261826) scale 0.68
+first t=0.00 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+first t=0.00 open blade 0.000000 normal 0.000000 center 3.576842px axis 2.631479px
+first t=0.00 old blade 34.775437 normal 155.000000 center 3.576842px axis 2.631479px
+first t=0.48 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+first t=0.48 open blade 0.000000 normal 0.000000 center 3.576842px axis 2.631479px
+first t=0.48 old blade 34.775437 normal 155.000000 center 3.576842px axis 2.631479px
+first t=0.60 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+first t=0.60 open blade 0.000000 normal 0.000000 center 3.576842px axis 2.631479px
+first t=0.60 old blade 34.775437 normal 155.000000 center 3.576842px axis 2.631479px
+first t=1.60 fixed blade 0.000000 normal 0.000000 center 0.000000px axis 0.000000px
+first t=1.60 open blade 0.000000 normal 0.000000 center 3.576842px axis 2.631479px
+first t=1.60 old blade 34.775437 normal 155.000000 center 3.576842px axis 2.631479px
+
+view pitch 60.0 yaw 0.0 bob 0.0,0.0 body 0.0 cancel 0.000000 reversed 0.000000
+view pitch -30.0 yaw 120.0 bob 10.0,-20.0 body 40.0 cancel 0.000000 reversed 0.955987
+view pitch 0.0 yaw 0.0 bob 0.0,0.0 body 0.0 cancel 0.000000 reversed 0.000000
+view pitch 85.0 yaw -170.0 bob 40.0,15.0 body 90.0 cancel 0.000000 reversed 0.876191

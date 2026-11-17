@@ -1,0 +1,72 @@
+注: SpongePowered MIXIN Annotation Processor Version=0.8.5
+注: Supported obfuscation types: ObfuscationServiceMCP supports [notch] ObfuscationServiceFG3 supports [searge]
+注: Loading searge mappings from D:\alianximod\build\createMcpToSrg\output.tsrg
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing searge composite mappings to D:\alianximod\build\tmp\compileJava\compileJava-mappings.tsrg
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing refmap to D:\alianximod\build\tmp\compileJava\compileJava-refmap.json
+注: Writing searge composite mappings to D:\alianximod\build\tmp\compileJava\compileJava-mappings.tsrg
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainMistRainRenderer.java:17: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation TEXTURE = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/mist_rain_80.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainMistRingRenderer.java:13: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation TEXTURE = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/mist_panel.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainMistShaders.java:18: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+            new ResourceLocation(XueXiMod.MOD_ID, "rendertype_entity_translucent_mist");
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainPressureRenderer.java:17: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation BANDS = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/deep_pressure_bands.png");
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainPressureRenderer.java:18: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation ARCS = new ResourceLocation(XueXiMod.MOD_ID, "textures/domain/deep_pressure_arcs.png");
+                                                 ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\DomainWorldRenderer.java:23: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/block/water_still.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:25: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation HIT_ID = new ResourceLocation(XueXiMod.MOD_ID, "technique_hit");
+                                                   ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:26: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation SWORD_ID = new ResourceLocation(XueXiMod.MOD_ID, "sword_entity");
+                                                     ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\EntityRendererFix.java:27: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation BARRIER_ID = new ResourceLocation(XueXiMod.MOD_ID, "barrier_body");
+                                                       ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\network\prison\PrisonSyncPacket.java:243: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+        ResourceLocation dimensionId = view.dimension() == null ? new ResourceLocation("minecraft", "overworld")
+                                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\PrisonShellRenderer.java:26: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/block/water_still.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\SwordEntityRenderer.java:88: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+        return new ResourceLocation("minecraft", "textures/misc/white.png");
+               ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\TechniqueHitRenderer.java:29: 警告: [removal] ResourceLocation 中的 ResourceLocation(String) 已过时, 且标记为待删除
+    private static final ResourceLocation TEXTURE = new ResourceLocation("textures/entity/shulker/spark.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\TechniqueHitRenderer.java:30: 警告: [removal] ResourceLocation 中的 ResourceLocation(String) 已过时, 且标记为待删除
+    private static final ResourceLocation BEAM_TEXTURE = new ResourceLocation("textures/entity/beacon_beam.png");
+                                                         ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\WaterBarrierRenderer.java:22: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/block/water_still.png");
+                                                    ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\WaterPartingRenderer.java:19: 警告: [removal] ResourceLocation 中的 ResourceLocation(String) 已过时, 且标记为待删除
+    private static final ResourceLocation SPARK = new ResourceLocation("textures/entity/shulker/spark.png");
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\client\WaterRibbonRenderer.java:24: 警告: [removal] ResourceLocation 中的 ResourceLocation(String) 已过时, 且标记为待删除
+    private static final ResourceLocation SPARK = new ResourceLocation("textures/entity/shulker/spark.png");
+                                                  ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\HitVolumes.java:206: 警告: [removal] ProjectileImpactEvent 中的 setCanceled(boolean) 已过时, 且标记为待删除
+                event.setCanceled(true);
+                     ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\shu\technique\release\prison\PrisonPressure.java:20: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+            new ResourceLocation(XueXiMod.MOD_ID, "water_prison_pressure"));
+            ^
+D:\alianximod\src\main\java\com\bslx\XueXiMod\status\WetnessFlightExempt.java:13: 警告: [removal] ResourceLocation 中的 ResourceLocation(String,String) 已过时, 且标记为待删除
+    private static final ResourceLocation DEFAULT_DRAGON = new ResourceLocation("minecraft", "ender_dragon");
+                                                           ^
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+20 个警告

@@ -1,0 +1,23 @@
+{
+  "batchId": "workflow-grok-fallback-20261104",
+  "taskId": "fallback-adapter",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "implement-authorized-grok-quota-fallback",
+  "authorization": "用户2026-11-04明确要求Cursor额度用完后自动转Grok CLI老猪中转站继续Grok4.7，保持当前流程；授权适配启动器、必要离线测试、流程/规则/技能同步以及少量真实CLI连通和续跑验证。首次原生Grok bootstrap仅用于接入统一入口。",
+  "inputVersion": "20261104-user-request-and-design-round1",
+  "recordPath": "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/记录.md",
+  "writePaths": [
+    "D:/alianximod/.grok/scripts",
+    "D:/alianximod/AGENTS.md",
+    "D:/alianximod/.grok/skills/max-dispatch/SKILL.md",
+    "D:/alianximod/docs/统一开发与术式批量制作流程.md",
+    "D:/alianximod/.cursor/rules/execution-provider.mdc",
+    "D:/alianximod/docs/开发记录/Grok备用渠道-20261104/实现交付.md"
+  ],
+  "dependencies": [
+    "已核实输入.md",
+    "设计裁决.md",
+    "连接测试-exit.json"
+  ]
+}

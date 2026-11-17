@@ -5,10 +5,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
+import java.util.UUID;
 import java.util.function.Consumer;
 
 public class StaffItem extends Item {
     private static final String MANA_KEY = "xueximod_staff_mana";
+    private static final String PAY_ID = "xuexi_pay_id";
 
     private final StaffData data;
 
@@ -37,6 +39,17 @@ public class StaffItem extends Item {
         return Math.max(0, Math.min(bonus, bonus - stack.getDamageValue()));
     }
 
+    public static UUID payIdentity(ItemStack stack) {
+        if (!holds(stack)) {
+            return null;
+        }
+        CompoundTag tag = stack.getOrCreateTag();
+        if (!tag.hasUUID(PAY_ID)) {
+            tag.putUUID(PAY_ID, UUID.randomUUID());
+        }
+        return tag.getUUID(PAY_ID);
+    }
+
     public static void setStoredMana(ItemStack stack, int value) {
         if (!holds(stack)) return;
         int bonus = ((StaffItem) stack.getItem()).data().maxManaBonus();
@@ -63,11 +76,21 @@ public class StaffItem extends Item {
         return data.maxManaBonus() > 0;
     }
 
-    private static boolean tagsEqualIgnoringDamage(CompoundTag a, CompoundTag b) {
-        CompoundTag ca = a == null ? new CompoundTag() : a.copy();
-        CompoundTag cb = b == null ? new CompoundTag() : b.copy();
-        ca.remove("Damage");
-        cb.remove("Damage");
-        return ca.equals(cb);
+    private static boolean tagsEqualIgnoringDamage(CompoundTag first, CompoundTag second) {
+        CompoundTag firstCopy = first == null ? new CompoundTag() : first.copy();
+        CompoundTag secondCopy = second == null ? new CompoundTag() : second.copy();
+        firstCopy.remove("Damage");
+        secondCopy.remove("Damage");
+        firstCopy.remove("xueximod_cast_ready");
+        secondCopy.remove("xueximod_cast_ready");
+        firstCopy.remove("xueximod_cast_session");
+        secondCopy.remove("xueximod_cast_session");
+        firstCopy.remove("xueximod_technique_ready");
+        secondCopy.remove("xueximod_technique_ready");
+        firstCopy.remove("xueximod_chain_step");
+        secondCopy.remove("xueximod_chain_step");
+        firstCopy.remove("xueximod_chain_sign");
+        secondCopy.remove("xueximod_chain_sign");
+        return firstCopy.equals(secondCopy);
     }
 }

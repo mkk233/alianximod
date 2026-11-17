@@ -1,0 +1,32 @@
+三项定位证据（2026-11-04）
+
+截图：C:/Users/baishang/AppData/Local/Temp/codex-clipboard-fcadb9e3-1e75-4a7e-94f0-1ca41294fbc7.png
+画面为俯视，施法者在放射直条中心。
+
+预览 mesh（water_vortex_v3_1.bbmodel）：
+- dry_v2_arm_0..4：mesh，dry_v2_arm_0 有 98 个顶点，Y 约 2，X/Z 沿弧变化
+- rising_v3_funnel_0..5：高度与水平位置一起变化
+- submerged_v3_converge_0..5：水平汇入
+
+运行几何：
+- DomainFlowRenderer.drawPlanar 90-94 行，每条一次 verticalRibbon
+- verticalRibbon 188-199 行，内外端同一角，形成直立径向面
+- drawFunnel 97-111 行 / slopedRibbon 202-214 行，段内同一角
+- drawUnderwater 114-130 行复用 verticalRibbon
+
+放水：
+- StillWaterLease.placeIfAir 90-101 行，非空气直接返回
+- reconcile 250-255 行，补放只接受空气，其余摘租约
+- 原版 FlowingFluid.canHoldFluid 380-386 行：非含水容器时，排除门/告示牌/梯子/甘蔗/气泡柱/传送门后看 !blocksMotion()
+- WaterFluid.beforeDestroyingBlock 调用一次 Block.dropResources
+- 加载写世界仍在 flushLoadedEdits 的 TickTask，本单未改
+
+聚怪：
+- VolumeMotionRuntime.processHost 247-263 行，selectable 无主人比较
+- selectable 1092-1096 行
+- pull 513-536 行提交 FlowRole.PULL
+- FlowMotionIntents.clientDriven 219-221 行：玩家为真
+- FlowClientMotion 只消费已下发指令
+- liftBubble 538-555 行使用同一 selectable
+
+进程：java.exe 仅 PID 12596，父进程 57868。未结束。

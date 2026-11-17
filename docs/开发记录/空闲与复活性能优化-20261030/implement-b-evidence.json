@@ -1,0 +1,135 @@
+{
+  "task": "implement-b",
+  "model": "grok-4.7-high-fast",
+  "sourceWriteStopped": true,
+  "locksReleased": true,
+  "compile": "not-run",
+  "gameVerified": false,
+  "frameEstimate": "not-made",
+  "unfinishedInScope": [],
+  "query": {
+    "method": "ActionClientPlayback.hasPlaybackRecord",
+    "lines": "50-56",
+    "rule": "VIEWS.containsKey only; no sample, no inspect, no removal"
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/ActionClientPlayback.java",
+      "backup": "docs/开发记录/空闲与复活性能优化-20261030/before-b/src/main/java/com/bslx/XueXiMod/client/action/ActionClientPlayback.java",
+      "beforeSha256": "D55E57C02EFFC0C96E282A123907D8FB0F8722627FFA1BE411F24B42AA1E9A5C",
+      "afterSha256": "A21A6D89B85683979F60F871049A015B5C0AAA4BA134CD497E34A41CCFCFD5C3",
+      "lastWriteTime": "2026-10-30 01:53:24.714 +08:00",
+      "changedLines": "50-56"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/EntityRenderDispatcherActionMixin.java",
+      "backup": "docs/开发记录/空闲与复活性能优化-20261030/before-b/src/main/java/com/bslx/XueXiMod/mixin/client/EntityRenderDispatcherActionMixin.java",
+      "beforeSha256": "4145487C3A5836BD9C73A400621211265855464AF381A23398C30C0031756560",
+      "afterSha256": "8DD25C2389A109D191EAC8762F1965144619CF9D9E923F7FC085DCC5307920EB",
+      "lastWriteTime": "2026-10-30 01:53:48.814 +08:00",
+      "changedLines": "45-52, 74-84"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/ItemInHandRendererActionMixin.java",
+      "backup": "docs/开发记录/空闲与复活性能优化-20261030/before-b/src/main/java/com/bslx/XueXiMod/mixin/client/ItemInHandRendererActionMixin.java",
+      "beforeSha256": "F76C3541594F669C6BA65E6ED3F06D826C65B68C82734164CBAAF72D3B4EAE24",
+      "afterSha256": "B4EDB90CE70F3ED5002AE7DC7025BF34E1B663F61FDA604475D9F529E5500E11",
+      "lastWriteTime": "2026-10-30 01:53:52.489 +08:00",
+      "changedLines": "76-89, 134-156, 177-179"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/HumanoidAttackTimeMixin.java",
+      "backup": "docs/开发记录/空闲与复活性能优化-20261030/before-b/src/main/java/com/bslx/XueXiMod/mixin/client/HumanoidAttackTimeMixin.java",
+      "beforeSha256": "BFB7AB71D2C4373FE41C2C95A4CB0BB9EA453D4DCA096FD1A18110EA7314F2EE",
+      "afterSha256": "68721C74962DEEDBD9A5958DD886658F50831A14529A62D7F5EC0A92FFE72EB6",
+      "lastWriteTime": "2026-10-30 01:54:04.204 +08:00",
+      "changedLines": "43-44, 53-76"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/SkinAttachmentBridge.java",
+      "backup": "docs/开发记录/空闲与复活性能优化-20261030/before-b/src/main/java/com/bslx/XueXiMod/client/action/skinned/attachments/SkinAttachmentBridge.java",
+      "beforeSha256": "2F2D4E18FDE85F65A21DEF917131FACF70702AE3920D83BC34556198F7CC7B29",
+      "afterSha256": "9742405AD9171DBBE5FF6EBEE14D8BC2A69BFCA08E66336C998B60991E16CE5C",
+      "lastWriteTime": "2026-10-30 01:54:05.772 +08:00",
+      "changedLines": "152-169"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/StuckLayerScopeMixin.java",
+      "backup": "docs/开发记录/空闲与复活性能优化-20261030/before-b/src/main/java/com/bslx/XueXiMod/mixin/client/skin/StuckLayerScopeMixin.java",
+      "beforeSha256": "61CF646AB852FBC1C99FCCE776A1F4C3A3B46A11337D2D19904CB6A9CB92A05C",
+      "afterSha256": "F741D20FC84E68FED21B56B0604CEF6762D09C77AD12B9DACC4D1507BEF7848B",
+      "lastWriteTime": "2026-10-30 01:54:09.341 +08:00",
+      "changedLines": "40-46"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/mixin/client/skin/HumanoidArmorSkinMixin.java",
+      "backup": "docs/开发记录/空闲与复活性能优化-20261030/before-b/src/main/java/com/bslx/XueXiMod/mixin/client/skin/HumanoidArmorSkinMixin.java",
+      "beforeSha256": "4C401E6548010D998E4E2E19DEC65FC2DDF0BDB1FBCBE69A0E49B8E4791F6C31",
+      "afterSha256": "BBFBAFBC83D9E45BD2B5FF110AB6BB8AB2F29FB20AEEDD85098858C036E673CE",
+      "lastWriteTime": "2026-10-30 01:54:25.147 +08:00",
+      "changedLines": "13, 52-57"
+    }
+  ],
+  "notModified": [
+    "src/main/java/com/bslx/XueXiMod/client/action/ActionRenderQueries.java",
+    "src/main/java/com/bslx/XueXiMod/client/action/skinned/SkinSession.java",
+    "src/main/java/com/bslx/XueXiMod/client/action/RenderPoseScope.java"
+  ],
+  "premises": [
+    {
+      "id": "record-is-map-key",
+      "evidence": "ActionClientPlayback.java:50-56,158,174,196,239,294-308"
+    },
+    {
+      "id": "inactive-allocates-pose",
+      "evidence": "ActionClientPlayback.java:66-73; ActionSampleContext.java:94-96"
+    },
+    {
+      "id": "skin-requires-active-sample",
+      "evidence": "ActionClientPlayback.java:72; SkinSession.java:213-221; FirstPersonSkinDraw.java:56"
+    },
+    {
+      "id": "session-open-sites",
+      "evidence": "EntityRenderDispatcherActionMixin.java:60; ItemInHandRendererActionMixin.java:95"
+    },
+    {
+      "id": "current-scope-identity",
+      "evidence": "SkinRenderAccess.java:17-22,41-49; RenderPoseScope.java:55-64"
+    },
+    {
+      "id": "shared-model-nesting",
+      "evidence": "SkinAttachmentBridge.java:366-378; EntityRenderDispatcherActionMixin.java:74-78"
+    },
+    {
+      "id": "token-isolation",
+      "evidence": "SkinAttachmentBridge.java:152-169,183-197; LayerHold.java:17-36; ArmorDraw.java:35-57; StuckMarks.java:15-29"
+    }
+  ],
+  "fastPaths": {
+    "dispatcher": "non-player already one vanilla render; player bypass only when depth==0 and frozenSample(uuid)==null and !hasPlaybackRecord; one renderer.render with the same arguments",
+    "firstPerson": "same depth/frozen/record condition; one renderArmWithItem with the incoming swingProgress and equipProgress; aim inject returns before firstPersonQuaternion",
+    "attackTime": "player with no record and no frozen sample returns the field value; frozen sample or existing record still calls suppressVanillaSwing; non-players still call it"
+  },
+  "wrappersSkipped": {
+    "armor": "armorPieceNeeded false: one xuexiCallArmorPiece, no ArmorToken",
+    "stuck": "stuckPieceNeeded false: one RenderLayer.render, no StuckToken",
+    "otherLayers": "non-StuckInBodyLayer still one renderLayer"
+  },
+  "wrappersKept": {
+    "armorWhenSkinnedFrame": "currentThirdPerson(entity, model) != null",
+    "stuckWhenSkinnedFrame": "currentThirdPerson(entity, model) != null",
+    "nestedTokens": "LayerHold, ArmorDraw, or StuckMarks depth > 0 still opens and closes a token",
+    "actionWhenRecordOrNested": "dispatcher, hands, and attackTime keep the previous path when a record exists, depth != 0, or this uuid already has a frozen sample",
+    "capeElytraHeadHeld": "mixins unchanged; they do not allocate armor or stuck tokens",
+    "armorDyeTrimGlint": "three renderToBuffer redirects and the armor model hook unchanged"
+  },
+  "nameGate": {
+    "exitCode": 1,
+    "log": "docs/开发记录/空闲与复活性能优化-20261030/name-gate-b.log",
+    "ownedFilesClean": true,
+    "historicalLeft": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202 to"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "C:\\Users\\baishang\\.codex\\skills\\xueximod-art-preview\\SKILL.md",
+    "exitCode": 1,
+    "output": "",
+    "passed": true
+  },
+  {
+    "path": "D:\\alianximod\\AGENTS.md",
+    "exitCode": 1,
+    "output": "",
+    "passed": true
+  },
+  {
+    "path": "D:\\alianximod\\docs\\统一开发与术式批量制作流程.md",
+    "exitCode": 1,
+    "output": "",
+    "passed": true
+  },
+  {
+    "path": "D:\\alianximod\\.grok\\skills\\max-dispatch\\SKILL.md",
+    "exitCode": 1,
+    "output": "",
+    "passed": true
+  }
+]

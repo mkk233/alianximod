@@ -1,0 +1,67 @@
+[
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainDefinition.java",
+    "LastWriteTime": "2026-10-29T22:00:22.6126585+08:00",
+    "Length": 5216
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainService.java",
+    "LastWriteTime": "2026-10-29T22:00:23.9182522+08:00",
+    "Length": 8294
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\WaterReleaseDefinition.java",
+    "LastWriteTime": "2026-10-29T22:00:45.2429536+08:00",
+    "Length": 12226
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainInstance.java",
+    "LastWriteTime": "2026-10-29T22:05:26.9908642+08:00",
+    "Length": 4432
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\contact\\ContactEnchantState.java",
+    "LastWriteTime": "2026-10-29T22:05:35.0242919+08:00",
+    "Length": 4385
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\enchant\\EnchantmentSnapshot.java",
+    "LastWriteTime": "2026-10-29T22:05:32.0629754+08:00",
+    "Length": 7788
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainContactCharge.java",
+    "LastWriteTime": "2026-10-29T22:06:26.5856109+08:00",
+    "Length": 1058
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainContactBilling.java",
+    "LastWriteTime": "2026-10-29T23:10:23.9040732+08:00",
+    "Length": 7566
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\test\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseContainerEnergyCheck.java",
+    "LastWriteTime": "2026-10-29T22:04:11.44764+08:00",
+    "Length": 22507
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\TechniqueHits.java",
+    "LastWriteTime": "2026-10-29T23:11:01.0177388+08:00",
+    "Length": 13279
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\LivingDomainDamageCommitMixin.java",
+    "LastWriteTime": "2026-10-29T23:10:25.8451475+08:00",
+    "Length": 3272
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\PlayerDomainDamageCommitMixin.java",
+    "LastWriteTime": "2026-10-29T23:10:27.850825+08:00",
+    "Length": 2367
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\resources\\xueximod.mixins.json",
+    "LastWriteTime": "2026-10-29T22:49:59.23063+08:00",
+    "Length": 1787
+  }
+]

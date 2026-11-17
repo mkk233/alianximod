@@ -1,0 +1,18 @@
+{
+  "batchId": "water-vortex-20261103",
+  "taskId": "sheet-owner",
+  "workspace": "D:/alianximod",
+  "stage": "delivery",
+  "operation": "deliver-approved-standalone-vortex-v4",
+  "authorization": "用户已确认独立旋流v4并授权接入；项目流程要求编译成功后仅water_vortex迁回待验收，由原sheet-owner唯一安全写回；派发时必须有成功编译回执",
+  "inputVersion": "独立旋流立体返修-20261109-待验收.md+已确认v4+接入报告+本次最终编译报告",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/docs/术式制作表.xlsx",
+    "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/sheet-work/独立旋流-20261109",
+    "D:/alianximod/docs/开发记录/术式批量制作/水流组合-20261103/实测返修-20261109-独立旋流/表交付回执.md"
+  ],
+  "dependencies": [
+    "source-owner"
+  ]
+}

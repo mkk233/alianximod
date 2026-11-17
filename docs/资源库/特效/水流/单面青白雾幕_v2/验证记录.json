@@ -1,0 +1,38 @@
+{
+  "frames": 32,
+  "size": "128x2048",
+  "alphaHistogram": [
+    {
+      "alpha": 0,
+      "pixels": 121224
+    },
+    {
+      "alpha": 23,
+      "pixels": 35376
+    },
+    {
+      "alpha": 41,
+      "pixels": 42248
+    },
+    {
+      "alpha": 66,
+      "pixels": 36064
+    },
+    {
+      "alpha": 94,
+      "pixels": 21192
+    },
+    {
+      "alpha": 128,
+      "pixels": 5032
+    },
+    {
+      "alpha": 158,
+      "pixels": 1008
+    }
+  ],
+  "opaqueEdgePixels": 0,
+  "repeatMismatch": 0,
+  "stripMismatch": 0,
+  "gameTested": false
+}

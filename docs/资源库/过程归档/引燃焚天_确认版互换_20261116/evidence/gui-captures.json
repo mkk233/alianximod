@@ -1,0 +1,167 @@
+{
+  "status": "approved_for_recipient_integration",
+  "blockbench": "5.2.2",
+  "plugin": "1.10.1",
+  "captures": [
+    {
+      "name": "gui_front_approved_recipients",
+      "kindleFrame": 4,
+      "fentianFrame": 11,
+      "position": [
+        0,
+        16,
+        110
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/previews/gui_front_approved_recipients.png",
+      "project": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "status": "approved_for_recipient_integration",
+      "source": "connected native desktop main Preview.selected.screenshot immediate WebGL render",
+      "document_visibility": "hidden",
+      "kindle_center_units": [
+        -23,
+        12.96,
+        -12
+      ],
+      "kindle_normal_offset_units": 0,
+      "fentian_target_center_units": [
+        23,
+        14.4,
+        12
+      ],
+      "fentian_support_offset_units": 5.44,
+      "rotation_deg": [
+        -3.70100908388482e-15,
+        0,
+        0
+      ],
+      "kindle_depth_test": true,
+      "fentian_depth_test": true
+    },
+    {
+      "name": "gui_oblique_approved_recipients",
+      "kindleFrame": 4,
+      "fentianFrame": 6,
+      "position": [
+        58,
+        35,
+        110
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/previews/gui_oblique_approved_recipients.png",
+      "project": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "status": "approved_for_recipient_integration",
+      "source": "connected native desktop main Preview.selected.screenshot immediate WebGL render",
+      "document_visibility": "hidden",
+      "kindle_center_units": [
+        -23,
+        12.96,
+        -12
+      ],
+      "kindle_normal_offset_units": 0,
+      "fentian_target_center_units": [
+        23,
+        14.4,
+        12
+      ],
+      "fentian_support_offset_units": 9.328998730636258,
+      "rotation_deg": [
+        -9.136681011154625,
+        27.80145877993413,
+        4.494497207338837e-16
+      ],
+      "kindle_depth_test": true,
+      "fentian_depth_test": true
+    },
+    {
+      "name": "gui_frozen_side_distance",
+      "kindleFrame": 4,
+      "fentianFrame": 11,
+      "position": [
+        115,
+        28,
+        22
+      ],
+      "target": [
+        0,
+        15,
+        0
+      ],
+      "follow": false,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/previews/gui_frozen_side_distance.png",
+      "project": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "status": "approved_for_recipient_integration",
+      "source": "connected native desktop main Preview.selected.screenshot immediate WebGL render",
+      "document_visibility": "hidden",
+      "kindle_center_units": [
+        -23,
+        12.96,
+        -12
+      ],
+      "kindle_normal_offset_units": 0,
+      "fentian_target_center_units": [
+        23,
+        14.4,
+        12
+      ],
+      "fentian_support_offset_units": 5.44,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "kindle_depth_test": true,
+      "fentian_depth_test": true
+    },
+    {
+      "name": "gui_front_ending_stages",
+      "kindleFrame": 46,
+      "fentianFrame": 16,
+      "position": [
+        0,
+        16,
+        110
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "follow": true,
+      "path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/previews/gui_front_ending_stages.png",
+      "project": "d8549d69-5160-499c-12b6-87d88f8bc273",
+      "status": "approved_for_recipient_integration",
+      "source": "connected native desktop main Preview.selected.screenshot immediate WebGL render",
+      "document_visibility": "hidden",
+      "kindle_center_units": [
+        -23,
+        12.96,
+        -12
+      ],
+      "kindle_normal_offset_units": 0,
+      "fentian_target_center_units": [
+        23,
+        14.4,
+        12
+      ],
+      "fentian_support_offset_units": 5.44,
+      "rotation_deg": [
+        -3.70100908388482e-15,
+        0,
+        0
+      ],
+      "kindle_depth_test": true,
+      "fentian_depth_test": true
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "technique": "fire_cool",
+  "version": "v4.1",
+  "status": "integrated_compile_passed_game_test_pending",
+  "confirmedDate": "2026-11-12",
+  "frames": 16,
+  "frameMs": 75,
+  "steamFirstVisibleMs": 75,
+  "waveFirstVisibleMs": 450,
+  "waveHeightModelUnits": 1.2,
+  "actualBlockbenchPreview": "cool_v4_1_spatial_preview.gif",
+  "files": [
+    {
+      "path": "cool_v4_1_fragments_strip.png",
+      "bytes": 792,
+      "sha256": "5F5D4D387DE9767E759CA77681A41B47A791B71FE5FCC1558C0EA4BB1770C5C0"
+    },
+    {
+      "path": "cool_v4_1_front_strip.png",
+      "bytes": 2980,
+      "sha256": "484839BA59E66C1080DB45629DA1CA47D20BC0E7848AC70BA88AE6B233FFC549"
+    },
+    {
+      "path": "cool_v4_1_preview.aseprite",
+      "bytes": 30604,
+      "sha256": "5B4123F27E838396A4D6F4B6FDBBB1E8080C67F172672AAB08BE01645B3981C4"
+    },
+    {
+      "path": "cool_v4_1_preview.gif",
+      "bytes": 81058,
+      "sha256": "8A564AA38445DD44DA48B8C2B446337CA882C775730254FFB9D8399275043F6D"
+    },
+    {
+      "path": "cool_v4_1_rear_strip.png",
+      "bytes": 4458,
+      "sha256": "31259CCD0F7A3913CFEBD8878B54FED2C1EC4813B4E955B8E0A64EBF84253E21"
+    },
+    {
+      "path": "cool_v4_1_shockwave_strip.png",
+      "bytes": 11156,
+      "sha256": "DF4419173D8CBD7B65C91BD2CE9D04B7B6B21009773D2FE5EF0581FC2AF0F7C6"
+    },
+    {
+      "path": "cool_v4_1_shockwave.aseprite",
+      "bytes": 12518,
+      "sha256": "A96C1EC8A5322E49818DC724794BE1D03EBC662BF751E2E637237C0664B35DFC"
+    },
+    {
+      "path": "cool_v4_1_spatial_high_angle.png",
+      "bytes": 39233,
+      "sha256": "718C224AA6B30D5DD7F57D3326C5008EE5592783C533E774BE4953BD95DCFCAD"
+    },
+    {
+      "path": "cool_v4_1_spatial_keyframes.png",
+      "bytes": 31301,
+      "sha256": "52519DB77EAFB78364BDB426825FB113DB87D4A8E69E0E5317F8DF62613E2178"
+    },
+    {
+      "path": "cool_v4_1_spatial_preview.aseprite",
+      "bytes": 180430,
+      "sha256": "72C5A601301D5002B00E4E6A5AF859839033B6A357D2DF103CB0B79A77BF311A"
+    },
+    {
+      "path": "cool_v4_1_spatial_preview.gif",
+      "bytes": 51135,
+      "sha256": "7937671298C147869087A7FD314BD86279E12F27E882EEAEECD393C59044149F"
+    },
+    {
+      "path": "cool_v4_1_spatial_side.png",
+      "bytes": 29603,
+      "sha256": "A57B90598BC877A6137D82E94A14951C43A99780993A3EC06EF44CE199BCCA11"
+    },
+    {
+      "path": "cool_v4_1_spatial.bbmodel",
+      "bytes": 78340,
+      "sha256": "9466E231D87B46C93D82A37D04B435804FF0E5E525DA31548CEE1F9B61B11822"
+    },
+    {
+      "path": "cool_v4_1_spatial.png",
+      "bytes": 34106,
+      "sha256": "6BED55C744949BB5AF5EFB2D858CE1967BF5D6806C72D516582AE1EC5FC2F631"
+    },
+    {
+      "path": "cool_v4_1_vapour_strip.png",
+      "bytes": 8308,
+      "sha256": "60A1F326D7CAC72E6F3B7AD3BCA0AEE7FEF8532036D3CF0EC2503E5777ADC8BE"
+    },
+    {
+      "path": "cool_v4_1_vapour.aseprite",
+      "bytes": 9311,
+      "sha256": "B1D3A03EC564FB38EB8BA8DABCDCC002B53E1529FEC223868FDD19C6B04CF809"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5025,
+      "sha256": "5C60A54D2638855A43913F02C462BFDD434B62DF5995C44B436BD0D8ACFA1FF8"
+    }
+  ],
+  "integration": {
+    "attempt": "20261112-final-sheet-write",
+    "state": "v4.1已接入，最终编译通过，待用户游戏实测",
+    "compilePassed": true,
+    "compileExitCode": 0,
+    "compileStarted": "2026-11-12T13:21:15.2485955+08:00",
+    "compileFinished": "2026-11-12T13:21:41.0475154+08:00",
+    "gameVerified": false,
+    "sheet": {
+      "from": "制作中第3行",
+      "to": "待验收第21行"
+    },
+    "runtimeDirectory": "src/main/resources/assets/xueximod/textures/effect/cool_v41",
+    "runtimeTextures": [
+      "cool_v4_1_rear_strip.png",
+      "cool_v4_1_front_strip.png",
+      "cool_v4_1_fragments_strip.png",
+      "cool_v4_1_shockwave_strip.png"
+    ],
+    "mcmeta": {
+      "blur": false,
+      "clamp": true
+    },
+    "frames": 16,
+    "frameMs": 75,
+    "steamFirstVisibleMs": 75,
+    "waveFirstVisibleMs": 450,
+    "singlePlayMs": 1200
+  }
+}

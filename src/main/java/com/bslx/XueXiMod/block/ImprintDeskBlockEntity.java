@@ -12,8 +12,8 @@ import org.jetbrains.annotations.Nullable;
  */
 public class ImprintDeskBlockEntity extends BlockEntity {
 
-    public ImprintDeskBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.IMPRINT_DESK.get(), pos, state);
+    public ImprintDeskBlockEntity(BlockPos coordinate, BlockState state) {
+        super(ModBlockEntities.IMPRINT_DESK.get(), coordinate, state);
     }
 
     @Override

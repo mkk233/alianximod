@@ -1,0 +1,25 @@
+{
+  "session_id": "14dc9491-4e97-4a66-a10f-b7a91f9ff90a",
+  "model": "grok-4.7-high-fast",
+  "role": "唯一源码与运行资源作者",
+  "owns": [
+    "src/main/java/com/bslx/XueXiMod/client/furnace/BurnSpatialMount.java",
+    "src/main/java/com/bslx/XueXiMod/client/furnace/BurnFirstPersonPose.java",
+    "src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceBodyLayer.java",
+    "src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceArmFlame.java",
+    "src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceBodyVisual.java",
+    "src/main/resources/assets/xueximod/models/effect/burn_spatial_v1/",
+    "src/main/resources/assets/xueximod/textures/effect/burn_spatial_v1/",
+    "docs/资源库/特效/火焰/燃烧_空间挂载_v1/",
+    "docs/资源库/过程归档/燃烧空间挂载接入-20261101/",
+    "docs/开发记录/燃烧空间挂载接入-20261101/implementation-report.md",
+    "docs/开发记录/燃烧空间挂载接入-20261101/implementation-result.json",
+    "docs/开发记录/燃烧空间挂载接入-20261101/implementation-ownership.json",
+    "docs/开发记录/燃烧空间挂载接入-20261101/index-update.md"
+  ],
+  "not_owned": [
+    "docs/术式制作表.xlsx",
+    "docs/资源库/README.md",
+    "src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java"
+  ]
+}

@@ -1,0 +1,22 @@
+checked_at=2026-10-31T12:54:49.243+08:00
+daemon_12896=gone
+blocking_count=1
+blocking pid=16920 parent=52040 name=java.exe cmd="C:\Program Files\Java\jdk-17\bin\java.exe" -Dforge.enableGameTest=true -Dforge.enabledGameTestNamespaces=xueximod -Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -DignoreList=bootstraplauncher,securejarhandler,asm-co
+JAVA_HOME_selected=C:\Program Files\Java\jdk-17
+java_version=java version "17.0.6" 2023-01-17 LTS | Java(TM) SE Runtime Environment (build 17.0.6+9-LTS-190) | Java HotSpot(TM) 64-Bit Server VM (build 17.0.6+9-LTS-190, mixed mode, sharing)
+GRADLE_USER_HOME_selected=C:\Users\baishang\.gradle
+process_GRADLE_USER_HOME=C:\Users\baishang\AppData\Local\Temp\cursor-sandbox-cache\6e1aa3eeefc9187c8d10ea69ae559231\gradle
+wrapper88=True
+caches88=True
+jvmargs=org.gradle.jvmargs=-Xmx3G
+daemon_prop=org.gradle.daemon=false
+src_main_files=955
+src_main_bytes=10696940
+generated_files=65
+generated_bytes=26708
+unchanged_check src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java matches_b_record=True matches_baseline=True
+unchanged_check src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantLoad.java matches_b_record=True matches_baseline=True
+expected_changes=3
+unexpected_src_main=0
+unexpected_generated=0
+action=stopped_busy

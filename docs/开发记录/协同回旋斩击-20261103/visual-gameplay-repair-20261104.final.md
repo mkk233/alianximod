@@ -1,0 +1,7 @@
+我先读取任务文件和这次玩法修复提示，只按它们共同授权的范围动手。游戏里分身已经协同，但回旋和挥砍没按确认预览播出来。我按现有接入链路查资源、采样和渲染调用，只改白名单里的真实断点。根因已经对上：整圈偏航被欧拉角还原折掉，服务端开始刻和客户端世界时间也不是同一把钟。接下来只在视觉白名单里改采样、根旋转和第一人称出刀。回旋和挥砍姿态都接回了已确认的 v1 曲线。整圈根偏航不再被欧拉角反解折成 0，玩家和镜像分身各自走自己的轨道；第一人称会画出出刀和收势的手臂与握柄。开始刻和世界时间不一致时，动作从收包时刻播放，不再一收到就判结束。
+
+斩光、水幻形和空间切割没有改。共享执行里的开机刻仍建议改成世界年龄，否则迟到包不能按服务器开始刻快进；该文件不在本单可写范围内，没有动。命名检查已通过。还没有统一编译，也没有游戏验证。
+
+<<<CURSOR_TASK_REPORT>>>
+{"workStatus":"reported_done","summary":"回旋根偏航改为未归一的父级旋转，斜斩与回旋骨骼按玩家轨和镜像轨采样；开始刻与世界年龄不一致时从收包时刻播放，第一人称绘制确认出刀和收势。共享执行的开机刻未改。","changedFiles":["D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/cooperative/CooperativePoseApplier.java","D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/cooperative/CooperativeActionViews.java","D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/cooperative/CooperativeWeaponCopy.java","D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/cooperative/CooperativeFirstPerson.java","D:/alianximod/src/main/java/com/bslx/XueXiMod/client/action/cooperative/CooperativeGrip.java","D:/alianximod/src/main/java/com/bslx/XueXiMod/mixin/client/LivingEntityRendererBodyMixin.java","D:/alianximod/src/main/java/com/bslx/XueXiMod/mixin/client/ItemInHandRendererActionMixin.java","D:/alianximod/docs/开发记录/协同回旋斩击-20261103/visual-gameplay-repair-20261104-delivery.md"],"checks":["powershell -NoProfile -File tools/check-name-gate.ps1 退出码 0"],"notRun":["未统一编译","未游戏验证","本阶段额度已用完、返修结果未追加复审"],"writesSettled":true,"blocker":null,"nextAction":"写入收束后由指定编译者对最终源码统一编译；主会话只转达，不把本单写成复审通过。"}
+<<<END_CURSOR_TASK_REPORT>>>

@@ -1,0 +1,145 @@
+[
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainDefinition.java",
+    "LastWriteTime": "2026-10-29T22:00:22.6126585+08:00",
+    "Length": 5216,
+    "SHA256": "ceee8f436a39e5f2a8cc1e5e92cc92957cd7ba896370bce7e81b0d806b1d209f",
+    "FreezeLastWriteTime": "2026-10-29T22:00:22.6126585+08:00",
+    "FreezeLength": 5216,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainService.java",
+    "LastWriteTime": "2026-10-29T22:00:23.9182522+08:00",
+    "Length": 8294,
+    "SHA256": "6e47970684831e1b7fb79e49addb15fa0049ed9f8a3a3065a177e42df9be8fcd",
+    "FreezeLastWriteTime": "2026-10-29T22:00:23.9182522+08:00",
+    "FreezeLength": 8294,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\WaterReleaseDefinition.java",
+    "LastWriteTime": "2026-10-29T22:00:45.2429536+08:00",
+    "Length": 12226,
+    "SHA256": "291c38879ff91d2626c681d0eb960e308daf6cca3f0cc463bf00bdce16591b39",
+    "FreezeLastWriteTime": "2026-10-29T22:00:45.2429536+08:00",
+    "FreezeLength": 12226,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainInstance.java",
+    "LastWriteTime": "2026-10-29T22:05:26.9908642+08:00",
+    "Length": 4432,
+    "SHA256": "2b87a3537600ec0e6aa08967457c52912e818b1950e3b10eaceb72736a41a43f",
+    "FreezeLastWriteTime": "2026-10-29T22:05:26.9908642+08:00",
+    "FreezeLength": 4432,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\contact\\ContactEnchantState.java",
+    "LastWriteTime": "2026-10-29T22:05:35.0242919+08:00",
+    "Length": 4385,
+    "SHA256": "a0771e42afcaca617a7b6f9699306e0b1c2af35546a2c0f9313d53a1174bb152",
+    "FreezeLastWriteTime": "2026-10-29T22:05:35.0242919+08:00",
+    "FreezeLength": 4385,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\enchant\\EnchantmentSnapshot.java",
+    "LastWriteTime": "2026-10-29T22:05:32.0629754+08:00",
+    "Length": 7788,
+    "SHA256": "9ae76ca6857659b91b6a63e27e7409d7e279b37622b2a367365de70812bc8293",
+    "FreezeLastWriteTime": "2026-10-29T22:05:32.0629754+08:00",
+    "FreezeLength": 7788,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainContactCharge.java",
+    "LastWriteTime": "2026-10-29T22:06:26.5856109+08:00",
+    "Length": 1058,
+    "SHA256": "22b7c2af887f00bcee958356e5f816c2464c18a14becadd724ab7bab10336832",
+    "FreezeLastWriteTime": "2026-10-29T22:06:26.5856109+08:00",
+    "FreezeLength": 1058,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainContactBilling.java",
+    "LastWriteTime": "2026-10-29T23:10:23.9040732+08:00",
+    "Length": 7566,
+    "SHA256": "898e80b8674f650f2c00037810c3ba880f611c805b8146bce8059ef0ceb7cf8a",
+    "FreezeLastWriteTime": "2026-10-29T23:10:23.9040732+08:00",
+    "FreezeLength": 7566,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\test\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\ReleaseContainerEnergyCheck.java",
+    "LastWriteTime": "2026-10-29T22:04:11.4476400+08:00",
+    "Length": 22507,
+    "SHA256": "591668298b24c8f7cc9fbd0fccdc8a107f8e796a6898b89c450d9b1b01f3fb3e",
+    "FreezeLastWriteTime": "2026-10-29T22:04:11.44764+08:00",
+    "FreezeLength": 22507,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\TechniqueHits.java",
+    "LastWriteTime": "2026-10-29T23:11:01.0177388+08:00",
+    "Length": 13279,
+    "SHA256": "10dd680b45c91e83150465b785634c4df04ce6fc7e1f5ec3ee0d60b82ce80f9a",
+    "FreezeLastWriteTime": "2026-10-29T23:11:01.0177388+08:00",
+    "FreezeLength": 13279,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\LivingDomainDamageCommitMixin.java",
+    "LastWriteTime": "2026-10-29T23:10:25.8451475+08:00",
+    "Length": 3272,
+    "SHA256": "9dc2dd9109a2f3a777e7729777919fe0ba0ba99679e2c92f8bb399a9d1e4fdca",
+    "FreezeLastWriteTime": "2026-10-29T23:10:25.8451475+08:00",
+    "FreezeLength": 3272,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\mixin\\PlayerDomainDamageCommitMixin.java",
+    "LastWriteTime": "2026-10-29T23:10:27.8508250+08:00",
+    "Length": 2367,
+    "SHA256": "af9b9ff55c743dbed786f034c033190a8b8e198e695367fd8988d50fd6a81db8",
+    "FreezeLastWriteTime": "2026-10-29T23:10:27.850825+08:00",
+    "FreezeLength": 2367,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  },
+  {
+    "FullName": "D:\\alianximod\\src\\main\\resources\\xueximod.mixins.json",
+    "LastWriteTime": "2026-10-29T22:49:59.2306300+08:00",
+    "Length": 1787,
+    "SHA256": "913316d7f4d34f42c291e9824c8afbe7e53a41d008a29f0173ca7fc44612357c",
+    "FreezeLastWriteTime": "2026-10-29T22:49:59.23063+08:00",
+    "FreezeLength": 1787,
+    "DeltaMs": 0.0,
+    "LengthMatchesFreeze": true,
+    "TimeMatchesFreeze": true
+  }
+]

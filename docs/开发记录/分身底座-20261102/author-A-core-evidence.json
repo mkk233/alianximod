@@ -1,0 +1,117 @@
+{
+  "batch": "分身底座-20261102",
+  "author": "A",
+  "task": "author-A-core",
+  "integratedIntoRuntimeSource": false,
+  "compile": "待统一编译",
+  "game": "游戏未测",
+  "nameGate": "未跑。tools/check-name-gate.ps1 只扫描真实 src，候选门禁留接入后。",
+  "stoppedWriting": true,
+  "files": [
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneActionContext.java",
+      "sha256": "62a5a62a271671e966e62fa99b9ad1861d2724ad2639eb894621200939695d7f",
+      "lastWriteTime": "2026-11-02 04:10:15"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneActionRequest.java",
+      "sha256": "7433764f3b1c3a2eb698520168f6d727719d7e04f173b653f67d6db8dbf98f21",
+      "lastWriteTime": "2026-11-02 04:10:14"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneActorFrame.java",
+      "sha256": "148bd3835188bf3e4dd0ad362ecf2d06e59520fb8d7f887af4bb012ffb4be6a3",
+      "lastWriteTime": "2026-11-02 04:10:12"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneDecoyPolicy.java",
+      "sha256": "3e41f2e4e6de0ca0cad36f810b4672e3fc2d5c3ab5ec467cf250dafd6b426f61",
+      "lastWriteTime": "2026-11-02 04:13:15"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneEndReason.java",
+      "sha256": "8b68e1a7131c0e339fcb8edcadeb957501e1e6d2e48f2891ee4661bdd032624b",
+      "lastWriteTime": "2026-11-02 04:10:07"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneEntity.java",
+      "sha256": "1fd9cf0e75c915a99f5cb4c88e70206c8abb4128671ca716ebbc87ceafe8285f",
+      "lastWriteTime": "2026-11-02 04:21:48"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneHandle.java",
+      "sha256": "ecf3e3da1989c17395ae1729fc4619e053090b07050d8d02d8cf01be1fe5a830",
+      "lastWriteTime": "2026-11-02 04:10:10"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneKind.java",
+      "sha256": "abc236aae6511c2e56fab0ebd034970f63585a7c35c1b480102be2e397b875ef",
+      "lastWriteTime": "2026-11-02 04:10:05"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneLifecycleEvents.java",
+      "sha256": "0d1eb936e2e707c1cb1fe9c04cc2ee0fe28161db12bf872773d4bb2b235d4ec2",
+      "lastWriteTime": "2026-11-02 04:15:15"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneLifeState.java",
+      "sha256": "1477f755b85ad943df5c76fbf8fe828a57eabd2c8c3f1fe3bf1df5e2bd6d21d1",
+      "lastWriteTime": "2026-11-02 04:21:48"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/ClonePositionPolicy.java",
+      "sha256": "646e5b84a05928019eb4eb4911e424b684c24387b57e583975211e672baabad5",
+      "lastWriteTime": "2026-11-02 04:10:37"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneResponseState.java",
+      "sha256": "ca4254b92a901db7397b9873abba8adb6a1403a7b165acbcbf42182c509b30d8",
+      "lastWriteTime": "2026-11-02 04:10:07"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneResults.java",
+      "sha256": "d29a8de9536e171c50457854fb1c3b5dc19aaf1e2df57907490a7a7070d96558",
+      "lastWriteTime": "2026-11-02 04:10:25"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneRuntime.java",
+      "sha256": "97868be321f3ab824e8798e86df46f20cfbb772b54014c8f917a92960d278a5e",
+      "lastWriteTime": "2026-11-02 04:21:49"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneRuntimeState.java",
+      "sha256": "495e85f06664afa21bc2c81115fbf32f781e5c11f731e1a160dba62b254abc72",
+      "lastWriteTime": "2026-11-02 04:21:48"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneService.java",
+      "sha256": "0e39fbfc8c0f1cbf388098f214df948e342e4fa5d6b38e8d9c8d91af690d4e34",
+      "lastWriteTime": "2026-11-02 04:23:22"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneSourceScope.java",
+      "sha256": "98ba28afd837c3c2fcb87c1a5e2793399c4ef729057db06004895c96d0136245",
+      "lastWriteTime": "2026-11-02 04:10:30"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneSpec.java",
+      "sha256": "2d2c278dca12c4030c3dd2756f5c79ac475bc3588af37d9ac9790e6fb121aae8",
+      "lastWriteTime": "2026-11-02 04:10:09"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneTriggerInput.java",
+      "sha256": "fd5e5e7d2ec81d740488ef12fb3fa83a84d614105c55ddf3906847bd955269c0",
+      "lastWriteTime": "2026-11-02 04:10:12"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/CloneTriggerPolicy.java",
+      "sha256": "ede8a3c1b984e9772c40dfc4b39e8a35f7180994795f821344166422c252abe6",
+      "lastWriteTime": "2026-11-02 04:13:16"
+    },
+    {
+      "path": "docs/开发记录/分身底座-20261102/author-A-core-report.md",
+      "sha256": "149c165c52068087e20660f9fb4d351859a709c0366d9b1e78ac7983b7d006c7",
+      "lastWriteTime": "2026-11-02 04:24:18"
+    }
+  ]
+}

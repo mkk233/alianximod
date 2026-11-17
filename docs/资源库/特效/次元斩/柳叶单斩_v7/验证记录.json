@@ -1,0 +1,8 @@
+{
+  "frames": 20,
+  "durationSeconds": 1.0,
+  "addedPeakHoldMs": 200,
+  "sourceFrameMapping": "0..4,4,4,4,4,5..15",
+  "pixelMismatch": 0,
+  "shrinkUnchanged": true
+}

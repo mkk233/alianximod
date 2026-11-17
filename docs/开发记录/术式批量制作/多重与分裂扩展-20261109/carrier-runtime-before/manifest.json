@@ -1,0 +1,17 @@
+[
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\network\\SkillUsePacket.java",
+    "sha256": "F7D4A453883EA456283C3E79DB692F68FC13D4DACFF7FE046FD92B4099ABD8EC",
+    "lastWriteTimeUtc": "2026-11-09T09:26:33.1043278Z"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\zh_cn.json",
+    "sha256": "9AEC8757A0ACC53CBB8285DD544F6F3A933BF209B19387A244580C54AA375A3E",
+    "lastWriteTimeUtc": "2026-11-09T10:23:05.2808431Z"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\lang\\en_us.json",
+    "sha256": "CFD92758ACD6E7B1B4852368A4D71146DECB37BB6948A2A6304F99145AB97CAE",
+    "lastWriteTimeUtc": "2026-11-09T10:23:05.3666972Z"
+  }
+]

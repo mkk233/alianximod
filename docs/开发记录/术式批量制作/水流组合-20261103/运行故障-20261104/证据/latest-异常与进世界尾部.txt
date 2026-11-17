@@ -1,0 +1,44 @@
+来源：D:\alianximod\run\logs\latest.log
+文件最后写入时间：2026-11-04 00:41:28
+对应行号按该文件原文。这里只保留异常链和进世界尾部。
+
+23:[0411月2026 00:40:45.438] [Yggdrasil Key Fetcher/ERROR] [com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo/]: Failed to request yggdrasil public key
+24:com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
+25:	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:119)
+26:	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:91)
+27:	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:94)
+28:	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.lambda$get$1(YggdrasilServicesKeyInfo.java:81)
+29:	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+30:	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+31:	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+32:	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+33:	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+34:	at java.lang.Thread.run(Thread.java:833)
+35:Caused by: java.net.SocketException: Connection reset
+36:	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
+37:	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+38:	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+39:	at java.net.Socket$SocketInputStream.read(Socket.java:966)
+40:	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+41:	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+42:	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+43:	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+44:	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+45:	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+46:	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+47:	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+48:	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:580)
+49:	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
+50:	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1665)
+51:	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+52:	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+53:	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:140)
+54:	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:96)
+55:	... 9 more
+
+91:[0411月2026 00:41:23.179] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+94:[0411月2026 00:41:25.455] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+95:[0411月2026 00:41:25.455] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+96:[0411月2026 00:41:26.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+97:[0411月2026 00:41:27.852] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+102:[0411月2026 00:41:28.876] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：4%

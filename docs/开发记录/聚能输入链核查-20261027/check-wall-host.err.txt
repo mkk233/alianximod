@@ -1,0 +1,17 @@
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at net.minecraft.resources.ResourceKey.createRegistryKey(ResourceKey.java:50)
+	at net.minecraft.core.registries.Registries.createRegistryKey(Registries.java:189)
+	at net.minecraft.core.registries.Registries.<clinit>(Registries.java:92)
+	at net.minecraft.world.flag.FeatureElement.<clinit>(FeatureElement.java:9)
+	at net.minecraft.network.syncher.EntityDataSerializers.<clinit>(EntityDataSerializers.java:58)
+	at net.minecraft.world.entity.Entity.<clinit>(Entity.java:199)
+	at com.bslx.XueXiMod.shu.technique.release.deflection.hosts.WallHostExpiryCheck.sameAsWall(WallHostExpiryCheck.java:59)
+	at com.bslx.XueXiMod.shu.technique.release.deflection.hosts.WallHostExpiryCheck.finiteLife(WallHostExpiryCheck.java:33)
+	at com.bslx.XueXiMod.shu.technique.release.deflection.hosts.WallHostExpiryCheck.main(WallHostExpiryCheck.java:17)
+Caused by: java.lang.IllegalArgumentException: Not bootstrapped (called from registry ResourceKey[minecraft:root / minecraft:root])
+	at net.minecraft.server.Bootstrap.createBootstrapException(Bootstrap.java:122)
+	at net.minecraft.server.Bootstrap.checkBootstrapCalled(Bootstrap.java:115)
+	at net.minecraft.core.MappedRegistry.<init>(MappedRegistry.java:85)
+	at net.minecraft.core.MappedRegistry.<init>(MappedRegistry.java:81)
+	at net.minecraft.core.registries.BuiltInRegistries.<clinit>(BuiltInRegistries.java:113)
+	... 9 more

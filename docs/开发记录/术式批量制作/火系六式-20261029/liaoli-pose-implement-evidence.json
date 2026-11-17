@@ -1,0 +1,51 @@
+{
+  "task": "liaoli-pose-implement",
+  "sourceAuthor": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+  "sheet": {"id": "fire_liaoli", "sheet": "制作中", "row": 6, "moved": true},
+  "compiled": false,
+  "formalReview": false,
+  "quota": "设计 2/2、实现 3/3 已用完；本单不追加复审",
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "exitCode": 1,
+    "remaining": [
+      "OriginalHumanoid.java:165 i",
+      "OriginalHumanoid.java:202 to"
+    ],
+    "touchedFilesClean": true
+  },
+  "sourcesBefore": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java",
+      "sha256": "98558537AB9FE6F284F576EC5CB9E6FE5C1925036E9606EC7BFAE2AD275F3D6C",
+      "lastWriteTime": "2026-10-29 03:12:30.1194550"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java",
+      "sha256": "5A90BCE8870F15F2446587C2E9F9689819473D13EE54B6B34F4AA49F1BC0F915",
+      "lastWriteTime": "2026-10-29 03:14:25.7414899"
+    }
+  ],
+  "sourcesAfter": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/visual/liaoli/LiaoliV6Layout.java",
+      "sha256": "98169A38537D34EA19B95DC9482A863D7A85E95562A2BC44AF2C49D599394C35",
+      "bytes": 13299,
+      "lastWriteTime": "2026-10-30 00:46:47.1639184"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java",
+      "sha256": "ABB8B26D9696672275CE319F4B55E01050FD7CFCBCFEE3C3E1D9B236C3DC99AA",
+      "bytes": 17806,
+      "lastWriteTime": "2026-10-30 00:47:36.0356603"
+    }
+  ],
+  "runtimeTexturesUnchanged": [
+    {"name": "sword_unlit.png", "sha256": "2FB695A061875B6C88C102716F36E5B3791288F1EF9734E5EC7D847EFF7119B8", "lastWriteTime": "2026-10-29 02:46:19.0567217"},
+    {"name": "sword_hot.png", "sha256": "155FA83DFA7FD54F4F7040C3A2684F0DF622E17BE6DB76BB74FD328BAEAA42D6", "lastWriteTime": "2026-10-29 02:55:34.8088110"},
+    {"name": "back_ignite.png", "sha256": "A83D034983C36F4EEB1B492CB6B269937BBCBFFD0DEB4FB0729E1E031E250CB2", "lastWriteTime": "2026-10-29 02:55:35.0359975"},
+    {"name": "back_flow.png", "sha256": "254E8F1F63BE6F13017AC192FD4AF496B3ADB960133E55F65535A802B95FA6E0", "lastWriteTime": "2026-10-29 02:55:35.0163990"},
+    {"name": "thrust_backflow.png", "sha256": "2D57C54F8D99AC3E451B35A70009D99B2885B924242349A6C1B6BFE120BD329F", "lastWriteTime": "2026-10-29 02:55:35.1454599"},
+    {"name": "rear_ring.png", "sha256": "857C37C052D082548A93B0E00868375C973D33B2CDB2C0B477C46C384A1A0CDE", "lastWriteTime": "2026-10-29 03:00:23.6262061"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "released": true,
+  "scope": "A-repair-1",
+  "hashes": null,
+  "nameGate": "已跑，退出码 1。本次改动文件无违规。旧违规：OriginalHumanoid.java:165 i，OriginalHumanoid.java:202 to。未改未触碰文件。",
+  "compile": "未跑",
+  "backupConfirmed": true,
+  "backupFiles": [
+    "backup-A-repair-1/src/main/java/com/bslx/XueXiMod/network/AutomaticRound.java",
+    "backup-A-repair-1/src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java"
+  ],
+  "unchanged": [
+    "GroupBudget.java",
+    "ReleaseExecutionContext.java",
+    "ReleaseBatch.java"
+  ],
+  "unifiedCompilePending": true,
+  "featureVerified": false
+}

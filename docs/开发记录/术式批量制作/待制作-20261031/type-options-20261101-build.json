@@ -1,0 +1,21 @@
+{
+  "baselineSha256": "02FC2FD007D695611615AC9A7F26EAE4EE9562303A06E692FDC016DFA166CCE7",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\type-options-20261101-candidate-preserved.xlsx",
+  "candidateSha256": "54CE18A22A13E3615EE44DAA08FB7B636FF1D6944AF6368B35E25AEA4D51663D",
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\备份\\术式制作表-type-options-20261101-005830-1.xlsx",
+  "added": [
+    {
+      "cell": "Q9",
+      "value": "附魔"
+    },
+    {
+      "cell": "Q10",
+      "value": "领域"
+    }
+  ],
+  "oldRange": "数据表!$Q$4:$Q$8",
+  "newRange": "数据表!$Q$4:$Q$10",
+  "validationChanged": false,
+  "codesInvented": false,
+  "submitted": false
+}

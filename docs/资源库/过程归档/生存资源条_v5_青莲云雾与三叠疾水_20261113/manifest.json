@@ -1,0 +1,141 @@
+{
+  "id": "resource-bars-lotus-mist-stream8-v5-candidate",
+  "title": "左上角生存资源条（图二 D 青莲朝外散出云雾法力 + 图三 8 号三道顺流水纹水势 + 双阶梯回纹槽 + v4.1 流云/四档水流填充）v5 高精还原候选稿",
+  "batchId": "hud-bars-20261110",
+  "taskId": "hud_bars_v3_art_preview",
+  "attemptId": "20261113-v5-lotus-mist-stream8",
+  "status": "candidate_pending_user_confirmation",
+  "integratedIntoGame": false,
+  "blockbenchApplicable": false,
+  "blockbenchReason": "左上角生存资源条仅在二维平面 HUD 界面显示，无三维空间形状、朝向、厚度、遮挡、环绕、挂载或三维运动姿态关系。",
+  "createdAt": "2026-11-13",
+  "tool": "Aseprite v1.3.17 (Lua batch + multi-layer RGB .aseprite)",
+  "renderScaleSpec": {
+    "hudPoseScale": 0.5,
+    "manaIconNative": "64x56",
+    "manaIconLogical": "32x28",
+    "waterIconNative": "48x40",
+    "waterIconLogical": "24x20",
+    "trackNative": "204x20",
+    "trackLogical": "102x10",
+    "fillNative": "180x10",
+    "fillLogical": "90x5",
+    "fillOffsetInTrackNative": [18, 5],
+    "waterThresholdClaspsNativeTx": {
+      "20": 53,
+      "50": 107
+    },
+    "animationFrames": 16,
+    "frameDurationMs": 90
+  },
+  "references": [
+    {
+      "path": "ref/crop_ref_D_lotus.png",
+      "size": "426x257",
+      "bytes": 171299,
+      "sha256": "8d558063d688b4d8f7f166127e50c6e51aaad89ea86aa27cd60ca4841a59c907"
+    },
+    {
+      "path": "ref/crop_ref_8_water.png",
+      "size": "302x373",
+      "bytes": 150671,
+      "sha256": "78233d54c9e22fb40ff2f120932a2b3ff5556d8a792b88f148a4ad18ea17d38c"
+    },
+    {
+      "path": "ref/ref_sheet2_eastern_BD.png",
+      "size": "1774x887",
+      "bytes": 1591053,
+      "sha256": "1fd9377bee3dae50bf00c2e8d3acb1c8cf4b6cf073ff7dfc636739c2f4e66b76"
+    },
+    {
+      "path": "ref/ref_sheet3_icons_6_8_11.png",
+      "size": "1774x887",
+      "bytes": 1506425,
+      "sha256": "4db3d016fb8778ac79bffbb85582195baf901b2fd9f2555a85b7163e0b1b1aa1"
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/build_hud_bars_v5.lua",
+      "bytes": 98057,
+      "sha256": "034d5281a89f1237985c0a345c409ed4c0efc4f16148639cb9e8a0979ff0286a"
+    },
+    {
+      "path": "src/mana_lotus_icon_v5.aseprite",
+      "size": "64x56",
+      "frames": 16,
+      "layers": 4,
+      "frameDurationMs": 90,
+      "bytes": 73271,
+      "sha256": "21a07b10c2cd15f50a49fb98ec436280a2be585e4c08614b0afab93e4a04fcef"
+    },
+    {
+      "path": "src/water_stream8_icon_v5.aseprite",
+      "size": "48x40",
+      "frames": 16,
+      "layers": 3,
+      "frameDurationMs": 90,
+      "bytes": 29482,
+      "sha256": "7e418bff81dd80abd7df68957f8bb043437a7e6fc5ac063ddc30752eb4cab365"
+    },
+    {
+      "path": "src/hud_bars_v5_components.aseprite",
+      "size": "560x260",
+      "frames": 16,
+      "layers": 4,
+      "frameDurationMs": 90,
+      "bytes": 517122,
+      "sha256": "c4e15754ccb9eaf00c3e14889719ade6a1e985b5f15d2c055d15d20c00ccc545"
+    },
+    {
+      "path": "src/hud_context_day_night.aseprite",
+      "size": "1044x570",
+      "frames": 1,
+      "bytes": 62789,
+      "sha256": "0738ea6a45b40498cabf95a8013f25ecec63f7ca3a913f556c816f07dac4dc87"
+    },
+    {
+      "path": "src/states_progression.aseprite",
+      "size": "872x612",
+      "frames": 1,
+      "bytes": 68390,
+      "sha256": "cf055fd9aa7d2bc0847af12cc3d77a4d5ad6ae03d8b2b5a4d6de8c16aba6e935"
+    },
+    {
+      "path": "src/lowkey_flow_preview.aseprite",
+      "size": "476x336",
+      "frames": 16,
+      "frameDurationMs": 90,
+      "bytes": 410215,
+      "sha256": "35135827569cf35d473b0ece32cfd1c03538971cd236e03a671e609d24ddaaf3"
+    }
+  ],
+  "exports": [
+    {"path": "export/mana_icon_empty.png", "size": "64x56", "bytes": 3096, "sha256": "6bec168910e21bc512967005e09406f47c3466a12a238a3afae764346ec6ba83"},
+    {"path": "export/mana_icon.png", "size": "64x56", "bytes": 4516, "sha256": "e507e42d989622b596775e206c3612cb0fd7719e78b7c9163d3c561864739390"},
+    {"path": "export/mana_icon_strip.png", "size": "64x896", "frames": 16, "bytes": 22874, "sha256": "b0138d1dbe460a1b2c9cf33c925da31f53307f6b84606b71de4cf5d3540b4219"},
+    {"path": "export/mana_icon_full.png", "size": "64x56", "bytes": 4467, "sha256": "c0bb8bc1c4b39ce77bc812b1128d3dfbf46cc5075dbd35a1c52ee40ccaa0e579"},
+    {"path": "export/mana_icon_full_strip.png", "size": "64x896", "frames": 16, "bytes": 22759, "sha256": "ee7cb5852601dd454eaa6384b2108abb90bceb0971a3802ef3a9d9c5349871c5"},
+    {"path": "export/mana_track.png", "size": "204x20", "bytes": 782, "sha256": "d794835224c9a31711f9ee6c1ce1f74c19e13de526ec7f4d573c0d8543fa73ba"},
+    {"path": "export/mana_fill_low.png", "size": "180x10", "bytes": 1954, "sha256": "d2740621236f816b633d8417455f10cc39bda72c6ba819ec9ae5c2b83209a3e4"},
+    {"path": "export/mana_fill_strip.png", "size": "180x160", "frames": 16, "bytes": 31816, "sha256": "e970363797aff324c054de7e1d3edc9e353c03bfd963687e4ff59dc6c17ddf06"},
+    {"path": "export/mana_fill_full_strip.png", "size": "180x160", "frames": 16, "bytes": 30239, "sha256": "95c3b5f5fb918e4b6332eefb7a5f4a1db65af5f329595bf8ef95f76720ea652d"},
+    {"path": "export/water_icon_idle.png", "size": "48x40", "bytes": 1295, "sha256": "8c5dcfe06b8228ca99052d814a60935b19e8160531e8d19c72abd0efbb35419b"},
+    {"path": "export/water_icon.png", "size": "48x40", "bytes": 1717, "sha256": "57436522fb2b02bc76bfcaeb87b48949340ced9139e5a312e9bff5a74b19be67"},
+    {"path": "export/water_icon_stream_strip.png", "size": "48x640", "frames": 16, "bytes": 6145, "sha256": "57a75976b216f1bafd273069e4d8596dec5cb8efde5b879685a9dc0a844ff544"},
+    {"path": "export/water_icon_surge.png", "size": "48x40", "bytes": 1738, "sha256": "441f624befb0f55c0df819eee01eb3d0f3d6b81fda429425bf6a6bec40c1f94a"},
+    {"path": "export/water_icon_surge_strip.png", "size": "48x640", "frames": 16, "bytes": 6304, "sha256": "50b89717176cdb425feab1ebe3673e90d322d531a33de5a133797f080f2e136e"},
+    {"path": "export/water_track.png", "size": "204x20", "bytes": 1019, "sha256": "3961ab13336acbbbbbe9f92981618085ba9b47edbe56ea2a59cd34925f0cbc11"},
+    {"path": "export/water_track_states.png", "size": "204x60", "states": 3, "bytes": 1597, "sha256": "5e52a96274dd4a636643d72251c664d35a8fb324ec59ea3a78f8df9939a06878"},
+    {"path": "export/water_fill_tier1_trickle_strip.png", "size": "180x160", "frames": 16, "bytes": 4255, "sha256": "3974afbac4fb85b7bb56602fe651a1de5d37dd31a52981a5dfae7cb0ccc949ed"},
+    {"path": "export/water_fill_tier2_stream_strip.png", "size": "180x160", "frames": 16, "bytes": 31261, "sha256": "ecd0d6d35bdc5905b112cb8a26f3fe705856bef6b5c4fd1e5d70feeb1039f0c1"},
+    {"path": "export/water_fill_tier3_torrent_strip.png", "size": "180x160", "frames": 16, "bytes": 28186, "sha256": "d3272643309f9f44b5c5e13a717883931d71eb36906f507445276e76b23d80c4"},
+    {"path": "export/components_overview_sheet.png", "size": "560x260", "bytes": 34482, "sha256": "ac63f3ed5433948c899423461c42e2a3c012751b5f1d0138dddd332653d57374"}
+  ],
+  "previews": [
+    {"path": "preview/ref_vs_v5_gate.png", "size": "1660x1060", "bytes": 351411, "sha256": "6d15e8b24fbedf403944ecd3336b97e31c66ab9a5a4e07e344cf6e57b58e5f03"},
+    {"path": "preview/hud_context_day_night_4x.png", "size": "2088x1396", "bytes": 153432, "sha256": "7c6f17c22440d9a118f7f414e01930f7f7245ba4e8463cbf9e8d068ed94c38a1"},
+    {"path": "preview/states_progression_4x.png", "size": "1744x1224", "bytes": 109239, "sha256": "a492b339cbdc8f92574898ccce92e48ae390a4208e31e3c495f75919fc2a7354"},
+    {"path": "preview/lowkey_flow_preview_4x.gif", "size": "952x672", "frames": 16, "frameDurationMs": 90, "bytes": 189197, "sha256": "da7cc2ce7d4b558c9d2529862aa95f73720d01e11785fb7576393441dad20a3b"}
+  ]
+}

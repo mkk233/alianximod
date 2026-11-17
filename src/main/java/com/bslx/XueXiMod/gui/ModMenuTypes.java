@@ -27,10 +27,13 @@ public class ModMenuTypes {
             registerMenuType("skill_assembly", SkillAssemblyMenu::new);
 
     public static final RegistryObject<MenuType<SpellStorageMenu>> SPELL_STORAGE =
-            registerMenuType("spell_storage", (id, inventory, buffer) -> new SpellStorageMenu(id, inventory));
+            registerMenuType("spell_storage", (containerId, inventory, buffer) -> new SpellStorageMenu(containerId, inventory));
 
     public static final RegistryObject<MenuType<SpellAssemblyMenu>> SPELL_ASSEMBLY =
-            registerMenuType("spell_assembly", (id, inventory, buffer) -> new SpellAssemblyMenu(id, inventory));
+            registerMenuType("spell_assembly", (containerId, inventory, buffer) -> new SpellAssemblyMenu(containerId, inventory));
+
+    public static final RegistryObject<MenuType<DaozhangMenu>> DAOZHANG =
+            registerMenuType("daozhang", DaozhangMenu::new);
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(
             String name, IContainerFactory<T> factory) {

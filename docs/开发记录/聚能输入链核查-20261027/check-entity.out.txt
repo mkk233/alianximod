@@ -1,0 +1,3 @@
+EXECUTED entity-lifetime-weeping-phase
+未执行 实体 tick、NBT 往返和客户端渲染：需要世界或实体
+断言 56 失败 0

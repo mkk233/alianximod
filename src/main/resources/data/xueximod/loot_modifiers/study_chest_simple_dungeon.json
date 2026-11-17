@@ -1,0 +1,36 @@
+{
+  "type": "xueximod:study_chest",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+  ],
+  "entries": [
+    {
+      "weight": 25,
+      "items": ["xueximod:study_slip_mystic"]
+    },
+    {
+      "weight": 10,
+      "items": ["xueximod:study_scroll_sword"]
+    },
+    {
+      "weight": 10,
+      "items": ["xueximod:study_scroll_water"]
+    },
+    {
+      "weight": 10,
+      "items": ["xueximod:study_scroll_fire"]
+    },
+    {
+      "weight": 20,
+      "items": ["xueximod:study_slip_mortal"]
+    },
+    {
+      "weight": 10,
+      "items": ["xueximod:shu_embryo"],
+      "attribute": "none"
+    }
+  ]
+}

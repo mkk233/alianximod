@@ -1,0 +1,80 @@
+{
+  "task": "使用已验证的真实Gradle主目录完成最终编译",
+  "executor": "Cursor CLI grok-4.7-high-fast",
+  "delegated": false,
+  "precedent": "docs/开发记录/领域附魔底座实施-20261029/compile-run-final.md",
+  "precedentConfirmed": "第18行：空沙箱 GRADLE_USER_HOME 导致 settings.gradle:13 找不到 foojay 0.7.0；插件在 C:/Users/baishang/.gradle；显式真实主目录后同命令退出码 0。",
+  "archive": {
+    "copiedWithoutOverwrite": [
+      "compile-empty-home-failed.log",
+      "compile-empty-home-failed-final.md",
+      "compile-empty-home-failed-results.json"
+    ]
+  },
+  "processesStopped": false,
+  "idleResidentPid52180": true,
+  "sameWorkspaceExecutingGradleBeforeCompile": false,
+  "environment": {
+    "setInsideGradleInvoker": true,
+    "incomingJavaHome": null,
+    "incomingGradleUserHome": "C:\\Users\\baishang\\AppData\\Local\\Temp\\cursor-sandbox-cache\\b2e6ba2090d0f4540eae6b67539ab45b\\gradle",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "javaVersion": "17.0.6 2023-01-17 LTS",
+    "javaBuild": "17.0.6+9-LTS-190",
+    "globalConfigChanged": false,
+    "homeUserProfileCodexHomeChanged": false,
+    "downloaded": false
+  },
+  "preCompile": {
+    "listedJavaFiles": 660,
+    "sha256LengthAndLastWriteUtcMatched": 660,
+    "latestLastWriteUtc": "2026-10-29T20:20:34.7212557Z",
+    "authorsReleased": ["A", "B", "C"]
+  },
+  "compileExecuted": true,
+  "compilePassed": false,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "startedUtc": "2026-10-29T20:54:27.2167987Z",
+  "endedUtc": "2026-10-29T20:54:49.1183349Z",
+  "elapsedSeconds": 21.902,
+  "exitCode": 1,
+  "compileAfterFinalSourceWrite": true,
+  "reachedCompileJava": true,
+  "foojayResolvedFromRealHome": true,
+  "gradleSummary": "BUILD FAILED in 20s",
+  "tasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "failure": {
+    "file": "D:/alianximod/src/main/java/com/bslx/XueXiMod/debug/performance/PerformanceRecorder.java",
+    "line": 5,
+    "author": "A",
+    "diagnostic": "找不到符号：java.io.FileAlreadyExistsException",
+    "sourceLine": "import java.io.FileAlreadyExistsException;",
+    "errorCount": 1,
+    "task": ":compileJava FAILED",
+    "sourceModified": false
+  },
+  "postCompile": {
+    "listedJavaFiles": 660,
+    "sha256LengthAndLastWriteUtcMatched": 660,
+    "hashFail": 0,
+    "lengthFail": 0,
+    "timeFail": 0,
+    "missing": 0,
+    "latestLastWriteUtc": "2026-10-29T20:20:34.7212557Z",
+    "sourceChangedByThisTask": false
+  },
+  "coversFrozenSources": true,
+  "coversLastRelatedWriteWithSuccessfulCompile": false,
+  "packaged": false,
+  "gameTested": false,
+  "performanceTested": false,
+  "leftoverGradle": {
+    "singleUseDaemonStillPresent": false,
+    "pid52180IdleResident": true
+  },
+  "compileOccupancyReleased": true,
+  "result": "failed",
+  "reason": "真实 Gradle 主目录已生效并进入 compileJava，但退出码为 1。PerformanceRecorder.java:5 找不到 java.io.FileAlreadyExistsException。源码冻结前后一致，不能报告最终源码编译通过。"
+}

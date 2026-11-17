@@ -1,0 +1,54 @@
+{
+  "task": "implement-a",
+  "title": "静止斩面空闲扫描",
+  "sourceWritesStopped": true,
+  "compile": "not-run",
+  "gameVerification": "not-run",
+  "fpsClaim": false,
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "log": "docs/开发记录/空闲与复活性能优化-20261030/name-gate-a.log",
+    "exitCode": 1,
+    "ownFilesViolations": [],
+    "untouchedViolationsLeft": [
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:165:18 i",
+      "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java:202:17 to"
+    ]
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/StillSheetPlayback.java",
+      "before": {
+        "sha256": "2F948C208B0062CE364DE70BF49BCD26961ADFC50C19FFD1DF59E8822898C0CF",
+        "bytes": 10080,
+        "lastWriteLocal": "2026-10-25 20:12:37.667 +08:00",
+        "lastWriteUtc": "2026-10-25 12:12:37.667",
+        "baseline": "docs/开发记录/空闲与复活性能优化-20261030/before-a/src/main/java/com/bslx/XueXiMod/client/StillSheetPlayback.java",
+        "baselineSha256Matches": true
+      },
+      "after": {
+        "sha256": "49698BFDEA55596E92A47CA8A2732FD7F7EF0909C6C1F59657D278739D7AF2F6",
+        "bytes": 13834,
+        "lastWriteLocal": "2026-10-30 01:57:10.787 +08:00",
+        "lastWriteUtc": "2026-10-29 17:57:10.787"
+      }
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetCache.java",
+      "before": {
+        "sha256": "3B4D07102F3370924BB9FEFC0317CDFEA91DE51B86ECFF66ED03BB7DB7CF91C1",
+        "bytes": 2989,
+        "lastWriteLocal": "2026-10-25 20:09:27.453 +08:00",
+        "lastWriteUtc": "2026-10-25 12:09:27.453",
+        "baseline": "docs/开发记录/空闲与复活性能优化-20261030/before-a/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetCache.java",
+        "baselineSha256Matches": true
+      },
+      "after": {
+        "sha256": "5212D623FF8B805440D0B088500686D259B6D8C5D289CE285BF18C9783FC05AD",
+        "bytes": 3147,
+        "lastWriteLocal": "2026-10-30 01:54:31.103 +08:00",
+        "lastWriteUtc": "2026-10-29 17:54:31.103"
+      }
+    }
+  ]
+}

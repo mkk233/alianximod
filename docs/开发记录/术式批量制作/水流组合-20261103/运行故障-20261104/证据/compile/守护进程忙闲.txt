@@ -1,0 +1,13 @@
+PID 12596 Gradle 8.8 daemon 忙闲核对。2026-11-04 01:23 左右。未结束该进程。
+
+日志：C:\Users\baishang\.gradle\daemon\8.8\daemon-12596.out.log 长度 0，创建于 2026-11-03 22:46:57。没有 BuildStarted、BuildFinished、Idle 或 Busy 记录，因此没有可引用的构建结束时间。
+
+jcmd Thread.print（2026-11-04 01:23:14，再次解析约 01:24）：
+- 30 个命名线程
+- main：WAITING (parking)，DaemonStateCoordinator.awaitStop → Daemon.awaitExpiration
+- 无 DefaultDaemonConnection、Execution、Build、compileJava、runClient
+- jar transforms 与缓存线程均在队列上等待
+- Incoming local TCP Connector 停在 accept
+- 进程仍在，采样 CPU 约 109.8 秒，启动于 2026-11-03 22:46:56
+
+结论：该 daemon 空闲，没有正在执行的工作区构建。随后按已授权命令单独启动 compileJava --offline --no-daemon。

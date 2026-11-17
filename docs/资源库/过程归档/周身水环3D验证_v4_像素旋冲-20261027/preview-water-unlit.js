@@ -1,0 +1,1 @@
+Texture.all.filter(t=>t.name.startsWith("surge")).forEach(t=>t.getOwnMaterial().uniforms.SHADE.value=false);true

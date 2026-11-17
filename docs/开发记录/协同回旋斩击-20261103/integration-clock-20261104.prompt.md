@@ -1,0 +1,5 @@
+I 原作者精确定向修复动作时间源，固定 Cursor CLI --model grok-4.7-high-fast，沿原task/session。不做正式复审，设计2/2实现3/3耗尽。禁止Gradle/游戏/打包/提交/表/启动器操作。
+V已交 visual-gameplay-repair-20261104-delivery.md，定位FamilyExecutionService动作ActionPlayback.serverStartTick错误使用MinecraftServer.getTickCount，而客户端比较Level.getGameTime，使老存档一收到就结束。玩家已实测无回旋/挥砍。只读该报告和本服务相关符号，针对故障修复；不要重审业务。
+仅写FamilyExecutionService.java及integration-clock-20261104-delivery.md。将回旋与斜斩对外动作发布的serverStartTick统一到对应ServerLevel.getGameTime。分清原runningTick如仍用作内部getTickCount时差/调度不可盲全局替换，保持内部时长一致和动作前摇6/收势6原义；需要保留独立时间字段就在本文件处理。
+C现在消费你已交的远距公共API，全部api文件冻结不得改。C核心和V客户端都在写，不能跨界编辑。若必要定位发现CooperativeActionPublisher的缓存到期/追踪包时间也用错钟，最终报告精确符号和所需改动交V，不能自己写该文件或忽略待办。此处是本已授权故障的必要链路定位，不扩正式复审或扫描无关文件。
+本单还不开放CooperativeContent距离默认，须等C完成；不改配置指南/世界文件。交付报告实际改动/同一钟来源/给V跨作者待办/命名门禁/未编译游戏/写入收束，合法CURSOR_TASK_REPORT返回。不要把客户端临时时钟兜底当成正确服务端发布替代品。

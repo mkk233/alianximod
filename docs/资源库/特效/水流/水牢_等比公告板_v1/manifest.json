@@ -1,0 +1,50 @@
+[
+  {
+    "name": "water_prison_billboard.aseprite",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢泡泡_2D_v3_斜向错层-20261027/water_prison_bubble_v3.aseprite",
+    "bytes": 43423,
+    "sha256": "5f56db4bb950f738e39ce783ee60dd42152331b56d0d9b19ab3fa2ab0fa50047"
+  },
+  {
+    "name": "water_prison_billboard.png",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢泡泡_2D_v3_斜向错层-20261027/water_prison_bubble_v3_strip.png",
+    "bytes": 47640,
+    "sha256": "8ba44798140ec92fc45b826549cec03cf629bcb7bcd1d34dab750462101e5096"
+  },
+  {
+    "name": "water_prison_billboard_frame01.png",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢泡泡_2D_v3_斜向错层-20261027/water_prison_bubble_v3.png",
+    "bytes": 3201,
+    "sha256": "32e8c6c01b696e242af92083099bbe014c2e3fee42d1197f3722d3b63340bd46"
+  },
+  {
+    "name": "preview_2d.gif",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢泡泡_2D_v3_斜向错层-20261027/water_prison_bubble_preview_4x.gif",
+    "bytes": 86859,
+    "sha256": "734de233dc46248e0041ad3196d15fc72b11cd49d3af628ba90ac62ca7117a77"
+  },
+  {
+    "name": "水牢_等比公告板_v1.bbmodel",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢公告板验证_v4_等比缩放-20261027/水牢_v3_纯2D等比公告板验证.bbmodel",
+    "bytes": 78333,
+    "sha256": "83e1e532e87e7bf330de85e928eeeefc81452d98096fcab1c2e51ffb86f9e7af"
+  },
+  {
+    "name": "preview_camera_orbit.gif",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢公告板验证_v4_等比缩放-20261027/water_prison_billboard_orbit.gif",
+    "bytes": 1314826,
+    "sha256": "97e21d9201074d62e6f3d2fd28710eaf256c2b8af59fab87080955eac4f48b57"
+  },
+  {
+    "name": "preview_fixed.gif",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢公告板验证_v4_等比缩放-20261027/water_prison_billboard_fixed.gif",
+    "bytes": 54649,
+    "sha256": "adfc361b5fdcc3e4e390e41a79bd239eaf7b5186967d68a8350fb22440d98fc6"
+  },
+  {
+    "name": "preview_wide.gif",
+    "source": "D:/alianximod/docs/资源库/过程归档/水牢公告板验证_v4_等比缩放-20261027/water_prison_billboard_wide.gif",
+    "bytes": 48461,
+    "sha256": "de2a9d4d4d838b9cb40232ee9d0b4b9b8e12ff9497be134a6cd11fcc38b95e2a"
+  }
+]

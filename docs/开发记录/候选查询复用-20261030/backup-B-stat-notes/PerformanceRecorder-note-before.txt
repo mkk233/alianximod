@@ -1,0 +1,3 @@
+修改前 PerformanceRecorder.java 第 576 行。本会话命令复制被拒绝，未能按字节复制整个 Java 文件；这一行是唯一改动，原文如下。
+
+        builder.append("note_candidate_query: CANDIDATE_QUERY_REQUESTS 是接入 helper 的一次逻辑请求。CANDIDATE_QUERY_REUSES、CANDIDATE_QUERY_BUILDS、CANDIDATE_QUERY_BYPASSES 每次请求最多一个终态：reuse 为复用候选且没有实际底层查询；build 为真实取得候选并成功放入复用存储，异常或构建放弃不能先记 build；bypass 为本次走原 API。CANDIDATE_QUERY_INVALIDATIONS 只在候选空间变化并真正清空已有缓存时加一。CANDIDATE_QUERY_LOOKUP 是 helper 的包含式耗时，含 miss 或 bypass 里的实际世界查询，不可与嵌套的 TARGET_QUERY 或 ENTITY_QUERY 相加。TrackingSupport 原先不计入 ENTITY_QUERY_CALLS 与 ENTITY_QUERY，接入后归实体查询，新旧报告口径扩大。\n");

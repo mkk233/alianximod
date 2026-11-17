@@ -1,0 +1,74 @@
+{
+  "purpose": "三式刻印台实测反馈的实际表同步。不是实现或测试复审。",
+  "tableSync": "完成",
+  "thisWritebackIsAnotherReview": false,
+  "designQuota": "2/2",
+  "implementationQuota": "2/2",
+  "testReviewRound": "1/2",
+  "acceptancePassed": false,
+  "batchPassed": false,
+  "sourceChanged": false,
+  "conversionApplied": false,
+  "submitted": true,
+  "migrationTime": "2026-10-29T11:43:07.831+08:00",
+  "before": {
+    "sha256": "8B2CE30DA8263C3FCBB1AFD4E162EE953D7141EFF5FE433B9AB4995511B61054",
+    "lastWriteTime": "2026-10-29T11:20:30.807+08:00",
+    "bytes": 80584
+  },
+  "after": {
+    "sha256": "B7461BA4578F7E7AF3C549E58FFAE0746D5221C28C4E106AEEBC6F62776F6435",
+    "lastWriteTime": "2026-10-29T11:43:07.831+08:00",
+    "bytes": 81158
+  },
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/unlock-writeback-术式制作表-20261029-114250-1.xlsx",
+  "report": "docs/开发记录/术式批量制作/火系六式-20261029/unlock-writeback-report.md",
+  "linkedRepairReport": "docs/开发记录/术式批量制作/火系六式-20261029/unlock-repair-report.md",
+  "nAndOKept": true,
+  "priorDvKept": true,
+  "reopen": {
+    "changedParts": ["xl/worksheets/sheet3.xml"],
+    "additionsPresent": true,
+    "furnaceDvUnchanged": true
+  },
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 6,
+    "待验收": 0,
+    "uniqueIds": 46
+  },
+  "commands": {
+    "userRank": ["/shu rank sword 20", "/shu rank magic 20"],
+    "learn": ["/shu learn fire_liaoyuan", "/shu learn fire_liaoli", "/shu learn fire_fentian"]
+  },
+  "items": [
+    {
+      "id": "fire_liaoyuan",
+      "from": "制作中",
+      "fromRow": 3,
+      "to": "制作中",
+      "toRow": 3,
+      "result": "留原页",
+      "note": "追加刻印台实测反馈：rank 只开等级门，学习命令是 /shu learn fire_liaoyuan，待重测。"
+    },
+    {
+      "id": "fire_liaoli",
+      "from": "制作中",
+      "fromRow": 4,
+      "to": "制作中",
+      "toRow": 4,
+      "result": "留原页",
+      "note": "追加刻印台实测反馈：rank 只开等级门，学习命令是 /shu learn fire_liaoli，待重测。"
+    },
+    {
+      "id": "fire_fentian",
+      "from": "制作中",
+      "fromRow": 5,
+      "to": "制作中",
+      "toRow": 5,
+      "result": "留原页",
+      "note": "追加刻印台实测反馈：rank 只开等级门，学习命令是 /shu learn fire_fentian，待重测。"
+    }
+  ]
+}

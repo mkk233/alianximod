@@ -1,0 +1,741 @@
+{
+  "version": "art-v1-20261116",
+  "task": "nether-blue-visual",
+  "attempt": "art-v1-bb-finish-20261116",
+  "status": "complete_candidate_pending_user_confirmation",
+  "userConfirmation": "not_received",
+  "runtimeIntegration": "not_started_for_blue_candidate",
+  "writes": "closed",
+  "batch": [
+    "领域附魔底座实施-20261029",
+    "火系六式-20261029"
+  ],
+  "reviewCounters": {
+    "design": "2/2",
+    "implementation": "3/3",
+    "addedFormalReview": false
+  },
+  "attempts": [
+    {
+      "id": "art-v1-20261116",
+      "result": "partial_blocked_shared_blockbench",
+      "twoDimensionalWorkCompleted": true
+    },
+    {
+      "id": "art-v1-bb-finish-20261116",
+      "result": "complete_candidate_pending_user_confirmation",
+      "existingTwoDimensionalFilesUnchanged": 89
+    }
+  ],
+  "sharedGuiResolution": {
+    "basis": "Direct parent provided completed/status notLoaded wait_threads(timeoutMs:0) result and Planck final; not independently polled by this art author",
+    "thread": "01a1e08a-817e-7b60-b465-7a8baaca1f4b",
+    "turn": "01a1e245-c927-7bc3-8db5-d5b39a531364",
+    "reportedState": "completed/status notLoaded",
+    "reportedFinal": "收到并发提醒后没有再操作实例，无下属，写入已收束",
+    "savedProject": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel",
+    "parentAssignedSoleGuiAuthor": true,
+    "resumedCapabilityActiveProject": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+    "resumedCapabilityVersion": "Blockbench 5.2.2 desktop / plugin 1.10.1",
+    "state": "resolved_before_resumed_gui_work"
+  },
+  "approvedOriginalUsageMapping": [
+    {
+      "candidateId": "fentian_conflagration",
+      "latestUse": "引燃_承接焚天_v4",
+      "approvedOriginal": "D:/alianximod/docs/资源库/特效/火焰/引燃_承接焚天_v4/kindle_v4-strip.png",
+      "approvedOriginalSha256": "3AE6A95E41D92991B828EDC7491CBB40A18D503CDCF700281A50D901D6AA6A76",
+      "candidateOriginalReference": "references/fentian_conflagration_original.png",
+      "candidateOriginalReferenceSha256": "DC8EFB28B6B6CC8AB0BA51DF82384343D5DD5D8E29591E87191B832255CC5A0B",
+      "decodedBgraSha256Both": "906AAE0EBB0358D58DD1B30FA47FEF4C11FEBB2EED7875F0F87D93D5EA0D6354",
+      "decodedPixelsMatch": true,
+      "atlas": [
+        128,
+        7488
+      ],
+      "frame": [
+        128,
+        144
+      ],
+      "frames": 52,
+      "candidateSource": "source/fentian_conflagration_blue.aseprite",
+      "candidateBlue": "textures/fentian_conflagration_blue.png",
+      "blockbenchMode": "KINDLEV4"
+    },
+    {
+      "candidateId": "kindle_v3_screenshot",
+      "latestUse": "焚天_全身烈焰_v3",
+      "approvedOriginal": "D:/alianximod/docs/资源库/特效/火焰/焚天_全身烈焰_v3/fentian_v3-strip.png",
+      "approvedOriginalSha256": "EF3476EB01225D2E7478F9BBA5430F28BCF2E1D12198F3F482A634C155A04070",
+      "candidateOriginalReference": "references/kindle_v3_screenshot_original.png",
+      "candidateOriginalReferenceSha256": "EF3476EB01225D2E7478F9BBA5430F28BCF2E1D12198F3F482A634C155A04070",
+      "decodedBgraSha256Both": "082BE13003C993FABB6647AED44C3920DE3F4732AA5F6A01E42A0513FB06388B",
+      "decodedPixelsMatch": true,
+      "atlas": [
+        48,
+        1216
+      ],
+      "frame": [
+        48,
+        64
+      ],
+      "frames": 19,
+      "candidateSource": "source/kindle_v3_screenshot_blue.aseprite",
+      "candidateBlue": "textures/kindle_v3_screenshot_blue.png",
+      "blockbenchMode": "V3"
+    }
+  ],
+  "blockbench": {
+    "reopenedProject": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+    "captureEvidence": "evidence/blockbench-captures.json",
+    "textures": 18,
+    "sha256": "E98E82EFED2B227B3957FDBC757D5AAD69B4A4E61769D78685464FA6FDB522E0",
+    "originalProject": "803970b1-7113-95b6-9e54-ee1415c7edff",
+    "allProtectedExternalProjectsUnchanged": true,
+    "reopenEvidence": "evidence/blockbench-reopen-verification.json",
+    "actualPreviews": [
+      "previews/bb_v3_overall_F06.png",
+      "previews/bb_v3_front_F11.png",
+      "previews/bb_v3_side_frozen_plane.png",
+      "previews/bb_kindle_v4_overall_F06.png",
+      "previews/bb_kindle_v4_side_frozen_plane.png",
+      "previews/bb_kindle_v4_gather_F02.png",
+      "previews/bb_kindle_v4_embers_F46.png",
+      "previews/bb_runtime_kindle_overall_F06.png",
+      "previews/bb_fire_seed_attached_overall_F06.png",
+      "previews/bb_actual_target_flame_overall_F06.png",
+      "previews/bb_v3_extinguish_F16.png",
+      "previews/bb_v3_off_F19.png",
+      "previews/bb_reopened_model_front_F06.png"
+    ],
+    "environment": "actual Blockbench Desktop 5.2.2 / plugin 1.10.1",
+    "model": "blockbench/nether_blue_palette_art_v1.bbmodel",
+    "cubes": 80,
+    "savedAndNativelyReopened": true,
+    "actualPreviewCount": 13,
+    "groups": 20
+  },
+  "colorMode": {
+    "applyLegacyMultiplyAgain": false,
+    "preserveAlphaUvTimingAndRuntimeGeometry": true,
+    "vertexRgb": [
+      255,
+      255,
+      255
+    ],
+    "name": "SOUL_PALETTE_TEXTURE"
+  },
+  "parentNotification": "native parent-message interface not available; final receipt is the terminal handoff",
+  "files": [
+    {
+      "path": "blockbench/nether_blue_palette_art_v1.bbmodel",
+      "bytes": 840319,
+      "sha256": "E98E82EFED2B227B3957FDBC757D5AAD69B4A4E61769D78685464FA6FDB522E0"
+    },
+    {
+      "path": "evidence/approved-source-remap.json",
+      "bytes": 3080,
+      "sha256": "B09DE308B8908E5A38DC1B5AA49C431FB0167C8506BD464DC999508E6F14A710"
+    },
+    {
+      "path": "evidence/aseprite-generation.json",
+      "bytes": 2463,
+      "sha256": "E254B5B25CB743A7FAC4EA2DE14EDD17A7230A2D925E0C31191B7A38146C1903"
+    },
+    {
+      "path": "evidence/aseprite-reopen-verification.json",
+      "bytes": 2976,
+      "sha256": "39C697FE4D10B3C5E1594B4D01DD5DDC7CBDDD5FD9B627B6A94C1EA893CB69BB"
+    },
+    {
+      "path": "evidence/blockbench-before.json",
+      "bytes": 2820,
+      "sha256": "8BF685C79DC38C1F8E8BB6CD62E6D0A4949E08043B3CA42D469D9DAB44BF1A36"
+    },
+    {
+      "path": "evidence/blockbench-build.json",
+      "bytes": 3825,
+      "sha256": "F990A8AA82A9556F65780FAECB5248ADB82EFC6B2094F98412E296106D15434A"
+    },
+    {
+      "path": "evidence/blockbench-captures.json",
+      "bytes": 7251,
+      "sha256": "D9015FC1A8AC36A0BBE9DA54533D1829B6FE11369B5F85247FA88671CD55FC91"
+    },
+    {
+      "path": "evidence/blockbench-reopen-verification.json",
+      "bytes": 5481,
+      "sha256": "EB8E8A0C45E6AF5C6A7D5528400C0EC72087FA05A172D6D59F285E950D024389"
+    },
+    {
+      "path": "evidence/input-sha256.json",
+      "bytes": 3166,
+      "sha256": "7A6314839005CD8005620428C68B85CF4C6F91D5F7B1D85650F69D29A366F20B"
+    },
+    {
+      "path": "evidence/resume-file-validation.json",
+      "bytes": 862,
+      "sha256": "CC49F65049CD91128AD83580F33FBD2ABE90A8F7939B2334769101D9C68FD680"
+    },
+    {
+      "path": "evidence/tool-state.md",
+      "bytes": 7551,
+      "sha256": "0D4FEE4B1119CCE3FCCF4D1F143822C2F4E54E2DD028DC771B43CCE3768699D1"
+    },
+    {
+      "path": "previews/all_source_shapes_same_frame.png",
+      "bytes": 34930,
+      "sha256": "E271E6E1325A93E3D9D8F8E7B035B5F0F87D7E7DF4F1991C590C919A8B9145CE"
+    },
+    {
+      "path": "previews/attached_flame_comparison_native.gif",
+      "bytes": 14967,
+      "sha256": "7991666109A6EECA2F464C8958A13C478ED8A45CBC64CEA35E280BECABB14368"
+    },
+    {
+      "path": "previews/attached_flame_comparison_native.png",
+      "bytes": 2784,
+      "sha256": "609FCD4C99DE2F0DF8047E28FB036C768622DD1760B672F95073D4421831A709"
+    },
+    {
+      "path": "previews/attached_flame_comparison.gif",
+      "bytes": 51586,
+      "sha256": "E713F98EFF973BD12DE6F3347A192A193740CC8E4CCE6EDE347D1CFC437FB5AA"
+    },
+    {
+      "path": "previews/attached_flame_comparison.png",
+      "bytes": 5327,
+      "sha256": "234C50529A9564DB540462FEF410243910A8E70360189A29128AEDEE85189EFC"
+    },
+    {
+      "path": "previews/bb_actual_target_flame_overall_F06.png",
+      "bytes": 44905,
+      "sha256": "024EB9B4DCFE40A4904FABD558B2070A358077F5F45AD0BE4E701983FC32F1E4"
+    },
+    {
+      "path": "previews/bb_fire_seed_attached_overall_F06.png",
+      "bytes": 47945,
+      "sha256": "705A0814399D9CA5AC8C5E7C682979F8BD4C5A66048DA3DA7903A8FC0AF96640"
+    },
+    {
+      "path": "previews/bb_kindle_v4_embers_F46.png",
+      "bytes": 27471,
+      "sha256": "C33186AFA1246F8B071457E3D6ADB8B100121B74AB16904BD071143455019D42"
+    },
+    {
+      "path": "previews/bb_kindle_v4_gather_F02.png",
+      "bytes": 28915,
+      "sha256": "2A156BB50A383FE82E3113CB99E8368D93E5F5581E5EF479DB7B7BCBB345DC07"
+    },
+    {
+      "path": "previews/bb_kindle_v4_overall_F06.png",
+      "bytes": 69379,
+      "sha256": "73ABE9BDB8D41E3CDD1A4332E5B201EDD2637C25E865B368A6458688BC17B0BC"
+    },
+    {
+      "path": "previews/bb_kindle_v4_side_frozen_plane.png",
+      "bytes": 97822,
+      "sha256": "27268E851E8D039972DBCDD97C38FDA44D7CF014C85770FA0FFF669A78B41F10"
+    },
+    {
+      "path": "previews/bb_reopened_model_front_F06.png",
+      "bytes": 38825,
+      "sha256": "E59A6E68650D62B3CBE4E9959EAD44ADCA98314AC226C9A9431BFB62454008E6"
+    },
+    {
+      "path": "previews/bb_runtime_kindle_overall_F06.png",
+      "bytes": 48774,
+      "sha256": "BC0BE007C8DDE972D484569740725B976CB788380130643871D6DAC38077E1C7"
+    },
+    {
+      "path": "previews/bb_v3_extinguish_F16.png",
+      "bytes": 29666,
+      "sha256": "018E06C2EEA49CE00CA2A138FDC2C031B31DEAC294B109F4E01DE0BEC710F26D"
+    },
+    {
+      "path": "previews/bb_v3_front_F11.png",
+      "bytes": 38365,
+      "sha256": "7CAC0934DEF3464317DAF922E4E25B31D37FD6E3304896F96AE410FF8AE51088"
+    },
+    {
+      "path": "previews/bb_v3_off_F19.png",
+      "bytes": 25028,
+      "sha256": "2186337BC0BF0AEEBE9A261C70A700B375191C1EC61748B6F513F76B59C341B9"
+    },
+    {
+      "path": "previews/bb_v3_overall_F06.png",
+      "bytes": 58124,
+      "sha256": "9C4B7FE4CDD5340075F11B1F0D0FE18877525BEB0CEC03BA7F65587A8DD53E97"
+    },
+    {
+      "path": "previews/bb_v3_side_frozen_plane.png",
+      "bytes": 95058,
+      "sha256": "BB5F26FA4AD9C7C5008C11688C72F14C44B00D806237A89D2FF50B99E8DEE979"
+    },
+    {
+      "path": "previews/fire_seed_comparison_native.gif",
+      "bytes": 6855,
+      "sha256": "0C935CF470E713907B5965E0209303CB4517C8BEF5068937FE9D5CAB3E869745"
+    },
+    {
+      "path": "previews/fire_seed_comparison_native.png",
+      "bytes": 2430,
+      "sha256": "C23C7A3B70E8ADC0F62C0498A3FA43F340C9E6ED7F388D21AF4D4CFF32A81E68"
+    },
+    {
+      "path": "previews/fire_seed_comparison.gif",
+      "bytes": 24397,
+      "sha256": "E8493E5EA1FAD00562F65C274542B34B822391FC0CFC08D8DF282A4502E390D7"
+    },
+    {
+      "path": "previews/fire_seed_comparison.png",
+      "bytes": 4830,
+      "sha256": "47A4480064292CBDEC344CD3144A29F4EF46C1EE1C2EBA8BD2115CD62137EB07"
+    },
+    {
+      "path": "previews/kindle_v1_comparison_native.gif",
+      "bytes": 24612,
+      "sha256": "572989BDD7347DB3EC75347C9E4B1F61386E2371037CF7324D1AA49F0D005C30"
+    },
+    {
+      "path": "previews/kindle_v1_comparison_native.png",
+      "bytes": 3840,
+      "sha256": "D5D747EA74BBFE5E1E6C280A1E2B05B92976B5E8F2ADDEA88588E0D9A8CDC209"
+    },
+    {
+      "path": "previews/kindle_v1_comparison.gif",
+      "bytes": 88633,
+      "sha256": "7B860C0AF0B2EA5EF9320558441D39FBA9866C8F0CA748B9C9C482525D220A33"
+    },
+    {
+      "path": "previews/kindle_v1_comparison.png",
+      "bytes": 6570,
+      "sha256": "BA38900F8681E8E05D7F2D06A486E65BB87588FE6D3E739BE35F06C6F0006E02"
+    },
+    {
+      "path": "previews/kindle_v3_screenshot_comparison_native.gif",
+      "bytes": 79843,
+      "sha256": "7EA2675C7522F3C4160287718E8AABCE9615BE468AF8D75748E6D2E359DFBF01"
+    },
+    {
+      "path": "previews/kindle_v3_screenshot_comparison_native.png",
+      "bytes": 4731,
+      "sha256": "074C51C4B6DACE459C9B0C48EC7E6900D70F5CE49F128561615E811622B3BF76"
+    },
+    {
+      "path": "previews/kindle_v3_screenshot_comparison.gif",
+      "bytes": 321051,
+      "sha256": "DBA994C0335FE7D9EE43483CC38192DAAECB391D9CC385AFE0238F6EC1503F64"
+    },
+    {
+      "path": "previews/kindle_v3_screenshot_comparison.png",
+      "bytes": 8021,
+      "sha256": "8AE1B661290EA5FBDA164B138FB9B07F3EFE9C634A470CFEF27DD4217A90AD48"
+    },
+    {
+      "path": "previews/palette_and_native_references.png",
+      "bytes": 9049,
+      "sha256": "665EC85D7A5B7BD3736D49148664E54815970D7F9802ECA966615C1C1611AEDC"
+    },
+    {
+      "path": "receipt.md",
+      "bytes": 6050,
+      "sha256": "222418B44280121F68663197973EBC1CACADEE810ABE1BAE27635DCE016EA3EE"
+    },
+    {
+      "path": "references/detonate_v1_original.png",
+      "bytes": 11026,
+      "sha256": "E7C3086A2543ACE06BD955F5BFFA7A194824D0E06ABBED22679AC959882E5342"
+    },
+    {
+      "path": "references/fentian_conflagration_original.png",
+      "bytes": 83285,
+      "sha256": "DC8EFB28B6B6CC8AB0BA51DF82384343D5DD5D8E29591E87191B832255CC5A0B"
+    },
+    {
+      "path": "references/fire_seed_original.png",
+      "bytes": 1080,
+      "sha256": "106DD7C62A1E360C859FB598B320EBCF10A40568555C763465023380E5DE800B"
+    },
+    {
+      "path": "references/fire_spark_v3_original.png",
+      "bytes": 5018,
+      "sha256": "AB1BD3518EE822FCE8C43A470E971580422DB31EA0C560C7A69D113729CD468F"
+    },
+    {
+      "path": "references/flame_trail_v3_original.png",
+      "bytes": 3718,
+      "sha256": "50946B75FBBEFDA2F4A34FC337FD8A665A18F0428638F574CB2880CA88B06D1D"
+    },
+    {
+      "path": "references/kindle_v1_original.png",
+      "bytes": 8487,
+      "sha256": "40522435E732CD042857C07CA8013DB4F86BD61D2CD2EEE454C2D4CB5E06E7FB"
+    },
+    {
+      "path": "references/kindle_v3_screenshot_original.png",
+      "bytes": 12139,
+      "sha256": "EF3476EB01225D2E7478F9BBA5430F28BCF2E1D12198F3F482A634C155A04070"
+    },
+    {
+      "path": "references/liaoyuan_ground_embers_original.png",
+      "bytes": 7147,
+      "sha256": "09CFB20C4ECCC03CB7546A0F534E74257A0372CFECA26144CD01B03E26273D52"
+    },
+    {
+      "path": "references/liaoyuan_ground_flame_original.png",
+      "bytes": 3894,
+      "sha256": "4FF9FB2906D44F90F5D823A00C7C303CFD6F8C91A4E822034FE4808519848577"
+    },
+    {
+      "path": "references/liaoyuan_spread_wave_original.png",
+      "bytes": 11397,
+      "sha256": "00E10F01E0B329483F010D4ABC45246FC2A24525912D1BDAFE0B11E8C638C540"
+    },
+    {
+      "path": "references/nether_gloom_v2_runtime.png",
+      "bytes": 6684,
+      "sha256": "23B965534374CC874B263633D68892178ED56BE9F96C50DA9D9B8BEF36679AF0"
+    },
+    {
+      "path": "references/seed_sow_v3_original.png",
+      "bytes": 2789,
+      "sha256": "CD681C53E10114CD7A130E907F423461AAFEFD99383011C0A857186A65C786BB"
+    },
+    {
+      "path": "references/shock_ring_v1_original.png",
+      "bytes": 10609,
+      "sha256": "E3CE5CBF9548AF1511344733E64CDFD0EBAC68DA0B8C01CCD4AE12E3D6B9D908"
+    },
+    {
+      "path": "references/soul_fire_0.png",
+      "bytes": 8841,
+      "sha256": "7AD4A4A0BE94AE53F05958C6B968D46DBD927DDF20C093D4D4F6916A883D6D6D"
+    },
+    {
+      "path": "references/soul_fire_1.png",
+      "bytes": 8522,
+      "sha256": "292BBFCFC1CA45644A5F49BDB61D6EBF47AFA9AF4A95B327D5889D3E72606AF0"
+    },
+    {
+      "path": "references/soul_fire_flame.png",
+      "bytes": 127,
+      "sha256": "E5EB0F6508ED5DEE56DF19DA63ACE387B43ABD118FFF33E92EC3C94DFF0FBD72"
+    },
+    {
+      "path": "references/user-rejected-yellow-green.png",
+      "bytes": 3142,
+      "sha256": "A7D63A5F0E1D28886E7B531ECB3E369245C41E768F8D80A97CFA7E6F1500E762"
+    },
+    {
+      "path": "scripts/attached_flame_comparison.lua",
+      "bytes": 2313,
+      "sha256": "9D148601AF0171DBC5B343C95BDC4F95CA78A396136AD9A1B1F9B7AC566BB233"
+    },
+    {
+      "path": "scripts/build_blockbench.js",
+      "bytes": 5479,
+      "sha256": "DBD766B98A9944D6B24C71091D66FBE0C7478076FBC393CE27E80CE03A66CCB0"
+    },
+    {
+      "path": "scripts/capture_blockbench.js",
+      "bytes": 5120,
+      "sha256": "8BD8D8C4D6DA5C15D827C4AF31C08996DBC0C75B81A5CF4BDC310A25A66212A3"
+    },
+    {
+      "path": "scripts/finalize_manifest.ps1",
+      "bytes": 5034,
+      "sha256": "B7CD2A1A7C4382E4FA66BAC86B7FF2BAB179CFBCB3B9826C7CBCED1B630FBB46"
+    },
+    {
+      "path": "scripts/recolor_and_compare.lua",
+      "bytes": 11205,
+      "sha256": "CA72507B1A0D4205E6D9CCC1B1E0BF770CFF2623CD6A8EFD54502494874F30DD"
+    },
+    {
+      "path": "scripts/verify_and_contact.lua",
+      "bytes": 3726,
+      "sha256": "D8724FB794BEF250A17B55F00D21DA2C620977BA97D6D86DD20716A04F6F533A"
+    },
+    {
+      "path": "scripts/verify_blockbench.js",
+      "bytes": 3348,
+      "sha256": "859C43377657899B5E6363D2BD4B537B61DFF915C8717EC87B63586CE55FDC4B"
+    },
+    {
+      "path": "source/detonate_v1_blue.aseprite",
+      "bytes": 25613,
+      "sha256": "EDC77A1A963E7DA4C18B70927957734DF15E6D15448D3D349C5F3F6F15D90514"
+    },
+    {
+      "path": "source/fentian_conflagration_blue.aseprite",
+      "bytes": 215393,
+      "sha256": "23074463C048E7FA3DDE38619359C12FCABE0B7D9E5911FA28DDE5A0A174C95F"
+    },
+    {
+      "path": "source/fire_seed_blue.aseprite",
+      "bytes": 7654,
+      "sha256": "DD76C04664E40A7FCE3FDCA02CDDD3A38249B4CFEB395D9D990952F0862AF650"
+    },
+    {
+      "path": "source/fire_spark_v3_blue.aseprite",
+      "bytes": 21014,
+      "sha256": "731F8AF9CAA06A52F3F77C080942D6CBEBB83479863B97E650B266576E8D8BAB"
+    },
+    {
+      "path": "source/flame_trail_v3_blue.aseprite",
+      "bytes": 13657,
+      "sha256": "79645F942A8B8496A83DFCB1E497E4FA93000E180586C7E366B64A457AF4AB67"
+    },
+    {
+      "path": "source/kindle_v1_blue.aseprite",
+      "bytes": 26064,
+      "sha256": "A2FCA75CD080CADFDEEB6B617F875CA71DE74FAB86C288B5071F5B803B9A7131"
+    },
+    {
+      "path": "source/kindle_v3_screenshot_blue.aseprite",
+      "bytes": 32978,
+      "sha256": "616687A7105355C0316FB38C0E10623E12F1D472D7E0BAA57F75C9C3B00D088B"
+    },
+    {
+      "path": "source/liaoyuan_ground_embers_blue.aseprite",
+      "bytes": 41843,
+      "sha256": "B767E8783C94B22CA2229E381CD0D9B8EF4FDA69281308195DA14D0F31FCAD4F"
+    },
+    {
+      "path": "source/liaoyuan_ground_flame_blue.aseprite",
+      "bytes": 20547,
+      "sha256": "A766E04DA0B07483BB75D819E3449D96CEB776BB06865435FAB26B46438A538B"
+    },
+    {
+      "path": "source/liaoyuan_spread_wave_blue.aseprite",
+      "bytes": 27184,
+      "sha256": "C22677A001CF131B4180905D234630B57C1AF40B2A4C0DA247473E731482A36B"
+    },
+    {
+      "path": "source/review_attached_flame.aseprite",
+      "bytes": 51576,
+      "sha256": "FB625BBF6EF3EF92D3E2E4C00A13CE47190216BBE3C6894098913B5E3543276F"
+    },
+    {
+      "path": "source/review_fire_seed.aseprite",
+      "bytes": 14975,
+      "sha256": "E8DFA178E8AC8D8EA3DD2FBA1296970C9F734188DB0EEAEB0298B49570AE87FF"
+    },
+    {
+      "path": "source/review_kindle_v1.aseprite",
+      "bytes": 45941,
+      "sha256": "410B5CBA8FECAE9E37C399F7BF286EB64C7D7F0E9D283B4D4F57399BA8A44A5C"
+    },
+    {
+      "path": "source/review_kindle_v3_screenshot.aseprite",
+      "bytes": 129663,
+      "sha256": "B1EDD2BCAF58CEA36785E0447CD5A8A91A167570BC873ADDCF7F57051299E57B"
+    },
+    {
+      "path": "source/seed_sow_v3_blue.aseprite",
+      "bytes": 12043,
+      "sha256": "FA8FB231B866286B8322E9EA669AD57DB92270A44C5A1AB950504C48F3C94F64"
+    },
+    {
+      "path": "source/shock_ring_v1_blue.aseprite",
+      "bytes": 23356,
+      "sha256": "349FDDC807B3E99C840A943EC18F2F2D7ABF5CD0B8CAD37703B1B1C7731A2D78"
+    },
+    {
+      "path": "textures/AUX_mannequin_palette.png",
+      "bytes": 105,
+      "sha256": "A07972AD2C8A97C9149E6C02B45076AC88336AB836C6B1B399A82413B67E4C9C"
+    },
+    {
+      "path": "textures/detonate_v1_blue_F01.png",
+      "bytes": 437,
+      "sha256": "F7401370336D013DA5E4BA560E447886986F35D0DEAB288C07E8C131A553A2BA"
+    },
+    {
+      "path": "textures/detonate_v1_blue.png",
+      "bytes": 11292,
+      "sha256": "CE96CC80E60A72CDA8009310A4C748731DACC8F06DBE0CD21E6B334B5A7DB76A"
+    },
+    {
+      "path": "textures/detonate_v1_legacy.png",
+      "bytes": 11036,
+      "sha256": "FD9941D13044AB4FA80DB1891D463966FFE3C69B94678ABCD6245F70A350D87E"
+    },
+    {
+      "path": "textures/fentian_conflagration_blue_F01.png",
+      "bytes": 444,
+      "sha256": "02991620EAE3729B482748F965BDBA8433C3CC965B3138CCCCC0DA5D04947571"
+    },
+    {
+      "path": "textures/fentian_conflagration_blue.png",
+      "bytes": 83741,
+      "sha256": "B4690B7972F22F3BEAF4237F72E38607AEC9A9DA4249CA7DEF83461E8CCEB77B"
+    },
+    {
+      "path": "textures/fentian_conflagration_legacy.png",
+      "bytes": 83273,
+      "sha256": "4E93523B21A5B0088C544579298D678451C254F7E6C3449076C336B7BF972387"
+    },
+    {
+      "path": "textures/fire_seed_blue_F01.png",
+      "bytes": 389,
+      "sha256": "2AC92C18FB110D40CBA77FF8B5F73921CE577F9F28025B03CC93AC35D7E5C4CB"
+    },
+    {
+      "path": "textures/fire_seed_blue.png",
+      "bytes": 1101,
+      "sha256": "03CA7A793BBE19D34CD5C55358081D52720CD4DD79A98556E9310612011114C5"
+    },
+    {
+      "path": "textures/fire_seed_legacy.png",
+      "bytes": 1076,
+      "sha256": "5002003F7334B354CEA4BA8C80F936E417F8C2D211CB0A86B99AF833046F9C91"
+    },
+    {
+      "path": "textures/fire_spark_v3_blue_F01.png",
+      "bytes": 665,
+      "sha256": "5A88B265922EA0BF17045A18A20543BDB9B9892A1204ABFC225CA4D3CCCD9D9B"
+    },
+    {
+      "path": "textures/fire_spark_v3_blue.png",
+      "bytes": 5023,
+      "sha256": "01603CC1F69076D4B6D9588A35F52C838D8371C9C9926F17247D70B96BE269DF"
+    },
+    {
+      "path": "textures/fire_spark_v3_legacy.png",
+      "bytes": 5000,
+      "sha256": "469EF7A70B9A742B098C055D55CB6E4950F67F83BE691EF43FB2AB81066A9D4B"
+    },
+    {
+      "path": "textures/flame_trail_v3_blue_F01.png",
+      "bytes": 543,
+      "sha256": "3BC0814AD910DE6960AD85B2C7DE520151358B3A3147E97D524462C5D347EEBD"
+    },
+    {
+      "path": "textures/flame_trail_v3_blue.png",
+      "bytes": 3597,
+      "sha256": "60DDA9EB5BD74F1076078030564ED7A1273F010C35B38D6570A10809A481AD65"
+    },
+    {
+      "path": "textures/flame_trail_v3_legacy.png",
+      "bytes": 3705,
+      "sha256": "460A15986AC3EA7F2AFE9325441E0C906D82BE666AED77B0A7DFC1AEE9214320"
+    },
+    {
+      "path": "textures/kindle_v1_blue_F01.png",
+      "bytes": 866,
+      "sha256": "DD71FF8724ED8E28D543EC886AECC985B3D1B2EDB6E829B49D70F6F31F2DF7F6"
+    },
+    {
+      "path": "textures/kindle_v1_blue.png",
+      "bytes": 8724,
+      "sha256": "196385330D618DBABB2024EDF84A2441145E5CEEBDA8F42A6E58C9244898C3B6"
+    },
+    {
+      "path": "textures/kindle_v1_legacy.png",
+      "bytes": 8641,
+      "sha256": "23990DE5A9F0A02D5A6AFB6E6BF1AA1CE5C13201F071F58A690B73D21358E61D"
+    },
+    {
+      "path": "textures/kindle_v3_screenshot_blue_F01.png",
+      "bytes": 1041,
+      "sha256": "F5766275DD3856F36F38205E38A2341E9F9B416535544C323B3815C342BF379A"
+    },
+    {
+      "path": "textures/kindle_v3_screenshot_blue.png",
+      "bytes": 12202,
+      "sha256": "165857578C6EC44E9D4016A0AC598037269EF7C6F228BC9275FEBD40FAD1A9B2"
+    },
+    {
+      "path": "textures/kindle_v3_screenshot_legacy.png",
+      "bytes": 12201,
+      "sha256": "78D7CA9ECCF3807ACB8F0F153B627D9D5F1F86F9115E398576DA48E5E6572852"
+    },
+    {
+      "path": "textures/liaoyuan_ground_embers_blue_F01.png",
+      "bytes": 933,
+      "sha256": "CA9B073A0B96E929B7EE956DCEE10DAF422FDEC70BEB838B8806E7A31735F0FC"
+    },
+    {
+      "path": "textures/liaoyuan_ground_embers_blue.png",
+      "bytes": 7481,
+      "sha256": "D68CA0C2B8F5A93DE572646409332B57DD26364B901025E347F069A045C50898"
+    },
+    {
+      "path": "textures/liaoyuan_ground_embers_legacy.png",
+      "bytes": 7187,
+      "sha256": "C851F3CFB23D3F3F84FEDEAC8C03C05F420D1D453D4F2C45F04C6C41EB797332"
+    },
+    {
+      "path": "textures/liaoyuan_ground_flame_blue_F01.png",
+      "bytes": 415,
+      "sha256": "D7FA97AA7B185EB0B7C205E4D48350335B1F64BF6A97BB1D5BD2C1EA41B6A87E"
+    },
+    {
+      "path": "textures/liaoyuan_ground_flame_blue.png",
+      "bytes": 3950,
+      "sha256": "5869D5DF7CF7829F2AAFFC967481BC10DBF3CB1FBB9D1FC44204E08599234C81"
+    },
+    {
+      "path": "textures/liaoyuan_ground_flame_legacy.png",
+      "bytes": 3911,
+      "sha256": "08DF5EE05C08FC2E865F878A1757DE73563B47C2FC751FFB06514054071363A5"
+    },
+    {
+      "path": "textures/liaoyuan_spread_wave_blue_F01.png",
+      "bytes": 648,
+      "sha256": "67A277AF0CA66FB75CE527D185DEF458A39F08C929E8DC7BD4CB992D2FED4F2A"
+    },
+    {
+      "path": "textures/liaoyuan_spread_wave_blue.png",
+      "bytes": 11394,
+      "sha256": "C1A8D612F51CACC4F9E9371B0F7B6DC369354BBEE61D76E38012D192A2F3357C"
+    },
+    {
+      "path": "textures/liaoyuan_spread_wave_legacy.png",
+      "bytes": 11379,
+      "sha256": "733E348DB1D7C51870607590CA810D753608B784CDE13DB078B10EC9E110BC1B"
+    },
+    {
+      "path": "textures/seed_sow_v3_blue_F01.png",
+      "bytes": 242,
+      "sha256": "0B88FD2CA9602D5A4D95A5C4E41AE939E15E5521C6207383D0420F581A3A4F7B"
+    },
+    {
+      "path": "textures/seed_sow_v3_blue.png",
+      "bytes": 2747,
+      "sha256": "B31B8A214EF82DA7ECC9918ED9FD8A90932FAEC2071707E84B7CCAB6B10B8914"
+    },
+    {
+      "path": "textures/seed_sow_v3_legacy.png",
+      "bytes": 2779,
+      "sha256": "6D63E71D686C5C9DCEC4AD817D4581FB583733006CAE932281207F6AA5A8B308"
+    },
+    {
+      "path": "textures/shock_ring_v1_blue_F01.png",
+      "bytes": 450,
+      "sha256": "ED239115F117C0F0BB149F2C60FB22C6BF2E5CD338908E6815CB82C221DF03ED"
+    },
+    {
+      "path": "textures/shock_ring_v1_blue.png",
+      "bytes": 11119,
+      "sha256": "2B2558339213CE197EA04F1739D1DB24F5488BAC26CFCC096A35F42D70D42CC5"
+    },
+    {
+      "path": "textures/shock_ring_v1_legacy.png",
+      "bytes": 10621,
+      "sha256": "8E8B47BBB2F6E843E7CA2964312CF5C57B4462846A96FBEB07C174355918C925"
+    },
+    {
+      "path": "textures/soul_luma_lookup_256.png",
+      "bytes": 222,
+      "sha256": "B6F94A4B37F2BF510802711063D95F9D881E62C3AB188031B288361D64850980"
+    },
+    {
+      "path": "visual-handoff.md",
+      "bytes": 17670,
+      "sha256": "8BB66ABACE250134450CBA0904FF2122D0BF877F6DF4CA7C5E6A04914CD2CB52"
+    }
+  ]
+}

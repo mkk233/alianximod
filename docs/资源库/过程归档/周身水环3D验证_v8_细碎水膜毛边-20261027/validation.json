@@ -1,0 +1,25 @@
+{
+  "geometryUnchanged": true,
+  "outlinerUnchanged": true,
+  "groupsUnchanged": true,
+  "animationUnchanged": true,
+  "bodyTextureUnchanged": true,
+  "nativeRenderErrors": [],
+  "frames": {
+    "fixed": {
+      "count": 96,
+      "unique": 96
+    },
+    "top": {
+      "count": 96,
+      "unique": 96
+    }
+  },
+  "sourceFrames": 16,
+  "sourceSeconds": 1.6,
+  "rootRotationSeconds": 2.4,
+  "combinedLoopSeconds": 4.8,
+  "gameIntegrated": false,
+  "loopStateEqual": true,
+  "allTexturesEmbedded": true
+}

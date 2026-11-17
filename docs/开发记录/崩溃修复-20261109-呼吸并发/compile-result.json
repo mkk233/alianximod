@@ -1,0 +1,22 @@
+{
+  "batchId": "crash-pressure-breath-20261109",
+  "taskId": "pressure-breath-client-guard",
+  "attemptId": "compile-01",
+  "executor": "当前主会话机械执行 compileJava",
+  "sourceWriterReleased": true,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "cwd": "D:\\alianximod",
+  "javaHome": "C:\\Program Files\\Java\\jdk-17",
+  "startedAt": "2026-11-09T21:41:18+0800",
+  "finishedAt": "2026-11-09T21:41:47+0800",
+  "exitCode": 0,
+  "errors": 0,
+  "inputFingerprintBefore": "ad8c6756221e8c6816900a16eea016f5f1002a6c8e7e13a559518a2f7966f7f5",
+  "inputFingerprintAfter": "ad8c6756221e8c6816900a16eea016f5f1002a6c8e7e13a559518a2f7966f7f5",
+  "inputChangesDuringCompile": false,
+  "compileJavaExecuted": true,
+  "buildSuccessful": true,
+  "gameRun": false,
+  "packagingRun": false,
+  "log": "D:\\alianximod\\docs\\开发记录\\崩溃修复-20261109-呼吸并发\\compile.log"
+}

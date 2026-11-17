@@ -1,0 +1,48 @@
+{
+  "author": "D",
+  "phase": "灼地幽冥载荷、根与真实切片范围",
+  "model": "grok-4.7-high-fast",
+  "stopWrite": true,
+  "compile": "未运行",
+  "overlapCheck": "改代码前已对照 author-a-ownership.json、author-b-ownership.json、author-c-ownership.json。SurfaceFireHosts 与 ScorchEffect 不在这三份独占路径里。未改 A/B/C 文件，未读 C 的新载体渲染类。",
+  "exclusive_existing": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainService.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainInstance.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/ContactEnchantState.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/SurfaceFireHosts.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/effects/ScorchEffect.java"
+  ],
+  "exclusive_new": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainCycle.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainTint.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainSight.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/NetherDomainEvents.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/GloomVolumes.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/network/NetherDomainSync.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/NetherDomainWisps.java"
+  ],
+  "tint_hooks": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/client/FireSeedFlameClient.java"
+  ],
+  "resource_files": [
+    "D:/alianximod/src/main/resources/assets/xueximod/textures/effect/nether_gloom_v1/nether_gloom.png"
+  ],
+  "not_modified": [
+    "ModNetwork",
+    "XueXiMod",
+    "ModTechniques",
+    "ReleaseDefinitions",
+    "lang",
+    "ContactCast",
+    "SkillUsePacket",
+    "CastExecutionSession",
+    "SkillChainPlan",
+    "BatchCastSession",
+    "WeaponEnchant",
+    "DomainService",
+    "DomainInstance",
+    "B 的附魔与火种账本",
+    "C 的地形、陨岩、ModBlocks 与新载体渲染"
+  ]
+}

@@ -1,0 +1,2072 @@
+{
+  "method": "Actual desktop Blockbench active Preview.screenshot; native Timeline.setTime / Animator.preview; no offline rendering, no compositing; fixed viewport crop:false",
+  "project": "937be075-0517-53f5-6aa9-c7f18ce35ab8",
+  "view": "main",
+  "viewName": "overall",
+  "camera": {
+    "position": [
+      145,
+      109,
+      165
+    ],
+    "target": [
+      0,
+      -14,
+      0
+    ],
+    "fov": 42
+  },
+  "nativeViewport": [
+    1365,
+    712
+  ],
+  "outputSize": [
+    1280,
+    668
+  ],
+  "samples": [
+    {
+      "index": 0,
+      "time": 0,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 1,
+      "time": 0.05,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 2,
+      "time": 0.1,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 3,
+      "time": 0.15,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 4,
+      "time": 0.2,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 5,
+      "time": 0.25,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 6,
+      "time": 0.3,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 7,
+      "time": 0.35,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 8,
+      "time": 0.4,
+      "visibleDustFrames": 3,
+      "visibleGrains": 4
+    },
+    {
+      "index": 9,
+      "time": 0.45,
+      "visibleDustFrames": 6,
+      "visibleGrains": 9
+    },
+    {
+      "index": 10,
+      "time": 0.5,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 11,
+      "time": 0.55,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 12,
+      "time": 0.6,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 13,
+      "time": 0.65,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 14,
+      "time": 0.7,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 15,
+      "time": 0.75,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 16,
+      "time": 0.8,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 17,
+      "time": 0.85,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 18,
+      "time": 0.9,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 19,
+      "time": 0.95,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 20,
+      "time": 1,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 21,
+      "time": 1.05,
+      "visibleDustFrames": 9,
+      "visibleGrains": 12
+    },
+    {
+      "index": 22,
+      "time": 1.1,
+      "visibleDustFrames": 9,
+      "visibleGrains": 10
+    },
+    {
+      "index": 23,
+      "time": 1.15,
+      "visibleDustFrames": 9,
+      "visibleGrains": 9
+    },
+    {
+      "index": 24,
+      "time": 1.2,
+      "visibleDustFrames": 9,
+      "visibleGrains": 7
+    },
+    {
+      "index": 25,
+      "time": 1.25,
+      "visibleDustFrames": 9,
+      "visibleGrains": 7
+    },
+    {
+      "index": 26,
+      "time": 1.3,
+      "visibleDustFrames": 9,
+      "visibleGrains": 5
+    },
+    {
+      "index": 27,
+      "time": 1.35,
+      "visibleDustFrames": 9,
+      "visibleGrains": 4
+    },
+    {
+      "index": 28,
+      "time": 1.4,
+      "visibleDustFrames": 9,
+      "visibleGrains": 4
+    },
+    {
+      "index": 29,
+      "time": 1.45,
+      "visibleDustFrames": 9,
+      "visibleGrains": 1
+    },
+    {
+      "index": 30,
+      "time": 1.5,
+      "visibleDustFrames": 9,
+      "visibleGrains": 0
+    },
+    {
+      "index": 31,
+      "time": 1.55,
+      "visibleDustFrames": 6,
+      "visibleGrains": 0
+    },
+    {
+      "index": 32,
+      "time": 1.6,
+      "visibleDustFrames": 3,
+      "visibleGrains": 0
+    },
+    {
+      "index": 33,
+      "time": 1.65,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 34,
+      "time": 1.7,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 35,
+      "time": 1.75,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 36,
+      "time": 1.8,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 37,
+      "time": 1.85,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 38,
+      "time": 1.9,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 39,
+      "time": 1.95,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 40,
+      "time": 2,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 41,
+      "time": 2.05,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 42,
+      "time": 2.1,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 43,
+      "time": 2.15,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 44,
+      "time": 2.2,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    },
+    {
+      "index": 45,
+      "time": 2.25,
+      "visibleDustFrames": 0,
+      "visibleGrains": 0
+    }
+  ],
+  "trajectory": [
+    {
+      "time": 0.4,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -7.68,
+            8.96,
+            3.52
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            4.48,
+            8.96,
+            1.92
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            0,
+            8.96,
+            -10.4
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -18.88,
+            8.96,
+            -3.2
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            14.08,
+            8.96,
+            -8.32
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -2.88,
+            8.96,
+            13.44
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            1.92,
+            8.96,
+            -1.6
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -9.6,
+            8.96,
+            -11.52
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            18.4,
+            8.96,
+            9.92
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -15.36,
+            8.96,
+            12
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            7.2,
+            8.96,
+            -19.2
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            9.28,
+            8.96,
+            7.68
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -13.12,
+            8.96,
+            -3.2
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            7.68,
+            8.96,
+            4.48
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            1.6,
+            8.96,
+            -16.8
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -22.08,
+            8.96,
+            7.68
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            20.16,
+            8.96,
+            -5.76
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -4.16,
+            8.96,
+            21.12
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            2.56,
+            8.96,
+            0.32
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -8.64,
+            8.96,
+            -11.52
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            13.12,
+            8.96,
+            13.76
+          ]
+        }
+      ]
+    },
+    {
+      "time": 0.55,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -11.35991822437277,
+            24.90681653570692,
+            4.7466394080132
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            8.365751290259587,
+            25.69608926254746,
+            3.702874121621622
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            0.658827404656056,
+            18.54682648076294,
+            -13.788255222802537
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -22.308718359236643,
+            16.31156162537587,
+            -4.685777955402578
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            18.580112480690957,
+            21.42171447276382,
+            -11.470078736596097
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -4.480042667471106,
+            17.08625403351364,
+            16.960093869169846
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            0.17454545499999985,
+            26.672396694,
+            -0.858181818
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -10.273712577582215,
+            14.10135546397731,
+            -12.76636826787448
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            21.59995075998646,
+            15.765967423591066,
+            12.086120514556534
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -16.22585178723557,
+            13.600704115704639,
+            13.185840491198551
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            9.046125438388627,
+            14.769972190793503,
+            -22.523025788991877
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            10.054769463872162,
+            14.5456701332353,
+            8.640040422649376
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -16.529066666666665,
+            20.480000000000004,
+            -4.288
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            9.744,
+            19.7056,
+            6.016
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            1.9626666666666668,
+            18.368000000000002,
+            -20.644266666666667
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -23.136,
+            11.425600000000003,
+            8.136000000000001
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            22.416,
+            14.848,
+            -7.104
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -4.688000000000001,
+            11.020800000000003,
+            22.104000000000003
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            1.9797333333333333,
+            24.704000000000004,
+            1.2629333333333337
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -9.504000000000001,
+            12.934400000000005,
+            -12.48
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            15.04,
+            15.731200000000001,
+            15.968
+          ]
+        }
+      ]
+    },
+    {
+      "time": 0.7,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -15.040081775627229,
+            34.50724319255903,
+            5.9733605919868005
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            12.251502580804944,
+            36.853422817542636,
+            5.485748243243243
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            1.647066575612477,
+            28.178720516422466,
+            -18.870628103864092
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -27.451281640763355,
+            22.75690760517693,
+            -6.914222044597422
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            23.07999999975,
+            28.128264462999997,
+            -14.62
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -6.879946665244352,
+            24.572021654122906,
+            22.239882663537692
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -1.5709090909999999,
+            38.791404959000005,
+            -0.11636363599999999
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -12.294715566813338,
+            26.14218612073529,
+            -16.50522379884414
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            26.40004922335025,
+            21.354382961965822,
+            15.335417935702198
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -18.823549783255693,
+            24.13524562357764,
+            16.743557312370598
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            11.815413013536379,
+            19.540570821347885,
+            -27.50774342416548
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            12.378922901595875,
+            27.62706640277674,
+            11.519969682512967
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -20.038399999999996,
+            26.624,
+            -5.4079999999999995
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            12.9088,
+            29.5168,
+            8.3712
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            2.336,
+            23.3856,
+            -24.601599999999998
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -26.35093333333333,
+            16.8928,
+            9.524266666666666
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            25.8752,
+            20.224,
+            -9.1648
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -6.295466666666666,
+            15.590399999999999,
+            25.099733333333333
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            1.3824000000000003,
+            33.1008,
+            2.2335999999999996
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -12.1344,
+            21.7472,
+            -15.402666666666665
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            17.983999999999998,
+            21.913600000000002,
+            19.3536
+          ]
+        }
+      ]
+    },
+    {
+      "time": 0.85,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -18.72,
+            37.760000000000005,
+            7.2
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            16.137105844700123,
+            42.4318990253946,
+            7.2685544462489515
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            2.6353096176242237,
+            32.035947504528984,
+            -23.953020892210144
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -32.59418776084224,
+            23.662654497316783,
+            -9.142814696160276
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            27.58003749356365,
+            29.08031312738356,
+            -17.77002624553203
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -9.280010666617777,
+            26.45333048914638,
+            27.52002346729246
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -3.316363636,
+            45.317024793,
+            0.6254545449999998
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -14.315839104538085,
+            33.06490215279092,
+            -20.24430234276661
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            31.199950776649743,
+            21.354382961965822,
+            18.5845820642978
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -21.421135716647424,
+            29.412588426473466,
+            20.301120654931402
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            14.58458698646362,
+            19.540570821347885,
+            -32.49225657583452
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            14.703214970058346,
+            35.14804184428687,
+            14.400070723705024
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -23.0464,
+            27.9296,
+            -6.368
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            16.211199999999998,
+            32.32,
+            10.828800000000001
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            2.6559999999999997,
+            24.45184,
+            -27.9936
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -29.6832,
+            19.2512,
+            10.9632
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            29.4848,
+            21.76,
+            -11.3152
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -7.9616,
+            17.561600000000002,
+            28.2048
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            0.8704000000000003,
+            34.88512,
+            3.0656
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -14.860800000000001,
+            25.5488,
+            -18.432
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            21.055999999999997,
+            23.68,
+            22.886400000000002
+          ]
+        }
+      ]
+    },
+    {
+      "time": 1,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -22.39991822437277,
+            34.50724319255903,
+            8.4266394080132
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            20.022894155299873,
+            42.4318990253946,
+            9.051445553751048
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            3.623517786796584,
+            30.118641753291925,
+            -29.035234330592395
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -37.73709387992112,
+            19.063685295876805,
+            -11.371407347865809
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            32.08,
+            24.277685950500004,
+            -20.919999999999998
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -11.680053318914958,
+            22.710146627929618,
+            32.80011730205278
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -5.061818182,
+            46.249256198,
+            1.367272727
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -16.336856288791104,
+            34.75597563918481,
+            -23.983184133858266
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            36.00004924001354,
+            15.765967423591066,
+            21.833879485443468
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -24.018864283352578,
+            29.412588426473466,
+            23.8588793450686
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            17.353874561611374,
+            14.769972190793503,
+            -37.47697421100813
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            17.02738473193608,
+            36.985257484367764,
+            17.280020211324686
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -24.8512,
+            27.2384,
+            -6.944
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            17.8624,
+            31.47904,
+            12.0576
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            2.848,
+            23.88736,
+            -30.0288
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -31.936,
+            19.42272,
+            11.936
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            31.2896,
+            21.2992,
+            -12.3904
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -9.088000000000001,
+            17.70496,
+            30.304000000000002
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            0.5632000000000001,
+            33.94048,
+            3.5647999999999995
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -16.704,
+            25.825280000000003,
+            -20.48
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            22.592,
+            23.150080000000003,
+            24.6528
+          ]
+        }
+      ]
+    },
+    {
+      "time": 1.15,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -26.080081775627228,
+            24.90681653570693,
+            9.653360591986798
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            23.90849741919505,
+            36.853422817542636,
+            10.834251756756755
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            4.611791831474637,
+            22.426295365010883,
+            -34.11778656161775
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -42.879999999999995,
+            8.96,
+            -13.600000000000001
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            36.579962506436345,
+            13.720441104487499,
+            -24.069973754467966
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -14.079978666297738,
+            13.304350516171322,
+            38.079953065415076
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -6.807272727000001,
+            41.588099174,
+            2.109090909
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -18.357859278022232,
+            31.351209275341827,
+            -27.7220396644069
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            39.2,
+            8.96,
+            24
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -26.616450216744305,
+            24.135245623577642,
+            27.4164426876294
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            19.2,
+            8.96,
+            -40.8
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            19.351538169659797,
+            33.28625205238305,
+            20.15994947118828
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -26.29504,
+            26.240000000000002,
+            -7.4048
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            19.34848,
+            30.451200000000004,
+            13.16352
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            3.0016,
+            23.072000000000003,
+            -31.656959999999998
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -33.6256,
+            19.0368,
+            12.6656
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            32.91392,
+            20.736000000000004,
+            -13.358079999999998
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -9.9328,
+            17.3824,
+            31.8784
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            0.3174400000000004,
+            32.57600000000001,
+            3.9641599999999992
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -18.0864,
+            25.203200000000002,
+            -22.016
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            23.974399999999996,
+            22.5024,
+            26.242559999999997
+          ]
+        }
+      ]
+    },
+    {
+      "time": 1.3,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -29.759999999999998,
+            8.96,
+            10.88
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            27.794248709740412,
+            25.69608926254746,
+            12.617125878378378
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            5.6,
+            8.96,
+            -39.2
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -42.879999999999995,
+            8.96,
+            -13.600000000000001
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            38.08,
+            8.96,
+            -25.12
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -14.879999999999999,
+            8.96,
+            39.839999999999996
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -8.552727273,
+            31.333553719,
+            2.8509090909999997
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -20.378997010768877,
+            22.6920268412024,
+            -31.46114446950394
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            39.2,
+            8.96,
+            24
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -29.21414821276443,
+            13.600704115704634,
+            30.97415950880145
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            19.2,
+            8.96,
+            -40.8
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            21.675846562276284,
+            23.87874520991314,
+            23.040070740136407
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -27.5584,
+            25.088,
+            -7.808
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            20.50432,
+            29.0496,
+            14.023679999999999
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            3.136,
+            22.1312,
+            -33.0816
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -34.80832,
+            18.3936,
+            13.17632
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            34.177279999999996,
+            19.968000000000004,
+            -14.110719999999999
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -10.524160000000002,
+            16.8448,
+            32.98048
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            0.10240000000000027,
+            31.0016,
+            4.3136
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -19.054080000000003,
+            24.166400000000003,
+            -23.0912
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            25.049599999999998,
+            21.6192,
+            27.479039999999998
+          ]
+        }
+      ]
+    },
+    {
+      "time": 1.45,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -29.759999999999998,
+            8.96,
+            10.88
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            31.68,
+            8.96,
+            14.4
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            5.6,
+            8.96,
+            -39.2
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -42.879999999999995,
+            8.96,
+            -13.600000000000001
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            38.08,
+            8.96,
+            -25.12
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -14.879999999999999,
+            8.96,
+            39.839999999999996
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -10.298181818,
+            15.485619835000001,
+            3.592727273
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -22.4,
+            8.96,
+            -35.2
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            39.2,
+            8.96,
+            24
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -30.08,
+            8.96,
+            32.16
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            19.2,
+            8.96,
+            -40.8
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            24,
+            8.96,
+            25.919999999999998
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -28.4608,
+            24.416000000000004,
+            -8.096
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            21.439999999999998,
+            28.037333333333333,
+            14.719999999999999
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            3.232,
+            21.5824,
+            -34.099199999999996
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -35.8784,
+            17.839733333333335,
+            13.6384
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            35.2,
+            19.413333333333334,
+            -14.719999999999999
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -11.0592,
+            16.381866666666667,
+            33.9776
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            -0.05119999999999969,
+            30.0832,
+            4.5632
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -19.9296,
+            23.273600000000002,
+            -24.064
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            25.919999999999998,
+            20.981333333333335,
+            28.479999999999997
+          ]
+        }
+      ]
+    },
+    {
+      "time": 1.6,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -29.759999999999998,
+            8.96,
+            10.88
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            31.68,
+            8.96,
+            14.4
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            5.6,
+            8.96,
+            -39.2
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -42.879999999999995,
+            8.96,
+            -13.600000000000001
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            38.08,
+            8.96,
+            -25.12
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -14.879999999999999,
+            8.96,
+            39.839999999999996
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -10.88,
+            8.96,
+            3.8400000000000003
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -22.4,
+            8.96,
+            -35.2
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            39.2,
+            8.96,
+            24
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -30.08,
+            8.96,
+            32.16
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            19.2,
+            8.96,
+            -40.8
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            24,
+            8.96,
+            25.919999999999998
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -29.3632,
+            23.744,
+            -8.384
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            22.2656,
+            27.219733333333334,
+            15.334400000000002
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            3.3280000000000003,
+            21.0336,
+            -35.1168
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -36.7232,
+            17.464533333333335,
+            14.0032
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            36.1024,
+            18.965333333333334,
+            -15.2576
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -11.4816,
+            16.068266666666666,
+            34.7648
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            -0.2048000000000001,
+            29.1648,
+            4.8128
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -20.620800000000003,
+            22.6688,
+            -24.832
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            26.688000000000002,
+            20.46613333333333,
+            29.3632
+          ]
+        }
+      ]
+    },
+    {
+      "time": 1.8,
+      "grains": [
+        {
+          "name": "grit_01_BALLISTIC_visual_only",
+          "positionModel": [
+            -29.759999999999998,
+            8.96,
+            10.88
+          ]
+        },
+        {
+          "name": "grit_02_BALLISTIC_visual_only",
+          "positionModel": [
+            31.68,
+            8.96,
+            14.4
+          ]
+        },
+        {
+          "name": "grit_03_BALLISTIC_visual_only",
+          "positionModel": [
+            5.6,
+            8.96,
+            -39.2
+          ]
+        },
+        {
+          "name": "grit_04_BALLISTIC_visual_only",
+          "positionModel": [
+            -42.879999999999995,
+            8.96,
+            -13.600000000000001
+          ]
+        },
+        {
+          "name": "grit_05_BALLISTIC_visual_only",
+          "positionModel": [
+            38.08,
+            8.96,
+            -25.12
+          ]
+        },
+        {
+          "name": "grit_06_BALLISTIC_visual_only",
+          "positionModel": [
+            -14.879999999999999,
+            8.96,
+            39.839999999999996
+          ]
+        },
+        {
+          "name": "grit_07_BALLISTIC_visual_only",
+          "positionModel": [
+            -10.88,
+            8.96,
+            3.8400000000000003
+          ]
+        },
+        {
+          "name": "grit_08_BALLISTIC_visual_only",
+          "positionModel": [
+            -22.4,
+            8.96,
+            -35.2
+          ]
+        },
+        {
+          "name": "grit_09_BALLISTIC_visual_only",
+          "positionModel": [
+            39.2,
+            8.96,
+            24
+          ]
+        },
+        {
+          "name": "grit_10_BALLISTIC_visual_only",
+          "positionModel": [
+            -30.08,
+            8.96,
+            32.16
+          ]
+        },
+        {
+          "name": "grit_11_BALLISTIC_visual_only",
+          "positionModel": [
+            19.2,
+            8.96,
+            -40.8
+          ]
+        },
+        {
+          "name": "grit_12_BALLISTIC_visual_only",
+          "positionModel": [
+            24,
+            8.96,
+            25.919999999999998
+          ]
+        }
+      ],
+      "dustRoots": [
+        {
+          "name": "dust_01_WORLD_motion",
+          "positionModel": [
+            -29.3632,
+            23.744,
+            -8.384
+          ]
+        },
+        {
+          "name": "dust_02_WORLD_motion",
+          "positionModel": [
+            22.540799999999997,
+            26.947200000000002,
+            15.539200000000001
+          ]
+        },
+        {
+          "name": "dust_03_WORLD_motion",
+          "positionModel": [
+            3.3280000000000003,
+            21.0336,
+            -35.1168
+          ]
+        },
+        {
+          "name": "dust_04_WORLD_motion",
+          "positionModel": [
+            -37.2864,
+            17.2144,
+            14.2464
+          ]
+        },
+        {
+          "name": "dust_05_WORLD_motion",
+          "positionModel": [
+            36.4032,
+            18.816000000000003,
+            -15.4368
+          ]
+        },
+        {
+          "name": "dust_06_WORLD_motion",
+          "positionModel": [
+            -11.763200000000001,
+            15.859200000000001,
+            35.2896
+          ]
+        },
+        {
+          "name": "dust_07_WORLD_motion",
+          "positionModel": [
+            -0.2048000000000001,
+            29.1648,
+            4.8128
+          ]
+        },
+        {
+          "name": "dust_08_WORLD_motion",
+          "positionModel": [
+            -21.0816,
+            22.2656,
+            -25.344
+          ]
+        },
+        {
+          "name": "dust_09_WORLD_motion",
+          "positionModel": [
+            26.944,
+            20.294400000000003,
+            29.657600000000002
+          ]
+        }
+      ]
+    }
+  ],
+  "textureErrors": [
+    {
+      "name": "CANDIDATE_airborne_3x24_frames",
+      "error": 0
+    },
+    {
+      "name": "CANDIDATE_visual_grit_alpha",
+      "error": 0
+    },
+    {
+      "name": "AUX_ONLY_ground_and_human",
+      "error": 0
+    }
+  ],
+  "saved": true
+}

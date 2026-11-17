@@ -1,0 +1,13 @@
+  public void setAbsorptionAmount(float);
+    Code:
+       0: fload_1
+       1: fconst_0
+       2: fcmpg
+       3: ifge          8
+       6: fconst_0
+       7: fstore_1
+       8: aload_0
+       9: fload_1
+      10: putfield      #3304               // Field absorptionAmount:F
+      13: return
+

@@ -1,0 +1,60 @@
+{
+  "result": "passed",
+  "gameVerified": false,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "startedAt": "2026-11-02T05:55:18",
+  "endedAt": "2026-11-02T05:55:43",
+  "exitCode": 0,
+  "exitCodeSource": "subprocess returncode of cmd /c gradlew.bat",
+  "java": "17.0.6+9-LTS-190",
+  "env": {
+    "JAVA_HOME": "C:/Program Files/Java/jdk-17",
+    "GRADLE_USER_HOME": "C:/Users/baishang/.gradle",
+    "pathPrefix": "C:/Program Files/Java/jdk-17/bin",
+    "jvmargs": "-Xmx3G",
+    "offline": true,
+    "noDaemon": true
+  },
+  "gradleLog": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-gradle.log",
+  "buildResult": "BUILD SUCCESSFUL in 24s",
+  "tasks": {
+    "downloadMcpConfig": "executed",
+    "extractSrg": "UP-TO-DATE",
+    "createMcpToSrg": "UP-TO-DATE",
+    "compileJava": "executed"
+  },
+  "actionableTasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "warnings": 41,
+  "errors": 0,
+  "sourceBefore": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-final-source-before.json",
+  "sourceAfter": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-final-source-after.json",
+  "sourceCountBefore": 1200,
+  "sourceCountAfter": 1200,
+  "sourceDiffCount": 0,
+  "repairedFiles": [
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutBodyPose.java",
+      "sha256": "783b378fb81efcb1c0977b32271b807e16999eac7b0e91d949037bf494f5f34e",
+      "mtime": "2026-11-02T05:52:27"
+    },
+    {
+      "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutItemMount.java",
+      "sha256": "82a9d9a11fa804eb1f7a215e20918177d127021968665e3b9c27f5d52676382b",
+      "mtime": "2026-11-02T05:52:29"
+    }
+  ],
+  "runtimeJson": {
+    "path": "src/main/resources/assets/xueximod/actions/space_cut_left_waist_v5.json",
+    "sha256": "64b0fe3eb2f629c3fb12b90ca1d3a8c64e1664c7661dc7794c97473a8b313c46",
+    "mtime": "2026-11-02T04:56:46"
+  },
+  "preflight": {
+    "phase": "final_compile_running_or_preflight",
+    "sourceWritesStopped": true,
+    "nameGate": "repair-compile-report recorded pass; not re-run",
+    "cloneStage": "waiting_spacecut_compile_fixes",
+    "cloneWriters": "A B C completed/stopped",
+    "activeJava": "idle GradleDaemon 8.8 pid 66116 only"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "ready": true,
+  "baselineSha256": "B3D518CFC659F77F8F4F28C12EF569AC99FC01CE804D0B3B7501B2BEBF4741C3",
+  "baselineMtime": "2026-11-02T03:45:07.796+08:00",
+  "backup": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\备份\\术式制作表-20261102-040245-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\候选\\术式制作表-候选-20261102-040245-1.xlsx",
+  "candidateSha256": "06A616FBF4484B38D101BE875D6F6D0293676052F0F65747E74893AD79C3B179",
+  "snapshots": {
+    "aen": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\快照\\变更前-AEN-20261102-040245-1.json",
+    "nodv": "D:\\alianximod\\docs\\开发记录\\底座释放参数返修-20261102\\快照\\待验收前-NODV-20261102-040245-1.json"
+  },
+  "moves": {
+    "fire_shock_ring": {
+      "from": {
+        "sheet": "制作中",
+        "row": 16
+      },
+      "to": {
+        "sheet": "待验收",
+        "row": 8
+      }
+    },
+    "fire_meteorite": {
+      "from": {
+        "sheet": "制作中",
+        "row": 17
+      },
+      "to": {
+        "sheet": "待验收",
+        "row": 9
+      }
+    }
+  },
+  "countsBefore": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 15,
+    "待验收": 5
+  },
+  "countsAfter": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 13,
+    "待验收": 7
+  },
+  "live": "D:\\alianximod\\docs\\术式制作表.xlsx",
+  "affectedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/workbook.xml"
+  ],
+  "display": {
+    "fire_shock_ring": {
+      "N": "在锚点周围产生一次环形冲击，中心留空，只结算一次。",
+      "O": "热波_水平正圆_v2 / heat-circle-v2\n正式源：docs/资源库/特效/火焰/热波_水平正圆_v2/\n运行贴图：textures/effect/shock_ring_v1/shock_ring.png（文件名兼容旧引用，内容为 heat-circle-v2）"
+    },
+    "fire_meteorite": {
+      "N": "撞到实体后沿当前弹道继续飞行，触地才变成陨石方块。",
+      "O": "陨岩·熔岩岩壳v5 / meteor-magma-crust-v5\n正式目录：docs/资源库/材质/方块/陨岩_熔岩岩壳_v5/\n运行贴图：textures/block/meteorite_v1.png（内容为 meteor-magma-crust-v5）\n模型：minecraft:block/cube_all"
+    }
+  }
+}

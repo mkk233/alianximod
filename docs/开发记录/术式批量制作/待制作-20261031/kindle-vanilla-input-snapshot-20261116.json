@@ -1,0 +1,247 @@
+{
+  "batchId": "待制作-20261031",
+  "taskId": "fire_kindle_v2_progress",
+  "attemptId": "20261116-doc-kindle-vanilla-input-13",
+  "clientDate": "2026-11-16",
+  "authorAgentId": "01a1e08b-09e0-7bb3-b2ce-d5e430f241ac",
+  "parentAgentId": "01a1ce06-b681-7c90-b11d-260d3c169911",
+  "model": "cursor/grok-4.7@500k",
+  "reasoningEffort": "high",
+  "serviceTier": "client priority configured; tool has no tier parameter; backend not claimed verified",
+  "review": {
+    "design": "2/2",
+    "implementation": "3/3",
+    "sentence": "本阶段额度已用完，返修结果未追加复审",
+    "newReview": false
+  },
+  "sheetWritten": false,
+  "workbook": {
+    "path": "docs/术式制作表.xlsx",
+    "initialReadSha256": "C8B27C3D1AA6AEAB1EA0607D4D6CEE7817435323AFB418F17422E9AE8EDD4D2E",
+    "sha256": "C8B27C3D1AA6AEAB1EA0607D4D6CEE7817435323AFB418F17422E9AE8EDD4D2E",
+    "bytes": 187607,
+    "mtime": "2026-11-16 13:05:13.701",
+    "zipEntries": 27,
+    "sheetNames": [
+      "已完成",
+      "待制作",
+      "制作中",
+      "待验收",
+      "数据表",
+      "资源状态明细",
+      "待制作原始数据"
+    ],
+    "baselineExpected": "C8B27C3D1AA6AEAB1EA0607D4D6CEE7817435323AFB418F17422E9AE8EDD4D2E",
+    "baselineUnchangedAtInitialRead": true,
+    "laterObservedWithoutMtimeChange": {
+      "sha256": "159879C3EE8650462379A7074D2B6A9C6CE8DA6FEC8CDDE604C706A2B2D87B7B",
+      "bytes": 187607,
+      "mtime": "2026-11-16 13:05:13.701",
+      "sameAsCandidate": "docs/开发记录/术式批量制作/待制作-20261031/候选/fentian-burnout-final-术式制作表-20261116-130513-1.xlsx",
+      "onlyDifferenceFromBackup": "制作中第28行 fire_fentian 的 DV 前缀保留，由6188字增至6898字",
+      "fireKindleUnchanged": true,
+      "sourceNotOverwrittenByThisAttempt": true
+    },
+    "lockFile": false,
+    "exclusiveRead": true,
+    "counts": {
+      "已完成": 37,
+      "待制作": 0,
+      "制作中": 23,
+      "待验收": 18
+    },
+    "totalB": 78,
+    "uniqueB": 78,
+    "duplicateB": []
+  },
+  "locatedByColumnB": {
+    "fire_kindle": {
+      "sheet": "制作中",
+      "row": 29,
+      "name": "引燃"
+    },
+    "fire_fentian_untouched": {
+      "sheet": "制作中",
+      "row": 28
+    }
+  },
+  "headers": {
+    "N": "功能描述",
+    "O": "特效",
+    "DV": "备注",
+    "EK": "结算约束"
+  },
+  "currentCells": {
+    "N": "火种持续伤害附魔。本次录入的基础参数草案：启动时读取n=floor(当时余额/10)和炉心F，不把整笔余额预付或复制成私有燃料。每个完整段伤害为2×(1+F)，间隔10tick，最长40+10×n tick。每个完整段向共享余额请求10点火种；实付不足时按实付/请求缩放该段伤害，没有燃料则该段不造成资源伤害。100点火种且没有补种时，最多供10个完整的2点段，不承诺14段或28点。n小于1时不挂燃烧，载体自己的直接伤害照常处理。\n不同真实释放可以叠层。同一次真实释放、同一目标、同一效果不重复挂层，也不为每一段伪造新的施法上下文。不同效果争用同一余额。余额到0则结束，已经终止的层不因后来补种复活。尚未结束的层可以消耗新进入同一余额的火种，但不刷新启动倍率和时长。同tick到期的层按需求比例分配，不能只让第一层拿满。没有「正在燃烧就禁止引爆或禁止补种」的总锁，也没有同一次施法引燃后永远禁止引爆的跨效果锁。原版着火和载体基础伤害不自动变成资源燃烧。离开火场不解除已挂燃烧。\n陨石组合里，引燃只附着热波子段，不附着陨岩中心，也不把旧环带32点预算写成本行保证值。",
+    "O": "目标身上的持续火焰，按段亮一下，燃料耗尽或期限到了就熄灭。",
+    "DV": "上述间隔、时长和单段2×(1+F)是录入用的基础参数草案，待制作前定稿。不填写旧规则「启动消费全部火种、按S保证段数」。不采用100点14段、28点或环带总32点。本次录入2026-10-29。来源docs/火属性基础术式与组合设计.md，并按用户最新决定替换魂焰、采用共享燃料。只进入待制作，尚未领取，不开始实现。魔力、冷却、复杂度、装配消耗、等级上限和等级成长未定，对应数值格留空，不用0代替。\n[设计反馈 2026-10-31] 已领取。首版数值和链上角色仍有待定，正在核对底座，视觉待预览确认。具体未定项参照本项原文。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[设计反馈 2026-10-31] 已采用首版参数。见 docs/开发记录/术式批量制作/待制作-20261031/approved-v1.md。用户暂用二维原话：先保留这个版本，额度不够用了暂时，之后再重置，暂时直接按照这个版本执行。这不是新的正式复审，设计仍为2/2，实现仍为0/3，也不是游戏实测通过。单术战斗成长为0，没有成长专列。基础法杖保持6槽；32槽测试法杖是公共物品，不在本行。魔力2，冷却5，复杂度2，装配消耗2，等级上限20。首跳延迟10tick写入首次延迟。原结算公式保留。链上角色不适用：附魔按所属段绑定。资源：docs/资源库/特效/火焰/引燃_v1/kindle-strip.png，建议运行时 assets/xueximod/textures/effect/kindle_v1/kindle.png。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[阶段 2026-10-31] 实现与确认v1资源已接入。正式复审累计设计2/2、实现3/3，额度已用完，不能自动再审。待统一编译：本仓开发客户端和runClient仍占用Gradle，GradleDaemon PID 12896，Forge客户端 PID 45212。compileJava没有执行。这不是编译器报错，也不是编译通过。关闭该开发客户端并结束对应runClient后，重新核对源码再编译；编译成功后才按规则迁待验收。证据 docs/开发记录/术式批量制作/待制作-20261031/final-compile-report.md。记录 docs/开发记录/术式批量制作/待制作-20261031/记录.md。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[美术进度 2026-11-16] 引燃v2贴身分段燃烧二维及真实Blockbench候选预览已完成，待用户同版确认；现行v1一次性播放保留，v2目标跟随/分段闪亮/结束收束未接入；详见 docs/开发记录/术式批量制作/待制作-20261031/kindle-v2-art-progress-sheet-receipt-20261116.md。\n[设计反馈 2026-11-16] 用户拒绝旧v2候选。原话：「这个效果一点也不MC，而且就是几个廉价的橙色海带，重新画一下烧起来的效果可以参考红色警戒2中步兵单位被油桶引燃的时的效果」。按该原话重画v3全身燃烧，参考红警2步兵被油桶引燃的着火表现；新稿未获确认，未接入，保持制作中。详见 docs/开发记录/术式批量制作/待制作-20261031/kindle-v3-rejection-record-20261116.md。\n[设计反馈 2026-11-16] 用户原话：「这个效果很好但是不适合作为燃烧的特效，因为这个火比较猛不像是初级术式这样你把现在焚天的特效先拿来给引燃用，把这个效果给焚天」。这是同版素材用途互换并授权接入，不是等待同一素材再确认。引燃承接原焚天v2，批准像素SHA256 3AE6A95E41D92991B828EDC7491CBB40A18D503CDCF700281A50D901D6AA6A76，计划运行路径 assets/xueximod/textures/effect/kindle_v4/kindle.png；强烈v3改归焚天。运行文件尚未按实现回执证明已复制。保持制作中。详见 docs/开发记录/术式批量制作/待制作-20261031/kindle-fentian-swap-approval-20261116.md。\n[设计反馈 2026-11-16] 同版素材互换已接入，本项视觉编译退出码 0。N 改为游戏内原文「按当时余额挂引燃。不附加直接伤害」。O 改为 assets/xueximod/textures/effect/kindle_v4/kindle.png。compileJava 于 2026-11-16 11:22:46.375–11:22:58.342 为 UP-TO-DATE，覆盖 11:16:46 视觉源码，不覆盖 11:23:10 的 CombatOwnership.java。未游戏实测，不迁已完成。详见 docs/开发记录/术式批量制作/待制作-20261031/kindle-fentian-swap-final-sheet-20261116.md。\n待验收 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[状态纠正 2026-11-16] 按流程第9节从待验收第26行恢复制作中。用户暂缓引燃重设计，待验收简句不再充当需求。N/O恢复最近批准详细快照 kindle-fentian-swap-final-requirements-20261116.json 的 kindle_before，并与迁页前备份单元格逐字一致，未用原始档案回滚。运行仍保留 assets/xueximod/textures/effect/kindle_v4/kindle.png，本轮不重设计、不改引用。Sartre attempt 20261116-impl-fentian-dual-layer-02 未改引燃。用户原话：“感觉还是差了点意思，这样你把老焚天动画和新换过去的一起接给焚天，用老效果做背景板再叠加燃烧效果这样视觉冲击力更足，引燃的效果等会我重新告诉你怎么设计”。下一步等待用户后述引燃设计。焚天双层美术仍是 prepared_waiting_gui，源码回执已到但未编译。本阶段额度已用完，返修结果未追加复审。详见 docs/开发记录/术式批量制作/待制作-20261031/fentian-dual-layer-request-20261116.md。\n制作中 | 待制作-20261031 | docs/开发记录/术式批量制作/待制作-20261031/记录.md\n[状态纠正 2026-11-16] 双层收尾不改引燃。运行仍是 assets/xueximod/textures/effect/kindle_v4/kindle.png，最近详细 N/O 与用户暂缓设计决定保留，不编造新方案，不迁待验收。上文「未编译」是提交当时的原文。其后稳定编译 attempt 20261116-compile-fentian-dual-layer-03 于 12:01:11.573–12:01:23.910 退出码 0，compileJava 为 UP-TO-DATE，树摘要 AE3C3A58BB1680064E8E5665FD0A2A35F4804126549E6747B9A12F86562A2009，1488 个文件无变化，未改引燃。派发文本中的另一树摘要未采用。本阶段额度已用完，返修结果未追加复审。详见 docs/开发记录/术式批量制作/待制作-20261031/fentian-dual-layer-final-sync-20261116.md。"
+  },
+  "unchangedSettlementEK": "完整段请求10。单段2×(1+F)，间隔10tick，最长40+10×n tick。实付不足按比例缩放。同tick按需求比例分配。不预扣全部，不保证段数。",
+  "cellSha256": {
+    "N": "75F6ED304CD49A509224F4E9D117DBDE581D415A30ED54D0FAF0ED8E656DB8C1",
+    "O": "933CC168D8E153AA87437E5CFDBD52C6030A05FB4392CD85379E66285F6F9F08",
+    "DV": "2DC82E674099E7185C45809FC41CF784A4B263AEC0DC780405446CDE6E3E767D",
+    "EK": "67BEA7E220606E3F5BB5871FB5C756C7822B63008F510D67AF720012E68C0769"
+  },
+  "cellChars": {
+    "N": 483,
+    "O": 29,
+    "DV": 3284,
+    "EK": 77
+  },
+  "resourceStatusGroup": [
+    {
+      "col": "DW",
+      "group": "资源与状态",
+      "header": "配置启用",
+      "value": "是"
+    },
+    {
+      "col": "DX",
+      "group": "",
+      "header": "资源",
+      "value": "火种"
+    },
+    {
+      "col": "DY",
+      "group": "",
+      "header": "状态",
+      "value": ""
+    },
+    {
+      "col": "DZ",
+      "group": "",
+      "header": "操作",
+      "value": "消费"
+    },
+    {
+      "col": "EA",
+      "group": "",
+      "header": "作用对象",
+      "value": "命中目标"
+    },
+    {
+      "col": "EB",
+      "group": "",
+      "header": "触发时机",
+      "value": "燃烧结算"
+    },
+    {
+      "col": "EC",
+      "group": "",
+      "header": "数值",
+      "value": "10"
+    },
+    {
+      "col": "ED",
+      "group": "",
+      "header": "状态amplifier",
+      "value": ""
+    },
+    {
+      "col": "EE",
+      "group": "",
+      "header": "寿命策略",
+      "value": ""
+    },
+    {
+      "col": "EF",
+      "group": "",
+      "header": "寿命tick",
+      "value": ""
+    },
+    {
+      "col": "EG",
+      "group": "",
+      "header": "周期tick",
+      "value": "10"
+    },
+    {
+      "col": "EH",
+      "group": "",
+      "header": "首次延迟tick",
+      "value": "10"
+    },
+    {
+      "col": "EI",
+      "group": "",
+      "header": "计量单位",
+      "value": "每次触发"
+    },
+    {
+      "col": "EJ",
+      "group": "",
+      "header": "生效条件",
+      "value": "同一次真实释放、同一目标、同一效果不重复挂层。不同真实释放可以叠层。满8条计划在扣火种之前拒绝。"
+    },
+    {
+      "col": "EK",
+      "group": "",
+      "header": "结算约束",
+      "value": "完整段请求10。单段2×(1+F)，间隔10tick，最长40+10×n tick。实付不足按比例缩放。同tick按需求比例分配。不预扣全部，不保证段数。"
+    },
+    {
+      "col": "EL",
+      "group": "",
+      "header": "迁移来源",
+      "value": "N/DV"
+    },
+    {
+      "col": "EM",
+      "group": "",
+      "header": "关联说明",
+      "value": "不产火种、不施加炉心"
+    },
+    {
+      "col": "EN",
+      "group": "",
+      "header": "附加明细键",
+      "value": ""
+    }
+  ],
+  "resourceDetailHasFireKindle": false,
+  "archiveNotUsedAsCurrent": {
+    "sheet": "待制作原始数据",
+    "row": 19,
+    "Nsha256": "75F6ED304CD49A509224F4E9D117DBDE581D415A30ED54D0FAF0ED8E656DB8C1",
+    "Osha256": "933CC168D8E153AA87437E5CFDBD52C6030A05FB4392CD85379E66285F6F9F08",
+    "DVsha256": "3596E135C2BD54461FC7E7A48D3A2909C2F7326A66F7D7DB85C4062D061C2AA0",
+    "NsameAsCurrent": true,
+    "OsameAsCurrent": true,
+    "DVsameAsCurrent": false,
+    "note": "档案只作历史对照，不是现行需求，也不是本次返修恢复依据。"
+  },
+  "newUserDecision": {
+    "quote": "引燃的效果就采用原本燃烧动画就好伤害依然用引燃本身计算特效不再单独制作",
+    "writtenIntoSheet": false,
+    "replacesWaitingDesign": true,
+    "doesNotConfirmFentianV41": true
+  },
+  "parentInterpretationNotUserWords": "主会话按原版 Minecraft 实体着火动画复用，显示与伤害分离，不再制作引燃专属美术。这不是用户原话。",
+  "receivedReadOnlyFacts": {
+    "agentId": "01a1e2fe-8c12-7b82-bdcd-2f43c5c13a1f",
+    "taskId": "fire_kindle_vanilla_visual_facts",
+    "attemptId": "20261116-read-kindle-vanilla-01",
+    "state": "final and closed, read-only, no write",
+    "latestHashCaptured": false,
+    "notVerifiedByThisRecorder": true,
+    "facts": [
+      "引燃目前由 FireVisualClient 的 BURNS 加专用 kindle_v4 持续/余烬 billboard 显示。",
+      "服务端伤害由 KindlePlan、FireConsumption、BurnLedger、BurnCarrier、FireDamage 结算。",
+      "未点燃原版着火状态。",
+      "原版 EntityRenderDispatcher 的 displayFireAnimation 到 renderFlame 可独立显示。",
+      "既有 EntityRenderDispatcherSoulFireMixin 可复用。"
+    ]
+  },
+  "implementationInProgressNotRead": {
+    "agentId": "01a1e246-a7e1-7861-acdf-2569d7b9ecee",
+    "attemptId": "20261116-impl-kindle-vanilla-01",
+    "ownedPaths": [
+      "FireVisualClient.java",
+      "mixin/client/EntityRenderDispatcherSoulFireMixin.java",
+      "kindle-vanilla-visual-impl-20261116.md"
+    ],
+    "finalReceived": false,
+    "compileAuthorized": false
+  }
+}

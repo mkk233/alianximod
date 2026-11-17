@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "\"{\\\"model\\\":\\\"D:/alianximod/docs/资源库/过程归档/崩地_坑口扬尘_v2_20261116/source/earth_break_ground_v2_preview.bbmodel\\\",\\\"saved\\\":true,\\\"frames\\\":40,\\\"visibleCounts\\\":[0,0,0,0,0,0,0,0,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\\\"start\\\":{\\\"name\\\":\\\"dust_01_WORLD_motion\\\",\\\"world\\\":[-24.32,8.48,-3.52]},\\\"end\\\":{\\\"name\\\":\\\"dust_01_WORLD_motion\\\",\\\"world\\\":[-33.6,12.280000000000001,-5.12]},\\\"view\\\":\\\"main\\\"}\""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "userText": "水幻型的特效为什么和预览不一样",
+  "receivedAt": "2026-11-02T21:22:31.6523857+08:00",
+  "screenshot": "user-game-visual-01.png",
+  "screenshotSha256": "55641C005A3BE353737FC1ECC30156F713A6F09AC3C4936903210E55189471DC",
+  "approvedVersion": "water-phantom-steve-v2.1",
+  "repairTask": "fix-game-visual-01-task.md",
+  "formalReviewRounds": "design 2/2; implementation 3/3; no additional review",
+  "status": "author repair delivered; final compile passed; user full client restart and game retest pending"
+}

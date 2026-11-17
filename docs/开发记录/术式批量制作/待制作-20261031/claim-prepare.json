@@ -1,0 +1,188 @@
+{
+  "submitted": false,
+  "statement": "候选已准备但原表未提交",
+  "baselineSha256": "AC4BA99781DC6174B89344FC2CB2174E67B4A2AF4C0515BB50C4BE6905435F8F",
+  "liveSha256After": "AC4BA99781DC6174B89344FC2CB2174E67B4A2AF4C0515BB50C4BE6905435F8F",
+  "liveUnchanged": true,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\备份\\术式制作表-20261031-025428-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\claim-prepare-candidate-preserved.xlsx",
+  "candidateSha256": "019494902D2EE20A30E6F8DDA382020E5BD911153C68D6EE4151A7D941E251EA",
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "uniqueStatusIds": 60,
+  "moved": [
+    {
+      "id": "fire_flame_trail",
+      "name": "留焰",
+      "fromRow": 3,
+      "archiveRow": 11,
+      "makingRow": 6,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_meteorite",
+      "name": "陨岩",
+      "fromRow": 4,
+      "archiveRow": 12,
+      "makingRow": 7,
+      "chainRole": "攻击",
+      "clarification": [
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_shock_ring",
+      "name": "热波",
+      "fromRow": 5,
+      "archiveRow": 13,
+      "makingRow": 8,
+      "chainRole": "攻击",
+      "clarification": [
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "rule_surface_anchor",
+      "name": "地表定位",
+      "fromRow": 6,
+      "archiveRow": 14,
+      "makingRow": 9,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_upwell",
+      "name": "喷涌",
+      "fromRow": 7,
+      "archiveRow": 15,
+      "makingRow": 10,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "rule_stagger",
+      "name": "错时",
+      "fromRow": 8,
+      "archiveRow": 16,
+      "makingRow": 11,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "rule_hit_continue",
+      "name": "命中接续",
+      "fromRow": 9,
+      "archiveRow": 17,
+      "makingRow": 12,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_seed_sow",
+      "name": "种火",
+      "fromRow": 10,
+      "archiveRow": 18,
+      "makingRow": 13,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_kindle",
+      "name": "引燃",
+      "fromRow": 11,
+      "archiveRow": 19,
+      "makingRow": 14,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_detonate",
+      "name": "引爆",
+      "fromRow": 12,
+      "archiveRow": 20,
+      "makingRow": 15,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_nether_gloom",
+      "name": "幽冥",
+      "fromRow": 13,
+      "archiveRow": 21,
+      "makingRow": 16,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "earth_break_ground",
+      "name": "崩地",
+      "fromRow": 14,
+      "archiveRow": 22,
+      "makingRow": 17,
+      "chainRole": null,
+      "clarification": [
+        "链上角色空",
+        "原文含待定或未定"
+      ]
+    },
+    {
+      "id": "fire_spark",
+      "name": "火苗",
+      "fromRow": 15,
+      "archiveRow": 23,
+      "makingRow": 18,
+      "chainRole": "攻击",
+      "clarification": [
+        "原文含待定或未定"
+      ]
+    }
+  ],
+  "archivePreserved": [
+    "fire_liaoyuan",
+    "fire_liaoli",
+    "fire_fentian",
+    "fire_heat_up",
+    "fire_burn",
+    "fire_cool",
+    "fire_scorch_field"
+  ],
+  "resourceDetailArchived": [],
+  "quota": {
+    "design": "0/2",
+    "implementation": "0/3",
+    "countsAsReview": false
+  },
+  "fidelity": "候选按 OOXML 原部件复制。只改待制作、制作中、待制作原始数据三个工作表的行和范围。不用整表重建，避免改写样式、批注、验证和公式。"
+}

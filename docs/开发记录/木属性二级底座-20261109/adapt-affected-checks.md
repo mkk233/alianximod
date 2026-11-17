@@ -1,0 +1,11 @@
+# C 适配本次重构影响的既有检查
+
+仅主会话在当前只读复核最终结束、更新TaskFile后Resume本作者执行，不在审查期间写入。保持原可写Cursor session、grok-4.7-high-fast。本任务不是重新设计或重审模块，而是处理你在整合交付和待跑检查中已明确报告的失效断言。
+
+按授权精确文件适配：
+- FireHurtBytecodeCheck原断言要求出口只有exitHurt等旧序列，以及所有enterHurt调用合计1。现在应明确检查新包装的完整正常/异常顺序、火元素owner/descriptor的enter/exit各自计数、迎击owner/descriptor的进入/完成/中止、原返回值和异常仍正确传递、重复包装保护仍在。不能删掉原finally或原返回语义检查来求通过。
+- KnownLimitsCheck和FireVisualLayoutCheck仍在SelfStatusCommit里搜索旧炉心commit方法或升级/蒸汽视觉字符串。按真实职责分离改为检查FurnaceSelfStatusCast适配器及通用提交器，保留原有升级保热/不重播升温/主动冷却蒸汽等原先覆盖的行为约束；其余不受影响断言原样保留。不要只是把失败断言删掉，不添加新的纯文本镜像检查凑数。
+
+仅修改这些受本次重构直接影响的测试及交付命令说明，不改生产源码，不执行Gradle/javac/测试/游戏，不改启动器记录或制作表。若适配过程中发现真实生产行为缺陷，交回原作者精确问题，不为通过检查掩盖。为最终验证者在整合交付.md或检查说明写出可运行命令与依赖；纯文本阅读锚点应标明静态检查，不假称运行回归。
+
+完成后最终反馈changedFiles、writesSettled=true、未运行项。原设计/实现复核计数不因这次接续重置，也不要自报已经正式复审通过。

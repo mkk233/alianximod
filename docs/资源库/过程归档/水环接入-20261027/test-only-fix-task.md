@@ -1,0 +1,4 @@
+继续上一任务，补充唯一GPT-6-astra新裁决然后完成所有归档收尾。上一任务compileJava已成功，processResources3hash一致，全量compileTestJava被无关SkinAttachmentChecks20错挡住不修；快照检查14断言通过。guard-wire仅2断言后被ModNetwork静态初始化跳过，不能算通过。不要再编译生产代码或全量测试。
+仅允许新增修改src/test/java/com/bslx/XueXiMod/network/GuardSyncWireCheck.java：把ModNetwork.protocolVersion()放所有核心纯检查之后，独立try/catch，其初始化失败只标这一项UNEXECUTED；各核心包往返/年龄/门控/清理检查逐项执行统计，异常不能跳过全部后续检查。断言失败或任一核心未执行必须非零退出。末尾PASS/FAIL/UNEXECUTED分别输出，不得将协议项跳过说成全面通过。生产源一律不改，协议2及双端严格相等已静态核对。然后沿用你刚才已有build/tide-classpath.txt独立javac和运行，日志guard-check.log需保留实际结果。不要再运行临时init.gradle/请求任何权限，前一个被自动审批拒绝的命令不再重试；使用已获允许且实际执行过的独立javac/java窄范围验证。
+
+另一位Cursor正在写正式归档和integration-validation.md，你禁止修改任何这些文件。唯一文件写权限是GuardSyncWireCheck.java和本过程目录guard-check-final.log、test-final-report.md；编译产物仍build/guard-checks。别改生产类/其他测试/其他日志，别使用或删除build/water-ring-task链接（归档主控会处理）。用过程目录绝对路径写日志并注意UTF8。完成最小修正并执行验证后立刻结束，不派代理不重复审全仓。

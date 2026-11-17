@@ -1,0 +1,29 @@
+{
+  "Strip": "32x512",
+  "UniqueFrames": 16,
+  "AlphaValues": [
+    0,
+    255
+  ],
+  "DurationMs": 1600,
+  "AdjacentPixelChanges": [
+    51,
+    48,
+    44,
+    46,
+    48,
+    52,
+    51,
+    51,
+    37,
+    50,
+    37,
+    49,
+    52,
+    55,
+    49,
+    44
+  ],
+  "LoopBoundaryChanges": 44,
+  "GameTested": false
+}

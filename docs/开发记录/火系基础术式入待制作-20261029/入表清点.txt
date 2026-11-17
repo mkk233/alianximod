@@ -1,0 +1,210 @@
+SHA D80BC892E051CAD5CB5E553244A04E5EF96961CEB4A1F85C894269BAEB83EC16
+MTIME 2026-10-29T21:49:31.567+08:00 BYTES 154878
+HEADERS
+A	名称
+B	编号
+C	类型
+D	属性
+E	基础伤害
+F	基础冷却tick
+G	等级上限
+H	复杂度
+I	登记弹速
+J	附魔
+K	装配消耗
+L	登记魔力
+M	可接受附魔
+N	功能描述
+O	特效
+P	释放种类
+Q	释放标签
+R	弹道
+S	链上角色
+T	移动中的命中体
+U	命中体存活tick
+V	飞行速度
+W	厚度
+X	双重释放再拉段数
+Y	接受持续索敌
+Z	接受出手初瞄
+AA	出手后不再跟随
+AB	必须手持剑
+AC	整组提交
+AD	使用弧带
+AE	推进拍号
+AF	弧带半径
+AG	弧带半宽
+AH	接受弹道改写
+AI	为下一段指定目标
+AJ	为下一段改为垂落
+AK	弹道可被修改
+AL	操纵世界剑
+AM	拒绝与其他段同链
+AN	自身能量倍率
+AO	挂到后续的能量倍率
+AP	显式魔力
+AQ	蓄力tick
+AR	旧档·出手先扣水势
+AS	场地半径
+AT	治疗量
+AU	治疗打在施法者
+AV	牵引强度
+AW	旧档·命中附加潮湿
+AX	命中灭火
+AY	挡住移动
+AZ	压力脉冲
+BA	侵蚀脉冲
+BB	水平击退
+BC	向上抛
+BD	卸力比例
+BE	减速时长tick
+BF	到期爆发伤害
+BG	外观编号
+BH	曲线函数
+BI	外形
+BJ	宽度倍数
+BK	长度倍数
+BL	能量放大长度
+BM	能量放大宽度
+BN	能量放大高度
+BO	能量放大模型
+BP	同锚点分道显示
+BQ	旧档·每份预留重水
+BR	旧档·重压潮湿门槛
+BS	承接来袭弹
+BT	场地生成消耗
+BU	场地维持消耗
+BV	场地维持周期
+BW	场地寿命tick
+BX	护体类型键
+BY	护体寿命tick
+BZ	护体生成消耗
+CA	护体维持消耗
+CB	护体维持周期
+CC	护体卸力
+CD	护体半径
+CE	护体带宽
+CF	护体身体高度
+CG	护体基础倾角
+CH	屏障宽
+CI	屏障高
+CJ	屏障厚
+CK	屏障前移
+CL	屏障寿命tick
+CM	屏障生成消耗
+CN	屏障维持消耗
+CO	屏障维持周期
+CP	屏障衰减
+CQ	屏障承接来袭弹
+CR	领域宽
+CS	领域深
+CT	领域高
+CU	领域初始消耗
+CV	领域维持消耗
+CW	领域维持周期
+CX	领域寿命tick
+CY	领域边界
+CZ	领域外观
+DA	达级自动学会
+DB	领域效果键
+DC	旧档·潮湿周期tick
+DD	旧档·潮湿每次加点
+DE	旧档·潮湿延迟tick
+DF	旧档·水势周期tick
+DG	旧档·水势每次加点
+DH	旧档·水势延迟tick
+DI	旧档·减速等级
+DJ	旧档·领域减速时长tick
+DK	旧档·减速周期tick
+DL	旧档·减速延迟tick
+DM	耗氧倍率
+DN	附魔效果键
+DO	附魔初始层数
+DP	附魔半径基数
+DQ	附魔时长基数
+DR	附魔半径倍率
+DS	附魔时长倍率
+DT	附魔伤害倍率
+DU	附魔速度倍率
+DV	备注
+DW	配置启用
+DX	资源
+DY	状态
+DZ	操作
+EA	作用对象
+EB	触发时机
+EC	数值
+ED	状态amplifier
+EE	寿命策略
+EF	寿命tick
+EG	周期tick
+EH	首次延迟tick
+EI	计量单位
+EJ	生效条件
+EK	结算约束
+EL	迁移来源
+EM	关联说明
+EN	附加明细键
+NAMES
+已完成 3 刺击 sword_thrust 剑术 命中体 触发 直线 攻击
+已完成 4 横劈 sword_horizontal_slash 剑术 命中体 触发 直线 攻击
+已完成 5 竖劈 sword_vertical_slash 剑术 命中体 触发 直线 攻击
+已完成 6 空间切割 space_cut 剑术 命中体 触发 直线 攻击
+已完成 7 断潮 tide_sever 剑术 命中体 触发 直线 攻击
+已完成 8 岩槌 stone_hammer 剑术 命中体 触发 直线 攻击
+已完成 9 让锋 water_yielding_ribbon 剑术 命中体 触发 直线 攻击
+已完成 10 幻剑术 phantom_sword 剑术 命中体 触发 直线 攻击
+已完成 11 剑来 sword_come 剑术 命中体 触发 直线 攻击
+已完成 12 万剑归宗 sword_return_all 剑术 命中体 触发 直线 攻击
+已完成 13 缺月 water_blade 剑术 命中体 触发 直线 攻击
+已完成 14 冲刺 movement_dash 动作 动作 触发 直线 动作
+已完成 15 跳跃 movement_leap 动作 None None None None
+已完成 16 奥术飞弹 magic_arcane_missile 法术 命中体 触发 直线 攻击
+已完成 17 生成水 magic_create_water 法术 None None None None
+已完成 18 持续试射 test_sustained 法术 命中体 持续 垂落 攻击
+已完成 19 热光束 heat_beam 法术 命中体 持续 跟随准星 攻击
+已完成 20 寄生种子 parasite_seed 法术 命中体 触发 垂落 攻击
+已完成 21 金针 metal_needle 法术 命中体 触发 直线 攻击
+已完成 22 火球 fire_orb 法术 命中体 触发 直线 攻击
+已完成 23 爆燃 fire_burst 法术 命中体 触发 直线 攻击
+已完成 24 垂丝 water_weeping_arc 法术 命中体 触发 曲线函数 攻击
+已完成 25 水幕 water_curtain 法术 命中体 触发 直线 攻击
+已完成 26 雾雨 water_mist 法术 命中体 触发 直线 攻击
+已完成 27 水环 water_ring 法术 命中体 触发 直线 攻击
+已完成 28 深海重压 water_deep_pressure 法术 命中体 触发 直线 攻击
+已完成 29 点火 magic_ignite 通用 None None None None
+已完成 30 锁定实体 universal_lock_target 通用 命中体 触发 直线 锁定实体
+已完成 31 双重释放 rule_dual_release 通用 规则 触发 直线 双重释放
+已完成 32 垂落术式 trajectory_drop 通用 命中体 触发 垂落 垂落改写
+已完成 33 落点指定 rule_cast_anchor 通用 命中体 触发 直线 落点指定
+已完成 34 一分为三 rule_triple_cast 通用 规则 触发 直线 一分为三
+已完成 35 聚能 rule_gather_energy 通用 规则 触发 直线 攻击
+已完成 36 三维交错 trajectory_3d_interleave 通用 命中体 触发 直线 三维交错
+已完成 37 缠枝 vine_mark 通用 None None None None
+已完成 38 潮印 tide_mark 通用 None None None None
+已完成 39 沉锋 sinking_edge 通用 None None None None
+已完成 40 锐锋印 keen_mark 通用 None None None None
+已完成 41 追踪弹道 trajectory_tracking 通用 命中体 触发 直线 追踪
+已完成 42 风暴轨迹 trajectory_storm 通用 命中体 触发 龙卷 垂落改写
+制作中 3 升温 fire_heat_up 法术 自身状态 触发 None 动作
+制作中 4 燃烧 fire_burn 法术 自身状态 触发 None 动作
+制作中 5 冷却 fire_cool 法术 自身状态 触发 None 动作
+待验收 3 燎原 fire_liaoyuan 法术 命中体 触发 直线 攻击
+待验收 4 燎里 fire_liaoli 剑术 命中体 持续 跟随准星 攻击
+待验收 5 焚天 fire_fentian 法术 命中体 触发 直线 攻击
+LISTS
+1 {'A': '填写前四张表时，带下拉的列直接选这里的名字。代码是当前枚举，方便对源码。'}
+2 {'A': '弹道', 'E': '链上角色', 'I': '释放种类', 'M': '释放标签', 'Q': '术式类型', 'U': '属性', 'Y': '外形', 'AC': '是否', 'AG': '领域边界', 'AK': '领域外观', 'AO': '曲线函数', 'AS': '附魔效果键', 'BJ': '操作', 'BL': '作用对象', 'BN': '触发时机', 'BP': '寿命策略', 'BR': '计量单位', 'BT': '资源'}
+3 {'A': '名称', 'B': '代码', 'E': '名称', 'I': '名称', 'M': '名称', 'Q': '名称', 'U': '名称', 'Y': '名称', 'AC': '名称', 'AG': '名称', 'AK': '名称', 'AO': '名称', 'AS': '名称', 'BJ': '名称', 'BL': '名称', 'BN': '名称', 'BP': '名称', 'BR': '名称', 'BT': '名称'}
+4 {'A': '直线', 'B': 'STRAIGHT', 'E': '攻击', 'I': '动作', 'M': '触发', 'Q': '剑术', 'U': '无', 'Y': '方盒', 'AC': '是', 'AG': '封闭', 'AK': '体积', 'AO': 'water_weeping', 'AS': 'fire', 'BJ': '增加', 'BL': '施术者', 'BN': '成功施放', 'BP': '不适用', 'BR': '每次触发', 'BT': '水势'}
+5 {'A': '垂落', 'B': 'DROP', 'E': '动作', 'I': '命中体', 'M': '持续', 'Q': '动作', 'U': '木', 'Y': '球体', 'AC': '否', 'AG': '开放', 'AK': '重压', 'AS': 'wood', 'BJ': '消费', 'BL': '命中目标', 'BN': '出手提交', 'BP': '固定刷新', 'BR': '每条潮印', 'BT': '火种'}
+6 {'A': '跟随准星', 'B': 'FOLLOW_LOOK', 'E': '落点指定', 'I': '规则', 'Q': '法术', 'U': '火', 'AS': 'water', 'BJ': '设置', 'BL': '选定目标', 'BN': '命中成功', 'BP': '固定施加', 'BR': '每目标每次施法'}
+7 {'A': '曲线函数', 'B': 'FUNCTION', 'E': '锁定实体', 'I': '自身状态', 'Q': '通用', 'U': '水', 'AS': 'earth', 'BJ': '施加', 'BL': '领域内敌对活物', 'BN': '潮印命中成功', 'BP': '继承剩余'}
+8 {'A': '龙卷', 'B': 'VORTEX', 'E': '追踪', 'U': '土', 'AS': 'metal', 'BJ': '移除', 'BL': '领域内主人或盟友玩家', 'BN': '领域周期', 'BP': '无限'}
+9 {'E': '垂落改写', 'U': '金', 'BJ': '读取', 'BL': '领域内有效目标', 'BN': '首次带资源接触', 'BP': '未定'}
+10 {'E': '三维交错', 'BN': '范围选取'}
+11 {'E': '一分为三', 'BN': '主动结束'}
+12 {'E': '双重释放', 'BN': '燃烧结算'}
+SHEET2_ROWS ['1', '2']
+SHEET2_DIM <dimension ref="A1:EN2"/>
+VAL_COUNT 94

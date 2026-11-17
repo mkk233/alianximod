@@ -1,0 +1,15 @@
+{
+  "submitted": false,
+  "baselineSha256": "757960B15A71D0C0273D3F8A0D1C98FE8025CE427CCCA0FD6AA805AC67700F63",
+  "backup": "D:\\alianximod\\docs\\开发记录\\燎原伤害定稿入表-20261031\\备份\\实施-退回-术式制作表-20261031-015530-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\燎原伤害定稿入表-20261031\\实施-退回-candidate-preserved.xlsx",
+  "candidateSha256": "3905785BD053899D1CA429E07E4942E10F0B205AA2403013762C44B566D8A183",
+  "from": "待验收第4行",
+  "to": "制作中第6行",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 3
+  }
+}

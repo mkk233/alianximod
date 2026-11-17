@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "entries": [
+    "xueximod:village_study_village_armorer",
+    "xueximod:village_study_village_butcher",
+    "xueximod:village_study_village_cartographer",
+    "xueximod:village_study_village_desert_house",
+    "xueximod:village_study_village_fletcher",
+    "xueximod:village_study_village_mason",
+    "xueximod:village_study_village_plains_house",
+    "xueximod:village_study_village_savanna_house",
+    "xueximod:village_study_village_shepherd",
+    "xueximod:village_study_village_snowy_house",
+    "xueximod:village_study_village_taiga_house",
+    "xueximod:village_study_village_tannery",
+    "xueximod:village_study_village_toolsmith",
+    "xueximod:village_study_village_weaponsmith",
+    "xueximod:study_chest_simple_dungeon",
+    "xueximod:study_chest_nether_bridge",
+    "xueximod:study_chest_end_city_treasure"
+  ]
+}

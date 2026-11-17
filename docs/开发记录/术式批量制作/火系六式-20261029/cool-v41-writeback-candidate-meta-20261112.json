@@ -1,0 +1,48 @@
+{
+  "capturedBeforeLiveWrite": true,
+  "baselineSha256": "A7E0C9E6929203B79EF2B329A268AA901DC17F4CFB3B571B47FC15DED6C5F8F6",
+  "baselineMtime": "2026-11-12T13:15:11.722",
+  "baselineBytes": 180197,
+  "source": {
+    "sheet": "制作中",
+    "row": 3,
+    "id": "fire_cool",
+    "name": "冷却"
+  },
+  "target": {
+    "sheet": "待验收",
+    "row": 21,
+    "id": "fire_cool",
+    "name": "冷却"
+  },
+  "countsBefore": {
+    "已完成": 37,
+    "待制作": 3,
+    "制作中": 22,
+    "待验收": 16
+  },
+  "countsCandidate": {
+    "已完成": 37,
+    "待制作": 3,
+    "制作中": 21,
+    "待验收": 17
+  },
+  "nBefore": "冷却是独立的火属性法术。仅普通或过载炉心可以成功。成功时调用FurnaceService.cool，主动结束炉心并触发一次蒸汽。没有炉心时失败，不喷蒸汽。不能用普通removeEffect或end passive代替cool，也不能靠通用移除监听产生蒸汽。\n成功后恢复生命上限、护甲、韧性等被炉心改变的状态属性，当前生命不增加。蒸汽以身体中心为球心，半径3格，排除自己、队友和关系规则中的友方。每个存活敌对目标结算一次，固定2点基础蒸汽伤害，再经过该目标的正常防御。不读取炉心F、火种、能量或规则，不生产或消费火种，不标记火、水、冰。击退使用普通碰撞和击退抗性；空旷且没有抗性时大约3格，不能穿墙保证距离。这2点是内部蒸汽伤害，不能写成术式基础伤害；本式基础伤害仍是0。\n本式没有弹道和命中体，不产生普通攻击实例，不调用原版着火，不生产或消费火种。链上角色用表内既有“动作”，不新增链上角色，也不做成攻击命中体。拒绝与其它段放在同一条链，不接受索敌、落点、追踪、垂落、一分为三、双重释放、聚能、三维交错。以后按通用自身状态接入，不为这个术式编号单独写链路分支。\n显式魔力0，技能冷却0tick，装配消耗1。不重置升温或燃烧各自的500tick冷却。服务端先检查已有炉心、魔力、冷却和装配限制，通过后一次提交。失败不扣魔力、不进入冷却、不改变炉心、不喷蒸汽。只有成功才结束炉心并结算这一次蒸汽。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。",
+  "oBefore": "成功退出炉心时，释放一次向外扩散的白色蒸汽环，并带上随后消散的雾气。没有炉心时不播放。不得留下地形火或持续攻击体。这里只记录制作意图，不填写资源文件名。",
+  "dvBefore": "本行是冷却 / fire_cool。\n表内操作“移除”必须调用FurnaceService.cool，成功后才产生一次蒸汽。不能用removeEffect、endPassive或通用移除监听代替。内部蒸汽伤害不写入基础伤害。\n用户原话：“把三个技能写入待制作表中”。\n主设计是 docs/火属性二级玩法设计.md。原始三式数值为显式魔力20/20/0、技能冷却500/500/0 tick、装配消耗各1、基础伤害各0。本次只写入待制作。炉心底层服务已经存在，这三个技能尚未注册；底层存在不等于这三式已经实现。本记录不包含游戏验证。\n记录目录：docs/开发记录/炉心三式入待制作-20261029/。\n牛奶不能移除炉心。登出保存累计F，登录不补离线时间。死亡清除炉心，不喷蒸汽，不改升温、燃烧、冷却三式的技能冷却。其它非主动移除不喷蒸汽。普通升到过载时保留F，属性修饰不叠两份。失败的状态切换不扣魔力、不进入冷却、不改变炉心。\n等级上限20沿用制作表已有数据行的统一取值。复杂度、登记弹速、可接受附魔、自身能量倍率、挂到后续的能量倍率没有统一取值，留空，不沿用燎原、燎里、焚天的复杂度20和装配3。弹道、命中体尺寸、外形、弧带、场地、护体、屏障、领域、附魔累积、旧档和火种列留空。登记魔力按表头批注由基础伤害0得到0，实际消耗只看显式魔力，不另扣一次。蓄力tick为0。双重释放再拉段数为0。释放种类“自身状态”是本次在数据表追加的名称，代码列没有已确认的程序常量，留空。\n本式只在主表配置一条炉心状态，不写入资源状态明细。\n制作中 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md\n[设计反馈 2026-10-29] 用户已确认炉心三式v1。冷却只在成功主动cool时播放一次蒸汽。确认版归档docs/资源库/特效/火焰/炉心三式_v1/。详细原话与过程见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n2026-10-29本轮执行结果：已确认素材接入。compile-final报告的确认命令.\\gradlew.bat compileJava --offline --no-daemon于2026-10-29 04:24:17至04:24:31退出0，BUILD SUCCESSFUL，compileJava为UP-TO-DATE。04:17同命令包装进程因日志管道堵住被终止，没有交回退出码，不当成成功。定向检查javac --release 17退出0；SixFireLogicCheck、LiaoliV6LayoutCheck、FireVisualLayoutCheck、KnownLimitsCheck、FurnaceAtomicCheck退出0；FurnaceStructureCheck断言19失败0、FurnaceRepairCheck断言15失败0、FireReleaseStructureCheck断言41失败0，均退出0。参数被拆开的java启动退出1，不是断言失败。未跑全量compileTestJava，未打包，未启动游戏；Mixin、持续伤害、炉心生命周期、视觉、关系过滤和击退都未游戏验证。这些退出码不是正式复审通过。设计/实现额度2/2已用完，本阶段额度已用完，返修结果未追加复审。游戏未实测，保持制作中。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md 与 docs/开发记录/术式批量制作/火系六式-20261029/compile-final-report.md。\n[设计反馈 2026-10-29] 测试正式结果核对第1轮（1/2）决定留在制作中，不转换N/O。已执行功能子集通过，不是整项测试失败。未迁是因为缺六式适用的正式实现复核通过记录；共用伤害R2/R3和炉心事务返修未追加复审。空玩家拒绝不证明成功cool只喷一次蒸汽。不是因为没有火种生产入口。已测：零魔力/动作注册、普通和过载主动清热量、无炉心拒绝、真实混链拒绝。覆盖缺口：成功cool一次蒸汽、被动移除或死亡不喷、半径3敌我筛选和每目标固定2点、属性恢复不加当前生命、另外两式冷却保留。击退距离和碰撞列真实运行验证，不以缺游戏画面单独拦迁。下一步须用户明确授权后再补适用实现复核，并补成功、无炉心和非主动结束的事务。同日纠正：本式不依赖火种余额。详见 docs/开发记录/术式批量制作/火系六式-20261029/test-stage-review-r1.md。",
+  "nAfter": "主动冷却炉心，并放出一次蒸汽",
+  "oAfter": "src/main/resources/assets/xueximod/textures/effect/cool_v41/cool_v4_1_rear_strip.png、src/main/resources/assets/xueximod/textures/effect/cool_v41/cool_v4_1_front_strip.png、src/main/resources/assets/xueximod/textures/effect/cool_v41/cool_v4_1_fragments_strip.png、src/main/resources/assets/xueximod/textures/effect/cool_v41/cool_v4_1_shockwave_strip.png（各配同名.png.mcmeta，blur=false、clamp=true；归档 docs/资源库/特效/火焰/冷却_贴地蒸汽冲击波_v4.1/）",
+  "dvAddition": "[设计反馈 2026-11-12] 用户已采用冷却 v4.1。四张运行条带已接入 textures/effect/cool_v41/，与归档哈希一致。最终 .\\gradlew.bat compileJava --offline --no-daemon 于2026-11-12 13:21:15至13:21:41退出0，BUILD SUCCESSFUL，compileJava实际执行。本阶段额度已用完，返修结果未追加复审。游戏未实测，不迁已完成。详见 docs/开发记录/术式批量制作/火系六式-20261029/记录.md。\n待验收 | 火系六式-20261029 | docs/开发记录/术式批量制作/火系六式-20261029/记录.md",
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\cool-v41-writeback-术式制作表-20261112-133406-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\cool-v41-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "787EB20E84AFC14BC29DFA97BF9F1847626B4C51EE00ECD684244C6D6FB83844",
+  "changedParts": [
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/workbook.xml"
+  ],
+  "filter": {
+    "before": "'制作中'!$A$2:$EN$5",
+    "after": "'制作中'!$A$2:$EN$4"
+  }
+}

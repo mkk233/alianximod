@@ -1,0 +1,3 @@
+javac-exit=0
+six fire logic check passed
+java-exit=0

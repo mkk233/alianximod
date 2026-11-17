@@ -1,0 +1,318 @@
+{
+  "source": "76 actual Blockbench main viewport captures, native material shader mixing before rendering",
+  "encoder_only": "Pillow GIF palette/container encoding; no pixel filter, compositing, 3D rendering or interpolation",
+  "frames": 76,
+  "frame_ms": 50,
+  "duration_ms": 3800,
+  "size": [
+    960,
+    684
+  ],
+  "gif_sha256": "72E5AE73F8B7C7AE3C254982ECD7220CAE52273222B4C854DB588E8D3503BB4A",
+  "frame_hashes": [
+    {
+      "path": "frames/transition02/tone_000.png",
+      "sha256": "A4568479A7BAA73B758F7D97208B4ABD62131227A75C6BE82BDA57E4BFD7E637"
+    },
+    {
+      "path": "frames/transition02/tone_001.png",
+      "sha256": "D991533A13F8A829D88CE8D1803C8E7BA0889C3D511957DF702869F3393FB318"
+    },
+    {
+      "path": "frames/transition02/tone_002.png",
+      "sha256": "269844EF6B36C6BF07CED7E5DCA879DE49CBE4F2B7B3F7133643FACC2D5935E2"
+    },
+    {
+      "path": "frames/transition02/tone_003.png",
+      "sha256": "37B8C8E94EB9DFC76C4D97B5B8B3847D2457C4285897A7F965EBE0413FEE7FED"
+    },
+    {
+      "path": "frames/transition02/tone_004.png",
+      "sha256": "D48ED777B78123F2A06C3EB40B65EEE9DD808AD33D08DDEA9F9CFE7B24AE20E1"
+    },
+    {
+      "path": "frames/transition02/tone_005.png",
+      "sha256": "D0E75EE9E75518008E73A6FEFA7667D71D914E4C0E094EE714F19182CD6ED37A"
+    },
+    {
+      "path": "frames/transition02/tone_006.png",
+      "sha256": "AA674D67B5780845F15552D9E15CD0580FEE14B02CF41DF2E1ADE7A40E3A7559"
+    },
+    {
+      "path": "frames/transition02/tone_007.png",
+      "sha256": "4F5E646A5A425249C5EBAA446FE5CDED81B13BCAC542A265C89AE1FB9771CD1A"
+    },
+    {
+      "path": "frames/transition02/tone_008.png",
+      "sha256": "0572FCB9E69E18DCA1ADE61A6EDDC1C7415782E42F814BF4D231B607F505B528"
+    },
+    {
+      "path": "frames/transition02/tone_009.png",
+      "sha256": "1DBFC740B058E7CD7DBF9D2E145DDDCF2B5D26EBE31E9F2A3F0D14DF5423645B"
+    },
+    {
+      "path": "frames/transition02/tone_010.png",
+      "sha256": "4DA7F54EFD9B93525B0E510042B332AC7AFA3BA4572B383557B606201AD48C5D"
+    },
+    {
+      "path": "frames/transition02/tone_011.png",
+      "sha256": "8D9343A19BD13B4380367A638E1120AF61A6F4E298663902AEB394E1B0019E5B"
+    },
+    {
+      "path": "frames/transition02/tone_012.png",
+      "sha256": "D85FB1EBBFB1D7A77A438B77C6A996376A9D796B092C71B2B7F095446D5762F6"
+    },
+    {
+      "path": "frames/transition02/tone_013.png",
+      "sha256": "A5D264E969F17676EFDC3E6F8BB8C875AE980BF294FB18A60C3C5492486C7C26"
+    },
+    {
+      "path": "frames/transition02/tone_014.png",
+      "sha256": "00252094EF8CB0B9B81D71FE9E828BEA921AA3AE2835FD7E0C6D2BE8E6CBD9B2"
+    },
+    {
+      "path": "frames/transition02/tone_015.png",
+      "sha256": "D1DE1E1250F675ED2B72E527D4CD8222FBB7847DE917AD2F13BABD341FD67440"
+    },
+    {
+      "path": "frames/transition02/tone_016.png",
+      "sha256": "059205C47A2FB59CF6743F4C9C60E98645AE605E7BF22C63AC1C9FC03938A1CE"
+    },
+    {
+      "path": "frames/transition02/tone_017.png",
+      "sha256": "350453034E1111131E53EA2B611FFBD88A153510A0B9866FE8A714374FD8558F"
+    },
+    {
+      "path": "frames/transition02/tone_018.png",
+      "sha256": "4E5FF85E5C8AB00A52961A6355AF042FBA3E4FDDD98BA96C221629DF87C31C09"
+    },
+    {
+      "path": "frames/transition02/tone_019.png",
+      "sha256": "EFF1B5E08F8C3B9EBCB7A44A5F68C7F1ED55370A92EFA1B558554EBD3E7732E2"
+    },
+    {
+      "path": "frames/transition02/tone_020.png",
+      "sha256": "114C2A3AC2E2D3928E48336A9E8C4D9F5C5B9A7B29A8C5DB0E5A0ADD4B610AA4"
+    },
+    {
+      "path": "frames/transition02/tone_021.png",
+      "sha256": "D9D2F8FFC78E519C664FF4BBA81FE88E285E79B32268BD4776F41DFF1CCC604A"
+    },
+    {
+      "path": "frames/transition02/tone_022.png",
+      "sha256": "FF41013CCB7254A24D91548A31B5AD9BDE56EE84AAB8E0304399E5AC294E60BB"
+    },
+    {
+      "path": "frames/transition02/tone_023.png",
+      "sha256": "07C97067F5950A298C82D5766268554E425E27550FE974825C73BC7E22B473E1"
+    },
+    {
+      "path": "frames/transition02/tone_024.png",
+      "sha256": "C40843100FAFBC6A692C072E1A27FF94330FDBF5012D6E85C7E06B295E16BA58"
+    },
+    {
+      "path": "frames/transition02/tone_025.png",
+      "sha256": "D8186F9AC35F5393765208E89948E71A3FB4C5EFFA260D1CCC7B3FCB1AD60EAF"
+    },
+    {
+      "path": "frames/transition02/tone_026.png",
+      "sha256": "C3EC73EB347B7DFA4B0EC1E9A15E1E9AEACC6E66DB3AFF1F8C9863847E6B3576"
+    },
+    {
+      "path": "frames/transition02/tone_027.png",
+      "sha256": "84BBBA2FE660320BA3D40D5B3E5FA41E1E69D9D1F553827FBF88290C282FFA19"
+    },
+    {
+      "path": "frames/transition02/tone_028.png",
+      "sha256": "A3F99104E6BFF75607710E0D08716B2A74A786453C9CF014D60A6D72D5C47196"
+    },
+    {
+      "path": "frames/transition02/tone_029.png",
+      "sha256": "620451C1567D18A3661D380F9888233ED8423925E4C0DDD8A816524B29189527"
+    },
+    {
+      "path": "frames/transition02/tone_030.png",
+      "sha256": "F9099A2CA8E4F5C7D7CBB02AE7FFE81DCF86B33BFF20503F94B0ED831B1101D4"
+    },
+    {
+      "path": "frames/transition02/tone_031.png",
+      "sha256": "DC3AC95463289E6AE908D973FC946C21C48978E3A6F1F74632C83EFCEC46465D"
+    },
+    {
+      "path": "frames/transition02/tone_032.png",
+      "sha256": "703693A3ECA27F21B16C0E0185AEFDD807C8784BB134B717ABF0D96F2D13B18A"
+    },
+    {
+      "path": "frames/transition02/tone_033.png",
+      "sha256": "B50297665E033BB9DFC77BC5AD4D4CD3D8D42AB7905261C5F0EB16C20031AA6A"
+    },
+    {
+      "path": "frames/transition02/tone_034.png",
+      "sha256": "304D9797E72CFF9A4ACF81F63F5EE3AC37075F50422F7E77D0C59977EB2438FC"
+    },
+    {
+      "path": "frames/transition02/tone_035.png",
+      "sha256": "9A7FC818D9AC47A5F51DA61202C8497CA9F8152F40B50E13D90AF3008B1FBD70"
+    },
+    {
+      "path": "frames/transition02/tone_036.png",
+      "sha256": "30C2C35E6C5D143ABAFD22E52825288B066AE2BB70B3CD979EEE5E48F5930F5B"
+    },
+    {
+      "path": "frames/transition02/tone_037.png",
+      "sha256": "623EDE53648C7FAEEBBAA6F69089D34962C3FFF1ED4A3E1FFBC8510C197B1887"
+    },
+    {
+      "path": "frames/transition02/tone_038.png",
+      "sha256": "063DA797A6173B0927B75784C33D037FE9358584C9D3E3C37ED6B046FD46D383"
+    },
+    {
+      "path": "frames/transition02/tone_039.png",
+      "sha256": "A6869D8AC3E0CA483F59111931E75C020AF06C4D5539D7ED78F15E8A59D13D78"
+    },
+    {
+      "path": "frames/transition02/tone_040.png",
+      "sha256": "8AEFBD027F690967EE4B04AEB3489595E9CA61950BD976BA736625465FC2722E"
+    },
+    {
+      "path": "frames/transition02/tone_041.png",
+      "sha256": "DD72FE5EFFF276F4FAED7A3D26807FCD48DAACBD121D827D60ACCB2DEF2825BF"
+    },
+    {
+      "path": "frames/transition02/tone_042.png",
+      "sha256": "6FEDB1B471D96D3E3B5829AF55F92378311967C5C70C983DCD43FD994C91E310"
+    },
+    {
+      "path": "frames/transition02/tone_043.png",
+      "sha256": "D509477851D388C222196B0FAD05F64D9E0CF2CF2EA009E75CF92A445BC095D5"
+    },
+    {
+      "path": "frames/transition02/tone_044.png",
+      "sha256": "C5C98F7982E6A397D2BB174DB506594D5B28F47C8D8B506899214BB2CC207F9D"
+    },
+    {
+      "path": "frames/transition02/tone_045.png",
+      "sha256": "E342C9CCFB4009D39A4085A299C84C4D236857DF60BC40131A43FB04A5F8A29A"
+    },
+    {
+      "path": "frames/transition02/tone_046.png",
+      "sha256": "C40602DFE6CF22695452009D33656C0ECD2FCCDE603015DC69AEB0F7F34974F6"
+    },
+    {
+      "path": "frames/transition02/tone_047.png",
+      "sha256": "CD24C636ACD69B4B0FFB63836021278B433FCEB75CBE6F26D4D3AF935E1EB167"
+    },
+    {
+      "path": "frames/transition02/tone_048.png",
+      "sha256": "7A4D913B5F8511606877275477CDF0F35BE1C37132BF4EF9B8A3BFC85F6C17AC"
+    },
+    {
+      "path": "frames/transition02/tone_049.png",
+      "sha256": "810D279CFBB55050DDFB765ABC130A15B53C455290DD60B7E3F9E2BECBED3D92"
+    },
+    {
+      "path": "frames/transition02/tone_050.png",
+      "sha256": "5735A8CCD57668040584F0DA8D780C9A9557840BD39E7DEAE189AE00A8327062"
+    },
+    {
+      "path": "frames/transition02/tone_051.png",
+      "sha256": "DB72DC1B22F50B20840F4ADFAF855032032069793EAF84F5249E0DD650F03945"
+    },
+    {
+      "path": "frames/transition02/tone_052.png",
+      "sha256": "04DAC323C54AAAE86B74ACC3EA97498B16E81531690A3873496EA0DE33A7C714"
+    },
+    {
+      "path": "frames/transition02/tone_053.png",
+      "sha256": "46F2A4B7FE9A0AB001DF3E0BFF99AA834823327EACA159E44FC576DB76DCC54E"
+    },
+    {
+      "path": "frames/transition02/tone_054.png",
+      "sha256": "604897CBF52A9A32575CC6AC1703E592D5A501AE14D3C49917CC568BF536027C"
+    },
+    {
+      "path": "frames/transition02/tone_055.png",
+      "sha256": "0396F1A0F8818D5A274404F383D65113C45808FC8D31C52142DD1DB947DD5B3C"
+    },
+    {
+      "path": "frames/transition02/tone_056.png",
+      "sha256": "D0A7B336452F57ED348B21EF8D19E7BAC403697AF369DF72A70BB4AD88666ADD"
+    },
+    {
+      "path": "frames/transition02/tone_057.png",
+      "sha256": "71451DCEC17B9C36766D4D1613E46A8DE3D612425AA3A25E499D8D6A4DDA5524"
+    },
+    {
+      "path": "frames/transition02/tone_058.png",
+      "sha256": "68EF36AAD6D71CF1D3C5B0A075C5FCC7CB2B228D140870A0E524B739DDEE55E5"
+    },
+    {
+      "path": "frames/transition02/tone_059.png",
+      "sha256": "712550115DD9ACF295F18020ACF24607BB757B94F4354B89A8811F489DC0EE82"
+    },
+    {
+      "path": "frames/transition02/tone_060.png",
+      "sha256": "5FF0AABFB046C823ABBA9E8F78A63F5BF729234C1B7A65395188E163F1EC0900"
+    },
+    {
+      "path": "frames/transition02/tone_061.png",
+      "sha256": "7A08BC599027ACBA0F7D9F35EB5B297ADA5C2E9C39144B6685253CEA14C3C273"
+    },
+    {
+      "path": "frames/transition02/tone_062.png",
+      "sha256": "7860B72ED99B1324A1C745D7893E7067DDB9E51453425BFB0CB2E988D006B0C7"
+    },
+    {
+      "path": "frames/transition02/tone_063.png",
+      "sha256": "C462515905FBB6D51FD1A782CE5C6A04DABB19960F800083CA835B60EDA6CC5E"
+    },
+    {
+      "path": "frames/transition02/tone_064.png",
+      "sha256": "0D305D6B55BD2ABD06BD2A33DA6C938912C8198A7164C7AB86410060A00F779F"
+    },
+    {
+      "path": "frames/transition02/tone_065.png",
+      "sha256": "56163B803921F24211E78B1052E6829232B9DB57E5671117D96FD22C10CEB1F7"
+    },
+    {
+      "path": "frames/transition02/tone_066.png",
+      "sha256": "80E2EFAC10191893CA45D943039EC19162082368BE41203A4A50CFE3B316A5A5"
+    },
+    {
+      "path": "frames/transition02/tone_067.png",
+      "sha256": "3EC5076FB205851A80FB293B12F2F9BD7084C0C00F727696AB2F3547BE0DEB49"
+    },
+    {
+      "path": "frames/transition02/tone_068.png",
+      "sha256": "EDD0F4EE49CA3BBFC8A0D5779B5A50C6E5722B3D9CE390FF566F73020912AC0B"
+    },
+    {
+      "path": "frames/transition02/tone_069.png",
+      "sha256": "307F23A612641850236122450E3480223210891765FAEC8371F5E39625BFE70F"
+    },
+    {
+      "path": "frames/transition02/tone_070.png",
+      "sha256": "B414EA572D9C3AEF91275C572F2E56CCBA1982254FDF84F18F0E7326C7B5485D"
+    },
+    {
+      "path": "frames/transition02/tone_071.png",
+      "sha256": "091FAE46A68525E5EAA460133CEBF9B549BCA8C4040EE5749403C97D37570EC1"
+    },
+    {
+      "path": "frames/transition02/tone_072.png",
+      "sha256": "FF71F11A0A8F7108B93CE92CAB1FDBFC343E414EFE03B2D725E8EEDA7619069A"
+    },
+    {
+      "path": "frames/transition02/tone_073.png",
+      "sha256": "F60BAC2B5C545A9D8117DE78034A38E4CC3B953A2DADA51CD80C6DAB201ED166"
+    },
+    {
+      "path": "frames/transition02/tone_074.png",
+      "sha256": "B08DE6A1849606AA57F3BCEE0C2B73DA1DA9EC40C704BCE1CF2A9788D350402C"
+    },
+    {
+      "path": "frames/transition02/tone_075.png",
+      "sha256": "FC86221F810E2BFBB3C8393FF77170600295C2C02241300434C3EA4254907711"
+    }
+  ]
+}

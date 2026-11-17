@@ -1,0 +1,104 @@
+{
+  "version": "水幻形 Steve 水线 v2 水感修整候选",
+  "adopted": false,
+  "project_uuid": "20e6cc04-1d69-c38a-3030-5a2bacdaf4f4",
+  "project_name": "water_phantom_steve_v2",
+  "format": "free",
+  "geometry_height_model_units": 32,
+  "do_not_claim_32_units_equal_1_8_blocks": true,
+  "counts": {
+    "cubes": 81,
+    "steve_cubes": 6,
+    "auxiliary_cubes": 7,
+    "flakes": 48,
+    "drops": 20,
+    "moving_highlights_among_drops": 8,
+    "removed_hollow_rods": 128,
+    "animations": 1,
+    "keyframes": 1068,
+    "textures": 3
+  },
+  "steve_cubes": [
+    {"name": "steve_head_cube", "from": [-4, 24, -4], "to": [4, 32, 4], "origin": [0, 24, 0]},
+    {"name": "steve_body_cube", "from": [-4, 12, -2], "to": [4, 24, 2], "origin": [0, 24, 0]},
+    {"name": "steve_arm_nx_cube", "from": [-8, 12, -2], "to": [-4, 24, 2], "origin": [-5, 22, 0]},
+    {"name": "steve_arm_px_cube", "from": [4, 12, -2], "to": [8, 24, 2], "origin": [5, 22, 0]},
+    {"name": "steve_leg_nx_cube", "from": [-4, 0, -2], "to": [0, 12, 2], "origin": [-2, 12, 0]},
+    {"name": "steve_leg_px_cube", "from": [0, 0, -2], "to": [4, 12, 2], "origin": [2, 12, 0]}
+  ],
+  "flake_sizes": {
+    "0.24x1.15x0.72": 31,
+    "1.15x0.24x0.72": 12,
+    "0.24x0.72x1.15": 5
+  },
+  "edge_color": {"before": [8, 40, 72], "after": [22, 81, 115], "pixels": 1964},
+  "animation": {
+    "name": "water_phantom_steve_break",
+    "uuid": "a803dba9-5bc0-772a-eff7-ae6a599ac82f",
+    "length": 2.56,
+    "loop_file_value": "loop",
+    "loop_meaning": "预览复播，不是施法时长",
+    "root_scale": [1, 1, 1],
+    "highlight_slide_seconds": [0, 0.28, 0.56, 0.84, 1.12],
+    "shell_hide_time": 1.2,
+    "flake_visible": [1.2, 2.05],
+    "ground_drops_visible": [1.36, 2.36],
+    "fade_is_scale": true
+  },
+  "screenshot": {
+    "method": "Blockbench private offscreen view, preview.canvas.toDataURL, Blockbench.writeFile",
+    "view_id": "steve_v2_polish",
+    "preview_id": "mcp_offscreen_steve_v2_polish",
+    "size": [1280, 960],
+    "user_camera_left_at": [-40, 32, -40],
+    "grid_hidden_during_capture": true,
+    "shots": [
+      {"file": "bb_hold_three_quarter.png", "time": 0.4, "position": [-24, 22, -72], "target": [12, 14, 0], "fov": 32, "sha256": "6921449E076F46A2D952E1918E203BA700962F1B60450E3DDF2B9826876DE1B8"},
+      {"file": "bb_hold_front.png", "time": 0.4, "position": [13, 18, -88], "target": [13, 14, 0], "fov": 30, "sha256": "D86B60CC120EE8283463D8E69760374C61C4C21D27677BD2BCD0C1DF36FAE188"},
+      {"file": "bb_hold_side.png", "time": 0.4, "position": [-92, 18, 10], "target": [0, 16, 0], "fov": 28, "sha256": "113AF832E03DCA07A9AE0CAC6406B2D5C392FD40D8D0758743735E656678A2D8"},
+      {"file": "bb_hold_back.png", "time": 0.4, "position": [0, 18, 70], "target": [0, 16, 0], "fov": 28, "sha256": "C7C4FFA582361008121B8D261EC402254DBE417AFAFB0B5BC110C636314E6E4F"},
+      {"file": "bb_break_mid.png", "time": 1.62, "position": [-26, 20, -56], "target": [0, 16, 0], "fov": 32, "sha256": "980CE5D602C49D6429F91E4C909900BEF419C75D1FA325A1E19E031A008D2625"},
+      {"file": "bb_ground_drops.png", "time": 2.24, "position": [-20, 12, -38], "target": [0, 3, 0], "fov": 32, "sha256": "26B6CA213BBFDC855E3CF197F180B5D894BC4C9105DECF0931FF5A7FE6AC7CAD"}
+    ]
+  },
+  "gif": {
+    "file": "bb_preview_replay.gif",
+    "sha256": "E4DF592B71B96E1147C504418ACB6EBA5005652AC27D8B76D56F53DDFB568B0A",
+    "bytes": 408745,
+    "frame_count": 17,
+    "frame_duration_ms": 160,
+    "source": "bb_frame_00.png through bb_frame_16.png at t=0,0.16,...,2.56",
+    "camera": {"position": [-24, 22, -72], "target": [12, 14, 0], "fov": 32},
+    "note": "最后一帧也停 160 毫秒，播放约 2.72 秒。驻留对称帧哈希相同是高光往返，不是旧图。"
+  },
+  "frame_sha256": {
+    "bb_frame_00.png": "ADD2C7BC791998DAD815364F25200A5C05BDE76D110752DD2C264A4905CFDC5F",
+    "bb_frame_01.png": "EDD2D9A49FFCA06015D40399FC1F20C84B8CA94A396CCE1E6526B41CFD0A57F0",
+    "bb_frame_02.png": "414D0097C0ACD783EE94ABA9563208D280260C01621387C60B88FCAA3ED79ECA",
+    "bb_frame_03.png": "069297FFD3151F63668103252DCF93367258C58FBD3C6761393843BC72A19BD6",
+    "bb_frame_04.png": "069297FFD3151F63668103252DCF93367258C58FBD3C6761393843BC72A19BD6",
+    "bb_frame_05.png": "414D0097C0ACD783EE94ABA9563208D280260C01621387C60B88FCAA3ED79ECA",
+    "bb_frame_06.png": "EDD2D9A49FFCA06015D40399FC1F20C84B8CA94A396CCE1E6526B41CFD0A57F0",
+    "bb_frame_07.png": "ADD2C7BC791998DAD815364F25200A5C05BDE76D110752DD2C264A4905CFDC5F",
+    "bb_frame_08.png": "82EA0C979144B2C0D22EB35D89446F669EB22D34AD2FB991A30CEF002C35B91A",
+    "bb_frame_09.png": "CE1ED4E7F5C21FA28260BF496B02376763E56577BC53222EF87C0D465B17DF3F",
+    "bb_frame_10.png": "3E4F337BEFE03C4EAB7AEAB022C35A45AFAFA4EFA0E84C0F18CBA89B6255EF37",
+    "bb_frame_11.png": "4A08D8A50DFFA746BA99B8E7E44FA2ECFDA4F5B8E144E060A71E89126C9B6510",
+    "bb_frame_12.png": "84C2E2806026ACC3228030DA21B809DD08A390692A3CEB1ED4BEAF52A15F26EA",
+    "bb_frame_13.png": "3FA8A9D461ABF9829654E564791265447E4810FB5731AE3D94AF1850D0BC407D",
+    "bb_frame_14.png": "F5C604A52D96603AF316220E83FD45A30568C7F6F4BC9A85242A89DEE2D9C230",
+    "bb_frame_15.png": "7EBBD40CDCBBA0D34C522E226E1609EB678D23D10610A96FF6895E9D5406E94A",
+    "bb_frame_16.png": "DD62DB579668EFA7C7E17BC58D254375C6359A3745A1EBCDD39F223EE2D89A0D"
+  },
+  "files": {
+    "bbmodel_sha256": "E7ADAFD118CC91518DE03A55B613451302AF9E26706454A9172BCDFD37B5997A",
+    "steve_water_lines_sha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5",
+    "water_flakes_sha256": "CEFDEE9E3E3FB7F701E19FC9CB3438C586C4841D3A50E3F8C9399A635BD4D70C"
+  },
+  "initial_snapshot": {
+    "bbmodel_sha256": "2CF0F0AAF88963363D027EBC90928A9242CA3E943647D1304553F1993BD14FE7",
+    "steve_water_lines_sha256": "9419F820117EABF5A12AF51159B1B540B21588C46B6B3720BB176F86294F232B",
+    "note": "修整前保存。旧的叠合图也放在 initial/bb_overlap_front.png，不是本轮预览。"
+  },
+  "offscreen_close_error": "onContextMenu is not defined"
+}

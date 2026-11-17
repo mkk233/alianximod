@@ -1,0 +1,242 @@
+[
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\2d-v1-80ms-aseprite-batch.gif",
+    "sha256": "49A7364DFA29CA87E54F091241B2DBB8737765BD1BE1AA24177745D9945D383A",
+    "bytes": 32441
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\2d-v1-contact-aseprite-batch.png",
+    "sha256": "31C6DAD6C419731EDB9FC92E780C4AE12704CA71B069D2756C185428D0BB6249",
+    "bytes": 25665
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\2d-v1-contact-native-blockbench.png",
+    "sha256": "18390BFAD475F1ECA741332B4A81DE078B1EDDB4298D36FC83224A8E7DF5CE68",
+    "bytes": 101903
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\build-spatial-preview.js",
+    "sha256": "E7B4CD3E6BDB4764387754CBF3D584AEAA631FE889FA3908617B098272A1BBD0",
+    "bytes": 11170
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\capture-log.json",
+    "sha256": "250FD94722AB229B12278FEEDB720D6215762AFD42C16957461A6BE4DC50016D",
+    "bytes": 6688
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\capture-necessary-views.js",
+    "sha256": "D90C6149F198379425A7E90A9BC58328E3230F1C398A541FA880D75BDE577889",
+    "bytes": 954
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\capture-phases.js",
+    "sha256": "FB472C60CD9FDE2C4C2BDADCE89E2619B17A9EC28DD132F94601F7154772308D",
+    "bytes": 2747
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\export-aseprite-batch-preview.lua",
+    "sha256": "F242D124A24DCA2E207DAD2998C765B3FC4244CB522082249C7DC62E903F8CA6",
+    "bytes": 2467
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\flame_trail-v1-source.aseprite",
+    "sha256": "656C31D277D03FDBF9D4A6AAF5C398CB13ED1F0D97B07240928071B25C7FFA55",
+    "bytes": 19751
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\flame_trail-v1-strip.png",
+    "sha256": "F1B0D723B4AEA57B37FCA4928AFAF492E8F1020D864183F36EDABF379BE95284",
+    "bytes": 12057
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\flame-trail-v1-spatial-draft.bbmodel",
+    "sha256": "C2FF79809435C5E219A4E7DF727B30719CB93E1F5CEF9F23EE7F4084A37ADC31",
+    "bytes": 956309
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\path-sampling.json",
+    "sha256": "E8A9E25F782BFEB45EF0EA94DEAD2F6A10217FE535F975D0E683C83146520878",
+    "bytes": 21274
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\phase-t00.bbmodel",
+    "sha256": "2D45C1A7DA467CAD069976063B9C4E9637463922DF9756FE078C6F849F7E2DC2",
+    "bytes": 957356
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\phase-t08.bbmodel",
+    "sha256": "0892B3179FBA924319228163C5984A03BFBC8DD7BC8186125D9FF4579FCA4138",
+    "bytes": 957172
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\phase-t20.bbmodel",
+    "sha256": "CFDA60D76848292C8C054D8B7F9F1E06F5AFB0DFA66862DD2620001868E1A611",
+    "bytes": 957220
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\phase-t32.bbmodel",
+    "sha256": "C2FF79809435C5E219A4E7DF727B30719CB93E1F5CEF9F23EE7F4084A37ADC31",
+    "bytes": 956309
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\phase-t48.bbmodel",
+    "sha256": "8C41C8A33CE999B7CE9103D7C59ADCD354C1218909837C3CDE8EF20955400EE0",
+    "bytes": 956982
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\phase-t64.bbmodel",
+    "sha256": "AA05E0A67188667A3DB87207C4642284DDB1168680E56A24EE74EDC60E79C8E6",
+    "bytes": 957746
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\phase-t72.bbmodel",
+    "sha256": "DE2F65A4C94C2358DEE9D75812A68FD0B6C9F51E90D2798DB8ED847DE69485B8",
+    "bytes": 957883
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\refine-spatial-preview.js",
+    "sha256": "3266880F36F3E7BD2442FAE183773D9441340B420A37655B386FF2F631C35752",
+    "bytes": 2637
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-01.png",
+    "sha256": "895B1B832FCF3C96BED90BA117442906439B60510ABE1D7568AC442E4B99F0F9",
+    "bytes": 2008
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-02.png",
+    "sha256": "C0ECE161B34A94692CB78FE57FAED5CA78FE577865C2F2A3BBBE9C92443EC6E7",
+    "bytes": 2013
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-03.png",
+    "sha256": "64F03CDBA17BF50570D4A59E2FC7714015D53B7136DE38C3F5DEC5DACAA6D7A2",
+    "bytes": 1996
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-04.png",
+    "sha256": "C6C9970D2439447D3F9D31167B9B626A016F862C21B07AE3F10031D4D2913D5C",
+    "bytes": 1996
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-05.png",
+    "sha256": "733072D18F05E7E034686912EEBC8CEBB15C608A6E15AC393E6BD5BE41EEAD3D",
+    "bytes": 2000
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-06.png",
+    "sha256": "FB212A1EAFAEF82DA421E31B512CD472E553E1F2C55845298F9DD31F38BC2F2E",
+    "bytes": 1993
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-07.png",
+    "sha256": "DFD0FC8473938C3F41E1803FF3B4262A958F77C4E76B185EB89C522BE4689BCC",
+    "bytes": 2002
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-08.png",
+    "sha256": "78057850798B4DB239892EE72F57BACCBE8892B1BE688B1F82C0DAD3085CA568",
+    "bytes": 2009
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-09.png",
+    "sha256": "D1826BC2E4FBDE102905B0F68835E34E28AD00796B38B613C024FC5EE1DE7C57",
+    "bytes": 2008
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-10.png",
+    "sha256": "3391A0BFB72A767DED09D0F6DDFC12479330C44F7BB1EC4388E0DB84E101DA3F",
+    "bytes": 2007
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-11.png",
+    "sha256": "16B6BF2B070E3EAA72A0216CB1458A216AAF57C05D4396BE650C87C1BFC8A16C",
+    "bytes": 2006
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-12.png",
+    "sha256": "389B06DB058BEDDE14B387D869EF46ECDBFA13AD83BDA2A5418E73E1BF007616",
+    "bytes": 1998
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-13.png",
+    "sha256": "596DF16EC63A47889BF5794B767DCE1202828A40FFB532DE01591B6B5B71B9E3",
+    "bytes": 2027
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-14.png",
+    "sha256": "6CC29264C74681DC2921A1B052B15E7A4FA9C194115FE2472E07947BA08CE0BF",
+    "bytes": 2019
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-15.png",
+    "sha256": "171AFAF899B329A03EE74BAF753486F613EC56B0171462001DE618BB11A82FE8",
+    "bytes": 2041
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\v1-frame-16.png",
+    "sha256": "5C452605B1CF3C838870F2104D806D1C0F94195ED269F435FA4C3F7F5D2DDFA3",
+    "bytes": 2036
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-back-t32.png",
+    "sha256": "A4CD59A4DF9ACBF7AF81253774C3E119C57A4F2ADFDB78451C138D775DE209A7",
+    "bytes": 237794
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-overview-t32.png",
+    "sha256": "F1157C7A1CC4D2C22C5BD907EA5F955DBE3A1D00886BEFCAECC860DD355B8324",
+    "bytes": 223725
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-phase-t00.png",
+    "sha256": "ACFCA5F5B11EF625DB7C3F7CAB672E6F11F1CDEC4517F63DA265EC42B07A1FC1",
+    "bytes": 184088
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-phase-t08.png",
+    "sha256": "654D8FC92911DBBC74007E17F5E7ECEDD7D9BA915810F37D04A13D5C717A1849",
+    "bytes": 192506
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-phase-t20.png",
+    "sha256": "A53670310135E4D9467580235FBC864293248B2FBD3BF9A6E8DF535217837B3B",
+    "bytes": 209477
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-phase-t32.png",
+    "sha256": "7AFFC5B20CB5C035EADA585272E3C10CC75A651AC61F466774E193F8C6C50465",
+    "bytes": 223699
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-phase-t48.png",
+    "sha256": "47994300B9E5B049F5FA0E6DB15FA691A2E64759070E0676650099BD719D81F2",
+    "bytes": 210884
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-phase-t64.png",
+    "sha256": "6F70A6CDE0440A77B78B4EBF4D52A757764A306E4130F65AD3EE6AF0E1EC77F6",
+    "bytes": 191259
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-phase-t72.png",
+    "sha256": "12FDF6EC7214EEE5D5E826C954032E2A1150FE744C5FE79195752CE11680541D",
+    "bytes": 183803
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-scale-close-t32.png",
+    "sha256": "7100642E52F799D5E03546A6F04E8A2407117DBEAE7731757DC1F8853EFFE818",
+    "bytes": 137841
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\viewport-side-t32.png",
+    "sha256": "41B3106C75FB93FEBDE3FFC6AF17D92D9BFD3C3B6C81A9ACF28403FCB80AE3E4",
+    "bytes": 247455
+  },
+  {
+    "path": "D:\\alianximod\\docs\\资源库\\过程归档\\留焰_v1_空间补全_20261112\\visual-handoff.md",
+    "sha256": "CB7C8B99301A31EEC57E980BFF6CDCCA2B35EBFBB37665A489B7EDAA8A20B7C5",
+    "bytes": 13999
+  }
+]

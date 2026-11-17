@@ -1,0 +1,13 @@
+领域接触异常结算返修。2026-10-29。不覆盖 contact-evidence/before 初始基线。
+
+返修前快照（相对路径在 repair-1/before/ 下）：
+- src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/DomainContactBilling.java
+- src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java
+
+本次修改：
+- DomainContactBilling.apply：正常确认仍提交一次；明确未生效仍退款一次且不发载荷。确认调用抛出时，若本次目标已经在 setHealth 之后发出 ENTITY_DAMAGE，则提交并继续抛出，不发载荷；否则退款并继续抛出。
+- TechniqueHits：hurt、hurtRoot、hurtConfirmed 的返回语义不变。新增 confirmTracked，只给领域计费使用。监听 VanillaGameEvent 的 ENTITY_DAMAGE，且只在有确认监视时记下目标。
+
+确认依据：Forge 1.20.1-47.3.33 中，LivingDamageEvent 在 setHealth 之前。玩家与其它生物的 actuallyHurt 都在 setHealth 返回之后才 gameEvent(ENTITY_DAMAGE)，服务端经 VanillaGameEvent 发出。正值伤害事件本身不作为已扣血证据，也不比较前后生命值。
+
+未覆盖、因而未改：setHealth 已返回但 ENTITY_DAMAGE 尚未发出的几步（玩家伤害统计、其它生物的第二次吸收写入）若自己抛出，公开事件看不到。要覆盖需在 LivingEntity.actuallyHurt 与 Player.actuallyHurt 的 setHealth 返回处加 Mixin。本次没有这些文件的所有权。

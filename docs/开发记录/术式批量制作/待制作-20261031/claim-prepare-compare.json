@@ -1,0 +1,278 @@
+{
+  "liveSha256": "AC4BA99781DC6174B89344FC2CB2174E67B4A2AF4C0515BB50C4BE6905435F8F",
+  "liveBytes": 184918,
+  "liveMtimeNs": 1793386297376996400,
+  "intakeSha256": "3905785BD053899D1CA429E07E4942E10F0B205AA2403013762C44B566D8A183",
+  "hashMatchesIntake": false,
+  "status": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 3,
+    "待验收": 4
+  },
+  "statusIds": {
+    "已完成": [
+      {
+        "id": "sword_thrust",
+        "row": 3
+      },
+      {
+        "id": "sword_horizontal_slash",
+        "row": 4
+      },
+      {
+        "id": "sword_vertical_slash",
+        "row": 5
+      },
+      {
+        "id": "space_cut",
+        "row": 6
+      },
+      {
+        "id": "tide_sever",
+        "row": 7
+      },
+      {
+        "id": "stone_hammer",
+        "row": 8
+      },
+      {
+        "id": "water_yielding_ribbon",
+        "row": 9
+      },
+      {
+        "id": "phantom_sword",
+        "row": 10
+      },
+      {
+        "id": "sword_come",
+        "row": 11
+      },
+      {
+        "id": "sword_return_all",
+        "row": 12
+      },
+      {
+        "id": "water_blade",
+        "row": 13
+      },
+      {
+        "id": "movement_dash",
+        "row": 14
+      },
+      {
+        "id": "movement_leap",
+        "row": 15
+      },
+      {
+        "id": "magic_arcane_missile",
+        "row": 16
+      },
+      {
+        "id": "magic_create_water",
+        "row": 17
+      },
+      {
+        "id": "test_sustained",
+        "row": 18
+      },
+      {
+        "id": "heat_beam",
+        "row": 19
+      },
+      {
+        "id": "parasite_seed",
+        "row": 20
+      },
+      {
+        "id": "metal_needle",
+        "row": 21
+      },
+      {
+        "id": "fire_orb",
+        "row": 22
+      },
+      {
+        "id": "fire_burst",
+        "row": 23
+      },
+      {
+        "id": "water_weeping_arc",
+        "row": 24
+      },
+      {
+        "id": "water_curtain",
+        "row": 25
+      },
+      {
+        "id": "water_mist",
+        "row": 26
+      },
+      {
+        "id": "water_ring",
+        "row": 27
+      },
+      {
+        "id": "water_deep_pressure",
+        "row": 28
+      },
+      {
+        "id": "magic_ignite",
+        "row": 29
+      },
+      {
+        "id": "universal_lock_target",
+        "row": 30
+      },
+      {
+        "id": "rule_dual_release",
+        "row": 31
+      },
+      {
+        "id": "trajectory_drop",
+        "row": 32
+      },
+      {
+        "id": "rule_cast_anchor",
+        "row": 33
+      },
+      {
+        "id": "rule_triple_cast",
+        "row": 34
+      },
+      {
+        "id": "rule_gather_energy",
+        "row": 35
+      },
+      {
+        "id": "trajectory_3d_interleave",
+        "row": 36
+      },
+      {
+        "id": "vine_mark",
+        "row": 37
+      },
+      {
+        "id": "tide_mark",
+        "row": 38
+      },
+      {
+        "id": "sinking_edge",
+        "row": 39
+      },
+      {
+        "id": "keen_mark",
+        "row": 40
+      },
+      {
+        "id": "trajectory_tracking",
+        "row": 41
+      },
+      {
+        "id": "trajectory_storm",
+        "row": 42
+      }
+    ],
+    "待制作": [
+      {
+        "id": "fire_flame_trail",
+        "row": 3
+      },
+      {
+        "id": "fire_meteorite",
+        "row": 4
+      },
+      {
+        "id": "fire_shock_ring",
+        "row": 5
+      },
+      {
+        "id": "rule_surface_anchor",
+        "row": 6
+      },
+      {
+        "id": "fire_upwell",
+        "row": 7
+      },
+      {
+        "id": "rule_stagger",
+        "row": 8
+      },
+      {
+        "id": "rule_hit_continue",
+        "row": 9
+      },
+      {
+        "id": "fire_seed_sow",
+        "row": 10
+      },
+      {
+        "id": "fire_kindle",
+        "row": 11
+      },
+      {
+        "id": "fire_detonate",
+        "row": 12
+      },
+      {
+        "id": "fire_nether_gloom",
+        "row": 13
+      },
+      {
+        "id": "earth_break_ground",
+        "row": 14
+      },
+      {
+        "id": "fire_spark",
+        "row": 15
+      }
+    ],
+    "制作中": [
+      {
+        "id": "fire_heat_up",
+        "row": 3
+      },
+      {
+        "id": "fire_burn",
+        "row": 4
+      },
+      {
+        "id": "fire_cool",
+        "row": 5
+      }
+    ],
+    "待验收": [
+      {
+        "id": "fire_fentian",
+        "row": 3
+      },
+      {
+        "id": "fire_liaoli",
+        "row": 4
+      },
+      {
+        "id": "fire_scorch_field",
+        "row": 5
+      },
+      {
+        "id": "fire_liaoyuan",
+        "row": 6
+      }
+    ]
+  },
+  "archiveIds": [
+    "fire_liaoyuan",
+    "fire_liaoli",
+    "fire_fentian",
+    "fire_heat_up",
+    "fire_burn",
+    "fire_cool",
+    "fire_scorch_field"
+  ],
+  "batchDiffs": [],
+  "missingFromPending": [],
+  "extraPending": [],
+  "detailHits": [],
+  "otherStatusPagesChanged": true,
+  "batchRowsUnchanged": true
+}

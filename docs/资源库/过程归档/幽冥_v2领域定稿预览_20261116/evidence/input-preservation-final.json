@@ -1,0 +1,50 @@
+[
+  {
+    "Path": "D:\\alianximod\\docs\\术式制作表.xlsx",
+    "Before": "3A744629AC2BAB1CB6740F7BAD2BAA4A716BDE4B708ABBF008D5C65B212E4BCA",
+    "After": "3A744629AC2BAB1CB6740F7BAD2BAA4A716BDE4B708ABBF008D5C65B212E4BCA",
+    "Unchanged": true
+  },
+  {
+    "Path": "D:\\alianximod\\src\\main\\resources\\assets\\xueximod\\textures\\effect\\nether_gloom_v2\\nether_gloom.png",
+    "Before": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+    "After": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+    "Unchanged": true
+  },
+  {
+    "Path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\NetherDomainWisps.java",
+    "Before": "5435DD96C5E9126726AC7E23B2D42C110BB53EBC3D4E1723648F9FC26CCE4791",
+    "After": "5435DD96C5E9126726AC7E23B2D42C110BB53EBC3D4E1723648F9FC26CCE4791",
+    "Unchanged": true
+  },
+  {
+    "Path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\shu\\technique\\release\\domain\\DomainDefinition.java",
+    "Before": "93379888C0E2C3CF21E866001BD4B78509DBF954B20C9122F0380BA32F3911D6",
+    "After": "93379888C0E2C3CF21E866001BD4B78509DBF954B20C9122F0380BA32F3911D6",
+    "Unchanged": true
+  },
+  {
+    "Path": "D:\\alianximod\\docs\\资源库\\README.md",
+    "Before": "70D59EE377E408D56BC2DB6A8C432F14C58FE9F272C336B77263B3049ABF977B",
+    "After": "70D59EE377E408D56BC2DB6A8C432F14C58FE9F272C336B77263B3049ABF977B",
+    "Unchanged": true
+  },
+  {
+    "Path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_青色魂火_v2-20261111\\youming_cyan_soul_v2.aseprite",
+    "Before": "456E6AD5E194C1E1F5F9DECD1CE3C0CE6D8EDD8B7B4DD2B11E54827A06D02D56",
+    "After": "456E6AD5E194C1E1F5F9DECD1CE3C0CE6D8EDD8B7B4DD2B11E54827A06D02D56",
+    "Unchanged": true
+  },
+  {
+    "Path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_青色魂火_v2-20261111\\youming_cyan_soul_v2_strip.png",
+    "Before": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+    "After": "C4FA3B1B82BB29E8BD5040FDE4527BC9DBD8451083608DBB619C2AE02C9CB66F",
+    "Unchanged": true
+  },
+  {
+    "Path": "D:\\alianximod\\docs\\资源库\\过程归档\\幽冥_v2领域预览-20261111\\youming-v2-domain-preview.bbmodel",
+    "Before": "F9617F107CC55B077B22BFDAA4D0C6EFCB68410E952998D95737CB198451C638",
+    "After": "F9617F107CC55B077B22BFDAA4D0C6EFCB68410E952998D95737CB198451C638",
+    "Unchanged": true
+  }
+]

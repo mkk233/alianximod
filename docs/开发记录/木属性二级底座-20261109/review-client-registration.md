@@ -1,0 +1,9 @@
+# 实现第3/3轮：仅核对远程客户端岁华查询登记
+
+必须等当前verify-delivery等所有已派发任务最终反馈和相关写入收束后，由主会话显式Resume原只读review-implementation任务才执行。固定grok-4.7-high-fast，只读、不编译、不写文件、不复查整仓或前两轮所有已通过内容。
+
+事实疑点来自C整合交付和第2轮报告：SuihuaStatus.PROVIDER目前描述为在WoodResourceRuntimeEvents.onServerStarted时登记；ResourceStatuses是各JVM自己的静态注册表，而远程物理客户端不会触发自身ServerStartedEvent。A又明确提供了客户端read通过SuihuaClientCache的合同。这里只是需要验证的疑点，不预设实现必有bug。
+
+精确检查ResourceStatuses、WoodResourceRuntimeEvents、SuihuaStatus及直接必要的客户端初始化/注册调用点：远程客户端（无本地集成服务端）在收到SuihuaSyncPacket后，使用现有资源查询体系能否find/read xueximod:suihua并读本人的缓存？若有其他实际两端登记路径，给出文件行证据并关闭疑点。若只有服务端启动登记，指出实际后果、最小修复路径与单一作者C范围，保留现有water/fire provider登记语义和专服类加载安全，不新增UI或术式。
+
+这轮只给该接入边界的正式结论，计入本批实现3/3。没有独立测试阶段。不得在报告中自动安排第四轮复审。若需要修复，后续原作者仍可实施并编译/运行必要定向检查，但额度耗尽后不再自动重审。最终JSON writesSettled=true、changedFiles=[]，准确区分复核完成与通过/发现缺陷。

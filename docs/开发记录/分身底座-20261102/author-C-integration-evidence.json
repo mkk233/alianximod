@@ -1,0 +1,33 @@
+{
+  "batch": "分身底座-20261102",
+  "author": "C",
+  "status": "stopped",
+  "appliedToSrcMain": false,
+  "compile": "待统一编译",
+  "game": "游戏未测",
+  "candidateRoot": "D:/alianximod/docs/开发记录/分身底座-20261102/候选源码",
+  "beforeRoot": "D:/alianximod/docs/开发记录/分身底座-20261102/before-C",
+  "lastCandidateWrite": {
+    "path": "docs/开发记录/分身底座-20261102/候选源码/src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java",
+    "sha256": "a69e59d327fe59a6ee53faa07b863babe4da50a112935fdaadbc6ab103931a02",
+    "lastWriteTime": "2026-11-02T04:15:32.166+08:00"
+  },
+  "srcMainUnchanged": true,
+  "beforeMatchesLiveSha256": true,
+  "nameGateOnRealSrc": "留到统一接入后。本次未改正式 src，未跑 tools/check-name-gate.ps1。",
+  "foreignCandidatesNotReadOrWritten": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/CloneBalance.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/action/",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/"
+  ],
+  "selfCheck": [
+    "正式 src 与 before-C 的 20 个既有文件 sha256 逐一相同。",
+    "7 个新文件只存在于候选目录，正式 src 中缺失。",
+    "zh_cn.json 与 en_us.json 可解析，entity.xueximod.clone_actor 分别为「分身」和 Clone。",
+    "未跑 gradlew，未打包，未启动游戏。"
+  ],
+  "signatureNotes": [
+    "LivingEntityRenderer<CloneEntity, ZombieModel<CloneEntity>> 与 1.20.1 ZombieModel<T extends Zombie> 上界冲突。候选使用 HumanoidModel<CloneEntity>、ModelLayers.ZOMBIE 和原版僵尸贴图。",
+    "respond 调用冻结的 CloneService.request(ServerPlayer, CloneHandle, CloneTriggerInput)。命令只有 UUID。句柄 sessionToken 传 0、维度传主人当前维度、代次传 1。代次不用 0。合同要求 A 按本人索引补齐这三项。"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "frameSize": "64x128",
+  "frames": 16,
+  "downwardShiftPixels": 8,
+  "downwardShiftMismatch": 0,
+  "stripMismatch": 0,
+  "chargeWidths": [
+    12,
+    16,
+    18,
+    22,
+    26,
+    28,
+    32,
+    34,
+    38,
+    42,
+    44,
+    48,
+    48,
+    48,
+    48,
+    48
+  ],
+  "gameIntegrated": false
+}

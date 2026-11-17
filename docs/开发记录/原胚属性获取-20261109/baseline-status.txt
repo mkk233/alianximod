@@ -1,0 +1,445 @@
+ M .gitignore
+ M .grok/skills/max-dispatch/SKILL.md
+ M AGENTS.md
+ M build.gradle
+ M docs/.obsidian/workspace.json
+ M docs/README.md
+ M "docs/\344\272\244\346\216\245-2026-10-16-\345\257\271\345\244\226\346\263\250\345\206\214\345\217\243.md"
+ M "docs/\344\272\244\346\216\245\347\264\242\345\274\225.md"
+ M gradle.properties
+ M mod-agent-skills/mod-dispatch/SKILL.md
+ M src/generated/resources/data/minecraft/tags/blocks/mineable/pickaxe.json
+ M src/generated/resources/data/minecraft/tags/blocks/needs_stone_tool.json
+ M src/main/java/com/bslx/XueXiMod/Config.java
+ M src/main/java/com/bslx/XueXiMod/XueXiMod.java
+ M src/main/java/com/bslx/XueXiMod/block/ImprintDeskBlock.java
+ M src/main/java/com/bslx/XueXiMod/block/ImprintDeskBlockEntity.java
+ M src/main/java/com/bslx/XueXiMod/block/ModBlocks.java
+RM src/main/java/com/bslx/XueXiMod/block/custom/teShuBlocks.java -> src/main/java/com/bslx/XueXiMod/block/custom/TeShuBlocks.java
+ M src/main/java/com/bslx/XueXiMod/client/EntityRendererFix.java
+ M src/main/java/com/bslx/XueXiMod/client/MagicHudOverlay.java
+ M src/main/java/com/bslx/XueXiMod/client/SwordEntityRenderer.java
+ M src/main/java/com/bslx/XueXiMod/client/TechniqueHitRenderer.java
+ M src/main/java/com/bslx/XueXiMod/command/ModCommands.java
+ M src/main/java/com/bslx/XueXiMod/command/ShuCommands.java
+ M src/main/java/com/bslx/XueXiMod/datagen/ModBlockTagGenerator.java
+ M src/main/java/com/bslx/XueXiMod/datagen/loot/ModBlockLootTables.java
+ M src/main/java/com/bslx/XueXiMod/debug/DebugLogCommands.java
+ M src/main/java/com/bslx/XueXiMod/event/BoundSkillTooltip.java
+ M src/main/java/com/bslx/XueXiMod/event/EnchantedProjectileHandler.java
+ M src/main/java/com/bslx/XueXiMod/event/ModEvents.java
+ M src/main/java/com/bslx/XueXiMod/event/PlayerConnectionHandler.java
+ M src/main/java/com/bslx/XueXiMod/event/SkillHotkeyHandler.java
+ M src/main/java/com/bslx/XueXiMod/gui/DebugLogScreen.java
+ M src/main/java/com/bslx/XueXiMod/gui/ImprintActions.java
+ M src/main/java/com/bslx/XueXiMod/gui/ImprintDeskMenu.java
+ M src/main/java/com/bslx/XueXiMod/gui/ImprintDeskScreen.java
+ M src/main/java/com/bslx/XueXiMod/gui/ModMenuTypes.java
+ M src/main/java/com/bslx/XueXiMod/gui/ShuManagementMenu.java
+ M src/main/java/com/bslx/XueXiMod/gui/ShuManagementScreen.java
+ M src/main/java/com/bslx/XueXiMod/gui/SkillAssemblyScreen.java
+ M src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyMenu.java
+ M src/main/java/com/bslx/XueXiMod/gui/SpellAssemblyScreen.java
+ M src/main/java/com/bslx/XueXiMod/gui/SpellStorageMenu.java
+ M src/main/java/com/bslx/XueXiMod/gui/SpellStorageScreen.java
+ M src/main/java/com/bslx/XueXiMod/item/ModCreativeModTabs.java
+ M src/main/java/com/bslx/XueXiMod/item/ModItems.java
+ M src/main/java/com/bslx/XueXiMod/item/SkillBookItem.java
+ M src/main/java/com/bslx/XueXiMod/item/SkillCarrier.java
+ M src/main/java/com/bslx/XueXiMod/item/SkillStoneItem.java
+ M src/main/java/com/bslx/XueXiMod/item/SkillStorageData.java
+ M src/main/java/com/bslx/XueXiMod/item/SkillStorageItem.java
+ M src/main/java/com/bslx/XueXiMod/item/StaffData.java
+ M src/main/java/com/bslx/XueXiMod/item/StaffItem.java
+ M src/main/java/com/bslx/XueXiMod/item/StaffSkills.java
+R  src/main/java/com/bslx/XueXiMod/item/custom/fuelItem.java -> src/main/java/com/bslx/XueXiMod/item/custom/FuelItem.java
+RM src/main/java/com/bslx/XueXiMod/item/custom/teShuItem.java -> src/main/java/com/bslx/XueXiMod/item/custom/TeShuItem.java
+ M src/main/java/com/bslx/XueXiMod/network/BoundSkillSyncPacket.java
+ M src/main/java/com/bslx/XueXiMod/network/ImprintPacket.java
+ M src/main/java/com/bslx/XueXiMod/network/ModNetwork.java
+ M src/main/java/com/bslx/XueXiMod/network/NetworkPacket.java
+ M src/main/java/com/bslx/XueXiMod/network/OpenShuGuiPacket.java
+ M src/main/java/com/bslx/XueXiMod/network/ShuSyncPacket.java
+ M src/main/java/com/bslx/XueXiMod/network/SkillAssemblyPacket.java
+ M src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java
+ M src/main/java/com/bslx/XueXiMod/player/MagicPool.java
+ M src/main/java/com/bslx/XueXiMod/player/PlayerShuData.java
+ M src/main/java/com/bslx/XueXiMod/player/PlayerSpellStorage.java
+ M src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java
+ M src/main/java/com/bslx/XueXiMod/shu/Proficiency.java
+ M src/main/java/com/bslx/XueXiMod/shu/ShuAttribute.java
+ M src/main/java/com/bslx/XueXiMod/shu/SkillStoneData.java
+ M src/main/java/com/bslx/XueXiMod/shu/Technique.java
+ M src/main/java/com/bslx/XueXiMod/shu/TechniqueManager.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentRegistry.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueCastContext.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/TechniqueEffectRegistry.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/chain/ChainScheduler.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/chain/TechniqueChain.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/HeatBeamEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/LockTargetService.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicArcaneMissileEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicCreateWaterEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/MagicIgniteEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/MetalNeedleEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/MovementDashEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/ParasiteSeedEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/SpaceCutEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/StoneHammerEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordComeEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordHorizontalSlashEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordThrustEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordVerticalSlashEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/TestSustainedEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/TideSeverEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/effects/UniversalLockTargetEffect.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantBonus.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/enchant/WeaponEnchant.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ChainRole.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/HitVolumes.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/LifeDrain.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseBatch.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseKind.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseRegistry.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/Trajectory.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/TrajectorySampler.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/ClientTrack.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/ReleaseEntities.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/ArcHitbox.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/BoxHitbox.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/SizedBoxHitbox.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/SphereHitbox.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/AttachedSwingMotion.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/DropMotion.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/FollowCasterMotion.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/ProjectileMotion.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/StillAimMotion.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrapFallMotion.java
+ M src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java
+ M src/main/java/com/bslx/XueXiMod/skill/Skill.java
+ M src/main/resources/META-INF/mods.toml
+ M src/main/resources/assets/xueximod/lang/zh_cn.json
+?? .cursor/
+?? .grok/scripts/
+?? .grok/skill-drafts/
+?? LICENSE
+?? THIRD_PARTY_NOTICES.md
+?? art/
+?? docs/imprint-tree-gemini-center.jpg
+?? docs/imprint-tree-gemini-hub.jpg
+?? docs/imprint-tree-gemini-mc.jpg
+?? docs/imprint-tree-gemini-skilltree.jpg
+?? docs/imprint-tree-gemini.jpg
+?? docs/qa-results.md
+?? "docs/\344\277\256\345\244\215\346\211\213\345\206\214-2026-10-22.md"
+?? "docs/\345\200\231\351\200\211\346\237\245\350\257\242\345\244\215\347\224\250\350\257\264\346\230\216.md"
+?? "docs/\345\210\206\350\272\253\345\272\225\345\272\247\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274.md"
+?? "docs/\345\210\206\350\272\253\345\272\225\345\272\247\351\246\226\347\211\210\344\272\244\344\273\230\344\270\216\345\256\236\346\265\213.md"
+?? "docs/\345\212\250\344\275\234\346\236\204\345\273\272\351\252\214\350\257\201\350\257\264\346\230\216-2026-10-24.md"
+?? "docs/\345\212\250\344\275\234\346\270\262\346\237\223\351\200\202\351\205\215\350\257\264\346\230\216-2026-10-24.md"
+?? "docs/\345\212\250\344\275\234\347\263\273\347\273\237\347\247\273\346\244\215\344\270\216\346\211\251\345\261\225\350\257\264\346\230\216-2026-10-24.md"
+?? "docs/\345\217\214\351\207\215\351\207\212\346\224\276\350\260\203\346\225\264\346\204\217\350\247\201\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-23.md"
+?? "docs/\345\236\202\344\270\235\346\214\201\347\273\255\347\200\221\345\270\203\345\256\236\347\216\260-2026-10-27.md"
+?? "docs/\345\236\202\344\270\235\351\207\215\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-22.md"
+?? "docs/\345\244\232\351\207\215\351\207\212\346\224\276\345\272\225\345\272\247\344\270\216\346\211\251\345\261\225\346\214\207\345\215\227.md"
+?? "docs/\345\272\225\345\272\247\345\212\237\350\203\275\347\202\271.md"
+?? "docs/\345\272\225\345\272\247\347\274\272\345\217\243\345\256\236\347\216\260\346\214\207\345\257\274-Astra.md"
+?? "docs/\345\272\225\345\272\247\347\274\272\345\217\243\345\273\272\350\256\256\347\241\256\350\256\244.md"
+?? "docs/\345\274\200\345\217\221\350\256\260\345\275\225/"
+?? "docs/\346\200\247\350\203\275\350\256\260\345\275\225\344\275\277\347\224\250\350\257\264\346\230\216.md"
+?? "docs/\346\234\250\345\261\236\346\200\247\344\272\214\347\272\247\347\216\251\346\263\225\350\256\276\350\256\241.md"
+?? "docs/\346\234\250\345\261\236\346\200\247\350\256\276\350\256\241.txt"
+?? "docs/\346\234\252\345\221\275\345\220\215.md"
+?? "docs/\346\234\257\345\274\217\344\270\200\350\247\210.md"
+?? "docs/\346\234\257\345\274\217\345\210\266\344\275\234\350\241\250-\350\265\204\346\272\220\347\212\266\346\200\201\345\255\227\346\256\265\350\257\264\346\230\216.md"
+?? "docs/\346\234\257\345\274\217\345\210\266\344\275\234\350\241\250.xlsx"
+?? "docs/\346\234\257\345\274\217\347\273\204\345\220\210\345\256\236\346\265\213\351\205\215\347\275\256-2026-10-23.txt"
+?? "docs/\346\234\257\345\274\217\351\223\276\350\256\241\345\210\222\347\274\223\345\255\230\350\257\264\346\230\216.md"
+?? "docs/\346\260\264\345\210\203\351\207\215\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-24.md"
+?? "docs/\346\260\264\345\212\277\345\201\217\350\275\254\345\220\257\345\212\250QA\347\212\266\346\200\201-2026-10-26.md"
+?? "docs/\346\260\264\345\212\277\345\201\217\350\275\254\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-26.md"
+?? "docs/\346\260\264\345\261\236\346\200\247\345\272\225\345\272\247\347\274\272\345\217\243-Astra.md"
+?? "docs/\346\260\264\345\261\236\346\200\247\346\234\257\345\274\217.md"
+?? "docs/\346\260\264\345\271\225\351\207\215\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-23.md"
+?? "docs/\346\260\264\345\271\273\345\275\242\346\234\257\345\274\217\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274.md"
+?? "docs/\346\260\264\347\211\242\344\273\243\347\240\201QA-2026-10-26.md"
+?? "docs/\346\260\264\347\211\242\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-26.md"
+?? "docs/\346\260\264\347\216\257\351\207\215\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-22.md"
+?? "docs/\346\260\264\347\263\273\346\226\260\346\234\257\345\274\217\350\256\276\350\256\241-Astra.md"
+?? "docs/\346\267\261\346\265\267\351\207\215\345\216\213\351\207\215\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-23.md"
+?? "docs/\346\275\256\345\215\260-2026-10-25.md"
+?? "docs/\346\275\256\346\271\277\345\233\233\347\272\247\351\207\215\346\236\204\344\273\243\347\240\201QA-2026-10-26.md"
+?? "docs/\346\275\256\346\271\277\345\233\233\347\272\247\351\207\215\346\236\204\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-26.md"
+?? "docs/\347\201\253\345\261\236\346\200\247\344\272\214\347\272\247\347\216\251\346\263\225\350\256\276\350\256\241.md"
+?? "docs/\347\201\253\345\261\236\346\200\247\345\237\272\347\241\200\346\234\257\345\274\217\344\270\216\347\273\204\345\220\210\350\256\276\350\256\241.md"
+?? "docs/\347\201\253\347\263\273\346\224\273\345\207\273\346\234\257\345\274\217\350\256\276\350\256\241.md"
+?? "docs/\347\201\253\347\263\273\346\226\260\346\234\257\345\274\217\350\256\276\350\256\241-Astra.md"
+?? "docs/\347\272\257\350\256\241\347\256\227\345\220\216\347\253\257\344\275\277\347\224\250\350\257\264\346\230\216.md"
+?? "docs/\347\273\237\344\270\200\345\274\200\345\217\221\344\270\216\346\234\257\345\274\217\346\211\271\351\207\217\345\210\266\344\275\234\346\265\201\347\250\213.md"
+?? "docs/\350\256\251\351\224\213\347\234\237\345\256\236\345\210\206\346\260\264\344\277\256\346\224\271\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-26.md"
+?? "docs/\350\265\204\346\272\220\345\272\223/"
+?? "docs/\351\205\215\347\275\256\345\271\263\350\241\241\346\214\207\345\215\227.md"
+?? "docs/\351\233\266\344\274\244\345\256\263\346\234\257\345\274\217\351\231\204\351\255\224\347\242\260\346\222\236\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-23.md"
+?? "docs/\351\233\276\351\233\250\351\207\215\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-23.md"
+?? "docs/\351\242\206\345\237\237\351\231\204\351\255\224\351\231\220\346\227\266\344\270\216\350\247\246\345\217\221\350\256\241\350\264\271\344\277\256\346\224\271\346\226\271\346\241\210-2026-10-29.md"
+?? "docs/\351\253\230\351\230\266\351\231\204\351\255\224\345\272\225\345\272\247\350\256\276\350\256\241\344\270\216\345\256\236\347\216\260\346\214\207\345\257\274-2026-10-23.md"
+?? logs/
+?? native/
+?? src/generated/resources/data/xueximod/loot_tables/blocks/meteorite.json
+?? src/main/java/com/bslx/XueXiMod/animation/
+?? src/main/java/com/bslx/XueXiMod/api/
+?? src/main/java/com/bslx/XueXiMod/block/MeteoriteBlock.java
+?? src/main/java/com/bslx/XueXiMod/block/StillDomainFluid.java
+?? src/main/java/com/bslx/XueXiMod/block/StillDomainFluids.java
+?? src/main/java/com/bslx/XueXiMod/carrier/
+?? src/main/java/com/bslx/XueXiMod/client/ActorVolumeVisual.java
+?? src/main/java/com/bslx/XueXiMod/client/BatchCarrierVisualRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/CloneAfterimagePlayback.java
+?? src/main/java/com/bslx/XueXiMod/client/CloneAfterimageSnapshot.java
+?? src/main/java/com/bslx/XueXiMod/client/CloneOutlineVisual.java
+?? src/main/java/com/bslx/XueXiMod/client/CloneRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainClientState.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainFlowRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistRainRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistRingLayout.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistRingRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainMistShaders.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainPressureRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainSheetMesh.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainVolumeBatch.java
+?? src/main/java/com/bslx/XueXiMod/client/DomainWorldRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/FireSeedFlameClient.java
+?? src/main/java/com/bslx/XueXiMod/client/FireVisualClient.java
+?? src/main/java/com/bslx/XueXiMod/client/FlowClientMotion.java
+?? src/main/java/com/bslx/XueXiMod/client/GuardClientLifecycle.java
+?? src/main/java/com/bslx/XueXiMod/client/GuardRingRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/LiaoliRingTrail.java
+?? src/main/java/com/bslx/XueXiMod/client/LiaoliV6Renderer.java
+?? src/main/java/com/bslx/XueXiMod/client/MeteoriteWreckageRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/NetherDomainWisps.java
+?? src/main/java/com/bslx/XueXiMod/client/PrisonClientEntry.java
+?? src/main/java/com/bslx/XueXiMod/client/PrisonClientState.java
+?? src/main/java/com/bslx/XueXiMod/client/PrisonShellRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/SteveWaterLineMesh.java
+?? src/main/java/com/bslx/XueXiMod/client/SteveWaterLineReload.java
+?? src/main/java/com/bslx/XueXiMod/client/SteveWaterLineVisual.java
+?? src/main/java/com/bslx/XueXiMod/client/StillDomainWaterClient.java
+?? src/main/java/com/bslx/XueXiMod/client/StillSheetMesh.java
+?? src/main/java/com/bslx/XueXiMod/client/StillSheetPlayback.java
+?? src/main/java/com/bslx/XueXiMod/client/SurfaceSnapshotAssembly.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterArcRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterArcSheetMap.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterBarrierRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterCurtainLayout.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterCurtainRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterMomentumOverlay.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterPartingRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRibbonRenderer.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Material.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Math.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Mesh.java
+?? src/main/java/com/bslx/XueXiMod/client/WaterRingV8Reload.java
+?? src/main/java/com/bslx/XueXiMod/client/action/
+?? src/main/java/com/bslx/XueXiMod/client/furnace/
+?? src/main/java/com/bslx/XueXiMod/combat/
+?? src/main/java/com/bslx/XueXiMod/command/ActionCommands.java
+?? src/main/java/com/bslx/XueXiMod/command/CloneCommands.java
+?? src/main/java/com/bslx/XueXiMod/command/SkillEntityCount.java
+?? src/main/java/com/bslx/XueXiMod/debug/performance/
+?? src/main/java/com/bslx/XueXiMod/gui/ImprintTreeView.java
+?? src/main/java/com/bslx/XueXiMod/mixin/
+?? src/main/java/com/bslx/XueXiMod/network/ActionContact.java
+?? src/main/java/com/bslx/XueXiMod/network/ActionSyncS2CPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/AttackBudgetWindow.java
+?? src/main/java/com/bslx/XueXiMod/network/AutomaticRound.java
+?? src/main/java/com/bslx/XueXiMod/network/BatchCastSession.java
+?? src/main/java/com/bslx/XueXiMod/network/BatchReleaseCompiler.java
+?? src/main/java/com/bslx/XueXiMod/network/BatchReleasePlan.java
+?? src/main/java/com/bslx/XueXiMod/network/BindingStructureCompiler.java
+?? src/main/java/com/bslx/XueXiMod/network/CastCooldown.java
+?? src/main/java/com/bslx/XueXiMod/network/CastExecutionSession.java
+?? src/main/java/com/bslx/XueXiMod/network/CastPlanCache.java
+?? src/main/java/com/bslx/XueXiMod/network/CastPlanCacheEvents.java
+?? src/main/java/com/bslx/XueXiMod/network/CastPlanContext.java
+?? src/main/java/com/bslx/XueXiMod/network/CastTiming.java
+?? src/main/java/com/bslx/XueXiMod/network/ChainProgress.java
+?? src/main/java/com/bslx/XueXiMod/network/ChainSteps.java
+?? src/main/java/com/bslx/XueXiMod/network/ClonePresentationS2CPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/CompiledCastPlan.java
+?? src/main/java/com/bslx/XueXiMod/network/CompiledReleaseStep.java
+?? src/main/java/com/bslx/XueXiMod/network/ContactCast.java
+?? src/main/java/com/bslx/XueXiMod/network/CooperativeActionS2CPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/CooperativeCastRouter.java
+?? src/main/java/com/bslx/XueXiMod/network/CooperativeChainCompiler.java
+?? src/main/java/com/bslx/XueXiMod/network/DomainOpening.java
+?? src/main/java/com/bslx/XueXiMod/network/DomainSyncPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/DomainWave.java
+?? src/main/java/com/bslx/XueXiMod/network/ExplicitHostOffers.java
+?? src/main/java/com/bslx/XueXiMod/network/FireSeedVisualBridge.java
+?? src/main/java/com/bslx/XueXiMod/network/FireSeedVisualPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/FireVisualBridge.java
+?? src/main/java/com/bslx/XueXiMod/network/FireVisualPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/FlowCorrectionAckC2SPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/FlowCorrectionS2CPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/FlowIntentS2CPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/FlowMoveC2SPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/FlowPlayerBridge.java
+?? src/main/java/com/bslx/XueXiMod/network/GroupBudget.java
+?? src/main/java/com/bslx/XueXiMod/network/GuardSyncPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/HeldSwordGate.java
+?? src/main/java/com/bslx/XueXiMod/network/HoldRepeat.java
+?? src/main/java/com/bslx/XueXiMod/network/LiaoliRingBridge.java
+?? src/main/java/com/bslx/XueXiMod/network/LiaoliRingPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/MemberCastView.java
+?? src/main/java/com/bslx/XueXiMod/network/MulticastArithmetic.java
+?? src/main/java/com/bslx/XueXiMod/network/MulticastCompileAdapter.java
+?? src/main/java/com/bslx/XueXiMod/network/NetherDomainSync.java
+?? src/main/java/com/bslx/XueXiMod/network/ReleaseOutcome.java
+?? src/main/java/com/bslx/XueXiMod/network/SkillChainPlan.java
+?? src/main/java/com/bslx/XueXiMod/network/SkillFollowCast.java
+?? src/main/java/com/bslx/XueXiMod/network/SkillSegmentMath.java
+?? src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java
+?? src/main/java/com/bslx/XueXiMod/network/SuihuaSyncPacket.java
+?? src/main/java/com/bslx/XueXiMod/network/UncommittedShare.java
+?? src/main/java/com/bslx/XueXiMod/network/WaterMomentumNotice.java
+?? src/main/java/com/bslx/XueXiMod/network/prison/
+?? src/main/java/com/bslx/XueXiMod/player/DomainLearning.java
+?? src/main/java/com/bslx/XueXiMod/player/ManaPaymentReceipt.java
+?? src/main/java/com/bslx/XueXiMod/registry/
+?? src/main/java/com/bslx/XueXiMod/shu/TechniqueAccess.java
+?? src/main/java/com/bslx/XueXiMod/shu/TechniqueAvailability.java
+?? src/main/java/com/bslx/XueXiMod/shu/TechniqueIds.java
+?? src/main/java/com/bslx/XueXiMod/shu/WaterTechniques.java
+?? src/main/java/com/bslx/XueXiMod/shu/balance/
+?? src/main/java/com/bslx/XueXiMod/shu/compute/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/ActionWindow.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/ChainStructureEpoch.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/BodySweep.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/FentianEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireBurstEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/FireOrbEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoliEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/LiaoyuanEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/ScorchEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordReturnAllEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/WaterFormEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/WaterYieldingEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/effects/WeepingCurtainEffect.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantmentSnapshot.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/enchant/SpecialBalance.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/enchant/TideMarkDamageScope.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/enchant/TideMarkSuccess.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/query/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/DropTilt.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/FlowRoundLedger.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseInput.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseShape.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/SwordMulticastGate.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/TechniqueHits.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/TideMarkCopies.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterCurveFunctions.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterReleaseDefinition.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WaterSegment.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WeepingCurtain.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/WeepingSettings.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/aim/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/barrier/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/batch/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/bind/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/capture/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/conditional/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/contact/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/cooperative/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/deflection/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/CastToken.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/CohortLaneLayout.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/CohortVisual.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostBeatHooks.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostCast.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostCastEvents.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupCommit.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupContext.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupIds.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupListener.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/HostGroupReceipt.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/ResourceSettlement.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetCache.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetClock.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetLayout.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetSnapshot.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetVisual.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitKinds.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/field/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/firecast/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/guard/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/hitbox/MeleeCorridor.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/momentum/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/FunctionMotion.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/ParabolaMotion.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingMotion.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingSupport.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/UpwellMotion.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/VortexMotion.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/WeepingLipMotion.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/multicast/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/parting/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/payload/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/phantom/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/prison/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/relations/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/selfstatus/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/statusquery/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/release/water/
+?? src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntityMotion.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordTrackingStep.java
+?? src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordVortex.java
+?? src/main/java/com/bslx/XueXiMod/status/
+?? src/main/java/com/bslx/XueXiMod/terrain/
+?? src/main/java/com/bslx/XueXiMod/visual/
+?? src/main/resources/META-INF/MANIFEST.MF
+?? src/main/resources/assets/xueximod/actions/
+?? src/main/resources/assets/xueximod/blockstates/meteorite.json
+?? src/main/resources/assets/xueximod/blockstates/still_domain_water.json
+?? src/main/resources/assets/xueximod/lang/en_us.json
+?? src/main/resources/assets/xueximod/models/block/meteorite.json
+?? src/main/resources/assets/xueximod/models/effect/
+?? src/main/resources/assets/xueximod/models/item/meteorite.json
+?? src/main/resources/assets/xueximod/models/item/test_staff.json
+?? src/main/resources/assets/xueximod/shaders/
+?? src/main/resources/assets/xueximod/textures/block/meteorite_v1.png
+?? src/main/resources/assets/xueximod/textures/domain/
+?? src/main/resources/assets/xueximod/textures/effect/
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/dimension_willow_v8.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/oblique_slash_v1.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/steve_water_lines.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_arc_slash.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_flakes.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_prison_billboard.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_ring_v8.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/water_ring_v8.png.mcmeta
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_runtime_left.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_runtime_middle.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_runtime_right.png
+?? src/main/resources/assets/xueximod/textures/entity/xueximod/waterfall_thin.png
+?? src/main/resources/assets/xueximod/textures/mob_effect/
+?? src/main/resources/assets/xueximod/waterring/
+?? src/main/resources/data/forge/
+?? src/main/resources/data/minecraft/
+?? src/main/resources/data/xueximod/damage_type/
+?? src/main/resources/data/xueximod/tags/
+?? src/main/resources/xueximod.mixins.json
+?? src/test/
+?? tools/
+?? "\347\264\240\346\235\220\345\272\223/"

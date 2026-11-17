@@ -1,0 +1,72 @@
+{
+  "batch": "分身底座-20261102",
+  "kind": "shared-compile-adoption",
+  "adopted": true,
+  "recompiled": false,
+  "correctnessReview": false,
+  "designRounds": "1/2",
+  "implementationRounds": "2/3",
+  "source": {
+    "sessionId": "044b78d1-5a7e-4853-ab82-af2512815f4b",
+    "modelEvidence": "compile-final-task.md 写明使用 Grok 4.7 High Fast；compile-evidence.json 无模型字段",
+    "report": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-report.md",
+    "evidence": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-evidence.json",
+    "log": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-gradle.log",
+    "logBytes": 14641,
+    "before": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-final-source-before.json",
+    "after": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-final-source-after.json",
+    "state": "docs/开发记录/空间切割拔刀动作接入-20261102/compile-final-retry-state.json",
+    "stateStatus": "completed",
+    "stateExitCode": 0,
+    "stateEndedAt": "2026-11-02T05:56:24.2779233+08:00"
+  },
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "startedAt": "2026-11-02T05:55:18",
+  "endedAt": "2026-11-02T05:55:43",
+  "exitCode": 0,
+  "buildResult": "BUILD SUCCESSFUL in 24s",
+  "compileJavaOutcome": "executed",
+  "actionableTasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "errorsInLog": 0,
+  "warningsInLog": 41,
+  "java": "17.0.6",
+  "comparison": {
+    "snapshotFileCount": 1200,
+    "snapshotDiffCount": 0,
+    "beforeCapturedAt": "2026-11-02T05:55:06",
+    "afterCapturedAt": "2026-11-02T05:55:57",
+    "srcMainInSnapshot": 1061,
+    "currentSrcMain": 1061,
+    "currentSrcMainDiffFromAfter": 0,
+    "nonSrcMainInSnapshot": 139,
+    "currentNonSrcMainRehashed": false
+  },
+  "cloneFormalSources": {
+    "manifest": "docs/开发记录/分身底座-20261102/final-source-manifest.json",
+    "entryCount": 54,
+    "missingFromSnapshot": 0,
+    "currentDiffFromSnapshot": 0
+  },
+  "nameGate": {
+    "finalCompileRerun": false,
+    "claimedBy": "docs/开发记录/空间切割拔刀动作接入-20261102/repair-compile-report.md",
+    "claim": "命名门禁通过",
+    "logInThatBatch": null,
+    "exitCodeRecorded": null,
+    "thisBatchEarlierLog": "docs/开发记录/分身底座-20261102/naming-gate-final.log",
+    "thisBatchEarlierExitCode": 0,
+    "thisBatchEarlierCoversFinalSource": false
+  },
+  "workspaceAtCheck": {
+    "sourceWritesStopped": true,
+    "phase": "delivered_pending_user_game_test",
+    "gradleWrapperRunning": false,
+    "idleDaemonPid": 66116,
+    "idleDaemonChildren": 0
+  },
+  "gameTested": false,
+  "packaged": false,
+  "independentTests": false,
+  "attemptArchivesPreserved": true
+}

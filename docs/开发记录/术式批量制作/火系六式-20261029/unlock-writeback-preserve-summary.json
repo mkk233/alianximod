@@ -1,0 +1,59 @@
+{
+  "submitted": false,
+  "baselineSha256": "8B2CE30DA8263C3FCBB1AFD4E162EE953D7141EFF5FE433B9AB4995511B61054",
+  "baselineMtime": "2026-10-29T11:20:30.807+08:00",
+  "baselineBytes": 80584,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\unlock-writeback-术式制作表-20261029-114250-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\unlock-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "B7461BA4578F7E7AF3C549E58FFAE0746D5221C28C4E106AEEBC6F62776F6435",
+  "changedParts": [
+    "xl/worksheets/sheet3.xml"
+  ],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 6,
+    "待验收": 0
+  },
+  "resourceDetailIds": [
+    {
+      "id": "water_mist",
+      "row": 3
+    },
+    {
+      "id": "water_deep_pressure",
+      "row": 4
+    },
+    {
+      "id": "water_deep_pressure",
+      "row": 5
+    },
+    {
+      "id": "tide_mark",
+      "row": 6
+    }
+  ],
+  "reconcile": [
+    {
+      "id": "fire_liaoyuan",
+      "row": 3,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    },
+    {
+      "id": "fire_liaoli",
+      "row": 4,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    },
+    {
+      "id": "fire_fentian",
+      "row": 5,
+      "nKept": true,
+      "oKept": true,
+      "dvPrefixKept": true
+    }
+  ]
+}

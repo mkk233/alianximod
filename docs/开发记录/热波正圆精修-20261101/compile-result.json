@@ -1,0 +1,33 @@
+{
+  "status": "build_successful_compileJava_up_to_date",
+  "model": "grok-4.7-high-fast",
+  "command": "./gradlew.bat compileJava --offline --no-daemon",
+  "working_directory": "D:/alianximod",
+  "environment": {
+    "JAVA_HOME": "C:/Program Files/Java/jdk-17",
+    "GRADLE_USER_HOME": "C:/Users/baishang/.gradle",
+    "java_version": "17.0.6+9-LTS-190",
+    "org.gradle.jvmargs": "-Xmx3G",
+    "org.gradle.daemon": "false",
+    "environment_persisted": false
+  },
+  "started": "2026-11-01T23:42:11.328+08:00",
+  "ended": "2026-11-01T23:42:27.543+08:00",
+  "exit_code": 0,
+  "compileJava": "UP-TO-DATE",
+  "javac_executed": false,
+  "executed_tasks": ["downloadMcpConfig"],
+  "up_to_date_tasks": ["extractSrg", "createMcpToSrg", "compileJava"],
+  "summary": "BUILD SUCCESSFUL in 15s; 4 actionable tasks: 1 executed, 3 up-to-date",
+  "source_writes_closed_before_compile": true,
+  "java_files_changed_before_compile": [],
+  "gradle_process_running_before_compile": false,
+  "approved_art_hashes_unchanged": true,
+  "runtime_sha256": "5959d47d14ea8a69394559b13f504686c620230a35505a765731cbb76bda6d0f",
+  "formal_archive_compile_status_updated": true,
+  "sheet_updated": false,
+  "resource_index_updated": false,
+  "game_tested": false,
+  "formal_review_added": false,
+  "blockers": []
+}

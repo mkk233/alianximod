@@ -1,0 +1,633 @@
+{
+  "settings": {
+    "attemptId": "20261116-art-gloom-transition-02",
+    "camera": {
+      "position": [
+        0,
+        25.92,
+        42
+      ],
+      "target": [
+        0,
+        22,
+        -50
+      ],
+      "fov": 68,
+      "eyeBlocks": 1.62
+    },
+    "durationSeconds": 3.8,
+    "frameSeconds": 0.05,
+    "frameCount": 76,
+    "normalHold": [
+      0,
+      0.4
+    ],
+    "enter": [
+      0.4,
+      1
+    ],
+    "domainHold": [
+      1,
+      2.2
+    ],
+    "exit": [
+      2.2,
+      3
+    ],
+    "restoredHold": [
+      3,
+      3.8
+    ],
+    "curve": "smoothstep(u)=u*u*(3-2*u)",
+    "normalSky": [
+      [
+        0,
+        "#75a6cf"
+      ],
+      [
+        0.42,
+        "#a8c5dc"
+      ],
+      [
+        0.5,
+        "#d0dbe1"
+      ],
+      [
+        0.56,
+        "#a9b8bf"
+      ],
+      [
+        1,
+        "#6c7d88"
+      ]
+    ],
+    "normalSwatches": {
+      "AUX_distant_ground": "#65696a",
+      "AUX_far_fog_tinted_rock": "#7f8c91",
+      "AUX_middle_fog_tinted_rock": "#626c72",
+      "AUX_near_fog_tinted_rock": "#4e5559"
+    },
+    "meaning": "Fixed viewpoint environment tone mix only; no volume test, boundary crossing or expiry. Fire stays lit and animates continuously.",
+    "candidateMaterial": "The existing rev01 sky and distant scene texture maps; not modified or replaced on disk.",
+    "normalTone": "Neutral daytime demonstration reference, not captured Minecraft normal sky."
+  },
+  "project": "0160f5df-5ae4-58e0-f638-74fa0e1dcca0",
+  "viewport": "main",
+  "source": "Existing Blockbench GUI, native preview shader material blend before Screencam.screenshotPreview; no postprocess image filter",
+  "targetTextures": [
+    {
+      "uuid": "3b60cfa8-b9f3-14b9-e77d-b3916e545c71",
+      "name": "AUX_soulvalley_sky_gradient_preview_only"
+    },
+    {
+      "uuid": "18acf423-daf7-cc13-a12b-676d1cd054db",
+      "name": "AUX_distant_ground"
+    },
+    {
+      "uuid": "88b1bfed-e756-cc9b-e325-c230d9762a4a",
+      "name": "AUX_far_fog_tinted_rock"
+    },
+    {
+      "uuid": "171f94de-bf89-4445-3be8-b1d418632c81",
+      "name": "AUX_middle_fog_tinted_rock"
+    },
+    {
+      "uuid": "ecfcd1f1-daf7-4199-643e-312058f477d5",
+      "name": "AUX_near_fog_tinted_rock"
+    }
+  ],
+  "frames": [
+    {
+      "file": "frames/transition02/tone_000.png",
+      "time": 0,
+      "animationTime": 0.7,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_001.png",
+      "time": 0.05,
+      "animationTime": 0.75,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_002.png",
+      "time": 0.1,
+      "animationTime": 0.7999999999999999,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_003.png",
+      "time": 0.15000000000000002,
+      "animationTime": 0.85,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_004.png",
+      "time": 0.2,
+      "animationTime": 0.8999999999999999,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_005.png",
+      "time": 0.25,
+      "animationTime": 0.95,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_006.png",
+      "time": 0.30000000000000004,
+      "animationTime": 1,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_007.png",
+      "time": 0.35000000000000003,
+      "animationTime": 1.05,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_008.png",
+      "time": 0.4,
+      "animationTime": 1.1,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_009.png",
+      "time": 0.45,
+      "animationTime": 1.15,
+      "domainBlend": 0.01967592592592592,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_010.png",
+      "time": 0.5,
+      "animationTime": 1.2,
+      "domainBlend": 0.07407407407407406,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_011.png",
+      "time": 0.55,
+      "animationTime": 1.25,
+      "domainBlend": 0.15625000000000006,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_012.png",
+      "time": 0.6000000000000001,
+      "animationTime": 1.3,
+      "domainBlend": 0.25925925925925947,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_013.png",
+      "time": 0.65,
+      "animationTime": 1.35,
+      "domainBlend": 0.37615740740740744,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_014.png",
+      "time": 0.7000000000000001,
+      "animationTime": 1.4,
+      "domainBlend": 0.5000000000000001,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_015.png",
+      "time": 0.75,
+      "animationTime": 1.45,
+      "domainBlend": 0.6238425925925927,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_016.png",
+      "time": 0.8,
+      "animationTime": 1.5,
+      "domainBlend": 0.7407407407407408,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_017.png",
+      "time": 0.8500000000000001,
+      "animationTime": 1.55,
+      "domainBlend": 0.8437500000000002,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_018.png",
+      "time": 0.9,
+      "animationTime": 1.6,
+      "domainBlend": 0.925925925925926,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_019.png",
+      "time": 0.9500000000000001,
+      "animationTime": 1.65,
+      "domainBlend": 0.9803240740740741,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_020.png",
+      "time": 1,
+      "animationTime": 1.7,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_021.png",
+      "time": 1.05,
+      "animationTime": 1.75,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_022.png",
+      "time": 1.1,
+      "animationTime": 1.8,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_023.png",
+      "time": 1.1500000000000001,
+      "animationTime": 1.85,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_024.png",
+      "time": 1.2000000000000002,
+      "animationTime": 1.9000000000000001,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_025.png",
+      "time": 1.25,
+      "animationTime": 1.95,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_026.png",
+      "time": 1.3,
+      "animationTime": 2,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_027.png",
+      "time": 1.35,
+      "animationTime": 2.05,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_028.png",
+      "time": 1.4000000000000001,
+      "animationTime": 2.1,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_029.png",
+      "time": 1.4500000000000002,
+      "animationTime": 2.1500000000000004,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_030.png",
+      "time": 1.5,
+      "animationTime": 2.2,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_031.png",
+      "time": 1.55,
+      "animationTime": 2.25,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_032.png",
+      "time": 1.6,
+      "animationTime": 2.3,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_033.png",
+      "time": 1.6500000000000001,
+      "animationTime": 2.35,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_034.png",
+      "time": 1.7000000000000002,
+      "animationTime": 2.4000000000000004,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_035.png",
+      "time": 1.75,
+      "animationTime": 2.45,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_036.png",
+      "time": 1.8,
+      "animationTime": 2.5,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_037.png",
+      "time": 1.85,
+      "animationTime": 2.55,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_038.png",
+      "time": 1.9000000000000001,
+      "animationTime": 2.6,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_039.png",
+      "time": 1.9500000000000002,
+      "animationTime": 2.6500000000000004,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_040.png",
+      "time": 2,
+      "animationTime": 2.7,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_041.png",
+      "time": 2.0500000000000003,
+      "animationTime": 2.75,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_042.png",
+      "time": 2.1,
+      "animationTime": 2.8,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_043.png",
+      "time": 2.15,
+      "animationTime": 2.8499999999999996,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_044.png",
+      "time": 2.2,
+      "animationTime": 2.9000000000000004,
+      "domainBlend": 1,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_045.png",
+      "time": 2.25,
+      "animationTime": 2.95,
+      "domainBlend": 0.9887695312500001,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_046.png",
+      "time": 2.3000000000000003,
+      "animationTime": 3,
+      "domainBlend": 0.9570312499999999,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_047.png",
+      "time": 2.35,
+      "animationTime": 3.05,
+      "domainBlend": 0.9077148437500001,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_048.png",
+      "time": 2.4000000000000004,
+      "animationTime": 3.1000000000000005,
+      "domainBlend": 0.8437499999999998,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_049.png",
+      "time": 2.45,
+      "animationTime": 3.1500000000000004,
+      "domainBlend": 0.76806640625,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_050.png",
+      "time": 2.5,
+      "animationTime": 3.2,
+      "domainBlend": 0.6835937500000003,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_051.png",
+      "time": 2.5500000000000003,
+      "animationTime": 3.25,
+      "domainBlend": 0.5932617187499998,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_052.png",
+      "time": 2.6,
+      "animationTime": 3.3,
+      "domainBlend": 0.5000000000000002,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_053.png",
+      "time": 2.6500000000000004,
+      "animationTime": 3.3500000000000005,
+      "domainBlend": 0.40673828124999967,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_054.png",
+      "time": 2.7,
+      "animationTime": 3.4000000000000004,
+      "domainBlend": 0.31640625,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_055.png",
+      "time": 2.75,
+      "animationTime": 3.45,
+      "domainBlend": 0.23193359375000022,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_056.png",
+      "time": 2.8000000000000003,
+      "animationTime": 3.5,
+      "domainBlend": 0.15624999999999978,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_057.png",
+      "time": 2.85,
+      "animationTime": 3.55,
+      "domainBlend": 0.09228515625000011,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_058.png",
+      "time": 2.9000000000000004,
+      "animationTime": 3.6000000000000005,
+      "domainBlend": 0.04296874999999978,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_059.png",
+      "time": 2.95,
+      "animationTime": 3.6500000000000004,
+      "domainBlend": 0.01123046875,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_060.png",
+      "time": 3,
+      "animationTime": 3.7,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_061.png",
+      "time": 3.0500000000000003,
+      "animationTime": 3.75,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_062.png",
+      "time": 3.1,
+      "animationTime": 3.8,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_063.png",
+      "time": 3.1500000000000004,
+      "animationTime": 3.8500000000000005,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_064.png",
+      "time": 3.2,
+      "animationTime": 3.9000000000000004,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_065.png",
+      "time": 3.25,
+      "animationTime": 3.95,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_066.png",
+      "time": 3.3000000000000003,
+      "animationTime": 4,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_067.png",
+      "time": 3.35,
+      "animationTime": 4.05,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_068.png",
+      "time": 3.4000000000000004,
+      "animationTime": 4.1000000000000005,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_069.png",
+      "time": 3.45,
+      "animationTime": 4.15,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_070.png",
+      "time": 3.5,
+      "animationTime": 4.2,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_071.png",
+      "time": 3.5500000000000003,
+      "animationTime": 4.25,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_072.png",
+      "time": 3.6,
+      "animationTime": 4.3,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_073.png",
+      "time": 3.6500000000000004,
+      "animationTime": 4.3500000000000005,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_074.png",
+      "time": 3.7,
+      "animationTime": 4.4,
+      "domainBlend": 0,
+      "viewport": "main"
+    },
+    {
+      "file": "frames/transition02/tone_075.png",
+      "time": 3.75,
+      "animationTime": 4.45,
+      "domainBlend": 0,
+      "viewport": "main"
+    }
+  ]
+}

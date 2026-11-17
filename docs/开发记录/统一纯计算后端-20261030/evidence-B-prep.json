@@ -1,0 +1,66 @@
+{
+  "released": true,
+  "write_ownership_released": true,
+  "role": "author-B",
+  "stage": "prepare-native",
+  "reported_at": "2026-10-30T15:56:11+08:00",
+  "script_entry": {
+    "windows": "D:/alianximod/native/compute/build-windows.ps1",
+    "windows_cmd": "D:/alianximod/native/compute/build-windows.cmd",
+    "unix": "D:/alianximod/native/compute/build-unix.sh"
+  },
+  "written": [
+    "D:/alianximod/native/compute/CMakeLists.txt",
+    "D:/alianximod/native/compute/build-windows.ps1",
+    "D:/alianximod/native/compute/build-windows.cmd",
+    "D:/alianximod/native/compute/build-unix.sh",
+    "D:/alianximod/native/compute/.gitignore",
+    "D:/alianximod/native/compute/README.md",
+    "D:/alianximod/docs/开发记录/统一纯计算后端-20261030/native-build-prep-final.md",
+    "D:/alianximod/docs/开发记录/统一纯计算后端-20261030/evidence-B-prep.json"
+  ],
+  "reserved_not_written": [
+    "D:/alianximod/native/compute/src/xueximod_compute.c"
+  ],
+  "missing": [
+    "C source",
+    "frozen Java/JNI ABI"
+  ],
+  "artifact": {
+    "basename": "xueximod_compute",
+    "windows": "xueximod_compute.dll",
+    "default_build_dir": "D:/alianximod/native/compute/build",
+    "alternate_build_dir": "D:/alianximod/native/compute/out"
+  },
+  "platforms_verified": {
+    "windows_compile": false,
+    "linux": false,
+    "macos": false
+  },
+  "checks": {
+    "powershell_parse_errors": 0,
+    "windows_script_missing_source_exit": 2,
+    "cmake_configure_executed": false,
+    "c_compile_executed": false,
+    "unix_bash_n_exit": 0,
+    "unix_bash_n_program": "D:/Program Files/Git/bin/bash.exe",
+    "unix_build_executed": false
+  },
+  "toolchain_present": {
+    "vswhere": "C:/Program Files (x86)/Microsoft Visual Studio/Installer/vswhere.exe",
+    "visual_studio": "D:/Program Files/Microsoft Visual Studio/2022/Community",
+    "visual_studio_version": "17.5.3",
+    "vcvars64": "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Auxiliary/Build/vcvars64.bat",
+    "cl": "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe",
+    "cl_file_version": "19.35.32216.1",
+    "cmake": "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
+    "cmake_file_version": "3.25.1-msvc1",
+    "ninja": "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe",
+    "jdk17": "C:/Program Files/Java/jdk-17",
+    "jdk_release": "17.0.6",
+    "jni_h": "C:/Program Files/Java/jdk-17/include/jni.h",
+    "jni_md_h": "C:/Program Files/Java/jdk-17/include/win32/jni_md.h",
+    "java_home_set": false,
+    "process_architecture": "AMD64"
+  }
+}

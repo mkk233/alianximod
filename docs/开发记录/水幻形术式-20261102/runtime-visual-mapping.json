@@ -1,0 +1,74 @@
+{
+  "version": "Steve v2.1",
+  "userConfirmation": "这个版本好接入吧",
+  "confirmedOn": "2026-11-02",
+  "gameVerified": false,
+  "compileJavaThisIntegration": false,
+  "source": {
+    "model": {
+      "path": "docs/资源库/特效/水流/水幻形_Steve水线_v2_1/water_phantom_steve_v2_1.bbmodel",
+      "bytes": 281867,
+      "sha256": "4ADFCC75ED1E06E62ECE5FD05E6B109787FB1AC46B29CBFC5A8AF8C5425695F7"
+    },
+    "skin": {
+      "path": "docs/资源库/特效/水流/水幻形_Steve水线_v2_1/steve_water_lines.png",
+      "bytes": 2687,
+      "width": 128,
+      "height": 128,
+      "logicalUv": 64,
+      "sha256": "9E7E5B01A7E09C393D3FFA1800468BD61AE919F68CF628152B00D9C347793DA5"
+    },
+    "flakes": {
+      "path": "docs/资源库/特效/水流/水幻形_Steve水线_v2_1/water_flakes.png",
+      "bytes": 608,
+      "width": 32,
+      "height": 32,
+      "logicalUv": 32,
+      "sha256": "CEFDEE9E3E3FB7F701E19FC9CB3438C586C4841D3A50E3F8C9399A635BD4D70C"
+    }
+  },
+  "runtime": {
+    "skin": "assets/xueximod/textures/entity/xueximod/steve_water_lines.png",
+    "flakes": "assets/xueximod/textures/entity/xueximod/water_flakes.png",
+    "mesh": {
+      "path": "assets/xueximod/models/effect/water_phantom_steve_v21/lines.bin",
+      "bytes": 60666,
+      "sha256": "26EF5093F3FC9CAD03272F7BDFAD06DF771953E161B69310B2FF7E37B89F9025",
+      "pieces": 74,
+      "steveCubes": 6,
+      "flakes": 48,
+      "drops": 20,
+      "residenceHighlights": 8
+    }
+  },
+  "textureBytesMatchSource": true,
+  "excludedFromRuntime": ["auxiliary_scale", "auxiliary_head", "auxiliary_body", "auxiliary_arm_nx", "auxiliary_arm_px", "auxiliary_leg_nx", "auxiliary_leg_px", "auxiliary_ground"],
+  "unit": {
+    "modelPixelEqualsBlock": 0.0625,
+    "basis": "Forge 1.20.1 LivingEntityRenderer: yaw 180-bodyYaw, scale(-1,-1,1), translate(0,-1.501,0)",
+    "feet": "entity position plus about 0.001 block",
+    "visualHeightBlocks": 2.0,
+    "notUsed": "32/1.8"
+  },
+  "time": {
+    "residenceLoopSeconds": [0.0, 1.12],
+    "residenceClock": "(entity.tickCount + partialTick) / 20 wrapped",
+    "scatterStartSeconds": 1.12,
+    "scatterEndSeconds": 1.96,
+    "scatterDurationSeconds": 0.84,
+    "scatterClock": "1.12 + (gameTime - birthGameTime + partialTick) / 20, clamped at 1.96",
+    "snapshotExpiry": "existing notice durationTicks, unchanged",
+    "gifFramesSynced": false
+  },
+  "binding": "deploymentId synced from CloneSpec plus session token; entity UUID is the actor id and is only the fallback when no deployment id exists",
+  "draw": {
+    "repair": "fix-game-visual-01",
+    "skinFaces": "opaque texels only; one quad per texel; all four vertices use that texel center",
+    "skinTexelQuadsOffline": 3682,
+    "shader": "position_color_tex",
+    "filter": "nearest, no mipmap",
+    "linesBinUnchanged": true,
+    "compiled": false,
+    "gameVerified": false
+  }
+}

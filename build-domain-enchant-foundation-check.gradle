@@ -1,0 +1,4 @@
+// Retired after the 2026-11-13 checks. Loading it fails on purpose.
+gradle.projectsLoaded {
+    throw new GradleException("domain enchant check init script is retired")
+}

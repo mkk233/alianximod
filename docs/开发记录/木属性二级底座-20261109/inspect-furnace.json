@@ -1,0 +1,12 @@
+{
+  "batchId": "wood-secondary-base-20261109",
+  "taskId": "inspect-furnace",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "read-only-facts-handed-off",
+  "authorization": "用户授权木系资源底座和可复用状态入口，本单先最小通用化SELF_STATUS并保留炉心适配，不注册新术式。",
+  "inputVersion": "wood-secondary-base-architecture-r1-death-clear-20261109",
+  "recordPath": "D:/alianximod/docs/开发记录/木属性二级底座-20261109/记录.md",
+  "writePaths": [],
+  "dependencies": []
+}

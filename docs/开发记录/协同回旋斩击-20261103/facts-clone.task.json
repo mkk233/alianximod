@@ -1,0 +1,12 @@
+{
+  "batchId": "cooperative-slash-20261103",
+  "taskId": "facts-clone",
+  "workspace": "D:/alianximod",
+  "stage": "design",
+  "operation": "collect_existing_facts",
+  "authorization": "用户2026-11-03明确要求按独立攻击+可复用动作+协同规则开始制作；本单只收集既有接口/表格事实",
+  "inputVersion": "user-approved-minimal-composition-v1",
+  "recordPath": "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/记录.md",
+  "writePaths": [],
+  "dependencies": []
+}

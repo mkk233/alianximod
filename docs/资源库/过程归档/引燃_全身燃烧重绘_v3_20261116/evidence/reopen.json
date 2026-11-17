@@ -1,0 +1,44 @@
+{
+  "status": "candidate_pending_user_confirmation",
+  "native_codec": "Codecs.project.load",
+  "original_project": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+  "reopened_project": "79873578-7708-0ebd-5183-eaedd686d11b",
+  "model": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/blockbench/fire_kindle_v3_redraw_candidate_preview.bbmodel",
+  "model_sha256": "3C91724997E889FD58899959E2B871B311AFAF9695D42794EC91690329D55EBC",
+  "elements": 22,
+  "textures": [
+    {
+      "name": "aux_mannequin_palette.png",
+      "width": 8,
+      "height": 8,
+      "loaded": true,
+      "error": 0
+    },
+    {
+      "name": "kindle_v3_strip.png",
+      "width": 48,
+      "height": 1216,
+      "loaded": true,
+      "error": 0
+    }
+  ],
+  "screenshot": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/previews/gui_reopened_front.png",
+  "other_projects": [
+    {
+      "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+      "name": "fire_kindle_v2_candidate_preview",
+      "saved": true,
+      "elements": 22,
+      "textures": 2
+    },
+    {
+      "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+      "name": "daozhang_v1_candidate",
+      "saved": false,
+      "elements": 38,
+      "textures": 1
+    }
+  ],
+  "original_candidate_retained": true,
+  "user_projects_not_closed": true
+}

@@ -1,0 +1,9 @@
+[
+  "src/main/java/com/bslx/XueXiMod/item/ShuEmbryoItem.java",
+  "src/main/java/com/bslx/XueXiMod/item/EmbryoConversionService.java",
+  "src/main/java/com/bslx/XueXiMod/event/EmbryoConversionEvents.java",
+  "src/main/java/com/bslx/XueXiMod/mixin/AnvilMenuMixin.java",
+  "src/main/java/com/bslx/XueXiMod/mixin/ItemCombinerMenuMixin.java",
+  "src/main/java/com/bslx/XueXiMod/mixin/AbstractContainerMenuMixin.java",
+  "src/main/resources/xueximod.mixins.json"
+]

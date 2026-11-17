@@ -1,0 +1,2 @@
+模型固定 Cursor CLI --model grok-4.7-high-fast。继续设计第 1/2 轮极小只读事实补查，不是复审。只读不改文件、不编译、不测试、不启动游戏。不要再扩查其他系统，不派代理。只输出简短最终报告。
+请精确读取：ReleaseKind 枚举、ReleaseDefinition 必需抽象方法与 explicitManaCost 默认、ListedRelease 中普通 ACTION/ATTACK 最小登记工厂、effect 关联方式及 ModTechniques 调用顺序。新分身拟三个 DEVELOPMENT_ONLY Technique（clone_phantom / clone_body / clone_response_pulse），必须登记真实 ChainRole 和费用元数据，但不能冒用 SELF_STATUS 的炉心提交，也不开放普通链施放。给完整可用构造/工厂/注册签名和最小现有例子的路径行号。最多 1500 中文字；不替架构者拍板方案。

@@ -1,0 +1,39 @@
+{
+  "status": "implemented_pending_compile",
+  "session_id": "c944df97-5698-4cb3-ae72-8adf3edc9b0a",
+  "model": "grok-4.7-high-fast",
+  "source_writes_closed": true,
+  "needs_compile": true,
+  "blockers": [],
+  "formal_review": "原批设计 2/2、实现 3/3 仍耗尽。本次作者阅读检查不是新增正式复审通过。",
+  "root_cause": {
+    "discard_on_entity": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSettle.java:267-270",
+    "zero_speed_wreckage": "D:/alianximod/src/main/java/com/bslx/XueXiMod/carrier/BatchMeteorLanding.java:45-47",
+    "summary": "合法实体命中时 burstOnImpact 结束飞行体，过期落点用零速度生成无伤残骸。"
+  },
+  "changed_files": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/carrier/BatchMeteoriteEffect.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/carrier/BatchMeteorLanding.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/carrier/BatchFlightRecord.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/carrier/BatchFlightBook.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/carrier/BatchCarrierVisual.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java"
+  ],
+  "trajectory_and_visual": "同一飞行体保留原点、朝向和当前运动对象。原运动停住后，用上一拍真实位移加上已观察到的竖直加速度继续。陨岩外观跟随宿主，直到宿主移除。",
+  "repeat_settlement": "第一次合法实体命中结算直接伤害、中心、接续和费用。随后实体接触不再分类。续飞后的撞块只安放，continueChildren 为假。留焰跟踪在这次结算后解除。",
+  "checks_done": [
+    "阅读空中命中后续飞再触地",
+    "阅读直接触地",
+    "阅读再次实体接触",
+    "阅读弹道继承和原运动停住后的续算",
+    "阅读不能安放时的原残骸重试",
+    "阅读外观跟随、命中体不存档和不复制残骸"
+  ],
+  "checks_not_done": [
+    "compileJava 未执行",
+    "游戏未测",
+    "tools/check-name-gate.ps1 未执行：终端调用被拒绝，没有退出码"
+  ],
+  "balance": "没有新增或改名配置键。伤害、半径、体积、费用和缺配置回默认都保持原样。"
+}

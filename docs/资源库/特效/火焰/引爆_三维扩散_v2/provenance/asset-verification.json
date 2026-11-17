@@ -1,0 +1,257 @@
+{
+  "source_export_match": true,
+  "alpha_equal_both_variants": true,
+  "embedded_texture_pixel_match": [
+    "explosion_puff_orange-strip.png",
+    "explosion_puff_soul-strip.png"
+  ],
+  "fixed_camera_each_sequence": true,
+  "world_positions_identical_across_views_and_variants": true,
+  "all_particles_inactive_final_frame": true,
+  "particle_count_per_nonzero_effect": 26,
+  "frame_measures": [
+    {
+      "frame": 1,
+      "at_ms": 0,
+      "active_puffs": 7,
+      "center_span_blocks_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frame": 2,
+      "at_ms": 50,
+      "active_puffs": 14,
+      "center_span_blocks_xyz": [
+        0.3121,
+        0.3321,
+        0.2979
+      ]
+    },
+    {
+      "frame": 3,
+      "at_ms": 100,
+      "active_puffs": 20,
+      "center_span_blocks_xyz": [
+        0.5388,
+        0.5732,
+        0.5142
+      ]
+    },
+    {
+      "frame": 4,
+      "at_ms": 150,
+      "active_puffs": 26,
+      "center_span_blocks_xyz": [
+        0.7034,
+        0.7483,
+        0.6713
+      ]
+    },
+    {
+      "frame": 5,
+      "at_ms": 200,
+      "active_puffs": 26,
+      "center_span_blocks_xyz": [
+        0.8329,
+        0.8872,
+        0.814
+      ]
+    },
+    {
+      "frame": 6,
+      "at_ms": 250,
+      "active_puffs": 26,
+      "center_span_blocks_xyz": [
+        0.9681,
+        1.0116,
+        1.0311
+      ]
+    },
+    {
+      "frame": 7,
+      "at_ms": 300,
+      "active_puffs": 26,
+      "center_span_blocks_xyz": [
+        1.0702,
+        1.1559,
+        1.2063
+      ]
+    },
+    {
+      "frame": 8,
+      "at_ms": 350,
+      "active_puffs": 26,
+      "center_span_blocks_xyz": [
+        1.1443,
+        1.2895,
+        1.3335
+      ]
+    },
+    {
+      "frame": 9,
+      "at_ms": 400,
+      "active_puffs": 26,
+      "center_span_blocks_xyz": [
+        1.1982,
+        1.3866,
+        1.4259
+      ]
+    },
+    {
+      "frame": 10,
+      "at_ms": 450,
+      "active_puffs": 25,
+      "center_span_blocks_xyz": [
+        1.2373,
+        1.457,
+        1.493
+      ]
+    },
+    {
+      "frame": 11,
+      "at_ms": 500,
+      "active_puffs": 25,
+      "center_span_blocks_xyz": [
+        1.2656,
+        1.5082,
+        1.5417
+      ]
+    },
+    {
+      "frame": 12,
+      "at_ms": 550,
+      "active_puffs": 24,
+      "center_span_blocks_xyz": [
+        1.2863,
+        1.5453,
+        1.5771
+      ]
+    },
+    {
+      "frame": 13,
+      "at_ms": 600,
+      "active_puffs": 24,
+      "center_span_blocks_xyz": [
+        1.3012,
+        1.5723,
+        1.6028
+      ]
+    },
+    {
+      "frame": 14,
+      "at_ms": 650,
+      "active_puffs": 18,
+      "center_span_blocks_xyz": [
+        1.3121,
+        1.5919,
+        1.6214
+      ]
+    },
+    {
+      "frame": 15,
+      "at_ms": 700,
+      "active_puffs": 18,
+      "center_span_blocks_xyz": [
+        1.32,
+        1.6061,
+        1.635
+      ]
+    },
+    {
+      "frame": 16,
+      "at_ms": 750,
+      "active_puffs": 12,
+      "center_span_blocks_xyz": [
+        0.8117,
+        1.4901,
+        1.6448
+      ]
+    },
+    {
+      "frame": 17,
+      "at_ms": 800,
+      "active_puffs": 12,
+      "center_span_blocks_xyz": [
+        0.8166,
+        1.4979,
+        1.6519
+      ]
+    },
+    {
+      "frame": 18,
+      "at_ms": 850,
+      "active_puffs": 6,
+      "center_span_blocks_xyz": [
+        0.8201,
+        1.3881,
+        1.5595
+      ]
+    },
+    {
+      "frame": 19,
+      "at_ms": 900,
+      "active_puffs": 6,
+      "center_span_blocks_xyz": [
+        0.8227,
+        1.3925,
+        1.5644
+      ]
+    },
+    {
+      "frame": 20,
+      "at_ms": 950,
+      "active_puffs": 0,
+      "center_span_blocks_xyz": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "gifs": {
+    "main": {
+      "size": [
+        1200,
+        747
+      ],
+      "encoded_frames": 19,
+      "total_ms": 1650,
+      "effect_ms": 1000,
+      "display_hold_ms": 650
+    },
+    "side": {
+      "size": [
+        1152,
+        716
+      ],
+      "encoded_frames": 19,
+      "total_ms": 1650,
+      "effect_ms": 1000,
+      "display_hold_ms": 650
+    },
+    "strength": {
+      "size": [
+        1054,
+        308
+      ],
+      "encoded_frames": 19,
+      "total_ms": 1650,
+      "effect_ms": 1000,
+      "display_hold_ms": 650
+    },
+    "soul": {
+      "size": [
+        1200,
+        747
+      ],
+      "encoded_frames": 19,
+      "total_ms": 1650,
+      "effect_ms": 1000,
+      "display_hold_ms": 650
+    }
+  },
+  "forge_verified": false
+}

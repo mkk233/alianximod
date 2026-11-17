@@ -1,0 +1,150 @@
+{
+  "rootRows44to63IdenticalAllFrames": true,
+  "rootMatchesPreviousFrame0": true,
+  "localTongueFramesUnique": 16,
+  "rgbaPalette": [
+    [
+      7,
+      66,
+      83,
+      255
+    ],
+    [
+      14,
+      139,
+      158,
+      255
+    ],
+    [
+      80,
+      219,
+      222,
+      255
+    ],
+    [
+      204,
+      250,
+      245,
+      255
+    ]
+  ],
+  "frameBounds": [
+    [
+      6,
+      16,
+      60,
+      58
+    ],
+    [
+      6,
+      10,
+      60,
+      58
+    ],
+    [
+      6,
+      12,
+      60,
+      58
+    ],
+    [
+      6,
+      12,
+      60,
+      58
+    ],
+    [
+      6,
+      12,
+      58,
+      58
+    ],
+    [
+      6,
+      10,
+      58,
+      58
+    ],
+    [
+      6,
+      8,
+      58,
+      58
+    ],
+    [
+      6,
+      8,
+      58,
+      58
+    ],
+    [
+      6,
+      6,
+      58,
+      58
+    ],
+    [
+      6,
+      6,
+      58,
+      58
+    ],
+    [
+      6,
+      6,
+      58,
+      58
+    ],
+    [
+      6,
+      8,
+      58,
+      58
+    ],
+    [
+      6,
+      8,
+      58,
+      58
+    ],
+    [
+      6,
+      12,
+      58,
+      58
+    ],
+    [
+      6,
+      14,
+      58,
+      58
+    ],
+    [
+      6,
+      14,
+      60,
+      58
+    ]
+  ],
+  "all273ElementsGroupsAndHierarchyUnchanged": true,
+  "outlinerUiExpansionMayDiffer": true,
+  "all49WispAnimatorsEmpty": true,
+  "encoded": [
+    {
+      "file": "inside-sway-3p2s.gif",
+      "frames": 64,
+      "durationMs": 3200,
+      "uniqueNativeFrames": 40,
+      "source": "unmodified native Screencam PNGs; GIF palette quantization only",
+      "fixedWispTransformsAllFrames": true
+    },
+    {
+      "file": "close-sway-3p2s.gif",
+      "frames": 32,
+      "durationMs": 3200,
+      "uniqueNativeFrames": 16,
+      "source": "unmodified native Screencam PNGs; GIF palette quantization only",
+      "fixedWispTransformsAllFrames": true
+    }
+  ]
+}

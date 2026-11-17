@@ -1,6 +1,8 @@
 package com.bslx.XueXiMod.event;
 
 import com.bslx.XueXiMod.XueXiMod;
+import com.bslx.XueXiMod.shu.technique.release.relations.CombatOwnership;
+import com.bslx.XueXiMod.shu.technique.release.relations.HarmPolicy;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.Projectile;
@@ -27,14 +29,22 @@ public class EnchantedProjectileHandler {
 
         int seconds = projectile.getPersistentData().getInt("xueximod_fire_seconds");
         float radius = projectile.getPersistentData().getFloat("xueximod_fire_radius");
+        java.util.UUID owner = CombatOwnership.playerOwner(projectile);
+        if (HarmPolicy.denies(owner, target)) {
+            event.setImpactResult(ProjectileImpactEvent.ImpactResult.SKIP_ENTITY);
+            return;
+        }
 
         target.setSecondsOnFire(seconds);
 
         AABB box = target.getBoundingBox().inflate(radius);
         List<LivingEntity> nearby = projectile.level().getEntitiesOfClass(LivingEntity.class, box,
-                e -> e != target && e.isAlive());
-        for (LivingEntity e : nearby) {
-            e.setSecondsOnFire(seconds);
+                nearbyEntity -> nearbyEntity != target && nearbyEntity.isAlive());
+        for (LivingEntity nearbyEntity : nearby) {
+            if (HarmPolicy.denies(owner, nearbyEntity)) {
+                continue;
+            }
+            nearbyEntity.setSecondsOnFire(seconds);
         }
     }
 }

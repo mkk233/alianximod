@@ -1,0 +1,12 @@
+{
+  "batchId": "wood-secondary-design-20261109",
+  "taskId": "write-design-document",
+  "workspace": "D:/alianximod",
+  "stage": "delivery",
+  "operation": "write-approved-design-document",
+  "authorization": "用户要求将当前聊天最后确认的木属性机制制作成设计文档，仅授权文档整理。",
+  "inputVersion": "wood-secondary-design-final-discussion-20261109-v1-copyedit1",
+  "recordPath": "D:/alianximod/docs/开发记录/木属性设计文档-20261109/记录.md",
+  "writePaths": ["D:/alianximod/docs/木属性二级玩法设计.md"],
+  "dependencies": []
+}

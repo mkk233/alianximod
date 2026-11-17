@@ -1,0 +1,82 @@
+# 实现 A 报告：静止斩面空闲扫描
+
+设计前提成立，对应改动已落在授权文件内。没有新增监听类。源码写入已经停止，没有占用这些文件的进程。统一编译未跑，游戏未验证，不写帧数。
+
+## 改了什么
+
+客户端不再在每次 tick 和每一帧里扫描 `entitiesForRendering()`。`TechniqueHitEntity` 的加入和离开维护按客户端世界实例分开的候选集。tick 与 `AFTER_ENTITIES` 只对当前世界的候选调用原有 `offerEntity`。没有候选且快照缓存为空时直接返回。空缓存的 `copyRetained()` 返回共享空表，不分配 `ArrayList`。
+
+播放、距离、UUID 去重、时间与 `partialTick`、取消和过期都沿用原逻辑。离开候选不会删仍在播放的快照。同维复活不监听 `Clone`，也不清快照。
+
+## 文件与行号
+
+只改了这两个源文件。`TechniqueHitEntity`、`ClientTrack` 以及其他文件未动。
+
+### `src/main/java/com/bslx/XueXiMod/client/StillSheetPlayback.java`
+
+| 行 | 作用 |
+| --- | --- |
+| 50–56 | 视距仍是 96。候选表按 `ClientLevel` 实例分桶。`coveredLevel` 记住已经做过一次初始覆盖的世界。 |
+| 62–80 | 客户端 tick 末：世界指针为空则返回，不对齐、不扫描、不画。有工作才捕获候选并按游戏时间、partialTick `0` 清理过期快照。 |
+| 83–104 | `AFTER_ENTITIES`：同样的空闲返回。有快照才取 `partialTick`、绘制、再按该 partialTick 清理。 |
+| 106–115 | 加入：只收客户端世界里的 `TechniqueHitEntity`。不读斩面是否启用、帧数或出生时间。取消的加入不入集。 |
+| 117–133 | 离开：只从该世界的候选集移除。不调用 `cancel`，不删快照。取消的离开不删候选。 |
+| 135–138 | 登出：清空快照、全部候选和两个世界指针。 |
+| 140–153 | 卸载：只删被卸载的那个 `ClientLevel` 的候选。它若是当前绑定世界，才清快照并解开绑定。其他世界里已经记下的候选保留。 |
+| 155–168 | 世界实例变化时只删旧实例的候选并清快照，然后绑定新实例。新实例尚未覆盖时合并扫描一次，不先清空该实例已有候选。 |
+| 170–175 | 登出用的全清。 |
+| 177–183 | 当前世界没有候选且快照数为 0 时，后面的捕获和绘制都不进。 |
+| 185–200 | 候选按加入顺序保留。`entitiesForRendering()` 只出现在这一次覆盖里，把当时已经在渲染表中的命中实体合并进去。 |
+| 202–222 | 只遍历当前世界候选。已移除的实体退出候选，不碰快照。`level()` 暂时不是这个世界时本拍跳过，候选留着。 |
+| 224–255 | 原 `offerEntity`：未启用、未出生就返回且不移出候选；取消才 `RETAINED.cancel`；否则组快照并 `offer`。 |
+| 257–331 | 原绘制：96 格、`partialTick`、车道窗口、一张四顶点面。空表在取缓冲前返回。`sheetQuad` 仍是 317–331 行。 |
+
+### `src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/StillSheetCache.java`
+
+| 行 | 作用 |
+| --- | --- |
+| 15 | `NO_SNAPSHOTS` 是 `List.of()` 的共享空表。 |
+| 18–30 | `offer` 未改：同一 UUID 拒绝第二次，避免同步刷新重播。 |
+| 54–59 | 缓存为空时返回 `NO_SNAPSHOTS`，不 `new ArrayList`。有快照时仍复制一份再画。 |
+
+没有新的监听文件。加入和离开就挂在原来的客户端 `EventBusSubscriber` 上。
+
+## 哈希与写入时间
+
+基线是改前字节，复制到 `before-a/` 后与当时源文件 SHA256 一致。不是 git HEAD。
+
+| 文件 | 时机 | SHA256 | 本地最后写入 |
+| --- | --- | --- | --- |
+| `StillSheetPlayback.java` | 前 | `2F948C208B0062CE364DE70BF49BCD26961ADFC50C19FFD1DF59E8822898C0CF` | 2026-10-25 20:12:37.667 +08:00 |
+| `StillSheetPlayback.java` | 后 | `49698BFDEA55596E92A47CA8A2732FD7F7EF0909C6C1F59657D278739D7AF2F6` | 2026-10-30 01:57:10.787 +08:00 |
+| `StillSheetCache.java` | 前 | `3B4D07102F3370924BB9FEFC0317CDFEA91DE51B86ECFF66ED03BB7DB7CF91C1` | 2026-10-25 20:09:27.453 +08:00 |
+| `StillSheetCache.java` | 后 | `5212D623FF8B805440D0B088500686D259B6D8C5D289CE285BF18C9783FC05AD` | 2026-10-30 01:54:31.103 +08:00 |
+
+字节：播放 10080 → 13834，缓存 2989 → 3147。UTC 与副本路径在 `implement-a-evidence.json`。
+
+## 边界怎么保住
+
+1. 加入时不判断斩面类型。同步数据晚到时，实体还在候选里，后续 tick 和帧继续走原来的 `offerEntity`。未启用或出生时间仍为负就返回，不把候选删掉。
+2. 当前世界无候选且 `RETAINED.size()==0` 时，tick 和渲染在捕获、取缓冲、`copyRetained` 之前返回。空缓存返回共享空表。绘制、组快照和过期判断没有重写。
+3. UUID 去重仍是第一次 `offer` 成功、以后拒绝。tick 仍用 partialTick `0`，渲染仍用事件的 partialTick。实体离开或 `isRemoved` 只出候选；快照留到原来的过期、显式取消或世界清理。同维复活不注册 `Clone`，`ClientLevel` 实例不变时不清快照。
+4. 候选的键是 `ClientLevel` 实例，不是维度名字，也不是当时的 `Minecraft.level`。登出清全部。卸载只清那个实例；切换只清旧的绑定实例。事件若早于 `Minecraft.level` 更新，候选已经挂在事件里的世界上，初始化不会先清空再扫描。
+5. 监听类只在客户端注册，并且加入/离开再确认是 `ClientLevel`，服务端逻辑世界的事件直接返回。视距、顶点、贴图时钟和命中都没改。
+
+首次启用：这个类随模组客户端总线注册，早于进入世界。之后的加入和离开都会记账。
+
+已加载实体：某个 `ClientLevel` 第一次被绑定时，合并扫描一次当时的 `entitiesForRendering()`，只把其中的 `TechniqueHitEntity` 加进该世界已有候选。扫描不替换事件已经记下的实体。该实例的 `coveredLevel` 一旦记上，后续 tick 和帧不再扫全表。没有「候选为空就再扫一遍」的兜底。
+
+`Minecraft.level == null` 时直接返回，不调用全清。这样指针还没切到新世界时，不会把已经到达的候选和另一侧世界的快照一起抹掉。真正清空仍是登出、该实例卸载，以及绑定实例切换。
+
+## 命名检查
+
+`powershell -NoProfile -File tools/check-name-gate.ps1` 退出码 1。日志：`name-gate-a.log`。
+
+本次两个源文件没有违规。未改的 `OriginalHumanoid.java` 165 行 `i`、202 行 `to` 仍在结果里，没有顺手改。
+
+## 未完成
+
+- 统一编译未跑。相关源码还有其他作者，本任务也没有编译授权。
+- 游戏内未验证。
+- 不估计帧数。
+- 源码写入已停止。本报告和 `implement-a-evidence.json`、`name-gate-a.log`、`before-a/` 之后不再写 Java。

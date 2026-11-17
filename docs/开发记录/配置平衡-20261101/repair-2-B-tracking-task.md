@@ -1,0 +1,2 @@
+固定Cursor CLI --model grok-4.7-high-fast。原B作者只落实你repair-2-B-final.md明确报告的未完成：正伤抛出时，必须保留原confirmTracked已经确认受伤的收据，不无条件退款。A现已最终交回并释放，接口见本批命中裁决接口.md：六参数classifyConfirmed(..., ConfirmedDamage outcome)与原confirmTracked共用跟踪，outcome.accepted仍只代表正伤。请只在你拥有的DomainContactBilling.java及必要B接触辅助类接回原异常路径跟踪/收据语义，零伤仍按repair-2合同continues而不产种。
+仅读上述接口文档、你自己上次终稿与必要调用代码，不能改TechniqueHits/A文件、不能扩做正式复审。设计2/2用尽，实现2/3，本单是完成既定修复的接口衔接，不新计复核，不编译/测试/游戏/改表/提交。保存修前字节pre-repair-2/B-tracking/（原备份不覆盖），更新author-B-manifest.json。最终报告明确异常收据如何恢复、所有写入释放；不要宣称正式复核通过。

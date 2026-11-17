@@ -1,0 +1,40 @@
+{
+  "purpose": "火种来源三项备注的实际表同步。这次没有覆盖源表。",
+  "tableSync": "表格同步未完成",
+  "submitted": false,
+  "block": "独占打开失败。Excel 进程 37752 自 2026-10-29 12:23:41 占用 docs/术式制作表.xlsx。",
+  "thisWritebackIsAnotherReview": false,
+  "designQuota": "2/2",
+  "implementationQuota": "3/3",
+  "historicalTestKept": 1,
+  "independentTestStage": false,
+  "acceptancePassed": false,
+  "migrated": false,
+  "before": {
+    "sha256": "5F8B37C4A45673CF320F4885EB5BDBF1961960013151EE082EF2C6DFF7FADA28",
+    "lastWriteTime": "2026-10-29T12:10:57.383+08:00",
+    "bytes": 152881,
+    "onDiskUnchanged": true
+  },
+  "after": null,
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/seed-source-writeback-术式制作表-20261029-131231-1.xlsx",
+  "candidate": "docs/开发记录/术式批量制作/火系六式-20261029/seed-source-writeback-candidate-preserved.xlsx",
+  "candidateSha256": "8F9ED61F2EBBB7C1EEE389412249793825FCE1B76EB96D30737D18FB125FF0D4",
+  "candidateChangedParts": ["xl/worksheets/sheet1.xml"],
+  "compile": {
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "start": "2026-10-29T13:08:23.9470594+08:00",
+    "end": "2026-10-29T13:08:48.9103912+08:00",
+    "exitCode": 0
+  },
+  "review": {
+    "session": "9d65bd93-77f0-4ed3-a35d-bb165be0d93e",
+    "round": "3/3",
+    "passed": true
+  },
+  "items": [
+    {"id": "heat_beam", "from": "已完成", "fromRow": 19, "to": "已完成", "toRow": 19, "result": "源表未改", "reason": "缺旧详细快照，且源表被 Excel 占用"},
+    {"id": "fire_orb", "from": "已完成", "fromRow": 22, "to": "已完成", "toRow": 22, "result": "源表未改", "reason": "缺旧详细快照，且源表被 Excel 占用"},
+    {"id": "magic_ignite", "from": "已完成", "fromRow": 29, "to": "已完成", "toRow": 29, "result": "源表未改", "reason": "缺旧详细快照，且源表被 Excel 占用"}
+  ]
+}

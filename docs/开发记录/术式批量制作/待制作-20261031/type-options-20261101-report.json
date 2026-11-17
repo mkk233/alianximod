@@ -1,0 +1,25 @@
+{
+  "submitted": true,
+  "added": [
+    {"cell": "数据表!Q9", "value": "附魔"},
+    {"cell": "数据表!Q10", "value": "领域"}
+  ],
+  "names": ["剑术", "动作", "法术", "通用", "领域附魔", "附魔", "领域"],
+  "definedName": "数据表!$Q$4:$Q$10",
+  "validationFormula": "=术式类型",
+  "validationSqrefChanged": false,
+  "oldOptionsKept": true,
+  "codesInvented": false,
+  "filledCellsChanged": false,
+  "gloomCell": "制作中!C16",
+  "gloomType": "领域附魔",
+  "baselineSha256": "02FC2FD007D695611615AC9A7F26EAE4EE9562303A06E692FDC016DFA166CCE7",
+  "liveSha256": "54CE18A22A13E3615EE44DAA08FB7B636FF1D6944AF6368B35E25AEA4D51663D",
+  "bytes": 222580,
+  "mtime": "2026-11-01 00:58:33.033",
+  "counts": {"已完成": 40, "待制作": 0, "制作中": 16, "待验收": 4},
+  "reopenMatches": true,
+  "renderedRange": "数据表!Q4:S10",
+  "method": "ooxml-part-copy",
+  "exportRebuilt": false
+}

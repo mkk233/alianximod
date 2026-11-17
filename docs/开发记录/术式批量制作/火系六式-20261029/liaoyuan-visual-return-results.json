@@ -1,0 +1,34 @@
+{
+  "submitted": true,
+  "from": {"sheet": "待验收", "row": 3, "id": "fire_liaoyuan"},
+  "to": {"sheet": "制作中", "row": 6, "id": "fire_liaoyuan"},
+  "pendingAfter": [
+    {"row": 3, "id": "fire_liaoli"},
+    {"row": 4, "id": "fire_fentian"}
+  ],
+  "makingUnchanged": ["fire_heat_up", "fire_burn", "fire_cool"],
+  "baselineSha256": "D80BC892E051CAD5CB5E553244A04E5EF96961CEB4A1F85C894269BAEB83EC16",
+  "baselineMtime": "2026-10-29T21:49:31.567",
+  "baselineBytes": 154878,
+  "sha256": "50877EAF6C0D34DAAA49465DE447F8600073BE19348D3C90B96B2F0A1D4985E7",
+  "mtime": "2026-10-29T23:06:38.745",
+  "bytes": 158165,
+  "backup": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoyuan-visual-return-术式制作表-20261029-230606-1.xlsx",
+  "unusedBaselineCopy": "docs/开发记录/术式批量制作/火系六式-20261029/备份/liaoyuan-visual-return-术式制作表-20261029-230549-1.xlsx",
+  "reopen": {
+    "differentParts": ["xl/worksheets/sheet3.xml", "xl/worksheets/sheet4.xml"],
+    "counts": {"已完成": 40, "待制作": 0, "制作中": 4, "待验收": 2},
+    "unique46": true,
+    "sharedFuelDetailRestored": true,
+    "feedbackAppended": true,
+    "pendingHasLiaoyuan": false
+  },
+  "status": "返修中",
+  "recompiled": false,
+  "playtestPassed": false,
+  "fuelDesignChanged": false,
+  "reviewAdded": false,
+  "quota": {"design": "2/2", "implementation": "3/3"},
+  "nextSourceTask": "liaoyuan-visual-repair-current-task.md",
+  "nextSourceTaskStarted": false
+}

@@ -1,0 +1,12 @@
+{
+  "batchId": "release-variants-20261109",
+  "taskId": "inspect-base",
+  "workspace": "D:/alianximod",
+  "stage": "design",
+  "operation": "read",
+  "authorization": "用户2026-11-09明确授权八个多重/分裂术式。此单只读定位现有共享入口、注册、配置、表格及并发所有权，不判断验收，不改文件。",
+  "inputVersion": "user-release-variants-20261109-v1",
+  "recordPath": "D:/alianximod/docs/开发记录/术式批量制作/多重与分裂扩展-20261109/记录.md",
+  "writePaths": [],
+  "dependencies": []
+}

@@ -1,0 +1,82 @@
+{
+  "sha256": "02FC2FD007D695611615AC9A7F26EAE4EE9562303A06E692FDC016DFA166CCE7",
+  "bytes": 222567,
+  "mtime": "2026-11-01 00:53:32.708",
+  "types": [
+    {
+      "row": 4,
+      "Q": "剑术",
+      "R": "SWORD",
+      "S": "剑术书。熟练等级不低于复杂度才解锁"
+    },
+    {
+      "row": 5,
+      "Q": "动作",
+      "R": "MOVEMENT",
+      "S": "动作。默认可用，装配消耗为 0"
+    },
+    {
+      "row": 6,
+      "Q": "法术",
+      "R": "MAGIC",
+      "S": "法术书。熟练等级不低于复杂度才解锁"
+    },
+    {
+      "row": 7,
+      "Q": "通用",
+      "R": "UNIVERSAL",
+      "S": "两本书都能写。默认可用"
+    },
+    {
+      "row": 8,
+      "Q": "领域附魔",
+      "R": null,
+      "S": null
+    }
+  ],
+  "nextTypeRow": 9,
+  "nextRowExists": true,
+  "definedNames": [
+    "<definedName name=\"术式类型\">数据表!$Q$4:$Q$8</definedName>"
+  ],
+  "validations": [
+    {
+      "sheet": "已完成",
+      "attrs": "sqref=\"C3:C80\" showDropDown=\"0\" showInputMessage=\"0\" showErrorMessage=\"0\" allowBlank=\"1\" errorTitle=\"术式类型\" error=\"请从数据表的列表里选\" promptTitle=\"从数据表选择\" prompt=\"术式类型\" type=\"list\"",
+      "formula1": "=术式类型"
+    },
+    {
+      "sheet": "待制作",
+      "attrs": "sqref=\"C3:C80\" showDropDown=\"0\" showInputMessage=\"0\" showErrorMessage=\"0\" allowBlank=\"1\" errorTitle=\"术式类型\" error=\"请从数据表的列表里选\" promptTitle=\"从数据表选择\" prompt=\"术式类型\" type=\"list\"",
+      "formula1": "=术式类型"
+    },
+    {
+      "sheet": "制作中",
+      "attrs": "sqref=\"C3:C80\" showDropDown=\"0\" showInputMessage=\"0\" showErrorMessage=\"0\" allowBlank=\"1\" errorTitle=\"术式类型\" error=\"请从数据表的列表里选\" promptTitle=\"从数据表选择\" prompt=\"术式类型\" type=\"list\"",
+      "formula1": "=术式类型"
+    },
+    {
+      "sheet": "待验收",
+      "attrs": "sqref=\"C3:C80\" showDropDown=\"0\" showInputMessage=\"0\" showErrorMessage=\"0\" allowBlank=\"1\" errorTitle=\"术式类型\" error=\"请从数据表的列表里选\" promptTitle=\"从数据表选择\" prompt=\"术式类型\" type=\"list\"",
+      "formula1": "=术式类型"
+    }
+  ],
+  "pages": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "gloom": [
+    {
+      "sheet": "制作中",
+      "row": 16,
+      "C": "领域附魔",
+      "N": "领域附魔，替换已被否决的魂焰减速。领域内不断冒出魂火，给领域内敌对生物增加火种。领域内的火系术式表现为蓝火。不给减速，不新增魂系资源，不附带免费额外伤害。它依附领域载体，范围和时长继承载体，不自己凭空创建领域。灵魂火地带的载体是灼地，组合为地表定位、幽冥、灼地，不另建组合行。蓝火只是表现变化，不改变伤害归属或免疫。\n正在燃烧的目标也可以获得新增火种。火种进入同一个余额后，尚未结束的燃烧可以消耗它，不因此刷新燃烧的启动倍率或时长。产种量、周期和重叠策略用户尚未最终确认。"
+    }
+  ],
+  "missing": [
+    "附魔",
+    "领域"
+  ]
+}

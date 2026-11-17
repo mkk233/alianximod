@@ -1,0 +1,1047 @@
+{
+  "version": "v1",
+  "authorization": "先保留这个版本，额度不够用了暂时，之后再重置，暂时直接按照这个版本执行",
+  "playtestPassed": false,
+  "copiedToSrc": false,
+  "items": [
+    {
+      "id": "fire_spark",
+      "name": "火苗",
+      "logicalObject": "飞行火苗条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/火焰/火苗_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/fire_spark_v1/fire_spark.png",
+      "runtimeNote": "运行时使用竖条 PNG，不要把 aseprite 直接放进 src",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "fire_spark-strip.png",
+          "bytes": 6788,
+          "sha256": "07407B8570B6EEAF9EFC764BD1365F1589A9C5427EDE4A8B1B9748D03E7DF58E",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "fire_spark.aseprite",
+          "bytes": 10638,
+          "sha256": "E6E0CD55FB55065FDCFE18EAD1A80409370F44D22BBF5A68CB3B4609F7E0009A"
+        },
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire_flame_trail",
+      "name": "留焰",
+      "logicalObject": "短焰采样条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/火焰/留焰_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/flame_trail_v1/flame_trail.png",
+      "runtimeNote": "运行时使用竖条 PNG",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "flame_trail-strip.png",
+          "bytes": 12057,
+          "sha256": "F1B0D723B4AEA57B37FCA4928AFAF492E8F1020D864183F36EDABF379BE95284",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "flame_trail.aseprite",
+          "bytes": 19751,
+          "sha256": "656C31D277D03FDBF9D4A6AAF5C398CB13ED1F0D97B07240928071B25C7FFA55"
+        },
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire_meteorite",
+      "name": "陨岩",
+      "logicalObject": "陨岩方块",
+      "formalDirectory": "D:/alianximod/docs/资源库/材质/方块/陨岩_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/block/meteorite_v1.png",
+      "runtimeNote": "六面只接 32×32 的 meteorite-block-texture.png。64×64 条带只是外观预览，不能贴到立方体六个面",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "meteorite-block-texture.aseprite",
+          "bytes": 1422,
+          "sha256": "6BDCFDB1DF513B17F9C9193BB74A3D8EB86A913DB023F4D25F5C69980A25E387"
+        },
+        {
+          "name": "meteorite-block-texture.png",
+          "bytes": 761,
+          "sha256": "E8CA06D343A6E6A60082C542869FDA9BE4B9DE040904EEF59BAF52D28CBC1D3A",
+          "png": true,
+          "width": 32,
+          "height": 32,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 31,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 31,
+                "alpha": 255
+              },
+              {
+                "x": 31,
+                "y": 31,
+                "alpha": 255
+              }
+            ]
+          },
+          "frameCount": 1,
+          "role": "block-cube-texture"
+        },
+        {
+          "name": "meteorite-strip.png",
+          "bytes": 10689,
+          "sha256": "89C720EC217F1CC2253E2F5BF5C276BB0E2C5C67222F46D0C6E9E292D048347A",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16,
+          "role": "appearance-preview-only"
+        },
+        {
+          "name": "meteorite.aseprite",
+          "bytes": 24555,
+          "sha256": "FE0292434E1EA7A31C37378D3F6AC4B8BAA6773AF2B2B36E020BDFCFC0B40881"
+        },
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire_shock_ring",
+      "name": "热波",
+      "logicalObject": "热波环条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/火焰/热波_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/shock_ring_v1/shock_ring.png",
+      "runtimeNote": "运行时使用竖条 PNG",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        },
+        {
+          "name": "shock_ring-strip.png",
+          "bytes": 7678,
+          "sha256": "3CF9F5728C0B70EEE2CC09E61B4F6182E6254516CC7B955939907755C654BBC4",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "shock_ring.aseprite",
+          "bytes": 9423,
+          "sha256": "ABEE4DB17D60D584F774789BFFC5C2079E2BA6E9A3A2F21160114193FED60BBC"
+        }
+      ]
+    },
+    {
+      "id": "rule_surface_anchor",
+      "name": "地表定位",
+      "logicalObject": "地表锚点条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/标记/地表定位_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/surface_anchor_v1/surface_anchor.png",
+      "runtimeNote": "运行时使用竖条 PNG",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        },
+        {
+          "name": "surface_anchor-strip.png",
+          "bytes": 4058,
+          "sha256": "7801A4513A63D26DAA8567F06A33834E46FD9F0AD71F5CDA3CE7F471AC39D018",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "surface_anchor.aseprite",
+          "bytes": 8939,
+          "sha256": "FE9AEA38D364E2794C6EA561DF6D84476CE987D789AC852D97B50E1CA1D7F5BB"
+        }
+      ]
+    },
+    {
+      "id": "fire_seed_sow",
+      "name": "种火",
+      "logicalObject": "播种火种条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/火焰/种火_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/seed_sow_v1/seed_sow.png",
+      "runtimeNote": "运行时使用竖条 PNG",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        },
+        {
+          "name": "seed_sow-strip.png",
+          "bytes": 3381,
+          "sha256": "38CFAAE9D154AD09262680CF2053E68B2BA3D9BAF9C4FEF1769D78252D750458",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "seed_sow.aseprite",
+          "bytes": 6806,
+          "sha256": "6C08B61B0B5903BAFD17FE84EF2E9D18B70673B3259206CE1BFB36C70B1DB24C"
+        }
+      ]
+    },
+    {
+      "id": "fire_kindle",
+      "name": "引燃",
+      "logicalObject": "引燃条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/火焰/引燃_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/kindle_v1/kindle.png",
+      "runtimeNote": "运行时使用竖条 PNG",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "kindle-strip.png",
+          "bytes": 8474,
+          "sha256": "2490F9E2D5A8914D9A1B7080E40DD4FB0FB9188C8AA64951A88F34389F853E73",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "kindle.aseprite",
+          "bytes": 12456,
+          "sha256": "886DE6AF4831F48AE0A2C9662952FD949ED7522C17F19BF349DEC1017B6434A0"
+        },
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire_detonate",
+      "name": "引爆",
+      "logicalObject": "引爆条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/火焰/引爆_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/detonate_v1/detonate.png",
+      "runtimeNote": "运行时使用竖条 PNG",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "detonate-strip.png",
+          "bytes": 11013,
+          "sha256": "F3F0FCEB4A8AAECBA5EAC2B300C1FD5036B0E9EEAF1CD04B1A4F38FC1C79D858",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "detonate.aseprite",
+          "bytes": 12507,
+          "sha256": "3636C75855F6255232F05D8DCB3A90C1E45FCEEC7DDC48958C9EFDE56E108265"
+        },
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire_nether_gloom",
+      "name": "幽冥",
+      "logicalObject": "幽冥领域条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/火焰/幽冥_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/nether_gloom_v1/nether_gloom.png",
+      "runtimeNote": "运行时使用竖条 PNG。蓝色只是视觉，不生成原版火",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "nether_gloom-strip.png",
+          "bytes": 8759,
+          "sha256": "1E7CD18441C29D5F018D8B239D0A9A737B784C9F45BAA4202F45AEFF07F3B49F",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "nether_gloom.aseprite",
+          "bytes": 12295,
+          "sha256": "B0193B2D477D7E2BF34A82CD521DF2F7ECF27DFA5B83C31C8B7820C47D213CD5"
+        },
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "earth_break_ground",
+      "name": "崩地",
+      "logicalObject": "土尘条带",
+      "formalDirectory": "D:/alianximod/docs/资源库/特效/大地/崩地_v1",
+      "recommendedRuntimePath": "assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png",
+      "runtimeNote": "只有土尘条带。没有坑形贴图，不能把土尘贴成碗形地形",
+      "copiedToSrc": false,
+      "playtestPassed": false,
+      "files": [
+        {
+          "name": "ground_dust-strip.png",
+          "bytes": 6678,
+          "sha256": "0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A",
+          "png": true,
+          "width": 64,
+          "height": 1024,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 0,
+                "alpha": 0
+              },
+              {
+                "x": 0,
+                "y": 1023,
+                "alpha": 0
+              },
+              {
+                "x": 63,
+                "y": 1023,
+                "alpha": 0
+              }
+            ]
+          },
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 16
+        },
+        {
+          "name": "ground_dust.aseprite",
+          "bytes": 8614,
+          "sha256": "3B518E0FD4D3272D05C4A377987D018EA7F9E37AB603ED798AFDFE5B507F0C07"
+        },
+        {
+          "name": "review-board.aseprite",
+          "bytes": 110033,
+          "sha256": "3A2CC5CC31E957C97314F6CB044AFA4D442BC663BB1517370E79755220E387D5"
+        },
+        {
+          "name": "review-board.gif",
+          "bytes": 397105,
+          "sha256": "D4BDF75F2CEB7D8D4321F621B035F34F51D2025B552F786056D149C973DC9EB9"
+        },
+        {
+          "name": "review-board.png",
+          "bytes": 14251,
+          "sha256": "F12DBED20CC2C0E9097052E0454D2EE6EF22FE36FDCD7D490008CBB268D17F35",
+          "png": true,
+          "width": 1200,
+          "height": 480,
+          "bitDepth": 8,
+          "colorType": 6,
+          "corners": {
+            "corners": [
+              {
+                "x": 0,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 0,
+                "alpha": 255
+              },
+              {
+                "x": 0,
+                "y": 479,
+                "alpha": 255
+              },
+              {
+                "x": 1199,
+                "y": 479,
+                "alpha": 255
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "noNewArt": [
+    {
+      "id": "fire_upwell",
+      "name": "喷涌",
+      "note": "暂用载体运动示意，无独立新素材"
+    },
+    {
+      "id": "rule_stagger",
+      "name": "错时",
+      "note": "暂用载体运动示意，无独立新素材"
+    },
+    {
+      "id": "rule_hit_continue",
+      "name": "命中接续",
+      "note": "暂用载体运动示意，无独立新素材"
+    }
+  ]
+}

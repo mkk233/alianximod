@@ -48,7 +48,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.zhu_block.get(),
                     ModBlocks.end_ars_ore.get(),
                     ModBlocks.nether_ars_ore.get(),
-                    ModBlocks.deeplate_ars_ore.get());
+                    ModBlocks.deeplate_ars_ore.get(),
+                    ModBlocks.METEORITE.get());
 
         // 木制方块用斧头挖掘
         this.tag(BlockTags.MINEABLE_WITH_AXE)
@@ -59,6 +60,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.deeplate_ars_ore.get());
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.nether_ars_ore.get());
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.shu_block.get());
+        this.tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.METEORITE.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).add(ModBlocks.end_ars_ore.get());
     }

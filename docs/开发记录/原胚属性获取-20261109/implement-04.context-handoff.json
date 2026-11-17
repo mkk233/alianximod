@@ -1,0 +1,4 @@
+{
+  "reason": "provider native Run expired 410; bounded single-file continuation",
+  "priorHistory": "implement-04.prior-history.json"
+}

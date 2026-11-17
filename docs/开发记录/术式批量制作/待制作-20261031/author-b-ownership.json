@@ -1,0 +1,83 @@
+{
+  "author": "B",
+  "phase": "资源API与六个附魔第一阶段",
+  "model": "grok-4.7-high-fast",
+  "exclusive_existing": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/EnchantBonus.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/FireCastContext.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedAccount.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedState.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedGrant.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedProduction.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/FireSeedMath.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireLimits.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/BurnLedger.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireConsumption.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/FireRuntimeEvents.java"
+  ],
+  "exclusive_new": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantNumbers.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantLoad.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantDefinition.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/TrailContract.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/NetherContract.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/BreakGroundShape.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceHitCommit.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/HitResourceResult.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/ResourceEffectKeys.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/KindlePlan.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/DetonatePlan.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/fire/RemainderRotation.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/SeedMergeResult.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/SeedMerge.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/NetherWindowResult.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/seed/NetherSeedArbiter.java"
+  ],
+  "read_only_seams": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceService.java",
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/status/fire/furnace/FurnaceMath.java"
+  ],
+  "compile_fix": {
+    "phase": "ResourceEnchantSlice方法重名与连带类型错误",
+    "files": [
+      {
+        "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantSlice.java",
+        "sha256": "7659032A12D77DD578CAA9355290959D367FC8C49222E252F42235791F411552",
+        "mtime": "2026-10-31 12:48:21.455"
+      },
+      {
+        "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/enchant/resource/ResourceEnchantCatalog.java",
+        "sha256": "ED91E0DFAA79690378AAA1C77E23D88F3351A15624124D390570C590366F993A",
+        "mtime": "2026-10-31 12:48:22.122"
+      },
+      {
+        "path": "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/EnchantmentDefinitions.java",
+        "sha256": "3010454BF5FC38FD93B617D41DFEF4CE3A589C19E6CAB71DE5F7BAA844866272",
+        "mtime": "2026-10-31 03:36:22.103",
+        "note": "仍调用静态工厂，本次未改"
+      }
+    ]
+  },
+  "not_authorized": [
+    "CastFrame",
+    "ReleaseBatch",
+    "TechniqueHitSpec",
+    "TechniqueHitEntity",
+    "TechniqueHitSettle",
+    "TechniqueHits",
+    "ModTechniques",
+    "Technique",
+    "ReleaseDefinitions",
+    "WeaponEnchant",
+    "EnchantmentSnapshot",
+    "DomainService",
+    "DomainInstance",
+    "ContactEnchantState",
+    "ModBlocks",
+    "BurnCarrier",
+    "FuelShare"
+  ]
+}

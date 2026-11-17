@@ -1,0 +1,93 @@
+{
+  "tools": [
+    {
+      "name": "mcp__magpie.aseprite__status",
+      "result": "1.3.17, batch ready, live.connected=false"
+    },
+    {
+      "name": "mcp__magpie.aseprite__launch_aseprite",
+      "result": "connected=true; existing installed native GUI"
+    },
+    {
+      "name": "mcp__magpie.aseprite__run_lua",
+      "count": 2,
+      "response_each": "Aseprite disconnected before answering",
+      "native_operations_observed": [
+        "new palette-only editable source and sprite sheet saved",
+        "native source reopened and GIF exported"
+      ],
+      "file_evidence": [
+        "evidence/aseprite-native.txt",
+        "evidence/aseprite-reopen.txt",
+        "evidence/encoding-and-pixels.json"
+      ]
+    },
+    {
+      "name": "mcp__magpie.blockbench__get_capabilities",
+      "result": "desktop 5.2.2; plugin 1.10.1; active old project 0ff57af5-a0c2-9110-a30c-aa29bf43c939"
+    },
+    {
+      "name": "mcp__magpie.blockbench__risky_eval",
+      "result": "native clone/load, editable constructors and scoped Undo, Codecs.project.write/load, synchronous Screencam.screenshotPreview successful"
+    }
+  ],
+  "aseprite_palette_mapping_applied_to_existing_nontransparent_cel_pixels": [
+    {
+      "condition": "oldG >= 220 and oldR >= 100",
+      "rgb": [
+        204,
+        250,
+        245
+      ]
+    },
+    {
+      "condition": "else oldG >= 185",
+      "rgb": [
+        80,
+        219,
+        222
+      ]
+    },
+    {
+      "condition": "else oldG >= 130",
+      "rgb": [
+        14,
+        139,
+        158
+      ]
+    },
+    {
+      "condition": "else",
+      "rgb": [
+        7,
+        66,
+        83
+      ]
+    }
+  ],
+  "alpha_untouched_in_Aseprite": true,
+  "outside_view_visibility_correction": "Initial group-only visibility did not hide proxy in actual screenshot. Corrected to child cube visibility, recaptured, inspected, restored before save.",
+  "hidden_window_raf": "Not used during this attempt",
+  "desktop_control": false,
+  "imagegen": false,
+  "headless": false,
+  "alternate_instance": false,
+  "global_configuration_changed": false,
+  "reopened_viewport_byte_identical": false,
+  "reopened_viewport_changed_pixels": 98,
+  "reopened_viewport_pixel_count": 1167360,
+  "reopened_viewport_inspection": "Same scene, camera and materials visually verified. Small pixel differences are recorded, not claimed byte-identical; cause not independently verified.",
+  "images_inspected_with_view_image": [
+    "compare-old-same-camera.png",
+    "01-inside-eye-sky-and-fire.png",
+    "02-overall-three-quarter.png",
+    "03-side-person-height.png",
+    "v2-palette-preview.gif",
+    "inside-soulvalley-4s.gif",
+    "evidence/reopened-actual-viewport.png",
+    "frames/inside_027.png",
+    "frames/inside_054.png"
+  ],
+  "original_projects_preserved": 22,
+  "forge_validation": "not run"
+}

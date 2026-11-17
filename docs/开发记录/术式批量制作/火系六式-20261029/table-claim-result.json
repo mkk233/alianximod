@@ -1,0 +1,101 @@
+{
+  "submitted": true,
+  "baselineSha256": "35CC4218A03152A4C9880A44EC20F99485E884141027909055603FB04D6E4803",
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\术式制作表-20261029-023143-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\table-candidate-preserved.xlsx",
+  "candidateSha256": "053366B785B3C9B25C4E43B75F36F93F68C142655740EFAB1CF5F79FBF43B3B6",
+  "submittedSha256": "053366B785B3C9B25C4E43B75F36F93F68C142655740EFAB1CF5F79FBF43B3B6",
+  "submittedMtime": "2026-10-29 02:41:03.540",
+  "submittedBytes": 77699,
+  "changedParts": [
+    "xl/workbook.xml",
+    "xl/worksheets/sheet2.xml",
+    "xl/worksheets/sheet3.xml"
+  ],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 6,
+    "待验收": 0
+  },
+  "total": 46,
+  "unique": 46,
+  "claimed": [
+    {
+      "id": "fire_liaoyuan",
+      "name": "燎原",
+      "sourceSheet": "待制作",
+      "sourceRow": 3,
+      "targetSheet": "制作中",
+      "targetRow": 3
+    },
+    {
+      "id": "fire_liaoli",
+      "name": "燎里",
+      "sourceSheet": "待制作",
+      "sourceRow": 4,
+      "targetSheet": "制作中",
+      "targetRow": 4
+    },
+    {
+      "id": "fire_fentian",
+      "name": "焚天",
+      "sourceSheet": "待制作",
+      "sourceRow": 5,
+      "targetSheet": "制作中",
+      "targetRow": 5
+    },
+    {
+      "id": "fire_heat_up",
+      "name": "升温",
+      "sourceSheet": "待制作",
+      "sourceRow": 6,
+      "targetSheet": "制作中",
+      "targetRow": 6
+    },
+    {
+      "id": "fire_burn",
+      "name": "燃烧",
+      "sourceSheet": "待制作",
+      "sourceRow": 7,
+      "targetSheet": "制作中",
+      "targetRow": 7
+    },
+    {
+      "id": "fire_cool",
+      "name": "冷却",
+      "sourceSheet": "待制作",
+      "sourceRow": 8,
+      "targetSheet": "制作中",
+      "targetRow": 8
+    }
+  ],
+  "detailIds": [
+    [
+      3,
+      "water_mist"
+    ],
+    [
+      4,
+      "water_deep_pressure"
+    ],
+    [
+      5,
+      "water_deep_pressure"
+    ],
+    [
+      6,
+      "tide_mark"
+    ]
+  ],
+  "detailUnchanged": true,
+  "namedRangeChanges": [
+    "<definedName name=\"_xlnm._FilterDatabase\" localSheetId=\"1\" hidden=\"1\">'待制作'!$A$2:$EN$2</definedName>",
+    "<definedName name=\"_xlnm._FilterDatabase\" localSheetId=\"2\" hidden=\"1\">'制作中'!$A$2:$EN$8</definedName>"
+  ],
+  "columnWidthsCarriedToMaking": {
+    "N": 80,
+    "O": 52,
+    "DV": 90
+  }
+}

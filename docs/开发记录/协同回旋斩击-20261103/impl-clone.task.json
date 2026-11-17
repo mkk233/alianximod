@@ -1,0 +1,17 @@
+{
+  "batchId": "cooperative-slash-20261103",
+  "taskId": "impl-clone",
+  "workspace": "D:/alianximod",
+  "stage": "implementation",
+  "operation": "implement",
+  "authorization": "用户2026-11-04扩大协同距离授权，设计第2轮已定稿；I公共协议已最终reported_done收束，C按原核心单作者落实REMOTE_RECALL及有界空间预算，未编译、不追加复审",
+  "inputVersion": "design-round-2+integration-range-20261104-final",
+  "recordPath": "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/记录.md",
+  "writePaths": [
+    "D:/alianximod/src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/",
+    "D:/alianximod/docs/开发记录/协同回旋斩击-20261103/clone-range-20261104-delivery.md"
+  ],
+  "dependencies": [
+    "impl-integration"
+  ]
+}

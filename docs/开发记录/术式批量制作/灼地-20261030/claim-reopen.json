@@ -1,0 +1,80 @@
+{
+  "liveEqualsCandidate": true,
+  "sha256": "9E79A331524B770F79CC74A311ADDCACB5C63C0E0B57FB85A0D802E8BFECD2F9",
+  "bytes": 181667,
+  "mtime": "2026-10-30T20:01:47.033+08:00",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 3
+  },
+  "unique": 60,
+  "total": 60,
+  "pendingHasScorch": false,
+  "making": [
+    [
+      "fire_heat_up",
+      3
+    ],
+    [
+      "fire_burn",
+      4
+    ],
+    [
+      "fire_cool",
+      5
+    ],
+    [
+      "fire_scorch_field",
+      6
+    ]
+  ],
+  "archive": [
+    [
+      "fire_liaoyuan",
+      3
+    ],
+    [
+      "fire_liaoli",
+      4
+    ],
+    [
+      "fire_fentian",
+      5
+    ],
+    [
+      "fire_heat_up",
+      6
+    ],
+    [
+      "fire_burn",
+      7
+    ],
+    [
+      "fire_cool",
+      8
+    ],
+    [
+      "fire_scorch_field",
+      9
+    ]
+  ],
+  "makingName": "灼地",
+  "makingN": true,
+  "makingO": true,
+  "makingDv": true,
+  "archiveN": true,
+  "archiveO": true,
+  "archiveDvOriginal": true,
+  "archiveHasMarker": false,
+  "detailId": "fire_scorch_field",
+  "detailSeq": "2",
+  "detailValue": "15",
+  "detailPeriod": "20",
+  "dataSheetUnchanged": true,
+  "noteKept": true,
+  "damage": "1",
+  "cooldown": "30",
+  "trajectoryEmpty": true
+}

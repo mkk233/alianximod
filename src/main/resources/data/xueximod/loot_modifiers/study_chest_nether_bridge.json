@@ -1,0 +1,24 @@
+{
+  "type": "xueximod:study_chest",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+  ],
+  "entries": [
+    {
+      "weight": 20,
+      "items": ["xueximod:study_slip_transcendent"]
+    },
+    {
+      "weight": 45,
+      "items": ["xueximod:study_slip_mystic"]
+    },
+    {
+      "weight": 15,
+      "items": ["xueximod:shu_embryo"],
+      "attribute": "fire"
+    }
+  ]
+}

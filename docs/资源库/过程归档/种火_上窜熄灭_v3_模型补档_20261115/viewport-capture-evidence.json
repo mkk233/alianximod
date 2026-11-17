@@ -1,0 +1,324 @@
+{
+  "attemptId": "20261115-art-seed-sow-05",
+  "initialCompletedBatch": {
+    "attemptId": "20261115-art-seed-sow-05",
+    "capturedUtc": "2026-11-15T14:02:03.746Z",
+    "engine": "real Blockbench Desktop 5.2.2 / native GUI Preview WebGL renderer",
+    "noExternalImageComposition": true,
+    "shots": [
+      {
+        "file": "01-hero-3quarter.png",
+        "viewport": "mcp_offscreen_seed_sow_archive",
+        "width": 1600,
+        "height": 1100,
+        "camera": [
+          53,
+          37,
+          73
+        ],
+        "target": [
+          0,
+          16,
+          0
+        ],
+        "fov": 36,
+        "followCamera": true,
+        "pitchYawDegrees": [
+          -14.064504971143267,
+          35.98067756861831,
+          0
+        ],
+        "normal": [
+          0.5699003802196849,
+          0.2430141243955638,
+          0.7849571274723964
+        ],
+        "normalCameraDot": 1,
+        "phaseFrames": [
+          8
+        ],
+        "bytes": 111376
+      },
+      {
+        "file": "02-front-billboard.png",
+        "viewport": "mcp_offscreen_seed_sow_archive",
+        "width": 1600,
+        "height": 1100,
+        "camera": [
+          0,
+          14.4,
+          88
+        ],
+        "target": [
+          0,
+          16,
+          0
+        ],
+        "fov": 35,
+        "followCamera": true,
+        "pitchYawDegrees": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "normalCameraDot": 1,
+        "phaseFrames": [
+          8
+        ],
+        "bytes": 80734
+      },
+      {
+        "file": "03-side-offset-thickness.png",
+        "viewport": "mcp_offscreen_seed_sow_archive",
+        "width": 1600,
+        "height": 1100,
+        "camera": [
+          78,
+          19,
+          20
+        ],
+        "target": [
+          0,
+          16,
+          0
+        ],
+        "fov": 38,
+        "followCamera": false,
+        "pitchYawDegrees": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "normalCameraDot": 0.24797106326691135,
+        "phaseFrames": [
+          8
+        ],
+        "bytes": 105455
+      },
+      {
+        "file": "04-closeup-burnout-phases.png",
+        "viewport": "mcp_offscreen_seed_sow_archive",
+        "width": 2048,
+        "height": 760,
+        "camera": [
+          0,
+          19,
+          240
+        ],
+        "target": [
+          0,
+          17,
+          0
+        ],
+        "fov": 17.5,
+        "followCamera": false,
+        "pitchYawDegrees": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "normalCameraDot": 0.9998163700367765,
+        "phaseFrames": [
+          1,
+          6,
+          10,
+          12,
+          15,
+          16
+        ],
+        "bytes": 68776
+      }
+    ],
+    "save": {
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/seed_sow_v3_preview.bbmodel",
+      "bytes": 804950,
+      "sha256": "FE1BA079083FA75EE0A9722FC8AF808AAB9F5E1682B9E71E97206A4D440D746C",
+      "elementCount": 634,
+      "textureCount": 43,
+      "embeddedTextureCount": 43,
+      "meta": {
+        "format_version": "5.0",
+        "model_format": "free",
+        "box_uv": false
+      },
+      "projectSaved": true
+    }
+  },
+  "shots": [
+    {
+      "file": "01-hero-3quarter.png",
+      "viewport": "mcp_offscreen_seed_sow_archive",
+      "width": 1600,
+      "height": 1100,
+      "camera": [
+        53,
+        37,
+        73
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "fov": 36,
+      "followCamera": true,
+      "pitchYawDegrees": [
+        -13.104382737730534,
+        35.98067756861832,
+        0
+      ],
+      "normal": [
+        0.5722127568443975,
+        0.22672580931570468,
+        0.7881420990498306
+      ],
+      "normalCameraDot": 1.0,
+      "phaseFrames": [
+        8
+      ],
+      "bytes": 111915,
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/01-hero-3quarter.png",
+      "sha256": "9DAA1D183914082A3302BCA53D46BD1410DE01934FA0066F0499EF7F65CCC62A",
+      "metadataBasis": "executed native capture script; final PNG independently observed, hashed and viewed"
+    },
+    {
+      "file": "02-front-billboard.png",
+      "viewport": "mcp_offscreen_seed_sow_archive",
+      "width": 1600,
+      "height": 1100,
+      "camera": [
+        0,
+        14.4,
+        88
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "fov": 35,
+      "followCamera": true,
+      "pitchYawDegrees": [
+        1.041626676009974,
+        0.0,
+        0
+      ],
+      "normal": [
+        0.0,
+        -0.018178813667514955,
+        0.9998347517133227
+      ],
+      "normalCameraDot": 1.0,
+      "phaseFrames": [
+        8
+      ],
+      "bytes": 80661,
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/02-front-billboard.png",
+      "sha256": "B8B1F9684518532E4210BF100A53BC86C616B4D62706E3E22BF5F3CEF4545E80",
+      "metadataBasis": "executed native capture script; final PNG independently observed, hashed and viewed"
+    },
+    {
+      "file": "03-side-offset-thickness.png",
+      "viewport": "mcp_offscreen_seed_sow_archive",
+      "width": 1600,
+      "height": 1100,
+      "camera": [
+        78,
+        19,
+        20
+      ],
+      "target": [
+        0,
+        16,
+        0
+      ],
+      "fov": 38,
+      "followCamera": false,
+      "pitchYawDegrees": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "normalCameraDot": 0.24797106326691135,
+      "phaseFrames": [
+        8
+      ],
+      "bytes": 105380,
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/03-side-offset-thickness.png",
+      "sha256": "AE7DA9503884306FFBC89DB63DA95D338D1211AA05381D9CD4E8F152EEF5BE40",
+      "metadataBasis": "executed native capture script; final PNG independently observed, hashed and viewed"
+    },
+    {
+      "file": "04-closeup-burnout-phases.png",
+      "viewport": "mcp_offscreen_seed_sow_archive",
+      "width": 2048,
+      "height": 760,
+      "camera": [
+        0,
+        19,
+        240
+      ],
+      "target": [
+        0,
+        17,
+        0
+      ],
+      "fov": 17.5,
+      "followCamera": false,
+      "pitchYawDegrees": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "normalCameraDot": 0.9998163700367765,
+      "phaseFrames": [
+        1,
+        6,
+        10,
+        12,
+        15,
+        16
+      ],
+      "bytes": 68776,
+      "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/04-closeup-burnout-phases.png",
+      "sha256": "1894DF8AF97B4FE1BC66EF483B539A01D46CB2443536F56D46356AAA1F02FCFE",
+      "metadataBasis": "executed native capture script; final PNG independently observed, hashed and viewed"
+    }
+  ],
+  "finalModel": {
+    "path": "D:/alianximod/docs/资源库/过程归档/种火_上窜熄灭_v3_模型补档_20261115/seed_sow_v3_preview.bbmodel",
+    "bytes": 804998,
+    "sha256": "CE7AC65C0406AE3A338FBB5CD7AE98E70D005A245520C7B4603245715DB9852C"
+  },
+  "nativeReopenEvidence": "reopen-validation.json",
+  "nativeFinalState": "native-final-state.json",
+  "finalCaptureToolReturn": "50s timeout; no successful return claimed; PNG files were observed on disk and visually inspected",
+  "optionalTimingDemo": "not completed, invalidated; static F08 restored; no continuing playback",
+  "pixelEditingOrComposition": false,
+  "realNativeGUIRenderer": true
+}

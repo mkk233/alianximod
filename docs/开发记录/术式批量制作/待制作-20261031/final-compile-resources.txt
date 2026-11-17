@@ -1,0 +1,35 @@
+resource_check 2026-10-31T05:56:51.199+08:00
+PNG_MATCH	07407B8570B6EEAF9EFC764BD1365F1589A9C5427EDE4A8B1B9748D03E7DF58E	bytes=6788	assets/xueximod/textures/effect/fire_spark_v1/fire_spark.png
+PNG_MATCH	F1B0D723B4AEA57B37FCA4928AFAF492E8F1020D864183F36EDABF379BE95284	bytes=12057	assets/xueximod/textures/effect/flame_trail_v1/flame_trail.png
+PNG_MATCH	E8CA06D343A6E6A60082C542869FDA9BE4B9DE040904EEF59BAF52D28CBC1D3A	bytes=761	assets/xueximod/textures/block/meteorite_v1.png
+PNG_MATCH	3CF9F5728C0B70EEE2CC09E61B4F6182E6254516CC7B955939907755C654BBC4	bytes=7678	assets/xueximod/textures/effect/shock_ring_v1/shock_ring.png
+PNG_MATCH	7801A4513A63D26DAA8567F06A33834E46FD9F0AD71F5CDA3CE7F471AC39D018	bytes=4058	assets/xueximod/textures/effect/surface_anchor_v1/surface_anchor.png
+PNG_MATCH	38CFAAE9D154AD09262680CF2053E68B2BA3D9BAF9C4FEF1769D78252D750458	bytes=3381	assets/xueximod/textures/effect/seed_sow_v1/seed_sow.png
+PNG_MATCH	2490F9E2D5A8914D9A1B7080E40DD4FB0FB9188C8AA64951A88F34389F853E73	bytes=8474	assets/xueximod/textures/effect/kindle_v1/kindle.png
+PNG_MATCH	F3F0FCEB4A8AAECBA5EAC2B300C1FD5036B0E9EEAF1CD04B1A4F38FC1C79D858	bytes=11013	assets/xueximod/textures/effect/detonate_v1/detonate.png
+PNG_MATCH	1E7CD18441C29D5F018D8B239D0A9A737B784C9F45BAA4202F45AEFF07F3B49F	bytes=8759	assets/xueximod/textures/effect/nether_gloom_v1/nether_gloom.png
+PNG_MATCH	0C7479F9F3DC02E3216D7EBF6A195C98730CF9841A57693C210658821F0A476A	bytes=6678	assets/xueximod/textures/effect/ground_dust_v1/ground_dust.png
+meteorite_block_is_strip_6BDCFDB1=False
+JSON_OK	a8b03aea26804a8863c780f4e72c537713776a5510e7960371bf8e8e4d768d1e	bytes=7448	mtime=2026-10-31T04:58:51.429+08:00	src/main/resources/assets/xueximod/lang/zh_cn.json
+JSON_OK	fba0df0fad97dc26bd154713b853dc39e6059176792a897cbafcf4c055328815	bytes=5211	mtime=2026-10-31T04:58:51.611+08:00	src/main/resources/assets/xueximod/lang/en_us.json
+JSON_OK	01f5a2e995c2e1361f98064d212da4e1a708132cb208db880f614d76d2fe2950	bytes=43	mtime=2026-10-31T04:09:31.814+08:00	src/main/resources/assets/xueximod/models/item/meteorite.json
+JSON_OK	a6586a989fc8a84930429c8600ebe9afe0a41e77902fbc781bff8288633c51b2	bytes=105	mtime=2026-10-31T04:09:31.439+08:00	src/main/resources/assets/xueximod/models/block/meteorite.json
+JSON_OK	ccff6ad24736f0271f32909b02dc64e3d13bc5bcd1385d8e33bff62945a0bb47	bytes=94	mtime=2026-10-31T03:40:13.365+08:00	src/main/resources/assets/xueximod/models/item/test_staff.json
+JSON_FAIL_POWERSHELL_ONLY src/main/resources/assets/xueximod/blockstates/meteorite.json ConvertFrom-Json rejects the empty variant key ""; Python json.load accepts this file.
+JSON_OK	fa416660e970f12c51eed7b62d9501f49b1ef25f39ab6102bca8e7235b16a830	bytes=385	mtime=2026-10-31T04:09:33.321+08:00	src/generated/resources/data/xueximod/loot_tables/blocks/meteorite.json
+JSON_OK	af699604b9969fddd4271faa636d134faedc2165a346510501d037726b178d0b	bytes=214	mtime=2026-10-31T04:07:28.554+08:00	src/generated/resources/data/minecraft/tags/blocks/mineable/pickaxe.json
+JSON_OK	1d2581e7080321aef9e703bc4be2132a99c9ed1b2229df0001bed41b60cb4a79	bytes=72	mtime=2026-10-31T04:07:28.554+08:00	src/generated/resources/data/minecraft/tags/blocks/needs_stone_tool.json
+png_fail=0
+json_fail=1
+python_json_load=9/9 OK including blockstates/meteorite.json; powershell json_fail is the empty variant key only
+blockstates_sha256=see inventory src/main/resources/assets/xueximod/blockstates/meteorite.json
+note=loot_and_tag_json_are_under_src/generated_not_src/main; compileJava was not run so datagen was not regenerated
+after_files=955
+after_bytes=10696906
+after_tree=5e3feb75da9a5de7b47551eebe6a77f99e6012cd0da3f9f6e703241eedba978a
+before_files=955
+before_bytes=10696906
+before_tree=5e3feb75da9a5de7b47551eebe6a77f99e6012cd0da3f9f6e703241eedba978a
+tree_same=True
+still_alive pid=12896 parent=48468 name=java.exe
+still_alive pid=45212 parent=12896 name=java.exe

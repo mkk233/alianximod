@@ -1,6 +1,8 @@
 package com.bslx.XueXiMod.client;
 
 import com.bslx.XueXiMod.XueXiMod;
+import com.bslx.XueXiMod.carrier.BatchCarrierTypes;
+import com.bslx.XueXiMod.terrain.MeteoriteWreckageTypes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
@@ -24,8 +26,14 @@ public final class EntityRendererFix {
     private static final Logger LOGGER = LogManager.getLogger();
     private static final ResourceLocation HIT_ID = new ResourceLocation(XueXiMod.MOD_ID, "technique_hit");
     private static final ResourceLocation SWORD_ID = new ResourceLocation(XueXiMod.MOD_ID, "sword_entity");
+    private static final ResourceLocation BARRIER_ID = new ResourceLocation(XueXiMod.MOD_ID, "barrier_body");
+    private static final ResourceLocation WRECKAGE_ID =
+            new ResourceLocation(XueXiMod.MOD_ID, MeteoriteWreckageTypes.ENTITY_ID);
+    private static final ResourceLocation CARRIER_VISUAL_ID =
+            new ResourceLocation(XueXiMod.MOD_ID, BatchCarrierTypes.ENTITY_ID);
     private static ItemInHandRenderer hands;
     private static int gate;
+    private static boolean settled;
 
     private EntityRendererFix() {}
 
@@ -35,18 +43,26 @@ public final class EntityRendererFix {
         }
         Minecraft minecraft = Minecraft.getInstance();
         if (minecraft.level == null) {
+            settled = false;
             return;
         }
-        if ((++gate % 20) != 0) {
+        if (settled && (++gate % 20) != 0) {
             return;
         }
         EntityRenderDispatcher dispatcher = minecraft.getEntityRenderDispatcher();
         Map<EntityType<?>, EntityRenderer<?>> current = dispatcher.renderers;
         EntityType<?> hit = ForgeRegistries.ENTITY_TYPES.getValue(HIT_ID);
         EntityType<?> sword = ForgeRegistries.ENTITY_TYPES.getValue(SWORD_ID);
+        EntityType<?> barrier = ForgeRegistries.ENTITY_TYPES.getValue(BARRIER_ID);
+        EntityType<?> wreckage = ForgeRegistries.ENTITY_TYPES.getValue(WRECKAGE_ID);
+        EntityType<?> carrierVisual = ForgeRegistries.ENTITY_TYPES.getValue(CARRIER_VISUAL_ID);
         boolean missingHit = hit != null && !current.containsKey(hit);
         boolean missingSword = sword != null && !current.containsKey(sword);
-        if (!missingHit && !missingSword) {
+        boolean missingBarrier = barrier != null && !current.containsKey(barrier);
+        boolean missingWreckage = wreckage != null && !current.containsKey(wreckage);
+        boolean missingCarrier = carrierVisual != null && !current.containsKey(carrierVisual);
+        if (!missingHit && !missingSword && !missingBarrier && !missingWreckage && !missingCarrier) {
+            settled = true;
             return;
         }
         Map<EntityType<?>, EntityRenderer<?>> copy = new HashMap<>(current);
@@ -59,7 +75,20 @@ public final class EntityRendererFix {
             EntityRenderer<?> existing = find(current, SwordEntityRenderer.class);
             copy.put(sword, existing != null ? existing : new SwordEntityRenderer(context));
         }
+        if (missingBarrier) {
+            EntityRenderer<?> existing = find(current, WaterBarrierRenderer.class);
+            copy.put(barrier, existing != null ? existing : new WaterBarrierRenderer(context));
+        }
+        if (missingWreckage) {
+            EntityRenderer<?> existing = find(current, MeteoriteWreckageRenderer.class);
+            copy.put(wreckage, existing != null ? existing : new MeteoriteWreckageRenderer(context));
+        }
+        if (missingCarrier) {
+            EntityRenderer<?> existing = find(current, BatchCarrierVisualRenderer.class);
+            copy.put(carrierVisual, existing != null ? existing : new BatchCarrierVisualRenderer(context));
+        }
         dispatcher.renderers = copy;
+        settled = true;
         LOGGER.info("已把术式实体渲染器重新绑到当前注册表");
     }
 

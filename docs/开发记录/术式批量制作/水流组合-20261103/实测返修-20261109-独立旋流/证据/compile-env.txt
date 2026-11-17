@@ -1,0 +1,19 @@
+TAKEN=2026-11-09 18:51:59.581
+JAVA_HOME=C:/Program Files/Java/jdk-17
+GRADLE_USER_HOME=C:/Users/baishang/.gradle
+org.gradle.jvmargs=-Xmx3G
+org.gradle.daemon=false
+java=17.0.6 2023-01-17 LTS / 17.0.6+9-LTS-190
+SRC_FILE_COUNT=1470
+RENDERER_SHA256=610D26DBF60F63804E7D06EA2CCF96DD3050015F4CF03FC003E8D36876FAB324
+RENDERER_MTIME=2026-11-09 18:17:51.077
+RENDERER_LENGTH=20345
+NEWEST_SRC_MAIN=
+src\main\java\com\bslx\XueXiMod\shu\ModTechniques.java|2026-11-09 18:47:28.241
+src\main\java\com\bslx\XueXiMod\network\SkillAssemblyPacket.java|2026-11-09 18:47:27.124
+src\main\java\com\bslx\XueXiMod\gui\SpellAssemblyMenu.java|2026-11-09 18:47:25.197
+src\main\java\com\bslx\XueXiMod\shu\technique\release\SwordMulticastGate.java|2026-11-09 18:47:22.604
+src\main\java\com\bslx\XueXiMod\status\wood\client\WoodResourceClientSetup.java|2026-11-09 18:43:12.803
+src\main\java\com\bslx\XueXiMod\status\wood\resource\WoodLedger.java|2026-11-09 18:42:43.119
+src\main\java\com\bslx\XueXiMod\status\wood\resource\RemoveResult.java|2026-11-09 18:42:43.033
+src\main\resources\assets\xueximod\lang\en_us.json|2026-11-09 18:23:05.366

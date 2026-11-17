@@ -1,0 +1,68 @@
+{
+  "task": "repair-B-1",
+  "author": "B",
+  "model": "grok-4.7-high-fast",
+  "stage": "implementation-repair-1",
+  "designReview": "2/2",
+  "implementationReview": "1/3",
+  "extraReview": false,
+  "released": true,
+  "compile": "not-run",
+  "nameGate": "exit-1-preexisting-OriginalHumanoid-only",
+  "shell": "name-gate-ran",
+  "tests": "not-run",
+  "game": "not-run",
+  "sheet": "not-touched",
+  "hashNote": "命名门已跑。没有计算 SHA-256 或 mtime，这两项保持 null。",
+  "backupRoot": "docs/开发记录/领域绑定规则-20261030/backup-B-repair-1",
+  "backupGap": [
+    "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+    "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java"
+  ],
+  "publishPoints": [
+    "TechniqueHitSpec.spawnReported after addFreshEntity returns true",
+    "PhantomSwordEffect after addFreshEntity returns true",
+    "SwordEntity.beginVortex after setState(VORTEX)"
+  ],
+  "silentEmptySword": true,
+  "phantomEarlyExitUnreported": true,
+  "hostGroupFalseDoesNotDiscard": true,
+  "swordVortexUnchanged": true,
+  "files": [
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+      "backup": null,
+      "change": "函数轨迹保留已写横排；发布前查尝试和令牌；addFreshEntity 为 true 后 reportAccepted",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B-repair-1/src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java",
+      "change": "资格早退不报告；每把剑进入世界后 reportAccepted",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java",
+      "backup": null,
+      "change": "beginVortex 返回真实进入风暴；setState(VORTEX) 后立刻报告",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordReturnAllEffect.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B-repair-1/src/main/java/com/bslx/XueXiMod/shu/technique/effects/SwordReturnAllEffect.java",
+      "change": "自动空剑静默；不允许发布时不进入控制",
+      "sha256": null,
+      "mtimeUtc": null
+    },
+    {
+      "relativePath": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/WeepingCurtainEffect.java",
+      "backup": "docs/开发记录/领域绑定规则-20261030/backup-B-repair-1/src/main/java/com/bslx/XueXiMod/shu/technique/effects/WeepingCurtainEffect.java",
+      "change": "自动未摆位时按显式源点做 0.72 横排并钳域",
+      "sha256": null,
+      "mtimeUtc": null
+    }
+  ]
+}

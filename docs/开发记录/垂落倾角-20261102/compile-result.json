@@ -1,0 +1,159 @@
+{
+  "task": "垂落倾角-20261102",
+  "stage": "范围补齐交回后的唯一机械编译",
+  "formalReview": "未做。旧底座累计实现正式复审 5 轮不重置，本次不追加正确性复审。",
+  "result": "compile_succeeded",
+  "compileMode": "origin",
+  "whyOrigin": "编译前没有 java/javaw，也没有 Gradle 或游戏客户端占用 D:\\alianximod。最近一次 Gradle 单次守护进程 37348 已于 2026-11-02T00:22:49 正常退出并释放锁。因此在原项目根编译，没有新建隔离副本，没有结束任何进程。",
+  "successMeansGameAcceptance": false,
+  "sheetMigrated": false,
+  "sourceModifiedByThisTask": false,
+  "originBuildUpdated": true,
+  "originBuildNote": "build 目录项时间仍是 2026-10-30T03:28:51.589+08:00。其下 class 已更新：DropTilt.class 本次新生成，其余关注 class 的写入时间从 00:22 变为 00:53。",
+  "runningClientUpdated": false,
+  "clientRunningDuringCompile": false,
+  "gameVerified": false,
+  "packagingRan": false,
+  "stopped": true,
+  "inputs": {
+    "before": "compile-src-before.json",
+    "beforeTakenAt": "2026-11-02T00:52:48.001+08:00",
+    "after": "compile-src-after.json",
+    "afterTakenAt": "2026-11-02T00:53:25.086+08:00",
+    "files": 1091,
+    "srcMainFiles": 1019,
+    "srcMainBytes": 11130300,
+    "generatedFiles": 65,
+    "generatedBytes": 26708,
+    "configFiles": 7,
+    "configBytes": 103420,
+    "configPaths": [
+      "gradlew.bat",
+      "gradlew",
+      "gradle/wrapper/gradle-wrapper.jar",
+      "gradle/wrapper/gradle-wrapper.properties",
+      "settings.gradle",
+      "build.gradle",
+      "gradle.properties"
+    ],
+    "fingerprintMethod": "SHA-256 over UTF-8 of sorted lines: path, sha256, bytes, each followed by newline",
+    "fingerprint": "0a1c9c3976924cf0473322d740e40355d5465b9126ff08340c8920b31dd13fcc",
+    "inputDiffsDuringCompile": 0
+  },
+  "compiledSources": {
+    "note": "这些是实现结果列出的源码，编译前采集。时间晚于 00:22 的旧 class，本次 compileJava 实际执行后 class 才更新。不是 10 月 31 日或其他会话的编译结果。",
+    "DropTilt.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/DropTilt.java",
+      "mtime": "2026-11-02T00:43:06.164+08:00",
+      "bytes": 7967,
+      "sha256": "24709a5786a9f096d81517215d914e970d21351d1c688a6e57239e379690f7e6"
+    },
+    "CastFrame.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/CastFrame.java",
+      "mtime": "2026-11-02T00:39:37.127+08:00",
+      "bytes": 14334,
+      "sha256": "d73f7937249e81b5981903087b472469396cb50f9453680015eb1e4ab1f8b9d2"
+    },
+    "TechniqueHitSpec.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitSpec.java",
+      "mtime": "2026-11-02T00:48:12.642+08:00",
+      "bytes": 32265,
+      "sha256": "c579c4faffed1621c47b79b2e4b72ff56f43fb4fa3a8320eb963a7b9ca4f7092"
+    },
+    "TechniqueHitEntity.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/entity/TechniqueHitEntity.java",
+      "mtime": "2026-11-02T00:40:12.628+08:00",
+      "bytes": 50723,
+      "sha256": "1a42c6c9bfa0673130c10e7a9a00887605ab23610c833f95f9cbbd300ea60380"
+    },
+    "DropMotion.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/DropMotion.java",
+      "mtime": "2026-11-02T00:39:36.452+08:00",
+      "bytes": 2164,
+      "sha256": "754e9b85f5f1441200e1270ddc9837de4ae4426e143f6f473565d2fb6de9bca9"
+    },
+    "TrapFallMotion.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrapFallMotion.java",
+      "mtime": "2026-11-02T00:39:54.704+08:00",
+      "bytes": 2894,
+      "sha256": "49f49268d6ed26a78cef1d882c951535bd2e3c73e790ac32d6402b913d2cdfb0"
+    },
+    "TrackingMotion.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/motion/TrackingMotion.java",
+      "mtime": "2026-11-02T00:40:11.763+08:00",
+      "bytes": 3604,
+      "sha256": "afe3628b9aa764b3578048da1299c45ed758732d00c2aa06339c935cdaf693b7"
+    },
+    "SkillSegmentRunner.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/network/SkillSegmentRunner.java",
+      "mtime": "2026-11-02T00:41:33.588+08:00",
+      "bytes": 56617,
+      "sha256": "e594abfa1ca163e5f237bc379bc2fe9d8df6cc0db996a83f26178d16b74b5643"
+    },
+    "PhantomSwordEffect.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/effects/PhantomSwordEffect.java",
+      "mtime": "2026-11-02T00:41:02.372+08:00",
+      "bytes": 6934,
+      "sha256": "783b9eab80f1edaac04887848187fd6655676a3b74ba69f89ddff782e2d9976e"
+    },
+    "SwordEntity.java": {
+      "path": "src/main/java/com/bslx/XueXiMod/shu/technique/sword/SwordEntity.java",
+      "mtime": "2026-11-02T00:41:07.768+08:00",
+      "bytes": 28724,
+      "sha256": "47299e72c64c653969ebbe5d01af0bb568e2d357852346857e036b4104764d0d"
+    }
+  },
+  "command": {
+    "line": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "cwd": "D:\\alianximod",
+    "gradlew": "D:\\alianximod\\gradlew.bat",
+    "launcher": "cmd.exe /d /c",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "javaVersion": "17.0.6+9-LTS-190",
+    "GRADLE_USER_HOME": "C:\\Users\\baishang\\.gradle",
+    "jvmargs": "-Xmx3G",
+    "daemonProperty": false,
+    "start": "2026-11-02T00:52:48.817+08:00",
+    "end": "2026-11-02T00:53:25.056+08:00",
+    "exitCode": 0,
+    "buildResult": "BUILD SUCCESSFUL in 35s",
+    "actionableTasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+    "executedTasks": [":downloadMcpConfig", ":compileJava"],
+    "upToDateTasks": [":extractSrg", ":createMcpToSrg"],
+    "compileJava": "executed",
+    "compileJavaUpToDate": false,
+    "errors": 0,
+    "removalWarnings": 40,
+    "javacSummary": "40 个警告",
+    "log": "compile.log",
+    "logNote": "stdout/stderr 按 GBK(936) 读取后写成 UTF-8。中文警告可读。没有 error: 行。40 条均为 [removal]。另有过时 API 的注，未展开 -Xlint:deprecation。"
+  },
+  "classes": {
+    "XueXiMod.classBefore": "2026-11-02T00:22:48.333+08:00",
+    "XueXiMod.classAfter": "2026-11-02T00:53:23.902+08:00",
+    "DropTilt.classBefore": null,
+    "DropTilt.classAfter": "2026-11-02T00:53:22.553+08:00",
+    "DropTilt.classBytes": 7144,
+    "CastFrame.classAfter": "2026-11-02T00:53:16.456+08:00",
+    "TechniqueHitSpec.classAfter": "2026-11-02T00:53:16.145+08:00",
+    "TechniqueHitEntity.classAfter": "2026-11-02T00:53:15.987+08:00",
+    "DropMotion.classAfter": "2026-11-02T00:53:23.204+08:00",
+    "TrapFallMotion.classAfter": "2026-11-02T00:53:23.255+08:00",
+    "TrackingMotion.classAfter": "2026-11-02T00:53:23.230+08:00",
+    "SkillSegmentRunner.classAfter": "2026-11-02T00:53:20.190+08:00",
+    "PhantomSwordEffect.classAfter": "2026-11-02T00:53:21.597+08:00",
+    "SwordEntity.classAfter": "2026-11-02T00:53:18.233+08:00"
+  },
+  "occupy": {
+    "javaBefore": 0,
+    "gameClient": "none",
+    "priorDaemonPid": 37348,
+    "priorDaemonExit": "2026-11-02T00:22:49.477+08:00 normal",
+    "processesEndedByThisTask": false,
+    "gradlewLeftRunning": false,
+    "javaAfter": 0
+  },
+  "nameGateRerun": false,
+  "notRun": ["build", "jar", "reobf", "datagen", "runClient", "game", "package", "sheet migration", "formal review", "source edit", "isolate copy", "name gate"],
+  "writeReleased": ["compile.log", "compile-src-before.json", "compile-src-after.json", "compile-result.json", "编译结果.md"]
+}

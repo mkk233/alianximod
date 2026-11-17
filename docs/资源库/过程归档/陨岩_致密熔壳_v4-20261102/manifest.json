@@ -1,0 +1,59 @@
+{
+  "version": "meteor-solid-crust-v4",
+  "date": "2026-11-02",
+  "status": "superseded-by-user-feedback",
+  "feedback": {
+    "date": "2026-11-02",
+    "text": "火焰纹理太少了要更像岩浆块",
+    "nextDraft": "D:/alianximod/docs/资源库/过程归档/陨岩_熔岩岩壳_v5-20261102"
+  },
+  "design": "完整致密熔壳，大块斜切岩面，浅擦痕，边缘少量余热；无孔洞及分叉矿脉",
+  "source": {
+    "width": 32,
+    "height": 32,
+    "frames": 1,
+    "layers": 4
+  },
+  "texture": {
+    "width": 32,
+    "height": 32,
+    "opaque": true,
+    "static": true
+  },
+  "blockbench": {
+    "projectUUID": "f35ba9a9-d45b-867b-865d-a58524104fa4",
+    "version": "5.2.2",
+    "pluginVersion": "1.10.1",
+    "embeddedTextureMatches": true,
+    "unitsPerBlock": 16,
+    "cubeFrom": [
+      0,
+      0,
+      0
+    ],
+    "cubeTo": [
+      16,
+      16,
+      16
+    ],
+    "faceUV": [
+      0,
+      0,
+      32,
+      32
+    ]
+  },
+  "runtimeModified": false,
+  "codeModified": false,
+  "workbookModified": false,
+  "compiled": false,
+  "hashes": {
+    "meteorite-solid-crust-v4.aseprite": "906d1ca93c3127ae08b5ae47f738576e99f90a6b49e03346aa3fb7fb8c542f5f",
+    "meteorite-solid-crust-v4.png": "ecd7526410007f4751891089721130df2d913a8da862470594ffa48d02125858",
+    "texture-preview.png": "93da1e0a51f7638203189131590afe6a41a09681f9d41dccf3da25ad8b5790cf",
+    "meteorite-solid-crust-v4.bbmodel": "67b6086e8f54dbc8c29fa6a58b7b8006d239c13b34108c36f22b83aefd372857",
+    "bb-hero.png": "35824bb41842035d7e48478aa9738e6d57d92e19fa58d451ae9dcfa7ae208418",
+    "bb-reverse.png": "f73c772ccdd65a5c17cdc165e2e822ed40a04b78bac01dbb107d7c765542737b",
+    "blockbench-active-view.png": "1cabf5f7dc22e3254f40bcf080e7a797b226e732c5c6b7d558162fa75918d4a1"
+  }
+}

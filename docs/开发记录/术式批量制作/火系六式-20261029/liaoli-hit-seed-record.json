@@ -1,0 +1,36 @@
+{
+  "recorded": true,
+  "workbookChanged": false,
+  "sheet": "制作中",
+  "row": 6,
+  "id": "fire_liaoli",
+  "movedToPending": false,
+  "art": {
+    "choice": "所有带火种实体常驻显示（建议）",
+    "quote": "确认，使用这版火苗",
+    "directory": "docs/资源库/特效/火焰/火种常驻火苗_v1/",
+    "png": "docs/资源库/特效/火焰/火种常驻火苗_v1/fire_seed_flame.png",
+    "sha256": "106DD7C62A1E360C859FB598B320EBCF10A40568555C763465023380E5DE800B",
+    "atlas": "32x256",
+    "frames": 8,
+    "frameSize": "32x32",
+    "frameMs": 100,
+    "cycleSeconds": 0.8,
+    "imageWriteStopped": true,
+    "gameVerified": false
+  },
+  "execution": {
+    "rings": "每次合格命中触发现有周期的三道后扩环，不因空挥自动续播，保留现有贴图与方向",
+    "threshold": "S>50是命中和扣种前的实际共享余额",
+    "follow": "高速修复按源码作者最终报告归档，目前只是派发",
+    "locateReportIsNotImplementation": true
+  },
+  "ownership": {
+    "sourceAndRuntime": "1f4155a4-e537-4518-a3f7-893f09c5daff",
+    "workbookAndRecord": "d6f84d0b-4ea1-4368-a576-8acc20cc2afd",
+    "archiveAndIndex": "主会话",
+    "compiler": "b2d5b359-42e3-4a90-9d24-b26acec6d5f8",
+    "compilerDispatched": false
+  },
+  "quota": "设计2/2、实现3/3不变。本阶段额度已用完，返修结果未追加复审。"
+}

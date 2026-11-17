@@ -3,6 +3,10 @@ package com.bslx.XueXiMod.shu.technique.effects;
 import com.bslx.XueXiMod.shu.Technique;
 import com.bslx.XueXiMod.shu.technique.TechniqueCastContext;
 import com.bslx.XueXiMod.shu.technique.TechniqueEffect;
+import com.bslx.XueXiMod.shu.balance.BalanceKeys;
+import com.bslx.XueXiMod.shu.technique.release.ReleaseDefinition;
+import com.bslx.XueXiMod.shu.technique.release.ReleaseRegistry;
+import com.bslx.XueXiMod.shu.technique.release.batch.SpecialBalance;
 import com.bslx.XueXiMod.shu.technique.release.entity.TechniqueHitSpec;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -19,10 +23,20 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
 
 public class SwordHorizontalSlashEffect implements TechniqueEffect {
+    static final double REACH = 3.0D;
+    static final double SPAN = 5.0D;
+
+    public static void declareBalance() {
+        SpecialBalance.publish(SpecialBalance.blocks(
+                SpecialBalance.blocks(SpecialBalance.begin("sword_horizontal_slash"),
+                        BalanceKeys.BOX_DEPTH, REACH, "横斩纵深"),
+                BalanceKeys.BOX_WIDTH, SPAN, "横斩宽度"));
+    }
+
     @Override
     public void execute(ServerPlayer player, Technique technique, ItemStack weapon, TechniqueCastContext cast) {
         Vec3 look = cast.getLook();
-        Vec3 pos = cast.getPos();
+        Vec3 point = cast.getPos();
 
         float width = 3.0f;
         AttributeInstance reach = player.getAttribute(ForgeMod.ENTITY_REACH.get());
@@ -35,9 +49,9 @@ public class SwordHorizontalSlashEffect implements TechniqueEffect {
             double offsetY = 1.0;
             double offsetZ = look.z * 1.5;
             serverLevel.sendParticles(ParticleTypes.SWEEP_ATTACK,
-                pos.x + offsetX, pos.y + offsetY, pos.z + offsetZ,
+                point.x + offsetX, point.y + offsetY, point.z + offsetZ,
                 1, 0, 0, 0, 0);
-            serverLevel.playSound(null, pos.x, pos.y, pos.z,
+            serverLevel.playSound(null, point.x, point.y, point.z,
                 SoundEvents.PLAYER_ATTACK_SWEEP, SoundSource.PLAYERS, 1.0f, 1.0f);
 
             Consumer<Vec3> trigger = cast.onFirstTrigger();
@@ -47,11 +61,12 @@ public class SwordHorizontalSlashEffect implements TechniqueEffect {
             spec.techniqueId = technique.getId();
             spec.path = TechniqueHitSpec.Path.STILL_AIM;
             spec.speed = 0.0;
-            spec.length = 3.0;
-            spec.width = 5.0;
+            ReleaseDefinition definition = ReleaseRegistry.get(technique.getId());
+            spec.length = SpecialBalance.number("sword_horizontal_slash", BalanceKeys.BOX_DEPTH, REACH);
+            spec.width = SpecialBalance.number("sword_horizontal_slash", BalanceKeys.BOX_WIDTH, SPAN);
             spec.height = 0.0;
             spec.texture = "xueximod:textures/entity/xueximod/horizontal_slash.png";
-            spec.lifetime = 4;
+            spec.lifetime = definition != null ? definition.lifetimeTicks() : 4;
             spec.hitInterval = 0;
             spec.lockThisCast = false;
             spec.dropThisCast = false;

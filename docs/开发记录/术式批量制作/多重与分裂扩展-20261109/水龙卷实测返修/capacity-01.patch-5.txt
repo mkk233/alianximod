@@ -1,0 +1,27 @@
+*** Begin Patch
+*** Update File: src/main/java/com/bslx/XueXiMod/shu/technique/release/domain/motion/VolumeMotionRuntime.java
+@@
+             refund += priced[1];
+         }
+-        double limit = SpecialBalance.number(host.definition().balanceId(), BalanceKeys.OCCUPIED_VOLUME_LIMIT, 12.0D);
++        double limit = occupiedVolumeLimit(host);
+         double occupied = heldVolume(ledger, host, host.hostLevel());
+@@
+     private static boolean combination(DomainInstance host) {
+         if (host.mountedProvider() == null) {
+             return false;
+         }
+         DomainInstance provider = DomainService.find(host.mountedProvider());
+         return provider != null && provider.active() && !provider.mountRetired() && baseWater(host);
+     }
++
++    private static double occupiedVolumeLimit(DomainInstance host) {
++        String balanceId = host.definition().balanceId();
++        if (combination(host)) {
++            return SpecialBalance.number(balanceId, BalanceKeys.LIFTED_OCCUPIED_VOLUME_LIMIT, 48.0D);
++        }
++        return SpecialBalance.number(balanceId, BalanceKeys.OCCUPIED_VOLUME_LIMIT, 12.0D);
++    }
+ 
+     private static boolean baseWater(DomainInstance domain) {
+*** End Patch

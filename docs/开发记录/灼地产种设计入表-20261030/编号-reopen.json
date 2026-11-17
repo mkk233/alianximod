@@ -1,0 +1,35 @@
+{
+  "sha256": "E79B32B27216B167EB8FD16BAC4871ECDA11D04963822F10A0C22E8D2B6740AF",
+  "bytes": 170997,
+  "mtime": "2026-10-30T11:43:06.345+08:00",
+  "cells": {
+    "7": {
+      "A": "地表定位",
+      "B": "rule_surface_anchor",
+      "D": "无"
+    },
+    "9": {
+      "A": "错时",
+      "B": "rule_stagger",
+      "D": "无"
+    },
+    "10": {
+      "A": "命中接续",
+      "B": "rule_hit_continue",
+      "D": "无"
+    },
+    "15": {
+      "A": "崩地",
+      "B": "earth_break_ground",
+      "D": "土"
+    }
+  },
+  "oldLeft": 0,
+  "newCounts": {
+    "rule_surface_anchor": 1,
+    "rule_stagger": 1,
+    "rule_hit_continue": 1,
+    "earth_break_ground": 1
+  },
+  "heatWave": "fire_shock_ring"
+}

@@ -1,0 +1,11 @@
+在 D:/alianximod 按同目录 brain-decision.md 的裁决实现本次任务。你是用户明确指定的 Cursor Grok 4.7 High Fast 实现者，延续其既有模型授权。无需另行委派或询问模型。只做这项，不打包、不启动游戏、不提交推送。
+
+用户要求：把 docs/资源库/特效/水流/单面青白雾幕_v1/mist_panel.png 接入雾雨领域，取代粉色水面外围盒子。只四周侧壁，取消这个领域的地板和天花板贴图；至少8面，优先16面形成圆滑环状。排查并修复雨丝变粉根因。保持领域判定、生命周期、伤害和细雨下落方向不变。其他领域不改。
+
+素材128x2048，32个128x64帧，每帧1tick，循环1.6秒。直绑纹理需显式选帧，最近邻无mipmap。透明青白色，实际alpha0/8/18/26/36；不要用GIF或预览底色，不改PS源。保持周向UV连续，相邻面不堆叠，纵向不重复。具体几何、透明排序、颜色修复以brain-decision为准。
+
+仓库有其他并行未提交修改。修改前把涉及文件按相对路径备份到本任务目录baseline/，只做局部修改，禁止恢复或整文件覆盖他人修改。记录直接根因、修改文件和行号、验证命令及结果到 implementation-result.md；同步资源库总README与本素材README采用状态。不要夸称游戏已验证。
+
+编译必须由你执行： .\gradlew.bat -g C:\Users\baishang\AppData\Local\Temp\cursor-sandbox-cache\a6dd7201ae0ea39bc33e5d675cf9f1cf\gradle compileJava --offline --no-daemon --console=plain 。使用现有缓存避免重新下载Forge；禁止build/jar/打包。不因无关命名告警扩大范围。运行与本次相关、必要的几何/资源验证并记录；编译错误修完重跑。
+
+完成后输出简洁中文结果，确认顶底不存在、面数、雨丝粉色原因和修复、编译状态，以及实际游戏效果未测试。

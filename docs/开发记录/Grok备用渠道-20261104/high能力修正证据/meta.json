@@ -1,0 +1,27 @@
+{
+  "probe": "process-level reasoning_efforts overlay",
+  "sessionId": "680494e9-0e5c-47e7-9a8e-36efc7a949c3",
+  "exitCode": 0,
+  "stopReason": "end_turn",
+  "marker": "HIGH_EFFORT_MARKER",
+  "ignoreWarningStillPresent": true,
+  "overlay": {
+    "model": "grok-4.7",
+    "reasoning_efforts": [{ "value": "high", "label": "High", "default": true }],
+    "disabled_mcp_servers": ["photoshop", "minecraft-mod-mcp", "blockbench", "blockbench-headless"]
+  },
+  "notRetried": "supports_reasoning_effort=true",
+  "configEdit": "not_applied",
+  "configEditReason": "rewriting C:/Users/baishang/.grok/config.toml was blocked by the execution environment",
+  "configShaBefore": "7fc61172e16610daa1b6a54e2cdc50683f077fab46f41f62e8d8ae8383aaab45",
+  "nonSecretFieldsBefore": {
+    "model": "grok-4.7-build-fast",
+    "name": "老猪的中转站",
+    "api_backend": "responses",
+    "reasoning_efforts": null,
+    "supports_reasoning_effort": null
+  },
+  "wireModel": "grok-4.7-build-fast",
+  "highAcceptedByCli": false,
+  "internalReasoningStrength": "not_proven"
+}

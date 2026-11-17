@@ -1,0 +1,108 @@
+{
+  "batch": "水幻形术式-20261102",
+  "stage": "nonvisual-compile",
+  "result": "failed",
+  "nonvisualCompilePassed": false,
+  "fullTechniqueDelivered": false,
+  "gameVerified": false,
+  "packaged": false,
+  "formalPlayerRegistration": "pending",
+  "specialDeclarationWired": false,
+  "appearanceWired": false,
+  "steveV2Confirmed": false,
+  "recompiled": false,
+  "sourceChangedDuringCompile": false,
+  "coversFrozenSource": true,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "process": "cmd.exe /d /c .\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "startedAt": "2026-11-02T12:45:03.8173112+08:00",
+  "endedAt": "2026-11-02T12:45:30.4777888+08:00",
+  "exitCode": 1,
+  "exitCodeSource": "Process.ExitCode of cmd.exe /c gradlew.bat",
+  "java": "17.0.6+9-LTS-190",
+  "javaReportedByGradle": "17.0.6, JVM: 17.0.6+9-LTS-190 (Oracle Corporation), Arch: amd64",
+  "env": {
+    "JAVA_HOME": "C:/Program Files/Java/jdk-17",
+    "GRADLE_USER_HOME": "C:/Users/baishang/.gradle",
+    "pathPrefix": "C:/Program Files/Java/jdk-17/bin",
+    "jvmargs": "-Xmx3G",
+    "daemonProperty": false,
+    "offline": true,
+    "noDaemon": true,
+    "gradlePropertiesModified": false
+  },
+  "preflight": {
+    "javaOrGradleProcessBeforeStart": false,
+    "jdk17Exists": true,
+    "gradleUserHomeExists": true,
+    "environmentBlocked": false,
+    "authorsStoppedPerDispatch": true,
+    "batchRecord": "A/B/C/D停写；编译前已协调相关聊天为idle"
+  },
+  "gradleLog": "docs/开发记录/水幻形术式-20261102/compile-nonvisual.log",
+  "gradleLogBytes": 16096,
+  "gradleLogEncoding": "cp936",
+  "gradleLogUtf8": "docs/开发记录/水幻形术式-20261102/compile-nonvisual-log-utf8.txt",
+  "buildResult": "BUILD FAILED in 25s",
+  "tasks": {
+    "downloadMcpConfig": "executed",
+    "extractSrg": "UP-TO-DATE",
+    "createMcpToSrg": "UP-TO-DATE",
+    "compileJava": "executed-FAILED"
+  },
+  "actionableTasks": "4 actionable tasks: 2 executed, 2 up-to-date",
+  "warnings": 41,
+  "errors": 4,
+  "errorSites": [
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/network/SkillUsePacket.java",
+      "line": 632,
+      "message": "已在方法 executeSkill(ServerPlayer,Skill,ItemStack,int,double,Double)中定义了变量 captured",
+      "snippet": "SkillChainPlan.ModifierPlan captured = plan;"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/shu/technique/release/capture/ActorCaptureDispatcher.java",
+      "line": 152,
+      "message": "找不到符号",
+      "symbol": "变量 UUID",
+      "location": "类 ActorCaptureDispatcher",
+      "snippet": "UUID.randomUUID()"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/ClonePresentation.java",
+      "line": 78,
+      "message": "模式类型 ServerLevel 是表达式类型 ServerLevel 的子类型",
+      "snippet": "if (!(server.getLevel(state.dimension) instanceof ServerLevel level))"
+    },
+    {
+      "file": "src/main/java/com/bslx/XueXiMod/shu/technique/release/clone/core/ClonePresentation.java",
+      "line": 115,
+      "message": "模式类型 ServerLevel 是表达式类型 ServerLevel 的子类型",
+      "snippet": "if (!(server.getLevel(dimension) instanceof ServerLevel level))"
+    }
+  ],
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "log": "docs/开发记录/水幻形术式-20261102/compile-nonvisual-name-gate.log",
+    "startedAt": "2026-11-02T12:44:41.5953563+08:00",
+    "endedAt": "2026-11-02T12:44:44.2179240+08:00",
+    "exitCode": 0,
+    "summary": "源码命名可读性检查通过：未发现单字母变量或禁止缩写",
+    "sourceEdited": false
+  },
+  "source": {
+    "scope": "src",
+    "before": "docs/开发记录/水幻形术式-20261102/compile-nonvisual-before.json",
+    "after": "docs/开发记录/水幻形术式-20261102/compile-nonvisual-after.json",
+    "beforeCapturedAt": "2026-11-02T12:44:34.6104072+08:00",
+    "afterCapturedAt": "2026-11-02T12:45:55.3538572+08:00",
+    "countBefore": 1256,
+    "countAfter": 1256,
+    "diffCount": 0,
+    "latestWritePath": "src/main/java/com/bslx/XueXiMod/client/CloneAfterimagePlayback.java",
+    "latestWriteTime": "2026-11-02T12:41:59.6624543+08:00",
+    "compileStartedAfterLatestWrite": true
+  },
+  "notRun": ["build", "jar", "reobf", "publish", "runClient", "game", "repair", "extra-review"]
+}

@@ -5,8 +5,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
+/**
+ * 施法者脚下的水平扇形。先用锚点，没有锚点才用施法者脚位。
+ * 不看命中体自己的飞行位置，也不改无敌帧或账本。
+ */
 public final class ArcHitbox implements TechniqueHitbox {
     @Override
+    /** 搜索半径比扇形半径多 1 格，高度多留 2 格。 */
     public AABB broadPhase(TechniqueHitEntity entity) {
         Vec3 origin = casterFeet(entity);
         double radius = entity.arcRadius() + 1.0;
@@ -14,13 +19,17 @@ public final class ArcHitbox implements TechniqueHitbox {
     }
 
     @Override
+    /**
+     * 水平距离不超过半径，竖直范围从脚下到扇形高度，不足 2.5 格时按 2.5。
+     * 角度只取扇形张角的一半；目标几乎在原点正上方时不再比角度。
+     */
     public boolean contains(TechniqueHitEntity entity, LivingEntity target) {
         Vec3 origin = casterFeet(entity);
         Vec3 forward = casterLook(entity);
         AABB box = target.getBoundingBox();
-        double dx = box.getCenter().x - origin.x;
-        double dz = box.getCenter().z - origin.z;
-        double horizontal = Math.sqrt(dx * dx + dz * dz);
+        double deltaX = box.getCenter().x - origin.x;
+        double deltaZ = box.getCenter().z - origin.z;
+        double horizontal = Math.sqrt(deltaX * deltaX + deltaZ * deltaZ);
         if (horizontal > entity.arcRadius()) {
             return false;
         }
@@ -32,9 +41,9 @@ public final class ArcHitbox implements TechniqueHitbox {
         if (horizontal < 1.0E-4) {
             return true;
         }
-        double nx = dx / horizontal;
-        double nz = dz / horizontal;
-        double dot = Math.max(-1.0, Math.min(1.0, forward.x * nx + forward.z * nz));
+        double normalizedX = deltaX / horizontal;
+        double normalizedZ = deltaZ / horizontal;
+        double dot = Math.max(-1.0, Math.min(1.0, forward.x * normalizedX + forward.z * normalizedZ));
         double angle = Math.toDegrees(Math.acos(dot));
         return angle <= entity.arcDegrees() * 0.5;
     }
@@ -53,12 +62,12 @@ public final class ArcHitbox implements TechniqueHitbox {
         Vec3 look = entity.aim() != null
                 ? entity.aim()
                 : (entity.getCaster() != null ? entity.getCaster().getLookAngle() : entity.forward());
-        double x = look.x;
-        double z = look.z;
-        double length = Math.sqrt(x * x + z * z);
+        double lookX = look.x;
+        double lookZ = look.z;
+        double length = Math.sqrt(lookX * lookX + lookZ * lookZ);
         if (length < 1.0E-4) {
             return new Vec3(0.0, 0.0, 1.0);
         }
-        return new Vec3(x / length, 0.0, z / length);
+        return new Vec3(lookX / length, 0.0, lookZ / length);
     }
 }

@@ -1,0 +1,11 @@
+attempt=2
+gradle_user_home=C:\Users\baishang\.gradle
+java_home=C:\Program Files\Java\jdk-17
+command=.\gradlew.bat compileJava --offline --no-daemon
+compile_start=2026-10-29T23:32:11.4609881+08:00
+src_main_files=769
+src_main_latest_before=2026-10-29T23:13:25.4719538+08:00 src\main\java\com\bslx\XueXiMod\client\FireVisualClient.java
+paths13_latest_before=2026-10-29T23:11:01.0177388+08:00 TechniqueHits.java
+compile_end=2026-10-29T23:32:27.5716036+08:00
+gradle_exit=0
+elapsed_seconds=16.111

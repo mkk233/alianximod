@@ -1,0 +1,179 @@
+{
+  "projectId": "8a58e270-0fce-3a38-f8c5-528d850c4a39",
+  "version": "5.2.2",
+  "viewport": "connected main; explicit render() then canvas.toDataURL; no offscreen or compositing",
+  "visibilityState": "hidden",
+  "captures": [
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-close-perspective-t40.png",
+      "tick": 40,
+      "activeSamples": 65,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        60,
+        26.999999999999993,
+        79.99999999999999
+      ],
+      "target": [
+        38,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-side-t40.png",
+      "tick": 40,
+      "activeSamples": 65,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        38,
+        8.250000000000005,
+        90
+      ],
+      "target": [
+        38,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t04.png",
+      "tick": 4,
+      "activeSamples": 0,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        40,
+        34,
+        140
+      ],
+      "target": [
+        40,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t20.png",
+      "tick": 20,
+      "activeSamples": 25,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        40,
+        34,
+        140
+      ],
+      "target": [
+        40,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t40.png",
+      "tick": 40,
+      "activeSamples": 65,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        40,
+        34,
+        140
+      ],
+      "target": [
+        40,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t52.png",
+      "tick": 52,
+      "activeSamples": 80,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        40,
+        34,
+        140
+      ],
+      "target": [
+        40,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t68.png",
+      "tick": 68,
+      "activeSamples": 56,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        40,
+        34,
+        140
+      ],
+      "target": [
+        40,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t84.png",
+      "tick": 84,
+      "activeSamples": 24,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        40,
+        34,
+        140
+      ],
+      "target": [
+        40,
+        8.25,
+        0
+      ]
+    },
+    {
+      "path": "D:/alianximod/docs/资源库/过程归档/留焰_v2_子弹尾焰整体预览_20261112/viewport-phase-t96.png",
+      "tick": 96,
+      "activeSamples": 0,
+      "viewId": "main",
+      "connected": true,
+      "width": 1706,
+      "height": 1275,
+      "camera": [
+        40,
+        34,
+        140
+      ],
+      "target": [
+        40,
+        8.25,
+        0
+      ]
+    }
+  ]
+}

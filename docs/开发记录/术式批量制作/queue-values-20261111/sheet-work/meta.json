@@ -1,0 +1,1222 @@
+{
+  "archiveHeaders": {
+    "1": {
+      "DN": "\u9644\u9b54\u7d2f\u79ef",
+      "DV": "\u5907\u6ce8",
+      "DW": "\u8d44\u6e90\u4e0e\u72b6\u6001",
+      "EP": "\u6765\u6e90",
+      "EX": "\u672a\u56de\u586b\u7684\u8d44\u6e90\u5217\u539f\u503c"
+    },
+    "2": {
+      "DK": "\u65e7\u6863\u00b7\u51cf\u901f\u5468\u671ftick",
+      "DL": "\u65e7\u6863\u00b7\u51cf\u901f\u5ef6\u8fdftick",
+      "DM": "\u8017\u6c27\u500d\u7387",
+      "DN": "\u9644\u9b54\u6548\u679c\u952e",
+      "DO": "\u9644\u9b54\u521d\u59cb\u5c42\u6570",
+      "DP": "\u9644\u9b54\u534a\u5f84\u57fa\u6570",
+      "DQ": "\u9644\u9b54\u65f6\u957f\u57fa\u6570",
+      "DR": "\u9644\u9b54\u534a\u5f84\u500d\u7387",
+      "DS": "\u9644\u9b54\u65f6\u957f\u500d\u7387",
+      "DT": "\u9644\u9b54\u4f24\u5bb3\u500d\u7387",
+      "DU": "\u9644\u9b54\u901f\u5ea6\u500d\u7387",
+      "DV": "\u5907\u6ce8",
+      "DW": "\u914d\u7f6e\u542f\u7528",
+      "DX": "\u8d44\u6e90",
+      "DY": "\u72b6\u6001",
+      "DZ": "\u64cd\u4f5c",
+      "EA": "\u4f5c\u7528\u5bf9\u8c61",
+      "EB": "\u89e6\u53d1\u65f6\u673a",
+      "EC": "\u6570\u503c",
+      "ED": "\u72b6\u6001amplifier",
+      "EE": "\u5bff\u547d\u7b56\u7565",
+      "EF": "\u5bff\u547dtick",
+      "EG": "\u5468\u671ftick",
+      "EH": "\u9996\u6b21\u5ef6\u8fdftick",
+      "EI": "\u8ba1\u91cf\u5355\u4f4d",
+      "EJ": "\u751f\u6548\u6761\u4ef6",
+      "EK": "\u7ed3\u7b97\u7ea6\u675f",
+      "EL": "\u8fc1\u79fb\u6765\u6e90",
+      "EM": "\u5173\u8054\u8bf4\u660e",
+      "EN": "\u9644\u52a0\u660e\u7ec6\u952e",
+      "EP": "\u6765\u6e90\u6587\u4ef6",
+      "EQ": "\u6765\u6e90\u9875",
+      "ER": "\u6765\u6e90\u884c",
+      "ES": "\u5907\u4efd\u65f6\u95f4",
+      "ET": "\u91c7\u96c6\u65f6\u95f4",
+      "EU": "\u6e90\u54c8\u5e0c",
+      "EV": "\u5feb\u7167\u8bf4\u660e",
+      "EX": "\u5173\u8054\u8d44\u6e90\u72b6\u6001\u660e\u7ec6",
+      "EY": "\u8d44\u6e90\u5217\u6765\u6e90\u6587\u4ef6",
+      "EZ": "\u8d44\u6e90\u5217\u6765\u6e90\u884c",
+      "FA": "\u8d44\u6e90\u5217\u6765\u6e90\u54c8\u5e0c",
+      "FB": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u914d\u7f6e\u542f\u7528",
+      "FC": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u8d44\u6e90",
+      "FD": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u72b6\u6001",
+      "FE": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u64cd\u4f5c",
+      "FF": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u4f5c\u7528\u5bf9\u8c61",
+      "FG": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u89e6\u53d1\u65f6\u673a",
+      "FH": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u6570\u503c",
+      "FI": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u72b6\u6001amplifier",
+      "FJ": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u5bff\u547d\u7b56\u7565",
+      "FK": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u5bff\u547dtick",
+      "FL": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u5468\u671ftick",
+      "FM": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u9996\u6b21\u5ef6\u8fdftick",
+      "FN": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u8ba1\u91cf\u5355\u4f4d",
+      "FO": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u751f\u6548\u6761\u4ef6",
+      "FP": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u7ed3\u7b97\u7ea6\u675f",
+      "FQ": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u8fc1\u79fb\u6765\u6e90",
+      "FR": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u5173\u8054\u8bf4\u660e",
+      "FS": "\u9996\u6b21\u8d44\u6e90\u5217\u539f\u503c\u00b7\u9644\u52a0\u660e\u7ec6\u952e"
+    }
+  },
+  "archiveLastMeta": {
+    "DK": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DL": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DM": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DN": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DO": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DP": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DQ": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DR": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DS": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DT": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DU": {
+      "value": null,
+      "type": "n",
+      "style": "8"
+    },
+    "DV": {
+      "value": "\u5e2e\u6211\u505a\u51e0\u4e2a\u672f\u5f0f\n\u6269\u5c55\u591a\u91cd\u91ca\u653e\u548c\u4e00\u5206\u4e3aN\n\u4e09\u91cd\u91ca\u653e\u3001\u56db\u91cd\u91ca\u653e\u30018\u91cd\u91ca\u653e16\u91cd\u91ca\u653e\u3001\u7a77\u5c3d\u91ca\u653e\n\u4e00\u5206\u4e3a\u4e8c\u3001\u4e00\u5206\u4e3a5\uff0c\u4e00\u5206\u4e3a8\n\u4ed6\u4eec\u5e94\u8be5\u7528\u540c\u6837\u7684\u5e95\u5ea7\u529f\u80fd\u53ea\u662f\u6570\u503c\u4e0d\u4e00\u6837\u800c\u5df2\uff0c\u8bb0\u5f97\u9075\u5faa\u6d41\u7a0b\n\u6765\u6e90\uff1a\u7528\u62372026-11-09\u76f4\u63a5\u9700\u6c42\u3002\u8f93\u5165\u7248\u672c user-release-variants-20261109-v1\u3002\n\u8bb0\u5f55\uff1adocs/\u5f00\u53d1\u8bb0\u5f55/\u672f\u5f0f\u6279\u91cf\u5236\u4f5c/\u591a\u91cd\u4e0e\u5206\u88c2\u6269\u5c55-20261109/\u8bb0\u5f55.md\n\u672c\u6279\u65b9\u6848\u9ed8\u8ba4\u6cbf\u7528\u540c\u7c7b\u51b7\u5374/\u8017\u9b54\uff0c\u6570\u91cf\u7531\u58f0\u660e\u51b3\u5b9a\uff1b\u5f00\u53d1\u4e2d\uff0c\u5c1a\u672a\u7f16\u8bd1/\u6e38\u620f\u9a8c\u6536\u3002",
+      "type": "inlineStr",
+      "style": "9"
+    },
+    "EP": {
+      "value": "docs/\u672f\u5f0f\u5236\u4f5c\u8868.xlsx",
+      "type": "inlineStr",
+      "style": "9"
+    },
+    "EQ": {
+      "value": "\u5f85\u5236\u4f5c",
+      "type": "inlineStr",
+      "style": "9"
+    },
+    "ER": {
+      "value": "10",
+      "type": "n",
+      "style": "8"
+    },
+    "ES": {
+      "value": "2026-11-09 17:43:11",
+      "type": "inlineStr",
+      "style": "9"
+    },
+    "ET": {
+      "value": "2026-11-09 17:43:11",
+      "type": "inlineStr",
+      "style": "9"
+    },
+    "EU": {
+      "value": "509CE84A4FBDA6771A865D9190F213FBB3C41AD4206A398D99A9539C7031CD15",
+      "type": "inlineStr",
+      "style": "9"
+    },
+    "EV": {
+      "value": "2026-11-09\u9996\u6b21\u4ece\u7a7a\u767d\u5f85\u5236\u4f5c\u8f6c\u5f55\u7528\u6237\u76f4\u63a5\u9700\u6c42\uff0c\u5e76\u5728\u8fc1\u5165\u5236\u4f5c\u4e2d\u4e4b\u524d\u7559\u4e0b\u8fd9\u4efd\u9996\u6b21\u5feb\u7167\u3002\u539f\u6587\u662f\u8f6c\u5f55\u65f6\u7684\u5f85\u5236\u4f5c\u6574\u884c\uff0c\u4e0d\u662f\u4ece\u5df2\u5b8c\u6210\u6216\u5236\u4f5c\u4e2d\u53cd\u63a8\u3002\u65e0\u9002\u7528\u8d44\u6e90\u72b6\u6001\u660e\u7ec6\u3002\u8f93\u5165\u7248\u672c user-release-variants-20261109-v1\u3002",
+      "type": "inlineStr",
+      "style": "9"
+    },
+    "EX": {
+      "value": "\u65e0\u72ec\u7acb\u884c",
+      "type": "inlineStr",
+      "style": "9"
+    }
+  },
+  "dataRows": [
+    {
+      "row": 1,
+      "attrs": "<row r=\"1\" ht=\"24\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u586b\u5199\u524d\u56db\u5f20\u8868\u65f6\uff0c\u5e26\u4e0b\u62c9\u7684\u5217\u76f4\u63a5\u9009\u8fd9\u91cc\u7684\u540d\u5b57\u3002\u4ee3\u7801\u662f\u5f53\u524d\u679a\u4e3e\uff0c\u65b9\u4fbf\u5bf9\u6e90\u7801\u3002",
+          "type": "inlineStr",
+          "style": "27"
+        },
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      }
+    },
+    {
+      "row": 2,
+      "attrs": "<row r=\"2\" ht=\"19.95\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u5f39\u9053",
+          "type": "inlineStr",
+          "style": "27"
+        },
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": {
+          "value": "\u94fe\u4e0a\u89d2\u8272",
+          "type": "inlineStr",
+          "style": "27"
+        },
+        "F": null,
+        "G": null,
+        "H": null
+      }
+    },
+    {
+      "row": 3,
+      "attrs": "<row r=\"3\" ht=\"16.2\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u540d\u79f0",
+          "type": "inlineStr",
+          "style": "12"
+        },
+        "B": {
+          "value": "\u4ee3\u7801",
+          "type": "inlineStr",
+          "style": "12"
+        },
+        "C": {
+          "value": "\u8bf4\u660e",
+          "type": "inlineStr",
+          "style": "12"
+        },
+        "D": null,
+        "E": {
+          "value": "\u540d\u79f0",
+          "type": "inlineStr",
+          "style": "12"
+        },
+        "F": {
+          "value": "\u4ee3\u7801",
+          "type": "inlineStr",
+          "style": "12"
+        },
+        "G": {
+          "value": "\u8bf4\u660e",
+          "type": "inlineStr",
+          "style": "12"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 4,
+      "attrs": "<row r=\"4\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u76f4\u7ebf",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "B": {
+          "value": "STRAIGHT",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "C": {
+          "value": "\u6cbf\u51fa\u624b\u65b9\u5411\u76f4\u884c",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "D": null,
+        "E": {
+          "value": "\u653b\u51fb",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "ATTACK",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u7ed3\u7b97\u987a\u5e8f\u91cc\u7684\u653b\u51fb\u6bb5",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 5,
+      "attrs": "<row r=\"5\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u5782\u843d",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "B": {
+          "value": "DROP",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "C": {
+          "value": "\u8def\u5f84\u6539\u4e3a\u4ece\u4e0a\u5f80\u4e0b",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "D": null,
+        "E": {
+          "value": "\u52a8\u4f5c",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "F": {
+          "value": "ACTION",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "G": {
+          "value": "\u51b2\u523a\u8fd9\u7c7b\u4f4d\u79fb",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 6,
+      "attrs": "<row r=\"6\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u8ddf\u968f\u51c6\u661f",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "B": {
+          "value": "FOLLOW_LOOK",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "C": {
+          "value": "\u6301\u7eed\u8ddf\u7740\u51c6\u661f\u8f6c\u5411",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "D": null,
+        "E": {
+          "value": "\u843d\u70b9\u6307\u5b9a",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "SEEK_SPACE",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u53ea\u51b3\u5b9a\u843d\u70b9",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 7,
+      "attrs": "<row r=\"7\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u66f2\u7ebf\u51fd\u6570",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "B": {
+          "value": "FUNCTION",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "C": {
+          "value": "\u8d70\u5df2\u767b\u8bb0\u7684\u66f2\u7ebf\u7f16\u53f7",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "D": null,
+        "E": {
+          "value": "\u9501\u5b9a\u5b9e\u4f53",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "F": {
+          "value": "SEEK_ENTITY",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "G": {
+          "value": "\u9501\u5b9a\u51c6\u661f\u9644\u8fd1\u7684\u5b9e\u4f53",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 8,
+      "attrs": "<row r=\"8\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u9f99\u5377",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "B": {
+          "value": "VORTEX",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "C": {
+          "value": "\u56fa\u5b9a\u534a\u5f84\u87ba\u65cb\u3002\u8f74\u5411\u901f\u5ea6\u7528\u653b\u51fb\u81ea\u5df1\u7684\u901f\u5ea6",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "D": null,
+        "E": {
+          "value": "\u8ffd\u8e2a",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "TRAJECTORY_TRACKING",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u98de\u884c\u4e2d\u6309\u81ea\u8eab\u8303\u56f4\u641c\u7d22\u5e76\u8f6c\u5411",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 9,
+      "attrs": "<row r=\"9\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u629b\u7269\u7ebf",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "B": {
+          "value": "PARABOLA",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "C": {
+          "value": "\u6309\u521d\u901f\u3001\u4ef0\u89d2\u548c\u91cd\u529b\u98de\u884c\uff0c\u4e0d\u662f\u5782\u843d",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "D": null,
+        "E": {
+          "value": "\u5782\u843d\u6539\u5199",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "F": {
+          "value": "TRAJECTORY_DROP",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "G": {
+          "value": "\u628a\u4e0b\u4e00\u6bb5\u6539\u6210\u5782\u843d\u3002\u98ce\u66b4\u8f68\u8ff9\u4e5f\u767b\u8bb0\u6210\u8fd9\u4e2a\u89d2\u8272\uff0c\u5f39\u9053\u53e6\u7528\u9f99\u5377",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 10,
+      "attrs": "<row r=\"10\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u55b7\u6d8c",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "B": {
+          "value": "UPWELL",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "C": {
+          "value": "\u4ece\u951a\u70b9\u5411\u4e0a\u55b7\u51fa\uff0c\u4e0d\u662f\u76f4\u7ebf\u6216\u5782\u843d",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "D": null,
+        "E": {
+          "value": "\u4e09\u7ef4\u4ea4\u9519",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "TRAJECTORY_SCATTER",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u6bcf\u4e00\u4efd\u5728\u843d\u70b9\u5468\u56f4\u9519\u5f00",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 11,
+      "attrs": "<row r=\"11\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": {
+          "value": "\u4e00\u5206\u4e3a\u4e09",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "F": {
+          "value": "RULE_TRIPLE",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "G": {
+          "value": "\u590d\u5236\u540e\u9762\u7b2c\u4e00\u4e2a\u653b\u51fb\uff0c\u4f24\u5bb3\u6c47\u603b",
+          "type": "inlineStr",
+          "style": "14"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 12,
+      "attrs": "<row r=\"12\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": {
+          "value": "\u53cc\u91cd\u91ca\u653e",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "RULE_DUAL",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u518d\u62c9\u540e\u9762\u82e5\u5e72\u6bb5\uff0c\u6bb5\u6570\u770b\u300c\u53cc\u91cd\u91ca\u653e\u518d\u62c9\u6bb5\u6570\u300d",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 13,
+      "attrs": "<row r=\"13\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": {
+          "value": "\u5730\u8868\u5b9a\u4f4d",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "SEEK_SURFACE",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u628a\u540e\u7eed\u51fa\u751f\u6539\u5230\u89c6\u7ebf\u5185\u7b2c\u4e00\u5904\u5411\u4e0a\u627f\u6258\u9762",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 14,
+      "attrs": "<row r=\"14\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": {
+          "value": "\u55b7\u6d8c\u6539\u5199",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "TRAJECTORY_UPWELL",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u628a\u540e\u7eed\u8fd0\u52a8\u6539\u6210\u5411\u4e0a\u55b7\u51fa",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 15,
+      "attrs": "<row r=\"15\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": {
+          "value": "\u9519\u65f6",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "RULE_STAGGER",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u7b2ci\u4efd\u5728\u7ec4\u5f00\u59cb\u540e\u5ef6\u8fdf10i tick\u51fa\u751f",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 16,
+      "attrs": "<row r=\"16\" ht=\"15.6\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": {
+          "value": "\u547d\u4e2d\u63a5\u7eed",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "F": {
+          "value": "RULE_HIT_CONTINUE",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "G": {
+          "value": "\u7236\u6bb5\u6210\u7acb\u540e\u63a5\u4e00\u6bb5\u5b50\u6548\u679c",
+          "type": "inlineStr",
+          "style": "13"
+        },
+        "H": null
+      }
+    },
+    {
+      "row": 17,
+      "missing": true
+    }
+  ],
+  "pendingCells": [
+    {
+      "row": 2,
+      "attrs": "<row r=\"2\" ht=\"36\" customHeight=\"1\" s=\"19\">",
+      "cells": {
+        "A": {
+          "value": "\u540d\u79f0",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "\u7f16\u53f7",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": {
+          "value": "\u57fa\u7840\u4f24\u5bb3",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "F": {
+          "value": "\u57fa\u7840\u51b7\u5374tick",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "G": {
+          "value": "\u7b49\u7ea7\u4e0a\u9650",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "H": {
+          "value": "\u590d\u6742\u5ea6",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "I": {
+          "value": "\u767b\u8bb0\u5f39\u901f",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "K": {
+          "value": "\u88c5\u914d\u6d88\u8017",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "L": {
+          "value": "\u767b\u8bb0\u9b54\u529b",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "N": {
+          "value": "\u529f\u80fd\u63cf\u8ff0",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u7279\u6548",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": {
+          "value": "\u5f39\u9053",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "S": {
+          "value": "\u94fe\u4e0a\u89d2\u8272",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "V": {
+          "value": "\u98de\u884c\u901f\u5ea6",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "DX": {
+          "value": "\u8d44\u6e90",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EC": {
+          "value": "\u6570\u503c",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EJ": {
+          "value": "\u751f\u6548\u6761\u4ef6",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EK": {
+          "value": "\u7ed3\u7b97\u7ea6\u675f",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "DV": {
+          "value": "\u5907\u6ce8",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 3,
+      "attrs": "<row r=\"3\">",
+      "cells": {
+        "A": {
+          "value": "\u6311\u706f",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "fire_pick_lamp",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u6301\u5251\u5411\u524d\u4e0a\u65b9\u6311\u8d77\uff0c\u5251\u950b\u5e26\u51fa\u4e00\u9053\u77ed\u8ddd\u79bb\u3001\u7ad6\u5411\u5c55\u5f00\u7684\u706b\u5f27\u3002\u5bf9\u524d\u65b9\u8f83\u7a84\u533a\u57df\u9020\u6210\u4e00\u6b21\u5251\u51fb\u4e0e\u706b\u5c5e\u6027\u4f24\u5bb3\uff0c\u547d\u4e2d\u65f6\u660e\u786e\u589e\u52a0\u706b\u79cd\u3002\u5bf9\u53ef\u88ab\u51fb\u9000\u7684\u654c\u4eba\u65bd\u52a0\u77ed\u4fc3\u5411\u4e0a\u51fb\u9000\uff0c\u4e0d\u9020\u6210\u957f\u65f6\u95f4\u6d6e\u7a7a\u3002\u706b\u5f27\u968f\u6325\u5251\u5b8c\u6210\uff0c\u4e0d\u72ec\u7acb\u98de\u51fa\uff0c\u4e5f\u4e0d\u9644\u9001\u51b2\u523a\u3001\u8ffd\u51fb\u6216\u5f15\u7206\u3002\u4e0d\u80fd\u88ab\u6311\u8d77\u7684\u5f3a\u654c\u4ecd\u53d7\u5230\u4f24\u5bb3\u5e76\u589e\u52a0\u706b\u79cd\u3002\u672c\u62db\u63d0\u4f9b\u5251\u6280\u8def\u7ebf\u7684\u706b\u79cd\u751f\u4ea7\uff0c\u53ef\u5355\u72ec\u4f7f\u7528\uff0c\u4e5f\u53ef\u63a5\u540e\u7eed\u5251\u6280\uff1b\u4e0d\u627f\u62c5\u5316\u5883\u71ce\u91cc\u7684\u9ad8\u6295\u5165\u8d44\u6e90\u5151\u73b0\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u6325\u5251\u65f6\u5e26\u51fa\u4e00\u9053\u8d34\u7740\u5251\u950b\u3001\u5411\u524d\u4e0a\u65b9\u7ad6\u5411\u5c55\u5f00\u7684\u77ed\u706b\u5f27\u3002\u706b\u5f27\u968f\u8fd9\u4e00\u6b21\u6325\u5251\u51fa\u73b0\u5e76\u6536\u675f\uff0c\u4e0d\u5f62\u6210\u72ec\u7acb\u98de\u884c\u7684\u706b\u7130\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": {
+          "value": "\u76f4\u7ebf",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "S": {
+          "value": "\u653b\u51fb",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "V": null,
+        "DX": {
+          "value": "\u706b\u79cd",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EC": null,
+        "EJ": {
+          "value": "\u6709\u6548\u547d\u4e2d\u624d\u589e\u52a0\u706b\u79cd\u3002\u63a7\u5236\u6216\u51fb\u9000\u672a\u751f\u6548\u4e0d\u5f71\u54cd\u4ea7\u79cd\u3002",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EK": {
+          "value": "\u53ea\u589e\u52a0\u706b\u79cd\uff0c\u4e0d\u6d88\u8d39\u706b\u79cd\u3002\u5177\u4f53\u70b9\u6570\u3001\u7089\u5fc3\u500d\u7387\u4e0e\u4e0a\u9650\u6cbf\u7528\u73b0\u6709\u706b\u79cd\u5e95\u5ea7\uff0c\u5f85\u5b9e\u73b0\u524d\u786e\u8ba4\u3002",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u786e\u8ba4\uff1a\u201c\u6311\u706f\u770b\u5251\u786e\u5b9e\u597d\uff0c\u5c31\u6309\u8fd9\u4e2a\u6548\u679c\u52a0\u5165\u5427\u5199\u5230\u672f\u5f0f\u5236\u4f5c\u8868\u7684\u5f85\u5236\u4f5c\u4e2d\u201d\u3002\u5b9a\u4f4d\u4e3a\u706b\u5c5e\u6027\u901a\u7384\u9636\u6bb5\u7684\u8fc7\u6e21\u5251\u6280\uff0c\u8854\u63a5\u5316\u5883\u71ce\u91cc\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002\u4f24\u5bb3\u3001\u51b7\u5374\u3001\u6cd5\u529b\u3001\u88c5\u914d\u6d88\u8017\u3001\u590d\u6742\u5ea6\u3001\u7b49\u7ea7\u4e0a\u9650\u3001\u547d\u4e2d\u8303\u56f4\u3001\u706b\u79cd\u6570\u91cf\u3001\u51fb\u9000\u5e45\u5ea6\u548c\u65f6\u957f\u5747\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u77ed\u4fc3\u5411\u4e0a\u51fb\u9000\u53ea\u4f5c\u7528\u4e8e\u53ef\u88ab\u51fb\u9000\u7684\u654c\u4eba\uff0c\u4e0d\u505a\u957f\u65f6\u95f4\u6d6e\u7a7a\uff1b\u63a7\u5236\u5931\u6548\u65f6\u4f24\u5bb3\u4e0e\u4ea7\u79cd\u4ecd\u7136\u6709\u6548\u3002\u706b\u5f27\u4e0d\u72ec\u7acb\u98de\u884c\uff0c\u4e0d\u9644\u9001\u51b2\u523a\u3001\u8ffd\u51fb\u6216\u5f15\u7206\u3002\u540e\u7eed\u4f4d\u7f6e\u8c03\u6574\u7531\u73a9\u5bb6\u53e6\u884c\u88c5\u914d\u9002\u7528\u672f\u5f0f\u3002\u672c\u62db\u662f\u706b\u79cd\u751f\u4ea7\u624b\u6bb5\uff0c\u4e0d\u6d88\u8d39\u706b\u79cd\uff0c\u4e5f\u4e0d\u627f\u62c5\u71ce\u91cc\u7684\u8d44\u6e90\u5151\u73b0\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 4,
+      "attrs": "<row r=\"4\">",
+      "cells": {
+        "A": {
+          "value": "\u5e73\u884c",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "trajectory_parallel",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u628a\u540e\u7eed\u5141\u8bb8\u6539\u5199\u5f39\u9053\u7684\u672f\u5f0f\uff0c\u6539\u6210\u6cbf\u65bd\u653e\u671d\u5411\u7684\u6c34\u5e73\u65b9\u5411\u98de\u884c\uff0c\u5e76\u4fdd\u7559\u5b83\u539f\u6765\u7684\u751f\u6210\u4f4d\u7f6e\u3002\u5e73\u884c\u53ea\u6539\u53d8\u884c\u8fdb\u65b9\u5411\uff0c\u4e0d\u989d\u5916\u63d0\u4f9b\u4f24\u5bb3\u3001\u6f6e\u6e7f\u6216\u5176\u4ed6\u653b\u51fb\u6548\u679c\u3002\u5782\u4e1d\u5355\u72ec\u4f7f\u7528\u65f6\u4ecd\u4fdd\u6301\u524d\u4e0a\u65b9\u5782\u843d\uff1b\u4e0e\u5e73\u884c\u7ec4\u5408\u540e\u6539\u4e3a\u5411\u524d\u6c34\u5e73\u53d1\u51fa\uff0c\u6210\u4e3a\u53d1\u5c04\u578b\u672f\u5f0f\uff0c\u4f24\u5bb3\u548c\u6f6e\u6e7f\u4ecd\u7531\u5782\u4e1d\u63d0\u4f9b\u3002\u4e0d\u5f3a\u5236\u6539\u5199\u62d2\u7edd\u5f39\u9053\u6539\u5199\u7684\u653b\u51fb\uff0c\u5c24\u5176\u4e0d\u80fd\u628a\u4e0d\u53ef\u6539\u5199\u7684\u65a9\u51fb\u81ea\u52a8\u53d8\u6210\u98de\u884c\u7269\u3002\u4e0e\u843d\u70b9\u6307\u5b9a\u7ec4\u5408\u65f6\uff0c\u843d\u70b9\u6307\u5b9a\u51b3\u5b9a\u4ece\u54ea\u91cc\u53d1\u51fa\uff0c\u5e73\u884c\u51b3\u5b9a\u6cbf\u6c34\u5e73\u65b9\u5411\u5f80\u54ea\u91cc\u98de\u3002\u4e00\u6761\u653b\u51fb\u5206\u652f\u53ea\u9009\u62e9\u4e00\u79cd\u5b8c\u6574\u8fd0\u52a8\u8def\u5f84\uff0c\u4e0d\u4e0e\u5782\u843d\u3001\u55b7\u6d8c\u6216\u98ce\u66b4\u8f68\u8ff9\u53e0\u6210\u591a\u5957\u8fd0\u52a8\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u672c\u8eab\u4e0d\u53e6\u505a\u653b\u51fb\u7279\u6548\u3002\u88ab\u6539\u5199\u7684\u672f\u5f0f\u4fdd\u7559\u81ea\u5df1\u7684\u5916\u89c2\uff0c\u53ea\u6539\u4e3a\u6c34\u5e73\u98de\u884c\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": null,
+        "S": null,
+        "V": null,
+        "DX": null,
+        "EC": null,
+        "EJ": null,
+        "EK": null,
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u539f\u8bdd\uff1a\u201c\u8bbe\u8ba1\u4e00\u4e2a\u65b0\u7684\u5f39\u9053\u7c7b\u578b\u6c34\u5e73\u98de\u884c\u5f39\u9053\uff0c\u540d\u5b57\u6682\u5b9a\u5e73\u884c\u3002\u6539\u53d8\u5782\u4e1d\u7684\u65b9\u5411\u5c31\u53ef\u4ee5\u53d8\u6210\u53d1\u5c04\u7c7b\u578b\u7684\u672f\u5f0f\u4e86\uff0c\u4e0e\u539f\u672c\u7684\u8bbe\u8ba1\u4e0d\u51b2\u7a81\uff0c\u8fd8\u7a81\u51fa\u4e86\u6a21\u7ec4\u9700\u8981\u73a9\u5bb6\u81ea\u884c\u7ec4\u5408\u672f\u5f0f\u7684\u6838\u5fc3\u903b\u8f91\u3002\u201d\u540d\u79f0\u6682\u5b9a\u5e73\u884c\u3002\u8fd9\u662f\u901a\u7528\u89c4\u5219\u672f\u5f0f\uff0c\u4e0d\u7ed1\u5b9a\u6c34\u5c5e\u6027\u3002\u73b0\u6709\u5f39\u9053\u540d\u5355\u548c\u94fe\u4e0a\u89d2\u8272\u540d\u5355\u6ca1\u6709\u5e73\u884c\u3001\u5e73\u884c\u6539\u5199\uff0c\u8fd9\u4e24\u683c\u7559\u7a7a\uff0c\u4e0d\u6539\u8bb0\u6210\u76f4\u7ebf\u3001\u5782\u843d\u6216\u55b7\u6d8c\u3002\u62df\u7528\u5f39\u9053\u540d\u79f0\u300c\u5e73\u884c\u300d\uff0c\u62df\u7528\u94fe\u4e0a\u89d2\u8272\u300c\u5e73\u884c\u6539\u5199\u300d\u3002\u51e1\u80ce\u5373\u53ef\u7528\u6765\u6539\u5199\u5782\u4e1d\uff0c\u4e0d\u628a\u9636\u6bb5\u5199\u8fdb\u590d\u6742\u5ea6\u3002\u9b54\u529b\u3001\u51b7\u5374\u3001\u590d\u6742\u5ea6\u3001\u88c5\u914d\u6d88\u8017\u548c\u7b49\u7ea7\u4e0a\u9650\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 5,
+      "attrs": "<row r=\"5\">",
+      "cells": {
+        "A": {
+          "value": "\u6d6a",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "water_wave",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u6d88\u8017\u6c34\u52bf\uff0c\u5411\u9762\u524d\u533a\u57df\u62cd\u51fa\u4e00\u9053\u6d6a\uff0c\u62cd\u51fb\u533a\u57df\u5185\u7684\u654c\u4eba\u3002\u672c\u6b21\u5b9e\u9645\u6d88\u8017\u7684\u6c34\u52bf\u8d8a\u9ad8\uff0c\u62cd\u51fb\u8303\u56f4\u8d8a\u5927\uff0c\u4f24\u5bb3\u8d8a\u9ad8\uff1b\u4e0d\u80fd\u53ea\u652f\u4ed8\u5c11\u91cf\u6c34\u52bf\uff0c\u5374\u6309\u8d26\u9762\u4f59\u989d\u6253\u51fa\u6ee1\u89c4\u6a21\u3002\u4e3b\u8981\u6536\u76ca\u662f\u8303\u56f4\u51fb\u9000\uff0c\u4f24\u5bb3\u4e0d\u7528\u9ad8\u3002\u51fb\u9000\u8ddd\u79bb\u4e0d\u968f\u6c34\u52bf\u540c\u6bd4\u4f8b\u5927\u5e45\u589e\u52a0\uff0c\u907f\u514d\u628a\u654c\u4eba\u76f4\u63a5\u63a8\u51fa\u6218\u573a\u3002\u7528\u4e8e\u63a8\u5f00\u56f4\u653b\u3001\u62c9\u5f00\u8ddd\u79bb\uff0c\u5e76\u7ed9\u540e\u7eed\u65bd\u672f\u7559\u51fa\u7a7a\u95f4\u3002\u6ca1\u6709\u53ef\u7528\u6c34\u52bf\u65f6\u4e0d\u80fd\u6253\u51fa\u6709\u6548\u7684\u6d6a\u3002\u4e0d\u505a\u6210\u8fdc\u7a0b\u98de\u884c\u5f39\uff0c\u4e0d\u9644\u9001\u7275\u5f15\u3001\u5b9a\u8eab\u6216\u9ad8\u989d\u4f24\u5bb3\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u9762\u524d\u6380\u8d77\u4e00\u9053\u8d34\u5730\u7684\u6d6a\uff0c\u62cd\u4e2d\u533a\u57df\u5185\u7684\u654c\u4eba\u540e\u6563\u5f00\u3002\u8986\u76d6\u8303\u56f4\u968f\u672c\u6b21\u6d88\u8017\u7684\u6c34\u52bf\u53d8\u5927\uff0c\u4e0d\u8868\u73b0\u6210\u98de\u884c\u6c34\u5f39\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": null,
+        "S": {
+          "value": "\u653b\u51fb",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "V": null,
+        "DX": {
+          "value": "\u6c34\u52bf",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EC": null,
+        "EJ": {
+          "value": "\u6309\u672c\u6b21\u5b9e\u9645\u6d88\u8017\u7684\u6c34\u52bf\u51b3\u5b9a\u8303\u56f4\u548c\u4f24\u5bb3\u3002\u6ca1\u6709\u53ef\u7528\u6c34\u52bf\u65f6\u4e0d\u4ea7\u751f\u6709\u6548\u62cd\u51fb\u3002",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EK": {
+          "value": "\u591a\u76ee\u6807\u4e0d\u91cd\u590d\u6263\u9664\u6c34\u52bf\u3002\u51fb\u9000\u8ddd\u79bb\u4e0d\u968f\u6d88\u8017\u7684\u6c34\u52bf\u540c\u6bd4\u4f8b\u5927\u5e45\u589e\u52a0\u3002",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u539f\u8bdd\uff1a\u201c\u65b0\u589e\u4e00\u4e2a\u540d\u4e3a\u6d6a\u7684\u6280\u80fd\uff0c\u6d88\u8017\u6c34\u52bf\uff0c\u6c34\u52bf\u8d8a\u9ad8\u6d6a\u7684\u8303\u56f4\u548c\u4f24\u5bb3\u8d8a\u9ad8\uff0c\u53ef\u4ee5\u6253\u51fa\u4e00\u6b21aoe\uff0c\u7528\u6d6a\u62cd\u51fb\u9762\u524d\u533a\u57df\u5185\u7684\u654c\u4eba\u3002\u4f24\u5bb3\u4e0d\u7528\u5f88\u9ad8\uff0c\u4e3b\u8981\u63d0\u4f9b\u8303\u56f4\u51fb\u9000\u3002\u201d\u6b64\u524d\u7684\u6c34\u5f39\u3001\u56de\u6f9c\u63d0\u6848\u53d6\u6d88\uff0c\u4e0d\u53e6\u5efa\u884c\u3002\u5b9a\u4f4d\u4e3a\u51e1\u80ce\u6c34\u7cfb\u672f\u6cd5\uff1b\u8868\u5185\u7c7b\u578b\u4f7f\u7528\u65e2\u6709\u540d\u79f0\u300c\u6cd5\u672f\u300d\u3002\u4e00\u6b21\u662f\u5426\u8017\u5c3d\u53ef\u7528\u6c34\u52bf\u3001\u662f\u5426\u8bbe\u7f6e\u5355\u6b21\u6d88\u8017\u4e0a\u9650\uff0c\u5747\u672a\u5b9a\u3002\u4f24\u5bb3\u3001\u8303\u56f4\u3001\u51fb\u9000\u5e45\u5ea6\u3001\u6cd5\u529b\u3001\u51b7\u5374\u3001\u590d\u6742\u5ea6\u3001\u88c5\u914d\u6d88\u8017\u548c\u7b49\u7ea7\u4e0a\u9650\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 6,
+      "attrs": "<row r=\"6\">",
+      "cells": {
+        "A": {
+          "value": "\u6392\u6f9c",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "water_disperse",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u6d88\u8017\u6c34\u52bf\uff0c\u6cbf\u9009\u5b9a\u65b9\u5411\u51b2\u6563\u8def\u5f84\u4e0a\u7684\u654c\u4eba\uff0c\u6e05\u51fa\u4e00\u6761\u901a\u8def\u3002\u5b83\u548c\u6d6a\u4e0d\u540c\uff1a\u6d6a\u662f\u9762\u524d\u533a\u57df\u7684\u62cd\u51fb\u4e0e\u8303\u56f4\u51fb\u9000\uff1b\u672c\u62db\u5f3a\u8c03\u6cbf\u4e00\u4e2a\u65b9\u5411\u628a\u654c\u4eba\u6392\u5f00\u3002\u5b83\u548c\u65cb\u6d41\u4e0d\u540c\uff1a\u65cb\u6d41\u7528\u4e8e\u805a\u62e2\uff0c\u672c\u62db\u7528\u4e8e\u6253\u6563\u56f4\u653b\u3001\u8ba9\u51fa\u4f4d\u7f6e\u3002\u6ca1\u6709\u53ef\u7528\u6c34\u52bf\u65f6\u4e0d\u80fd\u65bd\u653e\u6709\u6548\u6548\u679c\u3002\u4e0d\u9644\u9001\u9ad8\u989d\u4f24\u5bb3\u3001\u957f\u65f6\u95f4\u63a7\u5236\u6216\u8fdc\u7a0b\u98de\u884c\u5f39\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u4e00\u80a1\u6c34\u6d41\u6cbf\u9009\u5b9a\u65b9\u5411\u63a8\u5f00\u8def\u5f84\u4e0a\u7684\u654c\u4eba\uff0c\u8ba9\u51fa\u901a\u8def\u3002\u4e0d\u8868\u73b0\u6210\u9762\u524d\u7684\u6247\u5f62\u62cd\u51fb\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": null,
+        "S": {
+          "value": "\u653b\u51fb",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "V": null,
+        "DX": {
+          "value": "\u6c34\u52bf",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EC": null,
+        "EJ": {
+          "value": "\u6ca1\u6709\u53ef\u7528\u6c34\u52bf\u65f6\u4e0d\u4ea7\u751f\u6709\u6548\u51b2\u6563\u3002",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "EK": {
+          "value": "\u6c34\u52bf\u6309\u4e00\u6b21\u65bd\u653e\u6d88\u8017\uff0c\u4e0d\u6309\u88ab\u51b2\u6563\u7684\u76ee\u6807\u9010\u4e2a\u91cd\u590d\u6263\u9664\u3002\u5177\u4f53\u6d88\u8017\u65b9\u5f0f\u672a\u5b9a\u3002",
+          "type": "inlineStr",
+          "style": "15"
+        },
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u786e\u8ba4\u539f\u300c\u51b3\u6d41\u300d\u7684\u65b9\u5411\u51b2\u6563\u601d\u8def\u53ef\u4ee5\u91c7\u7528\uff0c\u4f46\u4e0d\u8981\u4f7f\u7528\u51b3\u6d41\u8fd9\u4e2a\u540d\u5b57\uff0c\u5e76\u8bf4\u660e\u5f53\u65f6\u6ca1\u6709\u5b9a\u540d\u3002\u540d\u79f0\u6682\u7528\u6392\u6f9c\uff0c\u5c1a\u672a\u7ecf\u7528\u6237\u5b9a\u7a3f\u3002\u5019\u9009\u8fd8\u6709\u8361\u6d41\u3001\u51b2\u6ce2\u3001\u5954\u6f6e\u3001\u5f00\u6f9c\u3001\u6d8c\u5ddd\u3002\u7f16\u53f7\u6309\u4f5c\u7528\u6682\u8bb0water_disperse\uff0c\u4e0d\u968f\u6682\u5b9a\u4e2d\u6587\u540d\u6539\u53d8\u3002\u5b9a\u4f4d\u4e3a\u901a\u7384\u6c34\u7cfb\u672f\u6cd5\uff1b\u8868\u5185\u7c7b\u578b\u4f7f\u7528\u65e2\u6709\u540d\u79f0\u300c\u6cd5\u672f\u300d\u3002\u6c34\u52bf\u6d88\u8017\u65b9\u5f0f\u3001\u901a\u8def\u957f\u5ea6\u3001\u5bbd\u5ea6\u3001\u51fb\u9000\u5e45\u5ea6\u3001\u4f24\u5bb3\u3001\u6cd5\u529b\u3001\u51b7\u5374\u3001\u590d\u6742\u5ea6\u3001\u88c5\u914d\u6d88\u8017\u548c\u7b49\u7ea7\u4e0a\u9650\u5747\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002\u82e5\u7528\u6237\u53e6\u5b9a\u540d\u79f0\uff0c\u53ea\u6539\u540d\u79f0\uff0c\u4e0d\u6539\u53d8\u672c\u884c\u6548\u679c\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 7,
+      "attrs": "<row r=\"7\">",
+      "cells": {
+        "A": {
+          "value": "\u67b6\u5251",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "sword_guard",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u6301\u5251\u77ed\u65f6\u95f4\u8fdb\u884c\u6b63\u9762\u62db\u67b6\u3002\u6210\u529f\u62db\u67b6\u65f6\u964d\u4f4e\u4e00\u6b21\u6765\u81ea\u6b63\u9762\u7684\u76f4\u63a5\u653b\u51fb\u4f24\u5bb3\u3002\u9700\u8981\u5224\u65ad\u671d\u5411\u548c\u62db\u67b6\u65f6\u673a\uff0c\u4e0d\u63d0\u4f9b\u6301\u7eed\u65e0\u654c\uff0c\u4e5f\u4e0d\u9644\u9001\u53cd\u51fb\u3001\u4f4d\u79fb\u6216\u81ea\u52a8\u63a5\u4e0b\u4e00\u62db\u3002\u62db\u67b6\u5931\u8d25\u65f6\u672c\u62db\u4e0d\u989d\u5916\u9020\u6210\u4f24\u5bb3\u3002\u7528\u4e8e\u627f\u63a5\u653b\u51fb\u5e76\u5bfb\u627e\u540e\u7eed\u51fa\u624b\u673a\u4f1a\uff0c\u5b9a\u4f4d\u4e3a\u51e1\u80ce\u5251\u6280\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u77ed\u65f6\u95f4\u5c06\u5251\u6a2a\u5728\u8eab\u524d\uff0c\u6b63\u9762\u62db\u67b6\u6210\u529f\u65f6\u8868\u73b0\u4e00\u6b21\u660e\u786e\u7684\u683c\u6321\u3002\u4e0d\u5f62\u6210\u6301\u7eed\u62a4\u7f69\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": null,
+        "S": null,
+        "V": null,
+        "DX": null,
+        "EC": null,
+        "EJ": null,
+        "EK": null,
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u786e\u8ba4\u51e1\u80ce\u9636\u6bb5\u4fdd\u7559\u67b6\u5251\uff0c\u53d6\u6d88\u56de\u8eab\u65a9\u3002\u56de\u8eab\u65a9\u7684\u7528\u9014\u5df2\u7531\u56de\u65cb\u52a0\u65a9\u51fb\u7684\u73b0\u6709\u7ec4\u5408\u627f\u62c5\uff0c\u4e0d\u53e6\u5efa\u56de\u8eab\u65a9\u3002\u4f24\u5bb3\u51cf\u514d\u6bd4\u4f8b\u3001\u6709\u6548\u671d\u5411\u89d2\u5ea6\u3001\u62db\u67b6\u7a97\u53e3\u3001\u51b7\u5374\u3001\u6cd5\u529b\u3001\u88c5\u914d\u6d88\u8017\u3001\u590d\u6742\u5ea6\u3001\u7b49\u7ea7\u4e0a\u9650\u548c\u53ef\u62db\u67b6\u7684\u653b\u51fb\u7c7b\u578b\u5747\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 8,
+      "attrs": "<row r=\"8\">",
+      "cells": {
+        "A": {
+          "value": "\u5217\u5251",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "sword_array",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u8c03\u52a8\u73a9\u5bb6\u5df2\u6709\u7684\u5251\u5b9e\u4f53\uff0c\u5728\u9009\u5b9a\u4f4d\u7f6e\u6392\u5217\u5e76\u505c\u9a7b\uff0c\u4e0d\u51ed\u7a7a\u989d\u5916\u751f\u6210\u5251\u3002\u5916\u56f4\u5e03\u9635\u65f6\uff0c\u5251\u8ddd\u79bb\u73a9\u5bb6\u8f83\u8fdc\uff1b\u5468\u8eab\u5e03\u9635\u65f6\uff0c\u5251\u8ddd\u79bb\u73a9\u5bb6\u8f83\u8fd1\u3002\u5e03\u9635\u4f4d\u7f6e\u51b3\u5b9a\u968f\u540e\u5e7b\u5251\u7eb5\u6a2a\u7684\u9ed8\u8ba4\u653b\u51fb\u65b9\u5411\u3002\u5217\u5251\u53ea\u8d1f\u8d23\u5e03\u7f6e\u548c\u505c\u9a7b\uff0c\u4e0d\u5728\u672c\u6b21\u91ca\u653e\u4e2d\u76f4\u63a5\u53d1\u8d77\u653b\u51fb\uff0c\u4e5f\u4e0d\u628a\u73a9\u5bb6\u4f20\u9001\u5230\u5251\u65c1\u3002\u51fa\u5251\u7531\u5e7b\u5251\u7eb5\u6a2a\u627f\u62c5\uff0c\u53ec\u56de\u7ee7\u7eed\u4f7f\u7528\u5251\u6765\u3002\u5b9a\u4f4d\u4e3a\u901a\u7384\u9636\u6bb5\u7684\u64cd\u5251\u5e03\u9635\u672f\u5f0f\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u5df2\u6709\u5251\u5b9e\u4f53\u79fb\u52a8\u5230\u9009\u5b9a\u9635\u4f4d\u5e76\u505c\u9a7b\uff0c\u5f62\u6210\u53ef\u89c1\u5251\u9635\u3002\u672c\u6b21\u4e0d\u64ad\u653e\u5251\u7fa4\u51fa\u51fb\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": null,
+        "S": {
+          "value": "\u653b\u51fb",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "V": null,
+        "DX": null,
+        "EC": null,
+        "EJ": null,
+        "EK": null,
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u786e\u8ba4\u5217\u5251\u8fdb\u5165\u901a\u7384\uff0c\u901a\u8fc7\u5e03\u9635\u5f62\u6210\u4e07\u5251\u5f52\u5b97\u524d\u7684\u64cd\u5251\u8fc7\u6e21\u3002\u5916\u56f4\u5e03\u9635\u914d\u5408\u5e7b\u5251\u7eb5\u6a2a\u65f6\u6574\u4f53\u671d\u5185\uff0c\u5468\u8eab\u5e03\u9635\u914d\u5408\u5e7b\u5251\u7eb5\u6a2a\u65f6\u6574\u4f53\u671d\u5916\u3002\u53ef\u9009\u5251\u7684\u8303\u56f4\u3001\u4e00\u6b21\u53ef\u5e03\u7f6e\u7684\u6570\u91cf\u3001\u505c\u9a7b\u9ad8\u5ea6\u3001\u6301\u7eed\u65f6\u95f4\u548c\u9635\u4f4d\u95f4\u8ddd\u672a\u5b9a\u3002\u6cd5\u529b\u3001\u51b7\u5374\u3001\u88c5\u914d\u6d88\u8017\u3001\u590d\u6742\u5ea6\u3001\u7b49\u7ea7\u4e0a\u9650\u548c\u5177\u4f53\u9009\u70b9\u65b9\u5f0f\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 9,
+      "attrs": "<row r=\"9\">",
+      "cells": {
+        "A": {
+          "value": "\u5e7b\u5251\u7eb5\u6a2a",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "phantom_sword_surge",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u64cd\u7eb5\u5468\u56f4\u53ef\u7531\u73a9\u5bb6\u64cd\u7eb5\u7684\u5251\u5b9e\u4f53\u53d1\u8d77\u653b\u51fb\uff0c\u73a9\u5bb6\u7559\u5728\u539f\u5730\uff0c\u4e0d\u968f\u5251\u77ac\u79fb\u3002\u63d2\u5728\u5730\u4e0a\u7684\u5251\u5148\u5728\u539f\u5730\u5347\u8d77\u5e76\u62ac\u5347\u81ea\u8eab\u9ad8\u5ea6\uff1b\u5df2\u7ecf\u60ac\u505c\u6216\u5217\u9635\u7684\u5251\u76f4\u63a5\u8fdb\u5165\u53d1\u5251\u9636\u6bb5\u3002\u5468\u56f416\u00d716\u8303\u56f4\u5185\u6709\u602a\u7269\u65f6\uff0c\u5251\u4f18\u5148\u5bf9\u51c6\u602a\u7269\u65b9\u5411\u53d1\u5c04\u3002\u6ca1\u6709\u602a\u7269\u65f6\uff0c\u8ddd\u79bb\u73a9\u5bb6\u8f83\u8fdc\u7684\u5251\u671d\u73a9\u5bb6\u65b9\u5411\u968f\u673a\u98de\u884c\uff0c\u8ddd\u79bb\u73a9\u5bb6\u8f83\u8fd1\u7684\u5251\u671d\u5916\u968f\u673a\u98de\u884c\u3002\u968f\u673a\u65b9\u5411\u7ed3\u5408\u4e09\u7ef4\u4ea4\u9519\u89c4\u5219\u751f\u6210\uff0c\u6bcf\u628a\u5251\u7684\u65b9\u5411\u4e0d\u540c\uff0c\u4e0d\u8981\u6c42\u98de\u5411\u540c\u4e00\u4e2a\u70b9\u3002\u56e0\u6b64\u5916\u56f4\u5e03\u9635\u6574\u4f53\u671d\u5185\uff0c\u5468\u8eab\u5e03\u9635\u6574\u4f53\u671d\u5916\u3002\u8fd9\u91cc\u7684\u7edf\u4e00\u6307\u6574\u4f53\u65b9\u5411\uff0c\u4e0d\u662f\u6240\u6709\u5251\u91cd\u53e0\u5728\u4e00\u6761\u7ebf\u4e0a\u3002\u4f18\u5148\u5bf9\u51c6\u53ea\u51b3\u5b9a\u51fa\u624b\u65f6\u7684\u65b9\u5411\uff0c\u4e0d\u9ed8\u8ba4\u9644\u5e26\u6301\u7eed\u8ffd\u8e2a\u3002\u98de\u51fa\u7684\u5251\u4e4b\u540e\u4ecd\u53ef\u901a\u8fc7\u5251\u6765\u56de\u6536\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u5730\u9762\u5251\u5148\u5728\u539f\u5730\u5347\u8d77\uff0c\u968f\u540e\u5404\u5251\u6309\u5404\u81ea\u65b9\u5411\u98de\u51fa\u3002\u6709\u76ee\u6807\u65f6\u671d\u5411\u76ee\u6807\uff0c\u65e0\u76ee\u6807\u65f6\u6309\u8fdc\u8fd1\u5f62\u6210\u5411\u5185\u6c47\u62e2\u6216\u5411\u5916\u6563\u5f00\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": null,
+        "S": {
+          "value": "\u653b\u51fb",
+          "type": "inlineStr",
+          "style": "2"
+        },
+        "V": null,
+        "DX": null,
+        "EC": null,
+        "EJ": null,
+        "EK": null,
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u786e\u8ba4\u540d\u79f0\u4e0e\u89c4\u5219\uff1a\u9ed8\u8ba4\u7528\u4e09\u7ef4\u4ea4\u9519\u5b89\u6392\u968f\u673a\u65b9\u5411\uff1b\u5468\u56f416\u00d716\u8303\u56f4\u6709\u602a\u65f6\u4f18\u5148\u5bf9\u51c6\u602a\u7269\u65b9\u5411\uff1b\u5730\u9762\u7684\u5251\u539f\u5730\u5347\u8d77\uff1b\u8fdc\u5251\u671d\u73a9\u5bb6\u65b9\u5411\u968f\u673a\u98de\u884c\uff0c\u8fd1\u5251\u671d\u5916\u968f\u673a\u98de\u884c\u3002\u7528\u6237\u786e\u8ba4\u6548\u679c\u662f\uff1a\u671d\u5916\u7edf\u4e00\u5e03\u9635\u5c31\u53ef\u4ee5\u7edf\u4e00\u671d\u5185\u6253\uff0c\u5728\u5468\u8eab\u5e03\u9635\u5c31\u53ef\u4ee5\u7edf\u4e00\u671d\u5916\u6253\u300216\u00d716\u7684\u4e2d\u5fc3\u3001\u6c34\u5e73\u4e0e\u5782\u76f4\u8303\u56f4\u3001\u8fdc\u8fd1\u5206\u754c\u8ddd\u79bb\u3001\u591a\u4e2a\u602a\u7269\u4e4b\u95f4\u5982\u4f55\u5206\u914d\u5251\u3001\u62ac\u5347\u9ad8\u5ea6\uff0c\u4ee5\u53ca\u53d1\u5c04\u540e\u662f\u5426\u6301\u7eed\u8ffd\u8e2a\uff0c\u5747\u672a\u5b9a\u3002\u5f53\u524d\u4e0d\u628a\u4f18\u5148\u5bf9\u51c6\u5199\u6210\u6301\u7eed\u8ffd\u8e2a\u3002\u4f24\u5bb3\u3001\u547d\u4e2d\u3001\u98de\u884c\u901f\u5ea6\u3001\u6cd5\u529b\u3001\u51b7\u5374\u3001\u88c5\u914d\u6d88\u8017\u3001\u590d\u6742\u5ea6\u3001\u7b49\u7ea7\u4e0a\u9650\u548c\u4e00\u6b21\u53ef\u8c03\u52a8\u7684\u5251\u6570\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    },
+    {
+      "row": 10,
+      "attrs": "<row r=\"10\">",
+      "cells": {
+        "A": {
+          "value": "\u5fa1\u5251",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "B": {
+          "value": "sword_flight",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null,
+        "I": null,
+        "K": null,
+        "L": null,
+        "N": {
+          "value": "\u8fdb\u5165\u5fa1\u5251\u98de\u884c\u72b6\u6001\uff0c\u7528\u6cd5\u529b\u6301\u7eed\u8f6c\u5316\u4e3a\u98de\u884c\u52a8\u529b\u3002\u98de\u884c\u8fd0\u52a8\u53c2\u8003\u9798\u7fc5\u5728\u70df\u82b1\u52a0\u901f\u72b6\u6001\u4e0b\u7684\u6301\u7eed\u63a8\u8fdb\uff0c\u53ef\u4ece\u5730\u9762\u76f4\u63a5\u8d77\u98de\uff0c\u4e5f\u53ef\u5411\u524d\u98de\u884c\uff0c\u4e0d\u6d88\u8017\u70df\u82b1\u3002\u73a9\u5bb6\u6a21\u578b\u59cb\u7ec8\u4fdd\u6301\u76f4\u7acb\uff0c\u811a\u4e0b\u627f\u5251\uff0c\u4e0d\u968f\u98de\u884c\u4fef\u4ef0\u8db4\u4e0b\uff1b\u8fd0\u52a8\u65b9\u5411\u4e0e\u89d2\u8272\u76f4\u7acb\u59ff\u6001\u5206\u5f00\u5904\u7406\u3002\u98de\u884c\u4fdd\u7559\u901f\u5ea6\u53d8\u5316\u548c\u60ef\u6027\uff0c\u4e0d\u662f\u521b\u9020\u6a21\u5f0f\u7684\u81ea\u7531\u60ac\u505c\u3002\u53ef\u7528\u6cd5\u529b\u4e0d\u8db3\u4ee5\u7ef4\u6301\u65f6\uff0c\u5251\u5931\u53bb\u652f\u6491\u548c\u63a8\u8fdb\uff0c\u73a9\u5bb6\u76f4\u63a5\u8fdb\u5165\u6b63\u5e38\u4e0b\u5760\uff0c\u5e76\u6309\u539f\u7248\u89c4\u5219\u8ba1\u7b97\u6454\u843d\u4f24\u5bb3\u3002\u505c\u6b62\u52a8\u529b\u540e\u4e0d\u80fd\u81ea\u52a8\u8f6c\u6210\u65e0\u6210\u672c\u6ed1\u7fd4\uff1b\u4e5f\u4e0d\u80fd\u9760\u53cd\u590d\u5f00\u5173\u5fa1\u5251\u6e05\u9664\u4e0b\u843d\u8ddd\u79bb\u3002\u6ca1\u6709\u5b9e\u9645\u91cd\u65b0\u83b7\u5f97\u8db3\u591f\u52a8\u529b\u3001\u6539\u53d8\u4e0b\u5760\u72b6\u6001\u65f6\uff0c\u4e0d\u514d\u9664\u6454\u843d\u4f24\u5bb3\u3002\u5fa1\u5251\u53ea\u8d1f\u8d23\u73a9\u5bb6\u79fb\u52a8\uff0c\u4e0d\u81ea\u52a8\u628a\u73a9\u5bb6\u62c9\u5411\u654c\u4eba\uff0c\u4e5f\u4e0d\u9644\u9001\u653b\u51fb\u3002\u5b9a\u4f4d\u4e3a\u901a\u7384\u9636\u6bb5\u7684\u6301\u7eed\u98de\u884c\u672f\u5f0f\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "O": {
+          "value": "\u73a9\u5bb6\u76f4\u7acb\u7ad9\u5728\u5251\u4e0a\u98de\u884c\uff0c\u53ef\u76f4\u63a5\u5347\u8d77\u5e76\u5411\u524d\u63a8\u8fdb\u3002\u6cd5\u529b\u8017\u5c3d\u540e\u5251\u5931\u53bb\u652f\u6491\uff0c\u73a9\u5bb6\u76f4\u63a5\u4e0b\u5760\u3002",
+          "type": "inlineStr",
+          "style": "1"
+        },
+        "R": null,
+        "S": null,
+        "V": null,
+        "DX": null,
+        "EC": null,
+        "EJ": null,
+        "EK": null,
+        "DV": {
+          "value": "2026-11-10\u7528\u6237\u539f\u8bdd\uff1a\u201c\u52a0\u5165\u4e00\u4e2a\u5fa1\u5251\u7684\u529f\u80fd\u53ef\u4ee5\u5fa1\u5251\u98de\u884c\uff0c\u98de\u884c\u903b\u8f91\u53c2\u8003\u9798\u7fc5\uff0c\u4f46\u662f\u6a21\u578b\u8981\u4e00\u76f4\u4fdd\u6301\u5782\u76f4\u3002\u5177\u4f53\u98de\u884c\u6548\u679c\u662f\u6301\u7eed\u6d88\u8017\u6cd5\u529b\uff0c\u6309\u7167\u70df\u82b1\u52a0\u901f\u72b6\u6001\u7684\u9798\u7fc5\u90a3\u6837\u53ef\u4ee5\u76f4\u63a5\u8d77\u98de\u6216\u8005\u524d\u8fdb\uff0c\u7528\u6cd5\u529b\u8f6c\u5316\u52a8\u529b\uff0c\u6cd5\u529b\u7528\u5b8c\u5251\u4f1a\u76f4\u63a5\u5760\u843d\uff0c\u6b63\u5e38\u8ba1\u7b97\u6454\u843d\u4f24\u5bb3\u3002\u201d\u201c\u6a21\u578b\u4e00\u76f4\u4fdd\u6301\u5782\u76f4\u201d\u6309\u73a9\u5bb6\u59cb\u7ec8\u4fdd\u6301\u76f4\u7acb\u7ad9\u59ff\u3001\u811a\u4e0b\u627f\u5251\u7406\u89e3\uff1b\u5251\u8eab\u503e\u89d2\u672a\u5b9a\u3002\u4f7f\u7528\u624b\u6301\u5251\u8fd8\u662f\u573a\u4e0a\u5df2\u6709\u5251\u4f5c\u4e3a\u627f\u8f7d\u3001\u4e3b\u52a8\u6536\u672f\u7684\u64cd\u4f5c\u65b9\u5f0f\u672a\u5b9a\u3002\u6cd5\u529b\u6d88\u8017\u5fc5\u987b\u4e0e\u98de\u884c\u671f\u95f4\u540c\u65f6\u53d1\u751f\u7684\u6cd5\u529b\u56de\u590d\u4e00\u8d77\u8ba1\u7b97\uff0c\u4e0d\u80fd\u8ba9\u56de\u590d\u62b5\u6d88\u5168\u90e8\u6d88\u8017\u800c\u5f62\u6210\u6c38\u4e45\u98de\u884c\u3002\u5177\u4f53\u6d88\u8017\u3001\u901f\u5ea6\u3001\u722c\u5347\u3001\u8f6c\u5411\u548c\u60ef\u6027\u672a\u5b9a\uff0c\u6570\u503c\u683c\u7559\u7a7a\uff0c\u4e0d\u75280\u4ee3\u66ff\u3002\u53ea\u5199\u5165\u5f85\u5236\u4f5c\uff0c\u4e0d\u9886\u53d6\uff0c\u4e0d\u8fdb\u5165\u5236\u4f5c\u4e2d\u3002",
+          "type": "inlineStr",
+          "style": "7"
+        }
+      }
+    }
+  ],
+  "validations": [
+    {
+      "sqref": "J3:J80 M3:M80 T3:T80 Y3:AE80 AH3:AM80 AU3:AU80 AX3:AY80 BL3:BP80 BS3:BS80 CQ3:CQ80 DA3:DA80",
+      "formula1": "&#26159;&#21542;",
+      "type": "list"
+    },
+    {
+      "sqref": "R3:R80",
+      "formula1": "&#24377;&#36947;",
+      "type": "list"
+    },
+    {
+      "sqref": "S3:S80",
+      "formula1": "&#38142;&#19978;&#35282;&#33394;",
+      "type": "list"
+    }
+  ],
+  "archiveLast": 33,
+  "archiveRowAttrs": "<row r=\"33\" ht=\"156\" customHeight=\"1\" s=\"19\">"
+}

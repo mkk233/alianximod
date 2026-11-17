@@ -1,0 +1,32 @@
+[
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\SteveWaterLineVisual.java",
+    "exists": true,
+    "lastWriteTime": "2026-11-03T00:48:19.2719413+08:00",
+    "length": 4160,
+    "owner": "D completed stopped",
+    "report": "fix-game-visual-04b-report.md"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\SteveWaterLineMesh.java",
+    "exists": true,
+    "lastWriteTime": "2026-11-03T00:48:07.2870173+08:00",
+    "length": 21536,
+    "owner": "D completed stopped",
+    "report": "fix-game-visual-04b-report.md"
+  },
+  {
+    "path": "D:\\alianximod\\src\\main\\java\\com\\bslx\\XueXiMod\\client\\CloneRenderer.java",
+    "exists": true,
+    "lastWriteTime": "2026-11-03T00:48:09.9729750+08:00",
+    "length": 4236,
+    "owner": "D completed stopped",
+    "report": "fix-game-visual-04b-report.md"
+  },
+  {
+    "path": "src/main/java/com/bslx/XueXiMod/client/WaterPhantomVisualDiagnostics.java",
+    "exists": false,
+    "owner": "D completed stopped",
+    "report": "fix-game-visual-04b-report.md"
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "uuid": "44d5b00b-8c00-0021-fca4-1e992906edad",
+    "name": "fire_kindle_v2_candidate_preview",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/blockbench/fire_kindle_v2_candidate_preview.bbmodel",
+    "elements": 22,
+    "textures": 2,
+    "sha256": "7dd1e96575e4f3b34b4babdae3b1304d8b4bfb3a51428b3b144d5ef9822f2d44"
+  },
+  {
+    "uuid": "4f04348e-9d85-4d4f-0c95-9e5e50c4dbe2",
+    "name": "daozhang_v1_candidate",
+    "saved": false,
+    "path": "",
+    "elements": 38,
+    "textures": 1,
+    "sha256": "015c6e77d9c036b4ad519269d52e3884a0db6d72be1606523efe69928a684751"
+  },
+  {
+    "uuid": "c136d4c5-fe9b-4cf8-f91c-3df017448ec0",
+    "name": "fire_kindle_v3_redraw_candidate_preview",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/blockbench/fire_kindle_v3_redraw_candidate_preview.bbmodel",
+    "elements": 22,
+    "textures": 2,
+    "sha256": "8287e974ddd0b4f1a787498c399726c805524241f961ca97fd3eca50c5c7fc88"
+  },
+  {
+    "uuid": "79873578-7708-0ebd-5183-eaedd686d11b",
+    "name": "fire_kindle_v3_redraw_candidate_preview",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/引燃_全身燃烧重绘_v3_20261116/blockbench/fire_kindle_v3_redraw_candidate_preview.bbmodel",
+    "elements": 22,
+    "textures": 2,
+    "sha256": "dae40a723d73619d175c242f03ae4bd902ca349f2d59abc8e0dbda213f907cb1"
+  },
+  {
+    "uuid": "803970b1-7113-95b6-9e54-ee1415c7edff",
+    "name": "nether_blue_palette_art_v1",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/blockbench/nether_blue_palette_art_v1.bbmodel",
+    "elements": 80,
+    "textures": 18,
+    "sha256": "0a5de4cab31662a84a42a2230acdce02d0081542665f18435c015624f2ae41bf"
+  },
+  {
+    "uuid": "d8549d69-5160-499c-12b6-87d88f8bc273",
+    "name": "kindle_fentian_approved_swap",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel",
+    "elements": 27,
+    "textures": 3,
+    "sha256": "8456f56179d56c865546124e02e7b319aa2f6b2bdb73bb8eaf30568e3a0992d4"
+  },
+  {
+    "uuid": "b4bf15d9-b19a-a51a-5fd0-c3aefeed7fe6",
+    "name": "kindle_fentian_approved_swap",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/引燃焚天_确认版互换_20261116/blockbench/kindle_fentian_approved_swap.bbmodel",
+    "elements": 27,
+    "textures": 3,
+    "sha256": "548825f70ff06753851c02085ebacfbd0dd7bf4cdf6f2f7f0b87990af6168cd2"
+  },
+  {
+    "uuid": "7fd9fc60-dd61-6b41-eafd-daefc3fb48ea",
+    "name": "nether_blue_palette_art_v1",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/blockbench/nether_blue_palette_art_v1.bbmodel",
+    "elements": 80,
+    "textures": 18,
+    "sha256": "f7f9a90fca1588f5a6f1f20982cecb3232d7e53f628e8005dd7ed0632cda9d9d"
+  },
+  {
+    "uuid": "97d2ac09-d5a8-c46f-1f79-8a8b4e5a7840",
+    "name": "nether_blue_coverage_02",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/blockbench/nether_blue_coverage_02.bbmodel",
+    "elements": 438,
+    "textures": 128,
+    "sha256": "f7c80c54e83007262a38be6a427369fff108b3d6cca5beed81073c959b5bff6b"
+  },
+  {
+    "uuid": "e7791755-13e6-d20d-306a-2a39c483a95b",
+    "name": "nether_blue_coverage_02",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/幽冥蓝火重配色-20261116/coverage/blockbench/nether_blue_coverage_02.bbmodel",
+    "elements": 438,
+    "textures": 128,
+    "sha256": "e7b5b72c284d24e514c915a00e6a3b64673bde86f622ba33e427ef4efe996cb2"
+  },
+  {
+    "uuid": "349751a0-a77d-026b-4ead-bc3a553fd738",
+    "name": "fentian_dual_layer_v4",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/blockbench/fentian_dual_layer_v4.bbmodel",
+    "elements": 11,
+    "textures": 3,
+    "sha256": "7e2f28a33eaee68a7920b4d2f9644c91ab33d10f5bd76872b082d1511363a2f4"
+  },
+  {
+    "uuid": "fe507dca-652f-f434-b477-f92726a559a7",
+    "name": "fentian_dual_layer_v4",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层叠加_v4_20261116/blockbench/fentian_dual_layer_v4.bbmodel",
+    "elements": 11,
+    "textures": 3,
+    "sha256": "196d48b1d7e280ea2c9d16b37cd7b8798d46741e8e093d6392c056aff67ebb30"
+  },
+  {
+    "uuid": "d9c43eb2-d302-684c-1927-59016d61f4f9",
+    "name": "fentian_dual_layer_burnout_v4_1",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层收束同步_v4_1_20261116/blockbench/fentian_dual_layer_burnout_v4_1.bbmodel",
+    "elements": 11,
+    "textures": 3,
+    "sha256": "bb5891a995a0e50f372f54d7d5876d66f7f07ec624aa551014088bff65d8ca07"
+  },
+  {
+    "uuid": "7fa628fc-3a07-adca-a574-ce45af530859",
+    "name": "fentian_dual_layer_burnout_v4_1",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层收束同步_v4_1_20261116/blockbench/fentian_dual_layer_burnout_v4_1.bbmodel",
+    "elements": 11,
+    "textures": 3,
+    "sha256": "bb5891a995a0e50f372f54d7d5876d66f7f07ec624aa551014088bff65d8ca07"
+  },
+  {
+    "uuid": "2ddaf358-56ef-cd78-263a-4e6afb143ef0",
+    "name": "fentian_dual_layer_burnout_v4_1",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/焚天_双层收束同步_v4_1_20261116/blockbench/fentian_dual_layer_burnout_v4_1.bbmodel",
+    "elements": 11,
+    "textures": 3,
+    "sha256": "241d3179ccf2aa7825d6e50824c1234e73b0ce777c9d6a1c48d389b7a7787e9b"
+  },
+  {
+    "uuid": "07be6674-6249-0d6c-f677-8fc0b139903d",
+    "name": "fire_detonate_v2_candidate",
+    "saved": true,
+    "path": "D:/alianximod/docs/资源库/过程归档/引爆_短促火团_v2_20261116/blockbench/fire_detonate_v2_candidate.bbmodel",
+    "elements": 90,
+    "textures": 22,
+    "sha256": "bc4d0e06eea6b2a3269065f86fcd07714485bcd94a3d74b7e0846085b99bb580"
+  },
+  {
+    "uuid": "e0d306f9-0f12-bc19-9636-0c56f9f1ce88",
+    "name": "fire_detonate_v2_candidate",
+    "saved": false,
+    "path": "D:/alianximod/docs/资源库/过程归档/引爆_短促火团_v2_20261116/blockbench/fire_detonate_v2_candidate.bbmodel",
+    "elements": 90,
+    "textures": 22,
+    "sha256": "ee686efb81970a605596831e00b7a9f93ebb75e01bd91c7a79dbc2af57f676e8"
+  }
+]

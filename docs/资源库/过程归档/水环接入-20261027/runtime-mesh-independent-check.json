@@ -1,0 +1,18 @@
+{
+  "layers": [
+    {
+      "layer": "body",
+      "quads": 576
+    },
+    {
+      "layer": "outer",
+      "quads": 96
+    },
+    {
+      "layer": "inner",
+      "quads": 96
+    }
+  ],
+  "exactPositionAndUvCorners": 3072,
+  "modelExcludedMannequin": true
+}

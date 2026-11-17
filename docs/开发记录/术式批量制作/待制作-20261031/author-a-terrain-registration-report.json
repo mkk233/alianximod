@@ -1,0 +1,24 @@
+{
+  "author": "A",
+  "batch": "待制作-20261031",
+  "stage": "terrain-registration",
+  "review": "不是正式复审。设计 2/2，实现 0/3。",
+  "compile": "未运行，待统一编译",
+  "stopWrite": true,
+  "staffKept": "basic_staff 6 槽，test_staff 32 槽，本轮未改",
+  "wired": [
+    "XueXiMod.registerContent 只调用一次 MeteoriteWreckageTypes.register",
+    "XueXiMod.ClientModEvents.onRegisterEntityRenderers 仅客户端",
+    "EntityRendererFix 重绑 meteorite_wreckage",
+    "ModCreativeModTabs 追加 ModBlocks.METEORITE",
+    "zh_cn 与 en_us 的方块和残骸名称",
+    "BatchTerrainBreakSwitch.SPEC 挂到 xueximod-batch-terrain.toml"
+  ],
+  "notWired": [
+    "C 的有伤陨岩、热波、火苗、留焰和 spawnAfterSettlement 调用方",
+    "D 的幽冥领域"
+  ],
+  "bRequest": "无",
+  "ownershipSha256": "7857f376d96443af0cc50b743dbe7e4831b20688caba8a259a2f9c3b69645d44",
+  "nameGate": "退出码 1。本轮文件无新增违规。OriginalHumanoid.java:165 i，:202 to。"
+}

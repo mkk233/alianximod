@@ -1,0 +1,21 @@
+{
+  "sourceTextureUnchanged": true,
+  "sourceSha256": "8ba44798140ec92fc45b826549cec03cf629bcb7bcd1d34dab750462101e5096",
+  "planeChecks": [
+    {
+      "vertices": 4,
+      "faces": 1,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "vertices": 4,
+      "faces": 1,
+      "width": 32,
+      "height": 32
+    }
+  ],
+  "checkedFrames": 160,
+  "uniformScaleEveryFrame": true,
+  "gameCodeModified": false
+}

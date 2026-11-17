@@ -1,0 +1,23 @@
+{
+  "submitted": false,
+  "baselineSha256": "798D366A9B901B9F9145891FAC3B2108ABFC16F0386303C5511458179B1B8CFC",
+  "baselineMtime": "2026-10-30T02:20:22.945+08:00",
+  "baselineBytes": 166983,
+  "backup": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\备份\\liaoli-tip-ring-burst-术式制作表-20261030-025033-1.xlsx",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\火系六式-20261029\\liaoli-tip-ring-burst-candidate-preserved.xlsx",
+  "candidateSha256": "410458A81EB7F37B5E1016072162BD31263532A92D34F2F52AB39F2574220F2C",
+  "counts": {
+    "已完成": 40,
+    "待制作": 13,
+    "制作中": 4,
+    "待验收": 2
+  },
+  "from": {
+    "sheet": "待验收",
+    "row": 5
+  },
+  "to": {
+    "sheet": "制作中",
+    "row": 6
+  }
+}

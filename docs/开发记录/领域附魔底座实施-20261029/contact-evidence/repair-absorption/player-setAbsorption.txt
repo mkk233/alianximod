@@ -1,0 +1,16 @@
+  public void setAbsorptionAmount(float);
+    Code:
+       0: fload_1
+       1: fconst_0
+       2: fcmpg
+       3: ifge          8
+       6: fconst_0
+       7: fstore_1
+       8: aload_0
+       9: invokevirtual #2453               // Method getEntityData:()Lnet/minecraft/network/syncher/SynchedEntityData;
+      12: getstatic     #271                // Field DATA_PLAYER_ABSORPTION_ID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      15: fload_1
+      16: invokestatic  #275                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      19: invokevirtual #904                // Method net/minecraft/network/syncher/SynchedEntityData.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      22: return
+

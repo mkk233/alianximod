@@ -1,0 +1,27 @@
+{
+  "model": "D:/alianximod/docs/资源库/过程归档/引燃_贴身分段燃烧_v2_20261116/blockbench/fire_kindle_v2_candidate_preview.bbmodel",
+  "sha256": "FB2662BF19B839E7578DBE9CFAEA8796C54EF35F239F9C468540D53395BD9A68",
+  "previous_project": "41e5bed5-092c-5649-685e-72cee9618239",
+  "reopened_project": "44d5b00b-8c00-0021-fca4-1e992906edad",
+  "elements": 22,
+  "groups": 3,
+  "textures": [
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\引燃_贴身分段燃烧_v2_20261116\\textures\\aux_mannequin_palette.png",
+      "width": 8,
+      "height": 8,
+      "loaded": true,
+      "error": 0
+    },
+    {
+      "path": "D:\\alianximod\\docs\\资源库\\过程归档\\引燃_贴身分段燃烧_v2_20261116\\textures\\kindle_v2_strip.png",
+      "width": 48,
+      "height": 1216,
+      "loaded": true,
+      "error": 0
+    }
+  ],
+  "reopened_at": "2026-11-15T18:59:40.246Z",
+  "document_visibility": "hidden",
+  "source": "Native Codecs.project.load from saved disk file; no manually assembled model JSON"
+}

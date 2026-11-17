@@ -9,17 +9,17 @@ import net.minecraftforge.client.gui.overlay.ForgeGui;
 
 public class MagicHudOverlay {
     public static void render(ForgeGui gui, GuiGraphics guiGraphics, float partialTick, int screenWidth, int screenHeight) {
-        Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null) {
+        Minecraft minecraft = Minecraft.getInstance();
+        if (minecraft.player == null || minecraft.options.hideGui) {
             return;
         }
-        ItemStack main = mc.player.getMainHandItem();
+        ItemStack main = minecraft.player.getMainHandItem();
         int current = ShuSyncPacket.ClientShuCache.getMagic() + StaffItem.storedMana(main);
-        int max = ShuSyncPacket.ClientShuCache.getMagicMax();
+        int upperBound = ShuSyncPacket.ClientShuCache.getMagicMax();
         if (StaffItem.holds(main)) {
-            max += ((StaffItem) main.getItem()).data().maxManaBonus();
+            upperBound += ((StaffItem) main.getItem()).data().maxManaBonus();
         }
-        max = Math.max(1, max);
-        guiGraphics.drawString(gui.getFont(), "魔力 " + current + "/" + max, screenWidth / 2 - 91, screenHeight - 48, 0xFFFFFF);
+        upperBound = Math.max(1, upperBound);
+        ResourceBarLayout.drawMana(guiGraphics, gui.getFont(), current, upperBound, current + "/" + upperBound, 0xFFFFFF);
     }
 }

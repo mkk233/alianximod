@@ -1,0 +1,22 @@
+{
+  "sha256": "83D13762D627FF953A184F5B7F6247E88A972ED9FA139099D6FFA5A12DFEFB9E",
+  "bytes": 172191,
+  "mtime": "2026-10-30T18:05:12.913+08:00",
+  "counts": {
+    "已完成": 40,
+    "待制作": 14,
+    "制作中": 3,
+    "待验收": 3
+  },
+  "unique": 60,
+  "name": "火苗",
+  "id": "fire_spark",
+  "damage": "1",
+  "cooling": "5",
+  "seeds": "2",
+  "trigger": "命中成功",
+  "durationEmpty": true,
+  "durationNote": true,
+  "detailHasSpark": false,
+  "seedSowCooling": "5"
+}

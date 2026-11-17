@@ -1,0 +1,28 @@
+{
+  "text": "HIGH_EFFORT_MARKER",
+  "stopReason": "end_turn",
+  "sessionId": "680494e9-0e5c-47e7-9a8e-36efc7a949c3",
+  "requestId": "165fef42-a4cb-421c-9e09-b0367c9a8e1c",
+  "cwd": "C:\\Users\\baishang\\AppData\\Local\\Temp\\grok-high-probe",
+  "usage": {
+    "input_tokens": 5595,
+    "cache_read_input_tokens": 1152,
+    "cache_creation_input_tokens": 0,
+    "output_tokens": 41,
+    "reasoning_tokens": 35,
+    "total_tokens": 6788
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.00816816,
+  "total_cost_usd_ticks": 81681600,
+  "modelUsage": {
+    "grok-4.7-build-fast": {
+      "inputTokens": 5595,
+      "outputTokens": 41,
+      "cacheReadInputTokens": 1152,
+      "cacheCreationInputTokens": 0,
+      "modelCalls": 1,
+      "costUSD": 0.00816816
+    }
+  }
+}

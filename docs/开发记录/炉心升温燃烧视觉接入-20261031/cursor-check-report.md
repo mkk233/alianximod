@@ -1,0 +1,22 @@
+我先通读这份任务说明，确认授权范围和要做的检查，再按它执行。任务是只读集中检查，不改源码、不编译。我先读本目录的实现说明、报告和所有权，再核对那四份客户端源码。实现说明已对齐。接下来只读四份客户端源码、纹理和资源说明，核对注册时机、骨骼绑定和状态切换。**NEEDS_FIX**
+
+Ask 模式不能写文件，结论只在这里。未编译，未进游戏，不把画面当通过。
+
+必须返修，只动 `FurnaceArmFlame.onArm`（`src/main/java/com/bslx/XueXiMod/client/furnace/FurnaceArmFlame.java` 第 31–64 行）。
+
+Forge 1.20.1 的 `RenderArmEvent` 会先后发出 `Pre` 和 `Post`，监听基类会两场都进。`PlayerRenderer.renderHand` 在 `arm.render` 前后各发一次，且 `Pre` 被取消时直接返回、不会发 `Post`。现在每只第一人称手把同一组火面画两遍。
+
+同一次 `renderHand` 已经用零摆动参数做过 `setupAnim`，并把 `xRot` 写成 0。攻击、行走和持物的大手臂位移在这个事件的 `PoseStack` 上。第 48–53 行再把 `xRot`、`yRot`、`zRot` 都写成 0，火焰就离开了随后 `arm.render` 真正使用的手臂转角（空闲时约有 `zRot ±0.1`，拉弓等持物姿态的 `yRot` 更大）。`finally` 会把转角还回去，原版手臂网格本身不会被改坏。
+
+最小返修：这个方法只订阅 `RenderArmEvent.Post`。删掉旋转的保存、清零和恢复。保留 `pushPose`、`arm.translateAndRotate`、`drawArm`、`popPose`。左右手仍用 `event.getArm()` 对 `rightArm` / `leftArm`，苗条臂仍用 `getModelName()`。
+
+其余核对过的行为可以留下：
+
+- 层注册在模组总线的 `EntityRenderersEvent.AddLayers`，`default` 和 `slim` 都会挂上。第一人称手事件在 Forge 总线。没有改 `XueXiMod`。
+- 第三人称手火跟左右臂；标准臂中心约在 ±1、外侧约在 ±3.55，苗条臂约在 ±0.5 和 ±2.55，与对应臂立方体一致。图像左侧窗口绑角色右手。
+- 躯干、腿是根下的同级骨骼，披风在身体局部 `z = 3.05`（背后），随身体转，不是镜头公告板。
+- 成功提示：`HEAT_LOOP` 播升温入场再循环；`OVERDRIVE_LOOP`（含升级）只播燃烧入场。没有对应提示时只循环。效果没了且不是冷却提示时清掉标记。入场 8×60ms，维持 20×80ms，与导出记录一致。
+- 冷却仍是 `furnace_v1/cool.png`、16 帧×75ms、朝向镜头，只读 `COOL_ONCE`。这四份代码不写炉心数值，也不调用原版着火。
+- 运行目录只有 18 张分层图。代码不引用预览、整图条或合成条。报告里的五张燃烧维持图 SHA256 与正式 manifest 的 `*-strip.png` 一致；本轮没有重新计算文件哈希。
+
+未进游戏，下面这些保持为已知限制，不升成返修，也不算效果已通过：披风是单片，纯侧面会看成薄片；余烬挂在身体上；第一人称只有手臂局部火；升温躯干侧下段挂在身体上，不跟腿骨。贴图像素 `y=40` 分别落在躯干原点（颈）和手臂枢轴上，手臂枢轴比躯干原点低 2 个模型单位。

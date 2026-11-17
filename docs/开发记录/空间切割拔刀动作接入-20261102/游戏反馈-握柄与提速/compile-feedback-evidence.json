@@ -1,0 +1,48 @@
+{
+  "result": "passed",
+  "exitCode": 0,
+  "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+  "workingDirectory": "D:/alianximod",
+  "started": "2026-11-02T22:42:01",
+  "ended": "2026-11-02T22:42:39",
+  "environment": {
+    "JAVA_HOME": "C:/Program Files/Java/jdk-17",
+    "GRADLE_USER_HOME": "C:/Users/baishang/.gradle",
+    "javaVersion": "17.0.6",
+    "jvmargs": "-Xmx3G"
+  },
+  "compileJava": "executed",
+  "upToDate": [":extractSrg", ":createMcpToSrg"],
+  "executed": [":downloadMcpConfig", ":compileJava"],
+  "summary": "BUILD SUCCESSFUL in 37s; 4 actionable tasks: 2 executed, 2 up-to-date",
+  "warnings": 41,
+  "errors": 0,
+  "gradleLog": "docs/开发记录/空间切割拔刀动作接入-20261102/游戏反馈-握柄与提速/compile-feedback-gradle.log",
+  "sourceBefore": "docs/开发记录/空间切割拔刀动作接入-20261102/游戏反馈-握柄与提速/compile-source-before.json",
+  "sourceAfter": "docs/开发记录/空间切割拔刀动作接入-20261102/游戏反馈-握柄与提速/compile-source-after.json",
+  "sourceCount": 1263,
+  "sourceDiff": 0,
+  "lastSourceWrite": {
+    "path": "src/main/java/com/bslx/XueXiMod/client/action/spacecut/SpaceCutSampler.java",
+    "mtime": "2026-11-02T22:27:39",
+    "sha256": "99abd56756779da4a9ba4ea4e76f3b1b95b60e415979ecdd7def165643a90b19"
+  },
+  "v6Runtime": {
+    "path": "src/main/resources/assets/xueximod/actions/space_cut_grip_fast_v6.json",
+    "sha256": "427a4d7653ca570e2bb3e3959ea98d93e01aec2f2baacf73a004be10b54af41b",
+    "bytes": 55086,
+    "mtime": "2026-11-02T22:27:21"
+  },
+  "authorHashesMatch": true,
+  "preflight": {
+    "sourceWritesStopped": true,
+    "compileAuthorized": true,
+    "phase": "feedback_compile_running_or_preflight",
+    "review": "r3 passed, implementation 3/3",
+    "cloneAuthors": "A/B/C completed/stopped, compileAuthorized false",
+    "javaProcesses": "idle GradleDaemon 8.8 only; no GradleWrapperMain, worker, or runClient"
+  },
+  "nameGate": "author report passed; not rerun",
+  "gameTested": false,
+  "packaged": false
+}

@@ -1,0 +1,137 @@
+{
+  "version": "space_cut_grip_fast_v6",
+  "status": "integrated_compiled_pending_user_game_retest",
+  "userRequest": "游戏中握刀的手错误握在刀刃上了，修一下并且抽刀速度太慢空间切割特效已经结束了拔刀动作才播放完",
+  "toolPreference": "MCP only; no desktop control",
+  "priorApprovedVersion": "iaido-single-v5-left-waist",
+  "durationSeconds": 0.5,
+  "timeScaleFromV5": 0.3125,
+  "gripModelUnits": [
+    3.5,
+    3.5,
+    8
+  ],
+  "gripCenteredUnits": [
+    -0.28125,
+    -0.28125,
+    0
+  ],
+  "bladeSourceDirection": [
+    0.7071067811865476,
+    0.7071067811865476,
+    0
+  ],
+  "previewEndHoldSeconds": 0.5,
+  "blockbench": "5.2.2 real native MCP viewport and export",
+  "sourceDirectory": "D:/alianximod/docs/资源库/过程归档/空间切割_握柄快拔_v6-20261102",
+  "files": {
+    "animation-keyframes.json": {
+      "bytes": 310508,
+      "sha256": "6e15fb2f73f549a09104fef886a54bec594e9c6af47daf2b95d8b6d56e6d271f"
+    },
+    "atlas-preview.png": {
+      "bytes": 3417,
+      "sha256": "e0c8437359ac802c4bef4231091471d5fbc77ce9ae9f3d7e8959213c4c835c6c"
+    },
+    "iaido-atlas.aseprite": {
+      "bytes": 1818,
+      "sha256": "0757e8946d148771c9827e46a1caa61724f8ea0e6de02d70dd04551023eb01dd"
+    },
+    "iaido-atlas.png": {
+      "bytes": 961,
+      "sha256": "12c0dd4e4d2735f18136c548a35e7695a00eae52e3cd5389ff5d4747b8bc6405"
+    },
+    "iaido-fast-front.aseprite": {
+      "bytes": 194576,
+      "sha256": "7cef0101dde229ea61d68b3287d4dd9587f98ff6521f418dedf52e903b948d9b"
+    },
+    "iaido-fast-front.gif": {
+      "bytes": 200309,
+      "sha256": "d74b0dbcda746e72e67d39e394607a59ea879b69210dd0f592b965ad3856a8ec"
+    },
+    "iaido-fast-side.aseprite": {
+      "bytes": 192544,
+      "sha256": "d88b0312f549a2dc61a8eea141110cced89f7246906e439f732fb2ed16013da0"
+    },
+    "iaido-fast-side.gif": {
+      "bytes": 205403,
+      "sha256": "8e81e2afb3bb12cf40121c76ba014a297158eeefbf546b799b3ddb9a722e27d3"
+    },
+    "iaido-grip-fast-v6.bbmodel": {
+      "bytes": 360021,
+      "sha256": "8ef3d8cf595cd729d1283616da83a990b1b8dd3a98b0a38192839115017ec7f4"
+    },
+    "iron-grip-front.aseprite": {
+      "bytes": 201202,
+      "sha256": "7a68f8661213ca2365ac7db8b0f756c118b5ea9edecb5a0637ff1ecbb60d6222"
+    },
+    "iron-grip-front.gif": {
+      "bytes": 201950,
+      "sha256": "6669c9497da8f5d6bac31d2d474ed03c38ffb3f938e01dd9bf6a0a43eb017769"
+    },
+    "iron-grip-side.aseprite": {
+      "bytes": 199906,
+      "sha256": "0370c9d90ad9a7bb692ea70bd2851f54c339ea2e5a2b17e89a84fd89713f0d67"
+    },
+    "iron-grip-side.gif": {
+      "bytes": 210277,
+      "sha256": "03773c3662b83652ae7ba911a76ca60336d1b314e877b7c919872d22f9c740cd"
+    },
+    "iron-sword-grip-check-v6.bbmodel": {
+      "bytes": 362305,
+      "sha256": "41ad2023eaf28e56a7fb64487019854cedb393945ee2eb25a48efa57f8e27abb"
+    },
+    "iron_sword_reference.png": {
+      "bytes": 196,
+      "sha256": "ed1fa2f83955583e70a19791455d13989e8bd93b1d7240e775a57141022bed6b"
+    },
+    "native-grip-proof.json": {
+      "bytes": 1917,
+      "sha256": "817a48ceaaa9f8c3208e5bd67c7a4fb13db0883ca13da0a003da45db46fd4316"
+    },
+    "README.md": {
+      "bytes": 1709,
+      "sha256": "bff6269425f5debc9ae489f404e6bebcf6bfbf18cbb9aa47cf6db5f8e8c8b876"
+    },
+    "visual-handoff.md": {
+      "bytes": 3411,
+      "sha256": "a26abf6c33f329677b41ad6d5d791c27cc6ad041fa6fb11d5c5fec5d2c853f81"
+    },
+    "runtime-mapping.json": {
+      "bytes": 1997,
+      "sha256": "af626f3326fcaf3b6af228ec13f0080dec8628f538afb8f1369d6a5d122a5c6a"
+    },
+    "runtime-mapping.md": {
+      "bytes": 1770,
+      "sha256": "68ee9d3b478fab5c18db9a1ea8a6197e3d37999754a4775e41ebe3a796e90c4d"
+    }
+  },
+  "runtime": {
+    "integrated": true,
+    "actionId": "xueximod:space_cut",
+    "resource": "src/main/resources/assets/xueximod/actions/space_cut_grip_fast_v6.json",
+    "sha256": "427a4d7653ca570e2bb3e3959ea98d93e01aec2f2baacf73a004be10b54af41b",
+    "compiled": true,
+    "compileCommand": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "compileJava": "executed",
+    "startedAt": "2026-11-02T22:42:01",
+    "endedAt": "2026-11-02T22:42:39",
+    "exitCode": 0,
+    "sourceCount": 1263,
+    "sourceDiff": 0,
+    "compileEvidence": "../../../../开发记录/空间切割拔刀动作接入-20261102/游戏反馈-握柄与提速/compile-feedback-evidence.json",
+    "gameTested": false,
+    "packaged": false
+  },
+  "review": {
+    "designUsed": 2,
+    "designLimit": 2,
+    "implementationUsed": 3,
+    "implementationLimit": 3,
+    "lastResult": "r3 passed for actual grip, diagonal blade axis, and 0.5 second clock; no further review authorized"
+  },
+  "limitations": [
+    "默认原版handheld旋转/平移/缩放及标准生成剑贴图布局；自定义展示变换或非标准柄位置需要另行适配。",
+    "Blockbench预览与矩阵读数不是游戏实测；游戏效果由用户复测。"
+  ]
+}

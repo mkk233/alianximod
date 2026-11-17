@@ -1,0 +1,17 @@
+{
+  "changedSource": false,
+  "cause": "rank sets the level gate only; imprint also requires the learned set. The three ultimates are complexity 20 and are not domains, so login and rank do not learn them.",
+  "evidence": [
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java", "lines": "187-198", "fact": "fire_liaoyuan and fire_fentian are MAGIC complexity 20; fire_liaoli is SWORD complexity 20. They are registered."},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/ModTechniques.java", "lines": "249-254", "fact": "TechniqueManager.register includes all three."},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinitions.java", "lines": "38-40", "fact": "ReleaseRegistry has all three. They use the plain define factory, not a domain factory."},
+    {"path": "src/main/java/com/bslx/XueXiMod/shu/technique/release/ReleaseDefinition.java", "lines": "184-186", "fact": "domain() defaults to null."},
+    {"path": "src/main/java/com/bslx/XueXiMod/player/PlayerShuData.java", "lines": "198-206", "fact": "isUnlocked is true when sword or magic level is at least complexity. Level 20 passes."},
+    {"path": "src/main/java/com/bslx/XueXiMod/event/PlayerConnectionHandler.java", "lines": "20-23", "fact": "Login learns only unlock level 0."},
+    {"path": "src/main/java/com/bslx/XueXiMod/player/DomainLearning.java", "lines": "27-39", "fact": "offerReady learns only a declared domain with learnsWhenReady."},
+    {"path": "src/main/java/com/bslx/XueXiMod/command/ShuCommands.java", "lines": "480-493", "fact": "/shu rank saves the level, calls offerReady, and syncs. It does not learn these three."},
+    {"path": "src/main/java/com/bslx/XueXiMod/gui/ImprintDeskMenu.java", "lines": "75-93", "fact": "The desk lists a technique only when it is both learned and unlocked."},
+    {"path": "src/main/java/com/bslx/XueXiMod/gui/ImprintActions.java", "lines": "33-35", "fact": "Imprint itself rejects a technique that is not learned or not unlocked."},
+    {"path": "src/main/java/com/bslx/XueXiMod/network/ShuSyncPacket.java", "lines": "147-181", "fact": "The client cache stores learned ids separately from the level used by isUnlocked."}
+  ]
+}

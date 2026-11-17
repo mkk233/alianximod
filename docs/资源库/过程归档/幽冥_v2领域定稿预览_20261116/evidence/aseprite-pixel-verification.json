@@ -1,0 +1,66 @@
+{
+  "aseprite_export_exists": true,
+  "size": [
+    64,
+    1024
+  ],
+  "rgba_equal": true,
+  "youming_cyan_soul_v2_original.aseprite": {
+    "frames": 16,
+    "durations_ms": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "size": [
+      64,
+      64
+    ]
+  },
+  "youming_cyan_soul_v2_100ms.aseprite": {
+    "frames": 16,
+    "durations_ms": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "size": [
+      64,
+      64
+    ]
+  },
+  "gif": {
+    "size": [
+      256,
+      256
+    ],
+    "frames": 16,
+    "duration_ms": 100
+  }
+}

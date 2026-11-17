@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "xueximod:ore_ars",
+    "xueximod:ore_ars_lower"
+  ],
+  "step": "underground_ores"
+}

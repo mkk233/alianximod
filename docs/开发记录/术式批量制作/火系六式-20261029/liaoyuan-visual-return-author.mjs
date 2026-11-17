@@ -1,0 +1,23 @@
+import fs from "node:fs/promises";
+import { FileBlob, SpreadsheetFile } from "@oai/artifact-tool";
+
+const root = "D:/alianximod/docs/开发记录/术式批量制作/火系六式-20261029";
+const summary = JSON.parse(await fs.readFile(`${root}/liaoyuan-visual-return-preserve-summary.json`, "utf8"));
+const workbook = await SpreadsheetFile.importXlsx(await FileBlob.load(summary.candidate));
+workbook.recalculate();
+const making = workbook.worksheets.getItem("制作中");
+const pending = workbook.worksheets.getItem("待验收");
+const feature = String(making.getRange("N6").values[0][0]);
+if (making.getRange("B6").values[0][0] !== "fire_liaoyuan") throw new Error("燎原不在制作中第6行");
+if (!feature.includes("不预扣全部余额")) throw new Error("详细需求没有恢复");
+if (feature.includes("一次消耗全部")) throw new Error("恢复成了旧的一次消费");
+if (String(making.getRange("O6").values[0][0]).startsWith("assets/")) throw new Error("特效仍是资源路径");
+if (making.getRange("B3").values[0][0] !== "fire_heat_up") throw new Error("升温被改动");
+if (pending.getRange("B3").values[0][0] !== "fire_liaoli") throw new Error("燎里行号不对");
+if (pending.getRange("B4").values[0][0] !== "fire_fentian") throw new Error("焚天行号不对");
+if (String(pending.getRange("B3:B4").values).includes("fire_liaoyuan")) throw new Error("待验收仍有燎原");
+const preview = await workbook.render({ sheetName: "制作中", range: "A3:B6", scale: 1, format: "png" });
+await fs.writeFile(`${root}/liaoyuan-visual-return-preview.png`, new Uint8Array(await preview.arrayBuffer()));
+const output = await SpreadsheetFile.exportXlsx(workbook);
+await output.save(`${root}/liaoyuan-visual-return-candidate-artifact.xlsx`);
+console.log(JSON.stringify({ preview: "liaoyuan-visual-return-preview.png", submitted: false }));

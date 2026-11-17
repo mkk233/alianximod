@@ -1,0 +1,1 @@
+继续原B任务。先读shared-contract.md新的到期计算共同规则，然后按implement-containers-task.md既定容器边界实施。A负责helper，你只调用，覆盖所有相关expiresAt的living/live检查等。已读过足够源代码，直接改，不再通读或重做设计。禁止网络路由/公共快照/实体条件文件。无额外审批要求，直接实现、写containers-report.md后结束，不跑Gradle。

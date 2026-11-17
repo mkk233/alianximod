@@ -1,0 +1,1 @@
+GPT-6-astra裁决：当前src/main/java无任何外部SkillFollowCast/buildRuleTrigger/buildFollowTrigger调用，仅该类内部一次。它是未使用遗留入口，不是当前运行时漏接，不新增调用、不扩展调度、不必纳入本任务改动。报告区分实际入口与死路径。当前CompiledReleaseStep→CastExecutionSession才是真实路径，应核对实际父窗口及成员输入。原SkillFollowCast while调度风险只记遗留，不宣称已验证或修复。

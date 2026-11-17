@@ -1,0 +1,651 @@
+{
+  "submitted": false,
+  "submitError": "Exception calling \"Open\" with \"4\" argument(s): \"The process cannot access the file 'D:\\alianximod\\docs\\术式制作表.xlsx' because it is being used by another process.\"",
+  "candidate": "D:\\alianximod\\docs\\开发记录\\术式批量制作\\待制作-20261031\\reclassify-types-20261101-candidate-preserved.xlsx",
+  "enum": [
+    "剑术",
+    "动作",
+    "法术",
+    "通用",
+    "领域附魔",
+    "附魔"
+  ],
+  "definedName": "数据表!$Q$4:$Q$10",
+  "checked": 60,
+  "changed": 0,
+  "kept": 50,
+  "intended": 10,
+  "unresolved": 0,
+  "ambiguities": [],
+  "invalidRemaining": [],
+  "counts": {
+    "已完成": 40,
+    "待制作": 0,
+    "制作中": 16,
+    "待验收": 4
+  },
+  "rows": [
+    {
+      "sheet": "已完成",
+      "row": 3,
+      "id": "sword_thrust",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "正前方突刺，链上角色是攻击，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 4,
+      "id": "sword_horizontal_slash",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "正前方扇形斩击，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 5,
+      "id": "sword_vertical_slash",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "高倍率重击，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 6,
+      "id": "space_cut",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "落点切割仍是剑术攻击，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 7,
+      "id": "tide_sever",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "水属性薄切，链上角色是攻击，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 8,
+      "id": "stone_hammer",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "土属性落点重击，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 9,
+      "id": "water_yielding_ribbon",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "伤害来自中间那一刀，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 10,
+      "id": "phantom_sword",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "复制主手剑飞出，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 11,
+      "id": "sword_come",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "召回周围的剑；装配消耗 0 仍是剑术，不是动作。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 12,
+      "id": "sword_return_all",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "收回已放出的剑再飞向目标，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 13,
+      "id": "water_blade",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "必须手持剑的弧斩，保持剑术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 14,
+      "id": "movement_dash",
+      "old": "动作",
+      "new": "动作",
+      "current": "动作",
+      "changed": false,
+      "basis": "向前高速移动，释放种类是动作，装配消耗 0，保持动作。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 15,
+      "id": "movement_leap",
+      "old": "动作",
+      "new": "动作",
+      "current": "动作",
+      "changed": false,
+      "basis": "向上弹射，装配消耗 0，保持动作。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 16,
+      "id": "magic_arcane_missile",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "追踪弹幕，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 17,
+      "id": "magic_create_water",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "放置水源，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 18,
+      "id": "test_sustained",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "测试用持续弹，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 19,
+      "id": "heat_beam",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "持续火光束，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 20,
+      "id": "parasite_seed",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "种子陷阱攻击，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 21,
+      "id": "metal_needle",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "金属细针，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 22,
+      "id": "fire_orb",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "火球飞弹，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 23,
+      "id": "fire_burst",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "撞击或延迟后爆炸，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 24,
+      "id": "water_weeping_arc",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "水帘攻击，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 25,
+      "id": "water_curtain",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "身前水墙，附魔标记为否，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 26,
+      "id": "water_mist",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "自身雨雾领域，附魔标记为否；列表没有单独的领域，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 27,
+      "id": "water_ring",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "自身水环护体，附魔标记为否，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 28,
+      "id": "water_deep_pressure",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "自身重压领域，附魔标记为否，保持法术。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 29,
+      "id": "magic_ignite",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "附魔标记为是，效果键 fire，装配和魔力都是 2，命中后点燃。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 30,
+      "id": "universal_lock_target",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "索敌规则，附魔标记为否，两书可用，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 31,
+      "id": "rule_dual_release",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "释放种类是规则，不是附魔，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 32,
+      "id": "trajectory_drop",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "只改下一段路径，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 33,
+      "id": "rule_cast_anchor",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "落点规则，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 34,
+      "id": "rule_triple_cast",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "复制后段攻击的规则，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 35,
+      "id": "rule_gather_energy",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "放大后段攻击能量；链上角色写攻击，但本体不单独打人，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 36,
+      "id": "trajectory_3d_interleave",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "只错开落点，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 37,
+      "id": "vine_mark",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "附魔标记为是，效果键 wood，命中后缠住目标。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 38,
+      "id": "tide_mark",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "附魔标记为是，效果键 water，命中后附加伤害并加潮湿。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 39,
+      "id": "sinking_edge",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "附魔标记为是，效果键 earth，给攻击加重量、范围和击退。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 40,
+      "id": "keen_mark",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "附魔标记为是，效果键 metal，给攻击加金属伤害并缩短冷却。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 41,
+      "id": "trajectory_tracking",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "只改飞行弹的追踪，保持通用。"
+    },
+    {
+      "sheet": "已完成",
+      "row": 42,
+      "id": "trajectory_storm",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "把后段可变弹道改成龙卷，保持通用。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 3,
+      "id": "fire_heat_up",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "功能写明是独立火属性法术；链上角色的动作不是类型里的动作。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 4,
+      "id": "fire_burn",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "功能写明是独立火属性法术，进入或升级炉心。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 5,
+      "id": "fire_cool",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "功能写明是独立火属性法术，主动结束炉心。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 6,
+      "id": "fire_flame_trail",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "功能写明是火系附魔，附在移动载体上留火径，附魔标记为是。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 7,
+      "id": "fire_meteorite",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "抛出炽热岩体的攻击，附魔标记为否，保持法术。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 8,
+      "id": "fire_shock_ring",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "一次环形冲击攻击，保持法术。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 9,
+      "id": "rule_surface_anchor",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "选择地表锚点的规则，附魔标记为否；列表没有规则类，与落点指定一样保持通用。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 10,
+      "id": "fire_upwell",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "只把攻击改成上抛再落下，保持通用。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 11,
+      "id": "rule_stagger",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "只错开已有副本的出手时间，保持通用。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 12,
+      "id": "rule_hit_continue",
+      "old": "通用",
+      "new": "通用",
+      "current": "通用",
+      "changed": false,
+      "basis": "绑定父攻击和后续分支的规则，保持通用。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 13,
+      "id": "fire_seed_sow",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "功能写明是命中后产火种的附魔，单独时交给下一次普通攻击。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 14,
+      "id": "fire_kindle",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "功能写明是火种持续伤害附魔。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 15,
+      "id": "fire_detonate",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "功能写明是消费剩余火种的结算附魔。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 16,
+      "id": "fire_nether_gloom",
+      "old": "领域附魔",
+      "new": "领域附魔",
+      "current": "领域附魔",
+      "changed": false,
+      "basis": "附魔标记为是，费用按附魔，效果是领域内产种。列表有领域附魔、没有单独的领域。可独立释放只否定旧前置，不改成法术。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 17,
+      "id": "earth_break_ground",
+      "old": "通用",
+      "new": "附魔",
+      "current": "通用",
+      "changed": false,
+      "basis": "附魔标记为是，让适用攻击撞地时挖坑，自己不另造成生物伤害。"
+    },
+    {
+      "sheet": "制作中",
+      "row": 18,
+      "id": "fire_spark",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "独立火苗飞弹，附魔标记为否，保持法术。"
+    },
+    {
+      "sheet": "待验收",
+      "row": 3,
+      "id": "fire_fentian",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "给球内目标挂燃烧的攻击法术，附魔标记为否，保持法术。"
+    },
+    {
+      "sheet": "待验收",
+      "row": 4,
+      "id": "fire_liaoli",
+      "old": "剑术",
+      "new": "剑术",
+      "current": "剑术",
+      "changed": false,
+      "basis": "必须手持剑的持续刺击，附魔标记为否，保持剑术。"
+    },
+    {
+      "sheet": "待验收",
+      "row": 5,
+      "id": "fire_scorch_field",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "贴地火场本体，附魔标记为否，是载体不是领域附魔，保持法术。"
+    },
+    {
+      "sheet": "待验收",
+      "row": 6,
+      "id": "fire_liaoyuan",
+      "old": "法术",
+      "new": "法术",
+      "current": "法术",
+      "changed": false,
+      "basis": "贴地火场攻击，附魔标记为否，保持法术。"
+    }
+  ],
+  "baselineSha256": "F098F1C154DEA04185CAD4F60695054A54F27B54E1D6DFAFADD6449E29FAF9E4",
+  "liveSha256": "F098F1C154DEA04185CAD4F60695054A54F27B54E1D6DFAFADD6449E29FAF9E4",
+  "bytes": 119126,
+  "mtime": "2026-11-01 01:10:48.948",
+  "reopenMatches": false,
+  "archiveUntouched": true,
+  "codeConflict": "TechniqueType 仍只有 SWORD、MOVEMENT、MAGIC、UNIVERSAL。表内附魔和领域附魔没有代码列。本次没改 Java。",
+  "method": "ooxml-part-copy",
+  "exportRebuilt": false,
+  "laterCommit": {
+    "submitted": true,
+    "report": "reclassify-types-20261101-commit-report.json",
+    "sha256": "53B44FAF93B0DCA7BD278F3A509406A6BCF5859C0DD073170C772BE14D45170E",
+    "mtime": "2026-11-01 01:33:57.042",
+    "changedIds": [
+      "fire_flame_trail",
+      "fire_kindle",
+      "fire_detonate",
+      "earth_break_ground"
+    ],
+    "note": "上一轮 submitted 仍为 false。这是关闭工作簿后的另一次提交。"
+  }
+}

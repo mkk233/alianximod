@@ -1,5 +1,6 @@
 package com.bslx.XueXiMod.shu;
 
+import com.bslx.XueXiMod.shu.technique.ChainStructureEpoch;
 import java.util.*;
 
 /**
@@ -11,20 +12,28 @@ public class TechniqueManager {
 
     public static void register(Technique technique) {
         TECHNIQUES.put(technique.getId(), technique);
+        ChainStructureEpoch.changed();
     }
 
-    public static Technique getById(String id) {
-        return TECHNIQUES.get(id);
+    public static Technique getById(String techniqueId) {
+        if (techniqueId == null) {
+            return null;
+        }
+        return TECHNIQUES.get(TechniqueIds.canonicalId(techniqueId));
     }
 
     public static Collection<Technique> getAll() {
         return Collections.unmodifiableCollection(TECHNIQUES.values());
     }
 
+    public static List<Technique> playerCatalog() {
+        return TechniqueAccess.playerCatalog();
+    }
+
     public static List<Technique> getByType(TechniqueType type) {
         List<Technique> result = new ArrayList<>();
-        for (Technique t : TECHNIQUES.values()) {
-            if (t.getType() == type) result.add(t);
+        for (Technique technique : playerCatalog()) {
+            if (technique.getType() == type) result.add(technique);
         }
         return result;
     }
@@ -34,8 +43,8 @@ public class TechniqueManager {
      */
     public static List<Technique> getSwordCompatible() {
         List<Technique> result = new ArrayList<>();
-        for (Technique t : TECHNIQUES.values()) {
-            if (t.getType().canUseForSwordSkill()) result.add(t);
+        for (Technique technique : playerCatalog()) {
+            if (technique.getType().canUseForSwordSkill()) result.add(technique);
         }
         return result;
     }
@@ -45,8 +54,8 @@ public class TechniqueManager {
      */
     public static List<Technique> getMagicCompatible() {
         List<Technique> result = new ArrayList<>();
-        for (Technique t : TECHNIQUES.values()) {
-            if (t.getType().canUseForMagicSkill()) result.add(t);
+        for (Technique technique : playerCatalog()) {
+            if (technique.getType().canUseForMagicSkill()) result.add(technique);
         }
         return result;
     }

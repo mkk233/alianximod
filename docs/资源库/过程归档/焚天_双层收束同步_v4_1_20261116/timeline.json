@@ -1,0 +1,21 @@
+{
+  "status": "candidate_pending_user_confirmation",
+  "repair_authorized": true,
+  "user_has_seen_this_revision": false,
+  "batchId": "待制作-20261031",
+  "taskId": "fire_kindle_v2_art",
+  "attemptId": "20261116-art-fentian-burnout-sync-06",
+  "natural_end_ticks": 9,
+  "tick_ms_for_preview": 50,
+  "tick_zero_based": [0,1,2,3,4,5,6,7,8],
+  "held_sustain_alpha": [1,0.94,0.82,0.66,0.48,0.30,0.15,0.05,0],
+  "ember_alpha": [0,0.18,0.36,0.55,0.72,0.82,0.65,0.35,0],
+  "ember_source_frame_zero_based": [40,41,42,44,45,46,48,50,51],
+  "foreground_source_frame_zero_based": [10,11,12,13,14,15,16,17,18],
+  "held_sustain_frame": "capture last actually displayed background sustain index 0..39 at natural end; demo uses index39/F40; fallback39 only if unavailable",
+  "sampling": "linear interpolate both alpha coefficients between tick keys with render partialTick; source frame uses floor(elapsedTicks); clamp alpha to zero at elapsed>=8; remove both visual states at elapsed>=9",
+  "composition_order": "held sustain sample with alpha multiplier, then ember sample with alpha multiplier at same unchanged background geometry, then unchanged foreground",
+  "blend": "ordinary source-over alpha; no RGB darkening, no additive blend, no depth write, retain existing depth test and tint",
+  "geometry": "unchanged v4; freeze actual pre-end skyScale rather than use ending balance to recompute size",
+  "scope": "only natural-end visual transition; sustain frames 0..39 and both original PNG/aseprite files unchanged; no damage/fuel clock; non-natural cleanup unchanged"
+}

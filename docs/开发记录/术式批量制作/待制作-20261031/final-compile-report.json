@@ -1,0 +1,163 @@
+{
+  "batch": "待制作-20261031",
+  "stage": "统一编译与必要机械检查",
+  "formalReview": "设计 2/2，实现 3/3。本单是机械编译门槛检查，不是第 4 轮正确性复审。",
+  "result": "compile_not_started",
+  "reason": "同工作区 Gradle 8.8 守护进程仍在，并且是本仓库 Forge 客户端的父进程。",
+  "sheetMigrated": false,
+  "sourceModifiedByThisTask": false,
+  "stopped": true,
+  "blockingProcesses": [
+    {
+      "pid": 48468,
+      "parentPid": 27616,
+      "name": "idea64.exe",
+      "started": "2026-10-30T23:45:07",
+      "role": "IntelliJ IDEA 2024.3 opened D:\\alianximod"
+    },
+    {
+      "pid": 12896,
+      "parentPid": 48468,
+      "name": "java.exe",
+      "started": "2026-10-31T00:46:45",
+      "role": "GradleDaemon 8.8",
+      "java": "C:\\Program Files\\Java\\jdk-17\\bin\\java.exe",
+      "jvmargs": "-Xmx3G",
+      "distribution": "C:\\Users\\baishang\\.gradle\\wrapper\\dists\\gradle-8.8-bin\\dl7vupf4psengwqhwktix4v1",
+      "log": "C:\\Users\\baishang\\.gradle\\daemon\\8.8\\daemon-12896.out.log",
+      "logLastObservedGameLine": "2026-10-31 03:50:12 Saving and pausing game"
+    },
+    {
+      "pid": 45212,
+      "parentPid": 12896,
+      "name": "java.exe",
+      "started": "2026-10-31T03:18:46",
+      "role": "Forge client forgeclientuserdev",
+      "workspaceClasspath": [
+        "D:\\alianximod\\build\\classes\\java\\main",
+        "D:\\alianximod\\build\\resources\\main"
+      ],
+      "stillAliveAt": "2026-10-31T05:56:51+08:00"
+    }
+  ],
+  "authorHandoff": [
+    {"author": "A", "file": "author-a-review1-repair-report.md", "mtime": "2026-10-31T05:41:04.854+08:00"},
+    {"author": "A", "file": "author-a-review1-repair-final.md", "mtime": "2026-10-31T05:41:26.146+08:00"},
+    {"author": "B", "file": "author-b-report.md", "mtime": "2026-10-31T03:41:21.522+08:00"},
+    {"author": "B", "file": "author-b-resource-final.md", "mtime": "2026-10-31T03:42:24.316+08:00"},
+    {"author": "C", "file": "author-c-hitclock-repair-report.md", "mtime": "2026-10-31T05:44:23.656+08:00"},
+    {"author": "C", "file": "author-c-hitclock-repair-final.md", "mtime": "2026-10-31T05:44:46.537+08:00"},
+    {"author": "D", "file": "author-d-scorch-bridge-report.md", "mtime": "2026-10-31T05:03:15.020+08:00"},
+    {"author": "D", "file": "author-d-scorch-bridge-final.md", "mtime": "2026-10-31T05:03:31.508+08:00"},
+    {"author": "review-round3-readonly", "file": "implementation-review-round3-final.md", "mtime": "2026-10-31T05:51:23.436+08:00"}
+  ],
+  "ownershipHashCheck": {
+    "authorA": {"file": "author-a-ownership.json", "checked": 63, "missing": 0, "mismatch": 0},
+    "authorB": "ownership json has paths and no sha256 field; not hash-compared",
+    "authorC": "ownership json has paths and no sha256 field; BatchFlameTrail.java matches author-c-hitclock-repair-report.md",
+    "authorD": "ownership json has paths and no sha256 field; 8 Java files plus nether_gloom.png match author-d-scorch-bridge-report.md"
+  },
+  "sourceInventory": {
+    "scope": "src/main",
+    "before": {
+      "path": "final-compile-src-before.json",
+      "takenAt": "2026-10-31T05:54:58.204+08:00",
+      "fileCount": 955,
+      "totalBytes": 10696906,
+      "treeSha256": "5e3feb75da9a5de7b47551eebe6a77f99e6012cd0da3f9f6e703241eedba978a"
+    },
+    "after": {
+      "path": "final-compile-src-after.json",
+      "takenAt": "2026-10-31T05:56:51.811+08:00",
+      "phase": "after_checks_compile_not_run",
+      "fileCount": 955,
+      "totalBytes": 10696906,
+      "treeSha256": "5e3feb75da9a5de7b47551eebe6a77f99e6012cd0da3f9f6e703241eedba978a",
+      "sameAsBefore": true
+    },
+    "changedDuringCompile": "compile was not started, so there is no during-compile comparison"
+  },
+  "nameGate": {
+    "command": "powershell -NoProfile -File tools/check-name-gate.ps1",
+    "workingDirectory": "D:\\alianximod",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+    "start": "2026-10-31T05:56:11.201+08:00",
+    "end": "2026-10-31T05:56:13.352+08:00",
+    "exitCode": 1,
+    "output": "final-compile-name-gate.txt",
+    "newViolations": 0,
+    "historical": [
+      {
+        "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java",
+        "line": 165,
+        "column": 18,
+        "name": "i",
+        "text": "变量名不得少于 3 个字符",
+        "mtime": "2026-10-25T19:24:25.698+08:00",
+        "sha256": "c7c4a2fbdf17c95a7ab52ed1d826d90fda38ba3673f12ac9b4d91fe770b43534"
+      },
+      {
+        "path": "src/main/java/com/bslx/XueXiMod/animation/runtime/OriginalHumanoid.java",
+        "line": 202,
+        "column": 17,
+        "name": "to",
+        "text": "变量名不得少于 3 个字符"
+      }
+    ]
+  },
+  "environment": {
+    "selectedJavaHome": "C:\\Program Files\\Java\\jdk-17",
+    "javaVersion": "17.0.6+9-LTS-190",
+    "selectionBasis": "Historical offline compiles in this repo used this JDK 17, and the live daemon and client already use this java.exe. Process JAVA_HOME was empty.",
+    "intendedGradleUserHome": "C:\\Users\\baishang\\.gradle",
+    "wrapper88Present": true,
+    "caches88Present": true,
+    "processGradleUserHome": "C:\\Users\\baishang\\AppData\\Local\\Temp\\cursor-sandbox-cache\\dd2cc7be7a610215710bc57a8daf1750\\gradle",
+    "sandboxHomeUsed": false,
+    "gradleProperties": {
+      "org.gradle.jvmargs": "-Xmx3G",
+      "org.gradle.daemon": "false",
+      "modified": false
+    }
+  },
+  "compileJava": {
+    "executed": false,
+    "command": ".\\gradlew.bat compileJava --offline --no-daemon",
+    "workingDirectory": "D:\\alianximod",
+    "start": null,
+    "end": null,
+    "exitCode": null,
+    "log": null,
+    "errors": []
+  },
+  "resources": {
+    "evidence": "final-compile-resources.txt",
+    "pngComparedTo": "resource-manifest-v1.md",
+    "pngMatch": 10,
+    "pngMismatch": 0,
+    "meteoriteBlockIsStrip": false,
+    "pythonJsonLoad": "9/9 ok",
+    "files": [
+      {"path": "src/main/resources/assets/xueximod/lang/zh_cn.json", "sha256": "a8b03aea26804a8863c780f4e72c537713776a5510e7960371bf8e8e4d768d1e", "parse": "ok"},
+      {"path": "src/main/resources/assets/xueximod/lang/en_us.json", "sha256": "fba0df0fad97dc26bd154713b853dc39e6059176792a897cbafcf4c055328815", "parse": "ok"},
+      {"path": "src/main/resources/assets/xueximod/models/item/meteorite.json", "parse": "ok"},
+      {"path": "src/main/resources/assets/xueximod/models/block/meteorite.json", "parse": "ok"},
+      {"path": "src/main/resources/assets/xueximod/models/item/test_staff.json", "parse": "ok"},
+      {"path": "src/main/resources/assets/xueximod/blockstates/meteorite.json", "sha256": "b5f3f315f5d4f2204c4782d0c971b098052651a03400d5097f8cc8f3d61edafc", "bytes": 82, "parse": "ok", "note": "empty variant key; PowerShell ConvertFrom-Json rejects it, Python json.load accepts it"},
+      {"path": "src/generated/resources/data/xueximod/loot_tables/blocks/meteorite.json", "parse": "ok", "regeneratedByThisTask": false},
+      {"path": "src/generated/resources/data/minecraft/tags/blocks/mineable/pickaxe.json", "parse": "ok", "regeneratedByThisTask": false},
+      {"path": "src/generated/resources/data/minecraft/tags/blocks/needs_stone_tool.json", "parse": "ok", "regeneratedByThisTask": false}
+    ],
+    "gameVerified": false
+  },
+  "notRun": ["compileJava", "build", "jar", "reobf", "runClient", "game", "package", "publish", "git commit", "sheet migration", "formal review", "independent test"],
+  "evidenceFiles": [
+    "final-compile-preflight.txt",
+    "final-compile-src-before.json",
+    "final-compile-src-after.json",
+    "final-compile-name-gate.txt",
+    "final-compile-resources.txt",
+    "final-compile-report.md",
+    "final-compile-report.json"
+  ]
+}

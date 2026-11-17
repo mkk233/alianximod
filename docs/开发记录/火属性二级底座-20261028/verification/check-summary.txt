@@ -1,0 +1,6 @@
+﻿FireSeedCheck EXIT=0
+FurnaceMathCheck EXIT=0
+FurnaceStructureCheck EXIT=0
+FireLayerCheck EXIT=0
+BurnLedgerCheck EXIT=0
+FireReleaseStructureCheck EXIT=0
